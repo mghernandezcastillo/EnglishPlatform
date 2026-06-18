@@ -1,0 +1,6 @@
+{
+  "name": "Inglés Paso a Paso",
+  "description": "Plataforma interactiva para enseñar inglés desde cero hasta B2. Diseñada para adultos, con progreso personalizado, audio y lecciones visuales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,352 @@
+import { useState, useEffect } from 'react';
+import { dbAdmin } from '../lib/db';
+import { DbStudent, DbGroup } from '../types';
+import { Users, UserPlus, BookOpen, ChevronLeft, Save, Target } from 'lucide-react';
+import { avatars } from '../config';
+import { CurriculumView } from './CurriculumView';
+import { curriculumLevels } from '../data/curriculum';
+
+interface TeacherDashboardProps {
+  onBack: () => void;
+}
+
+export function TeacherDashboard({ onBack }: TeacherDashboardProps) {
+  const [students, setStudents] = useState<DbStudent[]>([]);
+  const [groups, setGroups] = useState<DbGroup[]>([]);
+  const [evaluations, setEvaluations] = useState<any[]>([]);
+  const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum'>('students');
+  const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
+
+  const [isCreatingStudent, setIsCreatingStudent] = useState(false);
+  const [newStudent, setNewStudent] = useState({ name: '', avatar_id: 'female', level: 'Basic Zero', group_id: '' });
+
+  const [isCreatingGroup, setIsCreatingGroup] = useState(false);
+  const [newGroupName, setNewGroupName] = useState('');
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  const loadData = async () => {
+    const s = await dbAdmin.getStudents();
+    const g = await dbAdmin.getGroups();
+    const e = await dbAdmin.getEvaluations();
+    setStudents(s);
+    setGroups(g);
+    setEvaluations(e);
+  };
+
+  const handleCreateStudent = async () => {
+    if (!newStudent.name) return;
+    await dbAdmin.createStudent({
+      name: newStudent.name,
+      avatar_id: newStudent.avatar_id,
+      level: newStudent.level,
+      group_id: newStudent.group_id || undefined
+    });
+    setIsCreatingStudent(false);
+    setNewStudent({ name: '', avatar_id: 'female', level: 'Basic Zero', group_id: '' });
+    loadData();
+  };
+
+  const handleCreateGroup = async () => {
+    if (!newGroupName) return;
+    await dbAdmin.createGroup(newGroupName, '');
+    setIsCreatingGroup(false);
+    setNewGroupName('');
+    loadData();
+  };
+
+  if (selectedStudent) {
+    // Find matching curriculum level (approximate match on title)
+    // The DbStudent.level is usually strings like "Basic Zero" or "A1"
+    const stLevelTokens = selectedStudent.level.toLowerCase().split(' ');
+    let currentLevelObj = curriculumLevels.find(l => 
+        stLevelTokens.some(tok => l.title.toLowerCase().includes(tok))
+    );
+    if (!currentLevelObj) {
+        currentLevelObj = curriculumLevels[0]; // fallback
+    }
+
+    return (
+        <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6">
+            <button onClick={() => setSelectedStudent(null)} className="mb-6 flex items-center gap-2 text-gray-500 hover:text-indigo-600 font-medium">
+                <ChevronLeft className="w-5 h-5" /> Volver a Estudiantes
+            </button>
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col md:flex-row items-center gap-6">
+                <img src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
+                <div>
+                   <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
+                   <div className="flex gap-3 mt-2">
+                       <span className="text-sm font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">{selectedStudent.level}</span>
+                       {selectedStudent.group_id && <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">En grupo</span>}
+                   </div>
+                </div>
+            </div>
+
+            <div className="mb-6">
+                <h2 className="text-2xl font-bold text-gray-800 mb-2">Evaluaciones del Nivel Actual</h2>
+                <p className="text-gray-500">Comparte los enlaces para los exámenes del estudiante.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-8">
+                {currentLevelObj && (currentLevelObj.oralEvaluation || currentLevelObj.virtualEvaluation) ? (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {/* Oral Exam Teacher view */}
+                        {currentLevelObj.oralEvaluation && (
+                            <div className="bg-amber-50 rounded-2xl border border-amber-200 p-6 flex flex-col">
+                                <h3 className="font-bold text-amber-900 text-xl mb-4">Examen Oral</h3>
+                                <p className="text-amber-800 mb-6 flex-1">
+                                    Preguntas predefinidas para evaluar la fluidez y pronunciación de {selectedStudent.name} en el nivel {currentLevelObj.title}.
+                                </p>
+                                <button
+                                    onClick={() => {
+                                        const qText = currentLevelObj?.oralEvaluation?.map(q => `*${q.topic}*: ${q.question}`).join('\n\n');
+                                        const msg = `Hola ${selectedStudent.name}, aquí están las preguntas para que prepares tu examen oral del nivel ${currentLevelObj?.title}:\n\n${qText}`;
+                                        window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+                                    }}
+                                    className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-xl w-full text-center transition-all bg-amber-600"
+                                >
+                                    Compartir Preguntas a WhatsApp
+                                </button>
+                            </div>
+                        )}
+                        {currentLevelObj.virtualEvaluation && (
+                            <div className="bg-emerald-50 rounded-2xl border border-emerald-200 p-6 flex flex-col">
+                                <h3 className="font-bold text-emerald-900 text-xl mb-4">Examen Virtual</h3>
+                                <p className="text-emerald-800 mb-6 flex-1">
+                                    Examen de opciones múltiples, gramática y dictado en plataforma. La calificación se guardará automáticamente en el panel.
+                                </p>
+                                <button
+                                    onClick={() => {
+                                        const url = `${window.location.origin}/?evaluacion=${currentLevelObj?.id}&student=${encodeURIComponent(selectedStudent.name)}`;
+                                        const msg = `¡Hola ${selectedStudent.name}! Aquí está tu enlace directo para realizar el examen virtual del nivel ${currentLevelObj?.title}. ¡Mucho éxito!\n\n${url}`;
+                                        window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+                                    }}
+                                    className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl w-full text-center transition-all"
+                                >
+                                    Enviar Enlace de Examen
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                ) : (
+                    <div className="text-gray-500 py-8 text-center text-lg font-medium">No hay evaluaciones configuradas para este nivel aún.</div>
+                )}
+            </div>
+            
+            <div className="mb-6">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Otro Material</h2>
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <CurriculumView />
+                </div>
+            </div>
+        </div>
+    );
+  }
+
+  return (
+    <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6">
+      <button onClick={onBack} className="mb-6 flex items-center gap-2 text-gray-500 hover:text-indigo-600 font-medium">
+        <ChevronLeft className="w-5 h-5" /> Volver al Inicio
+      </button>
+
+      <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">Panel de Profesor</h1>
+          <p className="text-gray-500 mt-2">Gestiona estudiantes, grupos y supervisa su progreso.</p>
+        </div>
+        <div className="flex flex-wrap gap-4 mt-6 md:mt-0">
+          <button 
+            onClick={() => setActiveTab('students')}
+            className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'students' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+          >
+            Estudiantes
+          </button>
+          <button 
+            onClick={() => setActiveTab('groups')}
+            className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'groups' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+          >
+            Grupos
+          </button>
+          <button 
+            onClick={() => setActiveTab('evaluations')}
+            className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'evaluations' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+          >
+            Evaluaciones
+          </button>
+          <button 
+            onClick={() => setActiveTab('curriculum')}
+            className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'curriculum' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+          >
+             Material & Exámenes
+          </button>
+        </div>
+      </div>
+
+      {activeTab === 'students' && (
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-bold text-gray-800">Estudiantes Inscritos</h2>
+            <button 
+              onClick={() => setIsCreatingStudent(!isCreatingStudent)}
+              className="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-lg font-semibold flex items-center gap-2 hover:bg-indigo-100 transition-colors"
+            >
+              <UserPlus className="w-5 h-5" /> Nuevo Estudiante
+            </button>
+          </div>
+
+          {isCreatingStudent && (
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-indigo-100 mb-6 flex flex-col md:flex-row gap-4 items-end">
+              <div className="flex-1">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                <input type="text" value={newStudent.name} onChange={e => setNewStudent({...newStudent, name: e.target.value})} className="w-full px-4 py-2 border rounded-xl" placeholder="Juan Pérez" />
+              </div>
+              <div className="w-40">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Nivel</label>
+                <select value={newStudent.level} onChange={e => setNewStudent({...newStudent, level: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
+                  <option>Basic Zero</option>
+                  <option>A1</option>
+                  <option>A2</option>
+                  <option>B1</option>
+                  <option>B2</option>
+                </select>
+              </div>
+              <div className="w-48">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Grupo (Opcional)</label>
+                <select value={newStudent.group_id} onChange={e => setNewStudent({...newStudent, group_id: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
+                  <option value="">Sin Grupo</option>
+                  {groups.map(g => <option key={g.id} value={g.id}>{g.name}</option>)}
+                </select>
+              </div>
+              <button onClick={handleCreateStudent} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-xl font-bold transition-colors">
+                Guardar
+              </button>
+            </div>
+          )}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {students.map(st => (
+              <div key={st.id} onClick={() => setSelectedStudent(st)} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+                <div className="flex items-center gap-4 mb-4">
+                  <img src={avatars[st.avatar_id as keyof typeof avatars] || avatars.female} className="w-16 h-16 rounded-full object-cover border-2 border-indigo-100" />
+                  <div>
+                    <h3 className="font-bold text-lg text-gray-900">{st.name}</h3>
+                    <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded w-max">{st.level}</span>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center text-sm text-gray-500 mt-4 border-t pt-4">
+                  <span>Clases completadas: <strong className="text-gray-900">{st.completed_lessons?.length || 0}</strong></span>
+                  {st.group_id && <span className="flex items-center gap-1"><Users className="w-4 h-4"/> Grupo</span>}
+                </div>
+              </div>
+            ))}
+            {students.length === 0 && (
+              <div className="col-span-full py-12 text-center text-gray-400 font-medium">No hay estudiantes creados aún.</div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {activeTab === 'groups' && (
+         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+           <div className="flex justify-between items-center mb-6">
+             <h2 className="text-2xl font-bold text-gray-800">Grupos</h2>
+             <button 
+               onClick={() => setIsCreatingGroup(!isCreatingGroup)}
+               className="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-lg font-semibold flex items-center gap-2 hover:bg-indigo-100 transition-colors"
+             >
+               <Users className="w-5 h-5" /> Nuevo Grupo
+             </button>
+           </div>
+           
+           {isCreatingGroup && (
+             <div className="bg-white p-6 rounded-2xl shadow-sm border border-indigo-100 mb-6 flex flex-col md:flex-row gap-4 items-end">
+               <div className="flex-1">
+                 <label className="block text-sm font-medium text-gray-700 mb-1">Nombre del Grupo</label>
+                 <input type="text" value={newGroupName} onChange={e => setNewGroupName(e.target.value)} className="w-full px-4 py-2 border rounded-xl" placeholder="Ej: Kids Básico, Adultos Nocturno" />
+               </div>
+               <button onClick={handleCreateGroup} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-xl font-bold transition-colors flex items-center gap-2">
+                 <Save className="w-5 h-5" /> Crear
+               </button>
+             </div>
+           )}
+
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+             {groups.map(g => {
+               const gStudents = students.filter(s => s.group_id === g.id);
+               return (
+                 <div key={g.id} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-center">
+                   <div>
+                     <h3 className="text-xl font-bold text-gray-900">{g.name}</h3>
+                     <p className="text-gray-500 text-sm flex items-center gap-2 mt-1">
+                       <Users className="w-4 h-4" /> {gStudents.length} Estudiantes
+                     </p>
+                   </div>
+                   <button className="text-indigo-600 font-semibold hover:text-indigo-800">Ver Detalles</button>
+                 </div>
+               )
+             })}
+             {groups.length === 0 && (
+               <div className="col-span-full py-12 text-center text-gray-400 font-medium">No hay grupos creados aún.</div>
+             )}
+           </div>
+         </div>
+      )}
+
+      {activeTab === 'evaluations' && (
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-bold text-gray-800">Resultados de Evaluaciones</h2>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+             {evaluations.length === 0 ? (
+                <div className="py-12 text-center text-gray-400 font-medium">No hay evaluaciones completadas aún.</div>
+             ) : (
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="bg-gray-50 border-b border-gray-100">
+                      <th className="p-4 font-bold text-gray-600">Estudiante</th>
+                      <th className="p-4 font-bold text-gray-600">Nivel Evaluado</th>
+                      <th className="p-4 font-bold text-gray-600">Puntaje</th>
+                      <th className="p-4 font-bold text-gray-600 text-right">Porcentaje</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     {evaluations.map((ev, i) => {
+                       const percentage = Math.round((ev.score / ev.total_questions) * 100);
+                       return (
+                         <tr key={ev.id || i} className="border-b border-gray-50 hover:bg-slate-50 transition-colors">
+                           <td className="p-4 font-semibold text-gray-900">{ev.student_name}</td>
+                           <td className="p-4">
+                             <span className="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                               {ev.level_id}
+                             </span>
+                           </td>
+                           <td className="p-4 font-medium text-gray-700">
+                             {ev.score} / {ev.total_questions}
+                           </td>
+                           <td className="p-4 text-right">
+                             <div className={`font-black text-lg ${percentage >= 70 ? 'text-green-600' : percentage >= 50 ? 'text-amber-500' : 'text-red-500'}`}>
+                               {percentage}%
+                             </div>
+                           </td>
+                         </tr>
+                       )
+                     })}
+                  </tbody>
+                </table>
+             )}
+          </div>
+        </div>
+      )}
+
+      {activeTab === 'curriculum' && (
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+           <CurriculumView />
+        </div>
+      )}
+    </div>
+  );
+}

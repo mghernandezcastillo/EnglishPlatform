@@ -1,0 +1,569 @@
+140-            slides: [
+141-              { 
+142-                id: "Diapositiva 6", 
+143:                title: "Reading Practice", 
+144-                description: "Lee en voz alta este pequeño párrafo:",
+145-                content: ["Hello! My name is Sarah. I am 25 years old.", "I am a teacher. I am from London but I live in Spain.", "My brother is John. He is a student.", "We are very happy today!"],
+146-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+147-                imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=800"
+148-              },
+149-              {
+150-                id: "Diapositiva-Emoji-1",
+151-                title: "Emojis Locos 🤪",
+152-                description: "Adivina la oración correcta según los emojis",
+153-                type: 'emoji-game',
+--
+342-            slides: [
+343-              {
+344-                id: "Diapositiva 6",
+345:                title: "Reading Practice",
+346-                description: "Lee en voz alta este pequeño párrafo:",
+347-                content: ["Hello! I am Mark and I am 35 years old.", "I wake up at exactly half past six (6:30).", "I drink coffee and I work at eight o'clock (8:00).", "I go to sleep at a quarter to eleven (10:45)."],
+348-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+349-                imageUrl: "https://images.unsplash.com/photo-1581009137042-c552e485697a?auto=format&fit=crop&q=80&w=800"
+350-              },
+351-              {
+352-                id: "Diapositiva-Emoji-2",
+353-                title: "Emojis Locos 🤪",
+354-                description: "Adivina qué hace ella y a qué hora",
+355-                type: 'emoji-game',
+--
+543-            slides: [
+544-              {
+545-                id: "Diapositiva 6",
+546:                title: "Reading Practice",
+547-                description: "Lee en voz alta este pequeño párrafo:",
+548-                content: ["The sun is yellow and the sky is blue. I feel happy today.", "My friend is tired, and he is very hungry. He wants a red apple."],
+549-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+550-                imageUrl: "https://images.unsplash.com/photo-1533228876829-65c94e7b5025?auto=format&fit=crop&q=80&w=800"
+551-              },
+552-              {
+553-                id: "Diapositiva-Emoji-3",
+554-                title: "Emojis Locos 🤪",
+555-                description: "Interpreta las emociones de estos emojis",
+556-                type: 'emoji-game',
+--
+744-            slides: [
+745-              {
+746-                id: "Diapositiva 6",
+747:                title: "Reading Practice",
+748-                description: "Lee en voz alta este pequeño párrafo:",
+749-                content: ["This is my family. My father's name is David and my mother's name is Laura.", "I have one brother. His name is Tom. Her sister is Emma.", "Our house is big and we are very happy."],
+750-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+751-                imageUrl: "https://images.unsplash.com/photo-1542044896530-05d85be9b11a?auto=format&fit=crop&q=80&w=800"
+752-              },
+753-              {
+754-                id: "Diapositiva 7",
+755-                title: "Complete the sentence (1/3)",
+756-                description: "Let's practice possessives",
+757-                content: ["I have a brother. ______ name is Peter."],
+--
+934-            slides: [
+935-              {
+936-                id: "Diapositiva 6",
+937:                title: "Reading Practice",
+938-                description: "Lee en voz alta:",
+939-                content: ["My city is very big. There is a beautiful park and there are many restaurants.", "In my house, there is a small kitchen and there are three bedrooms."],
+940-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+941-                imageUrl: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=800"
+942-              },
+943-              {
+944-                id: "Diapositiva 7",
+945-                title: "Complete the sentence (1/3)",
+946-                description: "Singular vs Plural",
+947-                content: ["______ a dog in the park."],
+--
+1131-            slides: [
+1132-              {
+1133-                id: "Diapositiva 7",
+1134:                title: "Reading Practice",
+1135-                description: "Lee en voz alta:",
+1136-                content: ["My favorite day is Friday. My birthday is on July 14th (fourteenth).", "Today is Monday, October 2nd (second)."],
+1137-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+1138-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+1139-              },
+1140-              {
+1141-                id: "Diapositiva 8",
+1142-                title: "Complete the sentence (1/3)",
+1143-                description: "Days of the week",
+1144-                content: ["Today is Monday, tomorrow is ______."],
+--
+1328-            slides: [
+1329-              {
+1330-                id: "Diapositiva 7",
+1331:                title: "Reading Practice",
+1332-                description: "Lee en voz alta este pequeño párrafo:",
+1333-                content: ["This is my desk. I have a computer and an apple.", "Look at that tree over there. Those are birds in the tree."],
+1334-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+1335-                imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+1336-              },
+1337-              {
+1338-                id: "Diapositiva 8",
+1339-                title: "Complete the sentence (1/3)",
+1340-                description: "A vs An",
+1341-                content: ["I eat ______ orange every morning."],
+--
+1518-            slides: [
+1519-              {
+1520-                id: "Diapositiva 6",
+1521:                title: "Reading Practice",
+1522-                description: "Lee en voz alta este pequeño párrafo:",
+1523-                content: ["I have a dog. His name is Max. He is a big dog.", "He has long ears and a short tail. Has he got brown eyes? Yes, he has."],
+1524-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+1525-                imageUrl: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=800"
+1526-              },
+1527-              {
+1528-                id: "Diapositiva 7",
+1529-                title: "Complete the sentence (1/3)",
+1530-                description: "Have vs Has",
+1531-                content: ["The cat ______ green eyes."],
+--
+1715-            slides: [
+1716-              {
+1717-                id: "Diapositiva 7",
+1718:                title: "Reading Practice",
+1719-                description: "Lee en voz alta este pequeño diálogo:",
+1720-                content: ["- Look at those sandwiches! I want them.", "- I am thirsty. I need water.", "- Give me that apple, please. I like it."],
+1721-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+1722-                imageUrl: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=800"
+1723-              },
+1724-              {
+1725-                id: "Diapositiva 8",
+1726-                title: "Complete the sentence (1/3)",
+1727-                description: "Want vs Need",
+1728-                content: ["I am very hungry. I ______ a sandwich."],
+--
+1905-            slides: [
+1906-              {
+1907-                id: "Diapositiva 6",
+1908:                title: "Reading Practice",
+1909-                description: "Lee en voz alta:",
+1910-                content: ["Excuse me, where is the bank?", "- Go straight and turn left. It's next to the supermarket. It is across from the park."],
+1911-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+1912-                imageUrl: "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=800"
+1913-              },
+1914-              {
+1915-                id: "Diapositiva 7",
+1916-                title: "Complete the sentence (1/3)",
+1917-                description: "Prepositions",
+1918-                content: ["The cat is sleeping ______ the bed. (debajo)"],
+--
+2096-            slides: [
+2097-              {
+2098-                id: "Diapositiva 5",
+2099:                title: "Reading Practice",
+2100-                description: "Lee y comprende el contexto:",
+2101-                content: ["Context: Ordering food at a restaurant.", "- Waiter: Are you ready to order?", "- You: Yes, I will have the chicken."],
+2102-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+2103-                imageUrl: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800"
+2104-              },
+2105-              {
+2106-                id: "Diapositiva 6",
+2107-                title: "Complete the sentence (1/3)",
+2108-                description: "Decide the correct future form",
+2109-                content: ["Look at those dark clouds! It ______ rain."],
+--
+2269-            slides: [
+2270-              {
+2271-                id: "Diapositiva 6",
+2272:                title: "Reading Practice",
+2273-                description: "Lee de forma natural:",
+2274-                content: ["- Hey, are you gonna go to the party tonight?", "- No, I'm not. I'll probably stay home and watch a movie.", "- Ok, I'll see you tomorrow then!"],
+2275-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+2276-                imageUrl: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&q=80&w=800"
+2277-              },
+2278-              {
+2279-                id: "Diapositiva 7",
+2280-                title: "Complete the sentence (1/3)",
+2281-                description: "Questions with Will",
+2282-                content: ["______ you open the door, please?"],
+--
+2435-            slides: [
+2436-              {
+2437-                id: "Diapositiva 5",
+2438:                title: "Reading Practice",
+2439-                description: "Lee la entrevista:",
+2440-                content: ["A: What are you gonna do this weekend?", "B: I'm gonna visit my parents.", "A: Where do they live?", "B: They live in New York."],
+2441-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+2442-                imageUrl: "https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?auto=format&fit=crop&q=80&w=800"
+2443-              },
+2444-              {
+2445-                id: "Diapositiva 6",
+2446-                title: "Complete the sentence (1/3)",
+2447-                description: "WH Words",
+2448-                content: ["______ will you arrive? - At 5:00 PM."],
+--
+2601-            slides: [
+2602-              {
+2603-                id: "Diapositiva 5",
+2604:                title: "Reading Practice",
+2605-                description: "Lee la conversación:",
+2606-                content: ["A: How much sugar do you want in your coffee?", "B: Just a little, please.", "A: What kind of coffee is this?", "B: It's Colombian coffee."],
+2607-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+2608-                imageUrl: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=800"
+2609-              },
+2610-              {
+2611-                id: "Diapositiva 6",
+2612-                title: "Complete the sentence (1/3)",
+2613-                description: "Much vs Many",
+2614-                content: ["______ cars are in the street?"],
+--
+2783-            slides: [
+2784-              {
+2785-                id: "Diapositiva 6",
+2786:                title: "Reading Practice",
+2787-                description: "Lee sobre John:",
+2788-                content: ["John gets up at 6 AM. He always drinks coffee. He works in an office.", "He doesn't eat lunch. After work, he goes to the gym."],
+2789-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+2790-                imageUrl: "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+2791-              },
+2792-              {
+2793-                id: "Diapositiva 7",
+2794-                title: "Complete the sentence (1/3)",
+2795-                description: "3rd Person Rule",
+2796-                content: ["My sister ______ to music every day."],
+--
+2956-            slides: [
+2957-              {
+2958-                id: "Diapositiva 6",
+2959:                title: "Reading Practice",
+2960-                description: "Lee y mira la imagen (imaginaria):",
+2961-                content: ["Look at the park! The children are playing.", "A man is reading a book. A dog is running.", "What are YOU doing? I am looking at the park."],
+2962-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+2963-                imageUrl: "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&q=80&w=800"
+2964-              },
+2965-              {
+2966-                id: "Diapositiva 7",
+2967-                title: "Complete the sentence (1/3)",
+2968-                description: "Affirmative",
+2969-                content: ["They ______ (watch) TV right now."],
+--
+3129-            slides: [
+3130-              {
+3131-                id: "Diapositiva 6",
+3132:                title: "Reading Practice",
+3133-                description: "Lee sobre los hobbies de Sarah:",
+3134-                content: ["Sarah loves reading books. She enjoys spending time with her dog.", "She likes drinking coffee, but she hates waking up early."],
+3135-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+3136-                imageUrl: "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?auto=format&fit=crop&q=80&w=800"
+3137-              },
+3138-              {
+3139-                id: "Diapositiva 7",
+3140-                title: "Complete the sentence (1/3)",
+3141-                description: "Action (Verb)",
+3142-                content: ["I love ______ in the ocean."],
+--
+3302-            slides: [
+3303-              {
+3304-                id: "Diapositiva 6",
+3305:                title: "Reading Practice",
+3306-                description: "Encuentra los tiempos:",
+3307-                content: ["My dad usually works in an office. But right now, he is working at home.", "Tomorrow, he is going to travel to London."],
+3308-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+3309-                imageUrl: "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&q=80&w=800"
+3310-              },
+3311-              {
+3312-                id: "Diapositiva 7",
+3313-                title: "Complete the sentence (1/3)",
+3314-                description: "Look for the keyword",
+3315-                content: ["Listen! The baby ______ (cry)."],
+--
+3477-            slides: [
+3478-              {
+3479-                id: "Diapositiva 5",
+3480:                title: "Reading Practice",
+3481-                description: "Lee la historia de Tom:",
+3482-                content: ["Yesterday, Tom woke up at 7 AM. He ate breakfast and went to work.", "After work, he played video games and slept early."],
+3483-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+3484-                imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+3485-              },
+3486-              {
+3487-                id: "Diapositiva 6",
+3488-                title: "Complete the sentence (1/3)",
+3489-                description: "Regular Verb",
+3490-                content: ["Last night, I ______ (watch) a great movie."],
+--
+3650-            slides: [
+3651-              {
+3652-                id: "Diapositiva 6",
+3653:                title: "Reading Practice",
+3654-                description: "Lee la entrevista:",
+3655-                content: ["Cop: Where did you go last night?", "Suspect: I didn't go out. I stayed home.", "Cop: Did you see anyone?", "Suspect: No, I didn't see anybody."],
+3656-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+3657-                imageUrl: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800"
+3658-              },
+3659-              {
+3660-                id: "Diapositiva 7",
+3661-                title: "Complete the sentence (1/3)",
+3662-                description: "Negative verb form",
+3663-                content: ["I ______ (not watch) TV yesterday."],
+--
+3816-            slides: [
+3817-              {
+3818-                id: "Diapositiva 5",
+3819:                title: "Reading Practice",
+3820-                description: "Storytime:",
+3821-                content: ["Yesterday, I was walking in the park when it started to rain.", "While I was running home, I saw my friend."],
+3822-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+3823-                imageUrl: "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&q=80&w=800"
+3824-              },
+3825-              {
+3826-                id: "Diapositiva 6",
+3827-                title: "Complete the sentence (1/3)",
+3828-                description: "Was/Were",
+3829-                content: ["They ______ (play) soccer outside."],
+--
+3989-            slides: [
+3990-              {
+3991-                id: "Diapositiva 6",
+3992:                title: "Reading Practice",
+3993-                description: "Lee exagerando la pronunciación:",
+3994-                content: ["I worked (/t/) all day.", "Then I called (/d/) my friend.", "We decided (/id/) to watch a movie."],
+3995-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+3996-              },
+3997-              {
+3998-                id: "Diapositiva 7",
+3999-                title: "Complete the sentence (1/3)",
+4000-                description: "Pronounciation",
+4001-                content: ["How do you pronounce: WASHED"],
+4002-                options: ["wash-ed", "wash-d", "wash-t"],
+--
+4162-            slides: [
+4163-              {
+4164-                id: "Diapositiva 5",
+4165:                title: "Reading Practice",
+4166-                description: "Find the mistakes (Hay 3 errores!):",
+4167-                content: ["Yesterday, I go to the park.", "I usually eating pizza on Fridays.", "Tomorrow, I didn't work."],
+4168-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+4169-                imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
+4170-              },
+4171-              {
+4172-                id: "Diapositiva 6",
+4173-                title: "Complete the sentence (1/3)",
+4174-                description: "Time keyword",
+4175-                content: ["I always ______ my bed in the morning."],
+--
+4328-            slides: [
+4329-              {
+4330-                id: "Diapositiva 5",
+4331:                title: "Reading Practice",
+4332-                description: "Lee la agenda de Mark:",
+4333-                content: ["Mark is very busy right now. He is typing an email.", "Tonight, he is having dinner with his wife. Tomorrow, he is presenting a project."],
+4334-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+4335-              },
+4336-              {
+4337-                id: "Diapositiva 6",
+4338-                title: "Complete the sentence (1/3)",
+4339-                description: "Now vs Future",
+4340-                content: ["Sshh! I ______ (study) right now."],
+4341-                options: ["study", "am studying", "will study"],
+--
+4821-            slides: [
+4822-              {
+4823-                id: "Diapositiva 5",
+4824:                title: "Reading Practice",
+4825-                description: "The Traveler:",
+4826-                content: ["I have travelled to many countries.", "Last year, I went to Japan.", "I have eaten sushi before, but the sushi in Tokyo was the best!"],
+4827-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+4828-                imageUrl: "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&q=80&w=800"
+4829-              },
+4830-              {
+4831-                id: "Diapositiva 6",
+4832-                title: "Complete the sentence (1/3)",
+4833-                description: "Choose the tense",
+4834-                content: ["I ______ (see) that movie three times in my life."],
+--
+4987-            slides: [
+4988-              {
+4989-                id: "Diapositiva 5",
+4990:                title: "Reading Practice",
+4991-                description: "My Job:",
+4992-                content: ["I have worked as a doctor since 2010.", "I have lived in this city for 10 years.", "It's a long time!"],
+4993-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+4994-                imageUrl: "https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?auto=format&fit=crop&q=80&w=800"
+4995-              },
+4996-              {
+4997-                id: "Diapositiva 6",
+4998-                title: "Complete the sentence (1/3)",
+4999-                description: "For or Since?",
+5000-                content: ["I have known my best friend ______ 15 years."],
+--
+5153-            slides: [
+5154-              {
+5155-                id: "Diapositiva 5",
+5156:                title: "Reading Practice",
+5157-                description: "The City vs The Country:",
+5158-                content: ["New York is bigger than my town.", "But my town is quieter than New York.", "New York is the most exciting city in the world!"],
+5159-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+5160-                imageUrl: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&q=80&w=800"
+5161-              },
+5162-              {
+5163-                id: "Diapositiva 6",
+5164-                title: "Complete the sentence (1/3)",
+5165-                description: "Comparative",
+5166-                content: ["A Ferrari is ______ (fast) than a Toyota."],
+--
+5319-            slides: [
+5320-              {
+5321-                id: "Diapositiva 5",
+5322:                title: "Reading Practice",
+5323-                description: "Growing up:",
+5324-                content: ["When I was a kid, I used to hate vegetables.", "I didn't use to eat them at all.", "But yesterday, I ate a big salad!"],
+5325-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+5326-                imageUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800"
+5327-              },
+5328-              {
+5329-                id: "Diapositiva 6",
+5330-                title: "Complete the sentence (1/3)",
+5331-                description: "Affirmative",
+5332-                content: ["I ______ (use) to ride my bike every day."],
+--
+5485-            slides: [
+5486-              {
+5487-                id: "Diapositiva 5",
+5488:                title: "Reading Practice",
+5489-                description: "The Rules:",
+5490-                content: ["To drive, you HAVE TO get a license.", "You MUSTN'T use your phone while driving.", "You SHOULD drive slowly in the rain."],
+5491-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+5492-                imageUrl: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800"
+5493-              },
+5494-              {
+5495-                id: "Diapositiva 6",
+5496-                title: "Complete the sentence (1/3)",
+5497-                description: "Advice",
+5498-                content: ["You look tired. You ______ sleep."],
+--
+5651-            slides: [
+5652-              {
+5653-                id: "Diapositiva 5",
+5654:                title: "Reading Practice",
+5655-                description: "If I were the president...",
+5656-                content: ["If I were the president, I would build more parks.", "If I had superpowers, I would fly to work.", "I wouldn't take the bus!"],
+5657-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+5658-                imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+5659-              },
+5660-              {
+5661-                id: "Diapositiva 6",
+5662-                title: "Complete the sentence (1/3)",
+5663-                description: "Condition part",
+5664-                content: ["If I ______ (have) more time, I would learn French."],
+--
+5826-            slides: [
+5827-              {
+5828-                id: "Diapositiva 5",
+5829:                title: "Reading Practice",
+5830-                description: "The Angry Client:",
+5831-                content: ["Client: You lost my package!", "Agent: I apologize. The package was lost in transit. (Passive)", "If we refund your money, will you be satisfied? (First conditional)"],
+5832-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+5833-              },
+5834-              {
+5835-                id: "Diapositiva 6",
+5836-                title: "Complete the sentence (1/3)",
+5837-                description: "Diplomacy",
+5838-                content: ["Instead of 'You made a mistake', say: A mistake ______."],
+5839-                options: ["made", "was made", "is making"],
+--
+5991-            slides: [
+5992-              {
+5993-                id: "Diapositiva 5",
+5994:                title: "Reading Practice",
+5995-                description: "The New Office:",
+5996-                content: ["The old office WAS DESTROYED by a fire last year.", "Now, a new office IS BEING BUILT.", "It WILL BE FINISHED next month!"],
+5997-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+5998-                imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
+5999-              },
+6000-              {
+6001-                id: "Diapositiva 6",
+6002-                title: "Complete the sentence (1/3)",
+6003-                description: "Passive Past",
+6004-                content: ["Harry Potter ______ (write) by J.K. Rowling."],
+--
+6157-            slides: [
+6158-              {
+6159-                id: "Diapositiva 5",
+6160:                title: "Reading Practice",
+6161-                description: "The Detective & The Thief:",
+6162-                content: ["Detective: The window is broken. He MUST HAVE escaped here.", "Thief (in jail): I SHOULD HAVE run faster. I SHOULDN'T HAVE stopped to eat a burger!"],
+6163-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+6164-                imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+6165-              },
+6166-              {
+6167-                id: "Diapositiva 6",
+6168-                title: "Complete the sentence (1/3)",
+6169-                description: "Regret",
+6170-                content: ["I failed the test. I ______ studied more."],
+--
+6498-            slides: [
+6499-              {
+6500-                id: "Diapositiva 5",
+6501:                title: "Reading Practice",
+6502-                description: "The Negotiation:",
+6503-                content: ["The CEO said: 'We WILL increase salaries'.", "The HR Manager told us: 'They WOULD increase salaries'.", "But... nothing happened!"],
+6504-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+6505-                imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
+6506-              },
+6507-              {
+6508-                id: "Diapositiva 6",
+6509-                title: "Complete the sentence (1/3)",
+6510-                description: "Present -> Past",
+6511-                content: ["'I want a coffee'. He said that he ______ a coffee."],
+--
+6664-            slides: [
+6665-              {
+6666-                id: "Diapositiva 5",
+6667:                title: "Reading Practice",
+6668-                description: "The Failed Project:",
+6669-                content: ["The project failed. By December, we WON'T HAVE REACHED our goals.", "If the boss HAD LISTENED to us, we WOULD HAVE SUCCEEDED."],
+6670-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+6671-                imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+6672-              },
+6673-              {
+6674-                id: "Diapositiva 6",
+6675-                title: "Complete the sentence (1/3)",
+6676-                description: "Future Perfect",
+6677-                content: ["By next year, I ______ (save) $10,000."],
+--
+6830-            slides: [
+6831-              {
+6832-                id: "Diapositiva 5",
+6833:                title: "Reading Practice",
+6834-                description: "The Immigrant:",
+6835-                content: ["I USED TO live in Mexico (past).", "When I moved to Canada, the snow was crazy.", "I am GETTING USED TO the cold (process).", "Now, I AM USED TO drinking hot tea every morning (habit)."],
+6836-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+6837-                imageUrl: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+6838-              },
+6839-              {
+6840-                id: "Diapositiva 6",
+6841-                title: "Complete the sentence (1/3)",
+6842-                description: "Past Habit",
+6843-                content: ["When I was a kid, I ______ play video games all day."],
+--
+6996-            slides: [
+6997-              {
+6998-                id: "Diapositiva 5",
+6999:                title: "Reading Practice",
+7000-                description: "The Formal Email:",
+7001-                content: ["Dear team,", "IT IS EXPECTED that the new rules will start tomorrow.", "The new software is NOT AS difficult AS we thought.", "IT IS BELIEVED to be very efficient."],
+7002-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+7003-                imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800"
+7004-              },
+7005-              {
+7006-                id: "Diapositiva 6",
+7007-                title: "Complete the sentence (1/3)",
+7008-                description: "As...As",
+7009-                content: ["My English is ______ good ______ yours."],
+--
+7162-            slides: [
+7163-              {
+7164-                id: "Diapositiva 5",
+7165:                title: "Reading Practice",
+7166-                description: "A Bad Day:",
+7167-                content: ["I WAS GOING TO go to the gym today (Plan).", "I put on my shoes. I WAS ABOUT TO open the door when the phone rang.", "It was my boss. He said he WAS ABOUT TO fire me!"],
+7168-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
+7169-                imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+7170-              },
+7171-              {
+7172-                id: "Diapositiva 6",
+7173-                title: "Complete the sentence (1/3)",
+7174-                description: "Immediate future",
+7175-                content: ["Hurry up! The train is ______ leave!"],
