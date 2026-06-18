@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Target, CheckCircle, XCircle, ArrowRight, Play, BookOpen } from 'lucide-react';
 import { curriculumLevels } from '../data/curriculum';
 import { dbAdmin } from '../lib/db';
@@ -24,6 +24,12 @@ export function VirtualEvaluationView({ levelId }: Props) {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [inputValue, setInputValue] = useState('');
+
+  useEffect(() => {
+    if (level) {
+      document.title = `Evaluación: ${level.title} ${studentName ? `- ${studentName}` : ''}`;
+    }
+  }, [level, studentName]);
 
   if (!level) {
     return (
