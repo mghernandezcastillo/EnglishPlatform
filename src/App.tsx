@@ -27,6 +27,29 @@ export default function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    // Check URL
+    const params = new URLSearchParams(window.location.search);
+    const studentIdParam = params.get('studentId');
+    
+    if (studentIdParam) {
+      dbAdmin.getStudents().then(students => {
+        const s = students.find(s => s.id === studentIdParam);
+        if (s) {
+          setCurrentStudentId(s.id);
+          setProgress({
+            completedLessons: s.completed_lessons || [],
+            currentLessonId: '',
+            level: s.level || 'Nivel Inicial',
+            studentName: s.name,
+            avatarId: s.avatar_id
+          });
+          setRole('student');
+        }
+        setIsLoaded(true);
+      });
+      return;
+    }
+
     // Only load initial if no student selected yet
     if (role !== 'none') return;
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -197,7 +220,7 @@ export default function App() {
             Atención: Faltan las variables VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY en el menú Settings para conectar con la base de datos real.
           </div>
         )}
-        <RoleSelection onSelectTeacher={handleSelectTeacher} onSelectStudent={handleSelectStudent} />
+        <RoleSelection onSelectTeacher={handleSelectTeacher} />
       </div>
     );
   }
@@ -205,7 +228,7 @@ export default function App() {
   if (role === 'teacher') {
     return (
       <div className="min-h-screen bg-slate-50 font-sans">
-        <TeacherDashboard onBack={() => setRole('none')} />
+        <TeacherDashboard onBack={() => setRole('none')} onEnterAsStudent={handleSelectStudent} />
       </div>
     );
   }

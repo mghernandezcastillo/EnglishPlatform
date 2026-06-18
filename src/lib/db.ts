@@ -81,6 +81,23 @@ export const dbAdmin = {
     }
   },
 
+  getBrandSettings: async (): Promise<any> => {
+    const { data, error } = await supabase.from('settings').select('*').limit(1).single();
+    if (error) {
+       console.warn('Settings not found in Supabase. Using local.', error);
+       return JSON.parse(localStorage.getItem('brand_settings') || 'null');
+    }
+    return data;
+  },
+
+  saveBrandSettings: async (settings: any) => {
+    const { error } = await supabase.from('settings').upsert({ id: 'default', ...settings });
+    if (error) {
+       console.error("Error saving settings:", error);
+    }
+    localStorage.setItem('brand_settings', JSON.stringify(settings));
+  },
+
   getEvaluations: async (): Promise<any[]> => {
     const { data, error } = await supabase.from('evaluations').select('*').order('created_at', { ascending: false });
     if (error) {
@@ -88,6 +105,36 @@ export const dbAdmin = {
        return JSON.parse(localStorage.getItem('mock_evaluations') || '[]');
     }
     return data || [];
+  },
+
+  getEvaluationProgress: async (levelId: string, studentName: string): Promise<any> => {
+    const studentSafe = studentName.toLowerCase().trim();
+    const { data, error } = await supabase.from('evaluation_progress').select('*').eq('level_id', levelId).eq('student_name', studentSafe).single();
+    if (error) {
+       console.warn('Evaluation progress not found in Supabase.', error);
+       return JSON.parse(localStorage.getItem(`virtual_exam_progress_${levelId}_${studentSafe}`) || 'null');
+    }
+    return data;
+  },
+
+  saveEvaluationProgress: async (levelId: string, studentName: string, progress: any) => {
+    const studentSafe = studentName.toLowerCase().trim();
+    const { error } = await supabase.from('evaluation_progress').upsert({ 
+       id: `${levelId}_${studentSafe}`,
+       level_id: levelId, 
+       student_name: studentSafe, 
+       ...progress 
+    });
+    if (error) {
+       console.error("Error saving evaluation progress:", error);
+    }
+    localStorage.setItem(`virtual_exam_progress_${levelId}_${studentSafe}`, JSON.stringify(progress));
+  },
+
+  clearEvaluationProgress: async (levelId: string, studentName: string) => {
+    const studentSafe = studentName.toLowerCase().trim();
+    const { error } = await supabase.from('evaluation_progress').delete().eq('level_id', levelId).eq('student_name', studentSafe);
+    localStorage.removeItem(`virtual_exam_progress_${levelId}_${studentSafe}`);
   },
 
   saveEvaluationScore: async (studentName: string, levelId: string, score: number, total: number, answers: any) => {

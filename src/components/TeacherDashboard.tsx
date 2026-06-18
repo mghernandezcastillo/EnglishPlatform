@@ -5,16 +5,18 @@ import { Users, UserPlus, BookOpen, ChevronLeft, Save, Target } from 'lucide-rea
 import { avatars } from '../config';
 import { CurriculumView } from './CurriculumView';
 import { curriculumLevels } from '../data/curriculum';
+import { useBrand } from '../hooks/useBrand';
 
 interface TeacherDashboardProps {
   onBack: () => void;
+  onEnterAsStudent?: (student: DbStudent) => void;
 }
 
-export function TeacherDashboard({ onBack }: TeacherDashboardProps) {
+export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardProps) {
   const [students, setStudents] = useState<DbStudent[]>([]);
   const [groups, setGroups] = useState<DbGroup[]>([]);
   const [evaluations, setEvaluations] = useState<any[]>([]);
-  const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum'>('students');
+  const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'settings'>('students');
   const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
 
   const [isCreatingStudent, setIsCreatingStudent] = useState(false);
@@ -22,6 +24,13 @@ export function TeacherDashboard({ onBack }: TeacherDashboardProps) {
 
   const [isCreatingGroup, setIsCreatingGroup] = useState(false);
   const [newGroupName, setNewGroupName] = useState('');
+  
+  const { brand, saveBrand } = useBrand();
+  const [editingBrand, setEditingBrand] = useState(brand);
+
+  useEffect(() => {
+    setEditingBrand(brand);
+  }, [brand]);
 
   useEffect(() => {
     loadData();
@@ -73,16 +82,36 @@ export function TeacherDashboard({ onBack }: TeacherDashboardProps) {
             <button onClick={() => setSelectedStudent(null)} className="mb-6 flex items-center gap-2 text-gray-500 hover:text-indigo-600 font-medium">
                 <ChevronLeft className="w-5 h-5" /> Volver a Estudiantes
             </button>
-            <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col md:flex-row items-center gap-6">
-                <img src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
-                <div>
-                   <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
-                   <div className="flex gap-3 mt-2">
-                       <span className="text-sm font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">{selectedStudent.level}</span>
-                       {selectedStudent.group_id && <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">En grupo</span>}
-                   </div>
+             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col md:flex-row items-center gap-6 justify-between">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  <img src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
+                  <div>
+                     <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
+                     <div className="flex gap-3 mt-2">
+                         <span className="text-sm font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">{selectedStudent.level}</span>
+                         {selectedStudent.group_id && <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">En grupo</span>}
+                     </div>
+                  </div>
                 </div>
-            </div>
+                <div className="flex flex-col gap-2 w-full md:w-auto">
+                    <button 
+                       onClick={() => onEnterAsStudent && onEnterAsStudent(selectedStudent)}
+                       className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-xl transition-all shadow-sm"
+                    >
+                       Dictar a este alumno
+                    </button>
+                    <button 
+                       onClick={() => {
+                          const url = `${window.location.origin}/?studentId=${selectedStudent.id}`;
+                          navigator.clipboard.writeText(url);
+                          alert('¡Enlace de acceso copiado al portapapeles!');
+                       }}
+                       className="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-2 px-4 rounded-xl transition-all"
+                    >
+                       Copiar Link de Acceso
+                    </button>
+                </div>
+             </div>
 
             <div className="mb-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">Evaluaciones del Nivel Actual</h2>
@@ -151,12 +180,17 @@ export function TeacherDashboard({ onBack }: TeacherDashboardProps) {
         <ChevronLeft className="w-5 h-5" /> Volver al Inicio
       </button>
 
-      <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div>
-          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">Panel de Profesor</h1>
-          <p className="text-gray-500 mt-2">Gestiona estudiantes, grupos y supervisa su progreso.</p>
+      <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col items-start gap-6">
+        <div className="flex items-center gap-4 w-full justify-between flex-wrap">
+           <div className="flex items-center gap-4">
+             {brand.logoUrl && <img src={brand.logoUrl} alt={brand.name} className="w-12 h-12 object-contain rounded-xl" />}
+             <div>
+               <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">Panel de Profesor</h1>
+               <p className="text-gray-500 mt-1">Gestiona estudiantes, grupos y supervisa su progreso.</p>
+             </div>
+           </div>
         </div>
-        <div className="flex flex-wrap gap-4 mt-6 md:mt-0">
+        <div className="flex flex-wrap gap-4 mt-6 md:mt-0 w-full md:w-auto">
           <button 
             onClick={() => setActiveTab('students')}
             className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'students' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
@@ -180,6 +214,12 @@ export function TeacherDashboard({ onBack }: TeacherDashboardProps) {
             className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'curriculum' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
           >
              Material & Exámenes
+          </button>
+          <button 
+            onClick={() => setActiveTab('settings')}
+            className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'settings' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+          >
+             Marca & Config
           </button>
         </div>
       </div>
@@ -345,6 +385,60 @@ export function TeacherDashboard({ onBack }: TeacherDashboardProps) {
       {activeTab === 'curriculum' && (
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
            <CurriculumView />
+        </div>
+      )}
+
+      {activeTab === 'settings' && (
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-bold text-gray-800">Configuración de Marca</h2>
+          </div>
+          <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 max-w-2xl">
+            <div className="mb-6">
+               <label className="block text-sm font-bold text-gray-700 mb-2">Nombre de la Academia</label>
+               <input 
+                 type="text" 
+                 value={editingBrand.name} 
+                 onChange={e => setEditingBrand({...editingBrand, name: e.target.value})} 
+                 className="w-full px-4 py-3 border-2 border-gray-100 focus:border-indigo-500 rounded-xl outline-none"
+               />
+            </div>
+            <div className="mb-6">
+               <label className="block text-sm font-bold text-gray-700 mb-2">URL del Logo (Public / HTTP)</label>
+               <div className="flex items-center gap-4">
+                 {editingBrand.logoUrl && (
+                   <img src={editingBrand.logoUrl} alt="Logo Preview" className="w-16 h-16 object-contain border border-gray-200 rounded-xl" />
+                 )}
+                 <input 
+                   type="text" 
+                   value={editingBrand.logoUrl} 
+                   onChange={e => setEditingBrand({...editingBrand, logoUrl: e.target.value})} 
+                   className="flex-1 px-4 py-3 border-2 border-gray-100 focus:border-indigo-500 rounded-xl outline-none"
+                 />
+               </div>
+               <p className="text-xs text-gray-400 mt-2">Puedes subir el logo externamente e indicar aquí el link. O usar un logo local como /logo.jpg</p>
+            </div>
+            <div className="mb-8">
+               <label className="block text-sm font-bold text-gray-700 mb-2">PIN de Acceso Profesor (4 dígitos)</label>
+               <input 
+                 type="text" 
+                 maxLength={4}
+                 value={editingBrand.teacherPin} 
+                 onChange={e => setEditingBrand({...editingBrand, teacherPin: e.target.value.replace(/\D/g, '')})} 
+                 className="w-32 text-center text-xl tracking-widest font-mono py-2 border-2 border-gray-100 focus:border-indigo-500 rounded-xl outline-none"
+               />
+            </div>
+            <button 
+              onClick={() => {
+                saveBrand(editingBrand);
+                alert('Configuración guardada correctamente.');
+              }}
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-xl flex items-center gap-2 transition-all"
+            >
+              <Save className="w-5 h-5" />
+              Guardar Configuración
+            </button>
+          </div>
         </div>
       )}
     </div>

@@ -2189,76 +2189,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "Greetings & Basics",
-              "question": "Hello! How are you today? What is your name?"
-            },
-            {
-              "topic": "Numbers & Dates",
-              "question": "How old are you? When is your birthday?"
-            },
-            {
-              "topic": "Family",
-              "question": "Tell me about your family. Do you have brothers or sisters?"
-            },
-            {
-              "topic": "Daily Routine & Time",
-              "question": "What time do you usually wake up? What do you do in the morning?"
-            },
-            {
-              "topic": "Likes & Dislikes",
-              "question": "What food do you like? Is there any food you don't like?"
-            }
-          ],
+              { topic: "Greetings & Basics", question: "Hello! How are you today? What is your name?" },
+              { topic: "Daily Routine", question: "What is your daily routine? What time do you wake up?" },
+              { topic: "Numbers & Dates", question: "How old are you? When is your birthday? What is your phone number?" },
+              { topic: "Family & Description", question: "Tell me about your family. Do you have brothers or sisters? What do they look like?" },
+              { topic: "Likes & Dislikes", question: "What kind of food do you like? What do you do in your free time?" }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "Hello, I ___ a student. My name ___ John.",
-              "options": [
-                "am / is",
-                "is / am",
-                "are / is"
-              ],
-              "correctAnswer": "am / is"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "There ___ three apples on the table.",
-              "options": [
-                "is",
-                "are",
-                "be"
-              ],
-              "correctAnswer": "are"
-            },
-            {
-              "id": "v3",
-              "type": "fill-in-the-blanks",
-              "question": "She ___ (wake) up at 7:00 AM every day.",
-              "options": [],
-              "correctAnswer": "wakes"
-            },
-            {
-              "id": "v4",
-              "type": "listening",
-              "question": "Listen and type the number you hear.",
-              "audioText": "Seventy-five",
-              "options": [],
-              "correctAnswer": "75"
-            },
-            {
-              "id": "v5",
-              "type": "multiple-choice",
-              "question": "My mother's sister is my ___.",
-              "options": [
-                "aunt",
-                "uncle",
-                "cousin"
-              ],
-              "correctAnswer": "aunt"
-            }
+          {
+                          id: "vq-1-1",
+                          type: "multiple-choice",
+                          question: "You ___ from Spain.",
+                          options: ["are", "is", "am"],
+                          correctAnswer: "are"
+                      },
+          {
+                          id: "vq-1-2",
+                          type: "multiple-choice",
+                          question: "He ___ from Spain.",
+                          options: ["is", "am", "are"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-3",
+                          type: "multiple-choice",
+                          question: "She ___ from Spain.",
+                          options: ["am", "are", "is"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-4",
+                          type: "multiple-choice",
+                          question: "It ___ from Spain.",
+                          options: ["am", "are", "is"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-5",
+                          type: "multiple-choice",
+                          question: "We ___ from Spain.",
+                          options: ["am", "are", "is"],
+                          correctAnswer: "are"
+                      },
+          {
+                          id: "vq-1-6",
+                          type: "multiple-choice",
+                          question: "They ___ from Spain.",
+                          options: ["is", "am", "are"],
+                          correctAnswer: "are"
+                      },
+          {
+                          id: "vq-1-7",
+                          type: "multiple-choice",
+                          question: "My friend ___ from Spain.",
+                          options: ["is", "are", "am"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-8",
+                          type: "multiple-choice",
+                          question: "The cat ___ from Spain.",
+                          options: ["is", "are", "am"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-9",
+                          type: "multiple-choice",
+                          question: "Mary ___ from Spain.",
+                          options: ["am", "are", "is"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-10",
+                          type: "multiple-choice",
+                          question: "I ___ from Spain.",
+                          options: ["is", "is", "am"],
+                          correctAnswer: "am"
+                      },
+          {
+                          id: "vq-1-11",
+                          type: "multiple-choice",
+                          question: "___ You happy?",
+                          options: ["am", "are", "is"],
+                          correctAnswer: "are"
+                      },
+          {
+                          id: "vq-1-12",
+                          type: "multiple-choice",
+                          question: "___ He happy?",
+                          options: ["is", "are", "am"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-13",
+                          type: "multiple-choice",
+                          question: "___ She happy?",
+                          options: ["am", "are", "is"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-14",
+                          type: "multiple-choice",
+                          question: "___ It happy?",
+                          options: ["are", "is", "am"],
+                          correctAnswer: "is"
+                      },
+          {
+                          id: "vq-1-15",
+                          type: "multiple-choice",
+                          question: "___ We happy?",
+                          options: ["are", "is", "am"],
+                          correctAnswer: "are"
+                      },
+          {
+                          id: "vq-1-16",
+                          type: "multiple-choice",
+                          question: "The color of an apple is usually ___.",
+                          options: ["black", "red", "blue"],
+                          correctAnswer: "red"
+                      },
+          {
+                          id: "vq-1-17",
+                          type: "multiple-choice",
+                          question: "The color of an apple is usually ___.",
+                          options: ["black", "red", "blue"],
+                          correctAnswer: "red"
+                      },
+          {
+                          id: "vq-1-18",
+                          type: "multiple-choice",
+                          question: "The color of an apple is usually ___.",
+                          options: ["black", "blue", "red"],
+                          correctAnswer: "red"
+                      },
+          {
+                          id: "vq-1-19",
+                          type: "multiple-choice",
+                          question: "The color of an apple is usually ___.",
+                          options: ["blue", "red", "black"],
+                          correctAnswer: "red"
+                      },
+          {
+                          id: "vq-1-20",
+                          type: "multiple-choice",
+                          question: "The color of an apple is usually ___.",
+                          options: ["red", "blue", "black"],
+                          correctAnswer: "red"
+                      }
           ]
 },
   {
@@ -3016,76 +3093,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "Future Plans (Will/Going to)",
-              "question": "What are you going to do this weekend?"
-            },
-            {
-              "topic": "Future Intentions",
-              "question": "Where do you think you will be in 5 years?"
-            },
-            {
-              "topic": "Countable / Uncountable",
-              "question": "How much water do you drink every day? How many cups of coffee?"
-            },
-            {
-              "topic": "Directions & Places",
-              "question": "How do I get to the nearest supermarket from your house?"
-            }
-          ],
+              { topic: "Present Continuous vs Simple", question: "What are you wearing right now? What do you usually wear to work?" },
+              { topic: "Future Plans (Will/Going to)", question: "What are you going to do this weekend? Will you travel soon?" },
+              { topic: "Future Intentions", question: "Where do you think you will be in 5 years? What are your goals?" },
+              { topic: "Countable / Uncountable", question: "Tell me about your diet. How much water do you drink? How many meals do you have a day?" },
+              { topic: "Giving Directions", question: "How do I get to the nearest supermarket from your house?" }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "I think it ___ rain tomorrow.",
-              "options": [
-                "is going to",
-                "will",
-                "going to"
-              ],
-              "correctAnswer": "will"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "We ___ visit my grandparents next weekend. We have the tickets.",
-              "options": [
-                "are going to",
-                "will",
-                "go to"
-              ],
-              "correctAnswer": "are going to"
-            },
-            {
-              "id": "v3",
-              "type": "multiple-choice",
-              "question": "___ milk do we have in the fridge?",
-              "options": [
-                "How many",
-                "How much",
-                "What amount"
-              ],
-              "correctAnswer": "How much"
-            },
-            {
-              "id": "v4",
-              "type": "listening",
-              "question": "Listen and select the correct option.",
-              "audioText": "I am going to study medicine next year.",
-              "options": [
-                "The person is studying medicine now.",
-                "The person plans to study medicine.",
-                "The person studied medicine."
-              ],
-              "correctAnswer": "The person plans to study medicine."
-            },
-            {
-              "id": "v5",
-              "type": "fill-in-the-blanks",
-              "question": "Go straight, then turn ___ at the corner.",
-              "options": [],
-              "correctAnswer": "left"
-            }
+          {
+                          id: "vq-2-1",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["go", "going", "goes"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-2",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eat", "eating", "eats"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-3",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["going", "goes", "go"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-4",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eating", "eat", "eats"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-5",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["going", "goes", "go"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-6",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eating", "eat", "eats"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-7",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["go", "going", "goes"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-8",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eating", "eat", "eats"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-9",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["go", "going", "goes"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-10",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eating", "eat", "eats"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-11",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["going", "go", "goes"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-12",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eats", "eat", "eating"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-13",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["go", "goes", "going"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-14",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eating", "eat", "eats"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-15",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["go", "goes", "going"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-16",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eats", "eating", "eat"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-17",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["go", "going", "goes"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-18",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eats", "eat", "eating"],
+                          correctAnswer: "eats"
+                      },
+          {
+                          id: "vq-2-19",
+                          type: "multiple-choice",
+                          question: "Every day, I ___ to school.",
+                          options: ["go", "goes", "going"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-2-20",
+                          type: "multiple-choice",
+                          question: "She ___ breakfast at 7 AM.",
+                          options: ["eat", "eating", "eats"],
+                          correctAnswer: "eats"
+                      }
           ]
 },
   {
@@ -3865,76 +4019,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "Present Simple vs Continuous",
-              "question": "What do you usually do on weekends? And what are you doing right now?"
-            },
-            {
-              "topic": "Work & Study Routines",
-              "question": "Tell me about your job or studies. What does a typical day look like?"
-            },
-            {
-              "topic": "Describing Activities",
-              "question": "Describe a project you are currently working on this month."
-            },
-            {
-              "topic": "Likes & Preferences",
-              "question": "What kind of movies do you enjoy watching? Why?"
-            }
-          ],
+              { topic: "Habits & Routines", question: "What do you usually do on weekends? How often do you exercise?" },
+              { topic: "Current Ongoing Actions", question: "Are you reading any interesting books these days? What are you studying right now?" },
+              { topic: "Work & Study Life", question: "Tell me about your job or studies. What does a typical day look like?" },
+              { topic: "Likes & Preferences", question: "Do you prefer staying home or going out on weekends? Why?" },
+              { topic: "Describing Activities", question: "Describe a project or hobby you are currently working on this month." }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "She usually ___ coffee, but today she ___ tea.",
-              "options": [
-                "drinks / is drinking",
-                "is drinking / drinks",
-                "drink / is drinking"
-              ],
-              "correctAnswer": "drinks / is drinking"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "Look! The boys ___ in the garden.",
-              "options": [
-                "play",
-                "are playing",
-                "playing"
-              ],
-              "correctAnswer": "are playing"
-            },
-            {
-              "id": "v3",
-              "type": "fill-in-the-blanks",
-              "question": "I can't talk right now, I ___ (drive).",
-              "options": [],
-              "correctAnswer": "am driving"
-            },
-            {
-              "id": "v4",
-              "type": "listening",
-              "question": "Listen and answer: What is he doing?",
-              "audioText": "He is reading a book in the living room.",
-              "options": [
-                "He reads every day.",
-                "He is reading right now.",
-                "He read a book yesterday."
-              ],
-              "correctAnswer": "He is reading right now."
-            },
-            {
-              "id": "v5",
-              "type": "multiple-choice",
-              "question": "Water ___ at 100 degrees Celsius.",
-              "options": [
-                "boils",
-                "is boiling",
-                "boil"
-              ],
-              "correctAnswer": "boils"
-            }
+          {
+                          id: "vq-3-1",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watched", "watch", "watching"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-2",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["went", "go", "going"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-3",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watching", "watch", "watched"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-4",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["went", "go", "going"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-5",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watched", "watch", "watching"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-6",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["go", "going", "went"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-7",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watching", "watch", "watched"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-8",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["going", "went", "go"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-9",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watching", "watch", "watched"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-10",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["went", "go", "going"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-11",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watched", "watch", "watching"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-12",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["going", "go", "went"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-13",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watched", "watch", "watching"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-14",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["go", "went", "going"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-15",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watched", "watch", "watching"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-16",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["going", "went", "go"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-17",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watch", "watched", "watching"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-18",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["go", "went", "going"],
+                          correctAnswer: "go"
+                      },
+          {
+                          id: "vq-3-19",
+                          type: "multiple-choice",
+                          question: "Yesterday, we ___ a great movie.",
+                          options: ["watched", "watching", "watch"],
+                          correctAnswer: "watched"
+                      },
+          {
+                          id: "vq-3-20",
+                          type: "multiple-choice",
+                          question: "They didn't ___ to the party.",
+                          options: ["go", "went", "going"],
+                          correctAnswer: "go"
+                      }
           ]
 },
   {
@@ -4699,76 +4930,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "Past Simple",
-              "question": "What did you do last weekend?"
-            },
-            {
-              "topic": "Past Continuous",
-              "question": "What were you doing yesterday at 8 PM?"
-            },
-            {
-              "topic": "Life Experiences",
-              "question": "Tell me about your best vacation ever. Where did you go?"
-            },
-            {
-              "topic": "Storytelling",
-              "question": "Tell me a short story about something funny that happened to you in the past."
-            }
-          ],
+              { topic: "Past Simple Routine", question: "What did you do last weekend? Did you go anywhere interesting?" },
+              { topic: "Childhood Memories", question: "What was your favorite toy or game when you were a child? What were you like?" },
+              { topic: "Past Continuous Context", question: "What were you doing yesterday at 8 PM? Were you watching TV?" },
+              { topic: "Interrupted Actions", question: "Tell me about a time when you were doing something and something surprising happened." },
+              { topic: "Life Experiences", question: "Tell me about your best vacation ever. Where did you go, and who did you go with?" }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "I ___ late for work yesterday because I ___ my train.",
-              "options": [
-                "was / missed",
-                "am / missing",
-                "were / missed"
-              ],
-              "correctAnswer": "was / missed"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "While I ___ TV, the phone ___.",
-              "options": [
-                "watched / was ringing",
-                "was watching / rang",
-                "watching / rang"
-              ],
-              "correctAnswer": "was watching / rang"
-            },
-            {
-              "id": "v3",
-              "type": "fill-in-the-blanks",
-              "question": "She ___ (go) to Paris last summer.",
-              "options": [],
-              "correctAnswer": "went"
-            },
-            {
-              "id": "v4",
-              "type": "listening",
-              "question": "Where were they?",
-              "audioText": "We were walking in the park when it started to rain.",
-              "options": [
-                "In the park",
-                "At home",
-                "In a car"
-              ],
-              "correctAnswer": "In the park"
-            },
-            {
-              "id": "v5",
-              "type": "multiple-choice",
-              "question": "How is the '-ed' in 'worked' pronounced?",
-              "options": [
-                "/t/",
-                "/d/",
-                "/id/"
-              ],
-              "correctAnswer": "/t/"
-            }
+          {
+                          id: "vq-4-1",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["yet", "ever", "never"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-2",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["will stay", "stay", "stayed"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-3",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["yet", "ever", "never"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-4",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["stay", "will stay", "stayed"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-5",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["yet", "ever", "never"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-6",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["will stay", "stay", "stayed"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-7",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["never", "ever", "yet"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-8",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["will stay", "stay", "stayed"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-9",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["never", "ever", "yet"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-10",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["stayed", "stay", "will stay"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-11",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["never", "ever", "yet"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-12",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["will stay", "stay", "stayed"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-13",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["yet", "ever", "never"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-14",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["will stay", "stay", "stayed"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-15",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["never", "ever", "yet"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-16",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["stayed", "stay", "will stay"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-17",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["yet", "ever", "never"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-18",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["stay", "stayed", "will stay"],
+                          correctAnswer: "will stay"
+                      },
+          {
+                          id: "vq-4-19",
+                          type: "multiple-choice",
+                          question: "I have ___ lived in London.",
+                          options: ["ever", "never", "yet"],
+                          correctAnswer: "never"
+                      },
+          {
+                          id: "vq-4-20",
+                          type: "multiple-choice",
+                          question: "If it rains, we ___ home.",
+                          options: ["will stay", "stay", "stayed"],
+                          correctAnswer: "will stay"
+                      }
           ]
 },
   {
@@ -5505,76 +5813,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "All Tenses Review",
-              "question": "Tell me a little about yourself (past, present, and future)."
-            },
-            {
-              "topic": "Present Continuous for Future",
-              "question": "What are you doing tonight? Do you have any arrangements?"
-            },
-            {
-              "topic": "Future Progressive",
-              "question": "What will you be doing this time tomorrow?"
-            },
-            {
-              "topic": "Comparing Past and Present",
-              "question": "How has your life changed in the last 5 years?"
-            }
-          ],
+              { topic: "All Tenses Story", question: "Tell me a little about your personal journey (e.g. where you lived, where you live now, where you will live)." },
+              { topic: "Future Arrangements", question: "What are you doing tonight? Do you have any definite arrangements for this month?" },
+              { topic: "Predictions & Intentions", question: "What do you think the world will be like in 2050? What are you going to do to prepare?" },
+              { topic: "Future Progressive", question: "What will you be doing this time tomorrow? What about next week?" },
+              { topic: "Used To", question: "What did you use to do when you were a teenager that you don't do anymore?" }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "I ___ my dentist tomorrow at 3 PM. (Scheduled)",
-              "options": [
-                "am seeing",
-                "will see",
-                "see"
-              ],
-              "correctAnswer": "am seeing"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "This time next week, I ___ on a beach in Hawaii.",
-              "options": [
-                "will lie",
-                "will be lying",
-                "am lying"
-              ],
-              "correctAnswer": "will be lying"
-            },
-            {
-              "id": "v3",
-              "type": "fill-in-the-blanks",
-              "question": "We ___ (have) a meeting tomorrow morning.",
-              "options": [],
-              "correctAnswer": "are having"
-            },
-            {
-              "id": "v4",
-              "type": "multiple-choice",
-              "question": "He has been working here ___ 2015.",
-              "options": [
-                "since",
-                "for",
-                "in"
-              ],
-              "correctAnswer": "since"
-            },
-            {
-              "id": "v5",
-              "type": "listening",
-              "question": "Listen to the arrangement.",
-              "audioText": "We are meeting Sarah for dinner at 8.",
-              "options": [
-                "It's a plan/arrangement.",
-                "It's a spontaneous decision.",
-                "It's a habit."
-              ],
-              "correctAnswer": "It's a plan/arrangement."
-            }
+          {
+                          id: "vq-5-1",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["seeing", "see", "to see"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-2",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["take", "to take", "taking"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-3",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["seeing", "to see", "see"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-4",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["taking", "take", "to take"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-5",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["seeing", "see", "to see"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-6",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["take", "to take", "taking"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-7",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["seeing", "see", "to see"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-8",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["to take", "take", "taking"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-9",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["see", "seeing", "to see"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-10",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["taking", "to take", "take"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-11",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["seeing", "see", "to see"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-12",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["take", "to take", "taking"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-13",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["see", "seeing", "to see"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-14",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["to take", "taking", "take"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-15",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["to see", "see", "seeing"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-16",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["take", "to take", "taking"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-17",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["seeing", "see", "to see"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-18",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["taking", "to take", "take"],
+                          correctAnswer: "taking"
+                      },
+          {
+                          id: "vq-5-19",
+                          type: "multiple-choice",
+                          question: "I'm looking forward to ___ you.",
+                          options: ["to see", "see", "seeing"],
+                          correctAnswer: "seeing"
+                      },
+          {
+                          id: "vq-5-20",
+                          type: "multiple-choice",
+                          question: "He denied ___ the money.",
+                          options: ["take", "to take", "taking"],
+                          correctAnswer: "taking"
+                      }
           ]
 },
   {
@@ -6702,79 +7087,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "Present Perfect",
-              "question": "Have you ever traveled to another country? Where have you been?"
-            },
-            {
-              "topic": "Present Perfect vs Past Simple",
-              "question": "How long have you lived in your current city? When did you move there?"
-            },
-            {
-              "topic": "Comparatives & Superlatives",
-              "question": "Compare your city to another city you know. Which is the best place to live?"
-            },
-            {
-              "topic": "Used To & Habits",
-              "question": "What did you use to do when you were a child that you don't do anymore?"
-            },
-            {
-              "topic": "Second Conditional",
-              "question": "If you won a million dollars, what would you do?"
-            }
-          ],
+              { topic: "Life Experiences (Present Perfect)", question: "Have you ever traveled abroad? Have you ever tried an extreme sport?" },
+              { topic: "Duration (For/Since)", question: "How long have you lived in your current home? How long have you known your best friend?" },
+              { topic: "Present Perfect vs Past Simple", question: "When did you start learning English? Have you studied it before?" },
+              { topic: "Comparatives & Superlatives", question: "Compare your city to another city you know. Which is the best place to live and why?" },
+              { topic: "Advice (Should/Must)", question: "What should a tourist do if they visit your country? What must they avoid?" }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "I ___ to London three times in my life.",
-              "options": [
-                "went",
-                "have been",
-                "was"
-              ],
-              "correctAnswer": "have been"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "She ___ her keys yesterday.",
-              "options": [
-                "has lost",
-                "lost",
-                "was losing"
-              ],
-              "correctAnswer": "lost"
-            },
-            {
-              "id": "v3",
-              "type": "fill-in-the-blanks",
-              "question": "This is the ___ (interesting) book I have ever read.",
-              "options": [],
-              "correctAnswer": "most interesting"
-            },
-            {
-              "id": "v4",
-              "type": "multiple-choice",
-              "question": "I ___ play tennis a lot, but I don't have time now.",
-              "options": [
-                "used to",
-                "am used to",
-                "use to"
-              ],
-              "correctAnswer": "used to"
-            },
-            {
-              "id": "v5",
-              "type": "multiple-choice",
-              "question": "If I ___ you, I would study harder.",
-              "options": [
-                "am",
-                "was",
-                "were"
-              ],
-              "correctAnswer": "were"
-            }
+          {
+                          id: "vq-6-1",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["left", "has left", "had left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-2",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["had", "am having", "have"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-3",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["has left", "had left", "left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-4",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["am having", "have", "had"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-5",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["had left", "has left", "left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-6",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["have", "had", "am having"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-7",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["has left", "left", "had left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-8",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["had", "have", "am having"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-9",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["had left", "has left", "left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-10",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["am having", "have", "had"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-11",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["left", "had left", "has left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-12",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["am having", "had", "have"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-13",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["left", "has left", "had left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-14",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["had", "am having", "have"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-15",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["left", "has left", "had left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-16",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["had", "have", "am having"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-17",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["left", "has left", "had left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-18",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["am having", "had", "have"],
+                          correctAnswer: "had"
+                      },
+          {
+                          id: "vq-6-19",
+                          type: "multiple-choice",
+                          question: "By the time I arrived, she ___.",
+                          options: ["has left", "had left", "left"],
+                          correctAnswer: "had left"
+                      },
+          {
+                          id: "vq-6-20",
+                          type: "multiple-choice",
+                          question: "I wish I ___ more money.",
+                          options: ["had", "have", "am having"],
+                          correctAnswer: "had"
+                      }
           ]
 },
   {
@@ -7528,76 +7987,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "Job Interviews",
-              "question": "Can you tell me about your strengths and weaknesses?"
-            },
-            {
-              "topic": "Customer Service Roleplay",
-              "question": "I am an angry customer complaining about a delayed delivery. Handle the situation."
-            },
-            {
-              "topic": "Passive Voice",
-              "question": "Describe a process (e.g., how a cake is made or how coffee is produced) using passive voice."
-            },
-            {
-              "topic": "Modals of Deduction",
-              "question": "Your friend didn't come to the party yesterday. What might/must have happened?"
-            }
-          ],
+              { topic: "Professional Background", question: "Can you tell me about your strengths, weaknesses, and career background?" },
+              { topic: "Customer Service Roleplay", question: "I am an angry customer complaining about a delayed delivery. Please handle the situation politely." },
+              { topic: "Passive Voice in Practice", question: "Can you describe a typical manufacturing process (e.g. how a smartphone is made) using passive voice?" },
+              { topic: "Giving Opinions", question: "What is your opinion on remote work versus working in an office?" },
+              { topic: "Conditional Zero & First", question: "What do you do if you have a headache? What will you do if it rains this weekend?" }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "The Mona Lisa ___ by Leonardo da Vinci.",
-              "options": [
-                "painted",
-                "was painted",
-                "is painted"
-              ],
-              "correctAnswer": "was painted"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "He is late. He ___ have missed the train.",
-              "options": [
-                "might",
-                "must",
-                "can"
-              ],
-              "correctAnswer": "might"
-            },
-            {
-              "id": "v3",
-              "type": "fill-in-the-blanks",
-              "question": "A new shopping mall ___ (build) in our town next year.",
-              "options": [],
-              "correctAnswer": "will be built"
-            },
-            {
-              "id": "v4",
-              "type": "listening",
-              "question": "What is the tone?",
-              "audioText": "I'm afraid there has been a slight delay with your order.",
-              "options": [
-                "Aggressive",
-                "Polite and apologetic",
-                "Excited"
-              ],
-              "correctAnswer": "Polite and apologetic"
-            },
-            {
-              "id": "v5",
-              "type": "multiple-choice",
-              "question": "My car ___ at the moment.",
-              "options": [
-                "is repaired",
-                "is being repaired",
-                "repaired"
-              ],
-              "correctAnswer": "is being repaired"
-            }
+          {
+                          id: "vq-7-1",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["she did pass", "she passed", "did she pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-2",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["left", "leave", "are leaving"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-3",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["she did pass", "did she pass", "she passed"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-4",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["are leaving", "leave", "left"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-5",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["she passed", "did she pass", "she did pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-6",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["left", "leave", "are leaving"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-7",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["she passed", "did she pass", "she did pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-8",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["are leaving", "leave", "left"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-9",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["did she pass", "she passed", "she did pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-10",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["left", "leave", "are leaving"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-11",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["did she pass", "she passed", "she did pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-12",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["leave", "left", "are leaving"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-13",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["she did pass", "she passed", "did she pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-14",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["left", "leave", "are leaving"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-15",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["she did pass", "she passed", "did she pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-16",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["left", "are leaving", "leave"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-17",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["she passed", "did she pass", "she did pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-18",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["left", "leave", "are leaving"],
+                          correctAnswer: "left"
+                      },
+          {
+                          id: "vq-7-19",
+                          type: "multiple-choice",
+                          question: "Not only ___ the exam, but she also got the highest mark.",
+                          options: ["she passed", "did she pass", "she did pass"],
+                          correctAnswer: "did she pass"
+                      },
+          {
+                          id: "vq-7-20",
+                          type: "multiple-choice",
+                          question: "It's high time we ___.",
+                          options: ["leave", "are leaving", "left"],
+                          correctAnswer: "left"
+                      }
           ]
 },
   {
@@ -8539,76 +9075,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "Reported Speech & Negotiation",
-              "question": "Roleplay: You are negotiating a salary for a new job. Try to persuade me."
-            },
-            {
-              "topic": "Future Perfect",
-              "question": "What will you have accomplished by this time next year?"
-            },
-            {
-              "topic": "Expectations (supposed to/expected to)",
-              "question": "Talk about a time when expectations were different from reality."
-            },
-            {
-              "topic": "Cultural Expressions",
-              "question": "Describe a cultural custom from your country using advanced vocabulary."
-            }
-          ],
+              { topic: "Reported Speech in Action", question: "Tell me about a conversation you had recently. What did the other person say to you?" },
+              { topic: "Job Negotiation Roleplay", question: "Roleplay: You are negotiating a salary for a new job. Try to persuade me to give you a raise." },
+              { topic: "Future Perfect", question: "What will you have accomplished by this time next year? What about in five years?" },
+              { topic: "Second & Third Conditionals", question: "If you could travel anywhere in the world right now, where would you go? What would you have done differently last year if you had the chance?" },
+              { topic: "Expectations vs Reality", question: "Talk about a time when you were supposed to do something, but things didn't go as planned." }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "By 2025, I ___ my degree.",
-              "options": [
-                "will finish",
-                "will have finished",
-                "am finishing"
-              ],
-              "correctAnswer": "will have finished"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "She said she ___ him the day before.",
-              "options": [
-                "had seen",
-                "saw",
-                "has seen"
-              ],
-              "correctAnswer": "had seen"
-            },
-            {
-              "id": "v3",
-              "type": "fill-in-the-blanks",
-              "question": "We were ___ (suppose) to meet at 8, but he was late.",
-              "options": [],
-              "correctAnswer": "supposed"
-            },
-            {
-              "id": "v4",
-              "type": "listening",
-              "question": "Listen to the negotiation.",
-              "audioText": "I appreciate your offer, but I was looking for something closer to fifty thousand.",
-              "options": [
-                "Accepting",
-                "Counter-offering",
-                "Declining immediately"
-              ],
-              "correctAnswer": "Counter-offering"
-            },
-            {
-              "id": "v5",
-              "type": "multiple-choice",
-              "question": "It is ___ that climate change is accelerating.",
-              "options": [
-                "believe",
-                "believed",
-                "been believed"
-              ],
-              "correctAnswer": "believed"
-            }
+          {
+                          id: "vq-8-1",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["had we arrived", "arrived we", "we had arrived"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-2",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["having been", "to have been", "to be being"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-3",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["we had arrived", "had we arrived", "arrived we"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-4",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["to have been", "to be being", "having been"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-5",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["had we arrived", "arrived we", "we had arrived"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-6",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["having been", "to be being", "to have been"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-7",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["we had arrived", "arrived we", "had we arrived"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-8",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["having been", "to have been", "to be being"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-9",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["had we arrived", "we had arrived", "arrived we"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-10",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["to be being", "having been", "to have been"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-11",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["arrived we", "we had arrived", "had we arrived"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-12",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["to have been", "to be being", "having been"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-13",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["had we arrived", "we had arrived", "arrived we"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-14",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["to have been", "to be being", "having been"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-15",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["had we arrived", "we had arrived", "arrived we"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-16",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["to have been", "having been", "to be being"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-17",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["arrived we", "we had arrived", "had we arrived"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-18",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["to be being", "having been", "to have been"],
+                          correctAnswer: "to have been"
+                      },
+          {
+                          id: "vq-8-19",
+                          type: "multiple-choice",
+                          question: "Scarcely ___ when the storm began.",
+                          options: ["arrived we", "we had arrived", "had we arrived"],
+                          correctAnswer: "had we arrived"
+                      },
+          {
+                          id: "vq-8-20",
+                          type: "multiple-choice",
+                          question: "He is alleged ___ involved in the scandal.",
+                          options: ["to have been", "to be being", "having been"],
+                          correctAnswer: "to have been"
+                      }
           ]
 },
   {
@@ -9112,76 +9725,153 @@ export const curriculumLevels: CurriculumLevel[] = [
       }
     ],
       oralEvaluation: [
-            {
-              "topic": "Technology & Ethics",
-              "question": "What is your opinion on artificial intelligence and its impact on society?"
-            },
-            {
-              "topic": "Society & Culture",
-              "question": "How does social media affect modern culture and mental health?"
-            },
-            {
-              "topic": "Mental & Physical Health",
-              "question": "Discuss the importance of maintaining a balance between work and personal life."
-            },
-            {
-              "topic": "Critical Thinking & Debate",
-              "question": "Present an argument for or against remote work versus office work."
-            }
-          ],
+              { topic: "Technology & AI Ethics", question: "What is your perspective on artificial intelligence? Do you believe it will do more harm or good for society?" },
+              { topic: "Society, Culture & Media", question: "How does social media affect modern culture, political polarization, and mental health?" },
+              { topic: "Work-Life Balance & Wellness", question: "Discuss the challenges of maintaining a healthy work-life balance in the modern gig economy." },
+              { topic: "Global Issues & Environment", question: "What do you consider to be the most pressing environmental issue today, and what actionable steps can be taken?" },
+              { topic: "Abstract Discussions", question: "If you had to summarize the human condition in the 21st century to someone from the 19th century, what would you emphasize?" }
+            ],
       virtualEvaluation: [
-            {
-              "id": "v1",
-              "type": "multiple-choice",
-              "question": "The rapid ___ of technology affects all aspects of life.",
-              "options": [
-                "advance",
-                "advancement",
-                "advancing"
-              ],
-              "correctAnswer": "advancement"
-            },
-            {
-              "id": "v2",
-              "type": "multiple-choice",
-              "question": "It's vital that we ___ the ethical implications.",
-              "options": [
-                "consider",
-                "are considering",
-                "have considered"
-              ],
-              "correctAnswer": "consider"
-            },
-            {
-              "id": "v3",
-              "type": "fill-in-the-blanks",
-              "question": "The widespread ___ (use) of smartphones has changed communication.",
-              "options": [],
-              "correctAnswer": "usage"
-            },
-            {
-              "id": "v4",
-              "type": "listening",
-              "question": "Analyze the argument.",
-              "audioText": "While AI brings efficiency, we cannot overlook the potential for job displacement.",
-              "options": [
-                "Fully in favor of AI",
-                "Balanced view acknowledging pros and cons",
-                "Completely against AI"
-              ],
-              "correctAnswer": "Balanced view acknowledging pros and cons"
-            },
-            {
-              "id": "v5",
-              "type": "multiple-choice",
-              "question": "We must strive to ___ a healthy work-life balance.",
-              "options": [
-                "maintain",
-                "retain",
-                "contain"
-              ],
-              "correctAnswer": "maintain"
-            }
+          {
+                          id: "vq-9-1",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["bolt", "flash", "strike"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-2",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["around", "over", "round"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-3",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["strike", "flash", "bolt"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-4",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["round", "around", "over"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-5",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["bolt", "flash", "strike"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-6",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["over", "around", "round"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-7",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["bolt", "flash", "strike"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-8",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["round", "around", "over"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-9",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["bolt", "flash", "strike"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-10",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["over", "around", "round"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-11",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["strike", "bolt", "flash"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-12",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["round", "around", "over"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-13",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["bolt", "flash", "strike"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-14",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["over", "around", "round"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-15",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["flash", "bolt", "strike"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-16",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["round", "around", "over"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-17",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["bolt", "flash", "strike"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-18",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["round", "around", "over"],
+                          correctAnswer: "round"
+                      },
+          {
+                          id: "vq-9-19",
+                          type: "multiple-choice",
+                          question: "The CEO's resignation came as a ___ from the blue.",
+                          options: ["strike", "flash", "bolt"],
+                          correctAnswer: "bolt"
+                      },
+          {
+                          id: "vq-9-20",
+                          type: "multiple-choice",
+                          question: "He's completely ___ the bend.",
+                          options: ["over", "around", "round"],
+                          correctAnswer: "round"
+                      }
           ]
 }
 ];

@@ -148,14 +148,19 @@ export function CurriculumView() {
                                         <h3 className="font-bold text-amber-900 text-lg">Evaluación Oral</h3>
                                     </div>
                                     <p className="text-sm text-amber-800 mb-4 font-medium">Preguntas para preparar el examen oral con el tutor:</p>
-                                    <ul className="space-y-3">
+                                    <div className="divide-y-2 divide-amber-200/50 divide-dashed border-2 border-amber-200/50 rounded-2xl bg-white/50 overflow-hidden mb-4">
                                         {level.oralEvaluation.map((q, idx) => (
-                                            <li key={idx} className="bg-white/60 p-3 rounded-xl">
-                                                <div className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">{q.topic}</div>
-                                                <div className="text-sm text-gray-800 font-medium">{q.question}</div>
-                                            </li>
+                                            <div key={idx} className="p-4 flex gap-4 focus-within:bg-amber-50 hover:bg-white transition-colors">
+                                                <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amber-500 text-white font-black text-sm shadow-sm pt-0.5">
+                                                    {idx + 1}
+                                                </div>
+                                                <div>
+                                                    <div className="text-xs font-extrabold text-amber-500 uppercase tracking-widest mb-1">{q.topic}</div>
+                                                    <div className="text-sm text-gray-900 font-bold">{q.question}</div>
+                                                </div>
+                                            </div>
                                         ))}
-                                    </ul>
+                                    </div>
                                 </div>
                             )}
 

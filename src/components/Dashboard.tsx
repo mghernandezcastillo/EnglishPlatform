@@ -7,6 +7,7 @@ import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
 import { curriculumLevels } from '../data/curriculum';
 import { PresentationViewer } from './PresentationViewer';
+import { useBrand } from '../hooks/useBrand';
 
 interface DashboardProps {
   completedLessonIds: string[];
@@ -26,6 +27,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
   const [activeLibraryCategoryTitle, setActiveLibraryCategoryTitle] = useState<string>('');
   const [expandedLevel, setExpandedLevel] = useState<string | null>(curriculumLevels[0].id);
   const [presentingClass, setPresentingClass] = useState<CurriculumClass | null>(null);
+  const { brand } = useBrand();
 
   // Flatten curriculum classes to calculate next lesson
   const allCurriculumClasses = curriculumLevels.flatMap(level => level.classes.map(cls => ({...cls, levelId: level.id})));
@@ -59,6 +61,14 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
   return (
     <div className="max-w-5xl mx-auto py-8 px-4 sm:px-6">
       
+      {/* Brand Header */}
+      <div className="flex items-center justify-center sm:justify-start gap-4 mb-8">
+        {brand.logoUrl && (
+          <img src={brand.logoUrl} alt={brand.name} className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-xl shadow-sm" />
+        )}
+        <h1 className="text-2xl md:text-3xl font-black tracking-tight text-indigo-900">{brand.name}</h1>
+      </div>
+
       {/* Student Profile Header */}
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8 bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50">
         <img src={displayAvatarUrl} alt={displayStudentName} className="w-24 h-24 object-cover rounded-full border-4 border-indigo-100 shadow-md transform rotate-3" />
@@ -382,14 +392,19 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                                               <h3 className="font-bold text-amber-900 text-lg">Preparación Examen Oral</h3>
                                           </div>
                                           <p className="text-sm text-amber-800 mb-4 font-medium">Preguntas para practicar con tu tutor al final del nivel:</p>
-                                          <ul className="space-y-3 mb-4">
+                                          <div className="divide-y-2 divide-amber-200/50 divide-dashed border-2 border-amber-200/50 rounded-2xl bg-white/50 overflow-hidden mb-4">
                                               {level.oralEvaluation.map((q, idx) => (
-                                                  <li key={idx} className="bg-white/60 p-3 rounded-xl">
-                                                      <div className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">{q.topic}</div>
-                                                      <div className="text-sm text-gray-800 font-medium">{q.question}</div>
-                                                  </li>
+                                                  <div key={idx} className="p-4 flex gap-4 focus-within:bg-amber-50 hover:bg-white transition-colors">
+                                                      <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amber-500 text-white font-black text-sm shadow-sm pt-0.5">
+                                                          {idx + 1}
+                                                      </div>
+                                                      <div>
+                                                          <div className="text-xs font-extrabold text-amber-500 uppercase tracking-widest mb-1">{q.topic}</div>
+                                                          <div className="text-sm text-gray-900 font-bold">{q.question}</div>
+                                                      </div>
+                                                  </div>
                                               ))}
-                                          </ul>
+                                          </div>
                                       </div>
                                       <button
                                           onClick={() => {
