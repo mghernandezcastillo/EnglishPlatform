@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, X, Play, Image as ImageIcon, CheckCircle } from 'lucide-react';
 import { CurriculumClass, ClassSection, ClassSlide } from '../types';
+import { SpinningWheel } from './SpinningWheel';
+import { MatchingGame } from './MatchingGame';
+import { MysteryPuzzleGame } from './MysteryPuzzleGame';
 
 interface PresentationViewerProps {
   cls: CurriculumClass;
@@ -98,16 +101,17 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
       </div>
 
       {/* Main Slide Area */}
-      <div className="flex-1 relative flex flex-col p-2 sm:p-8 overflow-y-auto overflow-x-hidden">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentIndex}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className={`w-full max-w-6xl m-auto rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0 min-h-[75vh]`}
-          >
+      <div className="flex-1 relative overflow-y-auto overflow-x-hidden p-2 sm:p-8">
+        <div className="min-h-full flex flex-col items-center justify-center pb-20 sm:pb-8">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className={`w-full max-w-6xl mx-auto rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0 min-h-[75vh]`}
+            >
             {/* Header */}
             <div className="p-5 sm:p-8 pb-2 sm:pb-4 shrink-0">
               <h1 className="text-2xl sm:text-5xl font-extrabold tracking-tight mb-2">
@@ -121,10 +125,35 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             </div>
 
             {/* Content Area */}
-            <div className="flex-1 p-5 sm:p-8 pt-2 sm:pt-4 flex flex-col sm:flex-row gap-4 sm:gap-8">
+            <div className="flex-1 p-5 sm:p-8 pt-2 sm:pt-4 flex flex-col md:flex-row gap-4 sm:gap-8 overflow-y-auto min-h-0">
               {/* Left text content */}
               <div className="flex-1 flex flex-col gap-3 sm:gap-6">
-                {slide.content?.map((line, i) => {
+                {slide.type === 'spinning-wheel' && slide.wheelItems && (
+                  <div className="flex-1 flex flex-col items-center justify-center py-8">
+                    <SpinningWheel items={slide.wheelItems} />
+                  </div>
+                )}
+                
+                {slide.type === 'matching-game' && slide.matchingPairs && (
+                  <div className="flex-1 flex flex-col items-center justify-center">
+                    <MatchingGame 
+                      pairs={slide.matchingPairs}
+                      onComplete={() => console.log('Matching Game Completed')}
+                    />
+                  </div>
+                )}
+
+                {slide.type === 'mystery-puzzle' && slide.mysteryPuzzleData && (
+                  <div className="flex-1 flex flex-col items-center justify-center">
+                    <MysteryPuzzleGame 
+                      targetWord={slide.mysteryPuzzleData.target}
+                      imageUrl={slide.mysteryPuzzleData.imageUrl}
+                      panels={slide.mysteryPuzzleData.panels}
+                    />
+                  </div>
+                )}
+
+                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.content?.map((line, i) => {
                   if (slide.type === 'emoji-game') {
                     return (
                       <motion.div 
@@ -151,14 +180,10 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     </div>
                   );
                 })}
-                {!slide.content && (
-                  <div className="text-lg sm:text-2xl text-white/50 italic">
-                    Vamos a practicar...
-                  </div>
-                )}
+
                 
                 {/* WhatsApp Share Button for Homework */}
-                {slide.title.toLowerCase().includes('homework') && (
+                {slide.type === 'homework' && (
                   <div className="mt-6 flex">
                     <button
                       onClick={() => {
@@ -231,7 +256,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               </div>
 
               {/* Right content (Image or Video) */}
-              {slide.type === 'video' && slide.videoUrl ? (
+              {(slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center text-center backdrop-blur-sm overflow-hidden min-h-[300px] sm:min-h-[400px]">
                   <iframe 
                     src={slide.videoUrl} 
@@ -247,8 +272,19 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                 </div>
               ) : null}
             </div>
+
+            {/* Teacher Suggestion (Small) */}
+            {section.action && (
+              <div className="bg-black/30 backdrop-blur-md p-3 sm:p-4 border-t border-white/10 shrink-0 mt-auto">
+                <p className="text-xs sm:text-sm text-yellow-300/90 font-medium flex items-center gap-2">
+                  <span className="bg-yellow-400/20 px-2 py-1 rounded text-yellow-300 font-bold tracking-wide uppercase text-[10px] sm:text-xs">👩‍🏫 Nota para el profe</span>
+                  {section.action}
+                </p>
+              </div>
+            )}
           </motion.div>
         </AnimatePresence>
+        </div>
 
         {/* Desktop Navigation Buttons */}
         <button

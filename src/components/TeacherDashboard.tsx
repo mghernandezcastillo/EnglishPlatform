@@ -4,7 +4,7 @@ import { DbStudent, DbGroup } from '../types';
 import { Users, UserPlus, BookOpen, ChevronLeft, Save, Target } from 'lucide-react';
 import { avatars } from '../config';
 import { CurriculumView } from './CurriculumView';
-import { curriculumLevels } from '../data/curriculum';
+import { getCurriculumForType } from '../data/curriculumSelector';
 import { useBrand } from '../hooks/useBrand';
 
 interface TeacherDashboardProps {
@@ -18,9 +18,10 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
   const [evaluations, setEvaluations] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'settings'>('students');
   const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
+  const [isEditingStudentInfo, setIsEditingStudentInfo] = useState(false);
 
   const [isCreatingStudent, setIsCreatingStudent] = useState(false);
-  const [newStudent, setNewStudent] = useState({ name: '', avatar_id: 'female', level: 'Basic Zero', group_id: '' });
+  const [newStudent, setNewStudent] = useState({ name: '', avatar_id: 'female', level: 'Basic Zero', type: 'adulto', group_id: '' });
 
   const [isCreatingGroup, setIsCreatingGroup] = useState(false);
   const [newGroupName, setNewGroupName] = useState('');
@@ -51,10 +52,11 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
       name: newStudent.name,
       avatar_id: newStudent.avatar_id,
       level: newStudent.level,
+      type: newStudent.type,
       group_id: newStudent.group_id || undefined
     });
     setIsCreatingStudent(false);
-    setNewStudent({ name: '', avatar_id: 'female', level: 'Basic Zero', group_id: '' });
+    setNewStudent({ name: '', avatar_id: 'female', level: 'Basic Zero', type: 'adulto', group_id: '' });
     loadData();
   };
 
@@ -67,50 +69,124 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
   };
 
   if (selectedStudent) {
+    const currLevels = getCurriculumForType(selectedStudent.type);
+    
     // Find matching curriculum level (approximate match on title)
     // The DbStudent.level is usually strings like "Basic Zero" or "A1"
     const stLevelTokens = selectedStudent.level.toLowerCase().split(' ');
-    let currentLevelObj = curriculumLevels.find(l => 
+    let currentLevelObj = currLevels.find(l => 
         stLevelTokens.some(tok => l.title.toLowerCase().includes(tok))
     );
     if (!currentLevelObj) {
-        currentLevelObj = curriculumLevels[0]; // fallback
+        currentLevelObj = currLevels[0]; // fallback
     }
 
     return (
         <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6">
-            <button onClick={() => setSelectedStudent(null)} className="mb-6 flex items-center gap-2 text-gray-500 hover:text-indigo-600 font-medium">
+            <button onClick={() => { setSelectedStudent(null); setIsEditingStudentInfo(false); }} className="mb-6 flex items-center gap-2 text-gray-500 hover:text-indigo-600 font-medium">
                 <ChevronLeft className="w-5 h-5" /> Volver a Estudiantes
             </button>
-             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col md:flex-row items-center gap-6 justify-between">
-                <div className="flex flex-col md:flex-row items-center gap-6">
-                  <img src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
-                  <div>
-                     <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
-                     <div className="flex gap-3 mt-2">
-                         <span className="text-sm font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">{selectedStudent.level}</span>
-                         {selectedStudent.group_id && <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">En grupo</span>}
-                     </div>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-2 w-full md:w-auto">
-                    <button 
-                       onClick={() => onEnterAsStudent && onEnterAsStudent(selectedStudent)}
-                       className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-xl transition-all shadow-sm"
-                    >
-                       Dictar a este alumno
-                    </button>
-                    <button 
-                       onClick={() => {
-                          const url = `${window.location.origin}/?studentId=${selectedStudent.id}`;
-                          navigator.clipboard.writeText(url);
-                          alert('¡Enlace de acceso copiado al portapapeles!');
-                       }}
-                       className="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-2 px-4 rounded-xl transition-all"
-                    >
-                       Copiar Link de Acceso
-                    </button>
-                </div>
+             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col items-start gap-6">
+                 {isEditingStudentInfo ? (
+                    <div className="w-full flex flex-col gap-4">
+                       <h2 className="text-xl font-bold text-gray-800">Editar Estudiante</h2>
+                       <div className="flex flex-col md:flex-row gap-4 items-end">
+                         <div className="flex-1">
+                           <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                           <input type="text" value={selectedStudent.name} onChange={e => setSelectedStudent({...selectedStudent, name: e.target.value})} className="w-full px-4 py-2 border rounded-xl" />
+                         </div>
+                         <div className="w-40">
+                           <label className="block text-sm font-medium text-gray-700 mb-1">Nivel</label>
+                           <select value={selectedStudent.level} onChange={e => setSelectedStudent({...selectedStudent, level: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
+                             <option>Basic Zero</option>
+                             <option>A1</option>
+                             <option>A2</option>
+                             <option>B1</option>
+                             <option>B2</option>
+                           </select>
+                         </div>
+                         <div className="w-40">
+                           <label className="block text-sm font-medium text-gray-700 mb-1">Tipo</label>
+                           <select value={selectedStudent.type || 'adulto'} onChange={e => setSelectedStudent({...selectedStudent, type: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
+                             <option value="adulto">Adulto</option>
+                             <option value="niño">Niño</option>
+                           </select>
+                         </div>
+                       </div>
+                       <div className="w-full">
+                          <label className="block text-sm font-medium text-gray-700 mb-1">Avatar</label>
+                          <div className="flex gap-2 bg-slate-50 p-2 rounded-xl overflow-x-auto w-full">
+                              {Object.entries(avatars).map(([id, url]) => {
+                                 const isSelected = selectedStudent.avatar_id === id;
+                                 return (
+                                    <button 
+                                      key={id} 
+                                      onClick={() => setSelectedStudent({...selectedStudent, avatar_id: id})}
+                                      className={`w-16 h-16 shrink-0 rounded-full border-2 overflow-hidden transition-all ${isSelected ? 'border-indigo-600 scale-110 shadow-md' : 'border-transparent opacity-70 hover:opacity-100'}`}
+                                    >
+                                      <img src={url} alt={id} className="w-full h-full object-cover" />
+                                    </button>
+                                 )
+                              })}
+                          </div>
+                       </div>
+                       <div className="flex gap-2 mt-2">
+                           <button onClick={async () => {
+                               await dbAdmin.updateStudent(selectedStudent.id, {
+                                   name: selectedStudent.name,
+                                   level: selectedStudent.level,
+                                   type: selectedStudent.type,
+                                   avatar_id: selectedStudent.avatar_id
+                               });
+                               setIsEditingStudentInfo(false);
+                               loadData();
+                           }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-xl font-bold transition-colors">
+                             Guardar
+                           </button>
+                           <button onClick={() => {
+                               setIsEditingStudentInfo(false);
+                               loadData();
+                           }} className="bg-gray-100 hover:bg-gray-200 text-gray-600 px-6 py-2 rounded-xl font-bold transition-colors">
+                             Cancelar
+                           </button>
+                       </div>
+                    </div>
+                 ) : (
+                    <div className="w-full flex flex-col md:flex-row items-center gap-6 justify-between">
+                        <div className="flex flex-col md:flex-row items-center gap-6">
+                            <img src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
+                            <div>
+                                <div className="flex items-center gap-3">
+                                   <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
+                                   <button onClick={() => setIsEditingStudentInfo(true)} className="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-bold hover:bg-indigo-100">Editar</button>
+                                </div>
+                                <div className="flex gap-3 mt-2">
+                                    <span className="text-sm font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">{selectedStudent.level}</span>
+                                    {selectedStudent.type && <span className="text-sm font-bold text-amber-700 bg-amber-50 px-3 py-1 rounded-full capitalize">{selectedStudent.type}</span>}
+                                    {selectedStudent.group_id && <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">En grupo</span>}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-2 w-full md:w-auto mt-4 md:mt-0">
+                            <button 
+                               onClick={() => onEnterAsStudent && onEnterAsStudent(selectedStudent)}
+                               className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-xl transition-all shadow-sm"
+                            >
+                               Dictar a este alumno
+                            </button>
+                            <button 
+                               onClick={() => {
+                                  const url = `${window.location.origin}/?studentId=${selectedStudent.id}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}`;
+                                  navigator.clipboard.writeText(url);
+                                  alert('¡Enlace de acceso copiado al portapapeles!');
+                               }}
+                               className="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-2 px-4 rounded-xl transition-all"
+                            >
+                               Copiar Link de Acceso
+                            </button>
+                        </div>
+                    </div>
+                 )}
              </div>
 
             <div className="mb-6">
@@ -148,7 +224,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                 </p>
                                 <button
                                     onClick={() => {
-                                        const url = `${window.location.origin}/?evaluacion=${currentLevelObj?.id}&student=${encodeURIComponent(selectedStudent.name)}`;
+                                        const url = `${window.location.origin}/?evaluacion=${currentLevelObj?.id}&student=${encodeURIComponent(selectedStudent.name)}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}`;
                                         const msg = `¡Hola ${selectedStudent.name}! Aquí está tu enlace directo para realizar el examen virtual del nivel ${currentLevelObj?.title}. ¡Mucho éxito!\n\n${url}`;
                                         window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
                                     }}
@@ -237,31 +313,61 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
           </div>
 
           {isCreatingStudent && (
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-indigo-100 mb-6 flex flex-col md:flex-row gap-4 items-end">
-              <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                <input type="text" value={newStudent.name} onChange={e => setNewStudent({...newStudent, name: e.target.value})} className="w-full px-4 py-2 border rounded-xl" placeholder="Juan Pérez" />
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-indigo-100 mb-6 flex flex-col gap-4">
+              <div className="flex flex-col md:flex-row gap-4 items-end">
+                <div className="flex-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                  <input type="text" value={newStudent.name} onChange={e => setNewStudent({...newStudent, name: e.target.value})} className="w-full px-4 py-2 border rounded-xl" placeholder="Juan Pérez" />
+                </div>
+                <div className="w-40">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Nivel</label>
+                  <select value={newStudent.level} onChange={e => setNewStudent({...newStudent, level: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
+                    <option>Basic Zero</option>
+                    <option>A1</option>
+                    <option>A2</option>
+                    <option>B1</option>
+                    <option>B2</option>
+                  </select>
+                </div>
+                <div className="w-40">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Tipo</label>
+                  <select value={newStudent.type} onChange={e => setNewStudent({...newStudent, type: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
+                    <option value="adulto">Adulto</option>
+                    <option value="niño">Niño</option>
+                  </select>
+                </div>
+                <div className="w-48">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Grupo (Opcional)</label>
+                  <select value={newStudent.group_id} onChange={e => setNewStudent({...newStudent, group_id: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
+                    <option value="">Sin Grupo</option>
+                    {groups.map(g => <option key={g.id} value={g.id}>{g.name}</option>)}
+                  </select>
+                </div>
               </div>
-              <div className="w-40">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Nivel</label>
-                <select value={newStudent.level} onChange={e => setNewStudent({...newStudent, level: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
-                  <option>Basic Zero</option>
-                  <option>A1</option>
-                  <option>A2</option>
-                  <option>B1</option>
-                  <option>B2</option>
-                </select>
+              <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
+                 <div className="w-full">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Avatar</label>
+                    <div className="flex gap-2 bg-slate-50 p-2 rounded-xl overflow-x-auto w-full">
+                        {Object.entries(avatars).map(([id, url]) => {
+                           // For kids, only show kids avatars, for adults show adult avatars.
+                           // Actually, let's just let the teacher choose any avatar
+                           const isSelected = newStudent.avatar_id === id;
+                           return (
+                              <button 
+                                key={id} 
+                                onClick={() => setNewStudent({...newStudent, avatar_id: id})}
+                                className={`w-12 h-12 shrink-0 rounded-full border-2 overflow-hidden transition-all ${isSelected ? 'border-indigo-600 scale-110 shadow-md' : 'border-transparent opacity-70 hover:opacity-100'}`}
+                              >
+                                <img src={url} alt={id} className="w-full h-full object-cover" />
+                              </button>
+                           )
+                        })}
+                    </div>
+                 </div>
+                 <button onClick={handleCreateStudent} className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-xl font-bold transition-colors w-full md:w-auto mt-4 md:mt-0 whitespace-nowrap">
+                   Guardar
+                 </button>
               </div>
-              <div className="w-48">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Grupo (Opcional)</label>
-                <select value={newStudent.group_id} onChange={e => setNewStudent({...newStudent, group_id: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
-                  <option value="">Sin Grupo</option>
-                  {groups.map(g => <option key={g.id} value={g.id}>{g.name}</option>)}
-                </select>
-              </div>
-              <button onClick={handleCreateStudent} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-xl font-bold transition-colors">
-                Guardar
-              </button>
             </div>
           )}
 
@@ -272,7 +378,10 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                   <img src={avatars[st.avatar_id as keyof typeof avatars] || avatars.female} className="w-16 h-16 rounded-full object-cover border-2 border-indigo-100" />
                   <div>
                     <h3 className="font-bold text-lg text-gray-900">{st.name}</h3>
-                    <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded w-max">{st.level}</span>
+                    <div className="flex gap-2 mt-1">
+                      <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded w-max">{st.level}</span>
+                      {st.type && <span className="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded w-max capitalize">{st.type}</span>}
+                    </div>
                   </div>
                 </div>
                 <div className="flex justify-between items-center text-sm text-gray-500 mt-4 border-t pt-4">

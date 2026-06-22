@@ -143,7 +143,87 @@ const assessmentQuestions = [
   }
 ];
 
-function getLevelFromScore(score: number) {
+import imgKidWelcome from '../assets/images/kids_assessment_welcome_1782139154509.jpg';
+import imgKidSun from '../assets/images/kids_q_sun_1782139171200.jpg';
+import imgKidCat from '../assets/images/kids_q_cat_1782139183676.jpg';
+import imgKidApples from '../assets/images/kids_q_apples_1782139196585.jpg';
+import imgKidWakeup from '../assets/images/kids_q_wakeup_1782139210255.jpg';
+import imgKidMom from '../assets/images/kids_q_mom_1782139222631.jpg';
+
+const assessmentQuestionsKids = [
+  {
+    id: 1,
+    title: 'Colors',
+    question: 'What color is the sun?',
+    image: imgKidSun,
+    options: [
+      { id: 'a', text: 'Blue', isCorrect: false },
+      { id: 'b', text: 'Red', isCorrect: false },
+      { id: 'c', text: 'Yellow', isCorrect: true },
+    ],
+    feedbackCorrect: '¡Correcto! El sol es de color "yellow" (amarillo).',
+    feedbackIncorrect: 'El sol es amarillo. Amarillo en inglés se dice "yellow".'
+  },
+  {
+    id: 2,
+    title: 'Animals',
+    question: 'What animal says "Meow"?',
+    image: imgKidCat,
+    options: [
+      { id: 'a', text: 'Dog', isCorrect: false },
+      { id: 'b', text: 'Cat', isCorrect: true },
+      { id: 'c', text: 'Cow', isCorrect: false },
+    ],
+    feedbackCorrect: '¡Sí! El gato hace "miau", y gato en inglés se dice "Cat".',
+    feedbackIncorrect: 'El animal que hace "miau" es el gato: "Cat".'
+  },
+  {
+    id: 3,
+    title: 'Numbers',
+    question: 'How many apples are here: 🍎 🍎 🍎',
+    image: imgKidApples,
+    options: [
+      { id: 'a', text: 'Two', isCorrect: false },
+      { id: 'b', text: 'Three', isCorrect: true },
+      { id: 'c', text: 'Four', isCorrect: false },
+    ],
+    feedbackCorrect: '¡Perfecto! Hay tres manzanas. Tres se dice "Three".',
+    feedbackIncorrect: 'Vamos a contar: One, Two, Three. ¡Son tres!'
+  },
+  {
+    id: 4,
+    title: 'Greetings',
+    question: 'When you wake up, you say:',
+    image: imgKidWakeup,
+    options: [
+      { id: 'a', text: 'Good morning', isCorrect: true },
+      { id: 'b', text: 'Good night', isCorrect: false },
+      { id: 'c', text: 'Goodbye', isCorrect: false },
+    ],
+    feedbackCorrect: '¡Excelente! "Good morning" significa buenos días.',
+    feedbackIncorrect: 'Al despertar decimos buenos días: "Good morning".'
+  },
+  {
+    id: 5,
+    title: 'Family',
+    question: 'Who is this?',
+    image: imgKidMom,
+    options: [
+      { id: 'a', text: 'Mom / Mother', isCorrect: true },
+      { id: 'b', text: 'Brother', isCorrect: false },
+      { id: 'c', text: 'Cat', isCorrect: false },
+    ],
+    feedbackCorrect: '¡Correcto! Es una mamá ("Mom").',
+    feedbackIncorrect: 'Es la mamá. Mamá en inglés se dice "Mom" o "Mother".'
+  }
+];
+
+function getLevelFromScore(score: number, isKid: boolean) {
+  if (isKid) {
+    if (score <= 1) return { level: 'Kids Inicial', desc: '¡Vamos a descubrir las palabras básicas y divertirnos mucho aprendiendo color y saludos en inglés!' };
+    if (score <= 3) return { level: 'Kids Explorador', desc: '¡Súper bien! Ya conoces varias palabras. Vamos a seguir explorando y jugando juntos.' };
+    return { level: 'Kids Estrella', desc: '¡Eres una estrella! Conoces muchos colores, animales y saludos. ¡Vamos a aprender frases más largas!' };
+  }
   if (score <= 2) return { level: 'A1 (Inicial)', desc: '¡El mejor momento para empezar es hoy! Empezaremos desde cero, a tu propio ritmo, paso a paso.' };
   if (score <= 4) return { level: 'A2 (Básico)', desc: 'Tienes nociones básicas. Vamos a fortalecerlas y empezar a conectar ideas.' };
   if (score <= 6) return { level: 'B1 (Intermedio)', desc: '¡Muy bien! Ya te defiendes en muchas situaciones. Refinaremos tu gramática y vocabulario.' };
@@ -160,8 +240,10 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
 
   const displayStudentName = progress?.studentName || studentConfig.name;
   const displayAvatarUrl = (progress?.avatarId && avatars[progress.avatarId as keyof typeof avatars]) || studentConfig.avatarUrl;
+  const isKid = progress?.studentType?.toLowerCase() === 'niño' || progress?.studentType?.toLowerCase() === 'kids';
 
-  const currentQuestion = assessmentQuestions[currentQuestionIdx];
+  const questions = isKid ? assessmentQuestionsKids : assessmentQuestions;
+  const currentQuestion = questions[currentQuestionIdx];
 
   const handleStart = () => {
     setStep('question');
@@ -186,7 +268,7 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
   const handleNext = () => {
     setShowFeedback(false);
     setSelectedOptionId(null);
-    if (currentQuestionIdx < assessmentQuestions.length - 1) {
+    if (currentQuestionIdx < questions.length - 1) {
       setCurrentQuestionIdx(i => i + 1);
     } else {
       setStep('results');
@@ -239,12 +321,20 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
                 exit={{ opacity: 0, scale: 0.95 }}
                 className="bg-white rounded-[2rem] shadow-xl overflow-hidden border-4 border-indigo-50 text-center"
               >
-                <div className="bg-gradient-to-br from-indigo-500 to-purple-600 px-8 py-16 relative overflow-hidden">
-                   <div className="absolute inset-0 opacity-10">
-                      <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full text-white fill-current">
-                        <polygon points="0,0 100,0 100,20 0,80" />
-                      </svg>
-                   </div>
+                <div className={`px-8 py-16 relative overflow-hidden ${isKid ? '' : 'bg-gradient-to-br from-indigo-500 to-purple-600'}`}>
+                   {isKid && (
+                     <div className="absolute inset-0 bg-blue-900">
+                       <img src={imgKidWelcome} alt="Kids Welcome" className="absolute inset-0 w-full h-full object-cover opacity-70" />
+                       <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent"></div>
+                     </div>
+                   )}
+                   {!isKid && (
+                     <div className="absolute inset-0 opacity-10">
+                       <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full text-white fill-current">
+                         <polygon points="0,0 100,0 100,20 0,80" />
+                       </svg>
+                     </div>
+                   )}
                    <div className="relative z-10">
                      <div className="mx-auto w-32 h-32 bg-white/20 backdrop-blur-lg rounded-full flex items-center justify-center p-3 mb-6 shadow-2xl border-2 border-white/40">
                         <img src={displayAvatarUrl} alt="Avatar" className="w-full h-full rounded-full object-cover bg-white rotate-6" />
@@ -288,7 +378,7 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                       <span className="text-white font-bold bg-indigo-600/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm">
-                        Pregunta {currentQuestionIdx + 1} de {assessmentQuestions.length}
+                        Pregunta {currentQuestionIdx + 1} de {questions.length}
                       </span>
                    </div>
                 </div>
@@ -360,7 +450,7 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
                         onClick={handleNext}
                         className="mt-6 w-full bg-slate-900 hover:bg-black text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors"
                       >
-                        {currentQuestionIdx < assessmentQuestions.length - 1 ? 'Siguiente Pregunta' : 'Ver Resultados'} <ArrowRight className="w-5 h-5" />
+                        {currentQuestionIdx < questions.length - 1 ? 'Siguiente Pregunta' : 'Ver Resultados'} <ArrowRight className="w-5 h-5" />
                       </button>
                     </motion.div>
                   )}
@@ -381,21 +471,21 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
                 <div className="inline-flex flex-col items-center justify-center p-6 bg-slate-50 rounded-3xl mb-8 border border-gray-100 w-full sm:w-auto">
                   <p className="text-gray-500 font-bold uppercase tracking-widest text-sm mb-2">Tu Puntuación</p>
                   <p className="text-5xl font-black text-indigo-600 mb-6">
-                    {score} <span className="text-3xl text-gray-300">/ {assessmentQuestions.length}</span>
+                    {score} <span className="text-3xl text-gray-300">/ {questions.length}</span>
                   </p>
                   
                   <div className="bg-indigo-600 text-white px-6 py-3 rounded-2xl w-full">
                     <p className="text-indigo-100 text-xs font-bold uppercase tracking-widest mb-1">Nivel Estimado</p>
-                    <p className="text-2xl font-extrabold">{getLevelFromScore(score).level}</p>
+                    <p className="text-2xl font-extrabold">{getLevelFromScore(score, isKid).level}</p>
                   </div>
                 </div>
                 
                 <p className="text-xl text-gray-600 mb-10 leading-relaxed font-medium">
-                  {getLevelFromScore(score).desc}
+                  {getLevelFromScore(score, isKid).desc}
                 </p>
 
                 <button 
-                  onClick={() => onClose(getLevelFromScore(score).level)}
+                  onClick={() => onClose(getLevelFromScore(score, isKid).level)}
                   className="bg-indigo-600 text-white font-bold text-xl px-10 py-5 rounded-full shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition-all hover:-translate-y-1"
                 >
                   Ir al panel principal

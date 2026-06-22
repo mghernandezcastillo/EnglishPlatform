@@ -1,10 +1,6 @@
 import express from 'express';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import fs from 'fs';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = 3000;
@@ -21,7 +17,8 @@ async function startServer() {
     });
     app.use(vite.middlewares);
   } else {
-    app.use(express.static(path.join(__dirname, 'dist'), { index: false }));
+    const distPath = path.join(process.cwd(), 'dist');
+    app.use(express.static(distPath, { index: false }));
   }
 
   app.get('*', async (req, res) => {
@@ -30,22 +27,27 @@ async function startServer() {
       let template: string;
 
       if (!isProd) {
-        template = fs.readFileSync(path.resolve(__dirname, 'index.html'), 'utf-8');
+        template = fs.readFileSync(path.resolve(process.cwd(), 'index.html'), 'utf-8');
         template = await vite.transformIndexHtml(url, template);
       } else {
-        template = fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf-8');
+        template = fs.readFileSync(path.resolve(process.cwd(), 'dist', 'index.html'), 'utf-8');
       }
 
       // Dynamic Meta Tags Replacement
       let title = "Plataforma de Inglés";
       let description = "Accede a tu cuenta de estudiante para continuar con tu aprendizaje.";
 
+      const isKid = req.query.type === 'niño' || url.includes('type=ni%C3%B1o') || url.includes('type=niño');
+      const brandName = isKid ? "Maven English for kids" : "Maven English";
+
       if (req.query.evaluacion || url.includes('evaluacion=')) {
-        title = "Evaluación Virtual de Inglés";
+        title = `Evaluación Virtual - ${brandName}`;
         description = "Accede a tu evaluación estructurada. Completa el cuestionario y revisa tus resultados.";
       } else if (req.query.studentId || url.includes('studentId=')) {
-        title = "Acceso de Estudiante - Maven English";
+        title = `Acceso de Estudiante - ${brandName}`;
         description = "Ingresa a tu portal de estudiante para revisar tu progreso y lecciones.";
+      } else if (isKid) {
+        title = brandName;
       }
 
       // Replace in HTML

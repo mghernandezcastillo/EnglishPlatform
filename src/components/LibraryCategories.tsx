@@ -76,17 +76,19 @@ const CATEGORIES = [
 
 interface LibraryCategoriesProps {
   onSelectCategory: (categoryId: string, title: string) => void;
+  isKid?: boolean;
 }
 
-export function LibraryCategories({ onSelectCategory }: LibraryCategoriesProps) {
+export function LibraryCategories({ onSelectCategory, isKid }: LibraryCategoriesProps) {
   return (
     <div className="mt-8">
-      <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 mb-8 text-indigo-900 border-l-4 border-l-indigo-600">
+      <div className={`border rounded-2xl p-6 mb-8 border-l-4 ${isKid ? 'bg-pink-50 border-pink-200 border-l-pink-500 text-pink-900 shadow-pink-100 shadow-lg' : 'bg-indigo-50 border-indigo-100 border-l-indigo-600 text-indigo-900'}`}>
         <h3 className="font-bold text-lg mb-2 flex items-center gap-2">
-          <BookOpen className="w-5 h-5" /> Plan Estructural de Categorías
+          {isKid ? <span className="text-2xl inline-block transform -rotate-12">🎁</span> : <BookOpen className="w-5 h-5" />} 
+          {isKid ? '¡Cajas Mágicas de Aprendizaje!' : 'Plan Estructural de Categorías'}
         </h3>
-        <p className="text-indigo-800/80 mb-4 text-sm font-medium">
-          Aquí tenemos el esquema con cada categoría rellenada con sus propias lecciones, teoría y vocabulario exhaustivo. Usa estas opciones para ir directamente a los temas específicos que quieras reforzar.
+        <p className={`${isKid ? 'text-pink-800' : 'text-indigo-800/80'} mb-4 text-sm font-medium`}>
+          {isKid ? '¡Aquí encontrarás juegos divertidos, colores, animales y sorpresas increíbles para aprender y jugar! Elige la caja que más te guste.' : 'Aquí tenemos el esquema con cada categoría rellenada con sus propias lecciones, teoría y vocabulario exhaustivo. Usa estas opciones para ir directamente a los temas específicos que quieras reforzar.'}
         </p>
       </div>
 
@@ -97,19 +99,19 @@ export function LibraryCategories({ onSelectCategory }: LibraryCategoriesProps) 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: idx * 0.05 }}
-            className={`cursor-pointer overflow-hidden relative rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 bg-gradient-to-br ${category.color}`}
+            className={`cursor-pointer overflow-hidden relative rounded-3xl p-6 text-white shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 bg-gradient-to-br ${isKid ? 'from-cyan-400 to-pink-400 shadow-pink-200 border-4 border-yellow-200 hover:scale-105' : category.color}`}
             onClick={() => onSelectCategory(category.id, category.title)}
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full blur-2xl transform translate-x-1/3 -translate-y-1/3" />
+            <div className={`absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full blur-2xl transform translate-x-1/3 -translate-y-1/3 ${isKid ? 'opacity-30' : ''}`} />
             <div className="relative z-10 flex flex-col h-full">
-              <div className="bg-white/20 w-12 h-12 rounded-2xl flex items-center justify-center mb-4 backdrop-blur-sm shadow-inner">
-                {category.icon}
+              <div className={`bg-white/20 w-12 h-12 rounded-2xl flex items-center justify-center mb-4 backdrop-blur-sm shadow-inner ${isKid ? 'bg-white/40 border-[3px] border-yellow-300 transform -rotate-6' : ''}`}>
+                {isKid ? <span className="text-2xl animate-pulse">✨</span> : category.icon}
               </div>
               <h4 className="text-xl font-bold mb-2 shadow-sm">{category.title}</h4>
               <p className="text-white/80 text-sm font-medium leading-snug">{category.description}</p>
               
               <div className="mt-6 pt-4 border-t border-white/20 flex items-center justify-between opacity-80 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-bold uppercase tracking-wider">Ver temas</span>
+                <span className="text-xs font-bold uppercase tracking-wider">{isKid ? '¡Vamos a ver!' : 'Ver temas'}</span>
                 <Layers className="w-4 h-4" />
               </div>
             </div>

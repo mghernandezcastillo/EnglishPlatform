@@ -43,6 +43,7 @@ export interface UserProgress {
   level?: string;
   studentName?: string;
   avatarId?: string;
+  studentType?: string;
 }
 
 export interface ClassSlide {
@@ -54,8 +55,11 @@ export interface ClassSlide {
   bgColor?: string;
   options?: string[];
   correctOptionIndex?: number;
-  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'reading' | 'video';
+  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'reading' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle';
   videoUrl?: string; // e.g. youtube embed url
+  wheelItems?: { label: string; color: string }[];
+  matchingPairs?: { left: string; right: string; id: string }[];
+  mysteryPuzzleData?: { target: string; imageUrl?: string; panels: { id: number; label: string; color: string }[] };
 }
 
 export interface ClassSection {
@@ -105,6 +109,7 @@ export interface DbStudent {
   name: string;
   avatar_id: string;
   level: string;
+  type?: string;
   completed_lessons: string[];
   group_id?: string;
   created_at?: string;

@@ -15,11 +15,14 @@ import { libraryLessons } from './data/libraryLessons';
 import { supabase } from './lib/supabase';
 import { avatars } from './config';
 
+import { useBrand } from './hooks/useBrand';
+
 const STORAGE_KEY = 'english_easy_path_progress';
 
 type AppRole = 'none' | 'teacher' | 'student';
 
 export default function App() {
+  const { brand } = useBrand();
   const [role, setRole] = useState<AppRole>('none');
   const [currentStudentId, setCurrentStudentId] = useState<string | null>(null);
 
@@ -41,7 +44,8 @@ export default function App() {
             currentLessonId: '',
             level: s.level || 'Nivel Inicial',
             studentName: s.name,
-            avatarId: s.avatar_id
+            avatarId: s.avatar_id,
+            studentType: s.type || 'adulto'
           });
           setRole('student');
         }
@@ -81,7 +85,8 @@ export default function App() {
         currentLessonId: '',
         level: st.level || 'Nivel Inicial',
         studentName: st.name,
-        avatarId: st.avatar_id
+        avatarId: st.avatar_id,
+        studentType: st.type || 'adulto'
       });
     }
     setRole('student');
@@ -234,8 +239,10 @@ export default function App() {
   }
 
   // Student Role
+  const isKidBg = progress.studentType === 'niño';
+  
   return (
-    <div className="min-h-screen bg-slate-50 font-sans selection:bg-indigo-100 selection:text-indigo-900">
+    <div className={`min-h-screen ${isKidBg ? 'bg-gradient-to-br from-cyan-100 via-pink-100 to-yellow-100' : 'bg-slate-50'} font-sans selection:bg-indigo-100 selection:text-indigo-900`}>
       
       {!isSupabaseConfigured && (
         <div className="bg-amber-100 px-4 py-2 text-center text-sm text-amber-900 font-medium border-b border-amber-200">
@@ -323,10 +330,16 @@ export default function App() {
       {!activeLessonId && (
         <header className="bg-white border-b border-gray-200 py-4 px-4 sm:px-6 sticky top-0 z-10 shadow-sm flex items-center justify-between">
           <div className="flex items-center gap-3 w-full max-w-5xl cursor-pointer" onClick={() => setRole('none')}>
-            <div className="w-10 h-10 shrink-0 bg-indigo-600 rounded-xl flex items-center justify-center shadow-inner">
-               <span className="text-white font-serif font-bold text-xl">E</span>
+            <div className="w-10 h-10 shrink-0 bg-indigo-600 rounded-xl flex items-center justify-center shadow-inner overflow-hidden">
+               {brand.logoUrl ? (
+                 <img src={brand.logoUrl} alt="Logo" className="w-full h-full object-cover" />
+               ) : (
+                 <span className="text-white font-serif font-bold text-xl">E</span>
+               )}
             </div>
-            <span className="text-lg sm:text-xl font-extrabold text-gray-900 tracking-tight truncate">Inglés Paso a Paso</span>
+            <span className="text-lg sm:text-xl font-extrabold text-gray-900 tracking-tight truncate">
+              {progress.studentType === 'niño' ? 'Maven English for kids' : brand.name}
+            </span>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4 shrink-0">
@@ -370,6 +383,7 @@ export default function App() {
           userLevel={progress.level || 'Nivel Inicial'}
           studentName={progress.studentName}
           avatarId={progress.avatarId}
+          studentType={progress.studentType}
           onStartLibraryLesson={handleStartLibraryLesson}
           onFinishClass={handleFinishClass}
           onToggleClass={handleToggleClass}

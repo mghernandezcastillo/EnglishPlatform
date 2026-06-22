@@ -47,6 +47,19 @@ export const dbAdmin = {
     return data;
   },
 
+  updateStudent: async (id: string, updates: Partial<DbStudent>): Promise<void> => {
+    const { error } = await supabase.from('students').update(updates).eq('id', id);
+    if (error) {
+      console.error('Error updating student in Supabase:', error);
+      const mock: DbStudent[] = JSON.parse(localStorage.getItem('mock_students') || '[]');
+      const idx = mock.findIndex(s => s.id === id);
+      if (idx !== -1) {
+        mock[idx] = { ...mock[idx], ...updates };
+        localStorage.setItem('mock_students', JSON.stringify(mock));
+      }
+    }
+  },
+
   updateStudentProgress: async (id: string, lessonId: string) => {
     const { data: student } = await supabase.from('students').select('completed_lessons').eq('id', id).single();
     if (student) {

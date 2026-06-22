@@ -17,6 +17,9 @@ export function VirtualEvaluationView({ levelId }: Props) {
   const [studentName, setStudentName] = useState(() => {
     return new URLSearchParams(window.location.search).get('student') || '';
   });
+  const [studentType, setStudentType] = useState(() => {
+    return new URLSearchParams(window.location.search).get('type') || 'adulto';
+  });
   const [hasStarted, setHasStarted] = useState(() => {
     return !!new URLSearchParams(window.location.search).get('student');
   });
@@ -28,6 +31,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
   const [inputValue, setInputValue] = useState('');
   
   const { brand } = useBrand();
+  const displayBrandName = studentType === 'niño' ? 'Maven English for kids' : brand.name;
 
   // Storage keys
   const progressKey = `virtual_exam_progress_${levelId}_${studentName.toLowerCase().trim()}`;
@@ -233,7 +237,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
                    levelName={level.title} 
                    score={score} 
                    total={questions.length} 
-                   brandName={brand.name} 
+                   brandName={displayBrandName} 
                    logoUrl={brand.logoUrl} 
                  />
               </div>
@@ -278,13 +282,13 @@ export function VirtualEvaluationView({ levelId }: Props) {
         
         <div className="bg-white rounded-[2rem] shadow-xl w-full max-w-md p-8 sm:p-10 border border-white/20 backdrop-blur-sm z-10 text-center">
             {brand.logoUrl ? (
-                <img src={brand.logoUrl} alt={brand.name} className="w-20 h-20 object-contain rounded-2xl mx-auto mb-6 shadow-sm" />
+                <img src={brand.logoUrl} alt={displayBrandName} className="w-20 h-20 object-contain rounded-2xl mx-auto mb-6 shadow-sm" />
             ) : (
                 <div className="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mx-auto mb-6 transform rotate-3">
                     <BookOpen className="w-8 h-8 text-indigo-600" />
                 </div>
             )}
-            <h1 className="text-2xl font-extrabold text-gray-900 mb-2">{brand.name} - Evaluación</h1>
+            <h1 className="text-2xl font-extrabold text-gray-900 mb-2">{displayBrandName} - Evaluación</h1>
             <h2 className="text-lg text-indigo-600 font-bold mb-6">{level.title}</h2>
             
             {attempts >= 2 ? (

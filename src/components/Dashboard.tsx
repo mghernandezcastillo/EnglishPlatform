@@ -5,7 +5,7 @@ import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap
 import { studentConfig, avatars } from '../config';
 import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
-import { curriculumLevels } from '../data/curriculum';
+import { getCurriculumForType } from '../data/curriculumSelector';
 import { PresentationViewer } from './PresentationViewer';
 import { useBrand } from '../hooks/useBrand';
 
@@ -14,6 +14,7 @@ interface DashboardProps {
   userLevel: string;
   studentName?: string;
   avatarId?: string;
+  studentType?: string;
   onStartLibraryLesson: (lessonId: string) => void;
   onFinishClass: (classId: string) => void;
   onToggleClass?: (classId: string) => void;
@@ -21,7 +22,8 @@ interface DashboardProps {
   onOpenSpeakingPractice: () => void;
 }
 
-export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenSpeakingPractice }: DashboardProps) {
+export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenSpeakingPractice }: DashboardProps) {
+  const curriculumLevels = getCurriculumForType(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
   const [activeLibraryCategoryTitle, setActiveLibraryCategoryTitle] = useState<string>('');
@@ -48,6 +50,8 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
 
   const displayStudentName = studentName && studentName.trim() !== '' ? studentName : studentConfig.name;
   const displayAvatarUrl = (avatarId && avatars[avatarId as keyof typeof avatars]) || studentConfig.avatarUrl;
+  const isKid = studentType === 'niño';
+  const displayBrandName = isKid ? 'Maven English for kids' : brand.name;
 
   const handleSelectCategory = (categoryId: string, title: string) => {
     setActiveLibraryCategoryId(categoryId);
@@ -59,71 +63,77 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
   };
 
   return (
-    <div className="max-w-5xl mx-auto py-8 px-4 sm:px-6">
+    <div className={`max-w-5xl mx-auto py-8 px-4 sm:px-6 ${isKid ? 'bg-gradient-to-br from-yellow-50 via-cyan-50 to-pink-50 min-h-screen rounded-[3rem] shadow-inner p-8 border-4 border-yellow-200' : ''}`}>
       
       {/* Brand Header */}
       <div className="flex items-center justify-center sm:justify-start gap-4 mb-8">
         {brand.logoUrl && (
-          <img src={brand.logoUrl} alt={brand.name} className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-xl shadow-sm" />
+          <img src={brand.logoUrl} alt={brand.name} className={`w-12 h-12 md:w-16 md:h-16 object-contain shadow-sm ${isKid ? 'rounded-full border-4 border-cyan-300 transform -rotate-6 shadow-xl' : 'rounded-xl'}`} />
         )}
-        <h1 className="text-2xl md:text-3xl font-black tracking-tight text-indigo-900">{brand.name}</h1>
+        <h1 className={`text-2xl md:text-3xl font-black tracking-tight ${isKid ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 drop-shadow-sm font-extrabold text-4xl' : 'text-indigo-900'}`}>{displayBrandName}</h1>
       </div>
 
       {/* Student Profile Header */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8 bg-white p-6 sm:p-8 rounded-[2rem] shadow-sm border border-indigo-50">
-        <img src={displayAvatarUrl} alt={displayStudentName} className="w-24 h-24 object-cover rounded-full border-4 border-indigo-100 shadow-md transform rotate-3" />
-        <div className="text-center sm:text-left flex-1">
-          <div className="inline-flex items-center gap-2 bg-indigo-50 px-3 py-1 rounded-full mb-2">
+      <div className={`flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8 p-6 sm:p-8 rounded-[2rem] shadow-sm ${isKid ? 'bg-white border-4 border-pink-200 shadow-pink-100/50 shadow-xl relative overflow-hidden' : 'bg-white border border-indigo-50'}`}>
+        {isKid && (
+          <>
+            <div className="absolute top-[-20px] right-[-20px] text-6xl opacity-20 transform rotate-12">🌟</div>
+            <div className="absolute bottom-[-10px] left-[20%] text-5xl opacity-20 transform -rotate-12">🚀</div>
+          </>
+        )}
+        <img src={displayAvatarUrl} alt={displayStudentName} className={`w-24 h-24 object-cover rounded-full shadow-md transform rotate-3 ${isKid ? 'border-4 border-yellow-400 w-32 h-32 shadow-yellow-200/50' : 'border-4 border-indigo-100'}`} />
+        <div className="text-center sm:text-left flex-1 relative z-10">
+          <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2 ${isKid ? 'bg-cyan-100 border-2 border-cyan-200' : 'bg-indigo-50'}`}>
              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-             <span className="text-xs font-bold text-indigo-700 uppercase tracking-widest">{userLevel}</span>
+             <span className={`text-xs font-bold uppercase tracking-widest ${isKid ? 'text-cyan-800' : 'text-indigo-700'}`}>{userLevel}</span>
           </div>
-          <h2 className="text-3xl font-extrabold text-gray-800 tracking-tight">¡Hola, {displayStudentName}! 👋</h2>
-          <p className="text-gray-500 font-medium mt-1">{studentConfig.motivation}</p>
+          <h2 className={`text-3xl font-extrabold tracking-tight ${isKid ? 'text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 text-4xl drop-shadow-sm' : 'text-gray-800'}`}>¡Hola, {displayStudentName}! 👋</h2>
+          <p className={`font-medium mt-2 ${isKid ? 'text-pink-600 text-lg' : 'text-gray-500'}`}>{studentConfig.motivation}</p>
         </div>
-        <div className="shrink-0 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <div className="shrink-0 flex flex-col sm:flex-row items-center justify-center gap-3 relative z-10">
           <button 
              onClick={onOpenSpeakingPractice}
-             className="w-full sm:w-auto relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-600 p-1 shadow-lg transition-transform hover:scale-105 active:scale-95"
+             className={`w-full sm:w-auto relative overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-105 active:scale-95 ${isKid ? 'bg-gradient-to-br from-cyan-400 to-blue-500 hover:shadow-cyan-300/50' : 'bg-gradient-to-br from-indigo-500 to-blue-600'}`}
           >
              <div className="absolute inset-0 bg-white/20 hover:bg-transparent transition-colors"></div>
              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
-               <span className="font-bold text-white tracking-wide">🎙️ Práctica Speaking</span>
+               <span className="font-bold text-white tracking-wide">{isKid ? '🎤 ¡Vamos a Hablar!' : '🎙️ Práctica Speaking'}</span>
              </div>
           </button>
           <button 
              onClick={onOpenAssessment}
-             className="w-full sm:w-auto group relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 p-1 shadow-lg transition-transform hover:scale-105 active:scale-95"
+             className={`w-full sm:w-auto group relative overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-105 active:scale-95 ${isKid ? 'bg-gradient-to-br from-yellow-400 to-orange-500 hover:shadow-orange-300/50' : 'bg-gradient-to-br from-amber-400 to-orange-500'}`}
           >
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
                <Sparkles className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">Evaluación Inicial</span>
+               <span className="font-bold text-white tracking-wide">{isKid ? '✨ ¡Juego Magico!' : 'Evaluación Inicial'}</span>
              </div>
           </button>
         </div>
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-wrap md:flex-nowrap bg-gray-100/50 p-1 rounded-2xl mb-8 border border-gray-200/50 w-full mx-auto md:mx-0 overflow-x-auto">
+      <div className={`flex flex-wrap md:flex-nowrap p-1 rounded-2xl mb-8 w-full mx-auto md:mx-0 overflow-x-auto ${isKid ? 'bg-white/60 border-2 border-pink-100 backdrop-blur-md shadow-sm' : 'bg-gray-100/50 border border-gray-200/50'}`}>
         <button
           onClick={() => { setActiveTab('path'); setActiveLibraryCategoryId(null); }}
           className={`flex-1 min-w-max px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all ${
             activeTab === 'path' 
-              ? 'bg-white text-indigo-600 shadow-sm border border-gray-100' 
-              : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
+              ? (isKid ? 'bg-gradient-to-r from-pink-400 to-purple-500 text-white shadow-lg shadow-pink-200 border-none scale-105' : 'bg-white text-indigo-600 shadow-sm border border-gray-100')
+              : (isKid ? 'text-gray-500 hover:text-pink-600 hover:bg-pink-50' : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50')
           }`}
         >
-          <GraduationCap className="w-5 h-5 shrink-0" /> Plan de Estudios Oficial
+          <GraduationCap className="w-5 h-5 shrink-0" /> {isKid ? 'Mi Aventura ✨' : 'Plan de Estudios Oficial'}
         </button>
         <button
           onClick={() => setActiveTab('library')}
           className={`flex-1 min-w-max px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all ${
             activeTab === 'library' 
-              ? 'bg-white text-indigo-600 shadow-sm border border-gray-100' 
-              : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
+               ? (isKid ? 'bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-lg shadow-cyan-200 border-none scale-105' : 'bg-white text-indigo-600 shadow-sm border border-gray-100')
+               : (isKid ? 'text-gray-500 hover:text-cyan-600 hover:bg-cyan-50' : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50')
           }`}
         >
-          <Layers className="w-5 h-5 shrink-0" /> Biblioteca de Temas
+          <Layers className="w-5 h-5 shrink-0" /> {isKid ? 'Juegos y Sorpresas 🎈' : 'Biblioteca de Temas'}
         </button>
       </div>
 
@@ -225,24 +235,24 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
             </div>
           </div>
         ) : (
-          <LibraryCategories onSelectCategory={handleSelectCategory} />
+          <LibraryCategories onSelectCategory={handleSelectCategory} isKid={isKid} />
         )
       ) : (
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
           <div className="mb-10 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             <div>
-              <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Plan de Estudios Oficial</h1>
-              <p className="text-lg text-gray-600 mt-2">La ruta estructurada para alcanzar tu fluidez.</p>
+              <h1 className={`text-4xl font-extrabold tracking-tight ${isKid ? 'text-cyan-600 drop-shadow-sm' : 'text-gray-900'}`}>{isKid ? 'Tu Mapa de Aventuras ✨' : 'Plan de Estudios Oficial'}</h1>
+              <p className={`text-lg mt-2 ${isKid ? 'text-pink-500 font-medium' : 'text-gray-600'}`}>{isKid ? '¡Desbloquea las misiones y gana medallas!' : 'La ruta estructurada para alcanzar tu fluidez.'}</p>
             </div>
             
-            <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 min-w-[240px]">
+            <div className={`p-4 rounded-2xl shadow-sm border min-w-[240px] ${isKid ? 'bg-gradient-to-r from-yellow-100 to-orange-100 border-yellow-300 transform rotate-2' : 'bg-white border-gray-100'}`}>
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm font-semibold text-gray-500">Progreso Total</span>
-                <span className="text-sm font-bold text-indigo-600">{progressPercentage}%</span>
+                <span className={`text-sm font-semibold ${isKid ? 'text-orange-600' : 'text-gray-500'}`}>{isKid ? 'Poder Mágico' : 'Progreso Total'}</span>
+                <span className={`text-sm font-bold ${isKid ? 'text-pink-600 text-lg' : 'text-indigo-600'}`}>{progressPercentage}%</span>
               </div>
-              <div className="w-full bg-gray-100 rounded-full h-3">
+              <div className={`w-full rounded-full h-3 ${isKid ? 'bg-white/50 border border-white' : 'bg-gray-100'}`}>
                 <motion.div 
-                  className="bg-indigo-600 h-3 rounded-full"
+                  className={`h-3 rounded-full ${isKid ? 'bg-gradient-to-r from-pink-400 to-yellow-400' : 'bg-indigo-600'}`}
                   initial={{ width: 0 }}
                   animate={{ width: `${progressPercentage}%` }}
                   transition={{ duration: 1, ease: 'easeOut' }}
@@ -255,27 +265,27 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-8 text-white shadow-xl mb-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden"
+              className={`rounded-3xl p-8 text-white shadow-xl mb-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden ${isKid ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 border-4 border-yellow-300' : 'bg-gradient-to-br from-indigo-500 to-purple-600'}`}
             >
               {/* Decorative shapes */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-black opacity-10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
               
               <div className="relative z-10 flex-1">
-                <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-white/30 backdrop-blur-sm shadow-sm">
-                  Tu próximo paso
+                <span className={`inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-white/30 backdrop-blur-sm shadow-sm ${isKid ? 'text-yellow-100' : ''}`}>
+                  {isKid ? '¡Siguiente Misión!' : 'Tu próximo paso'}
                 </span>
                 <div className="flex items-center gap-4 mb-2">
                   <h2 className="text-3xl font-bold">{nextClass.title}</h2>
                 </div>
-                <p className="text-indigo-100 text-lg mb-4">{nextClass.description}</p>
+                <p className={`text-lg mb-4 ${isKid ? 'text-white font-medium' : 'text-indigo-100'}`}>{nextClass.description}</p>
               </div>
               <button 
                 onClick={() => setPresentingClass(nextClass)}
-                className="relative z-10 bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-4 rounded-2xl font-bold text-lg shadow-lg flex items-center gap-3 transition-transform hover:scale-105 active:scale-95 whitespace-nowrap"
+                className={`relative z-10 bg-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg flex items-center gap-3 transition-transform hover:scale-105 active:scale-95 whitespace-nowrap ${isKid ? 'text-pink-600 hover:bg-yellow-50 hover:text-pink-700' : 'text-indigo-600 hover:bg-indigo-50'}`}
               >
                 <Play className="w-6 h-6 fill-current" />
-                Comenzar Clase
+                {isKid ? '¡A Jugar!' : 'Comenzar Clase'}
               </button>
             </motion.div>
           )}
@@ -435,7 +445,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                                       <div className="w-full flex gap-2 mt-4">
                                           <button 
                                               onClick={() => {
-                                                  window.open(`/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}`, '_blank');
+                                                  window.open(`/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}`, '_blank');
                                               }}
                                               className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm"
                                           >
@@ -444,7 +454,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                                           </button>
                                           <button 
                                               onClick={() => {
-                                                  const url = `${window.location.origin}/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}`;
+                                                  const url = `${window.location.origin}/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}`;
                                                   const msg = `Aquí está mi enlace para realizar el examen virtual de ${level.title}:\n\n${url}`;
                                                   window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
                                               }}
