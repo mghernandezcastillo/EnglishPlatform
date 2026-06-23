@@ -5,16 +5,15 @@ import confetti from 'canvas-confetti';
 interface MysteryPuzzleGameProps {
   targetWord: string;
   imageUrl?: string;
+  emoji?: string;
   panels: { id: number; label: string; color: string }[];
 }
 
-export function MysteryPuzzleGame({ targetWord, imageUrl, panels }: MysteryPuzzleGameProps) {
+export function MysteryPuzzleGame({ targetWord, imageUrl, emoji, panels }: MysteryPuzzleGameProps) {
   const [revealed, setRevealed] = useState<number[]>([]);
   const [won, setWon] = useState(false);
 
-  // A default cute image if none provided
-  const defaultImage = "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80";
-  const displayImage = imageUrl || defaultImage;
+  const displayImage = imageUrl || (!emoji ? "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80" : undefined);
 
   const handleReveal = (id: number) => {
     if (revealed.includes(id)) return;
@@ -47,11 +46,17 @@ export function MysteryPuzzleGame({ targetWord, imageUrl, panels }: MysteryPuzzl
       {/* Box container */}
       <div className="relative w-full max-w-2xl aspect-[4/3] sm:aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 sm:border-8 border-white bg-gray-200">
         
-        {/* The hidden image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${displayImage})` }}
-        />
+        {/* The hidden image or emoji */}
+        {displayImage ? (
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${displayImage})` }}
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center bg-cyan-100">
+            <span className="text-[150px] sm:text-[200px] leading-none drop-shadow-xl">{emoji}</span>
+          </div>
+        )}
 
         {/* The target word overlay shown when won */}
         <AnimatePresence>

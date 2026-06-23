@@ -816,9 +816,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Familia y Posesivos" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['💼 ➕ 🗣️ ➕ 🤝'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I have a business meeting.", "Let's negotiate a deal.", "I am looking for a job."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -1025,10 +1025,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 5: There is / There are y Lugares" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['✈️ ➕ 🏨 ➕ 🌴'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["We are going on vacation.", "I need to book a flight.", "I am lost in the city."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Intervenir para corregir la lectura y orientar los ejercicios."
@@ -1241,9 +1241,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 6: Meses, Días y Números Ordinales" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['☕ ➕ 💻 ➕ 😩'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I love drinking coffee.", "Working late makes me tired.", "My computer is broken."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -1457,10 +1457,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 7: Artículos y Demostrativos" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📅 ➕ ❌ ➕ 😢'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["The meeting is cancelled.", "I lost my calendar.", "I am late for my appointment."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Corregir errores de pronunciación y guiar los ejercicios, explicando el por qué."
@@ -1666,10 +1666,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 8: Partes del Cuerpo y Mascotas" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📈 ➕ 💰 ➕ 🎉'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["Sales are going up!", "I spent too much money.", "Let's have a party."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Guiar lectura y ejercicios corrigiendo el uso de have/has."
@@ -1882,9 +1882,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 9: Comida y Necesidades Básicas" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🚗 ➕ 🚦 ➕ 😡'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I got a speeding ticket.", "The traffic is terrible.", "My car broke down."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -2091,10 +2091,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 10: Direcciones y Preposiciones de Lugar" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🌧️ ➕ 🛋️ ➕ 📺'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I will stay home and watch TV.", "It's raining outside.", "The TV is broken."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Corregir errores de pronunciación, uso de in/on/under."
@@ -2443,9 +2443,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Future with Will vs Going to" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🏋️ ➕ 🥗 ➕ 💪'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I need to eat healthy.", "I am getting fit.", "I don't like vegetables."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -2635,10 +2635,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Preguntas Yes/No con Futuro y Contracciones" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📱 ➕ 🔋 ➕ ☠️'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["My phone is dead.", "I need a new phone.", "I am playing a game."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Corregir en vivo la pronunciación de 'gonna' evitando que digan 'Im gonna to..."
@@ -2820,10 +2820,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Preguntas WH con Futuro" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🗣️ ➕ 👂 ➕ 🤔'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["Can you repeat that?", "I don't understand.", "I am listening carefully."],
+                                correctOptionIndex: 2
                               }
             ],
             action: "Corregir errores comunes de estructura (ej. olvidar el verbo To Be o Will)."
@@ -3005,10 +3005,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: How much, How many, What kind" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🏥 ➕ 🩺 ➕ 💊'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am feeling sick.", "I am a doctor.", "I need some medicine."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Ayudar al alumno a distinguir si los objetos o conceptos son contables."
@@ -3355,10 +3355,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Rutinas y Present Simple" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🎓 ➕ 📚 ➕ 🧠'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am studying hard.", "I forgot my book.", "I graduated from university."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Asegurarse de que el alumno aplique la regla de 3ra persona en la lectura."
@@ -3547,10 +3547,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Present Progressive" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🍕 ➕ 🍔 ➕ 🤤'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am very hungry.", "I like fast food.", "I am cooking dinner."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Monitorizar que el alumno no omita el verbo To Be (Ej error: 'He playing')."
@@ -3739,10 +3739,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Expresando Preferencias (Gustos)" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🛒 ➕ 💳 ➕ 🛍️'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am going shopping.", "I lost my credit card.", "I bought a new shirt."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Corregir inmediatamente si dicen 'I like read' en vez de 'I like reading'."
@@ -3931,9 +3931,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Comparación entre Tiempos Verbales" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['⏰ ➕ 🏃 ➕ 🏃'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I love running.", "I am late, hurry up!", "I need a new watch."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -4274,9 +4274,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Experiencias en Simple Past" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['💼 ➕ 🗣️ ➕ 🤝'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I have a business meeting.", "Let's negotiate a deal.", "I am looking for a job."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -4466,10 +4466,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Preguntas y Negaciones en Pasado" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['✈️ ➕ 🏨 ➕ 🌴'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["We are going on vacation.", "I need to book a flight.", "I am lost in the city."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Corregir implacablemente si usan 'Did' + verbo en pasado."
@@ -4651,9 +4651,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Past Progressive y Conectores" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['☕ ➕ 💻 ➕ 😩'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I love drinking coffee.", "Working late makes me tired.", "My computer is broken."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -4842,10 +4842,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Reglas y Pronunciación de terminaciones -ed" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📅 ➕ ❌ ➕ 😢'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["The meeting is cancelled.", "I lost my calendar.", "I am late for my appointment."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Obligarlos a exagerar el sonido final (/t/, /d/, /id/) para crear memoria muscular."
@@ -5184,10 +5184,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Tense Review - Pasado, Presente, Futuro" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📈 ➕ 💰 ➕ 🎉'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["Sales are going up!", "I spent too much money.", "Let's have a party."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "El alumno debe justificar POR QUÉ eligió la respuesta (ej. 'Elegí travelled porque dice Last year')."
@@ -5368,9 +5368,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Presente Progresivo como Futuro" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🚗 ➕ 🚦 ➕ 😡'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I got a speeding ticket.", "The traffic is terrible.", "My car broke down."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -5553,10 +5553,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Domina el Pasado Simple y Pronunciación" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🌧️ ➕ 🛋️ ➕ 📺'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I will stay home and watch TV.", "It's raining outside.", "The TV is broken."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Forzar al alumno a justificar por qué es DID y por qué es WAS/WERE."
@@ -5792,9 +5792,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Pruebas de Gramática y Fluidez" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🏋️ ➕ 🥗 ➕ 💪'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I need to eat healthy.", "I am getting fit.", "I don't like vegetables."],
                                 correctOptionIndex: 1
                               },
                 {
@@ -6069,10 +6069,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Present Perfect vs Simple Past" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📱 ➕ 🔋 ➕ ☠️'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["My phone is dead.", "I need a new phone.", "I am playing a game."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Forzar la justificación: se usa past simple en la 2da porque dice 'last weekend'."
@@ -6255,10 +6255,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Tiempos Perfectos y Duración" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🗣️ ➕ 👂 ➕ 🤔'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["Can you repeat that?", "I don't understand.", "I am listening carefully."],
+                                correctOptionIndex: 2
                               }
             ],
             action: "Corregir implacablemente si usan Present Simple con periodos de tiempo no terminados."
@@ -6441,10 +6441,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Comparativos y Superlativos" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🏥 ➕ 🩺 ➕ 💊'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am feeling sick.", "I am a doctor.", "I need some medicine."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Si el alumno se equivoca, preguntarle: '¿Cuántas sílabas tiene el adjetivo?'"
@@ -6627,10 +6627,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Hábitos del Pasado (Used to)" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🎓 ➕ 📚 ➕ 🧠'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am studying hard.", "I forgot my book.", "I graduated from university."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Obligar al alumno a justificar por qué en negativo y pregunta se le quita la 'd'."
@@ -6813,10 +6813,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 5: Dando Consejos y Obligaciones" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🍕 ➕ 🍔 ➕ 🤤'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am very hungry.", "I like fast food.", "I am cooking dinner."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Hacer énfasis en la diferencia entre MUSTN'T y DON'T HAVE TO."
@@ -6999,10 +6999,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 6: Segunda Condicional y Tiempos Mezclados" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🛒 ➕ 💳 ➕ 🛍️'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am going shopping.", "I lost my credit card.", "I bought a new shirt."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Corregir inmediatamente si dicen 'If I will have' (nunca will/would después de IF)."
@@ -7342,9 +7342,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Entrevistas y Customer Service Fundamentals" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['⏰ ➕ 🏃 ➕ 🏃'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I love running.", "I am late, hurry up!", "I need a new watch."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -7528,9 +7528,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Voz Pasiva en Pasado y Futuro" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['💼 ➕ 🗣️ ➕ 🤝'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I have a business meeting.", "Let's negotiate a deal.", "I am looking for a job."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -7714,10 +7714,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Modales Perfectos y Especulación" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['✈️ ➕ 🏨 ➕ 🌴'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["We are going on vacation.", "I need to book a flight.", "I am lost in the city."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Forzar a que expliquen si la oración es 'Sherlock Holmes' (deducción = must have) o 'Persona triste' (arrepentimiento = should have)."
@@ -7899,9 +7899,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Role Play - Entrevistas de Trabajo" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['☕ ➕ 💻 ➕ 😩'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I love drinking coffee.", "Working late makes me tired.", "My computer is broken."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -8243,10 +8243,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Reported Speech y Negociación Avanzada" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📅 ➕ ❌ ➕ 😢'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["The meeting is cancelled.", "I lost my calendar.", "I am late for my appointment."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Atención a los PRONOMBRES (my -> his/her). Eso suele causar más errores que los verbos."
@@ -8429,10 +8429,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Future Perfect y Mastery de Condicionales" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📈 ➕ 💰 ➕ 🎉'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["Sales are going up!", "I spent too much money.", "Let's have a party."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Atención extrema al 3er condicional, muchos alumnos ponen 'If I would have' lo cual es un error gravísimo."
@@ -8615,9 +8615,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Expresando Costumbres y Adaptaciones" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🚗 ➕ 🚦 ➕ 😡'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I got a speeding ticket.", "The traffic is terrible.", "My car broke down."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -8801,10 +8801,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Voz Pasiva Avanzada y Comparativos As...As" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🌧️ ➕ 🛋️ ➕ 📺'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I will stay home and watch TV.", "It's raining outside.", "The TV is broken."],
+                                correctOptionIndex: 0
                               }
             ],
             action: "Exigir que usen 'not as...as' en lugar de 'is less than' para sonar más naturales."
@@ -8987,9 +8987,9 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 5: Expectativas e Intenciones Fallidas" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🏋️ ➕ 🥗 ➕ 💪'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
+                                options: ["I need to eat healthy.", "I am getting fit.", "I don't like vegetables."],
                                 correctOptionIndex: 1
                               }
             ],
@@ -9335,10 +9335,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Pensamiento Crítico - Tecnología y Ética" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['📱 ➕ 🔋 ➕ ☠️'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["My phone is dead.", "I need a new phone.", "I am playing a game."],
+                                correctOptionIndex: 0
                               },
                 {
                                 id: "Diapositiva-Video-Homework-42",
@@ -9458,10 +9458,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Cultura y Sociedad Contemporánea" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🗣️ ➕ 👂 ➕ 🤔'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["Can you repeat that?", "I don't understand.", "I am listening carefully."],
+                                correctOptionIndex: 2
                               },
                 {
                                 id: "Diapositiva-Video-Homework-43",
@@ -9581,10 +9581,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Perspectivas en Salud Mental y Física" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🏥 ➕ 🩺 ➕ 💊'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am feeling sick.", "I am a doctor.", "I need some medicine."],
+                                correctOptionIndex: 0
                               },
                 {
                                 id: "Diapositiva-Video-Homework-44",
@@ -9704,10 +9704,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Conversation Club and Critical Thinking" + ")",
                                 type: 'emoji-game',
-                                content: ['🤔 ➕ 💡 ➕ 🗣️'],
+                                content: ['🎓 ➕ 📚 ➕ 🧠'],
                                 bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I don't know.", "I have an idea and communicate it.", "She is angry."],
-                                correctOptionIndex: 1
+                                options: ["I am studying hard.", "I forgot my book.", "I graduated from university."],
+                                correctOptionIndex: 0
                               },
                 {
                                 id: "Diapositiva-Video-Homework-45",

@@ -243,6 +243,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "RED",
+                  "emoji": "🍎",
                   "panels": [
                     {
                       "id": 1,
@@ -538,6 +539,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "ONE",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -829,6 +831,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "JUMP",
+                  "emoji": "!🦘",
                   "panels": [
                     {
                       "id": 1,
@@ -1117,6 +1120,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "TEDDY BEAR",
+                  "emoji": "🧸",
                   "panels": [
                     {
                       "id": 1,
@@ -1405,6 +1409,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "STRAWBERRY",
+                  "emoji": "🍓",
                   "panels": [
                     {
                       "id": 1,
@@ -1693,6 +1698,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "CIRCLE",
+                  "emoji": "🔴",
                   "panels": [
                     {
                       "id": 1,
@@ -1981,6 +1987,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "BACKPACK",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -2269,6 +2276,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "COW",
+                  "emoji": "🐮",
                   "panels": [
                     {
                       "id": 1,
@@ -2566,6 +2574,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "HAPPY",
+                  "emoji": "😊",
                   "panels": [
                     {
                       "id": 1,
@@ -2854,6 +2863,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "PIZZA",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -3142,6 +3152,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "SUNNY",
+                  "emoji": "☀️",
                   "panels": [
                     {
                       "id": 1,
@@ -3430,6 +3441,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "TREE",
+                  "emoji": "🌳",
                   "panels": [
                     {
                       "id": 1,
@@ -3718,6 +3730,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "BUTTERFLY",
+                  "emoji": "🦋",
                   "panels": [
                     {
                       "id": 1,
@@ -4006,6 +4019,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "FISH",
+                  "emoji": "🐠",
                   "panels": [
                     {
                       "id": 1,
@@ -4294,6 +4308,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "FLY",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -4582,6 +4597,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "ELEVEN",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -4879,6 +4895,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "LION",
+                  "emoji": "🦁",
                   "panels": [
                     {
                       "id": 1,
@@ -5167,6 +5184,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "SLEEP",
+                  "emoji": "🛏️",
                   "panels": [
                     {
                       "id": 1,
@@ -5455,6 +5473,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "CAR",
+                  "emoji": "🚗",
                   "panels": [
                     {
                       "id": 1,
@@ -5743,6 +5762,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "DOCTOR",
+                  "emoji": "👩‍⚕️",
                   "panels": [
                     {
                       "id": 1,
@@ -6031,6 +6051,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "GUITAR",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -6319,6 +6340,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "MONDAY",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -6607,6 +6629,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "BREAD",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -6895,6 +6918,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "SLIDE",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -7192,6 +7216,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "WAKE UP",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -7480,6 +7505,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "SOCCER",
+                  "emoji": "⚽",
                   "panels": [
                     {
                       "id": 1,
@@ -7768,6 +7794,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "CHRISTMAS",
+                  "emoji": "🎄",
                   "panels": [
                     {
                       "id": 1,
@@ -8056,6 +8083,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "ROCKET",
+                  "emoji": "🚀",
                   "panels": [
                     {
                       "id": 1,
@@ -8344,6 +8372,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "FAIRY",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -8632,6 +8661,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "SPRING",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -8920,6 +8950,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "HELP",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,
@@ -9208,6 +9239,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "type": "mystery-puzzle",
                 "mysteryPuzzleData": {
                   "target": "WORLD",
+                  "emoji": "⭐",
                   "panels": [
                     {
                       "id": 1,

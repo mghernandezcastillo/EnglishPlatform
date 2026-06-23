@@ -59,7 +59,7 @@ export interface ClassSlide {
   videoUrl?: string; // e.g. youtube embed url
   wheelItems?: { label: string; color: string }[];
   matchingPairs?: { left: string; right: string; id: string }[];
-  mysteryPuzzleData?: { target: string; imageUrl?: string; panels: { id: number; label: string; color: string }[] };
+  mysteryPuzzleData?: { target: string; imageUrl?: string; emoji?: string; panels: { id: number; label: string; color: string }[] };
 }
 
 export interface ClassSection {

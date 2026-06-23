@@ -148,6 +148,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     <MysteryPuzzleGame 
                       targetWord={slide.mysteryPuzzleData.target}
                       imageUrl={slide.mysteryPuzzleData.imageUrl}
+                      emoji={slide.mysteryPuzzleData.emoji}
                       panels={slide.mysteryPuzzleData.panels}
                     />
                   </div>
@@ -183,7 +184,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
 
                 
                 {/* WhatsApp Share Button for Homework */}
-                {slide.type === 'homework' && (
+                {(slide.type === 'homework' || slide.title?.toLowerCase().includes('homework')) && (
                   <div className="mt-6 flex">
                     <button
                       onClick={() => {

@@ -143,7 +143,7 @@ const assessmentQuestions = [
   }
 ];
 
-import imgKidWelcome from '../assets/images/kids_assessment_welcome_1782139154509.jpg';
+import imgKidWelcome from '../assets/images/kids_assessment_welcome_super_1782222847699.jpg';
 import imgKidSun from '../assets/images/kids_q_sun_1782139171200.jpg';
 import imgKidCat from '../assets/images/kids_q_cat_1782139183676.jpg';
 import imgKidApples from '../assets/images/kids_q_apples_1782139196585.jpg';

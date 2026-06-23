@@ -85,7 +85,7 @@ export function LibraryCategories({ onSelectCategory, isKid }: LibraryCategories
       <div className={`border rounded-2xl p-6 mb-8 border-l-4 ${isKid ? 'bg-pink-50 border-pink-200 border-l-pink-500 text-pink-900 shadow-pink-100 shadow-lg' : 'bg-indigo-50 border-indigo-100 border-l-indigo-600 text-indigo-900'}`}>
         <h3 className="font-bold text-lg mb-2 flex items-center gap-2">
           {isKid ? <span className="text-2xl inline-block transform -rotate-12">🎁</span> : <BookOpen className="w-5 h-5" />} 
-          {isKid ? '¡Cajas Mágicas de Aprendizaje!' : 'Plan Estructural de Categorías'}
+          {isKid ? '¡Cajas de Aventuras!' : 'Plan Estructural de Categorías'}
         </h3>
         <p className={`${isKid ? 'text-pink-800' : 'text-indigo-800/80'} mb-4 text-sm font-medium`}>
           {isKid ? '¡Aquí encontrarás juegos divertidos, colores, animales y sorpresas increíbles para aprender y jugar! Elige la caja que más te guste.' : 'Aquí tenemos el esquema con cada categoría rellenada con sus propias lecciones, teoría y vocabulario exhaustivo. Usa estas opciones para ir directamente a los temas específicos que quieras reforzar.'}

@@ -107,7 +107,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
                <Sparkles className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">{isKid ? '✨ ¡Juego Magico!' : 'Evaluación Inicial'}</span>
+               <span className="font-bold text-white tracking-wide">{isKid ? '✨ ¡Súper Juego!' : 'Evaluación Inicial'}</span>
              </div>
           </button>
         </div>
@@ -247,7 +247,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
             
             <div className={`p-4 rounded-2xl shadow-sm border min-w-[240px] ${isKid ? 'bg-gradient-to-r from-yellow-100 to-orange-100 border-yellow-300 transform rotate-2' : 'bg-white border-gray-100'}`}>
               <div className="flex justify-between items-center mb-2">
-                <span className={`text-sm font-semibold ${isKid ? 'text-orange-600' : 'text-gray-500'}`}>{isKid ? 'Poder Mágico' : 'Progreso Total'}</span>
+                <span className={`text-sm font-semibold ${isKid ? 'text-orange-600' : 'text-gray-500'}`}>{isKid ? 'Tu Progreso' : 'Progreso Total'}</span>
                 <span className={`text-sm font-bold ${isKid ? 'text-pink-600 text-lg' : 'text-indigo-600'}`}>{progressPercentage}%</span>
               </div>
               <div className={`w-full rounded-full h-3 ${isKid ? 'bg-white/50 border border-white' : 'bg-gray-100'}`}>

@@ -259,7 +259,8 @@ const processedLevels = levelsData.map((lvl, lIdx) => ({
             bgColor: "bg-gradient-to-br from-cyan-400 to-indigo-500",
             type: "mystery-puzzle",
             mysteryPuzzleData: {
-              target: cls.wheelItems[0].label.replace(/[^A-Z ]/g, '').trim(),
+              target: cls.wheelItems[0].label.replace(/[^a-zA-Z\s]/g, '').trim(),
+              emoji: cls.wheelItems[0].label.replace(/[a-zA-Z\s]/g, '').trim() || "⭐",
               panels: [
                 { id: 1, label: "1", color: "bg-red-500" },
                 { id: 2, label: "2", color: "bg-blue-500" },
