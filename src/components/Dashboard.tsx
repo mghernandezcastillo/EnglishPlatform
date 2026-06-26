@@ -51,7 +51,8 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
   const displayStudentName = studentName && studentName.trim() !== '' ? studentName : studentConfig.name;
   const displayAvatarUrl = (avatarId && avatars[avatarId as keyof typeof avatars]) || studentConfig.avatarUrl;
   const isKid = studentType === 'niño';
-  const displayBrandName = isKid ? 'Maven English for kids' : brand.name;
+  const isTeen = studentType === 'adolescente';
+  const displayBrandName = isKid ? 'Maven English for kids' : isTeen ? 'Maven English for teens' : brand.name;
 
   const handleSelectCategory = (categoryId: string, title: string) => {
     setActiveLibraryCategoryId(categoryId);

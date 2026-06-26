@@ -60,6 +60,16 @@ export const dbAdmin = {
     }
   },
 
+  deleteStudent: async (id: string): Promise<void> => {
+    const { error } = await supabase.from('students').delete().eq('id', id);
+    if (error) {
+      console.error('Error deleting student in Supabase:', error);
+      const mock: DbStudent[] = JSON.parse(localStorage.getItem('mock_students') || '[]');
+      const filtered = mock.filter(s => s.id !== id);
+      localStorage.setItem('mock_students', JSON.stringify(filtered));
+    }
+  },
+
   updateStudentProgress: async (id: string, lessonId: string) => {
     const { data: student } = await supabase.from('students').select('completed_lessons').eq('id', id).single();
     if (student) {
@@ -121,7 +131,7 @@ export const dbAdmin = {
   },
 
   getEvaluationProgress: async (levelId: string, studentName: string): Promise<any> => {
-    const studentSafe = studentName.toLowerCase().trim();
+    const studentSafe = (studentName || '').toLowerCase().trim();
     const { data, error } = await supabase.from('evaluation_progress').select('*').eq('level_id', levelId).eq('student_name', studentSafe).single();
     if (error) {
        console.warn('Evaluation progress not found in Supabase.', error);
@@ -131,7 +141,7 @@ export const dbAdmin = {
   },
 
   saveEvaluationProgress: async (levelId: string, studentName: string, progress: any) => {
-    const studentSafe = studentName.toLowerCase().trim();
+    const studentSafe = (studentName || '').toLowerCase().trim();
     const { error } = await supabase.from('evaluation_progress').upsert({ 
        id: `${levelId}_${studentSafe}`,
        level_id: levelId, 
@@ -145,7 +155,7 @@ export const dbAdmin = {
   },
 
   clearEvaluationProgress: async (levelId: string, studentName: string) => {
-    const studentSafe = studentName.toLowerCase().trim();
+    const studentSafe = (studentName || '').toLowerCase().trim();
     const { error } = await supabase.from('evaluation_progress').delete().eq('level_id', levelId).eq('student_name', studentSafe);
     localStorage.removeItem(`virtual_exam_progress_${levelId}_${studentSafe}`);
   },

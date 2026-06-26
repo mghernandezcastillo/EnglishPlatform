@@ -1,0 +1,8 @@
+                "description": "¡Muéstrame 5 deditos rápidos!",
+        "description": "¡Vamos a participar y descubrir nuestros videojuegos favoritos!",
+                "description": "¡Corre a abrazar tu videojuego favorito!",
+                "description": "¡Enséñame tu lápiz o crayón favorito!",
+                "description": "¡Haz el sonido de tu animal de granja favorito!",
+                "description": "¡Finge que empujas el carrito de compras!",
+                "description": "Veamos qué meteremos en el carrito.",
+                "description": "¡Empareja tu pasatiempo favorito!",

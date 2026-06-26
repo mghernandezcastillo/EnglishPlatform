@@ -55,7 +55,7 @@ export interface ClassSlide {
   bgColor?: string;
   options?: string[];
   correctOptionIndex?: number;
-  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'reading' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle';
+  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle';
   videoUrl?: string; // e.g. youtube embed url
   wheelItems?: { label: string; color: string }[];
   matchingPairs?: { left: string; right: string; id: string }[];
@@ -74,7 +74,9 @@ export interface ClassSection {
 export interface CurriculumClass {
   id: string;
   title: string;
-  description: string;
+  description?: string;
+  duration?: string;
+  objective?: string;
   sections: ClassSection[];
 }
 

@@ -38,6 +38,14 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (
+        document.activeElement?.tagName === 'INPUT' ||
+        document.activeElement?.tagName === 'TEXTAREA' ||
+        (document.activeElement as HTMLElement)?.isContentEditable
+      ) {
+        return;
+      }
+      
       if (e.key === 'ArrowRight') nextSlide();
       if (e.key === 'ArrowLeft') prevSlide();
       if (e.key === 'Escape') onClose();
@@ -63,6 +71,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   if (allSlides.length === 0) return null;
 
   const currentData = allSlides[currentIndex];
+  if (!currentData) return null;
   const { section, slide } = currentData;
   const isLastSlide = currentIndex === allSlides.length - 1;
 
@@ -184,7 +193,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
 
                 
                 {/* WhatsApp Share Button for Homework */}
-                {(slide.type === 'homework' || slide.title?.toLowerCase().includes('homework')) && (
+                {(slide.type === 'homework' || (slide.title || '').toLowerCase().includes('homework')) && (
                   <div className="mt-6 flex">
                     <button
                       onClick={() => {

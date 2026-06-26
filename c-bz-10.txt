@@ -1,0 +1,208 @@
+id: "c-bz-10",
+        title: "Clase 10: Direcciones y Preposiciones de Lugar",
+        description: "Cómo dar direcciones de calles y conocer dónde se ubican los objetos.",
+        sections: [
+          {
+            id: "s1",
+            title: "1. Warm-up",
+            duration: "5 minutos",
+            objective: "Activar el pensamiento espacial.",
+            slides: [
+              {
+                id: "Diapositiva 1",
+                title: "Welcome! Where are you going?",
+                description: "Let's talk about locations.",
+                content: ["How do you go to the supermarket?", "Do you use maps?"],
+                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+                imageUrl: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            action: "Preguntar a los alumnos si usan mapas o piden direcciones habitualmente."
+          },
+          {
+            id: "s2",
+            title: "2. Vocabulary & Grammar",
+            duration: "15 minutos",
+            objective: "Aprender preposiciones para objetos y verbos para dar direcciones.",
+            slides: [
+              {
+                id: "Diapositiva 2",
+                title: "Prepositions of Place (1/2)",
+                description: "Dónde están las cosas",
+                content: ["IN: Adentro de algo (In the box)", "ON: Sobre una superficie (On the table)", "UNDER: Debajo de (Under the bed)"],
+                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Prepositions of Place (2/2)",
+                description: "Dónde están los lugares",
+                content: ["NEXT TO: Al lado de (Next to the bank)", "BETWEEN: En medio de (Between the bank and school)", "ACROSS FROM: Enfrente de (Across from the park)"],
+                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600",
+                imageUrl: "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                id: "Diapositiva 4",
+                title: "Giving Directions",
+                description: "Verbos clave",
+                content: ["Go straight (Ve derecho)", "Turn left (Gira a la izquierda)", "Turn right (Gira a la derecha)"],
+                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Asking for Directions",
+                description: "Preguntas útiles",
+                content: ["Excuse me, where is the...? (Disculpe, ¿dónde está...?)", "How do I get to...? (¿Cómo llego a...?)"],
+                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+              }
+            ],
+            action: "Ejemplificar las preposiciones usando objetos a la mano y dibujar/mostrar un croquis para directions."
+          },
+          {
+            id: "s3",
+            title: "3. Practice & Reading",
+            duration: "15 minutos",
+            objective: "Fijar vocabulario identificando ubicaciones en oraciones.",
+            slides: [
+              {
+                id: "Diapositiva 6",
+                title: "Reading Practice",
+                description: "Lee en voz alta:",
+                content: ["Excuse me, where is the bank?", "- Go straight and turn left. It's next to the supermarket. It is across from the park."],
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Complete the sentence (1/3)",
+                description: "Prepositions",
+                content: ["The cat is sleeping ______ the bed. (debajo)"],
+                options: ["in", "on", "under"],
+                correctOptionIndex: 2,
+                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Complete the sentence (2/3)",
+                description: "Prepositions",
+                content: ["The pharmacy is ______ the bank and the school."],
+                options: ["next to", "between", "in"],
+                correctOptionIndex: 1,
+                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+              },
+              {
+                id: "Diapositiva 9",
+                title: "Complete the sentence (3/3)",
+                description: "Directions",
+                content: ["To get to the hospital, ______ straight for two blocks."],
+                options: ["walks", "go", "turn"],
+                correctOptionIndex: 1,
+                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Find the mistake",
+                description: "Can you fix these sentences?",
+                content: ["1. The apple is in the table. (surface)", "2. The bank is between to the school.", "3. Turn straight ahead."],
+                bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+              },
+                {
+                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                title: "Emojis Locos 🤪",
+                                description: "Interpreta el significado de estos emojis (" + "Clase 10: Direcciones y Preposiciones de Lugar" + ")",
+                                type: 'emoji-game',
+                                content: ['🌧️ ➕ 🛋️ ➕ 📺'],
+                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+                                options: ["I will stay home and watch TV.", "It's raining outside.", "The TV is broken."],
+                                correctOptionIndex: 0
+                              }
+            ],
+            action: "Corregir errores de pronunciación, uso de in/on/under."
+          },
+          {
+            id: "s4",
+            title: "4. Production & Quiz",
+            duration: "15 minutos",
+            objective: "Simular una situación dando indicaciones en la calle.",
+            slides: [
+              {
+                id: "Diapositiva 11",
+                title: "Role Play: Lost Tourist",
+                description: "Ayuda al turista",
+                content: ["Tourist: 'Excuse me, where is the supermarket?'", "You: Give directions using turn right/left, go straight, next to..."],
+                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Fun Quiz! (1/4)",
+                description: "Prepositions",
+                content: ["The keys are ______ my pocket."],
+                options: ["in", "on", "under"],
+                correctOptionIndex: 0,
+                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+              },
+              {
+                id: "Diapositiva 13",
+                title: "Fun Quiz! (2/4)",
+                description: "Prepositions",
+                content: ["The picture is ______ the wall."],
+                options: ["in", "on", "next to"],
+                correctOptionIndex: 1,
+                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+              },
+              {
+                id: "Diapositiva 14",
+                title: "Fun Quiz! (3/4)",
+                description: "Directions",
+                content: ["______ left at the next corner."],
+                options: ["Turn", "Go", "Look"],
+                correctOptionIndex: 0,
+                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! (4/4)",
+                description: "Locations",
+                content: ["The museum is ______ the park. (enfrente de)"],
+                options: ["next to", "between", "across from"],
+                correctOptionIndex: 2,
+                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+              }
+            ],
+            action: "Jugar 'Turista Perdido' y evaluar preposiciones."
+          },
+          {
+            id: "s5",
+            title: "5. Wrap-up",
+            duration: "10 minutos",
+            objective: "Repaso final y conclusión del nivel.",
+            slides: [
+              {
+                id: "Diapositiva 16",
+                title: "Level 1 Complete!",
+                description: "You are doing amazing!",
+                content: ["You can give directions!", "You know prepositions of place."],
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+                imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Homework",
+                description: "Assignment for next time",
+                content: ["Write directions from your house to a near park or store.", "Example: Go out, turn left, go straight... It is next to the bakery."],
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+              },
+                {
+                                id: "Diapositiva-Video-Homework-10",
+                                title: "Video Homework 📹",
+                                description: "Watch this short video and listen carefully.",
+                                type: 'video',
+                                videoUrl: "https://www.youtube.com/embed/SHXPpsIJTb0",
+                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
+                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+                              }
+            ],
+            action: "Celebrar la finalización del nivel 1 y asignar tarea."
+          }
+        ]
+      },
+{
+      

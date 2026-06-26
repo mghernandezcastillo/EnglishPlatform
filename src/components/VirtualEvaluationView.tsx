@@ -31,11 +31,11 @@ export function VirtualEvaluationView({ levelId }: Props) {
   const [inputValue, setInputValue] = useState('');
   
   const { brand } = useBrand();
-  const displayBrandName = studentType === 'niño' ? 'Maven English for kids' : brand.name;
+  const displayBrandName = studentType === 'niño' ? 'Maven English for kids' : studentType === 'adolescente' ? 'Maven English for teens' : brand.name;
 
   // Storage keys
-  const progressKey = `virtual_exam_progress_${levelId}_${studentName.toLowerCase().trim()}`;
-  const attemptsKey = `virtual_exam_attempts_${levelId}_${studentName.toLowerCase().trim()}`;
+  const progressKey = `virtual_exam_progress_${levelId}_${(studentName || '').toLowerCase().trim()}`;
+  const attemptsKey = `virtual_exam_attempts_${levelId}_${(studentName || '').toLowerCase().trim()}`;
   
   const [attempts, setAttempts] = useState(0);
 

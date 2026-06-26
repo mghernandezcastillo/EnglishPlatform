@@ -338,7 +338,7 @@ export default function App() {
                )}
             </div>
             <span className="text-lg sm:text-xl font-extrabold text-gray-900 tracking-tight truncate">
-              {progress.studentType === 'niño' ? 'Maven English for kids' : brand.name}
+              {progress.studentType === 'niño' ? 'Maven English for kids' : progress.studentType === 'adolescente' ? 'Maven English for teens' : brand.name}
             </span>
           </div>
 

@@ -1,77 +1,14 @@
 import { CurriculumLevel } from '../types';
 
-const baseStructure = (title: string, description: string) => ({
-  id: `c-${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}`,
-  title: title,
-  description: description,
-  sections: [
-    {
-      id: "s1",
-      title: "1. Warm-up",
-      duration: "5 minutos",
-      objective: "Activar el cerebro en inglés.",
-      slides: [
-        { id: "Diapositiva 1", title: "Welcome!", description: "Let's talk for a bit." }
-      ],
-      action: "Conversar libremente sobre su día o un tema relacionado."
-    },
-    {
-      id: "s2",
-      title: "2. Rules & Grammar",
-      duration: "15 minutos",
-      objective: "Introducir la nueva gramática.",
-      slides: [
-        { id: "Diapositiva 2", title: "Context", description: "How do we use this in real life?" },
-        { id: "Diapositiva 3", title: "Examples", description: "Let's look at some examples." },
-        { id: "Diapositiva 4", title: "Formula", description: "The grammatical structure." }
-      ],
-      action: "Guiar al alumno para que descubra la regla por sí mismo."
-    },
-    {
-      id: "s3",
-      title: "3. Practice",
-      duration: "10 minutos",
-      objective: "Fijar la estructura con precisión.",
-      slides: [
-        { id: "Diapositiva 5", title: "Fill in the blanks", description: "Let's practice together." },
-        { id: "Diapositiva 6", title: "Find the mistake", description: "Can you fix these sentences?" }
-      ],
-      action: "Corregir pronunciación y estructura de inmediato."
-    },
-    {
-      id: "s4",
-      title: "4. Production",
-      duration: "20 minutos",
-      objective: "Desarrollar la fluidez real.",
-      slides: [
-        { id: "Diapositiva 7", title: "Create a story", description: "Use your imagination." },
-        { id: "Diapositiva 8", title: "Speaking Time", description: "Let's practice using everything." }
-      ],
-      action: "El alumno debe hablar un 70% del tiempo de la clase."
-    },
-    {
-      id: "s5",
-      title: "5. Wrap-up",
-      duration: "10 minutos",
-      objective: "Evaluar el progreso del día.",
-      slides: [
-        { id: "Diapositiva 9", title: "Great job today!", description: "Review of the class." },
-        { id: "Diapositiva 10", title: "Homework", description: "Practice for next time." }
-      ],
-      action: "Explicar mejoras y dar consejos prácticos."
-    }
-  ]
-});
-
 export const curriculumLevels: CurriculumLevel[] = [
   {
     id: "basic-zero",
     title: "Basic Zero",
     duration: "1 mes",
-    objective: "Presentarse, describir personas y lugares, expresar necesidades básicas; verbo to be, números cardinales y ordinales, colores, meses/días, profesiones, a/an, singulares, demostrativos, familia, posesivos, partes del cuerpo, preguntas con to be, hora, mascotas, there is/there are, lugares de ciudad, direcciones, pronombres de objeto, preposiciones, emociones, comida.",
-    mcfrEquivalent: "Pre-A1",
+    objective: "Para estudiantes sin experiencia previa. Sentaremos las bases del idioma desde cero.",
+    mcfrEquivalent: "A1",
     classes: [
-      {
+{
         id: "c-bz-1",
         title: "Clase 1: Introducción y Verb To Be",
         description: "Aprende a presentarte, saludar y usar el verbo To Be en presente.",
@@ -87,8 +24,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Welcome! Let's talk", 
                 description: "Basic greetings",
                 content: ["Hello! What's your name?", "How are you today?"],
-                bgColor: "bg-gradient-to-br from-blue-500 to-blue-700",
-                imageUrl: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-500 to-blue-700"
               }
             ],
             action: "Conversar libremente sobre su día o un tema relacionado."
@@ -104,8 +40,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Personal Pronouns", 
                 description: "Conoce los pronombres",
                 content: ["I (Yo)", "You (Tú / Ustedes)", "He (Él) / She (Ella) / It (Eso)", "We (Nosotros)", "They (Ellos)"],
-                bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600",
-                imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               { 
                 id: "Diapositiva 3", 
@@ -143,8 +78,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice", 
                 description: "Lee en voz alta este pequeño párrafo:",
                 content: ["Hello! My name is Sarah. I am 25 years old.", "I am a teacher. I am from London but I live in Spain.", "My brother is John. He is a student.", "We are very happy today!"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva-Emoji-1",
@@ -281,7 +215,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-2",
         title: "Clase 2: Números y La Hora",
         description: "Aprende a decir tu edad, números de teléfono y la hora.",
@@ -354,8 +288,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta este pequeño párrafo:",
                 content: ["Hello! I am Mark and I am 35 years old.", "I wake up at exactly half past six (6:30).", "I drink coffee and I work at eight o'clock (8:00).", "I go to sleep at a quarter to eleven (10:45)."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1581009137042-c552e485697a?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva-Emoji-2",
@@ -492,7 +425,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-3",
         title: "Clase 3: Colores, Emociones y Descripción",
         description: "Expresa cómo te sientes y describe los colores de las cosas.",
@@ -564,8 +497,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta este pequeño párrafo:",
                 content: ["The sun is yellow and the sky is blue. I feel happy today.", "My friend is tired, and he is very hungry. He wants a red apple."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1533228876829-65c94e7b5025?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva-Emoji-3",
@@ -702,7 +634,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-4",
         title: "Clase 4: Familia y Posesivos",
         description: "Habla sobre los miembros de tu familia e indica de quién son las cosas.",
@@ -774,8 +706,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta este pequeño párrafo:",
                 content: ["This is my family. My father's name is David and my mother's name is Laura.", "I have one brother. His name is Tom. Her sister is Emma.", "Our house is big and we are very happy."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1542044896530-05d85be9b11a?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -812,7 +743,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-1",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Familia y Posesivos" + ")",
                                 type: 'emoji-game',
@@ -912,7 +843,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-5",
         title: "Clase 5: There is / There are y Lugares",
         description: "Describe qué hay en una habitación o en tu ciudad.",
@@ -983,8 +914,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta:",
                 content: ["My city is very big. There is a beautiful park and there are many restaurants.", "In my house, there is a small kitchen and there are three bedrooms."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -1021,7 +951,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-2",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 5: There is / There are y Lugares" + ")",
                                 type: 'emoji-game',
@@ -1121,7 +1051,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-6",
         title: "Clase 6: Meses, Días y Números Ordinales",
         description: "Aprende las fechas, cumpleaños y el calendario.",
@@ -1182,8 +1112,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "How to say the date",
                 description: "Estructura para decir la fecha (US)",
                 content: ["Month + Ordinal Number", "Example: May 4th (May fourth)", "Example: October 31st (October thirty-first)"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
               }
             ],
             action: "Modelar la pronunciación de días, meses y números ordinales."
@@ -1199,8 +1128,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta:",
                 content: ["My favorite day is Friday. My birthday is on July 14th (fourteenth).", "Today is Monday, October 2nd (second)."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 8",
@@ -1237,7 +1165,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-600 to-red-700"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-3",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 6: Meses, Días y Números Ordinales" + ")",
                                 type: 'emoji-game',
@@ -1337,7 +1265,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-7",
         title: "Clase 7: Artículos y Demostrativos",
         description: "Uso de a/an, sustantivos singulares/plurales y This/That/These/Those.",
@@ -1415,8 +1343,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta este pequeño párrafo:",
                 content: ["This is my desk. I have a computer and an apple.", "Look at that tree over there. Those are birds in the tree."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 8",
@@ -1453,7 +1380,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-4",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 7: Artículos y Demostrativos" + ")",
                                 type: 'emoji-game',
@@ -1553,7 +1480,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-8",
         title: "Clase 8: Partes del Cuerpo y Mascotas",
         description: "Aprende a describir físicamente a personas y animales.",
@@ -1624,8 +1551,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta este pequeño párrafo:",
                 content: ["I have a dog. His name is Max. He is a big dog.", "He has long ears and a short tail. Has he got brown eyes? Yes, he has."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -1662,7 +1588,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-5",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 8: Partes del Cuerpo y Mascotas" + ")",
                                 type: 'emoji-game',
@@ -1762,7 +1688,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-9",
         title: "Clase 9: Comida y Necesidades Básicas",
         description: "Vocabulario de comida y el uso de pronombres de objeto.",
@@ -1840,8 +1766,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta este pequeño diálogo:",
                 content: ["- Look at those sandwiches! I want them.", "- I am thirsty. I need water.", "- Give me that apple, please. I like it."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 8",
@@ -1878,7 +1803,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-6",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 9: Comida y Necesidades Básicas" + ")",
                                 type: 'emoji-game',
@@ -1954,8 +1879,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Great Job Today!",
                 description: "Summary of what we learned",
                 content: ["You can talk about food and what you need!", "You master Object Pronouns (me, him, her...)."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
               },
               {
                 id: "Diapositiva 18",
@@ -1978,7 +1902,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-bz-10",
         title: "Clase 10: Direcciones y Preposiciones de Lugar",
         description: "Cómo dar direcciones de calles y conocer dónde se ubican los objetos.",
@@ -2049,8 +1973,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee en voz alta:",
                 content: ["Excuse me, where is the bank?", "- Go straight and turn left. It's next to the supermarket. It is across from the park."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -2087,7 +2010,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-7",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 10: Direcciones y Preposiciones de Lugar" + ")",
                                 type: 'emoji-game',
@@ -2110,8 +2033,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Role Play: Lost Tourist",
                 description: "Ayuda al turista",
                 content: ["Tourist: 'Excuse me, where is the supermarket?'", "You: Give directions using turn right/left, go straight, next to..."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600",
-                imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
               },
               {
                 id: "Diapositiva 12",
@@ -2186,166 +2108,1254 @@ export const curriculumLevels: CurriculumLevel[] = [
             action: "Celebrar la finalización del nivel 1 y asignar tarea."
           }
         ]
-      }
+      },
+    {
+      id: "c-adults-basic-zero-11",
+      title: "Clase 11: Saludos, despedidas y conversación de supervivencia",
+      duration: "60 minutos",
+      objective: "Aprender a saludar, despedirse y manejar frases de supervivencia en inglés.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Activar la atención e introducir el tema de forma natural.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! How do you say Hello?",
+              description: "Let's talk about greetings.",
+              content: ["What do you say when you meet someone?", "Do you know any greetings in English?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Preguntar a los alumnos qué saludos conocen y cómo saludan en su idioma nativo."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Aprender el vocabulario formal e informal para saludos y despedidas.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Greetings (Saludos)",
+              description: "Formal vs Informal",
+              content: ["Formal: Hello, Good morning, Good afternoon, Good evening.", "Informal: Hi, Hey, What's up?"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Farewells (Despedidas)",
+              description: "Formal vs Informal",
+              content: ["Formal: Goodbye, Have a nice day.", "Informal: Bye, See you later, See you tomorrow, Take care."],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600",
+              imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Survival Phrases",
+              description: "Frases de supervivencia",
+              content: ["I don't understand (No entiendo)", "Can you repeat, please? (¿Puedes repetir, por favor?)", "How do you say [word] in English? (¿Cómo se dice [palabra] en inglés?)"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "More Survival Phrases",
+              description: "Preguntas útiles en clase",
+              content: ["What does [word] mean? (¿Qué significa [palabra]?)", "Can you speak slower? (¿Puedes hablar más despacio?)"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Explicar la diferencia entre formal e informal, hacer repetir las frases para corregir pronunciación."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Fijar vocabulario identificando saludos y despedidas en contexto.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["John: Good morning, Ms. Smith.", "Ms. Smith: Hello, John. How are you?", "John: I am fine, thank you. And you?", "Ms. Smith: I am good. See you later!"],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Greetings",
+              content: ["It is 9:00 AM. You say: ______ morning!"],
+              options: ["Good", "Hello", "Bye"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Survival Phrases",
+              content: ["I didn't hear you. Can you ______, please?"],
+              options: ["say", "repeat", "understand"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Farewells",
+              content: ["Class is over. ______ you tomorrow!"],
+              options: ["Look", "See", "Watch"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. Good night, how are you? (Meeting someone)", "2. How do you say 'perro' on English?", "3. I not understand."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-11",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Clase 11: Saludos, despedidas)",
+              type: 'emoji-game',
+              content: ['👋 ➕ 🌅'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["Good morning.", "See you later.", "Good night."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Corregir errores comunes, como usar 'Good night' para saludar en lugar de 'Good evening'."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Simular una conversación básica de encuentro y despedida.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: Meeting a Colleague",
+              description: "Simulación",
+              content: ["Person A: Greet your colleague formal/informal.", "Person B: Answer and ask how they are.", "Person A & B: Say goodbye."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Greetings",
+              content: ["Which one is informal?"],
+              options: ["Good morning", "What's up?", "Good evening"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Farewells",
+              content: ["You leave a party at 11:00 PM. You say:"],
+              options: ["Good night", "Good evening", "Good afternoon"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Survival Phrases",
+              content: ["You want to know the English word for 'gato'. You ask:"],
+              options: ["What means 'gato'?", "How do you say 'gato' in English?", "Can you repeat 'gato'?"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Survival Phrases",
+              content: ["The teacher is talking too fast. You say:"],
+              options: ["Can you speak slower?", "I don't know.", "Repeat me."],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Escuchar las interacciones de los alumnos y evaluar su fluidez con las frases."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Repaso final y conclusión.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can greet people!", "You can survive in class!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Write a short dialogue greeting a friend, asking how they are, and saying goodbye."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-11",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY",
+              content: ["Identify 3 greetings used in the video.", "Write them down for the next class."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Animar a los alumnos a usar estas frases desde ya en su día a día."
+        }
+      ]
+    },
+    {
+      id: "c-adults-basic-zero-12",
+      title: "Clase 12: El alfabeto y deletreo de nombres",
+      duration: "60 minutos",
+      objective: "Aprender el alfabeto en inglés y saber deletrear nombres y palabras clave.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Introducir el alfabeto y su importancia.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! A, B, C...",
+              description: "Let's talk about the alphabet.",
+              content: ["Do you know the alphabet in English?", "Why is spelling important?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Preguntar a los alumnos si saben deletrear su nombre."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Aprender la pronunciación correcta de cada letra.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "The Alphabet (A - M)",
+              description: "Listen and repeat",
+              content: ["A (ei), B (bi), C (si), D (di), E (i), F (ef), G (yi)", "H (eich), I (ai), J (yei), K (kei), L (el), M (em)"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "The Alphabet (N - Z)",
+              description: "Listen and repeat",
+              content: ["N (en), O (ou), P (pi), Q (kiu), R (ar), S (es), T (ti)", "U (iu), V (vi), W (dobl-iu), X (ex), Y (uai), Z (zi)"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Asking for Spelling",
+              description: "Preguntas útiles",
+              content: ["How do you spell your name? (¿Cómo deletreas tu nombre?)", "How do you spell [word]? (¿Cómo se deletrea [palabra]?)"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Special Characters",
+              description: "Email addresses",
+              content: ["@ = at", ". = dot", "_ = underscore", "- = dash"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Repasar sonidos confusos como A/E/I y G/J."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Fijar la pronunciación mediante ejercicios de comprensión auditiva y lectura.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["A: What is your email address?", "B: It is john.smith@email.com", "A: Can you spell your last name?", "B: S-M-I-T-H."],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Spelling",
+              content: ["How do you ______ your name?"],
+              options: ["say", "spell", "speak"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Special Characters",
+              content: ["My email is maria ______ gmail.com"],
+              options: ["at", "in", "on"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Letters",
+              content: ["The letter E is pronounced as:"],
+              options: ["/ei/", "/i/", "/ai/"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. How spell your name?", "2. My email is john(at)gmail(dot)com.", "3. C is pronounced /kei/."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-12",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Clase 12: Alfabeto)",
+              type: 'emoji-game',
+              content: ['📧 ➕ 📝'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["Spelling an email address.", "Reading a book.", "Playing a game."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Dictar nombres y correos para que los alumnos los escriban."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Deletrear nombres y correos propios en parejas.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: At the Hotel",
+              description: "Simulación",
+              content: ["Person A (Receptionist): Ask for name and email, and ask to spell them.", "Person B (Guest): Answer and spell clearly."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Alphabet",
+              content: ["Which letter sounds like 'you'?"],
+              options: ["E", "U", "I"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Alphabet",
+              content: ["Which letter sounds like 'why'?"],
+              options: ["Y", "W", "I"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Special Characters",
+              content: ["How do you say '-' in an email?"],
+              options: ["Dot", "Underscore", "Dash"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Spelling",
+              content: ["How do you spell 'CAT'?"],
+              options: ["C-A-T", "S-A-T", "K-A-T"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Supervisar el Role Play, asegurando que pronuncian bien A/E/I."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Repaso final.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can spell your name!", "You can give your email address."],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Write down 5 names of your family members and practice spelling them out loud."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-12",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/75p-N9YKqNo",
+              content: ["Listen to the song and try to sing along to practice the pronunciation of the letters."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Felicitar a la clase por el esfuerzo."
+        }
+      ]
+    },
+    {
+      id: "c-adults-basic-zero-13",
+      title: "Clase 13: Países, nacionalidades y procedencia",
+      duration: "60 minutos",
+      objective: "Aprender a decir de dónde eres y hablar sobre diferentes nacionalidades.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Romper el hielo.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! Where are you from?",
+              description: "Let's travel the world.",
+              content: ["Where were you born?", "Have you visited other countries?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1526778548025-fa2fbf847c0c?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Hacer un sondeo rápido de los países de origen o que les gustaría visitar."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Presentar vocabulario de países y el verbo To Be para origen.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Countries & Nationalities (1)",
+              description: "Países y Nacionalidades",
+              content: ["Mexico -> Mexican", "The United States -> American", "Canada -> Canadian"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Countries & Nationalities (2)",
+              description: "Países y Nacionalidades",
+              content: ["Spain -> Spanish", "Japan -> Japanese", "Brazil -> Brazilian"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Verb To Be + From",
+              description: "Origin",
+              content: ["I am from Mexico. (Soy de México)", "She is from Spain. (Ella es de España)", "They are from Japan."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Asking for Origin",
+              description: "Questions",
+              content: ["Where are you from?", "Where is he/she from?", "What is your nationality?"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Hacer hincapié en que las nacionalidades en inglés siempre van con mayúscula."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Fijar estructuras mediante ejercicios.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["A: Where are you from?", "B: I am from Italy. I am Italian.", "A: Oh, nice! My friend is from Italy too."],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Origin",
+              content: ["I ______ from Canada."],
+              options: ["is", "am", "are"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Nationalities",
+              content: ["He is from Japan. He is ______."],
+              options: ["Japan", "Japanese", "Japanian"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Questions",
+              content: ["______ are you from?"],
+              options: ["What", "How", "Where"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. I am from mexican.", "2. Where you are from?", "3. she is spanish."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-13",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Clase 13)",
+              type: 'emoji-game',
+              content: ['👨 ➕ 🇯🇵'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["He is Japanese.", "He is from China.", "He likes sushi."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Resolver los ejercicios y aclarar dudas sobre el verbo to be."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Aplicar lo aprendido en interacción real.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: International Conference",
+              description: "Simulación",
+              content: ["Person A: Ask Person B where they are from.", "Person B: Answer with a fake country and nationality.", "Swap roles."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Nationalities",
+              content: ["If someone is from the US, they are:"],
+              options: ["United Statesian", "American", "US citizen"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Verbs",
+              content: ["They ______ from Brazil."],
+              options: ["is", "am", "are"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Questions",
+              content: ["______ is she from?"],
+              options: ["Where", "What", "Who"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Capitalization",
+              content: ["Which sentence is correct?"],
+              options: ["I am from mexico.", "I am from Mexico.", "i am from Mexico."],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Fomentar que usen países que no hayan visto en la lista principal."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Repaso final.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can talk about your origin!", "You know many nationalities."],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Write 5 sentences about famous people and where they are from. Example: Lionel Messi is from Argentina."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-13",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/jZJCAoXvJro",
+              content: ["Identify 3 countries mentioned in the video."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Despedir la clase."
+        }
+      ]
+    },
+    {
+      id: "c-adults-basic-zero-14",
+      title: "Clase 14: Profesiones y ocupaciones comunes",
+      duration: "60 minutos",
+      objective: "Aprender a preguntar y responder sobre profesiones.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Introducir el tema.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! What do you do?",
+              description: "Let's talk about jobs.",
+              content: ["What is your job?", "Do you like your job?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Preguntar a los alumnos a qué se dedican."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Aprender oficios comunes y el uso de a/an.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Professions (1)",
+              description: "Jobs",
+              content: ["Teacher, Doctor, Nurse, Engineer, Lawyer"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Professions (2)",
+              description: "Jobs",
+              content: ["Student, Waiter, Mechanic, Chef, Police officer"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "A vs An",
+              description: "Grammar Rule",
+              content: ["Use 'a' before consonant sounds: a doctor, a teacher.", "Use 'an' before vowel sounds: an engineer, an actor."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Asking about Jobs",
+              description: "Questions",
+              content: ["What do you do? (¿A qué te dedicas?)", "I am a teacher."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Explicar que 'What do you do?' es más natural que 'What is your profession?'."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Fijar a/an y profesiones.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["A: What do you do?", "B: I am an engineer. And you?", "A: I am a student."],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Articles",
+              content: ["She is ______ doctor."],
+              options: ["a", "an", "the"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Articles",
+              content: ["He is ______ architect."],
+              options: ["a", "an", "nothing"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Questions",
+              content: ["______ do you do?"],
+              options: ["What", "Where", "How"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. I am doctor.", "2. What are you do?", "3. He is a engineer."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-14",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Clase 14)",
+              type: 'emoji-game',
+              content: ['👨‍🍳 ➕ 🍲'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["He is a chef.", "He is a mechanic.", "He is a teacher."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Resolver los ejercicios y corregir errores comunes omitiendo el artículo 'a'."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Preguntar profesiones entre compañeros.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: Job Fair",
+              description: "Simulación",
+              content: ["Ask 3 partners: What do you do?", "Answer with your real job or a dream job."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Articles",
+              content: ["I am ______ actor."],
+              options: ["a", "an", "the"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Jobs",
+              content: ["A person who works in a hospital is a:"],
+              options: ["Teacher", "Doctor", "Chef"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Questions",
+              content: ["How to ask someone's profession?"],
+              options: ["What is your job?", "What do you do?", "Both are correct"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Grammar",
+              content: ["She ______ a police officer."],
+              options: ["am", "is", "are"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Monitorear la fluidez."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Repaso final.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can talk about jobs!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Write down the professions of 3 people in your family."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-14",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/ckKQvlIT9kc",
+              content: ["Identify 3 jobs mentioned in the video."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Despedir la clase."
+        }
+      ]
+    },
+    {
+      id: "c-adults-basic-zero-15",
+      title: "Clase 15: Vocabulario de la familia y posesivos",
+      duration: "60 minutos",
+      objective: "Aprender los miembros de la familia y el adjetivo posesivo (my, your, his, her).",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Introducir el tema familiar.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! Family Trees",
+              description: "Let's talk about family.",
+              content: ["Is your family big or small?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Preguntar cuántos hermanos tienen."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Vocabulario familiar y posesivos.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Family Members (1)",
+              description: "Core family",
+              content: ["Mother, Father, Parents", "Brother, Sister, Siblings"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Family Members (2)",
+              description: "Extended family",
+              content: ["Grandmother, Grandfather, Grandparents", "Aunt, Uncle, Cousin"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Possessive Adjectives",
+              description: "My, Your, His, Her",
+              content: ["I -> My (Mi)", "You -> Your (Tu)", "He -> His (Su de él)", "She -> Her (Su de ella)"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Examples",
+              description: "In context",
+              content: ["This is my mother.", "His name is John.", "Her brother is a doctor."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Explicar la diferencia entre His y Her, un error muy común en hispanohablantes."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Fijar posesivos.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["This is my friend. His name is David. His sister is an engineer. Her name is Sarah."],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Possessives",
+              content: ["(He) ______ name is Mark."],
+              options: ["He", "His", "Her"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Possessives",
+              content: ["(She) ______ mother is a teacher."],
+              options: ["She", "Her", "His"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Family",
+              content: ["My mother's brother is my ______."],
+              options: ["Father", "Uncle", "Cousin"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. She name is Anna.", "2. He is my brother. Her name is Tom.", "3. I live with mine parents."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-15",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Clase 15)",
+              type: 'emoji-game',
+              content: ['👨‍👩‍👧‍👦 ➕ 🏠'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["My family in our house.", "A party with friends.", "Going to school."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Corregir his/her en los ejercicios."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Hablar sobre la familia.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: Tell me about your family",
+              description: "Simulación",
+              content: ["Person A: Tell Person B about 2 members of your family.", "Example: This is my brother. His name is... He is a..."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Possessives",
+              content: ["______ father is a doctor. (She)"],
+              options: ["She", "His", "Her"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Possessives",
+              content: ["I love ______ dog."],
+              options: ["me", "my", "I"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Family",
+              content: ["My father's father is my ______."],
+              options: ["Uncle", "Grandfather", "Cousin"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Family",
+              content: ["My aunt's children are my ______."],
+              options: ["Siblings", "Cousins", "Nephews"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Motivar a compartir detalles reales si se sienten cómodos."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Repaso final.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can talk about your family!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Draw a small family tree and write 3 sentences describing your family using His and Her."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-15",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/FHaObkHEkHQ",
+              content: ["Identify all the family members mentioned in the video."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Despedir la clase."
+        }
+      ]
+    },
+    {
+      id: "c-adults-basic-zero-16",
+      title: "Clase 16: Repaso General de Basic Zero",
+      duration: "60 minutos",
+      objective: "Repasar todos los temas vistos para prepararse para la evaluación.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Relajarse antes del repaso final.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome to the Final Review!",
+              description: "You did it!",
+              content: ["How do you feel about your English now?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Felicitar a los alumnos por llegar a la última clase del nivel."
+        },
+        {
+          id: "s2",
+          title: "2. Mega Review (Part 1)",
+          duration: "15 minutos",
+          objective: "Repasar saludos, abecedario, países y profesiones.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Greetings & Alphabet",
+              description: "Review",
+              content: ["Hello, Good morning, How are you?", "Can you spell your name?"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Countries & Jobs",
+              description: "Review",
+              content: ["Where are you from? I am from Canada.", "What do you do? I am an engineer."],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Family & Possessives",
+              description: "Review",
+              content: ["This is my mother. Her name is Mary."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Verb To Be",
+              description: "Review",
+              content: ["I am, You are, He is, She is, It is, We are, They are."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Hacer preguntas rápidas a cada alumno para verificar retención."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Evaluar comprensión global.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["Hello! My name is Alex. I am from Mexico. I am a student. My father is a doctor. His name is Carlos."],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Mix",
+              content: ["______ is your job?"],
+              options: ["What", "Where", "How"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Mix",
+              content: ["I am ______ teacher."],
+              options: ["a", "an", "the"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Mix",
+              content: ["They ______ from Spain."],
+              options: ["is", "am", "are"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. She are my sister.", "2. What are you do?", "3. I from Mexico."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-16",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Clase 16)",
+              type: 'emoji-game',
+              content: ['🏆 ➕ 🎓'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["Level complete!", "Going to a party.", "Reading a book."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Resolver los ejercicios aclarando las dudas finales."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Producción libre.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Final Role Play",
+              description: "Simulación",
+              content: ["Introduce yourself completely:", "Name, Country, Job, Family detail."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Mix",
+              content: ["Which one is a greeting?"],
+              options: ["Goodbye", "Hello", "See you"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Mix",
+              content: ["How do you spell 'DOG'?"],
+              options: ["D-O-G", "B-O-G", "D-A-G"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Mix",
+              content: ["(He) ______ name is Peter."],
+              options: ["His", "Her", "He"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Mix",
+              content: ["She is ______ architect."],
+              options: ["a", "an", "nothing"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Evaluar la capacidad de los alumnos para mantener la introducción."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Cierre del nivel y motivación.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Basic Zero Complete!",
+              description: "Congratulations!",
+              content: ["You are ready for Basic 1!", "Great job!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Prepare for Evaluation",
+              description: "Next class",
+              content: ["Next time, we will have a short oral evaluation.", "Don't worry, just practice what we learned."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            }
+          ],
+          action: "Despedir el nivel y explicar cómo será la evaluación oral."
+        }
+      ]
+    }
     ],
-      oralEvaluation: [
-              { topic: "Greetings & Basics", question: "Hello! How are you today? What is your name?" },
-              { topic: "Daily Routine", question: "What is your daily routine? What time do you wake up?" },
-              { topic: "Numbers & Dates", question: "How old are you? When is your birthday? What is your phone number?" },
-              { topic: "Family & Description", question: "Tell me about your family. Do you have brothers or sisters? What do they look like?" },
-              { topic: "Likes & Dislikes", question: "What kind of food do you like? What do you do in your free time?" }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-1-1",
-                          type: "multiple-choice",
-                          question: "You ___ from Spain.",
-                          options: ["are", "is", "am"],
-                          correctAnswer: "are"
-                      },
-          {
-                          id: "vq-1-2",
-                          type: "multiple-choice",
-                          question: "He ___ from Spain.",
-                          options: ["is", "am", "are"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-3",
-                          type: "multiple-choice",
-                          question: "She ___ from Spain.",
-                          options: ["am", "are", "is"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-4",
-                          type: "multiple-choice",
-                          question: "It ___ from Spain.",
-                          options: ["am", "are", "is"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-5",
-                          type: "multiple-choice",
-                          question: "We ___ from Spain.",
-                          options: ["am", "are", "is"],
-                          correctAnswer: "are"
-                      },
-          {
-                          id: "vq-1-6",
-                          type: "multiple-choice",
-                          question: "They ___ from Spain.",
-                          options: ["is", "am", "are"],
-                          correctAnswer: "are"
-                      },
-          {
-                          id: "vq-1-7",
-                          type: "multiple-choice",
-                          question: "My friend ___ from Spain.",
-                          options: ["is", "are", "am"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-8",
-                          type: "multiple-choice",
-                          question: "The cat ___ from Spain.",
-                          options: ["is", "are", "am"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-9",
-                          type: "multiple-choice",
-                          question: "Mary ___ from Spain.",
-                          options: ["am", "are", "is"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-10",
-                          type: "multiple-choice",
-                          question: "I ___ from Spain.",
-                          options: ["is", "is", "am"],
-                          correctAnswer: "am"
-                      },
-          {
-                          id: "vq-1-11",
-                          type: "multiple-choice",
-                          question: "___ You happy?",
-                          options: ["am", "are", "is"],
-                          correctAnswer: "are"
-                      },
-          {
-                          id: "vq-1-12",
-                          type: "multiple-choice",
-                          question: "___ He happy?",
-                          options: ["is", "are", "am"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-13",
-                          type: "multiple-choice",
-                          question: "___ She happy?",
-                          options: ["am", "are", "is"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-14",
-                          type: "multiple-choice",
-                          question: "___ It happy?",
-                          options: ["are", "is", "am"],
-                          correctAnswer: "is"
-                      },
-          {
-                          id: "vq-1-15",
-                          type: "multiple-choice",
-                          question: "___ We happy?",
-                          options: ["are", "is", "am"],
-                          correctAnswer: "are"
-                      },
-          {
-                          id: "vq-1-16",
-                          type: "multiple-choice",
-                          question: "The color of an apple is usually ___.",
-                          options: ["black", "red", "blue"],
-                          correctAnswer: "red"
-                      },
-          {
-                          id: "vq-1-17",
-                          type: "multiple-choice",
-                          question: "The color of an apple is usually ___.",
-                          options: ["black", "red", "blue"],
-                          correctAnswer: "red"
-                      },
-          {
-                          id: "vq-1-18",
-                          type: "multiple-choice",
-                          question: "The color of an apple is usually ___.",
-                          options: ["black", "blue", "red"],
-                          correctAnswer: "red"
-                      },
-          {
-                          id: "vq-1-19",
-                          type: "multiple-choice",
-                          question: "The color of an apple is usually ___.",
-                          options: ["blue", "red", "black"],
-                          correctAnswer: "red"
-                      },
-          {
-                          id: "vq-1-20",
-                          type: "multiple-choice",
-                          question: "The color of an apple is usually ___.",
-                          options: ["red", "blue", "black"],
-                          correctAnswer: "red"
-                      }
-          ]
-},
+    oralEvaluation: [
+      { question: "Evaluación Oral", topic: "Evaluación del nivel." }
+    ]
+  },
   {
     id: "basic-1",
     title: "Basic 1",
     duration: "1 mes",
-    objective: "Futuro con going to y will; preguntas why, where, when, who, with; preguntas wh con will; sí/no con will y going to; contracciones con will; gonna; what kind, what time, how, how much, how many.",
+    objective: "Comienza a comunicarte. Aprenderás a hablar sobre tu vida diaria y entorno.",
     mcfrEquivalent: "A1",
     classes: [
-      {
+{
         id: "c-b1-1",
         title: "Clase 1: Future with Will vs Going to",
         description: "Contraste entre planes seguros y decisiones espontáneas.",
@@ -2361,8 +3371,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Welcome! Future Plans",
                 description: "What are you doing tomorrow?",
                 content: ["Do you have plans for the weekend?", "Will you travel soon?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600"
               }
             ],
             action: "Preguntar a los alumnos si ya tienen planes claros o si fluirán con el día."
@@ -2408,8 +3417,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee y comprende el contexto:",
                 content: ["Context: Ordering food at a restaurant.", "- Waiter: Are you ready to order?", "- You: Yes, I will have the chicken."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 6",
@@ -2439,7 +3447,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-8",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Future with Will vs Going to" + ")",
                                 type: 'emoji-game',
@@ -2529,7 +3537,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-b1-2",
         title: "Clase 2: Preguntas Yes/No con Futuro y Contracciones",
         description: "Aprende a hacer preguntas y usar 'gonna' de forma nativa.",
@@ -2600,8 +3608,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee de forma natural:",
                 content: ["- Hey, are you gonna go to the party tonight?", "- No, I'm not. I'll probably stay home and watch a movie.", "- Ok, I'll see you tomorrow then!"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -2631,7 +3638,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-9",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Preguntas Yes/No con Futuro y Contracciones" + ")",
                                 type: 'emoji-game',
@@ -2697,8 +3704,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Great Job!",
                 description: "You sound more native!",
                 content: ["You can ask future questions.", "You know how to use GONNA and I'LL."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
               },
               {
                 id: "Diapositiva 15",
@@ -2721,7 +3727,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-b1-3",
         title: "Clase 3: Preguntas WH con Futuro",
         description: "Dominio de Why, Where, When, Who y With.",
@@ -2785,8 +3791,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee la entrevista:",
                 content: ["A: What are you gonna do this weekend?", "B: I'm gonna visit my parents.", "A: Where do they live?", "B: They live in New York."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 6",
@@ -2816,7 +3821,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-10",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Preguntas WH con Futuro" + ")",
                                 type: 'emoji-game',
@@ -2882,8 +3887,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Great Job!",
                 description: "Summary",
                 content: ["You can ask detailed questions about the future!", "Always remember the order: WH + Auxiliar + Subject."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
               },
               {
                 id: "Diapositiva 14",
@@ -2906,7 +3910,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-b1-4",
         title: "Clase 4: How much, How many, What kind",
         description: "Hacer preguntas de cantidad, tiempo y tipo de cosas.",
@@ -2970,8 +3974,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee la conversación:",
                 content: ["A: How much sugar do you want in your coffee?", "B: Just a little, please.", "A: What kind of coffee is this?", "B: It's Colombian coffee."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 6",
@@ -3001,7 +4004,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-11",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: How much, How many, What kind" + ")",
                                 type: 'emoji-game',
@@ -3090,166 +4093,1240 @@ export const curriculumLevels: CurriculumLevel[] = [
             action: "Celebrar y dar la tarea."
           }
         ]
-      }
+      },
+{
+      id: "c-adults-basic-1-5",
+      title: "Clase 5: Rutinas diarias y la hora",
+      duration: "60 minutos",
+      objective: "Aprender a describir la rutina diaria y decir la hora en inglés.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Activar vocabulario sobre el día a día.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! What time do you wake up?",
+              description: "Let's talk about routines.",
+              content: ["Are you a morning person?", "What is the first thing you do in the morning?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Preguntar a los alumnos a qué hora se despertaron hoy."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Conocer verbos de rutina y cómo decir la hora.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Daily Routine Verbs",
+              description: "Acciones diarias",
+              content: ["Wake up / Get up", "Take a shower / Get dressed", "Have breakfast / Go to work"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "More Verbs",
+              description: "Tarde y Noche",
+              content: ["Have lunch / Finish work", "Go home / Have dinner", "Watch TV / Go to sleep"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Telling the Time (1)",
+              description: "Cómo decir la hora",
+              content: ["It's seven o'clock (7:00)", "It's half past ten (10:30)", "It's a quarter to nine (8:45)"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Telling the Time (2)",
+              description: "Forma digital (Más fácil)",
+              content: ["7:30 = Seven thirty", "8:15 = Eight fifteen", "9:45 = Nine forty-five"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Explicar que la forma digital es muy común hoy en día, pero deben entender 'half past' y 'quarter to'."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Unir rutinas con horas específicas.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["I wake up at seven o'clock. I have breakfast at seven thirty. I go to work at eight fifteen."],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Routines",
+              content: ["I usually take a ______ in the morning."],
+              options: ["shower", "breakfast", "sleep"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Time",
+              content: ["10:30 is ______."],
+              options: ["half past ten", "quarter to ten", "ten o'clock"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Prepositions",
+              content: ["I have lunch ______ 1:00 PM."],
+              options: ["in", "on", "at"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. I wake up in 7 AM.", "2. He have breakfast.", "3. It's quarter past to nine."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-1-5",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Rutinas)",
+              type: 'emoji-game',
+              content: ['🥱 ➕ 🛏️ ➕ ☕'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["I wake up and drink coffee.", "I go to sleep late.", "I watch TV in bed."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Hacer énfasis en la preposición 'at' para las horas."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Describir la propia rutina diaria.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: My typical day",
+              description: "Habla sobre tu rutina",
+              content: ["Tell your partner 3 things you do in the morning and at what time.", "Example: I wake up at... Then I..."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Routines",
+              content: ["The opposite of 'wake up' is:"],
+              options: ["get up", "go to sleep", "have dinner"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Time",
+              content: ["4:15 is:"],
+              options: ["quarter past four", "half past four", "four thirty"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Prepositions",
+              content: ["I go to the gym ______ 6:00 PM."],
+              options: ["at", "in", "on"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Phrases",
+              content: ["What time ______?"],
+              options: ["is it", "it is", "does it"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Supervisar que digan la hora de forma fluida."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Repaso final de rutinas y tareas.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can describe your day!", "You can tell the time!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Write down your perfect daily routine. (e.g. I wake up at 10 AM, I have pizza for breakfast...)"],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-1-5",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/eUXkj6j6Ezw",
+              content: ["Identify 3 actions from the video's routine."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Despedir la clase animándolos a decir la hora en inglés mentalmente durante el día."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-1-6",
+      title: "Clase 6: Adverbios de frecuencia (always, sometimes, never)",
+      duration: "60 minutos",
+      objective: "Aprender a expresar qué tan seguido realizamos una acción.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Conectar rutinas con frecuencia.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! How often...?",
+              description: "Do you do this every day?",
+              content: ["Do you drink coffee every morning?", "Do you exercise on Sundays?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Preguntar a los alumnos si hacen ciertas actividades todos los días o casi nunca."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Introducir los adverbios de frecuencia y su posición en la oración.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Adverbs of Frequency",
+              description: "Qué tan seguido...",
+              content: ["Always (100%)", "Usually / Often (70-80%)", "Sometimes (50%)", "Hardly ever / Rarely (10%)", "Never (0%)"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Rule #1: Action Verbs",
+              description: "Antes del verbo principal",
+              content: ["Subject + Adverb + Verb", "I ALWAYS drink coffee.", "She NEVER eats meat."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Rule #2: Verb To Be",
+              description: "Después del verbo To Be",
+              content: ["Subject + Verb To Be + Adverb", "I am ALWAYS happy.", "They are NEVER late."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Asking Questions",
+              description: "How often...?",
+              content: ["How often do you go to the cinema?", "- I usually go once a month."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Explicar bien la diferencia de posición entre verbos normales y el verbo To Be."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Practicar la posición correcta del adverbio.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["I usually wake up at 7 AM. I am never late for work. Sometimes, I have pizza for dinner."],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Action Verbs",
+              content: ["I ______ go to the gym on Mondays. (100%)"],
+              options: ["sometimes", "never", "always"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Verb To Be",
+              content: ["He ______ late for class. (0%)"],
+              options: ["is never", "never is", "never does"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Questions",
+              content: ["______ do you play soccer?"],
+              options: ["How much", "How often", "What often"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. I always am happy.", "2. She play sometimes tennis.", "3. How often you read?"],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-1-6",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Frecuencia)",
+              type: 'emoji-game',
+              content: ['❌ ➕ 🥦'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["I never eat broccoli.", "I always eat broccoli.", "Broccoli is bad."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Corregir activamente cuando pongan el adverbio después de un verbo de acción."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Hablar sobre hábitos y frecuencias.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: The Interview",
+              description: "Habla sobre tus hábitos",
+              content: ["Ask your partner: How often do you...?", "Cook, Read a book, Travel, Play video games."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Frequency",
+              content: ["Which one means 0%?"],
+              options: ["Always", "Sometimes", "Never"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Order",
+              content: ["Which sentence is correct?"],
+              options: ["She usually wakes up early.", "She wakes usually up early.", "She wakes up usually early."],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "To Be",
+              content: ["I ______ tired on Fridays."],
+              options: ["always am", "am always", "always"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Questions",
+              content: ["______ do you go to the dentist?"],
+              options: ["How often", "When often", "What time"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Fomentar que usen 'Hardly ever' o 'Rarely' en vez de solo sometimes/never."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Repaso de adverbios de frecuencia.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can talk about your habits!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Write 3 things you ALWAYS do, and 3 things you NEVER do."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-1-6",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/59J6x7rX99s",
+              content: ["Listen to how native speakers place the adverbs in their sentences."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Despedir la clase."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-1-7",
+      title: "Clase 7: Comidas, bebidas y vocabulario de restaurantes",
+      duration: "60 minutos",
+      objective: "Aprender vocabulario de comida y cómo pedir en un restaurante.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Hablar sobre comida favorita.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! Are you hungry?",
+              description: "Let's talk about food.",
+              content: ["What is your favorite food?", "Do you like cooking?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Animar a los alumnos a compartir su plato favorito en inglés."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Vocabulario de comidas y frases útiles en restaurantes.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Food & Drinks",
+              description: "Vocabulario básico",
+              content: ["Meat, Chicken, Fish, Salad", "Water, Coffee, Tea, Juice, Beer"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Meals of the Day",
+              description: "Comidas del día",
+              content: ["Breakfast (Desayuno)", "Lunch (Almuerzo)", "Dinner (Cena)", "Snack (Merienda/Bocadillo)"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "At the Restaurant",
+              description: "Cómo pedir",
+              content: ["I would like... (Me gustaría...)", "Can I have...?, please? (¿Me puede dar...?, por favor?)", "The bill, please. (La cuenta, por favor)"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Waiters' phrases",
+              description: "Lo que escucharás",
+              content: ["Are you ready to order?", "Anything to drink?", "Here you go."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Explicar que 'I want' suena rudo, 'I would like' o 'Can I have' es más educado."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Practicar interacciones en el restaurante.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["Waiter: Are you ready to order?", "Customer: Yes, I would like the chicken salad, please.", "Waiter: Anything to drink?", "Customer: Can I have a glass of water?"],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Ordering",
+              content: ["I ______ like a coffee, please."],
+              options: ["will", "would", "want"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Phrases",
+              content: ["______ I have the bill, please?"],
+              options: ["Do", "Am", "Can"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Meals",
+              content: ["I eat ______ at 8:00 AM."],
+              options: ["dinner", "breakfast", "lunch"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. I want chicken now.", "2. Are you ready for order?", "3. The check please."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-1-7",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Comida)",
+              type: 'emoji-game',
+              content: ['🙋‍♂️ ➕ 🧾 ➕ 💵'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["The bill, please.", "I want money.", "Can I have a menu?"],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "En 'Find the mistake', discutir las formas más educadas de pedir."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Simular pedir en un restaurante.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: The Restaurant",
+              description: "Simulación",
+              content: ["Person A: You are the waiter.", "Person B: You are the customer.", "Order food, drinks and ask for the bill."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Polite requests",
+              content: ["Which is more polite?"],
+              options: ["Give me water.", "I want water.", "Can I have some water?"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Meals",
+              content: ["What do you eat in the middle of the day?"],
+              options: ["Breakfast", "Lunch", "Dinner"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Vocab",
+              content: ["What does 'bill' or 'check' mean?"],
+              options: ["El menú", "La cuenta", "La mesa"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Waiters",
+              content: ["Are you ready to ______?"],
+              options: ["eat", "order", "buy"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Supervisar el Role Play e intercambiar roles."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Cierre y repaso de comida.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can survive in a restaurant!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Look at a menu in English online and write down 5 new food words."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-1-7",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/GLi6K42GixQ",
+              content: ["Listen to how they order food."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Despedir la clase."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-1-8",
+      title: "Clase 8: Sustantivos contables e incontables (some, any)",
+      duration: "60 minutos",
+      objective: "Diferenciar contables e incontables, usar some/any correctamente.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Explorar cantidades básicas.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! Let's count!",
+              description: "Can you count water?",
+              content: ["Can you say 'one water, two waters'?", "What about apples?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Plantear la diferencia intuitiva entre contar manzanas vs contar agua/arroz."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Reglas de contables/incontables y some/any.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Countable Nouns",
+              description: "Se pueden contar",
+              content: ["Singular & Plural: an apple / two apples", "Examples: car, book, egg, tomato"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Uncountable Nouns",
+              description: "No se cuentan (se miden)",
+              content: ["Always singular: water, rice, sugar, money, time", "You can't say 'two waters' (you say 'two bottles of water')"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Some & Any (1)",
+              description: "Cantidades indefinidas",
+              content: ["SOME: Para oraciones positivas (+)", "I have SOME apples. I have SOME water."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Some & Any (2)",
+              description: "Negativas y Preguntas",
+              content: ["ANY: Para oraciones negativas (-) y preguntas (?)", "I don't have ANY apples. Do you have ANY water?"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Aclarar que SOME se usa en preguntas cuando ofrecemos algo ('Would you like some coffee?')."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Diferenciar some y any.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["We have some cheese in the fridge, but we don't have any bread. Do we have any tomatoes?"],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Positive",
+              content: ["I need ______ sugar for the cake."],
+              options: ["some", "any", "a"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Negative",
+              content: ["We don't have ______ milk."],
+              options: ["some", "any", "many"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Questions",
+              content: ["Do you have ______ brothers or sisters?"],
+              options: ["some", "any", "a"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. I have any money.", "2. She doesn't have some time.", "3. I drink two waters."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-1-8",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Sustantivos)",
+              type: 'emoji-game',
+              content: ['❌ ➕ 🍞'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["I don't have any bread.", "I have some bread.", "Bread is bad."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Resolver dudas puntuales sobre si el dinero o el tiempo son contables (no lo son)."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Hablar de lo que hay en la nevera.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: In the Kitchen",
+              description: "Inventario",
+              content: ["Tell your partner 3 things you have in your fridge (using SOME) and 3 things you don't have (using ANY)."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Uncountable",
+              content: ["Which of these is UNCOUNTABLE?"],
+              options: ["Car", "Water", "Apple"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Some/Any",
+              content: ["I have ______ good friends."],
+              options: ["some", "any", "much"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Questions",
+              content: ["Are there ______ eggs in the fridge?"],
+              options: ["some", "any", "a"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Offers (Exception)",
+              content: ["Would you like ______ coffee?"],
+              options: ["any", "some", "a"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Reforzar que 'Would you like some...?' es la excepción en preguntas."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Cierre y repaso de Some/Any.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You understand quantities!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Open your fridge at home and write 5 sentences using SOME and ANY."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-1-8",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/g3Qo97Gj9b0",
+              content: ["Listen to how they use SOME and ANY in real life."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Despedir la clase."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-1-9",
+      title: "Clase 9: Gustos y preferencias (like, love, hate + ing)",
+      duration: "60 minutos",
+      objective: "Expresar aficiones, gustos y desagrados usando el gerundio.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Hablar sobre hobbies.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome! What do you like?",
+              description: "Hobbies & Interests",
+              content: ["What do you do in your free time?", "Do you like sports?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Animar a que digan 1 o 2 cosas que les gusta hacer los fines de semana."
+        },
+        {
+          id: "s2",
+          title: "2. Vocabulary & Grammar",
+          duration: "15 minutos",
+          objective: "Aprender like, love, hate y la regla del ING.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Expressing Preferences",
+              description: "Verbos de emoción",
+              content: ["Love (Me encanta)", "Like (Me gusta)", "Don't like (No me gusta)", "Hate (Odio)"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Rule: Verb + ING",
+              description: "Cuando hablamos de actividades",
+              content: ["I like + verb-ING", "I like reading. (Me gusta leer)", "She loves dancing. (A ella le encanta bailar)"],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Exceptions (Nouns)",
+              description: "Con sustantivos no hay ING",
+              content: ["I like pizza. (NO: I like pizzaing)", "He loves dogs."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Questions",
+              description: "Do you like...?",
+              content: ["Do you like swimming?", "- Yes, I love it! / No, I hate it."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Explicar que 'I like to read' también es correcto, pero 'I like reading' es más natural para hobbies."
+        },
+        {
+          id: "s3",
+          title: "3. Practice & Reading",
+          duration: "15 minutos",
+          objective: "Practicar la estructura ING.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Reading Practice",
+              description: "Lee en voz alta:",
+              content: ["I love listening to music. My brother hates cooking, but he likes eating. We both enjoy watching movies."],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Complete the sentence (1/3)",
+              description: "Verbs",
+              content: ["I like ______ tennis."],
+              options: ["play", "playing", "plays"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Complete the sentence (2/3)",
+              description: "Nouns vs Verbs",
+              content: ["She loves ______ coffee."],
+              options: ["drink", "drinking", "drinks"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Complete the sentence (3/3)",
+              description: "Third Person",
+              content: ["He ______ getting up early."],
+              options: ["hate", "hates", "hating"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 10",
+              title: "Find the mistake",
+              description: "Can you fix these sentences?",
+              content: ["1. I like play football.", "2. She love shopping.", "3. Do you likes cooking?"],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-1-9",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado de estos emojis (Gustos)",
+              type: 'emoji-game',
+              content: ['❤️ ➕ ✈️'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["I love traveling.", "I hate planes.", "I like walking."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Resolver las preguntas y corregir la tercera persona ('He hates')."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Expresar gustos personales de forma fluida.",
+          slides: [
+            {
+              id: "Diapositiva 11",
+              title: "Role Play: Hobbies",
+              description: "Simulación",
+              content: ["Interview your partner:", "Find 3 things they love doing, and 2 things they hate doing."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (1/4)",
+              description: "Rules",
+              content: ["After LIKE, LOVE or HATE, verbs end in..."],
+              options: ["-ed", "-s", "-ing"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (2/4)",
+              description: "Application",
+              content: ["I love ______ movies."],
+              options: ["watch", "watching", "watches"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (3/4)",
+              description: "Negation",
+              content: ["I ______ like running."],
+              options: ["am not", "don't", "doesn't"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 15",
+              title: "Fun Quiz! (4/4)",
+              description: "Third Person",
+              content: ["My mom ______ cleaning the house."],
+              options: ["hates", "hate", "hating"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Supervisar el Role Play e insistir en el uso del gerundio (ING)."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Cierre y repaso de gustos.",
+          slides: [
+            {
+              id: "Diapositiva 16",
+              title: "Class Complete!",
+              description: "You are doing amazing!",
+              content: ["You can talk about your hobbies!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 17",
+              title: "Homework",
+              description: "Assignment for next time",
+              content: ["Write a short paragraph about what you love, like, and hate doing on weekends."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            },
+            {
+              id: "Diapositiva-Video-Homework-1-9",
+              title: "Video Homework 📹",
+              description: "Watch this short video and listen carefully.",
+              type: 'video',
+              videoUrl: "https://www.youtube.com/embed/5F6v314rXwA",
+              content: ["Identify what activities the speakers like and dislike."],
+              bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+            }
+          ],
+          action: "Despedir la clase."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-1-10",
+      title: "Clase 10: Repaso General de Basic 1",
+      duration: "60 minutos",
+      objective: "Repasar todos los temas de Basic 1 y preparar a los alumnos para su evaluación oral.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "5 minutos",
+          objective: "Reflexión sobre el nivel.",
+          slides: [
+            {
+              id: "Diapositiva 1",
+              title: "Welcome to the Final Review!",
+              description: "Basic 1 is complete!",
+              content: ["How much have you learned?", "What was your favorite topic?"],
+              bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            }
+          ],
+          action: "Felicitar a los alumnos por llegar hasta aquí."
+        },
+        {
+          id: "s2",
+          title: "2. Mega Review (Part 1)",
+          duration: "15 minutos",
+          objective: "Repaso de Rutinas, Adverbios y Present Simple.",
+          slides: [
+            {
+              id: "Diapositiva 2",
+              title: "Daily Routines & Time",
+              description: "Review",
+              content: ["I wake up at 7:00 AM.", "She has lunch at half past one."],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 3",
+              title: "Frequency Adverbs",
+              description: "Review",
+              content: ["I always study.", "He is never late.", "We sometimes go out."],
+              bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+            },
+            {
+              id: "Diapositiva 4",
+              title: "Present Simple (Do/Does)",
+              description: "Review",
+              content: ["Do you like pizza? Yes, I do.", "Does she work here? No, she doesn't."],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            },
+            {
+              id: "Diapositiva 5",
+              title: "Wh- Questions",
+              description: "Review",
+              content: ["Where do you live?", "What does he do?", "When do they study?"],
+              bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+            }
+          ],
+          action: "Hacer preguntas rápidas orales para evaluar retención."
+        },
+        {
+          id: "s3",
+          title: "3. Mega Review (Part 2)",
+          duration: "15 minutos",
+          objective: "Repaso de Some/Any, Food y Gustos.",
+          slides: [
+            {
+              id: "Diapositiva 6",
+              title: "Food & Restaurants",
+              description: "Review",
+              content: ["I would like a salad, please.", "Can I have the bill?"],
+              bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
+            },
+            {
+              id: "Diapositiva 7",
+              title: "Some & Any",
+              description: "Review",
+              content: ["We have some apples.", "We don't have any milk.", "Do you have any questions?"],
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 8",
+              title: "Like / Love / Hate + ING",
+              description: "Review",
+              content: ["I love traveling.", "She hates cooking.", "They like watching TV."],
+              bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+            },
+            {
+              id: "Diapositiva 9",
+              title: "Find the mistake",
+              description: "Mixed concepts",
+              content: ["1. I am always wake up early.", "2. Does you like pizza?", "3. I like play video games."],
+              bgColor: "bg-gradient-to-br from-red-400 to-pink-500"
+            },
+            {
+              id: "Diapositiva-Emoji-Auto-1-10",
+              title: "Emojis Locos 🤪",
+              description: "Interpreta el significado (Repaso)",
+              type: 'emoji-game',
+              content: ['🗣️ ➕ 🇬🇧 ➕ 💯'],
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
+              options: ["I speak English 100%!", "I hate English.", "I don't know."],
+              correctOptionIndex: 0
+            }
+          ],
+          action: "Ayudar a corregir los errores en 'Find the mistake'."
+        },
+        {
+          id: "s4",
+          title: "4. Production & Quiz",
+          duration: "15 minutos",
+          objective: "Evaluación formativa.",
+          slides: [
+            {
+              id: "Diapositiva 10",
+              title: "Final Role Play",
+              description: "Simulación Integrada",
+              content: ["Talk about your routine, what you eat, and what you love doing in your free time."],
+              bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
+            },
+            {
+              id: "Diapositiva 11",
+              title: "Fun Quiz! (1/4)",
+              description: "Mix",
+              content: ["She ______ a shower at 7 AM."],
+              options: ["take", "takes", "taking"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 12",
+              title: "Fun Quiz! (2/4)",
+              description: "Mix",
+              content: ["______ you have any brothers?"],
+              options: ["Does", "Are", "Do"],
+              correctOptionIndex: 2,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 13",
+              title: "Fun Quiz! (3/4)",
+              description: "Mix",
+              content: ["He hates ______ early."],
+              options: ["waking up", "wake up", "wakes up"],
+              correctOptionIndex: 0,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            },
+            {
+              id: "Diapositiva 14",
+              title: "Fun Quiz! (4/4)",
+              description: "Mix",
+              content: ["We don't have ______ water."],
+              options: ["some", "any", "a"],
+              correctOptionIndex: 1,
+              bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
+            }
+          ],
+          action: "Supervisar el Role Play, prestando atención a la 's' de tercera persona."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up",
+          duration: "10 minutos",
+          objective: "Cierre del nivel.",
+          slides: [
+            {
+              id: "Diapositiva 15",
+              title: "Basic 1 Complete!",
+              description: "Congratulations!",
+              content: ["You are ready for Basic 2!", "Great job!"],
+              bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
+              imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+            },
+            {
+              id: "Diapositiva 16",
+              title: "Prepare for Evaluation",
+              description: "Next class",
+              content: ["Next time, we will have a short oral evaluation.", "Don't worry, just practice what we learned."],
+              bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+            }
+          ],
+          action: "Explicar la dinámica de la evaluación oral de la siguiente clase."
+        }
+      ]
+    }
     ],
-      oralEvaluation: [
-              { topic: "Present Continuous vs Simple", question: "What are you wearing right now? What do you usually wear to work?" },
-              { topic: "Future Plans (Will/Going to)", question: "What are you going to do this weekend? Will you travel soon?" },
-              { topic: "Future Intentions", question: "Where do you think you will be in 5 years? What are your goals?" },
-              { topic: "Countable / Uncountable", question: "Tell me about your diet. How much water do you drink? How many meals do you have a day?" },
-              { topic: "Giving Directions", question: "How do I get to the nearest supermarket from your house?" }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-2-1",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["go", "going", "goes"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-2",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eat", "eating", "eats"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-3",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["going", "goes", "go"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-4",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eating", "eat", "eats"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-5",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["going", "goes", "go"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-6",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eating", "eat", "eats"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-7",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["go", "going", "goes"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-8",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eating", "eat", "eats"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-9",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["go", "going", "goes"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-10",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eating", "eat", "eats"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-11",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["going", "go", "goes"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-12",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eats", "eat", "eating"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-13",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["go", "goes", "going"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-14",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eating", "eat", "eats"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-15",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["go", "goes", "going"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-16",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eats", "eating", "eat"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-17",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["go", "going", "goes"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-18",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eats", "eat", "eating"],
-                          correctAnswer: "eats"
-                      },
-          {
-                          id: "vq-2-19",
-                          type: "multiple-choice",
-                          question: "Every day, I ___ to school.",
-                          options: ["go", "goes", "going"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-2-20",
-                          type: "multiple-choice",
-                          question: "She ___ breakfast at 7 AM.",
-                          options: ["eat", "eating", "eats"],
-                          correctAnswer: "eats"
-                      }
-          ]
-},
+    oralEvaluation: [
+      { question: "Evaluación Oral", topic: "Evaluación del nivel." }
+    ]
+  },
   {
     id: "basic-2",
     title: "Basic 2",
     duration: "1 mes",
-    objective: "Present Simple, reglas y uso en tercera persona, Present Progressive, preguntas sí/no y wh, how often, gerundios con like/love/enjoy/hate, comparación entre futuro, presente simple y presente progresivo.",
-    mcfrEquivalent: "A1/A2",
+    objective: "Describe acciones en progreso y empieza a explorar el pasado.",
+    mcfrEquivalent: "A1",
     classes: [
-      {
+{
         id: "c-b2-1",
         title: "Clase 1: Rutinas y Present Simple",
         description: "Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona.",
@@ -3265,8 +5342,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Welcome! Daily Life",
                 description: "What do you do every day?",
                 content: ["What time do you wake up?", "Do you drink coffee in the morning?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600"
               }
             ],
             action: "Conversar sobre las rutinas para introducir el Present Simple."
@@ -3320,8 +5396,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee sobre John:",
                 content: ["John gets up at 6 AM. He always drinks coffee. He works in an office.", "He doesn't eat lunch. After work, he goes to the gym."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -3351,7 +5426,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-12",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 1: Rutinas y Present Simple" + ")",
                                 type: 'emoji-game',
@@ -3417,8 +5492,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Great Job!",
                 description: "You master Routines!",
                 content: ["You can talk about your habits.", "You know the He/She/It rule."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
               },
               {
                 id: "Diapositiva 15",
@@ -3441,7 +5515,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-b2-2",
         title: "Clase 2: Present Progressive",
         description: "Acciones en curso y preguntas de confirmación (Yes/No y WH).",
@@ -3457,8 +5531,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Welcome! Right Now",
                 description: "What is happening around you?",
                 content: ["Are you drinking coffee right now?", "Is your phone ringing?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600"
               }
             ],
             action: "Hacer observaciones sobre qué está pasando en cámara (ej. You are wearing a blue shirt)."
@@ -3512,8 +5585,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee y mira la imagen (imaginaria):",
                 content: ["Look at the park! The children are playing.", "A man is reading a book. A dog is running.", "What are YOU doing? I am looking at the park."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -3543,7 +5615,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-13",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 2: Present Progressive" + ")",
                                 type: 'emoji-game',
@@ -3633,7 +5705,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-b2-3",
         title: "Clase 3: Expresando Preferencias (Gustos)",
         description: "Uso de gerundios con like, love, enjoy y hate.",
@@ -3704,8 +5776,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Lee sobre los hobbies de Sarah:",
                 content: ["Sarah loves reading books. She enjoys spending time with her dog.", "She likes drinking coffee, but she hates waking up early."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -3735,7 +5806,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-14",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 3: Expresando Preferencias (Gustos)" + ")",
                                 type: 'emoji-game',
@@ -3801,8 +5872,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Great Job!",
                 description: "You are doing great!",
                 content: ["After LOVE, ENJOY, LIKE, HATE...", "We use the verb with -ING!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
               },
               {
                 id: "Diapositiva 15",
@@ -3825,7 +5895,7 @@ export const curriculumLevels: CurriculumLevel[] = [
           }
         ]
       },
-      {
+{
         id: "c-b2-4",
         title: "Clase 4: Comparación entre Tiempos Verbales",
         description: "Cuándo usar Futuro, Presente Simple y Presente Progresivo.",
@@ -3841,8 +5911,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Welcome! Time Travel",
                 description: "Past, Present, Future",
                 content: ["Did you eat pizza yesterday? (Past)", "Do you eat pizza normally? (Present)", "Will you eat pizza tomorrow? (Future)"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600"
               }
             ],
             action: "Preguntar a los alumnos la misma idea (ej. comer) en distintos tiempos para que perciban la diferencia."
@@ -3896,8 +5965,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 title: "Reading Practice",
                 description: "Encuentra los tiempos:",
                 content: ["My dad usually works in an office. But right now, he is working at home.", "Tomorrow, he is going to travel to London."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&q=80&w=800"
+                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
               },
               {
                 id: "Diapositiva 7",
@@ -3927,7 +5995,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
               },
                 {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
+                                id: "Diapositiva-Emoji-Auto-fix-15",
                                 title: "Emojis Locos 🤪",
                                 description: "Interpreta el significado de estos emojis (" + "Clase 4: Comparación entre Tiempos Verbales" + ")",
                                 type: 'emoji-game',
@@ -4016,5862 +6084,4318 @@ export const curriculumLevels: CurriculumLevel[] = [
             action: "Felicitar efusivamente. Es un gran hito."
           }
         ]
-      }
+      },
+{
+      id: "c-adults-basic-2-5",
+      title: "Clase 5: Verbos de estado vs. acción en presente continuo",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-2-6",
+      title: "Clase 6: Clima y estaciones del año",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Weather.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Weather.", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Weather.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Weather", description: "Introduction to Weather.", content: ["It is sunny today.", "It is raining."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["It is sunny today.", "It is raining."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Sunny, Rainy, Cold, Hot", content: ["Sunny", " Rainy", " Cold", " Hot"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["It is sunny today.", "It is raining."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: It is sunny today."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["It is sunny today.", "It is raining."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-2-7",
+      title: "Clase 7: Imperativos para dar instrucciones",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Imperatives.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Imperatives.", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Imperatives.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Imperatives", description: "Introduction to Imperatives.", content: ["Open the door, please.", "Don't turn left."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Open the door, please.", "Don't turn left."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Open, Close, Turn, Stop", content: ["Open", " Close", " Turn", " Stop"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Open the door, please.", "Don't turn left."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Open the door, please."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Open the door, please.", "Don't turn left."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-2-8",
+      title: "Clase 8: Pedir y ofrecer direcciones en la calle",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Polite Requests.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Polite Requests.", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Polite Requests.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Polite Requests", description: "Introduction to Polite Requests.", content: ["Can I help you?", "Could you repeat that?"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Can I help you?", "Could you repeat that?"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Can, Could, May, Help", content: ["Can", " Could", " May", " Help"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Can I help you?", "Could you repeat that?"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Can I help you?"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Can I help you?", "Could you repeat that?"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-2-9",
+      title: "Clase 9: Conversaciones telefónicas básicas",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-2-10",
+      title: "Clase 10: Repaso de presente simple vs. continuo",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Review & Practice.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Review & Practice.", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Review & Practice.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Review & Practice", description: "Introduction to Review & Practice.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Review, Practice, Exercise, Test", content: ["Review", " Practice", " Exercise", " Test"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Let's review the main topics."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-2-11",
+      title: "Clase 11: Proyecto Final de Nivel",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Review & Practice.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Review & Practice.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Review & Practice.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Review & Practice", description: "Introduction to Review & Practice.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Review, Practice, Exercise, Test", content: ["Review", " Practice", " Exercise", " Test"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Let's review the main topics."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    }
     ],
-      oralEvaluation: [
-              { topic: "Habits & Routines", question: "What do you usually do on weekends? How often do you exercise?" },
-              { topic: "Current Ongoing Actions", question: "Are you reading any interesting books these days? What are you studying right now?" },
-              { topic: "Work & Study Life", question: "Tell me about your job or studies. What does a typical day look like?" },
-              { topic: "Likes & Preferences", question: "Do you prefer staying home or going out on weekends? Why?" },
-              { topic: "Describing Activities", question: "Describe a project or hobby you are currently working on this month." }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-3-1",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watched", "watch", "watching"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-2",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["went", "go", "going"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-3",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watching", "watch", "watched"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-4",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["went", "go", "going"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-5",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watched", "watch", "watching"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-6",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["go", "going", "went"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-7",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watching", "watch", "watched"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-8",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["going", "went", "go"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-9",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watching", "watch", "watched"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-10",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["went", "go", "going"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-11",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watched", "watch", "watching"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-12",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["going", "go", "went"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-13",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watched", "watch", "watching"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-14",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["go", "went", "going"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-15",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watched", "watch", "watching"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-16",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["going", "went", "go"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-17",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watch", "watched", "watching"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-18",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["go", "went", "going"],
-                          correctAnswer: "go"
-                      },
-          {
-                          id: "vq-3-19",
-                          type: "multiple-choice",
-                          question: "Yesterday, we ___ a great movie.",
-                          options: ["watched", "watching", "watch"],
-                          correctAnswer: "watched"
-                      },
-          {
-                          id: "vq-3-20",
-                          type: "multiple-choice",
-                          question: "They didn't ___ to the party.",
-                          options: ["go", "went", "going"],
-                          correctAnswer: "go"
-                      }
-          ]
-},
+    oralEvaluation: [
+      { question: "Evaluación Oral", topic: "Evaluación del nivel." }
+    ]
+  },
   {
     id: "basic-3",
     title: "Basic 3",
     duration: "1 mes",
-    objective: "Simple Past, sí/no y wh en pasado, Past Progressive, while/when, comparación de tiempos, pronunciación de terminaciones -ed.",
-    mcfrEquivalent: "A2",
+    objective: "Expresa habilidades, obligaciones y eventos pasados.",
+    mcfrEquivalent: "A1",
     classes: [
-      {
-        id: "c-b3-1",
-        title: "Clase 1: Experiencias en Simple Past",
-        description: "Verbos regulares e irregulares aplicados a experiencias pasadas.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir el contexto de memoria y pasado.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! The Past",
-                description: "What did you do yesterday?",
-                content: ["Think about yesterday.", "Did you work? Did you watch a movie?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar a los alumnos qué hicieron ayer de manera relajada."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Entender la transformación de verbos al pasado.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Simple Past",
-                description: "Acciones terminadas",
-                content: ["Usamos el verbo en pasado para cosas que ya acabaron.", "Keywords: Yesterday, last night, two days ago."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Regular Verbs (+ed)",
-                description: "La regla fácil",
-                content: ["Work -> Worked", "Play -> Played", "Study -> Studied"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Irregular Verbs",
-                description: "Los rebeldes (hay que memorizarlos)",
-                content: ["Go -> Went", "Eat -> Ate", "See -> Saw"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Explicar que en la forma afirmativa el verbo cambia y no importa si es He/She/It (no hay 'S' aquí)."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Aplicar la forma correcta del verbo al pasado.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                description: "Lee la historia de Tom:",
-                content: ["Yesterday, Tom woke up at 7 AM. He ate breakfast and went to work.", "After work, he played video games and slept early."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Regular Verb",
-                content: ["Last night, I ______ (watch) a great movie."],
-                options: ["watch", "watched", "watching"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Irregular Verb",
-                content: ["She ______ (go) to the supermarket yesterday."],
-                options: ["goed", "go", "went"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Irregular Verb",
-                content: ["We ______ (eat) pizza for dinner."],
-                options: ["ated", "eat", "ate"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 1: Experiencias en Simple Past" + ")",
-                                type: 'emoji-game',
-                                content: ['💼 ➕ 🗣️ ➕ 🤝'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I have a business meeting.", "Let's negotiate a deal.", "I am looking for a job."],
-                                correctOptionIndex: 1
-                              }
-            ],
-            action: "Identificar y corregir la tendencia a poner '-ed' en verbos irregulares ('goed' en vez de 'went')."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Hablar de eventos pasados personales.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Tell your story",
-                description: "Your weekend",
-                content: ["Tell me 3 things you did last weekend.", "(Remember to change the verbs!)"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Rules",
-                content: ["What is the past of BUY?"],
-                options: ["Buyed", "Bought", "Buy"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Regular / Irregular",
-                content: ["Which word is a regular verb?"],
-                options: ["Cooked", "Ate", "Saw"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Context",
-                content: ["Yesterday, she ______ a letter to her friend."],
-                options: ["wrote", "writed", "write"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Dejar que el alumno intente hablar; si no sabe un pasado irregular, decírselo."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Finaizar con un plan de memorización.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You are talking about history!",
-                content: ["Regular verbs = add -ed", "Irregular verbs = you must memorize them!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "My worst day.",
-                content: ["Write a short paragraph about a terrible day you had in the past (use past verbs!)."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-19",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/Fsz3T4MT2gc",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Tarea asignada para practicar narrativa pasada."
-          }
-        ]
-      },
-      {
-        id: "c-b3-2",
-        title: "Clase 2: Preguntas y Negaciones en Pasado",
-        description: "Preguntas Yes/No y WH en pasado simple.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Jugar con la memoria reciente.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Investigating the Past",
-                description: "Let's be detectives.",
-                content: ["Tell me a secret...", "What did you eat for dinner yesterday?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hacer de detective preguntando cosas del pasado usando DID para que escuchen el sonido."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Aprender el auxiliar DID y DIDN'T.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Magic Helper: DID",
-                description: "Preguntando en el pasado",
-                content: ["En presente usamos DO. En pasado usamos DID.", "DID you play? (¿Jugaste?)", "DID she go? (¿Ella fue?)"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "The Golden Rule",
-                description: "¡Atención al verbo principal!",
-                content: ["Regla de oro: Si usas DID o DIDN'T, el verbo principal NO cambia.", "Correcto: Did you GO?", "Incorrecto: Did you WENT? ❌"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600",
-                imageUrl: "https://images.unsplash.com/photo-1616628188550-808682f3926d?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Negative Sentences (Didn't)",
-                description: "Cómo decir 'no' en el pasado",
-                content: ["I didn't play. (Yo no jugué)", "She didn't eat. (Ella no comió)", "They didn't sleep. (Ellos no durmieron)"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "WH Questions in the Past",
-                description: "Pidiendo detalles",
-                content: ["WHERE did you go?", "WHAT did she buy?", "WHEN did they arrive?"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
-              }
-            ],
-            action: "Repetir la regla de oro: DID absorbe el pasado, dejando al verbo en paz."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Aplicar la regla de oro en oraciones mixtas.",
-            slides: [
-              {
-                id: "Diapositiva 6",
-                title: "Reading Practice",
-                description: "Lee la entrevista:",
-                content: ["Cop: Where did you go last night?", "Suspect: I didn't go out. I stayed home.", "Cop: Did you see anyone?", "Suspect: No, I didn't see anybody."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (1/3)",
-                description: "Negative verb form",
-                content: ["I ______ (not watch) TV yesterday."],
-                options: ["didn't watched", "not watch", "didn't watch"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (2/3)",
-                description: "Question verb form",
-                content: ["Did she ______ (buy) a new car?"],
-                options: ["bought", "buy", "buys"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 9",
-                title: "Complete the sentence (3/3)",
-                description: "WH Question",
-                content: ["What time did you ______ (wake) up?"],
-                options: ["wake", "woke", "waking"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 2: Preguntas y Negaciones en Pasado" + ")",
-                                type: 'emoji-game',
-                                content: ['✈️ ➕ 🏨 ➕ 🌴'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["We are going on vacation.", "I need to book a flight.", "I am lost in the city."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Corregir implacablemente si usan 'Did' + verbo en pasado."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Entrevistar sobre el fin de semana sin cometer el error del doble pasado.",
-            slides: [
-              {
-                id: "Diapositiva 10",
-                title: "Interview Time",
-                description: "You ask!",
-                content: ["Ask me 2 Yes/No questions about my weekend.", "Ask me 2 WH questions about my weekend."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Rules",
-                content: ["Which is correct?"],
-                options: ["Did you went?", "Did you go?", "Didn't you went?"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (2/3)",
-                description: "Negative",
-                content: ["She ______ home. She stayed at work."],
-                options: ["didn't go", "didn't went", "doesn't go"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 13",
-                title: "Fun Quiz! (3/3)",
-                description: "Mix",
-                content: ["Did you eat pizza? No, I ______ eat pizza, I ______ a burger."],
-                options: ["didn't / eat", "didn't / ate", "didn't ate / ate"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Fluidez de entrevista al profesor."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Reiterar la regla central.",
-            slides: [
-              {
-                id: "Diapositiva 14",
-                title: "Great Job!",
-                description: "You interrogate in English!",
-                content: ["DID y DIDN'T son tus ayudantes mágicos.", "¡Nunca pongas el verbo en pasado junto a ellos!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 15",
-                title: "Homework",
-                description: "Celebrity Interview",
-                content: ["Write 5 questions you WOULD ask a dead historical figure.", "Example: Why did you build the pyramids?"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-20",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/jwmKjgwlMk8",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Despedir la clase verificando que hayan entendido el concepto principal."
-          }
-        ]
-      },
-      {
-        id: "c-b3-3",
-        title: "Clase 3: Past Progressive y Conectores",
-        description: "Creando narrativas con while y when.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la idea de acciones interrumpidas.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Interruptions",
-                description: "What were you doing when...",
-                content: ["Have you ever been interrupted?", "Example: I was sleeping, and the phone rang!"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar sobre alguna anécdota de interrupción (estaba bañándome y tocaron la puerta)."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Enseñar Was/Were + -ing y cómo usar When/While.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Past Progressive (Continuous)",
-                description: "Acciones largas en el pasado",
-                content: ["Structure: WAS / WERE + Verb-ING", "I/He/She/It -> WAS playing", "You/We/They -> WERE playing"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Conector: WHEN",
-                description: "Acción repentina que interrumpe",
-                content: ["WHEN = Cuando", "I was watching TV WHEN the phone rang.", "(Acción larga) WHEN (Acción corta en pasado simple)"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Conector: WHILE",
-                description: "Acciones paralelas",
-                content: ["WHILE = Mientras", "I was cooking WHILE she was reading.", "(Acción larga) WHILE (Otra acción larga)"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Aclarar que WHEN conecta con Simple Past y WHILE conecta con Past Progressive."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Identificar cuál acción es larga y cuál es corta.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                description: "Storytime:",
-                content: ["Yesterday, I was walking in the park when it started to rain.", "While I was running home, I saw my friend."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Was/Were",
-                content: ["They ______ (play) soccer outside."],
-                options: ["were playing", "was playing", "are playing"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "When",
-                content: ["I was sleeping ______ the dog barked."],
-                options: ["while", "when", "what"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "While",
-                content: ["He was reading ______ I was cooking."],
-                options: ["when", "during", "while"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 3: Past Progressive y Conectores" + ")",
-                                type: 'emoji-game',
-                                content: ['☕ ➕ 💻 ➕ 😩'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I love drinking coffee.", "Working late makes me tired.", "My computer is broken."],
-                                correctOptionIndex: 1
-                              }
-            ],
-            action: "Guiar al estudiante usando el sentido común (¿qué acción dura más?)."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Crear oraciones compuestas contando anécdotas.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Finish my story",
-                description: "Let's co-create a story",
-                content: ["Teacher: I was taking a shower when...", "Student: ...the water stopped! (Your turn)"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Rules",
-                content: ["She ______ (drive) when she saw the accident."],
-                options: ["was driving", "were driving", "drived"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "When vs While",
-                content: ["We usually use WHEN before the ______ Action."],
-                options: ["Long", "Short", "ING"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Negative",
-                content: ["I ______ when you called me."],
-                options: ["wasn't sleep", "weren't sleeping", "wasn't sleeping"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Juego de ping-pong narrativo: Yo digo la acción larga, tú la interrupción, y viceversa."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Afianzar la estructura narrativa.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You are a storyteller!",
-                content: ["Long action = was/were V-ing.", "Short action = V-past.", "Connectors = When / While."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Write your anecdote",
-                content: ["Write a paragraph of minimum 4 lines using WHEN and WHILE.", "Tell a funny story of an interruption."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-21",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/Gyur6S_H9vE",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Resaltar que ahora sus historias en pasado sonarán naturales."
-          }
-        ]
-      },
-      {
-        id: "c-b3-4",
-        title: "Clase 4: Reglas y Pronunciación de terminaciones -ed",
-        description: "Domina el sonido nativo de los verbos regulares en pasado.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Hacer conscientes a los alumnos del error común al pronunciar -ed.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Pronunciation Time",
-                description: "How do you say 'played'?",
-                content: ["Read this word: LOOKED", "Did you say 'look-ed'?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hacer que lean un verbo regular. Si pronuncian la '-ed' como en español, señalar que hoy corregiremos eso."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Explicar los 3 sonidos de la terminación -ED (/t/, /d/, /id/).",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The 3 Sounds of -ED",
-                description: "No siempre suena como 'ed'",
-                content: ["1. Sound /t/ (como un golpe seco)", "2. Sound /d/ (como un zumbido corto)", "3. Sound /id/ (cuando el verbo termina en T o D)"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Sound 1: /t/",
-                description: "Verbos sin vibración en la garganta",
-                content: ["Si el verbo original termina en p, k, f, s, sh, ch...", "Look -> Look /t/", "Help -> Help /t/", "Wash -> Wash /t/"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Sound 2: /d/",
-                description: "Verbos con vibración vocal",
-                content: ["Si el verbo original termina en l, v, n, m, r, b, o vocal...", "Play -> Play /d/", "Call -> Call /d/", "Listen -> Listen /d/"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Sound 3: /id/",
-                description: "¡La única vez que pronuncias la E!",
-                content: ["SOLO si el verbo original termina en 'T' o 'D'.", "Want -> Want /id/ (Wanted)", "Need -> Need /id/ (Needed)"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Tocar la garganta con ellos para sentir la vibración (voiced vs voiceless)."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Clasificar los verbos por su sonido.",
-            slides: [
-              {
-                id: "Diapositiva 6",
-                title: "Reading Practice",
-                description: "Lee exagerando la pronunciación:",
-                content: ["I worked (/t/) all day.", "Then I called (/d/) my friend.", "We decided (/id/) to watch a movie."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (1/3)",
-                description: "Pronounciation",
-                content: ["How do you pronounce: WASHED"],
-                options: ["wash-ed", "wash-d", "wash-t"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (2/3)",
-                description: "Pronounciation",
-                content: ["How do you pronounce: STARTED"],
-                options: ["start-t", "start-id", "start-ed"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 9",
-                title: "Complete the sentence (3/3)",
-                description: "Pronounciation",
-                content: ["How do you pronounce: ARRIVED"],
-                options: ["arrive-id", "arrive-t", "arrive-d"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 4: Reglas y Pronunciación de terminaciones -ed" + ")",
-                                type: 'emoji-game',
-                                content: ['📅 ➕ ❌ ➕ 😢'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["The meeting is cancelled.", "I lost my calendar.", "I am late for my appointment."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Obligarlos a exagerar el sonido final (/t/, /d/, /id/) para crear memoria muscular."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Leer una lista de manera fluida y realizar el quiz.",
-            slides: [
-              {
-                id: "Diapositiva 10",
-                title: "Read Aloud Time",
-                description: "Your turn!",
-                content: ["1. Watched, Liked, Kissed (/t/)", "2. Loved, Cleaned, Played (/d/)", "3. Visited, Waited, Needed (/id/)"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (1/3)",
-                description: "The /id/ rule",
-                content: ["We only pronounce /id/ when the verb ends in:"],
-                options: ["A or E", "T or D", "S or CH"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (2/3)",
-                description: "Listen & Choose",
-                content: ["Looked sounds like:"],
-                options: ["Look-id", "Look-d", "Look-t"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 13",
-                title: "Fun Quiz! (3/3)",
-                description: "Listen & Choose",
-                content: ["Rent in past sounds like:"],
-                options: ["Rent-id (Rented)", "Rent-t", "Rent-d"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Corregir inmediatamente cualquier -ed que se pronuncie como en español (excepto en t/d)."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Celebrar que ahora suenan como nativos y cerrar Basic 3.",
-            slides: [
-              {
-                id: "Diapositiva 14",
-                title: "Basic 3 Complete!",
-                description: "You sound more native now!",
-                content: ["Stop saying 'play-ed' or 'work-ed'.", "Remember: /t/, /d/, /id/."],
-                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
-                imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 15",
-                title: "Homework",
-                description: "Pronunciation Practice",
-                content: ["Find 10 regular verbs online.", "Classify them in 3 columns: /t/, /d/, /id/.", "Practice saying them out loud!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-22",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/FAhpT7BH7GE",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Entregar tarea y despedirse del nivel."
-          }
-        ]
-      }
+{
+      id: "c-adults-basic-3-1",
+      title: "Clase 1: Habilidades y posibilidades (Can / Can't)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Can / Can't for Abilities.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Can / Can't for Abilities.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Can / Can't for Abilities.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Can / Can't for Abilities", description: "Introduction to Can / Can't for Abilities.", content: ["I can swim.", "I can't fly."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I can swim.", "I can't fly."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Can, Cannot, Ability, Permission", content: ["Can", " Cannot", " Ability", " Permission"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I can swim.", "I can't fly."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I can swim."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I can swim.", "I can't fly."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-2",
+      title: "Clase 2: Permisos y peticiones (Can I...?, Could you...?)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-3",
+      title: "Clase 3: Obligaciones (Have to / Don't have to)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Obligations (Have to).",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Obligations (Have to).", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Obligations (Have to).", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Obligations (Have to)", description: "Introduction to Obligations (Have to).", content: ["I have to work today.", "You don't have to go."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I have to work today.", "You don't have to go."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Have to, Must, Obligation, Need", content: ["Have to", " Must", " Obligation", " Need"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I have to work today.", "You don't have to go."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I have to work today."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I have to work today.", "You don't have to go."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-4",
+      title: "Clase 4: Ropa, colores y descripciones físicas",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Clothes & Appearance.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Clothes & Appearance.", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Clothes & Appearance.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Clothes & Appearance", description: "Introduction to Clothes & Appearance.", content: ["She is wearing a red shirt.", "He is tall and slim."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["She is wearing a red shirt.", "He is tall and slim."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Shirt, Pants, Tall, Short", content: ["Shirt", " Pants", " Tall", " Short"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["She is wearing a red shirt.", "He is tall and slim."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: She is wearing a red shirt."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["She is wearing a red shirt.", "He is tall and slim."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-5",
+      title: "Clase 5: Lugares en la ciudad y transporte",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Places & Transport.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Places & Transport.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Places & Transport.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Places & Transport", description: "Introduction to Places & Transport.", content: ["The bank is next to the park.", "I go by bus."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["The bank is next to the park.", "I go by bus."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Bank, Park, Bus, Train", content: ["Bank", " Park", " Bus", " Train"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["The bank is next to the park.", "I go by bus."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: The bank is next to the park."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["The bank is next to the park.", "I go by bus."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-6",
+      title: "Clase 6: Pasado del verbo To Be (was/were)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Past of To Be (Was/Were).",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Past of To Be (Was/Were).", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Past of To Be (Was/Were).", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Past of To Be (Was/Were)", description: "Introduction to Past of To Be (Was/Were).", content: ["I was at home.", "They were happy."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I was at home.", "They were happy."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Was, Were, Yesterday, Last night", content: ["Was", " Were", " Yesterday", " Last night"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I was at home.", "They were happy."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I was at home."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I was at home.", "They were happy."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-7",
+      title: "Clase 7: Hablando de tu infancia y recuerdos",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-8",
+      title: "Clase 8: Biografías de personas famosas",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Biographies.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Biographies.", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Biographies.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Biographies", description: "Introduction to Biographies.", content: ["He was born in 1990.", "She studied science."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["He was born in 1990.", "She studied science."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Born, Study, Work, Live", content: ["Born", " Study", " Work", " Live"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["He was born in 1990.", "She studied science."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: He was born in 1990."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["He was born in 1990.", "She studied science."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-9",
+      title: "Clase 9: Fechas, años y meses",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-3-10",
+      title: "Clase 10: Repaso General de Basic 3",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Review & Practice.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Review & Practice.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Review & Practice.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Review & Practice", description: "Introduction to Review & Practice.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Review, Practice, Exercise, Test", content: ["Review", " Practice", " Exercise", " Test"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Let's review the main topics."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    }
     ],
-      oralEvaluation: [
-              { topic: "Past Simple Routine", question: "What did you do last weekend? Did you go anywhere interesting?" },
-              { topic: "Childhood Memories", question: "What was your favorite toy or game when you were a child? What were you like?" },
-              { topic: "Past Continuous Context", question: "What were you doing yesterday at 8 PM? Were you watching TV?" },
-              { topic: "Interrupted Actions", question: "Tell me about a time when you were doing something and something surprising happened." },
-              { topic: "Life Experiences", question: "Tell me about your best vacation ever. Where did you go, and who did you go with?" }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-4-1",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["yet", "ever", "never"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-2",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["will stay", "stay", "stayed"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-3",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["yet", "ever", "never"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-4",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["stay", "will stay", "stayed"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-5",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["yet", "ever", "never"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-6",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["will stay", "stay", "stayed"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-7",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["never", "ever", "yet"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-8",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["will stay", "stay", "stayed"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-9",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["never", "ever", "yet"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-10",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["stayed", "stay", "will stay"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-11",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["never", "ever", "yet"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-12",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["will stay", "stay", "stayed"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-13",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["yet", "ever", "never"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-14",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["will stay", "stay", "stayed"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-15",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["never", "ever", "yet"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-16",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["stayed", "stay", "will stay"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-17",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["yet", "ever", "never"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-18",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["stay", "stayed", "will stay"],
-                          correctAnswer: "will stay"
-                      },
-          {
-                          id: "vq-4-19",
-                          type: "multiple-choice",
-                          question: "I have ___ lived in London.",
-                          options: ["ever", "never", "yet"],
-                          correctAnswer: "never"
-                      },
-          {
-                          id: "vq-4-20",
-                          type: "multiple-choice",
-                          question: "If it rains, we ___ home.",
-                          options: ["will stay", "stay", "stayed"],
-                          correctAnswer: "will stay"
-                      }
-          ]
-},
+    oralEvaluation: [
+      { question: "Evaluación Oral", topic: "Evaluación del nivel." }
+    ]
+  },
   {
     id: "basic-4",
     title: "Basic 4",
     duration: "1 mes",
-    objective: "Repaso intensivo de tiempos clave; pruebas de gramática; repaso de pasado simple y sonidos -ed; presente progresivo como futuro; comparación presente/pasado/futuro.",
-    mcfrEquivalent: "A2+",
+    objective: "Manejo completo del pasado y planificación del futuro.",
+    mcfrEquivalent: "A1",
     classes: [
-      {
-        id: "c-b4-1",
-        title: "Clase 1: Tense Review - Pasado, Presente, Futuro",
-        description: "Comparación de los tiempos fundamentales en conversaciones reales.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Activar los 3 tiempos.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Time Jump",
-                description: "Past, Present or Future?",
-                content: ["Tell me 1 thing you did yesterday.", "Tell me 1 thing you do every day.", "Tell me 1 plan for tomorrow."],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Un rápido rompehielos forzando el salto mental entre pasado, presente y futuro."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Repasar las reglas infalibles de cada tiempo.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Big Three",
-                description: "Los Pilares del Inglés",
-                content: ["1. Present Simple (Rutinas: Do/Does)", "2. Past Simple (Hechos pasados: Did / -ed)", "3. Future (Planes: Will / Going to)"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Spot the Key Words",
-                description: "La palabra te dice el tiempo",
-                content: ["YESTERDAY, LAST... = Past", "USUALLY, EVERY DAY = Present", "TOMORROW, NEXT... = Future"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "The Negative Formula",
-                description: "Los auxiliares mágicos",
-                content: ["Present: don't / doesn't + verbo base", "Past: didn't + verbo base", "Future: won't / 'm not going to + verbo base"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
-              }
-            ],
-            action: "Hacer un mapa mental rápido en la pizarra virtual sobre cómo negar en los 3 tiempos."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Reconocer errores mixtos.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                description: "Find the mistakes (Hay 3 errores!):",
-                content: ["Yesterday, I go to the park.", "I usually eating pizza on Fridays.", "Tomorrow, I didn't work."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Time keyword",
-                content: ["I always ______ my bed in the morning."],
-                options: ["made", "make", "will make"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Time keyword",
-                content: ["Last year, we ______ to Spain."],
-                options: ["travel", "travelled", "will travel"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Time keyword",
-                content: ["Next weekend, I ______ study English."],
-                options: ["am going to", "went to", "studies"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 1: Tense Review - Pasado, Presente, Futuro" + ")",
-                                type: 'emoji-game',
-                                content: ['📈 ➕ 💰 ➕ 🎉'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["Sales are going up!", "I spent too much money.", "Let's have a party."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "El alumno debe justificar POR QUÉ eligió la respuesta (ej. 'Elegí travelled porque dice Last year')."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Producir los tres tiempos en ráfaga.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The 3-Sentence Challenge",
-                description: "Topic: Food",
-                content: ["1. What did you eat yesterday?", "2. What do you eat every day?", "3. What will you eat tomorrow?"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Negative Past",
-                content: ["Which is correct?"],
-                options: ["I didn't went.", "I didn't go.", "I don't went."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Negative Present",
-                content: ["She ______ like apples."],
-                options: ["don't", "doesn't", "isn't"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Questions",
-                content: ["______ you play video games last night?"],
-                options: ["Did", "Do", "Are"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Realizar el desafío velozmente. Cambiar el tema a 'Viajes' o 'Trabajo' si hay tiempo."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Celebrar la agilidad gramatical.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "Grammar Master",
-                content: ["You can switch between times easily!", "Always look for the TIME KEYWORD."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "The Timeline",
-                content: ["Write 3 sentences about your past (10 years ago).", "Write 3 sentences about your present.", "Write 3 sentences about your future (10 years next)."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-23",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/jRmKBjcNhNA",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Asegurar que entienden cómo los auxiliares marcan el tiempo."
-          }
-        ]
-      },
-      {
-        id: "c-b4-2",
-        title: "Clase 2: Presente Progresivo como Futuro",
-        description: "Uso avanzado para planes confirmados en el futuro.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la idea de planes agendados.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Your Calendar",
-                description: "What is in your agenda?",
-                content: ["Do you have a doctor's appointment this week?", "Are you meeting a friend tomorrow?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hablar sobre calendarios y agendas para dar contexto de 'plan 100% seguro'."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Explicar cómo una estructura de presente puede hablar del futuro.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Future Secret",
-                description: "Presente continuo = Futuro seguro",
-                content: ["Ya conoces: I am working (Ahora).", "NUEVO: Usamos la misma estructura para planes futuros CONFIRMADOS.", "I am working TOMORROW. (Trabajo mañana seguro)"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Going to vs Present Continuous",
-                description: "La diferencia es sutil",
-                content: ["Going to = Intención (I'm going to travel).", "Present Continuous = Arreglo agendado (I am traveling tomorrow. I have the tickets!)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "How to form it",
-                description: "Be + -ing + TIME",
-                content: ["She IS meetING her boss at 5 PM.", "We ARE flyING to Paris next week."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Destacar que la PALABRA DE TIEMPO (tomorrow, next week) es lo que convierte la frase de presente a futuro."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Identificar si la frase es Ahora o Futuro.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                description: "Lee la agenda de Mark:",
-                content: ["Mark is very busy right now. He is typing an email.", "Tonight, he is having dinner with his wife. Tomorrow, he is presenting a project."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Now vs Future",
-                content: ["Sshh! I ______ (study) right now."],
-                options: ["study", "am studying", "will study"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Now vs Future",
-                content: ["I bought the tickets! We ______ (fly) to Mexico next month."],
-                options: ["fly", "will fly", "are flying"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Negative future arrangement",
-                content: ["I ______ (not work) tomorrow. It's a holiday!"],
-                options: ["don't work", "am not working", "didn't work"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 2: Presente Progresivo como Futuro" + ")",
-                                type: 'emoji-game',
-                                content: ['🚗 ➕ 🚦 ➕ 😡'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I got a speeding ticket.", "The traffic is terrible.", "My car broke down."],
-                                correctOptionIndex: 1
-                              }
-            ],
-            action: "Hacer ver que 'We are flying' suena nativo y elegante para un vuelo ya comprado."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Simular agendar una cita (Role-play).",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Let's meet!",
-                description: "Agenda un café",
-                content: ["Teacher: What are you doing on Friday at 6 PM?", "Student: I am (working/studying/meeting...).", "Let's find a time!"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Concept",
-                content: ["Present Progressive can be used for:"],
-                options: ["Only right now", "Past and Now", "Right now AND arranged future"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Structure",
-                content: ["Which sentence is FUTURE?"],
-                options: ["She is eating an apple.", "She eats an apple.", "She is eating with us tonight."],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Grammar",
-                content: ["He ______ playing soccer tomorrow at 5."],
-                options: ["are", "is", "were"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Jugar a cruzar agendas y obligar usar el Present Continuous para rechazar ('I can't, I am working')."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Cierre del 'truco nativo'.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "Native Trick Unlocked",
-                content: ["Use the Present Progressive for 100% sure future plans.", "It sounds very natural!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Your Next Week Agenda",
-                content: ["Write 4 things you ARE DOING next week.", "Example: I am visiting my grandmother on Sunday."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-24",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/CmqOXaSUpFo",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Felicitar por dominar una estructura que muchos evitan."
-          }
-        ]
-      },
-      {
-        id: "c-b4-3",
-        title: "Clase 3: Domina el Pasado Simple y Pronunciación",
-        description: "Refuerzos y role-plays centrados en el pasado.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Despertar la pronunciación en pasado.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Fast Pronunciation",
-                description: "Read these words fast:",
-                content: ["Worked, Played, Wanted.", "Did it sound good?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hacer un mini test flash de pronunciación de 3 verbos regulares."
-          },
-          {
-            id: "s2",
-            title: "2. Challenge: Identifying the Sounds",
-            duration: "15 minutos",
-            objective: "Agudizar el oído para identificar /t/, /d/, /id/.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Listening Challenge",
-                description: "What did I say?",
-                content: ["Teacher: 'I watched TV.'", "Student: Sounded like /t/!"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "The Irregular Trap",
-                description: "Don't add -ed to everything!",
-                content: ["Recuerda: Si el verbo es irregular, NO lleva -ed.", "I buyed ❌ -> I bought ✅", "He catched ❌ -> He caught ✅"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Did vs Was/Were",
-                description: "El error clásico",
-                content: ["DID = Para todos los verbos (Did you eat?)", "WAS/WERE = Sólo para el verbo To Be (Were you happy?)", "Nunca mezclar: Did you be happy? ❌ / Were you eat? ❌"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Dictado de sonidos y corrección del clásico error Did vs Was."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Reparar párrafos en pasado.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Fix the story (Find 4 mistakes)",
-                description: "Story of Leo:",
-                content: ["Yesterday, Leo go to the beach. He was very tired. He didn't swimmed. He just sleeped."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Did vs Was",
-                content: ["______ you go to the party?"],
-                options: ["Were", "Did", "Are"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Did vs Was",
-                content: ["______ you happy at the party?"],
-                options: ["Did", "Was", "Were"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Negative",
-                content: ["I ______ have time to cook."],
-                options: ["wasn't", "didn't", "don't"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 3: Domina el Pasado Simple y Pronunciación" + ")",
-                                type: 'emoji-game',
-                                content: ['🌧️ ➕ 🛋️ ➕ 📺'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I will stay home and watch TV.", "It's raining outside.", "The TV is broken."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Forzar al alumno a justificar por qué es DID y por qué es WAS/WERE."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Role-play de una excusa al jefe.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Role-Play: You are late!",
-                description: "Tell me an excuse",
-                content: ["Teacher (Boss): Why were you late today?", "Student: (Make up a crazy past story)"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Spelling",
-                content: ["Past of STOP:"],
-                options: ["Stoped", "Stopped", "Stopt"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Irrgular",
-                content: ["Past of FLY:"],
-                options: ["Flyed", "Flew", "Flown"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Listening /id/",
-                content: ["Which one sounds like /id/?"],
-                options: ["Played", "Worked", "Needed"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Juntar todos los conocimientos de pasado en una historia improvisada y divertida."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Celebrar la fluidez en pasado.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "History Teller",
-                content: ["You survived the past tense!", "Keep practicing irregular verbs."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Prepare for the Final Test",
-                content: ["Review Present, Past and Future.", "Next class is the mega conversation test!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-25",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/KN2jyw6D1ak",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Advertir que la próxima clase es la evaluación final del módulo Basic."
-          }
-        ]
-      },
-      {
-        id: "c-b4-4",
-        title: "Clase 4: Pruebas de Gramática y Fluidez",
-        description: "Prueba conversacional usando todos los temas de la sección basic.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Relajar tensiones antes del test.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Final Challenge",
-                description: "Are you ready?",
-                content: ["Don't worry, just speak naturally.", "We will talk about past, present, and future."],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Dar un ambiente muy relajado y de confianza para el alumno."
-          },
-          {
-            id: "s2",
-            title: "2. The Grammar Gauntlet",
-            duration: "15 minutos",
-            objective: "Resolver situaciones gramaticales rápidas (Test).",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Challenge 1: Find the error",
-                description: "1 point each",
-                content: ["1. They doesn't like pizza.", "2. I am going travel to Mexico.", "3. Did she went to school?"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Challenge 2: Irregular Verbs",
-                description: "What's the past?",
-                content: ["Buy -> ?", "Think -> ?", "Eat -> ?", "See -> ?"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Challenge 3: Ask me!",
-                description: "Create questions",
-                content: ["Make a question in Present Simple.", "Make a question in Past Simple.", "Make a question in Future (Will or Going to)."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Evaluar la precisión gramatical. Tomar notas mentales de los errores para el feedback."
-          },
-          {
-            id: "s3",
-            title: "3. Fluency Test (Interview)",
-            duration: "15 minutos",
-            objective: "Mantener una conversación fluida saltando tiempos.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Conversation Time",
-                description: "Topic 1: Hobbies",
-                content: ["What do you like doing in your free time?", "Why?", "What did you do last weekend?"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Conversation Time",
-                description: "Topic 2: The Future",
-                content: ["What are your plans for next year?", "Where are you going to travel?", "Do you think you will learn another language?"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Conversation Time",
-                description: "Topic 3: Storytelling",
-                content: ["Tell me about your best vacation ever. (Use PAST!)."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Dejar hablar al alumno. No interrumpir por errores menores, evaluar la fluidez comunicativa."
-          },
-          {
-            id: "s4",
-            title: "4. Feedback & Review",
-            duration: "15 minutos",
-            objective: "Dar retroalimentación constructiva y repasar puntos débiles.",
-            slides: [
-              {
-                id: "Diapositiva 8",
-                title: "Feedback Time",
-                description: "You did great!",
-                content: ["Let's review some details...", "(Teacher writes errors on chat/board)"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 9",
-                title: "Fun Quiz! (1/3)",
-                description: "Bonus grammar",
-                content: ["He ______ a book right now."],
-                options: ["reads", "is reading", "readed"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (2/3)",
-                description: "Bonus Past",
-                content: ["I ______ sleep last night."],
-                options: ["didn't", "don't", "wasn't"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (3/3)",
-                description: "Bonus Future",
-                content: ["I am ______ call my mom later. (informal)"],
-                options: ["going", "gonna", "will"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Hacer correcciones de los errores anotados durante la entrevista (Sandwich feedback: Bueno - A mejorar - Bueno)."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Graduación y pase a Intermediate.",
-            slides: [
-              {
-                id: "Diapositiva 12",
-                title: "CONGRATULATIONS!",
-                description: "You completed the BASIC level!",
-                content: ["You are ready for Intermediate.", "You can communicate your past, present and future plans."],
-                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
-                imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 13",
-                title: "Welcome to Intermediate",
-                description: "What's next?",
-                content: ["Next stop: Perfect tenses, advanced conditionals, and real-world debates!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 4: Pruebas de Gramática y Fluidez" + ")",
-                                type: 'emoji-game',
-                                content: ['🏋️ ➕ 🥗 ➕ 💪'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I need to eat healthy.", "I am getting fit.", "I don't like vegetables."],
-                                correctOptionIndex: 1
-                              },
-                {
-                                id: "Diapositiva-Video-Homework-26",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/UNF8Vnrpxno",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "¡Gran celebración virtual! Fin del módulo básico completo."
-          }
-        ]
-      }
+{
+      id: "c-adults-basic-4-1",
+      title: "Clase 1: Pasado Simple - Verbos Regulares",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-2",
+      title: "Clase 2: Pasado Simple - Verbos Irregulares",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-3",
+      title: "Clase 3: Formando preguntas y negaciones en pasado",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-4",
+      title: "Clase 4: Vocabulario de viajes y vacaciones",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Travel & Vacations.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Travel & Vacations.", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Travel & Vacations.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Travel & Vacations", description: "Introduction to Travel & Vacations.", content: ["I went to Paris.", "We visited the museum."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I went to Paris.", "We visited the museum."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Travel, Visit, Go, Vacation", content: ["Travel", " Visit", " Go", " Vacation"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I went to Paris.", "We visited the museum."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I went to Paris."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I went to Paris.", "We visited the museum."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-5",
+      title: "Clase 5: Contando anécdotas usando conectores (first, then, finally)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Connectors.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Connectors.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Connectors.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Connectors", description: "Introduction to Connectors.", content: ["First, I woke up.", "Then, I had breakfast."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["First, I woke up.", "Then, I had breakfast."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "First, Then, After that, Finally", content: ["First", " Then", " After that", " Finally"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["First, I woke up.", "Then, I had breakfast."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: First, I woke up."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["First, I woke up.", "Then, I had breakfast."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-6",
+      title: "Clase 6: Expresando planes futuros con Going to",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-7",
+      title: "Clase 7: Predicciones y decisiones rápidas con Will",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-8",
+      title: "Clase 8: Diferencias entre Will y Going to",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-9",
+      title: "Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Giving Opinions.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Giving Opinions.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Giving Opinions.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Giving Opinions", description: "Introduction to Giving Opinions.", content: ["I think it is great.", "In my opinion, it is bad."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I think it is great.", "In my opinion, it is bad."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Think, Believe, Opinion, Idea", content: ["Think", " Believe", " Opinion", " Idea"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I think it is great.", "In my opinion, it is bad."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I think it is great."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I think it is great.", "In my opinion, it is bad."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-basic-4-10",
+      title: "Clase 10: Preparación para Nivel Intermedio",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    }
     ],
-      oralEvaluation: [
-              { topic: "All Tenses Story", question: "Tell me a little about your personal journey (e.g. where you lived, where you live now, where you will live)." },
-              { topic: "Future Arrangements", question: "What are you doing tonight? Do you have any definite arrangements for this month?" },
-              { topic: "Predictions & Intentions", question: "What do you think the world will be like in 2050? What are you going to do to prepare?" },
-              { topic: "Future Progressive", question: "What will you be doing this time tomorrow? What about next week?" },
-              { topic: "Used To", question: "What did you use to do when you were a teenager that you don't do anymore?" }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-5-1",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["seeing", "see", "to see"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-2",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["take", "to take", "taking"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-3",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["seeing", "to see", "see"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-4",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["taking", "take", "to take"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-5",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["seeing", "see", "to see"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-6",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["take", "to take", "taking"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-7",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["seeing", "see", "to see"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-8",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["to take", "take", "taking"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-9",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["see", "seeing", "to see"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-10",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["taking", "to take", "take"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-11",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["seeing", "see", "to see"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-12",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["take", "to take", "taking"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-13",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["see", "seeing", "to see"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-14",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["to take", "taking", "take"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-15",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["to see", "see", "seeing"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-16",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["take", "to take", "taking"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-17",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["seeing", "see", "to see"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-18",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["taking", "to take", "take"],
-                          correctAnswer: "taking"
-                      },
-          {
-                          id: "vq-5-19",
-                          type: "multiple-choice",
-                          question: "I'm looking forward to ___ you.",
-                          options: ["to see", "see", "seeing"],
-                          correctAnswer: "seeing"
-                      },
-          {
-                          id: "vq-5-20",
-                          type: "multiple-choice",
-                          question: "He denied ___ the money.",
-                          options: ["take", "to take", "taking"],
-                          correctAnswer: "taking"
-                      }
-          ]
-},
+    oralEvaluation: [
+      { question: "Evaluación Oral", topic: "Evaluación del nivel." }
+    ]
+  },
   {
-    id: "intermediate",
-    title: "Intermediate (Tigers, Sharks, Eagles)",
-    duration: "3 meses",
-    objective: "Experiencias, consejos, comparaciones, tiempos perfectos, modales, comparativos/superlativos, used to, should, segunda condicional y tiempos mezclados.",
-    mcfrEquivalent: "B1",
+    id: "inter",
+    title: "Intermediate",
+    duration: "1 mes",
+    objective: "Fluidez para conversaciones más complejas y vida profesional.",
+    mcfrEquivalent: "A1",
     classes: [
-      {
-        id: "c-i-1",
-        title: "Clase 1: Present Perfect vs Simple Past",
-        description: "Hablar sobre experiencias de vida sin especificar cuándo sucedieron.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la idea de experiencias.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome to Intermediate!",
-                description: "Have you ever...?",
-                content: ["Tell me about a crazy experience you had.", "Have you ever eaten insect food?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar sobre anécdotas extrañas o viajes para establecer contexto."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Diferenciar la experiencia general (Perfect) del evento específico (Past).",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Experience Tense",
-                description: "Present Perfect",
-                content: ["Usamos HAVE / HAS + Verbo en PARTICIPIO (3ra columna).", "I have visited France (Experiencia en mi vida).", "NO importa CUÁNDO, importa QUE pasó."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Present Perfect vs Simple Past",
-                description: "El momento del cambio",
-                content: ["Present Perfect: I HAVE BEEN to Spain. (Experiencia).", "Simple Past: I WENT to Spain IN 2019. (Fecha exacta).", "La regla: SI dices cuándo, es PASADO SIMPLE."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Have you EVER...?",
-                description: "Preguntando por experiencias",
-                content: ["EVER = Alguna vez en tu vida.", "Have you EVER flown in a helicopter?", "Yes, I have! / No, I haven't."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1544144433-d50aff500b91?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Enfatizar: El present perfect NO acepta fechas pasadas ('I have eaten pizza yesterday' ❌)."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Identificar cuál tiempo usar dependiendo de si hay marcador de tiempo.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The Traveler:",
-                content: ["I have travelled to many countries in my life, and I have seen amazing things. Last year, for example, I went to Japan for the first time. I have eaten sushi before in my home country, but the sushi I had in Tokyo was definitely the best! Since that trip, I have already started planning my next adventure."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Choose the tense",
-                content: ["I ______ (see) that movie three times in my life."],
-                options: ["saw", "have seen", "am seeing"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Choose the tense",
-                content: ["She ______ (buy) a new car last weekend."],
-                options: ["has bought", "buy", "bought"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Choose the tense",
-                content: ["(Question) ______ you ever ______ (eat) insects?"],
-                options: ["Have / ate", "Did / eat", "Have / eaten"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 1: Present Perfect vs Simple Past" + ")",
-                                type: 'emoji-game',
-                                content: ['📱 ➕ 🔋 ➕ ☠️'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["My phone is dead.", "I need a new phone.", "I am playing a game."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Forzar la justificación: se usa past simple en la 2da porque dice 'last weekend'."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Tener una conversación natural mezclando ambos tiempos.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The Conversation Flow",
-                description: "Start General, Go Specific",
-                content: ["1 (Perfect): Have you ever been to Europe?", "2 (Past): Yes, I went to Paris in 2018.", "3 (Past): Did you like it?", "Let's Role Play!"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "The Time Rule",
-                content: ["Which is INCORRECT?"],
-                options: ["I have lived here for 2 years.", "She has visited Rome yesterday.", "We went to the beach."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Participles",
-                content: ["What is the participle (3rd column) of GO?"],
-                options: ["Went", "Going", "Gone"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Negative Experience",
-                content: ["I ______ sushi in my life. I want to try it!"],
-                options: ["haven't eat", "haven't eaten", "didn't ate"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Role-play fluido de entrevista personal. Yo pregunto general (have you ever), y pido detalles (when did you?)."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Fijar la diferencia de uso.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "Experience unlocked!",
-                content: ["Present Perfect = Experience (No time).", "Simple Past = Details (Specific time)."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Never Have I Ever",
-                content: ["List 3 things you HAVE done (and when).", "List 3 things you HAVE NEVER done.", "Example: I have never jumped from a plane."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-27",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/jul2urONzOQ",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Despedir la clase verificando que sepan de memoria qué auxiliar usar."
-          }
-        ]
-      },
-      {
-        id: "c-i-2",
-        title: "Clase 2: Tiempos Perfectos y Duración",
-        description: "Dominar fallos comunes del español (Since vs For).",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Identificar cómo expresan la duración en español vs inglés.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Time passes",
-                description: "How long...?",
-                content: ["How long have you lived in your city?", "How long have you studied English?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar cuánto llevan haciendo algo. Si dicen 'I live here for 5 years', señalarlo como objetivo de hoy."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Enseñar How long, For y Since.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Duration Tense",
-                description: "De un punto hasta AHORA",
-                content: ["En español: 'Yo vivo aquí hace 5 años' (Presente).", "En inglés: 'I HAVE LIVED here for 5 years' (Present Perfect).", "No uses el presente simple para duración continua hasta hoy."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "FOR",
-                description: "Cantidad de tiempo (Quantity)",
-                content: ["FOR + Número / Duración total", "For 5 years", "For 3 months", "For a long time"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "SINCE",
-                description: "Punto de inicio marcado (Starting point)",
-                content: ["SINCE + Fecha / Evento", "Since 2018", "Since January", "Since I was a child"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hacer mucho énfasis en el error latino: No decir 'I work here for 2 years', sino 'I HAVE worked here...'."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Discriminar entre For y Since.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "My Job:",
-                content: ["I have worked as a doctor since 2010. It is a very demanding profession, but I love helping people. I have lived in this city for over 10 years, and I have met many interesting patients during this time. Since I started working at this hospital, we've improved many lives. Have you ever worked in healthcare?"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "For or Since?",
-                content: ["I have known my best friend ______ 15 years."],
-                options: ["since", "for", "in"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "For or Since?",
-                content: ["She has studied English ______ she was 10 years old."],
-                options: ["for", "since", "until"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Grammar check",
-                content: ["How long ______ you ______ (be) married?"],
-                options: ["did / be", "do / are", "have / been"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 2: Tiempos Perfectos y Duración" + ")",
-                                type: 'emoji-game',
-                                content: ['🗣️ ➕ 👂 ➕ 🤔'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["Can you repeat that?", "I don't understand.", "I am listening carefully."],
-                                correctOptionIndex: 2
-                              }
-            ],
-            action: "Corregir implacablemente si usan Present Simple con periodos de tiempo no terminados."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Responder a preguntas de duración personal de forma espontánea.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Interview: The 'How long...?' game",
-                description: "Let's talk about you",
-                content: ["1. How long have you had your phone?", "2. How long have you known your best friend?", "3. How long have you worked at your job?"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "The Error Trap",
-                content: ["Which is CORRECT?"],
-                options: ["I live here for 3 years.", "I lived here for 3 years (and I still do).", "I have lived here for 3 years."],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Since vs For",
-                content: ["______ last Christmas."],
-                options: ["For", "Since", "In"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Since vs For",
-                content: ["______ 3 weeks."],
-                options: ["Since", "For", "By"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Dejarles hablar sobre su vida usando For y Since. Forzar la auto-corrección cuando digan 'I have... since 3 years' (Error clásico)."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Solidificar cómo el inglés trata el tiempo transcurrido.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You controlled time!",
-                content: ["For = 📦 Cantidad de tiempo (3 hours, 2 days).", "Since = 📌 Punto de inicio en el calendario (1995, Monday)."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Your Timeline",
-                content: ["Write 5 sentences about your life using HOW LONG, SINCE and FOR.", "Example: I have played guitar since 2012."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-28",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/jz-7F-BV9TE",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Despedida felicitando el logro de soltar el presente simple hispanohablante."
-          }
-        ]
-      },
-      {
-        id: "c-i-3",
-        title: "Clase 3: Comparativos y Superlativos",
-        description: "Describiendo diferencias extremas y proporciones.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la idea de la comparación.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! The Best & The Worst",
-                description: "Let's compare!",
-                content: ["Who is the tallest person in your family?", "What is better: Pizza or Burgers?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1517404215738-15263e9f9178?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hacer preguntas rápidas de preferencias personales y usar la respuesta para introducir el tema."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Sistematizar la regla de oro para comparar (-er / more) y (-est / most).",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Comparatives (A vs B)",
-                description: "Palabras cortas vs Palabras largas",
-                content: ["Cortas (1 sílaba): Add -ER + than -> Tall -> TallER than", "Largas (2+ sílabas): Add More + than -> Expensive -> MORE expensive than", "Y -> IER -> Happy -> HappIER than"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Superlatives (The Top!)",
-                description: "A vs The World",
-                content: ["Cortas: Add THE + -EST -> Tall -> The tallEST", "Largas: Add THE MOST -> Expensive -> The MOST expensive", "Y -> IEST -> Happy -> The happIEST"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "The Irregulars",
-                description: "Memoriza estos 3",
-                content: ["Good -> Better -> The Best", "Bad -> Worse -> The Worst", "Far -> Further -> The Furthest"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Enfatizar que NUNCA se usa MORE + -ER juntos (more taller ❌)."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Convertir adjetivos fríos en comparativos/superlativos según contexto.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The City vs The Country:",
-                content: ["New York is significantly bigger and more crowded than my hometown. However, my town is much quieter and cleaner than New York. Even though living in a small town is more relaxing, I think New York is the most exciting city in the world. It has the best restaurants and the most impressive buildings I've ever seen."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Comparative",
-                content: ["A Ferrari is ______ (fast) than a Toyota."],
-                options: ["more fast", "fastest", "faster"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Superlative",
-                content: ["This is ______ (bad) movie I have ever seen!"],
-                options: ["the baddest", "the worst", "worse"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Long adj",
-                content: ["Reading is ______ (interesting) than watching TV."],
-                options: ["more interesting", "interestingest", "most interesting"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 3: Comparativos y Superlativos" + ")",
-                                type: 'emoji-game',
-                                content: ['🏥 ➕ 🩺 ➕ 💊'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I am feeling sick.", "I am a doctor.", "I need some medicine."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Si el alumno se equivoca, preguntarle: '¿Cuántas sílabas tiene el adjetivo?'"
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Juego de debate: ¿Cuál es mejor?",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Debate Time!",
-                description: "Compare these:",
-                content: ["1. Dogs vs Cats (Which is better and why?)", "2. Movies vs Books", "3. What is the most delicious food in your country?"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar trap",
-                content: ["Which is WRONG?"],
-                options: ["He is taller than me.", "She is more beautiful than me.", "They are more faster than me."],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Spelling",
-                content: ["Comparative of HEAVY:"],
-                options: ["Heavyer", "Heavier", "More heavy"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Superlative",
-                content: ["She is ______ student in the class."],
-                options: ["the smarter", "the smartest", "smartest"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Hacer de abogado del diablo. Si dicen 'Dogs are better', contradecir con 'But cats are cleaner', forzando el uso de comparativos."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Fijar el error de 'more taller'.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You are the BEST!",
-                content: ["Never mix: No 'more taller', no 'most easiest'.", "Short word = -ER / -EST", "Long word = MORE / MOST"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Compare your friends",
-                content: ["Write 5 sentences comparing your friends or family.", "Example: My brother is taller than me, but I am the funniest."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-29",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/MA7muIjKaWY",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Despedida cerrando la regla fundamental de sílabas cortas vs largas."
-          }
-        ]
-      },
-      {
-        id: "c-i-4",
-        title: "Clase 4: Hábitos del Pasado (Used to)",
-        description: "Diferenciar entre rutinas pasadas con 'used to' y pasado simple.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Despertar la nostalgia de la infancia.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Blast from the Past",
-                description: "When you were a child...",
-                content: ["What cartoon did you watch?", "What games did you play?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar a qué jugaban de niños. Identificar si usan pasado simple o intentan usar 'used to'."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Enseñar USED TO y DIDN'T USE TO.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Used to = Solía...",
-                description: "Hábitos que ya NO haces",
-                content: ["Si lo hacías y ahora YA NO, usa 'Used to'.", "I used to play with dolls. (Solía jugar con muñecas).", "He used to have long hair. (Solía tener pelo largo)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "The Golden Rule strikes back",
-                description: "Negative & Questions",
-                content: ["Si usas DID, el verbo principal NO cambia.", "I DIDN'T USE to like vegetables. (No 'didn't used to')", "DID you USE to play outside? (No 'did you used')"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Used to vs Simple Past",
-                description: "Hábito vs Evento único",
-                content: ["Used to: Para cosas repetitivas del pasado. (I used to go to the park every Sunday).", "Past Simple: Para cosas que pasaron UNA vez o fecha exacta. (I went to the park yesterday)."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1616628188550-808682f3926d?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hacer muchísimo énfasis en NO ponerle -d a USE cuando se usa DID o DIDN'T."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Reparar la regla de DID + USE.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "Growing up:",
-                content: ["When I was a kid, I used to hate vegetables. Every time my mom cooked broccoli, I would refuse to eat it. I didn't use to eat them at all. But as I grew older, my tastes changed. Now I realize how healthy they are, and yesterday, I actually made and ate a huge vegetable salad for dinner!"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Affirmative",
-                content: ["I ______ (use) to ride my bike every day."],
-                options: ["use", "used to", "using"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Negative Error Check",
-                content: ["She ______ use to wear glasses, but now she does."],
-                options: ["didn't", "don't", "wasn't"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Question Error Check",
-                content: ["Did you ______ to play video games?"],
-                options: ["used", "uses", "use"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 4: Hábitos del Pasado (Used to)" + ")",
-                                type: 'emoji-game',
-                                content: ['🎓 ➕ 📚 ➕ 🧠'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I am studying hard.", "I forgot my book.", "I graduated from university."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Obligar al alumno a justificar por qué en negativo y pregunta se le quita la 'd'."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Contar la historia personal del alumno (Antes vs Ahora).",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Then vs Now",
-                description: "Tell me about you",
-                content: ["1. What music did you use to listen to?", "2. What food didn't you use to like?", "3. What do you do now that you didn't use to do?"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Did rule",
-                content: ["Which is CORRECT?"],
-                options: ["I didn't used to smoke. ❌", "I didn't use to smoke. ✅", "I don't used to smoke. ❌"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Meaning",
-                content: ["If 'I used to play tennis', it means:"],
-                options: ["I play tennis now.", "I played tennis in the past and I still do.", "I played tennis in the past, but NOT anymore."],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Past vs Used to",
-                content: ["Which sounds better?"],
-                options: ["I used to go to Paris in 2015.", "I went to Paris in 2015."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Dejar que narren su propia historia. Es una estructura que gusta mucho porque suena muy nativa."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Celebrar la nostalgia y la estructura.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You controlled the past habits!",
-                content: ["Remember: DIDN'T USE TO (No -D).", "Used to = Something you stopped doing."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Your Parents' Past",
-                content: ["Ask your parents or grandparents:", "What did they use to do without internet?", "Write 4 sentences."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-30",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/Ljjiw9mC_Cg",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Despedirse cerrando el tema de la infancia."
-          }
-        ]
-      },
-      {
-        id: "c-i-5",
-        title: "Clase 5: Dando Consejos y Obligaciones",
-        description: "Modales y uso avanzado de 'should', 'must', 'have to'.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Jugar al consultorio.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Doctor Help Me!",
-                description: "I have a problem...",
-                content: ["Teacher: 'I have a terrible headache. What do I do?'", "Student: 'Take an aspirin!'"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Actuar como si tuvieras un problema (sueño, hambre, dolor) y pedirles consejo para ver qué usan."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Separar Consejo vs Obligación.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "SHOULD = Deberías (Consejo)",
-                description: "Es buena idea, pero no obligatorio.",
-                content: ["You SHOULD drink water.", "You SHOULDN'T drink too much coffee.", "(Modal + Verbo normal sin 'to')"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "MUST = Debes (Obligación Fuerte / Interna)",
-                description: "Casi una ley, o un deber personal",
-                content: ["I MUST study tonight (Mi propia decisión obligatoria).", "You MUST stop at the red light.", "Negativo: MUSTN'T (Prohibición estricta!)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "HAVE TO = Tener que (Obligación Externa)",
-                description: "Las reglas del mundo",
-                content: ["I HAVE TO work at 8 AM. (Mi jefe me obliga).", "She HAS TO pay taxes.", "Negativo: DON'T HAVE TO (No es obligatorio / opcional)."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Aclarar la diferencia mortal: Mustn't = Prohibido. Don't have to = Opcional (tu decides)."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Elegir el modal correcto.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The Rules:",
-                content: ["To drive a car legally, you have to pass a test and get a license. Once you have it, there are strict rules you must follow to stay safe. For instance, you absolutely mustn't use your phone while driving, as it's incredibly dangerous. You should also drive slowly in the rain to avoid slipping."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Advice",
-                content: ["You look tired. You ______ sleep."],
-                options: ["must", "should", "have to"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Prohibition vs Optional",
-                content: ["Tomorrow is Sunday! I ______ wake up early."],
-                options: ["mustn't", "shouldn't", "don't have to"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "External Obligation",
-                content: ["I can't go to the party. I ______ finish this project for my boss."],
-                options: ["should", "have to", "mustn't"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 5: Dando Consejos y Obligaciones" + ")",
-                                type: 'emoji-game',
-                                content: ['🍕 ➕ 🍔 ➕ 🤤'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I am very hungry.", "I like fast food.", "I am cooking dinner."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Hacer énfasis en la diferencia entre MUSTN'T y DON'T HAVE TO."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Dar consejos reales.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Agony Aunt (Consultorio)",
-                description: "Give me advice",
-                content: ["1. 'I want to speak better English.'", "2. 'I am always stressed at work.'", "Use: You should / You shouldn't / You have to."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Rules",
-                content: ["Which is CORRECT?"],
-                options: ["You must to go.", "You should to go.", "You have to go."],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Meaning",
-                content: ["If I say 'You DON'T HAVE TO pay', it means:"],
-                options: ["It is forbidden to pay.", "It is free / Optional.", "It is a bad idea to pay."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Grammar Form",
-                content: ["She ______ work on Saturdays."],
-                options: ["have to", "has to", "should to"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Role-play inverso: el estudiante me expone un problema inventado y yo uso Modales. Luego cambiamos."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Repasar las 'leyes' vs 'consejos'.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "The Advisor",
-                content: ["Should = Advice", "Must = Inner rule / Law", "Have to = External rule", "(And never use 'TO' after Should/Must!)."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Rules of your house",
-                content: ["Write 3 rules of your house using 'have to' or 'mustn't'.", "Write 2 pieces of advice for a healthy life using 'should'."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-31",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/Gh_GHNlyEXM",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Cerrar con recomendaciones sobre el estudio del inglés ('You should practice 10 mins daily!')."
-          }
-        ]
-      },
-      {
-        id: "c-i-6",
-        title: "Clase 6: Segunda Condicional y Tiempos Mezclados",
-        description: "Casos hipotéticos irreales del presente y futuro.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Despertar la imaginación.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! The Dreamer",
-                description: "Imagine this...",
-                content: ["If you had 1 million dollars right now, what would you buy first?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar sobre un caso muy hipotético. Observar cómo intentan armar la respuesta."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Explicar la estructura irreal de la 2da condicional (Past + Would).",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Second Conditional",
-                description: "Situaciones irreales Ahora/Futuro",
-                content: ["No es sobre el pasado real. Hablamos de la IMAGINACIÓN.", "If I won the lottery (Unreal), I would buy a house (Result)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "The Formula",
-                description: "Condition + Result",
-                content: ["Condition: IF + Simple Past", "Result: WOULD + Base Verb", "If I lived in Mars, I would fly."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "The Magic 'Were'",
-                description: "Para el verbo To Be",
-                content: ["En condicionales irreales, usamos WERE para todos (incluso I, He, She).", "If I were a bird, I would fly.", "If he were rich, he would pay."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Enfatizar que el Simple Past aquí no significa 'ayer', significa 'distancia de la realidad'."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Formar oraciones irreales correctamente.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "If I were the president...",
-                content: ["If I were the president, I would definitely build more parks and plant more trees in our cities to reduce pollution. If I had superpowers, on the other hand, I wouldn't worry about traffic anymore because I would fly directly to work. I certainly wouldn't take the crowded bus every morning!"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Condition part",
-                content: ["If I ______ (have) more time, I would learn French."],
-                options: ["have", "had", "would have"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Result part",
-                content: ["If she lived in Japan, she ______ (eat) sushi every day."],
-                options: ["eat", "ats", "would eat"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "The To Be Trap",
-                content: ["If he ______ (be) taller, he would play basketball."],
-                options: ["was", "were", "is"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 6: Segunda Condicional y Tiempos Mezclados" + ")",
-                                type: 'emoji-game',
-                                content: ['🛒 ➕ 💳 ➕ 🛍️'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I am going shopping.", "I lost my credit card.", "I bought a new shirt."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Corregir inmediatamente si dicen 'If I will have' (nunca will/would después de IF)."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Contestar preguntas creativas con naturalidad.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The Imagination Game",
-                description: "What would you do if...",
-                content: ["1. ...you found a wallet with $10,000?", "2. ...you were the ONLY person on Earth?", "3. ...you could speak 10 languages?"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "The 'IF' Rule",
-                content: ["We never put 'will' or 'would' next to:"],
-                options: ["The verb", "The subject", "IF"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Structure",
-                content: ["If I ______ a car, I ______ drive to work."],
-                options: ["had / would", "have / will", "will have / would"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "To Be",
-                content: ["If I ______ you, I wouldn't do it."],
-                options: ["was", "were", "am"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Fomentar respuestas locas para practicar fluidez. 'If I found a wallet, I would travel to Mars'."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Cerrar el módulo Intermediate con éxito.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Intermediate Completed!",
-                description: "You controlled the unreal!",
-                content: ["If + Past -> Unreal Condition", "Would + Verb -> Hypothetical Result"],
-                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
-                imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Get ready for ADVANCED",
-                description: "What's coming?",
-                content: ["Passive voice, Perfect Modals, and Professional English!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-32",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/JgB6-RWnV9M",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Felicitar efusivamente. Han terminado el nivel B1 y pueden especular sobre el universo."
-          }
-        ]
-      }
+{
+      id: "c-adults-inter-1",
+      title: "Clase 1: Repaso de tiempos verbales básicos",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Review & Practice.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Review & Practice.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Review & Practice.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Review & Practice", description: "Introduction to Review & Practice.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Review, Practice, Exercise, Test", content: ["Review", " Practice", " Exercise", " Test"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Let's review the main topics."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-2",
+      title: "Clase 2: Primer Condicional (situaciones reales)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente First Conditional.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with First Conditional.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente First Conditional.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "First Conditional", description: "Introduction to First Conditional.", content: ["If it rains, I will stay home.", "If I study, I will pass."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["If it rains, I will stay home.", "If I study, I will pass."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "If, Will, Rain, Study", content: ["If", " Will", " Rain", " Study"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["If it rains, I will stay home.", "If I study, I will pass."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: If it rains, I will stay home."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["If it rains, I will stay home.", "If I study, I will pass."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-3",
+      title: "Clase 3: Verbos modales de consejo (Should / Ought to)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Modal Verbs.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Modal Verbs.", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Modal Verbs.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Modal Verbs", description: "Introduction to Modal Verbs.", content: ["You should study more.", "May I come in?"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["You should study more.", "May I come in?"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Should, Must, May, Might", content: ["Should", " Must", " May", " Might"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["You should study more.", "May I come in?"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: You should study more."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["You should study more.", "May I come in?"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-4",
+      title: "Clase 4: Verbos modales de posibilidad (May / Might / Could)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Modal Verbs.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Modal Verbs.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Modal Verbs.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Modal Verbs", description: "Introduction to Modal Verbs.", content: ["You should study more.", "May I come in?"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["You should study more.", "May I come in?"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Should, Must, May, Might", content: ["Should", " Must", " May", " Might"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["You should study more.", "May I come in?"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: You should study more."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["You should study more.", "May I come in?"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-5",
+      title: "Clase 5: Comparativos y superlativos",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Comparatives & Superlatives.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Comparatives & Superlatives.", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Comparatives & Superlatives.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Comparatives & Superlatives", description: "Introduction to Comparatives & Superlatives.", content: ["This car is faster.", "It is the best book."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["This car is faster.", "It is the best book."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Better, Worse, Faster, Biggest", content: ["Better", " Worse", " Faster", " Biggest"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["This car is faster.", "It is the best book."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: This car is faster."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["This car is faster.", "It is the best book."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-6",
+      title: "Clase 6: Describiendo exceso y suficiencia (too / enough)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-7",
+      title: "Clase 7: Vocabulario de trabajo y oficina",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-8",
+      title: "Clase 8: Redactando correos electrónicos formales",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Emails & Messages.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Emails & Messages.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Emails & Messages.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Emails & Messages", description: "Introduction to Emails & Messages.", content: ["Dear Mr. Smith,", "Best regards,"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Dear Mr. Smith,", "Best regards,"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Email, Send, Receive, Attach", content: ["Email", " Send", " Receive", " Attach"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Dear Mr. Smith,", "Best regards,"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Dear Mr. Smith,"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Dear Mr. Smith,", "Best regards,"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-9",
+      title: "Clase 9: Present Perfect para experiencias de vida",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Present Perfect.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Present Perfect.", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Present Perfect.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Present Perfect", description: "Introduction to Present Perfect.", content: ["I have already eaten.", "Have you ever been to Rome?"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I have already eaten.", "Have you ever been to Rome?"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Have, Has, Already, Yet", content: ["Have", " Has", " Already", " Yet"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I have already eaten.", "Have you ever been to Rome?"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I have already eaten."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I have already eaten.", "Have you ever been to Rome?"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-10",
+      title: "Clase 10: Diferencias entre Pasado Simple y Present Perfect",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Present Perfect.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Present Perfect.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Present Perfect.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Present Perfect", description: "Introduction to Present Perfect.", content: ["I have already eaten.", "Have you ever been to Rome?"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I have already eaten.", "Have you ever been to Rome?"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Have, Has, Already, Yet", content: ["Have", " Has", " Already", " Yet"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I have already eaten.", "Have you ever been to Rome?"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I have already eaten."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I have already eaten.", "Have you ever been to Rome?"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-11",
+      title: "Clase 11: Gerundios e infinitivos después de verbos",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Gerunds & Infinitives.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Gerunds & Infinitives.", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Gerunds & Infinitives.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Gerunds & Infinitives", description: "Introduction to Gerunds & Infinitives.", content: ["I want to go.", "I enjoy reading."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I want to go.", "I enjoy reading."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Want, Need, Enjoy, Like", content: ["Want", " Need", " Enjoy", " Like"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I want to go.", "I enjoy reading."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I want to go."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I want to go.", "I enjoy reading."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-inter-12",
+      title: "Clase 12: Introducción a los Phrasal Verbs más usados",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Phrasal Verbs.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Phrasal Verbs.", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Phrasal Verbs.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Phrasal Verbs", description: "Introduction to Phrasal Verbs.", content: ["Turn on the light.", "Give up smoking."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Turn on the light.", "Give up smoking."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Turn on, Turn off, Give up, Look for", content: ["Turn on", " Turn off", " Give up", " Look for"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Turn on the light.", "Give up smoking."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Turn on the light."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Turn on the light.", "Give up smoking."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    }
     ],
-      oralEvaluation: [
-              { topic: "Life Experiences (Present Perfect)", question: "Have you ever traveled abroad? Have you ever tried an extreme sport?" },
-              { topic: "Duration (For/Since)", question: "How long have you lived in your current home? How long have you known your best friend?" },
-              { topic: "Present Perfect vs Past Simple", question: "When did you start learning English? Have you studied it before?" },
-              { topic: "Comparatives & Superlatives", question: "Compare your city to another city you know. Which is the best place to live and why?" },
-              { topic: "Advice (Should/Must)", question: "What should a tourist do if they visit your country? What must they avoid?" }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-6-1",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["left", "has left", "had left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-2",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["had", "am having", "have"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-3",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["has left", "had left", "left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-4",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["am having", "have", "had"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-5",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["had left", "has left", "left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-6",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["have", "had", "am having"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-7",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["has left", "left", "had left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-8",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["had", "have", "am having"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-9",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["had left", "has left", "left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-10",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["am having", "have", "had"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-11",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["left", "had left", "has left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-12",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["am having", "had", "have"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-13",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["left", "has left", "had left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-14",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["had", "am having", "have"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-15",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["left", "has left", "had left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-16",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["had", "have", "am having"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-17",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["left", "has left", "had left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-18",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["am having", "had", "have"],
-                          correctAnswer: "had"
-                      },
-          {
-                          id: "vq-6-19",
-                          type: "multiple-choice",
-                          question: "By the time I arrived, she ___.",
-                          options: ["has left", "had left", "left"],
-                          correctAnswer: "had left"
-                      },
-          {
-                          id: "vq-6-20",
-                          type: "multiple-choice",
-                          question: "I wish I ___ more money.",
-                          options: ["had", "have", "am having"],
-                          correctAnswer: "had"
-                      }
-          ]
-},
+    oralEvaluation: [
+      { question: "Evaluación Oral", topic: "Evaluación del nivel." }
+    ]
+  },
   {
     id: "advanced",
     title: "Advanced",
-    duration: "3 meses",
-    objective: "Estructuras avanzadas y uso real en entrevistas y customer service: voz pasiva en futuro y pasado, comparaciones de tiempos, condicionales, since/for, modales perfectos, entrevista, pruebas y role plays.",
-    mcfrEquivalent: "B2",
+    duration: "1 mes",
+    objective: "Perfecciona tu gramática y amplía tu vocabulario para expresarte como nativo.",
+    mcfrEquivalent: "A1",
     classes: [
-      {
-        id: "c-a-1",
-        title: "Clase 1: Entrevistas y Customer Service Fundamentals",
-        description: "Estructuras condicionales y voz pasiva enfocadas a escenarios de atención y resolución de problemas.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir el tono profesional.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome to Advanced!",
-                description: "Professional Contexts",
-                content: ["Have you ever worked in Customer Service?", "What is the most difficult part of dealing with clients?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar sobre sus experiencias lidiando con clientes enojados o entrevistas difíciles."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Combinar estructuras para sonar diplomático.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Polite English",
-                description: "Softening the message",
-                content: ["Directo: We didn't receive your payment.", "Diplomático: Your payment hasn't been received yet. (Passive Voice)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Conditionals for Negotiation",
-                description: "If we... will you...?",
-                content: ["First Conditional: If you give us a discount, we will buy more.", "Second Conditional (Softer): If you gave us a discount, we would buy more."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Customer Service Phrases",
-                description: "The Toolkit",
-                content: ["'I apologize for the inconvenience.'", "'Let me look into that for you.'", "'If I were you, I would...' (Advice)."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Mostrar cómo el inglés avanzado no es sólo saber vocabulario difícil, sino usar estructuras complejas para sonar profesional y polite."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Transformar oraciones agresivas a diplomáticas.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The Angry Client:",
-                content: ["Client: I am extremely upset because you lost my package!", "Agent: I sincerely apologize for the inconvenience. Unfortunately, the package was lost in transit due to severe weather conditions. However, a new one is being sent to you right now. If we refund your shipping fees entirely, will you be satisfied with our service?"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Diplomacy",
-                content: ["Instead of 'You made a mistake', say: A mistake ______."],
-                options: ["made", "was made", "is making"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Negotiation",
-                content: ["If we ______ (give) you a refund, will you remove the bad review?"],
-                options: ["gave", "gives", "give"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Conditionals",
-                content: ["If I ______ the manager, I would fix this immediately."],
-                options: ["were", "was", "am"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 1: Entrevistas y Customer Service Fundamentals" + ")",
-                                type: 'emoji-game',
-                                content: ['⏰ ➕ 🏃 ➕ 🏃'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I love running.", "I am late, hurry up!", "I need a new watch."],
-                                correctOptionIndex: 1
-                              }
-            ],
-            action: "Pedir al alumno que convierta frases directas ('Send me the report') a indirectas/educadas."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Role-play atendiendo una queja.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Role-Play: The Broken Laptop",
-                description: "I am the angry client.",
-                content: ["Client: 'I am furious! My laptop arrived broken!'", "Agent (You): Mute the anger using passive voice and conditionals to offer a solution."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Vocabulary",
-                content: ["Which is the most professional response?"],
-                options: ["I don't know.", "Let me check that for you.", "Wait."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Passive Voice",
-                content: ["'We will send the email' in passive is:"],
-                options: ["The email will be sent.", "The email sent.", "The email is sending."],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Second Conditional",
-                content: ["If I ______ you, I ______ complain to HR."],
-                options: ["am / will", "was / will", "were / would"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Interpretar al cliente furioso. El alumno DEBE usar Voz Pasiva y Condicionales para calmarme."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Fijar el aprendizaje del lenguaje corporativo.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You sound professional!",
-                content: ["Passive Voice is perfect for avoiding pointing fingers.", "Use Conditionals to negotiate softly."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "The Apology Email",
-                content: ["Write a 4-line email apologizing to a customer for a late delivery.", "Include 1 passive voice sentence and 1 conditional."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-33",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/v_fbJnVMHAg",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Felicitar por manejar exitosamente el entorno adverso simulado."
-          }
-        ]
-      },
-      {
-        id: "c-a-2",
-        title: "Clase 2: Voz Pasiva en Pasado y Futuro",
-        description: "Despersonalización de la oración de forma nativa.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la despersonalización profunda.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Who cares who did it?",
-                description: "Focus on the action",
-                content: ["Did someone steal your car?", "Or... Was your car stolen?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar sobre noticias recientes, donde 'qué pasó' es más importante que 'quién lo hizo'."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Enseñar a viajar en el tiempo con el verbo To Be en voz pasiva.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Formula",
-                description: "Object + To Be + Participle",
-                content: ["La voz pasiva NUNCA cambia su verbo principal (siempre en la 3ra columna).", "Lo ÚNICO que cambia es el verbo TO BE.", "Presente: The car IS washed.", "Pasado: The car WAS washed.", "Futuro: The car WILL BE washed."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Passive in the Past",
-                description: "Was / Were + Participle",
-                content: ["The pyramids WERE built in Egypt.", "My phone WAS stolen yesterday.", "(No importa quién robó, importa mi teléfono)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600",
-                imageUrl: "https://images.unsplash.com/photo-1539667468225-eebb663053e6?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Passive in the Future",
-                description: "Will be + Participle",
-                content: ["The email WILL BE sent tomorrow.", "The problem WILL BE solved.", "It sounds extremely professional."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
-              }
-            ],
-            action: "Hacer el mapa mental en la pantalla: Action Verb (Participle) = Statuesque. To Be verb = The Time Traveler."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Convertir activa a pasiva en pasado y futuro.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The New Office:",
-                content: ["The old office building was completely destroyed by a massive fire last year. Fortunately, nobody was injured. Right now, a state-of-the-art office complex is being built in the exact same location. The construction team assures us that it will be entirely finished by next month and a grand opening will be hosted."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Passive Past",
-                content: ["Harry Potter ______ (write) by J.K. Rowling."],
-                options: ["was wrote", "was written", "writes"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Passive Future",
-                content: ["Don't worry, the money ______ (refund) tomorrow."],
-                options: ["will be refunded", "would refund", "is refund"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Plural vs Singular Trap",
-                content: ["The windows ______ (break) by the storm last week."],
-                options: ["was broken", "were broken", "broke"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 2: Voz Pasiva en Pasado y Futuro" + ")",
-                                type: 'emoji-game',
-                                content: ['💼 ➕ 🗣️ ➕ 🤝'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I have a business meeting.", "Let's negotiate a deal.", "I am looking for a job."],
-                                correctOptionIndex: 1
-                              }
-            ],
-            action: "Corregir ferozmente el error de no usar el participio (ej: was wrote)."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Describir procesos industriales o históricos.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Explain the Process",
-                description: "How is it made?",
-                content: ["Choose one to explain using Passive Voice:", "1. How a smartphone is created.", "2. How an email is sent.", "3. How a city was built."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Core",
-                content: ["In Passive Voice, the main verb is ALWAYS in:"],
-                options: ["Past Simple", "Present", "Past Participle"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Transformation",
-                content: ["Active: 'They built the house'. Passive:"],
-                options: ["The house was built.", "The house built them.", "The house is built."],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Future Passive",
-                content: ["The meeting ______ at 10 AM."],
-                options: ["will hold", "will be held", "will be holden"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Guiarles para que se den cuenta de que los documentales usan esta voz todo el tiempo."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Resumir el truco del To Be.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You sound like a news anchor!",
-                content: ["To Be verbs move the time.", "The Participle sits still.", "Was/Were built -> Past | Will be built -> Future."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "The News Reporter",
-                content: ["Write 3 headlines for a newspaper using Passive Voice in the past.", "Example: The bank was robbed by ninjas."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-34",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/XyDbnulyno8",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Recomendación: leer revistas de negocios para cazar voces pasivas."
-          }
-        ]
-      },
-      {
-        id: "c-a-3",
-        title: "Clase 3: Modales Perfectos y Especulación",
-        description: "Lamentaciones, deducciones sobre el pasado y contexto transcurrido.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir el concepto de arrepentimiento/deducción.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Regrets & Mysteries",
-                description: "Looking at the past...",
-                content: ["Have you ever made a bad decision?", "If someone doesn't answer the phone, what do you think happened?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1541178735493-479c1a27ed24?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Conectar con emociones pasadas para que la estructura gramatical (que es pesada) tenga sentido humano."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Explicar Should Have y Must Have (Los modales que viajan al pasado).",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Time Machine",
-                description: "Modal + Have + Participle",
-                content: ["Los modales normales (Should, Must) hablan del presente/futuro.", "Para hablar de AYER, les agregamos 'HAVE' + 'PARTICIPIO'.", "Should -> Should have done. Must -> Must have been."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "SHOULD HAVE (El Arrepentimiento)",
-                description: "Hice mal...",
-                content: ["You SHOULD HAVE studied. (Deberías haber estudiado... pero no lo hiciste).", "I SHOULDN'T HAVE eaten that. (Me cayó mal la comida)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "MUST HAVE (La Deducción Lógica)",
-                description: "Sherlock Holmes",
-                content: ["The floor is wet. It MUST HAVE rained. (Debe haber llovido - 99% seguro).", "He MUST HAVE forgotten his keys. (No hay otra explicación)."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1555679427-1f6dfcce943b?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Pronunciación vital: Enseñar a contraer 'Should have' como 'Shoulda' y 'Must have' como 'Musta' coloquialmente."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Diferenciar entre un consejo tardío y una conclusión lógica.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The Detective & The Thief:",
-                content: ["Detective: The window is shattered, and there are footprints in the mud. He must have escaped through here while the alarm was ringing. He can't have gone far on foot.", "Thief (in his cell): I really should have run faster when I heard the sirens. I definitely shouldn't have stopped at that diner to eat a burger. It was a terrible mistake!"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Regret",
-                content: ["I failed the test. I ______ studied more."],
-                options: ["must have", "should have", "should"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Deduction",
-                content: ["Her car is not here. She ______ left already."],
-                options: ["should have", "must have", "must"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Negative Regret",
-                content: ["I have a stomachache. I ______ eaten all that pizza."],
-                options: ["shouldn't have", "mustn't have", "didn't have"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 3: Modales Perfectos y Especulación" + ")",
-                                type: 'emoji-game',
-                                content: ['✈️ ➕ 🏨 ➕ 🌴'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["We are going on vacation.", "I need to book a flight.", "I am lost in the city."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Forzar a que expliquen si la oración es 'Sherlock Holmes' (deducción = must have) o 'Persona triste' (arrepentimiento = should have)."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Crear escenarios hipotéticos sobre el pasado.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The Mystery Maker",
-                description: "What happened?",
-                content: ["Scenario 1: Your neighbor is screaming happily. Why?", "Scenario 2: You missed your flight. Regret it!"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Core",
-                content: ["What verb form comes AFTER Modal + Have?"],
-                options: ["Past Simple", "Present", "Past Participle (3rd column)"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Colloquial speaking",
-                content: ["'Should've' is short for:"],
-                options: ["Should to have", "Should have", "Should give"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Logic",
-                content: ["'He must have been tired'. This means:"],
-                options: ["He had to be tired.", "I am 99% sure he was tired.", "He should be tired."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Jugar a darles un escenario catastrófico (se les quemó la casa) y que digan 3 cosas que SHOULD HAVE done."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Celebrar el dominio de una estructura compleja.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "Advanced Logic Unlocked",
-                content: ["Use 'Must have' to be Sherlock Holmes.", "Use 'Should have' to complain about the past."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "My biggest regret",
-                content: ["Write a short paragraph about a bad decision in the past using 'Should have'.", "Example: I shouldn't have cut my own hair..."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-35",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/aI_fREymNjI",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Aclarar que native speakers usan esto TODO el tiempo."
-          }
-        ]
-      },
-      {
-        id: "c-a-4",
-        title: "Clase 4: Role Play - Entrevistas de Trabajo",
-        description: "Preparando y simulando una entrevista laboral bilingüe.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Romper el hielo y hablar del mercado laboral.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! The Hot Seat",
-                description: "Are you ready?",
-                content: ["Have you ever had a job interview in English?", "What is the scariest question they can ask you?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Relajar el ambiente. Las entrevistas asustan, en otro idioma más. Preguntar por sus experiencias previas."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Vocabulario clave y cómo responder a la pregunta clásica.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Ultimate Question",
-                description: "Tell me about yourself.",
-                content: ["BAD: 'My name is Pedro. I am 30 years old. I like dogs.'", "GOOD: Present Past Future Formula.", "Who you are now, what you achieved previously, and what you want next."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Action Verbs",
-                description: "Don't say 'I did'",
-                content: ["I MANAGED a team of 5 peoople.", "I DEVELOPED a new system.", "I IMPROVED the sales by 20%."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Weaknesses",
-                description: "The Trap Question",
-                content: ["Don't say: 'I am a perfectionist' (Cliché).", "Don't say: 'I am lazy' (Too honest).", "Say: 'I sometimes struggle with X, BUT I am currently learning how to modify it by doing Y.'"],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Prohibir respuestas de manual. Tienen que construir su propio 'elevator pitch'."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Mejorar las respuestas del alumno en tiempo real.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Drafting your pitch",
-                description: "Fill the blanks:",
-                content: ["Currently, I work as a ______.", "Before that, I ________ for 3 years.", "I am looking for a position where I can ________."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Action Verbs",
-                content: ["I ______ a marketing campaign that increased revenue."],
-                options: ["made", "did", "led"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Future projection",
-                content: ["In 5 years, I ______ to be a manager."],
-                options: ["am want", "would like", "must"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Strengths",
-                content: ["One of my greatest strengths is my ability to ______ problems."],
-                options: ["solve", "make", "brake"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 4: Role Play - Entrevistas de Trabajo" + ")",
-                                type: 'emoji-game',
-                                content: ['☕ ➕ 💻 ➕ 😩'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I love drinking coffee.", "Working late makes me tired.", "My computer is broken."],
-                                correctOptionIndex: 1
-                              }
-            ],
-            action: "Trabajar como un coach. Si el alumno da una respuesta débil, ayudarlo a re-escribirla usando las palabras correctas."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Simulación de entrevista (Modo Difícil).",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The Interview",
-                description: "Are you ready?",
-                content: ["I am the HR Manager. You are applying for your dream job.", "I will ask you 3 questions.", "Breathe. Smile. Answer."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Attitude",
-                content: ["If you don't understand the question, you should:"],
-                options: ["Say 'Yes' and smile.", "Say 'Could you repeat that, please?'", "Run away."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Closing",
-                content: ["At the end of the interview, the recruiter asks: 'Do you have any questions for me?' You say:"],
-                options: ["No, thank you.", "Yes, what is the daily routine like?", "Yes, when do I start?"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Grammar Check",
-                content: ["Which is better for your resume?"],
-                options: ["I was responsible for the sales.", "I managed the sales department."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Actuar el rol del entrevistador duro. Hacer preguntas típicas y dar feedback brutalmente honesto pero amable al final."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Felicitar y otorgar el pase a Advanced Elite.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Advanced Completed!",
-                description: "You're hired!",
-                content: ["You handled the hardest part of business English.", "Remember your Pitch. Use action verbs."],
-                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
-                imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Next Stop: Advanced Elite",
-                description: "The Final Polish",
-                content: ["Are you ready to speak like a native?", "Next level: Future Perfect, Reported Speech, Idioms!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-36",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/81MmK177K_c",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Gran celebración. Han logrado superar el módulo Advanced con una prueba real de estrés."
-          }
-        ]
-      }
+{
+      id: "c-adults-advanced-1",
+      title: "Clase 1: Pronunciación: Connected speech y entonación",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Pronunciation.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Pronunciation.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Pronunciation.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Pronunciation", description: "Introduction to Pronunciation.", content: ["Intonation", "Connected Speech"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Intonation", "Connected Speech"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Listen, Speak, Intonation, Rhythm", content: ["Listen", " Speak", " Intonation", " Rhythm"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Intonation", "Connected Speech"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Intonation"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Intonation", "Connected Speech"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-2",
+      title: "Clase 2: Segundo Condicional (situaciones hipotéticas)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-3",
+      title: "Clase 3: Tercer Condicional (arrepentimientos del pasado)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-4",
+      title: "Clase 4: Reported Speech (estilo indirecto)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Reported Speech.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Reported Speech.", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Reported Speech.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Reported Speech", description: "Introduction to Reported Speech.", content: ["She said that she was happy.", "He asked me what time it was."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["She said that she was happy.", "He asked me what time it was."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Say, Tell, Ask, Report", content: ["Say", " Tell", " Ask", " Report"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["She said that she was happy.", "He asked me what time it was."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: She said that she was happy."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["She said that she was happy.", "He asked me what time it was."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-5",
+      title: "Clase 5: Relative Clauses (who, which, that, where)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Relative Clauses.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Relative Clauses.", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Relative Clauses.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Relative Clauses", description: "Introduction to Relative Clauses.", content: ["The man who called you is here.", "The book which I bought."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["The man who called you is here.", "The book which I bought."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Who, Which, That, Where", content: ["Who", " Which", " That", " Where"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["The man who called you is here.", "The book which I bought."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: The man who called you is here."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["The man who called you is here.", "The book which I bought."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-6",
+      title: "Clase 6: Vocabulario avanzado de negocios y negociación",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Negotiation.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Negotiation.", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Negotiation.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Negotiation", description: "Introduction to Negotiation.", content: ["Can you offer a discount?", "We have a deal."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Can you offer a discount?", "We have a deal."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Deal, Offer, Price, Terms", content: ["Deal", " Offer", " Price", " Terms"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Can you offer a discount?", "We have a deal."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Can you offer a discount?"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Can you offer a discount?", "We have a deal."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-7",
+      title: "Clase 7: Resolviendo problemas y quejas de clientes",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Complaints & Solutions.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Complaints & Solutions.", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Complaints & Solutions.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Complaints & Solutions", description: "Introduction to Complaints & Solutions.", content: ["I have a problem with my order.", "Let me fix that for you."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I have a problem with my order.", "Let me fix that for you."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Problem, Solution, Order, Fix", content: ["Problem", " Solution", " Order", " Fix"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I have a problem with my order.", "Let me fix that for you."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I have a problem with my order."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I have a problem with my order.", "Let me fix that for you."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-8",
+      title: "Clase 8: Future Continuous y Future Perfect",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Future Continuous & Perfect.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Future Continuous & Perfect.", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Future Continuous & Perfect.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Future Continuous & Perfect", description: "Introduction to Future Continuous & Perfect.", content: ["I will be working at 5 PM.", "I will have finished by tomorrow."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I will be working at 5 PM.", "I will have finished by tomorrow."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Will be, Will have, Future, Time", content: ["Will be", " Will have", " Future", " Time"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I will be working at 5 PM.", "I will have finished by tomorrow."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I will be working at 5 PM."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I will be working at 5 PM.", "I will have finished by tomorrow."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-9",
+      title: "Clase 9: Phrasal verbs avanzados en contexto",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Phrasal Verbs.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Phrasal Verbs.", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Phrasal Verbs.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Phrasal Verbs", description: "Introduction to Phrasal Verbs.", content: ["Turn on the light.", "Give up smoking."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Turn on the light.", "Give up smoking."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Turn on, Turn off, Give up, Look for", content: ["Turn on", " Turn off", " Give up", " Look for"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Turn on the light.", "Give up smoking."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Turn on the light."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Turn on the light.", "Give up smoking."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-advanced-10",
+      title: "Clase 10: Repaso avanzado",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Review & Practice.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Review & Practice.", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Review & Practice.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Review & Practice", description: "Introduction to Review & Practice.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Review, Practice, Exercise, Test", content: ["Review", " Practice", " Exercise", " Test"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Let's review the main topics."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    }
     ],
-      oralEvaluation: [
-              { topic: "Professional Background", question: "Can you tell me about your strengths, weaknesses, and career background?" },
-              { topic: "Customer Service Roleplay", question: "I am an angry customer complaining about a delayed delivery. Please handle the situation politely." },
-              { topic: "Passive Voice in Practice", question: "Can you describe a typical manufacturing process (e.g. how a smartphone is made) using passive voice?" },
-              { topic: "Giving Opinions", question: "What is your opinion on remote work versus working in an office?" },
-              { topic: "Conditional Zero & First", question: "What do you do if you have a headache? What will you do if it rains this weekend?" }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-7-1",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["she did pass", "she passed", "did she pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-2",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["left", "leave", "are leaving"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-3",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["she did pass", "did she pass", "she passed"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-4",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["are leaving", "leave", "left"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-5",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["she passed", "did she pass", "she did pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-6",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["left", "leave", "are leaving"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-7",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["she passed", "did she pass", "she did pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-8",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["are leaving", "leave", "left"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-9",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["did she pass", "she passed", "she did pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-10",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["left", "leave", "are leaving"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-11",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["did she pass", "she passed", "she did pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-12",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["leave", "left", "are leaving"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-13",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["she did pass", "she passed", "did she pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-14",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["left", "leave", "are leaving"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-15",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["she did pass", "she passed", "did she pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-16",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["left", "are leaving", "leave"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-17",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["she passed", "did she pass", "she did pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-18",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["left", "leave", "are leaving"],
-                          correctAnswer: "left"
-                      },
-          {
-                          id: "vq-7-19",
-                          type: "multiple-choice",
-                          question: "Not only ___ the exam, but she also got the highest mark.",
-                          options: ["she passed", "did she pass", "she did pass"],
-                          correctAnswer: "did she pass"
-                      },
-          {
-                          id: "vq-7-20",
-                          type: "multiple-choice",
-                          question: "It's high time we ___.",
-                          options: ["leave", "are leaving", "left"],
-                          correctAnswer: "left"
-                      }
-          ]
-},
-  {
-    id: "advanced-elite",
-    title: "Advanced Elite",
-    duration: "3 meses",
-    objective: "Perfeccionar inglés avanzado para hablar con claridad sobre experiencias, intenciones y situaciones complejas. Tiempos perfectos, future perfect, condicionales 0–3, voz pasiva, estilo directo/indirecto, as…as, used to / be used to / get used to, be about to vs. was going to.",
-    mcfrEquivalent: "C1",
-    classes: [
-      {
-        id: "c-ae-1",
-        title: "Clase 1: Reported Speech y Negociación Avanzada",
-        description: "Reportar lo dicho por otros en contextos formales y profesionales.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la idea de citar a otras personas.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome to Elite! He Said, She Said",
-                description: "Did you hear the news?",
-                content: ["Have you ever been involved in office gossip?", "How do you tell someone what ANOTHER person said?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar sobre cómo comunican la información de un tercero. Introducir sutilmente que en inglés, al reportar, 'viajamos al pasado'."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Explicar la regla del salto hacia atrás en los tiempos verbales.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Reported Speech Rule",
-                description: "Take one step back into the past",
-                content: ["Cuando reportamos lo que alguien dijo, el tiempo verbal retrocede.", "Present -> Past", "Past -> Past Perfect", "Will -> Would"],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Present to Past",
-                description: "Direct vs Reported",
-                content: ["Direct: 'I am tired' (He says).", "Reported: He SAID (that) he WAS tired.", "Direct: 'I don't like meetings'.", "Reported: She SAID she DIDN'T like meetings."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "The Exceptions",
-                description: "Cuando NO cambiamos el pasado",
-                content: ["1. Si el hecho sigue siendo una verdad innegable: 'He said the earth is round'.", "2. Si la acción es INMEDIATA (lo acaba de decir).", "De lo contrario, siempre aplica el Backshift (salto atrás)."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hacer el ademán físico de 'dar un paso atrás' cada vez que se haga el Reported Speech para fijar la idea."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Manipular los tiempos verbales mecánicamente y en contexto.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The Negotiation:",
-                content: ["During the annual meeting, the CEO confidently stated that they would increase salaries across all departments by the end of the year. Following that, the HR Manager told us that the board had already approved the budget and that we shouldn't worry about inflation affecting our purchasing power. However, it's been six months and absolutely nothing has happened yet!"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Present -> Past",
-                content: ["'I want a coffee'. He said that he ______ a coffee."],
-                options: ["wants", "wanted", "wanting"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Will -> Would",
-                content: ["'I will call you tomorrow'. She said she ______ call me tomorrow."],
-                options: ["will", "would", "called"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Pronoun shift",
-                content: ["'My computer is broken'. John said that ______ computer was broken."],
-                options: ["my", "his", "the"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 1: Reported Speech y Negociación Avanzada" + ")",
-                                type: 'emoji-game',
-                                content: ['📅 ➕ ❌ ➕ 😢'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["The meeting is cancelled.", "I lost my calendar.", "I am late for my appointment."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Atención a los PRONOMBRES (my -> his/her). Eso suele causar más errores que los verbos."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Transmitir mensajes en cadena (Juego del teléfono descompuesto).",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The Messenger",
-                description: "Pass the message",
-                content: ["Boss says: 'I cannot approve this budget because it is too high'.", "You tell your team: 'The boss said that he _____ approve the budget because it _____ too high'."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Core",
-                content: ["When reporting 'I CAN do it', what do we use?"],
-                options: ["can", "could", "would"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Time Expressions",
-                content: ["'Yesterday' in Reported Speech becomes:"],
-                options: ["Yesterday", "The next day", "The previous day / The day before"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Say vs Tell",
-                content: ["Which is correct?"],
-                options: ["He said me that...", "He told me that...", "He told to me that..."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Importante: Aclarar SAY vs TELL. Tell SIEMPRE necesita una persona (Tell me, tell him). Say NO."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Fijar el Backshift.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You are a master of communication!",
-                content: ["Remember the Backshift rule: Present -> Past -> Past Perfect.", "Always watch the pronouns!", "Tell + Person. Say + Phrase."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "The Gossip",
-                content: ["Write down 3 things somebody told you today, using Reported Speech.", "Example: My mom said that dinner was ready."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-37",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/awWfoQONORg",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Despedida cerrando la idea de que reportar es fundamental para reuniones exitosas."
-          }
-        ]
-      },
-      {
-        id: "c-ae-2",
-        title: "Clase 2: Future Perfect y Mastery de Condicionales",
-        description: "Visiones futuras terminadas y control total del Third Conditional.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Proyectarse al futuro.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Time Travel",
-                description: "By the year 2050...",
-                content: ["What will you have accomplished by 2050?", "Will we have moved to Mars?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar a los alumnos qué meta habrán cumplido para fin de año. Si usan 'I will do', corregir suavemente hacia la idea de 'I will HAVE DONE'."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Enseñar Future Perfect y Third Conditional.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Future Perfect",
-                description: "Will have + Participle",
-                content: ["Se usa para acciones que ESTARÁN TERMINADAS antes de un momento en el futuro.", "By 5 PM, I WILL HAVE FINISHED the report.", "(A las 5 PM ya estará listo)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "The Third Conditional",
-                description: "The Impossible Past",
-                content: ["Habla de un pasado que ya no se puede cambiar.", "If + Past Perfect | Would have + Participle", "If I HAD STUDIED, I WOULD HAVE PASSED.", "(Pero no estudié y reprobé)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "Conditional Mix-up!",
-                description: "0 to 3 Overview",
-                content: ["Cero (Fact): If I drink coffee, I stay awake.", "First (Real): If I drink it, I will stay awake.", "Second (Unreal): If I drank it, I would stay awake.", "Third (Impossible): If I had drunk it, I would have stayed awake."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Explicar la 3ra Condicional como el nivel máximo de la gramática inglesa (Matemática pura: Had + Participio = Would have + Participio)."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Crear oraciones complejas sin equivocarse en la fórmula.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The Failed Project:",
-                content: ["The marketing project was a complete disaster. We are so behind schedule that by December, we definitely won't have reached our quarterly goals. It is extremely frustrating because we warned them about the risks early on. Honestly, if the boss had listened to our feedback back in August, we would have succeeded and avoided this massive financial loss."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Future Perfect",
-                content: ["By next year, I ______ (save) $10,000."],
-                options: ["will save", "will have saved", "would save"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Third Conditional",
-                content: ["If we ______ (leave) earlier, we wouldn't have missed the train."],
-                options: ["left", "had left", "have left"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Result Clause",
-                content: ["If I had seen you, I ______ (say) hello."],
-                options: ["would say", "would have said", "said"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 2: Future Perfect y Mastery de Condicionales" + ")",
-                                type: 'emoji-game',
-                                content: ['📈 ➕ 💰 ➕ 🎉'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["Sales are going up!", "I spent too much money.", "Let's have a party."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Atención extrema al 3er condicional, muchos alumnos ponen 'If I would have' lo cual es un error gravísimo."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Usar estas estructuras en anécdotas propias.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The Butterfly Effect",
-                description: "Change the past",
-                content: ["Think of a big moment in your life. How would it be different?", "If I hadn't moved to this city, I wouldn't have met..."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Timelines",
-                content: ["When do we use Future Perfect?"],
-                options: ["To predict the future.", "For actions that will be completed BEFORE a future time.", "For impossible situations."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Grammar Rule",
-                content: ["In the Third Conditional 'IF' part, which tense is used?"],
-                options: ["Past Simple", "Past Continuous", "Past Perfect"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Error Hunt",
-                content: ["Which sentence is WRONG?"],
-                options: ["If I would have known, I would have helped.", "If I had known, I would have helped.", "By Friday, I will have finished."],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Fomentar que expresen arrepentimiento genuino o victorias de su pasado y cómo afectaron su presente."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Sintetizar la cima de las matemáticas en gramática inglesa.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "You've reached the peak!",
-                content: ["By tomorrow, you WILL HAVE MASTERED these tenses.", "If you hadn't joined this class, you wouldn't have learned this!"],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "Your 10-year goal",
-                content: ["Write: 'By 2035, I will have...' (Name 3 things).", "Write 2 sentences using Third Conditional."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-38",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/vXI2lRCnTKw",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Cerrar con una ovación. Esta es probablemente la clase gramatical más dura de todo el curso."
-          }
-        ]
-      },
-      {
-        id: "c-ae-3",
-        title: "Clase 3: Expresando Costumbres y Adaptaciones",
-        description: "Uso correcto de Used to, Be used to, y Get used to.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la idea de adaptación a cosas nuevas.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Changes",
-                description: "Getting out of your comfort zone",
-                content: ["What is the hardest thing about moving to another country?", "Is it hard to wake up early if you usually wake up late?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Dialogar sobre cómo se siente el cerebro cuando aprende algo nuevo vs cuando ya es una rutina."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Explicar la santísima trinidad de 'USE TO'.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "USED TO (El pasado)",
-                description: "Solía...",
-                content: ["Hábito que ya no haces. Acción TERMINADA.", "I USED TO smoke. (Ya no lo hago).", "Verbo: Normal (Base form)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "BE USED TO + ING (El presente)",
-                description: "Estar acostumbrado a...",
-                content: ["Ya es normal para ti, no te cuesta esfuerzo.", "I AM USED TO waking up early. (Es mi rutina, estoy acostumbrado).", "Verbo: OBLIGATORIO con -ING (o va seguido de un sustantivo)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "GET USED TO + ING (El proceso)",
-                description: "Acostumbrándose...",
-                content: ["El puente entre 'nuevo' y 'normal'. El proceso de adaptación.", "I just got a new job. I AM GETTING USED TO the schedule.", "It's hard, but I WILL GET USED TO it.", "Verbo: OBLIGATORIO con -ING."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "REGLA DE ORO: Si hay un verbo To Be o Get antes de 'used to', el siguiente verbo DEBE llevar ING. (Error hiper-frecuente)."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Forzar a poner el ING o quitar el ING según la fórmula.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The Immigrant:",
-                content: ["I used to live in a sunny town in Mexico, so when I first moved to Canada, dealing with the heavy snow was incredibly challenging. During my first winter, I thought I would never adapt to freezing temperatures. However, step by step, I am getting used to the harsh weather. In fact, I am already used to drinking hot tea every morning and wearing three layers of clothing before leaving the house!"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Past Habit",
-                content: ["When I was a kid, I ______ play video games all day."],
-                options: ["used to", "was used to", "got used to"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Current Habit (The ING trap)",
-                content: ["Don't worry about the noise. I am used to ______ in a loud city."],
-                options: ["live", "living", "lived"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "The Process",
-                content: ["This new software is very difficult. I can't ______ it!"],
-                options: ["used to", "am used to", "get used to"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 3: Expresando Costumbres y Adaptaciones" + ")",
-                                type: 'emoji-game',
-                                content: ['🚗 ➕ 🚦 ➕ 😡'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I got a speeding ticket.", "The traffic is terrible.", "My car broke down."],
-                                correctOptionIndex: 1
-                              }
-            ],
-            action: "Gritar '¡ING!' cada vez que el alumno use 'Be used to' con un verbo normal."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Hablar sobre rutinas reales del alumno.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "Your Life",
-                description: "Tell me...",
-                content: ["1. What did you USE TO do but don't anymore?", "2. What are you USED TO doing now that is hard for others?", "3. What new thing are you GETTING USED TO?"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Core",
-                content: ["Which sentence is CORRECT?"],
-                options: ["I am used to wake up early. ❌", "I used to waking up early. ❌", "I am used to waking up early. ✅"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Meaning",
-                content: ["'I am getting used to my new glasses.' This means:"],
-                options: ["The glasses are completely normal for me now.", "It is still a little weird, but I am adapting.", "I wore glasses in the past."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "To Be vs Not To Be",
-                content: ["He ______ to be very shy, but now he is very outgoing."],
-                options: ["used", "is used", "gets used"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Prestar mucha atención a la pronunciación (la D de used casi no suena, suena 'yustu')."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Repaso de la trinidad.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "Master of Habits",
-                content: ["Used to = Past.", "Be used to + ING = Normal now.", "Get used to + ING = Adapting."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "The New Job",
-                content: ["Imagine you just moved to Japan.", "Write 3 sentences using Be used to / Get used to about your new life."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-39",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/on_1sS6Ii8M",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Cierre elogiando su habilidad para captar un tema que confunde hasta al nivel C2."
-          }
-        ]
-      },
-      {
-        id: "c-ae-4",
-        title: "Clase 4: Voz Pasiva Avanzada y Comparativos As...As",
-        description: "Análisis estilístico en documentos y correos corporativos.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la igualdad y la impersonalidad.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! The Corporate Talk",
-                description: "Equal but different",
-                content: ["Is working from home AS productive AS working in the office?", "How do you sound polite when someone makes a mistake?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Generar un breve debate para ver si usan comparativos básicos ('more than') o intentan la igualdad ('as...as')."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Enseñar AS...AS y la estructura de reporte pasivo.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Equality: AS ... AS",
-                description: "Tan ... como",
-                content: ["Para decir que dos cosas son iguales.", "This computer is AS fast AS the old one.", "Negativo: It is NOT AS expensive AS a Mac. (Es decir, la Mac es más cara)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Advanced Passive Voice",
-                description: "It is believed that...",
-                content: ["Para rumores, creencias generales o reportes formales.", "En vez de 'People say the company is bankrupt' -> 'IT IS SAID that the company is bankrupt'."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "The Double Change",
-                description: "The company is said to...",
-                content: ["Nivel CEO: 'The company IS SAID TO BE bankrupt'.", "Otras frases: 'It is believed that...', 'It is expected that...'."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Destacar que 'It is said' suena sumamente profesional y libra de responsabilidad a quien habla."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Leer y transformar correos informales en formales.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "The Formal Email:",
-                content: ["Dear team, I am writing to inform you about the upcoming software transition. It is expected that the new operational rules will be fully enforced starting tomorrow morning. Fortunately, initial testing indicates that the new software is not as difficult to navigate as we initially feared. Furthermore, it is widely believed to be far more efficient than our legacy system. Please review the attached corporate guidelines."],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "As...As",
-                content: ["My English is ______ good ______ yours."],
-                options: ["more / than", "as / as", "so / as"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Negative As...As",
-                content: ["A bicycle is ______ fast as a car."],
-                options: ["not as", "not more", "less as"],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Impersonal Passive",
-                content: ["______ that prices will go up next year."],
-                options: ["People is saying", "It is expected", "Is expected"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 4: Voz Pasiva Avanzada y Comparativos As...As" + ")",
-                                type: 'emoji-game',
-                                content: ['🌧️ ➕ 🛋️ ➕ 📺'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I will stay home and watch TV.", "It's raining outside.", "The TV is broken."],
-                                correctOptionIndex: 0
-                              }
-            ],
-            action: "Exigir que usen 'not as...as' en lugar de 'is less than' para sonar más naturales."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Reescribir quejas y rumores de forma corporativa.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The Editor",
-                description: "Make it professional",
-                content: ["Change this gossip into professional language:", "1. 'Everybody says the boss is quitting.' -> 'It is said...'", "2. 'The new phone is worse than the old one.' -> Use 'Not as...as'."],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Rules",
-                content: ["'It is believed that he is rich' is the same as:"],
-                options: ["He is believed to be rich.", "He is believed rich.", "He believes to be rich."],
-                correctOptionIndex: 0,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "As...As form",
-                content: ["Inside 'As [word] As', the word must be:"],
-                options: ["A comparative ending in -ER", "A base adjective (tall, expensive)", "A noun"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Meaning",
-                content: ["'This test is NOT as hard as the last one.' This means:"],
-                options: ["This test is harder.", "The last test was harder.", "They are exactly the same."],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Guiarlos al escribir. El modo de comunicación 'diplomático' requiere limpiar el vocabulario emocional."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Asegurar las dos estructuras.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Great Job!",
-                description: "Corporate Master",
-                content: ["As + adjective + As = Equality.", "It is said / expected / believed = Professional distancing."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "Homework",
-                description: "The Rumor Mill",
-                content: ["Write 2 rumors about famous people using 'It is said/believed that...'", "Compare two actors using 'Not as...as'."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-40",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Despedida recordando que dominar esto marca la diferencia en escritos formales o exámenes tipo IELTS."
-          }
-        ]
-      },
-      {
-        id: "c-ae-5",
-        title: "Clase 5: Expectativas e Intenciones Fallidas",
-        description: "Aprender el matiz de 'be about to' vs. 'was going to' en negocios.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. Warm-up",
-            duration: "5 minutos",
-            objective: "Introducir la idea de planes arruinados o inminentes.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome! Almost...",
-                description: "Interrupted Plans",
-                content: ["Have you ever planned to do something, but someone interrupted you?", "What happened?"],
-                bgColor: "bg-gradient-to-br from-cyan-500 to-blue-600",
-                imageUrl: "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar a los alumnos si han estado 'a punto' de hacer algo cuando suena el teléfono."
-          },
-          {
-            id: "s2",
-            title: "2. Grammar Presentation",
-            duration: "15 minutos",
-            objective: "Enseñar a expresar inmediatez y planes fallidos.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Be About To",
-                description: "Inminencia pura",
-                content: ["Significa 'Estar a punto de...'.", "Presente: I AM ABOUT TO leave. (Me voy en 2 segundos).", "Pasado: I WAS ABOUT TO call you... (Estaba marcando tu número)."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Was / Were Going To",
-                description: "La intención fallida",
-                content: ["Significa 'Iba a...'. (Un plan que generalmente no sucedió).", "I WAS GOING TO study, but I fell asleep.", "They WERE GOING TO buy the house, but it was too expensive."],
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 4",
-                title: "The Difference",
-                description: "Time vs Plan",
-                content: ["WAS ABOUT TO: Muy físico. Tenías el teléfono en la mano.", "WAS GOING TO: Más conceptual. Era tu plan mental para hoy."],
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Hacer pantomima: Levantar las llaves para salir (about to) vs mirar la agenda (going to)."
-          },
-          {
-            id: "s3",
-            title: "3. Practice & Concept Checking",
-            duration: "15 minutos",
-            objective: "Diferenciar entre un plan de vida y una inmediatez física.",
-            slides: [
-              {
-                id: "Diapositiva 5",
-                title: "Reading Practice",
-                type: "reading",
-                description: "A Bad Day:",
-                content: ["I was going to go to the gym early this morning because I really wanted to start my day with some exercise. I got fully dressed and I was about to open the front door when my phone suddenly rang. It was my boss calling from the main office. He sounded furious and told me that he was about to fire me if I didn't send the quarterly report immediately. My relaxing morning was completely ruined!"],
-                bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600",
-                imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Complete the sentence (1/3)",
-                description: "Immediate future",
-                content: ["Hurry up! The train is ______ leave!"],
-                options: ["going to", "about to", "will"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Complete the sentence (2/3)",
-                description: "Failed Plan",
-                content: ["I ______ wash the car, but it started raining."],
-                options: ["was about to", "was going to", "am going to"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Complete the sentence (3/3)",
-                description: "Failed Immediacy",
-                content: ["I ______ eat the last slice of pizza, but someone took it right from my hand!"],
-                options: ["am about to", "was about to", "was going to"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 5: Expectativas e Intenciones Fallidas" + ")",
-                                type: 'emoji-game',
-                                content: ['🏋️ ➕ 🥗 ➕ 💪'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I need to eat healthy.", "I am getting fit.", "I don't like vegetables."],
-                                correctOptionIndex: 1
-                              }
-            ],
-            action: "Cuestionar siempre si es un plan (Was going to) o si ya lo estaban a punto de hacer físicamente (Was about to)."
-          },
-          {
-            id: "s4",
-            title: "4. Production & Quiz",
-            duration: "15 minutos",
-            objective: "Contar excusas perfectas a nivel profesional.",
-            slides: [
-              {
-                id: "Diapositiva 9",
-                title: "The King of Excuses",
-                description: "Why didn't you do it?",
-                content: ["Boss: 'Why didn't you send the email?'", "You: Make a creative excuse using 'I was about to... but...' or 'I was going to... but...'"],
-                bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                id: "Diapositiva 10",
-                title: "Fun Quiz! (1/3)",
-                description: "Grammar Core",
-                content: ["After 'About to', you must use:"],
-                options: ["A noun", "A verb in past", "A verb in base form"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 11",
-                title: "Fun Quiz! (2/3)",
-                description: "Meaning",
-                content: ["'The movie is about to start.' This means in:"],
-                options: ["1 hour", "1 minute", "Tomorrow"],
-                correctOptionIndex: 1,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                id: "Diapositiva 12",
-                title: "Fun Quiz! (3/3)",
-                description: "Structure",
-                content: ["They ______ travel to London, but the flight was canceled."],
-                options: ["are going to", "were about to", "were going to"],
-                correctOptionIndex: 2,
-                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600"
-              }
-            ],
-            action: "Jugar a 'My dog ate my homework' versión corporativa usando 'was going to / was about to'."
-          },
-          {
-            id: "s5",
-            title: "5. Wrap-up",
-            duration: "10 minutos",
-            objective: "Cerrar con broche de oro Advanced Elite.",
-            slides: [
-              {
-                id: "Diapositiva 13",
-                title: "Advanced Elite Completed!",
-                description: "You're a master of Nuance!",
-                content: ["You can now explain failed plans, report gossip correctly, and sound polite but firm.", "You are ready for the Real World."],
-                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
-                imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 14",
-                title: "The Ultimate Level",
-                description: "Masters of Fluency",
-                content: ["Next stop: Complete fluency.", "Critical thinking, real debates, and no more grammar translations."],
-                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-                {
-                                id: "Diapositiva-Video-Homework-41",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/oBatJc1VZCE",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Felicitar intensamente. El conocimiento gramatical duro está oficialmente terminado. Lo que viene (Masters) es pura práctica de conversación de alto nivel."
-          }
-        ]
-      }
-    ],
-      oralEvaluation: [
-              { topic: "Reported Speech in Action", question: "Tell me about a conversation you had recently. What did the other person say to you?" },
-              { topic: "Job Negotiation Roleplay", question: "Roleplay: You are negotiating a salary for a new job. Try to persuade me to give you a raise." },
-              { topic: "Future Perfect", question: "What will you have accomplished by this time next year? What about in five years?" },
-              { topic: "Second & Third Conditionals", question: "If you could travel anywhere in the world right now, where would you go? What would you have done differently last year if you had the chance?" },
-              { topic: "Expectations vs Reality", question: "Talk about a time when you were supposed to do something, but things didn't go as planned." }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-8-1",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["had we arrived", "arrived we", "we had arrived"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-2",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["having been", "to have been", "to be being"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-3",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["we had arrived", "had we arrived", "arrived we"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-4",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["to have been", "to be being", "having been"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-5",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["had we arrived", "arrived we", "we had arrived"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-6",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["having been", "to be being", "to have been"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-7",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["we had arrived", "arrived we", "had we arrived"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-8",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["having been", "to have been", "to be being"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-9",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["had we arrived", "we had arrived", "arrived we"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-10",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["to be being", "having been", "to have been"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-11",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["arrived we", "we had arrived", "had we arrived"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-12",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["to have been", "to be being", "having been"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-13",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["had we arrived", "we had arrived", "arrived we"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-14",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["to have been", "to be being", "having been"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-15",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["had we arrived", "we had arrived", "arrived we"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-16",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["to have been", "having been", "to be being"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-17",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["arrived we", "we had arrived", "had we arrived"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-18",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["to be being", "having been", "to have been"],
-                          correctAnswer: "to have been"
-                      },
-          {
-                          id: "vq-8-19",
-                          type: "multiple-choice",
-                          question: "Scarcely ___ when the storm began.",
-                          options: ["arrived we", "we had arrived", "had we arrived"],
-                          correctAnswer: "had we arrived"
-                      },
-          {
-                          id: "vq-8-20",
-                          type: "multiple-choice",
-                          question: "He is alleged ___ involved in the scandal.",
-                          options: ["to have been", "to be being", "having been"],
-                          correctAnswer: "to have been"
-                      }
-          ]
-},
+    oralEvaluation: [
+      { question: "Evaluación Oral", topic: "Evaluación del nivel." }
+    ]
+  },
   {
     id: "masters",
-    title: "Masters of Fluency",
-    duration: "3 meses",
-    objective: "Desarrollar fluidez y precisión sobre temas complejos de cultura, sociedad, salud, tecnología mediante conversaciones y debates. Critical Thinking y Conversation Club.",
-    mcfrEquivalent: "C1/C2",
+    title: "Masters",
+    duration: "1 mes",
+    objective: "El nivel máximo de fluidez. Dominio total del idioma en cualquier situación.",
+    mcfrEquivalent: "A1",
     classes: [
-      {
-        id: "c-m-1",
-        title: "Clase 1: Pensamiento Crítico - Tecnología y Ética",
-        description: "Fluidez discursiva sobre temas controversiales usando estructuras complejas de opinión.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. The Spark (Hook)",
-            duration: "10 minutos",
-            objective: "Desatar el debate sin gramática pre-establecida.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Welcome to Masters!",
-                description: "No more grammar rules.",
-                content: ["From now on, we focus on FLUENCY and CRITICAL THINKING.", "Today's Topic: The future of humanity.", "Is AI going to destroy our jobs, or elevate our potential?"],
-                bgColor: "bg-gradient-to-br from-gray-800 to-black",
-                imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Lanzar la pregunta y escuchar. No corregir gramática menor, solo fluidez y vocabulario."
-          },
-          {
-            id: "s2",
-            title: "2. Exploring Perspectives",
-            duration: "15 minutos",
-            objective: "Introducir vocabulario de debate culto.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Expressing Nuance",
-                description: "Beyond 'I think' and 'I agree'",
-                content: ["Instead of 'I don't know', use: 'It's a double-edged sword.'", "Instead of 'I agree', use: 'I share that perspective because...'", "Instead of 'I disagree', use: 'I play devil's advocate here...'"],
-                bgColor: "bg-gradient-to-br from-indigo-800 to-purple-900"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Dilemma 1: Social Media",
-                description: "Connection vs Isolation",
-                content: ["Are we more connected than ever, or more isolated than ever?", "Use one of the new expressions to answer."],
-                bgColor: "bg-gradient-to-br from-indigo-800 to-purple-900"
-              }
-            ],
-            action: "Forzar la salida de sus respuestas prefabricadas de nivel medio."
-          },
-          {
-            id: "s3",
-            title: "3. Deep Dive (Article / Concept)",
-            duration: "15 minutos",
-            objective: "Analizar posturas éticas complejas.",
-            slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Trolley Problem of AI",
-                description: "Self-driving cars",
-                content: ["A self-driving car's brakes fail.", "It can either hit 5 pedestrians, or crash into a wall, killing the driver.", "Who should the AI choose to save? The driver or the pedestrians?"],
-                bgColor: "bg-gradient-to-br from-red-800 to-rose-900",
-                imageUrl: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Defend your view",
-                description: "Be the programmer",
-                content: ["If you are the programmer making the code, how do you justify your decision?"],
-                bgColor: "bg-gradient-to-br from-red-800 to-rose-900"
-              }
-            ],
-            action: "El profesor hace de abogado del diablo y ataca amablemente la postura del alumno para forzar argumentación fluida."
-          },
-          {
-            id: "s4",
-            title: "4. The Spotlight (Monologue)",
-            duration: "15 minutos",
-            objective: "Sostener el habla ininterrumpida por 2 minutos.",
-            slides: [
-              {
-                id: "Diapositiva 6",
-                title: "Your TED Talk",
-                description: "The Floor is Yours",
-                content: ["You have 2 minutes to talk continuously about:", "'Why technology is ruining / saving human relationships'.", "No interruptions."],
-                bgColor: "bg-gradient-to-br from-blue-800 to-cyan-900"
-              }
-            ],
-            action: "Medir el tiempo. Tomar notas de errores repetitivos para darlos de feedback PUNTUAL al final, no durante el habla."
-          },
-          {
-            id: "s5",
-            title: "5. Feedback & Polish",
-            duration: "5 minutos",
-            objective: "Corregir vicios arrastrados (Fossilized errors).",
-            slides: [
-              {
-                id: "Diapositiva 7",
-                title: "The Master's Polish",
-                description: "Tiny tweaks, massive results",
-                content: ["Focus on rhythm and intonation.", "Remember: English is a stress-timed language."],
-                bgColor: "bg-gradient-to-br from-emerald-800 to-teal-900",
-                imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 1: Pensamiento Crítico - Tecnología y Ética" + ")",
-                                type: 'emoji-game',
-                                content: ['📱 ➕ 🔋 ➕ ☠️'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["My phone is dead.", "I need a new phone.", "I am playing a game."],
-                                correctOptionIndex: 0
-                              },
-                {
-                                id: "Diapositiva-Video-Homework-42",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/FD1IpuXSq74",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Dar feedback específico sobre muletillas ('ehhh', repetitivos 'so... so...')."
-          }
-        ]
-      },
-      {
-        id: "c-m-2",
-        title: "Clase 2: Cultura y Sociedad Contemporánea",
-        description: "Debates profundos sobre medios, fama, consumismo y globalización.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. The Spark (Hook)",
-            duration: "10 minutos",
-            objective: "Reflexionar sobre la cultura moderna.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Pop Culture & Power",
-                description: "Who influences you?",
-                content: ["Why are influencers so powerful?", "Is fame a gift or a curse nowadays?"],
-                bgColor: "bg-gradient-to-br from-indigo-600 to-purple-800",
-                imageUrl: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Dejar que el alumno dirija la conversación. Empujar para que no den respuestas cortas."
-          },
-          {
-            id: "s2",
-            title: "2. Exploring Perspectives",
-            duration: "15 minutos",
-            objective: "Vocabulario avanzado: Idioms and Collocations.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Idioms for Debates",
-                description: "Sounding Native",
-                content: ["'To play devil's advocate' (Tomar la postura contraria para debatir).", "'To sit on the fence' (No decidirse / Mantenerse neutral).", "'To hit the nail on the head' (Dar en el clavo)."],
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-800"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Dilemma 2: Fast Fashion",
-                description: "Cheap clothes, high cost",
-                content: ["Should fast fashion companies be banned to save the environment?", "Don't sit on the fence! Choose a side!"],
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-800"
-              }
-            ],
-            action: "Forzar al alumno a usar los 3 idioms durante la clase."
-          },
-          {
-            id: "s3",
-            title: "3. Deep Dive (Article / Concept)",
-            duration: "15 minutos",
-            objective: "Analizar el fenómeno de la globalización.",
-            slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Global Village",
-                description: "Losing our roots?",
-                content: ["Because of the internet, teenagers in Japan, Mexico, and France wear the same clothes and listen to the same music.", "Are we losing our cultural identity?"],
-                bgColor: "bg-gradient-to-br from-pink-800 to-orange-900",
-                imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Analyze",
-                description: "Is a single global culture good for peace, or bad for diversity?",
-                content: ["Defend your posture using advanced linking words: Furthermore, Moreover, Nevertheless."],
-                bgColor: "bg-gradient-to-br from-pink-800 to-orange-900"
-              }
-            ],
-            action: "Caza de muletillas: Detener al alumno si dice repetidamente 'but', forzándolo a usar 'however' o 'nevertheless'."
-          },
-          {
-            id: "s4",
-            title: "4. The Spotlight (Monologue)",
-            duration: "15 minutos",
-            objective: "Defensa de una postura impopular.",
-            slides: [
-              {
-                id: "Diapositiva 6",
-                title: "The Devil's Advocate",
-                description: "Defend the undefendable",
-                content: ["You have 2 minutes to explain why: 'Reality TV is the highest form of entertainment'.", "Even if you hate Reality TV, you MUST defend it."],
-                bgColor: "bg-gradient-to-br from-orange-800 to-red-900"
-              }
-            ],
-            action: "Este ejercicio de gimnasia mental fuerza al cerebro a desconectar la emoción de la herramienta (el idioma), produciendo fluidez real."
-          },
-          {
-            id: "s5",
-            title: "5. Feedback & Polish",
-            duration: "5 minutos",
-            objective: "Revisión de fluidez y collocations.",
-            slides: [
-              {
-                id: "Diapositiva 7",
-                title: "The Master's Polish",
-                description: "Collocations",
-                content: ["Native speakers don't say 'make a picture', they say 'take a picture'.", "Reviewing our natural word pairs."],
-                bgColor: "bg-gradient-to-br from-teal-800 to-emerald-900",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 2: Cultura y Sociedad Contemporánea" + ")",
-                                type: 'emoji-game',
-                                content: ['🗣️ ➕ 👂 ➕ 🤔'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["Can you repeat that?", "I don't understand.", "I am listening carefully."],
-                                correctOptionIndex: 2
-                              },
-                {
-                                id: "Diapositiva-Video-Homework-43",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/OjzsRpUBXbY",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Dar feedback sobre las combinaciones de palabras naturales (collocations) que fallaron durante el debate."
-          }
-        ]
-      },
-      {
-        id: "c-m-3",
-        title: "Clase 3: Perspectivas en Salud Mental y Física",
-        description: "Vocabulario hiperespecializado para la salud, estrés y estilo de vida moderno.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. The Spark (Hook)",
-            duration: "10 minutos",
-            objective: "Hablar sobre Burnout y ansiedad moderna.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "The Burnout Generation",
-                description: "Are we tired all the time?",
-                content: ["Why is everybody stressed nowadays?", "Have you ever experienced 'burnout'?"],
-                bgColor: "bg-gradient-to-br from-green-700 to-teal-900",
-                imageUrl: "https://images.unsplash.com/photo-1498671546682-94a232c26d17?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Preguntar sobre la diferencia entre estar 'cansado' y estar 'quemado' (burnout) usando vocabulario emocional."
-          },
-          {
-            id: "s2",
-            title: "2. Exploring Perspectives",
-            duration: "15 minutos",
-            objective: "Describir el dolor y la salud con precisión clínica y coloquial.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "Medical vs Casual",
-                description: "Levels of pain",
-                content: ["Instead of 'My head hurts': 'I have a splitting headache.'", "Instead of 'I feel bad': 'I'm under the weather.'", "Instead of 'I am stressed': 'I am overwhelmed.'"],
-                bgColor: "bg-gradient-to-br from-teal-700 to-cyan-900"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Dilemma 3: The 4-Day Work Week",
-                description: "Curing the Burnout",
-                content: ["Should we work 4 days a week instead of 5?", "Will productivity drop, or will it increase because people are rested?"],
-                bgColor: "bg-gradient-to-br from-teal-700 to-cyan-900"
-              }
-            ],
-            action: "Corregir inmediatamente si dicen 'I have headache' (falta el 'a': I have A headache)."
-          },
-          {
-            id: "s3",
-            title: "3. Deep Dive (Article / Concept)",
-            duration: "15 minutos",
-            objective: "Criticar la industria del bienestar.",
-            slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Wellness Industry",
-                description: "Is health a luxury?",
-                content: ["Green juices, yoga retreats, expensive supplements.", "Are we buying health, or just buying a status symbol?"],
-                bgColor: "bg-gradient-to-br from-emerald-800 to-green-900",
-                imageUrl: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Analyze",
-                description: "Fake vs Real Health",
-                content: ["Debate: Social media makes us focus more on LOOKING healthy than BEING healthy.", "Agree or disagree? Defend your point."],
-                bgColor: "bg-gradient-to-br from-emerald-800 to-green-900"
-              }
-            ],
-            action: "Pedir argumentos sólidos. Si el estudiante dice 'I agree', preguntarle 'Why exactly? Give me an example of fake health'."
-          },
-          {
-            id: "s4",
-            title: "4. The Spotlight (Monologue)",
-            duration: "15 minutos",
-            objective: "Simular una recomendación a un amigo al borde del colapso.",
-            slides: [
-              {
-                id: "Diapositiva 6",
-                title: "The Intervention",
-                description: "Save your friend",
-                content: ["You have 2 minutes to convince your extremely workaholic friend to take a vacation.", "Use advanced expressions, modal verbs, and conditionals."],
-                bgColor: "bg-gradient-to-br from-yellow-700 to-orange-800"
-              }
-            ],
-            action: "Actuar el rol del amigo terco que no quiere tomar vacaciones. Hacer que el alumno argumente y persuada fluídamente."
-          },
-          {
-            id: "s5",
-            title: "5. Feedback & Polish",
-            duration: "5 minutos",
-            objective: "Corrección fonética de vocabulario médico.",
-            slides: [
-              {
-                id: "Diapositiva 7",
-                title: "The Master's Polish",
-                description: "Tricky words",
-                content: ["Pronunciation check:", "Psychology, Psychiatrist, Anxiety, Disease vs Decease."],
-                bgColor: "bg-gradient-to-br from-slate-700 to-gray-900",
-                imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 3: Perspectivas en Salud Mental y Física" + ")",
-                                type: 'emoji-game',
-                                content: ['🏥 ➕ 🩺 ➕ 💊'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I am feeling sick.", "I am a doctor.", "I need some medicine."],
-                                correctOptionIndex: 0
-                              },
-                {
-                                id: "Diapositiva-Video-Homework-44",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/SHXPpsIJTb0",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Repasar la pronunciación de la 'P' muda en 'Psychology' y la acentuación de 'Anxiety' [ang-ZAI-uh-tee]."
-          }
-        ]
-      },
-      {
-        id: "c-m-4",
-        title: "Clase 4: Conversation Club and Critical Thinking",
-        description: "Aplicación total del pensamiento analítico en debates guiados y aleatorios.",
-        sections: [
-          {
-            id: "s1",
-            title: "1. The Spark (Hook)",
-            duration: "10 minutos",
-            objective: "Juego de calentamiento rápido.",
-            slides: [
-              {
-                id: "Diapositiva 1",
-                title: "Rapid Fire Ideas",
-                description: "Brain warm-up",
-                content: ["I will give you a topic. You have 30 seconds to say 3 continuous sentences about it.", "Topics: Coffee, Aliens, Traffic, Monday mornings."],
-                bgColor: "bg-gradient-to-br from-indigo-800 to-purple-900",
-                imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            action: "Este es un ejercicio de agilidad mental. No importa si lo que dicen no tiene mucho sentido profundo, importa la velocidad y no detenerse."
-          },
-          {
-            id: "s2",
-            title: "2. Exploring Perspectives",
-            duration: "15 minutos",
-            objective: "Debatir el valor del éxito tradicional.",
-            slides: [
-              {
-                id: "Diapositiva 2",
-                title: "The Definition of Success",
-                description: "Is it money?",
-                content: ["Society tells us success means a high salary, a big house, and a fancy car.", "Do you agree with this definition?", "If not, what is your definition?"],
-                bgColor: "bg-gradient-to-br from-purple-800 to-indigo-900"
-              },
-              {
-                id: "Diapositiva 3",
-                title: "Dilemma 4: The Lottery",
-                description: "The Dream or the Nightmare?",
-                content: ["If you won 100 million dollars tomorrow, what would be the WORST thing about it?", "Think critically about the negative consequences of wealth."],
-                bgColor: "bg-gradient-to-br from-purple-800 to-indigo-900"
-              }
-            ],
-            action: "Prohibir respuestas cliché. Exigirles que piensen en problemas reales (amigos falsos, pérdida de propósito, seguridad)."
-          },
-          {
-            id: "s3",
-            title: "3. Deep Dive (Article / Concept)",
-            duration: "15 minutos",
-            objective: "Analizar el sistema educativo.",
-            slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Broken School System",
-                description: "Are we learning?",
-                content: ["Schools were created in the industrial age to produce factory workers.", "Is the current school system preparing children for the future?", "Why or why not?"],
-                bgColor: "bg-gradient-to-br from-gray-700 to-slate-900",
-                imageUrl: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Analyze",
-                description: "Re-designing Education",
-                content: ["If you were the Secretary of Education, what 3 classes would you completely REPLACE?", "What new classes would you add?"],
-                bgColor: "bg-gradient-to-br from-gray-700 to-slate-900"
-              }
-            ],
-            action: "Forzarlos a argumentar usando modales (should, must, have to) y condicionales (If I were in charge...)."
-          },
-          {
-            id: "s4",
-            title: "4. The Spotlight (Monologue)",
-            duration: "15 minutos",
-            objective: "La prueba final de fluidez C1/C2.",
-            slides: [
-              {
-                id: "Diapositiva 6",
-                title: "The Final Defense",
-                description: "Your masterpiece",
-                content: ["You have 3 minutes to present your final thoughts on:", "'What is the most important skill a human being can have in the 21st century?'", "Take 1 minute to prepare."],
-                bgColor: "bg-gradient-to-br from-amber-600 to-yellow-800"
-              }
-            ],
-            action: "Esta es la evaluación final del curso completo. Anota fortalezas, ritmo, uso de tiempos complejos (condicionales, perfectos, voz pasiva)."
-          },
-          {
-            id: "s5",
-            title: "5. Feedback & Polish",
-            duration: "5 minutos",
-            objective: "Graduación y feedback global.",
-            slides: [
-              {
-                id: "Diapositiva 7",
-                title: "You are a Master!",
-                description: "Congratulations!",
-                content: ["You have completed the entire English Journey.", "From greetings to critical debates.", "Keep listening, keep reading, keep speaking."],
-                bgColor: "bg-gradient-to-br from-blue-700 to-cyan-800",
-                imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
-              },
-                {
-                                id: "Diapositiva-Emoji-Auto-${classCount}",
-                                title: "Emojis Locos 🤪",
-                                description: "Interpreta el significado de estos emojis (" + "Clase 4: Conversation Club and Critical Thinking" + ")",
-                                type: 'emoji-game',
-                                content: ['🎓 ➕ 📚 ➕ 🧠'],
-                                bgColor: "bg-gradient-to-br from-pink-500 to-rose-600",
-                                options: ["I am studying hard.", "I forgot my book.", "I graduated from university."],
-                                correctOptionIndex: 0
-                              },
-                {
-                                id: "Diapositiva-Video-Homework-45",
-                                title: "Video Homework 📹",
-                                description: "Watch this short video and listen carefully.",
-                                type: 'video',
-                                videoUrl: "https://www.youtube.com/embed/LAywO9NM7ws",
-                                content: ["Identify at least 3 new phrases you understood from the video.", "Write them down for the next class."],
-                                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
-                              }
-            ],
-            action: "Felicitar al alumno por su progreso desde el día 1. Darle un feebdack constructivo y cálido sobre su futuro con el idioma."
-          }
-        ]
-      }
+{
+      id: "c-adults-masters-1",
+      title: "Clase 1: Idioms y expresiones idiomáticas",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-2",
+      title: "Clase 2: Inversiones para énfasis formal",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Inversions.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Inversions.", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Inversions.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Inversions", description: "Introduction to Inversions.", content: ["Never have I seen such a thing.", "Rarely do we go out."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Never have I seen such a thing.", "Rarely do we go out."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Never, Rarely, Seldom, Little", content: ["Never", " Rarely", " Seldom", " Little"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Never have I seen such a thing.", "Rarely do we go out."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Never have I seen such a thing."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Never have I seen such a thing.", "Rarely do we go out."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-3",
+      title: "Clase 3: Cleft sentences para resaltar información",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Cleft Sentences.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Cleft Sentences.", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Cleft Sentences.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Cleft Sentences", description: "Introduction to Cleft Sentences.", content: ["What I mean is...", "It was John who called."], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["What I mean is...", "It was John who called."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "What, It, Focus, Emphasis", content: ["What", " It", " Focus", " Emphasis"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["What I mean is...", "It was John who called."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: What I mean is..."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["What I mean is...", "It was John who called."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-4",
+      title: "Clase 4: Lenguaje diplomático y atenuadores (Hedging)",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Diplomatic Language.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Diplomatic Language.", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Diplomatic Language.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Diplomatic Language", description: "Introduction to Diplomatic Language.", content: ["It seems that there is a problem.", "I would suggest calling them."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["It seems that there is a problem.", "I would suggest calling them."], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Seem, Appear, Suggest, Perhaps", content: ["Seem", " Appear", " Suggest", " Perhaps"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["It seems that there is a problem.", "I would suggest calling them."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: It seems that there is a problem."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["It seems that there is a problem.", "I would suggest calling them."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-5",
+      title: "Clase 5: Preparando presentaciones de alto impacto",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-6",
+      title: "Clase 6: Discurso persuasivo y argumentación",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Persuasive Speech.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Persuasive Speech.", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Persuasive Speech.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Persuasive Speech", description: "Introduction to Persuasive Speech.", content: ["I strongly believe that...", "We must act now."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["I strongly believe that...", "We must act now."], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Persuade, Believe, Act, Future", content: ["Persuade", " Believe", " Act", " Future"], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["I strongly believe that...", "We must act now."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: I strongly believe that..."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["I strongly believe that...", "We must act now."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-7",
+      title: "Clase 7: Debates sobre temas complejos",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Debate & Arguments.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Debate & Arguments.", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Debate & Arguments.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Debate & Arguments", description: "Introduction to Debate & Arguments.", content: ["On the other hand...", "I completely disagree."], imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["On the other hand...", "I completely disagree."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Agree, Disagree, Point, Argument", content: ["Agree", " Disagree", " Point", " Argument"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["On the other hand...", "I completely disagree."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: On the other hand..."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["On the other hand...", "I completely disagree."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-8",
+      title: "Clase 8: Storytelling en entornos profesionales",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Storytelling.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Storytelling.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Storytelling.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Storytelling", description: "Introduction to Storytelling.", content: ["Once upon a time...", "Suddenly, the lights went out."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Once upon a time...", "Suddenly, the lights went out."], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Story, Tell, Suddenly, End", content: ["Story", " Tell", " Suddenly", " End"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Once upon a time...", "Suddenly, the lights went out."], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Once upon a time..."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Once upon a time...", "Suddenly, the lights went out."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-9",
+      title: "Clase 9: Analizando artículos de opinión y noticias",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Important Topic.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Important Topic.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], imageUrl: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    },
+{
+      id: "c-adults-masters-10",
+      title: "Clase 10: Proyecto Final Masters",
+      duration: "60 minutos",
+      objective: "Manejar correctamente Review & Practice.",
+      sections: [
+        {
+          id: "s1",
+          title: "1. Warm-up",
+          duration: "10 minutos",
+          objective: "Romper el hielo y activar conocimientos previos.",
+          slides: [
+            { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Review & Practice.", imageUrl: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-600" },
+            { id: "Diapositiva 2", title: "Warm-up Activity", description: "Let's discuss: What do you know about today's topic?", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-700" },
+            { id: "Diapositiva 3", title: "Objectives", description: "Manejar correctamente Review & Practice.", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+          ],
+          action: "Participar en la discusión."
+        },
+        {
+          id: "s2",
+          title: "2. Grammar / Vocabulary",
+          duration: "20 minutos",
+          objective: "Presentar el tema principal.",
+          slides: [
+            { id: "Diapositiva 4", title: "Review & Practice", description: "Introduction to Review & Practice.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-400 to-teal-500" },
+            { id: "Diapositiva 5", title: "Examples in Context", description: "Let's read these phrases.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+            { id: "Diapositiva 6", title: "Vocabulary Words", description: "Review, Practice, Exercise, Test", content: ["Review", " Practice", " Exercise", " Test"], imageUrl: "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700" },
+            { id: "Diapositiva 7", title: "Grammar Structure", description: "How to form sentences.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-700 to-teal-800" },
+            { id: "Diapositiva 8", title: "Pronunciation", description: "Listen carefully.", content: ["Repeat: Let's review the main topics."], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600" }
+          ],
+          action: "Explicar la regla y mostrar ejemplos."
+        },
+        {
+          id: "s3",
+          title: "3. Practice",
+          duration: "15 minutos",
+          objective: "Fijar la estructura con precisión.",
+          slides: [
+            { id: "Diapositiva 9", title: "Fill in the blanks", description: "Let's practice together.", bgColor: "bg-gradient-to-br from-violet-500 to-purple-600" },
+            { id: "Diapositiva 10", title: "Find the mistake", description: "Can you fix these sentences?", bgColor: "bg-gradient-to-br from-violet-600 to-purple-700" },
+            { id: "Diapositiva 11", title: "Practice Sentences", description: "Repeat after the teacher.", content: ["Let's review the main topics.", "Practice what we learned."], imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-violet-600" },
+            { id: "Diapositiva 12", title: "Q&A", description: "Ask your partner a question.", bgColor: "bg-gradient-to-br from-purple-600 to-violet-700" },
+            { id: "Diapositiva 13", title: "Translation", description: "Translate these phrases to English.", bgColor: "bg-gradient-to-br from-violet-700 to-purple-800" }
+          ],
+          action: "Corregir pronunciación y estructura."
+        },
+        {
+          id: "s4",
+          title: "4. Production",
+          duration: "10 minutos",
+          objective: "Desarrollar la fluidez real.",
+          slides: [
+            { id: "Diapositiva 14", title: "Create a story", description: "Use your imagination.", bgColor: "bg-gradient-to-br from-rose-400 to-pink-500" },
+            { id: "Diapositiva 15", title: "Describe the picture", description: "What do you see?", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+            { id: "Diapositiva 16", title: "Speaking Time", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+            { id: "Diapositiva 17", title: "Roleplay", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-pink-600 to-rose-700" },
+            { id: "Diapositiva 18", title: "Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" }
+          ],
+          action: "Conversar libremente."
+        },
+        {
+          id: "s5",
+          title: "5. Wrap-up & Homework",
+          duration: "5 minutos",
+          objective: "Cierre de clase.",
+          slides: [
+            { id: "Diapositiva 19", title: "Homework", description: "Complete the exercises on the platform.", type: "homework", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900", imageUrl: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800" }
+          ],
+          action: "Anotar la tarea."
+        }
+      ]
+    }
     ],
-      oralEvaluation: [
-              { topic: "Technology & AI Ethics", question: "What is your perspective on artificial intelligence? Do you believe it will do more harm or good for society?" },
-              { topic: "Society, Culture & Media", question: "How does social media affect modern culture, political polarization, and mental health?" },
-              { topic: "Work-Life Balance & Wellness", question: "Discuss the challenges of maintaining a healthy work-life balance in the modern gig economy." },
-              { topic: "Global Issues & Environment", question: "What do you consider to be the most pressing environmental issue today, and what actionable steps can be taken?" },
-              { topic: "Abstract Discussions", question: "If you had to summarize the human condition in the 21st century to someone from the 19th century, what would you emphasize?" }
-            ],
-      virtualEvaluation: [
-          {
-                          id: "vq-9-1",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["bolt", "flash", "strike"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-2",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["around", "over", "round"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-3",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["strike", "flash", "bolt"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-4",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["round", "around", "over"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-5",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["bolt", "flash", "strike"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-6",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["over", "around", "round"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-7",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["bolt", "flash", "strike"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-8",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["round", "around", "over"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-9",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["bolt", "flash", "strike"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-10",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["over", "around", "round"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-11",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["strike", "bolt", "flash"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-12",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["round", "around", "over"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-13",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["bolt", "flash", "strike"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-14",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["over", "around", "round"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-15",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["flash", "bolt", "strike"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-16",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["round", "around", "over"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-17",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["bolt", "flash", "strike"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-18",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["round", "around", "over"],
-                          correctAnswer: "round"
-                      },
-          {
-                          id: "vq-9-19",
-                          type: "multiple-choice",
-                          question: "The CEO's resignation came as a ___ from the blue.",
-                          options: ["strike", "flash", "bolt"],
-                          correctAnswer: "bolt"
-                      },
-          {
-                          id: "vq-9-20",
-                          type: "multiple-choice",
-                          question: "He's completely ___ the bend.",
-                          options: ["over", "around", "round"],
-                          correctAnswer: "round"
-                      }
-          ]
-}
+    oralEvaluation: [
+      { question: "Evaluación Oral", topic: "Evaluación del nivel." }
+    ]
+  }
 ];

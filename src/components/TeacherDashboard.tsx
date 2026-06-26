@@ -19,6 +19,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
   const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'settings'>('students');
   const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
   const [isEditingStudentInfo, setIsEditingStudentInfo] = useState(false);
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
   const [isCreatingStudent, setIsCreatingStudent] = useState(false);
   const [newStudent, setNewStudent] = useState({ name: '', avatar_id: 'female', level: 'Basic Zero', type: 'adulto', group_id: '' });
@@ -28,6 +29,12 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
   
   const { brand, saveBrand } = useBrand();
   const [editingBrand, setEditingBrand] = useState(brand);
+  const [toast, setToast] = useState<string | null>(null);
+
+  const showToast = (msg: string) => {
+    setToast(msg);
+    setTimeout(() => setToast(null), 3000);
+  };
 
   useEffect(() => {
     setEditingBrand(brand);
@@ -73,7 +80,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     
     // Find matching curriculum level (approximate match on title)
     // The DbStudent.level is usually strings like "Basic Zero" or "A1"
-    const stLevelTokens = selectedStudent.level.toLowerCase().split(' ');
+    const stLevelTokens = (selectedStudent.level || '').toLowerCase().split(' ');
     let currentLevelObj = currLevels.find(l => 
         stLevelTokens.some(tok => l.title.toLowerCase().includes(tok))
     );
@@ -109,6 +116,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                            <label className="block text-sm font-medium text-gray-700 mb-1">Tipo</label>
                            <select value={selectedStudent.type || 'adulto'} onChange={e => setSelectedStudent({...selectedStudent, type: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
                              <option value="adulto">Adulto</option>
+                             <option value="adolescente">Adolescente</option>
                              <option value="niño">Niño</option>
                            </select>
                          </div>
@@ -159,12 +167,37 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                 <div className="flex items-center gap-3">
                                    <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
                                    <button onClick={() => setIsEditingStudentInfo(true)} className="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-bold hover:bg-indigo-100">Editar</button>
+                                   <button 
+                                      onClick={() => setShowDeleteConfirm(true)} 
+                                      className="text-sm bg-red-50 text-red-700 px-3 py-1 rounded-full font-bold hover:bg-red-100"
+                                   >
+                                      Eliminar
+                                   </button>
                                 </div>
+                                {showDeleteConfirm ? (
+                                  <div className="flex items-center gap-2 mt-2 bg-red-50 p-2 rounded-lg border border-red-100">
+                                    <span className="text-sm text-red-800 font-medium">¿Seguro que deseas eliminarlo?</span>
+                                    <button 
+                                      onClick={async () => {
+                                         await dbAdmin.deleteStudent(selectedStudent.id);
+                                         setSelectedStudent(null);
+                                         setShowDeleteConfirm(false);
+                                         loadData();
+                                      }}
+                                      className="text-xs font-bold bg-red-600 text-white px-3 py-1.5 rounded-md hover:bg-red-700 transition-colors"
+                                    >Sí, eliminar</button>
+                                    <button 
+                                      onClick={() => setShowDeleteConfirm(false)}
+                                      className="text-xs font-bold bg-gray-200 text-gray-700 px-3 py-1.5 rounded-md hover:bg-gray-300 transition-colors"
+                                    >Cancelar</button>
+                                  </div>
+                                ) : (
                                 <div className="flex gap-3 mt-2">
                                     <span className="text-sm font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">{selectedStudent.level}</span>
                                     {selectedStudent.type && <span className="text-sm font-bold text-amber-700 bg-amber-50 px-3 py-1 rounded-full capitalize">{selectedStudent.type}</span>}
                                     {selectedStudent.group_id && <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">En grupo</span>}
                                 </div>
+                                )}
                             </div>
                         </div>
                         <div className="flex flex-col gap-2 w-full md:w-auto mt-4 md:mt-0">
@@ -178,7 +211,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                onClick={() => {
                                   const url = `${window.location.origin}/?studentId=${selectedStudent.id}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}`;
                                   navigator.clipboard.writeText(url);
-                                  alert('¡Enlace de acceso copiado al portapapeles!');
+                                  showToast('¡Enlace de acceso copiado al portapapeles!');
                                }}
                                className="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-2 px-4 rounded-xl transition-all"
                             >
@@ -333,6 +366,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                   <label className="block text-sm font-medium text-gray-700 mb-1">Tipo</label>
                   <select value={newStudent.type} onChange={e => setNewStudent({...newStudent, type: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
                     <option value="adulto">Adulto</option>
+                    <option value="adolescente">Adolescente</option>
                     <option value="niño">Niño</option>
                   </select>
                 </div>
@@ -540,7 +574,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
             <button 
               onClick={() => {
                 saveBrand(editingBrand);
-                alert('Configuración guardada correctamente.');
+                showToast('Configuración guardada correctamente.');
               }}
               className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-xl flex items-center gap-2 transition-all"
             >
@@ -548,6 +582,12 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
               Guardar Configuración
             </button>
           </div>
+        </div>
+      )}
+
+      {toast && (
+        <div className="fixed bottom-6 right-6 bg-gray-900 text-white px-6 py-3 rounded-xl shadow-xl font-medium animate-in slide-in-from-bottom-5">
+          {toast}
         </div>
       )}
     </div>

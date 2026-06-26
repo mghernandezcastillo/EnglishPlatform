@@ -32,7 +32,6 @@ export function Diploma({ studentName, levelName, score, total, brandName, logoU
       link.click();
     } catch (err) {
       console.error('Error generating diploma:', err);
-      alert('Hubo un error al generar el diploma.');
     } finally {
       setIsDownloading(false);
     }
