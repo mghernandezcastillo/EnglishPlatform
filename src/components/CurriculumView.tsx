@@ -1,12 +1,22 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown, BookOpen, Clock, Target, PlayCircle, Users, Play } from 'lucide-react';
-import { curriculumLevels } from '../data/curriculum';
 import { CurriculumLevel, CurriculumClass } from '../types';
 import { PresentationViewer } from './PresentationViewer';
+import { getCurriculumForType } from '../data/curriculumSelector';
 
 export function CurriculumView() {
-  const [expandedLevel, setExpandedLevel] = useState<string | null>(curriculumLevels[0].id);
+  const allCurriculums = [
+    { title: 'Adultos', levels: getCurriculumForType('adulto') },
+    { title: 'Niños', levels: getCurriculumForType('niño') },
+    { title: 'Adolescentes', levels: getCurriculumForType('adolescente') }
+  ];
+  
+  const [activeType, setActiveType] = useState('Adultos');
+  
+  const curriculumLevels = allCurriculums.find(c => c.title === activeType)?.levels || [];
+  
+  const [expandedLevel, setExpandedLevel] = useState<string | null>(curriculumLevels.length > 0 ? curriculumLevels[0].id : null);
   const [expandedClass, setExpandedClass] = useState<string | null>(null);
   const [presentingClass, setPresentingClass] = useState<CurriculumClass | null>(null);
 
@@ -23,9 +33,26 @@ export function CurriculumView() {
   return (
     <>
       <div className="max-w-4xl mx-auto py-8">
-        <div className="mb-10 text-center sm:text-left">
-          <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Plan de Estudios Completo</h1>
-          <p className="text-lg text-gray-600 mt-2">Explora la estructura detallada de todos los niveles y clases disponibles.</p>
+        <div className="mb-10 text-center sm:text-left flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div>
+            <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Plan de Estudios Completo</h1>
+            <p className="text-lg text-gray-600 mt-2">Explora la estructura detallada de todos los niveles y clases disponibles.</p>
+          </div>
+          
+          <div className="flex bg-gray-100 p-1 rounded-xl self-center sm:self-auto">
+            {allCurriculums.map(c => (
+              <button
+                key={c.title}
+                onClick={() => {
+                  setActiveType(c.title);
+                  setExpandedLevel(c.levels.length > 0 ? c.levels[0].id : null);
+                }}
+                className={`px-4 py-2 rounded-lg font-bold text-sm transition-colors ${activeType === c.title ? 'bg-white text-indigo-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}
+              >
+                {c.title}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="space-y-6">

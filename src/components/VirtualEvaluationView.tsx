@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Target, CheckCircle, XCircle, ArrowRight, Play, BookOpen, Save, RefreshCw, AlertCircle } from 'lucide-react';
-import { curriculumLevels } from '../data/curriculum';
+import { getCurriculumForType } from '../data/curriculumSelector';
 import { dbAdmin } from '../lib/db';
 import { VirtualQuestion } from '../types';
 import { useBrand } from '../hooks/useBrand';
@@ -11,7 +11,13 @@ interface Props {
 }
 
 export function VirtualEvaluationView({ levelId }: Props) {
-  const level = curriculumLevels.find(l => l.id === levelId);
+  // Combine all curriculums to find the level ID
+  const allLevels = [
+    ...getCurriculumForType('adulto'),
+    ...getCurriculumForType('niño'),
+    ...getCurriculumForType('adolescente')
+  ];
+  const level = allLevels.find(l => l.id === levelId);
   const questions = level?.virtualEvaluation || [];
 
   const [studentName, setStudentName] = useState(() => {
@@ -29,6 +35,8 @@ export function VirtualEvaluationView({ levelId }: Props) {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [inputValue, setInputValue] = useState('');
+  const [isChecked, setIsChecked] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
   
   const { brand } = useBrand();
   const displayBrandName = studentType === 'niño' ? 'Maven English for kids' : studentType === 'adolescente' ? 'Maven English for teens' : brand.name;
@@ -111,11 +119,20 @@ export function VirtualEvaluationView({ levelId }: Props) {
              setCurrentQuestionIdx(0);
              setAnswers({});
              setInputValue('');
+             setIsChecked(false);
          }
          setIsLoadingProgress(false);
          setHasStarted(true);
       });
     }
+  };
+
+  const handleCheck = () => {
+      const currentQ = questions[currentQuestionIdx];
+      const userAnswer = inputValue.trim().toLowerCase();
+      const correct = currentQ.correctAnswer.toLowerCase();
+      setIsCorrect(userAnswer === correct);
+      setIsChecked(true);
   };
 
   const handleNext = () => {
@@ -135,6 +152,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
       // clear input for next or load if answered
       const nextQ = questions[currentQuestionIdx + 1];
       setInputValue(newAnswers[nextQ.id] || '');
+      setIsChecked(false);
     } else {
       finishExam(newAnswers);
     }
@@ -250,6 +268,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
                       setCurrentQuestionIdx(0);
                       setAnswers({});
                       setInputValue('');
+                      setIsChecked(false);
                   }}
                   className="w-full bg-amber-500 text-white font-bold text-lg py-4 rounded-xl shadow-md hover:bg-amber-600 transition-all mb-4 flex items-center justify-center gap-2"
                 >
@@ -407,24 +426,44 @@ export function VirtualEvaluationView({ levelId }: Props) {
                    {/* Options / Input */}
                    {q.options && q.options.length > 0 ? (
                        <div className="space-y-4">
-                           {q.options.map(opt => (
+                           {q.options.map(opt => {
+                               let optStateClass = '';
+                               let circleStateClass = '';
+                               if (isChecked) {
+                                   if (opt.toLowerCase() === q.correctAnswer.toLowerCase()) {
+                                       optStateClass = 'border-emerald-500 bg-emerald-50 text-emerald-900 shadow-md';
+                                       circleStateClass = 'border-emerald-500 bg-emerald-500';
+                                   } else if (inputValue === opt) {
+                                       optStateClass = 'border-rose-500 bg-rose-50 text-rose-900';
+                                       circleStateClass = 'border-rose-500 bg-rose-500';
+                                   } else {
+                                       optStateClass = 'border-slate-100 bg-white text-gray-400 opacity-60';
+                                       circleStateClass = 'border-gray-200 bg-gray-50';
+                                   }
+                               } else {
+                                   if (inputValue === opt) {
+                                       optStateClass = 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-md';
+                                       circleStateClass = 'border-indigo-600 bg-indigo-600';
+                                   } else {
+                                       optStateClass = 'border-slate-100 bg-white text-gray-600 hover:border-indigo-300 hover:bg-indigo-50/30 hover:text-indigo-800';
+                                       circleStateClass = 'border-gray-300 group-hover:border-indigo-400';
+                                   }
+                               }
+
+                               return (
                                <button 
                                    key={opt}
-                                   onClick={() => setInputValue(opt)}
-                                   className={`w-full text-left p-5 rounded-2xl border-2 transition-all font-bold text-lg flex items-center gap-4 group ${
-                                       inputValue === opt 
-                                           ? 'border-indigo-600 bg-indigo-50 text-indigo-900 shadow-md' 
-                                           : 'border-slate-100 bg-white text-gray-600 hover:border-indigo-300 hover:bg-indigo-50/30 hover:text-indigo-800'
-                                   }`}
+                                   onClick={() => !isChecked && setInputValue(opt)}
+                                   disabled={isChecked}
+                                   className={`w-full text-left p-5 rounded-2xl border-2 transition-all font-bold text-lg flex items-center gap-4 group ${optStateClass}`}
                                >
-                                   <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 ${
-                                       inputValue === opt ? 'border-indigo-600 bg-indigo-600' : 'border-gray-300 group-hover:border-indigo-400'
-                                   }`}>
-                                       {inputValue === opt && <div className="w-2 h-2 bg-white rounded-full"></div>}
+                                   <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 ${circleStateClass}`}>
+                                       {(inputValue === opt || (isChecked && opt.toLowerCase() === q.correctAnswer.toLowerCase())) && <div className="w-2 h-2 bg-white rounded-full"></div>}
                                    </div>
                                    {opt}
                                </button>
-                           ))}
+                               );
+                           })}
                        </div>
                    ) : (
                        <div>
@@ -433,14 +472,32 @@ export function VirtualEvaluationView({ levelId }: Props) {
                                value={inputValue}
                                onChange={(e) => setInputValue(e.target.value)}
                                placeholder="Escribe tu respuesta aquí..."
-                               className="w-full px-6 py-5 border-2 border-slate-200 rounded-2xl focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none transition-all font-bold text-xl text-center bg-slate-50 focus:bg-white placeholder-gray-400"
+                               disabled={isChecked}
+                               className="w-full px-6 py-5 border-2 border-slate-200 rounded-2xl focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 outline-none transition-all font-bold text-xl text-center bg-slate-50 focus:bg-white placeholder-gray-400 disabled:bg-gray-100 disabled:text-gray-600"
                                onKeyDown={(e) => {
                                  if (e.key === 'Enter' && inputValue.trim() !== '') {
-                                     handleNext();
+                                     if (isChecked) handleNext();
+                                     else handleCheck();
                                  }
                                }}
                                autoFocus
                            />
+                       </div>
+                   )}
+
+                   {isChecked && (
+                       <div className={`mt-8 p-5 rounded-2xl border-2 flex items-center gap-4 ${isCorrect ? 'bg-emerald-50 border-emerald-200 text-emerald-800' : 'bg-rose-50 border-rose-200 text-rose-800'}`}>
+                           {isCorrect ? <CheckCircle className="w-8 h-8 text-emerald-500 shrink-0" /> : <XCircle className="w-8 h-8 text-rose-500 shrink-0" />}
+                           <div>
+                               <span className="font-bold text-lg block">
+                                   {isCorrect ? '¡Correcto!' : 'Incorrecto'}
+                               </span>
+                               {!isCorrect && (
+                                   <span className="text-sm font-medium opacity-90 mt-1 block">
+                                       La respuesta correcta es: <span className="font-black">{q.correctAnswer}</span>
+                                   </span>
+                               )}
+                           </div>
                        </div>
                    )}
                </div>
@@ -449,10 +506,10 @@ export function VirtualEvaluationView({ levelId }: Props) {
                <div className="mt-8 flex justify-end">
                    <button 
                        disabled={inputValue.trim() === '' || isSubmitting}
-                       onClick={handleNext}
+                       onClick={isChecked ? handleNext : handleCheck}
                        className="bg-indigo-900 disabled:bg-slate-300 disabled:text-slate-500 text-white font-extrabold text-lg px-10 py-5 rounded-2xl shadow-lg hover:bg-indigo-800 hover:shadow-xl hover:-translate-y-1 transition-all flex items-center gap-3"
                    >
-                       {isSubmitting ? 'Guardando...' : (currentQuestionIdx === questions.length - 1 ? 'Terminar Evaluación' : 'Siguiente')}
+                       {isSubmitting ? 'Guardando...' : (isChecked ? (currentQuestionIdx === questions.length - 1 ? 'Terminar Evaluación' : 'Siguiente') : 'Comprobar')}
                        {!isSubmitting && <ArrowRight className="w-6 h-6" />}
                    </button>
                </div>

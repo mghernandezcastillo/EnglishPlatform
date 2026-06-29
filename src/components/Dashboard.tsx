@@ -6,6 +6,7 @@ import { studentConfig, avatars } from '../config';
 import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
 import { getCurriculumForType } from '../data/curriculumSelector';
+import { useCurriculum } from '../hooks/useCurriculum';
 import { PresentationViewer } from './PresentationViewer';
 import { useBrand } from '../hooks/useBrand';
 
@@ -23,13 +24,19 @@ interface DashboardProps {
 }
 
 export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenSpeakingPractice }: DashboardProps) {
-  const curriculumLevels = getCurriculumForType(studentType);
+  const { curriculumLevels, loading } = useCurriculum(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
   const [activeLibraryCategoryTitle, setActiveLibraryCategoryTitle] = useState<string>('');
-  const [expandedLevel, setExpandedLevel] = useState<string | null>(curriculumLevels[0].id);
+  const [expandedLevel, setExpandedLevel] = useState<string | null>(null);
   const [presentingClass, setPresentingClass] = useState<CurriculumClass | null>(null);
   const { brand } = useBrand();
+
+  useEffect(() => {
+    if (!expandedLevel && curriculumLevels.length > 0) {
+      setExpandedLevel(curriculumLevels[0].id);
+    }
+  }, [curriculumLevels, expandedLevel]);
 
   // Flatten curriculum classes to calculate next lesson
   const allCurriculumClasses = curriculumLevels.flatMap(level => level.classes.map(cls => ({...cls, levelId: level.id})));
@@ -390,10 +397,10 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                         )}
 
                         {/* Evaluations UI for Students */}
-                        {(level.oralEvaluation || level.virtualEvaluation) && (
+                        {(level.oralEvaluation || level.virtualEvaluation !== undefined) && (
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                               {/* Oral Evaluation */}
-                              {level.oralEvaluation && (
+                              {(level.oralEvaluation && level.oralEvaluation.length > 0) && (
                                   <div className="bg-amber-50 rounded-2xl border border-amber-200 p-5 shadow-sm flex flex-col">
                                       <div>
                                           <div className="flex items-center gap-2 mb-4">
@@ -432,8 +439,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                               )}
 
                               {/* Virtual Evaluation Link */}
-                              {level.virtualEvaluation && (
-                                  <div className="bg-emerald-50 rounded-2xl border border-emerald-200 p-5 shadow-sm flex flex-col items-start justify-between">
+                              <div className="bg-emerald-50 rounded-2xl border border-emerald-200 p-5 shadow-sm flex flex-col items-start justify-between">
                                       <div className="w-full">
                                           <div className="flex items-center gap-2 mb-4">
                                               <div className="bg-emerald-100 p-2 rounded-lg">
@@ -466,7 +472,6 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                                           </button>
                                       </div>
                                   </div>
-                              )}
                           </div>
                         )}
                       </div>
