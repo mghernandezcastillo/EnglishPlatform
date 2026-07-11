@@ -415,7 +415,7 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
                 <div className={`px-8 py-16 relative overflow-hidden ${(isKid || isTeen) ? '' : 'bg-gradient-to-br from-indigo-500 to-purple-600'}`}>
                    {(isKid || isTeen) && (
                      <div className="absolute inset-0 bg-blue-900">
-                       <img src={isTeen ? imgTeenWelcome : imgKidWelcome} alt={isTeen ? "Teens Welcome" : "Kids Welcome"} className="absolute inset-0 w-full h-full object-cover opacity-70" />
+                       <img referrerPolicy="no-referrer" src={isTeen ? imgTeenWelcome : imgKidWelcome} alt={isTeen ? "Teens Welcome" : "Kids Welcome"} className="absolute inset-0 w-full h-full object-cover opacity-70" />
                        <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent"></div>
                      </div>
                    )}
@@ -428,7 +428,7 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
                    )}
                    <div className="relative z-10">
                      <div className="mx-auto w-32 h-32 bg-white/20 backdrop-blur-lg rounded-full flex items-center justify-center p-3 mb-6 shadow-2xl border-2 border-white/40">
-                        <img src={displayAvatarUrl} alt="Avatar" className="w-full h-full rounded-full object-cover bg-white rotate-6" />
+                        <img referrerPolicy="no-referrer" src={displayAvatarUrl} alt="Avatar" className="w-full h-full rounded-full object-cover bg-white rotate-6" />
                      </div>
                      <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 tracking-tight drop-shadow-md">
                        ¡Bienvenida, {displayStudentName}!
@@ -462,7 +462,7 @@ export function Assessment({ progress, onClose }: AssessmentProps) {
                 className="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-100 flex flex-col sm:flex-row"
               >
                 <div className="sm:w-2/5 md:w-1/2 relative bg-gray-100 overflow-hidden min-h-[250px] sm:min-h-full">
-                   <img 
+                   <img referrerPolicy="no-referrer" 
                      src={currentQuestion.image} 
                      alt="Question Context" 
                      className="absolute inset-0 w-full h-full object-cover" 

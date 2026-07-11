@@ -1,8 +1,21 @@
-                "description": "¡Muéstrame 5 deditos rápidos!",
-        "description": "¡Vamos a participar y descubrir nuestros videojuegos favoritos!",
-                "description": "¡Corre a abrazar tu videojuego favorito!",
-                "description": "¡Enséñame tu lápiz o crayón favorito!",
-                "description": "¡Haz el sonido de tu animal de granja favorito!",
-                "description": "¡Finge que empujas el carrito de compras!",
-                "description": "Veamos qué meteremos en el carrito.",
-                "description": "¡Empareja tu pasatiempo favorito!",
+1:2711:        "id": "c-bz-10",
+2-2712-        "title": "Clase 10: Direcciones y Preposiciones de Lugar",
+3-2713-        "description": "Cómo dar direcciones de calles y conocer dónde se ubican los objetos.",
+4-2714-        "sections": [
+5-2715-          {
+6-2716-            "id": "s1",
+7-2717-            "title": "1. Warm-up",
+8-2718-            "duration": "5 minutos",
+9-2719-            "objective": "Activar el pensamiento espacial.",
+10-2720-            "slides": [
+11-2721-              {
+12-2722-                "id": "Diapositiva 1",
+13-2723-                "title": "Welcome! Where are you going?",
+14-2724-                "description": "Let's talk about locations.",
+15-2725-                "content": [
+16-2726-                  "How do you go to the supermarket?",
+17-2727-                  "Do you use maps?"
+18-2728-                ],
+19-2729-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
+20-2730-                "imageUrl": "/images/directions_ask.jpg"
+21-2731-              }

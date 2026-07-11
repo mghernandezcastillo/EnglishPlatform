@@ -301,7 +301,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
         
         <div className="bg-white rounded-[2rem] shadow-xl w-full max-w-md p-8 sm:p-10 border border-white/20 backdrop-blur-sm z-10 text-center">
             {brand.logoUrl ? (
-                <img src={brand.logoUrl} alt={displayBrandName} className="w-20 h-20 object-contain rounded-2xl mx-auto mb-6 shadow-sm" />
+                <img referrerPolicy="no-referrer" src={brand.logoUrl} alt={displayBrandName} className="w-20 h-20 object-contain rounded-2xl mx-auto mb-6 shadow-sm" />
             ) : (
                 <div className="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mx-auto mb-6 transform rotate-3">
                     <BookOpen className="w-8 h-8 text-indigo-600" />

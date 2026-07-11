@@ -1,0 +1,25 @@
+urls=(
+  "https://images.unsplash.com/photo-1434030216411-0b793f4b4173"
+  "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04"
+  "https://images.unsplash.com/photo-1456324504439-367cee3b3c32"
+  "https://images.unsplash.com/photo-1461896836934-ffe607ba8211"
+  "https://images.unsplash.com/photo-1485846234645-a62644f84728"
+  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce"
+  "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0"
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+  "https://images.unsplash.com/photo-1498837167922-ddd27525d352"
+  "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d"
+  "https://images.unsplash.com/photo-1502691876148-a84978e59af8"
+  "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb"
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+  "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+  "https://images.unsplash.com/photo-1506784983877-45594efa4cbe"
+  "https://images.unsplash.com/photo-1506869640319-fea1a2ab8e10"
+  "https://images.unsplash.com/photo-1509228468518-180dd4864904"
+  "https://images.unsplash.com/photo-1511512578047-dfb367046420"
+  "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6"
+  "https://images.unsplash.com/photo-1512295767273-ac109ac3acfa"
+)
+for url in "${urls[@]}"; do
+  echo "$url: $(curl -s -o /dev/null -w "%{http_code}" "$url")"
+done

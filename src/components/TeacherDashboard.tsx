@@ -132,7 +132,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                       onClick={() => setSelectedStudent({...selectedStudent, avatar_id: id})}
                                       className={`w-16 h-16 shrink-0 rounded-full border-2 overflow-hidden transition-all ${isSelected ? 'border-indigo-600 scale-110 shadow-md' : 'border-transparent opacity-70 hover:opacity-100'}`}
                                     >
-                                      <img src={url} alt={id} className="w-full h-full object-cover" />
+                                      <img referrerPolicy="no-referrer" src={url} alt={id} className="w-full h-full object-cover" />
                                     </button>
                                  )
                               })}
@@ -162,7 +162,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                  ) : (
                     <div className="w-full flex flex-col md:flex-row items-center gap-6 justify-between">
                         <div className="flex flex-col md:flex-row items-center gap-6">
-                            <img src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
+                            <img referrerPolicy="no-referrer" src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
                             <div>
                                 <div className="flex items-center gap-3">
                                    <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
@@ -292,7 +292,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
       <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col items-start gap-6">
         <div className="flex items-center gap-4 w-full justify-between flex-wrap">
            <div className="flex items-center gap-4">
-             {brand.logoUrl && <img src={brand.logoUrl} alt={brand.name} className="w-12 h-12 object-contain rounded-xl" />}
+             {brand.logoUrl && <img referrerPolicy="no-referrer" src={brand.logoUrl} alt={brand.name} className="w-12 h-12 object-contain rounded-xl" />}
              <div>
                <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">Panel de Profesor</h1>
                <p className="text-gray-500 mt-1">Gestiona estudiantes, grupos y supervisa su progreso.</p>
@@ -392,7 +392,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                 onClick={() => setNewStudent({...newStudent, avatar_id: id})}
                                 className={`w-12 h-12 shrink-0 rounded-full border-2 overflow-hidden transition-all ${isSelected ? 'border-indigo-600 scale-110 shadow-md' : 'border-transparent opacity-70 hover:opacity-100'}`}
                               >
-                                <img src={url} alt={id} className="w-full h-full object-cover" />
+                                <img referrerPolicy="no-referrer" src={url} alt={id} className="w-full h-full object-cover" />
                               </button>
                            )
                         })}
@@ -409,7 +409,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
             {students.map(st => (
               <div key={st.id} onClick={() => setSelectedStudent(st)} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="flex items-center gap-4 mb-4">
-                  <img src={avatars[st.avatar_id as keyof typeof avatars] || avatars.female} className="w-16 h-16 rounded-full object-cover border-2 border-indigo-100" />
+                  <img referrerPolicy="no-referrer" src={avatars[st.avatar_id as keyof typeof avatars] || avatars.female} className="w-16 h-16 rounded-full object-cover border-2 border-indigo-100" />
                   <div>
                     <h3 className="font-bold text-lg text-gray-900">{st.name}</h3>
                     <div className="flex gap-2 mt-1">
@@ -550,7 +550,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                <label className="block text-sm font-bold text-gray-700 mb-2">URL del Logo (Public / HTTP)</label>
                <div className="flex items-center gap-4">
                  {editingBrand.logoUrl && (
-                   <img src={editingBrand.logoUrl} alt="Logo Preview" className="w-16 h-16 object-contain border border-gray-200 rounded-xl" />
+                   <img referrerPolicy="no-referrer" src={editingBrand.logoUrl} alt="Logo Preview" className="w-16 h-16 object-contain border border-gray-200 rounded-xl" />
                  )}
                  <input 
                    type="text" 

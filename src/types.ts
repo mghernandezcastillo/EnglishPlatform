@@ -49,7 +49,7 @@ export interface UserProgress {
 export interface ClassSlide {
   id: string;
   title: string;
-  description: string;
+  description?: string;
   content?: string[];
   imageUrl?: string;
   bgColor?: string;

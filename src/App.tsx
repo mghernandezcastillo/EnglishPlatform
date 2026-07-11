@@ -5,6 +5,7 @@ import { LessonPlayer } from './components/LessonPlayer';
 import { Assessment } from './components/Assessment';
 import { FloatingControls } from './components/FloatingControls';
 import { SpeakingPractice } from './components/SpeakingPractice';
+import { StoryForge } from './components/StoryForge';
 import { RoleSelection } from './components/RoleSelection';
 import { TeacherDashboard } from './components/TeacherDashboard';
 import { VirtualEvaluationView } from './components/VirtualEvaluationView';
@@ -63,7 +64,7 @@ export default function App() {
     setIsLoaded(true);
   }, [role]);
 
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'speaking_practice'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'speaking_practice' | 'story_forge'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
   // Save progress when it changes
@@ -149,6 +150,10 @@ export default function App() {
 
   const handleOpenAssessment = () => {
     setCurrentView('assessment');
+  };
+
+  const handleOpenStoryForge = () => {
+    setCurrentView('story_forge');
   };
 
   const handleOpenSpeakingPractice = () => {
@@ -375,6 +380,8 @@ export default function App() {
         />
       ) : currentView === 'assessment' ? (
         <Assessment progress={progress} onClose={handleCloseAssessment} />
+      ) : currentView === 'story_forge' ? (
+        <StoryForge onClose={() => setCurrentView('dashboard')} />
       ) : currentView === 'speaking_practice' ? (
         <SpeakingPractice onClose={() => setCurrentView('dashboard')} />
       ) : (
@@ -389,6 +396,7 @@ export default function App() {
           onToggleClass={handleToggleClass}
           onOpenAssessment={handleOpenAssessment}
           onOpenSpeakingPractice={handleOpenSpeakingPractice}
+          onOpenStoryForge={handleOpenStoryForge}
         />
       )}
       <FloatingControls />

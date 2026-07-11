@@ -26,7 +26,7 @@ export function RoleSelection({ onSelectTeacher }: RoleSelectionProps) {
     <div className="min-h-[80vh] flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-gray-100 text-center">
         {brand.logoUrl && (
-           <img src={brand.logoUrl} alt={brand.name} className="w-24 h-24 object-contain rounded-xl shadow-sm mx-auto mb-6" />
+           <img referrerPolicy="no-referrer" src={brand.logoUrl} alt={brand.name} className="w-24 h-24 object-contain rounded-xl shadow-sm mx-auto mb-6" />
         )}
         <h1 className="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">Acceso Profesor</h1>
         <h2 className="text-xl text-gray-500 mb-8">{brand.name}</h2>

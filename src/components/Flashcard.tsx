@@ -31,7 +31,7 @@ export function Flashcard({ item }: FlashcardProps) {
         <div className="absolute inset-0 backface-hidden bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden flex flex-col border-4 border-white">
           <div className={`h-[65%] relative bg-gradient-to-br ${gradient} flex items-center justify-center overflow-hidden`}>
             {item.imageUrl && !imgError && (
-              <img 
+              <img referrerPolicy="no-referrer" 
                 src={item.imageUrl} 
                 alt={item.word} 
                 className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50"

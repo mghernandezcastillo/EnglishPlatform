@@ -9,6 +9,7 @@ import { getCurriculumForType } from '../data/curriculumSelector';
 import { useCurriculum } from '../hooks/useCurriculum';
 import { PresentationViewer } from './PresentationViewer';
 import { useBrand } from '../hooks/useBrand';
+import { PreClassAssessment } from './PreClassAssessment';
 
 interface DashboardProps {
   completedLessonIds: string[];
@@ -21,15 +22,17 @@ interface DashboardProps {
   onToggleClass?: (classId: string) => void;
   onOpenAssessment: () => void;
   onOpenSpeakingPractice: () => void;
+  onOpenStoryForge: () => void;
 }
 
-export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenSpeakingPractice }: DashboardProps) {
+export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenSpeakingPractice, onOpenStoryForge }: DashboardProps) {
   const { curriculumLevels, loading } = useCurriculum(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
   const [activeLibraryCategoryTitle, setActiveLibraryCategoryTitle] = useState<string>('');
   const [expandedLevel, setExpandedLevel] = useState<string | null>(null);
   const [presentingClass, setPresentingClass] = useState<CurriculumClass | null>(null);
+  const [evaluatingClass, setEvaluatingClass] = useState<{ id: string, title: string } | null>(null);
   const { brand } = useBrand();
 
   useEffect(() => {
@@ -76,7 +79,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
       {/* Brand Header */}
       <div className="flex items-center justify-center sm:justify-start gap-4 mb-8">
         {brand.logoUrl && (
-          <img src={brand.logoUrl} alt={brand.name} className={`w-12 h-12 md:w-16 md:h-16 object-contain shadow-sm ${isKid ? 'rounded-full border-4 border-cyan-300 transform -rotate-6 shadow-xl' : 'rounded-xl'}`} />
+          <img referrerPolicy="no-referrer" src={brand.logoUrl} alt={brand.name} className={`w-12 h-12 md:w-16 md:h-16 object-contain shadow-sm ${isKid ? 'rounded-full border-4 border-cyan-300 transform -rotate-6 shadow-xl' : 'rounded-xl'}`} />
         )}
         <h1 className={`text-2xl md:text-3xl font-black tracking-tight ${isKid ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 drop-shadow-sm font-extrabold text-4xl' : 'text-indigo-900'}`}>{displayBrandName}</h1>
       </div>
@@ -89,7 +92,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
             <div className="absolute bottom-[-10px] left-[20%] text-5xl opacity-20 transform -rotate-12">🚀</div>
           </>
         )}
-        <img src={displayAvatarUrl} alt={displayStudentName} className={`w-24 h-24 object-cover rounded-full shadow-md transform rotate-3 ${isKid ? 'border-4 border-yellow-400 w-32 h-32 shadow-yellow-200/50' : 'border-4 border-indigo-100'}`} />
+        <img referrerPolicy="no-referrer" src={displayAvatarUrl} alt={displayStudentName} className={`w-24 h-24 object-cover rounded-full shadow-md transform rotate-3 ${isKid ? 'border-4 border-yellow-400 w-32 h-32 shadow-yellow-200/50' : 'border-4 border-indigo-100'}`} />
         <div className="text-center sm:text-left flex-1 relative z-10">
           <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2 ${isKid ? 'bg-cyan-100 border-2 border-cyan-200' : 'bg-indigo-50'}`}>
              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
@@ -106,6 +109,15 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
              <div className="absolute inset-0 bg-white/20 hover:bg-transparent transition-colors"></div>
              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
                <span className="font-bold text-white tracking-wide">{isKid ? '🎤 ¡Vamos a Hablar!' : '🎙️ Práctica Speaking'}</span>
+             </div>
+          </button>
+          <button 
+             onClick={onOpenStoryForge}
+             className={`w-full sm:w-auto relative overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-105 active:scale-95 ${isKid ? 'bg-gradient-to-br from-fuchsia-400 to-pink-500 hover:shadow-fuchsia-300/50' : 'bg-gradient-to-br from-fuchsia-500 to-purple-600'}`}
+          >
+             <div className="absolute inset-0 bg-white/20 hover:bg-transparent transition-colors"></div>
+             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
+               <span className="font-bold text-white tracking-wide">{isKid ? '✨ ¡Crea un Cuento!' : '✨ StoryForge'}</span>
              </div>
           </button>
           <button 
@@ -382,9 +394,23 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                                   <h4 className="text-lg font-bold text-gray-800 mb-1 leading-tight pr-8">{cls.title}</h4>
                                   <p className="text-gray-500 text-sm flex-1">{cls.description}</p>
                                   
-                                  <div className={`mt-4 flex items-center font-semibold text-sm group ${isClassCompleted ? 'text-green-600' : 'text-indigo-600'}`}>
-                                    {isClassCompleted ? 'Repasar Clase' : 'Estudiar ahora'}
-                                    <Play className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+                                  <div className="mt-4 flex items-center justify-between">
+                                    <div className={`flex items-center font-semibold text-sm group ${isClassCompleted ? 'text-green-600' : 'text-indigo-600'}`}>
+                                      {isClassCompleted ? 'Repasar Clase' : 'Estudiar ahora'}
+                                      <Play className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+                                    </div>
+                                    {!isClassCompleted && (
+                                      <button
+                                        onClick={(e) => {
+                                          e.stopPropagation();
+                                          setEvaluatingClass({ id: cls.id, title: cls.title });
+                                        }}
+                                        className="text-xs font-bold text-gray-400 hover:text-indigo-600 flex items-center gap-1 transition-colors px-2 py-1 rounded-md hover:bg-indigo-50"
+                                        title="Hacer evaluación para exonerar esta clase"
+                                      >
+                                        <Sparkles className="w-3 h-3" /> Exonerar
+                                      </button>
+                                    )}
                                   </div>
                                 </motion.div>
                               );
@@ -493,6 +519,19 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
             onComplete={() => {
               onFinishClass(presentingClass.id);
               setPresentingClass(null);
+            }}
+          />
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {evaluatingClass && (
+          <PreClassAssessment
+            classId={evaluatingClass.id}
+            classTitle={evaluatingClass.title}
+            targetAudience={studentType || 'adulto'}
+            onClose={() => setEvaluatingClass(null)}
+            onPass={(passedClassId) => {
+              onFinishClass(passedClassId);
             }}
           />
         )}

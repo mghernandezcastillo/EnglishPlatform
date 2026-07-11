@@ -138,7 +138,7 @@ export function LessonPlayer({ lesson, onComplete, onExit }: LessonPlayerProps) 
                 {step.id === 'intro' && (
                    <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-gray-100 text-center">
                      {lesson.imageUrl ? (
-                       <img src={lesson.imageUrl} alt={lesson.title} className="w-full h-80 object-cover rounded-2xl mb-8 shadow-sm" />
+                       <img referrerPolicy="no-referrer" src={lesson.imageUrl} alt={lesson.title} className="w-full h-80 object-cover rounded-2xl mb-8 shadow-sm" />
                      ) : (
                        <Target className="w-12 h-12 text-indigo-400 mx-auto mb-6" />
                      )}

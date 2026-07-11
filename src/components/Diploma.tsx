@@ -69,7 +69,7 @@ export function Diploma({ studentName, levelName, score, total, brandName, logoU
 
           <div className="relative z-10 w-full flex flex-col items-center space-y-6">
             <div className="flex items-center justify-center gap-4 mb-4">
-              {logoUrl && <img src={logoUrl} crossOrigin="anonymous" alt="Logo" className="w-20 h-20 object-contain rounded-xl" />}
+              {logoUrl && <img referrerPolicy="no-referrer" src={logoUrl} crossOrigin="anonymous" alt="Logo" className="w-20 h-20 object-contain rounded-xl" />}
               <h1 className="text-4xl font-extrabold text-emerald-900 uppercase tracking-widest">{brandName}</h1>
             </div>
 

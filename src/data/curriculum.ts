@@ -1247,7 +1247,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Museum, Library"
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
-                "imageUrl": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/prep_between.jpg?v=3"
               },
               {
                 "id": "Diapositiva 3",
@@ -2727,7 +2727,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Do you use maps?"
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
-                "imageUrl": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/directions_ask.jpg?v=2"
               }
             ],
             "action": "Preguntar a los alumnos si usan mapas o piden direcciones habitualmente."
@@ -2739,27 +2739,76 @@ export const curriculumLevels: CurriculumLevel[] = [
             "objective": "Aprender preposiciones para objetos y verbos para dar direcciones.",
             "slides": [
               {
-                "id": "Diapositiva 2",
-                "title": "Prepositions of Place (1/2)",
-                "description": "Dónde están las cosas",
+                "id": "slide-prep-in",
+                "title": "Preposition: IN",
+                "description": "Adentro de algo",
+                "type": "normal",
                 "content": [
-                  "IN: Adentro de algo (In the box)",
-                  "ON: Sobre una superficie (On the table)",
-                  "UNDER: Debajo de (Under the bed)"
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 3",
-                "title": "Prepositions of Place (2/2)",
-                "description": "Dónde están los lugares",
-                "content": [
-                  "NEXT TO: Al lado de (Next to the bank)",
-                  "BETWEEN: En medio de (Between the bank and school)",
-                  "ACROSS FROM: Enfrente de (Across from the park)"
+                  "IN: Adentro de algo",
+                  "Example: The cat is IN the box."
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
-                "imageUrl": "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/prep_in.jpg?v=2"
+              },
+              {
+                "id": "slide-prep-on",
+                "title": "Preposition: ON",
+                "description": "Sobre una superficie",
+                "type": "normal",
+                "content": [
+                  "ON: Sobre una superficie",
+                  "Example: The apple is ON the table."
+                ],
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "/images/prep_on.jpg?v=2"
+              },
+              {
+                "id": "slide-prep-under",
+                "title": "Preposition: UNDER",
+                "description": "Debajo de algo",
+                "type": "normal",
+                "content": [
+                  "UNDER: Debajo de",
+                  "Example: The dog is UNDER the bed/table."
+                ],
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "/images/prep_under.jpg?v=2"
+              },
+              {
+                "id": "slide-prep-next-to",
+                "title": "Preposition: NEXT TO",
+                "description": "Al lado de",
+                "type": "normal",
+                "content": [
+                  "NEXT TO: Al lado de",
+                  "Example: The coffee shop is NEXT TO the bank."
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-500 to-indigo-600",
+                "imageUrl": "/images/prep_next_to.jpg?v=2"
+              },
+              {
+                "id": "slide-prep-between",
+                "title": "Preposition: BETWEEN",
+                "description": "En medio de",
+                "type": "normal",
+                "content": [
+                  "BETWEEN: En medio de",
+                  "Example: The bridge is BETWEEN the two mountains/buildings."
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-500 to-indigo-600",
+                "imageUrl": "/images/prep_between.jpg?v=2"
+              },
+              {
+                "id": "slide-prep-across",
+                "title": "Preposition: ACROSS FROM",
+                "description": "Enfrente de (cruzando)",
+                "type": "normal",
+                "content": [
+                  "ACROSS FROM: Enfrente de",
+                  "Example: The park is ACROSS FROM the school."
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-500 to-indigo-600",
+                "imageUrl": "/images/prep_across.jpg?v=2"
               },
               {
                 "id": "Diapositiva 4",
@@ -2770,7 +2819,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Turn left (Gira a la izquierda)",
                   "Turn right (Gira a la derecha)"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "/images/directions_give.jpg?v=2"
               },
               {
                 "id": "Diapositiva 5",
@@ -2780,7 +2830,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Excuse me, where is the...? (Disculpe, ¿dónde está...?)",
                   "How do I get to...? (¿Cómo llego a...?)"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "/images/directions_ask.jpg?v=2"
               }
             ],
             "action": "Ejemplificar las preposiciones usando objetos a la mano y dibujar/mostrar un croquis para directions."
@@ -2799,14 +2850,15 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Excuse me, where is the bank?",
                   "- Go straight and turn left. It's next to the supermarket. It is across from the park."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
+                "imageUrl": "/images/directions_give.jpg?v=2"
               },
               {
                 "id": "Diapositiva 7",
                 "title": "Complete the sentence (1/3)",
                 "description": "Prepositions",
                 "content": [
-                  "The cat is sleeping ______ the bed. (debajo)"
+                  "The dog is sleeping ______ the table."
                 ],
                 "options": [
                   "in",
@@ -2814,14 +2866,15 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "under"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/prep_under.jpg?v=2"
               },
               {
                 "id": "Diapositiva 8",
                 "title": "Complete the sentence (2/3)",
                 "description": "Prepositions",
                 "content": [
-                  "The pharmacy is ______ the bank and the school."
+                  "The bridge is ______ the two mountains."
                 ],
                 "options": [
                   "next to",
@@ -2829,14 +2882,15 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "in"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/prep_between.jpg?v=2"
               },
               {
                 "id": "Diapositiva 9",
                 "title": "Complete the sentence (3/3)",
                 "description": "Directions",
                 "content": [
-                  "To get to the hospital, ______ straight for two blocks."
+                  "To get to the hospital, ______ straight."
                 ],
                 "options": [
                   "walks",
@@ -2844,7 +2898,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "turn"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/directions_give.jpg?v=2"
               },
               {
                 "id": "Diapositiva 10",
@@ -2855,7 +2910,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "2. The bank is between to the school.",
                   "3. Turn straight ahead."
                 ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
+                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500",
+                "imageUrl": "/images/directions_give.jpg?v=2"
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-7",
@@ -2871,7 +2927,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "It's raining outside.",
                   "The TV is broken."
                 ],
-                "correctOptionIndex": 0
+                "correctOptionIndex": 0,
+                "imageUrl": "/images/adults_c10_emoji.jpg?v=4"
               }
             ],
             "action": "Corregir errores de pronunciación, uso de in/on/under."
@@ -2890,14 +2947,15 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Tourist: 'Excuse me, where is the supermarket?'",
                   "You: Give directions using turn right/left, go straight, next to..."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "/images/directions_ask.jpg?v=2"
               },
               {
                 "id": "Diapositiva 12",
                 "title": "Fun Quiz! (1/4)",
                 "description": "Prepositions",
                 "content": [
-                  "The keys are ______ my pocket."
+                  "The cat is ______ the box."
                 ],
                 "options": [
                   "in",
@@ -2905,14 +2963,15 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "under"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/prep_in.jpg?v=2"
               },
               {
                 "id": "Diapositiva 13",
                 "title": "Fun Quiz! (2/4)",
                 "description": "Prepositions",
                 "content": [
-                  "The picture is ______ the wall."
+                  "The apple is ______ the table."
                 ],
                 "options": [
                   "in",
@@ -2920,7 +2979,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "next to"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/prep_on.jpg?v=2"
               },
               {
                 "id": "Diapositiva 14",
@@ -2935,14 +2995,15 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Look"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/directions_give.jpg?v=2"
               },
               {
                 "id": "Diapositiva 15",
                 "title": "Fun Quiz! (4/4)",
                 "description": "Locations",
                 "content": [
-                  "The museum is ______ the park. (enfrente de)"
+                  "The park is ______ the school."
                 ],
                 "options": [
                   "next to",
@@ -2950,7 +3011,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "across from"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/prep_across.jpg?v=2"
               }
             ],
             "action": "Jugar 'Turista Perdido' y evaluar preposiciones."
@@ -2970,7 +3032,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "You know prepositions of place."
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/teens_complete.jpg?v=2"
               },
               {
                 "id": "Diapositiva 17",
@@ -2980,7 +3042,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Write directions from your house to a near park or store.",
                   "Example: Go out, turn left, go straight... It is next to the bakery."
                 ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "/images/adults_c10_homework.jpg?v=4"
               },
               {
                 "id": "Diapositiva-Video-Homework-10",
@@ -2992,7 +3055,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Identify at least 3 new phrases you understood from the video.",
                   "Write them down for the next class."
                 ],
-                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900"
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "/images/adults_c10_video.jpg?v=4"
               }
             ],
             "action": "Celebrar la finalización del nivel 1 y asignar tarea."
@@ -3596,18 +3660,48 @@ export const curriculumLevels: CurriculumLevel[] = [
             "objective": "Romper el hielo.",
             "slides": [
               {
-                "id": "Diapositiva 1",
-                "title": "Welcome! Where are you from?",
+                "id": "slide-1",
+                "title": "Welcome! Where are you from? 🌎",
                 "description": "Let's travel the world.",
                 "content": [
                   "Where were you born?",
                   "Have you visited other countries?"
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
-                "imageUrl": "https://images.unsplash.com/photo-1526778548025-fa2fbf847c0c?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-2",
+                "title": "Icebreaker! 🧊",
+                "description": "Warm-up Activity",
+                "type": "spinning-wheel",
+                "wheelItems": [
+                  {"label": "Dream travel destination?", "color": "#EF4444"},
+                  {"label": "Favorite foreign food?", "color": "#3B82F6"},
+                  {"label": "Have a passport?", "color": "#10B981"},
+                  {"label": "Languages you want to learn?", "color": "#F59E0B"},
+                  {"label": "Best country for vacation?", "color": "#8B5CF6"}
+                ],
+                "content": [
+                  "Spin the wheel and share with the class!"
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-500",
+                "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-3",
+                "title": "Objectives 🎯",
+                "description": "Today we will...",
+                "content": [
+                  "✔️ Learn vocabulary for countries.",
+                  "✔️ Learn nationalities.",
+                  "✔️ Ask and answer where people are from."
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Hacer un sondeo rápido de los países de origen o que les gustaría visitar."
+            "action": "Participar activamente."
           },
           {
             "id": "s2",
@@ -3616,51 +3710,74 @@ export const curriculumLevels: CurriculumLevel[] = [
             "objective": "Presentar vocabulario de países y el verbo To Be para origen.",
             "slides": [
               {
-                "id": "Diapositiva 2",
-                "title": "Countries & Nationalities (1)",
-                "description": "Países y Nacionalidades",
+                "id": "slide-4",
+                "title": "Countries & Nationalities (1) 🗺️",
+                "description": "Vocabulary",
                 "content": [
                   "Mexico -> Mexican",
                   "The United States -> American",
-                  "Canada -> Canadian"
+                  "Canada -> Canadian",
+                  "Brazil -> Brazilian"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
               },
               {
-                "id": "Diapositiva 3",
-                "title": "Countries & Nationalities (2)",
-                "description": "Países y Nacionalidades",
+                "id": "slide-5",
+                "title": "Countries & Nationalities (2) 🗼",
+                "description": "Vocabulary",
                 "content": [
                   "Spain -> Spanish",
                   "Japan -> Japanese",
-                  "Brazil -> Brazilian"
+                  "Italy -> Italian",
+                  "France -> French"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
               },
               {
-                "id": "Diapositiva 4",
-                "title": "Verb To Be + From",
+                "id": "slide-6",
+                "title": "Verb To Be + From ✈️",
                 "description": "Origin",
                 "content": [
                   "I am from Mexico. (Soy de México)",
                   "She is from Spain. (Ella es de España)",
-                  "They are from Japan."
+                  "They are from Japan. (Ellos son de Japón)"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
               },
               {
-                "id": "Diapositiva 5",
-                "title": "Asking for Origin",
+                "id": "slide-7",
+                "title": "Verb To Be + Nationality 🛂",
+                "description": "Nationality",
+                "content": [
+                  "I am Mexican. (Soy mexicano)",
+                  "She is Spanish. (Ella es española)",
+                  "They are Japanese. (Ellos son japoneses)"
+                ],
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-blue-700",
+                "imageUrl": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
+              },
+              {
+                "id": "slide-8",
+                "title": "Asking for Origin 🗣️",
                 "description": "Questions",
                 "content": [
-                  "Where are you from?",
-                  "Where is he/she from?",
-                  "What is your nationality?"
+                  "Where are you from? -> I am from Canada.",
+                  "Where is he from? -> He is from Brazil.",
+                  "What is your nationality? -> I am Canadian."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-500 to-indigo-600",
+                "imageUrl": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
               }
             ],
-            "action": "Hacer hincapié en que las nacionalidades en inglés siempre van con mayúscula."
+            "action": "Tomar apuntes de las reglas."
           },
           {
             "id": "s3",
@@ -3669,19 +3786,22 @@ export const curriculumLevels: CurriculumLevel[] = [
             "objective": "Fijar estructuras mediante ejercicios.",
             "slides": [
               {
-                "id": "Diapositiva 6",
-                "title": "Reading Practice",
-                "description": "Lee en voz alta:",
+                "id": "slide-9",
+                "title": "Reading Practice 📖",
+                "description": "Context",
                 "content": [
-                  "A: Where are you from?",
-                  "B: I am from Italy. I am Italian.",
-                  "A: Oh, nice! My friend is from Italy too."
+                  "A: Hi! I am Lisa. Where are you from?",
+                  "B: Hello Lisa. I am Marco. I am from Italy. I am Italian.",
+                  "A: Oh, nice! Are you from Rome?",
+                  "B: Yes, I am. And you?",
+                  "A: I am from the United States. I am American."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
+                "imageUrl": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 7",
-                "title": "Complete the sentence (1/3)",
+                "id": "slide-10",
+                "title": "Complete the sentence (1/3) ✍️",
                 "description": "Origin",
                 "content": [
                   "I ______ from Canada."
@@ -3692,191 +3812,192 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "are"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "https://images.unsplash.com/photo-1473625247510-8ceb1760943f?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 8",
-                "title": "Complete the sentence (2/3)",
-                "description": "Nationalities",
+                "id": "slide-11",
+                "title": "Complete the sentence (2/3) ✍️",
+                "description": "Nationality",
                 "content": [
-                  "He is from Japan. He is ______."
+                  "She is from Japan. She is ______."
                 ],
                 "options": [
                   "Japan",
-                  "Japanese",
-                  "Japanian"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 9",
-                "title": "Complete the sentence (3/3)",
-                "description": "Questions",
-                "content": [
-                  "______ are you from?"
-                ],
-                "options": [
-                  "What",
-                  "How",
-                  "Where"
+                  "Japanian",
+                  "Japanese"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-red-500 to-orange-600",
+                "imageUrl": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 10",
-                "title": "Find the mistake",
-                "description": "Can you fix these sentences?",
+                "id": "slide-12",
+                "title": "Complete the sentence (3/3) ✍️",
+                "description": "Question",
                 "content": [
-                  "1. I am from mexican.",
-                  "2. Where you are from?",
-                  "3. she is spanish."
+                  "Where ______ you from?"
                 ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
-              },
-              {
-                "id": "Diapositiva-Emoji-Auto-13",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 13)",
-                "type": "emoji-game",
-                "content": [
-                  "👨 ➕ 🇯🇵"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
                 "options": [
-                  "He is Japanese.",
-                  "He is from China.",
-                  "He likes sushi."
+                  "are",
+                  "is",
+                  "am"
                 ],
-                "correctOptionIndex": 0
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-orange-500 to-red-600",
+                "imageUrl": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-13",
+                "title": "Emojis Locos 🤪",
+                "description": "Guess the meaning!",
+                "type": "emoji-game",
+                "content": ["👩 ➕ ➡️ ➕ 🗼"],
+                "options": [
+                  "She is from Brazil.",
+                  "She is from Japan.",
+                  "She is from France."
+                ],
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Resolver los ejercicios y aclarar dudas sobre el verbo to be."
+            "action": "Responder los ejercicios."
           },
           {
             "id": "s4",
             "title": "4. Production & Quiz",
             "duration": "15 minutos",
-            "objective": "Aplicar lo aprendido en interacción real.",
+            "objective": "Uso libre y evaluación.",
             "slides": [
               {
-                "id": "Diapositiva 11",
-                "title": "Role Play: International Conference",
-                "description": "Simulación",
-                "content": [
-                  "Person A: Ask Person B where they are from.",
-                  "Person B: Answer with a fake country and nationality.",
-                  "Swap roles."
+                "id": "slide-14",
+                "title": "Let's Talk! 🗣️",
+                "description": "Discussion",
+                "type": "spinning-wheel",
+                "wheelItems": [
+                  {"label": "Are you from Mexico?", "color": "#EF4444"},
+                  {"label": "Is your teacher American?", "color": "#3B82F6"},
+                  {"label": "Are you Spanish?", "color": "#10B981"},
+                  {"label": "Where is pizza from?", "color": "#F59E0B"},
+                  {"label": "Where is sushi from?", "color": "#8B5CF6"}
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "content": [
+                  "Ask your classmates these questions!"
+                ],
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 12",
-                "title": "Fun Quiz! (1/4)",
-                "description": "Nationalities",
+                "id": "slide-15",
+                "title": "Fun Quiz! (1/3)",
+                "description": "Vocabulary Check",
                 "content": [
-                  "If someone is from the US, they are:"
+                  "A person from the United States is..."
                 ],
                 "options": [
-                  "United Statesian",
+                  "United Statian",
                   "American",
-                  "US citizen"
+                  "English"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 13",
-                "title": "Fun Quiz! (2/4)",
-                "description": "Verbs",
+                "id": "slide-16",
+                "title": "Fun Quiz! (2/3)",
+                "description": "Grammar Check",
                 "content": [
                   "They ______ from Brazil."
                 ],
                 "options": [
-                  "is",
                   "am",
+                  "is",
                   "are"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 14",
-                "title": "Fun Quiz! (3/4)",
-                "description": "Questions",
+                "id": "slide-17",
+                "title": "Fun Quiz! (3/3)",
+                "description": "Comprehension Check",
                 "content": [
-                  "______ is she from?"
+                  "How do you ask someone's origin?"
                 ],
                 "options": [
-                  "Where",
-                  "What",
-                  "Who"
+                  "Where are you from?",
+                  "How are you from?",
+                  "What are you from?"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-purple-600 to-fuchsia-700",
+                "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 15",
-                "title": "Fun Quiz! (4/4)",
-                "description": "Capitalization",
+                "id": "slide-18",
+                "title": "Roleplay 🎭",
+                "description": "International Conference",
                 "content": [
-                  "Which sentence is correct?"
+                  "Student A: You are from a different country.",
+                  "Student B: Ask Student A where they are from and their nationality.",
+                  "Then swap roles!"
                 ],
-                "options": [
-                  "I am from mexico.",
-                  "I am from Mexico.",
-                  "i am from Mexico."
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-blue-600",
+                "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Fomentar que usen países que no hayan visto en la lista principal."
+            "action": "Hablar de forma activa."
           },
           {
             "id": "s5",
-            "title": "5. Wrap-up",
-            "duration": "10 minutos",
-            "objective": "Repaso final.",
+            "title": "5. Wrap-up & Homework",
+            "duration": "5 minutos",
+            "objective": "Cierre de clase.",
             "slides": [
               {
-                "id": "Diapositiva 16",
-                "title": "Class Complete!",
-                "description": "You are doing amazing!",
+                "id": "slide-19",
+                "title": "Class Complete! 🎉",
+                "description": "Great job!",
                 "content": [
-                  "You can talk about your origin!",
-                  "You know many nationalities."
+                  "You can now talk about countries and nationalities!"
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 17",
-                "title": "Homework",
-                "description": "Assignment for next time",
+                "id": "slide-20",
+                "title": "Homework 📝",
+                "description": "Practice time.",
+                "type": "homework",
                 "content": [
-                  "Write 5 sentences about famous people and where they are from. Example: Lionel Messi is from Argentina."
+                  "Write 5 sentences about famous people.",
+                  "Example: Lionel Messi is from Argentina. He is Argentine."
                 ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva-Video-Homework-13",
+                "id": "slide-21",
                 "title": "Video Homework 📹",
-                "description": "Watch this short video and listen carefully.",
+                "description": "Listen and learn.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/jZJCAoXvJro",
+                "videoUrl": "https://www.youtube.com/embed/OqH7q2fG2L8",
                 "content": [
-                  "Identify 3 countries mentioned in the video."
+                  "Watch the video about countries and nationalities.",
+                  "Write down 3 new nationalities you hear!"
                 ],
-                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900"
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Despedir la clase."
+            "action": "Despedida."
           }
         ]
-      },
-      {
+      },{
         "id": "c-adults-basic-zero-14",
         "title": "Clase 14: Profesiones y ocupaciones comunes",
         "duration": "60 minutos",
@@ -3889,7 +4010,7 @@ export const curriculumLevels: CurriculumLevel[] = [
             "objective": "Introducir el tema.",
             "slides": [
               {
-                "id": "Diapositiva 1",
+                "id": "slide-1",
                 "title": "Welcome! What do you do?",
                 "description": "Let's talk about jobs.",
                 "content": [
@@ -3898,6 +4019,36 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-2",
+                "title": "Icebreaker! 🧊",
+                "description": "Warm-up Activity",
+                "type": "spinning-wheel",
+                "wheelItems": [
+                  {"label": "Dream job as a kid?", "color": "#EF4444"},
+                  {"label": "Best job in the world?", "color": "#3B82F6"},
+                  {"label": "Hardest job?", "color": "#10B981"},
+                  {"label": "Would you like to be a doctor?", "color": "#F59E0B"},
+                  {"label": "Favorite teacher?", "color": "#8B5CF6"}
+                ],
+                "content": [
+                  "Spin the wheel and talk!"
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-500 to-indigo-600",
+                "imageUrl": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-3",
+                "title": "Objectives 🎯",
+                "description": "Today we will...",
+                "content": [
+                  "✔️ Learn vocabulary for professions.",
+                  "✔️ Learn the difference between 'a' and 'an'.",
+                  "✔️ Ask and answer about jobs."
+                ],
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
               }
             ],
             "action": "Preguntar a los alumnos a qué se dedican."
@@ -3909,66 +4060,98 @@ export const curriculumLevels: CurriculumLevel[] = [
             "objective": "Aprender oficios comunes y el uso de a/an.",
             "slides": [
               {
-                "id": "Diapositiva 2",
-                "title": "Professions (1)",
+                "id": "slide-4",
+                "title": "Professions (1) 👨‍⚕️",
                 "description": "Jobs",
                 "content": [
-                  "Teacher, Doctor, Nurse, Engineer, Lawyer"
+                  "Teacher = Maestro(a)",
+                  "Doctor = Doctor(a)",
+                  "Nurse = Enfermero(a)",
+                  "Engineer = Ingeniero(a)"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "type": "normal",
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 3",
-                "title": "Professions (2)",
+                "id": "slide-5",
+                "title": "Professions (2) 👩‍🍳",
                 "description": "Jobs",
                 "content": [
-                  "Student, Waiter, Mechanic, Chef, Police officer"
+                  "Lawyer = Abogado(a)",
+                  "Mechanic = Mecánico(a)",
+                  "Chef = Chef/Cocinero(a)",
+                  "Police officer = Policía"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "type": "normal",
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-green-600",
+                "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 4",
-                "title": "A vs An",
+                "id": "slide-6",
+                "title": "A vs An 🅰️",
                 "description": "Grammar Rule",
                 "content": [
-                  "Use 'a' before consonant sounds: a doctor, a teacher.",
-                  "Use 'an' before vowel sounds: an engineer, an actor."
+                  "Use 'A' before consonant sounds: a doctor, a teacher, a mechanic.",
+                  "Use 'AN' before vowel sounds: an engineer, an actor, an architect."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "type": "normal",
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 5",
-                "title": "Asking about Jobs",
+                "id": "slide-7",
+                "title": "Verb To Be + Profession 👔",
+                "description": "Structure",
+                "content": [
+                  "I am a teacher.",
+                  "She is an engineer.",
+                  "They are doctors. (No 'a/an' in plural!)"
+                ],
+                "type": "normal",
+                "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700",
+                "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-8",
+                "title": "Asking about Jobs ❓",
                 "description": "Questions",
                 "content": [
                   "What do you do? (¿A qué te dedicas?)",
-                  "I am a teacher."
+                  "I am a teacher.",
+                  "What does she do?",
+                  "She is a doctor."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "type": "normal",
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800"
               }
             ],
             "action": "Explicar que 'What do you do?' es más natural que 'What is your profession?'."
           },
           {
             "id": "s3",
-            "title": "3. Practice & Reading",
+            "title": "3. Practice & Concept Checking",
             "duration": "15 minutos",
             "objective": "Fijar a/an y profesiones.",
             "slides": [
               {
-                "id": "Diapositiva 6",
-                "title": "Reading Practice",
-                "description": "Lee en voz alta:",
+                "id": "slide-9",
+                "title": "Reading Practice 🗣️",
+                "description": "Read out loud:",
                 "content": [
-                  "A: What do you do?",
+                  "A: Hi Marco! What do you do?",
                   "B: I am an engineer. And you?",
-                  "A: I am a student."
+                  "A: I am a teacher.",
+                  "B: Oh, is your brother a teacher too?",
+                  "A: No, he isn't. He is a mechanic."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
+                "imageUrl": "https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 7",
-                "title": "Complete the sentence (1/3)",
+                "id": "slide-10",
+                "title": "Complete the sentence (1/3) ✍️",
                 "description": "Articles",
                 "content": [
                   "She is ______ doctor."
@@ -3979,11 +4162,12 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "the"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 8",
-                "title": "Complete the sentence (2/3)",
+                "id": "slide-11",
+                "title": "Complete the sentence (2/3) ✍️",
                 "description": "Articles",
                 "content": [
                   "He is ______ architect."
@@ -3994,11 +4178,12 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "nothing"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1507537509458-b8312d35a233?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 9",
-                "title": "Complete the sentence (3/3)",
+                "id": "slide-12",
+                "title": "Complete the sentence (3/3) ✍️",
                 "description": "Questions",
                 "content": [
                   "______ do you do?"
@@ -4009,34 +4194,25 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "How"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 10",
-                "title": "Find the mistake",
-                "description": "Can you fix these sentences?",
-                "content": [
-                  "1. I am doctor.",
-                  "2. What are you do?",
-                  "3. He is a engineer."
-                ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
-              },
-              {
-                "id": "Diapositiva-Emoji-Auto-14",
+                "id": "slide-13",
                 "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 14)",
+                "description": "Guess the profession!",
                 "type": "emoji-game",
                 "content": [
                   "👨‍🍳 ➕ 🍲"
                 ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
                 "options": [
                   "He is a chef.",
                   "He is a mechanic.",
                   "He is a teacher."
                 ],
-                "correctOptionIndex": 0
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-pink-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800"
               }
             ],
             "action": "Resolver los ejercicios y corregir errores comunes omitiendo el artículo 'a'."
@@ -4048,18 +4224,27 @@ export const curriculumLevels: CurriculumLevel[] = [
             "objective": "Preguntar profesiones entre compañeros.",
             "slides": [
               {
-                "id": "Diapositiva 11",
-                "title": "Role Play: Job Fair",
+                "id": "slide-14",
+                "title": "Role Play: Job Fair 🤝",
                 "description": "Simulación",
-                "content": [
-                  "Ask 3 partners: What do you do?",
-                  "Answer with your real job or a dream job."
+                "type": "spinning-wheel",
+                "wheelItems": [
+                  {"label": "I am a doctor.", "color": "#EF4444"},
+                  {"label": "I am a chef.", "color": "#3B82F6"},
+                  {"label": "I am an engineer.", "color": "#10B981"},
+                  {"label": "I am a student.", "color": "#F59E0B"},
+                  {"label": "I am a mechanic.", "color": "#8B5CF6"}
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "content": [
+                  "Student A: Ask 'What do you do?'",
+                  "Student B: Spin the wheel and answer!"
+                ],
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 12",
-                "title": "Fun Quiz! (1/4)",
+                "id": "slide-15",
+                "title": "Fun Quiz! (1/3) 🧠",
                 "description": "Articles",
                 "content": [
                   "I am ______ actor."
@@ -4070,11 +4255,12 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "the"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 13",
-                "title": "Fun Quiz! (2/4)",
+                "id": "slide-16",
+                "title": "Fun Quiz! (2/3) 🧠",
                 "description": "Jobs",
                 "content": [
                   "A person who works in a hospital is a:"
@@ -4085,26 +4271,12 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Chef"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 14",
-                "title": "Fun Quiz! (3/4)",
-                "description": "Questions",
-                "content": [
-                  "How to ask someone's profession?"
-                ],
-                "options": [
-                  "What is your job?",
-                  "What do you do?",
-                  "Both are correct"
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 15",
-                "title": "Fun Quiz! (4/4)",
+                "id": "slide-17",
+                "title": "Fun Quiz! (3/3) 🧠",
                 "description": "Grammar",
                 "content": [
                   "She ______ a police officer."
@@ -4115,20 +4287,33 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "are"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-purple-600 to-fuchsia-700",
+                "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-18",
+                "title": "Roleplay 🎭",
+                "description": "Guess the job",
+                "content": [
+                  "Think of a profession.",
+                  "Act it out!",
+                  "Your partners must ask: 'Are you a...?'"
+                ],
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-blue-600",
+                "imageUrl": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=800"
               }
             ],
             "action": "Monitorear la fluidez."
           },
           {
             "id": "s5",
-            "title": "5. Wrap-up",
+            "title": "5. Wrap-up & Homework",
             "duration": "10 minutos",
             "objective": "Repaso final.",
             "slides": [
               {
-                "id": "Diapositiva 16",
-                "title": "Class Complete!",
+                "id": "slide-19",
+                "title": "Class Complete! 🎉",
                 "description": "You are doing amazing!",
                 "content": [
                   "You can talk about jobs!"
@@ -4137,16 +4322,19 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 17",
-                "title": "Homework",
+                "id": "slide-20",
+                "title": "Homework 📝",
                 "description": "Assignment for next time",
+                "type": "homework",
                 "content": [
-                  "Write down the professions of 3 people in your family."
+                  "Write down the professions of 3 people in your family.",
+                  "Example: My brother is an engineer."
                 ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva-Video-Homework-14",
+                "id": "slide-21",
                 "title": "Video Homework 📹",
                 "description": "Watch this short video and listen carefully.",
                 "type": "video",
@@ -4154,14 +4342,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "content": [
                   "Identify 3 jobs mentioned in the video."
                 ],
-                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900"
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800"
               }
             ],
             "action": "Despedir la clase."
           }
         ]
-      },
-      {
+      },{
         "id": "c-adults-basic-zero-15",
         "title": "Clase 15: Vocabulario de la familia y posesivos",
         "duration": "60 minutos",
@@ -4171,284 +4359,351 @@ export const curriculumLevels: CurriculumLevel[] = [
             "id": "s1",
             "title": "1. Warm-up",
             "duration": "5 minutos",
-            "objective": "Introducir el tema familiar.",
+            "objective": "Introducir el tema.",
             "slides": [
               {
-                "id": "Diapositiva 1",
-                "title": "Welcome! Family Trees",
+                "id": "slide-1",
+                "title": "Welcome! 👨‍👩‍👧‍👦",
                 "description": "Let's talk about family.",
                 "content": [
+                  "Who is in your family?",
                   "Is your family big or small?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-2",
+                "title": "Icebreaker! 🧊",
+                "description": "Warm-up Activity",
+                "type": "spinning-wheel",
+                "wheelItems": [
+                  {"label": "Do you have brothers?", "color": "#EF4444"},
+                  {"label": "Do you have sisters?", "color": "#3B82F6"},
+                  {"label": "How many people in your family?", "color": "#10B981"},
+                  {"label": "Favorite relative?", "color": "#F59E0B"},
+                  {"label": "Big or small family?", "color": "#8B5CF6"}
+                ],
+                "content": [
+                  "Spin the wheel and share!"
+                ],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-3",
+                "title": "Objectives 🎯",
+                "description": "Today we will...",
+                "content": [
+                  "✔️ Learn family members.",
+                  "✔️ Learn possessive adjectives (my, your, his, her).",
+                  "✔️ Describe our families."
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Preguntar cuántos hermanos tienen."
+            "action": "Participar activamente."
           },
           {
             "id": "s2",
             "title": "2. Vocabulary & Grammar",
             "duration": "15 minutos",
-            "objective": "Vocabulario familiar y posesivos.",
+            "objective": "Presentar los miembros de la familia y los adjetivos posesivos.",
             "slides": [
               {
-                "id": "Diapositiva 2",
-                "title": "Family Members (1)",
-                "description": "Core family",
+                "id": "slide-4",
+                "title": "Family Members (1) 👫",
+                "description": "Parents",
                 "content": [
-                  "Mother, Father, Parents",
-                  "Brother, Sister, Siblings"
+                  "Parents = Padres (mamá y papá)",
+                  "Mother / Mom = Madre / Mamá",
+                  "Father / Dad = Padre / Papá"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
               },
               {
-                "id": "Diapositiva 3",
-                "title": "Family Members (2)",
-                "description": "Extended family",
+                "id": "slide-5",
+                "title": "Family Members (2) 👧👦",
+                "description": "Children",
                 "content": [
-                  "Grandmother, Grandfather, Grandparents",
-                  "Aunt, Uncle, Cousin"
+                  "Children = Hijos (en general)",
+                  "Son = Hijo",
+                  "Daughter = Hija"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
               },
               {
-                "id": "Diapositiva 4",
-                "title": "Possessive Adjectives",
+                "id": "slide-6",
+                "title": "Family Members (3) 🧑‍🤝‍🧑",
+                "description": "Siblings and Grandparents",
+                "content": [
+                  "Siblings = Hermanos (hombres y mujeres)",
+                  "Brother = Hermano",
+                  "Sister = Hermana",
+                  "Grandparents = Abuelos (Grandmother / Grandfather)"
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
+              },
+              {
+                "id": "slide-7",
+                "title": "Possessive Adjectives 🏷️",
                 "description": "My, Your, His, Her",
                 "content": [
-                  "I -> My (Mi)",
-                  "You -> Your (Tu)",
-                  "He -> His (Su de él)",
-                  "She -> Her (Su de ella)"
+                  "I -> My (Mi / Mis)",
+                  "You -> Your (Tu / Tus)",
+                  "He -> His (Su / Sus - de él)",
+                  "She -> Her (Su / Sus - de ella)"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
               },
               {
-                "id": "Diapositiva 5",
-                "title": "Examples",
-                "description": "In context",
+                "id": "slide-8",
+                "title": "Describing Family 💬",
+                "description": "Examples",
                 "content": [
-                  "This is my mother.",
-                  "His name is John.",
-                  "Her brother is a doctor."
+                  "My brother is a student.",
+                  "His name is David.",
+                  "My mother is a doctor.",
+                  "Her name is Sarah."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-rose-500 to-red-600",
+                "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800",
+                "type": "normal"
               }
             ],
-            "action": "Explicar la diferencia entre His y Her, un error muy común en hispanohablantes."
+            "action": "Tomar notas de vocabulario y reglas."
           },
           {
             "id": "s3",
-            "title": "3. Practice & Reading",
+            "title": "3. Practice & Concept Checking",
             "duration": "15 minutos",
-            "objective": "Fijar posesivos.",
+            "objective": "Fijar el vocabulario y posesivos.",
             "slides": [
               {
-                "id": "Diapositiva 6",
-                "title": "Reading Practice",
-                "description": "Lee en voz alta:",
+                "id": "slide-9",
+                "title": "Reading Practice 🗣️",
+                "description": "Dialogue",
                 "content": [
-                  "This is my friend. His name is David. His sister is an engineer. Her name is Sarah."
+                  "A: Who is he?",
+                  "B: He is my brother.",
+                  "A: What is his name?",
+                  "B: His name is Tom. He is 20 years old.",
+                  "A: And who is she?",
+                  "B: She is my sister. Her name is Emma."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 7",
-                "title": "Complete the sentence (1/3)",
+                "id": "slide-10",
+                "title": "Complete the sentence (1/3) ✍️",
                 "description": "Possessives",
                 "content": [
-                  "(He) ______ name is Mark."
+                  "She is ______ sister."
                 ],
                 "options": [
-                  "He",
-                  "His",
-                  "Her"
+                  "my",
+                  "I",
+                  "me"
                 ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 8",
-                "title": "Complete the sentence (2/3)",
+                "id": "slide-11",
+                "title": "Complete the sentence (2/3) ✍️",
                 "description": "Possessives",
                 "content": [
-                  "(She) ______ mother is a teacher."
+                  "He is my friend. ______ name is David."
                 ],
                 "options": [
-                  "She",
                   "Her",
+                  "He",
                   "His"
                 ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 9",
-                "title": "Complete the sentence (3/3)",
+                "id": "slide-12",
+                "title": "Complete the sentence (3/3) ✍️",
                 "description": "Family",
                 "content": [
-                  "My mother's brother is my ______."
+                  "They are my mother and father. They are my ______."
                 ],
                 "options": [
-                  "Father",
-                  "Uncle",
-                  "Cousin"
+                  "parents",
+                  "children",
+                  "siblings"
                 ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 10",
-                "title": "Find the mistake",
-                "description": "Can you fix these sentences?",
-                "content": [
-                  "1. She name is Anna.",
-                  "2. He is my brother. Her name is Tom.",
-                  "3. I live with mine parents."
-                ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
-              },
-              {
-                "id": "Diapositiva-Emoji-Auto-15",
+                "id": "slide-13",
                 "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 15)",
+                "description": "Guess the meaning!",
                 "type": "emoji-game",
                 "content": [
-                  "👨‍👩‍👧‍👦 ➕ 🏠"
+                  "👴 ➕ 👵"
                 ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
                 "options": [
-                  "My family in our house.",
-                  "A party with friends.",
-                  "Going to school."
+                  "Siblings",
+                  "Parents",
+                  "Grandparents"
                 ],
-                "correctOptionIndex": 0
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Corregir his/her en los ejercicios."
+            "action": "Resolver los ejercicios en clase."
           },
           {
             "id": "s4",
             "title": "4. Production & Quiz",
             "duration": "15 minutos",
-            "objective": "Hablar sobre la familia.",
+            "objective": "Uso libre y evaluación.",
             "slides": [
               {
-                "id": "Diapositiva 11",
-                "title": "Role Play: Tell me about your family",
-                "description": "Simulación",
-                "content": [
-                  "Person A: Tell Person B about 2 members of your family.",
-                  "Example: This is my brother. His name is... He is a..."
+                "id": "slide-14",
+                "title": "Let's Talk! 🗣️",
+                "description": "Discussion",
+                "type": "spinning-wheel",
+                "wheelItems": [
+                  {"label": "What is your mother's name?", "color": "#EF4444"},
+                  {"label": "Do you have siblings?", "color": "#3B82F6"},
+                  {"label": "What is your father's job?", "color": "#10B981"},
+                  {"label": "Is your family big?", "color": "#F59E0B"},
+                  {"label": "Who is your favorite cousin?", "color": "#8B5CF6"}
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "content": [
+                  "Ask your partner these questions!"
+                ],
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 12",
-                "title": "Fun Quiz! (1/4)",
-                "description": "Possessives",
+                "id": "slide-15",
+                "title": "Fun Quiz! (1/3) 🧠",
+                "description": "Vocabulary",
                 "content": [
-                  "______ father is a doctor. (She)"
+                  "The mother of my mother is my..."
                 ],
                 "options": [
-                  "She",
+                  "Sister",
+                  "Grandmother",
+                  "Aunt"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-16",
+                "title": "Fun Quiz! (2/3) 🧠",
+                "description": "Possessives",
+                "content": [
+                  "Possessive adjective for 'He':"
+                ],
+                "options": [
+                  "Her",
                   "His",
-                  "Her"
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 13",
-                "title": "Fun Quiz! (2/4)",
-                "description": "Possessives",
-                "content": [
-                  "I love ______ dog."
-                ],
-                "options": [
-                  "me",
-                  "my",
-                  "I"
+                  "Him"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 14",
-                "title": "Fun Quiz! (3/4)",
-                "description": "Family",
+                "id": "slide-17",
+                "title": "Fun Quiz! (3/3) 🧠",
+                "description": "Vocabulary",
                 "content": [
-                  "My father's father is my ______."
+                  "My father's son is my..."
                 ],
                 "options": [
+                  "Brother",
                   "Uncle",
-                  "Grandfather",
-                  "Cousin"
+                  "Grandfather"
                 ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 15",
-                "title": "Fun Quiz! (4/4)",
-                "description": "Family",
+                "id": "slide-18",
+                "title": "Roleplay 🎭",
+                "description": "Show and Tell",
                 "content": [
-                  "My aunt's children are my ______."
+                  "Student A: Describe your family members. Use 'his name is' or 'her name is'.",
+                  "Student B: Listen and ask one question.",
+                  "Swap!"
                 ],
-                "options": [
-                  "Siblings",
-                  "Cousins",
-                  "Nephews"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Motivar a compartir detalles reales si se sienten cómodos."
+            "action": "Monitorear el uso correcto de his/her."
           },
           {
             "id": "s5",
-            "title": "5. Wrap-up",
+            "title": "5. Wrap-up & Homework",
             "duration": "10 minutos",
-            "objective": "Repaso final.",
+            "objective": "Repaso y tarea.",
             "slides": [
               {
-                "id": "Diapositiva 16",
-                "title": "Class Complete!",
-                "description": "You are doing amazing!",
+                "id": "slide-19",
+                "title": "Class Complete! 🎉",
+                "description": "Great work today!",
                 "content": [
-                  "You can talk about your family!"
+                  "You can now describe your family!"
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 17",
-                "title": "Homework",
-                "description": "Assignment for next time",
+                "id": "slide-20",
+                "title": "Homework 📝",
+                "description": "Write about your family.",
+                "type": "homework",
                 "content": [
-                  "Draw a small family tree and write 3 sentences describing your family using His and Her."
+                  "Write a paragraph about your family.",
+                  "Who is in it? What are their names and jobs?",
+                  "Example: I have one brother. His name is Juan. He is a student."
                 ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva-Video-Homework-15",
+                "id": "slide-21",
                 "title": "Video Homework 📹",
-                "description": "Watch this short video and listen carefully.",
+                "description": "Listen to the family song.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/FHaObkHEkHQ",
+                "videoUrl": "https://www.youtube.com/embed/FhaSqM0W-rM",
                 "content": [
-                  "Identify all the family members mentioned in the video."
+                  "Watch the video and write down 2 family members you hear."
                 ],
-                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900"
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Despedir la clase."
+            "action": "Despedida."
           }
         ]
-      },
-      {
+      },{
         "id": "c-adults-basic-zero-16",
         "title": "Clase 16: Repaso General de Basic Zero",
         "duration": "60 minutos",
@@ -4457,224 +4712,183 @@ export const curriculumLevels: CurriculumLevel[] = [
           {
             "id": "s1",
             "title": "1. Warm-up",
-            "duration": "5 minutos",
-            "objective": "Relajarse antes del repaso final.",
+            "duration": "10 minutos",
+            "objective": "Romper el hielo y activar el idioma.",
             "slides": [
               {
-                "id": "Diapositiva 1",
-                "title": "Welcome to the Final Review!",
-                "description": "You did it!",
+                "id": "slide-1",
+                "title": "Welcome to the Final Review! 🏆",
+                "description": "Are you ready?",
                 "content": [
-                  "How do you feel about your English now?"
+                  "You have completed Basic Zero!",
+                  "Today we will review everything we learned."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-2",
+                "title": "Icebreaker! 🧊",
+                "description": "Warm-up Activity",
+                "type": "spinning-wheel",
+                "wheelItems": [
+                  {"label": "Favorite topic?", "color": "#EF4444"},
+                  {"label": "Hardest topic?", "color": "#3B82F6"},
+                  {"label": "Easiest topic?", "color": "#10B981"},
+                  {"label": "Why study English?", "color": "#F59E0B"},
+                  {"label": "Favorite English word?", "color": "#8B5CF6"}
+                ],
+                "content": [
+                  "Spin the wheel and share with the class!"
+                ],
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-3",
+                "title": "Objectives 🎯",
+                "description": "Today we will...",
+                "content": [
+                  "✔️ Review the verb To Be.",
+                  "✔️ Review numbers, alphabet, countries and jobs.",
+                  "✔️ Play games to practice for the final test!"
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Felicitar a los alumnos por llegar a la última clase del nivel."
+            "action": "Motivar a los alumnos."
           },
           {
             "id": "s2",
-            "title": "2. Mega Review (Part 1)",
+            "title": "2. Grammar & Vocabulary Review",
             "duration": "15 minutos",
-            "objective": "Repasar saludos, abecedario, países y profesiones.",
+            "objective": "Repaso guiado.",
             "slides": [
               {
-                "id": "Diapositiva 2",
-                "title": "Greetings & Alphabet",
-                "description": "Review",
+                "id": "slide-4",
+                "title": "Review: Greetings & Introductions 👋",
+                "description": "Remember this?",
                 "content": [
-                  "Hello, Good morning, How are you?",
-                  "Can you spell your name?"
+                  "Hello, my name is Alex. Nice to meet you.",
+                  "How are you? I'm fine, thank you.",
+                  "Good morning / Good afternoon / Good evening."
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-500",
+                "type": "normal",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 3",
-                "title": "Countries & Jobs",
-                "description": "Review",
+                "id": "slide-5",
+                "title": "Review: Verb To Be & Pronouns ✨",
+                "description": "Remember this?",
                 "content": [
-                  "Where are you from? I am from Canada.",
-                  "What do you do? I am an engineer."
+                  "I am (I'm) / He is (He's) / She is (She's)",
+                  "We are (We're) / They are (They're)",
+                  "Am I? Is she? Are they?"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-teal-500",
+                "type": "normal",
+                "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 4",
-                "title": "Family & Possessives",
-                "description": "Review",
+                "id": "slide-6",
+                "title": "Review: Numbers & Age 🔢",
+                "description": "Remember this?",
                 "content": [
-                  "This is my mother. Her name is Mary."
+                  "One, two, three... twenty, thirty...",
+                  "How old are you? I am 25 years old.",
+                  "My phone number is..."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+                "type": "normal",
+                "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 5",
-                "title": "Verb To Be",
-                "description": "Review",
+                "id": "slide-7",
+                "title": "Review: Countries & Jobs 🌎👨‍⚕️",
+                "description": "Remember this?",
                 "content": [
-                  "I am, You are, He is, She is, It is, We are, They are."
+                  "Where are you from? I am from Mexico.",
+                  "What is your nationality? I am Mexican.",
+                  "What do you do? I am an engineer. She is a doctor."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+                "type": "normal",
+                "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-8",
+                "title": "Review: Family & Possessives 👨‍👩‍👧",
+                "description": "Remember this?",
+                "content": [
+                  "Mother, father, brother, sister.",
+                  "My, your, his, her.",
+                  "My brother's name is Tom. His job is a teacher."
+                ],
+                "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+                "type": "normal",
+                "imageUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Hacer preguntas rápidas a cada alumno para verificar retención."
+            "action": "Aclarar dudas de los temas."
           },
           {
             "id": "s3",
-            "title": "3. Practice & Reading",
+            "title": "3. Practice & Concept Checking",
             "duration": "15 minutos",
-            "objective": "Evaluar comprensión global.",
+            "objective": "Fijar conocimientos del nivel.",
             "slides": [
               {
-                "id": "Diapositiva 6",
-                "title": "Reading Practice",
-                "description": "Lee en voz alta:",
+                "id": "slide-9",
+                "title": "Reading Practice 📖",
+                "description": "Read out loud:",
                 "content": [
-                  "Hello! My name is Alex. I am from Mexico. I am a student. My father is a doctor. His name is Carlos."
+                  "Hello! My name is Maria. I am 30 years old.",
+                  "I am from Spain. I am Spanish.",
+                  "I am a teacher. This is my sister.",
+                  "Her name is Laura. She is 28 years old.",
+                  "She is an architect."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "https://images.unsplash.com/photo-1517598024396-46c53fb3af66?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 7",
-                "title": "Complete the sentence (1/3)",
-                "description": "Mix",
+                "id": "slide-10",
+                "title": "Complete the sentence (1/3) ✍️",
+                "description": "Verb To Be",
                 "content": [
-                  "______ is your job?"
-                ],
-                "options": [
-                  "What",
-                  "Where",
-                  "How"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 8",
-                "title": "Complete the sentence (2/3)",
-                "description": "Mix",
-                "content": [
-                  "I am ______ teacher."
-                ],
-                "options": [
-                  "a",
-                  "an",
-                  "the"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 9",
-                "title": "Complete the sentence (3/3)",
-                "description": "Mix",
-                "content": [
-                  "They ______ from Spain."
+                  "Maria ______ 30 years old."
                 ],
                 "options": [
                   "is",
                   "am",
                   "are"
                 ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 10",
-                "title": "Find the mistake",
-                "description": "Can you fix these sentences?",
+                "id": "slide-11",
+                "title": "Complete the sentence (2/3) ✍️",
+                "description": "Origin",
                 "content": [
-                  "1. She are my sister.",
-                  "2. What are you do?",
-                  "3. I from Mexico."
-                ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
-              },
-              {
-                "id": "Diapositiva-Emoji-Auto-16",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 16)",
-                "type": "emoji-game",
-                "content": [
-                  "🏆 ➕ 🎓"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "Level complete!",
-                  "Going to a party.",
-                  "Reading a book."
-                ],
-                "correctOptionIndex": 0
-              }
-            ],
-            "action": "Resolver los ejercicios aclarando las dudas finales."
-          },
-          {
-            "id": "s4",
-            "title": "4. Production & Quiz",
-            "duration": "15 minutos",
-            "objective": "Producción libre.",
-            "slides": [
-              {
-                "id": "Diapositiva 11",
-                "title": "Final Role Play",
-                "description": "Simulación",
-                "content": [
-                  "Introduce yourself completely:",
-                  "Name, Country, Job, Family detail."
-                ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                "id": "Diapositiva 12",
-                "title": "Fun Quiz! (1/4)",
-                "description": "Mix",
-                "content": [
-                  "Which one is a greeting?"
+                  "She is ______ Spain."
                 ],
                 "options": [
-                  "Goodbye",
-                  "Hello",
-                  "See you"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 13",
-                "title": "Fun Quiz! (2/4)",
-                "description": "Mix",
-                "content": [
-                  "How do you spell 'DOG'?"
-                ],
-                "options": [
-                  "D-O-G",
-                  "B-O-G",
-                  "D-A-G"
+                  "from",
+                  "of",
+                  "in"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 14",
-                "title": "Fun Quiz! (3/4)",
-                "description": "Mix",
-                "content": [
-                  "(He) ______ name is Peter."
-                ],
-                "options": [
-                  "His",
-                  "Her",
-                  "He"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 15",
-                "title": "Fun Quiz! (4/4)",
-                "description": "Mix",
+                "id": "slide-12",
+                "title": "Complete the sentence (3/3) ✍️",
+                "description": "Articles",
                 "content": [
                   "She is ______ architect."
                 ],
@@ -4684,242 +4898,208 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "nothing"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-13",
+                "title": "Emojis Locos 🤪",
+                "description": "Guess the meaning!",
+                "type": "emoji-game",
+                "content": [
+                  "👨‍💼 ➕ 💼 ➕ 🏢"
+                ],
+                "options": [
+                  "He is an engineer.",
+                  "He is a student.",
+                  "He is a businessman/office worker."
+                ],
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Evaluar la capacidad de los alumnos para mantener la introducción."
+            "action": "Hacer los ejercicios individualmente y revisar."
+          },
+          {
+            "id": "s4",
+            "title": "4. Production & Quiz",
+            "duration": "15 minutos",
+            "objective": "Hablar y evaluación final.",
+            "slides": [
+              {
+                "id": "slide-14",
+                "title": "Let's Talk! 🗣️",
+                "description": "Final Interview",
+                "type": "spinning-wheel",
+                "wheelItems": [
+                  {"label": "Name and spelling?", "color": "#EF4444"},
+                  {"label": "Age and phone number?", "color": "#3B82F6"},
+                  {"label": "Country and nationality?", "color": "#10B981"},
+                  {"label": "Job and profession?", "color": "#F59E0B"},
+                  {"label": "Family description?", "color": "#8B5CF6"}
+                ],
+                "content": [
+                  "Interview your partner!"
+                ],
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-15",
+                "title": "Fun Quiz! (1/3) 🧠",
+                "description": "Grammar Check",
+                "content": [
+                  "______ is your name?"
+                ],
+                "options": [
+                  "What",
+                  "Who",
+                  "Where"
+                ],
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-16",
+                "title": "Fun Quiz! (2/3) 🧠",
+                "description": "Grammar Check",
+                "content": [
+                  "______ old are you?"
+                ],
+                "options": [
+                  "How",
+                  "What",
+                  "Where"
+                ],
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-17",
+                "title": "Fun Quiz! (3/3) 🧠",
+                "description": "Grammar Check",
+                "content": [
+                  "______ are you from?"
+                ],
+                "options": [
+                  "What",
+                  "Where",
+                  "How"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-purple-600 to-fuchsia-700",
+                "imageUrl": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-18",
+                "title": "Roleplay 🎭",
+                "description": "Introduce yourself to the class.",
+                "content": [
+                  "Stand up and give a 1-minute presentation about yourself.",
+                  "Include name, age, origin, job, and family."
+                ],
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-blue-600",
+                "imageUrl": "https://images.unsplash.com/photo-1514643034934-2e917711204d?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Evaluar la producción oral libre."
           },
           {
             "id": "s5",
-            "title": "5. Wrap-up",
-            "duration": "10 minutos",
-            "objective": "Cierre del nivel y motivación.",
+            "title": "5. Wrap-up & Homework",
+            "duration": "5 minutos",
+            "objective": "Cierre del nivel.",
             "slides": [
               {
-                "id": "Diapositiva 16",
-                "title": "Basic Zero Complete!",
+                "id": "slide-19",
+                "title": "Level 0 Complete! 🏆",
                 "description": "Congratulations!",
                 "content": [
-                  "You are ready for Basic 1!",
-                  "Great job!"
+                  "You finished the Basic Zero course!",
+                  "You are awesome!"
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800"
               },
               {
-                "id": "Diapositiva 17",
-                "title": "Prepare for Evaluation",
-                "description": "Next class",
+                "id": "slide-20",
+                "title": "Homework 📝",
+                "description": "End of level project.",
+                "type": "homework",
                 "content": [
-                  "Next time, we will have a short oral evaluation.",
-                  "Don't worry, just practice what we learned."
+                  "Create a presentation about yourself or a famous person.",
+                  "Include all the information we learned in Level 0."
                 ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-21",
+                "title": "Video Homework 📹",
+                "description": "Listen and learn.",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/Fw0rdSHzWFY",
+                "content": [
+                  "Watch the final review video.",
+                  "Practice everything you learned!"
+                ],
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800"
               }
             ],
-            "action": "Despedir el nivel y explicar cómo será la evaluación oral."
-          }
+            "action": "Despedida final."
+                    }
         ]
       }
     ],
     "virtualEvaluation": [
       {
         "id": "q-bz-1",
-        "question": "Selecciona el pronombre y verbo 'to be' correcto: ___ ___ a student.",
-        "options": [
-          "I is",
-          "She am",
-          "He is",
-          "We am"
-        ],
-        "correctAnswer": "He is"
+        "question": "¿Cómo dices 'Hola' de manera informal en inglés?",
+        "options": ["Goodbye", "Hi / Hello", "See you", "Please"],
+        "correctAnswer": "Hi / Hello",
+        "type": "multiple-choice"
       },
       {
         "id": "q-bz-2",
-        "question": "¿Qué hora es si decimos 'It is half past three'?",
-        "options": [
-          "3:15",
-          "3:30",
-          "4:30",
-          "3:45"
-        ],
-        "correctAnswer": "3:30"
+        "question": "Completa la oración: '___ am a student.'",
+        "options": ["He", "She", "I", "They"],
+        "correctAnswer": "I",
+        "type": "multiple-choice"
       },
       {
         "id": "q-bz-3",
-        "question": "¿Cómo se dice 'Ella está feliz' en inglés?",
-        "options": [
-          "She is sad",
-          "She are happy",
-          "She is happy",
-          "She am happy"
-        ],
-        "correctAnswer": "She is happy"
+        "question": "¿Cuál es la forma correcta?",
+        "options": ["He are happy.", "He is happy.", "He am happy.", "He be happy."],
+        "correctAnswer": "He is happy.",
+        "type": "multiple-choice"
       },
       {
         "id": "q-bz-4",
-        "question": "¿Cuál es el adjetivo posesivo correcto? 'I have a car. ___ car is red.'",
-        "options": [
-          "My",
-          "Your",
-          "His",
-          "Her"
-        ],
-        "correctAnswer": "My"
+        "question": "¿Cómo se dice '20' en inglés?",
+        "options": ["Twelve", "Two", "Twenty", "Thirty"],
+        "correctAnswer": "Twenty",
+        "type": "multiple-choice"
       },
       {
         "id": "q-bz-5",
-        "question": "Completa la oración: '_______ a book on the table.' (Hay un libro)",
-        "options": [
-          "There are",
-          "There is",
-          "They is",
-          "It are"
-        ],
-        "correctAnswer": "There is"
-      },
-      {
-        "id": "q-bz-6",
-        "question": "¿Qué día sigue después de 'Tuesday'?",
-        "options": [
-          "Thursday",
-          "Monday",
-          "Wednesday",
-          "Friday"
-        ],
-        "correctAnswer": "Wednesday"
-      },
-      {
-        "id": "q-bz-7",
-        "question": "Selecciona el artículo correcto: 'She is ___ engineer.'",
-        "options": [
-          "a",
-          "an",
-          "the",
-          "some"
-        ],
-        "correctAnswer": "an"
-      },
-      {
-        "id": "q-bz-8",
-        "question": "¿Cómo se dice 'perro' y 'gato' en inglés?",
-        "options": [
-          "dog and fish",
-          "cat and bird",
-          "dog and cat",
-          "rabbit and cat"
-        ],
-        "correctAnswer": "dog and cat"
-      },
-      {
-        "id": "q-bz-9",
-        "question": "Si tienes sed, dices:",
-        "options": [
-          "I am hungry",
-          "I am tired",
-          "I am thirsty",
-          "I am cold"
-        ],
-        "correctAnswer": "I am thirsty"
-      },
-      {
-        "id": "q-bz-10",
-        "question": "La preposición 'under' significa:",
-        "options": [
-          "sobre",
-          "debajo",
-          "adentro",
-          "al lado de"
-        ],
-        "correctAnswer": "debajo"
-      },
-      {
-        "id": "q-bz-11",
-        "question": "¿Cómo responderías de manera formal a 'How are you?'?",
-        "options": [
-          "What's up!",
-          "I'm fine, thank you.",
-          "See you later.",
-          "Good night."
-        ],
-        "correctAnswer": "I'm fine, thank you."
-      },
-      {
-        "id": "q-bz-12",
-        "question": "¿Qué letras faltan en E _ G L _ S H?",
-        "options": [
-          "N, I",
-          "M, O",
-          "N, E",
-          "M, I"
-        ],
-        "correctAnswer": "N, I"
-      },
-      {
-        "id": "q-bz-13",
-        "question": "¿Cómo preguntas '¿De dónde eres?'?",
-        "options": [
-          "Where you are from?",
-          "Where are you from?",
-          "Where from are you?",
-          "Who are you from?"
-        ],
-        "correctAnswer": "Where are you from?"
-      },
-      {
-        "id": "q-bz-14",
-        "question": "Mi hermano trabaja en un hospital y cuida enfermos, él es un:",
-        "options": [
-          "Teacher",
-          "Nurse",
-          "Pilot",
-          "Lawyer"
-        ],
-        "correctAnswer": "Nurse"
-      },
-      {
-        "id": "q-bz-15",
-        "question": "¿Cómo dices 'La madre de mi padre es mi...'?",
-        "options": [
-          "Aunt",
-          "Sister",
-          "Grandmother",
-          "Mother"
-        ],
-        "correctAnswer": "Grandmother"
-      },
-      {
-        "id": "q-bz-16",
-        "question": "¿Cómo dirías 'Ellos no son estudiantes'?",
-        "options": [
-          "They not are students",
-          "They are not students",
-          "They isn't students",
-          "They don't students"
-        ],
-        "correctAnswer": "They are not students"
+        "question": "Completa con el adjetivo posesivo correcto: 'She is my sister. ___ name is Maria.'",
+        "options": ["His", "Her", "My", "Your"],
+        "correctAnswer": "Her",
+        "type": "multiple-choice"
       }
     ],
     "oralEvaluation": [
       {
-        "topic": "GREETINGS & BASICS",
-        "question": "Hello! How are you today? What is your name?"
+        "topic": "INTRODUCTIONS",
+        "question": "Please introduce yourself. What is your name, age, and nationality?"
       },
       {
-        "topic": "DAILY ROUTINE",
-        "question": "What is your daily routine? What time do you wake up?"
-      },
-      {
-        "topic": "NUMBERS & DATES",
-        "question": "How old are you? When is your birthday? What is your phone number?"
-      },
-      {
-        "topic": "FAMILY & DESCRIPTION",
-        "question": "Tell me about your family. Do you have brothers or sisters? What do they look like?"
-      },
-      {
-        "topic": "LIKES & DISLIKES",
-        "question": "What kind of food do you like? What do you do in your free time?"
+        "topic": "FAMILY",
+        "question": "Tell me about your family. Do you have brothers or sisters?"
       }
     ]
   },
@@ -4927,1166 +5107,1402 @@ export const curriculumLevels: CurriculumLevel[] = [
     "id": "basic-1",
     "title": "Basic 1",
     "duration": "1 mes",
-    "objective": "Comienza a comunicarte. Aprenderás a hablar sobre tu vida diaria y entorno.",
+    "objective": "Desarrollar fluidez básica en presente simple, rutinas, vocabulario de trabajos y expresiones de preferencias.",
     "mcfrEquivalent": "A1",
     "classes": [
       {
-        "id": "c-b1-1",
-        "title": "Clase 1: Future with Will vs Going to",
-        "description": "Contraste entre planes seguros y decisiones espontáneas.",
-        "sections": [
-          {
-            "id": "s1",
-            "title": "1. Warm-up",
-            "duration": "5 minutos",
-            "objective": "Introducir el contexto de hablar sobre el futuro.",
-            "slides": [
-              {
-                "id": "Diapositiva 1",
-                "title": "Welcome! Future Plans",
-                "description": "What are you doing tomorrow?",
-                "content": [
-                  "Do you have plans for the weekend?",
-                  "Will you travel soon?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
-              }
-            ],
-            "action": "Preguntar a los alumnos si ya tienen planes claros o si fluirán con el día."
-          },
-          {
-            "id": "s2",
-            "title": "2. Grammar Presentation",
-            "duration": "15 minutos",
-            "objective": "Comprender la diferencia fundamental entre Will y Going to.",
-            "slides": [
-              {
-                "id": "Diapositiva 2",
-                "title": "Future with GOING TO",
-                "description": "Para planes confirmados e intenciones claras.",
-                "content": [
-                  "I am going to travel to Spain.",
-                  "She is going to study medicine.",
-                  "Uso: Plan o intención ya decidido antes de hablar."
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 3",
-                "title": "Future with WILL",
-                "description": "Decisiones espontáneas, promesas y predicciones.",
-                "content": [
-                  "I will have a coffee, please. (Decisión al momento)",
-                  "I promise I will help you. (Promesa)",
-                  "I think it will rain today. (Predicción sin evidencia)"
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 4",
-                "title": "Will vs Going To (Contrast)",
-                "description": "Comparación directa",
-                "content": [
-                  "- The phone is ringing! -> I will answer it! (Espontáneo)",
-                  "- Why are you wearing running shoes? -> I am going to run. (Plan)"
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
-              },
-              {
-                "id": "gen-c-b1-1-s2-z75oo",
-                "title": "Predictions: Will vs Going To",
-                "description": "La diferencia en predicciones",
-                "content": [
-                  "WILL: Predicciones basadas en opinión, creencia personal o sin evidencia clara.",
-                  "Example: \"I think she will pass the exam easily.\" (Opinión personal)",
-                  "GOING TO: Predicciones basadas en evidencia presente, algo que ya vemos o sabemos.",
-                  "Example: \"Look at those dark clouds! It's going to rain.\" (Evidencia visual)"
-                ],
-                "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
-              }
-            ],
-            "action": "Mostrar la diferencia clave entre tener algo ya planeado (going to) versus decidirlo ahora (will)."
-          },
-          {
-            "id": "s3",
-            "title": "3. Practice & Concept Checking",
-            "duration": "15 minutos",
-            "objective": "Diferenciar ambos tiempos en oraciones contextuales.",
-            "slides": [
-              {
-                "id": "Diapositiva 5",
-                "title": "Reading Practice",
-                "description": "Lee y comprende el contexto:",
-                "content": [
-                  "Context: Ordering food at a restaurant.",
-                  "- Waiter: Are you ready to order?",
-                  "- You: Yes, I will have the chicken."
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
-              },
-              {
-                "id": "Diapositiva 6",
-                "title": "Complete the sentence (1/3)",
-                "description": "Decide the correct future form",
-                "content": [
-                  "Look at those dark clouds! It ______ rain."
-                ],
-                "options": [
-                  "will",
-                  "is going to",
-                  "going to"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 7",
-                "title": "Complete the sentence (2/3)",
-                "description": "Spontaneous decision",
-                "content": [
-                  "I am very hungry. I think I ______ buy a pizza."
-                ],
-                "options": [
-                  "am going to",
-                  "will",
-                  "buy"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 8",
-                "title": "Complete the sentence (3/3)",
-                "description": "Plan",
-                "content": [
-                  "We ______ move to a new house next month. We bought it yesterday!"
-                ],
-                "options": [
-                  "will",
-                  "are going to",
-                  "go to"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva-Emoji-Auto-fix-8",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 1: Future with Will vs Going to)",
-                "type": "emoji-game",
-                "content": [
-                  "🏋️ ➕ 🥗 ➕ 💪"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I need to eat healthy.",
-                  "I am getting fit.",
-                  "I don't like vegetables."
-                ],
-                "correctOptionIndex": 1
-              },
-              {
-                "id": "gen-c-b1-1-s3-he5b",
-                "title": "Complete the sentence (4/4)",
-                "description": "Decide the correct future form",
-                "content": [
-                  "My sister is pregnant. She ______ have a baby in July."
-                ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
-                "correctOptionIndex": 1,
-                "options": [
-                  "will",
-                  "is going to"
-                ]
-              }
-            ],
-            "action": "Asegurarse de que analicen el contexto (¿Es plan o es espontáneo?) antes de responder."
-          },
-          {
-            "id": "s4",
-            "title": "4. Production & Quiz",
-            "duration": "15 minutos",
-            "objective": "Producir lenguaje hablado usando ambos tiempos futuros.",
-            "slides": [
-              {
-                "id": "Diapositiva 9",
-                "title": "Imagine scenarios",
-                "description": "¿Qué harías?",
-                "content": [
-                  "1. Someone knocks on your door.",
-                  "2. Your friend has a headache.",
-                  "3. Your plans for next summer."
-                ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                "id": "Diapositiva 10",
-                "title": "Fun Quiz! (1/3)",
-                "description": "Grammar Rules",
-                "content": [
-                  "Which is better for a promise?"
-                ],
-                "options": [
-                  "Will",
-                  "Going to",
-                  "Present"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 11",
-                "title": "Fun Quiz! (2/3)",
-                "description": "Contextual Grammar",
-                "content": [
-                  "'Oh no, I forgot my wallet!' 'Don't worry, I ______ pay for you.'"
-                ],
-                "options": [
-                  "am going to",
-                  "will",
-                  "going"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 12",
-                "title": "Fun Quiz! (3/3)",
-                "description": "Contextual Grammar",
-                "content": [
-                  "'Why did you buy paint?' 'I ______ paint my bedroom.'"
-                ],
-                "options": [
-                  "am going to",
-                  "will",
-                  "will going to"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "gen-c-b1-1-s4-3fmy4",
-                "title": "Production: Your Future!",
-                "description": "Usa 'will' o 'going to' según corresponda.",
-                "content": [
-                  "1. What are your definite plans for next year?",
-                  "2. Imagine you win the lottery right now. What will you do first?",
-                  "3. What are you going to do this evening?",
-                  "4. A friend calls you and asks for help moving. You say: 'Don't worry, I ______ help you!'"
-                ],
-                "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
-              }
-            ],
-            "action": "Role-plays cortos provocando decisiones al momento o hablando sobre planes futuros."
-          },
-          {
-            "id": "s5",
-            "title": "5. Wrap-up",
-            "duration": "10 minutos",
-            "objective": "Repaso final y asignación de tareas.",
-            "slides": [
-              {
-                "id": "Diapositiva 13",
-                "title": "Great Job!",
-                "description": "You controlled the future!",
-                "content": [
-                  "Going To = Plan.",
-                  "Will = Spontaneous / Promise."
-                ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                "id": "Diapositiva 14",
-                "title": "Homework",
-                "description": "Write your future.",
-                "content": [
-                  "Write 3 sentences using Going To (your plans).",
-                  "Write 2 sentences using Will (promises or spontaneous ideas)."
-                ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "type": "homework"
-              },
-              {
-                "id": "Diapositiva-Video-Homework-11",
-                "title": "Video Homework 📹",
-                "description": "Watch this short video and listen carefully.",
-                "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/LAywO9NM7ws",
-                "content": [
-                  "Identify at least 3 new phrases you understood from the video.",
-                  "Write them down for the next class."
-                ],
-                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900"
-              }
-            ],
-            "action": "Reforzar el takeaway clave de la clase y explicar la tarea."
-          }
-        ]
-      },
-      {
-        "id": "c-b1-2",
-        "title": "Clase 2: Preguntas Yes/No con Futuro y Contracciones",
-        "description": "Aprende a hacer preguntas y usar 'gonna' de forma nativa.",
-        "sections": [
-          {
-            "id": "s1",
-            "title": "1. Warm-up",
-            "duration": "5 minutos",
-            "objective": "Repasar will y going to de forma conversacional.",
-            "slides": [
-              {
-                "id": "Diapositiva 1",
-                "title": "Welcome Back!",
-                "description": "What are your plans tonight?",
-                "content": [
-                  "Tell me 1 plan you have for tonight.",
-                  "Use 'Going to'!"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
-                "imageUrl": "https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            "action": "Breve check-in pidiendo que usen going to."
-          },
-          {
-            "id": "s2",
-            "title": "2. Grammar Presentation",
-            "duration": "15 minutos",
-            "objective": "Enseñar estructuras interrogativas y la contracción 'gonna'.",
-            "slides": [
-              {
-                "id": "Diapositiva 2",
-                "title": "Yes/No Questions with WILL",
-                "description": "Intercambio de sujeto y auxiliar.",
-                "content": [
-                  "Will you help me?",
-                  "- Yes, I will. / - No, I won't.",
-                  "Will they win the game?",
-                  "- Yes, they will. / - No, they won't."
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 3",
-                "title": "Yes/No Questions with GOING TO",
-                "description": "Usando el verbo To Be.",
-                "content": [
-                  "Are you going to study tonight?",
-                  "- Yes, I am. / - No, I'm not.",
-                  "Is she going to travel?",
-                  "- Yes, she is. / - No, she isn't."
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 4",
-                "title": "Native Contractions: GONNA",
-                "description": "Going to = Gonna",
-                "content": [
-                  "I'm going to sleep -> I'm gonna sleep.",
-                  "Are you going to eat? -> Are you gonna eat?",
-                  "Note: We only use it in informal speech!"
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-                "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                "id": "Diapositiva 5",
-                "title": "Native Contractions: 'LL",
-                "description": "I will = I'll",
-                "content": [
-                  "I will call you -> I'll call you.",
-                  "She will come -> She'll come.",
-                  "It will rain -> It'll rain."
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
-              }
-            ],
-            "action": "Modelar pronunciación natural de 'gonna' y ''ll' (ej. it'll)."
-          },
-          {
-            "id": "s3",
-            "title": "3. Practice & Concept Checking",
-            "duration": "15 minutos",
-            "objective": "Fijar estructuras interrogativas y contracciones.",
-            "slides": [
-              {
-                "id": "Diapositiva 6",
-                "title": "Reading Practice",
-                "description": "Lee de forma natural:",
-                "content": [
-                  "- Hey, are you gonna go to the party tonight?",
-                  "- No, I'm not. I'll probably stay home and watch a movie.",
-                  "- Ok, I'll see you tomorrow then!"
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
-              },
-              {
-                "id": "Diapositiva 7",
-                "title": "Complete the sentence (1/3)",
-                "description": "Questions with Will",
-                "content": [
-                  "______ you open the door, please?"
-                ],
-                "options": [
-                  "Are",
-                  "Will",
-                  "Gonna"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 8",
-                "title": "Complete the sentence (2/3)",
-                "description": "Using Gonna",
-                "content": [
-                  "I am ______ call my friend later."
-                ],
-                "options": [
-                  "gonna",
-                  "will",
-                  "going"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 9",
-                "title": "Complete the sentence (3/3)",
-                "description": "Short Answers",
-                "content": [
-                  "Are you going to study? - Yes, I ______."
-                ],
-                "options": [
-                  "will",
-                  "gonna",
-                  "am"
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva-Emoji-Auto-fix-9",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 2: Preguntas Yes/No con Futuro y Contracciones)",
-                "type": "emoji-game",
-                "content": [
-                  "📱 ➕ 🔋 ➕ ☠️"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "My phone is dead.",
-                  "I need a new phone.",
-                  "I am playing a game."
-                ],
-                "correctOptionIndex": 0
-              },
-              {
-                "id": "gen-c-b1-2-s3-hh9hyn",
-                "title": "Forming Yes/No Questions",
-                "description": "Choose the correct way to ask a Yes/No question.",
-                "content": [
-                  "______ you gonna finish your homework tonight?"
-                ],
-                "bgColor": "bg-gradient-to-br from-purple-400 to-indigo-600",
-                "correctOptionIndex": 1,
-                "options": [
-                  "Is",
-                  "Are",
-                  "Will"
-                ]
-              }
-            ],
-            "action": "Corregir en vivo la pronunciación de 'gonna' evitando que digan 'Im gonna to..."
-          },
-          {
-            "id": "s4",
-            "title": "4. Production & Quiz",
-            "duration": "15 minutos",
-            "objective": "Realizar entrevistas aplicando preguntas.",
-            "slides": [
-              {
-                "id": "Diapositiva 10",
-                "title": "Interview your teacher",
-                "description": "Hazme preguntas:",
-                "content": [
-                  "Ask me 1 question with 'Will you...?'",
-                  "Ask me 1 question with 'Are you gonna...?'"
-                ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                "id": "Diapositiva 11",
-                "title": "Fun Quiz! (1/3)",
-                "description": "Grammar Rules",
-                "content": [
-                  "What is the short form of 'I will'?"
-                ],
-                "options": [
-                  "I'am",
-                  "I'll",
-                  "Iill"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 12",
-                "title": "Fun Quiz! (2/3)",
-                "description": "Negative Will",
-                "content": [
-                  "The negative of 'will' is: __"
-                ],
-                "options": [
-                  "willn't",
-                  "don't will",
-                  "won't"
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 13",
-                "title": "Fun Quiz! (3/3)",
-                "description": "Gonna",
-                "content": [
-                  "I am ______ eat pizza."
-                ],
-                "options": [
-                  "gonna to",
-                  "gonna",
-                  "going"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "gen-c-b1-2-s4-uczh6p",
-                "title": "Your Turn! Ask a Question",
-                "description": "Form a Yes/No question for each statement.",
-                "content": [
-                  "1. She will study for the test.",
-                  "2. They are going to visit their grandparents.",
-                  "3. He will buy a new car.",
-                  "4. You are going to travel next month."
-                ],
-                "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
-              }
-            ],
-            "action": "Actividad dinámica entrevistando al profesor."
-          },
-          {
-            "id": "s5",
-            "title": "5. Wrap-up",
-            "duration": "10 minutos",
-            "objective": "Repaso final de pronunciación fluida.",
-            "slides": [
-              {
-                "id": "Diapositiva 14",
-                "title": "Great Job!",
-                "description": "You sound more native!",
-                "content": [
-                  "You can ask future questions.",
-                  "You know how to use GONNA and I'LL."
-                ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-              {
-                "id": "Diapositiva 15",
-                "title": "Homework",
-                "description": "Write questions.",
-                "content": [
-                  "Write 2 questions with 'Will you...' for a friend.",
-                  "Write 2 questions with 'Are you gonna...'"
-                ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "type": "homework"
-              },
-              {
-                "id": "Diapositiva-Video-Homework-12",
-                "title": "Video Homework 📹",
-                "description": "Watch this short video and listen carefully.",
-                "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/qfumAs6o-xc",
-                "content": [
-                  "Identify at least 3 new phrases you understood from the video.",
-                  "Write them down for the next class."
-                ],
-                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900"
-              }
-            ],
-            "action": "Check out animando al estudiante por su mejora fonética."
-          }
-        ]
-      },
-      {
-        "id": "c-b1-3",
-        "title": "Clase 3: Preguntas WH con Futuro",
-        "description": "Dominio de Why, Where, When, Who y With.",
-        "sections": [
-          {
-            "id": "s1",
-            "title": "1. Warm-up",
-            "duration": "5 minutos",
-            "objective": "Activar Wh- words.",
-            "slides": [
-              {
-                "id": "Diapositiva 1",
-                "title": "Welcome! The 5 W's",
-                "description": "Do you remember the question words?",
-                "content": [
-                  "Who? (¿Quién?)",
-                  "Where? (¿Dónde?)",
-                  "When? (¿Cuándo?)"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
-                "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            "action": "Hacer un repaso rápido de qué significa cada Wh- word."
-          },
-          {
-            "id": "s2",
-            "title": "2. Grammar Presentation",
-            "duration": "15 minutos",
-            "objective": "Integrar Wh- words con estructuras de futuro.",
-            "slides": [
-              {
-                "id": "Diapositiva 2",
-                "title": "WH Questions with WILL",
-                "description": "Wh- word + Will + Subject + Verb",
-                "content": [
-                  "Where will you live? (¿Dónde vivirás?)",
-                  "What will she do? (¿Qué hará ella?)",
-                  "Who will win? (¿Quién ganará?)"
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 3",
-                "title": "WH Questions with GOING TO",
-                "description": "Wh- word + Be + Subject + Going to",
-                "content": [
-                  "Where are you going to travel? (¿A dónde vas a viajar?)",
-                  "What is he going to study? (¿Qué va a estudiar?)",
-                  "When are they going to leave? (¿Cuándo se van a ir?)"
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 4",
-                "title": "Why and Who... with",
-                "description": "Preguntando razones y compañías",
-                "content": [
-                  "Why will you travel? - Because...",
-                  "Who are you going to travel WITH? (¿Con quién vas a viajar?)"
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                "id": "gen-c-b1-3-s2-9vdq0j",
-                "title": "Comprehensive Examples: WH-Future",
-                "description": "Combining 'Will' and 'Going To' with key WH-words",
-                "content": [
-                  "Why will she choose that university? (¿Por qué elegirá ella esa universidad?)",
-                  "Where are we going to meet tomorrow? (¿Dónde nos vamos a encontrar mañana?)",
-                  "When will the new store open? (¿Cuándo abrirá la nueva tienda?)",
-                  "Who are you going to visit this weekend? (¿A quién vas a visitar este fin de semana?)",
-                  "What will you do with all that free time? (¿Qué harás con todo ese tiempo libre?)"
-                ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              }
-            ],
-            "action": "Mostrar la fórmula matemática para crear estas preguntas sin fallar en el orden."
-          },
-          {
-            "id": "s3",
-            "title": "3. Practice & Concept Checking",
-            "duration": "15 minutos",
-            "objective": "Ordenar oraciones y seleccionar la palabra interrogativa correcta.",
-            "slides": [
-              {
-                "id": "Diapositiva 5",
-                "title": "Reading Practice",
-                "description": "Lee la entrevista:",
-                "content": [
-                  "A: What are you gonna do this weekend?",
-                  "B: I'm gonna visit my parents.",
-                  "A: Where do they live?",
-                  "B: They live in New York."
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
-              },
-              {
-                "id": "Diapositiva 6",
-                "title": "Complete the sentence (1/3)",
-                "description": "WH Words",
-                "content": [
-                  "______ will you arrive? - At 5:00 PM."
-                ],
-                "options": [
-                  "Where",
-                  "When",
-                  "Why"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 7",
-                "title": "Complete the sentence (2/3)",
-                "description": "Structure",
-                "content": [
-                  "What ______ going to eat?"
-                ],
-                "options": [
-                  "are you",
-                  "you are",
-                  "will you"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 8",
-                "title": "Complete the sentence (3/3)",
-                "description": "Prepositions at the end",
-                "content": [
-                  "Who are you going to the cinema ______?"
-                ],
-                "options": [
-                  "to",
-                  "with",
-                  "for"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva-Emoji-Auto-fix-10",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 3: Preguntas WH con Futuro)",
-                "type": "emoji-game",
-                "content": [
-                  "🗣️ ➕ 👂 ➕ 🤔"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "Can you repeat that?",
-                  "I don't understand.",
-                  "I am listening carefully."
-                ],
-                "correctOptionIndex": 2
-              }
-            ],
-            "action": "Corregir errores comunes de estructura (ej. olvidar el verbo To Be o Will)."
-          },
-          {
-            "id": "s4",
-            "title": "4. Production & Quiz",
-            "duration": "15 minutos",
-            "objective": "Hacer y responder preguntas abiertas usando futuro.",
-            "slides": [
-              {
-                "id": "Diapositiva 9",
-                "title": "Let's Talk!",
-                "description": "Be the journalist",
-                "content": [
-                  "Ask me: What I am going to do on my next vacation.",
-                  "Ask me: Who I will go with."
-                ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                "id": "Diapositiva 10",
-                "title": "Fun Quiz! (1/3)",
-                "description": "WH word",
-                "content": [
-                  "______ is she going to buy that house? - Because she likes it."
-                ],
-                "options": [
-                  "When",
-                  "Why",
-                  "Where"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 11",
-                "title": "Fun Quiz! (2/3)",
-                "description": "Word order",
-                "content": [
-                  "Which is correct?"
-                ],
-                "options": [
-                  "Where you will go?",
-                  "Where will go you?",
-                  "Where will you go?"
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 12",
-                "title": "Fun Quiz! (3/3)",
-                "description": "Word order",
-                "content": [
-                  "Which is correct?"
-                ],
-                "options": [
-                  "What are you gonna do?",
-                  "What you are gonna do?",
-                  "What are gonna you do?"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "gen-c-b1-3-s4-puegi",
-                "title": "Fun Quiz! (4/4)",
-                "description": "Choose the best question",
-                "content": [
-                  "Your friend is planning a trip to the beach next month. What question would you ask to find out the destination?"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "correctOptionIndex": 2,
-                "options": [
-                  "When will you go?",
-                  "Who will you go with?",
-                  "Where will you go?"
-                ],
-                "type": "quiz"
-              }
-            ],
-            "action": "El alumno debe formular preguntas abiertas con fluidez."
-          },
-          {
-            "id": "s5",
-            "title": "5. Wrap-up",
-            "duration": "10 minutos",
-            "objective": "Cierre y asignación de tareas.",
-            "slides": [
-              {
-                "id": "Diapositiva 13",
-                "title": "Great Job!",
-                "description": "Summary",
-                "content": [
-                  "You can ask detailed questions about the future!",
-                  "Always remember the order: WH + Auxiliar + Subject."
-                ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
-              },
-              {
-                "id": "Diapositiva 14",
-                "title": "Homework",
-                "description": "Future Interview",
-                "content": [
-                  "Write 5 WH questions to ask a famous person about their future.",
-                  "Example: When will you release your next movie?"
-                ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "type": "homework"
-              },
-              {
-                "id": "Diapositiva-Video-Homework-13",
-                "title": "Video Homework 📹",
-                "description": "Watch this short video and listen carefully.",
-                "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/HQcsDi9u5-g",
-                "content": [
-                  "Identify at least 3 new phrases you understood from the video.",
-                  "Write them down for the next class."
-                ],
-                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900"
-              }
-            ],
-            "action": "Explicar la tarea."
-          }
-        ]
-      },
-      {
-        "id": "c-b1-4",
-        "title": "Clase 4: How much, How many, What kind",
-        "description": "Hacer preguntas de cantidad, tiempo y tipo de cosas.",
-        "sections": [
-          {
-            "id": "s1",
-            "title": "1. Warm-up",
-            "duration": "5 minutos",
-            "objective": "Introducir ideas de cantidad y tipo.",
-            "slides": [
-              {
-                "id": "Diapositiva 1",
-                "title": "Welcome! Numbers & Things",
-                "description": "Let's count and choose.",
-                "content": [
-                  "Do you drink a lot of coffee?",
-                  "Do you like action movies or comedies?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
-                "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            "action": "Conectar con gustos del alumno sobre cantidades o tipos de películas/comida."
-          },
-          {
-            "id": "s2",
-            "title": "2. Grammar Presentation",
-            "duration": "15 minutos",
-            "objective": "Aprender los bloqueos interrogativos de How much/many y What kind.",
-            "slides": [
-              {
-                "id": "Diapositiva 2",
-                "title": "How structure",
-                "description": "Cómo preguntar cantidad y modo",
-                "content": [
-                  "How + Adjective/Word = Bloque de pregunta",
-                  "How old are you?",
-                  "How much is it?",
-                  "How many apples?"
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 3",
-                "title": "How much vs How many",
-                "description": "Contable vs Incontable",
-                "content": [
-                  "HOW MANY + plural contable (Apples, Cars, People)",
-                  "Example: How many people will come?",
-                  "HOW MUCH + incontable (Water, Time, Money)",
-                  "Example: How much time going to need?"
-                ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                "id": "Diapositiva 4",
-                "title": "What kind / What time",
-                "description": "Tipos de cosas y horas exactas",
-                "content": [
-                  "What kind of... = ¿Qué tipo de...?",
-                  "Example: What kind of music do you like?",
-                  "What time... = ¿A qué hora...?",
-                  "Example: What time will we meet?"
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-                "imageUrl": "https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&q=80&w=800"
-              }
-            ],
-            "action": "Remarcar que el bloque interrogativo (Ej: 'How much money') va todo junto al inicio."
-          },
-          {
-            "id": "s3",
-            "title": "3. Practice & Concept Checking",
-            "duration": "15 minutos",
-            "objective": "Identificar qué tipo de sustantivo y la pregunta adecuada.",
-            "slides": [
-              {
-                "id": "Diapositiva 5",
-                "title": "Reading Practice",
-                "description": "Lee la conversación:",
-                "content": [
-                  "A: How much sugar do you want in your coffee?",
-                  "B: Just a little, please.",
-                  "A: What kind of coffee is this?",
-                  "B: It's Colombian coffee."
-                ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
-              },
-              {
-                "id": "Diapositiva 6",
-                "title": "Complete the sentence (1/3)",
-                "description": "Much vs Many",
-                "content": [
-                  "______ cars are in the street?"
-                ],
-                "options": [
-                  "How much",
-                  "How many",
-                  "How"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 7",
-                "title": "Complete the sentence (2/3)",
-                "description": "Much vs Many",
-                "content": [
-                  "______ milk do you need for the cake?"
-                ],
-                "options": [
-                  "How many",
-                  "How much",
-                  "What kind"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva 8",
-                "title": "Complete the sentence (3/3)",
-                "description": "What kind",
-                "content": [
-                  "______ of books do you read?"
-                ],
-                "options": [
-                  "What time",
-                  "How many",
-                  "What kind"
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
-              },
-              {
-                "id": "Diapositiva-Emoji-Auto-fix-11",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 4: How much, How many, What kind)",
-                "type": "emoji-game",
-                "content": [
-                  "🏥 ➕ 🩺 ➕ 💊"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I am feeling sick.",
-                  "I am a doctor.",
-                  "I need some medicine."
-                ],
-                "correctOptionIndex": 0
-              }
-            ],
-            "action": "Ayudar al alumno a distinguir si los objetos o conceptos son contables."
-          },
-          {
-            "id": "s4",
-            "title": "4. Production & Quiz",
-            "duration": "15 minutos",
-            "objective": "Hacer y responder preguntas sobre preferencias y cantidades.",
-            "slides": [
-              {
-                "id": "Diapositiva 9",
-                "title": "Let's Talk!",
-                "description": "Ask about my life",
-                "content": [
-                  "Ask me: Music preference",
-                  "Ask me: How many sisters/brothers I have",
-                  "Ask me: Exact time the class finishes"
-                ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
-              },
-              {
-                "id": "Diapositiva 10",
-                "title": "Fun Quiz! (1/3)",
-                "description": "Time",
-                "content": [
-                  "______ does the movie start? At 8pm."
-                ],
-                "options": [
-                  "What kind",
-                  "What time",
-                  "How much"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 11",
-                "title": "Fun Quiz! (2/3)",
-                "description": "Money",
-                "content": [
-                  "______ money do you have?"
-                ],
-                "options": [
-                  "How much",
-                  "How many",
-                  "What"
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "Diapositiva 12",
-                "title": "Fun Quiz! (3/3)",
-                "description": "Structure",
-                "content": [
-                  "Which is correct?"
-                ],
-                "options": [
-                  "How many dogs you have?",
-                  "How many dogs do you have?",
-                  "How much dogs do you have?"
-                ],
-                "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
-              },
-              {
-                "id": "gen-c-b1-4-s4-c69yf",
-                "title": "Quiz Time",
-                "description": "Test your knowledge!",
-                "content": [
-                  "______ sugar do you put in your tea?"
-                ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
-                "options": [
-                  "How many",
-                  "How much",
-                  "What kind"
-                ],
-                "correctOptionIndex": 1
-              }
-            ],
-            "action": "Fluidez en la mezcla de estructuras (How much/many + verbo en presente/futuro)."
-          },
-          {
-            "id": "s5",
-            "title": "5. Wrap-up",
-            "duration": "10 minutos",
-            "objective": "Despedida del Nivel Básico 1.",
-            "slides": [
-              {
-                "id": "Diapositiva 13",
-                "title": "Basic 1 Complete!",
-                "description": "Amazing progress!",
-                "content": [
-                  "You can talk about the future.",
-                  "You can ask for specific information."
-                ],
-                "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-              },
-              {
-                "id": "Diapositiva 14",
-                "title": "Homework",
-                "description": "Next level preparation",
-                "content": [
-                  "Write 5 questions starting with: How much, How many, What kind, What time.",
-                  "Example: What kind of food do you like?"
-                ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "type": "homework"
-              },
-              {
-                "id": "Diapositiva-Video-Homework-14",
-                "title": "Video Homework 📹",
-                "description": "Watch this short video and listen carefully.",
-                "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI",
-                "content": [
-                  "Identify at least 3 new phrases you understood from the video.",
-                  "Write them down for the next class."
-                ],
-                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900"
-              }
-            ],
-            "action": "Celebrar y dar la tarea."
-          }
-        ]
-      },
+  "id": "c-adults-basic-1-1",
+  "title": "Clase 1: Present Simple (I, You, We, They)",
+  "duration": "60 minutos",
+  "objective": "Aprender a hablar de rutinas y verdades generales.",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "1. Warm-up",
+      "duration": "10 minutos",
+      "objective": "Activar conocimientos.",
+      "slides": [
+        {
+          "id": "slide-1",
+          "title": "Welcome to Basic 1! 🚀",
+          "description": "Let's start!",
+          "content": [
+            "Welcome to a new level!",
+            "Today we talk about everyday life."
+          ],
+          "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-2",
+          "title": "Icebreaker! 🧊",
+          "description": "Spin the wheel",
+          "type": "spinning-wheel",
+          "wheelItems": [
+            {
+              "label": "Coffee or Tea?",
+              "color": "#EF4444"
+            },
+            {
+              "label": "Morning or Night?",
+              "color": "#3B82F6"
+            },
+            {
+              "label": "Books or Movies?",
+              "color": "#10B981"
+            },
+            {
+              "label": "Dogs or Cats?",
+              "color": "#F59E0B"
+            },
+            {
+              "label": "City or Nature?",
+              "color": "#8B5CF6"
+            }
+          ],
+          "content": [
+            "Spin and answer!"
+          ],
+          "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+          "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-3",
+          "title": "Objectives 🎯",
+          "description": "Today we will...",
+          "content": [
+            "✔️ Learn Present Simple.",
+            "✔️ Talk about regular activities.",
+            "✔️ Use I, You, We, They."
+          ],
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Interactuar"
+    },
+    {
+      "id": "s2",
+      "title": "2. Grammar / Vocabulary",
+      "duration": "15 minutos",
+      "objective": "Explicar la gramática.",
+      "slides": [
+        {
+          "id": "slide-4",
+          "title": "Present Simple 🕒",
+          "description": "Habits and routines",
+          "type": "normal",
+          "content": [
+            "We use Present Simple for routines.",
+            "Example: I work every day.",
+            "Example: We live in Mexico."
+          ],
+          "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+          "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-5",
+          "title": "Common Verbs 🏃",
+          "description": "Actions",
+          "type": "normal",
+          "content": [
+            "Work = Trabajar",
+            "Live = Vivir",
+            "Study = Estudiar",
+            "Play = Jugar / Tocar"
+          ],
+          "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-6",
+          "title": "Pronouns 👥",
+          "description": "I, You, We, They",
+          "type": "normal",
+          "content": [
+            "I work = Yo trabajo",
+            "You study = Tú estudias",
+            "We play = Nosotros jugamos",
+            "They live = Ellos viven"
+          ],
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-7",
+          "title": "More Examples 🗣️",
+          "description": "Sentences",
+          "type": "normal",
+          "content": [
+            "They speak English.",
+            "We eat pizza on Fridays.",
+            "I like music."
+          ],
+          "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Tomar notas."
+    },
+    {
+      "id": "s3",
+      "title": "3. Practice & Concept Checking",
+      "duration": "15 minutos",
+      "objective": "Ejercicios guiados.",
+      "slides": [
+        {
+          "id": "slide-8",
+          "title": "Context 📖",
+          "description": "Reading",
+          "content": [
+            "A: Do you study English?",
+            "B: Yes, we study English every day.",
+            "A: They work in a hospital.",
+            "B: Yes, they are doctors."
+          ],
+          "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+          "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-9",
+          "title": "Complete the sentence (1/3) ✍️",
+          "description": "Grammar",
+          "content": [
+            "I ______ in an office."
+          ],
+          "options": [
+            "works",
+            "work",
+            "working"
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+          "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-10",
+          "title": "Complete the sentence (2/3) ✍️",
+          "description": "Grammar",
+          "content": [
+            "They ______ Spanish at home."
+          ],
+          "options": [
+            "speak",
+            "speaks",
+            "speaking"
+          ],
+          "correctOptionIndex": 0,
+          "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-11",
+          "title": "Complete the sentence (3/3) ✍️",
+          "description": "Grammar",
+          "content": [
+            "We ______ pizza on weekends."
+          ],
+          "options": [
+            "eats",
+            "eating",
+            "eat"
+          ],
+          "correctOptionIndex": 2,
+          "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-12",
+          "title": "Emojis Locos 🤪",
+          "description": "Guess!",
+          "type": "emoji-game",
+          "content": [
+            "👥 ➕ ⚽ ➕ 🏃"
+          ],
+          "options": [
+            "They sleep all day.",
+            "They play soccer.",
+            "They cook dinner."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+          "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Resolver y verificar."
+    },
+    {
+      "id": "s4",
+      "title": "4. Production & Quiz",
+      "duration": "15 minutos",
+      "objective": "Producción oral.",
+      "slides": [
+        {
+          "id": "slide-13",
+          "title": "Let's Talk! 🗣️",
+          "description": "Speaking",
+          "content": [
+            "What do you do on weekends?",
+            "Tell the class 3 activities you do."
+          ],
+          "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+          "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-14",
+          "title": "Fun Quiz! (1/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "I lives in Paris.",
+            "I live in Paris.",
+            "I living in Paris."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-15",
+          "title": "Fun Quiz! (2/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "We play guitar.",
+            "We plays guitar.",
+            "We playing guitar."
+          ],
+          "correctOptionIndex": 0,
+          "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-16",
+          "title": "Fun Quiz! (3/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "They is doctors.",
+            "They works in a hospital.",
+            "They work in a hospital."
+          ],
+          "correctOptionIndex": 2,
+          "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-17",
+          "title": "Roleplay 🎭",
+          "description": "Activity",
+          "content": [
+            "Talk with your partner.",
+            "List 3 things you have in common.",
+            "Example: We both like pizza."
+          ],
+          "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+          "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Evaluar."
+    },
+    {
+      "id": "s5",
+      "title": "5. Wrap-up & Homework",
+      "duration": "10 minutos",
+      "objective": "Cierre.",
+      "slides": [
+        {
+          "id": "slide-18",
+          "title": "Class Complete! 🎉",
+          "description": "Great job!",
+          "content": [
+            "You can now talk about routines!"
+          ],
+          "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
+          "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-19",
+          "title": "Homework 📝",
+          "description": "Write sentences",
+          "type": "homework",
+          "content": [
+            "Write 5 sentences about your daily routine.",
+            "Use verbs like work, eat, sleep, study, play."
+          ],
+          "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-20",
+          "title": "Video Homework 📹",
+          "description": "Listen to routines",
+          "type": "video",
+          "videoUrl": "https://www.youtube.com/embed/zRjw62p3Z4o",
+          "content": [
+            "Watch the video.",
+            "Write down 3 verbs you hear."
+          ],
+          "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Despedida."
+    }
+  ]
+},
+{
+  "id": "c-adults-basic-1-2",
+  "title": "Clase 2: Present Simple (He, She, It)",
+  "duration": "60 minutos",
+  "objective": "Aprender las reglas de la tercera persona singular ('s').",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "1. Warm-up",
+      "duration": "10 minutos",
+      "objective": "Activar conocimientos.",
+      "slides": [
+        {
+          "id": "slide-1",
+          "title": "Welcome Back! 🌟",
+          "description": "Let's review.",
+          "content": [
+            "What do you do every day?",
+            "Share one activity."
+          ],
+          "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-2",
+          "title": "Icebreaker! 🧊",
+          "description": "Third person",
+          "type": "spinning-wheel",
+          "wheelItems": [
+            {
+              "label": "Your mother's job?",
+              "color": "#EF4444"
+            },
+            {
+              "label": "Your father's hobby?",
+              "color": "#3B82F6"
+            },
+            {
+              "label": "Your best friend?",
+              "color": "#10B981"
+            },
+            {
+              "label": "Your brother?",
+              "color": "#F59E0B"
+            },
+            {
+              "label": "Your sister?",
+              "color": "#8B5CF6"
+            }
+          ],
+          "content": [
+            "Spin and answer!"
+          ],
+          "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+          "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-3",
+          "title": "Objectives 🎯",
+          "description": "Today we will...",
+          "content": [
+            "✔️ Learn He, She, It in Present Simple.",
+            "✔️ Learn the 'S' rules.",
+            "✔️ Talk about other people."
+          ],
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Interactuar"
+    },
+    {
+      "id": "s2",
+      "title": "2. Grammar / Vocabulary",
+      "duration": "15 minutos",
+      "objective": "Explicar la gramática.",
+      "slides": [
+        {
+          "id": "slide-4",
+          "title": "The 'S' Rule 📝",
+          "description": "He, She, It",
+          "type": "normal",
+          "content": [
+            "For He, She, It, we add 's' to the verb.",
+            "I work -> He works",
+            "I play -> She plays"
+          ],
+          "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+          "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-5",
+          "title": "Spelling Rules (-es) ✏️",
+          "description": "Verbs ending in o, ch, sh, ss, x",
+          "type": "normal",
+          "content": [
+            "Go -> Goes",
+            "Do -> Does",
+            "Watch -> Watches",
+            "Wash -> Washes"
+          ],
+          "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-6",
+          "title": "Spelling Rules (-ies) 📖",
+          "description": "Consonant + Y",
+          "type": "normal",
+          "content": [
+            "Study -> Studies",
+            "Fly -> Flies",
+            "Cry -> Cries",
+            "(Play -> Plays because it is Vowel + Y)"
+          ],
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-7",
+          "title": "Irregular Verbs ⚠️",
+          "description": "Have",
+          "type": "normal",
+          "content": [
+            "I have a dog.",
+            "He HAS a dog.",
+            "She HAS a car."
+          ],
+          "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Tomar notas."
+    },
+    {
+      "id": "s3",
+      "title": "3. Practice & Concept Checking",
+      "duration": "15 minutos",
+      "objective": "Ejercicios guiados.",
+      "slides": [
+        {
+          "id": "slide-8",
+          "title": "Context 📖",
+          "description": "Reading",
+          "content": [
+            "My brother is a student.",
+            "He studies at the university.",
+            "He has a lot of friends.",
+            "He goes to class every morning."
+          ],
+          "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+          "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-9",
+          "title": "Complete the sentence (1/3) ✍️",
+          "description": "Grammar",
+          "content": [
+            "She ______ English in the afternoon."
+          ],
+          "options": [
+            "study",
+            "studies",
+            "studys"
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+          "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-10",
+          "title": "Complete the sentence (2/3) ✍️",
+          "description": "Grammar",
+          "content": [
+            "My father ______ TV at night."
+          ],
+          "options": [
+            "watch",
+            "watchs",
+            "watches"
+          ],
+          "correctOptionIndex": 2,
+          "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-11",
+          "title": "Complete the sentence (3/3) ✍️",
+          "description": "Grammar",
+          "content": [
+            "He ______ a new computer."
+          ],
+          "options": [
+            "have",
+            "has",
+            "haves"
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-12",
+          "title": "Emojis Locos 🤪",
+          "description": "Guess!",
+          "type": "emoji-game",
+          "content": [
+            "👩 ➕ 📖 ➕ 🏫"
+          ],
+          "options": [
+            "She works in a hospital.",
+            "She studies at school.",
+            "She plays sports."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+          "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Resolver y verificar."
+    },
+    {
+      "id": "s4",
+      "title": "4. Production & Quiz",
+      "duration": "15 minutos",
+      "objective": "Producción oral.",
+      "slides": [
+        {
+          "id": "slide-13",
+          "title": "Let's Talk! 🗣️",
+          "description": "Speaking",
+          "content": [
+            "Tell the class about a friend.",
+            "What does he/she do?",
+            "What does he/she like?"
+          ],
+          "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+          "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-14",
+          "title": "Fun Quiz! (1/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "My dog sleep all day.",
+            "My dog sleeps all day.",
+            "My dog sleeping all day."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-15",
+          "title": "Fun Quiz! (2/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "She go to the park.",
+            "She goes to the park.",
+            "She gos to the park."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-16",
+          "title": "Fun Quiz! (3/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "He have a car.",
+            "He has a car.",
+            "He haves a car."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-17",
+          "title": "Roleplay 🎭",
+          "description": "Activity",
+          "content": [
+            "Describe a famous person.",
+            "Your partner must guess who it is!",
+            "Example: He sings. He lives in the US."
+          ],
+          "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+          "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Evaluar."
+    },
+    {
+      "id": "s5",
+      "title": "5. Wrap-up & Homework",
+      "duration": "10 minutos",
+      "objective": "Cierre.",
+      "slides": [
+        {
+          "id": "slide-18",
+          "title": "Class Complete! 🎉",
+          "description": "Great job!",
+          "content": [
+            "You can now talk about other people!"
+          ],
+          "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
+          "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-19",
+          "title": "Homework 📝",
+          "description": "Write sentences",
+          "type": "homework",
+          "content": [
+            "Write 5 sentences about your best friend or a family member.",
+            "Use verbs with 's' or 'es'."
+          ],
+          "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-20",
+          "title": "Video Homework 📹",
+          "description": "Listen",
+          "type": "video",
+          "videoUrl": "https://www.youtube.com/embed/PzM0y6W8_uE",
+          "content": [
+            "Watch the video about daily routines.",
+            "Write down what the boy does in the morning."
+          ],
+          "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Despedida."
+    }
+  ]
+},
+{
+  "id": "c-adults-basic-1-3",
+  "title": "Clase 3: Present Simple (Negative & Interrogative)",
+  "duration": "60 minutos",
+  "objective": "Aprender a hacer preguntas y negar en presente simple usando Do/Does.",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "1. Warm-up",
+      "duration": "10 minutos",
+      "objective": "Activar conocimientos.",
+      "slides": [
+        {
+          "id": "slide-1",
+          "title": "Welcome! 🚀",
+          "description": "Let's review.",
+          "content": [
+            "What does your best friend do?",
+            "He/She works/studies..."
+          ],
+          "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-2",
+          "title": "Icebreaker! 🧊",
+          "description": "Yes or No?",
+          "type": "spinning-wheel",
+          "wheelItems": [
+            {
+              "label": "Do you like pizza?",
+              "color": "#EF4444"
+            },
+            {
+              "label": "Do you speak French?",
+              "color": "#3B82F6"
+            },
+            {
+              "label": "Do you play tennis?",
+              "color": "#10B981"
+            },
+            {
+              "label": "Do you watch anime?",
+              "color": "#F59E0B"
+            },
+            {
+              "label": "Do you drink coffee?",
+              "color": "#8B5CF6"
+            }
+          ],
+          "content": [
+            "Spin and answer YES or NO!"
+          ],
+          "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+          "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-3",
+          "title": "Objectives 🎯",
+          "description": "Today we will...",
+          "content": [
+            "✔️ Learn DO and DOES.",
+            "✔️ Make negative sentences (don't / doesn't).",
+            "✔️ Ask questions."
+          ],
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Interactuar"
+    },
+    {
+      "id": "s2",
+      "title": "2. Grammar / Vocabulary",
+      "duration": "15 minutos",
+      "objective": "Explicar la gramática.",
+      "slides": [
+        {
+          "id": "slide-4",
+          "title": "Negative Sentences 🚫",
+          "description": "Don't / Doesn't",
+          "type": "normal",
+          "content": [
+            "I, You, We, They -> don't (do not)",
+            "He, She, It -> doesn't (does not)",
+            "Example: I don't like fish.",
+            "Example: She doesn't eat meat."
+          ],
+          "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+          "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-5",
+          "title": "Important Rule ⚠️",
+          "description": "No 's' in negative",
+          "type": "normal",
+          "content": [
+            "When we use DOESN'T, the verb is NORMAL.",
+            "WRONG: She doesn't plays.",
+            "RIGHT: She doesn't play."
+          ],
+          "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-6",
+          "title": "Questions ❓",
+          "description": "Do / Does",
+          "type": "normal",
+          "content": [
+            "Do I/you/we/they + verb?",
+            "Does he/she/it + verb?",
+            "Do you like pizza?",
+            "Does he play tennis?"
+          ],
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-7",
+          "title": "Short Answers 👍👎",
+          "description": "Yes / No",
+          "type": "normal",
+          "content": [
+            "Yes, I do. / No, I don't.",
+            "Yes, he does. / No, he doesn't.",
+            "Yes, they do. / No, they don't."
+          ],
+          "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Tomar notas."
+    },
+    {
+      "id": "s3",
+      "title": "3. Practice & Concept Checking",
+      "duration": "15 minutos",
+      "objective": "Ejercicios guiados.",
+      "slides": [
+        {
+          "id": "slide-8",
+          "title": "Context 📖",
+          "description": "Reading",
+          "content": [
+            "A: Does she like coffee?",
+            "B: No, she doesn't. She likes tea.",
+            "A: Do you work here?",
+            "B: Yes, I do."
+          ],
+          "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+          "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-9",
+          "title": "Complete the sentence (1/3) ✍️",
+          "description": "Negative",
+          "content": [
+            "I ______ speak French."
+          ],
+          "options": [
+            "doesn't",
+            "don't",
+            "not"
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+          "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-10",
+          "title": "Complete the sentence (2/3) ✍️",
+          "description": "Negative",
+          "content": [
+            "He ______ live in London."
+          ],
+          "options": [
+            "don't",
+            "doesn't",
+            "isn't"
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-11",
+          "title": "Complete the sentence (3/3) ✍️",
+          "description": "Question",
+          "content": [
+            "______ they play soccer?"
+          ],
+          "options": [
+            "Does",
+            "Do",
+            "Are"
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-12",
+          "title": "Emojis Locos 🤪",
+          "description": "Guess!",
+          "type": "emoji-game",
+          "content": [
+            "🚫 ➕ 👨 ➕ 🚬"
+          ],
+          "options": [
+            "He doesn't eat.",
+            "He doesn't smoke.",
+            "He doesn't run."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+          "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Resolver y verificar."
+    },
+    {
+      "id": "s4",
+      "title": "4. Production & Quiz",
+      "duration": "15 minutos",
+      "objective": "Producción oral.",
+      "slides": [
+        {
+          "id": "slide-13",
+          "title": "Let's Talk! 🗣️",
+          "description": "Interview",
+          "content": [
+            "Interview your partner:",
+            "Do you like...?",
+            "Do you play...?",
+            "Do you watch...?"
+          ],
+          "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+          "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-14",
+          "title": "Fun Quiz! (1/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "She doesn't works here.",
+            "She doesn't work here.",
+            "She don't work here."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-15",
+          "title": "Fun Quiz! (2/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "Does you like pizza?",
+            "Do you likes pizza?",
+            "Do you like pizza?"
+          ],
+          "correctOptionIndex": 2,
+          "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-16",
+          "title": "Fun Quiz! (3/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "No, he don't.",
+            "No, he doesn't.",
+            "No, he isn't."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-17",
+          "title": "Roleplay 🎭",
+          "description": "Activity",
+          "content": [
+            "Play 20 questions!",
+            "Think of an animal. The class asks Do/Does questions to guess.",
+            "Example: Does it live in the jungle?"
+          ],
+          "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+          "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Evaluar."
+    },
+    {
+      "id": "s5",
+      "title": "5. Wrap-up & Homework",
+      "duration": "10 minutos",
+      "objective": "Cierre.",
+      "slides": [
+        {
+          "id": "slide-18",
+          "title": "Class Complete! 🎉",
+          "description": "Great job!",
+          "content": [
+            "You can now ask questions!"
+          ],
+          "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
+          "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-19",
+          "title": "Homework 📝",
+          "description": "Write sentences",
+          "type": "homework",
+          "content": [
+            "Write 5 negative sentences about things you or your family don't do.",
+            "Write 3 questions to ask the teacher next class."
+          ],
+          "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-20",
+          "title": "Video Homework 📹",
+          "description": "Listen",
+          "type": "video",
+          "videoUrl": "https://www.youtube.com/embed/n4p8K0Jq6xI",
+          "content": [
+            "Watch the video.",
+            "Listen to how they use 'don't' and 'doesn't'."
+          ],
+          "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Despedida."
+    }
+  ]
+},
+{
+  "id": "c-adults-basic-1-4",
+  "title": "Clase 4: Profesiones y Lugares de Trabajo",
+  "duration": "60 minutos",
+  "objective": "Integrar el presente simple con vocabulario de trabajos y lugares.",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "1. Warm-up",
+      "duration": "10 minutos",
+      "objective": "Activar conocimientos.",
+      "slides": [
+        {
+          "id": "slide-1",
+          "title": "Welcome! 🚀",
+          "description": "Let's review.",
+          "content": [
+            "Do you work?",
+            "Yes, I do. / No, I don't."
+          ],
+          "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-2",
+          "title": "Icebreaker! 🧊",
+          "description": "Jobs",
+          "type": "spinning-wheel",
+          "wheelItems": [
+            {
+              "label": "Doctor",
+              "color": "#EF4444"
+            },
+            {
+              "label": "Teacher",
+              "color": "#3B82F6"
+            },
+            {
+              "label": "Engineer",
+              "color": "#10B981"
+            },
+            {
+              "label": "Chef",
+              "color": "#F59E0B"
+            },
+            {
+              "label": "Pilot",
+              "color": "#8B5CF6"
+            }
+          ],
+          "content": [
+            "Spin and mime the job!"
+          ],
+          "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+          "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-3",
+          "title": "Objectives 🎯",
+          "description": "Today we will...",
+          "content": [
+            "✔️ Learn vocabulary for jobs.",
+            "✔️ Learn workplaces.",
+            "✔️ Describe what people do."
+          ],
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Interactuar"
+    },
+    {
+      "id": "s2",
+      "title": "2. Grammar / Vocabulary",
+      "duration": "15 minutos",
+      "objective": "Explicar la gramática.",
+      "slides": [
+        {
+          "id": "slide-4",
+          "title": "Jobs Vocabulary 👩‍⚕️",
+          "description": "Professions",
+          "type": "normal",
+          "content": [
+            "Doctor, Nurse, Dentist",
+            "Teacher, Student",
+            "Engineer, Architect",
+            "Chef, Waiter/Waitress"
+          ],
+          "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+          "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-5",
+          "title": "Workplaces 🏥",
+          "description": "Where do they work?",
+          "type": "normal",
+          "content": [
+            "Hospital / Clinic",
+            "School / University",
+            "Office / Company",
+            "Restaurant / Café"
+          ],
+          "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-6",
+          "title": "Asking about jobs ❓",
+          "description": "Questions",
+          "type": "normal",
+          "content": [
+            "What do you do? = ¿A qué te dedicas?",
+            "I am a teacher.",
+            "What does he do?",
+            "He is a doctor."
+          ],
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-7",
+          "title": "Describing jobs 🗣️",
+          "description": "Using present simple",
+          "type": "normal",
+          "content": [
+            "A teacher works in a school.",
+            "A doctor helps people.",
+            "A chef cooks food."
+          ],
+          "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+          "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Tomar notas."
+    },
+    {
+      "id": "s3",
+      "title": "3. Practice & Concept Checking",
+      "duration": "15 minutos",
+      "objective": "Ejercicios guiados.",
+      "slides": [
+        {
+          "id": "slide-8",
+          "title": "Context 📖",
+          "description": "Reading",
+          "content": [
+            "A: What does your sister do?",
+            "B: She is a nurse. She works in a hospital.",
+            "A: Does she like it?",
+            "B: Yes, she loves it."
+          ],
+          "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+          "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-9",
+          "title": "Complete the sentence (1/3) ✍️",
+          "description": "Vocabulary",
+          "content": [
+            "A ______ cooks food in a restaurant."
+          ],
+          "options": [
+            "doctor",
+            "teacher",
+            "chef"
+          ],
+          "correctOptionIndex": 2,
+          "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+          "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-10",
+          "title": "Complete the sentence (2/3) ✍️",
+          "description": "Vocabulary",
+          "content": [
+            "A doctor works in a ______."
+          ],
+          "options": [
+            "school",
+            "hospital",
+            "office"
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+          "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-11",
+          "title": "Complete the sentence (3/3) ✍️",
+          "description": "Grammar",
+          "content": [
+            "What ______ you do?"
+          ],
+          "options": [
+            "do",
+            "does",
+            "are"
+          ],
+          "correctOptionIndex": 0,
+          "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-12",
+          "title": "Emojis Locos 🤪",
+          "description": "Guess!",
+          "type": "emoji-game",
+          "content": [
+            "👩‍🏫 ➕ 🏫 ➕ 📚"
+          ],
+          "options": [
+            "She is a doctor.",
+            "She is a teacher.",
+            "She is a pilot."
+          ],
+          "correctOptionIndex": 1,
+          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+          "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Resolver y verificar."
+    },
+    {
+      "id": "s4",
+      "title": "4. Production & Quiz",
+      "duration": "15 minutos",
+      "objective": "Producción oral.",
+      "slides": [
+        {
+          "id": "slide-13",
+          "title": "Let's Talk! 🗣️",
+          "description": "Speaking",
+          "content": [
+            "What do you do?",
+            "Where do you work?",
+            "Do you like your job?"
+          ],
+          "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+          "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-14",
+          "title": "Fun Quiz! (1/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Who works in an office?"
+          ],
+          "options": [
+            "An engineer",
+            "A pilot",
+            "A chef"
+          ],
+          "correctOptionIndex": 0,
+          "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-15",
+          "title": "Fun Quiz! (2/3) 🧠",
+          "description": "Review",
+          "content": [
+            "How to ask about profession?"
+          ],
+          "options": [
+            "What do you work?",
+            "What are you doing?",
+            "What do you do?"
+          ],
+          "correctOptionIndex": 2,
+          "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-16",
+          "title": "Fun Quiz! (3/3) 🧠",
+          "description": "Review",
+          "content": [
+            "Which is correct?"
+          ],
+          "options": [
+            "He works in a hospital.",
+            "He work in a hospital.",
+            "He working in a hospital."
+          ],
+          "correctOptionIndex": 0,
+          "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+          "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-17",
+          "title": "Roleplay 🎭",
+          "description": "Activity",
+          "content": [
+            "Job Interview!",
+            "Student A: Boss. Student B: Applicant.",
+            "Ask questions: What do you do? Where do you live?"
+          ],
+          "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+          "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Evaluar."
+    },
+    {
+      "id": "s5",
+      "title": "5. Wrap-up & Homework",
+      "duration": "10 minutos",
+      "objective": "Cierre.",
+      "slides": [
+        {
+          "id": "slide-18",
+          "title": "Class Complete! 🎉",
+          "description": "Great job!",
+          "content": [
+            "You can now talk about jobs!"
+          ],
+          "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
+          "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-19",
+          "title": "Homework 📝",
+          "description": "Write sentences",
+          "type": "homework",
+          "content": [
+            "Write about the jobs of 3 people in your family.",
+            "Where do they work? Do they like it?"
+          ],
+          "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+          "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "id": "slide-20",
+          "title": "Video Homework 📹",
+          "description": "Listen",
+          "type": "video",
+          "videoUrl": "https://www.youtube.com/embed/5F6v314rXwA",
+          "content": [
+            "Watch the video about jobs.",
+            "Write down 2 new jobs you learn."
+          ],
+          "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+        }
+      ],
+      "action": "Despedida."
+    }
+  ]
+},
       {
         "id": "c-adults-basic-1-5",
         "title": "Clase 5: Rutinas diarias y la hora",
@@ -7817,7 +8233,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "go to",
           "going to"
         ],
-        "correctAnswer": "am going to"
+        "correctAnswer": "am going to",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-2",
@@ -7828,7 +8245,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "Do you will go to the party?",
           "Are you will go to the party?"
         ],
-        "correctAnswer": "Will you go to the party?"
+        "correctAnswer": "Will you go to the party?",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-3",
@@ -7839,7 +8257,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "What",
           "When"
         ],
-        "correctAnswer": "What"
+        "correctAnswer": "What",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-4",
@@ -7850,7 +8269,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "What kind",
           "How long"
         ],
-        "correctAnswer": "How much"
+        "correctAnswer": "How much",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-5",
@@ -7861,7 +8281,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "at",
           "to"
         ],
-        "correctAnswer": "at"
+        "correctAnswer": "at",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-6",
@@ -7872,7 +8293,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "Usually",
           "Never"
         ],
-        "correctAnswer": "Never"
+        "correctAnswer": "Never",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-7",
@@ -7883,7 +8305,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "Give me a water.",
           "I like water."
         ],
-        "correctAnswer": "I would like a glass of water."
+        "correctAnswer": "I would like a glass of water.",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-8",
@@ -7894,7 +8317,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "an",
           "any"
         ],
-        "correctAnswer": "any"
+        "correctAnswer": "any",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-9",
@@ -7905,7 +8329,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "watched",
           "to watching"
         ],
-        "correctAnswer": "watching"
+        "correctAnswer": "watching",
+        "type": "multiple-choice"
       },
       {
         "id": "q-b1-10",
@@ -7916,7 +8341,8 @@ export const curriculumLevels: CurriculumLevel[] = [
           "What will the weather be like tomorrow?",
           "How will be the weather tomorrow?"
         ],
-        "correctAnswer": "What will the weather be like tomorrow?"
+        "correctAnswer": "What will the weather be like tomorrow?",
+        "type": "multiple-choice"
       }
     ],
     "oralEvaluation": [
@@ -8118,7 +8544,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "My brother _____ to the gym on Mondays."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "go",
                   "going",
@@ -8201,7 +8627,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) waking"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "wakes",
                   "wake",
@@ -8425,7 +8851,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Listen! The baby _____."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "crying",
                   "is crying",
@@ -8508,7 +8934,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) are"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "is",
                   "am",
@@ -8733,7 +9159,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "My dog _____ eating chicken."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "prefer",
                   "prefers",
@@ -8816,7 +9242,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) loving"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "loves",
                   "love",
@@ -9040,7 +9466,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Look! John _____ his new car."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "drives",
                   "is driving",
@@ -9124,7 +9550,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) drink / drink"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "drink / am drinking",
                   "am drinking / drink",
@@ -9308,7 +9734,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Do you understand this lesson?"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               },
               {
                 "id": "gen-c-adults-basic-2-5-s3-igm4n",
@@ -9319,7 +9745,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Yo creo en ti."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "I am believing in you.",
                   "I believe in you.",
@@ -9335,7 +9761,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "This soup _____ delicious!"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "tastes",
                   "is tasting",
@@ -9376,7 +9802,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) knows"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "am knowing",
                   "know",
@@ -9395,7 +9821,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) run"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "is running",
                   "runs",
@@ -9414,7 +9840,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) want"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "are wanting",
                   "wants",
@@ -9433,7 +9859,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) eats"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "are eating",
                   "eat",
@@ -9609,7 +10035,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "What is your favorite season?"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               },
               {
                 "id": "gen-c-adults-basic-2-6-s3-8j6y9d",
@@ -9620,7 +10046,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Está nublado hoy."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "It is sunny today.",
                   "It is raining today.",
@@ -9636,7 +10062,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Take an umbrella, it is _____."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "sunny",
                   "raining",
@@ -9677,7 +10103,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Snowy"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Sunny",
                   "Rainy",
@@ -9696,7 +10122,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Summer"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Winter",
                   "Autumn",
@@ -9715,7 +10141,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Windy"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Cloudy",
                   "Sunny",
@@ -9734,7 +10160,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Summer"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Spring",
                   "Autumn",
@@ -9911,7 +10337,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Give them 3 instructions to follow."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               },
               {
                 "id": "gen-c-adults-basic-2-7-s3-l02eqk",
@@ -9922,7 +10348,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "No toques eso."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Don't touch that.",
                   "Not touch that.",
@@ -9938,7 +10364,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "_____ me the salt, please."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Passing",
                   "Passes",
@@ -9979,7 +10405,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Closing"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Close",
                   "Closes",
@@ -9998,7 +10424,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Don't"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Not",
                   "No",
@@ -10017,7 +10443,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Sits"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Sit",
                   "Sitting",
@@ -10036,7 +10462,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Listening"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Listens",
                   "Listen",
@@ -10101,7 +10527,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "content": [
                   "Bank, Supermarket, Hospital, Park, Restaurant, Bus stop."
                 ],
-                "imageUrl": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=800",
+                "imageUrl": "/images/prep_between.jpg?v=3",
                 "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
               }
             ],
@@ -10135,7 +10561,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Go past the school (Pasa la escuela).",
                   "Cross the street (Cruza la calle)."
                 ],
-                "imageUrl": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800",
+                "imageUrl": "/images/directions_ask.jpg?v=3",
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               },
               {
@@ -10161,7 +10587,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "- Cross the street"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               }
             ],
             "action": "Pronunciar las frases y hacer mímica de 'turn right/left'."
@@ -10215,7 +10641,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "How do I get from here to the nearest supermarket?"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               },
               {
                 "id": "gen-c-adults-basic-2-8-s3-nprpz9",
@@ -10226,7 +10652,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Gira a la derecha en la esquina."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Turn right at the corner.",
                   "Go right in the corner.",
@@ -10242,7 +10668,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "The park is _____ to the school."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "next",
                   "near",
@@ -10282,7 +10708,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) cross"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "turn",
                   "go",
@@ -10301,7 +10727,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) corner"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "straight",
                   "right",
@@ -10320,7 +10746,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) to"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "in",
                   "on",
@@ -10339,7 +10765,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) Cross"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Turn",
                   "Go",
@@ -10463,7 +10889,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "- Hang up"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               }
             ],
             "action": "Repetir frases simulando tener un teléfono en la mano."
@@ -10517,7 +10943,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Roleplay a short phone call asking for someone."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               },
               {
                 "id": "gen-c-adults-basic-2-9-s3-dr8khr",
@@ -10528,7 +10954,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Espera un momento en la línea."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Wait a moment on line.",
                   "Hold on a minute.",
@@ -10544,7 +10970,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I have to _____ up now, bye!"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "hold",
                   "hang",
@@ -10583,7 +11009,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) call"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "speak",
                   "hold",
@@ -10602,7 +11028,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) leave"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "hang",
                   "hold",
@@ -10621,7 +11047,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) leave"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "speak",
                   "call",
@@ -10640,7 +11066,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) speak"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "call",
                   "hold",
@@ -10760,7 +11186,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "- At the moment"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               }
             ],
             "action": "Resolver dudas y asegurar que todos entiendan la diferencia conceptual."
@@ -10814,7 +11240,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "What do you usually do, and what are you doing right now?"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard"
+                "type": "normal"
               },
               {
                 "id": "gen-c-adults-basic-2-10-s3-8xtl8w9",
@@ -10825,7 +11251,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Él siempre llega tarde."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "He always arriving late.",
                   "He is always late.",
@@ -10841,7 +11267,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Quiet! The baby _____."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "sleeps",
                   "is sleeping",
@@ -10881,7 +11307,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) drink / drink"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "drink / am drinking",
                   "am drinking / drink",
@@ -10900,7 +11326,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) sleep"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "sleeps",
                   "is sleeping",
@@ -10919,7 +11345,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) plays"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "play",
                   "are playing",
@@ -10938,7 +11364,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "c) snow"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "snows",
                   "is snowing",
@@ -11430,7 +11856,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "She can't drive a car yet."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Swim",
                   "Drive",
@@ -11706,7 +12132,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Could you help me with this?"
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Borrow",
                   "Lend",
@@ -11980,7 +12406,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "You don't have to pay for this."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Work",
                   "Study",
@@ -12254,7 +12680,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "She is tall and has brown hair."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "T-shirt",
                   "Jeans",
@@ -12528,7 +12954,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I usually go to work by bus."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Bank",
                   "Supermarket",
@@ -12801,7 +13227,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "They were at home last night."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Yesterday",
                   "Last week",
@@ -13076,7 +13502,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "My favorite toy was a car."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Child",
                   "Toys",
@@ -13349,7 +13775,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "He became a famous scientist."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Born in",
                   "Grew up",
@@ -13623,7 +14049,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "He was born in nineteen ninety-five."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "January",
                   "December",
@@ -13897,7 +14323,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I can speak English better now."
                 ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-                "type": "standard",
+                "type": "normal",
                 "options": [
                   "Review",
                   "Can",
@@ -14026,36 +14452,42 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-1-s1-sl1",
                 "title": "Welcome to Basic 4!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Let's start our new level!",
                   "Today we will talk about the past."
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What did you do yesterday?",
                   "Did you work? Did you study?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Learn the Simple Past tense.",
                   "- Use regular verbs ending in -ed.",
                   "- Talk about past actions."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-1-s2",
@@ -14064,58 +14496,66 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-1-s2-sl1",
                 "title": "Simple Past: Usage",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We use the Simple Past for completed actions in the past.",
                   "Example: I played tennis yesterday."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s2-sl2",
                 "title": "Regular Verbs (-ed)",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "For regular verbs, we add -ed to the base form.",
                   "work -> worked",
                   "play -> played",
                   "watch -> watched"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s2-sl3",
                 "title": "Spelling Rules",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "ends in 'e' -> add 'd' (like -> liked)",
                   "ends in consonant + y -> change 'y' to 'i' and add 'ed' (study -> studied)"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s2-sl4",
                 "title": "Pronunciation of -ed",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "/t/: watched, washed, liked",
                   "/d/: played, listened, lived",
                   "/ɪd/: wanted, needed"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s2-sl5",
                 "title": "Time Expressions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "yesterday",
                   "last night / last week / last year",
                   "two days ago / a week ago"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-1-s3",
@@ -14124,27 +14564,29 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-1-s3-sl1",
                 "title": "Complete the sentence",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _______ (work) very hard last week.",
                   "She _______ (clean) her room yesterday."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s3-sl2",
                 "title": "Find the mistake",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I studyed English yesterday. ❌ -> I studied English yesterday. ✅",
                   "He want to go last night. ❌ -> He wanted to go last night. ✅"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "They _____ football yesterday."
                 ],
@@ -14154,12 +14596,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "played",
                   "plaied"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ my grandmother last weekend."
                 ],
@@ -14169,18 +14612,20 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "visited",
                   "visiting"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s3-sl5",
                 "title": "Translation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. Yo trabajé ayer.",
                   "2. Ella estudió anoche.",
                   "3. Nosotros jugamos tenis el sábado pasado."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s3-emoji",
@@ -14198,7 +14643,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 0,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-1-s4",
@@ -14207,18 +14655,19 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-1-s4-sl1",
                 "title": "Create a story",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Use these verbs in the past: walk, listen, rain, watch.",
                   "Example: Yesterday, I walked to the park..."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What is the past of 'play'?"
                 ],
@@ -14234,7 +14683,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-1-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "She _____ TV yesterday."
                 ],
@@ -14250,7 +14699,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-1-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Pronunciation of 'wanted'?"
                 ],
@@ -14265,33 +14714,39 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-1-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What did you do last weekend?",
                   "Share 3 activities using regular verbs."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Student A: Ask your partner about their last vacation.",
                   "Student B: Answer using regular verbs (visited, stayed, walked, enjoyed)."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-1-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Share with the class what your partner did last weekend!"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-1-s5",
@@ -14301,7 +14756,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-1-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -14333,7 +14788,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -14350,36 +14808,42 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-2-s1-sl1",
                 "title": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What did we learn last class?",
                   "Tell me one regular verb in the past."
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Do you know the past of 'go'?",
                   "It is NOT 'goed'!"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Learn common irregular verbs in the past.",
                   "- Memorize their forms.",
                   "- Practice talking about past events."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-2-s2",
@@ -14388,62 +14852,70 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-2-s2-sl1",
                 "title": "Irregular Verbs",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Many common verbs are irregular in the past.",
                   "They do NOT end in -ed.",
                   "You have to memorize them!"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s2-sl2",
                 "title": "Common Irregular Verbs (1)",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "go -> went",
                   "have -> had",
                   "do -> did",
                   "make -> made"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s2-sl3",
                 "title": "Common Irregular Verbs (2)",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "eat -> ate",
                   "drink -> drank",
                   "see -> saw",
                   "buy -> bought"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s2-sl4",
                 "title": "Common Irregular Verbs (3)",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "take -> took",
                   "give -> gave",
                   "say -> said",
                   "come -> came"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s2-sl5",
                 "title": "Examples in Context",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I went to the cinema yesterday.",
                   "She had a lot of fun.",
                   "They bought a new car last year."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-2-s3",
@@ -14452,27 +14924,29 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-2-s3-sl1",
                 "title": "Complete the sentence",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We _______ (go) to the beach last summer.",
                   "He _______ (eat) a big pizza for dinner."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s3-sl2",
                 "title": "Find the mistake",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I buyed a new shirt. ❌ -> I bought a new shirt. ✅",
                   "She gived me a present. ❌ -> She gave me a present. ✅"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "They _____ a great movie last night."
                 ],
@@ -14482,12 +14956,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "saw",
                   "seed"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ a lot of water yesterday."
                 ],
@@ -14497,12 +14972,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "drank",
                   "drunk"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s3-sl5",
                 "title": "Match the verbs",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Match the present with the past:",
                   "go - ate",
@@ -14510,7 +14986,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "have - did",
                   "do - had"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s3-emoji",
@@ -14528,7 +15005,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-2-s4",
@@ -14537,18 +15017,19 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-2-s4-sl1",
                 "title": "Create a story",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Use these verbs: go, see, eat, have.",
                   "Example: Last weekend, I went to Paris..."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Past of 'go'?"
                 ],
@@ -14564,7 +15045,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-2-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "He _____ a pizza."
                 ],
@@ -14580,7 +15061,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-2-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Past of 'have'?"
                 ],
@@ -14595,33 +15076,39 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-2-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Tell your partner about a special day you had in the past.",
                   "What did you do? Where did you go? What did you eat?"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Student A: You are a detective asking about yesterday.",
                   "Student B: Tell the detective what you did using irregular verbs."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-2-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Tell the class the most interesting thing your partner did."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-2-s5",
@@ -14631,7 +15118,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-2-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -14663,7 +15150,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -14680,36 +15170,42 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-3-s1-sl1",
                 "title": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Say the past of: go, play, see, want, have."
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "How do we ask a question in the present?",
                   "Do you like pizza?",
                   "How do we ask in the past?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Form negative sentences in the past.",
                   "- Form questions in the past.",
                   "- Use the auxiliary 'did'."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-3-s2",
@@ -14718,59 +15214,67 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-3-s2-sl1",
                 "title": "Negative Sentences",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Subject + did not (didn't) + base verb",
                   "I didn't play.",
                   "She didn't go.",
                   "Notice: The main verb is NOT in the past!"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s2-sl2",
                 "title": "Questions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Did + Subject + base verb?",
                   "Did you play?",
                   "Did she go?"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s2-sl3",
                 "title": "Short Answers",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Yes, I did. / No, I didn't.",
                   "Yes, she did. / No, she didn't."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s2-sl4",
                 "title": "Wh- Questions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Wh-word + did + subject + base verb?",
                   "Where did you go?",
                   "What did you eat?",
                   "When did they arrive?"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s2-sl5",
                 "title": "Common mistake!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I didn't went. ❌ -> I didn't go. ✅",
                   "Did you played? ❌ -> Did you play? ✅"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-3-s3",
@@ -14779,27 +15283,29 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-3-s3-sl1",
                 "title": "Make it negative",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I watched TV. -> I didn't watch TV.",
                   "He ate pizza. -> ?"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s3-sl2",
                 "title": "Make a question",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "They went to the park. -> Did they go to the park?",
                   "She bought a car. -> ?"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "_____ you see the movie?"
                 ],
@@ -14809,12 +15315,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Does",
                   "Did"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "No, I _____."
                 ],
@@ -14824,12 +15331,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "don't",
                   "wasn't"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s3-sl5",
                 "title": "Knowledge Check 3",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Where _____ last night?"
                 ],
@@ -14839,7 +15347,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "did you go",
                   "you went"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s3-emoji",
@@ -14857,7 +15366,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 0,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-3-s4",
@@ -14866,20 +15378,21 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-3-s4-sl1",
                 "title": "Find someone who...",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Ask your classmates questions to find someone who:",
                   "- watched a movie yesterday",
                   "- didn't drink coffee this morning",
                   "- went to a restaurant last weekend"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Did you _____ yesterday?"
                 ],
@@ -14895,7 +15408,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-3-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I didn't _____ the movie."
                 ],
@@ -14911,7 +15424,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-3-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "_____ she play tennis?"
                 ],
@@ -14926,32 +15439,38 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-3-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Ask your partner 3 questions about their weekend using 'Did you...?'"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Interview a famous person about their past.",
                   "Ask them questions using 'Where did you...?', 'What did you...?'"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-3-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Share the most surprising answer you heard."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-3-s5",
@@ -14961,7 +15480,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-3-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -14993,7 +15512,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -15010,35 +15532,41 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-4-s1-sl1",
                 "title": "Welcome back!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Let's talk about travel!"
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Do you like to travel?",
                   "Where is your favorite place to visit?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Learn travel and holiday vocabulary.",
                   "- Talk about past trips.",
                   "- Describe travel experiences."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-4-s2",
@@ -15047,60 +15575,68 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-4-s2-sl1",
                 "title": "Transportation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "by plane / fly",
                   "by train",
                   "by bus",
                   "by car / drive"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s2-sl2",
                 "title": "Accommodation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "stay at a hotel",
                   "stay in a hostel",
                   "rent an apartment",
                   "book a room"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s2-sl3",
                 "title": "Holiday Activities",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "go sightseeing",
                   "take photos",
                   "buy souvenirs",
                   "relax on the beach"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s2-sl4",
                 "title": "Adjectives for Trips",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "amazing, wonderful, relaxing",
                   "boring, terrible, tiring",
                   "The trip was amazing!"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s2-sl5",
                 "title": "Useful Verbs in Past",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "flew, traveled, visited, stayed, enjoyed"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-4-s3",
@@ -15109,29 +15645,31 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-4-s3-sl1",
                 "title": "Complete the sentence",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We travelled to Rome _____ plane.",
                   "We _____ at a very nice hotel."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s3-sl2",
                 "title": "Vocabulary Match",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Match:",
                   "1. buy    a) sightseeing",
                   "2. go     b) souvenirs",
                   "3. take   c) photos"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ a room online."
                 ],
@@ -15141,12 +15679,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "books",
                   "booking"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "The trip was very long and I was very _____."
                 ],
@@ -15156,18 +15695,20 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "tiring",
                   "relax"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s3-sl5",
                 "title": "Translation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. Viajamos en tren.",
                   "2. Compramos recuerdos.",
                   "3. Las vacaciones fueron maravillosas."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s3-emoji",
@@ -15185,7 +15726,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-4-s4",
@@ -15194,18 +15738,19 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-4-s4-sl1",
                 "title": "Create a story",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Imagine the worst holiday ever.",
                   "Tell a story about it using past tense and travel vocabulary."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We traveled _____ plane."
                 ],
@@ -15221,7 +15766,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-4-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ a hotel room."
                 ],
@@ -15237,7 +15782,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-4-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "The trip was very _____."
                 ],
@@ -15252,33 +15797,39 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-4-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Describe your best holiday.",
                   "Where did you go? How did you travel? Where did you stay?"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Student A: You just returned from a trip.",
                   "Student B: Ask Student A about their trip (where, how, what)."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-4-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Share with the class where your partner went on their best holiday."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-4-s5",
@@ -15288,7 +15839,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-4-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -15320,7 +15871,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -15337,35 +15891,41 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-5-s1-sl1",
                 "title": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Tell me 3 words related to travel."
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "How do you organize a story?",
                   "If you tell me what you did today, what word do you use to start?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Learn sequence connectors.",
                   "- Tell anecdotes in chronological order.",
                   "- Improve narrative skills in the past."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-5-s2",
@@ -15374,58 +15934,66 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-5-s2-sl1",
                 "title": "Sequence Connectors",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We use these words to link actions in a story.",
                   "They help the listener understand the order of events."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s2-sl2",
                 "title": "The Connectors",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "First, ... (to start)",
                   "Then, / Next, / After that, ... (to continue)",
                   "Finally, / In the end, ... (to finish)"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s2-sl3",
                 "title": "Example Story",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Yesterday was terrible.",
                   "FIRST, I woke up late.",
                   "THEN, I missed the bus.",
                   "FINALLY, I arrived late for work."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s2-sl4",
                 "title": "Other useful words",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Suddenly (de repente)",
                   "Because (porque - reason)",
                   "So (así que - result)"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s2-sl5",
                 "title": "Punctuation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We usually put a comma after these connectors.",
                   "First, I went... Then, I saw..."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-5-s3",
@@ -15434,29 +16002,31 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-5-s3-sl1",
                 "title": "Order the story",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "A) Finally, we went home.",
                   "B) First, we bought tickets.",
                   "C) Then, we watched the movie."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s3-sl2",
                 "title": "Complete the sentence",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "_____, I packed my bag.",
                   "_____, I called a taxi.",
                   "_____, I arrived at the airport."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Which word is used to finish a story?"
                 ],
@@ -15466,12 +16036,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Then",
                   "Finally"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I was hungry, _____ I bought a sandwich."
                 ],
@@ -15481,18 +16052,20 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "so",
                   "then"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s3-sl5",
                 "title": "Translation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. Primero, fuimos a la playa.",
                   "2. Luego, comimos pizza.",
                   "3. Finalmente, regresamos al hotel."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s3-emoji",
@@ -15510,7 +16083,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-5-s4",
@@ -15519,20 +16095,21 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-5-s4-sl1",
                 "title": "Create a story",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Use these prompts to make a story with connectors:",
                   "- wake up / hear a noise",
                   "- go to the kitchen",
                   "- see a cat!"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Which word starts a story?"
                 ],
@@ -15548,7 +16125,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-5-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Which word finishes a story?"
                 ],
@@ -15564,7 +16141,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-5-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "_____, I woke up late."
                 ],
@@ -15579,33 +16156,39 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-5-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Tell a funny or interesting anecdote that happened to you.",
                   "Use First, Then, After that, Finally."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You are a witness to a bank robbery.",
                   "Tell the police exactly what happened in order."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-5-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Share the best anecdote you heard today."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-5-s5",
@@ -15615,7 +16198,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-5-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -15647,7 +16230,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -15664,35 +16250,41 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-6-s1-sl1",
                 "title": "Welcome!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We are moving from the past to the future!"
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What are your plans for this weekend?",
                   "Do you have anything special planned?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Learn to express future plans and intentions.",
                   "- Use 'be going to'.",
                   "- Talk about the future."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-6-s2",
@@ -15701,59 +16293,67 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-6-s2-sl1",
                 "title": "Be Going To: Usage",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We use 'be going to' for future plans, intentions, and decisions made BEFORE speaking.",
                   "Example: I am going to visit my mother this weekend."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s2-sl2",
                 "title": "Affirmative",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Subject + am/is/are + going to + base verb",
                   "I am going to study.",
                   "She is going to travel.",
                   "They are going to play."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s2-sl3",
                 "title": "Negative",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Subject + am/is/are + not + going to + base verb",
                   "I am not going to work.",
                   "He isn't going to call."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s2-sl4",
                 "title": "Questions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Am/Is/Are + Subject + going to + base verb?",
                   "Are you going to study tonight?",
                   "Is she going to travel?"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s2-sl5",
                 "title": "Future Time Expressions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "tomorrow, tomorrow morning",
                   "next week, next month, next year",
                   "tonight, this weekend"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-6-s3",
@@ -15762,27 +16362,29 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-6-s3-sl1",
                 "title": "Complete the sentence",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ (be/go) to watch a movie tonight.",
                   "They _____ (not/be/go) to buy a house."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s3-sl2",
                 "title": "Make a question",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "you / travel / next summer?",
                   "-> Are you going to travel next summer?"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "He _____ going to play tennis."
                 ],
@@ -15792,12 +16394,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "is",
                   "are"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "_____ you going to study?"
                 ],
@@ -15807,17 +16410,19 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Are",
                   "Did"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s3-sl5",
                 "title": "Find the mistake",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I am go to study. ❌ -> I am going to study. ✅",
                   "She is going play. ❌ -> She is going to play. ✅"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s3-emoji",
@@ -15835,7 +16440,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-6-s4",
@@ -15844,18 +16452,19 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-6-s4-sl1",
                 "title": "Create a story",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Imagine your dream weekend.",
                   "What are you going to do on Friday night? Saturday? Sunday?"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I am _____ travel."
                 ],
@@ -15871,7 +16480,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-6-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "She _____ going to study."
                 ],
@@ -15887,7 +16496,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-6-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "_____ you going to work?"
                 ],
@@ -15902,33 +16511,39 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-6-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Ask your partner about their plans for the next holiday.",
                   "Use 'Are you going to...?'"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Student A: You are a famous actor planning your next movie.",
                   "Student B: Interview the actor about their future plans."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-6-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Tell the class one exciting plan your partner has."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-6-s5",
@@ -15938,7 +16553,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-6-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -15970,7 +16585,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -15987,36 +16605,42 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-7-s1-sl1",
                 "title": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Tell me one plan you have for tomorrow using 'going to'."
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Imagine the year 2050.",
                   "Will we have flying cars?",
                   "Will we live on Mars?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Learn to use 'Will' for predictions.",
                   "- Learn to use 'Will' for quick decisions.",
                   "- Form sentences with 'Will'."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-7-s2",
@@ -16025,59 +16649,67 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-7-s2-sl1",
                 "title": "Will: Predictions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We use 'will' for predictions, things we THINK will happen in the future.",
                   "Often with: I think, I believe, maybe, probably.",
                   "Example: I think it will rain tomorrow."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s2-sl2",
                 "title": "Will: Quick Decisions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We use 'will' for decisions made AT THE MOMENT of speaking.",
                   "Example: (Phone rings) I will answer it!"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s2-sl3",
                 "title": "Structure",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Affirmative: Subject + will + base verb (I will go)",
                   "Negative: Subject + will not (won't) + base verb (I won't go)",
                   "Question: Will + subject + base verb? (Will you go?)"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s2-sl4",
                 "title": "Contractions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I will -> I'll",
                   "You will -> You'll",
                   "He will -> He'll",
                   "will not -> won't"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s2-sl5",
                 "title": "Promises & Offers",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "We also use 'will' for promises and offers.",
                   "Promise: I will love you forever.",
                   "Offer: I will help you with your bags."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-7-s3",
@@ -16086,27 +16718,29 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-7-s3-sl1",
                 "title": "Prediction or Decision?",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. The phone is ringing. I'll get it!",
                   "2. I think cars will fly in 2050."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s3-sl2",
                 "title": "Complete the sentence",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I'm cold. I _____ (close) the window.",
                   "I don't think he _____ (win) the match."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ help you with your homework."
                 ],
@@ -16116,12 +16750,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "wills",
                   "willing"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "She _____ go to the party. She is sick."
                 ],
@@ -16131,18 +16766,20 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "won't",
                   "don't"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s3-sl5",
                 "title": "Translation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. Yo abriré la puerta.",
                   "2. Creo que lloverá mañana.",
                   "3. ¿Me ayudarás?"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s3-emoji",
@@ -16160,7 +16797,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-7-s4",
@@ -16169,18 +16809,19 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-7-s4-sl1",
                 "title": "Make predictions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Make predictions about the year 2040.",
                   "Technology, food, environment, space."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I think it _____ rain."
                 ],
@@ -16196,7 +16837,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-7-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "(Phone rings) I _____ answer it!"
                 ],
@@ -16212,7 +16853,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-7-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Negative of will?"
                 ],
@@ -16227,35 +16868,41 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-7-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Respond to these situations with a quick decision:",
                   "- It's very hot in here.",
                   "- You are at a restaurant and the waiter asks what you want.",
                   "- Someone is knocking on the door."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You are a fortune teller.",
                   "Predict your partner's future (love, money, travel) using 'will'."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-7-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What was the most interesting prediction your partner made?"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-7-s5",
@@ -16265,7 +16912,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-7-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -16297,7 +16944,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -16314,36 +16964,42 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-8-s1-sl1",
                 "title": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "When do we use 'going to'?",
                   "When do we use 'will'?"
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What are you going to do after class?",
                   "What do you think the weather will be like tomorrow?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Understand the difference between Will and Going to.",
                   "- Choose the correct future form in context.",
                   "- Practice mixing both forms."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-8-s2",
@@ -16352,53 +17008,61 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-8-s2-sl1",
                 "title": "Will vs. Going to",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Will: Predictions, quick decisions, promises.",
                   "Going to: Prior plans, intentions, predictions based on evidence."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s2-sl2",
                 "title": "Decisions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Quick Decision (Will): Oh, we don't have milk. I'LL buy some.",
                   "Plan (Going to): I know we don't have milk. I AM GOING TO buy some later."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s2-sl3",
                 "title": "Predictions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Opinion (Will): I think Madrid WILL win the match.",
                   "Evidence (Going to): Look at those black clouds! It IS GOING TO rain."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s2-sl4",
                 "title": "Summary Table",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Will = Spontaneous / Opinions",
                   "Going to = Planned / Evidence"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s2-sl5",
                 "title": "Common mistake",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "(At a restaurant ordering): I am going to have a coffee. ❌ -> I'll have a coffee. ✅ (It's a decision made at the moment)."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-8-s3",
@@ -16407,27 +17071,29 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-8-s3-sl1",
                 "title": "Will or Going to?",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. A: The phone is ringing. B: I _____ answer it.",
                   "2. I bought the tickets! I _____ travel to Italy."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s3-sl2",
                 "title": "Will or Going to?",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "3. Look at that boy! He _____ fall from the bike.",
                   "4. I think people _____ live on the moon one day."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "A: I am thirsty. B: I _____ get you some water."
                 ],
@@ -16437,12 +17103,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "am going to",
                   "'m"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Next year, I _____ study at the university. I am accepted!"
                 ],
@@ -16452,18 +17119,20 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "am going to",
                   "going to"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s3-sl5",
                 "title": "Translation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. Creo que ganaremos.",
                   "2. Voy a visitar a mi abuela mañana.",
                   "3. (Suena el timbre) ¡Yo iré!"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s3-emoji",
@@ -16481,7 +17150,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 0,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-8-s4",
@@ -16490,20 +17162,21 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-8-s4-sl1",
                 "title": "Complete the dialogue",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Create a short dialogue mixing both:",
                   "A asks about plans.",
                   "B answers.",
                   "A makes a spontaneous offer."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Evidence: Look at those clouds! It _____ rain."
                 ],
@@ -16519,7 +17192,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-8-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Decision now: I _____ have a coffee."
                 ],
@@ -16535,7 +17208,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-8-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Plan: I _____ visit Paris."
                 ],
@@ -16550,33 +17223,39 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-8-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Tell your partner about your plans for the weekend (going to).",
                   "Then, make a prediction about next year (will)."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Situation: You are packing for a trip.",
                   "Discuss your plans and make quick decisions about what to take."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-8-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What was the most interesting plan your partner has?"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-8-s5",
@@ -16586,7 +17265,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-8-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -16618,7 +17297,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -16635,35 +17317,41 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-9-s1-sl1",
                 "title": "Welcome!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Today we will learn how to argue... politely!"
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What is the best movie of all time?",
                   "Do you agree with your classmates?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Express opinions clearly.",
                   "- Agree with others.",
                   "- Disagree politely."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-9-s2",
@@ -16672,61 +17360,69 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-9-s2-sl1",
                 "title": "Giving Opinions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I think (that)...",
                   "I believe (that)...",
                   "In my opinion,...",
                   "Personally,..."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s2-sl2",
                 "title": "Agreeing",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I agree.",
                   "I totally agree.",
                   "You're right.",
                   "Me too."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s2-sl3",
                 "title": "Disagreeing politely",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I don't agree.",
                   "I disagree.",
                   "I'm not sure about that.",
                   "I see your point, but..."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s2-sl4",
                 "title": "Strong disagreement",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "(Use carefully!)",
                   "I completely disagree.",
                   "You're wrong."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s2-sl5",
                 "title": "Asking for opinions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What do you think about...?",
                   "What's your opinion on...?"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-9-s3",
@@ -16735,28 +17431,30 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-9-s3-sl1",
                 "title": "Complete the dialogue",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "A: _____ my opinion, English is easy.",
                   "B: I completely _____. It's very difficult!"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s3-sl2",
                 "title": "Match",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. What do you...   a) point, but...",
                   "2. I see your...    b) right.",
                   "3. You're...        c) think?"
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "_____ my opinion, pizza is the best food."
                 ],
@@ -16766,12 +17464,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "On",
                   "At"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I totally _____. You are absolutely right."
                 ],
@@ -16781,18 +17480,20 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "agree",
                   "think"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s3-sl5",
                 "title": "Translation",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. ¿Qué piensas sobre esta película?",
                   "2. Estoy totalmente de acuerdo.",
                   "3. Entiendo tu punto, pero..."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s3-emoji",
@@ -16810,7 +17511,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-9-s4",
@@ -16819,19 +17523,20 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-9-s4-sl1",
                 "title": "Debate Topics",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. Dogs are better than cats.",
                   "2. Social media is bad for society.",
                   "3. Money can buy happiness."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "_____ my opinion,..."
                 ],
@@ -16847,7 +17552,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-9-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I totally _____."
                 ],
@@ -16863,7 +17568,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-9-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I see your _____, but..."
                 ],
@@ -16878,33 +17583,39 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-9-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Choose a topic and share your opinion.",
                   "Partner: Agree or disagree and explain why."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You and a friend want to watch a movie tonight.",
                   "Argue about which genre is better (Action vs Comedy)."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-9-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Who had the best argument in your group?"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-9-s5",
@@ -16914,7 +17625,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-9-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -16946,7 +17657,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       },
@@ -16963,35 +17677,41 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-10-s1-sl1",
                 "title": "Congratulations!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You are at the final class of Basic 4!"
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s1-sl2",
                 "title": "Warm-up Activity",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "What was your favorite topic in this level?",
                   "Past tense? Future tense? Giving opinions?"
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s1-sl3",
                 "title": "Objectives",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "- Review Simple Past.",
                   "- Review Future forms (Will / Going to).",
                   "- Final speaking practice."
                 ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-10-s2",
@@ -17000,57 +17720,65 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-10-s2-sl1",
                 "title": "Review: Simple Past",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Regular: walked, played.",
                   "Irregular: went, ate.",
                   "Negative: didn't + base verb.",
                   "Question: Did + base verb?"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s2-sl2",
                 "title": "Review: Future",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Going to: Plans, evidence.",
                   "Will: Predictions, quick decisions."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s2-sl3",
                 "title": "Review: Connectors",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "First, ...",
                   "Then, ... / Next, ...",
                   "Finally, ..."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s2-sl4",
                 "title": "Review: Opinions",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "In my opinion...",
                   "I agree / I disagree."
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s2-sl5",
                 "title": "Preparation for next level",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "In Intermediate level, you will learn Present Perfect, Conditionals, and speak much more fluently!",
                   "Keep up the good work!"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-10-s3",
@@ -17059,28 +17787,30 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-10-s3-sl1",
                 "title": "Tense Mix",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Change to PAST: I go to the park.",
                   "Change to FUTURE plan: I eat pizza."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s3-sl2",
                 "title": "Find the mistake",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "1. Did you went to the party?",
                   "2. I think it going to rain.",
                   "3. In my opinion, I am agree."
                 ],
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s3-sl3",
                 "title": "Knowledge Check 1",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ a great book last week."
                 ],
@@ -17090,12 +17820,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "read",
                   "am reading"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s3-sl4",
                 "title": "Knowledge Check 2",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Next year, I _____ travel to Japan."
                 ],
@@ -17105,12 +17836,13 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "am going to",
                   "going to"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s3-sl5",
                 "title": "Knowledge Check 3",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ with you. That's a bad idea."
                 ],
@@ -17120,7 +17852,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "disagree",
                   "opinion"
                 ],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s3-emoji",
@@ -17138,7 +17871,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 0,
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-10-s4",
@@ -17147,19 +17883,20 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-10-s4-sl1",
                 "title": "Create a story",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Tell a story about a past trip.",
                   "Then, tell us where you are going to go next year.",
                   "Use connectors!"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s4-q1",
                 "title": "Fun Quiz! (1/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I _____ to the beach last week."
                 ],
@@ -17175,7 +17912,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-10-s4-q2",
                 "title": "Fun Quiz! (2/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Did you _____ fun?"
                 ],
@@ -17191,7 +17928,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-10-s4-q3",
                 "title": "Fun Quiz! (3/3)",
                 "description": "Review",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "I think cars _____ fly in 2050."
                 ],
@@ -17206,34 +17943,40 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "c-adults-basic-4-10-s4-sl2",
                 "title": "Speaking Time",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Interview your partner:",
                   "1. What did you do yesterday?",
                   "2. What are you going to do this weekend?",
                   "3. What is your opinion on learning English?"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s4-sl3",
                 "title": "Roleplay",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Free conversation! Talk for 3 minutes continuously using past, present, and future."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               },
               {
                 "id": "c-adults-basic-4-10-s4-sl4",
                 "title": "Share",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "Share with the class how you feel about starting the Intermediate level!"
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "description": "Let's learn and practice!"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           },
           {
             "id": "c-adults-basic-4-10-s5",
@@ -17243,7 +17986,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-10-s5-wrapup",
                 "title": "Class Complete!",
                 "description": "Amazing progress!",
-                "type": "standard",
+                "type": "normal",
                 "content": [
                   "You did a great job today.",
                   "Keep practicing to master these topics!"
@@ -17275,7 +18018,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
                 "videoUrl": "https://www.youtube.com/embed/xFsYrTIndhI"
               }
-            ]
+            ],
+            "duration": "15 minutos",
+            "objective": "Learn and practice.",
+            "action": "Guide the student."
           }
         ]
       }
@@ -17354,7 +18100,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: I study English every day.",
                   "Do/Does for questions."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -17366,7 +18112,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: I visited Paris last year.",
                   "Did for questions."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -17378,7 +18124,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Going to: Plans, intentions.",
                   "Example: I am going to travel next month."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -17389,7 +18135,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Subject + Auxiliary + Verb + Object",
                   "Don't forget the time expressions! (yesterday, tomorrow, usually)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -17659,7 +18405,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Used to talk about things that might happen in the future.",
                   "Condition (If clause) + Result (Main clause)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -17670,7 +18416,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "If + Present Simple, ... Will + Infinitive",
                   "Example: If it rains, I will stay home."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -17682,7 +18428,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I will stay home if it rains.",
                   "(No comma when 'if' is in the middle)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -17694,7 +18440,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "If she calls, I won't answer.",
                   "won't = will not"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -17964,7 +18710,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "We use 'should' to give advice or opinions.",
                   "It means 'it's a good idea'."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -17976,7 +18722,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: You should see a doctor.",
                   "You shouldn't eat so much sugar."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -17988,7 +18734,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: You ought to apologize.",
                   "Negative: You ought not to... (rarely used)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18000,7 +18746,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: Should I buy this car?",
                   "Example: What should I wear?"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -18270,7 +19016,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "content": [
                   "We use may, might, and could to say that something is possible, but we are not sure."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18282,7 +19028,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: It may rain later. = It might rain later.",
                   "(50% chance)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18294,7 +19040,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: He could be at the office.",
                   "Negative: 'Couldn't' means it's impossible. (He couldn't be there.)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18306,7 +19052,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: I might not go to the party. (It's possible that I won't go.)",
                   "Do NOT use 'could not' for possibility."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -18578,7 +19324,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Short adjectives: add -er + than (taller than)",
                   "Long adjectives: more + adj + than (more expensive than)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18590,7 +19336,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Short adjectives: the + -est (the tallest)",
                   "Long adjectives: the most + adj (the most expensive)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18602,7 +19348,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Bad -> Worse -> The worst",
                   "Far -> Further -> The furthest"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18614,7 +19360,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: She is as tall as her brother.",
                   "Not as ... as (unequal)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -18886,7 +19632,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Too + Adjective (It's too hot)",
                   "Too much / Too many + Noun (Too much sugar)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18898,7 +19644,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Adjective + Enough (He is tall enough)",
                   "Enough + Noun (I have enough money)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18910,7 +19656,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: The water isn't warm enough.",
                   "I don't have enough time."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -18921,7 +19667,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Too + Adj + to + verb (It's too cold to swim)",
                   "Adj + enough + to + verb (He's old enough to drive)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -19192,7 +19938,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Desk, Meeting, Schedule, Deadline, Report",
                   "Example: I have a meeting at 2 PM."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19203,7 +19949,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Boss, Manager, Colleague, Coworker, Employee, Client",
                   "Example: My colleagues are very helpful."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19214,7 +19960,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "To hire, To fire, To promote, To resign, To apply for",
                   "Example: She applied for a new job."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19224,7 +19970,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "content": [
                   "To make a decision, To do business, To take a break, To meet a deadline"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -19495,7 +20241,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Formal: Dear Mr./Ms. Smith, Dear Sir/Madam,",
                   "Informal: Hi John, Hello,"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19507,7 +20253,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I am writing in reference to...",
                   "Thank you for your prompt reply."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19519,7 +20265,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I would appreciate it if you could...",
                   "Polite and indirect is better!"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19530,7 +20276,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Formal: Sincerely, Best regards, Kind regards,",
                   "Followed by your full name."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -19803,7 +20549,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Example: I have visited London.",
                   "She has eaten sushi."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19814,7 +20560,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "We use it to talk about things we have done in our lives, without specifying WHEN.",
                   "Example: I have read that book. (Time is not important)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19827,7 +20573,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Never = not at any time",
                   "Example: I have never flown in a helicopter."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -19840,7 +20586,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Eat -> Eaten",
                   "Write -> Written"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -20111,7 +20857,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Keywords: yesterday, last year, in 2010, ago.",
                   "Example: I saw that movie yesterday."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20123,7 +20869,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Keywords: ever, never, already, yet, just.",
                   "Example: I have seen that movie."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20135,7 +20881,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "A: Have you seen John? (PP)",
                   "B: Yes, I saw him 5 minutes ago. (PS)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20146,7 +20892,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Past Simple: The time is finished (last week).",
                   "Present Perfect: The time is NOT finished (this week, today)."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -20418,7 +21164,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Used after certain verbs: enjoy, avoid, mind, finish, suggest.",
                   "Example: I enjoy reading."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20429,7 +21175,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Used after certain verbs: want, need, decide, hope, promise.",
                   "Example: I decided to buy a car."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20440,7 +21186,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Some verbs can take either without meaning change: like, love, hate, start.",
                   "Example: I like reading / I like to read."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20451,7 +21197,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "ALWAYS use a gerund after a preposition (in, on, at, about, of).",
                   "Example: I am interested in learning French."
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]
@@ -20723,7 +21469,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "The meaning changes completely from the original verb.",
                   "Example: Give (dar) -> Give up (rendirse)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20736,7 +21482,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Turn on / Turn off (encender/apagar)",
                   "Put on (ponerse ropa)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20749,7 +21495,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Take off (quitarse / despegar un avión)",
                   "Find out (descubrir información)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               },
               {
@@ -20760,7 +21506,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Some can be separated: Turn the TV on. / Turn it on.",
                   "Some cannot: I am looking for my keys. (NOT: looking my keys for)"
                 ],
-                "type": "standard",
+                "type": "normal",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
               }
             ]

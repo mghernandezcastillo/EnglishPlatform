@@ -278,7 +278,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                 </div>
               ) : slide.imageUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center p-2 text-center backdrop-blur-sm min-h-[200px] sm:min-h-[400px]">
-                  <img src={slide.imageUrl} alt={slide.title} className="w-full h-full object-cover rounded-lg sm:rounded-xl" />
+                  <img src={slide.imageUrl} referrerPolicy="no-referrer" alt={slide.title} className="w-full h-full object-cover rounded-lg sm:rounded-xl" />
                 </div>
               ) : null}
             </div>
