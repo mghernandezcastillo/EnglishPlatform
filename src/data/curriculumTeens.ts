@@ -612,7 +612,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
           slides: [
             { id: "slide-19", title: "Class Complete! 🏆", description: "Wrap-up", imageUrl: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
             { id: "slide-20", title: "Homework 📝", description: "Homework", type: "homework", content: ["Write a short text about your favorite animal.", "Why do you like it? Is it big or small?"], imageUrl: "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-            { id: "slide-21", title: "Video Homework 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about animals.", "Write down 2 new animals you learned!"], imageUrl: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+            { id: "slide-21", title: "Video Homework 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/rXidsSt9Ss0", content: ["Watch this video about animals.", "Write down 2 new animals you learned!"], imageUrl: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
           ],
           action: "Anotar la tarea."
         }
@@ -1219,8 +1219,72 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
         ]
       }
     ],
-    oralEvaluation: [],
-    virtualEvaluation: []
+    oralEvaluation: [
+      {
+        topic: "Greetings and introductions",
+        question: "Introduce yourself. What is your name, how old are you, and how are you today?"
+      },
+      {
+        topic: "Numbers and birthdays",
+        question: "Count from 1 to 20, then say your age and the month of your birthday."
+      },
+      {
+        topic: "Actions and technology",
+        question: "Name three actions you can do and two technology items you use every day."
+      },
+      {
+        topic: "Food, shapes, and school",
+        question: "Tell me one food you like, one shape you can see in the classroom, and your favorite school subject."
+      },
+      {
+        topic: "Pets, hobbies, and family",
+        question: "Talk about your favorite animal, one hobby you like, and one person in your family."
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "q-teens-bz-1",
+        type: "multiple-choice",
+        question: "How do you say 'Hola' in English?",
+        options: ["Goodbye", "Hello", "Thank you"],
+        correctAnswer: "Hello"
+      },
+      {
+        id: "q-teens-bz-2",
+        type: "multiple-choice",
+        question: "Complete: I ___ 14 years old.",
+        options: ["am", "is", "are"],
+        correctAnswer: "am"
+      },
+      {
+        id: "q-teens-bz-3",
+        type: "multiple-choice",
+        question: "Which word is a pet?",
+        options: ["Dog", "Phone", "Pizza"],
+        correctAnswer: "Dog"
+      },
+      {
+        id: "q-teens-bz-4",
+        type: "multiple-choice",
+        question: "Which sentence is correct?",
+        options: ["She has a cat.", "She have a cat.", "She having a cat."],
+        correctAnswer: "She has a cat."
+      },
+      {
+        id: "q-teens-bz-5",
+        type: "multiple-choice",
+        question: "Choose the school subject.",
+        options: ["Math", "Dog", "Blue"],
+        correctAnswer: "Math"
+      },
+      {
+        id: "q-teens-bz-6",
+        type: "multiple-choice",
+        question: "Complete: I like ___ video games.",
+        options: ["play", "playing", "plays"],
+        correctAnswer: "playing"
+      }
+    ]
   },
   {
     id: "teens-basic-1",

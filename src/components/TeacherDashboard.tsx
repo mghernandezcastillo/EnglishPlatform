@@ -87,6 +87,8 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     if (!currentLevelObj) {
         currentLevelObj = currLevels[0]; // fallback
     }
+    const hasOralEvaluation = Boolean(currentLevelObj?.oralEvaluation?.length);
+    const hasVirtualEvaluation = Boolean(currentLevelObj?.virtualEvaluation?.length);
 
     return (
         <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6">
@@ -228,10 +230,10 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-8">
-                {currentLevelObj && (currentLevelObj.oralEvaluation || currentLevelObj.virtualEvaluation) ? (
+                {currentLevelObj && (hasOralEvaluation || hasVirtualEvaluation) ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Oral Exam Teacher view */}
-                        {currentLevelObj.oralEvaluation && (
+                        {hasOralEvaluation && (
                             <div className="bg-amber-50 rounded-2xl border border-amber-200 p-6 flex flex-col">
                                 <h3 className="font-bold text-amber-900 text-xl mb-4">Examen Oral</h3>
                                 <p className="text-amber-800 mb-6 flex-1">
@@ -249,7 +251,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                 </button>
                             </div>
                         )}
-                        {currentLevelObj.virtualEvaluation && (
+                        {hasVirtualEvaluation && (
                             <div className="bg-emerald-50 rounded-2xl border border-emerald-200 p-6 flex flex-col">
                                 <h3 className="font-bold text-emerald-900 text-xl mb-4">Examen Virtual</h3>
                                 <p className="text-emerald-800 mb-6 flex-1">
