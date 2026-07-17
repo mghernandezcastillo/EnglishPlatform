@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { Sparkles, RotateCw } from 'lucide-react';
 
@@ -20,6 +20,27 @@ export function SpinningWheel({ items, onSpinComplete }: SpinningWheelProps) {
   const controls = useAnimation();
   const glowControls = useAnimation();
   const rotationRef = useRef(0);
+  const remainingIndicesRef = useRef<number[]>([]);
+  const lastSelectedIndexRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    remainingIndicesRef.current = items.map((_, index) => index);
+    lastSelectedIndexRef.current = null;
+    setSelectedItem(null);
+  }, [items]);
+
+  const getNextIndex = () => {
+    if (remainingIndicesRef.current.length === 0) {
+      remainingIndicesRef.current = items
+        .map((_, index) => index)
+        .filter(index => items.length === 1 || index !== lastSelectedIndexRef.current);
+    }
+
+    const poolIndex = Math.floor(Math.random() * remainingIndicesRef.current.length);
+    const [nextIndex] = remainingIndicesRef.current.splice(poolIndex, 1);
+    lastSelectedIndexRef.current = nextIndex;
+    return nextIndex;
+  };
 
   const spin = async () => {
     if (isSpinning || items.length === 0) return;
@@ -28,7 +49,7 @@ export function SpinningWheel({ items, onSpinComplete }: SpinningWheelProps) {
 
     const spins = 5 + Math.floor(Math.random() * 3);
     const sliceAngle = 360 / items.length;
-    const randomIndex = Math.floor(Math.random() * items.length);
+    const randomIndex = getNextIndex();
     const targetAngle = spins * 360 + (items.length - randomIndex) * sliceAngle - sliceAngle / 2;
 
     glowControls.start({
