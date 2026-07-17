@@ -57,13 +57,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-00-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -345,13 +345,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-01-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -643,13 +643,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-02-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -937,13 +937,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-03-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -1228,13 +1228,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-04-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -1519,13 +1519,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-05-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -1810,13 +1810,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-06-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -2101,13 +2101,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-07-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -2571,13 +2571,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-10-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -2862,13 +2862,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-11-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -3153,13 +3153,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-12-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -3444,13 +3444,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-13-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -3735,13 +3735,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-14-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -4026,13 +4026,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-15-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -4317,13 +4317,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-16-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -4608,13 +4608,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-17-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -5078,13 +5078,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-20-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -5369,13 +5369,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-21-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -5660,13 +5660,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-22-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -5951,13 +5951,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-23-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -6242,13 +6242,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-24-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -6533,13 +6533,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-25-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -6824,13 +6824,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-26-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -7115,13 +7115,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-27-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -7585,13 +7585,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-30-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -7876,13 +7876,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-31-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -8167,13 +8167,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-32-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -8458,13 +8458,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-33-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -8749,13 +8749,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-34-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -9040,13 +9040,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-35-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -9331,13 +9331,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-36-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -9622,13 +9622,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-37-0b",
-                "title": "Magic Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Magic Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
-                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                  wheelItems: [{ label: "Guess", color: "#EF4444", prompt: "Guess the topic!", es: "Adivina el tema!" }, { label: "One word", color: "#F59E0B", prompt: "Say one English word.", es: "Di una palabra en ingles." }, { label: "Show me", color: "#10B981", prompt: "Show or point to something.", es: "Muestra o senala algo." }, { label: "Act it", color: "#3B82F6", prompt: "Act one idea.", es: "Actua una idea." }, { label: "Do you like it?", color: "#8B5CF6", prompt: "Ask: Do you like it?", es: "Pregunta: Te gusta?" }, { label: "Happy face", color: "#EC4899", prompt: "Make a face for today.", es: "Haz una cara para hoy." }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"

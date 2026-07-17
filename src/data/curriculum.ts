@@ -37,11 +37,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -350,11 +350,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Números y La Hora Aprende a decir tu edad, números de teléfono y la hora..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Números y La Hora Aprende a decir tu edad, números de teléfono y la hora.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Números y La Hora Aprende a decir tu edad, números de teléfono y la hora. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Números y La Hora Aprende a decir tu edad, números de teléfono y la hora..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Números y La Hora Aprende a decir tu edad, números de teléfono y la hora..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -659,11 +659,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -963,11 +963,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -1272,11 +1272,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -1576,11 +1576,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -1886,11 +1886,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -2198,11 +2198,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -2502,11 +2502,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -2818,11 +2818,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -3184,11 +3184,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -3486,11 +3486,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -3786,11 +3786,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-500",
                 "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
               },
@@ -4128,11 +4128,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-blue-500 to-indigo-600",
                 "imageUrl": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800"
               },
@@ -4472,11 +4472,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -4818,11 +4818,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
               },
@@ -5340,11 +5340,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -5664,11 +5664,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -5989,11 +5989,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -6315,11 +6315,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -6641,11 +6641,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -6941,11 +6941,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -7241,11 +7241,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -7544,11 +7544,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -7838,11 +7838,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -8136,11 +8136,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -8591,11 +8591,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -8907,11 +8907,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH)..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH).?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH). help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH)..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH)..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -9225,11 +9225,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -9541,11 +9541,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -9859,11 +9859,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -10166,11 +10166,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -10479,11 +10479,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -10788,11 +10788,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -11101,11 +11101,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -11410,11 +11410,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -11716,11 +11716,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Proyecto Final de Nivel Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Proyecto Final de Nivel Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Proyecto Final de Nivel Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Proyecto Final de Nivel Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Proyecto Final de Nivel Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -12176,11 +12176,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -12461,11 +12461,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -12744,11 +12744,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to)..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to).?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to). help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to)..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to)..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -13027,11 +13027,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -13310,11 +13310,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Lugares en la ciudad y transporte Manejar correctamente Places & Transport..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Lugares en la ciudad y transporte Manejar correctamente Places & Transport.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Lugares en la ciudad y transporte Manejar correctamente Places & Transport. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Lugares en la ciudad y transporte Manejar correctamente Places & Transport..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Lugares en la ciudad y transporte Manejar correctamente Places & Transport..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -13592,11 +13592,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were)..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were).?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were). help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were)..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were)..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -13876,11 +13876,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Hablando de tu infancia y recuerdos Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Hablando de tu infancia y recuerdos Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Hablando de tu infancia y recuerdos Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Hablando de tu infancia y recuerdos Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Hablando de tu infancia y recuerdos Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -14158,11 +14158,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Biografías de personas famosas Manejar correctamente Biographies..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Biografías de personas famosas Manejar correctamente Biographies.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Biografías de personas famosas Manejar correctamente Biographies. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Biografías de personas famosas Manejar correctamente Biographies..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Biografías de personas famosas Manejar correctamente Biographies..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -14441,11 +14441,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Fechas, años y meses Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Fechas, años y meses Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Fechas, años y meses Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Fechas, años y meses Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Fechas, años y meses Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -14722,11 +14722,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Icebreaker Wheel! ??",
-                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "title": "Conversation Warm-up Wheel",
+                    "description": "Warm up, guess the topic, and start speaking.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
-                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Repaso General de Basic 3 Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Repaso General de Basic 3 Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Repaso General de Basic 3 Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Repaso General de Basic 3 Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Repaso General de Basic 3 Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -15183,12 +15183,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-1-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-1-s1-sl3",
@@ -15537,12 +15537,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-2-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-2-s1-sl3",
@@ -15896,12 +15896,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-3-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-3-s1-sl3",
@@ -16255,12 +16255,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-4-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-4-s1-sl3",
@@ -16612,12 +16612,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-5-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-5-s1-sl3",
@@ -16969,12 +16969,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-6-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-6-s1-sl3",
@@ -17322,12 +17322,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-7-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-7-s1-sl3",
@@ -17679,12 +17679,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-8-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-8-s1-sl3",
@@ -18029,12 +18029,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-9-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-9-s1-sl3",
@@ -18387,12 +18387,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-10-s1-sl2",
-                "title": "Conversation Icebreaker Wheel! ??",
+                "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                "description": "Warm up, guess the topic, and start speaking.",
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "c-adults-basic-4-10-s1-sl3",
@@ -18929,12 +18929,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-ozts25t",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-agkaq2n",
@@ -19233,12 +19233,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-cj7ungz",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-pjo9c9t",
@@ -19536,12 +19536,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-cn9zxfx",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-lb71efd",
@@ -19841,12 +19841,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-7i1r1su",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-f4lghow",
@@ -20145,12 +20145,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-rv7st4y",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-0celyo4",
@@ -20451,12 +20451,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-bia4ad9",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-0mv323r",
@@ -20756,12 +20756,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-yv7bcr7",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-rnm31oa",
@@ -21057,12 +21057,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2remdua",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-hozef2r",
@@ -21362,12 +21362,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-xwk6lxx",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-kr80z9p",
@@ -21668,12 +21668,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-uvfcqys",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-xnc9ixw",
@@ -21973,12 +21973,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-qtuyjz7",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-w286jg6",
@@ -22276,12 +22276,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-nvyiz3t",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "slide-xg9l231",
@@ -22756,12 +22756,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23001,12 +23001,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23245,12 +23245,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23489,12 +23489,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23734,12 +23734,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23979,12 +23979,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -24224,12 +24224,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -24469,12 +24469,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -24714,12 +24714,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -24959,12 +24959,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 10: Repaso avanzado Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 10: Repaso avanzado Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 10: Repaso avanzado Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 10: Repaso avanzado Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 10: Repaso avanzado Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -25383,12 +25383,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -25627,12 +25627,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -25872,12 +25872,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26117,12 +26117,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26362,12 +26362,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26606,12 +26606,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26851,12 +26851,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -27096,12 +27096,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -27341,12 +27341,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
@@ -27585,12 +27585,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Conversation Icebreaker Wheel! ??",
-                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "title": "Conversation Warm-up Wheel",
+                "description": "Warm up, guess the topic, and start speaking.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
             },
               {
                 "id": "Diapositiva 3",
