@@ -138,7 +138,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               {/* Left text content */}
               <div className="flex-1 flex flex-col gap-3 sm:gap-6">
                 {slide.type === 'spinning-wheel' && slide.wheelItems && (
-                  <div className="flex-1 flex flex-col items-center justify-center py-8">
+                  <div className="flex-1 flex flex-col items-center justify-center py-2 sm:py-4">
                     <SpinningWheel items={slide.wheelItems} />
                   </div>
                 )}

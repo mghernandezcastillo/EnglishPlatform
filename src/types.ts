@@ -57,7 +57,7 @@ export interface ClassSlide {
   correctOptionIndex?: number;
   type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle';
   videoUrl?: string; // e.g. youtube embed url
-  wheelItems?: { label: string; color: string }[];
+  wheelItems?: { label: string; color: string; prompt?: string; es?: string }[];
   matchingPairs?: { left: string; right: string; id: string }[];
   mysteryPuzzleData?: { target: string; imageUrl?: string; emoji?: string; panels: { id: number; label: string; color: string }[] };
 }
@@ -92,6 +92,7 @@ export interface VirtualQuestion {
   options?: string[];
   correctAnswer: string;
   audioText?: string; // For text-to-speech fallback if no audio recording
+  imageUrl?: string;
 }
 
 export interface CurriculumLevel {

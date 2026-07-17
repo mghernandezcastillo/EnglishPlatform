@@ -412,6 +412,16 @@ export function VirtualEvaluationView({ levelId }: Props) {
                        </div>
                    )}
 
+                   {q.imageUrl && (
+                       <div className="mb-8 overflow-hidden rounded-2xl border border-slate-100 bg-slate-100">
+                           <img
+                             src={q.imageUrl}
+                             alt=""
+                             className="h-44 w-full object-cover"
+                           />
+                       </div>
+                   )}
+
                    <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-10 leading-tight">
                        {q.question.split('___').map((part, i, arr) => (
                            <React.Fragment key={i}>
@@ -518,4 +528,3 @@ export function VirtualEvaluationView({ levelId }: Props) {
     </div>
   );
 }
-

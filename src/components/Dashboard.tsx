@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { CurriculumClass } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share } from 'lucide-react';
+import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy } from 'lucide-react';
 import { studentConfig, avatars } from '../config';
 import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
@@ -31,15 +31,23 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
   const [activeLibraryCategoryTitle, setActiveLibraryCategoryTitle] = useState<string>('');
   const [expandedLevel, setExpandedLevel] = useState<string | null>(null);
+  const [autoExpandedSeed, setAutoExpandedSeed] = useState('');
   const [presentingClass, setPresentingClass] = useState<CurriculumClass | null>(null);
   const [evaluatingClass, setEvaluatingClass] = useState<{ id: string, title: string } | null>(null);
   const { brand } = useBrand();
 
   useEffect(() => {
-    if (!expandedLevel && curriculumLevels.length > 0) {
-      setExpandedLevel(curriculumLevels[0].id);
-    }
-  }, [curriculumLevels, expandedLevel]);
+    if (curriculumLevels.length === 0) return;
+    const seed = `${studentType || 'adulto'}:${curriculumLevels.map(level => level.id).join('|')}`;
+    if (autoExpandedSeed === seed) return;
+
+    const firstIncompleteLevel = curriculumLevels.find(level =>
+      level.classes.some(cls => !completedLessonIds.includes(cls.id))
+    );
+
+    setExpandedLevel(firstIncompleteLevel?.id ?? null);
+    setAutoExpandedSeed(seed);
+  }, [curriculumLevels, completedLessonIds, studentType, autoExpandedSeed]);
 
   // Flatten curriculum classes to calculate next lesson
   const allCurriculumClasses = curriculumLevels.flatMap(level => level.classes.map(cls => ({...cls, levelId: level.id})));
@@ -50,13 +58,6 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
   // Find next class to do
   const nextClassIndex = allCurriculumClasses.findIndex(c => !pathCompletedIds.includes(c.id));
   const nextClass = nextClassIndex !== -1 ? allCurriculumClasses[nextClassIndex] : null;
-
-  // Auto-expand the level containing the next class on load
-  useEffect(() => {
-    if (nextClass) {
-      setExpandedLevel(nextClass.levelId);
-    }
-  }, []);
 
   const displayStudentName = studentName && studentName.trim() !== '' ? studentName : studentConfig.name;
   const displayAvatarUrl = (avatarId && avatars[avatarId as keyof typeof avatars]) || studentConfig.avatarUrl;
@@ -316,25 +317,47 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                const levelClasses = level.classes;
                const levelCompleted = levelClasses.filter(c => completedLessonIds.includes(c.id)).length;
                const isFullyCompleted = levelClasses.length > 0 && levelCompleted === levelClasses.length;
+               const levelProgressPercentage = levelClasses.length > 0 ? Math.round((levelCompleted / levelClasses.length) * 100) : 0;
 
                return (
-               <div key={level.id} className="bg-white rounded-3xl border border-gray-200 shadow-sm overflow-hidden">
+               <div key={level.id} className={`bg-white rounded-3xl border shadow-sm overflow-hidden transition-all ${isFullyCompleted ? 'border-emerald-200 shadow-emerald-100/70' : 'border-gray-200'}`}>
                 <div 
                   onClick={() => setExpandedLevel(prev => prev === level.id ? null : level.id)}
-                  className="p-6 cursor-pointer hover:bg-gray-50 transition-colors flex items-start gap-4"
+                  className={`p-6 cursor-pointer transition-colors flex items-start gap-4 ${isFullyCompleted ? 'bg-gradient-to-r from-emerald-50 via-white to-amber-50 hover:from-emerald-100' : 'hover:bg-gray-50'}`}
                 >
-                  <div className={`w-12 h-12 shrink-0 rounded-2xl flex items-center justify-center font-bold text-xl ${isFullyCompleted ? 'bg-green-100 text-green-600' : 'bg-indigo-100 text-indigo-600'}`}>
-                    {isFullyCompleted ? <CheckCircle className="w-6 h-6" /> : idx}
+                  <div className={`w-12 h-12 shrink-0 rounded-2xl flex items-center justify-center font-bold text-xl ${isFullyCompleted ? 'bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-200' : 'bg-indigo-100 text-indigo-600'}`}>
+                    {isFullyCompleted ? <Trophy className="w-6 h-6" /> : idx}
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between items-center mb-1">
-                      <h2 className="text-2xl font-bold text-gray-900">{level.title}</h2>
+                      <div className="flex flex-1 flex-wrap items-center gap-3">
+                        <h2 className="text-2xl font-bold text-gray-900">{level.title}</h2>
+                        <div className="flex min-w-[160px] max-w-xs flex-1 items-center gap-2">
+                          <div className="h-3 flex-1 overflow-hidden rounded-full bg-slate-100 shadow-inner ring-1 ring-slate-200/80">
+                            <motion.div
+                              className={`h-full rounded-full ${isFullyCompleted ? 'bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400' : isKid ? 'bg-gradient-to-r from-pink-400 via-yellow-400 to-cyan-400' : 'bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500'}`}
+                              initial={{ width: 0 }}
+                              animate={{ width: `${levelProgressPercentage}%` }}
+                              transition={{ duration: 0.8, ease: 'easeOut' }}
+                            />
+                          </div>
+                          <span className={`min-w-[42px] text-right text-xs font-black ${isFullyCompleted ? 'text-emerald-700' : 'text-indigo-600'}`}>
+                            {levelProgressPercentage}%
+                          </span>
+                        </div>
+                        {isFullyCompleted && (
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-3 py-1 text-xs font-black uppercase tracking-wider text-white shadow-sm">
+                            <Sparkles className="h-3.5 w-3.5" />
+                            Nivel completado
+                          </span>
+                        )}
+                      </div>
                       <ChevronDown className={`w-6 h-6 text-gray-400 transition-transform ${expandedLevel === level.id ? 'rotate-180' : ''}`} />
                     </div>
                     <div className="flex flex-wrap items-center gap-3 text-sm font-semibold mb-3">
                       <span className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full">{level.mcfrEquivalent}</span>
                       <span className="flex items-center gap-1 text-gray-500"><Clock className="w-4 h-4"/> {level.duration}</span>
-                      <span className="flex items-center gap-1 text-gray-500 ml-auto">
+                      <span className={`flex items-center gap-1 ml-auto ${isFullyCompleted ? 'rounded-full bg-emerald-100 px-3 py-1 text-emerald-700' : 'text-gray-500'}`}>
                         {levelCompleted} / {levelClasses.length} completadas
                       </span>
                     </div>

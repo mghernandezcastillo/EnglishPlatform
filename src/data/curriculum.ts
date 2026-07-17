@@ -1,4 +1,10 @@
 import { CurriculumLevel } from '../types';
+import imgAdultAvatar from '../assets/images/male_3d_avatar_1781219297751.jpg';
+import imgAdultHomework from '../assets/images/adults_c10_homework_1783000709392.jpg';
+import imgAdultDirectionsAsk from '../assets/images/directions_ask_1782951949049.jpg';
+import imgAdultDirectionsGive from '../assets/images/directions_give_1782951939884.jpg';
+import imgAdultPrepIn from '../assets/images/prep_in_1782951888044.jpg';
+import imgAdultPrepNextTo from '../assets/images/prep_next_to_1782951915400.jpg';
 
 export const curriculumLevels: CurriculumLevel[] = [
   {
@@ -28,7 +34,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "How are you today?"
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-500 to-blue-700"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Introducción y Verb To Be Aprende a presentarte, saludar y usar el verbo To Be en presente..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Conversar libremente sobre su día o un tema relacionado."
           },
@@ -332,7 +347,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Números y La Hora Aprende a decir tu edad, números de teléfono y la hora..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Números y La Hora Aprende a decir tu edad, números de teléfono y la hora.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Números y La Hora Aprende a decir tu edad, números de teléfono y la hora. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Números y La Hora Aprende a decir tu edad, números de teléfono y la hora..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Números y La Hora Aprende a decir tu edad, números de teléfono y la hora..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "El alumno intenta decir los números que conoce."
           },
@@ -632,7 +656,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Colores, Emociones y Descripción Expresa cómo te sientes y describe los colores de las co....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Conversar sobre cómo se sienten hoy."
           },
@@ -927,7 +960,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Familia y Posesivos Habla sobre los miembros de tu familia e indica de quién son las cosas..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Conversar libremente sobre la familia."
           },
@@ -1227,7 +1269,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to There is / There are y Lugares Describe qué hay en una habitación o en tu ciudad..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Conversar libremente sobre su ciudad y su casa."
           },
@@ -1522,7 +1573,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Meses, Días y Números Ordinales Aprende las fechas, cumpleaños y el calendario..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Repaso breve de los números cardinales."
           },
@@ -1823,7 +1883,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Artículos y Demostrativos Uso de a/an, sustantivos singulares/plurales y This/That/These/....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar sobre objetos a su alrededor para introducir el tema."
           },
@@ -2126,7 +2195,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Partes del Cuerpo y Mascotas Aprende a describir físicamente a personas y animales..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar sobre mascotas para crear una conexión personal."
           },
@@ -2421,7 +2499,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Comida y Necesidades Básicas Vocabulario de comida y el uso de pronombres de objeto..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar sobre la comida favorita del estudiante."
           },
@@ -2728,7 +2815,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "/images/directions_ask.jpg?v=2"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Direcciones y Preposiciones de Lugar Cómo dar direcciones de calles y conocer dónde se ub....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar a los alumnos si usan mapas o piden direcciones habitualmente."
           },
@@ -3085,7 +3181,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Saludos, despedidas y conversación de supervivencia Aprender a saludar, despedirse y mane....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar a los alumnos qué saludos conocen y cómo saludan en su idioma nativo."
           },
@@ -3378,7 +3483,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to El alfabeto y deletreo de nombres Aprender el alfabeto en inglés y saber deletrear nombre....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar a los alumnos si saben deletrear su nombre."
           },
@@ -3672,19 +3786,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Icebreaker! 🧊",
-                "description": "Warm-up Activity",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "type": "spinning-wheel",
-                "wheelItems": [
-                  {"label": "Dream travel destination?", "color": "#EF4444"},
-                  {"label": "Favorite foreign food?", "color": "#3B82F6"},
-                  {"label": "Have a passport?", "color": "#10B981"},
-                  {"label": "Languages you want to learn?", "color": "#F59E0B"},
-                  {"label": "Best country for vacation?", "color": "#8B5CF6"}
-                ],
-                "content": [
-                  "Spin the wheel and share with the class!"
-                ],
+                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 13: Países, nacionalidades y procedencia Aprender a decir de dónde eres y hablar so....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-500",
                 "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
               },
@@ -3877,11 +3983,11 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Discussion",
                 "type": "spinning-wheel",
                 "wheelItems": [
-                  {"label": "Are you from Mexico?", "color": "#EF4444"},
-                  {"label": "Is your teacher American?", "color": "#3B82F6"},
-                  {"label": "Are you Spanish?", "color": "#10B981"},
-                  {"label": "Where is pizza from?", "color": "#F59E0B"},
-                  {"label": "Where is sushi from?", "color": "#8B5CF6"}
+                  { "label": "Are you from Mexico?", "color": "#EF4444" },
+                  { "label": "Is your teacher American?", "color": "#3B82F6" },
+                  { "label": "Are you Spanish?", "color": "#10B981" },
+                  { "label": "Where is pizza from?", "color": "#F59E0B" },
+                  { "label": "Where is sushi from?", "color": "#8B5CF6" }
                 ],
                 "content": [
                   "Ask your classmates these questions!"
@@ -3985,7 +4091,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Video Homework 📹",
                 "description": "Listen and learn.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/OqH7q2fG2L8",
+                "videoUrl": "https://www.youtube.com/embed/on_1sS6Ii8M",
                 "content": [
                   "Watch the video about countries and nationalities.",
                   "Write down 3 new nationalities you hear!"
@@ -3997,7 +4103,7 @@ export const curriculumLevels: CurriculumLevel[] = [
             "action": "Despedida."
           }
         ]
-      },{
+      }, {
         "id": "c-adults-basic-zero-14",
         "title": "Clase 14: Profesiones y ocupaciones comunes",
         "duration": "60 minutos",
@@ -4022,19 +4128,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Icebreaker! 🧊",
-                "description": "Warm-up Activity",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "type": "spinning-wheel",
-                "wheelItems": [
-                  {"label": "Dream job as a kid?", "color": "#EF4444"},
-                  {"label": "Best job in the world?", "color": "#3B82F6"},
-                  {"label": "Hardest job?", "color": "#10B981"},
-                  {"label": "Would you like to be a doctor?", "color": "#F59E0B"},
-                  {"label": "Favorite teacher?", "color": "#8B5CF6"}
-                ],
-                "content": [
-                  "Spin the wheel and talk!"
-                ],
+                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 14: Profesiones y ocupaciones comunes Aprender a preguntar y responder sobre profes....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-blue-500 to-indigo-600",
                 "imageUrl": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800"
               },
@@ -4229,11 +4327,11 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Simulación",
                 "type": "spinning-wheel",
                 "wheelItems": [
-                  {"label": "I am a doctor.", "color": "#EF4444"},
-                  {"label": "I am a chef.", "color": "#3B82F6"},
-                  {"label": "I am an engineer.", "color": "#10B981"},
-                  {"label": "I am a student.", "color": "#F59E0B"},
-                  {"label": "I am a mechanic.", "color": "#8B5CF6"}
+                  { "label": "I am a doctor.", "color": "#EF4444" },
+                  { "label": "I am a chef.", "color": "#3B82F6" },
+                  { "label": "I am an engineer.", "color": "#10B981" },
+                  { "label": "I am a student.", "color": "#F59E0B" },
+                  { "label": "I am a mechanic.", "color": "#8B5CF6" }
                 ],
                 "content": [
                   "Student A: Ask 'What do you do?'",
@@ -4338,7 +4436,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Video Homework 📹",
                 "description": "Watch this short video and listen carefully.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/ckKQvlIT9kc",
+                "videoUrl": "https://www.youtube.com/embed/DRl6tpsxchw",
                 "content": [
                   "Identify 3 jobs mentioned in the video."
                 ],
@@ -4349,7 +4447,7 @@ export const curriculumLevels: CurriculumLevel[] = [
             "action": "Despedir la clase."
           }
         ]
-      },{
+      }, {
         "id": "c-adults-basic-zero-15",
         "title": "Clase 15: Vocabulario de la familia y posesivos",
         "duration": "60 minutos",
@@ -4374,19 +4472,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Icebreaker! 🧊",
-                "description": "Warm-up Activity",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "type": "spinning-wheel",
-                "wheelItems": [
-                  {"label": "Do you have brothers?", "color": "#EF4444"},
-                  {"label": "Do you have sisters?", "color": "#3B82F6"},
-                  {"label": "How many people in your family?", "color": "#10B981"},
-                  {"label": "Favorite relative?", "color": "#F59E0B"},
-                  {"label": "Big or small family?", "color": "#8B5CF6"}
-                ],
-                "content": [
-                  "Spin the wheel and share!"
-                ],
+                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 15: Vocabulario de la familia y posesivos Aprender los miembros de la familia y el....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -4583,11 +4673,11 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Discussion",
                 "type": "spinning-wheel",
                 "wheelItems": [
-                  {"label": "What is your mother's name?", "color": "#EF4444"},
-                  {"label": "Do you have siblings?", "color": "#3B82F6"},
-                  {"label": "What is your father's job?", "color": "#10B981"},
-                  {"label": "Is your family big?", "color": "#F59E0B"},
-                  {"label": "Who is your favorite cousin?", "color": "#8B5CF6"}
+                  { "label": "What is your mother's name?", "color": "#EF4444" },
+                  { "label": "Do you have siblings?", "color": "#3B82F6" },
+                  { "label": "What is your father's job?", "color": "#10B981" },
+                  { "label": "Is your family big?", "color": "#F59E0B" },
+                  { "label": "Who is your favorite cousin?", "color": "#8B5CF6" }
                 ],
                 "content": [
                   "Ask your partner these questions!"
@@ -4692,7 +4782,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Video Homework 📹",
                 "description": "Listen to the family song.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/FhaSqM0W-rM",
+                "videoUrl": "https://www.youtube.com/embed/vXI2lRCnTKw",
                 "content": [
                   "Watch the video and write down 2 family members you hear."
                 ],
@@ -4703,7 +4793,7 @@ export const curriculumLevels: CurriculumLevel[] = [
             "action": "Despedida."
           }
         ]
-      },{
+      }, {
         "id": "c-adults-basic-zero-16",
         "title": "Clase 16: Repaso General de Basic Zero",
         "duration": "60 minutos",
@@ -4728,19 +4818,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2",
-                "title": "Icebreaker! 🧊",
-                "description": "Warm-up Activity",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "type": "spinning-wheel",
-                "wheelItems": [
-                  {"label": "Favorite topic?", "color": "#EF4444"},
-                  {"label": "Hardest topic?", "color": "#3B82F6"},
-                  {"label": "Easiest topic?", "color": "#10B981"},
-                  {"label": "Why study English?", "color": "#F59E0B"},
-                  {"label": "Favorite English word?", "color": "#8B5CF6"}
-                ],
-                "content": [
-                  "Spin the wheel and share with the class!"
-                ],
+                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 16: Repaso General de Basic Zero Repasar todos los temas vistos para prepararse par....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
               },
@@ -4933,11 +5015,11 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Final Interview",
                 "type": "spinning-wheel",
                 "wheelItems": [
-                  {"label": "Name and spelling?", "color": "#EF4444"},
-                  {"label": "Age and phone number?", "color": "#3B82F6"},
-                  {"label": "Country and nationality?", "color": "#10B981"},
-                  {"label": "Job and profession?", "color": "#F59E0B"},
-                  {"label": "Family description?", "color": "#8B5CF6"}
+                  { "label": "Name and spelling?", "color": "#EF4444" },
+                  { "label": "Age and phone number?", "color": "#3B82F6" },
+                  { "label": "Country and nationality?", "color": "#10B981" },
+                  { "label": "Job and profession?", "color": "#F59E0B" },
+                  { "label": "Family description?", "color": "#8B5CF6" }
                 ],
                 "content": [
                   "Interview your partner!"
@@ -5051,55 +5133,178 @@ export const curriculumLevels: CurriculumLevel[] = [
               }
             ],
             "action": "Despedida final."
-                    }
+          }
         ]
       }
     ],
     "virtualEvaluation": [
       {
-        "id": "q-bz-1",
-        "question": "¿Cómo dices 'Hola' de manera informal en inglés?",
-        "options": ["Goodbye", "Hi / Hello", "See you", "Please"],
-        "correctAnswer": "Hi / Hello",
-        "type": "multiple-choice"
+        id: "basic-zero-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Basic Zero?",
+        options: [
+          "She are my sister.",
+          "She is my sister.",
+          "She am my sister."
+        ],
+        correctAnswer: "She is my sister.",
+        imageUrl: imgAdultAvatar
       },
       {
-        "id": "q-bz-2",
-        "question": "Completa la oración: '___ am a student.'",
-        "options": ["He", "She", "I", "They"],
-        "correctAnswer": "I",
-        "type": "multiple-choice"
+        id: "basic-zero-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"twenty\" mean in Spanish?",
+        options: [
+          "antes",
+          "20",
+          "nunca"
+        ],
+        correctAnswer: "20",
+        imageUrl: imgAdultHomework
       },
       {
-        "id": "q-bz-3",
-        "question": "¿Cuál es la forma correcta?",
-        "options": ["He are happy.", "He is happy.", "He am happy.", "He be happy."],
-        "correctAnswer": "He is happy.",
-        "type": "multiple-choice"
+        id: "basic-zero-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to introductions, numbers, countries, family, and the verb be.",
+        options: [
+          "I no understand yesterday.",
+          "I am from Colombia.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "I am from Colombia.",
+        imageUrl: imgAdultDirectionsAsk
       },
       {
-        "id": "q-bz-4",
-        "question": "¿Cómo se dice '20' en inglés?",
-        "options": ["Twelve", "Two", "Twenty", "Thirty"],
-        "correctAnswer": "Twenty",
-        "type": "multiple-choice"
+        id: "basic-zero-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "verb be",
+          "Chemical formulas"
+        ],
+        correctAnswer: "verb be",
+        imageUrl: imgAdultDirectionsGive
       },
       {
-        "id": "q-bz-5",
-        "question": "Completa con el adjetivo posesivo correcto: 'She is my sister. ___ name is Maria.'",
-        "options": ["His", "Her", "My", "Your"],
-        "correctAnswer": "Her",
-        "type": "multiple-choice"
+        id: "basic-zero-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "Ana is thirty and from Colombia.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "Ana is thirty and from Colombia.",
+        audioText: "Hello, my name is Ana. I am thirty years old and I am from Colombia.",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-zero-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgAdultPrepNextTo
+      },
+      {
+        id: "basic-zero-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "introductions, numbers, countries, family, and the verb be",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "introductions, numbers, countries, family, and the verb be",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "basic-zero-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "basic-zero-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "basic-zero-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "Hello, my name is Ana. I am thirty years old and I am from Colombia.",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "basic-zero-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "starter communication",
+          "University literature only"
+        ],
+        correctAnswer: "starter communication",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-zero-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgAdultPrepNextTo
       }
     ],
     "oralEvaluation": [
       {
-        "topic": "INTRODUCTIONS",
-        "question": "Please introduce yourself. What is your name, age, and nationality?"
+        topic: "INTRODUCTION",
+        question: "Introduce yourself with name, age, nationality, and occupation."
       },
       {
-        "topic": "FAMILY",
-        "question": "Tell me about your family. Do you have brothers or sisters?"
+        topic: "GRAMMAR IN USE",
+        question: "Spell your full name and say your phone number."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Describe two people in your family using the verb be."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Ask the teacher three personal information questions."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Talk for one minute about your country and city."
       }
     ]
   },
@@ -5111,1398 +5316,1306 @@ export const curriculumLevels: CurriculumLevel[] = [
     "mcfrEquivalent": "A1",
     "classes": [
       {
-  "id": "c-adults-basic-1-1",
-  "title": "Clase 1: Present Simple (I, You, We, They)",
-  "duration": "60 minutos",
-  "objective": "Aprender a hablar de rutinas y verdades generales.",
-  "sections": [
-    {
-      "id": "s1",
-      "title": "1. Warm-up",
-      "duration": "10 minutos",
-      "objective": "Activar conocimientos.",
-      "slides": [
-        {
-          "id": "slide-1",
-          "title": "Welcome to Basic 1! 🚀",
-          "description": "Let's start!",
-          "content": [
-            "Welcome to a new level!",
-            "Today we talk about everyday life."
-          ],
-          "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-2",
-          "title": "Icebreaker! 🧊",
-          "description": "Spin the wheel",
-          "type": "spinning-wheel",
-          "wheelItems": [
-            {
-              "label": "Coffee or Tea?",
-              "color": "#EF4444"
-            },
-            {
-              "label": "Morning or Night?",
-              "color": "#3B82F6"
-            },
-            {
-              "label": "Books or Movies?",
-              "color": "#10B981"
-            },
-            {
-              "label": "Dogs or Cats?",
-              "color": "#F59E0B"
-            },
-            {
-              "label": "City or Nature?",
-              "color": "#8B5CF6"
-            }
-          ],
-          "content": [
-            "Spin and answer!"
-          ],
-          "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-          "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-3",
-          "title": "Objectives 🎯",
-          "description": "Today we will...",
-          "content": [
-            "✔️ Learn Present Simple.",
-            "✔️ Talk about regular activities.",
-            "✔️ Use I, You, We, They."
-          ],
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Interactuar"
-    },
-    {
-      "id": "s2",
-      "title": "2. Grammar / Vocabulary",
-      "duration": "15 minutos",
-      "objective": "Explicar la gramática.",
-      "slides": [
-        {
-          "id": "slide-4",
-          "title": "Present Simple 🕒",
-          "description": "Habits and routines",
-          "type": "normal",
-          "content": [
-            "We use Present Simple for routines.",
-            "Example: I work every day.",
-            "Example: We live in Mexico."
-          ],
-          "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-          "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-5",
-          "title": "Common Verbs 🏃",
-          "description": "Actions",
-          "type": "normal",
-          "content": [
-            "Work = Trabajar",
-            "Live = Vivir",
-            "Study = Estudiar",
-            "Play = Jugar / Tocar"
-          ],
-          "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-6",
-          "title": "Pronouns 👥",
-          "description": "I, You, We, They",
-          "type": "normal",
-          "content": [
-            "I work = Yo trabajo",
-            "You study = Tú estudias",
-            "We play = Nosotros jugamos",
-            "They live = Ellos viven"
-          ],
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-7",
-          "title": "More Examples 🗣️",
-          "description": "Sentences",
-          "type": "normal",
-          "content": [
-            "They speak English.",
-            "We eat pizza on Fridays.",
-            "I like music."
-          ],
-          "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Tomar notas."
-    },
-    {
-      "id": "s3",
-      "title": "3. Practice & Concept Checking",
-      "duration": "15 minutos",
-      "objective": "Ejercicios guiados.",
-      "slides": [
-        {
-          "id": "slide-8",
-          "title": "Context 📖",
-          "description": "Reading",
-          "content": [
-            "A: Do you study English?",
-            "B: Yes, we study English every day.",
-            "A: They work in a hospital.",
-            "B: Yes, they are doctors."
-          ],
-          "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
-          "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-9",
-          "title": "Complete the sentence (1/3) ✍️",
-          "description": "Grammar",
-          "content": [
-            "I ______ in an office."
-          ],
-          "options": [
-            "works",
-            "work",
-            "working"
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
-          "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-10",
-          "title": "Complete the sentence (2/3) ✍️",
-          "description": "Grammar",
-          "content": [
-            "They ______ Spanish at home."
-          ],
-          "options": [
-            "speak",
-            "speaks",
-            "speaking"
-          ],
-          "correctOptionIndex": 0,
-          "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-11",
-          "title": "Complete the sentence (3/3) ✍️",
-          "description": "Grammar",
-          "content": [
-            "We ______ pizza on weekends."
-          ],
-          "options": [
-            "eats",
-            "eating",
-            "eat"
-          ],
-          "correctOptionIndex": 2,
-          "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-12",
-          "title": "Emojis Locos 🤪",
-          "description": "Guess!",
-          "type": "emoji-game",
-          "content": [
-            "👥 ➕ ⚽ ➕ 🏃"
-          ],
-          "options": [
-            "They sleep all day.",
-            "They play soccer.",
-            "They cook dinner."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
-          "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Resolver y verificar."
-    },
-    {
-      "id": "s4",
-      "title": "4. Production & Quiz",
-      "duration": "15 minutos",
-      "objective": "Producción oral.",
-      "slides": [
-        {
-          "id": "slide-13",
-          "title": "Let's Talk! 🗣️",
-          "description": "Speaking",
-          "content": [
-            "What do you do on weekends?",
-            "Tell the class 3 activities you do."
-          ],
-          "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
-          "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-14",
-          "title": "Fun Quiz! (1/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "I lives in Paris.",
-            "I live in Paris.",
-            "I living in Paris."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-15",
-          "title": "Fun Quiz! (2/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "We play guitar.",
-            "We plays guitar.",
-            "We playing guitar."
-          ],
-          "correctOptionIndex": 0,
-          "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-16",
-          "title": "Fun Quiz! (3/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "They is doctors.",
-            "They works in a hospital.",
-            "They work in a hospital."
-          ],
-          "correctOptionIndex": 2,
-          "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-17",
-          "title": "Roleplay 🎭",
-          "description": "Activity",
-          "content": [
-            "Talk with your partner.",
-            "List 3 things you have in common.",
-            "Example: We both like pizza."
-          ],
-          "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
-          "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Evaluar."
-    },
-    {
-      "id": "s5",
-      "title": "5. Wrap-up & Homework",
-      "duration": "10 minutos",
-      "objective": "Cierre.",
-      "slides": [
-        {
-          "id": "slide-18",
-          "title": "Class Complete! 🎉",
-          "description": "Great job!",
-          "content": [
-            "You can now talk about routines!"
-          ],
-          "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-          "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-19",
-          "title": "Homework 📝",
-          "description": "Write sentences",
-          "type": "homework",
-          "content": [
-            "Write 5 sentences about your daily routine.",
-            "Use verbs like work, eat, sleep, study, play."
-          ],
-          "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-20",
-          "title": "Video Homework 📹",
-          "description": "Listen to routines",
-          "type": "video",
-          "videoUrl": "https://www.youtube.com/embed/zRjw62p3Z4o",
-          "content": [
-            "Watch the video.",
-            "Write down 3 verbs you hear."
-          ],
-          "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
-          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Despedida."
-    }
-  ]
-},
-{
-  "id": "c-adults-basic-1-2",
-  "title": "Clase 2: Present Simple (He, She, It)",
-  "duration": "60 minutos",
-  "objective": "Aprender las reglas de la tercera persona singular ('s').",
-  "sections": [
-    {
-      "id": "s1",
-      "title": "1. Warm-up",
-      "duration": "10 minutos",
-      "objective": "Activar conocimientos.",
-      "slides": [
-        {
-          "id": "slide-1",
-          "title": "Welcome Back! 🌟",
-          "description": "Let's review.",
-          "content": [
-            "What do you do every day?",
-            "Share one activity."
-          ],
-          "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-2",
-          "title": "Icebreaker! 🧊",
-          "description": "Third person",
-          "type": "spinning-wheel",
-          "wheelItems": [
-            {
-              "label": "Your mother's job?",
-              "color": "#EF4444"
-            },
-            {
-              "label": "Your father's hobby?",
-              "color": "#3B82F6"
-            },
-            {
-              "label": "Your best friend?",
-              "color": "#10B981"
-            },
-            {
-              "label": "Your brother?",
-              "color": "#F59E0B"
-            },
-            {
-              "label": "Your sister?",
-              "color": "#8B5CF6"
-            }
-          ],
-          "content": [
-            "Spin and answer!"
-          ],
-          "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-          "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-3",
-          "title": "Objectives 🎯",
-          "description": "Today we will...",
-          "content": [
-            "✔️ Learn He, She, It in Present Simple.",
-            "✔️ Learn the 'S' rules.",
-            "✔️ Talk about other people."
-          ],
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Interactuar"
-    },
-    {
-      "id": "s2",
-      "title": "2. Grammar / Vocabulary",
-      "duration": "15 minutos",
-      "objective": "Explicar la gramática.",
-      "slides": [
-        {
-          "id": "slide-4",
-          "title": "The 'S' Rule 📝",
-          "description": "He, She, It",
-          "type": "normal",
-          "content": [
-            "For He, She, It, we add 's' to the verb.",
-            "I work -> He works",
-            "I play -> She plays"
-          ],
-          "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-          "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-5",
-          "title": "Spelling Rules (-es) ✏️",
-          "description": "Verbs ending in o, ch, sh, ss, x",
-          "type": "normal",
-          "content": [
-            "Go -> Goes",
-            "Do -> Does",
-            "Watch -> Watches",
-            "Wash -> Washes"
-          ],
-          "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-6",
-          "title": "Spelling Rules (-ies) 📖",
-          "description": "Consonant + Y",
-          "type": "normal",
-          "content": [
-            "Study -> Studies",
-            "Fly -> Flies",
-            "Cry -> Cries",
-            "(Play -> Plays because it is Vowel + Y)"
-          ],
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-7",
-          "title": "Irregular Verbs ⚠️",
-          "description": "Have",
-          "type": "normal",
-          "content": [
-            "I have a dog.",
-            "He HAS a dog.",
-            "She HAS a car."
-          ],
-          "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Tomar notas."
-    },
-    {
-      "id": "s3",
-      "title": "3. Practice & Concept Checking",
-      "duration": "15 minutos",
-      "objective": "Ejercicios guiados.",
-      "slides": [
-        {
-          "id": "slide-8",
-          "title": "Context 📖",
-          "description": "Reading",
-          "content": [
-            "My brother is a student.",
-            "He studies at the university.",
-            "He has a lot of friends.",
-            "He goes to class every morning."
-          ],
-          "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
-          "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-9",
-          "title": "Complete the sentence (1/3) ✍️",
-          "description": "Grammar",
-          "content": [
-            "She ______ English in the afternoon."
-          ],
-          "options": [
-            "study",
-            "studies",
-            "studys"
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
-          "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-10",
-          "title": "Complete the sentence (2/3) ✍️",
-          "description": "Grammar",
-          "content": [
-            "My father ______ TV at night."
-          ],
-          "options": [
-            "watch",
-            "watchs",
-            "watches"
-          ],
-          "correctOptionIndex": 2,
-          "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-11",
-          "title": "Complete the sentence (3/3) ✍️",
-          "description": "Grammar",
-          "content": [
-            "He ______ a new computer."
-          ],
-          "options": [
-            "have",
-            "has",
-            "haves"
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-12",
-          "title": "Emojis Locos 🤪",
-          "description": "Guess!",
-          "type": "emoji-game",
-          "content": [
-            "👩 ➕ 📖 ➕ 🏫"
-          ],
-          "options": [
-            "She works in a hospital.",
-            "She studies at school.",
-            "She plays sports."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
-          "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Resolver y verificar."
-    },
-    {
-      "id": "s4",
-      "title": "4. Production & Quiz",
-      "duration": "15 minutos",
-      "objective": "Producción oral.",
-      "slides": [
-        {
-          "id": "slide-13",
-          "title": "Let's Talk! 🗣️",
-          "description": "Speaking",
-          "content": [
-            "Tell the class about a friend.",
-            "What does he/she do?",
-            "What does he/she like?"
-          ],
-          "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
-          "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-14",
-          "title": "Fun Quiz! (1/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "My dog sleep all day.",
-            "My dog sleeps all day.",
-            "My dog sleeping all day."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-15",
-          "title": "Fun Quiz! (2/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "She go to the park.",
-            "She goes to the park.",
-            "She gos to the park."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-16",
-          "title": "Fun Quiz! (3/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "He have a car.",
-            "He has a car.",
-            "He haves a car."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-17",
-          "title": "Roleplay 🎭",
-          "description": "Activity",
-          "content": [
-            "Describe a famous person.",
-            "Your partner must guess who it is!",
-            "Example: He sings. He lives in the US."
-          ],
-          "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
-          "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Evaluar."
-    },
-    {
-      "id": "s5",
-      "title": "5. Wrap-up & Homework",
-      "duration": "10 minutos",
-      "objective": "Cierre.",
-      "slides": [
-        {
-          "id": "slide-18",
-          "title": "Class Complete! 🎉",
-          "description": "Great job!",
-          "content": [
-            "You can now talk about other people!"
-          ],
-          "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-          "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-19",
-          "title": "Homework 📝",
-          "description": "Write sentences",
-          "type": "homework",
-          "content": [
-            "Write 5 sentences about your best friend or a family member.",
-            "Use verbs with 's' or 'es'."
-          ],
-          "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-20",
-          "title": "Video Homework 📹",
-          "description": "Listen",
-          "type": "video",
-          "videoUrl": "https://www.youtube.com/embed/PzM0y6W8_uE",
-          "content": [
-            "Watch the video about daily routines.",
-            "Write down what the boy does in the morning."
-          ],
-          "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
-          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Despedida."
-    }
-  ]
-},
-{
-  "id": "c-adults-basic-1-3",
-  "title": "Clase 3: Present Simple (Negative & Interrogative)",
-  "duration": "60 minutos",
-  "objective": "Aprender a hacer preguntas y negar en presente simple usando Do/Does.",
-  "sections": [
-    {
-      "id": "s1",
-      "title": "1. Warm-up",
-      "duration": "10 minutos",
-      "objective": "Activar conocimientos.",
-      "slides": [
-        {
-          "id": "slide-1",
-          "title": "Welcome! 🚀",
-          "description": "Let's review.",
-          "content": [
-            "What does your best friend do?",
-            "He/She works/studies..."
-          ],
-          "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-2",
-          "title": "Icebreaker! 🧊",
-          "description": "Yes or No?",
-          "type": "spinning-wheel",
-          "wheelItems": [
-            {
-              "label": "Do you like pizza?",
-              "color": "#EF4444"
-            },
-            {
-              "label": "Do you speak French?",
-              "color": "#3B82F6"
-            },
-            {
-              "label": "Do you play tennis?",
-              "color": "#10B981"
-            },
-            {
-              "label": "Do you watch anime?",
-              "color": "#F59E0B"
-            },
-            {
-              "label": "Do you drink coffee?",
-              "color": "#8B5CF6"
-            }
-          ],
-          "content": [
-            "Spin and answer YES or NO!"
-          ],
-          "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-          "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-3",
-          "title": "Objectives 🎯",
-          "description": "Today we will...",
-          "content": [
-            "✔️ Learn DO and DOES.",
-            "✔️ Make negative sentences (don't / doesn't).",
-            "✔️ Ask questions."
-          ],
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Interactuar"
-    },
-    {
-      "id": "s2",
-      "title": "2. Grammar / Vocabulary",
-      "duration": "15 minutos",
-      "objective": "Explicar la gramática.",
-      "slides": [
-        {
-          "id": "slide-4",
-          "title": "Negative Sentences 🚫",
-          "description": "Don't / Doesn't",
-          "type": "normal",
-          "content": [
-            "I, You, We, They -> don't (do not)",
-            "He, She, It -> doesn't (does not)",
-            "Example: I don't like fish.",
-            "Example: She doesn't eat meat."
-          ],
-          "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-          "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-5",
-          "title": "Important Rule ⚠️",
-          "description": "No 's' in negative",
-          "type": "normal",
-          "content": [
-            "When we use DOESN'T, the verb is NORMAL.",
-            "WRONG: She doesn't plays.",
-            "RIGHT: She doesn't play."
-          ],
-          "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-6",
-          "title": "Questions ❓",
-          "description": "Do / Does",
-          "type": "normal",
-          "content": [
-            "Do I/you/we/they + verb?",
-            "Does he/she/it + verb?",
-            "Do you like pizza?",
-            "Does he play tennis?"
-          ],
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-7",
-          "title": "Short Answers 👍👎",
-          "description": "Yes / No",
-          "type": "normal",
-          "content": [
-            "Yes, I do. / No, I don't.",
-            "Yes, he does. / No, he doesn't.",
-            "Yes, they do. / No, they don't."
-          ],
-          "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Tomar notas."
-    },
-    {
-      "id": "s3",
-      "title": "3. Practice & Concept Checking",
-      "duration": "15 minutos",
-      "objective": "Ejercicios guiados.",
-      "slides": [
-        {
-          "id": "slide-8",
-          "title": "Context 📖",
-          "description": "Reading",
-          "content": [
-            "A: Does she like coffee?",
-            "B: No, she doesn't. She likes tea.",
-            "A: Do you work here?",
-            "B: Yes, I do."
-          ],
-          "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
-          "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-9",
-          "title": "Complete the sentence (1/3) ✍️",
-          "description": "Negative",
-          "content": [
-            "I ______ speak French."
-          ],
-          "options": [
-            "doesn't",
-            "don't",
-            "not"
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
-          "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-10",
-          "title": "Complete the sentence (2/3) ✍️",
-          "description": "Negative",
-          "content": [
-            "He ______ live in London."
-          ],
-          "options": [
-            "don't",
-            "doesn't",
-            "isn't"
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-11",
-          "title": "Complete the sentence (3/3) ✍️",
-          "description": "Question",
-          "content": [
-            "______ they play soccer?"
-          ],
-          "options": [
-            "Does",
-            "Do",
-            "Are"
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-12",
-          "title": "Emojis Locos 🤪",
-          "description": "Guess!",
-          "type": "emoji-game",
-          "content": [
-            "🚫 ➕ 👨 ➕ 🚬"
-          ],
-          "options": [
-            "He doesn't eat.",
-            "He doesn't smoke.",
-            "He doesn't run."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
-          "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Resolver y verificar."
-    },
-    {
-      "id": "s4",
-      "title": "4. Production & Quiz",
-      "duration": "15 minutos",
-      "objective": "Producción oral.",
-      "slides": [
-        {
-          "id": "slide-13",
-          "title": "Let's Talk! 🗣️",
-          "description": "Interview",
-          "content": [
-            "Interview your partner:",
-            "Do you like...?",
-            "Do you play...?",
-            "Do you watch...?"
-          ],
-          "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
-          "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-14",
-          "title": "Fun Quiz! (1/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "She doesn't works here.",
-            "She doesn't work here.",
-            "She don't work here."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-15",
-          "title": "Fun Quiz! (2/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "Does you like pizza?",
-            "Do you likes pizza?",
-            "Do you like pizza?"
-          ],
-          "correctOptionIndex": 2,
-          "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-16",
-          "title": "Fun Quiz! (3/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "No, he don't.",
-            "No, he doesn't.",
-            "No, he isn't."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-17",
-          "title": "Roleplay 🎭",
-          "description": "Activity",
-          "content": [
-            "Play 20 questions!",
-            "Think of an animal. The class asks Do/Does questions to guess.",
-            "Example: Does it live in the jungle?"
-          ],
-          "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
-          "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Evaluar."
-    },
-    {
-      "id": "s5",
-      "title": "5. Wrap-up & Homework",
-      "duration": "10 minutos",
-      "objective": "Cierre.",
-      "slides": [
-        {
-          "id": "slide-18",
-          "title": "Class Complete! 🎉",
-          "description": "Great job!",
-          "content": [
-            "You can now ask questions!"
-          ],
-          "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-          "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-19",
-          "title": "Homework 📝",
-          "description": "Write sentences",
-          "type": "homework",
-          "content": [
-            "Write 5 negative sentences about things you or your family don't do.",
-            "Write 3 questions to ask the teacher next class."
-          ],
-          "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-20",
-          "title": "Video Homework 📹",
-          "description": "Listen",
-          "type": "video",
-          "videoUrl": "https://www.youtube.com/embed/n4p8K0Jq6xI",
-          "content": [
-            "Watch the video.",
-            "Listen to how they use 'don't' and 'doesn't'."
-          ],
-          "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
-          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Despedida."
-    }
-  ]
-},
-{
-  "id": "c-adults-basic-1-4",
-  "title": "Clase 4: Profesiones y Lugares de Trabajo",
-  "duration": "60 minutos",
-  "objective": "Integrar el presente simple con vocabulario de trabajos y lugares.",
-  "sections": [
-    {
-      "id": "s1",
-      "title": "1. Warm-up",
-      "duration": "10 minutos",
-      "objective": "Activar conocimientos.",
-      "slides": [
-        {
-          "id": "slide-1",
-          "title": "Welcome! 🚀",
-          "description": "Let's review.",
-          "content": [
-            "Do you work?",
-            "Yes, I do. / No, I don't."
-          ],
-          "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-2",
-          "title": "Icebreaker! 🧊",
-          "description": "Jobs",
-          "type": "spinning-wheel",
-          "wheelItems": [
-            {
-              "label": "Doctor",
-              "color": "#EF4444"
-            },
-            {
-              "label": "Teacher",
-              "color": "#3B82F6"
-            },
-            {
-              "label": "Engineer",
-              "color": "#10B981"
-            },
-            {
-              "label": "Chef",
-              "color": "#F59E0B"
-            },
-            {
-              "label": "Pilot",
-              "color": "#8B5CF6"
-            }
-          ],
-          "content": [
-            "Spin and mime the job!"
-          ],
-          "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-          "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-3",
-          "title": "Objectives 🎯",
-          "description": "Today we will...",
-          "content": [
-            "✔️ Learn vocabulary for jobs.",
-            "✔️ Learn workplaces.",
-            "✔️ Describe what people do."
-          ],
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Interactuar"
-    },
-    {
-      "id": "s2",
-      "title": "2. Grammar / Vocabulary",
-      "duration": "15 minutos",
-      "objective": "Explicar la gramática.",
-      "slides": [
-        {
-          "id": "slide-4",
-          "title": "Jobs Vocabulary 👩‍⚕️",
-          "description": "Professions",
-          "type": "normal",
-          "content": [
-            "Doctor, Nurse, Dentist",
-            "Teacher, Student",
-            "Engineer, Architect",
-            "Chef, Waiter/Waitress"
-          ],
-          "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
-          "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-5",
-          "title": "Workplaces 🏥",
-          "description": "Where do they work?",
-          "type": "normal",
-          "content": [
-            "Hospital / Clinic",
-            "School / University",
-            "Office / Company",
-            "Restaurant / Café"
-          ],
-          "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-6",
-          "title": "Asking about jobs ❓",
-          "description": "Questions",
-          "type": "normal",
-          "content": [
-            "What do you do? = ¿A qué te dedicas?",
-            "I am a teacher.",
-            "What does he do?",
-            "He is a doctor."
-          ],
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-7",
-          "title": "Describing jobs 🗣️",
-          "description": "Using present simple",
-          "type": "normal",
-          "content": [
-            "A teacher works in a school.",
-            "A doctor helps people.",
-            "A chef cooks food."
-          ],
-          "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-          "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Tomar notas."
-    },
-    {
-      "id": "s3",
-      "title": "3. Practice & Concept Checking",
-      "duration": "15 minutos",
-      "objective": "Ejercicios guiados.",
-      "slides": [
-        {
-          "id": "slide-8",
-          "title": "Context 📖",
-          "description": "Reading",
-          "content": [
-            "A: What does your sister do?",
-            "B: She is a nurse. She works in a hospital.",
-            "A: Does she like it?",
-            "B: Yes, she loves it."
-          ],
-          "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
-          "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-9",
-          "title": "Complete the sentence (1/3) ✍️",
-          "description": "Vocabulary",
-          "content": [
-            "A ______ cooks food in a restaurant."
-          ],
-          "options": [
-            "doctor",
-            "teacher",
-            "chef"
-          ],
-          "correctOptionIndex": 2,
-          "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
-          "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-10",
-          "title": "Complete the sentence (2/3) ✍️",
-          "description": "Vocabulary",
-          "content": [
-            "A doctor works in a ______."
-          ],
-          "options": [
-            "school",
-            "hospital",
-            "office"
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
-          "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-11",
-          "title": "Complete the sentence (3/3) ✍️",
-          "description": "Grammar",
-          "content": [
-            "What ______ you do?"
-          ],
-          "options": [
-            "do",
-            "does",
-            "are"
-          ],
-          "correctOptionIndex": 0,
-          "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-12",
-          "title": "Emojis Locos 🤪",
-          "description": "Guess!",
-          "type": "emoji-game",
-          "content": [
-            "👩‍🏫 ➕ 🏫 ➕ 📚"
-          ],
-          "options": [
-            "She is a doctor.",
-            "She is a teacher.",
-            "She is a pilot."
-          ],
-          "correctOptionIndex": 1,
-          "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
-          "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Resolver y verificar."
-    },
-    {
-      "id": "s4",
-      "title": "4. Production & Quiz",
-      "duration": "15 minutos",
-      "objective": "Producción oral.",
-      "slides": [
-        {
-          "id": "slide-13",
-          "title": "Let's Talk! 🗣️",
-          "description": "Speaking",
-          "content": [
-            "What do you do?",
-            "Where do you work?",
-            "Do you like your job?"
-          ],
-          "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
-          "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-14",
-          "title": "Fun Quiz! (1/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Who works in an office?"
-          ],
-          "options": [
-            "An engineer",
-            "A pilot",
-            "A chef"
-          ],
-          "correctOptionIndex": 0,
-          "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-15",
-          "title": "Fun Quiz! (2/3) 🧠",
-          "description": "Review",
-          "content": [
-            "How to ask about profession?"
-          ],
-          "options": [
-            "What do you work?",
-            "What are you doing?",
-            "What do you do?"
-          ],
-          "correctOptionIndex": 2,
-          "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-16",
-          "title": "Fun Quiz! (3/3) 🧠",
-          "description": "Review",
-          "content": [
-            "Which is correct?"
-          ],
-          "options": [
-            "He works in a hospital.",
-            "He work in a hospital.",
-            "He working in a hospital."
-          ],
-          "correctOptionIndex": 0,
-          "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
-          "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-17",
-          "title": "Roleplay 🎭",
-          "description": "Activity",
-          "content": [
-            "Job Interview!",
-            "Student A: Boss. Student B: Applicant.",
-            "Ask questions: What do you do? Where do you live?"
-          ],
-          "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
-          "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Evaluar."
-    },
-    {
-      "id": "s5",
-      "title": "5. Wrap-up & Homework",
-      "duration": "10 minutos",
-      "objective": "Cierre.",
-      "slides": [
-        {
-          "id": "slide-18",
-          "title": "Class Complete! 🎉",
-          "description": "Great job!",
-          "content": [
-            "You can now talk about jobs!"
-          ],
-          "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-          "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-19",
-          "title": "Homework 📝",
-          "description": "Write sentences",
-          "type": "homework",
-          "content": [
-            "Write about the jobs of 3 people in your family.",
-            "Where do they work? Do they like it?"
-          ],
-          "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-          "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
-        },
-        {
-          "id": "slide-20",
-          "title": "Video Homework 📹",
-          "description": "Listen",
-          "type": "video",
-          "videoUrl": "https://www.youtube.com/embed/5F6v314rXwA",
-          "content": [
-            "Watch the video about jobs.",
-            "Write down 2 new jobs you learn."
-          ],
-          "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
-          "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-        }
-      ],
-      "action": "Despedida."
-    }
-  ]
-},
+        "id": "c-adults-basic-1-1",
+        "title": "Clase 1: Present Simple (I, You, We, They)",
+        "duration": "60 minutos",
+        "objective": "Aprender a hablar de rutinas y verdades generales.",
+        "sections": [
+          {
+            "id": "s1",
+            "title": "1. Warm-up",
+            "duration": "10 minutos",
+            "objective": "Activar conocimientos.",
+            "slides": [
+              {
+                "id": "slide-1",
+                "title": "Welcome to Basic 1! 🚀",
+                "description": "Let's start!",
+                "content": [
+                  "Welcome to a new level!",
+                  "Today we talk about everyday life."
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-2",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "type": "spinning-wheel",
+                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Present Simple (I, You, We, They) Aprender a hablar de rutinas y verdades genera....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-3",
+                "title": "Objectives 🎯",
+                "description": "Today we will...",
+                "content": [
+                  "✔️ Learn Present Simple.",
+                  "✔️ Talk about regular activities.",
+                  "✔️ Use I, You, We, They."
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Interactuar"
+          },
+          {
+            "id": "s2",
+            "title": "2. Grammar / Vocabulary",
+            "duration": "15 minutos",
+            "objective": "Explicar la gramática.",
+            "slides": [
+              {
+                "id": "slide-4",
+                "title": "Present Simple 🕒",
+                "description": "Habits and routines",
+                "type": "normal",
+                "content": [
+                  "We use Present Simple for routines.",
+                  "Example: I work every day.",
+                  "Example: We live in Mexico."
+                ],
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-5",
+                "title": "Common Verbs 🏃",
+                "description": "Actions",
+                "type": "normal",
+                "content": [
+                  "Work = Trabajar",
+                  "Live = Vivir",
+                  "Study = Estudiar",
+                  "Play = Jugar / Tocar"
+                ],
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-6",
+                "title": "Pronouns 👥",
+                "description": "I, You, We, They",
+                "type": "normal",
+                "content": [
+                  "I work = Yo trabajo",
+                  "You study = Tú estudias",
+                  "We play = Nosotros jugamos",
+                  "They live = Ellos viven"
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-7",
+                "title": "More Examples 🗣️",
+                "description": "Sentences",
+                "type": "normal",
+                "content": [
+                  "They speak English.",
+                  "We eat pizza on Fridays.",
+                  "I like music."
+                ],
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Tomar notas."
+          },
+          {
+            "id": "s3",
+            "title": "3. Practice & Concept Checking",
+            "duration": "15 minutos",
+            "objective": "Ejercicios guiados.",
+            "slides": [
+              {
+                "id": "slide-8",
+                "title": "Context 📖",
+                "description": "Reading",
+                "content": [
+                  "A: Do you study English?",
+                  "B: Yes, we study English every day.",
+                  "A: They work in a hospital.",
+                  "B: Yes, they are doctors."
+                ],
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-9",
+                "title": "Complete the sentence (1/3) ✍️",
+                "description": "Grammar",
+                "content": [
+                  "I ______ in an office."
+                ],
+                "options": [
+                  "works",
+                  "work",
+                  "working"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-10",
+                "title": "Complete the sentence (2/3) ✍️",
+                "description": "Grammar",
+                "content": [
+                  "They ______ Spanish at home."
+                ],
+                "options": [
+                  "speak",
+                  "speaks",
+                  "speaking"
+                ],
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-11",
+                "title": "Complete the sentence (3/3) ✍️",
+                "description": "Grammar",
+                "content": [
+                  "We ______ pizza on weekends."
+                ],
+                "options": [
+                  "eats",
+                  "eating",
+                  "eat"
+                ],
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-12",
+                "title": "Emojis Locos 🤪",
+                "description": "Guess!",
+                "type": "emoji-game",
+                "content": [
+                  "👥 ➕ ⚽ ➕ 🏃"
+                ],
+                "options": [
+                  "They sleep all day.",
+                  "They play soccer.",
+                  "They cook dinner."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Resolver y verificar."
+          },
+          {
+            "id": "s4",
+            "title": "4. Production & Quiz",
+            "duration": "15 minutos",
+            "objective": "Producción oral.",
+            "slides": [
+              {
+                "id": "slide-13",
+                "title": "Let's Talk! 🗣️",
+                "description": "Speaking",
+                "content": [
+                  "What do you do on weekends?",
+                  "Tell the class 3 activities you do."
+                ],
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-14",
+                "title": "Fun Quiz! (1/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "I lives in Paris.",
+                  "I live in Paris.",
+                  "I living in Paris."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-15",
+                "title": "Fun Quiz! (2/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "We play guitar.",
+                  "We plays guitar.",
+                  "We playing guitar."
+                ],
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-16",
+                "title": "Fun Quiz! (3/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "They is doctors.",
+                  "They works in a hospital.",
+                  "They work in a hospital."
+                ],
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-17",
+                "title": "Roleplay 🎭",
+                "description": "Activity",
+                "content": [
+                  "Talk with your partner.",
+                  "List 3 things you have in common.",
+                  "Example: We both like pizza."
+                ],
+                "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Evaluar."
+          },
+          {
+            "id": "s5",
+            "title": "5. Wrap-up & Homework",
+            "duration": "10 minutos",
+            "objective": "Cierre.",
+            "slides": [
+              {
+                "id": "slide-18",
+                "title": "Class Complete! 🎉",
+                "description": "Great job!",
+                "content": [
+                  "You can now talk about routines!"
+                ],
+                "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
+                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-19",
+                "title": "Homework 📝",
+                "description": "Write sentences",
+                "type": "homework",
+                "content": [
+                  "Write 5 sentences about your daily routine.",
+                  "Use verbs like work, eat, sleep, study, play."
+                ],
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-20",
+                "title": "Video Homework 📹",
+                "description": "Listen to routines",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/DRl6tpsxchw",
+                "content": [
+                  "Watch the video.",
+                  "Write down 3 verbs you hear."
+                ],
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Despedida."
+          }
+        ]
+      },
+      {
+        "id": "c-adults-basic-1-2",
+        "title": "Clase 2: Present Simple (He, She, It)",
+        "duration": "60 minutos",
+        "objective": "Aprender las reglas de la tercera persona singular ('s').",
+        "sections": [
+          {
+            "id": "s1",
+            "title": "1. Warm-up",
+            "duration": "10 minutos",
+            "objective": "Activar conocimientos.",
+            "slides": [
+              {
+                "id": "slide-1",
+                "title": "Welcome Back! 🌟",
+                "description": "Let's review.",
+                "content": [
+                  "What do you do every day?",
+                  "Share one activity."
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-2",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "type": "spinning-wheel",
+                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Present Simple (He, She, It) Aprender las reglas de la tercera persona singular....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-3",
+                "title": "Objectives 🎯",
+                "description": "Today we will...",
+                "content": [
+                  "✔️ Learn He, She, It in Present Simple.",
+                  "✔️ Learn the 'S' rules.",
+                  "✔️ Talk about other people."
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Interactuar"
+          },
+          {
+            "id": "s2",
+            "title": "2. Grammar / Vocabulary",
+            "duration": "15 minutos",
+            "objective": "Explicar la gramática.",
+            "slides": [
+              {
+                "id": "slide-4",
+                "title": "The 'S' Rule 📝",
+                "description": "He, She, It",
+                "type": "normal",
+                "content": [
+                  "For He, She, It, we add 's' to the verb.",
+                  "I work -> He works",
+                  "I play -> She plays"
+                ],
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-5",
+                "title": "Spelling Rules (-es) ✏️",
+                "description": "Verbs ending in o, ch, sh, ss, x",
+                "type": "normal",
+                "content": [
+                  "Go -> Goes",
+                  "Do -> Does",
+                  "Watch -> Watches",
+                  "Wash -> Washes"
+                ],
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-6",
+                "title": "Spelling Rules (-ies) 📖",
+                "description": "Consonant + Y",
+                "type": "normal",
+                "content": [
+                  "Study -> Studies",
+                  "Fly -> Flies",
+                  "Cry -> Cries",
+                  "(Play -> Plays because it is Vowel + Y)"
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-7",
+                "title": "Irregular Verbs ⚠️",
+                "description": "Have",
+                "type": "normal",
+                "content": [
+                  "I have a dog.",
+                  "He HAS a dog.",
+                  "She HAS a car."
+                ],
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Tomar notas."
+          },
+          {
+            "id": "s3",
+            "title": "3. Practice & Concept Checking",
+            "duration": "15 minutos",
+            "objective": "Ejercicios guiados.",
+            "slides": [
+              {
+                "id": "slide-8",
+                "title": "Context 📖",
+                "description": "Reading",
+                "content": [
+                  "My brother is a student.",
+                  "He studies at the university.",
+                  "He has a lot of friends.",
+                  "He goes to class every morning."
+                ],
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-9",
+                "title": "Complete the sentence (1/3) ✍️",
+                "description": "Grammar",
+                "content": [
+                  "She ______ English in the afternoon."
+                ],
+                "options": [
+                  "study",
+                  "studies",
+                  "studys"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-10",
+                "title": "Complete the sentence (2/3) ✍️",
+                "description": "Grammar",
+                "content": [
+                  "My father ______ TV at night."
+                ],
+                "options": [
+                  "watch",
+                  "watchs",
+                  "watches"
+                ],
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-11",
+                "title": "Complete the sentence (3/3) ✍️",
+                "description": "Grammar",
+                "content": [
+                  "He ______ a new computer."
+                ],
+                "options": [
+                  "have",
+                  "has",
+                  "haves"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-12",
+                "title": "Emojis Locos 🤪",
+                "description": "Guess!",
+                "type": "emoji-game",
+                "content": [
+                  "👩 ➕ 📖 ➕ 🏫"
+                ],
+                "options": [
+                  "She works in a hospital.",
+                  "She studies at school.",
+                  "She plays sports."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Resolver y verificar."
+          },
+          {
+            "id": "s4",
+            "title": "4. Production & Quiz",
+            "duration": "15 minutos",
+            "objective": "Producción oral.",
+            "slides": [
+              {
+                "id": "slide-13",
+                "title": "Let's Talk! 🗣️",
+                "description": "Speaking",
+                "content": [
+                  "Tell the class about a friend.",
+                  "What does he/she do?",
+                  "What does he/she like?"
+                ],
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-14",
+                "title": "Fun Quiz! (1/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "My dog sleep all day.",
+                  "My dog sleeps all day.",
+                  "My dog sleeping all day."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-15",
+                "title": "Fun Quiz! (2/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "She go to the park.",
+                  "She goes to the park.",
+                  "She gos to the park."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-16",
+                "title": "Fun Quiz! (3/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "He have a car.",
+                  "He has a car.",
+                  "He haves a car."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-17",
+                "title": "Roleplay 🎭",
+                "description": "Activity",
+                "content": [
+                  "Describe a famous person.",
+                  "Your partner must guess who it is!",
+                  "Example: He sings. He lives in the US."
+                ],
+                "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Evaluar."
+          },
+          {
+            "id": "s5",
+            "title": "5. Wrap-up & Homework",
+            "duration": "10 minutos",
+            "objective": "Cierre.",
+            "slides": [
+              {
+                "id": "slide-18",
+                "title": "Class Complete! 🎉",
+                "description": "Great job!",
+                "content": [
+                  "You can now talk about other people!"
+                ],
+                "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
+                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-19",
+                "title": "Homework 📝",
+                "description": "Write sentences",
+                "type": "homework",
+                "content": [
+                  "Write 5 sentences about your best friend or a family member.",
+                  "Use verbs with 's' or 'es'."
+                ],
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-20",
+                "title": "Video Homework 📹",
+                "description": "Listen",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/DRl6tpsxchw",
+                "content": [
+                  "Watch the video about daily routines.",
+                  "Write down what the boy does in the morning."
+                ],
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Despedida."
+          }
+        ]
+      },
+      {
+        "id": "c-adults-basic-1-3",
+        "title": "Clase 3: Present Simple (Negative & Interrogative)",
+        "duration": "60 minutos",
+        "objective": "Aprender a hacer preguntas y negar en presente simple usando Do/Does.",
+        "sections": [
+          {
+            "id": "s1",
+            "title": "1. Warm-up",
+            "duration": "10 minutos",
+            "objective": "Activar conocimientos.",
+            "slides": [
+              {
+                "id": "slide-1",
+                "title": "Welcome! 🚀",
+                "description": "Let's review.",
+                "content": [
+                  "What does your best friend do?",
+                  "He/She works/studies..."
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-2",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "type": "spinning-wheel",
+                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Present Simple (Negative & Interrogative) Aprender a hacer preguntas y negar en....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-3",
+                "title": "Objectives 🎯",
+                "description": "Today we will...",
+                "content": [
+                  "✔️ Learn DO and DOES.",
+                  "✔️ Make negative sentences (don't / doesn't).",
+                  "✔️ Ask questions."
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Interactuar"
+          },
+          {
+            "id": "s2",
+            "title": "2. Grammar / Vocabulary",
+            "duration": "15 minutos",
+            "objective": "Explicar la gramática.",
+            "slides": [
+              {
+                "id": "slide-4",
+                "title": "Negative Sentences 🚫",
+                "description": "Don't / Doesn't",
+                "type": "normal",
+                "content": [
+                  "I, You, We, They -> don't (do not)",
+                  "He, She, It -> doesn't (does not)",
+                  "Example: I don't like fish.",
+                  "Example: She doesn't eat meat."
+                ],
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-5",
+                "title": "Important Rule ⚠️",
+                "description": "No 's' in negative",
+                "type": "normal",
+                "content": [
+                  "When we use DOESN'T, the verb is NORMAL.",
+                  "WRONG: She doesn't plays.",
+                  "RIGHT: She doesn't play."
+                ],
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-6",
+                "title": "Questions ❓",
+                "description": "Do / Does",
+                "type": "normal",
+                "content": [
+                  "Do I/you/we/they + verb?",
+                  "Does he/she/it + verb?",
+                  "Do you like pizza?",
+                  "Does he play tennis?"
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-7",
+                "title": "Short Answers 👍👎",
+                "description": "Yes / No",
+                "type": "normal",
+                "content": [
+                  "Yes, I do. / No, I don't.",
+                  "Yes, he does. / No, he doesn't.",
+                  "Yes, they do. / No, they don't."
+                ],
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Tomar notas."
+          },
+          {
+            "id": "s3",
+            "title": "3. Practice & Concept Checking",
+            "duration": "15 minutos",
+            "objective": "Ejercicios guiados.",
+            "slides": [
+              {
+                "id": "slide-8",
+                "title": "Context 📖",
+                "description": "Reading",
+                "content": [
+                  "A: Does she like coffee?",
+                  "B: No, she doesn't. She likes tea.",
+                  "A: Do you work here?",
+                  "B: Yes, I do."
+                ],
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-9",
+                "title": "Complete the sentence (1/3) ✍️",
+                "description": "Negative",
+                "content": [
+                  "I ______ speak French."
+                ],
+                "options": [
+                  "doesn't",
+                  "don't",
+                  "not"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-10",
+                "title": "Complete the sentence (2/3) ✍️",
+                "description": "Negative",
+                "content": [
+                  "He ______ live in London."
+                ],
+                "options": [
+                  "don't",
+                  "doesn't",
+                  "isn't"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-11",
+                "title": "Complete the sentence (3/3) ✍️",
+                "description": "Question",
+                "content": [
+                  "______ they play soccer?"
+                ],
+                "options": [
+                  "Does",
+                  "Do",
+                  "Are"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-12",
+                "title": "Emojis Locos 🤪",
+                "description": "Guess!",
+                "type": "emoji-game",
+                "content": [
+                  "🚫 ➕ 👨 ➕ 🚬"
+                ],
+                "options": [
+                  "He doesn't eat.",
+                  "He doesn't smoke.",
+                  "He doesn't run."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Resolver y verificar."
+          },
+          {
+            "id": "s4",
+            "title": "4. Production & Quiz",
+            "duration": "15 minutos",
+            "objective": "Producción oral.",
+            "slides": [
+              {
+                "id": "slide-13",
+                "title": "Let's Talk! 🗣️",
+                "description": "Interview",
+                "content": [
+                  "Interview your partner:",
+                  "Do you like...?",
+                  "Do you play...?",
+                  "Do you watch...?"
+                ],
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-14",
+                "title": "Fun Quiz! (1/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "She doesn't works here.",
+                  "She doesn't work here.",
+                  "She don't work here."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-15",
+                "title": "Fun Quiz! (2/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "Does you like pizza?",
+                  "Do you likes pizza?",
+                  "Do you like pizza?"
+                ],
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-16",
+                "title": "Fun Quiz! (3/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "No, he don't.",
+                  "No, he doesn't.",
+                  "No, he isn't."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-17",
+                "title": "Roleplay 🎭",
+                "description": "Activity",
+                "content": [
+                  "Play 20 questions!",
+                  "Think of an animal. The class asks Do/Does questions to guess.",
+                  "Example: Does it live in the jungle?"
+                ],
+                "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Evaluar."
+          },
+          {
+            "id": "s5",
+            "title": "5. Wrap-up & Homework",
+            "duration": "10 minutos",
+            "objective": "Cierre.",
+            "slides": [
+              {
+                "id": "slide-18",
+                "title": "Class Complete! 🎉",
+                "description": "Great job!",
+                "content": [
+                  "You can now ask questions!"
+                ],
+                "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
+                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-19",
+                "title": "Homework 📝",
+                "description": "Write sentences",
+                "type": "homework",
+                "content": [
+                  "Write 5 negative sentences about things you or your family don't do.",
+                  "Write 3 questions to ask the teacher next class."
+                ],
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-20",
+                "title": "Video Homework 📹",
+                "description": "Listen",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/DRl6tpsxchw",
+                "content": [
+                  "Watch the video.",
+                  "Listen to how they use 'don't' and 'doesn't'."
+                ],
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Despedida."
+          }
+        ]
+      },
+      {
+        "id": "c-adults-basic-1-4",
+        "title": "Clase 4: Profesiones y Lugares de Trabajo",
+        "duration": "60 minutos",
+        "objective": "Integrar el presente simple con vocabulario de trabajos y lugares.",
+        "sections": [
+          {
+            "id": "s1",
+            "title": "1. Warm-up",
+            "duration": "10 minutos",
+            "objective": "Activar conocimientos.",
+            "slides": [
+              {
+                "id": "slide-1",
+                "title": "Welcome! 🚀",
+                "description": "Let's review.",
+                "content": [
+                  "Do you work?",
+                  "Yes, I do. / No, I don't."
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-2",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "type": "spinning-wheel",
+                "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Profesiones y Lugares de Trabajo Integrar el presente simple con vocabulario de....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-3",
+                "title": "Objectives 🎯",
+                "description": "Today we will...",
+                "content": [
+                  "✔️ Learn vocabulary for jobs.",
+                  "✔️ Learn workplaces.",
+                  "✔️ Describe what people do."
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Interactuar"
+          },
+          {
+            "id": "s2",
+            "title": "2. Grammar / Vocabulary",
+            "duration": "15 minutos",
+            "objective": "Explicar la gramática.",
+            "slides": [
+              {
+                "id": "slide-4",
+                "title": "Jobs Vocabulary 👩‍⚕️",
+                "description": "Professions",
+                "type": "normal",
+                "content": [
+                  "Doctor, Nurse, Dentist",
+                  "Teacher, Student",
+                  "Engineer, Architect",
+                  "Chef, Waiter/Waitress"
+                ],
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-5",
+                "title": "Workplaces 🏥",
+                "description": "Where do they work?",
+                "type": "normal",
+                "content": [
+                  "Hospital / Clinic",
+                  "School / University",
+                  "Office / Company",
+                  "Restaurant / Café"
+                ],
+                "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-6",
+                "title": "Asking about jobs ❓",
+                "description": "Questions",
+                "type": "normal",
+                "content": [
+                  "What do you do? = ¿A qué te dedicas?",
+                  "I am a teacher.",
+                  "What does he do?",
+                  "He is a doctor."
+                ],
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-7",
+                "title": "Describing jobs 🗣️",
+                "description": "Using present simple",
+                "type": "normal",
+                "content": [
+                  "A teacher works in a school.",
+                  "A doctor helps people.",
+                  "A chef cooks food."
+                ],
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Tomar notas."
+          },
+          {
+            "id": "s3",
+            "title": "3. Practice & Concept Checking",
+            "duration": "15 minutos",
+            "objective": "Ejercicios guiados.",
+            "slides": [
+              {
+                "id": "slide-8",
+                "title": "Context 📖",
+                "description": "Reading",
+                "content": [
+                  "A: What does your sister do?",
+                  "B: She is a nurse. She works in a hospital.",
+                  "A: Does she like it?",
+                  "B: Yes, she loves it."
+                ],
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-9",
+                "title": "Complete the sentence (1/3) ✍️",
+                "description": "Vocabulary",
+                "content": [
+                  "A ______ cooks food in a restaurant."
+                ],
+                "options": [
+                  "doctor",
+                  "teacher",
+                  "chef"
+                ],
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-red-500 to-rose-600",
+                "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-10",
+                "title": "Complete the sentence (2/3) ✍️",
+                "description": "Vocabulary",
+                "content": [
+                  "A doctor works in a ______."
+                ],
+                "options": [
+                  "school",
+                  "hospital",
+                  "office"
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-rose-500 to-pink-600",
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-11",
+                "title": "Complete the sentence (3/3) ✍️",
+                "description": "Grammar",
+                "content": [
+                  "What ______ you do?"
+                ],
+                "options": [
+                  "do",
+                  "does",
+                  "are"
+                ],
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-pink-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-12",
+                "title": "Emojis Locos 🤪",
+                "description": "Guess!",
+                "type": "emoji-game",
+                "content": [
+                  "👩‍🏫 ➕ 🏫 ➕ 📚"
+                ],
+                "options": [
+                  "She is a doctor.",
+                  "She is a teacher.",
+                  "She is a pilot."
+                ],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Resolver y verificar."
+          },
+          {
+            "id": "s4",
+            "title": "4. Production & Quiz",
+            "duration": "15 minutos",
+            "objective": "Producción oral.",
+            "slides": [
+              {
+                "id": "slide-13",
+                "title": "Let's Talk! 🗣️",
+                "description": "Speaking",
+                "content": [
+                  "What do you do?",
+                  "Where do you work?",
+                  "Do you like your job?"
+                ],
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-14",
+                "title": "Fun Quiz! (1/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Who works in an office?"
+                ],
+                "options": [
+                  "An engineer",
+                  "A pilot",
+                  "A chef"
+                ],
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-15",
+                "title": "Fun Quiz! (2/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "How to ask about profession?"
+                ],
+                "options": [
+                  "What do you work?",
+                  "What are you doing?",
+                  "What do you do?"
+                ],
+                "correctOptionIndex": 2,
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-green-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-16",
+                "title": "Fun Quiz! (3/3) 🧠",
+                "description": "Review",
+                "content": [
+                  "Which is correct?"
+                ],
+                "options": [
+                  "He works in a hospital.",
+                  "He work in a hospital.",
+                  "He working in a hospital."
+                ],
+                "correctOptionIndex": 0,
+                "bgColor": "bg-gradient-to-br from-green-500 to-lime-500",
+                "imageUrl": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-17",
+                "title": "Roleplay 🎭",
+                "description": "Activity",
+                "content": [
+                  "Job Interview!",
+                  "Student A: Boss. Student B: Applicant.",
+                  "Ask questions: What do you do? Where do you live?"
+                ],
+                "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
+                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Evaluar."
+          },
+          {
+            "id": "s5",
+            "title": "5. Wrap-up & Homework",
+            "duration": "10 minutos",
+            "objective": "Cierre.",
+            "slides": [
+              {
+                "id": "slide-18",
+                "title": "Class Complete! 🎉",
+                "description": "Great job!",
+                "content": [
+                  "You can now talk about jobs!"
+                ],
+                "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
+                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-19",
+                "title": "Homework 📝",
+                "description": "Write sentences",
+                "type": "homework",
+                "content": [
+                  "Write about the jobs of 3 people in your family.",
+                  "Where do they work? Do they like it?"
+                ],
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+              },
+              {
+                "id": "slide-20",
+                "title": "Video Homework 📹",
+                "description": "Listen",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/on_1sS6Ii8M",
+                "content": [
+                  "Watch the video about jobs.",
+                  "Write down 2 new jobs you learn."
+                ],
+                "bgColor": "bg-gradient-to-br from-slate-800 to-indigo-900",
+                "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
+              }
+            ],
+            "action": "Despedida."
+          }
+        ]
+      },
       {
         "id": "c-adults-basic-1-5",
         "title": "Clase 5: Rutinas diarias y la hora",
@@ -6525,7 +6638,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Rutinas diarias y la hora Aprender a describir la rutina diaria y decir la hora en inglés..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar a los alumnos a qué hora se despertaron hoy."
           },
@@ -6816,7 +6938,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Adverbios de frecuencia (always, sometimes, never) Aprender a expresar qué tan seguido re....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar a los alumnos si hacen ciertas actividades todos los días o casi nunca."
           },
@@ -7074,7 +7205,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Video Homework 📹",
                 "description": "Watch this short video and listen carefully.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/59J6x7rX99s",
+                "videoUrl": "https://www.youtube.com/embed/81MmK177K_c",
                 "content": [
                   "Listen to how native speakers place the adverbs in their sentences."
                 ],
@@ -7107,7 +7238,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Comidas, bebidas y vocabulario de restaurantes Aprender vocabulario de comida y cómo pedi....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Animar a los alumnos a compartir su plato favorito en inglés."
           },
@@ -7368,7 +7508,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Video Homework 📹",
                 "description": "Watch this short video and listen carefully.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/GLi6K42GixQ",
+                "videoUrl": "https://www.youtube.com/embed/DRl6tpsxchw",
                 "content": [
                   "Listen to how they order food."
                 ],
@@ -7401,7 +7541,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Sustantivos contables e incontables (some, any) Diferenciar contables e incontables, usar....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Plantear la diferencia intuitiva entre contar manzanas vs contar agua/arroz."
           },
@@ -7653,7 +7802,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Video Homework 📹",
                 "description": "Watch this short video and listen carefully.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/g3Qo97Gj9b0",
+                "videoUrl": "https://www.youtube.com/embed/DRl6tpsxchw",
                 "content": [
                   "Listen to how they use SOME and ANY in real life."
                 ],
@@ -7686,7 +7835,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Gustos y preferencias (like, love, hate + ing) Expresar aficiones, gustos y desagrados us....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Animar a que digan 1 o 2 cosas que les gusta hacer los fines de semana."
           },
@@ -7942,7 +8100,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Video Homework 📹",
                 "description": "Watch this short video and listen carefully.",
                 "type": "video",
-                "videoUrl": "https://www.youtube.com/embed/5F6v314rXwA",
+                "videoUrl": "https://www.youtube.com/embed/DRl6tpsxchw",
                 "content": [
                   "Identify what activities the speakers like and dislike."
                 ],
@@ -7975,7 +8133,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Repaso General de Basic 1 Repasar todos los temas de Basic 1 y preparar a los alumnos par....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Felicitar a los alumnos por llegar hasta aquí."
           },
@@ -8225,146 +8392,172 @@ export const curriculumLevels: CurriculumLevel[] = [
     ],
     "virtualEvaluation": [
       {
-        "id": "q-b1-1",
-        "question": "Completa la oración usando el futuro correcto: I have a ticket! I ___ travel to Paris tomorrow.",
-        "options": [
-          "will",
-          "am going to",
-          "go to",
-          "going to"
+        id: "basic-1-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Basic 1?",
+        options: [
+          "She work in an office every day.",
+          "She works in an office every day.",
+          "She working in an office every day."
         ],
-        "correctAnswer": "am going to",
-        "type": "multiple-choice"
+        correctAnswer: "She works in an office every day.",
+        imageUrl: imgAdultAvatar
       },
       {
-        "id": "q-b1-2",
-        "question": "¿Cuál es la forma correcta de hacer una pregunta con 'will'?",
-        "options": [
-          "Will you go to the party?",
-          "You will go to the party?",
-          "Do you will go to the party?",
-          "Are you will go to the party?"
+        id: "basic-1-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"usually\" mean in Spanish?",
+        options: [
+          "antes",
+          "normalmente",
+          "nunca"
         ],
-        "correctAnswer": "Will you go to the party?",
-        "type": "multiple-choice"
+        correctAnswer: "normalmente",
+        imageUrl: imgAdultHomework
       },
       {
-        "id": "q-b1-3",
-        "question": "Completa la pregunta: ___ will you do next week?",
-        "options": [
-          "Where",
-          "Who",
-          "What",
-          "When"
+        id: "basic-1-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to present simple, routines, jobs, likes, and daily life.",
+        options: [
+          "I no understand yesterday.",
+          "I usually wake up at 6:30.",
+          "Beautiful quickly table."
         ],
-        "correctAnswer": "What",
-        "type": "multiple-choice"
+        correctAnswer: "I usually wake up at 6:30.",
+        imageUrl: imgAdultDirectionsAsk
       },
       {
-        "id": "q-b1-4",
-        "question": "Selecciona la opción correcta: ___ water do you drink?",
-        "options": [
-          "How many",
-          "How much",
-          "What kind",
-          "How long"
+        id: "basic-1-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "present simple",
+          "Chemical formulas"
         ],
-        "correctAnswer": "How much",
-        "type": "multiple-choice"
+        correctAnswer: "present simple",
+        imageUrl: imgAdultDirectionsGive
       },
       {
-        "id": "q-b1-5",
-        "question": "Completa la oración con la preposición correcta: I usually wake up ___ 7:00 AM.",
-        "options": [
-          "in",
-          "on",
-          "at",
-          "to"
+        id: "basic-1-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "Mark is a chef and starts at seven.",
+          "The speaker gives a phone number only."
         ],
-        "correctAnswer": "at",
-        "type": "multiple-choice"
+        correctAnswer: "Mark is a chef and starts at seven.",
+        audioText: "Mark works as a chef. He starts work at seven and finishes at three.",
+        imageUrl: imgAdultPrepIn
       },
       {
-        "id": "q-b1-6",
-        "question": "¿Qué adverbio de frecuencia describe algo que no haces NUNCA?",
-        "options": [
-          "Always",
-          "Sometimes",
-          "Usually",
-          "Never"
+        id: "basic-1-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
         ],
-        "correctAnswer": "Never",
-        "type": "multiple-choice"
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgAdultPrepNextTo
       },
       {
-        "id": "q-b1-7",
-        "question": "En un restaurante, ¿cómo pides un vaso de agua?",
-        "options": [
-          "I want a cup of water.",
-          "I would like a glass of water.",
-          "Give me a water.",
-          "I like water."
+        id: "basic-1-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "present simple, routines, jobs, likes, and daily life",
+          "Only Spanish pronunciation"
         ],
-        "correctAnswer": "I would like a glass of water.",
-        "type": "multiple-choice"
+        correctAnswer: "present simple, routines, jobs, likes, and daily life",
+        imageUrl: imgAdultAvatar
       },
       {
-        "id": "q-b1-8",
-        "question": "Completa la pregunta: Do we have ___ milk left?",
-        "options": [
-          "some",
-          "a",
-          "an",
-          "any"
+        id: "basic-1-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
         ],
-        "correctAnswer": "any",
-        "type": "multiple-choice"
+        correctAnswer: "Do you like English?",
+        imageUrl: imgAdultHomework
       },
       {
-        "id": "q-b1-9",
-        "question": "Completa la oración expresando gusto: I love ___ movies on weekends.",
-        "options": [
-          "watch",
-          "watching",
-          "watched",
-          "to watching"
+        id: "basic-1-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
         ],
-        "correctAnswer": "watching",
-        "type": "multiple-choice"
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgAdultDirectionsAsk
       },
       {
-        "id": "q-b1-10",
-        "question": "¿Cómo preguntas sobre el clima de mañana?",
-        "options": [
-          "How is the weather tomorrow?",
-          "What is the weather like tomorrow?",
-          "What will the weather be like tomorrow?",
-          "How will be the weather tomorrow?"
+        id: "basic-1-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
         ],
-        "correctAnswer": "What will the weather be like tomorrow?",
-        "type": "multiple-choice"
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "Mark works as a chef. He starts work at seven and finishes at three.",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "basic-1-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "A1 communication",
+          "University literature only"
+        ],
+        correctAnswer: "A1 communication",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-1-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgAdultPrepNextTo
       }
     ],
     "oralEvaluation": [
       {
-        "topic": "PLANS & DECISIONS",
-        "question": "What are you going to do this weekend? Will you travel soon?"
+        topic: "INTRODUCTION",
+        question: "Describe your weekday routine from morning to night."
       },
       {
-        "topic": "EXPERIENCES",
-        "question": "Have you ever traveled to another country? What is the best movie you have seen?"
+        topic: "GRAMMAR IN USE",
+        question: "Talk about your job or a job you know well."
       },
       {
-        "topic": "QUANTITIES",
-        "question": "How much water do you drink? How many friends do you have?"
+        topic: "VOCABULARY",
+        question: "Ask and answer five questions using do or does."
       },
       {
-        "topic": "COMPARISONS",
-        "question": "Which is better, living in a city or a town? Why?"
+        topic: "INTERACTION",
+        question: "Explain three things you like and three things you do not like."
       },
       {
-        "topic": "PREFERENCES",
-        "question": "What do you enjoy doing? Is there anything you hate doing?"
+        topic: "FLUENCY",
+        question: "Compare your weekend routine with your weekday routine."
       }
     ]
   },
@@ -8395,7 +8588,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Do you drink coffee in the morning?"
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Rutinas y Present Simple Hábitos diarios, adverbios de frecuencia y reglas de 3ra persona..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Conversar sobre las rutinas para introducir el Present Simple."
           },
@@ -8702,7 +8904,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Is your phone ringing?"
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH)..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH).?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH). help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH)..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Present Progressive Acciones en curso y preguntas de confirmación (Yes/No y WH)..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Hacer observaciones sobre qué está pasando en cámara (ej. You are wearing a blue shirt)."
           },
@@ -9011,7 +9222,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1499364615650-ec38552f4f34?auto=format&fit=crop&q=80&w=800"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Expresando Preferencias (Gustos) Uso de gerundios con like, love, enjoy y hate..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Introducir la diferencia entre 'Me gusta la pizza (cosa)' y 'Me gusta comer (acción)'."
           },
@@ -9318,7 +9538,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Will you eat pizza tomorrow? (Future)"
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Comparación entre Tiempos Verbales Cuándo usar Futuro, Presente Simple y Presente Progres....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Preguntar a los alumnos la misma idea (ej. comer) en distintos tiempos para que perciban la diferencia."
           },
@@ -9627,7 +9856,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "imageUrl": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&q=80&w=800",
                 "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
                 "content": []
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Verbos de estado vs. acción en presente continuo Diferenciar entre verbos de estado (Stat....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Discutir las diferencias entre acciones físicas y estados mentales."
           },
@@ -9925,7 +10163,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "imageUrl": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=800",
                 "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
                 "content": []
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clima y estaciones del año Aprender vocabulario del clima y hablar sobre las estaciones d....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Hacer preguntas abiertas sobre el clima de hoy."
           },
@@ -10229,7 +10476,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Don't smile!"
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Imperativos para dar instrucciones Dar órdenes, instrucciones y advertencias usando el im....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Jugar 'Simon Says' para activar el uso de imperativos de manera lúdica."
           },
@@ -10529,7 +10785,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "imageUrl": "/images/prep_between.jpg?v=3",
                 "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Pedir y ofrecer direcciones en la calle Aprender a pedir indicaciones y utilizar imperati....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Repasar el vocabulario básico de la ciudad."
           },
@@ -10833,7 +11098,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800",
                 "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Conversaciones telefónicas básicas Manejar frases clave para iniciar y mantener una conve....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Charla breve sobre hábitos de comunicación."
           },
@@ -11133,7 +11407,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 ],
                 "imageUrl": "https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&q=80&w=800",
                 "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Repaso de presente simple vs. continuo Consolidar el uso del Present Simple vs Present Co....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Los estudiantes dividen las expresiones en rutinas (Simple) o acciones temporales (Continuous)."
           },
@@ -11430,7 +11713,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "imageUrl": "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800",
                 "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
                 "content": []
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Proyecto Final de Nivel Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Proyecto Final de Nivel Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Proyecto Final de Nivel Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Proyecto Final de Nivel Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Proyecto Final de Nivel Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -11681,7 +11973,176 @@ export const curriculumLevels: CurriculumLevel[] = [
         "description": "In this class, we will learn about Level 2 Final Project."
       }
     ],
-    "oralEvaluation": []
+    "oralEvaluation": [
+      {
+        topic: "INTRODUCTION",
+        question: "Tell a short story about your last weekend."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Describe a place you visited in the past."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Ask your partner five questions using did."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Talk about an important date in your life."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Explain what you did yesterday using sequence words."
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "basic-2-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Basic 2?",
+        options: [
+          "We visit the museum last Saturday.",
+          "We visited the museum last Saturday.",
+          "We visited at the museum last Saturday."
+        ],
+        correctAnswer: "We visited the museum last Saturday.",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "basic-2-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"yesterday\" mean in Spanish?",
+        options: [
+          "antes",
+          "ayer",
+          "nunca"
+        ],
+        correctAnswer: "ayer",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "basic-2-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to past simple, places, dates, travel, and life events.",
+        options: [
+          "I no understand yesterday.",
+          "I went to the store yesterday.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "I went to the store yesterday.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "basic-2-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "past simple",
+          "Chemical formulas"
+        ],
+        correctAnswer: "past simple",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "basic-2-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "Laura traveled to Mexico last year.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "Laura traveled to Mexico last year.",
+        audioText: "Laura traveled to Mexico last year. She stayed in a small hotel near the beach.",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-2-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgAdultPrepNextTo
+      },
+      {
+        id: "basic-2-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "past simple, places, dates, travel, and life events",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "past simple, places, dates, travel, and life events",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "basic-2-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "basic-2-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "basic-2-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "Laura traveled to Mexico last year. She stayed in a small hotel near the beach.",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "basic-2-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "A2- communication",
+          "University literature only"
+        ],
+        correctAnswer: "A2- communication",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-2-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgAdultPrepNextTo
+      }
+    ]
   },
   {
     "id": "basic-3",
@@ -11712,7 +12173,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I can swim very well.",
                   "What do you know about Abilities and Possibilities (Can / Can't)?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Habilidades y posibilidades (Can / Can't) Manejar correctamente Can / Can't for Abilities..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -11988,7 +12458,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Can I borrow your pen?",
                   "What do you know about Permissions and Requests (Can I...? Could you...?)?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Permisos y peticiones (Can I..., Could you...) Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -12262,7 +12741,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I have to work on Saturdays.",
                   "What do you know about Obligations (Have to / Don't have to)?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to)..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to).?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to). help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to)..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Obligaciones (Have to / Don't have to) Manejar correctamente Obligations (Have to)..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -12536,7 +13024,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "He is wearing a blue jacket.",
                   "What do you know about Clothes, Colors, and Physical Descriptions?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Ropa, colores y descripciones físicas Manejar correctamente Clothes & Appearance..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -12810,7 +13307,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "The bank is next to the park.",
                   "What do you know about Places in the City and Transport?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Lugares en la ciudad y transporte Manejar correctamente Places & Transport..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Lugares en la ciudad y transporte Manejar correctamente Places & Transport.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Lugares en la ciudad y transporte Manejar correctamente Places & Transport. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Lugares en la ciudad y transporte Manejar correctamente Places & Transport..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Lugares en la ciudad y transporte Manejar correctamente Places & Transport..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -13083,7 +13589,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I was very tired yesterday.",
                   "What do you know about Past of To Be (Was / Were)?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were)..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were).?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were). help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were)..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Pasado del verbo To Be (was/were) Manejar correctamente Past of To Be (Was/Were)..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -13358,7 +13873,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "When I was a child, I played outside a lot.",
                   "What do you know about Childhood and Memories?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Hablando de tu infancia y recuerdos Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Hablando de tu infancia y recuerdos Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Hablando de tu infancia y recuerdos Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Hablando de tu infancia y recuerdos Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Hablando de tu infancia y recuerdos Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -13631,7 +14155,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "She was born in 1980 in London.",
                   "What do you know about Biographies of Famous People?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Biografías de personas famosas Manejar correctamente Biographies..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Biografías de personas famosas Manejar correctamente Biographies.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Biografías de personas famosas Manejar correctamente Biographies. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Biografías de personas famosas Manejar correctamente Biographies..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Biografías de personas famosas Manejar correctamente Biographies..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -13905,7 +14438,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "My birthday is on July 14th.",
                   "What do you know about Dates, Years, and Months?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Fechas, años y meses Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Fechas, años y meses Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Fechas, años y meses Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Fechas, años y meses Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Fechas, años y meses Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -14177,7 +14719,16 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Let's review everything we learned!",
                   "What do you know about Level 3 Review?"
                 ]
-              }
+              },
+                {
+                    "id": "Icebreaker Wheel",
+                    "title": "Conversation Icebreaker Wheel! ??",
+                    "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                    "type": "spinning-wheel",
+                    "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                    "wheelItems": [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Repaso General de Basic 3 Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Repaso General de Basic 3 Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Repaso General de Basic 3 Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Repaso General de Basic 3 Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Repaso General de Basic 3 Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }],
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
+                  }
             ],
             "action": "Participar en la discusión."
           },
@@ -14430,7 +14981,176 @@ export const curriculumLevels: CurriculumLevel[] = [
         "description": "In this class, we will learn about Level 3 Review."
       }
     ],
-    "oralEvaluation": []
+    "oralEvaluation": [
+      {
+        topic: "INTRODUCTION",
+        question: "Describe your plans for next weekend."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Compare two cities, restaurants, or jobs."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Invite someone to an activity and respond politely."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Explain three goals you are going to work on."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Talk about transportation and places in your city."
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "basic-3-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Basic 3?",
+        options: [
+          "I going to study tonight.",
+          "I am going to study tonight.",
+          "I am go study tonight."
+        ],
+        correctAnswer: "I am going to study tonight.",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "basic-3-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"tomorrow\" mean in Spanish?",
+        options: [
+          "antes",
+          "manana",
+          "nunca"
+        ],
+        correctAnswer: "manana",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "basic-3-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to future plans, comparisons, invitations, and city life.",
+        options: [
+          "I no understand yesterday.",
+          "This restaurant is better than that one.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "This restaurant is better than that one.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "basic-3-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "going to and comparatives",
+          "Chemical formulas"
+        ],
+        correctAnswer: "going to and comparatives",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "basic-3-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "Sofia is going to meet her friends tomorrow.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "Sofia is going to meet her friends tomorrow.",
+        audioText: "Sofia is going to meet her friends tomorrow. They are going to try a new restaurant.",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-3-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgAdultPrepNextTo
+      },
+      {
+        id: "basic-3-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "future plans, comparisons, invitations, and city life",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "future plans, comparisons, invitations, and city life",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "basic-3-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "basic-3-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "basic-3-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "Sofia is going to meet her friends tomorrow. They are going to try a new restaurant.",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "basic-3-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "A2 communication",
+          "University literature only"
+        ],
+        correctAnswer: "A2 communication",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-3-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgAdultPrepNextTo
+      }
+    ]
   },
   {
     "id": "basic-4",
@@ -14463,15 +15183,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-1-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "What did you do yesterday?",
-                  "Did you work? Did you study?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Pasado Simple - Verbos Regulares Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-1-s1-sl3",
                 "title": "Objectives",
@@ -14819,15 +15537,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-2-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "Do you know the past of 'go'?",
-                  "It is NOT 'goed'!"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Pasado Simple - Verbos Irregulares Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-2-s1-sl3",
                 "title": "Objectives",
@@ -15180,16 +15896,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-3-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "How do we ask a question in the present?",
-                  "Do you like pizza?",
-                  "How do we ask in the past?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Formando preguntas y negaciones en pasado Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-3-s1-sl3",
                 "title": "Objectives",
@@ -15542,15 +16255,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-4-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "Do you like to travel?",
-                  "Where is your favorite place to visit?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Vocabulario de viajes y vacaciones Manejar correctamente Travel & Vacations..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-4-s1-sl3",
                 "title": "Objectives",
@@ -15901,15 +16612,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-5-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "How do you organize a story?",
-                  "If you tell me what you did today, what word do you use to start?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 5: Contando anécdotas usando conectores (first, then, finally) Manejar correctament....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-5-s1-sl3",
                 "title": "Objectives",
@@ -16260,15 +16969,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-6-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "What are your plans for this weekend?",
-                  "Do you have anything special planned?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 6: Expresando planes futuros con Going to Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-6-s1-sl3",
                 "title": "Objectives",
@@ -16615,16 +17322,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-7-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "Imagine the year 2050.",
-                  "Will we have flying cars?",
-                  "Will we live on Mars?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 7: Predicciones y decisiones rápidas con Will Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-7-s1-sl3",
                 "title": "Objectives",
@@ -16975,15 +17679,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-8-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "What are you going to do after class?",
-                  "What do you think the weather will be like tomorrow?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 8: Diferencias entre Will y Going to Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-8-s1-sl3",
                 "title": "Objectives",
@@ -17327,15 +18029,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-9-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "What is the best movie of all time?",
-                  "Do you agree with your classmates?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 9: Dando opiniones y mostrando acuerdo/desacuerdo Manejar correctamente Giving Opin....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-9-s1-sl3",
                 "title": "Objectives",
@@ -17687,15 +18387,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-10-s1-sl2",
-                "title": "Warm-up Activity",
-                "type": "normal",
-                "content": [
-                  "What was your favorite topic in this level?",
-                  "Past tense? Future tense? Giving opinions?"
-                ],
+                "title": "Conversation Icebreaker Wheel! ??",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Let's learn and practice!"
-              },
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 10: Preparación para Nivel Intermedio Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "c-adults-basic-4-10-s1-sl3",
                 "title": "Objectives",
@@ -18026,7 +18724,176 @@ export const curriculumLevels: CurriculumLevel[] = [
         ]
       }
     ],
-    "oralEvaluation": []
+    "oralEvaluation": [
+      {
+        topic: "INTRODUCTION",
+        question: "Give advice for three common health or work problems."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Explain your responsibilities at home or work."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Talk about something you have done recently."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Roleplay asking for help with a problem."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Describe rules people should follow in a classroom."
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "basic-4-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Basic 4?",
+        options: [
+          "You should to drink more water.",
+          "You should drink more water.",
+          "You should drinking more water."
+        ],
+        correctAnswer: "You should drink more water.",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "basic-4-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"should\" mean in Spanish?",
+        options: [
+          "antes",
+          "deberias",
+          "nunca"
+        ],
+        correctAnswer: "deberias",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "basic-4-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to modal verbs, advice, obligations, experiences, and problem solving.",
+        options: [
+          "I no understand yesterday.",
+          "I have to finish this report today.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "I have to finish this report today.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "basic-4-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "modals and obligations",
+          "Chemical formulas"
+        ],
+        correctAnswer: "modals and obligations",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "basic-4-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "Daniel should rest and not work late.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "Daniel should rest and not work late.",
+        audioText: "Daniel has a headache. His doctor says he should rest and should not work late.",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-4-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgAdultPrepNextTo
+      },
+      {
+        id: "basic-4-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "modal verbs, advice, obligations, experiences, and problem solving",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "modal verbs, advice, obligations, experiences, and problem solving",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "basic-4-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "basic-4-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "basic-4-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "Daniel has a headache. His doctor says he should rest and should not work late.",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "basic-4-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "A2+ communication",
+          "University literature only"
+        ],
+        correctAnswer: "A2+ communication",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "basic-4-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgAdultPrepNextTo
+      }
+    ]
   },
   {
     "id": "inter",
@@ -18062,15 +18929,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-ozts25t",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Repaso de tiempos verbales básicos Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-agkaq2n",
                 "title": "Today's Objectives",
@@ -18368,15 +19233,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-cj7ungz",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Primer Condicional (situaciones reales) Manejar correctamente First Conditional..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-pjo9c9t",
                 "title": "Today's Objectives",
@@ -18673,15 +19536,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-cn9zxfx",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Verbos modales de consejo (Should / Ought to) Manejar correctamente Modal Verbs..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-lb71efd",
                 "title": "Today's Objectives",
@@ -18980,15 +19841,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-7i1r1su",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Verbos modales de posibilidad (May / Might / Could) Manejar correctamente Modal....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-f4lghow",
                 "title": "Today's Objectives",
@@ -19286,15 +20145,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-rv7st4y",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 5: Comparativos y superlativos Manejar correctamente Comparatives & Superlatives..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-0celyo4",
                 "title": "Today's Objectives",
@@ -19594,15 +20451,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-bia4ad9",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 6: Describiendo exceso y suficiencia (too / enough) Manejar correctamente Important....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-0mv323r",
                 "title": "Today's Objectives",
@@ -19901,15 +20756,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-yv7bcr7",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 7: Vocabulario de trabajo y oficina Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-rnm31oa",
                 "title": "Today's Objectives",
@@ -20204,15 +21057,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-2remdua",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 8: Redactando correos electrónicos formales Manejar correctamente Emails & Messages..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-hozef2r",
                 "title": "Today's Objectives",
@@ -20511,15 +21362,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-xwk6lxx",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 9: Present Perfect para experiencias de vida Manejar correctamente Present Perfect..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-kr80z9p",
                 "title": "Today's Objectives",
@@ -20819,15 +21668,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-uvfcqys",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 10: Diferencias entre Pasado Simple y Present Perfect Manejar correctamente Present....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-xnc9ixw",
                 "title": "Today's Objectives",
@@ -21126,15 +21973,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-qtuyjz7",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 11: Gerundios e infinitivos después de verbos Manejar correctamente Gerunds & Infin....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-w286jg6",
                 "title": "Today's Objectives",
@@ -21431,15 +22276,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-nvyiz3t",
-                "title": "Warm-up Activity",
-                "description": "Let's break the ice",
-                "content": [
-                  "Discuss with your partner:",
-                  "What did you do last weekend?",
-                  "What are your plans for the next one?"
-                ],
-                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500"
-              },
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 12: Introducción a los Phrasal Verbs más usados Manejar correctamente Phrasal Verbs..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "slide-xg9l231",
                 "title": "Today's Objectives",
@@ -21714,7 +22557,176 @@ export const curriculumLevels: CurriculumLevel[] = [
         ]
       }
     ],
-    "oralEvaluation": []
+    "oralEvaluation": [
+      {
+        topic: "INTRODUCTION",
+        question: "Tell a two-minute story using past tenses clearly."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Discuss advantages and disadvantages of remote work."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Explain what you would do in a difficult situation."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Defend an opinion and respond to a counterargument."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Describe a personal achievement and what you learned from it."
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "inter-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Intermediate?",
+        options: [
+          "If I have more time, I would learned another language.",
+          "If I had more time, I would learn another language.",
+          "If I had more time, I will learned another language."
+        ],
+        correctAnswer: "If I had more time, I would learn another language.",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "inter-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"however\" mean in Spanish?",
+        options: [
+          "antes",
+          "sin embargo",
+          "nunca"
+        ],
+        correctAnswer: "sin embargo",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "inter-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to connected speech, narratives, conditionals, opinions, and real-world discussion.",
+        options: [
+          "I no understand yesterday.",
+          "I have been studying English for two years.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "I have been studying English for two years.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "inter-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "conditionals and perfect tenses",
+          "Chemical formulas"
+        ],
+        correctAnswer: "conditionals and perfect tenses",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "inter-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "She has worked remotely since 2020 but misses teamwork.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "She has worked remotely since 2020 but misses teamwork.",
+        audioText: "The speaker has been working remotely since 2020, but she misses face-to-face teamwork.",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "inter-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgAdultPrepNextTo
+      },
+      {
+        id: "inter-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "connected speech, narratives, conditionals, opinions, and real-world discussion",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "connected speech, narratives, conditionals, opinions, and real-world discussion",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "inter-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "inter-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "inter-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "The speaker has been working remotely since 2020, but she misses face-to-face teamwork.",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "inter-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "B1 communication",
+          "University literature only"
+        ],
+        correctAnswer: "B1 communication",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "inter-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgAdultPrepNextTo
+      }
+    ]
   },
   {
     "id": "advanced",
@@ -21744,14 +22756,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Pronunciación: Connected speech y entonación Manejar correctamente Pronunciation..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -21956,12 +22967,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -21988,14 +23001,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Segundo Condicional (situaciones hipotéticas) Manejar correctamente Important To....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -22199,12 +23211,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -22231,14 +23245,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Tercer Condicional (arrepentimientos del pasado) Manejar correctamente Important....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -22442,12 +23455,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/on_1sS6Ii8M",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -22474,14 +23489,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Reported Speech (estilo indirecto) Manejar correctamente Reported Speech..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -22686,12 +23700,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -22718,14 +23734,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 5: Relative Clauses (who, which, that, where) Manejar correctamente Relative Clauses..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -22930,12 +23945,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -22962,14 +23979,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 6: Vocabulario avanzado de negocios y negociación Manejar correctamente Negotiation..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -23174,12 +24190,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -23206,14 +24224,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 7: Resolviendo problemas y quejas de clientes Manejar correctamente Complaints & So....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -23418,12 +24435,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -23450,14 +24469,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 8: Future Continuous y Future Perfect Manejar correctamente Future Continuous & Per....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -23662,12 +24680,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -23694,14 +24714,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 9: Phrasal verbs avanzados en contexto Manejar correctamente Phrasal Verbs..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -23906,12 +24925,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -23938,14 +24959,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 10: Repaso avanzado Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 10: Repaso avanzado Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 10: Repaso avanzado Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 10: Repaso avanzado Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 10: Repaso avanzado Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -24150,19 +25170,190 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/on_1sS6Ii8M",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
         ]
       }
     ],
-    "oralEvaluation": []
+    "oralEvaluation": [
+      {
+        topic: "INTRODUCTION",
+        question: "Present a structured argument about technology in education."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Summarize an article or video and give your reaction."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Use passive voice to explain a process at work."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Handle a professional disagreement politely."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Compare two solutions and recommend one."
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "advanced-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Advanced?",
+        options: [
+          "The report submitted before the deadline.",
+          "The report was submitted before the deadline.",
+          "The report was submit before the deadline."
+        ],
+        correctAnswer: "The report was submitted before the deadline.",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "advanced-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"nevertheless\" mean in Spanish?",
+        options: [
+          "antes",
+          "no obstante",
+          "nunca"
+        ],
+        correctAnswer: "no obstante",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "advanced-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to argumentation, nuance, passive voice, reporting, and professional communication.",
+        options: [
+          "I no understand yesterday.",
+          "The issue is being investigated by the team.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "The issue is being investigated by the team.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "advanced-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "passive voice and discourse markers",
+          "Chemical formulas"
+        ],
+        correctAnswer: "passive voice and discourse markers",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "advanced-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "The manager admitted a delay but said quality improved.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "The manager admitted a delay but said quality improved.",
+        audioText: "The manager acknowledged the delay; nevertheless, she emphasized that quality had improved.",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "advanced-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgAdultPrepNextTo
+      },
+      {
+        id: "advanced-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "argumentation, nuance, passive voice, reporting, and professional communication",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "argumentation, nuance, passive voice, reporting, and professional communication",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "advanced-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "advanced-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "advanced-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "The manager acknowledged the delay; nevertheless, she emphasized that quality had improved.",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "advanced-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "B2 communication",
+          "University literature only"
+        ],
+        correctAnswer: "B2 communication",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "advanced-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgAdultPrepNextTo
+      }
+    ]
   },
   {
     "id": "masters",
@@ -24192,14 +25383,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 1: Idioms y expresiones idiomáticas Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -24403,12 +25593,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -24435,14 +25627,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 2: Inversiones para énfasis formal Manejar correctamente Inversions..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -24647,12 +25838,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -24679,14 +25872,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 3: Cleft sentences para resaltar información Manejar correctamente Cleft Sentences..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -24891,12 +26083,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -24923,14 +26117,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La....", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La...?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La... help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La....", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 4: Lenguaje diplomático y atenuadores (Hedging) Manejar correctamente Diplomatic La....", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -25135,12 +26328,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -25167,14 +26362,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 5: Preparando presentaciones de alto impacto Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -25378,12 +26572,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -25410,14 +26606,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 6: Discurso persuasivo y argumentación Manejar correctamente Persuasive Speech..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -25622,12 +26817,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -25654,14 +26851,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 7: Debates sobre temas complejos Manejar correctamente Debate & Arguments..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -25866,12 +27062,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -25898,14 +27096,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 8: Storytelling en entornos profesionales Manejar correctamente Storytelling..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -26110,12 +27307,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -26142,14 +27341,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 9: Analizando artículos de opinión y noticias Manejar correctamente Important Topic..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -26353,12 +27551,14 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
@@ -26385,14 +27585,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva 2",
-                "title": "Warm-up Activity",
-                "description": "Let's get started!",
+                "title": "Conversation Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": [
-                  "Discuss with your classmates:",
-                  "What do you already know about this topic?"
-                ]
-              },
+                "content": ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  type: "spinning-wheel",
+                  wheelItems: [{ label: "Real situation", color: "#EF4444", prompt: "Describe a real situation where you could use Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice..", es: "Describe una situacion real donde usarias este tema." }, { label: "Personal answer", color: "#F59E0B", prompt: "Answer personally: what is your connection with Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice.?", es: "Responde de forma personal: cual es tu conexion con el tema?" }, { label: "Work or travel", color: "#10B981", prompt: "How could Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice. help you at work, while traveling, or online?", es: "Como te ayudaria en el trabajo, viajando o en internet?" }, { label: "Ask someone", color: "#3B82F6", prompt: "Ask a classmate a natural question connected to Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice..", es: "Haz una pregunta natural a un companero." }, { label: "One sentence", color: "#8B5CF6", prompt: "Say one accurate sentence using today's target language.", es: "Di una frase correcta usando el lenguaje de hoy." }, { label: "Quick story", color: "#EC4899", prompt: "Tell a 20-second story connected to Clase 10: Proyecto Final Masters Manejar correctamente Review & Practice..", es: "Cuenta una historia de 20 segundos relacionada con el tema." }]
+            },
               {
                 "id": "Diapositiva 3",
                 "title": "Objectives",
@@ -26597,18 +27796,189 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
               {
                 "id": "Diapositiva 19",
-                "title": "Homework",
+                "title": "Video Homework ??",
                 "description": "Practice at home.",
-                "type": "homework",
+                "type": "video",
                 "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
-                "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800"
-              }
+                "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800",
+                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+            }
             ],
             "action": "Anotar la tarea."
           }
         ]
       }
     ],
-    "oralEvaluation": []
+    "oralEvaluation": [
+      {
+        topic: "INTRODUCTION",
+        question: "Lead a five-minute discussion and invite follow-up questions."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Analyze a complex social or professional issue with nuance."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Use idiomatic language naturally in a personal anecdote."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Negotiate a solution between two competing priorities."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Give a persuasive mini-presentation with a clear conclusion."
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "masters-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Masters?",
+        options: [
+          "Had I knew earlier, I would change the plan.",
+          "Had I known earlier, I would have changed the plan.",
+          "If I had knew earlier, I would have changed the plan."
+        ],
+        correctAnswer: "Had I known earlier, I would have changed the plan.",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "masters-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"to some extent\" mean in Spanish?",
+        options: [
+          "antes",
+          "hasta cierto punto",
+          "nunca"
+        ],
+        correctAnswer: "hasta cierto punto",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "masters-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to fluency, idiomatic language, persuasion, synthesis, and high-level interaction.",
+        options: [
+          "I no understand yesterday.",
+          "The proposal is compelling, albeit expensive.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "The proposal is compelling, albeit expensive.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "masters-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "advanced inversion and nuance",
+          "Chemical formulas"
+        ],
+        correctAnswer: "advanced inversion and nuance",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "masters-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "The policy was imperfect but realistic.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "The policy was imperfect but realistic.",
+        audioText: "The panelist conceded that the policy was imperfect, yet argued it was the most realistic option available.",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "masters-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgAdultPrepNextTo
+      },
+      {
+        id: "masters-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "fluency, idiomatic language, persuasion, synthesis, and high-level interaction",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "fluency, idiomatic language, persuasion, synthesis, and high-level interaction",
+        imageUrl: imgAdultAvatar
+      },
+      {
+        id: "masters-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgAdultHomework
+      },
+      {
+        id: "masters-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgAdultDirectionsAsk
+      },
+      {
+        id: "masters-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "The panelist conceded that the policy was imperfect, yet argued it was the most realistic option available.",
+        imageUrl: imgAdultDirectionsGive
+      },
+      {
+        id: "masters-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "C1 communication",
+          "University literature only"
+        ],
+        correctAnswer: "C1 communication",
+        imageUrl: imgAdultPrepIn
+      },
+      {
+        id: "masters-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgAdultPrepNextTo
+      }
+    ]
   }
 ];

@@ -19,12 +19,14 @@ import { avatars } from './config';
 import { useBrand } from './hooks/useBrand';
 
 const STORAGE_KEY = 'english_easy_path_progress';
+const TEACHER_UNLOCK_KEY = 'maven_teacher_unlocked';
 
 type AppRole = 'none' | 'teacher' | 'student';
 
 export default function App() {
   const { brand } = useBrand();
   const [role, setRole] = useState<AppRole>('none');
+  const [isTeacherUnlocked, setIsTeacherUnlocked] = useState(() => localStorage.getItem(TEACHER_UNLOCK_KEY) === 'true');
   const [currentStudentId, setCurrentStudentId] = useState<string | null>(null);
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], currentLessonId: '', level: 'Nivel Inicial' });
@@ -94,6 +96,8 @@ export default function App() {
   };
 
   const handleSelectTeacher = () => {
+    localStorage.setItem(TEACHER_UNLOCK_KEY, 'true');
+    setIsTeacherUnlocked(true);
     setRole('teacher');
   };
 
@@ -199,7 +203,10 @@ export default function App() {
     setShowSettingsModal(false);
   };
 
-  const isSupabaseConfigured = Boolean(import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY);
+  const isSupabaseConfigured = Boolean(
+    import.meta.env.VITE_SUPABASE_URL &&
+    (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY)
+  );
 
   const urlParams = new URLSearchParams(window.location.search);
   const evalLevelId = urlParams.get('evaluacion');
@@ -230,7 +237,7 @@ export default function App() {
             Atención: Faltan las variables VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY en el menú Settings para conectar con la base de datos real.
           </div>
         )}
-        <RoleSelection onSelectTeacher={handleSelectTeacher} />
+        <RoleSelection onSelectTeacher={handleSelectTeacher} isTeacherUnlocked={isTeacherUnlocked} />
       </div>
     );
   }
@@ -403,4 +410,3 @@ export default function App() {
     </div>
   );
 }
-

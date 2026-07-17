@@ -5,9 +5,10 @@ import { useBrand } from '../hooks/useBrand';
 interface RoleSelectionProps {
   onSelectTeacher: () => void;
   onSelectStudent?: () => void; 
+  isTeacherUnlocked?: boolean;
 }
 
-export function RoleSelection({ onSelectTeacher }: RoleSelectionProps) {
+export function RoleSelection({ onSelectTeacher, isTeacherUnlocked = false }: RoleSelectionProps) {
   const { brand } = useBrand();
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
@@ -31,6 +32,21 @@ export function RoleSelection({ onSelectTeacher }: RoleSelectionProps) {
         <h1 className="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">Acceso Profesor</h1>
         <h2 className="text-xl text-gray-500 mb-8">{brand.name}</h2>
         
+        {isTeacherUnlocked && (
+          <div className="mb-8 rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
+            <p className="mb-4 text-sm font-bold text-emerald-800">
+              Sesión de profesor recordada en este equipo.
+            </p>
+            <button
+              type="button"
+              onClick={onSelectTeacher}
+              className="w-full rounded-xl bg-emerald-600 py-4 text-lg font-bold text-white shadow-md transition-all hover:bg-emerald-700"
+            >
+              Entrar sin PIN
+            </button>
+          </div>
+        )}
+
         <form onSubmit={handleSubmit} className="flex flex-col items-center">
           <div className="bg-indigo-50 w-20 h-20 rounded-full flex items-center justify-center mb-6">
             <Lock className="w-8 h-8 text-indigo-600" />
@@ -66,6 +82,7 @@ export function RoleSelection({ onSelectTeacher }: RoleSelectionProps) {
               localStorage.removeItem('mock_students');
               localStorage.removeItem('mock_groups');
               localStorage.removeItem('english_easy_path_progress');
+              localStorage.removeItem('maven_teacher_unlocked');
               window.location.reload();
             }}
             className="text-xs font-bold text-red-400 hover:text-red-600 uppercase tracking-widest"

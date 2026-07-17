@@ -2,6 +2,12 @@
 
 **CRITICAL SYSTEM INSTRUCTION**: You are STRICTLY FORBIDDEN from generating "flat", simplified, or placeholder classes. Every single class generated and added to `src/data/curriculum.ts` MUST rigorously follow this exact blueprint, slide by slide. You must maintain the aesthetic properties (`bgColor`, `imageUrl`), interactive properties (`options`, `correctOptionIndex`), and game types (`emoji-game`).
 
+## 🔐 SUPABASE / BASE DE DATOS
+- Para cualquier tarea de base de datos o subida a Supabase, primero revisar `.env.local`.
+- `.env.local` contiene las credenciales locales de Supabase y está ignorado por Git mediante `.gitignore`.
+- No pegar `service_role`, passwords ni connection strings reales en archivos versionados como `AGENTS.md`, scripts públicos o documentación.
+- Si una connection string conserva `[YOUR-PASSWORD]`, pedir o cargar el password real antes de ejecutar tareas que requieran conexión Postgres directa.
+
 ## 🏗️ MACRO STRUCTURE (5 SECTIONS)
 Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections in this order:
 1. Warm-up

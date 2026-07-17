@@ -9,6 +9,8 @@ import imgCutePets from '../assets/images/cute_pets_kids_1781982896917.jpg';
 import imgMonsterBody from '../assets/images/monster_body_parts_1781982909851.jpg';
 import imgKidsAction from '../assets/images/kids_action_verbs_1781982923116.jpg';
 import imgCuteFamily from '../assets/images/cute_family_kids_1781982934785.jpg';
+import imgKidsAssessment from '../assets/images/kids_assessment_welcome_1782139154509.jpg';
+import imgKidsWakeup from '../assets/images/kids_q_wakeup_1782139210255.jpg';
 import imgFeelingsFaces from '../assets/images/feelings_faces_kids_1781982946141.jpg';
 import imgFoodDrinks from '../assets/images/food_drinks_kids_1781983103412.jpg';
 import imgClothesWeather from '../assets/images/clothes_weather_kids_1781983117508.jpg';
@@ -55,12 +57,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-00-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 1: Hello & Amazing Colors! 🌈 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -304,10 +308,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-00-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/tVlcKp3bWH8",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -341,12 +345,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-01-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 2: Numbers & Animal Friends! 🐶 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -600,10 +606,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-01-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/RB6ZWWpykCs",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -637,12 +643,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-02-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 3: My Body & Fun Actions! 🏃 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -892,10 +900,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-02-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/l4WNrvVjiTw",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -929,12 +937,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-03-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 4: My Favorite Toys! 🪁 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -1181,10 +1191,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-03-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/8-SWzpdcl6E",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -1218,12 +1228,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-04-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 5: Yummy Fruits! 🍓 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -1470,10 +1482,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-04-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/mfReSbQ7jzE",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -1507,12 +1519,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-05-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 6: Super Shapes! 🟢 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -1759,10 +1773,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-05-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/WMnVQAg3AeM",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -1796,12 +1810,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-06-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 7: School Supplies! 🎒 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -2048,10 +2064,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-06-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/AS5nhKzaOqo",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -2085,12 +2101,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-07-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 8: Farm Animals! 🐮 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -2337,10 +2355,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-07-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/zXEq-QO3xTg",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -2352,6 +2370,176 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
             "action": "¡Despídete y recuérdales hacer su misión!"
           }
         ]
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "basic-zero-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Kids Basic Zero?",
+        options: [
+          "Good night apple.",
+          "Hello!",
+          "Blue teacher run."
+        ],
+        correctAnswer: "Hello!",
+        imageUrl: imgKidsAssessment
+      },
+      {
+        id: "basic-zero-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"red\" mean in Spanish?",
+        options: [
+          "antes",
+          "rojo",
+          "nunca"
+        ],
+        correctAnswer: "rojo",
+        imageUrl: imgColorfulNumbers
+      },
+      {
+        id: "basic-zero-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to colors, greetings, classroom words, numbers, and simple feelings.",
+        options: [
+          "I no understand yesterday.",
+          "I am happy.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "I am happy.",
+        imageUrl: imgCutePets
+      },
+      {
+        id: "basic-zero-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "I am and basic words",
+          "Chemical formulas"
+        ],
+        correctAnswer: "I am and basic words",
+        imageUrl: imgKidsAction
+      },
+      {
+        id: "basic-zero-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "The speaker is happy and sees a red ball.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "The speaker is happy and sees a red ball.",
+        audioText: "Hello! I am happy. I see a red ball and two cats.",
+        imageUrl: imgCuteFamily
+      },
+      {
+        id: "basic-zero-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgKidsWakeup
+      },
+      {
+        id: "basic-zero-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "colors, greetings, classroom words, numbers, and simple feelings",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "colors, greetings, classroom words, numbers, and simple feelings",
+        imageUrl: imgKidsAssessment
+      },
+      {
+        id: "basic-zero-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgColorfulNumbers
+      },
+      {
+        id: "basic-zero-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgCutePets
+      },
+      {
+        id: "basic-zero-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "Hello! I am happy. I see a red ball and two cats.",
+        imageUrl: imgKidsAction
+      },
+      {
+        id: "basic-zero-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "Pre-A1 communication",
+          "University literature only"
+        ],
+        correctAnswer: "Pre-A1 communication",
+        imageUrl: imgCuteFamily
+      },
+      {
+        id: "basic-zero-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgKidsWakeup
+      }
+    ],
+    oralEvaluation: [
+      {
+        topic: "INTRODUCTION",
+        question: "Say hello, your name, and how you feel today."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Name five colors you can see in the room."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Count from one to ten and show the numbers with your fingers."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Point to classroom objects and say their names."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Say three animal words and make a simple sentence."
       }
     ]
   },
@@ -2383,12 +2571,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-10-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -2635,10 +2825,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-10-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/FHaObkHEkHQ",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -2672,12 +2862,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-11-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 2: Yummy Fast Food! 🍕 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -2924,10 +3116,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-11-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/_uLesn8M1IM",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -2961,12 +3153,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-12-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 3: My Clothes & The Weather! 👕 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -3213,10 +3407,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-12-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/KUSbazn3STo",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -3250,12 +3444,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-13-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 4: Amazing Nature! 🌳 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -3502,10 +3698,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-13-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/XC6wQQHo8uU",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -3539,12 +3735,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-14-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 5: Cool Bugs & Insects 🐛 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -3791,10 +3989,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-14-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/tksBMUzZUAs",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -3828,12 +4026,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-15-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 6: Under the Sea! 🐠 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -4080,10 +4280,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-15-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/XqZsoesa55w",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -4117,12 +4317,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-16-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 7: Action Heroes! 🦸‍♂️ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -4369,10 +4571,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-16-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/hzo9me2fdzg",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -4406,12 +4608,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-17-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 8: Numbers 11-20! 🔢 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -4658,10 +4862,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-17-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/D0Ajq682yrA",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -4673,6 +4877,176 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
             "action": "¡Despídete y recuérdales hacer su misión!"
           }
         ]
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "basic-explorer-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Kids Basic 1?",
+        options: [
+          "I likes apples.",
+          "I like apples.",
+          "I apple like."
+        ],
+        correctAnswer: "I like apples.",
+        imageUrl: imgKidsAssessment
+      },
+      {
+        id: "basic-explorer-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"mother\" mean in Spanish?",
+        options: [
+          "antes",
+          "mama",
+          "nunca"
+        ],
+        correctAnswer: "mama",
+        imageUrl: imgColorfulNumbers
+      },
+      {
+        id: "basic-explorer-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to family, toys, pets, actions, food, and simple sentences.",
+        options: [
+          "I no understand yesterday.",
+          "This is my dog.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "This is my dog.",
+        imageUrl: imgCutePets
+      },
+      {
+        id: "basic-explorer-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "I like and this is",
+          "Chemical formulas"
+        ],
+        correctAnswer: "I like and this is",
+        imageUrl: imgKidsAction
+      },
+      {
+        id: "basic-explorer-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "The child likes pizza, has a dog, and can jump.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "The child likes pizza, has a dog, and can jump.",
+        audioText: "This is my family. I like pizza, I have a dog, and I can jump.",
+        imageUrl: imgCuteFamily
+      },
+      {
+        id: "basic-explorer-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgKidsWakeup
+      },
+      {
+        id: "basic-explorer-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "family, toys, pets, actions, food, and simple sentences",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "family, toys, pets, actions, food, and simple sentences",
+        imageUrl: imgKidsAssessment
+      },
+      {
+        id: "basic-explorer-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgColorfulNumbers
+      },
+      {
+        id: "basic-explorer-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgCutePets
+      },
+      {
+        id: "basic-explorer-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "This is my family. I like pizza, I have a dog, and I can jump.",
+        imageUrl: imgKidsAction
+      },
+      {
+        id: "basic-explorer-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "Pre-A1+ communication",
+          "University literature only"
+        ],
+        correctAnswer: "Pre-A1+ communication",
+        imageUrl: imgCuteFamily
+      },
+      {
+        id: "basic-explorer-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgKidsWakeup
+      }
+    ],
+    oralEvaluation: [
+      {
+        topic: "INTRODUCTION",
+        question: "Introduce your family with this is my..."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Talk about three foods you like and one food you do not like."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Show or describe your favorite toy."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Say five actions you can do."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Describe a pet or an animal with colors and size."
       }
     ]
   },
@@ -4704,12 +5078,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-20-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 1: Wild Animals Safari! 🦁 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -4956,10 +5332,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-20-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/wCfWmlnJl-A",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -4993,12 +5369,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-21-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 2: My Awesome House 🏠 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -5245,10 +5623,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-21-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/aOSJZbHoiY8",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -5282,12 +5660,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-22-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 3: Zoom! Vehicles in Town 🚗 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -5534,11 +5914,11 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-22-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
-                "videoUrl": "https://www.youtube.com/embed/B1q21Lp8TDI",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/biX7NNxw_w8",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
                   "✅ Dibuja tu parte favorita de la clase.",
@@ -5571,12 +5951,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-23-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 4: When I Grow Up! 👩‍⚕️ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -5823,11 +6205,11 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-23-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
-                "videoUrl": "https://www.youtube.com/embed/ckKQvlIT9L4",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/tVlcKp3bWH8",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
                   "✅ Dibuja tu parte favorita de la clase.",
@@ -5860,12 +6242,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-24-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 5: Make some Music! 🎸 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -6112,11 +6496,11 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-24-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
-                "videoUrl": "https://www.youtube.com/embed/4nMcbJ8h_yA",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/N1o4oOXLOZc",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
                   "✅ Dibuja tu parte favorita de la clase.",
@@ -6149,12 +6533,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-25-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 6: Days of the Week 📅 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -6401,10 +6787,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-25-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/mXMofxtDPUQ",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -6438,12 +6824,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-26-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 7: Let's Go Shopping! 🛒 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -6690,11 +7078,11 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-26-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
-                "videoUrl": "https://www.youtube.com/embed/L1m1eA7R9rI",
+                "type": "video",
+                "videoUrl": "https://www.youtube.com/embed/_uLesn8M1IM",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
                   "✅ Dibuja tu parte favorita de la clase.",
@@ -6727,12 +7115,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-27-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 8: Playground Fun! 🛝 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -6979,10 +7369,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-27-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/l4WNrvVjiTw",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -6994,6 +7384,176 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
             "action": "¡Despídete y recuérdales hacer su misión!"
           }
         ]
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "basic-adventurer-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Kids Basic 2?",
+        options: [
+          "Where the pencil is?",
+          "Where is the pencil?",
+          "Where are the pencil?"
+        ],
+        correctAnswer: "Where is the pencil?",
+        imageUrl: imgKidsAssessment
+      },
+      {
+        id: "basic-adventurer-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"sunny\" mean in Spanish?",
+        options: [
+          "antes",
+          "soleado",
+          "nunca"
+        ],
+        correctAnswer: "soleado",
+        imageUrl: imgColorfulNumbers
+      },
+      {
+        id: "basic-adventurer-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to house, clothes, weather, routines, town, and simple questions.",
+        options: [
+          "I no understand yesterday.",
+          "I brush my teeth in the morning.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "I brush my teeth in the morning.",
+        imageUrl: imgCutePets
+      },
+      {
+        id: "basic-adventurer-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "where questions and routines",
+          "Chemical formulas"
+        ],
+        correctAnswer: "where questions and routines",
+        imageUrl: imgKidsAction
+      },
+      {
+        id: "basic-adventurer-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "It is sunny and Mia wears a blue jacket.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "It is sunny and Mia wears a blue jacket.",
+        audioText: "It is sunny today. Mia puts on a blue jacket and walks to school.",
+        imageUrl: imgCuteFamily
+      },
+      {
+        id: "basic-adventurer-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgKidsWakeup
+      },
+      {
+        id: "basic-adventurer-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "house, clothes, weather, routines, town, and simple questions",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "house, clothes, weather, routines, town, and simple questions",
+        imageUrl: imgKidsAssessment
+      },
+      {
+        id: "basic-adventurer-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgColorfulNumbers
+      },
+      {
+        id: "basic-adventurer-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgCutePets
+      },
+      {
+        id: "basic-adventurer-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "It is sunny today. Mia puts on a blue jacket and walks to school.",
+        imageUrl: imgKidsAction
+      },
+      {
+        id: "basic-adventurer-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "A1- communication",
+          "University literature only"
+        ],
+        correctAnswer: "A1- communication",
+        imageUrl: imgCuteFamily
+      },
+      {
+        id: "basic-adventurer-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgKidsWakeup
+      }
+    ],
+    oralEvaluation: [
+      {
+        topic: "INTRODUCTION",
+        question: "Describe your bedroom using in, on, and under."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Talk about today?s weather and your clothes."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Tell your morning routine with four actions."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Ask and answer where questions about objects."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Describe places in your town or school."
       }
     ]
   },
@@ -7025,12 +7585,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-30-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 1: My Daily Routine ⏰ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -7277,10 +7839,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-30-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/eUXkj6j6Ezw",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -7314,12 +7876,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-31-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 2: Fun Hobbies & Sports! ⚽️ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -7566,10 +8130,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-31-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/N1o4oOXLOZc",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -7603,12 +8167,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-32-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 3: Happy Holidays! 🎄 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -7855,10 +8421,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-32-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/mGAYzlqj-aE",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -7892,12 +8458,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-33-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 4: Outer Space Adventure! 🚀 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -8144,10 +8712,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-33-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/e8YzKyot4Pc",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -8181,12 +8749,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-34-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 5: Awesome Fairy Tales! 🧚 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -8433,10 +9003,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-34-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/YoQyyB5xvLk",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -8470,12 +9040,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-35-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 6: The 4 Seasons! ❄️ Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -8722,10 +9294,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-35-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/8ZjpI6fgYSY",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -8759,12 +9331,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-36-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 7: Be a Helper! 🤝 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -9011,10 +9585,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-36-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/p1WG8VdZuKo",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -9048,12 +9622,14 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-37-0b",
-                "title": "Warm Up Time! 🏃‍♂️",
-                "description": "¡Vamos a estirar los brazos al cielo y sacudir las manos!",
+                "title": "Magic Icebreaker Wheel! ??",
+                "description": "Spin the wheel, answer clearly, and ask one follow-up question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
-                "type": "game"
-              }
+                "type": "spinning-wheel",
+                  content: ["Spin the wheel and answer the prompt out loud.", "After you answer, choose one classmate and ask a follow-up question."],
+                  wheelItems: [{ label: "Show it", color: "#EF4444", prompt: "Act it out: Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía.. Then say one English word from the lesson.", es: "Actualo y di una palabra en ingles de la leccion." }, { label: "Choose one", color: "#F59E0B", prompt: "Choose one word from Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía. and draw it in the air.", es: "Escoge una palabra y dibujala en el aire." }, { label: "Silly voice", color: "#10B981", prompt: "Say one sentence about Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía. with a funny voice.", es: "Di una frase con una voz divertida." }, { label: "Find it", color: "#3B82F6", prompt: "Find something near you connected to Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía.. Show it or point to it.", es: "Busca algo cerca relacionado con el tema." }, { label: "Ask a friend", color: "#8B5CF6", prompt: "Ask a classmate an easy question about Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía..", es: "Hazle una pregunta facil a un companero." }, { label: "Mini story", color: "#EC4899", prompt: "Make a tiny story with two words from Clase 8: Around the World! 🌍 Saludar y despertar nuestra energía..", es: "Crea una historia pequena con dos palabras." }]
+            }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
           },
@@ -9300,10 +9876,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-37-hw",
-                "title": "Your Mission! 🚀",
+                "title": "Video Homework ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
-                "type": "homework",
+                "type": "video",
                 "videoUrl": "https://www.youtube.com/embed/biX7NNxw_w8",
                 "content": [
                   "✅ Repasa las palabras que aprendimos hoy.",
@@ -9315,6 +9891,176 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
             "action": "¡Despídete y recuérdales hacer su misión!"
           }
         ]
+      }
+    ],
+    virtualEvaluation: [
+      {
+        id: "basic-champion-virtual-01",
+        type: "multiple-choice",
+        question: "Which sentence is correct for Kids Basic 3?",
+        options: [
+          "I want be an astronaut.",
+          "I want to be an astronaut.",
+          "I wants to be astronaut."
+        ],
+        correctAnswer: "I want to be an astronaut.",
+        imageUrl: imgKidsAssessment
+      },
+      {
+        id: "basic-champion-virtual-02",
+        type: "multiple-choice",
+        question: "What does \"because\" mean in Spanish?",
+        options: [
+          "antes",
+          "porque",
+          "nunca"
+        ],
+        correctAnswer: "porque",
+        imageUrl: imgColorfulNumbers
+      },
+      {
+        id: "basic-champion-virtual-03",
+        type: "multiple-choice",
+        question: "Choose the sentence connected to hobbies, holidays, nature, jobs, space, and longer answers.",
+        options: [
+          "I no understand yesterday.",
+          "My favorite hobby is drawing because it is fun.",
+          "Beautiful quickly table."
+        ],
+        correctAnswer: "My favorite hobby is drawing because it is fun.",
+        imageUrl: imgCutePets
+      },
+      {
+        id: "basic-champion-virtual-04",
+        type: "multiple-choice",
+        question: "Which grammar area is most important in this level?",
+        options: [
+          "Advanced legal writing",
+          "want to and because",
+          "Chemical formulas"
+        ],
+        correctAnswer: "want to and because",
+        imageUrl: imgKidsAction
+      },
+      {
+        id: "basic-champion-virtual-05",
+        type: "listening",
+        question: "Listen and choose the best summary.",
+        options: [
+          "The speaker talks about food only.",
+          "Leo wants to be an astronaut because he likes space.",
+          "The speaker gives a phone number only."
+        ],
+        correctAnswer: "Leo wants to be an astronaut because he likes space.",
+        audioText: "Leo loves science. He wants to be an astronaut because he likes space and stars.",
+        imageUrl: imgCuteFamily
+      },
+      {
+        id: "basic-champion-virtual-06",
+        type: "multiple-choice",
+        question: "Which answer is complete and natural?",
+        options: [
+          "Yes, I do.",
+          "Because yesterday.",
+          "At the blue."
+        ],
+        correctAnswer: "Yes, I do.",
+        imageUrl: imgKidsWakeup
+      },
+      {
+        id: "basic-champion-virtual-07",
+        type: "multiple-choice",
+        question: "Which topic belongs in this exam?",
+        options: [
+          "Random math equations",
+          "hobbies, holidays, nature, jobs, space, and longer answers",
+          "Only Spanish pronunciation"
+        ],
+        correctAnswer: "hobbies, holidays, nature, jobs, space, and longer answers",
+        imageUrl: imgKidsAssessment
+      },
+      {
+        id: "basic-champion-virtual-08",
+        type: "multiple-choice",
+        question: "Choose the best question form.",
+        options: [
+          "Do you like English?",
+          "You like English?",
+          "Does you likes English?"
+        ],
+        correctAnswer: "Do you like English?",
+        imageUrl: imgColorfulNumbers
+      },
+      {
+        id: "basic-champion-virtual-09",
+        type: "multiple-choice",
+        question: "Choose the best negative sentence.",
+        options: [
+          "I do not understand the question.",
+          "I not understand the question.",
+          "I no understands the question."
+        ],
+        correctAnswer: "I do not understand the question.",
+        imageUrl: imgCutePets
+      },
+      {
+        id: "basic-champion-virtual-10",
+        type: "listening",
+        question: "Listen and identify the main idea.",
+        options: [
+          "The speaker gives personal or practical information.",
+          "The speaker says random words with no meaning.",
+          "The speaker only counts numbers."
+        ],
+        correctAnswer: "The speaker gives personal or practical information.",
+        audioText: "Leo loves science. He wants to be an astronaut because he likes space and stars.",
+        imageUrl: imgKidsAction
+      },
+      {
+        id: "basic-champion-virtual-11",
+        type: "multiple-choice",
+        question: "What level of English does this exam review?",
+        options: [
+          "Only pronunciation with no grammar",
+          "A1 communication",
+          "University literature only"
+        ],
+        correctAnswer: "A1 communication",
+        imageUrl: imgCuteFamily
+      },
+      {
+        id: "basic-champion-virtual-12",
+        type: "multiple-choice",
+        question: "Which response shows good communication?",
+        options: [
+          "Can you repeat that, please?",
+          "Repeat now bad.",
+          "No speaking never."
+        ],
+        correctAnswer: "Can you repeat that, please?",
+        imageUrl: imgKidsWakeup
+      }
+    ],
+    oralEvaluation: [
+      {
+        topic: "INTRODUCTION",
+        question: "Talk about your favorite hobby and explain why."
+      },
+      {
+        topic: "GRAMMAR IN USE",
+        question: "Describe a holiday or celebration you like."
+      },
+      {
+        topic: "VOCABULARY",
+        question: "Choose a job and say what that person does."
+      },
+      {
+        topic: "INTERACTION",
+        question: "Describe an animal or nature place with details."
+      },
+      {
+        topic: "FLUENCY",
+        question: "Give a short show-and-tell presentation using because."
       }
     ]
   }
