@@ -5,6 +5,7 @@ import { CurriculumClass, ClassSection, ClassSlide } from '../types';
 import { SpinningWheel } from './SpinningWheel';
 import { MatchingGame } from './MatchingGame';
 import { MysteryPuzzleGame } from './MysteryPuzzleGame';
+import { EmojiMadnessGame } from './EmojiMadnessGame';
 
 interface PresentationViewerProps {
   cls: CurriculumClass;
@@ -136,7 +137,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             {/* Content Area */}
             <div className="flex-1 p-5 sm:p-8 pt-2 sm:pt-4 flex flex-col md:flex-row gap-4 sm:gap-8 overflow-y-auto min-h-0">
               {/* Left text content */}
-              <div className="flex-1 flex flex-col gap-3 sm:gap-6">
+              <div className={`${slide.type === 'emoji-game' ? 'w-full' : 'flex-1'} flex flex-col gap-3 sm:gap-6`}>
                 {slide.type === 'spinning-wheel' && slide.wheelItems && (
                   <div className="flex-1 flex flex-col items-center justify-center py-2 sm:py-4">
                     <SpinningWheel items={slide.wheelItems} />
@@ -163,20 +164,15 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   </div>
                 )}
 
-                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.content?.map((line, i) => {
-                  if (slide.type === 'emoji-game') {
-                    return (
-                      <motion.div 
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        transition={{ delay: i * 0.2, type: "spring" }}
-                        key={i} 
-                        className="text-6xl sm:text-8xl md:text-9xl text-center py-8 drop-shadow-2xl filter"
-                      >
-                        {line}
-                      </motion.div>
-                    );
-                  }
+                {slide.type === 'emoji-game' && (
+                  <EmojiMadnessGame
+                    content={slide.content}
+                    options={slide.options}
+                    correctOptionIndex={slide.correctOptionIndex}
+                  />
+                )}
+
+                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.content?.map((line, i) => {
                   if (slide.type === 'reading') {
                     return (
                       <div key={i} className="text-base sm:text-xl md:text-2xl font-medium leading-relaxed bg-black/10 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg text-justify">
@@ -216,7 +212,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                 )}
 
                 {/* Interactive Options Area (inline with content) */}
-                {slide.options && slide.options.length > 0 && (
+                {slide.type !== 'emoji-game' && slide.options && slide.options.length > 0 && (
                   <div className="flex flex-col gap-3 mt-auto pt-4 sm:pt-6 w-full">
                     {slide.options.map((opt, idx) => {
                       const isSelected = selectedOption === idx;
@@ -266,7 +262,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               </div>
 
               {/* Right content (Image or Video) */}
-              {(slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
+              {slide.type !== 'emoji-game' && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center text-center backdrop-blur-sm overflow-hidden min-h-[300px] sm:min-h-[400px]">
                   <iframe 
                     src={slide.videoUrl} 
@@ -276,7 +272,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.imageUrl ? (
+              ) : slide.type !== 'emoji-game' && slide.imageUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center p-2 text-center backdrop-blur-sm min-h-[200px] sm:min-h-[400px]">
                   <img src={slide.imageUrl} referrerPolicy="no-referrer" alt={slide.title} className="w-full h-full object-cover rounded-lg sm:rounded-xl" />
                 </div>

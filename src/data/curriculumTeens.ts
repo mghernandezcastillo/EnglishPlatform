@@ -38,7 +38,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Teen Startup! 🚀", description: "Introductions", imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800", content: ["Are you ready to level up your English?", "Today we learn how to introduce ourselves.", "Let's make some new friends!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", imageUrl: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800", content: ["✔️ Say hello like a pro.", "✔️ Ask 'What's your name?'.", "✔️ Introduce yourself and your friends."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -67,7 +67,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", content: ["Alex: ______, I'm Alex. What's your name?"], options: ["Goodbye", "Hi", "Thank you"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1506869640319-fea1a2753c61?auto=format&fit=crop&q=80&w=800", content: ["Sarah: How are you today? \nMike: I'm ______, thanks!"], options: ["table", "great", "hello"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Complete the chat (3/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800", content: ["Emma: See you later! \nJake: ______!"], options: ["Bye", "Hi", "What's up"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", imageUrl: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&q=80&w=800", content: ["👋 ➕ 😃 ➕ 🤝"], options: ["I'm hungry, let's eat.", "Hi! Nice to meet you.", "Goodbye, see you later."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Greeting people: decode the emoji story", type: "emoji-game", imageUrl: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&q=80&w=800", content: ["👋 + 😄 + 🤝"], options: ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -113,7 +113,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 2! 🎉", description: "Numbers & Ages", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", content: ["Let's talk about numbers!", "How old are you?", "When is your birthday?"], bgColor: "bg-gradient-to-br from-purple-500 to-indigo-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Count from 1 to 100.", "✔️ Ask and answer 'How old are you?'.", "✔️ Talk about your birthday and months."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" }
             ],
             action: "Participar en la discusión."
@@ -142,7 +142,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Teacher: ______ old are you, Max?", "Max: I am 14 years old."], options: ["What", "How", "When"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Lucy: When is your birthday?", "Jake: My birthday is ______ July."], options: ["on", "in", "at"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Math time! (3/3)", description: "Quiz", content: ["What is 20 + 15?"], options: ["Thirty-five", "Twenty-five", "Forty-five"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["🎂 ➕ ❓ ➕ 📅"], options: ["I want cake.", "When is your birthday?", "How old are you?"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Dates and birthdays: decode the emoji story", type: "emoji-game", content: ["📅 + 🎂 + ⭐"], options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -188,8 +188,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 3! 💪", description: "My Body & Actions", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", content: ["Are you ready to move?", "Today we learn about the body.", "And what actions we can do!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", imageUrl: "/images/teens_simon_says.jpg?v=3", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500",
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens_simon_says.jpg?v=3", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500",
+                  wheelItems: [{ label: "Body", color: "#EF4444", prompt: "What body part do you use a lot?", es: "Que parte del cuerpo usas mucho?" }, { label: "Action", color: "#F59E0B", prompt: "What action can you do now?", es: "Que accion puedes hacer ahora?" }, { label: "Jump", color: "#10B981", prompt: "Can you jump high?", es: "Puedes saltar alto?" }, { label: "Sport", color: "#3B82F6", prompt: "What sport uses your legs?", es: "Que deporte usa tus piernas?" }, { label: "Hands", color: "#8B5CF6", prompt: "What can you do with your hands?", es: "Que puedes hacer con tus manos?" }, { label: "Move", color: "#EC4899", prompt: "Do you prefer running or walking?", es: "Prefieres correr o caminar?" }]
             },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Name parts of the body.", "✔️ Talk about actions.", "✔️ Say 'I can' and 'I can't'."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -219,7 +219,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the sentence (1/3)", description: "Quiz", content: ["Leo: I ______ swim. It's too hard!"], options: ["can", "can't", "am"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the sentence (2/3)", description: "Quiz", content: ["Teacher: ______ you jump high?", "Leo: Yes, I can!"], options: ["Do", "Are", "Can"], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "What is this? (3/3)", description: "Quiz", content: ["You use them to see."], options: ["Eyes", "Ears", "Legs"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["👁️ ➕ 👃 ➕ 👄"], options: ["I can swim.", "Parts of the face.", "I can jump."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Body and actions: decode the emoji story", type: "emoji-game", content: ["🏃 + 🦘 + 👍"], options: ["My birthday is today.", "I can run and jump.", "The office is open."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -265,7 +265,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 4! 📱", description: "My Favorite Gadgets", imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800", content: ["Are you a tech lover?", "Today we talk about gadgets.", "And our favorite devices!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", imageUrl: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=800", content: ["✔️ Name common tech gadgets.", "✔️ Use 'I have' and 'I don't have'.", "✔️ Ask 'Do you have...?'."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -294,7 +294,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1544228428-2b87fbe6089a?auto=format&fit=crop&q=80&w=800", content: ["Alex: ______ you have a tablet?"], options: ["Are", "Do", "Is"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800", content: ["Sam: Yes, I ______!"], options: ["have", "am", "do"], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800", content: ["You use them to listen to music."], options: ["Console", "Headphones", "Screen"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800", content: ["📱 ➕ 🎧 ➕ 🎮"], options: ["I have a laptop.", "My favorite gadgets.", "I don't have a phone."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Technology: decode the emoji story", type: "emoji-game", imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800", content: ["📱 + 💻 + 🎮"], options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -340,7 +340,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 5! 🍕", description: "Snacks & Drinks", imageUrl: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800", content: ["Are you hungry?", "Today we talk about food.", "And our favorite snacks!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Food", color: "#EF4444", prompt: "What food do you like?", es: "Que comida te gusta?" }, { label: "Drink", color: "#F59E0B", prompt: "What do you drink every day?", es: "Que tomas cada dia?" }, { label: "Snack", color: "#10B981", prompt: "What is your favorite snack?", es: "Cual es tu snack favorito?" }, { label: "Order", color: "#3B82F6", prompt: "What do you order at a restaurant?", es: "Que pides en un restaurante?" }, { label: "Taste", color: "#8B5CF6", prompt: "Do you prefer sweet or salty food?", es: "Prefieres dulce o salado?" }, { label: "Hungry", color: "#EC4899", prompt: "What do you eat when you are hungry?", es: "Que comes cuando tienes hambre?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", imageUrl: "https://images.unsplash.com/photo-1544025162-811114cd8ce4?auto=format&fit=crop&q=80&w=800", content: ["✔️ Name common snacks and drinks.", "✔️ Use 'I like' and 'I don't like'.", "✔️ Ask 'Do you like...?'."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -369,7 +369,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&q=80&w=800", content: ["Alex: ______ you like hamburgers?"], options: ["Are", "Do", "Is"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=80&w=800", content: ["Sam: No, I ______!"], options: ["don't", "am not", "do"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1553177595-4de2bb0842b9?auto=format&fit=crop&q=80&w=800", content: ["It is a cold, sweet drink."], options: ["Water", "Milkshake", "Fries"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800", content: ["🍔 ➕ 🍟 ➕ 🥤"], options: ["I like vegetables.", "My favorite fast food.", "I don't like burgers."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Food and drinks: decode the emoji story", type: "emoji-game", imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800", content: ["🍔 + 🍟 + 🥤"], options: ["I am from Canada.", "I want a burger and a drink.", "Open your book."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -415,7 +415,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 6! 🔶", description: "Shapes & Patterns", imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800", content: ["Are you ready to see shapes?", "Today we learn about colors and forms.", "Look around you!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1502691876148-a84978e59af8?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Shape", color: "#EF4444", prompt: "What shape do you see?", es: "Que forma ves?" }, { label: "Find", color: "#F59E0B", prompt: "Where can you find a circle?", es: "Donde puedes encontrar un circulo?" }, { label: "Draw", color: "#10B981", prompt: "Can you draw a triangle?", es: "Puedes dibujar un triangulo?" }, { label: "Pattern", color: "#3B82F6", prompt: "Do you like stripes or dots?", es: "Te gustan rayas o puntos?" }, { label: "Color", color: "#8B5CF6", prompt: "What color is the shape?", es: "De que color es la forma?" }, { label: "Object", color: "#EC4899", prompt: "What object has this shape?", es: "Que objeto tiene esta forma?" }], imageUrl: "https://images.unsplash.com/photo-1502691876148-a84978e59af8?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Name common shapes.", "✔️ Talk about patterns in clothes.", "✔️ Describe things around you."], imageUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -444,7 +444,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: I am ______ a blue shirt."], options: ["wear", "wearing", "wears"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1600096194534-95cf5ece04cf?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: ______ shirt is cool!"], options: ["You", "Yours", "Your"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["It has 3 sides."], options: ["Square", "Circle", "Triangle"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["🔴 ➕ 🔲 ➕ 🦓"], options: ["I like circles and squares.", "A red circle, a square, and stripes.", "I am wearing stripes."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Shapes: decode the emoji story", type: "emoji-game", content: ["🔴 + ◻️ + 🎨"], options: ["I like chicken and fries.", "I see a red circle and a square.", "He can ride a bike."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -490,7 +490,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 7! 🎒", description: "School Subjects", imageUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800", content: ["Do you like school?", "Today we talk about school supplies.", "And our favorite subjects!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Subject", color: "#EF4444", prompt: "What subject do you like?", es: "Que materia te gusta?" }, { label: "English", color: "#F59E0B", prompt: "Why do you study English?", es: "Por que estudias ingles?" }, { label: "Bag", color: "#10B981", prompt: "What is in your school bag?", es: "Que hay en tu mochila?" }, { label: "Easy", color: "#3B82F6", prompt: "What class is easy for you?", es: "Que clase es facil para ti?" }, { label: "Hard", color: "#8B5CF6", prompt: "What class is hard for you?", es: "Que clase es dificil para ti?" }, { label: "Tool", color: "#EC4899", prompt: "Do you prefer pen or pencil?", es: "Prefieres lapiz o boligrafo?" }], imageUrl: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Name school supplies.", "✔️ Name school subjects.", "✔️ Ask 'What is your favorite subject?'."], imageUrl: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -519,7 +519,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: ______ there a notebook in your bag?"], options: ["Are", "Is", "Am"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: Yes, ______ are two notebooks!"], options: ["they", "their", "there"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["A class where you run and play sports."], options: ["Math", "P.E.", "History"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["🎒 ➕ 📓 ➕ ✏️"], options: ["I like Science.", "My school supplies.", "P.E. is fun."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Classroom objects: decode the emoji story", type: "emoji-game", content: ["📖 + ✏️ + 🎒"], options: ["I want a burger.", "My pencil is in my bag.", "They are playing soccer."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -565,7 +565,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 8! 🐶", description: "Pets & Animals", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", content: ["Do you have a pet?", "Today we talk about our animal friends.", "Cats, dogs, and more!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }], imageUrl: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Name common pets and animals.", "✔️ Describe animals (big, small, cute).", "✔️ Talk about your pets."], imageUrl: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -594,7 +594,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: Look at my dog. He ______ very big!"], options: ["are", "is", "am"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: Do you ______ a cat?"], options: ["has", "having", "have"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["An animal that swims and lives in water."], options: ["Bird", "Fish", "Hamster"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["🐶 ➕ 🐈 ➕ 🦜"], options: ["My favorite food.", "I have many pets.", "School is fun."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Animals and pets: decode the emoji story", type: "emoji-game", content: ["🐶 + 🐱 + 🦜"], options: ["I wake up at seven.", "I have three pets.", "This email is formal."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -640,7 +640,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 9! 🎸", description: "My Hobbies", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", content: ["What do you do in your free time?", "Today we talk about fun activities.", "And our favorite hobbies!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Lucky", color: "#EF4444", prompt: "What is your lucky number?", es: "Cual es tu numero de suerte?" }, { label: "Age", color: "#F59E0B", prompt: "How old is someone in your family?", es: "Que edad tiene alguien de tu familia?" }, { label: "Time", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Phone", color: "#3B82F6", prompt: "What numbers are easy for you?", es: "Que numeros son faciles para ti?" }, { label: "Count", color: "#8B5CF6", prompt: "How many people are in class?", es: "Cuantas personas hay en clase?" }, { label: "Price", color: "#EC4899", prompt: "What price feels expensive?", es: "Que precio parece caro?" }], imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Name common hobbies.", "✔️ Use 'I like playing / doing'.", "✔️ Ask 'What is your hobby?'."], imageUrl: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -669,7 +669,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: I like ______ video games."], options: ["play", "playing", "plays"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: ______ you like reading?"], options: ["Are", "Is", "Do"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1502691876148-a84978e59af8?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["You do this with a book."], options: ["Reading", "Listening", "Watching"], correctOptionIndex: 0, imageUrl: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["🎧 ➕ 🎶 ➕ 🎸"], options: ["I like reading books.", "I like listening to music.", "I play soccer."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Numbers, dates and time: decode the emoji story", type: "emoji-game", content: ["🎂 + 📅 + 🕒"], options: ["I like blue shoes.", "My birthday is at three.", "The dog is sleeping."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -715,7 +715,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 10! 👨‍👩‍👧‍👦", description: "Family & Friends", imageUrl: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800", content: ["Who is in your family?", "Today we talk about our loved ones.", "And our best friends!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Family", color: "#EF4444", prompt: "Who lives in your home?", es: "Quien vive en tu casa?" }, { label: "Funny", color: "#F59E0B", prompt: "Who is funny in your family?", es: "Quien es divertido en tu familia?" }, { label: "Talk", color: "#10B981", prompt: "Who do you talk to every day?", es: "Con quien hablas cada dia?" }, { label: "Size", color: "#3B82F6", prompt: "Is your family big or small?", es: "Tu familia es grande o pequena?" }, { label: "Pet", color: "#8B5CF6", prompt: "Who has a pet at home?", es: "Quien tiene mascota en casa?" }, { label: "Friend", color: "#EC4899", prompt: "Who is your best friend?", es: "Quien es tu mejor amigo?" }], imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Name family members.", "✔️ Describe people.", "✔️ Talk about your friends."], imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -744,7 +744,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: What is ______ name? (de ella)"], options: ["his", "her", "my"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: ______ name is Mia."], options: ["Her", "His", "She"], correctOptionIndex: 0, imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["Your mother's brother is your..."], options: ["Cousin", "Uncle", "Grandpa"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["👦 ➕ 👧 ➕ 🏠"], options: ["My friends.", "My brother and sister.", "I am an only child."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Family and home: decode the emoji story", type: "emoji-game", content: ["👪 + 🏠 + ❤️"], options: ["The bus is late.", "I love my family at home.", "I eat fries every day."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -790,7 +790,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 11! 🔤", description: "Alphabet & Usernames", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", content: ["Are you ready to spell?", "Today we learn the alphabet.", "And how to share our usernames!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }], imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Say the English alphabet.", "✔️ Spell your name.", "✔️ Ask and say usernames."], imageUrl: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -819,7 +819,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: How do you ______ your name?"], options: ["spell", "spells", "spelling"], correctOptionIndex: 0, imageUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: It is @ (______) sam_cool"], options: ["dot", "at", "underscore"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["The letter 'E' sounds like..."], options: ["ei", "i", "ai"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["📱 ➕ 🔤 ➕ 🗣️"], options: ["My favorite food.", "I like to read.", "How do you spell your username?"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Dates and birthdays: decode the emoji story", type: "emoji-game", content: ["📅 + 🎂 + ⭐"], options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -865,7 +865,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 12! 🙋‍♂️", description: "All About Me", imageUrl: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800", content: ["Who are you?", "Today we learn how to introduce ourselves fully.", "Age, city, hobbies and more!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }], imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Talk about yourself.", "✔️ Say where you live.", "✔️ Combine all your knowledge."], imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -894,7 +894,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the sentence (1/3)", description: "Quiz", content: ["Sam: I live ______ London."], options: ["on", "at", "in"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the sentence (2/3)", description: "Quiz", content: ["Leo: I like pizza ______ I don't like burgers."], options: ["and", "but", "or"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Complete the sentence (3/3)", description: "Quiz", content: ["I am ______ 8th grade."], options: ["in", "on", "at"], correctOptionIndex: 0, imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["👋 ➕ 👦 ➕ 🏙️"], options: ["I like pizza.", "Hi, I am Leo and I live in the city.", "I have a dog."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Technology: decode the emoji story", type: "emoji-game", content: ["📱 + 💻 + 🎮"], options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -940,7 +940,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 13! 👕", description: "Clothes & Style", imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800", content: ["What are you wearing today?", "Today we talk about clothes.", "And personal style!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1553177595-4de2bb0842b9?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Clothes", color: "#EF4444", prompt: "What are you wearing today?", es: "Que llevas puesto hoy?" }, { label: "Shoes", color: "#F59E0B", prompt: "What color are your shoes?", es: "De que color son tus zapatos?" }, { label: "Style", color: "#10B981", prompt: "What style do you like?", es: "Que estilo te gusta?" }, { label: "Weather", color: "#3B82F6", prompt: "What do you wear when it rains?", es: "Que usas cuando llueve?" }, { label: "Shop", color: "#8B5CF6", prompt: "What clothes do you like buying?", es: "Que ropa te gusta comprar?" }, { label: "Describe", color: "#EC4899", prompt: "How would you describe your style?", es: "Como describirias tu estilo?" }], imageUrl: "https://images.unsplash.com/photo-1553177595-4de2bb0842b9?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Name common clothes.", "✔️ Describe appearance.", "✔️ Say what you are wearing."], imageUrl: "https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -969,7 +969,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: I ______ wearing a blue T-shirt."], options: ["is", "are", "am"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: She ______ long hair."], options: ["have", "has", "is"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["You wear them on your feet when you play sports."], options: ["Jeans", "Sneakers", "Glasses"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["👕 ➕ 👖 ➕ 👟"], options: ["A dress and shoes.", "A T-shirt, jeans, and sneakers.", "I have short hair."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Clothes: decode the emoji story", type: "emoji-game", content: ["👕 + 👖 + 👟"], options: ["I have three brothers.", "I am wearing jeans and sneakers.", "The train is late."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -1015,7 +1015,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 14! 🏫", description: "School & Subjects", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", content: ["Let's go to school!", "Today we review subjects and classroom items.", "Are you ready?"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Subject", color: "#EF4444", prompt: "What subject do you like?", es: "Que materia te gusta?" }, { label: "English", color: "#F59E0B", prompt: "Why do you study English?", es: "Por que estudias ingles?" }, { label: "Bag", color: "#10B981", prompt: "What is in your school bag?", es: "Que hay en tu mochila?" }, { label: "Easy", color: "#3B82F6", prompt: "What class is easy for you?", es: "Que clase es facil para ti?" }, { label: "Hard", color: "#8B5CF6", prompt: "What class is hard for you?", es: "Que clase es dificil para ti?" }, { label: "Tool", color: "#EC4899", prompt: "Do you prefer pen or pencil?", es: "Prefieres lapiz o boligrafo?" }], imageUrl: "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Name classroom items.", "✔️ Talk about school subjects.", "✔️ Say where things are (prepositions)."], imageUrl: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -1044,7 +1044,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: Where ______ my pencils?"], options: ["is", "are", "do"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: They are ______ the desk. (sobre)"], options: ["in", "on", "under"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["You sit on it in class."], options: ["Desk", "Chair", "Whiteboard"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["📖 ➕ ⬇️ ➕ 🪑"], options: ["The book is on the desk.", "The book is under the chair.", "I like reading books."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Classroom objects: decode the emoji story", type: "emoji-game", content: ["📖 + ✏️ + 🎒"], options: ["I want a burger.", "My pencil is in my bag.", "They are playing soccer."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -1090,7 +1090,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "slide-1", title: "Welcome to Class 15! ⏰", description: "Daily Routine", imageUrl: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800", content: ["What time do you wake up?", "Today we talk about our routines.", "From morning to night!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", type: "spinning-wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], imageUrl: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", type: "spinning-wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }], imageUrl: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯", description: "Objectives", content: ["✔️ Talk about daily activities.", "✔️ Say the time.", "✔️ Describe your routine."], imageUrl: "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
@@ -1119,7 +1119,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", content: ["Alex: I wake ______ at 6:00."], options: ["in", "on", "up"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", content: ["Sam: I have lunch ______ 1:30."], options: ["on", "at", "in"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
               { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", content: ["What do you do in the morning?"], options: ["Go to bed", "Have breakfast", "Do homework"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Emoji Game", type: "emoji-game", content: ["🌅 ➕ 🚿 ➕ 🍳"], options: ["I have dinner and go to sleep.", "I wake up, take a shower, and have breakfast.", "I go to school."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" }
+              { id: "slide-13", title: "Emoji Mission", description: "Dates and birthdays: decode the emoji story", type: "emoji-game", content: ["📅 + 🎂 + ⭐"], options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -1165,7 +1165,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Break the ice and review greetings.",
             slides: [
               { id: "slide-1", title: "Welcome to the Final Review!", description: "Hello everyone! Are you ready for the final challenge?", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600", imageUrl: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=800", content: ["Are you ready to test your knowledge?", "Let's review everything we learned in Level 0!", "Have fun!"] },
-              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600", imageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800", type: "spinning-wheel", wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }], content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."] },
+              { id: "slide-2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600", imageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800", type: "spinning-wheel", wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }], content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."] },
               { id: "slide-3", title: "Objectives", description: "Today we will...", content: ["✔️ Review greetings and introductions.", "✔️ Review body parts and gadgets.", "✔️ Play games and win the final challenge!"], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600", imageUrl: "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?auto=format&fit=crop&q=80&w=800" }
             ],
             action: "Participar en la discusión."
@@ -1194,7 +1194,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "slide-10", title: "Challenge 1: Fill the blank (1/3)", description: "Select the correct option.", content: ["Alex _______ 15 years old."], options: ["are", "is", "am"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-red-500 to-rose-600", imageUrl: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&q=80&w=800" },
               { id: "slide-11", title: "Challenge 2: Fill the blank (2/3)", description: "Select the correct option.", content: ["He _______ short hair."], options: ["has", "have", "is"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-rose-500 to-pink-600", imageUrl: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800" },
               { id: "slide-12", title: "Challenge 3: Fill the blank (3/3)", description: "Select the correct option.", content: ["He _______ playing video games."], options: ["like", "likes", "liking"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600", imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" },
-              { id: "slide-13", title: "Emojis Locos 🤪", description: "Guess the concept!", type: "emoji-game", content: ["📱 ➕ 🎧 ➕ 💻"], options: ["Healthy snacks", "Cool gadgets", "School subjects"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600", imageUrl: "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&q=80&w=800" }
+              { id: "slide-13", title: "Emoji Mission", description: "Review: decode the emoji story", type: "emoji-game", content: ["🏆 + 📖 + ⭐"], options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700", imageUrl: "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&q=80&w=800" }
             ],
             action: "Completar los ejercicios."
           },
@@ -1419,10 +1419,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Family & Pets.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Color", color: "#EF4444", prompt: "What color do you like today?", es: "Que color te gusta hoy?" }, { label: "Mood", color: "#F59E0B", prompt: "How do you feel right now?", es: "Como te sientes ahora?" }, { label: "Clothes", color: "#10B981", prompt: "What color are your clothes?", es: "De que color es tu ropa?" }, { label: "Happy", color: "#3B82F6", prompt: "What makes you feel happy?", es: "Que te hace feliz?" }, { label: "Emoji", color: "#8B5CF6", prompt: "What emoji shows your mood?", es: "Que emoji muestra tu animo?" }, { label: "Object", color: "#EC4899", prompt: "What color do you see near you?", es: "Que color ves cerca?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Family Tree & Feelings.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -1454,7 +1454,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Colors and feelings: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🎨 + 👕 + 😊"],
+                    options: ["I have two dogs.", "My shirt is blue and I am happy.", "Turn left at the bank."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -1499,10 +1509,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Food & Cooking.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Food", color: "#EF4444", prompt: "What food do you like?", es: "Que comida te gusta?" }, { label: "Drink", color: "#F59E0B", prompt: "What do you drink every day?", es: "Que tomas cada dia?" }, { label: "Snack", color: "#10B981", prompt: "What is your favorite snack?", es: "Cual es tu snack favorito?" }, { label: "Order", color: "#3B82F6", prompt: "What do you order at a restaurant?", es: "Que pides en un restaurante?" }, { label: "Taste", color: "#8B5CF6", prompt: "Do you prefer sweet or salty food?", es: "Prefieres dulce o salado?" }, { label: "Hungry", color: "#EC4899", prompt: "What do you eat when you are hungry?", es: "Que comes cuando tienes hambre?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Fast Food & Healthy Choices.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -1534,7 +1544,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Food and drinks: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🍔 + 🍟 + 🥤"],
+                    options: ["I am from Canada.", "I want a burger and a drink.", "Open your book."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -1579,10 +1599,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Clothes & Style.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Weather", color: "#EF4444", prompt: "How is the weather today?", es: "Como esta el clima hoy?" }, { label: "Season", color: "#F59E0B", prompt: "What season do you like?", es: "Que estacion te gusta?" }, { label: "Clothes", color: "#10B981", prompt: "What do you wear on cold days?", es: "Que usas en dias frios?" }, { label: "Temperature", color: "#3B82F6", prompt: "Do you prefer hot or cold weather?", es: "Prefieres calor o frio?" }, { label: "Rain", color: "#8B5CF6", prompt: "Do you like rainy days?", es: "Te gustan los dias lluviosos?" }, { label: "Sun", color: "#EC4899", prompt: "What do you do on sunny days?", es: "Que haces en dias soleados?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Fashion, Clothes & Weather.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -1614,7 +1634,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Weather: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🌧️ + 🧥 + 🌳"],
+                    options: ["I can spell my name.", "It is rainy and cold outside.", "The client is angry."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -1659,10 +1689,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Nature & Environment.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Nature, Parks & Outdoors.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -1694,7 +1724,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Technology: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 💻 + 🎮"],
+                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -1739,10 +1779,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Planes de fin de semana con will y going to.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -1774,7 +1814,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Future plans: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔮 + 🚀 + 📅"],
+                    options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -1819,10 +1869,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Invitaciones, aceptar y rechazar planes.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -1854,7 +1904,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Future plans: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔮 + 🚀 + 📅"],
+                    options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -1899,10 +1959,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Door", color: "#EF4444", prompt: "Where is the door?", es: "Donde esta la puerta?" }, { label: "Home", color: "#F59E0B", prompt: "What is near your home?", es: "Que hay cerca de tu casa?" }, { label: "Left", color: "#10B981", prompt: "What is on your left?", es: "Que hay a tu izquierda?" }, { label: "Right", color: "#3B82F6", prompt: "What is on your right?", es: "Que hay a tu derecha?" }, { label: "Travel", color: "#8B5CF6", prompt: "How do you move around town?", es: "Como te mueves por la ciudad?" }, { label: "Place", color: "#EC4899", prompt: "Where do people ask directions?", es: "Donde piden direcciones?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Compras, precios y ropa.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -1934,7 +1994,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Directions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🗺️ + ⬅️ + 🚌"],
+                    options: ["I love my family.", "Turn left at the bus stop.", "She can sing well."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -1979,10 +2049,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Snacks & Drinks.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Food", color: "#EF4444", prompt: "What food do you like?", es: "Que comida te gusta?" }, { label: "Drink", color: "#F59E0B", prompt: "What do you drink every day?", es: "Que tomas cada dia?" }, { label: "Snack", color: "#10B981", prompt: "What is your favorite snack?", es: "Cual es tu snack favorito?" }, { label: "Order", color: "#3B82F6", prompt: "What do you order at a restaurant?", es: "Que pides en un restaurante?" }, { label: "Taste", color: "#8B5CF6", prompt: "Do you prefer sweet or salty food?", es: "Prefieres dulce o salado?" }, { label: "Hungry", color: "#EC4899", prompt: "What do you eat when you are hungry?", es: "Que comes cuando tienes hambre?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Comida, snacks y pedidos.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2014,7 +2084,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Food and drinks: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🍔 + 🍟 + 🥤"],
+                    options: ["I am from Canada.", "I want a burger and a drink.", "Open your book."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2059,10 +2139,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Tecnología, aplicaciones y redes sociales.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2094,7 +2174,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Technology: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 💻 + 🎮"],
+                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2139,10 +2229,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Chat y llamadas (pedir ayuda) y Proyecto de evento/viaje.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2174,7 +2264,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-1-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2398,10 +2498,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Animals & Habitats.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2433,7 +2533,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Animals and pets: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🐶 + 🐱 + 🦜"],
+                    options: ["I wake up at seven.", "I have three pets.", "This email is formal."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2478,10 +2588,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Room", color: "#EF4444", prompt: "What is in your room?", es: "Que hay en tu cuarto?" }, { label: "Near", color: "#F59E0B", prompt: "What is near your chair?", es: "Que hay cerca de tu silla?" }, { label: "Place", color: "#10B981", prompt: "What place do you like visiting?", es: "Que lugar te gusta visitar?" }, { label: "Home", color: "#3B82F6", prompt: "What room do you like at home?", es: "Que cuarto te gusta en casa?" }, { label: "City", color: "#8B5CF6", prompt: "What place is in your city?", es: "Que lugar hay en tu ciudad?" }, { label: "Object", color: "#EC4899", prompt: "What object is on your desk?", es: "Que objeto hay en tu mesa?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of My Room & Dream House.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2513,7 +2623,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Rooms and places: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🛏️ + 🪑 + 🏠"],
+                    options: ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2558,10 +2678,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Room", color: "#EF4444", prompt: "What is in your room?", es: "Que hay en tu cuarto?" }, { label: "Near", color: "#F59E0B", prompt: "What is near your chair?", es: "Que hay cerca de tu silla?" }, { label: "Place", color: "#10B981", prompt: "What place do you like visiting?", es: "Que lugar te gusta visitar?" }, { label: "Home", color: "#3B82F6", prompt: "What room do you like at home?", es: "Que cuarto te gusta en casa?" }, { label: "City", color: "#8B5CF6", prompt: "What place is in your city?", es: "Que lugar hay en tu ciudad?" }, { label: "Object", color: "#EC4899", prompt: "What object is on your desk?", es: "Que objeto hay en tu mesa?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Vehicles, Transport & City.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2593,7 +2713,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Rooms and places: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🛏️ + 🪑 + 🏠"],
+                    options: ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2638,10 +2768,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Dream Jobs & Professions.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2673,7 +2803,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Business English: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📧 + 💼 + 🧑‍💼"],
+                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2718,10 +2858,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Can", color: "#EF4444", prompt: "What can you do well?", es: "Que puedes hacer bien?" }, { label: "Talent", color: "#F59E0B", prompt: "What talent do you have?", es: "Que talento tienes?" }, { label: "Sport", color: "#10B981", prompt: "Can you swim or run fast?", es: "Puedes nadar o correr rapido?" }, { label: "Music", color: "#3B82F6", prompt: "Can you sing or dance?", es: "Puedes cantar o bailar?" }, { label: "Learn", color: "#8B5CF6", prompt: "What skill do you want to learn?", es: "Que habilidad quieres aprender?" }, { label: "Challenge", color: "#EC4899", prompt: "What is hard but possible?", es: "Que es dificil pero posible?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Habilidades con can / can’t.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2753,7 +2893,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Abilities: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 🏃 + 🎵"],
+                    options: ["There are two chairs.", "I can run and sing.", "This is my passport."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2798,10 +2948,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Rule", color: "#EF4444", prompt: "What rule is important?", es: "Que regla es importante?" }, { label: "Students", color: "#F59E0B", prompt: "What must students do?", es: "Que deben hacer los estudiantes?" }, { label: "Advice", color: "#10B981", prompt: "What advice helps you study?", es: "Que consejo te ayuda a estudiar?" }, { label: "Permission", color: "#3B82F6", prompt: "When do you ask Can I...?", es: "Cuando preguntas Can I...?" }, { label: "Duty", color: "#8B5CF6", prompt: "What do you have to do today?", es: "Que tienes que hacer hoy?" }, { label: "School", color: "#EC4899", prompt: "What school rule is useful?", es: "Que regla escolar es util?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Reglas escolares con must, have to, should.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2833,7 +2983,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Rules and advice: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🛑 + 📖 + 🆘"],
+                    options: ["I have already eaten.", "Students must follow rules.", "The app is cheaper."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2878,10 +3038,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Deportes, salud y hábitos.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2913,7 +3073,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Technology: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 💻 + 🎮"],
+                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -2958,10 +3128,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Room", color: "#EF4444", prompt: "What is in your room?", es: "Que hay en tu cuarto?" }, { label: "Near", color: "#F59E0B", prompt: "What is near your chair?", es: "Que hay cerca de tu silla?" }, { label: "Place", color: "#10B981", prompt: "What place do you like visiting?", es: "Que lugar te gusta visitar?" }, { label: "Home", color: "#3B82F6", prompt: "What room do you like at home?", es: "Que cuarto te gusta en casa?" }, { label: "City", color: "#8B5CF6", prompt: "What place is in your city?", es: "Que lugar hay en tu ciudad?" }, { label: "Object", color: "#EC4899", prompt: "What object is on your desk?", es: "Que objeto hay en tu mesa?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Ciudad, transporte y lugares para salir.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -2993,7 +3163,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Rooms and places: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🛏️ + 🪑 + 🏠"],
+                    options: ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3038,10 +3218,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Like", color: "#EF4444", prompt: "What activity do you like?", es: "Que actividad te gusta?" }, { label: "Love", color: "#F59E0B", prompt: "What do you love doing?", es: "Que amas hacer?" }, { label: "Dislike", color: "#10B981", prompt: "What food do you dislike?", es: "Que comida no te gusta?" }, { label: "Choice", color: "#3B82F6", prompt: "Do you prefer pizza or burgers?", es: "Prefieres pizza o hamburguesas?" }, { label: "Fun", color: "#8B5CF6", prompt: "What is fun for you?", es: "Que es divertido para ti?" }, { label: "Music", color: "#EC4899", prompt: "What music do you like?", es: "Que musica te gusta?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Describir series, películas, juegos y música.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3073,7 +3253,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Likes and hobbies: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🎵 + 🎮 + ❤️"],
+                    options: ["Where is the station?", "I like music and video games.", "I have to clean my room."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3118,10 +3308,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Conversación actual, rutinas y Repaso oral por retos.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3153,7 +3343,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-2-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3377,10 +3577,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Lucky", color: "#EF4444", prompt: "What is your lucky number?", es: "Cual es tu numero de suerte?" }, { label: "Age", color: "#F59E0B", prompt: "How old is someone in your family?", es: "Que edad tiene alguien de tu familia?" }, { label: "Time", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Phone", color: "#3B82F6", prompt: "What numbers are easy for you?", es: "Que numeros son faciles para ti?" }, { label: "Count", color: "#8B5CF6", prompt: "How many people are in class?", es: "Cuantas personas hay en clase?" }, { label: "Price", color: "#EC4899", prompt: "What price feels expensive?", es: "Que precio parece caro?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Daily Routine & Time.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3412,7 +3612,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Numbers, dates and time: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🎂 + 📅 + 🕒"],
+                    options: ["I like blue shoes.", "My birthday is at three.", "The dog is sleeping."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3457,10 +3667,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Sports & Hobbies.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Sports, Competitions & Teams.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3492,7 +3702,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Animals and pets: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🐶 + 🐱 + 🦜"],
+                    options: ["I wake up at seven.", "I have three pets.", "This email is formal."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3537,10 +3757,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Holiday", color: "#EF4444", prompt: "What holiday do you like?", es: "Que fiesta te gusta?" }, { label: "Family", color: "#F59E0B", prompt: "Who do you see on holidays?", es: "A quien ves en fiestas?" }, { label: "Food", color: "#10B981", prompt: "What holiday food do you like?", es: "Que comida de fiesta te gusta?" }, { label: "Gift", color: "#3B82F6", prompt: "Do you like gifts?", es: "Te gustan los regalos?" }, { label: "Place", color: "#8B5CF6", prompt: "Where do you celebrate?", es: "Donde celebras?" }, { label: "Song", color: "#EC4899", prompt: "What holiday song do you know?", es: "Que cancion festiva conoces?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Holidays, Festivals & Traditions.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3572,7 +3792,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Holidays: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🎅 + ⭐ + 🏠"],
+                    options: ["The laptop is new.", "My holiday is at home.", "I was late yesterday."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3617,10 +3847,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Future Dreams.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Space, Science & Future.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3652,7 +3882,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Future plans: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔮 + 🚀 + 📅"],
+                    options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3697,10 +3937,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Was/were y recuerdos de infancia.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3732,7 +3972,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3777,10 +4027,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Vacaciones, viajes y anécdotas.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3812,7 +4062,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past trips: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["✈️ + 🏖️ + 📅"],
+                    options: ["I am studying right now.", "I went on vacation last year.", "Please spell your name."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3857,10 +4117,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Biografías de artistas, deportistas o creadores.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3892,7 +4152,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -3937,10 +4207,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Conectores para contar historias.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -3972,7 +4242,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Technology: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 💻 + 🎮"],
+                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4017,10 +4297,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Problemas cotidianos y cómo explicarlos.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4052,7 +4332,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Dates and birthdays: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📅 + 🎂 + ⭐"],
+                    options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4097,10 +4387,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Verbos irregulares y terminaciones -ed. Proyecto en video.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4132,7 +4422,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-3-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4356,10 +4656,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of My Opinions & Perspectives.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4391,7 +4691,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Opinions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["💡 + 👍 + 💬"],
+                    options: ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4436,10 +4746,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Rule", color: "#EF4444", prompt: "What rule is important?", es: "Que regla es importante?" }, { label: "Students", color: "#F59E0B", prompt: "What must students do?", es: "Que deben hacer los estudiantes?" }, { label: "Advice", color: "#10B981", prompt: "What advice helps you study?", es: "Que consejo te ayuda a estudiar?" }, { label: "Permission", color: "#3B82F6", prompt: "When do you ask Can I...?", es: "Cuando preguntas Can I...?" }, { label: "Duty", color: "#8B5CF6", prompt: "What do you have to do today?", es: "Que tienes que hacer hoy?" }, { label: "School", color: "#EC4899", prompt: "What school rule is useful?", es: "Que regla escolar es util?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Giving Good Advice.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4471,7 +4781,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Rules and advice: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🛑 + 📖 + 🆘"],
+                    options: ["I have already eaten.", "Students must follow rules.", "The app is cheaper."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4516,10 +4836,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Conditions & Outcomes.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4551,7 +4871,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Dates and birthdays: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📅 + 🎂 + ⭐"],
+                    options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4596,10 +4926,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Messaging & Online Chats.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4631,7 +4961,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Technology: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 💻 + 🎮"],
+                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4676,10 +5016,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Primer condicional para planes y consecuencias.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4711,7 +5051,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Future plans: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔮 + 🚀 + 📅"],
+                    options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4756,10 +5106,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", content: ["Welcome to class!", "Today we are going to learn about Comparatives and Superlatives.", "Let's talk about apps, phones, movies and sports!"], imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."], imageUrl: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  description: "Warm up, guess the topic, and start speaking.",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], imageUrl: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+                  description: "Spin and answer one easy question.",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", content: ["- Learn to compare things using Comparatives.", "- Learn to say what is 'the most' or 'the best' using Superlatives.", "- Talk about technology, entertainment, and sports.", "- Have fun comparing our favorite things!"], imageUrl: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4789,7 +5139,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 10", title: "Complete the sentence (1/3)", content: ["My new laptop is _______ than my old one."], options: ["fastest", "faster", "more fast"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 11", title: "Complete the sentence (2/3)", content: ["I think soccer is the _______ sport in the world."], options: ["most popular", "more popular", "popularest"], correctOptionIndex: 0, imageUrl: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 12", title: "Complete the sentence (3/3)", content: ["That was the _______ movie I have ever seen!"], options: ["bad", "worse", "worst"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 13", title: "Emojis Locos 🤪", type: "emoji-game", content: ["🥇 ➕ ⚽ ➕ 🏃‍♂️"], options: ["He is the worst soccer player.", "He is the best soccer player.", "Soccer is more popular."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1580236021644-8d4822bc6d88?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 13", title: "Emoji Mission", type: "emoji-game", content: ["📱 + 💻 + 🎮"], options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1580236021644-8d4822bc6d88?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                  description: "Technology: decode the emoji story"
+            }
             ],
             action: "Completar los ejercicios."
           },
@@ -4835,10 +5187,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Too / enough para problemas y soluciones.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4870,7 +5222,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Opinions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["💡 + 👍 + 💬"],
+                    options: ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4915,10 +5277,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Family", color: "#EF4444", prompt: "Who lives in your home?", es: "Quien vive en tu casa?" }, { label: "Funny", color: "#F59E0B", prompt: "Who is funny in your family?", es: "Quien es divertido en tu familia?" }, { label: "Talk", color: "#10B981", prompt: "Who do you talk to every day?", es: "Con quien hablas cada dia?" }, { label: "Size", color: "#3B82F6", prompt: "Is your family big or small?", es: "Tu familia es grande o pequena?" }, { label: "Pet", color: "#8B5CF6", prompt: "Who has a pet at home?", es: "Quien tiene mascota en casa?" }, { label: "Friend", color: "#EC4899", prompt: "Who is your best friend?", es: "Quien es tu mejor amigo?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Consejos entre amigos con should.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -4950,7 +5312,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Family and home: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👪 + 🏠 + ❤️"],
+                    options: ["The bus is late.", "I love my family at home.", "I eat fries every day."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -4995,10 +5367,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Shape", color: "#EF4444", prompt: "What shape do you see?", es: "Que forma ves?" }, { label: "Find", color: "#F59E0B", prompt: "Where can you find a circle?", es: "Donde puedes encontrar un circulo?" }, { label: "Draw", color: "#10B981", prompt: "Can you draw a triangle?", es: "Puedes dibujar un triangulo?" }, { label: "Pattern", color: "#3B82F6", prompt: "Do you like stripes or dots?", es: "Te gustan rayas o puntos?" }, { label: "Color", color: "#8B5CF6", prompt: "What color is the shape?", es: "De que color es la forma?" }, { label: "Object", color: "#EC4899", prompt: "What object has this shape?", es: "Que objeto tiene esta forma?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Mensajes, emails y chats informales/formales.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5030,7 +5402,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Shapes: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔴 + ◻️ + 🎨"],
+                    options: ["I like chicken and fries.", "I see a red circle and a square.", "He can ride a bike."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5075,10 +5457,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Atención al cliente juvenil y evaluación de transición.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5110,7 +5492,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-basic-4-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Business English: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📧 + 💼 + 🧑‍💼"],
+                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5334,10 +5726,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Try", color: "#EF4444", prompt: "What new food have you tried?", es: "Que comida nueva has probado?" }, { label: "Travel", color: "#F59E0B", prompt: "Have you traveled before?", es: "Has viajado antes?" }, { label: "Never", color: "#10B981", prompt: "What have you never done?", es: "Que nunca has hecho?" }, { label: "Today", color: "#3B82F6", prompt: "What have you done today?", es: "Que has hecho hoy?" }, { label: "Fun", color: "#8B5CF6", prompt: "What experience was fun?", es: "Que experiencia fue divertida?" }, { label: "Ask", color: "#EC4899", prompt: "What Have you ever question can you ask?", es: "Que pregunta con Have you ever puedes hacer?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of My Life Experiences.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5369,7 +5761,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Life experiences: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["⭐ + ✈️ + "],
+                    options: ["I will clean my room.", "I have tried new food abroad.", "This is a square."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5414,10 +5816,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Phrase", color: "#EF4444", prompt: "What English phrase do you know?", es: "Que frase en ingles conoces?" }, { label: "Strange", color: "#F59E0B", prompt: "What phrase sounds strange?", es: "Que frase suena rara?" }, { label: "Verb", color: "#10B981", prompt: "What action verb do you use often?", es: "Que verbo de accion usas seguido?" }, { label: "Meaning", color: "#3B82F6", prompt: "How do you guess a meaning?", es: "Como adivinas un significado?" }, { label: "Use", color: "#8B5CF6", prompt: "Where can you use this phrase?", es: "Donde puedes usar esta frase?" }, { label: "Fun", color: "#EC4899", prompt: "What fun phrase can you say?", es: "Que frase divertida puedes decir?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Teen Slang & Phrasal Verbs.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5449,7 +5851,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Expressions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔑 + 💬 + ⭐"],
+                    options: ["I like rainy days.", "This is a useful expression.", "The cat can jump."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5494,10 +5906,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Possibilities & Deductions.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5529,7 +5941,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5574,10 +5996,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of If I ruled the world (Conditionals).", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5609,7 +6031,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5654,10 +6086,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Agreeing & Disagreeing.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5689,7 +6121,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Technology: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 💻 + 🎮"],
+                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5734,10 +6176,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Podcast & Debate Basics.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5769,7 +6211,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5814,10 +6266,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Now", color: "#EF4444", prompt: "What are you doing now?", es: "Que haces ahora?" }, { label: "Wear", color: "#F59E0B", prompt: "What is someone wearing now?", es: "Que lleva alguien ahora?" }, { label: "Listen", color: "#10B981", prompt: "What are you listening to today?", es: "Que escuchas hoy?" }, { label: "Around", color: "#3B82F6", prompt: "What is happening around you?", es: "Que pasa a tu alrededor?" }, { label: "Action", color: "#8B5CF6", prompt: "What action can you show?", es: "Que accion puedes mostrar?" }, { label: "Move", color: "#EC4899", prompt: "What is moving in this room?", es: "Que se mueve en este cuarto?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Present Perfect con experiencias personales y Present Perfect Continuous.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5849,7 +6301,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Actions now: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 🎵 + 😄"],
+                    options: ["I visited my grandma.", "I am listening to music now.", "The email was sent."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5894,10 +6356,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Phrase", color: "#EF4444", prompt: "What English phrase do you know?", es: "Que frase en ingles conoces?" }, { label: "Strange", color: "#F59E0B", prompt: "What phrase sounds strange?", es: "Que frase suena rara?" }, { label: "Verb", color: "#10B981", prompt: "What action verb do you use often?", es: "Que verbo de accion usas seguido?" }, { label: "Meaning", color: "#3B82F6", prompt: "How do you guess a meaning?", es: "Como adivinas un significado?" }, { label: "Use", color: "#8B5CF6", prompt: "Where can you use this phrase?", es: "Donde puedes usar esta frase?" }, { label: "Fun", color: "#EC4899", prompt: "What fun phrase can you say?", es: "Que frase divertida puedes decir?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Phrasal verbs frecuentes en conversaciones adolescentes.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -5929,7 +6391,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Expressions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔑 + 💬 + ⭐"],
+                    options: ["I like rainy days.", "This is a useful expression.", "The cat can jump."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -5974,10 +6446,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Can", color: "#EF4444", prompt: "What can you do well?", es: "Que puedes hacer bien?" }, { label: "Talent", color: "#F59E0B", prompt: "What talent do you have?", es: "Que talento tienes?" }, { label: "Sport", color: "#10B981", prompt: "Can you swim or run fast?", es: "Puedes nadar o correr rapido?" }, { label: "Music", color: "#3B82F6", prompt: "Can you sing or dance?", es: "Puedes cantar o bailar?" }, { label: "Learn", color: "#8B5CF6", prompt: "What skill do you want to learn?", es: "Que habilidad quieres aprender?" }, { label: "Challenge", color: "#EC4899", prompt: "What is hard but possible?", es: "Que es dificil pero posible?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Modales de posibilidad y deducción.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6009,7 +6481,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Abilities: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 🏃 + 🎵"],
+                    options: ["There are two chairs.", "I can run and sing.", "This is my passport."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6054,10 +6536,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Primer y segundo condicional.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6089,7 +6571,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Opinions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["💡 + 👍 + 💬"],
+                    options: ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6134,10 +6626,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Opiniones, acuerdos y desacuerdos respetuosos.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6169,7 +6661,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-11-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Animals and pets: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🐶 + 🐱 + 🦜"],
+                    options: ["I wake up at seven.", "I have three pets.", "This email is formal."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6214,10 +6716,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Proyecto podcast/debate y Simulación entrevista beca/empleo.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6249,7 +6751,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-inter-12-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6473,10 +6985,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Gossip & News (Reported Speech).", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6508,7 +7020,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6553,10 +7075,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Describing the Details (Relative Clauses).", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6588,7 +7110,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6633,10 +7165,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Gadgets & Tech.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Tech & Passive Voice.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6668,7 +7200,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Technology: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 💻 + 🎮"],
+                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6713,10 +7255,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Phrase", color: "#EF4444", prompt: "What English phrase do you know?", es: "Que frase en ingles conoces?" }, { label: "Strange", color: "#F59E0B", prompt: "What phrase sounds strange?", es: "Que frase suena rara?" }, { label: "Verb", color: "#10B981", prompt: "What action verb do you use often?", es: "Que verbo de accion usas seguido?" }, { label: "Meaning", color: "#3B82F6", prompt: "How do you guess a meaning?", es: "Como adivinas un significado?" }, { label: "Use", color: "#8B5CF6", prompt: "Where can you use this phrase?", es: "Donde puedes usar esta frase?" }, { label: "Fun", color: "#EC4899", prompt: "What fun phrase can you say?", es: "Que frase divertida puedes decir?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Real Idioms in Context.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6748,7 +7290,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Expressions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔑 + 💬 + ⭐"],
+                    options: ["I like rainy days.", "This is a useful expression.", "The cat can jump."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6793,10 +7345,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Reported speech en chismes, noticias y conversaciones.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6828,7 +7380,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Dates and birthdays: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📅 + 🎂 + ⭐"],
+                    options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6873,10 +7435,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Relative clauses y descripción detallada de personas/cosas.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6908,7 +7470,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -6953,10 +7525,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Voz pasiva aplicada a noticias y tecnología.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -6988,7 +7560,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7033,10 +7615,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Phrase", color: "#EF4444", prompt: "What English phrase do you know?", es: "Que frase en ingles conoces?" }, { label: "Strange", color: "#F59E0B", prompt: "What phrase sounds strange?", es: "Que frase suena rara?" }, { label: "Verb", color: "#10B981", prompt: "What action verb do you use often?", es: "Que verbo de accion usas seguido?" }, { label: "Meaning", color: "#3B82F6", prompt: "How do you guess a meaning?", es: "Como adivinas un significado?" }, { label: "Use", color: "#8B5CF6", prompt: "Where can you use this phrase?", es: "Donde puedes usar esta frase?" }, { label: "Fun", color: "#EC4899", prompt: "What fun phrase can you say?", es: "Que frase divertida puedes decir?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Phrasal verbs e idioms de uso real.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7068,7 +7650,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Expressions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔑 + 💬 + ⭐"],
+                    options: ["I like rainy days.", "This is a useful expression.", "The cat can jump."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7113,10 +7705,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Debates: IA, redes sociales, medioambiente y educación.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7148,7 +7740,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Technology: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 💻 + 🎮"],
+                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7193,10 +7795,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Entrevistas (trabajo/voluntariado) y resolución de problemas.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7228,7 +7830,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-advanced-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Business English: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📧 + 💼 + 🧑‍💼"],
+                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7452,10 +8064,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Weekend Plans.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Future Goals & Plans.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7487,7 +8099,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Future plans: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔮 + 🚀 + 📅"],
+                    options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7532,10 +8154,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Past Memories.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Past Decisions & Mixed Conditionals.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7567,7 +8189,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7612,10 +8244,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Diplomacy & Nuance.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7647,7 +8279,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7692,10 +8334,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Academic Writing & Essays.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7727,7 +8369,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7772,10 +8424,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Leadership & Teamwork.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7807,7 +8459,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Business English: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📧 + 💼 + 🧑‍💼"],
+                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7852,10 +8514,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Future Dreams.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Now", color: "#EF4444", prompt: "What are you doing now?", es: "Que haces ahora?" }, { label: "Wear", color: "#F59E0B", prompt: "What is someone wearing now?", es: "Que lleva alguien ahora?" }, { label: "Listen", color: "#10B981", prompt: "What are you listening to today?", es: "Que escuchas hoy?" }, { label: "Around", color: "#3B82F6", prompt: "What is happening around you?", es: "Que pasa a tu alrededor?" }, { label: "Action", color: "#8B5CF6", prompt: "What action can you show?", es: "Que accion puedes mostrar?" }, { label: "Move", color: "#EC4899", prompt: "What is moving in this room?", es: "Que se mueve en este cuarto?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Future Continuous, Future Perfect y planificación de metas.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7887,7 +8549,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Actions now: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 🎵 + 😄"],
+                    options: ["I visited my grandma.", "I am listening to music now.", "The email was sent."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -7932,10 +8604,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Condicionales mixtos y decisiones pasadas.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7967,7 +8639,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Opinions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["💡 + 👍 + 💬"],
+                    options: ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8012,10 +8694,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Lenguaje diplomático, cleft sentences e inversiones.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8047,7 +8729,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8092,10 +8784,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Ensayos, opiniones y presentaciones académicas.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8127,7 +8819,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Opinions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["💡 + 👍 + 💬"],
+                    options: ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8172,10 +8874,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Reuniones, liderazgo y trabajo en equipo.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8207,7 +8909,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Business English: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📧 + 💼 + 🧑‍💼"],
+                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8252,10 +8964,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Proyecto final: pitch de emprendimiento o conferencia.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8287,7 +8999,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-elite-11-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8511,10 +9233,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Critical Thinking & Debate.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8546,7 +9268,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8591,10 +9323,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Pop Culture & Media Analysis.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8626,7 +9358,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Dates and birthdays: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📅 + 🎂 + ⭐"],
+                    options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8671,10 +9413,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of University & Academic English.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8706,7 +9448,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8751,10 +9503,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Content Creation & TED Talks.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8786,7 +9538,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8831,10 +9593,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Debate competitivo y pensamiento crítico.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8866,7 +9628,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Animals and pets: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🐶 + 🐱 + 🦜"],
+                    options: ["I wake up at seven.", "I have three pets.", "This email is formal."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8911,10 +9683,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Like", color: "#EF4444", prompt: "What activity do you like?", es: "Que actividad te gusta?" }, { label: "Love", color: "#F59E0B", prompt: "What do you love doing?", es: "Que amas hacer?" }, { label: "Dislike", color: "#10B981", prompt: "What food do you dislike?", es: "Que comida no te gusta?" }, { label: "Choice", color: "#3B82F6", prompt: "Do you prefer pizza or burgers?", es: "Prefieres pizza o hamburguesas?" }, { label: "Fun", color: "#8B5CF6", prompt: "What is fun for you?", es: "Que es divertido para ti?" }, { label: "Music", color: "#EC4899", prompt: "What music do you like?", es: "Que musica te gusta?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Análisis de películas, música, noticias y cultura digital.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8946,7 +9718,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Likes and hobbies: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🎵 + 🎮 + ❤️"],
+                    options: ["Where is the station?", "I like music and video games.", "I have to clean my room."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -8991,10 +9773,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Inglés académico para universidad e intercambios.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -9026,7 +9808,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -9071,10 +9863,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Creación de podcast, videoensayo o presentación TED.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -9106,7 +9898,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -9151,10 +9953,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Lucky", color: "#EF4444", prompt: "What is your lucky number?", es: "Cual es tu numero de suerte?" }, { label: "Age", color: "#F59E0B", prompt: "How old is someone in your family?", es: "Que edad tiene alguien de tu familia?" }, { label: "Time", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Phone", color: "#3B82F6", prompt: "What numbers are easy for you?", es: "Que numeros son faciles para ti?" }, { label: "Count", color: "#8B5CF6", prompt: "How many people are in class?", es: "Cuantas personas hay en clase?" }, { label: "Price", color: "#EC4899", prompt: "What price feels expensive?", es: "Que precio parece caro?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Temas globales: tecnología, ética, clima y sociedad.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -9186,7 +9988,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Numbers, dates and time: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🎂 + 📅 + 🕒"],
+                    options: ["I like blue shoes.", "My birthday is at three.", "The dog is sleeping."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },
@@ -9231,10 +10043,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
               { id: "Diapositiva 1", title: "Welcome!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Warm up, guess the topic, and start speaking.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
-                  content: ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                  wheelItems: [{ label: "First reaction", color: "#EF4444", prompt: "What is your first reaction?", es: "Cual es tu primera reaccion?" }, { label: "Real life", color: "#F59E0B", prompt: "Where do you see this?", es: "Donde ves esto en la vida real?" }, { label: "One word", color: "#10B981", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "Your world", color: "#8B5CF6", prompt: "Connect it to your world.", es: "Conectalo con tu mundo." }, { label: "Ask someone", color: "#EC4899", prompt: "Ask a quick question.", es: "Haz una pregunta rapida." }]
+                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               { id: "Diapositiva 3", title: "Objectives", description: "Master the topic of Preparación de entrevistas C1 y Conversation Club.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -9266,7 +10078,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
               { id: "Diapositiva 12", title: "Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
               { id: "Diapositiva 13", title: "Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
               { id: "Diapositiva 14", title: "Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" }
+              { id: "Diapositiva 15", title: "Review", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+                {
+                    id: "c-teens-masters-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             action: "Completar los ejercicios."
           },

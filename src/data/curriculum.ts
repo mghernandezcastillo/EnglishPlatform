@@ -38,10 +38,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -129,18 +129,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-1",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la oración correcta según los emojis",
+                "title": "Emoji Mission",
+                "description": "Greeting people: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👨‍🏫 ➕ 🏫"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "She is a doctor.",
-                  "He is a teacher.",
-                  "We are friends."
-                ],
+                "content": ["👋 + 😄 + 🤝"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
                 "correctOptionIndex": 1
               },
               {
@@ -351,10 +345,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Lucky", color: "#EF4444", prompt: "What is your lucky number?", es: "Cual es tu numero de suerte?" }, { label: "Age", color: "#F59E0B", prompt: "How old is someone in your family?", es: "Que edad tiene alguien de tu familia?" }, { label: "Time", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Phone", color: "#3B82F6", prompt: "What numbers are easy for you?", es: "Que numeros son faciles para ti?" }, { label: "Count", color: "#8B5CF6", prompt: "How many people are in class?", es: "Cuantas personas hay en clase?" }, { label: "Price", color: "#EC4899", prompt: "What price feels expensive?", es: "Que precio parece caro?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -438,18 +432,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-2",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina qué hace ella y a qué hora",
+                "title": "Emoji Mission",
+                "description": "Numbers, dates and time: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👩‍🍳 ➕ 🍳 ➕ 🕜"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "She drinks coffee at half past two.",
-                  "She cooks at half past one.",
-                  "She sleeps at one o'clock."
-                ],
+                "content": ["🎂 + 📅 + 🕒"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I like blue shoes.", "My birthday is at three.", "The dog is sleeping."],
                 "correctOptionIndex": 1
               },
               {
@@ -660,10 +648,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Color", color: "#EF4444", prompt: "What color do you like today?", es: "Que color te gusta hoy?" }, { label: "Mood", color: "#F59E0B", prompt: "How do you feel right now?", es: "Como te sientes ahora?" }, { label: "Clothes", color: "#10B981", prompt: "What color are your clothes?", es: "De que color es tu ropa?" }, { label: "Happy", color: "#3B82F6", prompt: "What makes you feel happy?", es: "Que te hace feliz?" }, { label: "Emoji", color: "#8B5CF6", prompt: "What emoji shows your mood?", es: "Que emoji muestra tu animo?" }, { label: "Object", color: "#EC4899", prompt: "What color do you see near you?", es: "Que color ves cerca?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -742,19 +730,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-3",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta las emociones de estos emojis",
+                "title": "Emoji Mission",
+                "description": "Colors and feelings: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "😿 ➕ 💧"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "The cat is sad. It cries.",
-                  "The dog is angry. It barks.",
-                  "The cat is happy. It smiles."
-                ],
-                "correctOptionIndex": 0
+                "content": ["🎨 + 👕 + 😊"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I have two dogs.", "My shirt is blue and I am happy.", "Turn left at the bank."],
+                "correctOptionIndex": 1
               },
               {
                 "id": "Diapositiva 7",
@@ -964,10 +946,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Family", color: "#EF4444", prompt: "Who lives in your home?", es: "Quien vive en tu casa?" }, { label: "Funny", color: "#F59E0B", prompt: "Who is funny in your family?", es: "Quien es divertido en tu familia?" }, { label: "Talk", color: "#10B981", prompt: "Who do you talk to every day?", es: "Con quien hablas cada dia?" }, { label: "Size", color: "#3B82F6", prompt: "Is your family big or small?", es: "Tu familia es grande o pequena?" }, { label: "Pet", color: "#8B5CF6", prompt: "Who has a pet at home?", es: "Quien tiene mascota en casa?" }, { label: "Friend", color: "#EC4899", prompt: "Who is your best friend?", es: "Quien es tu mejor amigo?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -1106,18 +1088,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-1",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 4: Familia y Posesivos)",
+                "title": "Emoji Mission",
+                "description": "Family and home: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "💼 ➕ 🗣️ ➕ 🤝"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I have a business meeting.",
-                  "Let's negotiate a deal.",
-                  "I am looking for a job."
-                ],
+                "content": ["👪 + 🏠 + ❤️"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["The bus is late.", "I love my family at home.", "I eat fries every day."],
                 "correctOptionIndex": 1
               }
             ],
@@ -1273,10 +1249,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Room", color: "#EF4444", prompt: "What is in your room?", es: "Que hay en tu cuarto?" }, { label: "Near", color: "#F59E0B", prompt: "What is near your chair?", es: "Que hay cerca de tu silla?" }, { label: "Place", color: "#10B981", prompt: "What place do you like visiting?", es: "Que lugar te gusta visitar?" }, { label: "Home", color: "#3B82F6", prompt: "What room do you like at home?", es: "Que cuarto te gusta en casa?" }, { label: "City", color: "#8B5CF6", prompt: "What place is in your city?", es: "Que lugar hay en tu ciudad?" }, { label: "Object", color: "#EC4899", prompt: "What object is on your desk?", es: "Que objeto hay en tu mesa?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -1411,19 +1387,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-2",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 5: There is / There are y Lugares)",
+                "title": "Emoji Mission",
+                "description": "Rooms and places: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "✈️ ➕ 🏨 ➕ 🌴"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "We are going on vacation.",
-                  "I need to book a flight.",
-                  "I am lost in the city."
-                ],
-                "correctOptionIndex": 0
+                "content": ["🛏️ + 🪑 + 🏠"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Intervenir para corregir la lectura y orientar los ejercicios."
@@ -1577,10 +1547,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -1720,18 +1690,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-3",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 6: Meses, Días y Números Ordinales)",
+                "title": "Emoji Mission",
+                "description": "Dates and birthdays: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "☕ ➕ 💻 ➕ 😩"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I love drinking coffee.",
-                  "Working late makes me tired.",
-                  "My computer is broken."
-                ],
+                "content": ["📅 + 🎂 + ⭐"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
                 "correctOptionIndex": 1
               }
             ],
@@ -1887,10 +1851,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "This", color: "#EF4444", prompt: "What object is this?", es: "Que objeto es este?" }, { label: "That", color: "#F59E0B", prompt: "What object is far from you?", es: "Que objeto esta lejos de ti?" }, { label: "Desk", color: "#10B981", prompt: "What is on your desk?", es: "Que hay en tu mesa?" }, { label: "Bag", color: "#3B82F6", prompt: "What do you have in your bag?", es: "Que tienes en tu mochila?" }, { label: "Near", color: "#8B5CF6", prompt: "What can you point to?", es: "Que puedes senalar?" }, { label: "Two", color: "#EC4899", prompt: "What two objects can you name?", es: "Que dos objetos puedes nombrar?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -2033,19 +1997,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-4",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 7: Artículos y Demostrativos)",
+                "title": "Emoji Mission",
+                "description": "Classroom objects: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "📅 ➕ ❌ ➕ 😢"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "The meeting is cancelled.",
-                  "I lost my calendar.",
-                  "I am late for my appointment."
-                ],
-                "correctOptionIndex": 0
+                "content": ["📖 + ✏️ + 🎒"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I want a burger.", "My pencil is in my bag.", "They are playing soccer."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Corregir errores de pronunciación y guiar los ejercicios, explicando el por qué."
@@ -2199,10 +2157,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -2336,19 +2294,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-5",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 8: Partes del Cuerpo y Mascotas)",
+                "title": "Emoji Mission",
+                "description": "Animals and pets: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "📈 ➕ 💰 ➕ 🎉"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "Sales are going up!",
-                  "I spent too much money.",
-                  "Let's have a party."
-                ],
-                "correctOptionIndex": 0
+                "content": ["🐶 + 🐱 + 🦜"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I wake up at seven.", "I have three pets.", "This email is formal."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Guiar lectura y ejercicios corrigiendo el uso de have/has."
@@ -2503,10 +2455,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Food", color: "#EF4444", prompt: "What food do you like?", es: "Que comida te gusta?" }, { label: "Drink", color: "#F59E0B", prompt: "What do you drink every day?", es: "Que tomas cada dia?" }, { label: "Snack", color: "#10B981", prompt: "What is your favorite snack?", es: "Cual es tu snack favorito?" }, { label: "Order", color: "#3B82F6", prompt: "What do you order at a restaurant?", es: "Que pides en un restaurante?" }, { label: "Taste", color: "#8B5CF6", prompt: "Do you prefer sweet or salty food?", es: "Prefieres dulce o salado?" }, { label: "Hungry", color: "#EC4899", prompt: "What do you eat when you are hungry?", es: "Que comes cuando tienes hambre?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -2654,18 +2606,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-6",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 9: Comida y Necesidades Básicas)",
+                "title": "Emoji Mission",
+                "description": "Food and drinks: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🚗 ➕ 🚦 ➕ 😡"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I got a speeding ticket.",
-                  "The traffic is terrible.",
-                  "My car broke down."
-                ],
+                "content": ["🍔 + 🍟 + 🥤"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I am from Canada.", "I want a burger and a drink.", "Open your book."],
                 "correctOptionIndex": 1
               }
             ],
@@ -2819,10 +2765,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Door", color: "#EF4444", prompt: "Where is the door?", es: "Donde esta la puerta?" }, { label: "Home", color: "#F59E0B", prompt: "What is near your home?", es: "Que hay cerca de tu casa?" }, { label: "Left", color: "#10B981", prompt: "What is on your left?", es: "Que hay a tu izquierda?" }, { label: "Right", color: "#3B82F6", prompt: "What is on your right?", es: "Que hay a tu derecha?" }, { label: "Travel", color: "#8B5CF6", prompt: "How do you move around town?", es: "Como te mueves por la ciudad?" }, { label: "Place", color: "#EC4899", prompt: "Where do people ask directions?", es: "Donde piden direcciones?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -3011,19 +2957,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-7",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 10: Direcciones y Preposiciones de Lugar)",
+                "title": "Emoji Mission",
+                "description": "Directions: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🌧️ ➕ 🛋️ ➕ 📺"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I will stay home and watch TV.",
-                  "It's raining outside.",
-                  "The TV is broken."
-                ],
-                "correctOptionIndex": 0,
+                "content": ["🗺️ + ⬅️ + 🚌"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I love my family.", "Turn left at the bus stop.", "She can sing well."],
+                "correctOptionIndex": 1,
                 "imageUrl": "/images/adults_c10_emoji.jpg?v=4"
               }
             ],
@@ -3185,10 +3125,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -3321,19 +3261,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-11",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 11: Saludos, despedidas)",
+                "title": "Emoji Mission",
+                "description": "Greeting people: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👋 ➕ 🌅"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "Good morning.",
-                  "See you later.",
-                  "Good night."
-                ],
-                "correctOptionIndex": 0
+                "content": ["👋 + 😄 + 🤝"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Corregir errores comunes, como usar 'Good night' para saludar en lugar de 'Good evening'."
@@ -3487,10 +3421,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Spell", color: "#EF4444", prompt: "How do you spell your name?", es: "Como deletreas tu nombre?" }, { label: "Letter", color: "#F59E0B", prompt: "What letter is easy for you?", es: "Que letra es facil para ti?" }, { label: "Username", color: "#10B981", prompt: "What username sounds cool?", es: "Que usuario suena genial?" }, { label: "Initial", color: "#3B82F6", prompt: "What is your first initial?", es: "Cual es tu inicial?" }, { label: "Hard", color: "#8B5CF6", prompt: "What letter is hard to say?", es: "Que letra es dificil de decir?" }, { label: "Email", color: "#EC4899", prompt: "When do you spell an email?", es: "Cuando deletreas un correo?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -3623,19 +3557,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-12",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 12: Alfabeto)",
+                "title": "Emoji Mission",
+                "description": "Spelling and usernames: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "📧 ➕ 📝"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "Spelling an email address.",
-                  "Reading a book.",
-                  "Playing a game."
-                ],
-                "correctOptionIndex": 0
+                "content": ["🔤 + 📱 + 💬"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I am cooking breakfast.", "Spell your username, please.", "The weather is cold."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Dictar nombres y correos para que los alumnos los escriban."
@@ -3787,10 +3715,10 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "wheelItems": [{ label: "Country", color: "#EF4444", prompt: "Where are you from?", es: "De donde eres?" }, { label: "City", color: "#F59E0B", prompt: "What city do you like?", es: "Que ciudad te gusta?" }, { label: "Travel", color: "#10B981", prompt: "What country would you visit?", es: "Que pais visitarias?" }, { label: "Language", color: "#3B82F6", prompt: "What language sounds interesting?", es: "Que idioma suena interesante?" }, { label: "Flag", color: "#8B5CF6", prompt: "What flag colors do you know?", es: "Que colores de bandera conoces?" }, { label: "People", color: "#EC4899", prompt: "Where would you like to meet people?", es: "Donde quisieras conocer gente?" }],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-500",
                 "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
               },
@@ -3955,17 +3883,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-13",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the meaning!",
+                "title": "Emoji Mission",
+                "description": "Countries and travel: decode the emoji story",
                 "type": "emoji-game",
-                "content": ["👩 ➕ ➡️ ➕ 🗼"],
-                "options": [
-                  "She is from Brazil.",
-                  "She is from Japan.",
-                  "She is from France."
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "content": ["🌍 + 🚩 + ✈️"],
+                "options": ["There is a pencil on the desk.", "I want to travel to another country.", "He is watching TV."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&q=80&w=800"
               }
             ],
@@ -4129,10 +4053,10 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "wheelItems": [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-blue-500 to-indigo-600",
                 "imageUrl": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800"
               },
@@ -4297,19 +4221,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-13",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the profession!",
+                "title": "Emoji Mission",
+                "description": "Business English: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👨‍🍳 ➕ 🍲"
-                ],
-                "options": [
-                  "He is a chef.",
-                  "He is a mechanic.",
-                  "He is a teacher."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-purple-600",
+                "content": ["📧 + 💼 + 🧑‍💼"],
+                "options": ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800"
               }
             ],
@@ -4473,10 +4391,10 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "wheelItems": [{ label: "Family", color: "#EF4444", prompt: "Who lives in your home?", es: "Quien vive en tu casa?" }, { label: "Funny", color: "#F59E0B", prompt: "Who is funny in your family?", es: "Quien es divertido en tu familia?" }, { label: "Talk", color: "#10B981", prompt: "Who do you talk to every day?", es: "Con quien hablas cada dia?" }, { label: "Size", color: "#3B82F6", prompt: "Is your family big or small?", es: "Tu familia es grande o pequena?" }, { label: "Pet", color: "#8B5CF6", prompt: "Who has a pet at home?", es: "Quien tiene mascota en casa?" }, { label: "Friend", color: "#EC4899", prompt: "Who is your best friend?", es: "Quien es tu mejor amigo?" }],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -4643,19 +4561,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-13",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the meaning!",
+                "title": "Emoji Mission",
+                "description": "Family and home: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👴 ➕ 👵"
-                ],
-                "options": [
-                  "Siblings",
-                  "Parents",
-                  "Grandparents"
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "content": ["👪 + 🏠 + ❤️"],
+                "options": ["The bus is late.", "I love my family at home.", "I eat fries every day."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
               }
             ],
@@ -4819,10 +4731,10 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "wheelItems": [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
               },
@@ -4985,19 +4897,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-13",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the meaning!",
+                "title": "Emoji Mission",
+                "description": "Review: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👨‍💼 ➕ 💼 ➕ 🏢"
-                ],
-                "options": [
-                  "He is an engineer.",
-                  "He is a student.",
-                  "He is a businessman/office worker."
-                ],
-                "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "content": ["🏆 + 📖 + ⭐"],
+                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
               }
             ],
@@ -5341,10 +5247,10 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "wheelItems": [{ label: "Morning", color: "#EF4444", prompt: "What do you do first in the morning?", es: "Que haces primero en la manana?" }, { label: "Daily", color: "#F59E0B", prompt: "What do you do every day?", es: "Que haces cada dia?" }, { label: "Wake up", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Often", color: "#3B82F6", prompt: "What do you do often?", es: "Que haces seguido?" }, { label: "Never", color: "#8B5CF6", prompt: "What do you never do?", es: "Que nunca haces?" }, { label: "Weekend", color: "#EC4899", prompt: "What is your weekend routine?", es: "Cual es tu rutina de fin de semana?" }],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -5495,19 +5401,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-12",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess!",
+                "title": "Emoji Mission",
+                "description": "Daily routine: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👥 ➕ ⚽ ➕ 🏃"
-                ],
-                "options": [
-                  "They sleep all day.",
-                  "They play soccer.",
-                  "They cook dinner."
-                ],
+                "content": ["☀️ + 🚿 + 🍳"],
+                "options": ["I will travel next year.", "I wake up and have breakfast.", "The jacket is too small."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
               }
             ],
@@ -5665,10 +5565,10 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "wheelItems": [{ label: "Morning", color: "#EF4444", prompt: "What do you do first in the morning?", es: "Que haces primero en la manana?" }, { label: "Daily", color: "#F59E0B", prompt: "What do you do every day?", es: "Que haces cada dia?" }, { label: "Wake up", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Often", color: "#3B82F6", prompt: "What do you do often?", es: "Que haces seguido?" }, { label: "Never", color: "#8B5CF6", prompt: "What do you never do?", es: "Que nunca haces?" }, { label: "Weekend", color: "#EC4899", prompt: "What is your weekend routine?", es: "Cual es tu rutina de fin de semana?" }],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -5819,19 +5719,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-12",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess!",
+                "title": "Emoji Mission",
+                "description": "Daily routine: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👩 ➕ 📖 ➕ 🏫"
-                ],
-                "options": [
-                  "She works in a hospital.",
-                  "She studies at school.",
-                  "She plays sports."
-                ],
+                "content": ["☀️ + 🚿 + 🍳"],
+                "options": ["I will travel next year.", "I wake up and have breakfast.", "The jacket is too small."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
               }
             ],
@@ -5990,10 +5884,10 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "wheelItems": [{ label: "Morning", color: "#EF4444", prompt: "What do you do first in the morning?", es: "Que haces primero en la manana?" }, { label: "Daily", color: "#F59E0B", prompt: "What do you do every day?", es: "Que haces cada dia?" }, { label: "Wake up", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Often", color: "#3B82F6", prompt: "What do you do often?", es: "Que haces seguido?" }, { label: "Never", color: "#8B5CF6", prompt: "What do you never do?", es: "Que nunca haces?" }, { label: "Weekend", color: "#EC4899", prompt: "What is your weekend routine?", es: "Cual es tu rutina de fin de semana?" }],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -6144,19 +6038,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-12",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess!",
+                "title": "Emoji Mission",
+                "description": "Daily routine: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🚫 ➕ 👨 ➕ 🚬"
-                ],
-                "options": [
-                  "He doesn't eat.",
-                  "He doesn't smoke.",
-                  "He doesn't run."
-                ],
+                "content": ["☀️ + 🚿 + 🍳"],
+                "options": ["I will travel next year.", "I wake up and have breakfast.", "The jacket is too small."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
               }
             ],
@@ -6316,10 +6204,10 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "type": "spinning-wheel",
-                "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "wheelItems": [{ label: "Room", color: "#EF4444", prompt: "What is in your room?", es: "Que hay en tu cuarto?" }, { label: "Near", color: "#F59E0B", prompt: "What is near your chair?", es: "Que hay cerca de tu silla?" }, { label: "Place", color: "#10B981", prompt: "What place do you like visiting?", es: "Que lugar te gusta visitar?" }, { label: "Home", color: "#3B82F6", prompt: "What room do you like at home?", es: "Que cuarto te gusta en casa?" }, { label: "City", color: "#8B5CF6", prompt: "What place is in your city?", es: "Que lugar hay en tu ciudad?" }, { label: "Object", color: "#EC4899", prompt: "What object is on your desk?", es: "Que objeto hay en tu mesa?" }],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                 "imageUrl": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&q=80&w=800"
               },
@@ -6471,19 +6359,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-12",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess!",
+                "title": "Emoji Mission",
+                "description": "Rooms and places: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👩‍🏫 ➕ 🏫 ➕ 📚"
-                ],
-                "options": [
-                  "She is a doctor.",
-                  "She is a teacher.",
-                  "She is a pilot."
-                ],
+                "content": ["🛏️ + 🪑 + 🏠"],
+                "options": ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-fuchsia-500 to-purple-600",
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&q=80&w=800"
               }
             ],
@@ -6642,10 +6524,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -6777,19 +6659,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-1-5",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Rutinas)",
+                "title": "Emoji Mission",
+                "description": "Dates and birthdays: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🥱 ➕ 🛏️ ➕ ☕"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I wake up and drink coffee.",
-                  "I go to sleep late.",
-                  "I watch TV in bed."
-                ],
-                "correctOptionIndex": 0
+                "content": ["📅 + 🎂 + ⭐"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Hacer énfasis en la preposición 'at' para las horas."
@@ -6942,10 +6818,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -7078,19 +6954,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-1-6",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Frecuencia)",
+                "title": "Emoji Mission",
+                "description": "Dates and birthdays: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "❌ ➕ 🥦"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I never eat broccoli.",
-                  "I always eat broccoli.",
-                  "Broccoli is bad."
-                ],
-                "correctOptionIndex": 0
+                "content": ["📅 + 🎂 + ⭐"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Corregir activamente cuando pongan el adverbio después de un verbo de acción."
@@ -7242,10 +7112,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Food", color: "#EF4444", prompt: "What food do you like?", es: "Que comida te gusta?" }, { label: "Drink", color: "#F59E0B", prompt: "What do you drink every day?", es: "Que tomas cada dia?" }, { label: "Snack", color: "#10B981", prompt: "What is your favorite snack?", es: "Cual es tu snack favorito?" }, { label: "Order", color: "#3B82F6", prompt: "What do you order at a restaurant?", es: "Que pides en un restaurante?" }, { label: "Taste", color: "#8B5CF6", prompt: "Do you prefer sweet or salty food?", es: "Prefieres dulce o salado?" }, { label: "Hungry", color: "#EC4899", prompt: "What do you eat when you are hungry?", es: "Que comes cuando tienes hambre?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -7380,19 +7250,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-1-7",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Comida)",
+                "title": "Emoji Mission",
+                "description": "Food and drinks: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🙋‍♂️ ➕ 🧾 ➕ 💵"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "The bill, please.",
-                  "I want money.",
-                  "Can I have a menu?"
-                ],
-                "correctOptionIndex": 0
+                "content": ["🍔 + 🍟 + 🥤"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I am from Canada.", "I want a burger and a drink.", "Open your book."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "En 'Find the mistake', discutir las formas más educadas de pedir."
@@ -7545,10 +7409,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -7676,19 +7540,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-1-8",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Sustantivos)",
+                "title": "Emoji Mission",
+                "description": "Greeting people: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "❌ ➕ 🍞"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I don't have any bread.",
-                  "I have some bread.",
-                  "Bread is bad."
-                ],
-                "correctOptionIndex": 0
+                "content": ["👋 + 😄 + 🤝"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Resolver dudas puntuales sobre si el dinero o el tiempo son contables (no lo son)."
@@ -7839,10 +7697,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Like", color: "#EF4444", prompt: "What activity do you like?", es: "Que actividad te gusta?" }, { label: "Love", color: "#F59E0B", prompt: "What do you love doing?", es: "Que amas hacer?" }, { label: "Dislike", color: "#10B981", prompt: "What food do you dislike?", es: "Que comida no te gusta?" }, { label: "Choice", color: "#3B82F6", prompt: "Do you prefer pizza or burgers?", es: "Prefieres pizza o hamburguesas?" }, { label: "Fun", color: "#8B5CF6", prompt: "What is fun for you?", es: "Que es divertido para ti?" }, { label: "Music", color: "#EC4899", prompt: "What music do you like?", es: "Que musica te gusta?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -7973,19 +7831,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-1-9",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Gustos)",
+                "title": "Emoji Mission",
+                "description": "Likes and hobbies: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "❤️ ➕ ✈️"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I love traveling.",
-                  "I hate planes.",
-                  "I like walking."
-                ],
-                "correctOptionIndex": 0
+                "content": ["🎵 + 🎮 + ❤️"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["Where is the station?", "I like music and video games.", "I have to clean my room."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Resolver las preguntas y corregir la tercera persona ('He hates')."
@@ -8137,10 +7989,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -8248,19 +8100,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-1-10",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado (Repaso)",
+                "title": "Emoji Mission",
+                "description": "Review: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🗣️ ➕ 🇬🇧 ➕ 💯"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I speak English 100%!",
-                  "I hate English.",
-                  "I don't know."
-                ],
-                "correctOptionIndex": 0
+                "content": ["🏆 + 📖 + ⭐"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                "correctOptionIndex": 1
               }
             ],
             "action": "Ayudar a corregir los errores en 'Find the mistake'."
@@ -8592,10 +8438,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Morning", color: "#EF4444", prompt: "What do you do first in the morning?", es: "Que haces primero en la manana?" }, { label: "Daily", color: "#F59E0B", prompt: "What do you do every day?", es: "Que haces cada dia?" }, { label: "Wake up", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Often", color: "#3B82F6", prompt: "What do you do often?", es: "Que haces seguido?" }, { label: "Never", color: "#8B5CF6", prompt: "What do you never do?", es: "Que nunca haces?" }, { label: "Weekend", color: "#EC4899", prompt: "What is your weekend routine?", es: "Cual es tu rutina de fin de semana?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -8724,19 +8570,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-12",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 1: Rutinas y Present Simple)",
+                "title": "Emoji Mission",
+                "description": "Daily routine: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🎓 ➕ 📚 ➕ 🧠"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I am studying hard.",
-                  "I forgot my book.",
-                  "I graduated from university."
-                ],
-                "correctOptionIndex": 0
+                "content": ["☀️ + 🚿 + 🍳"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I will travel next year.", "I wake up and have breakfast.", "The jacket is too small."],
+                "correctOptionIndex": 1
               },
               {
                 "id": "gen-c-b2-1-s3-ucqo1n",
@@ -8908,10 +8748,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Now", color: "#EF4444", prompt: "What are you doing now?", es: "Que haces ahora?" }, { label: "Wear", color: "#F59E0B", prompt: "What is someone wearing now?", es: "Que lleva alguien ahora?" }, { label: "Listen", color: "#10B981", prompt: "What are you listening to today?", es: "Que escuchas hoy?" }, { label: "Around", color: "#3B82F6", prompt: "What is happening around you?", es: "Que pasa a tu alrededor?" }, { label: "Action", color: "#8B5CF6", prompt: "What action can you show?", es: "Que accion puedes mostrar?" }, { label: "Move", color: "#EC4899", prompt: "What is moving in this room?", es: "Que se mueve en este cuarto?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -9040,19 +8880,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-13",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 2: Present Progressive)",
+                "title": "Emoji Mission",
+                "description": "Actions now: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🍕 ➕ 🍔 ➕ 🤤"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I am very hungry.",
-                  "I like fast food.",
-                  "I am cooking dinner."
-                ],
-                "correctOptionIndex": 0
+                "content": ["📱 + 🎵 + 😄"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I visited my grandma.", "I am listening to music now.", "The email was sent."],
+                "correctOptionIndex": 1
               },
               {
                 "id": "gen-c-b2-2-s3-voe3dl",
@@ -9226,10 +9060,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Like", color: "#EF4444", prompt: "What activity do you like?", es: "Que actividad te gusta?" }, { label: "Love", color: "#F59E0B", prompt: "What do you love doing?", es: "Que amas hacer?" }, { label: "Dislike", color: "#10B981", prompt: "What food do you dislike?", es: "Que comida no te gusta?" }, { label: "Choice", color: "#3B82F6", prompt: "Do you prefer pizza or burgers?", es: "Prefieres pizza o hamburguesas?" }, { label: "Fun", color: "#8B5CF6", prompt: "What is fun for you?", es: "Que es divertido para ti?" }, { label: "Music", color: "#EC4899", prompt: "What music do you like?", es: "Que musica te gusta?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -9357,19 +9191,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-14",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 3: Expresando Preferencias (Gustos))",
+                "title": "Emoji Mission",
+                "description": "Likes and hobbies: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🛒 ➕ 💳 ➕ 🛍️"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I am going shopping.",
-                  "I lost my credit card.",
-                  "I bought a new shirt."
-                ],
-                "correctOptionIndex": 0
+                "content": ["🎵 + 🎮 + ❤️"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["Where is the station?", "I like music and video games.", "I have to clean my room."],
+                "correctOptionIndex": 1
               },
               {
                 "id": "gen-c-b2-3-s3-kac6dn",
@@ -9542,10 +9370,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -9673,18 +9501,12 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "Diapositiva-Emoji-Auto-fix-15",
-                "title": "Emojis Locos 🤪",
-                "description": "Interpreta el significado de estos emojis (Clase 4: Comparación entre Tiempos Verbales)",
+                "title": "Emoji Mission",
+                "description": "Greeting people: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "⏰ ➕ 🏃 ➕ 🏃"
-                ],
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
-                "options": [
-                  "I love running.",
-                  "I am late, hurry up!",
-                  "I need a new watch."
-                ],
+                "content": ["👋 + 😄 + 🤝"],
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
+                "options": ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
                 "correctOptionIndex": 1
               },
               {
@@ -9860,10 +9682,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Now", color: "#EF4444", prompt: "What are you doing now?", es: "Que haces ahora?" }, { label: "Wear", color: "#F59E0B", prompt: "What is someone wearing now?", es: "Que lleva alguien ahora?" }, { label: "Listen", color: "#10B981", prompt: "What are you listening to today?", es: "Que escuchas hoy?" }, { label: "Around", color: "#3B82F6", prompt: "What is happening around you?", es: "Que pasa a tu alrededor?" }, { label: "Action", color: "#8B5CF6", prompt: "What action can you show?", es: "Que accion puedes mostrar?" }, { label: "Move", color: "#EC4899", prompt: "What is moving in this room?", es: "Que se mueve en este cuarto?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -10006,7 +9828,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "taste"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-2-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Actions now: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 🎵 + 😄"],
+                    options: ["I visited my grandma.", "I am listening to music now.", "The email was sent."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Hacer que los estudiantes completen los ejercicios y corregir en grupo."
           },
@@ -10167,10 +9999,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Weather", color: "#EF4444", prompt: "How is the weather today?", es: "Como esta el clima hoy?" }, { label: "Season", color: "#F59E0B", prompt: "What season do you like?", es: "Que estacion te gusta?" }, { label: "Clothes", color: "#10B981", prompt: "What do you wear on cold days?", es: "Que usas en dias frios?" }, { label: "Temperature", color: "#3B82F6", prompt: "Do you prefer hot or cold weather?", es: "Prefieres calor o frio?" }, { label: "Rain", color: "#8B5CF6", prompt: "Do you like rainy days?", es: "Te gustan los dias lluviosos?" }, { label: "Sun", color: "#EC4899", prompt: "What do you do on sunny days?", es: "Que haces en dias soleados?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -10316,7 +10148,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "windy"
                 ],
                 "correctOptionIndex": 1
-              }
+              },
+                {
+                    id: "c-adults-basic-2-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Weather: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🌧️ + 🧥 + 🌳"],
+                    options: ["I can spell my name.", "It is rainy and cold outside.", "The client is angry."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Hacer que los estudiantes interactúen describiendo las ciudades."
           },
@@ -10480,10 +10322,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Instruction", color: "#EF4444", prompt: "What easy instruction can you give?", es: "Que instruccion facil puedes dar?" }, { label: "Class", color: "#F59E0B", prompt: "When do you say open your book?", es: "Cuando dices open your book?" }, { label: "Steps", color: "#10B981", prompt: "What is step one for coffee?", es: "Cual es el paso uno para cafe?" }, { label: "Help", color: "#3B82F6", prompt: "How do you ask for help?", es: "Como pides ayuda?" }, { label: "Rule", color: "#8B5CF6", prompt: "What class rule is important?", es: "Que regla de clase es importante?" }, { label: "Action", color: "#EC4899", prompt: "What can you tell us to do?", es: "Que nos puedes decir que hagamos?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -10627,7 +10469,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Pass"
                 ],
                 "correctOptionIndex": 2
-              }
+              },
+                {
+                    id: "c-adults-basic-2-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Instructions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📣 + 📖 + ✏️"],
+                    options: ["I have a pet bird.", "Open your book and write.", "She went to the beach."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Resolver ejercicios en parejas."
           },
@@ -10789,10 +10641,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Door", color: "#EF4444", prompt: "Where is the door?", es: "Donde esta la puerta?" }, { label: "Home", color: "#F59E0B", prompt: "What is near your home?", es: "Que hay cerca de tu casa?" }, { label: "Left", color: "#10B981", prompt: "What is on your left?", es: "Que hay a tu izquierda?" }, { label: "Right", color: "#3B82F6", prompt: "What is on your right?", es: "Que hay a tu derecha?" }, { label: "Travel", color: "#8B5CF6", prompt: "How do you move around town?", es: "Como te mueves por la ciudad?" }, { label: "Place", color: "#EC4899", prompt: "Where do people ask directions?", es: "Donde piden direcciones?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -10940,7 +10792,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "opposite"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-2-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Directions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🗺️ + ⬅️ + 🚌"],
+                    options: ["I love my family.", "Turn left at the bus stop.", "She can sing well."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Practicar con mapas imaginarios."
           },
@@ -11102,10 +10964,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -11251,7 +11113,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "speak"
                 ],
                 "correctOptionIndex": 1
-              }
+              },
+                {
+                    id: "c-adults-basic-2-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Greeting people: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👋 + 😄 + 🤝"],
+                    options: ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Practicar el diálogo en parejas con diferentes nombres."
           },
@@ -11411,10 +11283,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -11557,7 +11429,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "sleep"
                 ],
                 "correctOptionIndex": 1
-              }
+              },
+                {
+                    id: "c-adults-basic-2-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Hacer los ejercicios de forma participativa en la pizarra virtual."
           },
@@ -11717,10 +11599,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -11864,7 +11746,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "having"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-2-11-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -12177,10 +12069,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Can", color: "#EF4444", prompt: "What can you do well?", es: "Que puedes hacer bien?" }, { label: "Talent", color: "#F59E0B", prompt: "What talent do you have?", es: "Que talento tienes?" }, { label: "Sport", color: "#10B981", prompt: "Can you swim or run fast?", es: "Puedes nadar o correr rapido?" }, { label: "Music", color: "#3B82F6", prompt: "Can you sing or dance?", es: "Puedes cantar o bailar?" }, { label: "Learn", color: "#8B5CF6", prompt: "What skill do you want to learn?", es: "Que habilidad quieres aprender?" }, { label: "Challenge", color: "#EC4899", prompt: "What is hard but possible?", es: "Que es dificil pero posible?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -12333,7 +12225,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Cook"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Abilities: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 🏃 + 🎵"],
+                    options: ["There are two chairs.", "I can run and sing.", "This is my passport."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -12462,10 +12364,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -12618,7 +12520,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Help"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Animals and pets: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🐶 + 🐱 + 🦜"],
+                    options: ["I wake up at seven.", "I have three pets.", "This email is formal."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -12745,10 +12657,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Rule", color: "#EF4444", prompt: "What rule is important?", es: "Que regla es importante?" }, { label: "Students", color: "#F59E0B", prompt: "What must students do?", es: "Que deben hacer los estudiantes?" }, { label: "Advice", color: "#10B981", prompt: "What advice helps you study?", es: "Que consejo te ayuda a estudiar?" }, { label: "Permission", color: "#3B82F6", prompt: "When do you ask Can I...?", es: "Cuando preguntas Can I...?" }, { label: "Duty", color: "#8B5CF6", prompt: "What do you have to do today?", es: "Que tienes que hacer hoy?" }, { label: "School", color: "#EC4899", prompt: "What school rule is useful?", es: "Que regla escolar es util?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -12901,7 +12813,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Wear a uniform"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Rules and advice: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🛑 + 📖 + 🆘"],
+                    options: ["I have already eaten.", "Students must follow rules.", "The app is cheaper."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -13028,10 +12950,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Color", color: "#EF4444", prompt: "What color do you like today?", es: "Que color te gusta hoy?" }, { label: "Mood", color: "#F59E0B", prompt: "How do you feel right now?", es: "Como te sientes ahora?" }, { label: "Clothes", color: "#10B981", prompt: "What color are your clothes?", es: "De que color es tu ropa?" }, { label: "Happy", color: "#3B82F6", prompt: "What makes you feel happy?", es: "Que te hace feliz?" }, { label: "Emoji", color: "#8B5CF6", prompt: "What emoji shows your mood?", es: "Que emoji muestra tu animo?" }, { label: "Object", color: "#EC4899", prompt: "What color do you see near you?", es: "Que color ves cerca?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -13184,7 +13106,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Jacket"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Colors and feelings: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🎨 + 👕 + 😊"],
+                    options: ["I have two dogs.", "My shirt is blue and I am happy.", "Turn left at the bank."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -13311,10 +13243,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Room", color: "#EF4444", prompt: "What is in your room?", es: "Que hay en tu cuarto?" }, { label: "Near", color: "#F59E0B", prompt: "What is near your chair?", es: "Que hay cerca de tu silla?" }, { label: "Place", color: "#10B981", prompt: "What place do you like visiting?", es: "Que lugar te gusta visitar?" }, { label: "Home", color: "#3B82F6", prompt: "What room do you like at home?", es: "Que cuarto te gusta en casa?" }, { label: "City", color: "#8B5CF6", prompt: "What place is in your city?", es: "Que lugar hay en tu ciudad?" }, { label: "Object", color: "#EC4899", prompt: "What object is on your desk?", es: "Que objeto hay en tu mesa?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -13467,7 +13399,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Bus station"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Rooms and places: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🛏️ + 🪑 + 🏠"],
+                    options: ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -13593,10 +13535,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -13749,7 +13691,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "At home"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -13877,10 +13829,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -14033,7 +13985,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Play outside"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -14159,10 +14121,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -14315,7 +14277,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Became"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -14442,10 +14414,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -14598,7 +14570,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Birthday"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Dates and birthdays: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📅 + 🎂 + ⭐"],
+                    options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -14723,10 +14705,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 {
                     "id": "Icebreaker Wheel",
                     "title": "Conversation Warm-up Wheel",
-                    "description": "Warm up, guess the topic, and start speaking.",
+                    "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
-                    "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
-                    "wheelItems": [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }],
+                    "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
+                    "wheelItems": [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -14881,7 +14863,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Have to"
                 ],
                 "correctOptionIndex": 0
-              }
+              },
+                {
+                    id: "c-adults-basic-3-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -15185,10 +15177,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-1-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               {
                 "id": "c-adults-basic-4-1-s1-sl3",
@@ -15347,19 +15339,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-1-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Past and memories: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🚶‍♂️ ➕ 🌧️ ➕ 🥶"
-                ],
-                "options": [
-                  "I walked in the rain.",
-                  "I am walking.",
-                  "I will walk."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["👶 + 👴 + 📖"],
+                "options": ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -15539,10 +15525,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-2-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               {
                 "id": "c-adults-basic-4-2-s1-sl3",
@@ -15707,19 +15693,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-2-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Past and memories: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🍕 ➕ 😋 ➕ 🫃"
-                ],
-                "options": [
-                  "I didn't eat.",
-                  "I ate too much pizza.",
-                  "I am cooking pizza."
-                ],
+                "content": ["👶 + 👴 + 📖"],
+                "options": ["I will call you later.", "I was a child before.", "This phone is expensive."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -15898,10 +15878,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-3-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Shape", color: "#EF4444", prompt: "What shape do you see?", es: "Que forma ves?" }, { label: "Find", color: "#F59E0B", prompt: "Where can you find a circle?", es: "Donde puedes encontrar un circulo?" }, { label: "Draw", color: "#10B981", prompt: "Can you draw a triangle?", es: "Puedes dibujar un triangulo?" }, { label: "Pattern", color: "#3B82F6", prompt: "Do you like stripes or dots?", es: "Te gustan rayas o puntos?" }, { label: "Color", color: "#8B5CF6", prompt: "What color is the shape?", es: "De que color es la forma?" }, { label: "Object", color: "#EC4899", prompt: "What object has this shape?", es: "Que objeto tiene esta forma?" }]
             },
               {
                 "id": "c-adults-basic-4-3-s1-sl3",
@@ -16065,19 +16045,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-3-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Shapes: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "❓ ➕ 🗺️ ➕ 🤷‍♂️"
-                ],
-                "options": [
-                  "Where did you go?",
-                  "I know the way.",
-                  "I am traveling."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["🔴 + ◻️ + 🎨"],
+                "options": ["I like chicken and fries.", "I see a red circle and a square.", "He can ride a bike."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -16257,10 +16231,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-4-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               {
                 "id": "c-adults-basic-4-4-s1-sl3",
@@ -16423,19 +16397,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-4-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Past trips: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "✈️ ➕ 🏖️ ➕ 📸"
-                ],
-                "options": [
-                  "I hate traveling.",
-                  "I flew to the beach.",
-                  "I am at home."
-                ],
+                "content": ["✈️ + 🏖️ + 📅"],
+                "options": ["I am studying right now.", "I went on vacation last year.", "Please spell your name."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -16614,10 +16582,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-5-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               {
                 "id": "c-adults-basic-4-5-s1-sl3",
@@ -16778,19 +16746,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-5-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Review: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "⏰ ➕ 🏃‍♂️ ➕ 🚌"
-                ],
-                "options": [
-                  "I woke up early.",
-                  "First I woke up, then I ran.",
-                  "I have a car."
-                ],
+                "content": ["🏆 + 📖 + ⭐"],
+                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -16971,10 +16933,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-6-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
             },
               {
                 "id": "c-adults-basic-4-6-s1-sl3",
@@ -17133,19 +17095,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-6-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Future plans: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "📅 ➕ ✈️ ➕ 🇺🇸"
-                ],
-                "options": [
-                  "I traveled last year.",
-                  "I am going to travel to the US.",
-                  "I don't like airplanes."
-                ],
+                "content": ["🔮 + 🚀 + 📅"],
+                "options": ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -17324,10 +17280,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-7-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               {
                 "id": "c-adults-basic-4-7-s1-sl3",
@@ -17487,19 +17443,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-7-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Past and memories: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🔮 ➕ 🛸 ➕ 👽"
-                ],
-                "options": [
-                  "Aliens exist.",
-                  "I think aliens will visit us.",
-                  "I saw an alien."
-                ],
+                "content": ["👶 + 👴 + 📖"],
+                "options": ["I will call you later.", "I was a child before.", "This phone is expensive."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -17681,10 +17631,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-8-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
             },
               {
                 "id": "c-adults-basic-4-8-s1-sl3",
@@ -17838,19 +17788,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-8-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Future plans: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "⛈️ ➕ ☔ ➕ 🏠"
-                ],
-                "options": [
-                  "It is going to rain, I'll stay home.",
-                  "I went out in the rain.",
-                  "I like storms."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["🔮 + 🚀 + 📅"],
+                "options": ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -18031,10 +17975,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-9-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
             },
               {
                 "id": "c-adults-basic-4-9-s1-sl3",
@@ -18197,19 +18141,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-9-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Opinions: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🗣️ ➕ ❌ ➕ 😠"
-                ],
-                "options": [
-                  "I totally agree.",
-                  "I completely disagree.",
-                  "What do you think?"
-                ],
+                "content": ["💡 + 👍 + 💬"],
+                "options": ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -18389,10 +18327,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "id": "c-adults-basic-4-10-s1-sl2",
                 "title": "Conversation Warm-up Wheel",
                 "type": "spinning-wheel",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
-                "description": "Warm up, guess the topic, and start speaking.",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                "description": "Spin and answer one easy question.",
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               {
                 "id": "c-adults-basic-4-10-s1-sl3",
@@ -18555,19 +18493,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "c-adults-basic-4-10-s3-emoji",
-                "title": "Emojis Locos 🤪",
-                "description": "Adivina la frase",
+                "title": "Emoji Mission",
+                "description": "Review: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🎓 ➕ 🥳 ➕ 📈"
-                ],
-                "options": [
-                  "I passed Basic 4!",
-                  "I failed the test.",
-                  "I am bored."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["🏆 + 📖 + ⭐"],
+                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
             "duration": "15 minutos",
@@ -18930,11 +18862,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-ozts25t",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               {
                 "id": "slide-agkaq2n",
@@ -19070,19 +19002,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-e8qpk48",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Review: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🏃‍♂️ ➕ 📅 ➕ 🔙"
-                ],
-                "options": [
-                  "I will run.",
-                  "I ran yesterday.",
-                  "I run every day."
-                ],
+                "content": ["🏆 + 📖 + ⭐"],
+                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -19234,11 +19160,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-cj7ungz",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
             },
               {
                 "id": "slide-pjo9c9t",
@@ -19373,19 +19299,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-nr8xl5b",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Opinions: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "☀️ ➕ 🏖️ ➕ 😎"
-                ],
-                "options": [
-                  "If it is sunny, we will go to the beach.",
-                  "We went to the beach.",
-                  "I like the sun."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["💡 + 👍 + 💬"],
+                "options": ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -19537,11 +19457,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-cn9zxfx",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Rule", color: "#EF4444", prompt: "What rule is important?", es: "Que regla es importante?" }, { label: "Students", color: "#F59E0B", prompt: "What must students do?", es: "Que deben hacer los estudiantes?" }, { label: "Advice", color: "#10B981", prompt: "What advice helps you study?", es: "Que consejo te ayuda a estudiar?" }, { label: "Permission", color: "#3B82F6", prompt: "When do you ask Can I...?", es: "Cuando preguntas Can I...?" }, { label: "Duty", color: "#8B5CF6", prompt: "What do you have to do today?", es: "Que tienes que hacer hoy?" }, { label: "School", color: "#EC4899", prompt: "What school rule is useful?", es: "Que regla escolar es util?" }]
             },
               {
                 "id": "slide-lb71efd",
@@ -19678,19 +19598,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-snrz61m",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Rules and advice: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🤒 ➕ 👨‍⚕️ ➕ 💊"
-                ],
-                "options": [
-                  "You should go to the doctor.",
-                  "I am a doctor.",
-                  "I like medicine."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["🛑 + 📖 + 🆘"],
+                "options": ["I have already eaten.", "Students must follow rules.", "The app is cheaper."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -19842,11 +19756,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-7i1r1su",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Can", color: "#EF4444", prompt: "What can you do well?", es: "Que puedes hacer bien?" }, { label: "Talent", color: "#F59E0B", prompt: "What talent do you have?", es: "Que talento tienes?" }, { label: "Sport", color: "#10B981", prompt: "Can you swim or run fast?", es: "Puedes nadar o correr rapido?" }, { label: "Music", color: "#3B82F6", prompt: "Can you sing or dance?", es: "Puedes cantar o bailar?" }, { label: "Learn", color: "#8B5CF6", prompt: "What skill do you want to learn?", es: "Que habilidad quieres aprender?" }, { label: "Challenge", color: "#EC4899", prompt: "What is hard but possible?", es: "Que es dificil pero posible?" }]
             },
               {
                 "id": "slide-f4lghow",
@@ -19982,19 +19896,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-pyeu6ip",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Abilities: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🤷‍♂️ ➕ ☁️ ➕ ☔"
-                ],
-                "options": [
-                  "It will rain.",
-                  "It might rain.",
-                  "It is raining."
-                ],
+                "content": ["🏆 + 🏃 + 🎵"],
+                "options": ["There are two chairs.", "I can run and sing.", "This is my passport."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -20146,11 +20054,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-rv7st4y",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Better", color: "#EF4444", prompt: "Which option is better?", es: "Que opcion es mejor?" }, { label: "Cheaper", color: "#F59E0B", prompt: "What is cheaper than a phone?", es: "Que es mas barato que un celular?" }, { label: "Best", color: "#10B981", prompt: "What is the best app?", es: "Cual es la mejor app?" }, { label: "Too", color: "#3B82F6", prompt: "What is too expensive?", es: "Que es demasiado caro?" }, { label: "Enough", color: "#8B5CF6", prompt: "What is good enough for you?", es: "Que es suficiente para ti?" }, { label: "Choice", color: "#EC4899", prompt: "Which one would you choose?", es: "Cual escogerias?" }]
             },
               {
                 "id": "slide-0celyo4",
@@ -20288,19 +20196,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-89zf0ul",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Comparisons: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🚗 ➕ 🏎️ ➕ 💨"
-                ],
-                "options": [
-                  "The car is fast.",
-                  "The racecar is faster than the car.",
-                  "The car is the fastest."
-                ],
+                "content": ["📱 + ⚖️ + ⭐"],
+                "options": ["I wake up at six.", "This phone is the best.", "My sister is at home."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -20452,11 +20354,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-bia4ad9",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Better", color: "#EF4444", prompt: "Which option is better?", es: "Que opcion es mejor?" }, { label: "Cheaper", color: "#F59E0B", prompt: "What is cheaper than a phone?", es: "Que es mas barato que un celular?" }, { label: "Best", color: "#10B981", prompt: "What is the best app?", es: "Cual es la mejor app?" }, { label: "Too", color: "#3B82F6", prompt: "What is too expensive?", es: "Que es demasiado caro?" }, { label: "Enough", color: "#8B5CF6", prompt: "What is good enough for you?", es: "Que es suficiente para ti?" }, { label: "Choice", color: "#EC4899", prompt: "Which one would you choose?", es: "Cual escogerias?" }]
             },
               {
                 "id": "slide-0mv323r",
@@ -20593,19 +20495,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-9clpoe7",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Comparisons: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🥵 ➕ ☕ ➕ ❌"
-                ],
-                "options": [
-                  "The coffee is too hot.",
-                  "I don't have enough coffee.",
-                  "The coffee is good."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["📱 + ⚖️ + ⭐"],
+                "options": ["I wake up at six.", "This phone is the best.", "My sister is at home."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -20757,11 +20653,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-yv7bcr7",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               {
                 "id": "slide-rnm31oa",
@@ -20894,19 +20790,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-ly44e3r",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Business English: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "👔 ➕ 💼 ➕ 📈"
-                ],
-                "options": [
-                  "I am sleeping.",
-                  "Business is going well.",
-                  "I resigned from my job."
-                ],
+                "content": ["📧 + 💼 + 🧑‍💼"],
+                "options": ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -21058,11 +20948,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-2remdua",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Shape", color: "#EF4444", prompt: "What shape do you see?", es: "Que forma ves?" }, { label: "Find", color: "#F59E0B", prompt: "Where can you find a circle?", es: "Donde puedes encontrar un circulo?" }, { label: "Draw", color: "#10B981", prompt: "Can you draw a triangle?", es: "Puedes dibujar un triangulo?" }, { label: "Pattern", color: "#3B82F6", prompt: "Do you like stripes or dots?", es: "Te gustan rayas o puntos?" }, { label: "Color", color: "#8B5CF6", prompt: "What color is the shape?", es: "De que color es la forma?" }, { label: "Object", color: "#EC4899", prompt: "What object has this shape?", es: "Que objeto tiene esta forma?" }]
             },
               {
                 "id": "slide-hozef2r",
@@ -21199,19 +21089,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-u14mq0u",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Shapes: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "📧 ➕ 👔 ➕ ✍️"
-                ],
-                "options": [
-                  "Writing a formal email.",
-                  "Sending a text to a friend.",
-                  "Reading a book."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["🔴 + ◻️ + 🎨"],
+                "options": ["I like chicken and fries.", "I see a red circle and a square.", "He can ride a bike."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -21363,11 +21247,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-xwk6lxx",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Try", color: "#EF4444", prompt: "What new food have you tried?", es: "Que comida nueva has probado?" }, { label: "Travel", color: "#F59E0B", prompt: "Have you traveled before?", es: "Has viajado antes?" }, { label: "Never", color: "#10B981", prompt: "What have you never done?", es: "Que nunca has hecho?" }, { label: "Today", color: "#3B82F6", prompt: "What have you done today?", es: "Que has hecho hoy?" }, { label: "Fun", color: "#8B5CF6", prompt: "What experience was fun?", es: "Que experiencia fue divertida?" }, { label: "Ask", color: "#EC4899", prompt: "What Have you ever question can you ask?", es: "Que pregunta con Have you ever puedes hacer?" }]
             },
               {
                 "id": "slide-kr80z9p",
@@ -21505,19 +21389,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-gbf6pn4",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Life experiences: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "✈️ ➕ 🗼 ➕ 🥐"
-                ],
-                "options": [
-                  "I want to go to France.",
-                  "I have been to Paris.",
-                  "I live in Paris."
-                ],
+                "content": ["⭐ + ✈️ + "],
+                "options": ["I will clean my room.", "I have tried new food abroad.", "This is a square."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -21669,11 +21547,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-uvfcqys",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               {
                 "id": "slide-xnc9ixw",
@@ -21810,19 +21688,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-a9gg182",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Past and memories: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "📅 ➕ 2010 ➕ 🎓"
-                ],
-                "options": [
-                  "I have graduated.",
-                  "I graduated in 2010.",
-                  "I will graduate."
-                ],
+                "content": ["👶 + 👴 + 📖"],
+                "options": ["I will call you later.", "I was a child before.", "This phone is expensive."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -21974,11 +21846,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-qtuyjz7",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }]
             },
               {
                 "id": "slide-w286jg6",
@@ -22113,19 +21985,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-6gacxk0",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Greeting people: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "🚫 ➕ 🚬 ➕ 🚭"
-                ],
-                "options": [
-                  "I want to smoke.",
-                  "I stopped smoking.",
-                  "I need smoking."
-                ],
+                "content": ["👋 + 😄 + 🤝"],
+                "options": ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -22277,11 +22143,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "slide-nvyiz3t",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "description": "Spin and answer one easy question.",
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-500",
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }]
             },
               {
                 "id": "slide-xg9l231",
@@ -22420,19 +22286,13 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
               {
                 "id": "slide-1c8tbms",
-                "title": "Emojis Locos 🤪",
-                "description": "Guess the phrase!",
+                "title": "Emoji Mission",
+                "description": "Greeting people: decode the emoji story",
                 "type": "emoji-game",
-                "content": [
-                  "💡 ➕ 🔘 ➕ 🌃"
-                ],
-                "options": [
-                  "Turn on the light.",
-                  "Turn off the light.",
-                  "Look for the light."
-                ],
-                "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "content": ["👋 + 😄 + 🤝"],
+                "options": ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
+                "correctOptionIndex": 1,
+                "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ]
           },
@@ -22757,11 +22617,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -22896,7 +22756,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -23002,11 +22872,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23140,7 +23010,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Opinions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["💡 + 👍 + 💬"],
+                    options: ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -23246,11 +23126,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23384,7 +23264,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -23490,11 +23380,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Clothes", color: "#EF4444", prompt: "What are you wearing today?", es: "Que llevas puesto hoy?" }, { label: "Shoes", color: "#F59E0B", prompt: "What color are your shoes?", es: "De que color son tus zapatos?" }, { label: "Style", color: "#10B981", prompt: "What style do you like?", es: "Que estilo te gusta?" }, { label: "Weather", color: "#3B82F6", prompt: "What do you wear when it rains?", es: "Que usas cuando llueve?" }, { label: "Shop", color: "#8B5CF6", prompt: "What clothes do you like buying?", es: "Que ropa te gusta comprar?" }, { label: "Describe", color: "#EC4899", prompt: "How would you describe your style?", es: "Como describirias tu estilo?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23629,7 +23519,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Clothes: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👕 + 👖 + 👟"],
+                    options: ["I have three brothers.", "I am wearing jeans and sneakers.", "The train is late."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -23735,11 +23635,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -23874,7 +23774,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -23980,11 +23890,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -24119,7 +24029,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Business English: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📧 + 💼 + 🧑‍💼"],
+                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -24225,11 +24145,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -24364,7 +24284,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Business English: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📧 + 💼 + 🧑‍💼"],
+                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -24470,11 +24400,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Now", color: "#EF4444", prompt: "What are you doing now?", es: "Que haces ahora?" }, { label: "Wear", color: "#F59E0B", prompt: "What is someone wearing now?", es: "Que lleva alguien ahora?" }, { label: "Listen", color: "#10B981", prompt: "What are you listening to today?", es: "Que escuchas hoy?" }, { label: "Around", color: "#3B82F6", prompt: "What is happening around you?", es: "Que pasa a tu alrededor?" }, { label: "Action", color: "#8B5CF6", prompt: "What action can you show?", es: "Que accion puedes mostrar?" }, { label: "Move", color: "#EC4899", prompt: "What is moving in this room?", es: "Que se mueve en este cuarto?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -24609,7 +24539,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Actions now: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📱 + 🎵 + 😄"],
+                    options: ["I visited my grandma.", "I am listening to music now.", "The email was sent."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -24715,11 +24655,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Phrase", color: "#EF4444", prompt: "What English phrase do you know?", es: "Que frase en ingles conoces?" }, { label: "Strange", color: "#F59E0B", prompt: "What phrase sounds strange?", es: "Que frase suena rara?" }, { label: "Verb", color: "#10B981", prompt: "What action verb do you use often?", es: "Que verbo de accion usas seguido?" }, { label: "Meaning", color: "#3B82F6", prompt: "How do you guess a meaning?", es: "Como adivinas un significado?" }, { label: "Use", color: "#8B5CF6", prompt: "Where can you use this phrase?", es: "Donde puedes usar esta frase?" }, { label: "Fun", color: "#EC4899", prompt: "What fun phrase can you say?", es: "Que frase divertida puedes decir?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -24854,7 +24794,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Expressions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔑 + 💬 + ⭐"],
+                    options: ["I like rainy days.", "This is a useful expression.", "The cat can jump."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -24960,11 +24910,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -25099,7 +25049,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-advanced-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -25384,11 +25344,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Phrase", color: "#EF4444", prompt: "What English phrase do you know?", es: "Que frase en ingles conoces?" }, { label: "Strange", color: "#F59E0B", prompt: "What phrase sounds strange?", es: "Que frase suena rara?" }, { label: "Verb", color: "#10B981", prompt: "What action verb do you use often?", es: "Que verbo de accion usas seguido?" }, { label: "Meaning", color: "#3B82F6", prompt: "How do you guess a meaning?", es: "Como adivinas un significado?" }, { label: "Use", color: "#8B5CF6", prompt: "Where can you use this phrase?", es: "Donde puedes usar esta frase?" }, { label: "Fun", color: "#EC4899", prompt: "What fun phrase can you say?", es: "Que frase divertida puedes decir?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -25522,7 +25482,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-1-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Expressions: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔑 + 💬 + ⭐"],
+                    options: ["I like rainy days.", "This is a useful expression.", "The cat can jump."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -25628,11 +25598,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Shape", color: "#EF4444", prompt: "What shape do you see?", es: "Que forma ves?" }, { label: "Find", color: "#F59E0B", prompt: "Where can you find a circle?", es: "Donde puedes encontrar un circulo?" }, { label: "Draw", color: "#10B981", prompt: "Can you draw a triangle?", es: "Puedes dibujar un triangulo?" }, { label: "Pattern", color: "#3B82F6", prompt: "Do you like stripes or dots?", es: "Te gustan rayas o puntos?" }, { label: "Color", color: "#8B5CF6", prompt: "What color is the shape?", es: "De que color es la forma?" }, { label: "Object", color: "#EC4899", prompt: "What object has this shape?", es: "Que objeto tiene esta forma?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -25767,7 +25737,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-2-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Shapes: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔴 + ◻️ + 🎨"],
+                    options: ["I like chicken and fries.", "I see a red circle and a square.", "He can ride a bike."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -25873,11 +25853,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Shape", color: "#EF4444", prompt: "What shape do you see?", es: "Que forma ves?" }, { label: "Find", color: "#F59E0B", prompt: "Where can you find a circle?", es: "Donde puedes encontrar un circulo?" }, { label: "Draw", color: "#10B981", prompt: "Can you draw a triangle?", es: "Puedes dibujar un triangulo?" }, { label: "Pattern", color: "#3B82F6", prompt: "Do you like stripes or dots?", es: "Te gustan rayas o puntos?" }, { label: "Color", color: "#8B5CF6", prompt: "What color is the shape?", es: "De que color es la forma?" }, { label: "Object", color: "#EC4899", prompt: "What object has this shape?", es: "Que objeto tiene esta forma?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26012,7 +25992,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-3-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Shapes: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🔴 + ◻️ + 🎨"],
+                    options: ["I like chicken and fries.", "I see a red circle and a square.", "He can ride a bike."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -26118,11 +26108,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26257,7 +26247,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-4-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Past and memories: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👶 + 👴 + 📖"],
+                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -26363,11 +26363,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26501,7 +26501,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-5-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Greeting people: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["👋 + 😄 + 🤝"],
+                    options: ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -26607,11 +26617,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26746,7 +26756,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-6-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -26852,11 +26872,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Side", color: "#EF4444", prompt: "What side would you choose?", es: "Que lado elegirias?" }, { label: "News", color: "#F59E0B", prompt: "What news is interesting?", es: "Que noticia es interesante?" }, { label: "Media", color: "#10B981", prompt: "What media do you use?", es: "Que medio usas?" }, { label: "Popular", color: "#3B82F6", prompt: "What is popular now?", es: "Que es popular ahora?" }, { label: "Fair", color: "#8B5CF6", prompt: "What is fair or unfair?", es: "Que es justo o injusto?" }, { label: "Idea", color: "#EC4899", prompt: "What idea would you sell?", es: "Que idea venderias?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -26991,7 +27011,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-7-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Discussion: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📰 + 📺 + 💬"],
+                    options: ["I can count to ten.", "We are discussing the news.", "The pencil is yellow."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -27097,11 +27127,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -27236,7 +27266,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-8-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Business English: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📧 + 💼 + 🧑‍💼"],
+                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -27342,11 +27382,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "This", color: "#EF4444", prompt: "What object is this?", es: "Que objeto es este?" }, { label: "That", color: "#F59E0B", prompt: "What object is far from you?", es: "Que objeto esta lejos de ti?" }, { label: "Desk", color: "#10B981", prompt: "What is on your desk?", es: "Que hay en tu mesa?" }, { label: "Bag", color: "#3B82F6", prompt: "What do you have in your bag?", es: "Que tienes en tu mochila?" }, { label: "Near", color: "#8B5CF6", prompt: "What can you point to?", es: "Que puedes senalar?" }, { label: "Two", color: "#EC4899", prompt: "What two objects can you name?", es: "Que dos objetos puedes nombrar?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -27480,7 +27520,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-9-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Classroom objects: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["📖 + ✏️ + 🎒"],
+                    options: ["I want a burger.", "My pencil is in my bag.", "They are playing soccer."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
@@ -27586,11 +27636,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               {
                 "id": "Diapositiva 2",
                 "title": "Conversation Warm-up Wheel",
-                "description": "Warm up, guess the topic, and start speaking.",
+                "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-700",
-                "content": ["Spin the wheel to warm up.", "Answer fast. No perfect grammar needed yet.", "Then invite one partner to answer too."],
+                "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   type: "spinning-wheel",
-                  wheelItems: [{ label: "First idea", color: "#EF4444", prompt: "What comes to mind first?", es: "Que se te viene primero a la mente?" }, { label: "Personal link", color: "#F59E0B", prompt: "How does this connect to you?", es: "Como se conecta contigo?" }, { label: "Easy example", color: "#10B981", prompt: "Give a simple example.", es: "Da un ejemplo sencillo." }, { label: "Guess topic", color: "#3B82F6", prompt: "Guess the topic.", es: "Adivina el tema." }, { label: "One word", color: "#8B5CF6", prompt: "Say one related word.", es: "Di una palabra relacionada." }, { label: "Ask a partner", color: "#EC4899", prompt: "Ask a warm-up question.", es: "Haz una pregunta para calentar." }]
+                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
             },
               {
                 "id": "Diapositiva 3",
@@ -27725,7 +27775,17 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Translate these sentences into English.",
                   "Remember the grammar rules we learned!"
                 ]
-              }
+              },
+                {
+                    id: "c-adults-masters-10-emoji-mission",
+                    title: "Emoji Mission",
+                    description: "Review: decode the emoji story",
+                    type: "emoji-game",
+                    content: ["🏆 + 📖 + ⭐"],
+                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    correctOptionIndex: 1,
+                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+                  }
             ],
             "action": "Corregir pronunciación y estructura."
           },
