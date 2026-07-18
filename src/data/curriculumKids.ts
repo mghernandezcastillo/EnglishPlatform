@@ -5545,7 +5545,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Room", color: "#EF4444", prompt: "What is in your room?", es: "Que hay en tu cuarto?" }, { label: "Near", color: "#F59E0B", prompt: "What is near your chair?", es: "Que hay cerca de tu silla?" }, { label: "Place", color: "#10B981", prompt: "What place do you like visiting?", es: "Que lugar te gusta visitar?" }, { label: "Home", color: "#3B82F6", prompt: "What room do you like at home?", es: "Que cuarto te gusta en casa?" }, { label: "City", color: "#8B5CF6", prompt: "What place is in your city?", es: "Que lugar hay en tu ciudad?" }, { label: "Object", color: "#EC4899", prompt: "What object is on your desk?", es: "Que objeto hay en tu mesa?" }]
+                  wheelItems: [{ label: "Bedroom", color: "#EF4444", prompt: "Do you have a bedroom?", es: "Tienes un cuarto?" }, { label: "Kitchen", color: "#F59E0B", prompt: "What is in the kitchen?", es: "Que hay en la cocina?" }, { label: "Bathroom", color: "#10B981", prompt: "Where is the bathroom?", es: "Donde esta el bano?" }, { label: "Living Room", color: "#3B82F6", prompt: "What do you do in the living room?", es: "Que haces en la sala?" }, { label: "Favorite", color: "#8B5CF6", prompt: "What is your favorite room?", es: "Cual es tu cuarto favorito?" }, { label: "Dream House", color: "#EC4899", prompt: "Is your dream house big or small?", es: "Tu casa sonada es grande o pequena?" }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
@@ -5846,7 +5846,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                 "imageUrl": imgWarmUp,
                 "type": "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Room", color: "#EF4444", prompt: "What is in your room?", es: "Que hay en tu cuarto?" }, { label: "Near", color: "#F59E0B", prompt: "What is near your chair?", es: "Que hay cerca de tu silla?" }, { label: "Place", color: "#10B981", prompt: "What place do you like visiting?", es: "Que lugar te gusta visitar?" }, { label: "Home", color: "#3B82F6", prompt: "What room do you like at home?", es: "Que cuarto te gusta en casa?" }, { label: "City", color: "#8B5CF6", prompt: "What place is in your city?", es: "Que lugar hay en tu ciudad?" }, { label: "Object", color: "#EC4899", prompt: "What object is on your desk?", es: "Que objeto hay en tu mesa?" }]
+                  wheelItems: [{ label: "Car", color: "#EF4444", prompt: "Do you like cars?", es: "Te gustan los carros?" }, { label: "Bus", color: "#F59E0B", prompt: "Do you go by bus?", es: "Vas en bus?" }, { label: "Train", color: "#10B981", prompt: "Have you seen a train?", es: "Has visto un tren?" }, { label: "Plane", color: "#3B82F6", prompt: "Do you want to fly by plane?", es: "Quieres volar en avion?" }, { label: "Town", color: "#8B5CF6", prompt: "What can you see in town?", es: "Que puedes ver en la ciudad?" }, { label: "Favorite", color: "#EC4899", prompt: "What vehicle is your favorite?", es: "Cual vehiculo es tu favorito?" }]
             }
             ],
             "action": "¡Saluda al alumno con mucha alegría y haz el ejercicio con él!"
