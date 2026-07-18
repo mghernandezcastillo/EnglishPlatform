@@ -31,25 +31,25 @@ import imgShowAndTell from '../assets/images/kids_show_and_tell_1782138903791.jp
 export const curriculumKidsLevels: CurriculumLevel[] = [
   {
     "id": "basic-zero",
-    "title": "Level 0 - Basic Zero (Kids Explorer)",
+    "title": "Level 0 - Basic Zero (Kids Explorer) / Nivel 0 - Básico Cero (Explorador Infantil)",
     "duration": "2 meses",
     "objective": "Aprender lo más básico del inglés jugando y divirtiéndonos.",
     "mcfrEquivalent": "Pre-A1",
     "classes": [
       {
         "id": "c-bz-1",
-        "title": "Clase 1: Hello & Amazing Colors! 🌈",
+        "title": "Class 1: Hello & Amazing Colors! 🌈 / Clase 1: Hello & Amazing Colors! 🌈",
         "description": "¡Vamos a aprender a saludar como campeones!",
         "sections": [
           {
             "id": "s000",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-00-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgMagicGreeting,
@@ -57,7 +57,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-00-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -70,13 +70,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s001",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-00-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "✋ HELLO!",
@@ -89,7 +89,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-00-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -101,7 +101,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-00-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -116,13 +116,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s002",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-00-2",
-                "title": "High Five! ✋",
+                "title": "High Five! ✋ / High Cinco! ✋",
                 "description": "¡Choca esos cinco a la cámara!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgHighFive,
@@ -130,7 +130,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bz-1-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Greeting people: decode the emoji story",
                     type: "emoji-game",
                     content: ["👋 + 😄 + 🤝"],
@@ -143,13 +143,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s003",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-00-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -160,13 +160,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s004",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-00-3",
-                "title": "Fun Wheel! 🎡",
+                "title": "Fun Wheel! 🎡 / Divertido Ruleta! 🎡",
                 "description": "Gira la ruleta y dime qué color sale en inglés.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -194,13 +194,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s005",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-00-4a",
-                "title": "Find the Color! 🎨",
+                "title": "Find the Color! 🎨 / Find the Colores! 🎨",
                 "description": "Une la mancha de color con su nombre en inglés.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -229,7 +229,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-00-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -245,13 +245,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s006",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-00-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -287,30 +287,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s007",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-00-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Hello & Amazing Colors! 🌈."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Greeting Monster Boss",
+                                    bossTitle: "Hello & Amazing Colors! 🌈",
+                                    bossAvatar: "👾",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to hello & amazing colors! 🌈.",
+                                      "Say one useful phrase for hello & amazing colors! 🌈."
+                                    ],
+                                      use: [
+                                      "Create one sentence about hello & amazing colors! 🌈 using greetings.",
+                                      "Ask a friend one question about hello & amazing colors! 🌈."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about hello & amazing colors! 🌈.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to hello & amazing colors! 🌈."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s008",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-00-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgMagicGreeting,
@@ -318,7 +350,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-00-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -336,18 +368,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bz-2",
-        "title": "Clase 2: Numbers & Animal Friends! 🐶",
+        "title": "Class 2: Numbers & Animal Friends! 🐶 / Clase 2: Numbers & Animal Friends! 🐶",
         "description": "¡Vamos a contar hasta 5 y conocer a nuestras mascotas!",
         "sections": [
           {
             "id": "s010",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-01-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgColorfulNumbers,
@@ -355,7 +387,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-01-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -368,13 +400,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s011",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-01-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "1️⃣ ONE",
@@ -389,7 +421,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-01-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -403,7 +435,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-01-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -420,13 +452,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s012",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-01-2",
-                "title": "Show me 5! ✋",
+                "title": "Show me 5! ✋ / Show me 5! ✋",
                 "description": "¡Muéstrame 5 deditos rápidos!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgColorfulNumbers,
@@ -434,7 +466,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bz-2-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Animals and pets: decode the emoji story",
                     type: "emoji-game",
                     content: ["🐶 + 🐱 + 🦜"],
@@ -447,13 +479,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s013",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-01-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -464,13 +496,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s014",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-01-3",
-                "title": "Super Number Wheel! 🎡",
+                "title": "Super Number Wheel! 🎡 / Super Números Ruleta! 🎡",
                 "description": "Gira la ruleta y dime qué número sale.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -502,13 +534,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s015",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-01-4a",
-                "title": "Match the Pet! 🐾",
+                "title": "Match the Pet! 🐾 / Pareja the Mascotas! 🐾",
                 "description": "¡Une cada animal con su nombre en inglés!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -537,7 +569,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-01-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -553,13 +585,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s016",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-01-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -595,30 +627,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s017",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-01-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Numbers & Animal Friends! 🐶."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Time Monster Boss",
+                                    bossTitle: "Numbers & Animal Friends! 🐶",
+                                    bossAvatar: "⏰",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to numbers & animal friends! 🐶.",
+                                      "Say one useful phrase for numbers & animal friends! 🐶."
+                                    ],
+                                      use: [
+                                      "Create one sentence about numbers & animal friends! 🐶 using numbers.",
+                                      "Ask a friend one question about numbers & animal friends! 🐶."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about numbers & animal friends! 🐶.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to numbers & animal friends! 🐶."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s018",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-01-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgColorfulNumbers,
@@ -626,7 +690,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-01-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -644,18 +708,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bz-3",
-        "title": "Clase 3: My Body & Fun Actions! 🏃",
+        "title": "Class 3: My Body & Fun Actions! 🏃 / Clase 3: My Body & Fun Actions! 🏃",
         "description": "¡Vamos a movernos y aprender las partes de nuestro cuerpo!",
         "sections": [
           {
             "id": "s020",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-02-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgMonsterBody,
@@ -663,7 +727,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-02-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -676,13 +740,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s021",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-02-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🙎‍♂️ HEAD",
@@ -697,7 +761,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-02-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -711,7 +775,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-02-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -728,13 +792,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s022",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-02-2",
-                "title": "Shake your body! 🕺",
+                "title": "Shake your body! 🕺 / Shake your Cuerpo! 🕺",
                 "description": "¡Sacúdete de pies a cabeza!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgMonsterBody,
@@ -742,7 +806,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bz-3-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Body and actions: decode the emoji story",
                     type: "emoji-game",
                     content: ["🏃 + 🦘 + 👍"],
@@ -755,13 +819,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s023",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-02-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -772,13 +836,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s024",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-02-3",
-                "title": "Action Wheel! 🎡",
+                "title": "Action Wheel! 🎡 / Acciones Ruleta! 🎡",
                 "description": "¡Gira la ruleta y haz la acción súper rápido!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -806,13 +870,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s025",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-02-4a",
-                "title": "Match the Body! 🧩",
+                "title": "Match the Body! 🧩 / Pareja the Cuerpo! 🧩",
                 "description": "¡Encuentra y une la parte del cuerpo!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -841,7 +905,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-02-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -857,13 +921,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s026",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-02-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -899,30 +963,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s027",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-02-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using My Body & Fun Actions! 🏃."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Health Monster Boss",
+                                    bossTitle: "My Body & Fun Actions! 🏃",
+                                    bossAvatar: "🩺",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to my body & fun actions! 🏃.",
+                                      "Say one useful phrase for my body & fun actions! 🏃."
+                                    ],
+                                      use: [
+                                      "Create one sentence about my body & fun actions! 🏃 using body words.",
+                                      "Ask a friend one question about my body & fun actions! 🏃."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about my body & fun actions! 🏃.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to my body & fun actions! 🏃."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s028",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-02-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgMonsterBody,
@@ -930,7 +1026,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-02-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -948,18 +1044,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bz-4",
-        "title": "Clase 4: My Favorite Toys! 🪁",
+        "title": "Class 4: My Favorite Toys! 🪁 / Clase 4: My Favorite Toys! 🪁",
         "description": "¡Vamos a jugar y descubrir nuestros juguetes favoritos!",
         "sections": [
           {
             "id": "s030",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-03-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgToysGames,
@@ -967,7 +1063,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-03-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -980,13 +1076,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s031",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-03-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🧸 TEDDY BEAR",
@@ -1000,7 +1096,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-03-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -1013,7 +1109,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-03-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -1029,13 +1125,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s032",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-03-2",
-                "title": "Hug a Toy! 🤗",
+                "title": "Hug a Toy! 🤗 / Hug a Toy! 🤗",
                 "description": "¡Corre a abrazar tu juguete favorito!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgToysGames,
@@ -1043,7 +1139,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bz-4-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Toys: decode the emoji story",
                     type: "emoji-game",
                     content: ["🧸 + 🎮 + ⭐"],
@@ -1056,13 +1152,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s033",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-03-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -1073,13 +1169,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s034",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-03-3",
-                "title": "Spin a Toy! 🎡",
+                "title": "Spin a Toy! 🎡 / Spin a Toy! 🎡",
                 "description": "¡Gira la ruleta y dime de qué color es ese juguete!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -1107,13 +1203,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s035",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-03-4a",
-                "title": "Toy Match! 🧩",
+                "title": "Toy Match! 🧩 / Toy Pareja! 🧩",
                 "description": "¡Une el juguete con su nombre!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -1142,7 +1238,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-03-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -1158,13 +1254,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s036",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-03-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -1200,30 +1296,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s037",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-03-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using My Favorite Toys! 🪁."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Color Monster Boss",
+                                    bossTitle: "My Favorite Toys! 🪁",
+                                    bossAvatar: "🎨",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to my favorite toys! 🪁.",
+                                      "Say one useful phrase for my favorite toys! 🪁."
+                                    ],
+                                      use: [
+                                      "Create one sentence about my favorite toys! 🪁 using colors.",
+                                      "Ask a friend one question about my favorite toys! 🪁."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about my favorite toys! 🪁.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to my favorite toys! 🪁."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s038",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-03-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgToysGames,
@@ -1231,7 +1359,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-03-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -1249,18 +1377,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bz-5",
-        "title": "Clase 5: Yummy Fruits! 🍓",
+        "title": "Class 5: Yummy Fruits! 🍓 / Clase 5: Yummy Fruits! 🍓",
         "description": "¡Aprenderemos los nombres de las frutas más ricas!",
         "sections": [
           {
             "id": "s040",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-04-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgFoodDrinks,
@@ -1268,7 +1396,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-04-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -1281,13 +1409,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s041",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-04-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🍓 STRAWBERRY",
@@ -1301,7 +1429,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-04-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -1314,7 +1442,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-04-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -1330,13 +1458,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s042",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-04-2",
-                "title": "Eat a Fruit! 😋",
+                "title": "Eat a Fruit! 😋 / Eat a Fruit! 😋",
                 "description": "¡Haz como que te comes tu fruta favorita!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgFoodDrinks,
@@ -1344,7 +1472,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bz-5-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Food and drinks: decode the emoji story",
                     type: "emoji-game",
                     content: ["🍔 + 🍟 + 🥤"],
@@ -1357,13 +1485,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s043",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-04-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -1374,13 +1502,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s044",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-04-3",
-                "title": "Fruit Wheel! 🎡",
+                "title": "Fruit Wheel! 🎡 / Fruit Ruleta! 🎡",
                 "description": "Gira y dime qué fruta comeremos hoy.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -1408,13 +1536,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s045",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-04-4a",
-                "title": "Match the Fruit! 🍎",
+                "title": "Match the Fruit! 🍎 / Pareja the Fruit! 🍎",
                 "description": "Une cada fruta con su nombre.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -1443,7 +1571,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-04-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -1459,13 +1587,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s046",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-04-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -1501,30 +1629,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s047",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-04-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Yummy Fruits! 🍓."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Yummy Fruits! 🍓",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to yummy fruits! 🍓.",
+                                      "Say one useful phrase for yummy fruits! 🍓."
+                                    ],
+                                      use: [
+                                      "Create one sentence about yummy fruits! 🍓 using keywords.",
+                                      "Ask a friend one question about yummy fruits! 🍓."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about yummy fruits! 🍓.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to yummy fruits! 🍓."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s048",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-04-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgFoodDrinks,
@@ -1532,7 +1692,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-04-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -1550,18 +1710,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bz-6",
-        "title": "Clase 6: Super Shapes! 🟢",
+        "title": "Class 6: Super Shapes! 🟢 / Clase 6: Super Shapes! 🟢",
         "description": "¡Vamos a dibujar y aprender sobre las figuras geométricas!",
         "sections": [
           {
             "id": "s050",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-05-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgSun,
@@ -1569,7 +1729,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-05-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -1582,13 +1742,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s051",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-05-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🔴 CIRCLE",
@@ -1602,7 +1762,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-05-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -1615,7 +1775,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-05-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -1631,13 +1791,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s052",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-05-2",
-                "title": "Draw in the Air! ✍️",
+                "title": "Draw in the Air! ✍️ / Draw in the Air! ✍️",
                 "description": "¡Dibuja un círculo grande en el aire!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgSun,
@@ -1645,7 +1805,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bz-6-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Shapes: decode the emoji story",
                     type: "emoji-game",
                     content: ["🔴 + ◻️ + 🎨"],
@@ -1658,13 +1818,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s053",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-05-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -1675,13 +1835,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s054",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-05-3",
-                "title": "Spin the Shape! 🎡",
+                "title": "Spin the Shape! 🎡 / Spin the Shape! 🎡",
                 "description": "Gira la ruleta y dibuja la figura que salga.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -1709,13 +1869,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s055",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-05-4a",
-                "title": "Match the Shape! 🟢",
+                "title": "Match the Shape! 🟢 / Pareja the Shape! 🟢",
                 "description": "Encuentra el nombre correcto para la figura.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -1744,7 +1904,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-05-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -1760,13 +1920,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s056",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-05-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -1802,30 +1962,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s057",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-05-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Super Shapes! 🟢."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Color Monster Boss",
+                                    bossTitle: "Super Shapes! 🟢",
+                                    bossAvatar: "🎨",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to super shapes! 🟢.",
+                                      "Say one useful phrase for super shapes! 🟢."
+                                    ],
+                                      use: [
+                                      "Create one sentence about super shapes! 🟢 using colors.",
+                                      "Ask a friend one question about super shapes! 🟢."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about super shapes! 🟢.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to super shapes! 🟢."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s058",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-05-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgSun,
@@ -1833,7 +2025,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-05-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -1851,18 +2043,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bz-7",
-        "title": "Clase 7: School Supplies! 🎒",
+        "title": "Class 7: School Supplies! 🎒 / Clase 7: School Supplies! 🎒",
         "description": "¡Descubre qué hay en nuestra mochila increíble!",
         "sections": [
           {
             "id": "s060",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-06-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgMagicGreeting,
@@ -1870,7 +2062,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-06-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -1883,13 +2075,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s061",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-06-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🎒 BACKPACK",
@@ -1903,7 +2095,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-06-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -1916,7 +2108,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-06-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -1932,13 +2124,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s062",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-06-2",
-                "title": "Show your Pencil! ✏️",
+                "title": "Show your Pencil! ✏️ / Show your Pencil! ✏️",
                 "description": "¡Enséñame tu lápiz o crayón favorito!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgMagicGreeting,
@@ -1946,7 +2138,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bz-7-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Classroom objects: decode the emoji story",
                     type: "emoji-game",
                     content: ["📖 + ✏️ + 🎒"],
@@ -1959,13 +2151,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s063",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-06-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -1976,13 +2168,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s064",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-06-3",
-                "title": "School Wheel! 🎡",
+                "title": "School Wheel! 🎡 / Escuela Ruleta! 🎡",
                 "description": "Gira la ruleta para sacar algo de la mochila.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -2010,13 +2202,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s065",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-06-4a",
-                "title": "School Match! 🧩",
+                "title": "School Match! 🧩 / Escuela Pareja! 🧩",
                 "description": "Une los útiles escolares.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -2045,7 +2237,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-06-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -2061,13 +2253,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s066",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-06-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -2103,30 +2295,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s067",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-06-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using School Supplies! 🎒."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Classroom Monster Boss",
+                                    bossTitle: "School Supplies! 🎒",
+                                    bossAvatar: "🎒",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to school supplies! 🎒.",
+                                      "Say one useful phrase for school supplies! 🎒."
+                                    ],
+                                      use: [
+                                      "Create one sentence about school supplies! 🎒 using classroom words.",
+                                      "Ask a friend one question about school supplies! 🎒."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about school supplies! 🎒.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to school supplies! 🎒."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s068",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-06-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgMagicGreeting,
@@ -2134,7 +2358,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-06-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -2152,18 +2376,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bz-8",
-        "title": "Clase 8: Farm Animals! 🐮",
+        "title": "Class 8: Farm Animals! 🐮 / Clase 8: Farm Animals! 🐮",
         "description": "¡Visitaremos la granja y conoceremos a los animales!",
         "sections": [
           {
             "id": "s070",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-07-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgFrog,
@@ -2171,7 +2395,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-07-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -2184,13 +2408,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s071",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-07-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🐮 COW",
@@ -2204,7 +2428,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-07-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -2217,7 +2441,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-07-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -2233,13 +2457,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s072",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-07-2",
-                "title": "Moo & Oink! 🐷",
+                "title": "Moo & Oink! 🐷 / Moo y Oink! 🐷",
                 "description": "¡Haz el sonido de tu animal de granja favorito!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgFrog,
@@ -2247,7 +2471,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bz-8-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Animals and pets: decode the emoji story",
                     type: "emoji-game",
                     content: ["🐶 + 🐱 + 🦜"],
@@ -2260,13 +2484,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s073",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-07-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -2277,13 +2501,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s074",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-07-3",
-                "title": "Farm Wheel! 🎡",
+                "title": "Farm Wheel! 🎡 / Farm Ruleta! 🎡",
                 "description": "¡Gira para ver qué animal de la granja nos saluda!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -2311,13 +2535,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s075",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-07-4a",
-                "title": "Match the Farm! 🚜",
+                "title": "Match the Farm! 🚜 / Pareja the Farm! 🚜",
                 "description": "¡Encuentra al animal de la granja!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -2346,7 +2570,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-07-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -2362,13 +2586,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s076",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-07-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -2404,30 +2628,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s077",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-07-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Farm Animals! 🐮."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Safari Monster Boss",
+                                    bossTitle: "Farm Animals! 🐮",
+                                    bossAvatar: "🦁",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to farm animals! 🐮.",
+                                      "Say one useful phrase for farm animals! 🐮."
+                                    ],
+                                      use: [
+                                      "Create one sentence about farm animals! 🐮 using animal words.",
+                                      "Ask a friend one question about farm animals! 🐮."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about farm animals! 🐮.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to farm animals! 🐮."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s078",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-07-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgFrog,
@@ -2435,7 +2691,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-07-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -2625,25 +2881,25 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
   },
   {
     "id": "basic-explorer",
-    "title": "Level 1 - Basic 1 (Kids Explorador)",
+    "title": "Level 1 - Basic 1 (Kids Explorador) / Nivel 1 - Básico 1 (Niños Explorador)",
     "duration": "2 meses",
     "objective": "Ampliar vocabulario con familia, emociones, ropa y clima.",
     "mcfrEquivalent": "Pre-A1+",
     "classes": [
       {
         "id": "c-be-1",
-        "title": "Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦",
+        "title": "Class 1: My Family & Feelings! 👨‍👩‍👧‍👦 / Clase 1: My Family & Feelings! 👨‍👩‍👧‍👦",
         "description": "¡Vamos a presentar a nuestra familia y hablar de cómo nos sentimos!",
         "sections": [
           {
             "id": "s100",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-10-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgCuteFamily,
@@ -2651,7 +2907,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-10-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -2664,13 +2920,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s101",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-10-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "👩 MOM",
@@ -2684,7 +2940,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-10-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -2697,7 +2953,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-10-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -2713,13 +2969,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s102",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-10-2",
-                "title": "Big Smile! 😁",
+                "title": "Big Smile! 😁 / Big Smile! 😁",
                 "description": "¡Muéstrame tu sonrisa más feliz!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgCuteFamily,
@@ -2727,7 +2983,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-be-1-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Colors and feelings: decode the emoji story",
                     type: "emoji-game",
                     content: ["🎨 + 👕 + 😊"],
@@ -2740,13 +2996,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s103",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-10-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -2757,13 +3013,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s104",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-10-3",
-                "title": "Feelings Wheel! 🎡",
+                "title": "Feelings Wheel! 🎡 / Feelings Ruleta! 🎡",
                 "description": "Gira la ruleta y pon la cara correspondiente.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -2791,13 +3047,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s105",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-10-4a",
-                "title": "Family Match! 🧩",
+                "title": "Family Match! 🧩 / Familia Pareja! 🧩",
                 "description": "¡Une cada miembro de la familia!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -2826,7 +3082,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-10-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -2842,13 +3098,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s106",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-10-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -2884,30 +3140,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s107",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-10-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using My Family & Feelings! 👨‍👩‍👧‍👦."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Home Monster Boss",
+                                    bossTitle: "My Family & Feelings! 👨‍👩‍👧‍👦",
+                                    bossAvatar: "🏠",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to my family & feelings! 👨‍👩‍👧‍👦.",
+                                      "Say one useful phrase for my family & feelings! 👨‍👩‍👧‍👦."
+                                    ],
+                                      use: [
+                                      "Create one sentence about my family & feelings! 👨‍👩‍👧‍👦 using family words.",
+                                      "Ask a friend one question about my family & feelings! 👨‍👩‍👧‍👦."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about my family & feelings! 👨‍👩‍👧‍👦.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to my family & feelings! 👨‍👩‍👧‍👦."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s108",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-10-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgCuteFamily,
@@ -2915,7 +3203,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-10-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -2933,18 +3221,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-be-2",
-        "title": "Clase 2: Yummy Fast Food! 🍕",
+        "title": "Class 2: Yummy Fast Food! 🍕 / Clase 2: Yummy Fast Food! 🍕",
         "description": "¡Vamos a aprender los nombres de nuestra comida favorita!",
         "sections": [
           {
             "id": "s110",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-11-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgFoodDrinks,
@@ -2952,7 +3240,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-11-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -2965,13 +3253,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s111",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-11-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🍕 PIZZA",
@@ -2985,7 +3273,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-11-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -2998,7 +3286,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-11-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -3014,13 +3302,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s112",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-11-2",
-                "title": "Yummy! 😋",
+                "title": "Yummy! 😋 / Yummy! 😋",
                 "description": "¡Frótate la pancita y di Mmmm!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgFoodDrinks,
@@ -3028,7 +3316,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-be-2-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Food and drinks: decode the emoji story",
                     type: "emoji-game",
                     content: ["🍔 + 🍟 + 🥤"],
@@ -3041,13 +3329,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s113",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-11-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -3058,13 +3346,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s114",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-11-3",
-                "title": "Food Wheel! 🎡",
+                "title": "Food Wheel! 🎡 / Comida Ruleta! 🎡",
                 "description": "¡Gira la ruleta y dime qué te tocó comer hoy!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -3092,13 +3380,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s115",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-11-4a",
-                "title": "Food Match! 🧩",
+                "title": "Food Match! 🧩 / Comida Pareja! 🧩",
                 "description": "¡Une el dibujo con su nombre!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -3127,7 +3415,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-11-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -3143,13 +3431,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s116",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-11-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -3185,30 +3473,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s117",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-11-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Yummy Fast Food! 🍕."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Hungry Monster Boss",
+                                    bossTitle: "Yummy Fast Food! 🍕",
+                                    bossAvatar: "🍔",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to yummy fast food! 🍕.",
+                                      "Say one useful phrase for yummy fast food! 🍕."
+                                    ],
+                                      use: [
+                                      "Create one sentence about yummy fast food! 🍕 using food words.",
+                                      "Ask a friend one question about yummy fast food! 🍕."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about yummy fast food! 🍕.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to yummy fast food! 🍕."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s118",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-11-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgFoodDrinks,
@@ -3216,7 +3536,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-11-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -3234,18 +3554,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-be-3",
-        "title": "Clase 3: My Clothes & The Weather! 👕",
+        "title": "Class 3: My Clothes & The Weather! 👕 / Clase 3: My Clothes & The Weather! 👕",
         "description": "¡Aprenderemos la ropa y cómo vestirse según el clima!",
         "sections": [
           {
             "id": "s120",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-12-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgClothesWeather,
@@ -3253,7 +3573,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-12-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -3266,13 +3586,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s121",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-12-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "👕 T-SHIRT",
@@ -3286,7 +3606,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-12-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -3299,7 +3619,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-12-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -3315,13 +3635,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s122",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-12-2",
-                "title": "Look at your shoes!",
+                "title": "Look at your shoes! / Look at your shoes!",
                 "description": "¡Muéstrame tus zapatos veloces!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgClothesWeather,
@@ -3329,7 +3649,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-be-3-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Weather: decode the emoji story",
                     type: "emoji-game",
                     content: ["🌧️ + 🧥 + 🌳"],
@@ -3342,13 +3662,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s123",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-12-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -3359,13 +3679,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s124",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-12-3",
-                "title": "Weather Wheel! 🎡",
+                "title": "Weather Wheel! 🎡 / Clima Ruleta! 🎡",
                 "description": "¡Gira para ver cómo está el clima afuera!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -3393,13 +3713,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s125",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-12-4a",
-                "title": "Clothes Match! 👗",
+                "title": "Clothes Match! 👗 / Ropa Pareja! 👗",
                 "description": "¡Busca la pareja para cada prenda!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -3428,7 +3748,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-12-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -3444,13 +3764,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s126",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-12-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -3486,30 +3806,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s127",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-12-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using My Clothes & The Weather! 👕."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Weather Closet Monster Boss",
+                                    bossTitle: "My Clothes & The Weather! 👕",
+                                    bossAvatar: "🧥",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to my clothes & the weather! 👕.",
+                                      "Say one useful phrase for my clothes & the weather! 👕."
+                                    ],
+                                      use: [
+                                      "Create one sentence about my clothes & the weather! 👕 using clothes.",
+                                      "Ask a friend one question about my clothes & the weather! 👕."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about my clothes & the weather! 👕.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to my clothes & the weather! 👕."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s128",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-12-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgClothesWeather,
@@ -3517,7 +3869,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-12-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -3535,18 +3887,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-be-4",
-        "title": "Clase 4: Amazing Nature! 🌳",
+        "title": "Class 4: Amazing Nature! 🌳 / Clase 4: Amazing Nature! 🌳",
         "description": "¡Vamos a explorar la naturaleza y las cosas asombrosas del mundo!",
         "sections": [
           {
             "id": "s130",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-13-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgNature,
@@ -3554,7 +3906,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-13-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -3567,13 +3919,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s131",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-13-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🌳 TREE",
@@ -3587,7 +3939,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-13-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -3600,7 +3952,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-13-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -3616,13 +3968,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s132",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-13-2",
-                "title": "Reach the sky!",
+                "title": "Reach the sky! / Reach the sky!",
                 "description": "¡Estírate y atrapa una estrella!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgNature,
@@ -3630,7 +3982,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-be-4-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Nature: decode the emoji story",
                     type: "emoji-game",
                     content: ["🌳 + 🐛 + 🐠"],
@@ -3643,13 +3995,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s133",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-13-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -3660,13 +4012,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s134",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-13-3",
-                "title": "Forest Wheel! 🎡",
+                "title": "Forest Wheel! 🎡 / Forest Ruleta! 🎡",
                 "description": "¡Gira la ruleta divertida de la naturaleza!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -3694,13 +4046,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s135",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-13-4a",
-                "title": "Nature Match! 🧩",
+                "title": "Nature Match! 🧩 / Nature Pareja! 🧩",
                 "description": "¡Une lo que ves en el bosque con su nombre!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -3729,7 +4081,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-13-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -3745,13 +4097,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s136",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-13-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -3787,30 +4139,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s137",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-13-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Amazing Nature! 🌳."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Amazing Nature! 🌳",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to amazing nature! 🌳.",
+                                      "Say one useful phrase for amazing nature! 🌳."
+                                    ],
+                                      use: [
+                                      "Create one sentence about amazing nature! 🌳 using keywords.",
+                                      "Ask a friend one question about amazing nature! 🌳."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about amazing nature! 🌳.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to amazing nature! 🌳."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s138",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-13-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgNature,
@@ -3818,7 +4202,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-13-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -3836,18 +4220,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-be-5",
-        "title": "Clase 5: Cool Bugs & Insects 🐛",
+        "title": "Class 5: Cool Bugs & Insects 🐛 / Clase 5: Cool Bugs & Insects 🐛",
         "description": "¡Sorpréndete con los insectos más geniales del jardín!",
         "sections": [
           {
             "id": "s140",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-14-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgFrog,
@@ -3855,7 +4239,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-14-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -3868,13 +4252,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s141",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-14-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🐛 CATERPILLAR",
@@ -3888,7 +4272,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-14-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -3901,7 +4285,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-14-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -3917,13 +4301,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s142",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-14-2",
-                "title": "Fly like a Butterfly! 🦋",
+                "title": "Fly like a Butterfly! 🦋 / Fly like a Butterfly! 🦋",
                 "description": "¡Mueve los brazos como una mariposa!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgFrog,
@@ -3931,7 +4315,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-be-5-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Nature: decode the emoji story",
                     type: "emoji-game",
                     content: ["🌳 + 🐛 + 🐠"],
@@ -3944,13 +4328,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s143",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-14-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -3961,13 +4345,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s144",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-14-3",
-                "title": "Bug Wheel! 🎡",
+                "title": "Bug Wheel! 🎡 / Bug Ruleta! 🎡",
                 "description": "Gira y descubre qué insecto nos visita.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -3995,13 +4379,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s145",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-14-4a",
-                "title": "Match the Bug! 🐝",
+                "title": "Match the Bug! 🐝 / Pareja the Bug! 🐝",
                 "description": "Une el insecto con su nombre.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -4030,7 +4414,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-14-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -4046,13 +4430,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s146",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-14-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -4088,30 +4472,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s147",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-14-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Cool Bugs & Insects 🐛."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Cool Bugs & Insects 🐛",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to cool bugs & insects 🐛.",
+                                      "Say one useful phrase for cool bugs & insects 🐛."
+                                    ],
+                                      use: [
+                                      "Create one sentence about cool bugs & insects 🐛 using keywords.",
+                                      "Ask a friend one question about cool bugs & insects 🐛."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about cool bugs & insects 🐛.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to cool bugs & insects 🐛."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s148",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-14-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgFrog,
@@ -4119,7 +4535,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-14-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -4137,18 +4553,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-be-6",
-        "title": "Clase 6: Under the Sea! 🐠",
+        "title": "Class 6: Under the Sea! 🐠 / Clase 6: Under the Sea! 🐠",
         "description": "¡Sumerjámonos al fondo del océano!",
         "sections": [
           {
             "id": "s150",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-15-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgWhale,
@@ -4156,7 +4572,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-15-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -4169,13 +4585,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s151",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-15-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🐠 FISH",
@@ -4189,7 +4605,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-15-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -4202,7 +4618,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-15-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -4218,13 +4634,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s152",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-15-2",
-                "title": "Swim! 🏊‍♂️",
+                "title": "Swim! 🏊‍♂️ / Swim! 🏊‍♂️",
                 "description": "¡Nada como un delfín en tu asiento!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgWhale,
@@ -4232,7 +4648,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-be-6-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Nature: decode the emoji story",
                     type: "emoji-game",
                     content: ["🌳 + 🐛 + 🐠"],
@@ -4245,13 +4661,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s153",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-15-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -4262,13 +4678,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s154",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-15-3",
-                "title": "Ocean Wheel! 🎡",
+                "title": "Ocean Wheel! 🎡 / Ocean Ruleta! 🎡",
                 "description": "Gira para ver a tu amigo del mar.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -4296,13 +4712,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s155",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-15-4a",
-                "title": "Sea Match! 🌊",
+                "title": "Sea Match! 🌊 / Sea Pareja! 🌊",
                 "description": "Une los animales marinos.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -4331,7 +4747,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-15-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -4347,13 +4763,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s156",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-15-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -4389,30 +4805,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s157",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-15-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Under the Sea! 🐠."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Under the Sea! 🐠",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to under the sea! 🐠.",
+                                      "Say one useful phrase for under the sea! 🐠."
+                                    ],
+                                      use: [
+                                      "Create one sentence about under the sea! 🐠 using keywords.",
+                                      "Ask a friend one question about under the sea! 🐠."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about under the sea! 🐠.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to under the sea! 🐠."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s158",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-15-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgWhale,
@@ -4420,7 +4868,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-15-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -4438,18 +4886,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-be-7",
-        "title": "Clase 7: Action Heroes! 🦸‍♂️",
+        "title": "Class 7: Action Heroes! 🦸‍♂️ / Clase 7: Action Heroes! 🦸‍♂️",
         "description": "¡Vamos a aprender verbos como superhéroes!",
         "sections": [
           {
             "id": "s160",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-16-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgKidsAction,
@@ -4457,7 +4905,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-16-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -4470,13 +4918,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s161",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-16-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🦸‍♂️ FLY",
@@ -4490,7 +4938,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-16-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -4503,7 +4951,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-16-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -4519,13 +4967,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s162",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-16-2",
-                "title": "Be a Hero! ✨",
+                "title": "Be a Hero! ✨ / Be a Hero! ✨",
                 "description": "¡Haz tu pose de superhéroe!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgKidsAction,
@@ -4533,7 +4981,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-be-7-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Body and actions: decode the emoji story",
                     type: "emoji-game",
                     content: ["🏃 + 🦘 + 👍"],
@@ -4546,13 +4994,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s163",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-16-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -4563,13 +5011,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s164",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-16-3",
-                "title": "Power Wheel! 🎡",
+                "title": "Power Wheel! 🎡 / Power Ruleta! 🎡",
                 "description": "Descubre tu próximo súper poder.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -4597,13 +5045,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s165",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-16-4a",
-                "title": "Action Match! ⚡",
+                "title": "Action Match! ⚡ / Acciones Pareja! ⚡",
                 "description": "Une el súper poder.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -4632,7 +5080,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-16-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -4648,13 +5096,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s166",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-16-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -4690,30 +5138,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s167",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-16-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Action Heroes! 🦸‍♂️."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Action Heroes! 🦸‍♂️",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to action heroes! 🦸‍♂️.",
+                                      "Say one useful phrase for action heroes! 🦸‍♂️."
+                                    ],
+                                      use: [
+                                      "Create one sentence about action heroes! 🦸‍♂️ using keywords.",
+                                      "Ask a friend one question about action heroes! 🦸‍♂️."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about action heroes! 🦸‍♂️.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to action heroes! 🦸‍♂️."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s168",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-16-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgKidsAction,
@@ -4721,7 +5201,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-16-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -4739,18 +5219,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-be-8",
-        "title": "Clase 8: Numbers 11-20! 🔢",
+        "title": "Class 8: Numbers 11-20! 🔢 / Clase 8: Numbers 11-20! 🔢",
         "description": "¡Ahora contaremos más alto que nunca!",
         "sections": [
           {
             "id": "s170",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-17-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgColorfulNumbers,
@@ -4758,7 +5238,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-17-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -4771,13 +5251,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s171",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-17-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "1️⃣1️⃣ ELEVEN",
@@ -4791,7 +5271,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-17-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -4804,7 +5284,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-17-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -4820,13 +5300,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s172",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-17-2",
-                "title": "Count together! 🗣️",
+                "title": "Count together! 🗣️ / Count together! 🗣️",
                 "description": "¡Cuenta muy alto del 1 al 20!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgColorfulNumbers,
@@ -4834,7 +5314,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-be-8-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Numbers, dates and time: decode the emoji story",
                     type: "emoji-game",
                     content: ["🎂 + 📅 + 🕒"],
@@ -4847,13 +5327,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s173",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-17-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -4864,13 +5344,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s174",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-17-3",
-                "title": "Big Numbers Wheel! 🎡",
+                "title": "Big Numbers Wheel! 🎡 / Big Números Ruleta! 🎡",
                 "description": "¡A ver qué número grande cae!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -4898,13 +5378,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s175",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-17-4a",
-                "title": "Math Match! ➕",
+                "title": "Math Match! ➕ / Math Pareja! ➕",
                 "description": "Encuentra el número correcto.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -4933,7 +5413,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-17-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -4949,13 +5429,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s176",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-17-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -4991,30 +5471,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s177",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-17-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Numbers 11-20! 🔢."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Time Monster Boss",
+                                    bossTitle: "Numbers 11-20! 🔢",
+                                    bossAvatar: "⏰",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to numbers 11-20! 🔢.",
+                                      "Say one useful phrase for numbers 11-20! 🔢."
+                                    ],
+                                      use: [
+                                      "Create one sentence about numbers 11-20! 🔢 using numbers.",
+                                      "Ask a friend one question about numbers 11-20! 🔢."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about numbers 11-20! 🔢.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to numbers 11-20! 🔢."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s178",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-17-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgColorfulNumbers,
@@ -5022,7 +5534,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-17-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -5212,25 +5724,25 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
   },
   {
     "id": "basic-adventurer",
-    "title": "Level 2 - Basic 2 (Kids Aventurero)",
+    "title": "Level 2 - Basic 2 (Kids Aventurero) / Nivel 2 - Básico 2 (Niños Aventurero)",
     "duration": "2 meses",
     "objective": "Formar oraciones con animales, lugares y profesiones.",
     "mcfrEquivalent": "A1",
     "classes": [
       {
         "id": "c-ba-1",
-        "title": "Clase 1: Wild Animals Safari! 🦁",
+        "title": "Class 1: Wild Animals Safari! 🦁 / Clase 1: Wild Animals Safari! 🦁",
         "description": "¡Vamos de safari para ver a los animales más grandes del mundo!",
         "sections": [
           {
             "id": "s200",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-20-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgWildAnimals,
@@ -5238,7 +5750,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-20-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -5251,13 +5763,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s201",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-20-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🦁 LION",
@@ -5271,7 +5783,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-20-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -5284,7 +5796,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-20-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -5300,13 +5812,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s202",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-20-2",
-                "title": "Roar! 🦁",
+                "title": "Roar! 🦁 / Roar! 🦁",
                 "description": "¡Ruge tan fuerte como un león!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgWildAnimals,
@@ -5314,7 +5826,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-ba-1-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Animals and pets: decode the emoji story",
                     type: "emoji-game",
                     content: ["🐶 + 🐱 + 🦜"],
@@ -5327,13 +5839,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s203",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-20-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -5344,13 +5856,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s204",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-20-3",
-                "title": "Spin and Roar! 🎡",
+                "title": "Spin and Roar! 🎡 / Spin y Roar! 🎡",
                 "description": "¡Gira la ruleta para ver qué animal debes imitar!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -5378,13 +5890,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s205",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-20-4a",
-                "title": "Animal Match! 🧩",
+                "title": "Animal Match! 🧩 / Animales Pareja! 🧩",
                 "description": "¡Une el animal salvaje con su foto!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -5413,7 +5925,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-20-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -5429,13 +5941,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s206",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-20-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -5471,30 +5983,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s207",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-20-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Wild Animals Safari! 🦁."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Safari Monster Boss",
+                                    bossTitle: "Wild Animals Safari! 🦁",
+                                    bossAvatar: "🦁",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to wild animals safari! 🦁.",
+                                      "Say one useful phrase for wild animals safari! 🦁."
+                                    ],
+                                      use: [
+                                      "Create one sentence about wild animals safari! 🦁 using animal words.",
+                                      "Ask a friend one question about wild animals safari! 🦁."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about wild animals safari! 🦁.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to wild animals safari! 🦁."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s208",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-20-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgWildAnimals,
@@ -5502,7 +6046,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-20-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -5520,18 +6064,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-ba-2",
-        "title": "Clase 2: My Awesome House 🏠",
+        "title": "Class 2: My Awesome House 🏠 / Clase 2: My Awesome House 🏠",
         "description": "¡Exploraremos las diferentes partes de nuestra casita!",
         "sections": [
           {
             "id": "s210",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-21-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgHouseRooms,
@@ -5539,7 +6083,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-21-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -5552,13 +6096,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s211",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-21-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🛏️ BEDROOM",
@@ -5572,7 +6116,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-21-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -5585,7 +6129,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-21-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -5601,13 +6145,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s212",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-21-2",
-                "title": "Knock Knock! 🚪",
+                "title": "Knock Knock! 🚪 / Knock Knock! 🚪",
                 "description": "¡Toca la puerta imaginaria de tu casa!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgHouseRooms,
@@ -5615,7 +6159,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-ba-2-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Rooms and places: decode the emoji story",
                     type: "emoji-game",
                     content: ["🛏️ + 🪑 + 🏠"],
@@ -5628,13 +6172,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s213",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-21-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -5645,13 +6189,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s214",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-21-3",
-                "title": "Where do you...? 🎡",
+                "title": "Where do you...? 🎡 / Where do you...? 🎡",
                 "description": "Gira la ruleta y dime dónde haces esa acción.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -5679,13 +6223,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s215",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-21-4a",
-                "title": "House Match! 🏠",
+                "title": "House Match! 🏠 / Casa Pareja! 🏠",
                 "description": "¡Une cada cuarto de la casa!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -5714,7 +6258,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-21-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -5730,13 +6274,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s216",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-21-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -5772,30 +6316,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s217",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-21-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using My Awesome House 🏠."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Home Monster Boss",
+                                    bossTitle: "My Awesome House 🏠",
+                                    bossAvatar: "🏠",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to my awesome house 🏠.",
+                                      "Say one useful phrase for my awesome house 🏠."
+                                    ],
+                                      use: [
+                                      "Create one sentence about my awesome house 🏠 using family words.",
+                                      "Ask a friend one question about my awesome house 🏠."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about my awesome house 🏠.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to my awesome house 🏠."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s218",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-21-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgHouseRooms,
@@ -5803,7 +6379,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-21-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -5821,18 +6397,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-ba-3",
-        "title": "Clase 3: Zoom! Vehicles in Town 🚗",
+        "title": "Class 3: Zoom! Vehicles in Town 🚗 / Clase 3: Zoom! Vehicles in Town 🚗",
         "description": "¡Aprende cómo nos movemos por la ciudad increíble!",
         "sections": [
           {
             "id": "s220",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-22-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgVehiclesTown,
@@ -5840,7 +6416,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-22-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -5853,13 +6429,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s221",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-22-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🚗 CAR",
@@ -5873,7 +6449,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-22-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -5886,7 +6462,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-22-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -5902,13 +6478,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s222",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-22-2",
-                "title": "Vroom Vroom! 🚗",
+                "title": "Vroom Vroom! 🚗 / Vroom Vroom! 🚗",
                 "description": "¡Coge tu volante y maneja rápido!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgVehiclesTown,
@@ -5916,7 +6492,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-ba-3-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Rooms and places: decode the emoji story",
                     type: "emoji-game",
                     content: ["🛏️ + 🪑 + 🏠"],
@@ -5929,13 +6505,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s223",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-22-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -5946,13 +6522,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s224",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-22-3",
-                "title": "Vehicles Wheel! 🎡",
+                "title": "Vehicles Wheel! 🎡 / Vehicles Ruleta! 🎡",
                 "description": "¡Gira para elegir cómo viajamos hoy!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -5980,13 +6556,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s225",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-22-4a",
-                "title": "Vroom Match! 🧩",
+                "title": "Vroom Match! 🧩 / Vroom Pareja! 🧩",
                 "description": "¡Empareja los vehículos con su nombre!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -6015,7 +6591,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-22-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -6031,13 +6607,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s226",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-22-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -6073,30 +6649,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s227",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-22-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Zoom! Vehicles in Town 🚗."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Travel Monster Boss",
+                                    bossTitle: "Zoom! Vehicles in Town 🚗",
+                                    bossAvatar: "✈️",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to zoom! vehicles in town 🚗.",
+                                      "Say one useful phrase for zoom! vehicles in town 🚗."
+                                    ],
+                                      use: [
+                                      "Create one sentence about zoom! vehicles in town 🚗 using travel words.",
+                                      "Ask a friend one question about zoom! vehicles in town 🚗."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about zoom! vehicles in town 🚗.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to zoom! vehicles in town 🚗."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s228",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-22-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgVehiclesTown,
@@ -6104,7 +6712,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-22-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -6122,18 +6730,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-ba-4",
-        "title": "Clase 4: When I Grow Up! 👩‍⚕️",
+        "title": "Class 4: When I Grow Up! 👩‍⚕️ / Clase 4: When I Grow Up! 👩‍⚕️",
         "description": "¡Vamos a soñar con lo que queremos ser de grandes!",
         "sections": [
           {
             "id": "s230",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-23-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgJobs,
@@ -6141,7 +6749,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-23-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -6154,13 +6762,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s231",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-23-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "👩‍⚕️ DOCTOR",
@@ -6174,7 +6782,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-23-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -6187,7 +6795,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-23-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -6203,13 +6811,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s232",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-23-2",
-                "title": "Chef Hat On!",
+                "title": "Chef Hat On! / Chef Hat On!",
                 "description": "¡Ponte tu gorro de chef imaginario!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgJobs,
@@ -6217,7 +6825,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-ba-4-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Toys: decode the emoji story",
                     type: "emoji-game",
                     content: ["🧸 + 🎮 + ⭐"],
@@ -6230,13 +6838,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s233",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-23-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -6247,13 +6855,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s234",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-23-3",
-                "title": "Job Wheel! 🎡",
+                "title": "Job Wheel! 🎡 / Trabajos Ruleta! 🎡",
                 "description": "¡Gira la ruleta y dime qué quieres ser en el futuro!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -6281,13 +6889,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s235",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-23-4a",
-                "title": "Job Match! 🧩",
+                "title": "Job Match! 🧩 / Trabajos Pareja! 🧩",
                 "description": "¡Une el trabajo con su foto!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -6316,7 +6924,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-23-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -6332,13 +6940,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s236",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-23-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -6374,30 +6982,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s237",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-23-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using When I Grow Up! 👩‍⚕️."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "When I Grow Up! 👩‍⚕️",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to when i grow up! 👩‍⚕️.",
+                                      "Say one useful phrase for when i grow up! 👩‍⚕️."
+                                    ],
+                                      use: [
+                                      "Create one sentence about when i grow up! 👩‍⚕️ using keywords.",
+                                      "Ask a friend one question about when i grow up! 👩‍⚕️."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about when i grow up! 👩‍⚕️.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to when i grow up! 👩‍⚕️."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s238",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-23-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgJobs,
@@ -6405,7 +7045,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-23-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -6423,18 +7063,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-ba-5",
-        "title": "Clase 5: Make some Music! 🎸",
+        "title": "Class 5: Make some Music! 🎸 / Clase 5: Make some Music! 🎸",
         "description": "¡Toca todos los instrumentos en nuestra banda!",
         "sections": [
           {
             "id": "s240",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-24-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgHobbies,
@@ -6442,7 +7082,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-24-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -6455,13 +7095,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s241",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-24-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🎸 GUITAR",
@@ -6475,7 +7115,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-24-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -6488,7 +7128,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-24-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -6504,13 +7144,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s242",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-24-2",
-                "title": "Rock out! 🤘",
+                "title": "Rock out! 🤘 / Rock out! 🤘",
                 "description": "¡Toca tu guitarra invisible!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgHobbies,
@@ -6518,7 +7158,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-ba-5-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Music: decode the emoji story",
                     type: "emoji-game",
                     content: ["🎵 + 🎸 + 🎤"],
@@ -6531,13 +7171,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s243",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-24-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -6548,13 +7188,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s244",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-24-3",
-                "title": "Music Wheel! 🎡",
+                "title": "Music Wheel! 🎡 / Music Ruleta! 🎡",
                 "description": "Descubre qué instrumento tocarás hoy.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -6582,13 +7222,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s245",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-24-4a",
-                "title": "Instrument Match! 🎵",
+                "title": "Instrument Match! 🎵 / Instrument Pareja! 🎵",
                 "description": "Empareja el instrumento.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -6617,7 +7257,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-24-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -6633,13 +7273,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s246",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-24-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -6675,30 +7315,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s247",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-24-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Make some Music! 🎸."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Hobby Monster Boss",
+                                    bossTitle: "Make some Music! 🎸",
+                                    bossAvatar: "🎮",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to make some music! 🎸.",
+                                      "Say one useful phrase for make some music! 🎸."
+                                    ],
+                                      use: [
+                                      "Create one sentence about make some music! 🎸 using hobbies.",
+                                      "Ask a friend one question about make some music! 🎸."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about make some music! 🎸.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to make some music! 🎸."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s248",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-24-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgHobbies,
@@ -6706,7 +7378,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-24-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -6724,18 +7396,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-ba-6",
-        "title": "Clase 6: Days of the Week 📅",
+        "title": "Class 6: Days of the Week 📅 / Clase 6: Days of the Week 📅",
         "description": "¡Aprende los días para jugar de lunes a domingo!",
         "sections": [
           {
             "id": "s250",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-25-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgDailyRoutine,
@@ -6743,7 +7415,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-25-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -6756,13 +7428,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s251",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-25-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "📅 MONDAY",
@@ -6776,7 +7448,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-25-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -6789,7 +7461,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-25-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -6805,13 +7477,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s252",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-25-2",
-                "title": "Hooray for Sunday! 🎉",
+                "title": "Hooray for Sunday! 🎉 / Hooray for Sunday! 🎉",
                 "description": "¡Grita Hooray porque es fin de semana!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgDailyRoutine,
@@ -6819,7 +7491,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-ba-6-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Dates and birthdays: decode the emoji story",
                     type: "emoji-game",
                     content: ["📅 + 🎂 + ⭐"],
@@ -6832,13 +7504,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s253",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-25-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -6849,13 +7521,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s254",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-25-3",
-                "title": "Days Wheel! 🎡",
+                "title": "Days Wheel! 🎡 / Days Ruleta! 🎡",
                 "description": "Gira para ver qué día es hoy.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -6883,13 +7555,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s255",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-25-4a",
-                "title": "Match the Day! 🧩",
+                "title": "Match the Day! 🧩 / Pareja the Day! 🧩",
                 "description": "Une cada día (usa algunas abreviaturas).",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -6918,7 +7590,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-25-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -6934,13 +7606,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s256",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-25-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -6976,30 +7648,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s257",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-25-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Days of the Week 📅."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Days of the Week 📅",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to days of the week 📅.",
+                                      "Say one useful phrase for days of the week 📅."
+                                    ],
+                                      use: [
+                                      "Create one sentence about days of the week 📅 using keywords.",
+                                      "Ask a friend one question about days of the week 📅."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about days of the week 📅.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to days of the week 📅."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s258",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-25-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgDailyRoutine,
@@ -7007,7 +7711,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-25-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -7025,18 +7729,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-ba-7",
-        "title": "Clase 7: Let's Go Shopping! 🛒",
+        "title": "Class 7: Let's Go Shopping! 🛒 / Clase 7: Let's Go Shopping! 🛒",
         "description": "¡Acompáñanos al súpermercado a comprar!",
         "sections": [
           {
             "id": "s260",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-26-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgFoodDrinks,
@@ -7044,7 +7748,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-26-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -7057,13 +7761,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s261",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-26-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🛒 SUPERMARKET",
@@ -7077,7 +7781,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-26-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -7090,7 +7794,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-26-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -7106,13 +7810,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s262",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-26-2",
-                "title": "Push the Cart! 🛒",
+                "title": "Push the Cart! 🛒 / Push the Cart! 🛒",
                 "description": "¡Finge que empujas el carrito de compras!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgFoodDrinks,
@@ -7120,7 +7824,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-ba-7-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Directions: decode the emoji story",
                     type: "emoji-game",
                     content: ["🗺️ + ⬅️ + 🚌"],
@@ -7133,13 +7837,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s263",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-26-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -7150,13 +7854,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s264",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-26-3",
-                "title": "Shopping Wheel! 🎡",
+                "title": "Shopping Wheel! 🎡 / Compras Ruleta! 🎡",
                 "description": "Veamos qué meteremos en el carrito.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -7184,13 +7888,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s265",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-26-4a",
-                "title": "Cart Match! 🛒",
+                "title": "Cart Match! 🛒 / Cart Pareja! 🛒",
                 "description": "Une los productos que compramos.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -7219,7 +7923,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-26-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -7235,13 +7939,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s266",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-26-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -7277,30 +7981,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s267",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-26-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Let's Go Shopping! 🛒."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Discount Monster Boss",
+                                    bossTitle: "Let's Go Shopping! 🛒",
+                                    bossAvatar: "🛒",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to let's go shopping! 🛒.",
+                                      "Say one useful phrase for let's go shopping! 🛒."
+                                    ],
+                                      use: [
+                                      "Create one sentence about let's go shopping! 🛒 using shopping phrases.",
+                                      "Ask a friend one question about let's go shopping! 🛒."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about let's go shopping! 🛒.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to let's go shopping! 🛒."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s268",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-26-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgFoodDrinks,
@@ -7308,7 +8044,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-26-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -7326,18 +8062,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-ba-8",
-        "title": "Clase 8: Playground Fun! 🛝",
+        "title": "Class 8: Playground Fun! 🛝 / Clase 8: Playground Fun! 🛝",
         "description": "¡Vamos a divertirnos y jugar en el parque!",
         "sections": [
           {
             "id": "s270",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-27-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgKidsAction,
@@ -7345,7 +8081,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-27-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -7358,13 +8094,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s271",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-27-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🛝 SLIDE",
@@ -7378,7 +8114,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-27-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -7391,7 +8127,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-27-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -7407,13 +8143,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s272",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-27-2",
-                "title": "Slide down! 🛝",
+                "title": "Slide down! 🛝 / Slide down! 🛝",
                 "description": "¡Haz como si te deslizaras por un tobogán!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgKidsAction,
@@ -7421,7 +8157,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-ba-8-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Toys: decode the emoji story",
                     type: "emoji-game",
                     content: ["🧸 + 🎮 + ⭐"],
@@ -7434,13 +8170,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s273",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-27-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -7451,13 +8187,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s274",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-27-3",
-                "title": "Playground Wheel! 🎡",
+                "title": "Playground Wheel! 🎡 / Playground Ruleta! 🎡",
                 "description": "Gira para ver a dónde vamos a jugar.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -7485,13 +8221,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s275",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-27-4a",
-                "title": "Play Match! 🧩",
+                "title": "Play Match! 🧩 / Play Pareja! 🧩",
                 "description": "Une los juegos del parque.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -7520,7 +8256,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-27-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -7536,13 +8272,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s276",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-27-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -7578,30 +8314,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s277",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-27-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Playground Fun! 🛝."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Playground Fun! 🛝",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to playground fun! 🛝.",
+                                      "Say one useful phrase for playground fun! 🛝."
+                                    ],
+                                      use: [
+                                      "Create one sentence about playground fun! 🛝 using keywords.",
+                                      "Ask a friend one question about playground fun! 🛝."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about playground fun! 🛝.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to playground fun! 🛝."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s278",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-27-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgKidsAction,
@@ -7609,7 +8377,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-27-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -7799,25 +8567,25 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
   },
   {
     "id": "basic-champion",
-    "title": "Level 3 - Basic 3 (Kids Campeón)",
+    "title": "Level 3 - Basic 3 (Kids Campeón) / Level 3 - Basic 3 (Kids Campeón)",
     "duration": "2 meses",
     "objective": "Oraciones largas, hobbies, rutinas y espacio exterior.",
     "mcfrEquivalent": "A1.2",
     "classes": [
       {
         "id": "c-bc-1",
-        "title": "Clase 1: My Daily Routine ⏰",
+        "title": "Class 1: My Daily Routine ⏰ / Clase 1: My Daily Routine ⏰",
         "description": "¡Vamos a ver qué hacemos desde que nos despertamos hasta dormir!",
         "sections": [
           {
             "id": "s300",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-30-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgDailyRoutine,
@@ -7825,7 +8593,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-30-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -7838,13 +8606,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s301",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-30-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "☀️ WAKE UP",
@@ -7858,7 +8626,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-30-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -7871,7 +8639,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-30-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -7887,13 +8655,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s302",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-30-2",
-                "title": "Big Yawn! 🥱",
+                "title": "Big Yawn! 🥱 / Big Yawn! 🥱",
                 "description": "¡Bosteza y estírate muy largo!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgDailyRoutine,
@@ -7901,7 +8669,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bc-1-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Daily routine: decode the emoji story",
                     type: "emoji-game",
                     content: ["☀️ + 🚿 + 🍳"],
@@ -7914,13 +8682,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s303",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-30-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -7931,13 +8699,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s304",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-30-3",
-                "title": "Time Wheel! 🎡",
+                "title": "Time Wheel! 🎡 / Hora Ruleta! 🎡",
                 "description": "¡Gira la ruleta y forma una oración!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -7965,13 +8733,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s305",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-30-4a",
-                "title": "Routine Match! 🧩",
+                "title": "Routine Match! 🧩 / Routine Pareja! 🧩",
                 "description": "Une la acción con su momento del día.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -8000,7 +8768,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-30-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -8016,13 +8784,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s306",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-30-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -8058,30 +8826,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s307",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-30-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using My Daily Routine ⏰."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "My Daily Routine ⏰",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to my daily routine ⏰.",
+                                      "Say one useful phrase for my daily routine ⏰."
+                                    ],
+                                      use: [
+                                      "Create one sentence about my daily routine ⏰ using keywords.",
+                                      "Ask a friend one question about my daily routine ⏰."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about my daily routine ⏰.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to my daily routine ⏰."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s308",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-30-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgDailyRoutine,
@@ -8089,7 +8889,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-30-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -8107,18 +8907,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bc-2",
-        "title": "Clase 2: Fun Hobbies & Sports! ⚽️",
+        "title": "Class 2: Fun Hobbies & Sports! ⚽️ / Clase 2: Fun Hobbies & Sports! ⚽️",
         "description": "¡Vamos a hablar de lo que más nos gusta hacer!",
         "sections": [
           {
             "id": "s310",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-31-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgHobbies,
@@ -8126,7 +8926,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-31-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -8139,13 +8939,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s311",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-31-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "⚽ SOCCER",
@@ -8159,7 +8959,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-31-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -8172,7 +8972,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-31-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -8188,13 +8988,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s312",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-31-2",
-                "title": "Kick! ⚽",
+                "title": "Kick! ⚽ / Kick! ⚽",
                 "description": "¡Patea el balón súper fuerte imaginariamente!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgHobbies,
@@ -8202,7 +9002,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bc-2-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Likes and hobbies: decode the emoji story",
                     type: "emoji-game",
                     content: ["🎵 + 🎮 + ❤️"],
@@ -8215,13 +9015,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s313",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-31-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -8232,13 +9032,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s314",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-31-3",
-                "title": "Hobby Wheel! 🎡",
+                "title": "Hobby Wheel! 🎡 / Hobby Ruleta! 🎡",
                 "description": "¡Gira la ruleta y haz la mímica!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -8266,13 +9066,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s315",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-31-4a",
-                "title": "I Like to... 🧩",
+                "title": "I Like to... 🧩 / I Like to... 🧩",
                 "description": "¡Empareja tu pasatiempo favorito!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -8301,7 +9101,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-31-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -8317,13 +9117,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s316",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-31-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -8359,30 +9159,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s317",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-31-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Fun Hobbies & Sports! ⚽️."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Hobby Monster Boss",
+                                    bossTitle: "Fun Hobbies & Sports! ⚽️",
+                                    bossAvatar: "🎮",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to fun hobbies & sports! ⚽️.",
+                                      "Say one useful phrase for fun hobbies & sports! ⚽️."
+                                    ],
+                                      use: [
+                                      "Create one sentence about fun hobbies & sports! ⚽️ using hobbies.",
+                                      "Ask a friend one question about fun hobbies & sports! ⚽️."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about fun hobbies & sports! ⚽️.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to fun hobbies & sports! ⚽️."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s318",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-31-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgHobbies,
@@ -8390,7 +9222,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-31-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -8408,18 +9240,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bc-3",
-        "title": "Clase 3: Happy Holidays! 🎄",
+        "title": "Class 3: Happy Holidays! 🎄 / Clase 3: Happy Holidays! 🎄",
         "description": "¡Aprenderemos cómo celebramos los días felices!",
         "sections": [
           {
             "id": "s320",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-32-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgHolidays,
@@ -8427,7 +9259,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-32-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -8440,13 +9272,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s321",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-32-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🎄 CHRISTMAS",
@@ -8460,7 +9292,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-32-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -8473,7 +9305,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-32-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -8489,13 +9321,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s322",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-32-2",
-                "title": "Blow Candles! 🎂",
+                "title": "Blow Candles! 🎂 / Blow Candles! 🎂",
                 "description": "¡Sopla las velitas de tu pastel!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgHolidays,
@@ -8503,7 +9335,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bc-3-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Technology: decode the emoji story",
                     type: "emoji-game",
                     content: ["📱 + 💻 + 🎮"],
@@ -8516,13 +9348,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s323",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-32-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -8533,13 +9365,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s324",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-32-3",
-                "title": "Party Wheel! 🎡",
+                "title": "Party Wheel! 🎡 / Party Ruleta! 🎡",
                 "description": "¡Gira la ruleta y dime qué comes en esta fiesta!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -8567,13 +9399,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s325",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-32-4a",
-                "title": "Holiday Match! 🧩",
+                "title": "Holiday Match! 🧩 / Holiday Pareja! 🧩",
                 "description": "Une la festividad con lo que la representa.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -8602,7 +9434,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-32-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -8618,13 +9450,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s326",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-32-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -8660,30 +9492,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s327",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-32-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Happy Holidays! 🎄."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Gadget Monster Boss",
+                                    bossTitle: "Happy Holidays! 🎄",
+                                    bossAvatar: "📱",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to happy holidays! 🎄.",
+                                      "Say one useful phrase for happy holidays! 🎄."
+                                    ],
+                                      use: [
+                                      "Create one sentence about happy holidays! 🎄 using technology words.",
+                                      "Ask a friend one question about happy holidays! 🎄."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about happy holidays! 🎄.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to happy holidays! 🎄."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s328",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-32-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgHolidays,
@@ -8691,7 +9555,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-32-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -8709,18 +9573,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bc-4",
-        "title": "Clase 4: Outer Space Adventure! 🚀",
+        "title": "Class 4: Outer Space Adventure! 🚀 / Clase 4: Outer Space Adventure! 🚀",
         "description": "¡Viaja con nosotros hasta las estrellas y la luna!",
         "sections": [
           {
             "id": "s330",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-33-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgSpace,
@@ -8728,7 +9592,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-33-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -8741,13 +9605,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s331",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-33-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🚀 ROCKET",
@@ -8761,7 +9625,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-33-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -8774,7 +9638,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-33-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -8790,13 +9654,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s332",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-33-2",
-                "title": "Blast Off! 🚀",
+                "title": "Blast Off! 🚀 / Blast Off! 🚀",
                 "description": "¡Cuenta 5, 4, 3, 2, 1, Despegue!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgSpace,
@@ -8804,7 +9668,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bc-4-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Space: decode the emoji story",
                     type: "emoji-game",
                     content: ["🚀 + 🪐 + 👽"],
@@ -8817,13 +9681,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s333",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-33-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -8834,13 +9698,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s334",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-33-3",
-                "title": "Orbit Wheel! 🎡",
+                "title": "Orbit Wheel! 🎡 / Orbit Ruleta! 🎡",
                 "description": "¡Gira la ruleta divertida a ver dónde aterrizas!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -8868,13 +9732,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s335",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-33-4a",
-                "title": "Space Match! 🧩",
+                "title": "Space Match! 🧩 / Space Pareja! 🧩",
                 "description": "¡Une el dibujo del espacio con su nombre!",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -8903,7 +9767,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-33-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -8919,13 +9783,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s336",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-33-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -8961,30 +9825,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s337",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-33-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Outer Space Adventure! 🚀."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Outer Space Adventure! 🚀",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to outer space adventure! 🚀.",
+                                      "Say one useful phrase for outer space adventure! 🚀."
+                                    ],
+                                      use: [
+                                      "Create one sentence about outer space adventure! 🚀 using keywords.",
+                                      "Ask a friend one question about outer space adventure! 🚀."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about outer space adventure! 🚀.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to outer space adventure! 🚀."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s338",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-33-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgSpace,
@@ -8992,7 +9888,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-33-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -9010,18 +9906,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bc-5",
-        "title": "Clase 5: Awesome Fairy Tales! 🧚",
+        "title": "Class 5: Awesome Fairy Tales! 🧚 / Clase 5: Awesome Fairy Tales! 🧚",
         "description": "¡Conoce caballeros, dragones y princesas en inglés!",
         "sections": [
           {
             "id": "s340",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-34-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgMonster,
@@ -9029,7 +9925,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-34-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -9042,13 +9938,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s341",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-34-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🧚 FAIRY",
@@ -9062,7 +9958,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-34-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -9075,7 +9971,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-34-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -9091,13 +9987,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s342",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-34-2",
-                "title": "Dragon Breath! 🐉",
+                "title": "Dragon Breath! 🐉 / Dragon Breath! 🐉",
                 "description": "¡Respira fuego como un dragón gigante!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgMonster,
@@ -9105,7 +10001,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bc-5-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Stories: decode the emoji story",
                     type: "emoji-game",
                     content: ["📖 + 🪄 + ⭐"],
@@ -9118,13 +10014,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s343",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-34-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -9135,13 +10031,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s344",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-34-3",
-                "title": "Tales Wheel! 🎡",
+                "title": "Tales Wheel! 🎡 / Tales Ruleta! 🎡",
                 "description": "Encuentra el personaje de tu cuento.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -9169,13 +10065,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s345",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-34-4a",
-                "title": "Tale Match! 🏰",
+                "title": "Tale Match! 🏰 / Tale Pareja! 🏰",
                 "description": "Une a los personajes increíbles.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -9204,7 +10100,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-34-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -9220,13 +10116,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s346",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-34-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -9262,30 +10158,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s347",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-34-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Awesome Fairy Tales! 🧚."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Awesome Fairy Tales! 🧚",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to awesome fairy tales! 🧚.",
+                                      "Say one useful phrase for awesome fairy tales! 🧚."
+                                    ],
+                                      use: [
+                                      "Create one sentence about awesome fairy tales! 🧚 using keywords.",
+                                      "Ask a friend one question about awesome fairy tales! 🧚."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about awesome fairy tales! 🧚.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to awesome fairy tales! 🧚."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s348",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-34-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgMonster,
@@ -9293,7 +10221,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-34-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -9311,18 +10239,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bc-6",
-        "title": "Clase 6: The 4 Seasons! ❄️",
+        "title": "Class 6: The 4 Seasons! ❄️ / Clase 6: The 4 Seasons! ❄️",
         "description": "¡Descubre la primavera, el verano, otoño y el invierno!",
         "sections": [
           {
             "id": "s350",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-35-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgNature,
@@ -9330,7 +10258,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-35-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -9343,13 +10271,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s351",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-35-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🌺 SPRING",
@@ -9363,7 +10291,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-35-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -9376,7 +10304,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-35-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -9392,13 +10320,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s352",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-35-2",
-                "title": "Shiver in Winter! ❄️",
+                "title": "Shiver in Winter! ❄️ / Shiver in Winter! ❄️",
                 "description": "¡Finge que tienes mucho, mucho frío!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgNature,
@@ -9406,7 +10334,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bc-6-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Weather: decode the emoji story",
                     type: "emoji-game",
                     content: ["🌧️ + 🧥 + 🌳"],
@@ -9419,13 +10347,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s353",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-35-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -9436,13 +10364,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s354",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-35-3",
-                "title": "Season Wheel! 🎡",
+                "title": "Season Wheel! 🎡 / Season Ruleta! 🎡",
                 "description": "Gira para ver qué estación del año es.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -9470,13 +10398,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s355",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-35-4a",
-                "title": "Season Match! ❄️",
+                "title": "Season Match! ❄️ / Season Pareja! ❄️",
                 "description": "Encuentra la palabra de la estación.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -9505,7 +10433,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-35-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -9521,13 +10449,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s356",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-35-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -9563,30 +10491,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s357",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-35-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using The 4 Seasons! ❄️."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "The 4 Seasons! ❄️",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to the 4 seasons! ❄️.",
+                                      "Say one useful phrase for the 4 seasons! ❄️."
+                                    ],
+                                      use: [
+                                      "Create one sentence about the 4 seasons! ❄️ using keywords.",
+                                      "Ask a friend one question about the 4 seasons! ❄️."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about the 4 seasons! ❄️.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to the 4 seasons! ❄️."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s358",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-35-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgNature,
@@ -9594,7 +10554,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-35-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -9612,18 +10572,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bc-7",
-        "title": "Clase 7: Be a Helper! 🤝",
+        "title": "Class 7: Be a Helper! 🤝 / Clase 7: Be a Helper! 🤝",
         "description": "¡Aprende cómo ayudar en casa y a tus amigos!",
         "sections": [
           {
             "id": "s360",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-36-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgKidsAction,
@@ -9631,7 +10591,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-36-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -9644,13 +10604,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s361",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-36-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🤝 HELP",
@@ -9664,7 +10624,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-36-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -9677,7 +10637,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-36-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -9693,13 +10653,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s362",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-36-2",
-                "title": "Share a Toy! 🧸",
+                "title": "Share a Toy! 🧸 / Share a Toy! 🧸",
                 "description": "¡Finge que le das tu juguete a un amigo!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgKidsAction,
@@ -9707,7 +10667,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bc-7-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Helping at home: decode the emoji story",
                     type: "emoji-game",
                     content: ["🧹 + 🏠 + 👍"],
@@ -9720,13 +10680,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s363",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-36-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -9737,13 +10697,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s364",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-36-3",
-                "title": "Help Wheel! 🎡",
+                "title": "Help Wheel! 🎡 / Help Ruleta! 🎡",
                 "description": "Cae en una acción y mímala.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -9771,13 +10731,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s365",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-36-4a",
-                "title": "Helper Match! 🧩",
+                "title": "Helper Match! 🧩 / Helper Pareja! 🧩",
                 "description": "Une cada buena acción.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -9806,7 +10766,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-36-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -9822,13 +10782,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s366",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-36-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -9864,30 +10824,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s367",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-36-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Be a Helper! 🤝."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Be a Helper! 🤝",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to be a helper! 🤝.",
+                                      "Say one useful phrase for be a helper! 🤝."
+                                    ],
+                                      use: [
+                                      "Create one sentence about be a helper! 🤝 using keywords.",
+                                      "Ask a friend one question about be a helper! 🤝."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about be a helper! 🤝.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to be a helper! 🤝."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s368",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-36-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgKidsAction,
@@ -9895,7 +10887,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-36-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",
@@ -9913,18 +10905,18 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         "id": "c-bc-8",
-        "title": "Clase 8: Around the World! 🌍",
+        "title": "Class 8: Around the World! 🌍 / Clase 8: Around the World! 🌍",
         "description": "¡Viajaremos por todo el planeta a visitar nuevos países!",
         "sections": [
           {
             "id": "s370",
-            "title": "1. Hello & Warm Up! 🌞",
+            "title": "1. Hello & Warm Up! 🌞 / 1. Hola y Warm Up! 🌞",
             "duration": "5 minutos",
             "objective": "Saludar y despertar nuestra energía.",
             "slides": [
               {
                 "id": "kids-37-0a",
-                "title": "Hello my friend! 👋",
+                "title": "Hello my friend! 👋 / Hola my friend! 👋",
                 "description": "¡Hola! ¿Cómo te sientes hoy?",
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
                 "imageUrl": imgSpace,
@@ -9932,7 +10924,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-37-0b",
-                "title": "Magic Warm-up Wheel",
+                "title": "Magic Warm-up Wheel / Ruleta Mágica de Calentamiento",
                 "description": "Spin and answer one easy question.",
                 "bgColor": "bg-gradient-to-br from-rose-400 to-red-500",
                 "imageUrl": imgWarmUp,
@@ -9945,13 +10937,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s371",
-            "title": "2. Let's Learn! 🌟",
+            "title": "2. Let's Learn! 🌟 / 2. Vamos a Learn! 🌟",
             "duration": "10 minutos",
             "objective": "Aprender el vocabulario principal jugando.",
             "slides": [
               {
                 "id": "kids-37-1a",
-                "title": "Listen & Repeat! 🗣️",
+                "title": "Listen & Repeat! 🗣️ / Escuchar y Repetir! 🗣️",
                 "description": "Vamos a aprender palabras geniales:",
                 "content": [
                   "🌍 WORLD",
@@ -9965,7 +10957,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-37-1b",
-                "title": "Say it Loud! 📣",
+                "title": "Say it Loud! 📣 / Say it Loud! 📣",
                 "description": "¡Grita las palabras lo más fuerte que puedas!",
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
                 "content": [
@@ -9978,7 +10970,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-37-1c",
-                "title": "Say it Quiet... 🤫",
+                "title": "Say it Quiet... 🤫 / Dilo Bajito... 🤫",
                 "description": "Ahora susurra las palabras como un ratoncito.",
                 "bgColor": "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                 "content": [
@@ -9994,13 +10986,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s372",
-            "title": "3. Action Time! ⚡",
+            "title": "3. Action Time! ⚡ / 3. Acciones Hora! ⚡",
             "duration": "5 minutos",
             "objective": "Relacionar el vocabulario con movimiento corporal.",
             "slides": [
               {
                 "id": "kids-37-2",
-                "title": "Look far away! 🧭",
+                "title": "Look far away! 🧭 / Look far away! 🧭",
                 "description": "¡Pon tu mano en la frente como si miraras lejos!",
                 "bgColor": "bg-gradient-to-br from-teal-400 to-emerald-500",
                 "imageUrl": imgSpace,
@@ -10008,7 +11000,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                     id: "c-bc-8-emoji-mission",
-                    title: "Emoji Mission",
+                    title: "Emoji Mission / Misión Emoji",
                     description: "Countries and travel: decode the emoji story",
                     type: "emoji-game",
                     content: ["🌍 + 🚩 + ✈️"],
@@ -10021,13 +11013,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s373",
-            "title": "4. Video Time! 🎥",
+            "title": "4. Video Time! 🎥 / 4. Video Hora! 🎥",
             "duration": "10 minutos",
             "objective": "Ver un divertido video en inglés para practicar.",
             "slides": [
               {
                 "id": "kids-37-vid",
-                "title": "Let's Watch! 📺",
+                "title": "Let's Watch! 📺 / Vamos a Ver! 📺",
                 "description": "¡Mira este divertido video y canta con nosotros!",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "video",
@@ -10038,13 +11030,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s374",
-            "title": "5. Wheel of Fun! 🎡",
+            "title": "5. Wheel of Fun! 🎡 / 5. Ruleta de Divertido! 🎡",
             "duration": "10 minutos",
             "objective": "Repasar las palabras al azar girando la ruleta.",
             "slides": [
               {
                 "id": "kids-37-3",
-                "title": "World Wheel! 🎡",
+                "title": "World Wheel! 🎡 / World Ruleta! 🎡",
                 "description": "Gira para ver a dónde viajamos.",
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-500",
                 "type": "spinning-wheel",
@@ -10072,13 +11064,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s375",
-            "title": "6. Find the Match! 🧩",
+            "title": "6. Find the Match! 🧩 / 6. Find the Pareja! 🧩",
             "duration": "10 minutos",
             "objective": "Consolidar lo aprendido uniendo parejas visuales.",
             "slides": [
               {
                 "id": "kids-37-4a",
-                "title": "Travel Match! 🌍",
+                "title": "Travel Match! 🌍 / Viajes Pareja! 🌍",
                 "description": "Une los objetos para viajar.",
                 "bgColor": "bg-gradient-to-br from-lime-400 to-green-500",
                 "type": "matching-game",
@@ -10107,7 +11099,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-37-4b",
-                "title": "Super Memory! 🧠",
+                "title": "Super Memory! 🧠 / Super Memory! 🧠",
                 "description": "¿Puedes recordar cómo se dicen estas palabras en inglés?",
                 "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
                 "type": "speaking",
@@ -10123,13 +11115,13 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s376",
-            "title": "7. Rompecabezas 🧩",
+            "title": "7. Rompecabezas 🧩 / 7. Rompecabezas 🧩",
             "duration": "5 minutos",
             "objective": "Repasar el vocabulario pidiendo un número.",
             "slides": [
               {
                 "id": "kids-37-puzzle",
-                "title": "Mystery Puzzle! 🧩",
+                "title": "Mystery Puzzle! 🧩 / Mystery Rompecabezas! 🧩",
                 "description": "¡Dime un número para descubrir qué hay detrás!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-indigo-500",
                 "type": "mystery-puzzle",
@@ -10165,30 +11157,62 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
           },
           {
             "id": "s377",
-            "title": "8. Show & Tell! 🎨",
+            "title": "8. Show & Tell! 🎨 / 8. Show y Tell! 🎨",
             "duration": "5 minutos",
             "objective": "Practicar producción oral libre con premios.",
             "slides": [
               {
                 "id": "kids-37-5a",
-                "title": "Show and Tell! 🎈",
+                "title": "Show and Tell! 🎈 / Show y Tell! 🎈",
                 "description": "¡Trae algo de tu casa relacionado con la clase (un juguete, ropa, dibujo) y muéstralo!",
                 "bgColor": "bg-gradient-to-br from-cyan-400 to-blue-500",
                 "imageUrl": imgShowAndTell,
                 "type": "scavenger-hunt"
-              }
+              },
+                {
+                                  id: "slide-boss-battle",
+                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  description: "Defeat the boss with today's English.",
+                                  type: "speaking-boss-battle",
+                                  content: ["Defeat the boss using Around the World! 🌍."],
+                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  speakingBossBattle: {
+                                    bossName: "The Super English Monster Boss",
+                                    bossTitle: "Around the World! 🌍",
+                                    bossAvatar: "⭐",
+                                    timerSeconds: 30,
+                                    rounds: {
+                                      remember: [
+                                      "Say three words connected to around the world! 🌍.",
+                                      "Say one useful phrase for around the world! 🌍."
+                                    ],
+                                      use: [
+                                      "Create one sentence about around the world! 🌍 using keywords.",
+                                      "Ask a friend one question about around the world! 🌍."
+                                    ],
+                                      speak: [
+                                      "Speak for 30 seconds about around the world! 🌍.",
+                                      "Include one example, one opinion, and one class phrase."
+                                    ],
+                                      memoryBonus: [
+                                      "Use one word or structure from a previous class.",
+                                      "Connect it naturally to around the world! 🌍."
+                                    ]
+                                    }
+                                  }
+                                }
             ],
             "action": "Da una estrella o premio virtual imaginario por el esfuerzo."
           },
           {
             "id": "s378",
-            "title": "9. Homework & Goodbye! 📝",
+            "title": "9. Homework & Goodbye! 📝 / 9. Tarea y Goodbye! 📝",
             "duration": "5 minutos",
             "objective": "Explicar la tarea para la próxima clase.",
             "slides": [
               {
                 "id": "kids-37-5b",
-                "title": "Great Job! 🏆",
+                "title": "Great Job! 🏆 / Great Trabajos! 🏆",
                 "description": "¡Lo hiciste increíble hoy! Bye bye, see you next class!",
                 "bgColor": "bg-gradient-to-br from-fuchsia-400 to-pink-500",
                 "imageUrl": imgSpace,
@@ -10196,7 +11220,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
               {
                 "id": "kids-37-hw",
-                "title": "Video Homework ??",
+                "title": "Video Homework ?? / Tarea en Video ??",
                 "description": "Para la próxima clase, no olvides tu misión:",
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-500",
                 "type": "video",

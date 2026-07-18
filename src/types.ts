@@ -55,11 +55,23 @@ export interface ClassSlide {
   bgColor?: string;
   options?: string[];
   correctOptionIndex?: number;
-  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle';
+  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle';
   videoUrl?: string; // e.g. youtube embed url
   wheelItems?: { label: string; color: string; prompt?: string; es?: string }[];
   matchingPairs?: { left: string; right: string; id: string }[];
   mysteryPuzzleData?: { target: string; imageUrl?: string; emoji?: string; panels: { id: number; label: string; color: string }[] };
+  speakingBossBattle?: {
+    bossName: string;
+    bossTitle?: string;
+    bossAvatar?: string;
+    timerSeconds?: number;
+    rounds: {
+      remember: string[];
+      use: string[];
+      speak: string[];
+      memoryBonus: string[];
+    };
+  };
 }
 
 export interface ClassSection {
