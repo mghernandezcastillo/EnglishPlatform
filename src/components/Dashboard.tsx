@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { CurriculumClass } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy } from 'lucide-react';
+import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces } from 'lucide-react';
 import { studentConfig, avatars } from '../config';
 import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
@@ -21,11 +21,13 @@ interface DashboardProps {
   onFinishClass: (classId: string) => void;
   onToggleClass?: (classId: string) => void;
   onOpenAssessment: () => void;
+  onOpenEntranceAssessment: () => void;
   onOpenSpeakingPractice: () => void;
   onOpenStoryForge: () => void;
+  onOpenStructureMode: () => void;
 }
 
-export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenSpeakingPractice, onOpenStoryForge }: DashboardProps) {
+export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryForge, onOpenStructureMode }: DashboardProps) {
   const { curriculumLevels, loading } = useCurriculum(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
@@ -75,7 +77,7 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
   };
 
   return (
-    <div className={`max-w-5xl mx-auto py-8 px-4 sm:px-6 ${isKid ? 'bg-gradient-to-br from-yellow-50 via-cyan-50 to-pink-50 min-h-screen rounded-[3rem] shadow-inner p-8 border-4 border-yellow-200' : ''}`}>
+    <div className={`max-w-7xl mx-auto py-8 px-4 sm:px-6 ${isKid ? 'bg-gradient-to-br from-yellow-50 via-cyan-50 to-pink-50 min-h-screen rounded-[3rem] shadow-inner p-8 border-4 border-yellow-200' : ''}`}>
       
       {/* Brand Header */}
       <div className="flex items-center justify-center sm:justify-start gap-4 mb-8">
@@ -86,51 +88,77 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
       </div>
 
       {/* Student Profile Header */}
-      <div className={`flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-8 p-6 sm:p-8 rounded-[2rem] shadow-sm ${isKid ? 'bg-white border-4 border-pink-200 shadow-pink-100/50 shadow-xl relative overflow-hidden' : 'bg-white border border-indigo-50'}`}>
+      <div className={`grid grid-cols-1 gap-6 mb-8 p-5 sm:p-6 lg:grid-cols-[auto_1fr] lg:items-start rounded-[2rem] shadow-sm ${isKid ? 'bg-white border-4 border-pink-200 shadow-pink-100/50 shadow-xl relative overflow-hidden' : 'bg-white border border-indigo-50'}`}>
         {isKid && (
           <>
             <div className="absolute top-[-20px] right-[-20px] text-6xl opacity-20 transform rotate-12">🌟</div>
             <div className="absolute bottom-[-10px] left-[20%] text-5xl opacity-20 transform -rotate-12">🚀</div>
           </>
         )}
-        <img referrerPolicy="no-referrer" src={displayAvatarUrl} alt={displayStudentName} className={`w-24 h-24 object-cover rounded-full shadow-md transform rotate-3 ${isKid ? 'border-4 border-yellow-400 w-32 h-32 shadow-yellow-200/50' : 'border-4 border-indigo-100'}`} />
-        <div className="text-center sm:text-left flex-1 relative z-10">
-          <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2 ${isKid ? 'bg-cyan-100 border-2 border-cyan-200' : 'bg-indigo-50'}`}>
-             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-             <span className={`text-xs font-bold uppercase tracking-widest ${isKid ? 'text-cyan-800' : 'text-indigo-700'}`}>{userLevel}</span>
+        <div className="relative z-10 flex flex-col items-center gap-3 sm:flex-row lg:flex-col lg:items-center">
+          <img referrerPolicy="no-referrer" src={displayAvatarUrl} alt={displayStudentName} className={`w-24 h-24 object-cover rounded-full shadow-md transform rotate-3 ${isKid ? 'border-4 border-yellow-400 w-32 h-32 shadow-yellow-200/50' : 'border-4 border-indigo-100'}`} />
+          <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full ${isKid ? 'bg-cyan-100 border-2 border-cyan-200' : 'bg-indigo-50'}`}>
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            <span className={`text-xs font-bold uppercase tracking-widest ${isKid ? 'text-cyan-800' : 'text-indigo-700'}`}>{userLevel}</span>
           </div>
-          <h2 className={`text-3xl font-extrabold tracking-tight ${isKid ? 'text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 text-4xl drop-shadow-sm' : 'text-gray-800'}`}>¡Hola, {displayStudentName}! 👋</h2>
-          <p className={`font-medium mt-2 ${isKid ? 'text-pink-600 text-lg' : 'text-gray-500'}`}>{studentConfig.motivation}</p>
         </div>
-        <div className="shrink-0 flex flex-col sm:flex-row items-center justify-center gap-3 relative z-10">
+
+        <div className="relative z-10 min-w-0">
+          <div className="mb-5 text-center lg:text-left">
+            <h2 className={`text-3xl font-extrabold tracking-tight sm:text-4xl ${isKid ? 'text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 drop-shadow-sm' : 'text-gray-800'}`}>¡Hola, {displayStudentName}! 👋</h2>
+            <p className={`font-medium mt-2 ${isKid ? 'text-pink-600 text-lg' : 'text-gray-500'}`}>{studentConfig.motivation}</p>
+          </div>
+
+        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-5">
+          <button
+             onClick={onOpenStructureMode}
+             className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-slate-950 via-indigo-700 to-cyan-500"
+          >
+             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
+               <Braces className="w-5 h-5 text-white" />
+               <span className="font-bold text-white tracking-wide">Modo Estructuras</span>
+             </div>
+          </button>
+          <button
+             onClick={onOpenEntranceAssessment}
+             className={`group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-lime-400 via-cyan-400 to-blue-500 hover:shadow-cyan-300/50' : isTeen ? 'bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-500' : 'bg-gradient-to-br from-slate-900 via-indigo-700 to-cyan-600'}`}
+          >
+             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
+               <ClipboardCheck className="w-5 h-5 text-white" />
+               <span className="font-bold text-white tracking-wide">{isKid ? 'Examen de Ingreso Kids' : isTeen ? 'Examen de Ingreso Teens' : 'Examen de Ingreso'}</span>
+             </div>
+          </button>
           <button 
              onClick={onOpenSpeakingPractice}
-             className={`w-full sm:w-auto relative overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-105 active:scale-95 ${isKid ? 'bg-gradient-to-br from-cyan-400 to-blue-500 hover:shadow-cyan-300/50' : 'bg-gradient-to-br from-indigo-500 to-blue-600'}`}
+             className={`relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-cyan-400 to-blue-500 hover:shadow-cyan-300/50' : 'bg-gradient-to-br from-indigo-500 to-blue-600'}`}
           >
              <div className="absolute inset-0 bg-white/20 hover:bg-transparent transition-colors"></div>
-             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
                <span className="font-bold text-white tracking-wide">{isKid ? '🎤 ¡Vamos a Hablar!' : '🎙️ Práctica Speaking'}</span>
              </div>
           </button>
           <button 
              onClick={onOpenStoryForge}
-             className={`w-full sm:w-auto relative overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-105 active:scale-95 ${isKid ? 'bg-gradient-to-br from-fuchsia-400 to-pink-500 hover:shadow-fuchsia-300/50' : 'bg-gradient-to-br from-fuchsia-500 to-purple-600'}`}
+             className={`relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-fuchsia-400 to-pink-500 hover:shadow-fuchsia-300/50' : 'bg-gradient-to-br from-fuchsia-500 to-purple-600'}`}
           >
              <div className="absolute inset-0 bg-white/20 hover:bg-transparent transition-colors"></div>
-             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
                <span className="font-bold text-white tracking-wide">{isKid ? '✨ ¡Crea un Cuento!' : '✨ StoryForge'}</span>
              </div>
           </button>
           <button 
              onClick={onOpenAssessment}
-             className={`w-full sm:w-auto group relative overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-105 active:scale-95 ${isKid ? 'bg-gradient-to-br from-yellow-400 to-orange-500 hover:shadow-orange-300/50' : 'bg-gradient-to-br from-amber-400 to-orange-500'}`}
+             className={`group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-yellow-400 to-orange-500 hover:shadow-orange-300/50' : 'bg-gradient-to-br from-amber-400 to-orange-500'}`}
           >
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
-             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl border border-white/20">
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
                <Sparkles className="w-5 h-5 text-white" />
                <span className="font-bold text-white tracking-wide">{isKid ? '✨ ¡Súper Juego!' : 'Evaluación Inicial'}</span>
              </div>
           </button>
+        </div>
         </div>
       </div>
 

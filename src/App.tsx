@@ -3,9 +3,11 @@ import { User, Settings, Image as ImageIcon } from 'lucide-react';
 import { Dashboard } from './components/Dashboard';
 import { LessonPlayer } from './components/LessonPlayer';
 import { Assessment } from './components/Assessment';
+import { EntranceAssessment } from './components/EntranceAssessment';
 import { FloatingControls } from './components/FloatingControls';
 import { SpeakingPractice } from './components/SpeakingPractice';
 import { StoryForge } from './components/StoryForge';
+import { StructureMode } from './components/StructureMode';
 import { RoleSelection } from './components/RoleSelection';
 import { TeacherDashboard } from './components/TeacherDashboard';
 import { VirtualEvaluationView } from './components/VirtualEvaluationView';
@@ -66,7 +68,7 @@ export default function App() {
     setIsLoaded(true);
   }, [role]);
 
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'speaking_practice' | 'story_forge'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
   // Save progress when it changes
@@ -156,12 +158,20 @@ export default function App() {
     setCurrentView('assessment');
   };
 
+  const handleOpenEntranceAssessment = () => {
+    setCurrentView('entrance_assessment');
+  };
+
   const handleOpenStoryForge = () => {
     setCurrentView('story_forge');
   };
 
   const handleOpenSpeakingPractice = () => {
     setCurrentView('speaking_practice');
+  };
+
+  const handleOpenStructureMode = () => {
+    setCurrentView('structure_mode');
   };
 
   const handleCloseAssessment = (newLevel?: string) => {
@@ -387,10 +397,14 @@ export default function App() {
         />
       ) : currentView === 'assessment' ? (
         <Assessment progress={progress} onClose={handleCloseAssessment} />
+      ) : currentView === 'entrance_assessment' ? (
+        <EntranceAssessment progress={progress} onClose={handleCloseAssessment} />
       ) : currentView === 'story_forge' ? (
         <StoryForge onClose={() => setCurrentView('dashboard')} />
       ) : currentView === 'speaking_practice' ? (
         <SpeakingPractice onClose={() => setCurrentView('dashboard')} />
+      ) : currentView === 'structure_mode' ? (
+        <StructureMode onClose={() => setCurrentView('dashboard')} />
       ) : (
           <Dashboard 
           completedLessonIds={progress.completedLessons}
@@ -402,8 +416,10 @@ export default function App() {
           onFinishClass={handleFinishClass}
           onToggleClass={handleToggleClass}
           onOpenAssessment={handleOpenAssessment}
+          onOpenEntranceAssessment={handleOpenEntranceAssessment}
           onOpenSpeakingPractice={handleOpenSpeakingPractice}
           onOpenStoryForge={handleOpenStoryForge}
+          onOpenStructureMode={handleOpenStructureMode}
         />
       )}
       <FloatingControls />

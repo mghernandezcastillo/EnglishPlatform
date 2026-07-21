@@ -76,6 +76,8 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   if (!currentData) return null;
   const { section, slide } = currentData;
   const isLastSlide = currentIndex === allSlides.length - 1;
+  const isImmersiveSlide = slide.type === 'emoji-game' || slide.type === 'speaking-boss-battle';
+  const isSpeakingBossBattle = slide.type === 'speaking-boss-battle';
 
   const bgColorMap: Record<string, string> = {
     'intro': 'bg-blue-600',
@@ -112,7 +114,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
       </div>
 
       {/* Main Slide Area */}
-      <div className="flex-1 relative overflow-y-auto overflow-x-hidden p-2 sm:p-8">
+      <div className={`flex-1 relative overflow-y-auto overflow-x-hidden ${isSpeakingBossBattle ? 'p-1 sm:p-3 lg:p-4' : 'p-2 sm:p-8'}`}>
         <div className="min-h-full flex flex-col items-center justify-center pb-20 sm:pb-8">
           <AnimatePresence mode="wait">
             <motion.div
@@ -121,10 +123,10 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className={`w-full max-w-6xl mx-auto rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0 min-h-[75vh]`}
+              className={`w-full ${isSpeakingBossBattle ? 'max-w-[min(1800px,98vw)] min-h-[calc(100vh-5.25rem)] sm:min-h-[calc(100vh-7.25rem)] rounded-xl sm:rounded-2xl' : 'max-w-6xl min-h-[75vh] rounded-2xl sm:rounded-3xl'} mx-auto shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0`}
             >
             {/* Header */}
-            <div className="p-5 sm:p-8 pb-2 sm:pb-4 shrink-0">
+            <div className={`${isSpeakingBossBattle ? 'sr-only' : 'p-5 sm:p-8 pb-2 sm:pb-4'} shrink-0`}>
               <h1 className="text-2xl sm:text-5xl font-extrabold tracking-tight mb-2">
                 {slide.title}
               </h1>
@@ -136,9 +138,9 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             </div>
 
             {/* Content Area */}
-            <div className="flex-1 p-5 sm:p-8 pt-2 sm:pt-4 flex flex-col md:flex-row gap-4 sm:gap-8 overflow-y-auto min-h-0">
+            <div className={`flex-1 ${isSpeakingBossBattle ? 'p-2 sm:p-4 lg:p-5' : 'p-5 sm:p-8 pt-2 sm:pt-4'} flex flex-col md:flex-row gap-4 sm:gap-8 overflow-y-auto min-h-0`}>
               {/* Left text content */}
-              <div className={`${slide.type === 'emoji-game' || slide.type === 'speaking-boss-battle' ? 'w-full' : 'flex-1'} flex flex-col gap-3 sm:gap-6`}>
+              <div className={`${isImmersiveSlide ? 'w-full' : 'flex-1'} flex flex-col gap-3 sm:gap-6`}>
                 {slide.type === 'spinning-wheel' && slide.wheelItems && (
                   <div className="flex-1 flex flex-col items-center justify-center py-2 sm:py-4">
                     <SpinningWheel items={slide.wheelItems} />
@@ -292,7 +294,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             </div>
 
             {/* Teacher Suggestion (Small) */}
-            {section.action && (
+            {section.action && !isSpeakingBossBattle && (
               <div className="bg-black/30 backdrop-blur-md p-3 sm:p-4 border-t border-white/10 shrink-0 mt-auto">
                 <p className="text-xs sm:text-sm text-yellow-300/90 font-medium flex items-center gap-2">
                   <span className="bg-yellow-400/20 px-2 py-1 rounded text-yellow-300 font-bold tracking-wide uppercase text-[10px] sm:text-xs">👩‍🏫 Nota para el profe</span>
