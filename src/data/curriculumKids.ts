@@ -301,7 +301,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Hello & Amazing Colors! 🌈."],
@@ -311,22 +311,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Hello & Amazing Colors! 🌈",
                                     bossAvatar: "👾",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to hello & amazing colors! 🌈.",
-                                      "Say one useful phrase for hello & amazing colors! 🌈."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to hello & amazing colors! 🌈."
                                     ],
                                       use: [
-                                      "Create one sentence about hello & amazing colors! 🌈 using greetings.",
-                                      "Ask a friend one question about hello & amazing colors! 🌈."
+                                      "You have 60 seconds: create three sentences about hello & amazing colors! 🌈 using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about hello & amazing colors! 🌈.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to hello & amazing colors! 🌈."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -641,7 +636,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Numbers & Animal Friends! 🐶."],
@@ -651,22 +646,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Numbers & Animal Friends! 🐶",
                                     bossAvatar: "⏰",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to numbers & animal friends! 🐶.",
-                                      "Say one useful phrase for numbers & animal friends! 🐶."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to numbers & animal friends! 🐶."
                                     ],
                                       use: [
-                                      "Create one sentence about numbers & animal friends! 🐶 using numbers.",
-                                      "Ask a friend one question about numbers & animal friends! 🐶."
+                                      "You have 60 seconds: create three sentences about numbers & animal friends! 🐶 using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about numbers & animal friends! 🐶.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to numbers & animal friends! 🐶."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -977,7 +967,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using My Body & Fun Actions! 🏃."],
@@ -987,22 +977,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Body & Fun Actions! 🏃",
                                     bossAvatar: "🩺",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to my body & fun actions! 🏃.",
-                                      "Say one useful phrase for my body & fun actions! 🏃."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to my body & fun actions! 🏃."
                                     ],
                                       use: [
-                                      "Create one sentence about my body & fun actions! 🏃 using body words.",
-                                      "Ask a friend one question about my body & fun actions! 🏃."
+                                      "You have 60 seconds: create three sentences about my body & fun actions! 🏃 using body words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about my body & fun actions! 🏃.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to my body & fun actions! 🏃."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -1310,7 +1295,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using My Favorite Toys! 🪁."],
@@ -1320,22 +1305,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Favorite Toys! 🪁",
                                     bossAvatar: "🎨",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to my favorite toys! 🪁.",
-                                      "Say one useful phrase for my favorite toys! 🪁."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to my favorite toys! 🪁."
                                     ],
                                       use: [
-                                      "Create one sentence about my favorite toys! 🪁 using colors.",
-                                      "Ask a friend one question about my favorite toys! 🪁."
+                                      "You have 60 seconds: create three sentences about my favorite toys! 🪁 using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about my favorite toys! 🪁.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to my favorite toys! 🪁."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -1643,7 +1623,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Yummy Fruits! 🍓."],
@@ -1653,22 +1633,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Yummy Fruits! 🍓",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to yummy fruits! 🍓.",
-                                      "Say one useful phrase for yummy fruits! 🍓."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to yummy fruits! 🍓."
                                     ],
                                       use: [
-                                      "Create one sentence about yummy fruits! 🍓 using keywords.",
-                                      "Ask a friend one question about yummy fruits! 🍓."
+                                      "You have 60 seconds: create three sentences about yummy fruits! 🍓 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about yummy fruits! 🍓.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to yummy fruits! 🍓."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -1976,7 +1951,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Super Shapes! 🟢."],
@@ -1986,22 +1961,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Super Shapes! 🟢",
                                     bossAvatar: "🎨",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to super shapes! 🟢.",
-                                      "Say one useful phrase for super shapes! 🟢."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to super shapes! 🟢."
                                     ],
                                       use: [
-                                      "Create one sentence about super shapes! 🟢 using colors.",
-                                      "Ask a friend one question about super shapes! 🟢."
+                                      "You have 60 seconds: create three sentences about super shapes! 🟢 using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about super shapes! 🟢.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to super shapes! 🟢."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -2309,7 +2279,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using School Supplies! 🎒."],
@@ -2319,22 +2289,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "School Supplies! 🎒",
                                     bossAvatar: "🎒",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to school supplies! 🎒.",
-                                      "Say one useful phrase for school supplies! 🎒."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to school supplies! 🎒."
                                     ],
                                       use: [
-                                      "Create one sentence about school supplies! 🎒 using classroom words.",
-                                      "Ask a friend one question about school supplies! 🎒."
+                                      "You have 60 seconds: create three sentences about school supplies! 🎒 using classroom words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about school supplies! 🎒.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to school supplies! 🎒."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -2642,7 +2607,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Farm Animals! 🐮."],
@@ -2652,22 +2617,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Farm Animals! 🐮",
                                     bossAvatar: "🦁",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to farm animals! 🐮.",
-                                      "Say one useful phrase for farm animals! 🐮."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to farm animals! 🐮."
                                     ],
                                       use: [
-                                      "Create one sentence about farm animals! 🐮 using animal words.",
-                                      "Ask a friend one question about farm animals! 🐮."
+                                      "You have 60 seconds: create three sentences about farm animals! 🐮 using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about farm animals! 🐮.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to farm animals! 🐮."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -3154,7 +3114,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using My Family & Feelings! 👨‍👩‍👧‍👦."],
@@ -3164,22 +3124,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Family & Feelings! 👨‍👩‍👧‍👦",
                                     bossAvatar: "🏠",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to my family & feelings! 👨‍👩‍👧‍👦.",
-                                      "Say one useful phrase for my family & feelings! 👨‍👩‍👧‍👦."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to my family & feelings! 👨‍👩‍👧‍👦."
                                     ],
                                       use: [
-                                      "Create one sentence about my family & feelings! 👨‍👩‍👧‍👦 using family words.",
-                                      "Ask a friend one question about my family & feelings! 👨‍👩‍👧‍👦."
+                                      "You have 60 seconds: create three sentences about my family & feelings! 👨‍👩‍👧‍👦 using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about my family & feelings! 👨‍👩‍👧‍👦.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to my family & feelings! 👨‍👩‍👧‍👦."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -3487,7 +3442,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Yummy Fast Food! 🍕."],
@@ -3497,22 +3452,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Yummy Fast Food! 🍕",
                                     bossAvatar: "🍔",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to yummy fast food! 🍕.",
-                                      "Say one useful phrase for yummy fast food! 🍕."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to yummy fast food! 🍕."
                                     ],
                                       use: [
-                                      "Create one sentence about yummy fast food! 🍕 using food words.",
-                                      "Ask a friend one question about yummy fast food! 🍕."
+                                      "You have 60 seconds: create three sentences about yummy fast food! 🍕 using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about yummy fast food! 🍕.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to yummy fast food! 🍕."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -3820,7 +3770,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using My Clothes & The Weather! 👕."],
@@ -3830,22 +3780,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Clothes & The Weather! 👕",
                                     bossAvatar: "🧥",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to my clothes & the weather! 👕.",
-                                      "Say one useful phrase for my clothes & the weather! 👕."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to my clothes & the weather! 👕."
                                     ],
                                       use: [
-                                      "Create one sentence about my clothes & the weather! 👕 using clothes.",
-                                      "Ask a friend one question about my clothes & the weather! 👕."
+                                      "You have 60 seconds: create three sentences about my clothes & the weather! 👕 using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about my clothes & the weather! 👕.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to my clothes & the weather! 👕."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -4153,7 +4098,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Amazing Nature! 🌳."],
@@ -4163,22 +4108,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Amazing Nature! 🌳",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to amazing nature! 🌳.",
-                                      "Say one useful phrase for amazing nature! 🌳."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to amazing nature! 🌳."
                                     ],
                                       use: [
-                                      "Create one sentence about amazing nature! 🌳 using keywords.",
-                                      "Ask a friend one question about amazing nature! 🌳."
+                                      "You have 60 seconds: create three sentences about amazing nature! 🌳 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about amazing nature! 🌳.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to amazing nature! 🌳."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -4486,7 +4426,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Cool Bugs & Insects 🐛."],
@@ -4496,22 +4436,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Cool Bugs & Insects 🐛",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to cool bugs & insects 🐛.",
-                                      "Say one useful phrase for cool bugs & insects 🐛."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to cool bugs & insects 🐛."
                                     ],
                                       use: [
-                                      "Create one sentence about cool bugs & insects 🐛 using keywords.",
-                                      "Ask a friend one question about cool bugs & insects 🐛."
+                                      "You have 60 seconds: create three sentences about cool bugs & insects 🐛 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about cool bugs & insects 🐛.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to cool bugs & insects 🐛."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -4819,7 +4754,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Under the Sea! 🐠."],
@@ -4829,22 +4764,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Under the Sea! 🐠",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to under the sea! 🐠.",
-                                      "Say one useful phrase for under the sea! 🐠."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to under the sea! 🐠."
                                     ],
                                       use: [
-                                      "Create one sentence about under the sea! 🐠 using keywords.",
-                                      "Ask a friend one question about under the sea! 🐠."
+                                      "You have 60 seconds: create three sentences about under the sea! 🐠 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about under the sea! 🐠.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to under the sea! 🐠."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -5152,7 +5082,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Action Heroes! 🦸‍♂️."],
@@ -5162,22 +5092,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Action Heroes! 🦸‍♂️",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to action heroes! 🦸‍♂️.",
-                                      "Say one useful phrase for action heroes! 🦸‍♂️."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to action heroes! 🦸‍♂️."
                                     ],
                                       use: [
-                                      "Create one sentence about action heroes! 🦸‍♂️ using keywords.",
-                                      "Ask a friend one question about action heroes! 🦸‍♂️."
+                                      "You have 60 seconds: create three sentences about action heroes! 🦸‍♂️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about action heroes! 🦸‍♂️.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to action heroes! 🦸‍♂️."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -5485,7 +5410,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Numbers 11-20! 🔢."],
@@ -5495,22 +5420,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Numbers 11-20! 🔢",
                                     bossAvatar: "⏰",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to numbers 11-20! 🔢.",
-                                      "Say one useful phrase for numbers 11-20! 🔢."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to numbers 11-20! 🔢."
                                     ],
                                       use: [
-                                      "Create one sentence about numbers 11-20! 🔢 using numbers.",
-                                      "Ask a friend one question about numbers 11-20! 🔢."
+                                      "You have 60 seconds: create three sentences about numbers 11-20! 🔢 using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about numbers 11-20! 🔢.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to numbers 11-20! 🔢."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -5997,7 +5917,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Wild Animals Safari! 🦁."],
@@ -6007,22 +5927,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Wild Animals Safari! 🦁",
                                     bossAvatar: "🦁",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to wild animals safari! 🦁.",
-                                      "Say one useful phrase for wild animals safari! 🦁."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to wild animals safari! 🦁."
                                     ],
                                       use: [
-                                      "Create one sentence about wild animals safari! 🦁 using animal words.",
-                                      "Ask a friend one question about wild animals safari! 🦁."
+                                      "You have 60 seconds: create three sentences about wild animals safari! 🦁 using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about wild animals safari! 🦁.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to wild animals safari! 🦁."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -6330,7 +6245,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using My Awesome House 🏠."],
@@ -6340,22 +6255,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Awesome House 🏠",
                                     bossAvatar: "🏠",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to my awesome house 🏠.",
-                                      "Say one useful phrase for my awesome house 🏠."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to my awesome house 🏠."
                                     ],
                                       use: [
-                                      "Create one sentence about my awesome house 🏠 using family words.",
-                                      "Ask a friend one question about my awesome house 🏠."
+                                      "You have 60 seconds: create three sentences about my awesome house 🏠 using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about my awesome house 🏠.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to my awesome house 🏠."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -6663,7 +6573,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Zoom! Vehicles in Town 🚗."],
@@ -6673,22 +6583,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Zoom! Vehicles in Town 🚗",
                                     bossAvatar: "✈️",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to zoom! vehicles in town 🚗.",
-                                      "Say one useful phrase for zoom! vehicles in town 🚗."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to zoom! vehicles in town 🚗."
                                     ],
                                       use: [
-                                      "Create one sentence about zoom! vehicles in town 🚗 using travel words.",
-                                      "Ask a friend one question about zoom! vehicles in town 🚗."
+                                      "You have 60 seconds: create three sentences about zoom! vehicles in town 🚗 using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about zoom! vehicles in town 🚗.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to zoom! vehicles in town 🚗."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -6996,7 +6901,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using When I Grow Up! 👩‍⚕️."],
@@ -7006,22 +6911,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "When I Grow Up! 👩‍⚕️",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to when i grow up! 👩‍⚕️.",
-                                      "Say one useful phrase for when i grow up! 👩‍⚕️."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to when i grow up! 👩‍⚕️."
                                     ],
                                       use: [
-                                      "Create one sentence about when i grow up! 👩‍⚕️ using keywords.",
-                                      "Ask a friend one question about when i grow up! 👩‍⚕️."
+                                      "You have 60 seconds: create three sentences about when i grow up! 👩‍⚕️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about when i grow up! 👩‍⚕️.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to when i grow up! 👩‍⚕️."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -7329,7 +7229,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Make some Music! 🎸."],
@@ -7339,22 +7239,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Make some Music! 🎸",
                                     bossAvatar: "🎮",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to make some music! 🎸.",
-                                      "Say one useful phrase for make some music! 🎸."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to make some music! 🎸."
                                     ],
                                       use: [
-                                      "Create one sentence about make some music! 🎸 using hobbies.",
-                                      "Ask a friend one question about make some music! 🎸."
+                                      "You have 60 seconds: create three sentences about make some music! 🎸 using hobbies: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about make some music! 🎸.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to make some music! 🎸."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -7662,7 +7557,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Days of the Week 📅."],
@@ -7672,22 +7567,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Days of the Week 📅",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to days of the week 📅.",
-                                      "Say one useful phrase for days of the week 📅."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to days of the week 📅."
                                     ],
                                       use: [
-                                      "Create one sentence about days of the week 📅 using keywords.",
-                                      "Ask a friend one question about days of the week 📅."
+                                      "You have 60 seconds: create three sentences about days of the week 📅 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about days of the week 📅.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to days of the week 📅."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -7995,7 +7885,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Let's Go Shopping! 🛒."],
@@ -8005,22 +7895,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Let's Go Shopping! 🛒",
                                     bossAvatar: "🛒",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to let's go shopping! 🛒.",
-                                      "Say one useful phrase for let's go shopping! 🛒."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to let's go shopping! 🛒."
                                     ],
                                       use: [
-                                      "Create one sentence about let's go shopping! 🛒 using shopping phrases.",
-                                      "Ask a friend one question about let's go shopping! 🛒."
+                                      "You have 60 seconds: create three sentences about let's go shopping! 🛒 using shopping phrases: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about let's go shopping! 🛒.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to let's go shopping! 🛒."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -8328,7 +8213,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Playground Fun! 🛝."],
@@ -8338,22 +8223,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Playground Fun! 🛝",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to playground fun! 🛝.",
-                                      "Say one useful phrase for playground fun! 🛝."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to playground fun! 🛝."
                                     ],
                                       use: [
-                                      "Create one sentence about playground fun! 🛝 using keywords.",
-                                      "Ask a friend one question about playground fun! 🛝."
+                                      "You have 60 seconds: create three sentences about playground fun! 🛝 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about playground fun! 🛝.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to playground fun! 🛝."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -8840,7 +8720,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using My Daily Routine ⏰."],
@@ -8850,22 +8730,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Daily Routine ⏰",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to my daily routine ⏰.",
-                                      "Say one useful phrase for my daily routine ⏰."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to my daily routine ⏰."
                                     ],
                                       use: [
-                                      "Create one sentence about my daily routine ⏰ using keywords.",
-                                      "Ask a friend one question about my daily routine ⏰."
+                                      "You have 60 seconds: create three sentences about my daily routine ⏰ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about my daily routine ⏰.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to my daily routine ⏰."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -9173,7 +9048,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Fun Hobbies & Sports! ⚽️."],
@@ -9183,22 +9058,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Fun Hobbies & Sports! ⚽️",
                                     bossAvatar: "🎮",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to fun hobbies & sports! ⚽️.",
-                                      "Say one useful phrase for fun hobbies & sports! ⚽️."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to fun hobbies & sports! ⚽️."
                                     ],
                                       use: [
-                                      "Create one sentence about fun hobbies & sports! ⚽️ using hobbies.",
-                                      "Ask a friend one question about fun hobbies & sports! ⚽️."
+                                      "You have 60 seconds: create three sentences about fun hobbies & sports! ⚽️ using hobbies: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about fun hobbies & sports! ⚽️.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to fun hobbies & sports! ⚽️."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -9506,7 +9376,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Happy Holidays! 🎄."],
@@ -9516,22 +9386,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Happy Holidays! 🎄",
                                     bossAvatar: "📱",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to happy holidays! 🎄.",
-                                      "Say one useful phrase for happy holidays! 🎄."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to happy holidays! 🎄."
                                     ],
                                       use: [
-                                      "Create one sentence about happy holidays! 🎄 using technology words.",
-                                      "Ask a friend one question about happy holidays! 🎄."
+                                      "You have 60 seconds: create three sentences about happy holidays! 🎄 using technology words: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about happy holidays! 🎄.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to happy holidays! 🎄."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -9839,7 +9704,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Outer Space Adventure! 🚀."],
@@ -9849,22 +9714,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Outer Space Adventure! 🚀",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to outer space adventure! 🚀.",
-                                      "Say one useful phrase for outer space adventure! 🚀."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to outer space adventure! 🚀."
                                     ],
                                       use: [
-                                      "Create one sentence about outer space adventure! 🚀 using keywords.",
-                                      "Ask a friend one question about outer space adventure! 🚀."
+                                      "You have 60 seconds: create three sentences about outer space adventure! 🚀 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about outer space adventure! 🚀.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to outer space adventure! 🚀."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -10172,7 +10032,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Awesome Fairy Tales! 🧚."],
@@ -10182,22 +10042,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Awesome Fairy Tales! 🧚",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to awesome fairy tales! 🧚.",
-                                      "Say one useful phrase for awesome fairy tales! 🧚."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to awesome fairy tales! 🧚."
                                     ],
                                       use: [
-                                      "Create one sentence about awesome fairy tales! 🧚 using keywords.",
-                                      "Ask a friend one question about awesome fairy tales! 🧚."
+                                      "You have 60 seconds: create three sentences about awesome fairy tales! 🧚 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about awesome fairy tales! 🧚.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to awesome fairy tales! 🧚."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -10505,7 +10360,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using The 4 Seasons! ❄️."],
@@ -10515,22 +10370,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "The 4 Seasons! ❄️",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to the 4 seasons! ❄️.",
-                                      "Say one useful phrase for the 4 seasons! ❄️."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to the 4 seasons! ❄️."
                                     ],
                                       use: [
-                                      "Create one sentence about the 4 seasons! ❄️ using keywords.",
-                                      "Ask a friend one question about the 4 seasons! ❄️."
+                                      "You have 60 seconds: create three sentences about the 4 seasons! ❄️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about the 4 seasons! ❄️.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to the 4 seasons! ❄️."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -10838,7 +10688,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Be a Helper! 🤝."],
@@ -10848,22 +10698,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Be a Helper! 🤝",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to be a helper! 🤝.",
-                                      "Say one useful phrase for be a helper! 🤝."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to be a helper! 🤝."
                                     ],
                                       use: [
-                                      "Create one sentence about be a helper! 🤝 using keywords.",
-                                      "Ask a friend one question about be a helper! 🤝."
+                                      "You have 60 seconds: create three sentences about be a helper! 🤝 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about be a helper! 🤝.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to be a helper! 🤝."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -11171,7 +11016,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Around the World! 🌍."],
@@ -11181,22 +11026,17 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Around the World! 🌍",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
+                                    prepareSeconds: 20,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to around the world! 🌍.",
-                                      "Say one useful phrase for around the world! 🌍."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to around the world! 🌍."
                                     ],
                                       use: [
-                                      "Create one sentence about around the world! 🌍 using keywords.",
-                                      "Ask a friend one question about around the world! 🌍."
+                                      "You have 60 seconds: create three sentences about around the world! 🌍 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 30 seconds about around the world! 🌍.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to around the world! 🌍."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }

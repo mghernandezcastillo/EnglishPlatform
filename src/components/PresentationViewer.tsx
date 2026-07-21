@@ -179,6 +179,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     bossTitle={slide.speakingBossBattle?.bossTitle}
                     bossAvatar={slide.speakingBossBattle?.bossAvatar}
                     timerSeconds={slide.speakingBossBattle?.timerSeconds}
+                    prepareSeconds={slide.speakingBossBattle?.prepareSeconds}
                     rounds={slide.speakingBossBattle?.rounds}
                   />
                 )}

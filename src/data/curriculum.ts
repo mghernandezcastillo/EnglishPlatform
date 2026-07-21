@@ -275,32 +275,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Introducción y Verb To Be."],
+                                  content: ["Defeat the boss using Introduction and Verb To Be."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Greeting Boss",
-                                    bossTitle: "Introducción y Verb To Be",
+                                    bossTitle: "Introduction and Verb To Be",
                                     bossAvatar: "👾",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to introducción y verb to be.",
-                                      "Say one useful phrase for introducción y verb to be."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to introduction and verb to be."
                                     ],
                                       use: [
-                                      "Create one sentence about introducción y verb to be using greetings.",
-                                      "Ask a partner one question about introducción y verb to be."
+                                      "You have 60 seconds: create three sentences about introduction and verb to be using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about introducción y verb to be.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to introducción y verb to be."
+                                      "Speak for 45 seconds about introduction and verb to be.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -610,32 +605,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Números y La Hora."],
+                                  content: ["Defeat the boss using Numbers & Time."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Números y La Hora",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Time Boss",
+                                    bossTitle: "Numbers & Time",
+                                    bossAvatar: "⏰",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to números y la hora.",
-                                      "Say one useful phrase for números y la hora."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to numbers & time."
                                     ],
                                       use: [
-                                      "Create one sentence about números y la hora using keywords.",
-                                      "Ask a partner one question about números y la hora."
+                                      "You have 60 seconds: create three sentences about numbers & time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about números y la hora.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to números y la hora."
+                                      "Speak for 45 seconds about numbers & time.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -940,32 +930,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Colores, Emociones y Descripción."],
+                                  content: ["Defeat the boss using Colors, Emociones and Descripción."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Color Boss",
-                                    bossTitle: "Colores, Emociones y Descripción",
+                                    bossTitle: "Colors, Emociones and Descripción",
                                     bossAvatar: "🎨",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to colores, emociones y descripción.",
-                                      "Say one useful phrase for colores, emociones y descripción."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to colors, emociones and descripción."
                                     ],
                                       use: [
-                                      "Create one sentence about colores, emociones y descripción using colors.",
-                                      "Ask a partner one question about colores, emociones y descripción."
+                                      "You have 60 seconds: create three sentences about colors, emociones and descripción using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about colores, emociones y descripción.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to colores, emociones y descripción."
+                                      "Speak for 45 seconds about colors, emociones and descripción.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -1275,32 +1260,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Familia y Posesivos."],
+                                  content: ["Defeat the boss using Family Vocabulary & Possessives."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Familia y Posesivos",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Home Boss",
+                                    bossTitle: "Family Vocabulary & Possessives",
+                                    bossAvatar: "🏠",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to familia y posesivos.",
-                                      "Say one useful phrase for familia y posesivos."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to family vocabulary & possessives."
                                     ],
                                       use: [
-                                      "Create one sentence about familia y posesivos using keywords.",
-                                      "Ask a partner one question about familia y posesivos."
+                                      "You have 60 seconds: create three sentences about family vocabulary & possessives using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about familia y posesivos.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to familia y posesivos."
+                                      "Speak for 45 seconds about family vocabulary & possessives.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -1605,32 +1585,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using There is / There are y Lugares."],
+                                  content: ["Defeat the boss using There is."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "There is / There are y Lugares",
+                                    bossTitle: "There is",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to there is / there are y lugares.",
-                                      "Say one useful phrase for there is / there are y lugares."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to there is."
                                     ],
                                       use: [
-                                      "Create one sentence about there is / there are y lugares using keywords.",
-                                      "Ask a partner one question about there is / there are y lugares."
+                                      "You have 60 seconds: create three sentences about there is using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about there is / there are y lugares.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to there is / there are y lugares."
+                                      "Speak for 45 seconds about there is.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -1941,32 +1916,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Meses, Días y Números Ordinales."],
+                                  content: ["Defeat the boss using Meses, Días and Numbers Ordinales."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Meses, Días y Números Ordinales",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Time Boss",
+                                    bossTitle: "Meses, Días and Numbers Ordinales",
+                                    bossAvatar: "⏰",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to meses, días y números ordinales.",
-                                      "Say one useful phrase for meses, días y números ordinales."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to meses, días and numbers ordinales."
                                     ],
                                       use: [
-                                      "Create one sentence about meses, días y números ordinales using keywords.",
-                                      "Ask a partner one question about meses, días y números ordinales."
+                                      "You have 60 seconds: create three sentences about meses, días and numbers ordinales using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about meses, días y números ordinales.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to meses, días y números ordinales."
+                                      "Speak for 45 seconds about meses, días and numbers ordinales.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -2279,32 +2249,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Artículos y Demostrativos."],
+                                  content: ["Defeat the boss using Articles & Demonstratives."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Artículos y Demostrativos",
+                                    bossTitle: "Articles & Demonstratives",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to artículos y demostrativos.",
-                                      "Say one useful phrase for artículos y demostrativos."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to articles & demonstratives."
                                     ],
                                       use: [
-                                      "Create one sentence about artículos y demostrativos using keywords.",
-                                      "Ask a partner one question about artículos y demostrativos."
+                                      "You have 60 seconds: create three sentences about articles & demonstratives using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about artículos y demostrativos.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to artículos y demostrativos."
+                                      "Speak for 45 seconds about articles & demonstratives.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -2609,32 +2574,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Partes del Cuerpo y Mascotas."],
+                                  content: ["Defeat the boss using Body Parts & Pets."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Partes del Cuerpo y Mascotas",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Safari Boss",
+                                    bossTitle: "Body Parts & Pets",
+                                    bossAvatar: "🦁",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to partes del cuerpo y mascotas.",
-                                      "Say one useful phrase for partes del cuerpo y mascotas."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to body parts & pets."
                                     ],
                                       use: [
-                                      "Create one sentence about partes del cuerpo y mascotas using keywords.",
-                                      "Ask a partner one question about partes del cuerpo y mascotas."
+                                      "You have 60 seconds: create three sentences about body parts & pets using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about partes del cuerpo y mascotas.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to partes del cuerpo y mascotas."
+                                      "Speak for 45 seconds about body parts & pets.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -2952,32 +2912,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Comida y Necesidades Básicas."],
+                                  content: ["Defeat the boss using Food and Necesidades Básicas."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Comida y Necesidades Básicas",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Hungry Boss",
+                                    bossTitle: "Food and Necesidades Básicas",
+                                    bossAvatar: "🍔",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to comida y necesidades básicas.",
-                                      "Say one useful phrase for comida y necesidades básicas."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to food and necesidades básicas."
                                     ],
                                       use: [
-                                      "Create one sentence about comida y necesidades básicas using keywords.",
-                                      "Ask a partner one question about comida y necesidades básicas."
+                                      "You have 60 seconds: create three sentences about food and necesidades básicas using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about comida y necesidades básicas.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to comida y necesidades básicas."
+                                      "Speak for 45 seconds about food and necesidades básicas.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -3340,32 +3295,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Direcciones y Preposiciones de Lugar."],
+                                  content: ["Defeat the boss using Directions & Prepositions of Place."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Direcciones y Preposiciones de Lugar",
+                                    bossTitle: "Directions & Prepositions of Place",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to direcciones y preposiciones de lugar.",
-                                      "Say one useful phrase for direcciones y preposiciones de lugar."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to directions & prepositions of place."
                                     ],
                                       use: [
-                                      "Create one sentence about direcciones y preposiciones de lugar using keywords.",
-                                      "Ask a partner one question about direcciones y preposiciones de lugar."
+                                      "You have 60 seconds: create three sentences about directions & prepositions of place using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about direcciones y preposiciones de lugar.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to direcciones y preposiciones de lugar."
+                                      "Speak for 45 seconds about directions & prepositions of place.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -3671,32 +3621,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Saludos, despedidas y conversación de supervivencia."],
+                                  content: ["Defeat the boss using Greetings, Farewells & Survival Conversation."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Saludos, despedidas y conversación de supervivencia",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Greeting Boss",
+                                    bossTitle: "Greetings, Farewells & Survival Conversation",
+                                    bossAvatar: "👾",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to saludos, despedidas y conversación de supervivencia.",
-                                      "Say one useful phrase for saludos, despedidas y conversación de supervivencia."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to greetings, farewells & survival conversation."
                                     ],
                                       use: [
-                                      "Create one sentence about saludos, despedidas y conversación de supervivencia using keywords.",
-                                      "Ask a partner one question about saludos, despedidas y conversación de supervivencia."
+                                      "You have 60 seconds: create three sentences about greetings, farewells & survival conversation using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about saludos, despedidas y conversación de supervivencia.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to saludos, despedidas y conversación de supervivencia."
+                                      "Speak for 45 seconds about greetings, farewells & survival conversation.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -3998,32 +3943,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using El alfabeto y deletreo de nombres."],
+                                  content: ["Defeat the boss using The Alphabet & Spelling Names."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "El alfabeto y deletreo de nombres",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Greeting Boss",
+                                    bossTitle: "The Alphabet & Spelling Names",
+                                    bossAvatar: "👾",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to el alfabeto y deletreo de nombres.",
-                                      "Say one useful phrase for el alfabeto y deletreo de nombres."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to the alphabet & spelling names."
                                     ],
                                       use: [
-                                      "Create one sentence about el alfabeto y deletreo de nombres using keywords.",
-                                      "Ask a partner one question about el alfabeto y deletreo de nombres."
+                                      "You have 60 seconds: create three sentences about the alphabet & spelling names using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about el alfabeto y deletreo de nombres.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to el alfabeto y deletreo de nombres."
+                                      "Speak for 45 seconds about the alphabet & spelling names.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -4353,32 +4293,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Países, nacionalidades y procedencia."],
+                                  content: ["Defeat the boss using Países, nacionalidades and procedencia."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Países, nacionalidades y procedencia",
+                                    bossTitle: "Países, nacionalidades and procedencia",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to países, nacionalidades y procedencia.",
-                                      "Say one useful phrase for países, nacionalidades y procedencia."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to países, nacionalidades and procedencia."
                                     ],
                                       use: [
-                                      "Create one sentence about países, nacionalidades y procedencia using keywords.",
-                                      "Ask a partner one question about países, nacionalidades y procedencia."
+                                      "You have 60 seconds: create three sentences about países, nacionalidades and procedencia using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about países, nacionalidades y procedencia.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to países, nacionalidades y procedencia."
+                                      "Speak for 45 seconds about países, nacionalidades and procedencia.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -4724,32 +4659,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Profesiones y ocupaciones comunes."],
+                                  content: ["Defeat the boss using Professions and ocupaciones comunes."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Profesiones y ocupaciones comunes",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Interview Boss",
+                                    bossTitle: "Professions and ocupaciones comunes",
+                                    bossAvatar: "💼",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to profesiones y ocupaciones comunes.",
-                                      "Say one useful phrase for profesiones y ocupaciones comunes."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to professions and ocupaciones comunes."
                                     ],
                                       use: [
-                                      "Create one sentence about profesiones y ocupaciones comunes using keywords.",
-                                      "Ask a partner one question about profesiones y ocupaciones comunes."
+                                      "You have 60 seconds: create three sentences about professions and ocupaciones comunes using job words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about profesiones y ocupaciones comunes.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to profesiones y ocupaciones comunes."
+                                      "Speak for 45 seconds about professions and ocupaciones comunes.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -5095,32 +5025,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Vocabulario de la familia y posesivos."],
+                                  content: ["Defeat the boss using Family Vocabulary & Possessives."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Vocabulario de la familia y posesivos",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Home Boss",
+                                    bossTitle: "Family Vocabulary & Possessives",
+                                    bossAvatar: "🏠",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to vocabulario de la familia y posesivos.",
-                                      "Say one useful phrase for vocabulario de la familia y posesivos."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to family vocabulary & possessives."
                                     ],
                                       use: [
-                                      "Create one sentence about vocabulario de la familia y posesivos using keywords.",
-                                      "Ask a partner one question about vocabulario de la familia y posesivos."
+                                      "You have 60 seconds: create three sentences about family vocabulary & possessives using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about vocabulario de la familia y posesivos.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to vocabulario de la familia y posesivos."
+                                      "Speak for 45 seconds about family vocabulary & possessives.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -5463,32 +5388,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Repaso General de Basic Zero."],
+                                  content: ["Defeat the boss using Basic Zero General Review."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Repaso General de Basic Zero",
+                                    bossTitle: "Basic Zero General Review",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to repaso general de basic zero.",
-                                      "Say one useful phrase for repaso general de basic zero."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to basic zero general review."
                                     ],
                                       use: [
-                                      "Create one sentence about repaso general de basic zero using keywords.",
-                                      "Ask a partner one question about repaso general de basic zero."
+                                      "You have 60 seconds: create three sentences about basic zero general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about repaso general de basic zero.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to repaso general de basic zero."
+                                      "Speak for 45 seconds about basic zero general review.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -5992,7 +5912,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Present Simple (I, You, We, They)."],
@@ -6001,23 +5921,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Simple (I, You, We, They)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to present simple (i, you, we, they).",
-                                      "Say one useful phrase for present simple (i, you, we, they)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to present simple (i, you, we, they)."
                                     ],
                                       use: [
-                                      "Create one sentence about present simple (i, you, we, they) using keywords.",
-                                      "Ask a partner one question about present simple (i, you, we, they)."
+                                      "You have 60 seconds: create three sentences about present simple (i, you, we, they) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about present simple (i, you, we, they).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to present simple (i, you, we, they)."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -6343,7 +6258,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Present Simple (He, She, It)."],
@@ -6352,23 +6267,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Simple (He, She, It)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to present simple (he, she, it).",
-                                      "Say one useful phrase for present simple (he, she, it)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to present simple (he, she, it)."
                                     ],
                                       use: [
-                                      "Create one sentence about present simple (he, she, it) using keywords.",
-                                      "Ask a partner one question about present simple (he, she, it)."
+                                      "You have 60 seconds: create three sentences about present simple (he, she, it) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about present simple (he, she, it).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to present simple (he, she, it)."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -6695,7 +6605,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Present Simple (Negative & Interrogative)."],
@@ -6704,23 +6614,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Simple (Negative & Interrogative)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to present simple (negative & interrogative).",
-                                      "Say one useful phrase for present simple (negative & interrogative)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to present simple (negative & interrogative)."
                                     ],
                                       use: [
-                                      "Create one sentence about present simple (negative & interrogative) using keywords.",
-                                      "Ask a partner one question about present simple (negative & interrogative)."
+                                      "You have 60 seconds: create three sentences about present simple (negative & interrogative) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about present simple (negative & interrogative).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to present simple (negative & interrogative)."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -7047,32 +6952,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Profesiones y Lugares de Trabajo."],
+                                  content: ["Defeat the boss using Professions & Workplaces."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Profesiones y Lugares de Trabajo",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Interview Boss",
+                                    bossTitle: "Professions & Workplaces",
+                                    bossAvatar: "💼",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to profesiones y lugares de trabajo.",
-                                      "Say one useful phrase for profesiones y lugares de trabajo."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to professions & workplaces."
                                     ],
                                       use: [
-                                      "Create one sentence about profesiones y lugares de trabajo using keywords.",
-                                      "Ask a partner one question about profesiones y lugares de trabajo."
+                                      "You have 60 seconds: create three sentences about professions & workplaces using job words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about profesiones y lugares de trabajo.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to profesiones y lugares de trabajo."
+                                      "Speak for 45 seconds about professions & workplaces.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -7388,32 +7288,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Rutinas diarias y la hora."],
+                                  content: ["Defeat the boss using Daily Routines & Time."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Rutinas diarias y la hora",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Time Boss",
+                                    bossTitle: "Daily Routines & Time",
+                                    bossAvatar: "⏰",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to rutinas diarias y la hora.",
-                                      "Say one useful phrase for rutinas diarias y la hora."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to daily routines & time."
                                     ],
                                       use: [
-                                      "Create one sentence about rutinas diarias y la hora using keywords.",
-                                      "Ask a partner one question about rutinas diarias y la hora."
+                                      "You have 60 seconds: create three sentences about daily routines & time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about rutinas diarias y la hora.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to rutinas diarias y la hora."
+                                      "Speak for 45 seconds about daily routines & time.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -7715,32 +7610,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Adverbios de frecuencia (always, sometimes, never)."],
+                                  content: ["Defeat the boss using Adverbs of Frequency."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Time Boss",
-                                    bossTitle: "Adverbios de frecuencia (always, sometimes, never)",
+                                    bossTitle: "Adverbs of Frequency",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to adverbios de frecuencia (always, sometimes, never).",
-                                      "Say one useful phrase for adverbios de frecuencia (always, sometimes, never)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to adverbs of frequency."
                                     ],
                                       use: [
-                                      "Create one sentence about adverbios de frecuencia (always, sometimes, never) using numbers.",
-                                      "Ask a partner one question about adverbios de frecuencia (always, sometimes, never)."
+                                      "You have 60 seconds: create three sentences about adverbs of frequency using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about adverbios de frecuencia (always, sometimes, never).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to adverbios de frecuencia (always, sometimes, never)."
+                                      "Speak for 45 seconds about adverbs of frequency.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -8044,32 +7934,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Comidas, bebidas y vocabulario de restaurantes."],
+                                  content: ["Defeat the boss using Food, Drinks & Restaurant Vocabulary."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Hungry Boss",
-                                    bossTitle: "Comidas, bebidas y vocabulario de restaurantes",
+                                    bossTitle: "Food, Drinks & Restaurant Vocabulary",
                                     bossAvatar: "🍔",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to comidas, bebidas y vocabulario de restaurantes.",
-                                      "Say one useful phrase for comidas, bebidas y vocabulario de restaurantes."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to food, drinks & restaurant vocabulary."
                                     ],
                                       use: [
-                                      "Create one sentence about comidas, bebidas y vocabulario de restaurantes using food words.",
-                                      "Ask a partner one question about comidas, bebidas y vocabulario de restaurantes."
+                                      "You have 60 seconds: create three sentences about food, drinks & restaurant vocabulary using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about comidas, bebidas y vocabulario de restaurantes.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to comidas, bebidas y vocabulario de restaurantes."
+                                      "Speak for 45 seconds about food, drinks & restaurant vocabulary.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -8364,7 +8249,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Sustantivos contables e incontables (some, any)."],
@@ -8373,23 +8258,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Sustantivos contables e incontables (some, any)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to sustantivos contables e incontables (some, any).",
-                                      "Say one useful phrase for sustantivos contables e incontables (some, any)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to sustantivos contables e incontables (some, any)."
                                     ],
                                       use: [
-                                      "Create one sentence about sustantivos contables e incontables (some, any) using keywords.",
-                                      "Ask a partner one question about sustantivos contables e incontables (some, any)."
+                                      "You have 60 seconds: create three sentences about sustantivos contables e incontables (some, any) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about sustantivos contables e incontables (some, any).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to sustantivos contables e incontables (some, any)."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -8688,32 +8568,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Gustos y preferencias (like, love, hate + ing)."],
+                                  content: ["Defeat the boss using Gustos and preferencias (like, love, hate + ing)."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Gustos y preferencias (like, love, hate + ing)",
+                                    bossTitle: "Gustos and preferencias (like, love, hate + ing)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to gustos y preferencias (like, love, hate + ing).",
-                                      "Say one useful phrase for gustos y preferencias (like, love, hate + ing)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to gustos and preferencias (like, love, hate + ing)."
                                     ],
                                       use: [
-                                      "Create one sentence about gustos y preferencias (like, love, hate + ing) using keywords.",
-                                      "Ask a partner one question about gustos y preferencias (like, love, hate + ing)."
+                                      "You have 60 seconds: create three sentences about gustos and preferencias (like, love, hate + ing) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about gustos y preferencias (like, love, hate + ing).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to gustos y preferencias (like, love, hate + ing)."
+                                      "Speak for 45 seconds about gustos and preferencias (like, love, hate + ing).",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -8988,32 +8863,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Repaso General de Basic 1."],
+                                  content: ["Defeat the boss using Basic 1 General Review."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Repaso General de Basic 1",
+                                    bossTitle: "Basic 1 General Review",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to repaso general de basic 1.",
-                                      "Say one useful phrase for repaso general de basic 1."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to basic 1 general review."
                                     ],
                                       use: [
-                                      "Create one sentence about repaso general de basic 1 using keywords.",
-                                      "Ask a partner one question about repaso general de basic 1."
+                                      "You have 60 seconds: create three sentences about basic 1 general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about repaso general de basic 1.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to repaso general de basic 1."
+                                      "Speak for 45 seconds about basic 1 general review.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -9511,32 +9381,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Rutinas y Present Simple."],
+                                  content: ["Defeat the boss using Routines & Present Simple."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Rutinas y Present Simple",
+                                    bossTitle: "Routines & Present Simple",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to rutinas y present simple.",
-                                      "Say one useful phrase for rutinas y present simple."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to routines & present simple."
                                     ],
                                       use: [
-                                      "Create one sentence about rutinas y present simple using keywords.",
-                                      "Ask a partner one question about rutinas y present simple."
+                                      "You have 60 seconds: create three sentences about routines & present simple using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about rutinas y present simple.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to rutinas y present simple."
+                                      "Speak for 45 seconds about routines & present simple.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -9853,7 +9718,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Present Progressive."],
@@ -9862,23 +9727,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Progressive",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to present progressive.",
-                                      "Say one useful phrase for present progressive."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to present progressive."
                                     ],
                                       use: [
-                                      "Create one sentence about present progressive using keywords.",
-                                      "Ask a partner one question about present progressive."
+                                      "You have 60 seconds: create three sentences about present progressive using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about present progressive.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to present progressive."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -10196,7 +10056,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Expresando Preferencias (Gustos)."],
@@ -10205,23 +10065,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Expresando Preferencias (Gustos)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to expresando preferencias (gustos).",
-                                      "Say one useful phrase for expresando preferencias (gustos)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to expresando preferencias (gustos)."
                                     ],
                                       use: [
-                                      "Create one sentence about expresando preferencias (gustos) using keywords.",
-                                      "Ask a partner one question about expresando preferencias (gustos)."
+                                      "You have 60 seconds: create three sentences about expresando preferencias (gustos) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about expresando preferencias (gustos).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to expresando preferencias (gustos)."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -10539,7 +10394,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Comparación entre Tiempos Verbales."],
@@ -10548,23 +10403,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Comparación entre Tiempos Verbales",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to comparación entre tiempos verbales.",
-                                      "Say one useful phrase for comparación entre tiempos verbales."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to comparación entre tiempos verbales."
                                     ],
                                       use: [
-                                      "Create one sentence about comparación entre tiempos verbales using keywords.",
-                                      "Ask a partner one question about comparación entre tiempos verbales."
+                                      "You have 60 seconds: create three sentences about comparación entre tiempos verbales using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about comparación entre tiempos verbales.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to comparación entre tiempos verbales."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -10899,32 +10749,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Verbos de estado vs. acción en presente continuo."],
+                                  content: ["Defeat the boss using State and Action Verbs in Present Continuous."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Verbos de estado vs. acción en presente continuo",
+                                    bossTitle: "State and Action Verbs in Present Continuous",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to verbos de estado vs. acción en presente continuo.",
-                                      "Say one useful phrase for verbos de estado vs. acción en presente continuo."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to state and action verbs in present continuous."
                                     ],
                                       use: [
-                                      "Create one sentence about verbos de estado vs. acción en presente continuo using keywords.",
-                                      "Ask a partner one question about verbos de estado vs. acción en presente continuo."
+                                      "You have 60 seconds: create three sentences about state and action verbs in present continuous using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about verbos de estado vs. acción en presente continuo.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to verbos de estado vs. acción en presente continuo."
+                                      "Speak for 45 seconds about state and action verbs in present continuous.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -11251,32 +11096,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Clima y estaciones del año."],
+                                  content: ["Defeat the boss using Weather & Seasons."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Clima y estaciones del año",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Weather Closet Boss",
+                                    bossTitle: "Weather & Seasons",
+                                    bossAvatar: "🧥",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to clima y estaciones del año.",
-                                      "Say one useful phrase for clima y estaciones del año."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to weather & seasons."
                                     ],
                                       use: [
-                                      "Create one sentence about clima y estaciones del año using keywords.",
-                                      "Ask a partner one question about clima y estaciones del año."
+                                      "You have 60 seconds: create three sentences about weather & seasons using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about clima y estaciones del año.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to clima y estaciones del año."
+                                      "Speak for 45 seconds about weather & seasons.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -11515,32 +11355,27 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Imperativos para dar instrucciones."],
+                                  content: ["Defeat the boss using Imperatives for Giving Instructions."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Imperativos para dar instrucciones",
+                                    bossTitle: "Imperatives for Giving Instructions",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to imperativos para dar instrucciones.",
-                                      "Say one useful phrase for imperativos para dar instrucciones."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to imperatives for giving instructions."
                                     ],
                                       use: [
-                                      "Create one sentence about imperativos para dar instrucciones using keywords.",
-                                      "Ask a partner one question about imperativos para dar instrucciones."
+                                      "You have 60 seconds: create three sentences about imperatives for giving instructions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about imperativos para dar instrucciones.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to imperativos para dar instrucciones."
+                                      "Speak for 45 seconds about imperatives for giving instructions.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -11870,32 +11705,27 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Pedir y ofrecer direcciones en la calle."],
+                                  content: ["Defeat the boss using Asking for and Giving Street Directions."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Pedir y ofrecer direcciones en la calle",
+                                    bossTitle: "Asking for and Giving Street Directions",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to pedir y ofrecer direcciones en la calle.",
-                                      "Say one useful phrase for pedir y ofrecer direcciones en la calle."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to asking for and giving street directions."
                                     ],
                                       use: [
-                                      "Create one sentence about pedir y ofrecer direcciones en la calle using keywords.",
-                                      "Ask a partner one question about pedir y ofrecer direcciones en la calle."
+                                      "You have 60 seconds: create three sentences about asking for and giving street directions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about pedir y ofrecer direcciones en la calle.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to pedir y ofrecer direcciones en la calle."
+                                      "Speak for 45 seconds about asking for and giving street directions.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -12223,7 +12053,7 @@ export const curriculumLevels: CurriculumLevel[] = [
             "slides": [
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Conversaciones telefónicas básicas."],
@@ -12232,23 +12062,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Conversaciones telefónicas básicas",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to conversaciones telefónicas básicas.",
-                                      "Say one useful phrase for conversaciones telefónicas básicas."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to conversaciones telefónicas básicas."
                                     ],
                                       use: [
-                                      "Create one sentence about conversaciones telefónicas básicas using keywords.",
-                                      "Ask a partner one question about conversaciones telefónicas básicas."
+                                      "You have 60 seconds: create three sentences about conversaciones telefónicas básicas using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about conversaciones telefónicas básicas.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to conversaciones telefónicas básicas."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -12659,32 +12484,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Repaso de presente simple vs. continuo."],
+                                  content: ["Defeat the boss using Review of Present Simple vs. Continuous."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Repaso de presente simple vs. continuo",
+                                    bossTitle: "Review of Present Simple vs. Continuous",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to repaso de presente simple vs. continuo.",
-                                      "Say one useful phrase for repaso de presente simple vs. continuo."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to review of present simple vs. continuous."
                                     ],
                                       use: [
-                                      "Create one sentence about repaso de presente simple vs. continuo using keywords.",
-                                      "Ask a partner one question about repaso de presente simple vs. continuo."
+                                      "You have 60 seconds: create three sentences about review of present simple vs. continuous using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about repaso de presente simple vs. continuo.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to repaso de presente simple vs. continuo."
+                                      "Speak for 45 seconds about review of present simple vs. continuous.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -12955,32 +12775,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Proyecto Final de Nivel."],
+                                  content: ["Defeat the boss using Final Level Project."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Proyecto Final de Nivel",
+                                    bossTitle: "Final Level Project",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to proyecto final de nivel.",
-                                      "Say one useful phrase for proyecto final de nivel."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to final level project."
                                     ],
                                       use: [
-                                      "Create one sentence about proyecto final de nivel using keywords.",
-                                      "Ask a partner one question about proyecto final de nivel."
+                                      "You have 60 seconds: create three sentences about final level project using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about proyecto final de nivel.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to proyecto final de nivel."
+                                      "Speak for 45 seconds about final level project.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -13462,32 +13277,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Habilidades y posibilidades (Can / Can't)."],
+                                  content: ["Defeat the boss using Abilities & Possibilities with Can."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Habilidades y posibilidades (Can / Can't)",
+                                    bossTitle: "Abilities & Possibilities with Can",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to habilidades y posibilidades (can / can't).",
-                                      "Say one useful phrase for habilidades y posibilidades (can / can't)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to abilities & possibilities with can."
                                     ],
                                       use: [
-                                      "Create one sentence about habilidades y posibilidades (can / can't) using keywords.",
-                                      "Ask a partner one question about habilidades y posibilidades (can / can't)."
+                                      "You have 60 seconds: create three sentences about abilities & possibilities with can using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about habilidades y posibilidades (can / can't).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to habilidades y posibilidades (can / can't)."
+                                      "Speak for 45 seconds about abilities & possibilities with can.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -13787,32 +13597,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Permisos y peticiones (Can I...?, Could you...?)."],
+                                  content: ["Defeat the boss using Permisos and peticiones (Can I...?, Could you...?)."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Safari Boss",
-                                    bossTitle: "Permisos y peticiones (Can I...?, Could you...?)",
+                                    bossTitle: "Permisos and peticiones (Can I...?, Could you...?)",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to permisos y peticiones (can i...?, could you...?).",
-                                      "Say one useful phrase for permisos y peticiones (can i...?, could you...?)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to permisos and peticiones (can i...?, could you...?)."
                                     ],
                                       use: [
-                                      "Create one sentence about permisos y peticiones (can i...?, could you...?) using animal words.",
-                                      "Ask a partner one question about permisos y peticiones (can i...?, could you...?)."
+                                      "You have 60 seconds: create three sentences about permisos and peticiones (can i...?, could you...?) using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about permisos y peticiones (can i...?, could you...?).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to permisos y peticiones (can i...?, could you...?)."
+                                      "Speak for 45 seconds about permisos and peticiones (can i...?, could you...?).",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -14113,32 +13918,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Obligaciones (Have to / Don't have to)."],
+                                  content: ["Defeat the boss using Obligaciones (Have to."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Obligaciones (Have to / Don't have to)",
+                                    bossTitle: "Obligaciones (Have to",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to obligaciones (have to / don't have to).",
-                                      "Say one useful phrase for obligaciones (have to / don't have to)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to obligaciones (have to."
                                     ],
                                       use: [
-                                      "Create one sentence about obligaciones (have to / don't have to) using keywords.",
-                                      "Ask a partner one question about obligaciones (have to / don't have to)."
+                                      "You have 60 seconds: create three sentences about obligaciones (have to using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about obligaciones (have to / don't have to).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to obligaciones (have to / don't have to)."
+                                      "Speak for 45 seconds about obligaciones (have to.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -14438,32 +14238,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Ropa, colores y descripciones físicas."],
+                                  content: ["Defeat the boss using Clothes, Colors and descripciones físicas."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Weather Closet Boss",
-                                    bossTitle: "Ropa, colores y descripciones físicas",
+                                    bossTitle: "Clothes, Colors and descripciones físicas",
                                     bossAvatar: "🧥",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to ropa, colores y descripciones físicas.",
-                                      "Say one useful phrase for ropa, colores y descripciones físicas."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to clothes, colors and descripciones físicas."
                                     ],
                                       use: [
-                                      "Create one sentence about ropa, colores y descripciones físicas using clothes.",
-                                      "Ask a partner one question about ropa, colores y descripciones físicas."
+                                      "You have 60 seconds: create three sentences about clothes, colors and descripciones físicas using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about ropa, colores y descripciones físicas.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to ropa, colores y descripciones físicas."
+                                      "Speak for 45 seconds about clothes, colors and descripciones físicas.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -14763,32 +14558,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Lugares en la ciudad y transporte."],
+                                  content: ["Defeat the boss using City Places & Transportation."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Travel Boss",
-                                    bossTitle: "Lugares en la ciudad y transporte",
+                                    bossTitle: "City Places & Transportation",
                                     bossAvatar: "✈️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to lugares en la ciudad y transporte.",
-                                      "Say one useful phrase for lugares en la ciudad y transporte."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to city places & transportation."
                                     ],
                                       use: [
-                                      "Create one sentence about lugares en la ciudad y transporte using travel words.",
-                                      "Ask a partner one question about lugares en la ciudad y transporte."
+                                      "You have 60 seconds: create three sentences about city places & transportation using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about lugares en la ciudad y transporte.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to lugares en la ciudad y transporte."
+                                      "Speak for 45 seconds about city places & transportation.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -15088,32 +14878,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Pasado del verbo To Be (was/were)."],
+                                  content: ["Defeat the boss using Past To Be: Was/Were."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Time Machine Boss",
-                                    bossTitle: "Pasado del verbo To Be (was/were)",
+                                    bossTitle: "Past To Be: Was/Were",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to pasado del verbo to be (was/were).",
-                                      "Say one useful phrase for pasado del verbo to be (was/were)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to past to be: was/were."
                                     ],
                                       use: [
-                                      "Create one sentence about pasado del verbo to be (was/were) using past verbs.",
-                                      "Ask a partner one question about pasado del verbo to be (was/were)."
+                                      "You have 60 seconds: create three sentences about past to be: was/were using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about pasado del verbo to be (was/were).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to pasado del verbo to be (was/were)."
+                                      "Speak for 45 seconds about past to be: was/were.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -15413,32 +15198,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Hablando de tu infancia y recuerdos."],
+                                  content: ["Defeat the boss using Talking About Childhood and Memories."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Hablando de tu infancia y recuerdos",
+                                    bossTitle: "Talking About Childhood and Memories",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to hablando de tu infancia y recuerdos.",
-                                      "Say one useful phrase for hablando de tu infancia y recuerdos."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to talking about childhood and memories."
                                     ],
                                       use: [
-                                      "Create one sentence about hablando de tu infancia y recuerdos using keywords.",
-                                      "Ask a partner one question about hablando de tu infancia y recuerdos."
+                                      "You have 60 seconds: create three sentences about talking about childhood and memories using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about hablando de tu infancia y recuerdos.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to hablando de tu infancia y recuerdos."
+                                      "Speak for 45 seconds about talking about childhood and memories.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -15737,32 +15517,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Biografías de personas famosas."],
+                                  content: ["Defeat the boss using Biographies of Famous People."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Biografías de personas famosas",
+                                    bossTitle: "Biographies of Famous People",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to biografías de personas famosas.",
-                                      "Say one useful phrase for biografías de personas famosas."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to biographies of famous people."
                                     ],
                                       use: [
-                                      "Create one sentence about biografías de personas famosas using keywords.",
-                                      "Ask a partner one question about biografías de personas famosas."
+                                      "You have 60 seconds: create three sentences about biographies of famous people using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about biografías de personas famosas.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to biografías de personas famosas."
+                                      "Speak for 45 seconds about biographies of famous people.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -16061,32 +15836,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Fechas, años y meses."],
+                                  content: ["Defeat the boss using Fechas, años and meses."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Fechas, años y meses",
+                                    bossTitle: "Fechas, años and meses",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to fechas, años y meses.",
-                                      "Say one useful phrase for fechas, años y meses."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to fechas, años and meses."
                                     ],
                                       use: [
-                                      "Create one sentence about fechas, años y meses using keywords.",
-                                      "Ask a partner one question about fechas, años y meses."
+                                      "You have 60 seconds: create three sentences about fechas, años and meses using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about fechas, años y meses.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to fechas, años y meses."
+                                      "Speak for 45 seconds about fechas, años and meses.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -16386,32 +16156,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Repaso General de Basic 3."],
+                                  content: ["Defeat the boss using Basic 3 General Review."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Repaso General de Basic 3",
+                                    bossTitle: "Basic 3 General Review",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to repaso general de basic 3.",
-                                      "Say one useful phrase for repaso general de basic 3."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to basic 3 general review."
                                     ],
                                       use: [
-                                      "Create one sentence about repaso general de basic 3 using keywords.",
-                                      "Ask a partner one question about repaso general de basic 3."
+                                      "You have 60 seconds: create three sentences about basic 3 general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about repaso general de basic 3.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to repaso general de basic 3."
+                                      "Speak for 45 seconds about basic 3 general review.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -16932,32 +16697,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Pasado Simple - Verbos Regulares."],
+                                  content: ["Defeat the boss using Past Simple - Verbs Regulares."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Time Machine Boss",
-                                    bossTitle: "Pasado Simple - Verbos Regulares",
+                                    bossTitle: "Past Simple - Verbs Regulares",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to pasado simple - verbos regulares.",
-                                      "Say one useful phrase for pasado simple - verbos regulares."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to past simple - verbs regulares."
                                     ],
                                       use: [
-                                      "Create one sentence about pasado simple - verbos regulares using past verbs.",
-                                      "Ask a partner one question about pasado simple - verbos regulares."
+                                      "You have 60 seconds: create three sentences about past simple - verbs regulares using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about pasado simple - verbos regulares.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to pasado simple - verbos regulares."
+                                      "Speak for 45 seconds about past simple - verbs regulares.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -17318,32 +17078,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Pasado Simple - Verbos Irregulares."],
+                                  content: ["Defeat the boss using Past Simple - Verbs Irregulares."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Time Machine Boss",
-                                    bossTitle: "Pasado Simple - Verbos Irregulares",
+                                    bossTitle: "Past Simple - Verbs Irregulares",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to pasado simple - verbos irregulares.",
-                                      "Say one useful phrase for pasado simple - verbos irregulares."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to past simple - verbs irregulares."
                                     ],
                                       use: [
-                                      "Create one sentence about pasado simple - verbos irregulares using past verbs.",
-                                      "Ask a partner one question about pasado simple - verbos irregulares."
+                                      "You have 60 seconds: create three sentences about past simple - verbs irregulares using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about pasado simple - verbos irregulares.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to pasado simple - verbos irregulares."
+                                      "Speak for 45 seconds about past simple - verbs irregulares.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -17703,32 +17458,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Formando preguntas y negaciones en pasado."],
+                                  content: ["Defeat the boss using Forming Questions and Negatives in the Past."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Formando preguntas y negaciones en pasado",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Time Machine Boss",
+                                    bossTitle: "Forming Questions and Negatives in the Past",
+                                    bossAvatar: "🕹️",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to formando preguntas y negaciones en pasado.",
-                                      "Say one useful phrase for formando preguntas y negaciones en pasado."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to forming questions and negatives in the past."
                                     ],
                                       use: [
-                                      "Create one sentence about formando preguntas y negaciones en pasado using keywords.",
-                                      "Ask a partner one question about formando preguntas y negaciones en pasado."
+                                      "You have 60 seconds: create three sentences about forming questions and negatives in the past using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about formando preguntas y negaciones en pasado.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to formando preguntas y negaciones en pasado."
+                                      "Speak for 45 seconds about forming questions and negatives in the past.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -18086,32 +17836,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Vocabulario de viajes y vacaciones."],
+                                  content: ["Defeat the boss using Travel & Vacations."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Travel Boss",
-                                    bossTitle: "Vocabulario de viajes y vacaciones",
+                                    bossTitle: "Travel & Vacations",
                                     bossAvatar: "✈️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to vocabulario de viajes y vacaciones.",
-                                      "Say one useful phrase for vocabulario de viajes y vacaciones."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to travel & vacations."
                                     ],
                                       use: [
-                                      "Create one sentence about vocabulario de viajes y vacaciones using travel words.",
-                                      "Ask a partner one question about vocabulario de viajes y vacaciones."
+                                      "You have 60 seconds: create three sentences about travel & vacations using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about vocabulario de viajes y vacaciones.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to vocabulario de viajes y vacaciones."
+                                      "Speak for 45 seconds about travel & vacations.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -18469,7 +18214,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Contando anécdotas usando conectores (first, then, finally)."],
@@ -18478,23 +18223,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Contando anécdotas usando conectores (first, then, finally)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to contando anécdotas usando conectores (first, then, finally).",
-                                      "Say one useful phrase for contando anécdotas usando conectores (first, then, finally)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to contando anécdotas usando conectores (first, then, finally)."
                                     ],
                                       use: [
-                                      "Create one sentence about contando anécdotas usando conectores (first, then, finally) using keywords.",
-                                      "Ask a partner one question about contando anécdotas usando conectores (first, then, finally)."
+                                      "You have 60 seconds: create three sentences about contando anécdotas usando conectores (first, then, finally) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about contando anécdotas usando conectores (first, then, finally).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to contando anécdotas usando conectores (first, then, finally)."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -18848,32 +18588,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Expresando planes futuros con Going to."],
+                                  content: ["Defeat the boss using Expresando planes futuros with Going to."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Future Boss",
-                                    bossTitle: "Expresando planes futuros con Going to",
+                                    bossTitle: "Expresando planes futuros with Going to",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to expresando planes futuros con going to.",
-                                      "Say one useful phrase for expresando planes futuros con going to."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to expresando planes futuros with going to."
                                     ],
                                       use: [
-                                      "Create one sentence about expresando planes futuros con going to using future plans.",
-                                      "Ask a partner one question about expresando planes futuros con going to."
+                                      "You have 60 seconds: create three sentences about expresando planes futuros with going to using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about expresando planes futuros con going to.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to expresando planes futuros con going to."
+                                      "Speak for 45 seconds about expresando planes futuros with going to.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -19230,32 +18965,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Predicciones y decisiones rápidas con Will."],
+                                  content: ["Defeat the boss using Predicciones and decisiones rápidas with Will."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Future Boss",
-                                    bossTitle: "Predicciones y decisiones rápidas con Will",
+                                    bossTitle: "Predicciones and decisiones rápidas with Will",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to predicciones y decisiones rápidas con will.",
-                                      "Say one useful phrase for predicciones y decisiones rápidas con will."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to predicciones and decisiones rápidas with will."
                                     ],
                                       use: [
-                                      "Create one sentence about predicciones y decisiones rápidas con will using future plans.",
-                                      "Ask a partner one question about predicciones y decisiones rápidas con will."
+                                      "You have 60 seconds: create three sentences about predicciones and decisiones rápidas with will using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about predicciones y decisiones rápidas con will.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to predicciones y decisiones rápidas con will."
+                                      "Speak for 45 seconds about predicciones and decisiones rápidas with will.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -19607,32 +19337,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Diferencias entre Will y Going to."],
+                                  content: ["Defeat the boss using Diferencias entre Will and Going to."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Future Boss",
-                                    bossTitle: "Diferencias entre Will y Going to",
+                                    bossTitle: "Diferencias entre Will and Going to",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to diferencias entre will y going to.",
-                                      "Say one useful phrase for diferencias entre will y going to."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to diferencias entre will and going to."
                                     ],
                                       use: [
-                                      "Create one sentence about diferencias entre will y going to using future plans.",
-                                      "Ask a partner one question about diferencias entre will y going to."
+                                      "You have 60 seconds: create three sentences about diferencias entre will and going to using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about diferencias entre will y going to.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to diferencias entre will y going to."
+                                      "Speak for 45 seconds about diferencias entre will and going to.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -19991,32 +19716,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Dando opiniones y mostrando acuerdo/desacuerdo."],
+                                  content: ["Defeat the boss using Giving Opinions and Agreeing or Disagreeing."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Dando opiniones y mostrando acuerdo/desacuerdo",
+                                    bossTitle: "Giving Opinions and Agreeing or Disagreeing",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to dando opiniones y mostrando acuerdo/desacuerdo.",
-                                      "Say one useful phrase for dando opiniones y mostrando acuerdo/desacuerdo."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to giving opinions and agreeing or disagreeing."
                                     ],
                                       use: [
-                                      "Create one sentence about dando opiniones y mostrando acuerdo/desacuerdo using keywords.",
-                                      "Ask a partner one question about dando opiniones y mostrando acuerdo/desacuerdo."
+                                      "You have 60 seconds: create three sentences about giving opinions and agreeing or disagreeing using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about dando opiniones y mostrando acuerdo/desacuerdo.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to dando opiniones y mostrando acuerdo/desacuerdo."
+                                      "Speak for 45 seconds about giving opinions and agreeing or disagreeing.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -20377,32 +20097,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Preparación para Nivel Intermedio."],
+                                  content: ["Defeat the boss using Intermediate Level Preparation."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Preparación para Nivel Intermedio",
+                                    bossTitle: "Intermediate Level Preparation",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to preparación para nivel intermedio.",
-                                      "Say one useful phrase for preparación para nivel intermedio."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to intermediate level preparation."
                                     ],
                                       use: [
-                                      "Create one sentence about preparación para nivel intermedio using keywords.",
-                                      "Ask a partner one question about preparación para nivel intermedio."
+                                      "You have 60 seconds: create three sentences about intermediate level preparation using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about preparación para nivel intermedio.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to preparación para nivel intermedio."
+                                      "Speak for 45 seconds about intermediate level preparation.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -20901,32 +20616,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Repaso de tiempos verbales básicos."],
+                                  content: ["Defeat the boss using Basic Verb Tenses Review."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Repaso de tiempos verbales básicos",
+                                    bossTitle: "Basic Verb Tenses Review",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to repaso de tiempos verbales básicos.",
-                                      "Say one useful phrase for repaso de tiempos verbales básicos."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to basic verb tenses review."
                                     ],
                                       use: [
-                                      "Create one sentence about repaso de tiempos verbales básicos using keywords.",
-                                      "Ask a partner one question about repaso de tiempos verbales básicos."
+                                      "You have 60 seconds: create three sentences about basic verb tenses review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about repaso de tiempos verbales básicos.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to repaso de tiempos verbales básicos."
+                                      "Speak for 45 seconds about basic verb tenses review.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -21230,32 +20940,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Primer Condicional (situaciones reales)."],
+                                  content: ["Defeat the boss using First Conditional."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Primer Condicional (situaciones reales)",
+                                    bossTitle: "First Conditional",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to primer condicional (situaciones reales).",
-                                      "Say one useful phrase for primer condicional (situaciones reales)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to first conditional."
                                     ],
                                       use: [
-                                      "Create one sentence about primer condicional (situaciones reales) using keywords.",
-                                      "Ask a partner one question about primer condicional (situaciones reales)."
+                                      "You have 60 seconds: create three sentences about first conditional using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about primer condicional (situaciones reales).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to primer condicional (situaciones reales)."
+                                      "Speak for 45 seconds about first conditional.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -21561,32 +21266,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Verbos modales de consejo (Should / Ought to)."],
+                                  content: ["Defeat the boss using Modal Verbs for Advice."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Verbos modales de consejo (Should / Ought to)",
+                                    bossTitle: "Modal Verbs for Advice",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to verbos modales de consejo (should / ought to).",
-                                      "Say one useful phrase for verbos modales de consejo (should / ought to)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to modal verbs for advice."
                                     ],
                                       use: [
-                                      "Create one sentence about verbos modales de consejo (should / ought to) using keywords.",
-                                      "Ask a partner one question about verbos modales de consejo (should / ought to)."
+                                      "You have 60 seconds: create three sentences about modal verbs for advice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about verbos modales de consejo (should / ought to).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to verbos modales de consejo (should / ought to)."
+                                      "Speak for 45 seconds about modal verbs for advice.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -21891,32 +21591,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Verbos modales de posibilidad (May / Might / Could)."],
+                                  content: ["Defeat the boss using Modal Verbs for Possibility."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Verbos modales de posibilidad (May / Might / Could)",
+                                    bossTitle: "Modal Verbs for Possibility",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to verbos modales de posibilidad (may / might / could).",
-                                      "Say one useful phrase for verbos modales de posibilidad (may / might / could)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to modal verbs for possibility."
                                     ],
                                       use: [
-                                      "Create one sentence about verbos modales de posibilidad (may / might / could) using keywords.",
-                                      "Ask a partner one question about verbos modales de posibilidad (may / might / could)."
+                                      "You have 60 seconds: create three sentences about modal verbs for possibility using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about verbos modales de posibilidad (may / might / could).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to verbos modales de posibilidad (may / might / could)."
+                                      "Speak for 45 seconds about modal verbs for possibility.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -22223,32 +21918,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Comparativos y superlativos."],
+                                  content: ["Defeat the boss using Comparativos and superlativos."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Comparativos y superlativos",
+                                    bossTitle: "Comparativos and superlativos",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to comparativos y superlativos.",
-                                      "Say one useful phrase for comparativos y superlativos."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to comparativos and superlativos."
                                     ],
                                       use: [
-                                      "Create one sentence about comparativos y superlativos using keywords.",
-                                      "Ask a partner one question about comparativos y superlativos."
+                                      "You have 60 seconds: create three sentences about comparativos and superlativos using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about comparativos y superlativos.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to comparativos y superlativos."
+                                      "Speak for 45 seconds about comparativos and superlativos.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -22554,32 +22244,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Describiendo exceso y suficiencia (too / enough)."],
+                                  content: ["Defeat the boss using Too and Enough for Excess and Sufficiency."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Describiendo exceso y suficiencia (too / enough)",
+                                    bossTitle: "Too and Enough for Excess and Sufficiency",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to describiendo exceso y suficiencia (too / enough).",
-                                      "Say one useful phrase for describiendo exceso y suficiencia (too / enough)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to too and enough for excess and sufficiency."
                                     ],
                                       use: [
-                                      "Create one sentence about describiendo exceso y suficiencia (too / enough) using keywords.",
-                                      "Ask a partner one question about describiendo exceso y suficiencia (too / enough)."
+                                      "You have 60 seconds: create three sentences about too and enough for excess and sufficiency using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about describiendo exceso y suficiencia (too / enough).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to describiendo exceso y suficiencia (too / enough)."
+                                      "Speak for 45 seconds about too and enough for excess and sufficiency.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -22881,32 +22566,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Vocabulario de trabajo y oficina."],
+                                  content: ["Defeat the boss using Work and Office Vocabulary."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Vocabulario de trabajo y oficina",
+                                    bossTitle: "Work and Office Vocabulary",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to vocabulario de trabajo y oficina.",
-                                      "Say one useful phrase for vocabulario de trabajo y oficina."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to work and office vocabulary."
                                     ],
                                       use: [
-                                      "Create one sentence about vocabulario de trabajo y oficina using keywords.",
-                                      "Ask a partner one question about vocabulario de trabajo y oficina."
+                                      "You have 60 seconds: create three sentences about work and office vocabulary using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about vocabulario de trabajo y oficina.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to vocabulario de trabajo y oficina."
+                                      "Speak for 45 seconds about work and office vocabulary.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -23212,7 +22892,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Redactando correos electrónicos formales."],
@@ -23221,23 +22901,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "Redactando correos electrónicos formales",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to redactando correos electrónicos formales.",
-                                      "Say one useful phrase for redactando correos electrónicos formales."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to redactando correos electrónicos formales."
                                     ],
                                       use: [
-                                      "Create one sentence about redactando correos electrónicos formales using numbers.",
-                                      "Ask a partner one question about redactando correos electrónicos formales."
+                                      "You have 60 seconds: create three sentences about redactando correos electrónicos formales using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about redactando correos electrónicos formales.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to redactando correos electrónicos formales."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -23544,32 +23219,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Present Perfect para experiencias de vida."],
+                                  content: ["Defeat the boss using Present Perfect for Life Experiences."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Present Perfect para experiencias de vida",
+                                    bossTitle: "Present Perfect for Life Experiences",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to present perfect para experiencias de vida.",
-                                      "Say one useful phrase for present perfect para experiencias de vida."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to present perfect for life experiences."
                                     ],
                                       use: [
-                                      "Create one sentence about present perfect para experiencias de vida using keywords.",
-                                      "Ask a partner one question about present perfect para experiencias de vida."
+                                      "You have 60 seconds: create three sentences about present perfect for life experiences using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about present perfect para experiencias de vida.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to present perfect para experiencias de vida."
+                                      "Speak for 45 seconds about present perfect for life experiences.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -23875,32 +23545,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Diferencias entre Pasado Simple y Present Perfect."],
+                                  content: ["Defeat the boss using Diferencias entre Past Simple and Present Perfect."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Diferencias entre Pasado Simple y Present Perfect",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Time Machine Boss",
+                                    bossTitle: "Diferencias entre Past Simple and Present Perfect",
+                                    bossAvatar: "🕹️",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to diferencias entre pasado simple y present perfect.",
-                                      "Say one useful phrase for diferencias entre pasado simple y present perfect."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to diferencias entre past simple and present perfect."
                                     ],
                                       use: [
-                                      "Create one sentence about diferencias entre pasado simple y present perfect using keywords.",
-                                      "Ask a partner one question about diferencias entre pasado simple y present perfect."
+                                      "You have 60 seconds: create three sentences about diferencias entre past simple and present perfect using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about diferencias entre pasado simple y present perfect.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to diferencias entre pasado simple y present perfect."
+                                      "Speak for 45 seconds about diferencias entre past simple and present perfect.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -24204,32 +23869,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Gerundios e infinitivos después de verbos."],
+                                  content: ["Defeat the boss using Gerunds and Infinitives After Verbs."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Gerundios e infinitivos después de verbos",
+                                    bossTitle: "Gerunds and Infinitives After Verbs",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to gerundios e infinitivos después de verbos.",
-                                      "Say one useful phrase for gerundios e infinitivos después de verbos."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to gerunds and infinitives after verbs."
                                     ],
                                       use: [
-                                      "Create one sentence about gerundios e infinitivos después de verbos using keywords.",
-                                      "Ask a partner one question about gerundios e infinitivos después de verbos."
+                                      "You have 60 seconds: create three sentences about gerunds and infinitives after verbs using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about gerundios e infinitivos después de verbos.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to gerundios e infinitivos después de verbos."
+                                      "Speak for 45 seconds about gerunds and infinitives after verbs.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -24537,32 +24197,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Introducción a los Phrasal Verbs más usados."],
+                                  content: ["Defeat the boss using Introduction to Common Phrasal Verbs."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Greeting Boss",
-                                    bossTitle: "Introducción a los Phrasal Verbs más usados",
+                                    bossTitle: "Introduction to Common Phrasal Verbs",
                                     bossAvatar: "👾",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to introducción a los phrasal verbs más usados.",
-                                      "Say one useful phrase for introducción a los phrasal verbs más usados."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to introduction to common phrasal verbs."
                                     ],
                                       use: [
-                                      "Create one sentence about introducción a los phrasal verbs más usados using greetings.",
-                                      "Ask a partner one question about introducción a los phrasal verbs más usados."
+                                      "You have 60 seconds: create three sentences about introduction to common phrasal verbs using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about introducción a los phrasal verbs más usados.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to introducción a los phrasal verbs más usados."
+                                      "Speak for 45 seconds about introduction to common phrasal verbs.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -25014,32 +24669,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Pronunciación: Connected speech y entonación."],
+                                  content: ["Defeat the boss using Pronunciación: Connected speech and entonación."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Pronunciación: Connected speech y entonación",
+                                    bossTitle: "Pronunciación: Connected speech and entonación",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to pronunciación: connected speech y entonación.",
-                                      "Say one useful phrase for pronunciación: connected speech y entonación."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to pronunciación: connected speech and entonación."
                                     ],
                                       use: [
-                                      "Create one sentence about pronunciación: connected speech y entonación using keywords.",
-                                      "Ask a partner one question about pronunciación: connected speech y entonación."
+                                      "You have 60 seconds: create three sentences about pronunciación: connected speech and entonación using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about pronunciación: connected speech y entonación.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to pronunciación: connected speech y entonación."
+                                      "Speak for 45 seconds about pronunciación: connected speech and entonación.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -25300,32 +24950,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Segundo Condicional (situaciones hipotéticas)."],
+                                  content: ["Defeat the boss using Second Conditional."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Segundo Condicional (situaciones hipotéticas)",
+                                    bossTitle: "Second Conditional",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to segundo condicional (situaciones hipotéticas).",
-                                      "Say one useful phrase for segundo condicional (situaciones hipotéticas)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to second conditional."
                                     ],
                                       use: [
-                                      "Create one sentence about segundo condicional (situaciones hipotéticas) using keywords.",
-                                      "Ask a partner one question about segundo condicional (situaciones hipotéticas)."
+                                      "You have 60 seconds: create three sentences about second conditional using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about segundo condicional (situaciones hipotéticas).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to segundo condicional (situaciones hipotéticas)."
+                                      "Speak for 45 seconds about second conditional.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -25586,32 +25231,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Tercer Condicional (arrepentimientos del pasado)."],
+                                  content: ["Defeat the boss using Third Conditional."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Tercer Condicional (arrepentimientos del pasado)",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Time Machine Boss",
+                                    bossTitle: "Third Conditional",
+                                    bossAvatar: "🕹️",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to tercer condicional (arrepentimientos del pasado).",
-                                      "Say one useful phrase for tercer condicional (arrepentimientos del pasado)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to third conditional."
                                     ],
                                       use: [
-                                      "Create one sentence about tercer condicional (arrepentimientos del pasado) using keywords.",
-                                      "Ask a partner one question about tercer condicional (arrepentimientos del pasado)."
+                                      "You have 60 seconds: create three sentences about third conditional using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about tercer condicional (arrepentimientos del pasado).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to tercer condicional (arrepentimientos del pasado)."
+                                      "Speak for 45 seconds about third conditional.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -25873,7 +25513,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Reported Speech (estilo indirecto)."],
@@ -25882,23 +25522,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Reported Speech (estilo indirecto)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to reported speech (estilo indirecto).",
-                                      "Say one useful phrase for reported speech (estilo indirecto)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to reported speech (estilo indirecto)."
                                     ],
                                       use: [
-                                      "Create one sentence about reported speech (estilo indirecto) using keywords.",
-                                      "Ask a partner one question about reported speech (estilo indirecto)."
+                                      "You have 60 seconds: create three sentences about reported speech (estilo indirecto) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about reported speech (estilo indirecto).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to reported speech (estilo indirecto)."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -26160,7 +25795,7 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Relative Clauses (who, which, that, where)."],
@@ -26169,23 +25804,18 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Relative Clauses (who, which, that, where)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to relative clauses (who, which, that, where).",
-                                      "Say one useful phrase for relative clauses (who, which, that, where)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to relative clauses (who, which, that, where)."
                                     ],
                                       use: [
-                                      "Create one sentence about relative clauses (who, which, that, where) using keywords.",
-                                      "Ask a partner one question about relative clauses (who, which, that, where)."
+                                      "You have 60 seconds: create three sentences about relative clauses (who, which, that, where) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
                                       "Speak for 45 seconds about relative clauses (who, which, that, where).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to relative clauses (who, which, that, where)."
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -26447,32 +26077,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Vocabulario avanzado de negocios y negociación."],
+                                  content: ["Defeat the boss using Advanced Business and Negotiation Vocabulary."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Vocabulario avanzado de negocios y negociación",
+                                    bossTitle: "Advanced Business and Negotiation Vocabulary",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to vocabulario avanzado de negocios y negociación.",
-                                      "Say one useful phrase for vocabulario avanzado de negocios y negociación."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to advanced business and negotiation vocabulary."
                                     ],
                                       use: [
-                                      "Create one sentence about vocabulario avanzado de negocios y negociación using keywords.",
-                                      "Ask a partner one question about vocabulario avanzado de negocios y negociación."
+                                      "You have 60 seconds: create three sentences about advanced business and negotiation vocabulary using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about vocabulario avanzado de negocios y negociación.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to vocabulario avanzado de negocios y negociación."
+                                      "Speak for 45 seconds about advanced business and negotiation vocabulary.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -26734,32 +26359,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Resolviendo problemas y quejas de clientes."],
+                                  content: ["Defeat the boss using Solving Problems and Customer Complaints."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Resolviendo problemas y quejas de clientes",
+                                    bossTitle: "Solving Problems and Customer Complaints",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to resolviendo problemas y quejas de clientes.",
-                                      "Say one useful phrase for resolviendo problemas y quejas de clientes."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to solving problems and customer complaints."
                                     ],
                                       use: [
-                                      "Create one sentence about resolviendo problemas y quejas de clientes using keywords.",
-                                      "Ask a partner one question about resolviendo problemas y quejas de clientes."
+                                      "You have 60 seconds: create three sentences about solving problems and customer complaints using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about resolviendo problemas y quejas de clientes.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to resolviendo problemas y quejas de clientes."
+                                      "Speak for 45 seconds about solving problems and customer complaints.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -27021,32 +26641,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Future Continuous y Future Perfect."],
+                                  content: ["Defeat the boss using Future Continuous and Future Perfect."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Future Boss",
-                                    bossTitle: "Future Continuous y Future Perfect",
+                                    bossTitle: "Future Continuous and Future Perfect",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to future continuous y future perfect.",
-                                      "Say one useful phrase for future continuous y future perfect."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to future continuous and future perfect."
                                     ],
                                       use: [
-                                      "Create one sentence about future continuous y future perfect using future plans.",
-                                      "Ask a partner one question about future continuous y future perfect."
+                                      "You have 60 seconds: create three sentences about future continuous and future perfect using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about future continuous y future perfect.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to future continuous y future perfect."
+                                      "Speak for 45 seconds about future continuous and future perfect.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -27308,32 +26923,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Phrasal verbs avanzados en contexto."],
+                                  content: ["Defeat the boss using Advanced Phrasal Verbs in Context."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Phrasal verbs avanzados en contexto",
+                                    bossTitle: "Advanced Phrasal Verbs in Context",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to phrasal verbs avanzados en contexto.",
-                                      "Say one useful phrase for phrasal verbs avanzados en contexto."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to advanced phrasal verbs in context."
                                     ],
                                       use: [
-                                      "Create one sentence about phrasal verbs avanzados en contexto using keywords.",
-                                      "Ask a partner one question about phrasal verbs avanzados en contexto."
+                                      "You have 60 seconds: create three sentences about advanced phrasal verbs in context using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about phrasal verbs avanzados en contexto.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to phrasal verbs avanzados en contexto."
+                                      "Speak for 45 seconds about advanced phrasal verbs in context.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -27595,32 +27205,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Repaso avanzado."],
+                                  content: ["Defeat the boss using Review avanzado."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Repaso avanzado",
+                                    bossTitle: "Review avanzado",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to repaso avanzado.",
-                                      "Say one useful phrase for repaso avanzado."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to review avanzado."
                                     ],
                                       use: [
-                                      "Create one sentence about repaso avanzado using keywords.",
-                                      "Ask a partner one question about repaso avanzado."
+                                      "You have 60 seconds: create three sentences about review avanzado using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about repaso avanzado.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to repaso avanzado."
+                                      "Speak for 45 seconds about review avanzado.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -28060,32 +27665,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Idioms y expresiones idiomáticas."],
+                                  content: ["Defeat the boss using Idioms and expresiones idiomáticas."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Idioms y expresiones idiomáticas",
+                                    bossTitle: "Idioms and expresiones idiomáticas",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to idioms y expresiones idiomáticas.",
-                                      "Say one useful phrase for idioms y expresiones idiomáticas."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to idioms and expresiones idiomáticas."
                                     ],
                                       use: [
-                                      "Create one sentence about idioms y expresiones idiomáticas using keywords.",
-                                      "Ask a partner one question about idioms y expresiones idiomáticas."
+                                      "You have 60 seconds: create three sentences about idioms and expresiones idiomáticas using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about idioms y expresiones idiomáticas.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to idioms y expresiones idiomáticas."
+                                      "Speak for 45 seconds about idioms and expresiones idiomáticas.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -28347,32 +27947,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Inversiones para énfasis formal."],
+                                  content: ["Defeat the boss using Inversion for Formal Emphasis."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Inversiones para énfasis formal",
+                                    bossTitle: "Inversion for Formal Emphasis",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to inversiones para énfasis formal.",
-                                      "Say one useful phrase for inversiones para énfasis formal."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to inversion for formal emphasis."
                                     ],
                                       use: [
-                                      "Create one sentence about inversiones para énfasis formal using keywords.",
-                                      "Ask a partner one question about inversiones para énfasis formal."
+                                      "You have 60 seconds: create three sentences about inversion for formal emphasis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about inversiones para énfasis formal.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to inversiones para énfasis formal."
+                                      "Speak for 45 seconds about inversion for formal emphasis.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -28634,32 +28229,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Cleft sentences para resaltar información."],
+                                  content: ["Defeat the boss using Cleft Sentences for Emphasis."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Cleft sentences para resaltar información",
+                                    bossTitle: "Cleft Sentences for Emphasis",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to cleft sentences para resaltar información.",
-                                      "Say one useful phrase for cleft sentences para resaltar información."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to cleft sentences for emphasis."
                                     ],
                                       use: [
-                                      "Create one sentence about cleft sentences para resaltar información using keywords.",
-                                      "Ask a partner one question about cleft sentences para resaltar información."
+                                      "You have 60 seconds: create three sentences about cleft sentences for emphasis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about cleft sentences para resaltar información.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to cleft sentences para resaltar información."
+                                      "Speak for 45 seconds about cleft sentences for emphasis.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -28921,32 +28511,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Lenguaje diplomático y atenuadores (Hedging)."],
+                                  content: ["Defeat the boss using Lenguaje diplomático and atenuadores (Hedging)."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Time Boss",
-                                    bossTitle: "Lenguaje diplomático y atenuadores (Hedging)",
+                                    bossTitle: "Lenguaje diplomático and atenuadores (Hedging)",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to lenguaje diplomático y atenuadores (hedging).",
-                                      "Say one useful phrase for lenguaje diplomático y atenuadores (hedging)."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to lenguaje diplomático and atenuadores (hedging)."
                                     ],
                                       use: [
-                                      "Create one sentence about lenguaje diplomático y atenuadores (hedging) using numbers.",
-                                      "Ask a partner one question about lenguaje diplomático y atenuadores (hedging)."
+                                      "You have 60 seconds: create three sentences about lenguaje diplomático and atenuadores (hedging) using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about lenguaje diplomático y atenuadores (hedging).",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to lenguaje diplomático y atenuadores (hedging)."
+                                      "Speak for 45 seconds about lenguaje diplomático and atenuadores (hedging).",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -29207,32 +28792,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Preparando presentaciones de alto impacto."],
+                                  content: ["Defeat the boss using Preparing High-impact Introductions."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Preparando presentaciones de alto impacto",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    bossName: "The Greeting Boss",
+                                    bossTitle: "Preparing High-impact Introductions",
+                                    bossAvatar: "👾",
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to preparando presentaciones de alto impacto.",
-                                      "Say one useful phrase for preparando presentaciones de alto impacto."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to preparing high-impact introductions."
                                     ],
                                       use: [
-                                      "Create one sentence about preparando presentaciones de alto impacto using keywords.",
-                                      "Ask a partner one question about preparando presentaciones de alto impacto."
+                                      "You have 60 seconds: create three sentences about preparing high-impact introductions using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about preparando presentaciones de alto impacto.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to preparando presentaciones de alto impacto."
+                                      "Speak for 45 seconds about preparing high-impact introductions.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -29494,32 +29074,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Discurso persuasivo y argumentación."],
+                                  content: ["Defeat the boss using Discurso persuasivo and argumentación."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Discurso persuasivo y argumentación",
+                                    bossTitle: "Discurso persuasivo and argumentación",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to discurso persuasivo y argumentación.",
-                                      "Say one useful phrase for discurso persuasivo y argumentación."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to discurso persuasivo and argumentación."
                                     ],
                                       use: [
-                                      "Create one sentence about discurso persuasivo y argumentación using keywords.",
-                                      "Ask a partner one question about discurso persuasivo y argumentación."
+                                      "You have 60 seconds: create three sentences about discurso persuasivo and argumentación using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about discurso persuasivo y argumentación.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to discurso persuasivo y argumentación."
+                                      "Speak for 45 seconds about discurso persuasivo and argumentación.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -29781,32 +29356,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Debates sobre temas complejos."],
+                                  content: ["Defeat the boss using Debates on Complex Topics."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Debates sobre temas complejos",
+                                    bossTitle: "Debates on Complex Topics",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to debates sobre temas complejos.",
-                                      "Say one useful phrase for debates sobre temas complejos."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to debates on complex topics."
                                     ],
                                       use: [
-                                      "Create one sentence about debates sobre temas complejos using keywords.",
-                                      "Ask a partner one question about debates sobre temas complejos."
+                                      "You have 60 seconds: create three sentences about debates on complex topics using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about debates sobre temas complejos.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to debates sobre temas complejos."
+                                      "Speak for 45 seconds about debates on complex topics.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -30068,32 +29638,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Storytelling en entornos profesionales."],
+                                  content: ["Defeat the boss using Storytelling in Professional Settings."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Storytelling en entornos profesionales",
+                                    bossTitle: "Storytelling in Professional Settings",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to storytelling en entornos profesionales.",
-                                      "Say one useful phrase for storytelling en entornos profesionales."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to storytelling in professional settings."
                                     ],
                                       use: [
-                                      "Create one sentence about storytelling en entornos profesionales using keywords.",
-                                      "Ask a partner one question about storytelling en entornos profesionales."
+                                      "You have 60 seconds: create three sentences about storytelling in professional settings using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about storytelling en entornos profesionales.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to storytelling en entornos profesionales."
+                                      "Speak for 45 seconds about storytelling in professional settings.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -30354,32 +29919,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Analizando artículos de opinión y noticias."],
+                                  content: ["Defeat the boss using Analyzing Opinion Articles and News."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Analizando artículos de opinión y noticias",
+                                    bossTitle: "Analyzing Opinion Articles and News",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to analizando artículos de opinión y noticias.",
-                                      "Say one useful phrase for analizando artículos de opinión y noticias."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to analyzing opinion articles and news."
                                     ],
                                       use: [
-                                      "Create one sentence about analizando artículos de opinión y noticias using keywords.",
-                                      "Ask a partner one question about analizando artículos de opinión y noticias."
+                                      "You have 60 seconds: create three sentences about analyzing opinion articles and news using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about analizando artículos de opinión y noticias.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to analizando artículos de opinión y noticias."
+                                      "Speak for 45 seconds about analyzing opinion articles and news.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }
@@ -30641,32 +30201,27 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                                   id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle / Batalla Oral contra el Jefe",
+                                  title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Proyecto Final Masters."],
+                                  content: ["Defeat the boss using Final Masters Project."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
-                                    bossTitle: "Proyecto Final Masters",
+                                    bossTitle: "Final Masters Project",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
+                                    timerSeconds: 45,
+                                    prepareSeconds: 30,
                                     rounds: {
                                       remember: [
-                                      "Say three words connected to proyecto final masters.",
-                                      "Say one useful phrase for proyecto final masters."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to final masters project."
                                     ],
                                       use: [
-                                      "Create one sentence about proyecto final masters using keywords.",
-                                      "Ask a partner one question about proyecto final masters."
+                                      "You have 60 seconds: create three sentences about final masters project using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about proyecto final masters.",
-                                      "Include one example, one opinion, and one class phrase."
-                                    ],
-                                      memoryBonus: [
-                                      "Use one word or structure from a previous class.",
-                                      "Connect it naturally to proyecto final masters."
+                                      "Speak for 45 seconds about final masters project.",
+                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
                                   }

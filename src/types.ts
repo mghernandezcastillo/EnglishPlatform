@@ -65,11 +65,11 @@ export interface ClassSlide {
     bossTitle?: string;
     bossAvatar?: string;
     timerSeconds?: number;
+    prepareSeconds?: number;
     rounds: {
       remember: string[];
       use: string[];
       speak: string[];
-      memoryBonus: string[];
     };
   };
 }

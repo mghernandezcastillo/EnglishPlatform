@@ -1,25 +1,24 @@
 import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'motion/react';
-import { Brain, Flame, Minus, Plus, RotateCcw, Shield, Sparkles, Swords, Timer, Trophy, Zap } from 'lucide-react';
+import { Brain, Flame, Minus, Plus, RotateCcw, Shield, Swords, Timer, Trophy, Zap } from 'lucide-react';
 
 interface SpeakingBossBattleGameProps {
   bossName?: string;
   bossTitle?: string;
   bossAvatar?: string;
   timerSeconds?: number;
+  prepareSeconds?: number;
   rounds?: {
     remember?: string[];
     use?: string[];
     speak?: string[];
-    memoryBonus?: string[];
   };
 }
 
 const fallbackRounds = {
-  remember: ['Say three useful words from today.'],
-  use: ['Create one sentence using today\'s grammar.'],
-  speak: ['Speak for 30 seconds about today\'s topic.'],
-  memoryBonus: ['Use one expression from a previous class.']
+  remember: ['You have 30 seconds: say three key words and one useful phrase from today.'],
+  use: ['You have 60 seconds: create three sentences using today\'s grammar: one positive, one negative, and one question.'],
+  speak: ['Speak for 45 seconds about today\'s topic.']
 };
 
 const roundMeta = [
@@ -46,14 +45,6 @@ const roundMeta = [
     icon: Flame,
     color: 'from-orange-400 to-red-500',
     action: 'Talk without stopping'
-  },
-  {
-    key: 'memoryBonus',
-    label: 'Bonus',
-    title: 'Memory Bonus',
-    icon: Sparkles,
-    color: 'from-fuchsia-400 to-violet-500',
-    action: 'Connect with older English'
   }
 ] as const;
 
@@ -61,42 +52,70 @@ export function SpeakingBossBattleGame({
   bossName = 'The English Boss',
   bossTitle = 'Final speaking challenge',
   bossAvatar = '⚔️',
-  timerSeconds = 30,
+  timerSeconds = 45,
+  prepareSeconds = 30,
   rounds
 }: SpeakingBossBattleGameProps) {
   const [activeRound, setActiveRound] = useState(0);
   const [hits, setHits] = useState(0);
-  const [customSeconds, setCustomSeconds] = useState(timerSeconds);
-  const [timer, setTimer] = useState(timerSeconds);
+  const [timerMode, setTimerMode] = useState<'prepare' | 'speak'>('prepare');
+  const [customRememberSeconds, setCustomRememberSeconds] = useState(30);
+  const [customUseSeconds, setCustomUseSeconds] = useState(60);
+  const [customPrepareSeconds, setCustomPrepareSeconds] = useState(prepareSeconds);
+  const [customSpeakSeconds, setCustomSpeakSeconds] = useState(timerSeconds);
+  const [timer, setTimer] = useState(30);
   const [timerRunning, setTimerRunning] = useState(false);
 
   const mergedRounds = useMemo(() => ({
     remember: rounds?.remember?.length ? rounds.remember : fallbackRounds.remember,
     use: rounds?.use?.length ? rounds.use : fallbackRounds.use,
-    speak: rounds?.speak?.length ? rounds.speak : fallbackRounds.speak,
-    memoryBonus: rounds?.memoryBonus?.length ? rounds.memoryBonus : fallbackRounds.memoryBonus
+    speak: rounds?.speak?.length ? rounds.speak : fallbackRounds.speak
   }), [rounds]);
 
   const current = roundMeta[activeRound];
   const Icon = current.icon;
-  const currentPrompts = mergedRounds[current.key];
-  const bossHealth = Math.max(0, 100 - hits * 25);
+  const currentPrompts = mergedRounds[current.key].map((prompt) =>
+    current.key === 'speak'
+      ? prompt.replace(/Speak for \d+ seconds/i, `Speak for ${customSpeakSeconds} seconds`)
+      : prompt
+  );
+  const bossHealth = Math.max(0, Math.round(100 - hits * (100 / roundMeta.length)));
   const isComplete = hits >= roundMeta.length;
+  const activePrepareSeconds =
+    current.key === 'remember' ? customRememberSeconds :
+    current.key === 'use' ? customUseSeconds :
+    customPrepareSeconds;
+  const activeCustomSeconds = timerMode === 'prepare' ? activePrepareSeconds : customSpeakSeconds;
 
-  const startTimer = () => {
-    setTimer(customSeconds);
+  const setActivePrepareSeconds = (nextSeconds: number) => {
+    if (current.key === 'remember') {
+      setCustomRememberSeconds(nextSeconds);
+    } else if (current.key === 'use') {
+      setCustomUseSeconds(nextSeconds);
+    } else {
+      setCustomPrepareSeconds(nextSeconds);
+    }
+  };
+
+  const startTimer = (mode: 'prepare' | 'speak') => {
+    setTimerMode(mode);
+    setTimer(mode === 'prepare' ? activePrepareSeconds : customSpeakSeconds);
     setTimerRunning(true);
   };
 
   const stopTimer = () => {
     setTimerRunning(false);
-    setTimer(customSeconds);
+    setTimer(activeCustomSeconds);
   };
 
-  const updateCustomSeconds = (nextSeconds: number) => {
-    const safeSeconds = Math.min(300, Math.max(5, Math.round(nextSeconds || 30)));
-    setCustomSeconds(safeSeconds);
-    if (!timerRunning) {
+  const updateCustomSeconds = (mode: 'prepare' | 'speak', nextSeconds: number) => {
+    const safeSeconds = Math.min(600, Math.max(5, Math.round(nextSeconds || 30)));
+    if (mode === 'prepare') {
+      setActivePrepareSeconds(safeSeconds);
+    } else {
+      setCustomSpeakSeconds(safeSeconds);
+    }
+    if (!timerRunning && timerMode === mode) {
       setTimer(safeSeconds);
     }
   };
@@ -105,8 +124,14 @@ export function SpeakingBossBattleGame({
     setHits((value) => Math.min(roundMeta.length, value + 1));
     setActiveRound((value) => Math.min(roundMeta.length - 1, value + 1));
     setTimerRunning(false);
-    setTimer(customSeconds);
+    setTimer(timerMode === 'prepare' ? activePrepareSeconds : customSpeakSeconds);
   };
+
+  useEffect(() => {
+    if (!timerRunning) {
+      setTimer(activeCustomSeconds);
+    }
+  }, [activeRound, activeCustomSeconds, timerRunning]);
 
   useEffect(() => {
     if (!timerRunning) return;
@@ -167,7 +192,7 @@ export function SpeakingBossBattleGame({
             </div>
           </div>
 
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-3 gap-2">
             {roundMeta.map((round, index) => {
               const RoundIcon = round.icon;
               const active = index === activeRound && !isComplete;
@@ -249,12 +274,34 @@ export function SpeakingBossBattleGame({
                 <div className="rounded-3xl border border-white/15 bg-black/20 p-4">
                   <div className="mb-3 flex items-center gap-2 text-sm font-black uppercase tracking-widest text-yellow-200">
                     <Timer className="h-5 w-5" />
-                    Speaking timer
+                    Timers
+                  </div>
+                  <div className="mb-3 grid grid-cols-2 rounded-2xl border border-white/15 bg-black/25 p-1 text-xs font-black uppercase tracking-widest">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setTimerMode('prepare');
+                        if (!timerRunning) setTimer(activePrepareSeconds);
+                      }}
+                      className={`rounded-xl px-3 py-2 transition ${timerMode === 'prepare' ? 'bg-white text-slate-950' : 'text-white/70 hover:bg-white/10'}`}
+                    >
+                      Prepare
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setTimerMode('speak');
+                        if (!timerRunning) setTimer(customSpeakSeconds);
+                      }}
+                      className={`rounded-xl px-3 py-2 transition ${timerMode === 'speak' ? 'bg-white text-slate-950' : 'text-white/70 hover:bg-white/10'}`}
+                    >
+                      Speak
+                    </button>
                   </div>
                   <div className="mb-3 grid grid-cols-[44px_1fr_44px] items-center gap-2">
                     <button
                       type="button"
-                      onClick={() => updateCustomSeconds(customSeconds - 5)}
+                      onClick={() => updateCustomSeconds(timerMode, activeCustomSeconds - 5)}
                       className="flex h-11 items-center justify-center rounded-2xl bg-white/15 text-white transition hover:bg-white/25"
                       aria-label="Decrease seconds"
                     >
@@ -265,39 +312,49 @@ export function SpeakingBossBattleGame({
                       min={5}
                       max={300}
                       step={5}
-                      value={customSeconds}
-                      onChange={(event) => updateCustomSeconds(Number(event.target.value))}
+                      value={activeCustomSeconds}
+                      onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}
                       className="h-11 rounded-2xl border border-white/20 bg-white px-3 text-center text-lg font-black text-slate-950 outline-none"
                       aria-label="Timer seconds"
                     />
                     <button
                       type="button"
-                      onClick={() => updateCustomSeconds(customSeconds + 5)}
+                      onClick={() => updateCustomSeconds(timerMode, activeCustomSeconds + 5)}
                       className="flex h-11 items-center justify-center rounded-2xl bg-white/15 text-white transition hover:bg-white/25"
                       aria-label="Increase seconds"
                     >
                       <Plus className="h-5 w-5" />
                     </button>
                   </div>
+                  <p className="mb-2 text-center text-xs font-black uppercase tracking-widest text-white/60">
+                    {timerMode === 'prepare' ? 'Preparation time' : 'Speaking time'}
+                  </p>
                   <div className="mb-4 text-center text-5xl font-black tabular-nums sm:text-6xl">
                     {timer}s
                   </div>
                   <div className="grid grid-cols-2 gap-2">
                     <button
                       type="button"
-                      onClick={startTimer}
+                      onClick={() => startTimer('prepare')}
                       className="rounded-2xl bg-yellow-300 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
                     >
-                      Start
+                      Start Prep
                     </button>
                     <button
                       type="button"
-                      onClick={stopTimer}
-                      className="rounded-2xl bg-white/15 px-4 py-3 font-black text-white shadow-lg transition hover:bg-white/25"
+                      onClick={() => startTimer('speak')}
+                      className="rounded-2xl bg-orange-400 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
                     >
-                      Reset
+                      Start Speak
                     </button>
                   </div>
+                  <button
+                    type="button"
+                    onClick={stopTimer}
+                    className="mt-2 w-full rounded-2xl bg-white/15 px-4 py-3 font-black text-white shadow-lg transition hover:bg-white/25"
+                  >
+                    Reset
+                  </button>
                 </div>
 
                 <div className="flex flex-col justify-between gap-3 rounded-3xl border border-white/15 bg-black/20 p-4">

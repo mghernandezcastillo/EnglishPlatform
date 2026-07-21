@@ -54,12 +54,111 @@ function getArrayProp(objectLiteral, name) {
   return initializer;
 }
 
+function stripAccents(value) {
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function legacyEnglishTopic(topic) {
+  const normalized = stripAccents(topic).toLowerCase();
+  const overrides = [
+    [/rutinas diarias.*(hora|time)/, 'Daily Routines & Time'],
+    [/rutinas.*present simple/, 'Routines & Present Simple'],
+    [/numbers.*(hora|time)/, 'Numbers & Time'],
+    [/partes del body.*pets/, 'Body Parts & Pets'],
+    [/family.*posesivos/, 'Family Vocabulary & Possessives'],
+    [/weather.*estaciones/, 'Weather & Seasons'],
+    [/imperativos.*instrucciones/, 'Imperatives for Giving Instructions'],
+    [/direcciones.*calle|pedir.*direcciones/, 'Asking for and Giving Street Directions'],
+    [/articulos.*demostrativos/, 'Articles & Demonstratives'],
+    [/direcciones.*preposiciones.*lugar/, 'Directions & Prepositions of Place'],
+    [/greetings.*despedidas.*supervivencia/, 'Greetings, Farewells & Survival Conversation'],
+    [/alfabeto.*deletreo.*names/, 'The Alphabet & Spelling Names'],
+    [/review general.*basic zero/, 'Basic Zero General Review'],
+    [/review general.*basic 1/, 'Basic 1 General Review'],
+    [/review general.*basic 3/, 'Basic 3 General Review'],
+    [/proyecto final.*level/, 'Final Level Project'],
+    [/habilidades.*posibilidades.*can/, 'Abilities & Possibilities with Can'],
+    [/places.*ciudad.*transporte|ciudad.*transporte.*places/, 'City Places & Transportation'],
+    [/past.*verbo to be|past.*to be|was\/were/, 'Past To Be: Was/Were'],
+    [/biografias.*personas famosas/, 'Biographies of Famous People'],
+    [/travel.*vacaciones/, 'Travel & Vacations'],
+    [/dando opiniones|acuerdo\/desacuerdo/, 'Giving Opinions and Agreeing or Disagreeing'],
+    [/preparacion.*intermedio/, 'Intermediate Level Preparation'],
+    [/primer condicional/, 'First Conditional'],
+    [/segundo condicional/, 'Second Conditional'],
+    [/tercer condicional/, 'Third Conditional'],
+    [/verbos modales.*consejo|should/, 'Modal Verbs for Advice'],
+    [/verbos modales.*posibilidad|may/, 'Modal Verbs for Possibility'],
+    [/exceso.*suficiencia|too/, 'Too and Enough for Excess and Sufficiency'],
+    [/present perfect.*experiencias/, 'Present Perfect for Life Experiences'],
+    [/resolviendo problemas.*quejas/, 'Solving Problems and Customer Complaints'],
+    [/professions.*trabajo/, 'Professions & Workplaces'],
+    [/adverbios.*frecuencia/, 'Adverbs of Frequency'],
+    [/comidas.*drinks.*restaurantes/, 'Food, Drinks & Restaurant Vocabulary'],
+    [/estado.*accion.*present continuous/, 'State and Action Verbs in Present Continuous'],
+    [/hablando.*infancia.*recuerdos/, 'Talking About Childhood and Memories'],
+    [/formando.*questions.*negaciones.*past/, 'Forming Questions and Negatives in the Past'],
+    [/tiempos verbales basicos/, 'Basic Verb Tenses Review'],
+    [/vocabulario.*trabajo.*oficina/, 'Work and Office Vocabulary'],
+    [/gerundios.*infinitivos/, 'Gerunds and Infinitives After Verbs'],
+    [/introduction.*phrasal verbs.*usados/, 'Introduction to Common Phrasal Verbs'],
+    [/vocabulario avanzado.*negocios.*negociacion/, 'Advanced Business and Negotiation Vocabulary'],
+    [/phrasal verbs avanzados/, 'Advanced Phrasal Verbs in Context'],
+    [/preparando.*alto impacto/, 'Preparing High-impact Introductions'],
+    [/storytelling.*profesionales/, 'Storytelling in Professional Settings'],
+    [/analizando.*articulos.*opinion.*noticias/, 'Analyzing Opinion Articles and News'],
+    [/inversiones.*enfasis/, 'Inversion for Formal Emphasis'],
+    [/cleft sentences/, 'Cleft Sentences for Emphasis'],
+    [/debates.*temas complejos/, 'Debates on Complex Topics'],
+    [/proyecto final masters/, 'Final Masters Project'],
+    [/school.*materias.*objetos/, 'School Subjects & Classroom Objects'],
+    [/planes.*fin.*semana.*will.*going to/, 'Weekend Plans with Will and Going To'],
+    [/chat.*llamadas.*evento\/viaje/, 'Chats, Help Calls & Event or Trip Projects'],
+    [/habilidades con can/, 'Abilities with Can'],
+    [/conversacion actual.*rutinas.*review/, 'Current Conversations, Routines & Speaking Review'],
+    [/vacaciones.*travel.*anecdotas/, 'Vacations, Travel & Anecdotes'],
+    [/biografias.*artistas.*deportistas.*creadores/, 'Biographies of Artists, Athletes & Creators'],
+    [/conectores.*historias/, 'Storytelling Connectors'],
+    [/problemas cotidianos/, 'Everyday Problems and How to Explain Them'],
+    [/irregulares.*-ed.*video/, 'Irregular Verbs, -ed Endings & Video Projects'],
+    [/planes.*consecuencias/, 'Plans and Consequences with the First Conditional'],
+    [/consejos entre amigos/, 'Advice Between Friends with Should'],
+    [/mensajes.*emails.*chats/, 'Informal and Formal Messages, Emails & Chats'],
+    [/atencion al cliente.*transicion/, 'Teen Customer Service & Transition Evaluation'],
+    [/modales.*posibilidad.*deduccion/, 'Modals of Possibility and Deduction'],
+    [/phrasal verbs frecuentes.*conversaciones adolescentes/, 'Frequent Phrasal Verbs in Teen Conversations'],
+    [/primer.*segundo condicional/, 'First and Second Conditional'],
+    [/opiniones.*acuerdos.*desacuerdos/, 'Respectful Opinions, Agreement & Disagreement'],
+    [/podcast\/debate.*beca\/empleo/, 'Podcast or Debate Projects and Scholarship or Job Interviews'],
+    [/reported speech.*chismes.*noticias.*conversaciones/, 'Reported Speech in Gossip, News & Conversations'],
+    [/relative clauses.*descripcion.*personas\/cosas/, 'Relative Clauses and Detailed Descriptions of People and Things'],
+    [/voz pasiva.*noticias.*technology/, 'Passive Voice in News and Technology'],
+    [/phrasal verbs.*idioms.*uso real/, 'Phrasal Verbs and Real-life Idioms'],
+    [/entrevistas.*trabajo\/voluntariado.*problemas/, 'Work or Volunteer Interviews and Problem Solving'],
+    [/future continuous.*future perfect.*metas/, 'Future Continuous, Future Perfect & Goal Planning'],
+    [/condicionales mixtos.*decisiones pasadas/, 'Mixed Conditionals and Past Decisions'],
+    [/ensayos.*opiniones.*academicas/, 'Essays, Opinions & Academic Presentations'],
+    [/reuniones.*liderazgo.*trabajo en equipo/, 'Meetings, Leadership & Teamwork'],
+    [/pitch.*emprendimiento.*conferencia/, 'Final Project: Business Pitch or Conference Talk'],
+    [/analisis.*peliculas.*musica.*noticias.*cultura digital/, 'Movie, Music, News & Digital Culture Analysis'],
+    [/ingles academico.*universidad.*intercambios/, 'Academic English for University and Exchange Programs'],
+    [/creacion.*podcast.*videoensayo.*ted/, 'Podcast, Video Essay & TED-style Presentation Creation'],
+    [/temas globales.*etica.*weather.*sociedad/, 'Global Issues: Technology, Ethics, Climate & Society'],
+    [/preparacion.*entrevistas c1.*conversation club/, 'C1 Interview Preparation & Conversation Club']
+  ];
+
+  const match = overrides.find(([pattern]) => pattern.test(normalized));
+  return match?.[1] || topic;
+}
+
 function cleanTopic(title) {
-  return title
+  const englishTitle = (title || '').split(/\s+\/\s+/)[0];
+  const topic = englishTitle
     .replace(/^Clase\s+\d+\s*:\s*/i, '')
     .replace(/^Class\s+\d+\s*:\s*/i, '')
     .replace(/\s+/g, ' ')
     .trim();
+  return legacyEnglishTopic(topic);
 }
 
 function themeFor(title, objective, audience) {
@@ -103,29 +202,25 @@ function promptsFor(title, objective, audience) {
   const focus = (bossThemes.find((candidate) => candidate.re.test(`${title} ${objective}`))?.focus || ['keywords', 'phrases', 'grammar', 'speaking']).slice(0, 4);
 
   const speakTime = audience === 'kids' ? 30 : 45;
+  const prepareTime = audience === 'kids' ? 20 : 30;
   const partner = audience === 'kids' ? 'a friend' : 'a partner';
 
   return {
     bossName: theme.boss,
     bossTitle: theme.topic,
     bossAvatar: theme.avatar,
-    timerSeconds: 30,
+    timerSeconds: speakTime,
+    prepareSeconds: prepareTime,
     rounds: {
       remember: [
-        `Say three words connected to ${lowerTopic}.`,
-        `Say one useful phrase for ${lowerTopic}.`
+        `You have 30 seconds: say three key words and one useful phrase connected to ${lowerTopic}.`
       ],
       use: [
-        `Create one sentence about ${lowerTopic} using ${focus[0]}.`,
-        `Ask ${partner} one question about ${lowerTopic}.`
+        `You have 60 seconds: create three sentences about ${lowerTopic} using ${focus[0]}: one positive, one negative, and one question.`
       ],
       speak: [
         `Speak for ${speakTime} seconds about ${lowerTopic}.`,
-        `Include one example, one opinion, and one class phrase.`
-      ],
-      memoryBonus: [
-        `Use one word or structure from a previous class.`,
-        `Connect it naturally to ${lowerTopic}.`
+        `Use what you learned today: include a positive sentence, a negative sentence, and a question.`
       ]
     }
   };
@@ -149,12 +244,12 @@ ${pad2}speakingBossBattle: {
 ${pad4}bossName: ${JSON.stringify(value.bossName)},
 ${pad4}bossTitle: ${JSON.stringify(value.bossTitle)},
 ${pad4}bossAvatar: ${JSON.stringify(value.bossAvatar)},
-${pad4}timerSeconds: 30,
+${pad4}timerSeconds: ${value.timerSeconds},
+${pad4}prepareSeconds: ${value.prepareSeconds},
 ${pad4}rounds: {
 ${pad6}remember: ${roundLine(value.rounds.remember)},
 ${pad6}use: ${roundLine(value.rounds.use)},
-${pad6}speak: ${roundLine(value.rounds.speak)},
-${pad6}memoryBonus: ${roundLine(value.rounds.memoryBonus)}
+${pad6}speak: ${roundLine(value.rounds.speak)}
 ${pad4}}
 ${pad2}}
 ${pad}}`;
