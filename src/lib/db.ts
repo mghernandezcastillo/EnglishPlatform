@@ -104,6 +104,83 @@ export const dbAdmin = {
     }
   },
 
+  getStructureModeProgress: async (studentId?: string | null, localKey?: string): Promise<any> => {
+    let query = supabase.from('structure_mode_progress').select('*').limit(1);
+    if (studentId) {
+      query = query.eq('student_id', studentId);
+    } else if (localKey) {
+      query = query.eq('local_key', localKey);
+    } else {
+      return null;
+    }
+
+    const { data, error } = await query.maybeSingle();
+    if (error) {
+      console.warn('Structure mode progress not found in Supabase. Using local.', error);
+      return JSON.parse(localStorage.getItem(`structure_mode_progress_${studentId || localKey}`) || 'null');
+    }
+    return data || JSON.parse(localStorage.getItem(`structure_mode_progress_${studentId || localKey}`) || 'null');
+  },
+
+  saveStructureModeProgress: async (progress: {
+    student_id?: string | null;
+    local_key: string;
+    completed_lessons: string[];
+    last_lesson_id?: string | null;
+    last_slide_index?: number;
+  }): Promise<void> => {
+    const ownerKey = progress.student_id || progress.local_key;
+    const payload = {
+      student_id: progress.student_id || null,
+      local_key: progress.local_key,
+      completed_lessons: Array.from(new Set(progress.completed_lessons)),
+      last_lesson_id: progress.last_lesson_id || null,
+      last_slide_index: progress.last_slide_index || 0,
+      updated_at: new Date().toISOString()
+    };
+
+    const existing = await dbAdmin.getStructureModeProgress(progress.student_id, progress.local_key);
+    const request = existing?.id
+      ? supabase.from('structure_mode_progress').update(payload).eq('id', existing.id)
+      : supabase.from('structure_mode_progress').insert([payload]);
+
+    const { error } = await request;
+    if (error) {
+      console.error('Error saving structure mode progress:', error);
+    }
+    localStorage.setItem(`structure_mode_progress_${ownerKey}`, JSON.stringify(payload));
+  },
+
+  saveStructureAssessmentAttempt: async (attempt: {
+    student_id?: string | null;
+    local_key: string;
+    student_name?: string;
+    assessment_id: string;
+    block_id?: string | null;
+    score: number;
+    total: number;
+    percentage: number;
+    duration_seconds: number;
+    answers: any;
+    feedback: any;
+    share_token: string;
+  }): Promise<void> => {
+    const payload = {
+      ...attempt,
+      student_id: attempt.student_id || null,
+      block_id: attempt.block_id || null,
+      created_at: new Date().toISOString()
+    };
+    const { error } = await supabase.from('structure_assessment_attempts').insert([payload]);
+    if (error) {
+      console.error('Error saving structure assessment attempt:', error);
+    }
+
+    const key = `structure_assessment_attempts_${attempt.student_id || attempt.local_key}`;
+    const localAttempts = JSON.parse(localStorage.getItem(key) || '[]');
+    localStorage.setItem(key, JSON.stringify([payload, ...localAttempts]));
+  },
+
   getBrandSettings: async (): Promise<any> => {
     const { data, error } = await supabase.from('settings').select('*').limit(1).single();
     if (error) {

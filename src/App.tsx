@@ -33,11 +33,21 @@ export default function App() {
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], currentLessonId: '', level: 'Nivel Inicial' });
   const [isLoaded, setIsLoaded] = useState(false);
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode'>('dashboard');
+  const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
   useEffect(() => {
     // Check URL
     const params = new URLSearchParams(window.location.search);
     const studentIdParam = params.get('studentId');
+    const structureReportParam = params.get('structureReport');
+
+    if (structureReportParam) {
+      setCurrentView('structure_mode');
+      setRole('student');
+      setIsLoaded(true);
+      return;
+    }
     
     if (studentIdParam) {
       dbAdmin.getStudents().then(students => {
@@ -67,9 +77,6 @@ export default function App() {
     }
     setIsLoaded(true);
   }, [role]);
-
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode'>('dashboard');
-  const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
   // Save progress when it changes
   useEffect(() => {
@@ -404,7 +411,11 @@ export default function App() {
       ) : currentView === 'speaking_practice' ? (
         <SpeakingPractice onClose={() => setCurrentView('dashboard')} />
       ) : currentView === 'structure_mode' ? (
-        <StructureMode onClose={() => setCurrentView('dashboard')} />
+        <StructureMode
+          onClose={() => setCurrentView('dashboard')}
+          studentId={currentStudentId}
+          studentName={progress.studentName}
+        />
       ) : (
           <Dashboard 
           completedLessonIds={progress.completedLessons}

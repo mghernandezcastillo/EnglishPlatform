@@ -2,7 +2,7 @@
 
 ## Estado General
 
-Progreso total del proyecto: **15%**
+Progreso total del proyecto: **18%**
 
 Este plan define un nuevo modo de enseñanza separado del modo normal actual. No reemplaza los niveles existentes ni modifica la estructura oficial de las clases actuales. El nuevo modo estará organizado por estructuras verbales y patrones de comunicación, con clases inmersivas de aproximadamente 20 diapositivas cada una.
 
@@ -26,6 +26,7 @@ La clase debe explicar cómo se forma la estructura, por qué se usa así, para 
 - Mantener este modo como una sección nueva: **Modo Estructuras**.
 - Cada clase tendrá aproximadamente 20 diapositivas.
 - El estilo visual seguirá la línea del examen de ingreso: fondos intensos, glassmorphism, gradientes vivos, tarjetas grandes, animaciones y sensación inmersiva.
+- Usar color como sistema de memoria, no solo como decoración.
 - Se prioriza repetición inteligente: muchas preguntas parecidas con variaciones pequeñas para fijar patrones.
 - Cada clase termina con tarea para la siguiente clase.
 - El tutor debe tener espacios de práctica en vivo.
@@ -69,6 +70,216 @@ Cada clase del nuevo modo tendrá esta secuencia aproximada:
 - **Mini Dialogue Quest:** completar conversación breve.
 - **Structure Boss Battle:** reto en vivo con tutor, timer, barra de progreso y golpes al jefe.
 - **Homework Portal:** tarea final visual y accionable.
+- **Formula Lock:** actividad interactiva donde el estudiante toca los elementos de la fórmula en orden y la estructura se arma con animación.
+
+## Sistema De Progreso Y Evaluaciones
+
+El Modo Estructuras debe tener progreso separado del currículo normal, pero conectado a Supabase cuando haya estudiante identificado.
+
+Estado técnico actual:
+
+- [x] Progreso local con fallback: `maven_structure_mode_progress`.
+- [x] Progreso persistente planeado en Supabase: `structure_mode_progress`.
+- [x] Intentos de evaluación planeados en Supabase: `structure_assessment_attempts`.
+- [x] Migración creada: `supabase_structure_mode.sql`.
+- [x] Motor inicial de Super Evaluación creado.
+- [x] Evaluación repetible indefinidamente.
+- [x] Temporizador incluido.
+- [x] Retroalimentación por respuesta/tema.
+- [x] Compartir resultado por WhatsApp.
+- [x] Copiar/abrir link de resultado compartido.
+
+Regla de avance:
+
+Cada bloque solo puede considerarse completo cuando sus clases y su evaluación específica estén listas. No basta con crear las diapositivas; también debe quedar creado el banco de preguntas del bloque con retroalimentación.
+
+## Blueprint De Evaluación Por Bloque
+
+Cada bloque debe tener una evaluación propia dentro del motor de Super Evaluación.
+
+Requisitos mínimos por bloque:
+
+- Todas las clases/temas del bloque incluidas.
+- Ningún tema omitido.
+- Todas las variaciones principales enseñadas incluidas.
+- Preguntas de reconocimiento de estructura.
+- Preguntas de forma afirmativa.
+- Preguntas de forma negativa.
+- Preguntas de forma interrogativa.
+- Preguntas de auxiliar correcto.
+- Preguntas de forma verbal correcta: base, `-ing`, pasado, participio, infinitivo o gerundio según aplique.
+- Preguntas de marcador de tiempo.
+- Preguntas de contraste con estructuras cercanas.
+- Preguntas de error correction.
+- Preguntas de meaning/function.
+- Feedback específico para respuesta correcta e incorrecta.
+- Resultado compartible por WhatsApp.
+- Resultado compartible por link.
+- Intentos ilimitados.
+- Tiempo configurable por bloque.
+
+Escala sugerida:
+
+- Bloques cortos: 30-45 preguntas.
+- Bloques medianos: 45-75 preguntas.
+- Bloques largos: 75-120 preguntas.
+- Evaluación global final: mínimo 240 preguntas, cubriendo todo el roadmap.
+
+## Checklist De Evaluación Por Bloque
+
+### Evaluación Bloque 1 - Fundamentos De Oración
+
+- [ ] Cubrir Subject + Verb + Complement.
+- [ ] Cubrir To Be como verbo principal.
+- [ ] Cubrir To Be negativo.
+- [ ] Cubrir To Be interrogativo.
+- [ ] Cubrir verbos base y complementos.
+- [ ] Cubrir Do / Does como auxiliares.
+- [ ] Cubrir Wh- questions.
+- [ ] Incluir reconocimiento de sujeto, verbo y complemento.
+- [ ] Incluir word order.
+- [ ] Incluir error correction.
+- [ ] Incluir meaning/function.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 2 - Presente
+
+- [ ] Cubrir Present Simple afirmativo, negativo e interrogativo.
+- [ ] Cubrir tercera persona `he/she/it`.
+- [ ] Cubrir Present Continuous afirmativo, negativo e interrogativo.
+- [ ] Cubrir Present Simple vs Present Continuous.
+- [ ] Cubrir Present Perfect.
+- [ ] Cubrir Present Perfect Continuous.
+- [ ] Incluir marcadores: every day, usually, now, right now, today, this week, already, yet, since, for.
+- [ ] Incluir auxiliary choice: do, does, am, is, are, have, has.
+- [ ] Incluir verb form: base, `-s`, `-ing`, participle.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 3 - Pasado
+
+- [ ] Cubrir Past Simple afirmativo.
+- [ ] Cubrir Past Simple negativo e interrogativo con `did`.
+- [ ] Cubrir Past Continuous.
+- [ ] Cubrir Past Simple vs Past Continuous.
+- [ ] Cubrir Past Perfect.
+- [ ] Cubrir Past Perfect Continuous.
+- [ ] Incluir marcadores: yesterday, last week, ago, while, when, before, by the time, for.
+- [ ] Incluir verb form: past simple, base after did, was/were + ing, had + participle.
+- [ ] Incluir contrastes de secuencia temporal.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 4 - Futuro
+
+- [ ] Cubrir Future Simple con `will`.
+- [ ] Cubrir `be going to`.
+- [ ] Cubrir Present Continuous para futuro organizado.
+- [ ] Cubrir Present Simple para horarios futuros.
+- [ ] Cubrir Future Continuous.
+- [ ] Cubrir Future Perfect.
+- [ ] Cubrir Future Perfect Continuous.
+- [ ] Cubrir Future in the Past: would, was going to, was about to.
+- [ ] Incluir marcadores: tomorrow, next week, by, by the time, at this time tomorrow.
+- [ ] Incluir contraste intención, predicción, plan, horario y acción completada futura.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 5 - Modales Y Semimodales
+
+- [ ] Cubrir Can / Could.
+- [ ] Cubrir May / Might.
+- [ ] Cubrir Must / Have to / Need to.
+- [ ] Cubrir Should / Ought to / Had better.
+- [ ] Cubrir Would / Would rather.
+- [ ] Cubrir Be able to / Be allowed to / Be supposed to.
+- [ ] Cubrir Modal Continuous.
+- [ ] Cubrir Modal Perfect.
+- [ ] Cubrir Modal Perfect Continuous.
+- [ ] Cubrir modales en voz pasiva.
+- [ ] Incluir función: ability, permission, possibility, obligation, advice, preference, speculation.
+- [ ] Incluir forma: modal + base, modal + be + ing, modal + have + participle, modal + have been + ing.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 6 - Condicionales
+
+- [ ] Cubrir Zero Conditional.
+- [ ] Cubrir First Conditional.
+- [ ] Cubrir Second Conditional.
+- [ ] Cubrir Third Conditional.
+- [ ] Cubrir Mixed Conditionals.
+- [ ] Cubrir Unless, As long as, Provided that, In case, Even if, Only if.
+- [ ] Incluir condición real, posible, hipotética, imposible y mixta.
+- [ ] Incluir puntuación y orden de cláusulas.
+- [ ] Incluir errores comunes de `will` en if-clause.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 7 - Voz Pasiva
+
+- [ ] Cubrir Passive Present Simple.
+- [ ] Cubrir Passive Present Continuous.
+- [ ] Cubrir Passive Present Perfect.
+- [ ] Cubrir Passive Past Simple.
+- [ ] Cubrir Passive Past Continuous.
+- [ ] Cubrir Passive Past Perfect.
+- [ ] Cubrir Passive Future Simple.
+- [ ] Cubrir Passive Future Perfect.
+- [ ] Cubrir Passive with Modals.
+- [ ] Incluir transformación activa/pasiva.
+- [ ] Incluir `be` correcto por tiempo verbal.
+- [ ] Incluir participio correcto.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 8 - Estructuras Especiales
+
+- [ ] Cubrir Imperative.
+- [ ] Cubrir Subjunctive with verb base.
+- [ ] Cubrir Subjunctive with were.
+- [ ] Cubrir Wish / If only para deseos presentes.
+- [ ] Cubrir Wish / If only para arrepentimientos pasados.
+- [ ] Cubrir Wish + would.
+- [ ] Cubrir Infinitives with to.
+- [ ] Cubrir Bare infinitives.
+- [ ] Cubrir Gerunds.
+- [ ] Cubrir Present and past participles.
+- [ ] Incluir contraste infinitive vs gerund.
+- [ ] Incluir función y forma de cada estructura.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 9 - Causativas Y Hábitos Pasados
+
+- [ ] Cubrir Have something done.
+- [ ] Cubrir Get something done.
+- [ ] Cubrir Make / Let / Have someone do something.
+- [ ] Cubrir Get someone to do something.
+- [ ] Cubrir Used to.
+- [ ] Cubrir Would for past habits.
+- [ ] Cubrir Be used to.
+- [ ] Cubrir Get used to.
+- [ ] Incluir diferencia entre acción realizada por otro y acción propia.
+- [ ] Incluir contraste hábito pasado vs adaptación.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 10 - Reported Speech E Indirect Questions
+
+- [ ] Cubrir Reported Speech present to past.
+- [ ] Cubrir continuous and perfect shifts.
+- [ ] Cubrir will/can/may to would/could/might.
+- [ ] Cubrir reported questions.
+- [ ] Cubrir indirect questions.
+- [ ] Cubrir polite requests and formal questions.
+- [ ] Incluir cambios de tiempo, pronombres y marcadores temporales.
+- [ ] Incluir word order en preguntas indirectas.
+- [ ] Crear feedback específico por pregunta.
+
+### Evaluación Bloque 11 - Integración Final
+
+- [ ] Cubrir Time Marker Mastery.
+- [ ] Cubrir Auxiliary Mastery.
+- [ ] Cubrir Verb Form Mastery.
+- [ ] Cubrir Error Correction Arena.
+- [ ] Cubrir Final Structure Boss Battle.
+- [ ] Incluir preguntas mezcladas de todos los bloques.
+- [ ] Incluir diagnóstico de debilidades por bloque.
+- [ ] Incluir evaluación global cronometrada.
+- [ ] Crear feedback específico por bloque y por tema.
 
 ## Paleta Visual Propuesta
 
@@ -81,6 +292,45 @@ Cada clase del nuevo modo tendrá esta secuencia aproximada:
 - Participios: fuchsia.
 - Complementos: slate/blanco.
 - Marcadores de tiempo: naranja.
+
+## Código De Color Para Memoria
+
+Este código debe mantenerse en todas las clases del Modo Estructuras:
+
+- **Subject / Sujeto / Who:** cian.
+- **Verb / Verbo / Action:** violeta.
+- **Complement / Extra information:** amarillo.
+- **Auxiliary / Auxiliar:** índigo.
+- **Present / Past / Future:** verde.
+- **Questions / Answers:** rose.
+- **Verb forms:** fuchsia para `-ing`, participle, infinitive, gerund.
+- **Time markers:** naranja para every day, now, yesterday, tomorrow, since, for, before, etc.
+
+Regla de implementación:
+
+- Las palabras clave deben resaltarse automáticamente desde el motor visual cuando aparezcan en `title`, `subtitle`, `content`, opciones de quiz y feedback.
+- No escribir HTML manual dentro de los datos de clase.
+- Las fórmulas deben usar los mismos colores que las tarjetas de contenido para reforzar memoria visual.
+- Cada slide debe mostrar o respetar la leyenda de memoria cuando sea pedagógicamente útil.
+
+## Actividades Recurrentes De Memoria
+
+Para que todas las clases se sientan más vivas, cada clase debe incluir o heredar estas micro-dinámicas:
+
+- **Memory reps:** contador visible de repetición/avance dentro de la clase.
+- **Tutor drill:** momento corto para que el tutor pida repetir, transformar o corregir una oración.
+- **Color callout:** pedir al estudiante identificar el color: "Which part is cyan?", "Where is the auxiliary?".
+- **Speed round:** una sección cronometrada de 30-60 segundos.
+- **Error pause:** después de errores importantes, mostrar feedback corto con el color de la parte incorrecta.
+- **Final lock:** resumen donde el estudiante reconstruye la fórmula sin mirar.
+- **Formula Lock celebration:** al completar la fórmula correctamente debe aparecer una felicitación animada con confetti.
+
+Regla para todas las clases:
+
+- Toda clase que tenga `formula` debe poder activar **Formula Lock** en slides de fórmula o resumen.
+- El estudiante debe seleccionar los bloques en orden: sujeto, auxiliar/verbo, forma verbal, complemento o marcador según la estructura.
+- Si selecciona un bloque incorrecto, el sistema debe mostrar una pista breve indicando cuál elemento sigue.
+- Al completar correctamente, debe mostrar una celebración clara antes de avanzar.
 
 ## Animaciones Propuestas
 
@@ -272,6 +522,8 @@ Sirve para hablar de experiencias, resultados presentes o acciones conectadas co
 - [x] Crear navegación independiente.
 - [x] Asegurar que no afecte el currículo normal.
 - [x] Crear plataforma separada con temario, clases y progreso propio.
+- [x] Crear migración SQL para progreso e intentos de evaluación.
+- [x] Crear capa de guardado Supabase + fallback local.
 
 ### Fase 2 - Componentes Visuales
 
@@ -289,16 +541,38 @@ Sirve para hablar de experiencias, resultados presentes o acciones conectadas co
 
 - [ ] Crear plantilla programática de clase.
 - [ ] Crear Bloque 1 completo. Progreso interno: 1 / 6 clases.
+- [ ] Crear Evaluación Bloque 1 completa.
 - [ ] Crear Bloque 2 completo.
+- [ ] Crear Evaluación Bloque 2 completa.
 - [ ] Crear Bloque 3 completo.
+- [ ] Crear Evaluación Bloque 3 completa.
 - [ ] Crear Bloque 4 completo.
+- [ ] Crear Evaluación Bloque 4 completa.
 - [ ] Crear Bloque 5 completo.
+- [ ] Crear Evaluación Bloque 5 completa.
 - [ ] Crear Bloque 6 completo.
+- [ ] Crear Evaluación Bloque 6 completa.
 - [ ] Crear Bloque 7 completo.
+- [ ] Crear Evaluación Bloque 7 completa.
 - [ ] Crear Bloque 8 completo.
+- [ ] Crear Evaluación Bloque 8 completa.
 - [ ] Crear Bloque 9 completo.
+- [ ] Crear Evaluación Bloque 9 completa.
 - [ ] Crear Bloque 10 completo.
+- [ ] Crear Evaluación Bloque 10 completa.
 - [ ] Crear Bloque 11 completo.
+- [ ] Crear Evaluación Bloque 11 completa.
+
+### Fase 3.5 - Evaluaciones Cronometradas
+
+- [x] Crear motor base de Super Evaluación.
+- [x] Crear banco inicial generado desde roadmap completo.
+- [ ] Reemplazar preguntas generadas por preguntas pedagógicas específicas por bloque.
+- [ ] Configurar duración individual por bloque.
+- [ ] Crear retroalimentación específica por pregunta.
+- [ ] Crear reporte por debilidad: bloque, tema, variación y forma verbal.
+- [ ] Crear vista histórica de intentos para profesor.
+- [ ] Aplicar `supabase_structure_mode.sql` en Supabase.
 
 ### Fase 4 - Validación
 
@@ -308,25 +582,31 @@ Sirve para hablar de experiencias, resultados presentes o acciones conectadas co
 - [ ] Validar que todas tengan reto tipo Boss Battle.
 - [ ] Validar que todas tengan tarea.
 - [ ] Validar responsive desktop/mobile.
+- [ ] Validar que cada bloque tenga evaluación completa antes de marcarse finalizado.
+- [ ] Validar que cada evaluación cubra todos los temas y variaciones enseñadas.
+- [ ] Validar guardado de progreso en Supabase.
+- [ ] Validar guardado de intentos de evaluación en Supabase.
+- [ ] Validar compartir resultado por WhatsApp.
+- [ ] Validar link compartible de resultado.
 - [ ] Validar build.
 - [ ] Validar TypeScript.
 
 ## Checklist Global De Avance
 
 - [x] 10% - Arquitectura creada.
-- [ ] 20% - Componentes visuales base listos.
-- [ ] 30% - Bloques 1 y 2 completos.
-- [ ] 40% - Bloques 3 y 4 completos.
-- [ ] 50% - Bloque 5 completo.
-- [ ] 60% - Bloque 6 completo.
-- [ ] 70% - Bloque 7 completo.
-- [ ] 80% - Bloques 8 y 9 completos.
-- [ ] 90% - Bloques 10 y 11 completos.
+- [ ] 20% - Componentes visuales base y guardado Supabase listos.
+- [ ] 30% - Bloques 1 y 2 completos con evaluaciones.
+- [ ] 40% - Bloques 3 y 4 completos con evaluaciones.
+- [ ] 50% - Bloque 5 completo con evaluación.
+- [ ] 60% - Bloque 6 completo con evaluación.
+- [ ] 70% - Bloque 7 completo con evaluación.
+- [ ] 80% - Bloques 8 y 9 completos con evaluaciones.
+- [ ] 90% - Bloques 10 y 11 completos con evaluaciones.
 - [ ] 100% - Validación completa y modo listo para usar.
 
 ## Pendiente De Decisión
 
 - [ ] Definir si cada estructura tendrá una sola clase con variantes por estudiante o tres clases separadas por estudiante.
 - [x] Definir si el nuevo modo aparecerá en el dashboard principal o como pestaña independiente. Decisión: botón de entrada desde dashboard hacia plataforma separada.
-- [x] Definir si el progreso del nuevo modo se guarda separado del progreso normal. Decisión: progreso separado en `localStorage` con clave `maven_structure_mode_progress`.
-- [ ] Definir si se requiere examen diagnóstico específico para ubicar al estudiante dentro del Modo Estructuras.
+- [x] Definir si el progreso del nuevo modo se guarda separado del progreso normal. Decisión: progreso separado con Supabase en `structure_mode_progress` y fallback local `maven_structure_mode_progress`.
+- [x] Definir si se requiere examen diagnóstico específico para ubicar al estudiante dentro del Modo Estructuras. Decisión: usar Super Evaluación cronometrada repetible como diagnóstico y evaluación por bloques.
