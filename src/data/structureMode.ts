@@ -7,6 +7,7 @@ export type FormulaToken = {
 export type StructureOption = {
   text: string;
   isCorrect: boolean;
+  imageUrl?: string;
 };
 
 export type StructureSlide = {
@@ -15,6 +16,7 @@ export type StructureSlide = {
   title: string;
   subtitle?: string;
   content: string[];
+  imageUrl?: string;
   formula?: FormulaToken[];
   options?: StructureOption[];
   correctNote?: string;
@@ -271,6 +273,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Choose The Subject',
         subtitle: '¿Cuál bloque dice quién hace la acción?',
         content: ['___ eat breakfast at 7 a.m.'],
+        imageUrl: '/images/structure_quiz_breakfast.png',
         options: [
           { text: 'They', isCorrect: true },
           { text: 'at 7 a.m.', isCorrect: false },
@@ -284,6 +287,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Choose The Verb',
         subtitle: '¿Cuál es la acción?',
         content: ['My brother ___ soccer on Saturdays.'],
+        imageUrl: '/images/structure_quiz_soccer.png',
         options: [
           { text: 'soccer', isCorrect: false },
           { text: 'plays', isCorrect: true },
@@ -297,6 +301,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Choose The Complement',
         subtitle: '¿Qué parte agrega información extra?',
         content: ['She studies English ___.'],
+        imageUrl: '/images/structure_quiz_study_night.png',
         options: [
           { text: 'every night', isCorrect: true },
           { text: 'she', isCorrect: false },
@@ -310,6 +315,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Build The Sentence',
         subtitle: 'Escoge la oración con orden correcto.',
         content: ['Idea: ella + trabaja + en casa'],
+        imageUrl: '/images/structure_quiz_work_home.png',
         options: [
           { text: 'At home she works.', isCorrect: false },
           { text: 'She works at home.', isCorrect: true },
@@ -323,6 +329,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Error Hunter',
         subtitle: 'Encuentra la oración correcta.',
         content: ['Una oración tiene estructura limpia.'],
+        imageUrl: '/images/structure_quiz_coffee_daily.png',
         options: [
           { text: 'Every day I coffee drink.', isCorrect: false },
           { text: 'I drink coffee every day.', isCorrect: true },
@@ -336,6 +343,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Fast Repetition 1',
         subtitle: 'Mismo patrón, nueva frase.',
         content: ['They ___ movies on Friday.'],
+        imageUrl: '/images/structure_quiz_movies_friday.png',
         options: [
           { text: 'watch', isCorrect: true },
           { text: 'Friday', isCorrect: false },
@@ -349,6 +357,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Fast Repetition 2',
         subtitle: 'Escoge el orden correcto.',
         content: ['Idea: nosotros + vivimos + en Colombia'],
+        imageUrl: '/images/structure_quiz_live_colombia.png',
         options: [
           { text: 'We live in Colombia.', isCorrect: true },
           { text: 'Live we in Colombia.', isCorrect: false },
@@ -362,6 +371,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Fast Repetition 3',
         subtitle: 'Elige el complemento correcto.',
         content: ['I read books ___.'],
+        imageUrl: '/images/structure_quiz_read_night.png',
         options: [
           { text: 'my sister', isCorrect: false },
           { text: 'at night', isCorrect: true },
@@ -375,6 +385,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Meaning Match',
         subtitle: '¿Qué significa la oración?',
         content: ['My parents work in a hospital.'],
+        imageUrl: '/images/structure_quiz_hospital_work.png',
         options: [
           { text: 'Mis padres trabajan en un hospital.', isCorrect: true },
           { text: 'Mis padres viven en un hospital.', isCorrect: false },
@@ -388,6 +399,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Time Marker Gate',
         subtitle: '¿Cuál complemento expresa tiempo?',
         content: ['Choose the time complement.'],
+        imageUrl: '/images/structure_quiz_after_class.png',
         options: [
           { text: 'after class', isCorrect: true },
           { text: 'English', isCorrect: false },
@@ -415,6 +427,7 @@ export const structureLessons: StructureLesson[] = [
         title: 'Live Check',
         subtitle: 'Después del Boss Battle',
         content: ['Which sentence is strongest?'],
+        imageUrl: '/images/structure_quiz_study_every_day.png',
         options: [
           { text: 'She every day studies English.', isCorrect: false },
           { text: 'She studies English every day.', isCorrect: true },

@@ -344,6 +344,55 @@ function StructureVisual({ slide, slideIndex }: { slide: StructureSlide; slideIn
   );
 }
 
+function splitReadingSentences(text: string) {
+  return (text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text])
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function ReadingMiniChallenge({ slide }: { slide: StructureSlide }) {
+  const readingLines = slide.content.filter((line) => !line.toLowerCase().startsWith('tutor task:'));
+  const tutorTask = slide.content.find((line) => line.toLowerCase().startsWith('tutor task:'));
+  const sentences = readingLines.flatMap(splitReadingSentences);
+
+  return (
+    <div className="structure-reading-challenge grid gap-3">
+      <div className="grid gap-3 md:grid-cols-2">
+        {sentences.map((sentence, index) => (
+          <motion.div
+            key={`${sentence}-${index}`}
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.08 }}
+            className="rounded-3xl border border-white/15 bg-white p-4 text-slate-950 shadow-xl sm:p-5"
+          >
+            <div className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-cyan-300 text-sm font-black text-slate-950">
+              {index + 1}
+            </div>
+            <p className="break-words text-[clamp(1.2rem,3vw,2.4rem)] font-black leading-tight">
+              <RichMemoryText text={sentence} />
+            </p>
+          </motion.div>
+        ))}
+      </div>
+
+      {tutorTask && (
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: sentences.length * 0.08 }}
+          className="rounded-3xl border border-yellow-200/40 bg-yellow-300 p-5 text-slate-950 shadow-2xl"
+        >
+          <div className="mb-1 text-xs font-black uppercase tracking-widest opacity-65">Tutor task</div>
+          <p className="text-[clamp(1.05rem,2.3vw,1.55rem)] font-black leading-snug">
+            <RichMemoryText text={tutorTask.replace(/^Tutor task:\s*/i, '')} />
+          </p>
+        </motion.div>
+      )}
+    </div>
+  );
+}
+
 function QuizSlide({
   slide,
   selectedIndex,
@@ -355,16 +404,29 @@ function QuizSlide({
 }) {
   return (
     <div className="structure-quiz-layout grid min-h-0 min-w-0 flex-1 gap-4 xl:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] xl:gap-6">
-      <section className="structure-quiz-prompt flex min-h-[180px] flex-col justify-center rounded-[2rem] border border-white/15 bg-white p-5 text-slate-950 shadow-2xl sm:min-h-[220px] sm:p-8">
-        <div className="mb-4 inline-flex w-max items-center gap-2 rounded-full bg-indigo-100 px-4 py-2 text-sm font-black uppercase tracking-widest text-indigo-700">
-          <Target className="h-5 w-5" />
-          Practice
+      <section className="structure-quiz-prompt grid min-h-[260px] overflow-hidden rounded-[2rem] border border-white/15 bg-white text-slate-950 shadow-2xl">
+        {slide.imageUrl && (
+          <div className="relative min-h-[180px] overflow-hidden">
+            <img
+              src={slide.imageUrl}
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/5 to-transparent" />
+          </div>
+        )}
+        <div className="flex flex-col justify-center p-5 sm:p-7">
+          <div className="mb-4 inline-flex w-max items-center gap-2 rounded-full bg-indigo-100 px-4 py-2 text-sm font-black uppercase tracking-widest text-indigo-700">
+            <Target className="h-5 w-5" />
+            Practice
+          </div>
+          {slide.content.map((line) => (
+            <p key={line} className="break-words text-[clamp(1.75rem,5vw,3.8rem)] font-black leading-tight">
+              <RichMemoryText text={line} />
+            </p>
+          ))}
         </div>
-        {slide.content.map((line) => (
-          <p key={line} className="break-words text-[clamp(2rem,6vw,4.5rem)] font-black leading-tight">
-            <RichMemoryText text={line} />
-          </p>
-        ))}
       </section>
 
       <section className="structure-quiz-options grid content-center gap-3 sm:gap-4">
@@ -866,25 +928,29 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
                   <div className="structure-slide-work grid min-h-0 content-start gap-4">
                     <FormulaBlocks slide={slide} />
                     {(slide.type === 'summary' || slide.type === 'formula') && <FormulaLock slide={slide} />}
-                    <div className="structure-content-list grid gap-3">
-                      {slide.content.map((line, index) => (
-                        <motion.div
-                          key={line}
-                          initial={{ opacity: 0, y: 18 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: index * 0.08 }}
-                          className={`structure-content-card min-w-0 rounded-3xl border border-white/15 p-5 font-black leading-tight shadow-xl ${
-                            slide.type === 'homework'
-                              ? 'bg-yellow-300 text-slate-950'
-                              : slide.type === 'summary'
-                                ? 'bg-emerald-300 text-slate-950'
-                                : 'bg-white text-slate-950'
-                          } break-words text-[clamp(1.35rem,3.5vw,3.25rem)] sm:p-6`}
-                        >
-                          <RichMemoryText text={line} />
-                        </motion.div>
-                      ))}
-                    </div>
+                    {slide.title === 'Reading Mini Challenge' ? (
+                      <ReadingMiniChallenge slide={slide} />
+                    ) : (
+                      <div className="structure-content-list grid gap-3">
+                        {slide.content.map((line, index) => (
+                          <motion.div
+                            key={line}
+                            initial={{ opacity: 0, y: 18 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.08 }}
+                            className={`structure-content-card min-w-0 rounded-3xl border border-white/15 p-5 font-black leading-tight shadow-xl ${
+                              slide.type === 'homework'
+                                ? 'bg-yellow-300 text-slate-950'
+                                : slide.type === 'summary'
+                                  ? 'bg-emerald-300 text-slate-950'
+                                  : 'bg-white text-slate-950'
+                            } break-words text-[clamp(1.35rem,3.5vw,3.25rem)] sm:p-6`}
+                          >
+                            <RichMemoryText text={line} />
+                          </motion.div>
+                        ))}
+                      </div>
+                    )}
                     {slide.type === 'homework' && (
                       <button
                         type="button"

@@ -21,6 +21,15 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
 - **Images**: Use `imageUrl` with real Unsplash URLs (e.g., `https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800`).
 - **CRITICAL IMAGE RULE**: Before adding ANY Unsplash image URL to the codebase, YOU MUST verify it using the `run_command` tool with `curl -s -o /dev/null -w "%{http_code}" <url>`. If it returns 404, you MUST find another image. NEVER add a 404 image to the curriculum.
 
+## 🖼️ GENERATED IMAGE REQUIREMENT FOR PLAN-BASED CLASSES
+- Cuando se implemente TODO el contenido de una clase tomada de un plan `.md`, se DEBEN generar imágenes propias para las diapositivas visuales de esa clase antes de dar la tarea por terminada.
+- Las imágenes generadas deben estar relacionadas directamente con la frase, pregunta, respuesta correcta, vocabulario o actividad de la diapositiva.
+- Guardar las imágenes finales dentro del proyecto, preferiblemente en `public/images` o en la carpeta de assets usada por el módulo, con nombres descriptivos y estables.
+- Actualizar la clase para usar esas imágenes mediante `imageUrl` o el campo visual equivalente. No dejar referencias a imágenes temporales fuera del workspace.
+- En preguntas de selección múltiple, priorizar una imagen principal grande que acompañe la diapositiva completa y esté relacionada con la frase, la pregunta o la respuesta correcta. No convertir las opciones en miniaturas salvo que el diseño de esa actividad lo pida explícitamente.
+- No usar imágenes genéricas, placeholders ni assets no relacionados solo para cumplir el campo visual.
+- Si se usa Unsplash como excepción, verificar primero cada URL según la regla crítica de imágenes.
+
 ## 📝 MICRO STRUCTURE (SLIDE BY SLIDE BLUEPRINT)
 
 ### 1️⃣ Section 1: Warm-up (3 slides)
