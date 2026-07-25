@@ -108,7 +108,9 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   const bgGradient = slide.bgColor || bgColorMap[section.id.split('-')[1]] || 'bg-slate-800';
   const isOptionalAiSpeakingSlide =
     /let.?s talk|vamos a hablar/i.test(slide.title || '') ||
-    slide.type === 'speaking';
+    /reading practice|practica de lectura|práctica de lectura/i.test(slide.title || '') ||
+    slide.type === 'speaking' ||
+    slide.type === 'reading';
   const slideSpeakingQuestions = [
     selectedSpeakingPrompt,
     ...(slide.type !== 'spinning-wheel' ? slide.content || [] : []),

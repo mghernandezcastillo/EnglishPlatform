@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'motion/react';
 import { Brain, Flame, Minus, Plus, RotateCcw, Shield, Swords, Timer, Trophy, Zap } from 'lucide-react';
+import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 
 interface SpeakingBossBattleGameProps {
   bossName?: string;
@@ -367,6 +368,13 @@ export function SpeakingBossBattleGame({
                       One student answers. The class can help with one hint. If the answer is clear, hit the boss and move to the next round.
                     </p>
                   </div>
+                  {current.key === 'speak' && (
+                    <InlineAiSpeakingAssistant
+                      title="Asistente IA para Speak"
+                      initialQuestion={currentPrompts[0] || ''}
+                      candidateQuestions={currentPrompts}
+                    />
+                  )}
                   <button
                     type="button"
                     onClick={hitBoss}

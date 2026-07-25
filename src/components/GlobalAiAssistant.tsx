@@ -250,14 +250,14 @@ export function GlobalAiAssistant() {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-5 right-5 z-[180] flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-fuchsia-500 text-white shadow-2xl shadow-blue-500/30 transition-transform hover:scale-105"
+        className="fixed bottom-5 right-5 z-[330] flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-fuchsia-500 text-white shadow-2xl shadow-blue-500/30 transition-transform hover:scale-105"
         title="Asistente IA"
       >
         <Bot className="h-7 w-7" />
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-[260] flex items-center justify-center bg-slate-950/70 p-3 sm:p-6 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[340] flex items-center justify-center bg-slate-950/70 p-3 sm:p-6 backdrop-blur-sm">
           <div className="flex max-h-[94vh] min-h-[78vh] w-full max-w-6xl flex-col overflow-hidden rounded-3xl border border-cyan-200/20 bg-slate-950 text-white shadow-2xl">
             <div className="sticky top-0 z-10 flex items-center justify-between border-b border-white/10 bg-slate-950/95 p-5">
               <div className="flex items-center gap-3">
