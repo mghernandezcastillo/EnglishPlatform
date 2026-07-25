@@ -1,11 +1,126 @@
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
+import dotenv from 'dotenv';
+import { GoogleGenAI } from '@google/genai';
 
 const app = express();
 const PORT = 3000;
 
 const isProd = process.env.NODE_ENV === 'production';
+dotenv.config({ path: '.env.local' });
+dotenv.config();
+
+app.use(express.json({ limit: '12mb' }));
+
+app.post('/api/speaking-assessment', async (req, res) => {
+  try {
+    const { expectedText, audioBase64, mimeType } = req.body || {};
+    if (!expectedText || !audioBase64 || !mimeType) {
+      res.status(400).json({ error: 'Missing expectedText, audioBase64, or mimeType.' });
+      return;
+    }
+
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      res.status(500).json({ error: 'GEMINI_API_KEY is not configured.' });
+      return;
+    }
+
+    const ai = new GoogleGenAI({ apiKey });
+    const prompt = `You are an English pronunciation coach.
+Evaluate this student's reading against the expected text.
+Return only compact JSON with this exact shape:
+{"score":0,"transcript":"","correctWords":[],"missedWords":[],"changedWords":[],"extraWords":[],"feedback":"","tips":[]}
+Rules:
+- Only grade words that are clearly audible in the audio.
+- If the audio is silent, unclear, or contains no readable English speech, return score 0 and transcript "".
+- Do not assume the student read the expected text.
+- score is 0-100.
+- transcript is what the student appears to have said.
+- arrays contain short strings only, max 8 items each.
+- feedback max 18 words.
+- tips max 4 items, max 10 words each.
+Expected text: ${expectedText}`;
+
+    const response = await ai.models.generateContent({
+      model: process.env.GEMINI_SPEAKING_MODEL || 'gemini-2.5-flash',
+      contents: [
+        {
+          role: 'user',
+          parts: [
+            { text: prompt },
+            { inlineData: { mimeType, data: audioBase64 } },
+          ],
+        },
+      ] as any,
+      config: {
+        responseMimeType: 'application/json',
+        temperature: 0.2,
+      },
+    });
+
+    const text = response.text || '{}';
+    const parsed = JSON.parse(text);
+    res.json({ result: parsed });
+  } catch (error: any) {
+    res.status(500).json({ error: error?.message || 'Unable to analyze audio.' });
+  }
+});
+
+app.post('/api/free-speaking-assessment', async (req, res) => {
+  try {
+    const { question, audioBase64, mimeType } = req.body || {};
+    if (!question || !audioBase64 || !mimeType) {
+      res.status(400).json({ error: 'Missing question, audioBase64, or mimeType.' });
+      return;
+    }
+
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      res.status(500).json({ error: 'GEMINI_API_KEY is not configured.' });
+      return;
+    }
+
+    const ai = new GoogleGenAI({ apiKey });
+    const prompt = `You are an expert English teacher evaluating a student's spoken answer.
+Return only compact JSON with this exact shape:
+{"transcript":"","summary":"","strengths":[],"corrections":[],"grammarNotes":[],"vocabularySuggestions":[],"teacherNextSteps":[],"score":0}
+Rules:
+- Only analyze clearly audible speech.
+- If audio is silent or unclear, transcript "", score 0, and explain that no clear answer was detected.
+- transcript: what the student said, cleaned but faithful.
+- summary: Spanish summary, max 45 words.
+- strengths: max 5 short Spanish items.
+- corrections: max 6 short Spanish items with corrected English when useful.
+- grammarNotes: max 5 short Spanish items.
+- vocabularySuggestions: max 6 useful English phrases or words.
+- teacherNextSteps: max 4 concrete Spanish actions.
+- score: 0-100 for communication, grammar, vocabulary, and clarity.
+Teacher question: ${question}`;
+
+    const response = await ai.models.generateContent({
+      model: process.env.GEMINI_SPEAKING_MODEL || 'gemini-2.5-flash',
+      contents: [
+        {
+          role: 'user',
+          parts: [
+            { text: prompt },
+            { inlineData: { mimeType, data: audioBase64 } },
+          ],
+        },
+      ] as any,
+      config: {
+        responseMimeType: 'application/json',
+        temperature: 0.25,
+      },
+    });
+
+    res.json({ result: JSON.parse(response.text || '{}') });
+  } catch (error: any) {
+    res.status(500).json({ error: error?.message || 'Unable to analyze free speaking audio.' });
+  }
+});
 
 async function startServer() {
   let vite: any;

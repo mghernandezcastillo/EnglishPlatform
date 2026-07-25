@@ -11,6 +11,7 @@ import { StructureMode } from './components/StructureMode';
 import { RoleSelection } from './components/RoleSelection';
 import { TeacherDashboard } from './components/TeacherDashboard';
 import { VirtualEvaluationView } from './components/VirtualEvaluationView';
+import { GlobalAiAssistant } from './components/GlobalAiAssistant';
 import { dbAdmin } from './lib/db';
 import { DbStudent, UserProgress } from './types';
 import { lessons } from './data/lessons';
@@ -263,6 +264,7 @@ export default function App() {
     return (
       <div className="min-h-screen bg-slate-50 font-sans">
         <TeacherDashboard onBack={() => setRole('none')} onEnterAsStudent={handleSelectStudent} />
+        <GlobalAiAssistant />
       </div>
     );
   }
@@ -434,6 +436,7 @@ export default function App() {
         />
       )}
       <FloatingControls />
+      <GlobalAiAssistant />
     </div>
   );
 }

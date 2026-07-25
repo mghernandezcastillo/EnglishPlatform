@@ -7,6 +7,7 @@ import { MatchingGame } from './MatchingGame';
 import { MysteryPuzzleGame } from './MysteryPuzzleGame';
 import { EmojiMadnessGame } from './EmojiMadnessGame';
 import { SpeakingBossBattleGame } from './SpeakingBossBattleGame';
+import { PronunciationAssessmentSlide } from './PronunciationAssessmentSlide';
 
 interface PresentationViewerProps {
   cls: CurriculumClass;
@@ -15,15 +16,17 @@ interface PresentationViewerProps {
 }
 
 export function PresentationViewer({ cls, onClose, onComplete }: PresentationViewerProps) {
+  const experimentalSpeakingEnabled = import.meta.env.VITE_EXPERIMENTAL_SPEAKING_ASSESSMENT === 'true';
   // Flatten all slides from sections
   const allSlides: { section: ClassSection, slide: ClassSlide, totalSlides: number, index: number }[] = [];
   let index = 0;
   
   // Total slides across all sections
-  const totalSlides = cls.sections.reduce((acc, s) => acc + s.slides.length, 0);
+  const totalSlides = cls.sections.reduce((acc, s) => acc + s.slides.filter(slide => experimentalSpeakingEnabled || slide.type !== 'speaking-assessment-experimental').length, 0);
 
   cls.sections.forEach(section => {
     section.slides.forEach(slide => {
+      if (!experimentalSpeakingEnabled && slide.type === 'speaking-assessment-experimental') return;
       allSlides.push({ section, slide, totalSlides, index });
       index++;
     });
@@ -32,6 +35,13 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
+  const [meetingAudioStream, setMeetingAudioStream] = useState<MediaStream | null>(null);
+
+  useEffect(() => {
+    return () => {
+      meetingAudioStream?.getTracks().forEach(track => track.stop());
+    };
+  }, [meetingAudioStream]);
 
   useEffect(() => {
     setSelectedOption(null);
@@ -50,7 +60,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
       
       if (e.key === 'ArrowRight') nextSlide();
       if (e.key === 'ArrowLeft') prevSlide();
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') handleClose();
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
@@ -70,13 +80,18 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
     if (currentIndex > 0) setCurrentIndex(prev => prev - 1);
   };
 
+  const handleClose = () => {
+    meetingAudioStream?.getTracks().forEach(track => track.stop());
+    onClose();
+  };
+
   if (allSlides.length === 0) return null;
 
   const currentData = allSlides[currentIndex];
   if (!currentData) return null;
   const { section, slide } = currentData;
   const isLastSlide = currentIndex === allSlides.length - 1;
-  const isImmersiveSlide = slide.type === 'emoji-game' || slide.type === 'speaking-boss-battle';
+  const isImmersiveSlide = slide.type === 'emoji-game' || slide.type === 'speaking-boss-battle' || slide.type === 'speaking-assessment-experimental';
   const isSpeakingBossBattle = slide.type === 'speaking-boss-battle';
 
   const bgColorMap: Record<string, string> = {
@@ -105,7 +120,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             {currentIndex + 1} / {allSlides.length}
           </div>
           <button 
-            onClick={onClose}
+            onClick={handleClose}
             className="p-1.5 sm:p-2 hover:bg-white/10 rounded-full transition-colors"
           >
             <X className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -186,7 +201,17 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   />
                 )}
 
-                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.content?.map((line, i) => {
+                {slide.type === 'speaking-assessment-experimental' && slide.speakingAssessment && (
+                  <PronunciationAssessmentSlide
+                    expectedText={slide.speakingAssessment.expectedText}
+                    maxDurationSeconds={slide.speakingAssessment.maxDurationSeconds}
+                    silenceStopSeconds={slide.speakingAssessment.silenceStopSeconds}
+                    sharedStream={meetingAudioStream}
+                    onSharedStreamChange={setMeetingAudioStream}
+                  />
+                )}
+
+                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.content?.map((line, i) => {
                   if (slide.type === 'reading') {
                     return (
                       <div key={i} className="text-base sm:text-xl md:text-2xl font-medium leading-relaxed bg-black/10 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg text-justify">
@@ -226,7 +251,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                 )}
 
                 {/* Interactive Options Area (inline with content) */}
-                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.options && slide.options.length > 0 && (
+                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.options && slide.options.length > 0 && (
                   <div className="flex flex-col gap-3 mt-auto pt-4 sm:pt-6 w-full">
                     {slide.options.map((opt, idx) => {
                       const isSelected = selectedOption === idx;
@@ -276,7 +301,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               </div>
 
               {/* Right content (Image or Video) */}
-              {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
+              {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center text-center backdrop-blur-sm overflow-hidden min-h-[300px] sm:min-h-[400px]">
                   <iframe 
                     src={slide.videoUrl} 
@@ -286,7 +311,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
+              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center p-2 text-center backdrop-blur-sm min-h-[200px] sm:min-h-[400px]">
                   <img src={slide.imageUrl} referrerPolicy="no-referrer" alt={slide.title} className="w-full h-full object-cover rounded-lg sm:rounded-xl" />
                 </div>

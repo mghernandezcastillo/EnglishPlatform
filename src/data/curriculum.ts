@@ -273,6 +273,22 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               },
+              {
+                "id": "experimental-speaking-assessment-1",
+                "title": "Speaking Check / Prueba de Lectura",
+                "description": "Experimental pronunciation feedback from the call audio.",
+                "type": "speaking-assessment-experimental",
+                "content": [
+                  "Click start, ask the student to read, and the app will stop after silence.",
+                  "This experiment does not save scores or affect student progress."
+                ],
+                "bgColor": "bg-gradient-to-br from-cyan-600 via-blue-600 to-indigo-700",
+                "speakingAssessment": {
+                  "expectedText": "Hello, my name is Sarah. I am a teacher. I am from London, but I live in Spain. We are very happy today.",
+                  "maxDurationSeconds": 25,
+                  "silenceStopSeconds": 1.8
+                }
+              },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
