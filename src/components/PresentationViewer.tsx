@@ -8,6 +8,7 @@ import { MysteryPuzzleGame } from './MysteryPuzzleGame';
 import { EmojiMadnessGame } from './EmojiMadnessGame';
 import { SpeakingBossBattleGame } from './SpeakingBossBattleGame';
 import { PronunciationAssessmentSlide } from './PronunciationAssessmentSlide';
+import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 
 interface PresentationViewerProps {
   cls: CurriculumClass;
@@ -36,6 +37,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [meetingAudioStream, setMeetingAudioStream] = useState<MediaStream | null>(null);
+  const [selectedSpeakingPrompt, setSelectedSpeakingPrompt] = useState('');
 
   useEffect(() => {
     return () => {
@@ -46,6 +48,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   useEffect(() => {
     setSelectedOption(null);
     setShowResult(false);
+    setSelectedSpeakingPrompt('');
   }, [currentIndex]);
 
   useEffect(() => {
@@ -103,6 +106,13 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   };
 
   const bgGradient = slide.bgColor || bgColorMap[section.id.split('-')[1]] || 'bg-slate-800';
+  const isOptionalAiSpeakingSlide =
+    /let.?s talk|vamos a hablar/i.test(slide.title || '') ||
+    slide.type === 'speaking';
+  const slideSpeakingQuestions = [
+    selectedSpeakingPrompt,
+    ...(slide.type !== 'spinning-wheel' ? slide.content || [] : []),
+  ].filter((line): line is string => Boolean(line?.trim()));
 
   return (
     <div className="fixed inset-0 z-[200] bg-black/90 backdrop-blur flex flex-col">
@@ -158,7 +168,10 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               <div className={`${isImmersiveSlide ? 'w-full' : 'flex-1'} flex flex-col gap-3 sm:gap-6`}>
                 {slide.type === 'spinning-wheel' && slide.wheelItems && (
                   <div className="flex-1 flex flex-col items-center justify-center py-2 sm:py-4">
-                    <SpinningWheel items={slide.wheelItems} />
+                    <SpinningWheel
+                      items={slide.wheelItems}
+                      onSpinComplete={(item) => setSelectedSpeakingPrompt(item.prompt || item.label)}
+                    />
                   </div>
                 )}
                 
@@ -225,6 +238,14 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     </div>
                   );
                 })}
+
+                {isOptionalAiSpeakingSlide && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && (
+                  <InlineAiSpeakingAssistant
+                    title="Asistente IA de esta diapositiva"
+                    initialQuestion={selectedSpeakingPrompt || slideSpeakingQuestions[0] || ''}
+                    candidateQuestions={slideSpeakingQuestions}
+                  />
+                )}
 
                 
                 {/* WhatsApp Share Button for Homework */}
