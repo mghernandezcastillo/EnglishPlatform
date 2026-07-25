@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Bot, BrainCircuit, MessageSquareText, Mic, MonitorSpeaker, Sparkles, Square, X } from 'lucide-react';
+import { Bot, BrainCircuit, MessageSquareText, Mic, MonitorSpeaker, Shuffle, Sparkles, Square, X } from 'lucide-react';
 
 type AssistantMode = 'idle' | 'ready' | 'waiting' | 'recording' | 'analyzing' | 'done' | 'error';
 
@@ -25,11 +25,24 @@ const blobToBase64 = (blob: Blob) =>
     reader.readAsDataURL(blob);
   });
 
+const SAVED_RANDOM_QUESTIONS = [
+  'Tell me about your day. What did you do today, and how did you feel?',
+  'What is something you learned recently? Explain it in simple English.',
+  'Describe your favorite place and why you like it.',
+  'What do you usually do on weekends?',
+  'Tell me about a movie, series, or video you watched recently.',
+  'What are your plans for tomorrow?',
+  'Describe a person you admire and give two reasons.',
+  'What is a goal you have for this year?',
+  'Tell me about a problem you solved recently.',
+  'What would you do if you had a free day?',
+];
+
 export function GlobalAiAssistant() {
   const [isOpen, setIsOpen] = useState(false);
-  const [question, setQuestion] = useState('Tell me about your day. What did you do today, and how did you feel?');
+  const [question, setQuestion] = useState('');
   const [mode, setMode] = useState<AssistantMode>('idle');
-  const [status, setStatus] = useState('Listo para una evaluacion sorpresa.');
+  const [status, setStatus] = useState('Listo. Activa un audio y escribe o genera una pregunta cuando quieras.');
   const [stream, setStream] = useState<MediaStream | null>(null);
   const [elapsed, setElapsed] = useState(0);
   const [error, setError] = useState('');
@@ -40,16 +53,13 @@ export function GlobalAiAssistant() {
   const audioContextRef = useRef<AudioContext | null>(null);
   const analyzerRef = useRef<AnalyserNode | null>(null);
   const rafRef = useRef<number | null>(null);
-  const startedSpeakingRef = useRef(false);
-  const silenceStartedAtRef = useRef<number | null>(null);
   const startedAtRef = useRef(0);
-  const hardStopRef = useRef<number | null>(null);
+  const elapsedIntervalRef = useRef<number | null>(null);
 
   useEffect(() => {
     return () => {
       cleanupAnalysis();
       stream?.getTracks().forEach(track => track.stop());
-      if (hardStopRef.current) window.clearTimeout(hardStopRef.current);
     };
   }, [stream]);
 
@@ -59,13 +69,15 @@ export function GlobalAiAssistant() {
     analyzerRef.current = null;
     audioContextRef.current?.close().catch(() => undefined);
     audioContextRef.current = null;
+    if (elapsedIntervalRef.current) window.clearInterval(elapsedIntervalRef.current);
+    elapsedIntervalRef.current = null;
   };
 
   const setNewStream = (nextStream: MediaStream) => {
     stream?.getTracks().forEach(track => track.stop());
     setStream(nextStream);
     setMode('ready');
-    setStatus('Audio listo. Haz la pregunta y presiona Empezar.');
+    setStatus('Audio listo. Presiona Empezar cuando quieras grabar.');
   };
 
   const requestCallAudio = async () => {
@@ -116,10 +128,8 @@ export function GlobalAiAssistant() {
     setResult(null);
     setError('');
     setElapsed(0);
-    setMode('waiting');
-    setStatus('Escuchando respuesta...');
-    startedSpeakingRef.current = false;
-    silenceStartedAtRef.current = null;
+    setMode('recording');
+    setStatus('Grabando. El analisis empezara solo cuando presiones Detener.');
     startedAtRef.current = Date.now();
 
     const audioOnlyStream = new MediaStream(audioTracks);
@@ -133,18 +143,17 @@ export function GlobalAiAssistant() {
 
     recorder.onstop = () => {
       cleanupAnalysis();
-      if (hardStopRef.current) window.clearTimeout(hardStopRef.current);
-      if (!startedSpeakingRef.current) {
+      if (chunksRef.current.length === 0) {
         setMode('done');
-        setStatus('No se detecto voz clara.');
+        setStatus('No se capturo audio.');
         setResult({
           transcript: '',
-          summary: 'No se detecto una respuesta clara para analizar.',
+          summary: 'No se capturo audio para analizar.',
           strengths: [],
-          corrections: ['Revisa que el audio correcto este seleccionado.'],
+          corrections: ['Revisa que el audio correcto este seleccionado y vuelve a grabar.'],
           grammarNotes: [],
           vocabularySuggestions: [],
-          teacherNextSteps: ['Repetir la pregunta y pedir una respuesta mas fuerte.'],
+          teacherNextSteps: ['Activar el audio correcto y repetir la prueba.'],
           score: 0,
         });
         return;
@@ -153,53 +162,9 @@ export function GlobalAiAssistant() {
     };
 
     recorder.start(250);
-    watchSilence(stream);
-    hardStopRef.current = window.setTimeout(() => stopRecording(), 90000);
-  };
-
-  const watchSilence = (activeStream: MediaStream) => {
-    const AudioContextCtor = window.AudioContext || (window as any).webkitAudioContext;
-    const context = new AudioContextCtor();
-    const source = context.createMediaStreamSource(activeStream);
-    const analyzer = context.createAnalyser();
-    analyzer.fftSize = 1024;
-    source.connect(analyzer);
-    audioContextRef.current = context;
-    analyzerRef.current = analyzer;
-
-    const data = new Uint8Array(analyzer.fftSize);
-    const threshold = 16;
-
-    const tick = () => {
-      analyzer.getByteTimeDomainData(data);
-      let sum = 0;
-      for (const value of data) {
-        const centered = value - 128;
-        sum += centered * centered;
-      }
-      const rms = Math.sqrt(sum / data.length);
-      const now = Date.now();
-      setElapsed(Math.min(90, Math.round((now - startedAtRef.current) / 1000)));
-
-      if (rms > threshold) {
-        if (!startedSpeakingRef.current) {
-          startedSpeakingRef.current = true;
-          setMode('recording');
-          setStatus('Grabando respuesta...');
-        }
-        silenceStartedAtRef.current = null;
-      } else if (startedSpeakingRef.current) {
-        if (!silenceStartedAtRef.current) silenceStartedAtRef.current = now;
-        if (now - silenceStartedAtRef.current >= 2.4 * 1000) {
-          stopRecording();
-          return;
-        }
-      }
-
-      rafRef.current = requestAnimationFrame(tick);
-    };
-
-    tick();
+    elapsedIntervalRef.current = window.setInterval(() => {
+      setElapsed(Math.round((Date.now() - startedAtRef.current) / 1000));
+    }, 500);
   };
 
   const stopRecording = () => {
@@ -236,6 +201,17 @@ export function GlobalAiAssistant() {
     }
   };
 
+  const pickSavedQuestion = () => {
+    const availableQuestions = SAVED_RANDOM_QUESTIONS.filter(savedQuestion => savedQuestion !== question);
+    const pool = availableQuestions.length ? availableQuestions : SAVED_RANDOM_QUESTIONS;
+    setQuestion(pool[Math.floor(Math.random() * pool.length)]);
+  };
+
+  const closeAssistant = () => {
+    if (mode === 'waiting' || mode === 'recording') stopRecording();
+    setIsOpen(false);
+  };
+
   return (
     <>
       <button
@@ -248,8 +224,8 @@ export function GlobalAiAssistant() {
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-[260] flex items-end justify-end bg-slate-950/45 p-3 sm:p-5 backdrop-blur-sm">
-          <div className="max-h-[92vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-cyan-200/20 bg-slate-950 text-white shadow-2xl">
+        <div className="fixed inset-0 z-[260] flex items-center justify-center bg-slate-950/70 p-3 sm:p-6 backdrop-blur-sm">
+          <div className="flex max-h-[94vh] min-h-[78vh] w-full max-w-6xl flex-col overflow-hidden rounded-3xl border border-cyan-200/20 bg-slate-950 text-white shadow-2xl">
             <div className="sticky top-0 z-10 flex items-center justify-between border-b border-white/10 bg-slate-950/95 p-5">
               <div className="flex items-center gap-3">
                 <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-300/15 text-cyan-200">
@@ -257,23 +233,35 @@ export function GlobalAiAssistant() {
                 </div>
                 <div>
                   <h2 className="text-xl font-black">Asistente IA</h2>
-                  <p className="text-sm font-semibold text-white/60">Evaluacion oral sorpresa</p>
+                  <p className="text-sm font-semibold text-white/60">Evaluacion oral manual</p>
                 </div>
               </div>
-              <button onClick={() => setIsOpen(false)} className="rounded-xl p-2 text-white/70 hover:bg-white/10 hover:text-white">
+              <button onClick={closeAssistant} className="rounded-xl p-2 text-white/70 hover:bg-white/10 hover:text-white">
                 <X className="h-6 w-6" />
               </button>
             </div>
 
-            <div className="space-y-5 p-5">
+            <div className="flex-1 space-y-5 overflow-y-auto p-5 sm:p-6">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <label className="mb-2 flex items-center gap-2 text-sm font-black uppercase tracking-[0.16em] text-cyan-100">
-                  <MessageSquareText className="h-4 w-4" />
-                  Pregunta sorpresa
-                </label>
+                <div className="mb-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <label className="flex items-center gap-2 text-sm font-black uppercase tracking-[0.16em] text-cyan-100">
+                    <MessageSquareText className="h-4 w-4" />
+                    Pregunta
+                  </label>
+                  <button
+                    type="button"
+                    onClick={pickSavedQuestion}
+                    disabled={mode === 'waiting' || mode === 'recording' || mode === 'analyzing'}
+                    className="flex items-center justify-center gap-2 rounded-xl bg-cyan-300 px-4 py-2 text-sm font-black text-slate-950 hover:bg-cyan-200 disabled:opacity-45"
+                  >
+                    <Shuffle className="h-4 w-4" />
+                    Pregunta aleatoria guardada
+                  </button>
+                </div>
                 <textarea
                   value={question}
                   onChange={event => setQuestion(event.target.value)}
+                  placeholder="Escribe tu pregunta aqui o genera una pregunta aleatoria guardada."
                   rows={3}
                   className="w-full resize-none rounded-2xl border border-white/10 bg-black/25 p-4 text-lg font-semibold text-white outline-none focus:border-cyan-300"
                 />
@@ -297,7 +285,7 @@ export function GlobalAiAssistant() {
                     <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-100">Estado</p>
                     <p className="text-lg font-bold">{status}</p>
                     {error && <p className="mt-1 text-sm font-semibold text-amber-200">{error}</p>}
-                    <p className="mt-1 text-sm text-white/55">{elapsed}s / 90s</p>
+                    <p className="mt-1 text-sm text-white/55">{elapsed}s</p>
                   </div>
                   <div className="flex gap-3">
                     <button

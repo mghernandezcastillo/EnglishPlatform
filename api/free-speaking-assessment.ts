@@ -13,9 +13,13 @@ export default async function handler(req: any, res: any) {
       return;
     }
 
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey =
+      process.env.GEMINI_API_KEY ||
+      process.env.GOOGLE_API_KEY ||
+      process.env.GOOGLE_GENERATIVE_AI_API_KEY ||
+      process.env.VITE_GEMINI_API_KEY;
     if (!apiKey) {
-      res.status(500).json({ error: 'GEMINI_API_KEY is not configured.' });
+      res.status(500).json({ error: 'Gemini API key is not configured in production environment variables.' });
       return;
     }
 
