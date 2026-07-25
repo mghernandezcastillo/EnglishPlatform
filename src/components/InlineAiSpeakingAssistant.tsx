@@ -5,6 +5,7 @@ interface InlineAiSpeakingAssistantProps {
   title?: string;
   initialQuestion?: string;
   candidateQuestions?: string[];
+  mode?: 'speaking' | 'reading';
 }
 
 interface SpeakingResult {
@@ -35,11 +36,16 @@ export function InlineAiSpeakingAssistant({
   title = 'Asistente IA opcional',
   initialQuestion = '',
   candidateQuestions = [],
+  mode: assistantMode = 'speaking',
 }: InlineAiSpeakingAssistantProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [question, setQuestion] = useState(initialQuestion);
   const [mode, setMode] = useState<CaptureMode>('idle');
-  const [status, setStatus] = useState('Disponible si quieres evaluar esta respuesta.');
+  const [status, setStatus] = useState(
+    assistantMode === 'reading'
+      ? 'Opcional: escucha la lectura y sugiere correcciones.'
+      : 'Disponible si quieres evaluar esta respuesta.'
+  );
   const [stream, setStream] = useState<MediaStream | null>(null);
   const [elapsed, setElapsed] = useState(0);
   const [audioLevel, setAudioLevel] = useState(0);
@@ -159,7 +165,11 @@ export function InlineAiSpeakingAssistant({
     setError('');
     setElapsed(0);
     setMode('recording');
-    setStatus('Grabando. El analisis empezara cuando presiones Detener.');
+    setStatus(
+      assistantMode === 'reading'
+        ? 'Grabando lectura. Deten cuando el estudiante termine.'
+        : 'Grabando. El analisis empezara cuando presiones Detener.'
+    );
     startedAtRef.current = Date.now();
 
     const audioOnlyStream = new MediaStream(audioTracks);
@@ -202,6 +212,7 @@ export function InlineAiSpeakingAssistant({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           question: question || 'Free speaking practice',
+          mode: assistantMode,
           audioBase64,
           mimeType: blob.type || 'audio/webm',
         }),
@@ -226,7 +237,7 @@ export function InlineAiSpeakingAssistant({
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 font-black text-slate-950 hover:bg-cyan-50"
         >
           <Bot className="h-5 w-5" />
-          Usar asistente IA en esta diapositiva
+          {assistantMode === 'reading' ? 'Revisar lectura con IA' : 'Usar asistente IA en esta diapositiva'}
         </button>
       ) : (
         <div className="space-y-4">
@@ -245,7 +256,7 @@ export function InlineAiSpeakingAssistant({
             </button>
           </div>
 
-          {candidateQuestions.length > 0 && (
+          {assistantMode !== 'reading' && candidateQuestions.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {candidateQuestions.slice(0, 6).map((candidate, index) => (
                 <button
@@ -264,7 +275,8 @@ export function InlineAiSpeakingAssistant({
           <textarea
             value={question}
             onChange={event => setQuestion(event.target.value)}
-            placeholder="Pregunta o instruccion de speaking para evaluar."
+            placeholder={assistantMode === 'reading' ? 'Texto que el estudiante debe leer.' : 'Pregunta o instruccion de speaking para evaluar.'}
+            aria-label={assistantMode === 'reading' ? 'Texto esperado de lectura' : 'Pregunta o instruccion de speaking'}
             rows={2}
             className="w-full resize-none rounded-xl border border-white/10 bg-black/25 p-3 text-base font-semibold text-white outline-none focus:border-cyan-300"
           />
@@ -320,12 +332,16 @@ export function InlineAiSpeakingAssistant({
           {result && (
             <div className="grid gap-3 lg:grid-cols-[0.4fr_1fr]">
               <div className="rounded-xl bg-white p-4 text-slate-950">
-                <p className="text-xs font-black uppercase tracking-[0.12em] text-emerald-700">Score oral</p>
+                <p className="text-xs font-black uppercase tracking-[0.12em] text-emerald-700">
+                  {assistantMode === 'reading' ? 'Score lectura' : 'Score oral'}
+                </p>
                 <p className="mt-1 text-4xl font-black">{result.score}%</p>
                 <p className="mt-2 text-sm font-semibold text-slate-600">{result.summary}</p>
               </div>
               <div className="rounded-xl bg-white/5 p-4">
-                <p className="text-xs font-black uppercase tracking-[0.12em] text-cyan-100">Lo que dijo</p>
+                <p className="text-xs font-black uppercase tracking-[0.12em] text-cyan-100">
+                  {assistantMode === 'reading' ? 'Lectura detectada' : 'Lo que dijo'}
+                </p>
                 <p className="mt-1 text-sm font-semibold text-white/90">{result.transcript || 'No hubo transcripcion clara.'}</p>
                 <ResultGroup title="Corregir" items={result.corrections} />
                 <ResultGroup title="Siguiente paso" items={result.teacherNextSteps} />

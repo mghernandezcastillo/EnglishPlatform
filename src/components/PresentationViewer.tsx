@@ -106,9 +106,12 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   };
 
   const bgGradient = slide.bgColor || bgColorMap[section.id.split('-')[1]] || 'bg-slate-800';
+  const isReadingPracticeSlide =
+    /reading practice|practica de lectura|práctica de lectura/i.test(slide.title || '') ||
+    slide.type === 'reading';
   const isOptionalAiSpeakingSlide =
     /let.?s talk|vamos a hablar/i.test(slide.title || '') ||
-    /reading practice|practica de lectura|práctica de lectura/i.test(slide.title || '') ||
+    isReadingPracticeSlide ||
     slide.type === 'speaking' ||
     slide.type === 'reading';
   const slideSpeakingQuestions = [
@@ -243,9 +246,10 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
 
                 {isOptionalAiSpeakingSlide && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && (
                   <InlineAiSpeakingAssistant
-                    title="Asistente IA de esta diapositiva"
+                    title={isReadingPracticeSlide ? 'Asistente IA de lectura' : 'Asistente IA de esta diapositiva'}
                     initialQuestion={selectedSpeakingPrompt || slideSpeakingQuestions[0] || ''}
                     candidateQuestions={slideSpeakingQuestions}
+                    mode={isReadingPracticeSlide ? 'reading' : 'speaking'}
                   />
                 )}
 

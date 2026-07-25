@@ -70,7 +70,7 @@ Expected text: ${expectedText}`;
 
 app.post('/api/free-speaking-assessment', async (req, res) => {
   try {
-    const { question, audioBase64, mimeType } = req.body || {};
+    const { question, mode, audioBase64, mimeType } = req.body || {};
     if (!question || !audioBase64 || !mimeType) {
       res.status(400).json({ error: 'Missing question, audioBase64, or mimeType.' });
       return;
@@ -83,7 +83,25 @@ app.post('/api/free-speaking-assessment', async (req, res) => {
     }
 
     const ai = new GoogleGenAI({ apiKey });
-    const prompt = `You are an expert English teacher evaluating a student's spoken answer.
+    const prompt = mode === 'reading'
+      ? `You are a specialized English reading-practice assistant.
+The student is reading the expected text aloud. Listen only for that reading task.
+Return only compact JSON with this exact shape:
+{"transcript":"","summary":"","strengths":[],"corrections":[],"grammarNotes":[],"vocabularySuggestions":[],"teacherNextSteps":[],"score":0}
+Rules:
+- Only analyze clearly audible speech.
+- If audio is silent or unclear, transcript "", score 0, and explain in Spanish that no clear reading was detected.
+- transcript: what the student read, cleaned but faithful.
+- summary: Spanish reading feedback, max 35 words.
+- strengths: max 4 short Spanish items about clear pronunciation, rhythm, or accurate words.
+- corrections: max 6 short Spanish items. Focus on misread words, skipped words, added words, pronunciation, stress, and fluency.
+- grammarNotes: keep empty unless the student changed the grammar while reading.
+- vocabularySuggestions: max 4 English words from the text that need repetition.
+- teacherNextSteps: max 3 concrete Spanish actions for the tutor.
+- score: 0-100 for accuracy against the expected text, pronunciation, rhythm, and clarity.
+- Do not evaluate free conversation, ideas, creativity, or grammar beyond the reading.
+Expected reading text: ${question}`
+      : `You are an expert English teacher evaluating a student's spoken answer.
 Return only compact JSON with this exact shape:
 {"transcript":"","summary":"","strengths":[],"corrections":[],"grammarNotes":[],"vocabularySuggestions":[],"teacherNextSteps":[],"score":0}
 Rules:
