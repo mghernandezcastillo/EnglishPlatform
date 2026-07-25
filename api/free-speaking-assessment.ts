@@ -34,6 +34,9 @@ Rules:
 - summary: Spanish summary, max 45 words.
 - strengths: max 5 short Spanish items.
 - corrections: max 6 short Spanish items with corrected English when useful.
+- Only include a correction when the corrected English is different from what the student said.
+- Never write a correction that repeats the same phrase as both the error and the correction.
+- Do not invent grammar errors. If a phrase is already correct, mention it in strengths or omit it.
 - grammarNotes: max 5 short Spanish items.
 - vocabularySuggestions: max 6 useful English phrases or words.
 - teacherNextSteps: max 4 concrete Spanish actions.

@@ -45,6 +45,7 @@ export function GlobalAiAssistant() {
   const [status, setStatus] = useState('Listo. Activa un audio y escribe o genera una pregunta cuando quieras.');
   const [stream, setStream] = useState<MediaStream | null>(null);
   const [elapsed, setElapsed] = useState(0);
+  const [audioLevel, setAudioLevel] = useState(0);
   const [error, setError] = useState('');
   const [result, setResult] = useState<SurpriseResult | null>(null);
 
@@ -69,6 +70,7 @@ export function GlobalAiAssistant() {
     analyzerRef.current = null;
     audioContextRef.current?.close().catch(() => undefined);
     audioContextRef.current = null;
+    setAudioLevel(0);
     if (elapsedIntervalRef.current) window.clearInterval(elapsedIntervalRef.current);
     elapsedIntervalRef.current = null;
   };
@@ -162,9 +164,40 @@ export function GlobalAiAssistant() {
     };
 
     recorder.start(250);
+    startAudioMeter(stream);
     elapsedIntervalRef.current = window.setInterval(() => {
       setElapsed(Math.round((Date.now() - startedAtRef.current) / 1000));
     }, 500);
+  };
+
+  const startAudioMeter = (activeStream: MediaStream) => {
+    cleanupAnalysis();
+    const AudioContextCtor = window.AudioContext || (window as any).webkitAudioContext;
+    if (!AudioContextCtor) return;
+
+    const context = new AudioContextCtor();
+    const source = context.createMediaStreamSource(activeStream);
+    const analyzer = context.createAnalyser();
+    analyzer.fftSize = 1024;
+    source.connect(analyzer);
+    audioContextRef.current = context;
+    analyzerRef.current = analyzer;
+
+    const data = new Uint8Array(analyzer.fftSize);
+
+    const tick = () => {
+      analyzer.getByteTimeDomainData(data);
+      let sum = 0;
+      for (const value of data) {
+        const centered = value - 128;
+        sum += centered * centered;
+      }
+      const rms = Math.sqrt(sum / data.length);
+      setAudioLevel(Math.min(100, Math.round(rms * 5)));
+      rafRef.current = requestAnimationFrame(tick);
+    };
+
+    tick();
   };
 
   const stopRecording = () => {
@@ -280,6 +313,7 @@ export function GlobalAiAssistant() {
 
               <div className="rounded-2xl border border-cyan-200/20 bg-black/20 p-4">
                 {mode === 'analyzing' && <AssistantAnalyzing />}
+                <AudioLevelMeter level={audioLevel} isActive={mode === 'recording'} />
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-100">Estado</p>
@@ -332,6 +366,37 @@ export function GlobalAiAssistant() {
         </div>
       )}
     </>
+  );
+}
+
+function AudioLevelMeter({ level, isActive }: { level: number; isActive: boolean }) {
+  const activeBars = Math.ceil((level / 100) * 20);
+
+  return (
+    <div className="mb-4 rounded-2xl border border-white/10 bg-slate-950/65 p-4">
+      <div className="mb-3 flex items-center justify-between gap-3">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-100">Senal de audio</p>
+          <p className="text-sm font-semibold text-white/60">
+            {isActive ? (level > 6 ? 'Audio entrando desde la fuente seleccionada.' : 'Grabando, pero casi no hay senal.') : 'Aparece cuando presionas Empezar.'}
+          </p>
+        </div>
+        <span className={`h-3 w-3 rounded-full ${isActive && level > 6 ? 'bg-emerald-300 shadow-[0_0_16px_rgba(110,231,183,0.9)]' : 'bg-white/20'}`} />
+      </div>
+      <div className="flex h-14 items-end gap-1.5">
+        {Array.from({ length: 20 }).map((_, index) => (
+          <span
+            key={index}
+            className={`w-full rounded-t transition-all duration-100 ${
+              index < activeBars
+                ? 'bg-gradient-to-t from-emerald-400 via-cyan-300 to-fuchsia-300 shadow-[0_0_10px_rgba(34,211,238,0.35)]'
+                : 'bg-white/10'
+            }`}
+            style={{ height: `${10 + ((index * 7) % 28)}px` }}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
 
