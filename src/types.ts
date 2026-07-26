@@ -55,8 +55,26 @@ export interface ClassSlide {
   bgColor?: string;
   options?: string[];
   correctOptionIndex?: number;
-  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle';
+  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag';
   videoUrl?: string; // e.g. youtube embed url
+  structureDrag?: {
+    patternName: string;
+    instructions: string;
+    prompt: string;
+    accentColor?: string;
+    slots: {
+      id: string;
+      label: string;
+      text: string;
+      color: string;
+    }[];
+    tokens: {
+      id: string;
+      label: string;
+      text: string;
+      color: string;
+    }[];
+  };
   wheelItems?: { label: string; color: string; prompt?: string; es?: string }[];
   matchingPairs?: { left: string; right: string; id: string }[];
   mysteryPuzzleData?: { target: string; imageUrl?: string; emoji?: string; panels: { id: number; label: string; color: string }[] };

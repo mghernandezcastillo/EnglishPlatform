@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 import { StructureLesson, StructureSlide, structureLessons, structureRoadmap } from '../data/structureMode';
 import { StructureAssessment } from './StructureAssessment';
+import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 import { dbAdmin } from '../lib/db';
 import imgComplete from '../assets/images/teens_complete_1782770593439.jpg';
 import imgEnergy from '../assets/images/teens_energy_warmup_1782228109142.jpg';
@@ -350,6 +351,60 @@ function splitReadingSentences(text: string) {
     .filter(Boolean);
 }
 
+function isStructureReadingSlide(slide: StructureSlide) {
+  const searchableText = [slide.title, slide.subtitle || '', ...slide.content].join(' ').toLowerCase();
+  return /\b(read|reading|lectura|leer)\b/.test(searchableText);
+}
+
+function getStructureQuestionPrompts(slide: StructureSlide) {
+  const contentQuestions = slide.content
+    .flatMap(splitReadingSentences)
+    .map((item) => item.trim())
+    .filter((item) => item.includes('?'));
+
+  if (slide.type === 'quiz') {
+    const prompt = slide.content.join(' ');
+    const options = slide.options?.map((option, index) => `${index + 1}. ${option.text}`).join(' | ') || '';
+    return [
+      `Answer this structure question and explain why: ${prompt}${options ? ` Options: ${options}` : ''}`,
+      `Read the prompt, choose the best option, and justify your answer: ${prompt}`,
+      `Use the target structure in a complete spoken sentence: ${prompt}`
+    ];
+  }
+
+  return contentQuestions.length ? contentQuestions : slide.content;
+}
+
+function getStructureAiInitialPrompt(slide: StructureSlide) {
+  if (isStructureReadingSlide(slide)) {
+    return slide.content
+      .filter((line) => !line.toLowerCase().startsWith('tutor task:'))
+      .join(' ');
+  }
+
+  return getStructureQuestionPrompts(slide)[0] || slide.title;
+}
+
+function shouldShowStructureAi(slide: StructureSlide) {
+  if (slide.type === 'quiz' || isStructureReadingSlide(slide)) return true;
+  return [slide.title, slide.subtitle || '', ...slide.content].some((line) => line.includes('?'));
+}
+
+function StructureAiAssistantPanel({ slide }: { slide: StructureSlide }) {
+  if (!shouldShowStructureAi(slide)) return null;
+
+  const isReading = isStructureReadingSlide(slide);
+
+  return (
+    <InlineAiSpeakingAssistant
+      title={isReading ? 'Asistente IA de lectura' : 'Asistente IA de estructuras'}
+      initialQuestion={getStructureAiInitialPrompt(slide)}
+      candidateQuestions={getStructureQuestionPrompts(slide)}
+      mode={isReading ? 'reading' : 'speaking'}
+    />
+  );
+}
+
 function ReadingMiniChallenge({ slide }: { slide: StructureSlide }) {
   const readingLines = slide.content.filter((line) => !line.toLowerCase().startsWith('tutor task:'));
   const tutorTask = slide.content.find((line) => line.toLowerCase().startsWith('tutor task:'));
@@ -389,6 +444,8 @@ function ReadingMiniChallenge({ slide }: { slide: StructureSlide }) {
           </p>
         </motion.div>
       )}
+
+      <StructureAiAssistantPanel slide={slide} />
     </div>
   );
 }
@@ -468,6 +525,8 @@ function QuizSlide({
             <RichMemoryText text={slide.correctNote} />
           </motion.div>
         )}
+
+        <StructureAiAssistantPanel slide={slide} />
       </section>
     </div>
   );
@@ -601,6 +660,49 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
       last_slide_index: currentSlideIndex
     });
   }, [completedLessonIds, progressLoaded, studentId, localKey, activeLesson?.id, currentSlideIndex]);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (
+        document.activeElement?.tagName === 'INPUT' ||
+        document.activeElement?.tagName === 'TEXTAREA' ||
+        (document.activeElement as HTMLElement | null)?.isContentEditable
+      ) {
+        return;
+      }
+
+      if (event.key === 'ArrowRight') {
+        if (activeLesson) {
+          setCurrentSlideIndex((value) => Math.min(activeLesson.slides.length - 1, value + 1));
+        }
+      }
+
+      if (event.key === 'ArrowLeft') {
+        if (activeLesson) {
+          setCurrentSlideIndex((value) => Math.max(0, value - 1));
+        }
+      }
+
+      if (event.key === 'Escape') {
+        if (activeLesson) {
+          setActiveLesson(null);
+          setCurrentSlideIndex(0);
+          setSelectedAnswers({});
+          return;
+        }
+
+        if (showAssessment) {
+          setShowAssessment(false);
+          return;
+        }
+
+        onClose();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeLesson, onClose, showAssessment]);
 
   const availableLessons = structureLessons;
   const totalRoadmapLessons = structureRoadmap.reduce((sum, module) => sum + module.lessons.length, 0);
@@ -848,7 +950,7 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
   const isLastSlide = currentSlideIndex === activeLesson.slides.length - 1;
 
   return (
-    <div className="structure-lesson-shell fixed inset-0 z-[240] overflow-hidden bg-slate-950 text-white">
+    <div className="structure-lesson-shell fixed inset-0 z-[240] overflow-y-auto bg-slate-950 text-white">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-900" />
       <motion.div
         className="absolute -left-28 -top-28 h-96 w-96 rounded-full bg-cyan-300/20 blur-3xl"
@@ -861,8 +963,8 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
         transition={{ duration: 6, repeat: Infinity }}
       />
 
-      <div className="structure-lesson-frame absolute inset-0 grid min-h-0 grid-rows-[auto_minmax(0,1fr)_auto] p-2 sm:p-3 lg:p-4">
-        <header className="structure-lesson-header mb-2 flex shrink-0 flex-wrap items-center justify-between gap-2 rounded-2xl border border-white/10 bg-black/25 px-3 py-2 backdrop-blur-md sm:flex-nowrap sm:gap-3 sm:px-4">
+      <div className="structure-lesson-frame relative z-10 grid min-h-screen grid-rows-[auto_minmax(0,1fr)_auto] p-2 sm:p-3 lg:p-4">
+        <header className="structure-lesson-header sticky top-2 z-20 mb-2 flex shrink-0 flex-wrap items-center justify-between gap-2 rounded-2xl border border-white/10 bg-black/60 px-3 py-2 backdrop-blur-md sm:flex-nowrap sm:gap-3 sm:px-4">
           <button
             type="button"
             onClick={() => setActiveLesson(null)}
@@ -888,7 +990,7 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -60 }}
               transition={{ type: 'spring', stiffness: 180, damping: 22 }}
-              className="structure-slide-card flex h-full min-h-0 flex-col overflow-x-hidden overflow-y-auto rounded-[1.75rem] border border-white/15 bg-white/10 p-3 shadow-2xl backdrop-blur-md sm:p-5 lg:p-6"
+              className="structure-slide-card flex min-h-0 flex-col overflow-x-hidden overflow-y-auto rounded-[1.75rem] border border-white/15 bg-white/10 p-3 shadow-2xl backdrop-blur-md sm:h-full sm:p-5 lg:p-6"
             >
               <div className="structure-slide-heading mb-4 shrink-0">
                 <div className="structure-slide-badges mb-2 flex flex-wrap items-center gap-2">
@@ -949,6 +1051,7 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
                             <RichMemoryText text={line} />
                           </motion.div>
                         ))}
+                        <StructureAiAssistantPanel slide={slide} />
                       </div>
                     )}
                     {slide.type === 'homework' && (
@@ -968,7 +1071,7 @@ export function StructureMode({ onClose, studentId, studentName }: StructureMode
           </AnimatePresence>
         </main>
 
-        <footer className="structure-lesson-footer mt-2 flex shrink-0 flex-wrap items-center gap-2">
+        <footer className="structure-lesson-footer sticky bottom-2 z-20 mt-2 flex shrink-0 flex-wrap items-center gap-2 rounded-2xl bg-slate-950/75 p-2 backdrop-blur-md">
           <button
             type="button"
             onClick={previousSlide}

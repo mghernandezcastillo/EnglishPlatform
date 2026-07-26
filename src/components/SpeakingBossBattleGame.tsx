@@ -17,9 +17,9 @@ interface SpeakingBossBattleGameProps {
 }
 
 const fallbackRounds = {
-  remember: ['You have 30 seconds: say three key words and one useful phrase from today.'],
-  use: ['You have 60 seconds: create three sentences using today\'s grammar: one positive, one negative, and one question.'],
-  speak: ['Speak for 45 seconds about today\'s topic.']
+  remember: ['Say three key words and one useful phrase from today.'],
+  use: ['You have 2 minutes: create three sentences using today\'s grammar: one positive, one negative, and one question.'],
+  speak: ['Speak for 3 minutes about today\'s topic.']
 };
 
 const roundMeta = [
@@ -49,22 +49,28 @@ const roundMeta = [
   }
 ] as const;
 
+function formatTimerLabel(totalSeconds: number) {
+  const safeSeconds = Math.max(0, totalSeconds);
+  const minutes = Math.floor(safeSeconds / 60);
+  const seconds = safeSeconds % 60;
+  return `${minutes}:${String(seconds).padStart(2, '0')}`;
+}
+
 export function SpeakingBossBattleGame({
   bossName = 'The English Boss',
   bossTitle = 'Final speaking challenge',
   bossAvatar = '⚔️',
-  timerSeconds = 45,
+  timerSeconds = 180,
   prepareSeconds = 30,
   rounds
 }: SpeakingBossBattleGameProps) {
   const [activeRound, setActiveRound] = useState(0);
   const [hits, setHits] = useState(0);
   const [timerMode, setTimerMode] = useState<'prepare' | 'speak'>('prepare');
-  const [customRememberSeconds, setCustomRememberSeconds] = useState(30);
-  const [customUseSeconds, setCustomUseSeconds] = useState(60);
+  const [customUseSeconds, setCustomUseSeconds] = useState(120);
   const [customPrepareSeconds, setCustomPrepareSeconds] = useState(prepareSeconds);
   const [customSpeakSeconds, setCustomSpeakSeconds] = useState(timerSeconds);
-  const [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(0);
   const [timerRunning, setTimerRunning] = useState(false);
 
   const mergedRounds = useMemo(() => ({
@@ -77,21 +83,22 @@ export function SpeakingBossBattleGame({
   const Icon = current.icon;
   const currentPrompts = mergedRounds[current.key].map((prompt) =>
     current.key === 'speak'
-      ? prompt.replace(/Speak for \d+ seconds/i, `Speak for ${customSpeakSeconds} seconds`)
-      : prompt
+      ? prompt.replace(/Speak for \d+ (seconds|minutes)/i, `Speak for ${Math.round(customSpeakSeconds / 60)} minutes`)
+      : current.key === 'use'
+        ? prompt.replace(/You have \d+ (seconds|minutes)/i, `You have ${Math.round(customUseSeconds / 60)} minutes`)
+        : prompt
+            .replace(/^You have \d+ (seconds|minutes)\s*:\s*/i, '')
+            .replace(/^Tienes \d+ (segundos|minutos)\s*:\s*/i, '')
   );
   const bossHealth = Math.max(0, Math.round(100 - hits * (100 / roundMeta.length)));
   const isComplete = hits >= roundMeta.length;
   const activePrepareSeconds =
-    current.key === 'remember' ? customRememberSeconds :
     current.key === 'use' ? customUseSeconds :
     customPrepareSeconds;
   const activeCustomSeconds = timerMode === 'prepare' ? activePrepareSeconds : customSpeakSeconds;
 
   const setActivePrepareSeconds = (nextSeconds: number) => {
-    if (current.key === 'remember') {
-      setCustomRememberSeconds(nextSeconds);
-    } else if (current.key === 'use') {
+    if (current.key === 'use') {
       setCustomUseSeconds(nextSeconds);
     } else {
       setCustomPrepareSeconds(nextSeconds);
@@ -106,7 +113,7 @@ export function SpeakingBossBattleGame({
 
   const stopTimer = () => {
     setTimerRunning(false);
-    setTimer(activeCustomSeconds);
+    setTimer(current.key === 'remember' ? 0 : activeCustomSeconds);
   };
 
   const updateCustomSeconds = (mode: 'prepare' | 'speak', nextSeconds: number) => {
@@ -125,14 +132,14 @@ export function SpeakingBossBattleGame({
     setHits((value) => Math.min(roundMeta.length, value + 1));
     setActiveRound((value) => Math.min(roundMeta.length - 1, value + 1));
     setTimerRunning(false);
-    setTimer(timerMode === 'prepare' ? activePrepareSeconds : customSpeakSeconds);
+    setTimer(current.key === 'remember' ? 0 : (timerMode === 'prepare' ? activePrepareSeconds : customSpeakSeconds));
   };
 
   useEffect(() => {
     if (!timerRunning) {
-      setTimer(activeCustomSeconds);
+      setTimer(current.key === 'remember' ? 0 : activeCustomSeconds);
     }
-  }, [activeRound, activeCustomSeconds, timerRunning]);
+  }, [activeRound, activeCustomSeconds, current.key, timerRunning]);
 
   useEffect(() => {
     if (!timerRunning) return;
@@ -273,89 +280,115 @@ export function SpeakingBossBattleGame({
 
               <div className="grid flex-1 gap-3 md:grid-cols-[0.68fr_1.32fr]">
                 <div className="rounded-2xl border border-white/15 bg-black/20 p-3 sm:p-4">
-                  <div className="mb-3 flex items-center gap-2 text-sm font-black uppercase tracking-widest text-yellow-200 sm:text-base">
-                    <Timer className="h-5 w-5 sm:h-6 sm:w-6" />
-                    Timers
-                  </div>
-                  <div className="mb-3 grid grid-cols-2 rounded-2xl border border-white/15 bg-black/25 p-1 text-xs font-black uppercase tracking-widest">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setTimerMode('prepare');
-                        if (!timerRunning) setTimer(activePrepareSeconds);
-                      }}
-                      className={`rounded-xl px-3 py-2 transition ${timerMode === 'prepare' ? 'bg-white text-slate-950' : 'text-white/70 hover:bg-white/10'}`}
-                    >
-                      Prepare
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setTimerMode('speak');
-                        if (!timerRunning) setTimer(customSpeakSeconds);
-                      }}
-                      className={`rounded-xl px-3 py-2 transition ${timerMode === 'speak' ? 'bg-white text-slate-950' : 'text-white/70 hover:bg-white/10'}`}
-                    >
-                      Speak
-                    </button>
-                  </div>
-                  <div className="mb-3 grid grid-cols-[44px_1fr_44px] items-center gap-2">
-                    <button
-                      type="button"
-                      onClick={() => updateCustomSeconds(timerMode, activeCustomSeconds - 5)}
-                      className="flex h-11 items-center justify-center rounded-2xl bg-white/15 text-white transition hover:bg-white/25"
-                      aria-label="Decrease seconds"
-                    >
-                      <Minus className="h-5 w-5" />
-                    </button>
-                    <input
-                      type="number"
-                      min={5}
-                      max={300}
-                      step={5}
-                      value={activeCustomSeconds}
-                      onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}
-                      className="h-11 rounded-2xl border border-white/20 bg-white px-3 text-center text-lg font-black text-slate-950 outline-none"
-                      aria-label="Timer seconds"
-                    />
-                    <button
-                      type="button"
-                      onClick={() => updateCustomSeconds(timerMode, activeCustomSeconds + 5)}
-                      className="flex h-11 items-center justify-center rounded-2xl bg-white/15 text-white transition hover:bg-white/25"
-                      aria-label="Increase seconds"
-                    >
-                      <Plus className="h-5 w-5" />
-                    </button>
-                  </div>
-                  <p className="mb-2 text-center text-xs font-black uppercase tracking-widest text-white/60">
-                    {timerMode === 'prepare' ? 'Preparation time' : 'Speaking time'}
-                  </p>
-                  <div className="mb-4 text-center text-7xl font-black tabular-nums sm:text-8xl lg:text-9xl">
-                    {timer}s
-                  </div>
-                  <div className="grid grid-cols-2 gap-2">
-                    <button
-                      type="button"
-                      onClick={() => startTimer('prepare')}
-                      className="rounded-2xl bg-yellow-300 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
-                    >
-                      Start Prep
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => startTimer('speak')}
-                      className="rounded-2xl bg-orange-400 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
-                    >
-                      Start Speak
-                    </button>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={stopTimer}
-                    className="mt-2 w-full rounded-2xl bg-white/15 px-4 py-3 font-black text-white shadow-lg transition hover:bg-white/25"
-                  >
-                    Reset
-                  </button>
+                  {current.key === 'remember' ? (
+                    <>
+                      <div className="mb-3 flex items-center gap-2 text-sm font-black uppercase tracking-widest text-yellow-200 sm:text-base">
+                        <Brain className="h-5 w-5 sm:h-6 sm:w-6" />
+                        Recall round
+                      </div>
+                      <p className="text-lg font-bold leading-relaxed text-white/80 sm:text-2xl">
+                        No timer here. Let the student recall key words and one useful phrase, then move on.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <div className="mb-3 flex items-center gap-2 text-sm font-black uppercase tracking-widest text-yellow-200 sm:text-base">
+                        <Timer className="h-5 w-5 sm:h-6 sm:w-6" />
+                        Timers
+                      </div>
+                      {current.key === 'speak' && (
+                        <div className="mb-3 grid grid-cols-2 rounded-2xl border border-white/15 bg-black/25 p-1 text-xs font-black uppercase tracking-widest">
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setTimerMode('prepare');
+                              if (!timerRunning) setTimer(activePrepareSeconds);
+                            }}
+                            className={`rounded-xl px-3 py-2 transition ${timerMode === 'prepare' ? 'bg-white text-slate-950' : 'text-white/70 hover:bg-white/10'}`}
+                          >
+                            Prepare
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setTimerMode('speak');
+                              if (!timerRunning) setTimer(customSpeakSeconds);
+                            }}
+                            className={`rounded-xl px-3 py-2 transition ${timerMode === 'speak' ? 'bg-white text-slate-950' : 'text-white/70 hover:bg-white/10'}`}
+                          >
+                            Speak
+                          </button>
+                        </div>
+                      )}
+                      <div className="mb-3 grid grid-cols-[44px_1fr_44px] items-center gap-2">
+                        <button
+                          type="button"
+                          onClick={() => updateCustomSeconds(timerMode, activeCustomSeconds - 5)}
+                          className="flex h-11 items-center justify-center rounded-2xl bg-white/15 text-white transition hover:bg-white/25"
+                          aria-label="Decrease seconds"
+                        >
+                          <Minus className="h-5 w-5" />
+                        </button>
+                        <input
+                          type="number"
+                          min={5}
+                          max={300}
+                          step={5}
+                          value={activeCustomSeconds}
+                          onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}
+                          className="h-11 rounded-2xl border border-white/20 bg-white px-3 text-center text-lg font-black text-slate-950 outline-none"
+                          aria-label="Timer seconds"
+                        />
+                        <button
+                          type="button"
+                          onClick={() => updateCustomSeconds(timerMode, activeCustomSeconds + 5)}
+                          className="flex h-11 items-center justify-center rounded-2xl bg-white/15 text-white transition hover:bg-white/25"
+                          aria-label="Increase seconds"
+                        >
+                          <Plus className="h-5 w-5" />
+                        </button>
+                      </div>
+                      <p className="mb-2 text-center text-xs font-black uppercase tracking-widest text-white/60">
+                        {current.key === 'use' ? 'Use time' : (timerMode === 'prepare' ? 'Preparation time' : 'Speaking time')}
+                      </p>
+                      <div className="mb-4 text-center text-7xl font-black tabular-nums sm:text-8xl lg:text-9xl">
+                        {formatTimerLabel(timer)}
+                      </div>
+                      {current.key === 'use' ? (
+                        <button
+                          type="button"
+                          onClick={() => startTimer('prepare')}
+                          className="w-full rounded-2xl bg-emerald-300 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
+                        >
+                          Start Use
+                        </button>
+                      ) : (
+                        <div className="grid grid-cols-2 gap-2">
+                          <button
+                            type="button"
+                            onClick={() => startTimer('prepare')}
+                            className="rounded-2xl bg-yellow-300 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
+                          >
+                            Start Prep
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => startTimer('speak')}
+                            className="rounded-2xl bg-orange-400 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
+                          >
+                            Start Speak
+                          </button>
+                        </div>
+                      )}
+                      <button
+                        type="button"
+                        onClick={stopTimer}
+                        className="mt-2 w-full rounded-2xl bg-white/15 px-4 py-3 font-black text-white shadow-lg transition hover:bg-white/25"
+                      >
+                        Reset
+                      </button>
+                    </>
+                  )}
                 </div>
 
                 <div className="flex flex-col justify-between gap-3 rounded-2xl border border-white/15 bg-black/20 p-3 sm:p-4">

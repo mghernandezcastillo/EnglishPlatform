@@ -22,12 +22,15 @@ export function SpinningWheel({ items, onSpinComplete }: SpinningWheelProps) {
   const rotationRef = useRef(0);
   const remainingIndicesRef = useRef<number[]>([]);
   const lastSelectedIndexRef = useRef<number | null>(null);
+  const itemsSignature = items
+    .map((item) => `${item.label}|${item.color}|${item.prompt || ''}|${item.es || ''}`)
+    .join('||');
 
   useEffect(() => {
     remainingIndicesRef.current = items.map((_, index) => index);
     lastSelectedIndexRef.current = null;
     setSelectedItem(null);
-  }, [items]);
+  }, [itemsSignature]);
 
   const getNextIndex = () => {
     if (remainingIndicesRef.current.length === 0) {
@@ -45,7 +48,6 @@ export function SpinningWheel({ items, onSpinComplete }: SpinningWheelProps) {
   const spin = async () => {
     if (isSpinning || items.length === 0) return;
     setIsSpinning(true);
-    setSelectedItem(null);
 
     const spins = 5 + Math.floor(Math.random() * 3);
     const sliceAngle = 360 / items.length;

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, X, Play, Image as ImageIcon, CheckCircle } from 'lucide-react';
 import { CurriculumClass, ClassSection, ClassSlide } from '../types';
@@ -9,6 +9,8 @@ import { EmojiMadnessGame } from './EmojiMadnessGame';
 import { SpeakingBossBattleGame } from './SpeakingBossBattleGame';
 import { PronunciationAssessmentSlide } from './PronunciationAssessmentSlide';
 import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
+import { StructureDragExercise } from './StructureDragExercise';
+import { enhancePresentationClass } from '../lib/presentationEnhancer';
 
 interface PresentationViewerProps {
   cls: CurriculumClass;
@@ -18,14 +20,15 @@ interface PresentationViewerProps {
 
 export function PresentationViewer({ cls, onClose, onComplete }: PresentationViewerProps) {
   const experimentalSpeakingEnabled = import.meta.env.VITE_EXPERIMENTAL_SPEAKING_ASSESSMENT === 'true';
+  const enhancedClass = useMemo(() => enhancePresentationClass(cls), [cls]);
   // Flatten all slides from sections
   const allSlides: { section: ClassSection, slide: ClassSlide, totalSlides: number, index: number }[] = [];
   let index = 0;
   
   // Total slides across all sections
-  const totalSlides = cls.sections.reduce((acc, s) => acc + s.slides.filter(slide => experimentalSpeakingEnabled || slide.type !== 'speaking-assessment-experimental').length, 0);
+  const totalSlides = enhancedClass.sections.reduce((acc, s) => acc + s.slides.filter(slide => experimentalSpeakingEnabled || slide.type !== 'speaking-assessment-experimental').length, 0);
 
-  cls.sections.forEach(section => {
+  enhancedClass.sections.forEach(section => {
     section.slides.forEach(slide => {
       if (!experimentalSpeakingEnabled && slide.type === 'speaking-assessment-experimental') return;
       allSlides.push({ section, slide, totalSlides, index });
@@ -96,6 +99,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   const isLastSlide = currentIndex === allSlides.length - 1;
   const isImmersiveSlide = slide.type === 'emoji-game' || slide.type === 'speaking-boss-battle' || slide.type === 'speaking-assessment-experimental';
   const isSpeakingBossBattle = slide.type === 'speaking-boss-battle';
+  const isStructureDragSlide = slide.type === 'structure-drag';
 
   const bgColorMap: Record<string, string> = {
     'intro': 'bg-blue-600',
@@ -229,7 +233,11 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   />
                 )}
 
-                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.content?.map((line, i) => {
+                {slide.type === 'structure-drag' && (
+                  <StructureDragExercise slide={slide} />
+                )}
+
+                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.content?.map((line, i) => {
                   if (slide.type === 'reading') {
                     return (
                       <div key={i} className="text-base sm:text-xl md:text-2xl font-medium leading-relaxed bg-black/10 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg text-justify">
@@ -244,7 +252,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   );
                 })}
 
-                {isOptionalAiSpeakingSlide && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && (
+                {isOptionalAiSpeakingSlide && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && (
                   <InlineAiSpeakingAssistant
                     title={isReadingPracticeSlide ? 'Asistente IA de lectura' : 'Asistente IA de esta diapositiva'}
                     initialQuestion={selectedSpeakingPrompt || slideSpeakingQuestions[0] || ''}
@@ -278,7 +286,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                 )}
 
                 {/* Interactive Options Area (inline with content) */}
-                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.options && slide.options.length > 0 && (
+                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.options && slide.options.length > 0 && (
                   <div className="flex flex-col gap-3 mt-auto pt-4 sm:pt-6 w-full">
                     {slide.options.map((opt, idx) => {
                       const isSelected = selectedOption === idx;
@@ -328,7 +336,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               </div>
 
               {/* Right content (Image or Video) */}
-              {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
+              {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center text-center backdrop-blur-sm overflow-hidden min-h-[300px] sm:min-h-[400px]">
                   <iframe 
                     src={slide.videoUrl} 
@@ -338,7 +346,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
+              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center p-2 text-center backdrop-blur-sm min-h-[200px] sm:min-h-[400px]">
                   <img src={slide.imageUrl} referrerPolicy="no-referrer" alt={slide.title} className="w-full h-full object-cover rounded-lg sm:rounded-xl" />
                 </div>

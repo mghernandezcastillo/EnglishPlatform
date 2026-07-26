@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { motion } from 'motion/react';
-import { CheckCircle, Lightbulb, PartyPopper, Sparkles, XCircle } from 'lucide-react';
+import { CheckCircle, Eye, PartyPopper, Shapes, XCircle } from 'lucide-react';
 
 interface EmojiMadnessGameProps {
   content?: string[];
@@ -14,7 +14,7 @@ export function EmojiMadnessGame({ content = [], options = [], correctOptionInde
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [revealed, setRevealed] = useState(false);
 
-  const puzzleText = content[0] || '🎯 ➕ 🧠 ➕ 💬';
+  const puzzleText = content[0] || '🎯 ➕ 💬 ➕ ✅';
   const emojis = useMemo(() => {
     const matches = puzzleText.match(emojiRegex);
     return matches && matches.length > 0 ? matches : puzzleText.split(/\s*➕\s*|\s+/).filter(Boolean);
@@ -30,34 +30,34 @@ export function EmojiMadnessGame({ content = [], options = [], correctOptionInde
   };
 
   return (
-    <div className="flex min-h-[420px] w-full flex-col justify-center gap-5">
-      <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/12 p-4 shadow-2xl backdrop-blur-md sm:p-6">
+    <div className="flex w-full flex-col justify-center gap-3">
+      <div className="relative overflow-hidden rounded-[1.75rem] border border-white/20 bg-white/12 p-3 shadow-2xl backdrop-blur-md sm:p-4">
         <motion.div
           animate={{ rotate: [0, 4, -4, 0], scale: [1, 1.04, 1] }}
           transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute right-4 top-4 text-white/25"
+          className="absolute right-3 top-3 text-white/20"
         >
-          <Sparkles className="h-16 w-16" />
+          <Shapes className="h-12 w-12" />
         </motion.div>
 
-        <div className="relative z-10 mb-4 flex flex-wrap items-center justify-between gap-3">
-          <div className="inline-flex items-center gap-2 rounded-full bg-black/20 px-3 py-1.5 text-xs font-black uppercase tracking-widest text-yellow-200">
-            <Lightbulb className="h-4 w-4" />
-            Decode the message
+        <div className="relative z-10 mb-3 flex flex-wrap items-center justify-between gap-2">
+          <div className="inline-flex items-center gap-2 rounded-full bg-black/20 px-3 py-1 text-[11px] font-black uppercase tracking-[0.18em] text-yellow-200">
+            <Eye className="h-3.5 w-3.5" />
+            Visual clue challenge
           </div>
-          <div className="rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold text-white/80">
-            Look. Guess. Say it.
+          <div className="rounded-full bg-white/15 px-3 py-1 text-[11px] font-bold text-white/80">
+            Read the clues. Choose the best sentence.
           </div>
         </div>
 
-        <div className="relative z-10 grid grid-cols-3 gap-3 sm:gap-4">
+        <div className={`relative z-10 grid gap-2.5 sm:gap-3 ${emojis.length <= 4 ? 'grid-cols-2' : 'grid-cols-3'}`}>
           {emojis.slice(0, 6).map((emoji, index) => (
             <motion.div
               key={`${emoji}-${index}`}
               initial={{ y: 22, opacity: 0, rotate: -8 }}
               animate={{ y: 0, opacity: 1, rotate: 0 }}
               transition={{ delay: index * 0.12, type: 'spring', stiffness: 220, damping: 16 }}
-              className="group relative flex aspect-square items-center justify-center rounded-3xl border-2 border-white/25 bg-white text-5xl shadow-xl sm:text-7xl"
+              className="group relative flex min-h-[108px] items-center justify-center rounded-[1.4rem] border border-white/25 bg-white px-2 py-3 text-6xl shadow-xl sm:min-h-[132px] sm:text-8xl"
             >
               <motion.span
                 animate={{ y: [0, -8, 0] }}
@@ -66,7 +66,7 @@ export function EmojiMadnessGame({ content = [], options = [], correctOptionInde
               >
                 {emoji}
               </motion.span>
-              <span className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full bg-slate-950 text-xs font-black text-white shadow-lg">
+              <span className="absolute -right-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-slate-950 text-[11px] font-black text-white shadow-lg">
                 {index + 1}
               </span>
             </motion.div>
@@ -74,7 +74,7 @@ export function EmojiMadnessGame({ content = [], options = [], correctOptionInde
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-3">
+      <div className="grid grid-cols-1 gap-2.5">
         {options.map((option, index) => {
           const isSelected = selectedOption === index;
           const isRight = index === correctOptionIndex;
@@ -90,19 +90,19 @@ export function EmojiMadnessGame({ content = [], options = [], correctOptionInde
               whileHover={!isAnswered ? { scale: 1.015, x: 6 } : undefined}
               whileTap={!isAnswered ? { scale: 0.98 } : undefined}
               className={[
-                'flex min-h-[58px] items-center justify-between gap-3 rounded-2xl border-2 px-4 py-3 text-left text-base font-black shadow-xl transition-all sm:text-xl',
+                'flex min-h-[52px] items-center justify-between gap-3 rounded-xl border-2 px-3.5 py-2.5 text-left text-sm font-black shadow-xl transition-all sm:min-h-[56px] sm:px-4 sm:text-base',
                 !revealed && 'border-white bg-white text-slate-900 hover:bg-yellow-50',
                 showCorrect && 'border-emerald-300 bg-emerald-500 text-white',
                 showWrong && 'border-red-300 bg-red-500 text-white',
                 revealed && !showCorrect && !showWrong && 'border-white/10 bg-white/15 text-white/50'
               ].filter(Boolean).join(' ')}
             >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/10 text-sm">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/10 text-xs">
                 {String.fromCharCode(65 + index)}
               </span>
-              <span className="flex-1">{option}</span>
-              {showCorrect && <CheckCircle className="h-6 w-6 shrink-0" />}
-              {showWrong && <XCircle className="h-6 w-6 shrink-0" />}
+              <span className="flex-1 leading-snug">{option}</span>
+              {showCorrect && <CheckCircle className="h-5 w-5 shrink-0" />}
+              {showWrong && <XCircle className="h-5 w-5 shrink-0" />}
             </motion.button>
           );
         })}
@@ -112,11 +112,11 @@ export function EmojiMadnessGame({ content = [], options = [], correctOptionInde
         <motion.div
           initial={{ opacity: 0, y: 12, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          className={`rounded-2xl border px-5 py-4 font-black shadow-xl ${isCorrect ? 'border-emerald-200 bg-emerald-500 text-white' : 'border-yellow-200 bg-yellow-300 text-slate-950'}`}
+          className={`rounded-xl border px-4 py-3 text-sm font-black shadow-xl sm:text-base ${isCorrect ? 'border-emerald-200 bg-emerald-500 text-white' : 'border-yellow-200 bg-yellow-300 text-slate-950'}`}
         >
           <div className="flex items-center gap-3">
-            <PartyPopper className="h-6 w-6 shrink-0" />
-            {isCorrect ? 'Correct. Now say the full sentence out loud.' : 'Good try. Read the correct answer out loud.'}
+            <PartyPopper className="h-5 w-5 shrink-0" />
+            {isCorrect ? 'Correct. Say the full sentence clearly.' : 'Read the correct sentence aloud and try again.'}
           </div>
         </motion.div>
       )}
