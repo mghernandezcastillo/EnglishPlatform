@@ -19,7 +19,7 @@ interface SpeakingBossBattleGameProps {
 const fallbackRounds = {
   remember: ['Say three key words and one useful phrase from today.'],
   use: ['You have 2 minutes: create three sentences using today\'s grammar: one positive, one negative, and one question.'],
-  speak: ['Speak for 3 minutes about today\'s topic.']
+  speak: ['Speak for 30 seconds about today\'s topic.']
 };
 
 const roundMeta = [
@@ -56,12 +56,21 @@ function formatTimerLabel(totalSeconds: number) {
   return `${minutes}:${String(seconds).padStart(2, '0')}`;
 }
 
+function formatDurationText(totalSeconds: number) {
+  const safeSeconds = Math.max(0, Math.round(totalSeconds));
+  if (safeSeconds < 60) return `${safeSeconds} seconds`;
+  const minutes = Math.floor(safeSeconds / 60);
+  const seconds = safeSeconds % 60;
+  if (seconds === 0) return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`;
+  return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} and ${seconds} seconds`;
+}
+
 export function SpeakingBossBattleGame({
   bossName = 'The English Boss',
   bossTitle = 'Final speaking challenge',
   bossAvatar = '⚔️',
-  timerSeconds = 180,
-  prepareSeconds = 30,
+  timerSeconds = 30,
+  prepareSeconds = 180,
   rounds
 }: SpeakingBossBattleGameProps) {
   const [activeRound, setActiveRound] = useState(0);
@@ -83,9 +92,9 @@ export function SpeakingBossBattleGame({
   const Icon = current.icon;
   const currentPrompts = mergedRounds[current.key].map((prompt) =>
     current.key === 'speak'
-      ? prompt.replace(/Speak for \d+ (seconds|minutes)/i, `Speak for ${Math.round(customSpeakSeconds / 60)} minutes`)
+      ? prompt.replace(/Speak for \d+ (seconds|minutes)/i, `Speak for ${formatDurationText(customSpeakSeconds)}`)
       : current.key === 'use'
-        ? prompt.replace(/You have \d+ (seconds|minutes)/i, `You have ${Math.round(customUseSeconds / 60)} minutes`)
+        ? prompt.replace(/You have \d+ (seconds|minutes)/i, `You have ${formatDurationText(customUseSeconds)}`)
         : prompt
             .replace(/^You have \d+ (seconds|minutes)\s*:\s*/i, '')
             .replace(/^Tienes \d+ (segundos|minutos)\s*:\s*/i, '')
@@ -332,7 +341,7 @@ export function SpeakingBossBattleGame({
                         <input
                           type="number"
                           min={5}
-                          max={300}
+                          max={600}
                           step={5}
                           value={activeCustomSeconds}
                           onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}

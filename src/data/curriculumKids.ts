@@ -311,7 +311,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Hello & Amazing Colors! 🌈",
                                     bossAvatar: "👾",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to hello & amazing colors! 🌈."
@@ -646,7 +646,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Numbers & Animal Friends! 🐶",
                                     bossAvatar: "⏰",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to numbers & animal friends! 🐶."
@@ -977,7 +977,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Body & Fun Actions! 🏃",
                                     bossAvatar: "🩺",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my body & fun actions! 🏃."
@@ -1305,7 +1305,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Favorite Toys! 🪁",
                                     bossAvatar: "🎨",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my favorite toys! 🪁."
@@ -1633,7 +1633,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Yummy Fruits! 🍓",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to yummy fruits! 🍓."
@@ -1961,7 +1961,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Super Shapes! 🟢",
                                     bossAvatar: "🎨",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to super shapes! 🟢."
@@ -2289,7 +2289,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "School Supplies! 🎒",
                                     bossAvatar: "🎒",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to school supplies! 🎒."
@@ -2617,7 +2617,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Farm Animals! 🐮",
                                     bossAvatar: "🦁",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to farm animals! 🐮."
@@ -3124,7 +3124,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Family & Feelings! 👨‍👩‍👧‍👦",
                                     bossAvatar: "🏠",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my family & feelings! 👨‍👩‍👧‍👦."
@@ -3452,7 +3452,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Yummy Fast Food! 🍕",
                                     bossAvatar: "🍔",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to yummy fast food! 🍕."
@@ -3780,7 +3780,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Clothes & The Weather! 👕",
                                     bossAvatar: "🧥",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my clothes & the weather! 👕."
@@ -4108,7 +4108,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Amazing Nature! 🌳",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to amazing nature! 🌳."
@@ -4436,7 +4436,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Cool Bugs & Insects 🐛",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to cool bugs & insects 🐛."
@@ -4764,7 +4764,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Under the Sea! 🐠",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to under the sea! 🐠."
@@ -5092,7 +5092,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Action Heroes! 🦸‍♂️",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to action heroes! 🦸‍♂️."
@@ -5420,7 +5420,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Numbers 11-20! 🔢",
                                     bossAvatar: "⏰",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to numbers 11-20! 🔢."
@@ -5927,7 +5927,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Wild Animals Safari! 🦁",
                                     bossAvatar: "🦁",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to wild animals safari! 🦁."
@@ -6255,7 +6255,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Awesome House 🏠",
                                     bossAvatar: "🏠",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my awesome house 🏠."
@@ -6583,7 +6583,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Zoom! Vehicles in Town 🚗",
                                     bossAvatar: "✈️",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to zoom! vehicles in town 🚗."
@@ -6911,7 +6911,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "When I Grow Up! 👩‍⚕️",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to when i grow up! 👩‍⚕️."
@@ -7239,7 +7239,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Make some Music! 🎸",
                                     bossAvatar: "🎮",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to make some music! 🎸."
@@ -7567,7 +7567,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Days of the Week 📅",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to days of the week 📅."
@@ -7895,7 +7895,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Let's Go Shopping! 🛒",
                                     bossAvatar: "🛒",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to let's go shopping! 🛒."
@@ -8223,7 +8223,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Playground Fun! 🛝",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to playground fun! 🛝."
@@ -8730,7 +8730,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "My Daily Routine ⏰",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my daily routine ⏰."
@@ -9058,7 +9058,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Fun Hobbies & Sports! ⚽️",
                                     bossAvatar: "🎮",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to fun hobbies & sports! ⚽️."
@@ -9386,7 +9386,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Happy Holidays! 🎄",
                                     bossAvatar: "📱",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to happy holidays! 🎄."
@@ -9714,7 +9714,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Outer Space Adventure! 🚀",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to outer space adventure! 🚀."
@@ -10042,7 +10042,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Awesome Fairy Tales! 🧚",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to awesome fairy tales! 🧚."
@@ -10370,7 +10370,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "The 4 Seasons! ❄️",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to the 4 seasons! ❄️."
@@ -10698,7 +10698,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Be a Helper! 🤝",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to be a helper! 🤝."
@@ -11026,7 +11026,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossTitle: "Around the World! 🌍",
                                     bossAvatar: "⭐",
                                     timerSeconds: 30,
-                                    prepareSeconds: 20,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to around the world! 🌍."

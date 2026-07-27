@@ -1,7 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Mic, RefreshCw, ChevronRight, MessageCircle, Sparkles, Languages } from 'lucide-react';
+import { X, Mic, RefreshCw, ChevronRight, MessageCircle, Sparkles, Languages, Bot, Target } from 'lucide-react';
 import { speakingQuestions, SpeakingQuestion } from '../data/speakingQuestions';
+import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 
 interface SpeakingPracticeProps {
   onClose: () => void;
@@ -276,6 +277,15 @@ export function SpeakingPractice({ onClose }: SpeakingPracticeProps) {
   const [activeQuestionWord, setActiveQuestionWord] = useState<string | null>(null);
   const remainingQuestions = useRef<SpeakingQuestion[]>([]);
 
+  const aiCandidateQuestions = useMemo(() => {
+    if (!currentQuestion) return [];
+    const relatedQuestions = speakingQuestions
+      .filter(item => item.topic === currentQuestion.topic && item.question !== currentQuestion.question)
+      .slice(0, 5)
+      .map(item => item.question);
+    return [currentQuestion.question, ...relatedQuestions];
+  }, [currentQuestion]);
+
   const shuffleArray = (array: SpeakingQuestion[]) => {
     const newArr = [...array];
     for (let i = newArr.length - 1; i > 0; i--) {
@@ -321,7 +331,7 @@ export function SpeakingPractice({ onClose }: SpeakingPracticeProps) {
           <X className="w-6 h-6" />
         </button>
 
-        <div className="max-w-4xl w-full">
+        <div className="max-w-5xl w-full">
           <div className="text-center mb-8">
             <div className="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner relative">
               <Mic className="w-10 h-10 text-indigo-600" />
@@ -468,6 +478,41 @@ export function SpeakingPractice({ onClose }: SpeakingPracticeProps) {
               )}
             </AnimatePresence>
           </div>
+
+          {currentQuestion && (
+            <div className="mt-6 rounded-[2rem] bg-slate-950 p-5 text-white shadow-2xl shadow-indigo-200/60 sm:p-6">
+              <div className="grid gap-5 lg:grid-cols-[1fr_360px] lg:items-center">
+                <div className="text-left">
+                  <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-cyan-300/15 px-3 py-1.5 text-xs font-black uppercase tracking-[0.18em] text-cyan-100">
+                    <Bot className="h-4 w-4" />
+                    Coach IA integrado
+                  </div>
+                  <h3 className="text-2xl font-black leading-tight sm:text-3xl">
+                    Graba la respuesta del estudiante y recibe feedback al instante.
+                  </h3>
+                  <div className="mt-4 rounded-2xl bg-white/8 p-4">
+                    <div className="mb-2 flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-emerald-200">
+                      <Target className="h-4 w-4" />
+                      Pregunta actual
+                    </div>
+                    <p className="text-lg font-bold leading-relaxed text-white/90">
+                      {currentQuestion.question}
+                    </p>
+                    <p className="mt-2 text-sm font-semibold text-white/60">
+                      El asistente evalúa claridad, pronunciación, gramática, vocabulario y próximos pasos.
+                    </p>
+                  </div>
+                </div>
+
+                <InlineAiSpeakingAssistant
+                  title="Coach IA de Speaking Practice"
+                  initialQuestion={currentQuestion.question}
+                  candidateQuestions={aiCandidateQuestions}
+                  mode="speaking"
+                />
+              </div>
+            </div>
+          )}
 
           <div className="mt-10 flex justify-center">
             <button

@@ -12,6 +12,7 @@ import { RoleSelection } from './components/RoleSelection';
 import { TeacherDashboard } from './components/TeacherDashboard';
 import { VirtualEvaluationView } from './components/VirtualEvaluationView';
 import { GlobalAiAssistant } from './components/GlobalAiAssistant';
+import { BrandWordmark } from './components/BrandWordmark';
 import { dbAdmin } from './lib/db';
 import { DbStudent, UserProgress } from './types';
 import { lessons } from './data/lessons';
@@ -368,9 +369,11 @@ export default function App() {
                  <span className="text-white font-serif font-bold text-xl">E</span>
                )}
             </div>
-            <span className="text-lg sm:text-xl font-extrabold text-gray-900 tracking-tight truncate">
-              {progress.studentType === 'niño' ? 'Maven English for kids' : progress.studentType === 'adolescente' ? 'Maven English for teens' : brand.name}
-            </span>
+            <BrandWordmark
+              name={(progress.studentType === 'niño' ? 'Maven English for kids' : progress.studentType === 'adolescente' ? 'Maven English for teens' : brand.name).toUpperCase()}
+              compact
+              className="min-w-0"
+            />
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4 shrink-0">

@@ -5,6 +5,7 @@ import { dbAdmin } from '../lib/db';
 import { VirtualQuestion } from '../types';
 import { useBrand } from '../hooks/useBrand';
 import { Diploma } from './Diploma';
+import { BrandWordmark } from './BrandWordmark';
 
 interface Props {
   levelId: string;
@@ -307,7 +308,14 @@ export function VirtualEvaluationView({ levelId }: Props) {
                     <BookOpen className="w-8 h-8 text-indigo-600" />
                 </div>
             )}
-            <h1 className="text-2xl font-extrabold text-gray-900 mb-2">{displayBrandName} - Evaluación</h1>
+            <BrandWordmark
+              name={displayBrandName.toUpperCase()}
+              subtitle="Virtual Evaluation"
+              centered
+              compact
+              className="mb-3"
+            />
+            <h1 className="text-2xl font-extrabold text-gray-900 mb-2">Evaluación</h1>
             <h2 className="text-lg text-indigo-600 font-bold mb-6">{level.title}</h2>
             
             {attempts >= 2 ? (

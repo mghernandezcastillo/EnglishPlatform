@@ -1,6 +1,7 @@
 import { Lock } from 'lucide-react';
 import { useState } from 'react';
 import { useBrand } from '../hooks/useBrand';
+import { BrandWordmark } from './BrandWordmark';
 
 interface RoleSelectionProps {
   onSelectTeacher: () => void;
@@ -25,13 +26,24 @@ export function RoleSelection({ onSelectTeacher, isTeacherUnlocked = false }: Ro
 
   return (
     <div className="min-h-[80vh] flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-gray-100 text-center">
-        {brand.logoUrl && (
-           <img referrerPolicy="no-referrer" src={brand.logoUrl} alt={brand.name} className="w-24 h-24 object-contain rounded-xl shadow-sm mx-auto mb-6" />
-        )}
-        <h1 className="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">Acceso Profesor</h1>
-        <h2 className="text-xl text-gray-500 mb-8">{brand.name}</h2>
-        
+      <div className="max-w-2xl w-full overflow-hidden rounded-[2rem] border border-indigo-100 bg-white shadow-2xl">
+        <div className="relative overflow-hidden border-b border-indigo-100 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.24),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.22),_transparent_32%),linear-gradient(135deg,_#f8fbff_0%,_#eef4ff_45%,_#f8faff_100%)] px-8 pb-8 pt-10 text-center sm:px-12">
+          <div className="absolute inset-0 opacity-60">
+            <div className="absolute left-8 top-8 h-20 w-20 rounded-full bg-cyan-300/20 blur-2xl" />
+            <div className="absolute bottom-6 right-10 h-24 w-24 rounded-full bg-fuchsia-300/20 blur-2xl" />
+          </div>
+          {brand.logoUrl && (
+             <img referrerPolicy="no-referrer" src={brand.logoUrl} alt={brand.name} className="relative z-10 mx-auto mb-6 h-24 w-24 rounded-[1.4rem] object-contain shadow-lg ring-1 ring-indigo-100" />
+          )}
+          <BrandWordmark
+            name={brand.name.toUpperCase()}
+            subtitle="Academia de Ingles"
+            centered
+            className="relative z-10"
+          />
+          <h1 className="relative z-10 mt-8 text-3xl font-extrabold tracking-tight text-gray-900">Acceso Profesor</h1>
+        </div>
+        <div className="p-8 text-center sm:p-12">
         {isTeacherUnlocked && (
           <div className="mb-8 rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
             <p className="mb-4 text-sm font-bold text-emerald-800">
@@ -89,6 +101,7 @@ export function RoleSelection({ onSelectTeacher, isTeacherUnlocked = false }: Ro
           >
             ⚠️ Limpiar datos locales guardados ⚠️
           </button>
+        </div>
         </div>
       </div>
     </div>

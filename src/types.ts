@@ -75,6 +75,17 @@ export interface ClassSlide {
       color: string;
     }[];
   };
+  roleplay?: {
+    scenario: string;
+    situation: string;
+    roles: {
+      a: { label: string; goal: string };
+      b: { label: string; goal: string };
+    };
+    mission: string[];
+    usefulPhrases: string[];
+    successChecklist: string[];
+  };
   wheelItems?: { label: string; color: string; prompt?: string; es?: string }[];
   matchingPairs?: { left: string; right: string; id: string }[];
   mysteryPuzzleData?: { target: string; imageUrl?: string; emoji?: string; panels: { id: number; label: string; color: string }[] };

@@ -161,6 +161,46 @@ function promptFor(text: string, fallbacks: string[]) {
 
 const PATTERNS: StructurePattern[] = [
   {
+    id: 'spelling-question',
+    aliases: [/alphabet/, /alfabeto/, /spell/, /spelling/, /deletreo/, /username/, /usernames/],
+    accentColor: 'from-indigo-400 to-fuchsia-600',
+    buildSlide: (_variant, audience, text) => {
+      const prompt = /username/.test(text)
+        ? 'How do you spell your username?'
+        : promptFor(text, [
+            'How do you spell your name?',
+            'What is your name?'
+          ]);
+
+      const parts = prompt === 'What is your name?'
+        ? [
+            { label: 'Question word', text: 'What', color: COLORS.question },
+            { label: 'To be', text: 'is', color: COLORS.auxiliary },
+            { label: 'Subject', text: 'your name', color: COLORS.subject }
+          ]
+        : [
+            { label: 'Question word', text: 'How', color: COLORS.question },
+            { label: 'Auxiliary', text: 'do', color: COLORS.auxiliary },
+            { label: 'Subject', text: 'you', color: COLORS.subject },
+            { label: 'Verb', text: 'spell', color: COLORS.verb },
+            { label: 'Complement', text: prompt.includes('username') ? 'your username' : 'your name', color: COLORS.complement }
+          ];
+
+      return {
+        title: titleByVariant('question', audience),
+        description: 'Spelling and usernames',
+        content: [],
+        structureDrag: buildStructureDrag(
+          'Spelling Questions',
+          instructionByVariant('question', audience, 'Focus on question word, auxiliary, subject, verb, and complement.'),
+          prompt,
+          'from-indigo-400 to-fuchsia-600',
+          parts
+        )
+      };
+    }
+  },
+  {
     id: 'to-be',
     aliases: [/\bverb to be\b/, /\bto be\b/, /\bam\b/, /\bis\b/, /\bare\b/, /how old are you/, /what is your name/],
     accentColor: 'from-indigo-400 to-fuchsia-600',
@@ -645,6 +685,10 @@ function choosePattern(cls: CurriculumClass, section: ClassSection, slide: Class
     ...(slide.content || []),
     ...(slide.options || [])
   ].join(' '));
+
+  if (/alphabet|alfabeto|spelling|deletreo|usernames?/.test(fullText)) {
+    return PATTERNS.find((pattern) => pattern.id === 'spelling-question') || null;
+  }
 
   return findPattern(fullText);
 }

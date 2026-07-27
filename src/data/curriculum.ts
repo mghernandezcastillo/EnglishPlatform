@@ -300,8 +300,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Greeting Boss",
                                     bossTitle: "Introduction and Verb To Be",
                                     bossAvatar: "👾",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to introduction and verb to be."
@@ -310,7 +310,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about introduction and verb to be using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about introduction and verb to be.",
+                                      "Speak for 30 seconds about introduction and verb to be.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -630,8 +630,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "Numbers & Time",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to numbers & time."
@@ -640,7 +640,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers & time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about numbers & time.",
+                                      "Speak for 30 seconds about numbers & time.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -955,8 +955,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Color Boss",
                                     bossTitle: "Colors, Emociones and Descripción",
                                     bossAvatar: "🎨",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to colors, emociones and descripción."
@@ -965,7 +965,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about colors, emociones and descripción using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about colors, emociones and descripción.",
+                                      "Speak for 30 seconds about colors, emociones and descripción.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -1285,8 +1285,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Home Boss",
                                     bossTitle: "Family Vocabulary & Possessives",
                                     bossAvatar: "🏠",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to family vocabulary & possessives."
@@ -1295,7 +1295,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about family vocabulary & possessives using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about family vocabulary & possessives.",
+                                      "Speak for 30 seconds about family vocabulary & possessives.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -1610,8 +1610,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "There is",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to there is."
@@ -1620,7 +1620,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about there is using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about there is.",
+                                      "Speak for 30 seconds about there is.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -1941,8 +1941,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "Meses, Días and Numbers Ordinales",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to meses, días and numbers ordinales."
@@ -1951,7 +1951,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about meses, días and numbers ordinales using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about meses, días and numbers ordinales.",
+                                      "Speak for 30 seconds about meses, días and numbers ordinales.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -2274,8 +2274,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Articles & Demonstratives",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to articles & demonstratives."
@@ -2284,7 +2284,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about articles & demonstratives using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about articles & demonstratives.",
+                                      "Speak for 30 seconds about articles & demonstratives.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -2599,8 +2599,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Safari Boss",
                                     bossTitle: "Body Parts & Pets",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to body parts & pets."
@@ -2609,7 +2609,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about body parts & pets using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about body parts & pets.",
+                                      "Speak for 30 seconds about body parts & pets.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -2937,8 +2937,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Hungry Boss",
                                     bossTitle: "Food and Necesidades Básicas",
                                     bossAvatar: "🍔",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to food and necesidades básicas."
@@ -2947,7 +2947,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about food and necesidades básicas using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about food and necesidades básicas.",
+                                      "Speak for 30 seconds about food and necesidades básicas.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -3320,8 +3320,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Directions & Prepositions of Place",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to directions & prepositions of place."
@@ -3330,7 +3330,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about directions & prepositions of place using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about directions & prepositions of place.",
+                                      "Speak for 30 seconds about directions & prepositions of place.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -3646,8 +3646,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Greeting Boss",
                                     bossTitle: "Greetings, Farewells & Survival Conversation",
                                     bossAvatar: "👾",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to greetings, farewells & survival conversation."
@@ -3656,7 +3656,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about greetings, farewells & survival conversation using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about greetings, farewells & survival conversation.",
+                                      "Speak for 30 seconds about greetings, farewells & survival conversation.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -3968,8 +3968,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Greeting Boss",
                                     bossTitle: "The Alphabet & Spelling Names",
                                     bossAvatar: "👾",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to the alphabet & spelling names."
@@ -3978,7 +3978,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about the alphabet & spelling names using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about the alphabet & spelling names.",
+                                      "Speak for 30 seconds about the alphabet & spelling names.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -4318,8 +4318,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Países, nacionalidades and procedencia",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to países, nacionalidades and procedencia."
@@ -4328,7 +4328,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about países, nacionalidades and procedencia using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about países, nacionalidades and procedencia.",
+                                      "Speak for 30 seconds about países, nacionalidades and procedencia.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -4684,8 +4684,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Interview Boss",
                                     bossTitle: "Professions and ocupaciones comunes",
                                     bossAvatar: "💼",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to professions and ocupaciones comunes."
@@ -4694,7 +4694,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about professions and ocupaciones comunes using job words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about professions and ocupaciones comunes.",
+                                      "Speak for 30 seconds about professions and ocupaciones comunes.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -5050,8 +5050,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Home Boss",
                                     bossTitle: "Family Vocabulary & Possessives",
                                     bossAvatar: "🏠",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to family vocabulary & possessives."
@@ -5060,7 +5060,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about family vocabulary & possessives using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about family vocabulary & possessives.",
+                                      "Speak for 30 seconds about family vocabulary & possessives.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -5413,8 +5413,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Basic Zero General Review",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to basic zero general review."
@@ -5423,7 +5423,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about basic zero general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about basic zero general review.",
+                                      "Speak for 30 seconds about basic zero general review.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -5937,8 +5937,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Simple (I, You, We, They)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to present simple (i, you, we, they)."
@@ -5947,7 +5947,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present simple (i, you, we, they) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about present simple (i, you, we, they).",
+                                      "Speak for 30 seconds about present simple (i, you, we, they).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -6283,8 +6283,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Simple (He, She, It)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to present simple (he, she, it)."
@@ -6293,7 +6293,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present simple (he, she, it) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about present simple (he, she, it).",
+                                      "Speak for 30 seconds about present simple (he, she, it).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -6630,8 +6630,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Simple (Negative & Interrogative)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to present simple (negative & interrogative)."
@@ -6640,7 +6640,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present simple (negative & interrogative) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about present simple (negative & interrogative).",
+                                      "Speak for 30 seconds about present simple (negative & interrogative).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -6977,8 +6977,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Interview Boss",
                                     bossTitle: "Professions & Workplaces",
                                     bossAvatar: "💼",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to professions & workplaces."
@@ -6987,7 +6987,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about professions & workplaces using job words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about professions & workplaces.",
+                                      "Speak for 30 seconds about professions & workplaces.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -7313,8 +7313,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "Daily Routines & Time",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to daily routines & time."
@@ -7323,7 +7323,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about daily routines & time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about daily routines & time.",
+                                      "Speak for 30 seconds about daily routines & time.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -7635,8 +7635,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "Adverbs of Frequency",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to adverbs of frequency."
@@ -7645,7 +7645,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about adverbs of frequency using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about adverbs of frequency.",
+                                      "Speak for 30 seconds about adverbs of frequency.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -7959,8 +7959,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Hungry Boss",
                                     bossTitle: "Food, Drinks & Restaurant Vocabulary",
                                     bossAvatar: "🍔",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to food, drinks & restaurant vocabulary."
@@ -7969,7 +7969,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about food, drinks & restaurant vocabulary using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about food, drinks & restaurant vocabulary.",
+                                      "Speak for 30 seconds about food, drinks & restaurant vocabulary.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -8274,8 +8274,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Sustantivos contables e incontables (some, any)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to sustantivos contables e incontables (some, any)."
@@ -8284,7 +8284,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about sustantivos contables e incontables (some, any) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about sustantivos contables e incontables (some, any).",
+                                      "Speak for 30 seconds about sustantivos contables e incontables (some, any).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -8593,8 +8593,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Gustos and preferencias (like, love, hate + ing)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to gustos and preferencias (like, love, hate + ing)."
@@ -8603,7 +8603,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about gustos and preferencias (like, love, hate + ing) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about gustos and preferencias (like, love, hate + ing).",
+                                      "Speak for 30 seconds about gustos and preferencias (like, love, hate + ing).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -8888,8 +8888,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Basic 1 General Review",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to basic 1 general review."
@@ -8898,7 +8898,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about basic 1 general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about basic 1 general review.",
+                                      "Speak for 30 seconds about basic 1 general review.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -9406,8 +9406,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Routines & Present Simple",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to routines & present simple."
@@ -9416,7 +9416,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about routines & present simple using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about routines & present simple.",
+                                      "Speak for 30 seconds about routines & present simple.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -9743,8 +9743,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Progressive",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to present progressive."
@@ -9753,7 +9753,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present progressive using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about present progressive.",
+                                      "Speak for 30 seconds about present progressive.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -10081,8 +10081,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Expresando Preferencias (Gustos)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to expresando preferencias (gustos)."
@@ -10091,7 +10091,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about expresando preferencias (gustos) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about expresando preferencias (gustos).",
+                                      "Speak for 30 seconds about expresando preferencias (gustos).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -10419,8 +10419,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Comparación entre Tiempos Verbales",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to comparación entre tiempos verbales."
@@ -10429,7 +10429,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about comparación entre tiempos verbales using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about comparación entre tiempos verbales.",
+                                      "Speak for 30 seconds about comparación entre tiempos verbales.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -10774,8 +10774,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "State and Action Verbs in Present Continuous",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to state and action verbs in present continuous."
@@ -10784,7 +10784,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about state and action verbs in present continuous using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about state and action verbs in present continuous.",
+                                      "Speak for 30 seconds about state and action verbs in present continuous.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -11121,8 +11121,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Weather Closet Boss",
                                     bossTitle: "Weather & Seasons",
                                     bossAvatar: "🧥",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to weather & seasons."
@@ -11131,7 +11131,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about weather & seasons using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about weather & seasons.",
+                                      "Speak for 30 seconds about weather & seasons.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -11380,8 +11380,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Imperatives for Giving Instructions",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to imperatives for giving instructions."
@@ -11390,7 +11390,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about imperatives for giving instructions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about imperatives for giving instructions.",
+                                      "Speak for 30 seconds about imperatives for giving instructions.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -11730,8 +11730,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Asking for and Giving Street Directions",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to asking for and giving street directions."
@@ -11740,7 +11740,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about asking for and giving street directions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about asking for and giving street directions.",
+                                      "Speak for 30 seconds about asking for and giving street directions.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -12078,8 +12078,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Conversaciones telefónicas básicas",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to conversaciones telefónicas básicas."
@@ -12088,7 +12088,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about conversaciones telefónicas básicas using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about conversaciones telefónicas básicas.",
+                                      "Speak for 30 seconds about conversaciones telefónicas básicas.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -12509,8 +12509,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Review of Present Simple vs. Continuous",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to review of present simple vs. continuous."
@@ -12519,7 +12519,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about review of present simple vs. continuous using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about review of present simple vs. continuous.",
+                                      "Speak for 30 seconds about review of present simple vs. continuous.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -12800,8 +12800,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Final Level Project",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to final level project."
@@ -12810,7 +12810,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about final level project using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about final level project.",
+                                      "Speak for 30 seconds about final level project.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -13302,8 +13302,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Abilities & Possibilities with Can",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to abilities & possibilities with can."
@@ -13312,7 +13312,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about abilities & possibilities with can using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about abilities & possibilities with can.",
+                                      "Speak for 30 seconds about abilities & possibilities with can.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -13622,8 +13622,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Safari Boss",
                                     bossTitle: "Permisos and peticiones (Can I...?, Could you...?)",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to permisos and peticiones (can i...?, could you...?)."
@@ -13632,7 +13632,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about permisos and peticiones (can i...?, could you...?) using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about permisos and peticiones (can i...?, could you...?).",
+                                      "Speak for 30 seconds about permisos and peticiones (can i...?, could you...?).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -13943,8 +13943,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Obligaciones (Have to",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to obligaciones (have to."
@@ -13953,7 +13953,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about obligaciones (have to using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about obligaciones (have to.",
+                                      "Speak for 30 seconds about obligaciones (have to.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -14263,8 +14263,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Weather Closet Boss",
                                     bossTitle: "Clothes, Colors and descripciones físicas",
                                     bossAvatar: "🧥",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to clothes, colors and descripciones físicas."
@@ -14273,7 +14273,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about clothes, colors and descripciones físicas using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about clothes, colors and descripciones físicas.",
+                                      "Speak for 30 seconds about clothes, colors and descripciones físicas.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -14583,8 +14583,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Travel Boss",
                                     bossTitle: "City Places & Transportation",
                                     bossAvatar: "✈️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to city places & transportation."
@@ -14593,7 +14593,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about city places & transportation using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about city places & transportation.",
+                                      "Speak for 30 seconds about city places & transportation.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -14903,8 +14903,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Machine Boss",
                                     bossTitle: "Past To Be: Was/Were",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to past to be: was/were."
@@ -14913,7 +14913,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about past to be: was/were using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about past to be: was/were.",
+                                      "Speak for 30 seconds about past to be: was/were.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -15223,8 +15223,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Talking About Childhood and Memories",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to talking about childhood and memories."
@@ -15233,7 +15233,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about talking about childhood and memories using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about talking about childhood and memories.",
+                                      "Speak for 30 seconds about talking about childhood and memories.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -15542,8 +15542,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Biographies of Famous People",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to biographies of famous people."
@@ -15552,7 +15552,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about biographies of famous people using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about biographies of famous people.",
+                                      "Speak for 30 seconds about biographies of famous people.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -15861,8 +15861,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Fechas, años and meses",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to fechas, años and meses."
@@ -15871,7 +15871,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fechas, años and meses using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about fechas, años and meses.",
+                                      "Speak for 30 seconds about fechas, años and meses.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -16181,8 +16181,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Basic 3 General Review",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to basic 3 general review."
@@ -16191,7 +16191,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about basic 3 general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about basic 3 general review.",
+                                      "Speak for 30 seconds about basic 3 general review.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -16722,8 +16722,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Machine Boss",
                                     bossTitle: "Past Simple - Verbs Regulares",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to past simple - verbs regulares."
@@ -16732,7 +16732,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about past simple - verbs regulares using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about past simple - verbs regulares.",
+                                      "Speak for 30 seconds about past simple - verbs regulares.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -17103,8 +17103,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Machine Boss",
                                     bossTitle: "Past Simple - Verbs Irregulares",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to past simple - verbs irregulares."
@@ -17113,7 +17113,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about past simple - verbs irregulares using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about past simple - verbs irregulares.",
+                                      "Speak for 30 seconds about past simple - verbs irregulares.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -17483,8 +17483,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Machine Boss",
                                     bossTitle: "Forming Questions and Negatives in the Past",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to forming questions and negatives in the past."
@@ -17493,7 +17493,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about forming questions and negatives in the past using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about forming questions and negatives in the past.",
+                                      "Speak for 30 seconds about forming questions and negatives in the past.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -17861,8 +17861,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Travel Boss",
                                     bossTitle: "Travel & Vacations",
                                     bossAvatar: "✈️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to travel & vacations."
@@ -17871,7 +17871,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about travel & vacations using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about travel & vacations.",
+                                      "Speak for 30 seconds about travel & vacations.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -18239,8 +18239,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Contando anécdotas usando conectores (first, then, finally)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to contando anécdotas usando conectores (first, then, finally)."
@@ -18249,7 +18249,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about contando anécdotas usando conectores (first, then, finally) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about contando anécdotas usando conectores (first, then, finally).",
+                                      "Speak for 30 seconds about contando anécdotas usando conectores (first, then, finally).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -18613,8 +18613,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Future Boss",
                                     bossTitle: "Expresando planes futuros with Going to",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to expresando planes futuros with going to."
@@ -18623,7 +18623,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about expresando planes futuros with going to using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about expresando planes futuros with going to.",
+                                      "Speak for 30 seconds about expresando planes futuros with going to.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -18990,8 +18990,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Future Boss",
                                     bossTitle: "Predicciones and decisiones rápidas with Will",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to predicciones and decisiones rápidas with will."
@@ -19000,7 +19000,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about predicciones and decisiones rápidas with will using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about predicciones and decisiones rápidas with will.",
+                                      "Speak for 30 seconds about predicciones and decisiones rápidas with will.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -19362,8 +19362,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Future Boss",
                                     bossTitle: "Diferencias entre Will and Going to",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to diferencias entre will and going to."
@@ -19372,7 +19372,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about diferencias entre will and going to using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about diferencias entre will and going to.",
+                                      "Speak for 30 seconds about diferencias entre will and going to.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -19741,8 +19741,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Giving Opinions and Agreeing or Disagreeing",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to giving opinions and agreeing or disagreeing."
@@ -19751,7 +19751,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about giving opinions and agreeing or disagreeing using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about giving opinions and agreeing or disagreeing.",
+                                      "Speak for 30 seconds about giving opinions and agreeing or disagreeing.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -20122,8 +20122,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Intermediate Level Preparation",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to intermediate level preparation."
@@ -20132,7 +20132,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about intermediate level preparation using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about intermediate level preparation.",
+                                      "Speak for 30 seconds about intermediate level preparation.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -20641,8 +20641,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Basic Verb Tenses Review",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to basic verb tenses review."
@@ -20651,7 +20651,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about basic verb tenses review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about basic verb tenses review.",
+                                      "Speak for 30 seconds about basic verb tenses review.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -20965,8 +20965,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "First Conditional",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to first conditional."
@@ -20975,7 +20975,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about first conditional using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about first conditional.",
+                                      "Speak for 30 seconds about first conditional.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -21291,8 +21291,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Modal Verbs for Advice",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to modal verbs for advice."
@@ -21301,7 +21301,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about modal verbs for advice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about modal verbs for advice.",
+                                      "Speak for 30 seconds about modal verbs for advice.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -21616,8 +21616,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Modal Verbs for Possibility",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to modal verbs for possibility."
@@ -21626,7 +21626,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about modal verbs for possibility using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about modal verbs for possibility.",
+                                      "Speak for 30 seconds about modal verbs for possibility.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -21943,8 +21943,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Comparativos and superlativos",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to comparativos and superlativos."
@@ -21953,7 +21953,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about comparativos and superlativos using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about comparativos and superlativos.",
+                                      "Speak for 30 seconds about comparativos and superlativos.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -22269,8 +22269,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Too and Enough for Excess and Sufficiency",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to too and enough for excess and sufficiency."
@@ -22279,7 +22279,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about too and enough for excess and sufficiency using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about too and enough for excess and sufficiency.",
+                                      "Speak for 30 seconds about too and enough for excess and sufficiency.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -22591,8 +22591,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Work and Office Vocabulary",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to work and office vocabulary."
@@ -22601,7 +22601,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about work and office vocabulary using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about work and office vocabulary.",
+                                      "Speak for 30 seconds about work and office vocabulary.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -22917,8 +22917,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "Redactando correos electrónicos formales",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to redactando correos electrónicos formales."
@@ -22927,7 +22927,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about redactando correos electrónicos formales using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about redactando correos electrónicos formales.",
+                                      "Speak for 30 seconds about redactando correos electrónicos formales.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -23244,8 +23244,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Perfect for Life Experiences",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to present perfect for life experiences."
@@ -23254,7 +23254,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present perfect for life experiences using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about present perfect for life experiences.",
+                                      "Speak for 30 seconds about present perfect for life experiences.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -23570,8 +23570,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Machine Boss",
                                     bossTitle: "Diferencias entre Past Simple and Present Perfect",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to diferencias entre past simple and present perfect."
@@ -23580,7 +23580,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about diferencias entre past simple and present perfect using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about diferencias entre past simple and present perfect.",
+                                      "Speak for 30 seconds about diferencias entre past simple and present perfect.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -23894,8 +23894,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Gerunds and Infinitives After Verbs",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to gerunds and infinitives after verbs."
@@ -23904,7 +23904,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about gerunds and infinitives after verbs using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about gerunds and infinitives after verbs.",
+                                      "Speak for 30 seconds about gerunds and infinitives after verbs.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -24222,8 +24222,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Greeting Boss",
                                     bossTitle: "Introduction to Common Phrasal Verbs",
                                     bossAvatar: "👾",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to introduction to common phrasal verbs."
@@ -24232,7 +24232,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about introduction to common phrasal verbs using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about introduction to common phrasal verbs.",
+                                      "Speak for 30 seconds about introduction to common phrasal verbs.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -24694,8 +24694,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Pronunciación: Connected speech and entonación",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to pronunciación: connected speech and entonación."
@@ -24704,7 +24704,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about pronunciación: connected speech and entonación using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about pronunciación: connected speech and entonación.",
+                                      "Speak for 30 seconds about pronunciación: connected speech and entonación.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -24975,8 +24975,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Second Conditional",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to second conditional."
@@ -24985,7 +24985,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about second conditional using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about second conditional.",
+                                      "Speak for 30 seconds about second conditional.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -25256,8 +25256,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Machine Boss",
                                     bossTitle: "Third Conditional",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to third conditional."
@@ -25266,7 +25266,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about third conditional using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about third conditional.",
+                                      "Speak for 30 seconds about third conditional.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -25538,8 +25538,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Reported Speech (estilo indirecto)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to reported speech (estilo indirecto)."
@@ -25548,7 +25548,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about reported speech (estilo indirecto) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about reported speech (estilo indirecto).",
+                                      "Speak for 30 seconds about reported speech (estilo indirecto).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -25820,8 +25820,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Relative Clauses (who, which, that, where)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to relative clauses (who, which, that, where)."
@@ -25830,7 +25830,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about relative clauses (who, which, that, where) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about relative clauses (who, which, that, where).",
+                                      "Speak for 30 seconds about relative clauses (who, which, that, where).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -26102,8 +26102,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Advanced Business and Negotiation Vocabulary",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to advanced business and negotiation vocabulary."
@@ -26112,7 +26112,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about advanced business and negotiation vocabulary using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about advanced business and negotiation vocabulary.",
+                                      "Speak for 30 seconds about advanced business and negotiation vocabulary.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -26384,8 +26384,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Solving Problems and Customer Complaints",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to solving problems and customer complaints."
@@ -26394,7 +26394,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about solving problems and customer complaints using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about solving problems and customer complaints.",
+                                      "Speak for 30 seconds about solving problems and customer complaints.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -26666,8 +26666,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Future Boss",
                                     bossTitle: "Future Continuous and Future Perfect",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to future continuous and future perfect."
@@ -26676,7 +26676,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about future continuous and future perfect using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about future continuous and future perfect.",
+                                      "Speak for 30 seconds about future continuous and future perfect.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -26948,8 +26948,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Advanced Phrasal Verbs in Context",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to advanced phrasal verbs in context."
@@ -26958,7 +26958,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about advanced phrasal verbs in context using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about advanced phrasal verbs in context.",
+                                      "Speak for 30 seconds about advanced phrasal verbs in context.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -27230,8 +27230,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Review avanzado",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to review avanzado."
@@ -27240,7 +27240,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about review avanzado using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about review avanzado.",
+                                      "Speak for 30 seconds about review avanzado.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -27690,8 +27690,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Idioms and expresiones idiomáticas",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to idioms and expresiones idiomáticas."
@@ -27700,7 +27700,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about idioms and expresiones idiomáticas using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about idioms and expresiones idiomáticas.",
+                                      "Speak for 30 seconds about idioms and expresiones idiomáticas.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -27972,8 +27972,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Inversion for Formal Emphasis",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to inversion for formal emphasis."
@@ -27982,7 +27982,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about inversion for formal emphasis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about inversion for formal emphasis.",
+                                      "Speak for 30 seconds about inversion for formal emphasis.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -28254,8 +28254,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Cleft Sentences for Emphasis",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to cleft sentences for emphasis."
@@ -28264,7 +28264,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about cleft sentences for emphasis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about cleft sentences for emphasis.",
+                                      "Speak for 30 seconds about cleft sentences for emphasis.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -28536,8 +28536,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "Lenguaje diplomático and atenuadores (Hedging)",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to lenguaje diplomático and atenuadores (hedging)."
@@ -28546,7 +28546,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about lenguaje diplomático and atenuadores (hedging) using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about lenguaje diplomático and atenuadores (hedging).",
+                                      "Speak for 30 seconds about lenguaje diplomático and atenuadores (hedging).",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -28817,8 +28817,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Greeting Boss",
                                     bossTitle: "Preparing High-impact Introductions",
                                     bossAvatar: "👾",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to preparing high-impact introductions."
@@ -28827,7 +28827,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about preparing high-impact introductions using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about preparing high-impact introductions.",
+                                      "Speak for 30 seconds about preparing high-impact introductions.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -29099,8 +29099,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Discurso persuasivo and argumentación",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to discurso persuasivo and argumentación."
@@ -29109,7 +29109,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about discurso persuasivo and argumentación using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about discurso persuasivo and argumentación.",
+                                      "Speak for 30 seconds about discurso persuasivo and argumentación.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -29381,8 +29381,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Debates on Complex Topics",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to debates on complex topics."
@@ -29391,7 +29391,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about debates on complex topics using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about debates on complex topics.",
+                                      "Speak for 30 seconds about debates on complex topics.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -29663,8 +29663,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Storytelling in Professional Settings",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to storytelling in professional settings."
@@ -29673,7 +29673,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about storytelling in professional settings using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about storytelling in professional settings.",
+                                      "Speak for 30 seconds about storytelling in professional settings.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -29944,8 +29944,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Analyzing Opinion Articles and News",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to analyzing opinion articles and news."
@@ -29954,7 +29954,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about analyzing opinion articles and news using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about analyzing opinion articles and news.",
+                                      "Speak for 30 seconds about analyzing opinion articles and news.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }
@@ -30226,8 +30226,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Final Masters Project",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 45,
-                                    prepareSeconds: 30,
+                                    timerSeconds: 30,
+                                    prepareSeconds: 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to final masters project."
@@ -30236,7 +30236,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about final masters project using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 45 seconds about final masters project.",
+                                      "Speak for 30 seconds about final masters project.",
                                       "Use what you learned today: include a positive sentence, a negative sentence, and a question."
                                     ]
                                     }

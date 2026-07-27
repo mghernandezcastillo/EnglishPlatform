@@ -10,6 +10,7 @@ import { useCurriculum } from '../hooks/useCurriculum';
 import { PresentationViewer } from './PresentationViewer';
 import { useBrand } from '../hooks/useBrand';
 import { PreClassAssessment } from './PreClassAssessment';
+import { BrandWordmark } from './BrandWordmark';
 
 interface DashboardProps {
   completedLessonIds: string[];
@@ -80,11 +81,17 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
     <div className={`max-w-7xl mx-auto py-8 px-4 sm:px-6 ${isKid ? 'bg-gradient-to-br from-yellow-50 via-cyan-50 to-pink-50 min-h-screen rounded-[3rem] shadow-inner p-8 border-4 border-yellow-200' : ''}`}>
       
       {/* Brand Header */}
-      <div className="flex items-center justify-center sm:justify-start gap-4 mb-8">
+      <div className="mb-8 flex items-center justify-center gap-4 sm:justify-start">
         {brand.logoUrl && (
           <img referrerPolicy="no-referrer" src={brand.logoUrl} alt={brand.name} className={`w-12 h-12 md:w-16 md:h-16 object-contain shadow-sm ${isKid ? 'rounded-full border-4 border-cyan-300 transform -rotate-6 shadow-xl' : 'rounded-xl'}`} />
         )}
-        <h1 className={`text-2xl md:text-3xl font-black tracking-tight ${isKid ? 'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 drop-shadow-sm font-extrabold text-4xl' : 'text-indigo-900'}`}>{displayBrandName}</h1>
+        <BrandWordmark
+          name={displayBrandName.toUpperCase()}
+          subtitle={isKid ? 'Aprende jugando' : isTeen ? 'English that moves with you' : 'Speak with confidence'}
+          compact
+          centered={isKid}
+          light={false}
+        />
       </div>
 
       {/* Student Profile Header */}

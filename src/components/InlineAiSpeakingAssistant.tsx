@@ -234,120 +234,129 @@ export function InlineAiSpeakingAssistant({
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 font-black text-slate-950 hover:bg-cyan-50"
+          className="flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-base font-black text-slate-950 hover:bg-cyan-50 sm:text-lg"
         >
           <Bot className="h-5 w-5" />
           {assistantMode === 'reading' ? 'Revisar lectura con IA' : 'Usar asistente IA en esta diapositiva'}
         </button>
       ) : (
-        <div className="space-y-4">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-100">{title}</p>
-              <p className="text-sm font-semibold text-white/65">{status}</p>
+        <div className="fixed inset-0 z-[260] flex items-center justify-center bg-slate-950/78 p-3 backdrop-blur-md sm:p-6">
+          <div className="flex max-h-[96vh] w-full max-w-6xl flex-col overflow-hidden rounded-[2rem] border border-white/20 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 shadow-2xl">
+            <div className="flex items-start justify-between gap-4 border-b border-white/10 px-5 py-4 sm:px-7 sm:py-5">
+              <div className="min-w-0">
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan-100 sm:text-sm">{title}</p>
+                <h3 className="mt-1 text-2xl font-black text-white sm:text-4xl">
+                  {assistantMode === 'reading' ? 'Lectura asistida con IA' : 'Asistente IA para speaking'}
+                </h3>
+                <p className="mt-2 text-sm font-semibold text-white/70 sm:text-lg">{status}</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsOpen(false)}
+                disabled={mode === 'recording' || mode === 'analyzing'}
+                className="rounded-2xl bg-white/10 px-4 py-3 text-sm font-black text-white hover:bg-white/15 disabled:opacity-45 sm:px-5 sm:text-base"
+              >
+                Cerrar
+              </button>
             </div>
-            <button
-              type="button"
-              onClick={() => setIsOpen(false)}
-              disabled={mode === 'recording' || mode === 'analyzing'}
-              className="rounded-xl bg-white/10 px-3 py-2 text-sm font-bold text-white hover:bg-white/15 disabled:opacity-45"
-            >
-              Ocultar
-            </button>
-          </div>
 
-          {assistantMode !== 'reading' && candidateQuestions.length > 0 && (
-            <div className="flex flex-wrap gap-2">
-              {candidateQuestions.slice(0, 6).map((candidate, index) => (
-                <button
-                  key={`${candidate}-${index}`}
-                  type="button"
-                  onClick={() => setQuestion(candidate)}
-                  disabled={mode === 'recording' || mode === 'analyzing'}
-                  className="rounded-xl bg-white/10 px-3 py-2 text-xs font-black text-white hover:bg-white/20 disabled:opacity-45"
-                >
-                  Usar pregunta {index + 1}
-                </button>
-              ))}
-            </div>
-          )}
+            <div className="flex-1 overflow-y-auto px-5 py-4 sm:px-7 sm:py-6">
+              <div className="space-y-5">
+                {assistantMode !== 'reading' && candidateQuestions.length > 0 && (
+                  <div className="flex flex-wrap gap-2 sm:gap-3">
+                    {candidateQuestions.slice(0, 6).map((candidate, index) => (
+                      <button
+                        key={`${candidate}-${index}`}
+                        type="button"
+                        onClick={() => setQuestion(candidate)}
+                        disabled={mode === 'recording' || mode === 'analyzing'}
+                        className="rounded-2xl bg-white/10 px-4 py-3 text-sm font-black text-white hover:bg-white/20 disabled:opacity-45 sm:text-base"
+                      >
+                        Usar pregunta {index + 1}
+                      </button>
+                    ))}
+                  </div>
+                )}
 
-          <textarea
-            value={question}
-            onChange={event => setQuestion(event.target.value)}
-            placeholder={assistantMode === 'reading' ? 'Texto que el estudiante debe leer.' : 'Pregunta o instruccion de speaking para evaluar.'}
-            aria-label={assistantMode === 'reading' ? 'Texto esperado de lectura' : 'Pregunta o instruccion de speaking'}
-            rows={2}
-            className="w-full resize-none rounded-xl border border-white/10 bg-black/25 p-3 text-base font-semibold text-white outline-none focus:border-cyan-300"
-          />
-
-          <div className="grid gap-2 sm:grid-cols-2">
-            <button onClick={requestCallAudio} className="flex items-center justify-center gap-2 rounded-xl bg-white px-3 py-2 font-black text-slate-950 hover:bg-cyan-50">
-              <MonitorSpeaker className="h-4 w-4" />
-              Audio de llamada
-            </button>
-            <button onClick={requestMicAudio} className="flex items-center justify-center gap-2 rounded-xl bg-white/10 px-3 py-2 font-black text-white hover:bg-white/15">
-              <Mic className="h-4 w-4" />
-              Microfono
-            </button>
-          </div>
-
-          <div className="rounded-xl bg-slate-950/65 p-3">
-            <div className="mb-2 flex items-center justify-between">
-              <span className="text-xs font-black uppercase tracking-[0.14em] text-cyan-100">Senal de audio</span>
-              <span className="text-xs font-bold text-white/55">{elapsed}s</span>
-            </div>
-            <div className="flex h-10 items-end gap-1">
-              {Array.from({ length: 18 }).map((_, index) => (
-                <span
-                  key={index}
-                  className={`w-full rounded-t transition-all duration-100 ${index < Math.ceil((audioLevel / 100) * 18) ? 'bg-cyan-300' : 'bg-white/10'}`}
-                  style={{ height: `${8 + ((index * 9) % 24)}px` }}
+                <textarea
+                  value={question}
+                  onChange={event => setQuestion(event.target.value)}
+                  placeholder={assistantMode === 'reading' ? 'Texto que el estudiante debe leer.' : 'Pregunta o instruccion de speaking para evaluar.'}
+                  aria-label={assistantMode === 'reading' ? 'Texto esperado de lectura' : 'Pregunta o instruccion de speaking'}
+                  rows={3}
+                  className="w-full resize-none rounded-2xl border border-white/10 bg-black/25 p-4 text-lg font-semibold text-white outline-none focus:border-cyan-300 sm:p-5 sm:text-2xl"
                 />
-              ))}
+
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <button onClick={requestCallAudio} className="flex min-h-[64px] items-center justify-center gap-3 rounded-2xl bg-white px-4 py-4 text-base font-black text-slate-950 hover:bg-cyan-50 sm:min-h-[76px] sm:text-xl">
+                    <MonitorSpeaker className="h-5 w-5 sm:h-6 sm:w-6" />
+                    Audio de llamada
+                  </button>
+                  <button onClick={requestMicAudio} className="flex min-h-[64px] items-center justify-center gap-3 rounded-2xl bg-white/10 px-4 py-4 text-base font-black text-white hover:bg-white/15 sm:min-h-[76px] sm:text-xl">
+                    <Mic className="h-5 w-5 sm:h-6 sm:w-6" />
+                    Micrófono
+                  </button>
+                </div>
+
+                <div className="rounded-2xl bg-slate-950/65 p-4 sm:p-5">
+                  <div className="mb-3 flex items-center justify-between">
+                    <span className="text-xs font-black uppercase tracking-[0.16em] text-cyan-100 sm:text-sm">Señal de audio</span>
+                    <span className="text-base font-black text-white/70 sm:text-2xl">{elapsed}s</span>
+                  </div>
+                  <div className="flex h-16 items-end gap-1.5 sm:h-20">
+                    {Array.from({ length: 18 }).map((_, index) => (
+                      <span
+                        key={index}
+                        className={`w-full rounded-t transition-all duration-100 ${index < Math.ceil((audioLevel / 100) * 18) ? 'bg-cyan-300' : 'bg-white/10'}`}
+                        style={{ height: `${10 + ((index * 11) % 40)}px` }}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {error && <p className="text-base font-bold text-amber-200 sm:text-lg">{error}</p>}
+
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <button
+                    onClick={startRecording}
+                    disabled={!stream || mode === 'recording' || mode === 'analyzing'}
+                    className="flex min-h-[68px] items-center justify-center gap-3 rounded-2xl bg-emerald-300 px-5 py-4 text-base font-black text-emerald-950 disabled:opacity-45 sm:min-h-[84px] sm:text-2xl"
+                  >
+                    {mode === 'analyzing' ? <Sparkles className="h-5 w-5 sm:h-6 sm:w-6" /> : <Mic className="h-5 w-5 sm:h-6 sm:w-6" />}
+                    Empezar
+                  </button>
+                  <button
+                    onClick={stopRecording}
+                    disabled={mode !== 'recording'}
+                    className="flex min-h-[68px] items-center justify-center gap-3 rounded-2xl bg-red-500 px-5 py-4 text-base font-black text-white disabled:opacity-45 sm:min-h-[84px] sm:text-2xl"
+                  >
+                    <Square className="h-5 w-5 sm:h-6 sm:w-6" />
+                    Detener
+                  </button>
+                </div>
+
+                {result && (
+                  <div className="grid gap-4 lg:grid-cols-[0.42fr_1fr]">
+                    <div className="rounded-2xl bg-white p-5 text-slate-950 sm:p-6">
+                      <p className="text-xs font-black uppercase tracking-[0.14em] text-emerald-700 sm:text-sm">
+                        {assistantMode === 'reading' ? 'Score lectura' : 'Score oral'}
+                      </p>
+                      <p className="mt-2 text-5xl font-black sm:text-7xl">{result.score}%</p>
+                      <p className="mt-3 text-sm font-semibold text-slate-600 sm:text-lg">{result.summary}</p>
+                    </div>
+                    <div className="rounded-2xl bg-white/5 p-5 sm:p-6">
+                      <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-100 sm:text-sm">
+                        {assistantMode === 'reading' ? 'Lectura detectada' : 'Lo que dijo'}
+                      </p>
+                      <p className="mt-2 text-base font-semibold leading-relaxed text-white/90 sm:text-xl">{result.transcript || 'No hubo transcripcion clara.'}</p>
+                      <ResultGroup title="Corregir" items={result.corrections} />
+                      <ResultGroup title="Siguiente paso" items={result.teacherNextSteps} />
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
-
-          {error && <p className="text-sm font-semibold text-amber-200">{error}</p>}
-
-          <div className="flex flex-wrap gap-3">
-            <button
-              onClick={startRecording}
-              disabled={!stream || mode === 'recording' || mode === 'analyzing'}
-              className="flex items-center gap-2 rounded-xl bg-emerald-300 px-4 py-3 font-black text-emerald-950 disabled:opacity-45"
-            >
-              {mode === 'analyzing' ? <Sparkles className="h-4 w-4" /> : <Mic className="h-4 w-4" />}
-              Empezar
-            </button>
-            <button
-              onClick={stopRecording}
-              disabled={mode !== 'recording'}
-              className="flex items-center gap-2 rounded-xl bg-red-500 px-4 py-3 font-black text-white disabled:opacity-45"
-            >
-              <Square className="h-4 w-4" />
-              Detener
-            </button>
-          </div>
-
-          {result && (
-            <div className="grid gap-3 lg:grid-cols-[0.4fr_1fr]">
-              <div className="rounded-xl bg-white p-4 text-slate-950">
-                <p className="text-xs font-black uppercase tracking-[0.12em] text-emerald-700">
-                  {assistantMode === 'reading' ? 'Score lectura' : 'Score oral'}
-                </p>
-                <p className="mt-1 text-4xl font-black">{result.score}%</p>
-                <p className="mt-2 text-sm font-semibold text-slate-600">{result.summary}</p>
-              </div>
-              <div className="rounded-xl bg-white/5 p-4">
-                <p className="text-xs font-black uppercase tracking-[0.12em] text-cyan-100">
-                  {assistantMode === 'reading' ? 'Lectura detectada' : 'Lo que dijo'}
-                </p>
-                <p className="mt-1 text-sm font-semibold text-white/90">{result.transcript || 'No hubo transcripcion clara.'}</p>
-                <ResultGroup title="Corregir" items={result.corrections} />
-                <ResultGroup title="Siguiente paso" items={result.teacherNextSteps} />
-              </div>
-            </div>
-          )}
         </div>
       )}
     </div>
@@ -357,14 +366,14 @@ export function InlineAiSpeakingAssistant({
 function ResultGroup({ title, items }: { title: string; items: string[] }) {
   return (
     <div className="mt-3">
-      <p className="mb-2 text-xs font-black uppercase tracking-[0.12em] text-white/55">{title}</p>
+      <p className="mb-2 text-xs font-black uppercase tracking-[0.12em] text-white/55 sm:text-sm">{title}</p>
       <div className="flex flex-wrap gap-2">
         {items?.length ? items.slice(0, 5).map((item, index) => (
-          <span key={`${item}-${index}`} className="rounded-lg bg-cyan-100 px-2.5 py-1 text-xs font-black text-slate-950">
+          <span key={`${item}-${index}`} className="rounded-xl bg-cyan-100 px-3 py-2 text-xs font-black text-slate-950 sm:text-sm">
             {item}
           </span>
         )) : (
-          <span className="rounded-lg bg-white/10 px-2.5 py-1 text-xs font-bold text-white/70">Sin observaciones</span>
+          <span className="rounded-xl bg-white/10 px-3 py-2 text-xs font-bold text-white/70 sm:text-sm">Sin observaciones</span>
         )}
       </div>
     </div>

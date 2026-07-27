@@ -10,6 +10,7 @@ import { SpeakingBossBattleGame } from './SpeakingBossBattleGame';
 import { PronunciationAssessmentSlide } from './PronunciationAssessmentSlide';
 import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 import { StructureDragExercise } from './StructureDragExercise';
+import { RolePlayCard } from './RolePlayCard';
 import { enhancePresentationClass } from '../lib/presentationEnhancer';
 
 interface PresentationViewerProps {
@@ -99,7 +100,20 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   const isLastSlide = currentIndex === allSlides.length - 1;
   const isImmersiveSlide = slide.type === 'emoji-game' || slide.type === 'speaking-boss-battle' || slide.type === 'speaking-assessment-experimental';
   const isSpeakingBossBattle = slide.type === 'speaking-boss-battle';
+  const isRoleplaySlide = slide.type === 'roleplay';
   const isStructureDragSlide = slide.type === 'structure-drag';
+  const isOptionExerciseSlide =
+    !!slide.options?.length &&
+    slide.type !== 'emoji-game' &&
+    slide.type !== 'speaking-boss-battle' &&
+    slide.type !== 'speaking-assessment-experimental' &&
+    slide.type !== 'structure-drag' &&
+    slide.type !== 'roleplay';
+  const isScreenShareExerciseSlide =
+    isOptionExerciseSlide &&
+    !slide.imageUrl &&
+    slide.type !== 'video' &&
+    slide.type !== 'homework';
 
   const bgColorMap: Record<string, string> = {
     'intro': 'bg-blue-600',
@@ -122,6 +136,13 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
     selectedSpeakingPrompt,
     ...(slide.type !== 'spinning-wheel' ? slide.content || [] : []),
   ].filter((line): line is string => Boolean(line?.trim()));
+  const isOpeningSlide =
+    currentIndex === 0 &&
+    slide.type !== 'emoji-game' &&
+    slide.type !== 'speaking-boss-battle' &&
+    slide.type !== 'speaking-assessment-experimental' &&
+    slide.type !== 'structure-drag' &&
+    slide.type !== 'roleplay';
 
   return (
     <div className="fixed inset-0 z-[200] bg-black/90 backdrop-blur flex flex-col">
@@ -148,7 +169,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
       </div>
 
       {/* Main Slide Area */}
-      <div className={`flex-1 relative overflow-y-auto overflow-x-hidden ${isSpeakingBossBattle ? 'p-1 sm:p-3 lg:p-4' : 'p-2 sm:p-8'}`}>
+      <div className={`flex-1 relative overflow-y-auto overflow-x-hidden ${isSpeakingBossBattle ? 'p-1 sm:p-3 lg:p-4' : isRoleplaySlide ? 'p-2 sm:p-4 lg:p-5' : 'p-2 sm:p-8'}`}>
         <div className="min-h-full flex flex-col items-center justify-center pb-20 sm:pb-8">
           <AnimatePresence mode="wait">
             <motion.div
@@ -157,24 +178,51 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className={`w-full ${isSpeakingBossBattle ? 'max-w-[min(1800px,98vw)] min-h-[calc(100vh-5.25rem)] sm:min-h-[calc(100vh-7.25rem)] rounded-xl sm:rounded-2xl' : 'max-w-6xl min-h-[75vh] rounded-2xl sm:rounded-3xl'} mx-auto shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0`}
+              className={`relative w-full ${isSpeakingBossBattle ? 'max-w-[min(1800px,98vw)] min-h-[calc(100vh-5.25rem)] sm:min-h-[calc(100vh-7.25rem)] rounded-xl sm:rounded-2xl' : isRoleplaySlide ? 'max-w-[min(1700px,96vw)] min-h-[calc(100vh-7.5rem)] rounded-2xl sm:rounded-3xl' : isScreenShareExerciseSlide ? 'max-w-5xl min-h-[78vh] sm:min-h-[82vh] rounded-2xl sm:rounded-3xl' : 'max-w-6xl min-h-[75vh] rounded-2xl sm:rounded-3xl'} mx-auto shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0`}
             >
+            {isOpeningSlide && (
+              <>
+                <motion.div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute left-[8%] right-[8%] top-[-12%] h-40 rounded-full bg-white/10 blur-3xl"
+                  animate={{ x: [0, 36, 0], opacity: [0.25, 0.45, 0.25] }}
+                  transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+                />
+                <motion.div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute bottom-[-8%] right-[2%] h-44 w-44 rounded-full bg-cyan-300/15 blur-3xl"
+                  animate={{ y: [0, -18, 0], x: [0, -24, 0], opacity: [0.2, 0.35, 0.2] }}
+                  transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
+                />
+              </>
+            )}
             {/* Header */}
-            <div className={`${isSpeakingBossBattle ? 'sr-only' : 'p-5 sm:p-8 pb-2 sm:pb-4'} shrink-0`}>
-              <h1 className="text-2xl sm:text-5xl font-extrabold tracking-tight mb-2">
+            <div className={`${isSpeakingBossBattle ? 'sr-only' : isRoleplaySlide ? 'p-5 sm:p-8 lg:p-10 pb-2 sm:pb-3' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pb-1.5 sm:pb-2' : 'p-5 sm:p-8 pb-2 sm:pb-4'} shrink-0`}>
+              {isOpeningSlide && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.45 }}
+                  className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.22em] text-white/85 backdrop-blur-md"
+                >
+                  <span className="h-2 w-2 rounded-full bg-amber-300 shadow-[0_0_14px_rgba(252,211,77,0.85)]" />
+                  Inicio de clase
+                </motion.div>
+              )}
+              <h1 className={`${isOpeningSlide ? 'text-3xl sm:text-5xl md:text-6xl leading-[0.95]' : isRoleplaySlide ? 'text-4xl sm:text-6xl lg:text-7xl leading-none' : isScreenShareExerciseSlide ? 'text-2xl sm:text-4xl' : 'text-2xl sm:text-5xl'} font-extrabold tracking-tight mb-1.5 sm:mb-2`}>
                 {slide.title}
               </h1>
               {slide.description && (
-                <p className="text-base sm:text-xl text-white/80 font-medium">
+                <p className={`${isOpeningSlide ? 'max-w-3xl text-base sm:text-xl text-white/88' : isRoleplaySlide ? 'text-lg sm:text-2xl lg:text-3xl' : isScreenShareExerciseSlide ? 'text-sm sm:text-base' : 'text-base sm:text-xl'} font-medium`}>
                   {slide.description}
                 </p>
               )}
             </div>
 
             {/* Content Area */}
-            <div className={`flex-1 ${isSpeakingBossBattle ? 'p-2 sm:p-4 lg:p-5' : 'p-5 sm:p-8 pt-2 sm:pt-4'} flex flex-col md:flex-row gap-4 sm:gap-8 overflow-y-auto min-h-0`}>
+            <div className={`flex-1 ${isSpeakingBossBattle ? 'p-2 sm:p-4 lg:p-5' : isRoleplaySlide ? 'p-5 sm:p-8 lg:p-10 pt-2 sm:pt-3' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pt-1.5 sm:pt-2' : 'p-5 sm:p-8 pt-2 sm:pt-4'} flex flex-col md:flex-row ${isOpeningSlide ? 'gap-5 sm:gap-8 md:items-stretch' : isScreenShareExerciseSlide ? 'gap-3 sm:gap-4' : 'gap-4 sm:gap-8'} overflow-y-auto overflow-x-hidden min-h-0 min-w-0`}>
               {/* Left text content */}
-              <div className={`${isImmersiveSlide ? 'w-full' : 'flex-1'} flex flex-col gap-3 sm:gap-6`}>
+              <div className={`${isImmersiveSlide ? 'w-full' : isOpeningSlide ? 'md:w-[44%] md:flex-none' : 'flex-1'} min-w-0 flex flex-col ${isScreenShareExerciseSlide ? 'gap-2.5 sm:gap-4 justify-between' : 'gap-3 sm:gap-6'}`}>
                 {slide.type === 'spinning-wheel' && slide.wheelItems && (
                   <div className="flex-1 flex flex-col items-center justify-center py-2 sm:py-4">
                     <SpinningWheel
@@ -237,7 +285,11 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   <StructureDragExercise slide={slide} />
                 )}
 
-                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.content?.map((line, i) => {
+                {slide.type === 'roleplay' && slide.roleplay && (
+                  <RolePlayCard slide={slide} />
+                )}
+
+                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.type !== 'roleplay' && slide.content?.map((line, i) => {
                   if (slide.type === 'reading') {
                     return (
                       <div key={i} className="text-base sm:text-xl md:text-2xl font-medium leading-relaxed bg-black/10 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg text-justify">
@@ -246,13 +298,19 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     );
                   }
                   return (
-                    <div key={i} className="text-lg sm:text-3xl font-medium leading-relaxed bg-black/10 p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg">
+                    <motion.div
+                      key={i}
+                      initial={isOpeningSlide ? { opacity: 0, x: -18 } : false}
+                      animate={isOpeningSlide ? { opacity: 1, x: 0 } : undefined}
+                      transition={isOpeningSlide ? { delay: 0.12 + i * 0.08, duration: 0.4 } : undefined}
+                      className={`${isScreenShareExerciseSlide ? 'text-2xl sm:text-4xl md:text-[2.7rem] font-bold leading-tight p-4 sm:p-5 min-h-[100px] sm:min-h-[120px] flex items-center' : 'text-lg sm:text-3xl font-medium leading-relaxed p-4 sm:p-6'} bg-black/10 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg`}
+                    >
                       {line}
-                    </div>
+                    </motion.div>
                   );
                 })}
 
-                {isOptionalAiSpeakingSlide && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && (
+                {isOptionalAiSpeakingSlide && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.type !== 'roleplay' && (
                   <InlineAiSpeakingAssistant
                     title={isReadingPracticeSlide ? 'Asistente IA de lectura' : 'Asistente IA de esta diapositiva'}
                     initialQuestion={selectedSpeakingPrompt || slideSpeakingQuestions[0] || ''}
@@ -286,14 +344,14 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                 )}
 
                 {/* Interactive Options Area (inline with content) */}
-                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.options && slide.options.length > 0 && (
-                  <div className="flex flex-col gap-3 mt-auto pt-4 sm:pt-6 w-full">
+                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.type !== 'roleplay' && slide.options && slide.options.length > 0 && (
+                  <div className={`flex flex-col ${isScreenShareExerciseSlide ? 'gap-2.5 sm:gap-3 pt-2 sm:pt-3' : 'gap-3 mt-auto pt-4 sm:pt-6'} w-full`}>
                     {slide.options.map((opt, idx) => {
                       const isSelected = selectedOption === idx;
                       const isCorrect = idx === slide.correctOptionIndex;
                       const isRevealed = showResult && isSelected;
                       
-                      let btnClass = "px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-base sm:text-xl transition-all shadow-xl border-2 flex-grow text-center ";
+                      let btnClass = `${isScreenShareExerciseSlide ? 'px-4 sm:px-5 py-3.5 sm:py-5 min-h-[64px] sm:min-h-[82px] rounded-xl sm:rounded-2xl text-lg sm:text-2xl leading-tight' : 'px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-xl'} font-bold transition-all shadow-xl border-2 flex-grow text-center `;
                       
                       if (!showResult) {
                         btnClass += "bg-white text-gray-900 border-white hover:scale-105 hover:bg-gray-100";
@@ -336,7 +394,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               </div>
 
               {/* Right content (Image or Video) */}
-              {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
+              {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.type !== 'roleplay' && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
                 <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center text-center backdrop-blur-sm overflow-hidden min-h-[300px] sm:min-h-[400px]">
                   <iframe 
                     src={slide.videoUrl} 
@@ -346,17 +404,45 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
-                <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center p-2 text-center backdrop-blur-sm min-h-[200px] sm:min-h-[400px]">
-                  <img src={slide.imageUrl} referrerPolicy="no-referrer" alt={slide.title} className="w-full h-full object-cover rounded-lg sm:rounded-xl" />
-                </div>
+              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && slide.type !== 'roleplay' && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
+                <motion.div
+                  initial={isOpeningSlide ? { opacity: 0, scale: 0.96, y: 16 } : false}
+                  animate={isOpeningSlide ? { opacity: 1, scale: 1, y: 0 } : undefined}
+                  transition={isOpeningSlide ? { duration: 0.55, delay: 0.14 } : undefined}
+                  className={`${isOpeningSlide ? 'md:w-[56%] md:flex-none rounded-[1.75rem] border border-white/15 bg-white/10 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.28)] backdrop-blur-md' : 'flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 p-2 backdrop-blur-sm'} min-w-0 flex flex-col items-center justify-center text-center min-h-[240px] sm:min-h-[400px]`}
+                >
+                  <div className={`${isOpeningSlide ? 'relative w-full h-full overflow-hidden rounded-[1.3rem] border border-white/10' : 'w-full h-full overflow-hidden rounded-lg sm:rounded-xl'}`}>
+                    {isOpeningSlide && (
+                      <>
+                        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/28 via-transparent to-white/8" />
+                        <motion.div
+                          aria-hidden="true"
+                          className="pointer-events-none absolute inset-y-0 left-[-18%] z-10 w-24 bg-white/15 blur-2xl"
+                          animate={{ x: ['0%', '310%'] }}
+                          transition={{ duration: 5.5, repeat: Infinity, ease: 'easeInOut', repeatDelay: 2.5 }}
+                        />
+                        <div className="absolute left-4 top-4 z-20 rounded-full border border-white/15 bg-black/20 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-white/85 backdrop-blur-md">
+                          Welcome
+                        </div>
+                      </>
+                    )}
+                    <motion.img
+                      src={slide.imageUrl}
+                      referrerPolicy="no-referrer"
+                      alt={slide.title}
+                      className="w-full h-full object-cover"
+                      animate={isOpeningSlide ? { scale: [1.02, 1.06, 1.02] } : undefined}
+                      transition={isOpeningSlide ? { duration: 9, repeat: Infinity, ease: 'easeInOut' } : undefined}
+                    />
+                  </div>
+                </motion.div>
               ) : null}
             </div>
 
             {/* Teacher Suggestion (Small) */}
             {section.action && !isSpeakingBossBattle && (
-              <div className="bg-black/30 backdrop-blur-md p-3 sm:p-4 border-t border-white/10 shrink-0 mt-auto">
-                <p className="text-xs sm:text-sm text-yellow-300/90 font-medium flex items-center gap-2">
+              <div className={`${isScreenShareExerciseSlide ? 'bg-black/25 p-2.5 sm:p-3' : 'bg-black/30 p-3 sm:p-4'} backdrop-blur-md border-t border-white/10 shrink-0 mt-auto`}>
+                <p className={`${isScreenShareExerciseSlide ? 'text-[10px] sm:text-xs' : 'text-xs sm:text-sm'} text-yellow-300/90 font-medium flex items-center gap-2`}>
                   <span className="bg-yellow-400/20 px-2 py-1 rounded text-yellow-300 font-bold tracking-wide uppercase text-[10px] sm:text-xs">👩‍🏫 Nota para el profe</span>
                   {section.action}
                 </p>
