@@ -2682,7 +2682,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Do you like pizza?"
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
-                "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/ai-food-drinks-restaurant.png"
               },
                 {
                     "id": "Icebreaker Wheel",
@@ -7745,7 +7745,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Meat, Chicken, Fish, Salad",
                   "Water, Coffee, Tea, Juice, Beer"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "/images/adults-c1-7-food-drinks-vocab.png"
               },
               {
                 "id": "Diapositiva 3",
@@ -7757,7 +7758,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Dinner (Cena)",
                   "Snack (Merienda/Bocadillo)"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "/images/adults-c1-7-meals-day.png"
               },
               {
                 "id": "Diapositiva 4",
@@ -7768,7 +7770,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Can I have...?, please? (¿Me puede dar...?, por favor?)",
                   "The bill, please. (La cuenta, por favor)"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "/images/adults-c1-7-ordering.png"
               },
               {
                 "id": "Diapositiva 5",
@@ -7779,7 +7782,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Anything to drink?",
                   "Here you go."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "/images/adults-c1-7-waiter-phrases.png"
               }
             ],
             "action": "Explicar que 'I want' suena rudo, 'I would like' o 'Can I have' es más educado."
@@ -7800,7 +7804,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Waiter: Anything to drink?",
                   "Customer: Can I have a glass of water?"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
+                "imageUrl": "/images/adults-c1-7-reading-practice.png"
               },
               {
                 "id": "Diapositiva 7",
@@ -7815,7 +7820,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "want"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-7-coffee-request.png"
               },
               {
                 "id": "Diapositiva 8",
@@ -7830,7 +7836,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Can"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-7-bill-please.png"
               },
               {
                 "id": "Diapositiva 9",
@@ -7845,7 +7852,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "lunch"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-7-breakfast.png"
               },
               {
                 "id": "Diapositiva 10",
@@ -7856,7 +7864,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "2. Are you ready for order?",
                   "3. The check please."
                 ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
+                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500",
+                "imageUrl": "/images/adults-c1-7-find-mistake.png"
               },
               {
                 "id": "Diapositiva-Emoji-Auto-1-7",
@@ -7866,7 +7875,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "content": ["🍔 + 🍟 + 🥤"],
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "options": ["I am from Canada.", "I want a burger and a drink.", "Open your book."],
-                "correctOptionIndex": 1
+                "correctOptionIndex": 1,
+                "imageUrl": "/images/adults-c1-7-food-drinks-vocab.png"
               }
             ],
             "action": "En 'Find the mistake', discutir las formas más educadas de pedir."
@@ -7886,7 +7896,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Person B: You are the customer.",
                   "Order food, drinks and ask for the bill."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "/images/adults-c1-7-roleplay.png"
               },
               {
                 "id": "Diapositiva 12",
@@ -7901,7 +7912,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Can I have some water?"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-7-water-request.png"
               },
               {
                 "id": "Diapositiva 13",
@@ -7916,7 +7928,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Dinner"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-7-lunch.png"
               },
               {
                 "id": "Diapositiva 14",
@@ -7931,7 +7944,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "La mesa"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-7-bill-please.png"
               },
               {
                 "id": "Diapositiva 15",
@@ -7946,7 +7960,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "buy"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-7-ready-order.png"
               },
                 {
                                   id: "slide-boss-battle",
@@ -7992,7 +8007,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "You can survive in a restaurant!"
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-7-roleplay.png"
               },
               {
                 "id": "Diapositiva 17",
@@ -8002,7 +8017,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Look at a menu in English online and write down 5 new food words."
                 ],
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "type": "homework"
+                "type": "homework",
+                "imageUrl": "/images/adults-c1-7-homework-menu.png"
               },
               {
                 "id": "Diapositiva-Video-Homework-1-7",
@@ -8045,11 +8061,11 @@ export const curriculumLevels: CurriculumLevel[] = [
               },
                 {
                     "id": "Icebreaker Wheel",
-                    "title": "Conversation Warm-up Wheel / Conversation Calentamiento Ruleta",
+                    "title": "Countable & Uncountable Spin / Ruleta Contables e Incontables",
                     "description": "Spin and answer one easy question.",
                     "type": "spinning-wheel",
                     "content": ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                    "wheelItems": [{ label: "Hello", color: "#EF4444", prompt: "How do you greet a new person?", es: "Como saludas a alguien nuevo?" }, { label: "Today", color: "#F59E0B", prompt: "How are you feeling today?", es: "Como te sientes hoy?" }, { label: "Name", color: "#10B981", prompt: "What name do you like?", es: "Que nombre te gusta?" }, { label: "Goodbye", color: "#3B82F6", prompt: "How do you say goodbye to a friend?", es: "Como te despides de un amigo?" }, { label: "Formal", color: "#8B5CF6", prompt: "When do you say hello formally?", es: "Cuando saludas formalmente?" }, { label: "Friend", color: "#EC4899", prompt: "How do you greet your best friend?", es: "Como saludas a tu mejor amigo?" }],
+                    "wheelItems": [{ label: "Apples", color: "#EF4444", prompt: "Can you count apples?", es: "Puedes contar manzanas?" }, { label: "Water", color: "#F59E0B", prompt: "Can you count water?", es: "Puedes contar agua?" }, { label: "Sugar", color: "#10B981", prompt: "Do you need some sugar for coffee?", es: "Necesitas algo de azucar para cafe?" }, { label: "Fridge", color: "#3B82F6", prompt: "What do you have in your fridge?", es: "Que tienes en tu nevera?" }, { label: "Any", color: "#8B5CF6", prompt: "Do you have any eggs at home?", es: "Tienes huevos en casa?" }, { label: "Some", color: "#EC4899", prompt: "Name one thing you have some of.", es: "Nombra algo de lo que tienes algo." }],
                     "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600"
                   }
             ],
@@ -8069,7 +8085,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Singular & Plural: an apple / two apples",
                   "Examples: car, book, egg, tomato"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "/images/adults-c1-8-countable-nouns.png"
               },
               {
                 "id": "Diapositiva 3",
@@ -8079,7 +8096,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Always singular: water, rice, sugar, money, time",
                   "You can't say 'two waters' (you say 'two bottles of water')"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "/images/adults-c1-8-uncountable-nouns.png"
               },
               {
                 "id": "Diapositiva 4",
@@ -8089,7 +8107,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "SOME: Para oraciones positivas (+)",
                   "I have SOME apples. I have SOME water."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "/images/adults-c1-8-some-positive.png"
               },
               {
                 "id": "Diapositiva 5",
@@ -8099,7 +8118,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "ANY: Para oraciones negativas (-) y preguntas (?)",
                   "I don't have ANY apples. Do you have ANY water?"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "/images/adults-c1-8-any-negative.png"
               }
             ],
             "action": "Aclarar que SOME se usa en preguntas cuando ofrecemos algo ('Would you like some coffee?')."
@@ -8117,7 +8137,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "content": [
                   "We have some cheese in the fridge, but we don't have any bread. Do we have any tomatoes?"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
+                "imageUrl": "/images/adults-c1-8-reading-fridge.png"
               },
               {
                 "id": "Diapositiva 7",
@@ -8132,7 +8153,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "a"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-8-sugar-cake.png"
               },
               {
                 "id": "Diapositiva 8",
@@ -8147,7 +8169,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "many"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-8-no-milk.png"
               },
               {
                 "id": "Diapositiva 9",
@@ -8162,7 +8185,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "a"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-8-brothers-sisters.png"
               },
               {
                 "id": "Diapositiva 10",
@@ -8173,17 +8197,19 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "2. She doesn't have some time.",
                   "3. I drink two waters."
                 ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
+                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500",
+                "imageUrl": "/images/adults-c1-8-find-mistake.png"
               },
               {
                 "id": "Diapositiva-Emoji-Auto-1-8",
                 "title": "Emoji Mission / Misión Emoji",
-                "description": "Greeting people: decode the emoji story",
+                "description": "Some and any: decode the emoji story",
                 "type": "emoji-game",
-                "content": ["👋 + 😄 + 🤝"],
+                "content": ["🍎🍎 + 💧 + ❓"],
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
-                "options": ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
-                "correctOptionIndex": 1
+                "options": ["I have some apples. Do you have any water?", "I am from Canada.", "She is wearing a jacket."],
+                "correctOptionIndex": 0,
+                "imageUrl": "/images/adults-c1-8-countable-nouns.png"
               }
             ],
             "action": "Resolver dudas puntuales sobre si el dinero o el tiempo son contables (no lo son)."
@@ -8201,7 +8227,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "content": [
                   "Tell your partner 3 things you have in your fridge (using SOME) and 3 things you don't have (using ANY)."
                 ],
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "/images/adults-c1-8-kitchen-roleplay.png"
               },
               {
                 "id": "Diapositiva 12",
@@ -8216,7 +8243,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Apple"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-8-uncountable-nouns.png"
               },
               {
                 "id": "Diapositiva 13",
@@ -8231,7 +8259,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "much"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-8-good-friends.png"
               },
               {
                 "id": "Diapositiva 14",
@@ -8246,7 +8275,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "a"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-8-eggs-fridge.png"
               },
               {
                 "id": "Diapositiva 15",
@@ -8261,7 +8291,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "a"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-8-coffee-offer.png"
               },
                 {
                                   id: "slide-boss-battle",
@@ -8307,7 +8338,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "You understand quantities!"
                 ],
                 "bgColor": "bg-gradient-to-br from-yellow-400 to-orange-500",
-                "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-8-kitchen-roleplay.png"
               },
               {
                 "id": "Diapositiva 17",
@@ -8317,7 +8348,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Open your fridge at home and write 5 sentences using SOME and ANY."
                 ],
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "type": "homework"
+                "type": "homework",
+                "imageUrl": "/images/adults-c1-8-reading-fridge.png"
               },
               {
                 "id": "Diapositiva-Video-Homework-1-8",
