@@ -18,7 +18,7 @@ interface SpeakingBossBattleGameProps {
 
 const fallbackRounds = {
   remember: ['Say three key words and one useful phrase from today.'],
-  use: ['You have 2 minutes: create three sentences using today\'s grammar: one positive, one negative, and one question.'],
+  use: ['You have 3 minutes: create three sentences using today\'s grammar: one positive, one negative, and one question.'],
   speak: ['Speak for 30 seconds about today\'s topic.']
 };
 
@@ -76,7 +76,7 @@ export function SpeakingBossBattleGame({
   const [activeRound, setActiveRound] = useState(0);
   const [hits, setHits] = useState(0);
   const [timerMode, setTimerMode] = useState<'prepare' | 'speak'>('prepare');
-  const [customUseSeconds, setCustomUseSeconds] = useState(120);
+  const [customUseSeconds, setCustomUseSeconds] = useState(180);
   const [customPrepareSeconds, setCustomPrepareSeconds] = useState(prepareSeconds);
   const [customSpeakSeconds, setCustomSpeakSeconds] = useState(timerSeconds);
   const [timer, setTimer] = useState(0);

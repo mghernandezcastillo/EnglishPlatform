@@ -33,7 +33,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Hello! What's your name?",
                   "How are you today?"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-500 to-blue-700"
+                "bgColor": "bg-gradient-to-br from-blue-500 to-blue-700",
+                "imageUrl": "/images/adults-c1-1-welcome-greeting.png"
               },
                 {
                     "id": "Icebreaker Wheel",
@@ -64,7 +65,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "We (Nosotros)",
                   "They (Ellos)"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "/images/adults-c1-1-personal-pronouns.png"
               },
               {
                 "id": "Diapositiva 3",
@@ -79,7 +81,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "We are (We're)",
                   "They are (They're)"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "/images/adults-c1-1-verb-to-be.png"
               },
               {
                 "id": "Diapositiva 4",
@@ -90,7 +93,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "You are not (You aren't)",
                   "He is not (He isn't)"
                 ],
-                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+                "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600",
+                "imageUrl": "/images/adults-c1-1-negative-form.png"
               },
               {
                 "id": "Diapositiva 5",
@@ -104,7 +108,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Read (Leer)"
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-                "imageUrl": "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-1-action-verbs.png"
               }
             ],
             "action": "Guiar al alumno para que descubra la regla por sí mismo e introducir vocabulario."
@@ -125,17 +129,19 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "My brother is John. He is a student.",
                   "We are very happy today!"
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
+                "imageUrl": "/images/adults-c1-1-reading-sarah.png"
               },
               {
                 "id": "Diapositiva-Emoji-1",
-                "title": "Emoji Mission / Misión Emoji",
-                "description": "Greeting people: decode the emoji story",
+                "title": "Visual Clue Challenge / Desafío Visual",
+                "description": "Introductions and Verb To Be: decode the visual clue",
                 "type": "emoji-game",
-                "content": ["👋 + 😄 + 🤝"],
+                "content": ["👋 + 📛 + 🙂"],
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
-                "options": ["I am hungry.", "Hi! Nice to meet you.", "See you tomorrow."],
-                "correctOptionIndex": 1
+                "imageUrl": "/images/adults-c1-1-visual-clue.png",
+                "options": ["Hi, my name is Sarah.", "I am hungry.", "Turn left at the bank."],
+                "correctOptionIndex": 0
               },
               {
                 "id": "Diapositiva 7",
@@ -150,7 +156,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "are"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500"
+                "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
+                "imageUrl": "/images/adults-c1-1-sarah-teacher.png"
               },
               {
                 "id": "Diapositiva 8",
@@ -165,7 +172,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "are"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500"
+                "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
+                "imageUrl": "/images/adults-c1-1-friends.png"
               },
               {
                 "id": "Diapositiva 9",
@@ -180,7 +188,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "are"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500"
+                "bgColor": "bg-gradient-to-br from-amber-400 to-orange-500",
+                "imageUrl": "/images/adults-c1-1-not-tired.png"
               },
               {
                 "id": "Diapositiva 10",
@@ -191,7 +200,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "2. I are very happy today.",
                   "3. He am a good doctor."
                 ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
+                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500",
+                "imageUrl": "/images/adults-c1-1-find-mistake.png"
               }
             ],
             "action": "El alumno lee en voz alta, corregir pronunciación. Luego ejercicios interactivos."
@@ -211,7 +221,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Who are they?"
                 ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
-                "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-1-describe-picture.png"
               },
               {
                 "id": "Diapositiva 12",
@@ -226,7 +236,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "am"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "/images/adults-c1-1-learning-english.png"
               },
               {
                 "id": "Diapositiva 13",
@@ -241,7 +252,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "am"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "/images/adults-c1-1-parents-home.png"
               },
               {
                 "id": "Diapositiva 14",
@@ -256,7 +268,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Am"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "/images/adults-c1-1-sister-question.png"
               },
               {
                 "id": "Diapositiva 15",
@@ -271,7 +284,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Study"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+                "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
+                "imageUrl": "/images/adults-c1-1-run-action.png"
               },
               {
                 "id": "experimental-speaking-assessment-1",
@@ -334,7 +348,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Great reading pronunciation!"
                 ],
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "imageUrl": "https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-1-welcome-greeting.png"
               },
               {
                 "id": "Diapositiva 17",
@@ -344,7 +358,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Write 5 sentences about your family using Verb To Be.",
                   "Example: My mother is a nurse."
                 ],
-                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "/images/adults-c1-1-parents-home.png"
               },
               {
                 "id": "Diapositiva-Video-Homework-1",
