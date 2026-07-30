@@ -108,18 +108,21 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
         )}
 
         {view.kind === 'mission' && (
-          <div className="flex h-full flex-col justify-center gap-8">
-            <div>
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-amber-100 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-amber-700 sm:text-lg">
+          <div className="flex h-full flex-col items-center justify-center gap-8 text-center sm:gap-10">
+            <div className="max-w-6xl">
+              <div className="mb-5 inline-flex items-center gap-3 rounded-full bg-amber-100 px-5 py-2.5 text-base font-black uppercase tracking-[0.14em] text-amber-700 shadow-sm sm:text-xl">
                 <Sparkles className="h-5 w-5 sm:h-6 sm:w-6" />
                 Mission
               </div>
-              <h2 className="text-5xl font-black leading-tight sm:text-7xl lg:text-8xl">{roleplay.situation}</h2>
+              <h2 className="text-5xl font-black leading-none text-slate-950 sm:text-7xl lg:text-8xl">{roleplay.situation}</h2>
             </div>
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid w-full max-w-7xl gap-5 sm:grid-cols-3">
               {roleplay.mission.slice(0, 3).map((mission, index) => (
-                <div key={mission} className="rounded-3xl bg-slate-100 p-6 text-2xl font-black leading-tight text-slate-800 sm:text-3xl">
-                  {index + 1}. {mission}
+                <div key={mission} className="flex min-h-[170px] flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-100 p-6 text-2xl font-black leading-tight text-slate-800 shadow-sm sm:min-h-[210px] sm:text-4xl">
+                  <span className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-300 text-3xl font-black text-amber-950 sm:h-16 sm:w-16 sm:text-4xl">
+                    {index + 1}
+                  </span>
+                  {mission}
                 </div>
               ))}
             </div>
@@ -205,14 +208,14 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
           <button
             onClick={back}
             disabled={viewIndex === 0}
-            className="inline-flex h-16 items-center gap-2 rounded-2xl bg-slate-200 px-6 text-2xl font-black text-slate-700 disabled:opacity-40"
+            className="inline-flex h-16 items-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 text-2xl font-black text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
           >
             <ArrowLeft className="h-7 w-7" />
             Back
           </button>
           <button
             onClick={reset}
-            className="inline-flex h-16 items-center gap-2 rounded-2xl bg-slate-100 px-6 text-2xl font-black text-slate-600"
+            className="inline-flex h-16 items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-6 text-2xl font-black text-slate-600 shadow-sm transition hover:border-slate-300 hover:bg-white hover:text-slate-900"
           >
             <RotateCcw className="h-7 w-7" />
             Reset
@@ -220,7 +223,7 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
           <button
             onClick={next}
             disabled={viewIndex === views.length - 1}
-            className="inline-flex h-16 items-center gap-2 rounded-2xl bg-violet-600 px-6 text-2xl font-black text-white disabled:opacity-40"
+            className="inline-flex h-16 items-center gap-2 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 px-6 text-2xl font-black text-white shadow-lg shadow-indigo-900/20 transition hover:from-violet-500 hover:to-indigo-500 disabled:cursor-not-allowed disabled:opacity-40"
           >
             {view.kind === 'players' ? <Play className="h-7 w-7" /> : view.kind === 'finish' ? <Flag className="h-7 w-7" /> : <ArrowRight className="h-7 w-7" />}
             Next

@@ -262,18 +262,18 @@ export function SpeakingBossBattleGame({
               <div className="grid gap-4 rounded-3xl bg-slate-100 p-5 sm:p-6 lg:grid-cols-[0.85fr_1.15fr]">
                 <div>
                   {roundKey === 'speak' && (
-                    <div className="mb-4 grid grid-cols-2 rounded-2xl bg-white p-1.5 text-base font-black uppercase tracking-widest text-slate-500 sm:text-xl">
+                    <div className="mb-4 grid grid-cols-2 rounded-2xl border border-slate-200 bg-white p-1.5 text-base font-black uppercase tracking-widest text-slate-500 shadow-sm sm:text-xl">
                       <button
                         type="button"
                         onClick={() => setTimerMode('prepare')}
-                        className={`rounded-xl px-4 py-3 ${timerMode === 'prepare' ? 'bg-slate-950 text-white' : ''}`}
+                        className={`rounded-xl px-4 py-3 transition ${timerMode === 'prepare' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
                       >
                         Prepare
                       </button>
                       <button
                         type="button"
                         onClick={() => setTimerMode('speak')}
-                        className={`rounded-xl px-4 py-3 ${timerMode === 'speak' ? 'bg-slate-950 text-white' : ''}`}
+                        className={`rounded-xl px-4 py-3 transition ${timerMode === 'speak' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
                       >
                         Speak
                       </button>
@@ -283,7 +283,7 @@ export function SpeakingBossBattleGame({
                     <button
                       type="button"
                       onClick={() => updateCustomSeconds(timerMode, activeSeconds - 5)}
-                      className="flex h-16 items-center justify-center rounded-2xl bg-white text-slate-700"
+                      className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
                       aria-label="Decrease seconds"
                     >
                       <Minus className="h-7 w-7" />
@@ -295,13 +295,13 @@ export function SpeakingBossBattleGame({
                       step={5}
                       value={activeSeconds}
                       onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}
-                      className="h-16 rounded-2xl border border-slate-200 bg-white px-3 text-center text-4xl font-black text-slate-950 outline-none"
+                      className="h-16 rounded-2xl border border-slate-200 bg-white px-3 text-center text-4xl font-black text-slate-950 shadow-sm outline-none focus:border-violet-400 focus:ring-4 focus:ring-violet-100"
                       aria-label="Timer seconds"
                     />
                     <button
                       type="button"
                       onClick={() => updateCustomSeconds(timerMode, activeSeconds + 5)}
-                      className="flex h-16 items-center justify-center rounded-2xl bg-white text-slate-700"
+                      className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
                       aria-label="Increase seconds"
                     >
                       <Plus className="h-7 w-7" />
@@ -317,8 +317,9 @@ export function SpeakingBossBattleGame({
                   <button
                     type="button"
                     onClick={() => startTimer(timerMode)}
-                    className="rounded-2xl bg-yellow-300 px-5 py-4 text-xl font-black text-slate-950 sm:text-2xl"
+                    className="inline-flex items-center gap-2 rounded-2xl bg-emerald-400 px-5 py-4 text-xl font-black text-emerald-950 shadow-lg shadow-emerald-950/20 transition hover:bg-emerald-300 sm:text-2xl"
                   >
+                    <Play className="h-6 w-6" />
                     Start
                   </button>
                 </div>
@@ -348,14 +349,14 @@ export function SpeakingBossBattleGame({
           <button
             onClick={back}
             disabled={viewIndex === 0}
-            className="inline-flex h-16 items-center gap-3 rounded-2xl bg-slate-200 px-5 text-xl font-black text-slate-700 disabled:opacity-40 sm:h-20 sm:px-6 sm:text-2xl"
+            className="inline-flex h-16 items-center gap-3 rounded-2xl border border-slate-200 bg-white px-5 text-xl font-black text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40 sm:h-20 sm:px-6 sm:text-2xl"
           >
             <ArrowLeft className="h-7 w-7" />
             Back
           </button>
           <button
             onClick={reset}
-            className="inline-flex h-16 items-center gap-3 rounded-2xl bg-slate-100 px-5 text-xl font-black text-slate-600 sm:h-20 sm:px-6 sm:text-2xl"
+            className="inline-flex h-16 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-5 text-xl font-black text-slate-600 shadow-sm transition hover:border-slate-300 hover:bg-white hover:text-slate-900 sm:h-20 sm:px-6 sm:text-2xl"
           >
             <RotateCcw className="h-7 w-7" />
             Reset
@@ -363,7 +364,7 @@ export function SpeakingBossBattleGame({
           {currentRound ? (
             <button
               onClick={hitBoss}
-              className="inline-flex h-16 items-center gap-3 rounded-2xl bg-red-500 px-5 text-xl font-black text-white sm:h-20 sm:px-6 sm:text-2xl"
+              className="inline-flex h-16 items-center gap-3 rounded-2xl bg-gradient-to-r from-red-500 to-rose-600 px-5 text-xl font-black text-white shadow-lg shadow-red-900/20 transition hover:from-red-400 hover:to-rose-500 sm:h-20 sm:px-6 sm:text-2xl"
             >
               Hit Boss
               <ArrowRight className="h-7 w-7" />
@@ -372,7 +373,7 @@ export function SpeakingBossBattleGame({
             <button
               onClick={next}
               disabled={viewIndex === views.length - 1}
-              className="inline-flex h-16 items-center gap-3 rounded-2xl bg-violet-600 px-5 text-xl font-black text-white disabled:opacity-40 sm:h-20 sm:px-6 sm:text-2xl"
+              className="inline-flex h-16 items-center gap-3 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 px-5 text-xl font-black text-white shadow-lg shadow-indigo-900/20 transition hover:from-violet-500 hover:to-indigo-500 disabled:cursor-not-allowed disabled:opacity-40 sm:h-20 sm:px-6 sm:text-2xl"
             >
               <Play className="h-7 w-7" />
               Next
