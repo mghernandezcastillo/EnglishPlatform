@@ -45,6 +45,12 @@ type RoleplayPlan = {
   successChecklist: string[];
 };
 
+type WarmupWheelItem = {
+  label: string;
+  prompt: string;
+  es: string;
+};
+
 const WHEEL_COLORS = ['#EF4444', '#F59E0B', '#10B981', '#3B82F6', '#8B5CF6', '#EC4899'];
 
 const IMAGELESS_INTERACTIVE_TYPES = new Set<ClassSlide['type']>([
@@ -285,6 +291,16 @@ function uniqueItems(items: string[]) {
   return Array.from(new Set(items.map((item) => item.trim()).filter(Boolean)));
 }
 
+function uniqueWarmupItems(items: WarmupWheelItem[]) {
+  const seen = new Set<string>();
+  return items.filter((item) => {
+    const key = normalizeText(`${item.label} ${item.prompt}`);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 6);
+}
+
 const TOPIC_PROMPTS: Record<TopicKey, string[]> = {
   greetings: [
     'How do you greet a teacher?',
@@ -454,6 +470,555 @@ const TOPIC_PROMPTS: Record<TopicKey, string[]> = {
     'What sentence can you make with today\'s topic?',
     'What part looks interesting to you?'
   ]
+};
+
+const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>> = {
+  greetings: {
+    kids: [
+      { label: 'Hello', prompt: 'Say hello and tell us your name.', es: 'Saluda y di tu nombre.' },
+      { label: 'Feelings', prompt: 'How are you today? Answer with one feeling.', es: 'Como estas hoy? Responde con un sentimiento.' },
+      { label: 'Friend', prompt: 'How do you say hello to a friend?', es: 'Como saludas a un amigo?' },
+      { label: 'Teacher', prompt: 'How do you say hello to a teacher?', es: 'Como saludas a un profesor?' },
+      { label: 'Goodbye', prompt: 'Say one friendly goodbye phrase.', es: 'Di una forma amable de despedirte.' },
+      { label: 'Question', prompt: 'Ask your partner: What is your name?', es: 'Pregunta a tu companero: What is your name?' }
+    ],
+    teens: [
+      { label: 'Intro', prompt: 'Introduce yourself with your name and one detail.', es: 'Presentate con tu nombre y un detalle.' },
+      { label: 'First Day', prompt: 'What do you say when you meet a new classmate?', es: 'Que dices cuando conoces a un nuevo companero?' },
+      { label: 'Mood', prompt: 'How are you today? Give a short reason.', es: 'Como estas hoy? Da una razon corta.' },
+      { label: 'Polite', prompt: 'What greeting sounds polite but natural?', es: 'Que saludo suena educado y natural?' },
+      { label: 'Follow-up', prompt: 'Ask one follow-up question after: Nice to meet you.', es: 'Haz una pregunta despues de: Nice to meet you.' },
+      { label: 'Close', prompt: 'How do you end a first conversation politely?', es: 'Como terminas una primera conversacion educadamente?' }
+    ],
+    adults: [
+      { label: 'Intro', prompt: 'Introduce yourself professionally in one sentence.', es: 'Presentate profesionalmente en una oracion.' },
+      { label: 'Greeting', prompt: 'How do you greet someone in a formal setting?', es: 'Como saludas a alguien en un contexto formal?' },
+      { label: 'Small Talk', prompt: 'Ask one natural small-talk question.', es: 'Haz una pregunta natural para conversacion inicial.' },
+      { label: 'Context', prompt: 'Say where you are from and what you do.', es: 'Di de donde eres y a que te dedicas.' },
+      { label: 'Polite', prompt: 'What phrase helps you sound polite when meeting someone?', es: 'Que frase ayuda a sonar educado al conocer a alguien?' },
+      { label: 'Close', prompt: 'Close a first conversation with a professional phrase.', es: 'Cierra una primera conversacion con una frase profesional.' }
+    ]
+  },
+  numbers: {
+    kids: [
+      { label: 'Age', prompt: 'How old are you? Answer with a full sentence.', es: 'Cuantos anos tienes? Responde con una oracion completa.' },
+      { label: 'Count', prompt: 'Count five things you can see.', es: 'Cuenta cinco cosas que puedes ver.' },
+      { label: 'Favorite', prompt: 'What is your favorite number?', es: 'Cual es tu numero favorito?' },
+      { label: 'Birthday', prompt: 'What month is your birthday?', es: 'En que mes es tu cumpleanos?' },
+      { label: 'Time', prompt: 'What time do you wake up?', es: 'A que hora te despiertas?' },
+      { label: 'Class', prompt: 'How many students are here today?', es: 'Cuantos estudiantes hay hoy?' }
+    ],
+    teens: [
+      { label: 'Birthday', prompt: 'When is your birthday? Answer with month or date.', es: 'Cuando es tu cumpleanos? Responde con mes o fecha.' },
+      { label: 'Schedule', prompt: 'What time does your first class start?', es: 'A que hora empieza tu primera clase?' },
+      { label: 'Number', prompt: 'What number is important in your life?', es: 'Que numero es importante en tu vida?' },
+      { label: 'Year', prompt: 'Say one important year and explain why.', es: 'Di un ano importante y explica por que.' },
+      { label: 'Price', prompt: 'What price feels expensive for a snack?', es: 'Que precio parece caro para un snack?' },
+      { label: 'Ask', prompt: 'Ask your partner one question with how many or what time.', es: 'Haz una pregunta con how many o what time.' }
+    ],
+    adults: [
+      { label: 'Time', prompt: 'What time do you usually start your day?', es: 'A que hora normalmente empiezas tu dia?' },
+      { label: 'Date', prompt: 'What date is important for your work or family?', es: 'Que fecha es importante para tu trabajo o familia?' },
+      { label: 'Confirm', prompt: 'Confirm a phone number or appointment time politely.', es: 'Confirma un numero o una hora de cita educadamente.' },
+      { label: 'Price', prompt: 'What price is reasonable for lunch near you?', es: 'Que precio es razonable para almorzar cerca de ti?' },
+      { label: 'Age', prompt: 'Ask someone about age politely without sounding too direct.', es: 'Pregunta por edad de forma educada y no tan directa.' },
+      { label: 'Schedule', prompt: 'Say one sentence about your weekly schedule.', es: 'Di una oracion sobre tu horario semanal.' }
+    ]
+  },
+  family: {
+    kids: [
+      { label: 'People', prompt: 'Who is in your family?', es: 'Quien esta en tu familia?' },
+      { label: 'Home', prompt: 'Who lives in your home?', es: 'Quien vive en tu casa?' },
+      { label: 'Funny', prompt: 'Who is funny in your family?', es: 'Quien es divertido en tu familia?' },
+      { label: 'Pet', prompt: 'Do you have a pet at home?', es: 'Tienes mascota en casa?' },
+      { label: 'Like', prompt: 'What do you like to do with your family?', es: 'Que te gusta hacer con tu familia?' },
+      { label: 'Ask', prompt: 'Ask your partner about one family member.', es: 'Pregunta a tu companero por un familiar.' }
+    ],
+    teens: [
+      { label: 'People', prompt: 'Who do you live with?', es: 'Con quien vives?' },
+      { label: 'Describe', prompt: 'Describe one family member with two adjectives.', es: 'Describe un familiar con dos adjetivos.' },
+      { label: 'Similar', prompt: 'Who are you similar to in your family?', es: 'A quien te pareces en tu familia?' },
+      { label: 'Routine', prompt: 'What do you usually do with your family?', es: 'Que haces normalmente con tu familia?' },
+      { label: 'Question', prompt: 'Ask a clear question about your partner\'s family.', es: 'Haz una pregunta clara sobre la familia de tu companero.' },
+      { label: 'Opinion', prompt: 'What makes a family strong?', es: 'Que hace fuerte a una familia?' }
+    ],
+    adults: [
+      { label: 'Household', prompt: 'Who do you live with, or who are you close to?', es: 'Con quien vives o con quien eres cercano?' },
+      { label: 'Describe', prompt: 'Describe one relative and your relationship with them.', es: 'Describe un familiar y tu relacion con esa persona.' },
+      { label: 'Routine', prompt: 'What is one family routine you value?', es: 'Que rutina familiar valoras?' },
+      { label: 'Support', prompt: 'Who supports you most in your family?', es: 'Quien te apoya mas en tu familia?' },
+      { label: 'Question', prompt: 'Ask a respectful question about someone\'s family.', es: 'Haz una pregunta respetuosa sobre la familia de alguien.' },
+      { label: 'Change', prompt: 'How has your family changed over time?', es: 'Como ha cambiado tu familia con el tiempo?' }
+    ]
+  },
+  routine: {
+    kids: [
+      { label: 'Morning', prompt: 'What do you do first in the morning?', es: 'Que haces primero en la manana?' },
+      { label: 'School', prompt: 'What do you do before school?', es: 'Que haces antes de la escuela?' },
+      { label: 'Food', prompt: 'What do you eat for breakfast?', es: 'Que comes en el desayuno?' },
+      { label: 'Night', prompt: 'What do you do at night?', es: 'Que haces en la noche?' },
+      { label: 'Always', prompt: 'What do you always do every day?', es: 'Que haces siempre todos los dias?' },
+      { label: 'Ask', prompt: 'Ask your partner about their morning.', es: 'Pregunta a tu companero sobre su manana.' }
+    ],
+    teens: [
+      { label: 'Morning', prompt: 'What is your morning routine on school days?', es: 'Cual es tu rutina de manana en dias de clase?' },
+      { label: 'After Class', prompt: 'What do you usually do after class?', es: 'Que haces normalmente despues de clase?' },
+      { label: 'Frequency', prompt: 'What activity do you do three times a week?', es: 'Que actividad haces tres veces por semana?' },
+      { label: 'Never', prompt: 'What do you never do in the morning?', es: 'Que nunca haces en la manana?' },
+      { label: 'Weekend', prompt: 'How is your weekend routine different?', es: 'Como es diferente tu rutina de fin de semana?' },
+      { label: 'Ask', prompt: 'Ask one question using how often.', es: 'Haz una pregunta usando how often.' }
+    ],
+    adults: [
+      { label: 'Morning', prompt: 'Walk us through the first hour of your day.', es: 'Describe la primera hora de tu dia.' },
+      { label: 'Workday', prompt: 'What do you usually do before work or study?', es: 'Que haces normalmente antes del trabajo o estudio?' },
+      { label: 'Habit', prompt: 'What habit helps you stay organized?', es: 'Que habito te ayuda a organizarte?' },
+      { label: 'Frequency', prompt: 'How often do you exercise, read, or practice English?', es: 'Con que frecuencia haces ejercicio, lees o practicas ingles?' },
+      { label: 'Challenge', prompt: 'What part of your routine is difficult to keep?', es: 'Que parte de tu rutina es dificil mantener?' },
+      { label: 'Question', prompt: 'Ask someone about one daily habit.', es: 'Pregunta a alguien por un habito diario.' }
+    ]
+  },
+  food: {
+    kids: [
+      { label: 'Like', prompt: 'What food do you like?', es: 'Que comida te gusta?' },
+      { label: 'Drink', prompt: 'What do you drink every day?', es: 'Que tomas todos los dias?' },
+      { label: 'Snack', prompt: 'What is your favorite snack?', es: 'Cual es tu snack favorito?' },
+      { label: 'Restaurant', prompt: 'What do you order at a restaurant?', es: 'Que pides en un restaurante?' },
+      { label: 'Hungry', prompt: 'What do you eat when you are hungry?', es: 'Que comes cuando tienes hambre?' },
+      { label: 'Ask', prompt: 'Ask your partner: Do you like pizza?', es: 'Pregunta a tu companero: Do you like pizza?' }
+    ],
+    teens: [
+      { label: 'Favorite', prompt: 'What food could you eat every week?', es: 'Que comida podrias comer cada semana?' },
+      { label: 'Order', prompt: 'How do you order food politely?', es: 'Como pides comida educadamente?' },
+      { label: 'Recommend', prompt: 'What restaurant or dish do you recommend?', es: 'Que restaurante o plato recomiendas?' },
+      { label: 'Compare', prompt: 'Do you prefer eating at home or outside? Why?', es: 'Prefieres comer en casa o afuera? Por que?' },
+      { label: 'Dislike', prompt: 'What food do you not like?', es: 'Que comida no te gusta?' },
+      { label: 'Ask', prompt: 'Ask one clear food question to your partner.', es: 'Haz una pregunta clara sobre comida.' }
+    ],
+    adults: [
+      { label: 'Order', prompt: 'Order a meal politely in one complete sentence.', es: 'Pide una comida educadamente en una oracion completa.' },
+      { label: 'Recommend', prompt: 'Recommend a dish and explain why.', es: 'Recomienda un plato y explica por que.' },
+      { label: 'Routine', prompt: 'What do you usually eat during a busy day?', es: 'Que comes normalmente en un dia ocupado?' },
+      { label: 'Diet', prompt: 'What food do you try to avoid?', es: 'Que comida tratas de evitar?' },
+      { label: 'Service', prompt: 'How do you ask for the bill or the menu politely?', es: 'Como pides la cuenta o el menu educadamente?' },
+      { label: 'Question', prompt: 'Ask someone about their food preferences.', es: 'Pregunta a alguien por sus preferencias de comida.' }
+    ]
+  },
+  clothes: {
+    kids: [
+      { label: 'Wearing', prompt: 'What are you wearing today?', es: 'Que llevas puesto hoy?' },
+      { label: 'Color', prompt: 'What color are your clothes?', es: 'De que color es tu ropa?' },
+      { label: 'Weather', prompt: 'What do you wear when it rains?', es: 'Que usas cuando llueve?' },
+      { label: 'Favorite', prompt: 'What is your favorite item of clothing?', es: 'Cual es tu prenda favorita?' },
+      { label: 'Look', prompt: 'Point to one thing and say: This is a ...', es: 'Senala algo y di: This is a ...' },
+      { label: 'Ask', prompt: 'Ask your partner about one color.', es: 'Pregunta a tu companero por un color.' }
+    ],
+    teens: [
+      { label: 'Style', prompt: 'What do you usually wear on weekends?', es: 'Que usas normalmente los fines de semana?' },
+      { label: 'Today', prompt: 'Describe what you are wearing today.', es: 'Describe que llevas puesto hoy.' },
+      { label: 'Opinion', prompt: 'What clothes are comfortable for school?', es: 'Que ropa es comoda para la escuela?' },
+      { label: 'Compare', prompt: 'Do you prefer casual or formal clothes? Why?', es: 'Prefieres ropa casual o formal? Por que?' },
+      { label: 'Shopping', prompt: 'What item of clothing would you like to buy?', es: 'Que prenda te gustaria comprar?' },
+      { label: 'Ask', prompt: 'Ask one question about style or colors.', es: 'Haz una pregunta sobre estilo o colores.' }
+    ],
+    adults: [
+      { label: 'Work', prompt: 'What do you usually wear for work or important plans?', es: 'Que usas normalmente para trabajo o planes importantes?' },
+      { label: 'Today', prompt: 'Describe your outfit today using one complete sentence.', es: 'Describe tu ropa de hoy con una oracion completa.' },
+      { label: 'Weather', prompt: 'What do you wear in cold or rainy weather?', es: 'Que usas con clima frio o lluvioso?' },
+      { label: 'Shopping', prompt: 'Ask for a size or color politely in a store.', es: 'Pide una talla o color educadamente en una tienda.' },
+      { label: 'Style', prompt: 'What style feels professional to you?', es: 'Que estilo te parece profesional?' },
+      { label: 'Question', prompt: 'Ask someone what they would wear for an event.', es: 'Pregunta que usaria alguien para un evento.' }
+    ]
+  },
+  gadgets: {
+    kids: [
+      { label: 'Device', prompt: 'What device do you use?', es: 'Que aparato usas?' },
+      { label: 'Phone', prompt: 'What can you do with a phone?', es: 'Que puedes hacer con un celular?' },
+      { label: 'Game', prompt: 'Do you play games on a device?', es: 'Juegas en algun aparato?' },
+      { label: 'Music', prompt: 'What do you use to listen to music?', es: 'Que usas para escuchar musica?' },
+      { label: 'Help', prompt: 'What gadget helps you at home?', es: 'Que aparato te ayuda en casa?' },
+      { label: 'Ask', prompt: 'Ask your partner about a favorite app.', es: 'Pregunta por una app favorita.' }
+    ],
+    teens: [
+      { label: 'App', prompt: 'What app do you use most and why?', es: 'Que app usas mas y por que?' },
+      { label: 'Device', prompt: 'Do you prefer a phone, tablet, or laptop?', es: 'Prefieres celular, tablet o laptop?' },
+      { label: 'Study', prompt: 'What technology helps you study?', es: 'Que tecnologia te ayuda a estudiar?' },
+      { label: 'Limit', prompt: 'How much screen time is okay for you?', es: 'Cuanto tiempo de pantalla esta bien para ti?' },
+      { label: 'Future', prompt: 'What gadget would you like to have?', es: 'Que aparato te gustaria tener?' },
+      { label: 'Ask', prompt: 'Ask one question about technology habits.', es: 'Haz una pregunta sobre habitos tecnologicos.' }
+    ],
+    adults: [
+      { label: 'Work', prompt: 'What device helps you work or study better?', es: 'Que aparato te ayuda a trabajar o estudiar mejor?' },
+      { label: 'App', prompt: 'What app saves you time?', es: 'Que app te ahorra tiempo?' },
+      { label: 'Problem', prompt: 'What tech problem do you often have?', es: 'Que problema tecnologico tienes a menudo?' },
+      { label: 'Explain', prompt: 'Explain what you use your phone for most.', es: 'Explica para que usas mas tu celular.' },
+      { label: 'Recommend', prompt: 'Recommend one useful digital tool.', es: 'Recomienda una herramienta digital util.' },
+      { label: 'Question', prompt: 'Ask someone how technology helps their routine.', es: 'Pregunta como la tecnologia ayuda su rutina.' }
+    ]
+  },
+  school: {
+    kids: [
+      { label: 'Subject', prompt: 'What subject do you like?', es: 'Que materia te gusta?' },
+      { label: 'Backpack', prompt: 'What is in your backpack?', es: 'Que hay en tu mochila?' },
+      { label: 'Pencil', prompt: 'Ask for a pencil politely.', es: 'Pide un lapiz educadamente.' },
+      { label: 'Teacher', prompt: 'What does a teacher do?', es: 'Que hace un profesor?' },
+      { label: 'Classroom', prompt: 'Name three classroom objects.', es: 'Nombra tres objetos del salon.' },
+      { label: 'Ask', prompt: 'Ask your partner about school.', es: 'Pregunta a tu companero sobre la escuela.' }
+    ],
+    teens: [
+      { label: 'Subject', prompt: 'What subject is useful for your future?', es: 'Que materia es util para tu futuro?' },
+      { label: 'Study', prompt: 'How do you study before a test?', es: 'Como estudias antes de un examen?' },
+      { label: 'Class', prompt: 'What makes a class interesting?', es: 'Que hace interesante una clase?' },
+      { label: 'Need', prompt: 'What do you need to learn better?', es: 'Que necesitas para aprender mejor?' },
+      { label: 'Rules', prompt: 'What school rule is important?', es: 'Que regla escolar es importante?' },
+      { label: 'Ask', prompt: 'Ask one question about school life.', es: 'Haz una pregunta sobre la vida escolar.' }
+    ],
+    adults: [
+      { label: 'Learning', prompt: 'What helps you learn English effectively?', es: 'Que te ayuda a aprender ingles efectivamente?' },
+      { label: 'Challenge', prompt: 'What is difficult when you study?', es: 'Que es dificil cuando estudias?' },
+      { label: 'Goal', prompt: 'What learning goal do you have this month?', es: 'Que meta de aprendizaje tienes este mes?' },
+      { label: 'Method', prompt: 'Describe one study habit that works for you.', es: 'Describe un habito de estudio que te funciona.' },
+      { label: 'Need', prompt: 'What support do you need from a teacher?', es: 'Que apoyo necesitas de un profesor?' },
+      { label: 'Question', prompt: 'Ask someone about their learning routine.', es: 'Pregunta por la rutina de aprendizaje de alguien.' }
+    ]
+  },
+  animals: {
+    kids: [
+      { label: 'Favorite', prompt: 'What animal do you like?', es: 'Que animal te gusta?' },
+      { label: 'Pet', prompt: 'Do you have a pet?', es: 'Tienes mascota?' },
+      { label: 'Sound', prompt: 'What sound does your favorite animal make?', es: 'Que sonido hace tu animal favorito?' },
+      { label: 'Fast', prompt: 'What animal is fast?', es: 'Que animal es rapido?' },
+      { label: 'Home', prompt: 'Where does that animal live?', es: 'Donde vive ese animal?' },
+      { label: 'Ask', prompt: 'Ask your partner about one animal.', es: 'Pregunta por un animal.' }
+    ],
+    teens: [
+      { label: 'Pet', prompt: 'Would you like to have a pet? Why?', es: 'Te gustaria tener una mascota? Por que?' },
+      { label: 'Wild', prompt: 'What wild animal would you like to see?', es: 'Que animal salvaje te gustaria ver?' },
+      { label: 'Compare', prompt: 'Which animal is smarter: a dog or a cat?', es: 'Que animal es mas inteligente: perro o gato?' },
+      { label: 'Care', prompt: 'What does a pet need every day?', es: 'Que necesita una mascota todos los dias?' },
+      { label: 'Opinion', prompt: 'Should animals live in zoos? Give one reason.', es: 'Deben vivir animales en zoologicos? Da una razon.' },
+      { label: 'Ask', prompt: 'Ask one clear animal question.', es: 'Haz una pregunta clara sobre animales.' }
+    ],
+    adults: [
+      { label: 'Experience', prompt: 'Have you ever had a pet? Say one detail.', es: 'Has tenido mascota? Di un detalle.' },
+      { label: 'Preference', prompt: 'Do you prefer dogs, cats, or another animal? Why?', es: 'Prefieres perros, gatos u otro animal? Por que?' },
+      { label: 'Responsibility', prompt: 'What responsibility comes with having a pet?', es: 'Que responsabilidad viene con tener mascota?' },
+      { label: 'Nature', prompt: 'What animal from nature interests you?', es: 'Que animal de la naturaleza te interesa?' },
+      { label: 'Opinion', prompt: 'What can people learn from animals?', es: 'Que pueden aprender las personas de los animales?' },
+      { label: 'Question', prompt: 'Ask someone about an animal experience.', es: 'Pregunta por una experiencia con animales.' }
+    ]
+  },
+  body: {
+    kids: [
+      { label: 'Point', prompt: 'Point to your head, hands, and feet.', es: 'Senala cabeza, manos y pies.' },
+      { label: 'Action', prompt: 'What can you do with your hands?', es: 'Que puedes hacer con tus manos?' },
+      { label: 'Move', prompt: 'Can you jump, run, or dance?', es: 'Puedes saltar, correr o bailar?' },
+      { label: 'Face', prompt: 'Name two parts of the face.', es: 'Nombra dos partes de la cara.' },
+      { label: 'Sport', prompt: 'What body part do you use in soccer?', es: 'Que parte del cuerpo usas en futbol?' },
+      { label: 'Ask', prompt: 'Ask your partner: Can you touch your nose?', es: 'Pregunta: Can you touch your nose?' }
+    ],
+    teens: [
+      { label: 'Action', prompt: 'What action can you do well?', es: 'Que accion puedes hacer bien?' },
+      { label: 'Sport', prompt: 'What body parts do you use in your favorite sport?', es: 'Que partes del cuerpo usas en tu deporte favorito?' },
+      { label: 'Health', prompt: 'What do you do when you feel tired?', es: 'Que haces cuando te sientes cansado?' },
+      { label: 'Describe', prompt: 'Describe a person using two physical details.', es: 'Describe a una persona con dos detalles fisicos.' },
+      { label: 'Ability', prompt: 'Say one thing you can and cannot do.', es: 'Di algo que puedes y no puedes hacer.' },
+      { label: 'Ask', prompt: 'Ask one question with can.', es: 'Haz una pregunta con can.' }
+    ],
+    adults: [
+      { label: 'Health', prompt: 'How do you describe a simple health problem?', es: 'Como describes un problema simple de salud?' },
+      { label: 'Routine', prompt: 'What do you do to take care of your body?', es: 'Que haces para cuidar tu cuerpo?' },
+      { label: 'Symptom', prompt: 'Say one sentence a patient could say to a doctor.', es: 'Di una oracion que un paciente podria decir al doctor.' },
+      { label: 'Movement', prompt: 'What movement or exercise do you enjoy?', es: 'Que movimiento o ejercicio disfrutas?' },
+      { label: 'Ability', prompt: 'What physical activity can you do well?', es: 'Que actividad fisica puedes hacer bien?' },
+      { label: 'Question', prompt: 'Ask someone how they feel today.', es: 'Pregunta como se siente alguien hoy.' }
+    ]
+  },
+  directions: {
+    kids: [
+      { label: 'Place', prompt: 'What place is near your home?', es: 'Que lugar esta cerca de tu casa?' },
+      { label: 'Left', prompt: 'Point left and say one place.', es: 'Senala izquierda y di un lugar.' },
+      { label: 'Right', prompt: 'Point right and say one place.', es: 'Senala derecha y di un lugar.' },
+      { label: 'Go', prompt: 'How do you go to school?', es: 'Como vas a la escuela?' },
+      { label: 'Town', prompt: 'Name two places in town.', es: 'Nombra dos lugares en la ciudad.' },
+      { label: 'Ask', prompt: 'Ask: Where is the park?', es: 'Pregunta: Where is the park?' }
+    ],
+    teens: [
+      { label: 'Ask', prompt: 'Ask for directions to a place near school.', es: 'Pide direcciones a un lugar cerca de la escuela.' },
+      { label: 'Explain', prompt: 'Explain how to get from class to the entrance.', es: 'Explica como ir de clase a la entrada.' },
+      { label: 'Transport', prompt: 'How do you usually move around town?', es: 'Como te mueves normalmente por la ciudad?' },
+      { label: 'Place', prompt: 'What place do you visit often?', es: 'Que lugar visitas a menudo?' },
+      { label: 'Near', prompt: 'What is near your house?', es: 'Que esta cerca de tu casa?' },
+      { label: 'Clarify', prompt: 'Ask someone to repeat directions politely.', es: 'Pide que repitan direcciones educadamente.' }
+    ],
+    adults: [
+      { label: 'Ask', prompt: 'Ask for directions politely in one sentence.', es: 'Pide direcciones educadamente en una oracion.' },
+      { label: 'Explain', prompt: 'Give simple directions from your home to a nearby place.', es: 'Da direcciones simples desde tu casa a un lugar cercano.' },
+      { label: 'Transport', prompt: 'What transportation do you use most?', es: 'Que transporte usas mas?' },
+      { label: 'Clarify', prompt: 'What do you say when you do not understand directions?', es: 'Que dices cuando no entiendes direcciones?' },
+      { label: 'Travel', prompt: 'What place do visitors ask about in your city?', es: 'Por que lugar preguntan visitantes en tu ciudad?' },
+      { label: 'Question', prompt: 'Ask someone how to get to a specific place.', es: 'Pregunta como llegar a un lugar especifico.' }
+    ]
+  },
+  hobbies: {
+    kids: [
+      { label: 'Fun', prompt: 'What do you do for fun?', es: 'Que haces para divertirte?' },
+      { label: 'Sport', prompt: 'What sport do you like?', es: 'Que deporte te gusta?' },
+      { label: 'Music', prompt: 'Do you like music?', es: 'Te gusta la musica?' },
+      { label: 'Game', prompt: 'What game do you play?', es: 'Que juego juegas?' },
+      { label: 'Friends', prompt: 'What do you do with friends?', es: 'Que haces con amigos?' },
+      { label: 'Ask', prompt: 'Ask your partner: What do you like?', es: 'Pregunta: What do you like?' }
+    ],
+    teens: [
+      { label: 'Free Time', prompt: 'What do you usually do in your free time?', es: 'Que haces normalmente en tu tiempo libre?' },
+      { label: 'Frequency', prompt: 'How often do you practice a hobby?', es: 'Con que frecuencia practicas un pasatiempo?' },
+      { label: 'Friends', prompt: 'What activity is better with friends?', es: 'Que actividad es mejor con amigos?' },
+      { label: 'Try', prompt: 'What new hobby would you like to try?', es: 'Que pasatiempo nuevo te gustaria probar?' },
+      { label: 'Reason', prompt: 'Why do you enjoy your favorite activity?', es: 'Por que disfrutas tu actividad favorita?' },
+      { label: 'Ask', prompt: 'Ask one question about free time.', es: 'Haz una pregunta sobre tiempo libre.' }
+    ],
+    adults: [
+      { label: 'Weekend', prompt: 'What do you usually do on weekends?', es: 'Que haces normalmente los fines de semana?' },
+      { label: 'Relax', prompt: 'What activity helps you relax?', es: 'Que actividad te ayuda a relajarte?' },
+      { label: 'Time', prompt: 'How often do you make time for hobbies?', es: 'Con que frecuencia haces tiempo para pasatiempos?' },
+      { label: 'Past', prompt: 'What hobby did you have when you were younger?', es: 'Que pasatiempo tenias cuando eras mas joven?' },
+      { label: 'Recommend', prompt: 'Recommend one hobby and explain why.', es: 'Recomienda un pasatiempo y explica por que.' },
+      { label: 'Question', prompt: 'Ask someone about their interests.', es: 'Pregunta a alguien por sus intereses.' }
+    ]
+  },
+  house: {
+    kids: [
+      { label: 'Room', prompt: 'What room do you like at home?', es: 'Que cuarto te gusta en casa?' },
+      { label: 'Bedroom', prompt: 'What is in your bedroom?', es: 'Que hay en tu cuarto?' },
+      { label: 'Kitchen', prompt: 'What do you see in a kitchen?', es: 'Que ves en una cocina?' },
+      { label: 'Living Room', prompt: 'What do you do in the living room?', es: 'Que haces en la sala?' },
+      { label: 'There Is', prompt: 'Say one sentence with there is.', es: 'Di una oracion con there is.' },
+      { label: 'Ask', prompt: 'Ask your partner about their favorite room.', es: 'Pregunta por su cuarto favorito.' }
+    ],
+    teens: [
+      { label: 'Favorite', prompt: 'What is your favorite room and why?', es: 'Cual es tu cuarto favorito y por que?' },
+      { label: 'Describe', prompt: 'Describe your bedroom with two details.', es: 'Describe tu cuarto con dos detalles.' },
+      { label: 'There Are', prompt: 'Say one sentence about what there are in your home.', es: 'Di una oracion sobre lo que hay en tu casa.' },
+      { label: 'Change', prompt: 'What would you change in your room?', es: 'Que cambiarias en tu cuarto?' },
+      { label: 'Activity', prompt: 'What do you usually do at home after class?', es: 'Que haces normalmente en casa despues de clase?' },
+      { label: 'Ask', prompt: 'Ask one question about someone\'s home.', es: 'Haz una pregunta sobre la casa de alguien.' }
+    ],
+    adults: [
+      { label: 'Home', prompt: 'Describe your home or apartment in one sentence.', es: 'Describe tu casa o apartamento en una oracion.' },
+      { label: 'Room', prompt: 'Which room do you use most and why?', es: 'Que cuarto usas mas y por que?' },
+      { label: 'Object', prompt: 'What object at home is useful every day?', es: 'Que objeto de casa es util todos los dias?' },
+      { label: 'Ideal', prompt: 'What would your ideal home have?', es: 'Que tendria tu casa ideal?' },
+      { label: 'Routine', prompt: 'What do you usually do when you get home?', es: 'Que haces normalmente al llegar a casa?' },
+      { label: 'Question', prompt: 'Ask someone about their home politely.', es: 'Pregunta por la casa de alguien educadamente.' }
+    ]
+  },
+  weather: {
+    kids: [
+      { label: 'Today', prompt: 'How is the weather today?', es: 'Como esta el clima hoy?' },
+      { label: 'Sunny', prompt: 'What do you do on sunny days?', es: 'Que haces en dias soleados?' },
+      { label: 'Rainy', prompt: 'What do you wear when it rains?', es: 'Que usas cuando llueve?' },
+      { label: 'Season', prompt: 'What season do you like?', es: 'Que estacion te gusta?' },
+      { label: 'Hot', prompt: 'Do you like hot weather?', es: 'Te gusta el clima caliente?' },
+      { label: 'Ask', prompt: 'Ask your partner about today\'s weather.', es: 'Pregunta por el clima de hoy.' }
+    ],
+    teens: [
+      { label: 'Today', prompt: 'What is the weather like today?', es: 'Como esta el clima hoy?' },
+      { label: 'Plan', prompt: 'What can you do when it is sunny?', es: 'Que puedes hacer cuando esta soleado?' },
+      { label: 'Clothes', prompt: 'What do you wear in cold weather?', es: 'Que usas cuando hace frio?' },
+      { label: 'Season', prompt: 'Which season fits your personality?', es: 'Que estacion va con tu personalidad?' },
+      { label: 'Compare', prompt: 'Do you prefer hot or cold weather? Why?', es: 'Prefieres calor o frio? Por que?' },
+      { label: 'Ask', prompt: 'Ask one weather question.', es: 'Haz una pregunta sobre el clima.' }
+    ],
+    adults: [
+      { label: 'Today', prompt: 'Describe today\'s weather and how it affects your plans.', es: 'Describe el clima de hoy y como afecta tus planes.' },
+      { label: 'Preference', prompt: 'What weather do you prefer for work or travel?', es: 'Que clima prefieres para trabajo o viaje?' },
+      { label: 'Clothes', prompt: 'What do you wear when the weather changes quickly?', es: 'Que usas cuando el clima cambia rapido?' },
+      { label: 'Season', prompt: 'What season is best in your city?', es: 'Que estacion es mejor en tu ciudad?' },
+      { label: 'Problem', prompt: 'What weather creates problems for you?', es: 'Que clima te crea problemas?' },
+      { label: 'Question', prompt: 'Ask someone about the forecast or their plans.', es: 'Pregunta por el pronostico o los planes de alguien.' }
+    ]
+  },
+  jobs: {
+    kids: [
+      { label: 'Job', prompt: 'What job do you know?', es: 'Que trabajo conoces?' },
+      { label: 'Doctor', prompt: 'What does a doctor do?', es: 'Que hace un doctor?' },
+      { label: 'Teacher', prompt: 'Where does a teacher work?', es: 'Donde trabaja un profesor?' },
+      { label: 'Future', prompt: 'What do you want to be?', es: 'Que quieres ser?' },
+      { label: 'Help', prompt: 'What job helps people?', es: 'Que trabajo ayuda a las personas?' },
+      { label: 'Ask', prompt: 'Ask your partner about a job.', es: 'Pregunta por un trabajo.' }
+    ],
+    teens: [
+      { label: 'Future Job', prompt: 'What job sounds interesting for your future?', es: 'Que trabajo suena interesante para tu futuro?' },
+      { label: 'Skills', prompt: 'What skill is important for that job?', es: 'Que habilidad es importante para ese trabajo?' },
+      { label: 'Place', prompt: 'Where would you like to work one day?', es: 'Donde te gustaria trabajar algun dia?' },
+      { label: 'Compare', prompt: 'Which is better: working alone or in a team?', es: 'Que es mejor: trabajar solo o en equipo?' },
+      { label: 'Responsibility', prompt: 'What responsibility sounds difficult?', es: 'Que responsabilidad suena dificil?' },
+      { label: 'Ask', prompt: 'Ask one career question.', es: 'Haz una pregunta sobre carrera.' }
+    ],
+    adults: [
+      { label: 'Work', prompt: 'What do you do, or what field are you interested in?', es: 'A que te dedicas o que area te interesa?' },
+      { label: 'Responsibility', prompt: 'Describe one responsibility at work or home.', es: 'Describe una responsabilidad en trabajo o casa.' },
+      { label: 'Skill', prompt: 'What professional skill do you want to improve?', es: 'Que habilidad profesional quieres mejorar?' },
+      { label: 'Meeting', prompt: 'What phrase is useful in a meeting?', es: 'Que frase es util en una reunion?' },
+      { label: 'Problem', prompt: 'What common work problem can you explain in English?', es: 'Que problema laboral comun puedes explicar en ingles?' },
+      { label: 'Question', prompt: 'Ask someone about their work politely.', es: 'Pregunta por el trabajo de alguien educadamente.' }
+    ]
+  },
+  future: {
+    kids: [
+      { label: 'Tomorrow', prompt: 'What are you going to do tomorrow?', es: 'Que vas a hacer manana?' },
+      { label: 'Later', prompt: 'What will you do after class?', es: 'Que haras despues de clase?' },
+      { label: 'Dream', prompt: 'What do you want to be in the future?', es: 'Que quieres ser en el futuro?' },
+      { label: 'Trip', prompt: 'Where will you travel one day?', es: 'A donde viajaras algun dia?' },
+      { label: 'Plan', prompt: 'Say one plan with going to.', es: 'Di un plan con going to.' },
+      { label: 'Ask', prompt: 'Ask your partner about tomorrow.', es: 'Pregunta por manana.' }
+    ],
+    teens: [
+      { label: 'Weekend', prompt: 'What are you going to do this weekend?', es: 'Que vas a hacer este fin de semana?' },
+      { label: 'Prediction', prompt: 'What will happen at school this week?', es: 'Que pasara en la escuela esta semana?' },
+      { label: 'Goal', prompt: 'What goal are you going to work on?', es: 'En que meta vas a trabajar?' },
+      { label: 'Plan', prompt: 'Say one plan and one reason.', es: 'Di un plan y una razon.' },
+      { label: 'Question', prompt: 'Ask one future question with will or going to.', es: 'Haz una pregunta futura con will o going to.' },
+      { label: 'Choice', prompt: 'Would you rather plan everything or decide later?', es: 'Prefieres planear todo o decidir despues?' }
+    ],
+    adults: [
+      { label: 'Plan', prompt: 'What are you planning to do next week?', es: 'Que planeas hacer la proxima semana?' },
+      { label: 'Goal', prompt: 'What professional or personal goal will you focus on?', es: 'En que meta profesional o personal te enfocaras?' },
+      { label: 'Prediction', prompt: 'What change do you think will happen soon?', es: 'Que cambio crees que pasara pronto?' },
+      { label: 'Decision', prompt: 'What decision are you going to make this month?', es: 'Que decision vas a tomar este mes?' },
+      { label: 'Offer', prompt: 'Make one offer using will.', es: 'Haz una oferta usando will.' },
+      { label: 'Question', prompt: 'Ask someone about their future plans.', es: 'Pregunta a alguien por sus planes futuros.' }
+    ]
+  },
+  travel: {
+    kids: [
+      { label: 'Place', prompt: 'Where do you want to go?', es: 'A donde quieres ir?' },
+      { label: 'Bag', prompt: 'What do you put in a travel bag?', es: 'Que pones en una maleta?' },
+      { label: 'Transport', prompt: 'Do you like cars, buses, or planes?', es: 'Te gustan carros, buses o aviones?' },
+      { label: 'Beach', prompt: 'Do you want to go to the beach?', es: 'Quieres ir a la playa?' },
+      { label: 'Friend', prompt: 'Who do you travel with?', es: 'Con quien viajas?' },
+      { label: 'Ask', prompt: 'Ask your partner where they want to go.', es: 'Pregunta a donde quiere ir.' }
+    ],
+    teens: [
+      { label: 'Destination', prompt: 'Where would you like to travel and why?', es: 'A donde te gustaria viajar y por que?' },
+      { label: 'Pack', prompt: 'What three things would you pack first?', es: 'Que tres cosas empacarias primero?' },
+      { label: 'Transport', prompt: 'What is the best way to travel in your city?', es: 'Cual es la mejor forma de viajar en tu ciudad?' },
+      { label: 'Problem', prompt: 'What travel problem is annoying?', es: 'Que problema de viaje es molesto?' },
+      { label: 'Plan', prompt: 'Plan one weekend trip in one sentence.', es: 'Planea un viaje de fin de semana en una oracion.' },
+      { label: 'Ask', prompt: 'Ask a question about a trip.', es: 'Haz una pregunta sobre un viaje.' }
+    ],
+    adults: [
+      { label: 'Trip', prompt: 'Describe a trip you would like to take.', es: 'Describe un viaje que te gustaria hacer.' },
+      { label: 'Booking', prompt: 'Ask about a hotel, flight, or reservation politely.', es: 'Pregunta por hotel, vuelo o reserva educadamente.' },
+      { label: 'Packing', prompt: 'What do you always pack first?', es: 'Que empacas siempre primero?' },
+      { label: 'Experience', prompt: 'What travel experience do you remember clearly?', es: 'Que experiencia de viaje recuerdas claramente?' },
+      { label: 'Advice', prompt: 'Give one travel tip for your city.', es: 'Da un consejo de viaje para tu ciudad.' },
+      { label: 'Question', prompt: 'Ask someone about their last or next trip.', es: 'Pregunta por el ultimo o proximo viaje de alguien.' }
+    ]
+  },
+  feelings: {
+    kids: [
+      { label: 'Today', prompt: 'How do you feel today?', es: 'Como te sientes hoy?' },
+      { label: 'Happy', prompt: 'What makes you happy?', es: 'Que te hace feliz?' },
+      { label: 'Tired', prompt: 'When do you feel tired?', es: 'Cuando te sientes cansado?' },
+      { label: 'Face', prompt: 'Show a feeling with your face and name it.', es: 'Muestra un sentimiento con tu cara y nombralo.' },
+      { label: 'Color', prompt: 'What color is happy for you?', es: 'Que color es feliz para ti?' },
+      { label: 'Ask', prompt: 'Ask your partner how they feel.', es: 'Pregunta como se siente tu companero.' }
+    ],
+    teens: [
+      { label: 'Today', prompt: 'How are you feeling today? Give a reason.', es: 'Como te sientes hoy? Da una razon.' },
+      { label: 'Stress', prompt: 'What makes students feel stressed?', es: 'Que hace que estudiantes se sientan estresados?' },
+      { label: 'Relax', prompt: 'What helps you relax after a long day?', es: 'Que te ayuda a relajarte despues de un dia largo?' },
+      { label: 'Excited', prompt: 'What are you excited about this week?', es: 'Que te emociona esta semana?' },
+      { label: 'Advice', prompt: 'What should a nervous friend do?', es: 'Que deberia hacer un amigo nervioso?' },
+      { label: 'Ask', prompt: 'Ask a careful question about feelings.', es: 'Haz una pregunta cuidadosa sobre sentimientos.' }
+    ],
+    adults: [
+      { label: 'Today', prompt: 'Describe your mood today and one reason.', es: 'Describe tu animo de hoy y una razon.' },
+      { label: 'Work', prompt: 'What situation makes you feel confident at work?', es: 'Que situacion te hace sentir seguro en el trabajo?' },
+      { label: 'Stress', prompt: 'How do you usually manage stress?', es: 'Como manejas normalmente el estres?' },
+      { label: 'Reaction', prompt: 'How do you react when plans change?', es: 'Como reaccionas cuando los planes cambian?' },
+      { label: 'Support', prompt: 'What helps you feel better on a difficult day?', es: 'Que te ayuda a sentirte mejor en un dia dificil?' },
+      { label: 'Question', prompt: 'Ask someone how they are doing politely.', es: 'Pregunta a alguien como esta educadamente.' }
+    ]
+  },
+  holidays: {
+    kids: [
+      { label: 'Birthday', prompt: 'Do you like birthday parties?', es: 'Te gustan las fiestas de cumpleanos?' },
+      { label: 'Gift', prompt: 'What gift do you like?', es: 'Que regalo te gusta?' },
+      { label: 'Family', prompt: 'Who is at a celebration?', es: 'Quien esta en una celebracion?' },
+      { label: 'Food', prompt: 'What party food do you like?', es: 'Que comida de fiesta te gusta?' },
+      { label: 'Song', prompt: 'What song do people sing on birthdays?', es: 'Que cancion cantan en cumpleanos?' },
+      { label: 'Ask', prompt: 'Ask your partner about a party.', es: 'Pregunta por una fiesta.' }
+    ],
+    teens: [
+      { label: 'Holiday', prompt: 'What holiday do you enjoy most?', es: 'Que festividad disfrutas mas?' },
+      { label: 'Tradition', prompt: 'What tradition do you have with family or friends?', es: 'Que tradicion tienes con familia o amigos?' },
+      { label: 'Food', prompt: 'What food is special in celebrations?', es: 'Que comida es especial en celebraciones?' },
+      { label: 'Memory', prompt: 'Describe a celebration you remember.', es: 'Describe una celebracion que recuerdes.' },
+      { label: 'Plan', prompt: 'What are you going to do for the next holiday?', es: 'Que vas a hacer para la proxima festividad?' },
+      { label: 'Ask', prompt: 'Ask one question about traditions.', es: 'Haz una pregunta sobre tradiciones.' }
+    ],
+    adults: [
+      { label: 'Tradition', prompt: 'Describe one holiday tradition from your family or country.', es: 'Describe una tradicion festiva de tu familia o pais.' },
+      { label: 'Meaning', prompt: 'Why is that celebration important?', es: 'Por que es importante esa celebracion?' },
+      { label: 'Memory', prompt: 'What celebration do you remember clearly?', es: 'Que celebracion recuerdas claramente?' },
+      { label: 'Plan', prompt: 'What are you planning for the next holiday?', es: 'Que planeas para la proxima festividad?' },
+      { label: 'Compare', prompt: 'How are celebrations different now from the past?', es: 'Como son diferentes las celebraciones ahora y antes?' },
+      { label: 'Question', prompt: 'Ask someone about a meaningful celebration.', es: 'Pregunta por una celebracion significativa.' }
+    ]
+  },
+  business: {
+    kids: [
+      { label: 'Help', prompt: 'Ask for help politely.', es: 'Pide ayuda educadamente.' },
+      { label: 'Team', prompt: 'What can a team do together?', es: 'Que puede hacer un equipo junto?' },
+      { label: 'Idea', prompt: 'Give one idea for a class project.', es: 'Da una idea para un proyecto de clase.' },
+      { label: 'Thank You', prompt: 'Say thank you after someone helps you.', es: 'Da las gracias despues de recibir ayuda.' },
+      { label: 'Problem', prompt: 'Say one small problem and ask for help.', es: 'Di un problema pequeno y pide ayuda.' },
+      { label: 'Ask', prompt: 'Ask your partner: Can you help me?', es: 'Pregunta: Can you help me?' }
+    ],
+    teens: [
+      { label: 'Email', prompt: 'How do you start a formal message?', es: 'Como empiezas un mensaje formal?' },
+      { label: 'Request', prompt: 'Make one polite request.', es: 'Haz una peticion educada.' },
+      { label: 'Teamwork', prompt: 'What makes teamwork successful?', es: 'Que hace exitoso el trabajo en equipo?' },
+      { label: 'Problem', prompt: 'Explain one school or project problem clearly.', es: 'Explica claramente un problema escolar o de proyecto.' },
+      { label: 'Follow-up', prompt: 'What do you say when you need an answer?', es: 'Que dices cuando necesitas una respuesta?' },
+      { label: 'Ask', prompt: 'Ask one professional or formal question.', es: 'Haz una pregunta profesional o formal.' }
+    ],
+    adults: [
+      { label: 'Email', prompt: 'Start a formal email in one sentence.', es: 'Empieza un correo formal en una oracion.' },
+      { label: 'Meeting', prompt: 'What phrase helps you speak in a meeting?', es: 'Que frase te ayuda a hablar en una reunion?' },
+      { label: 'Request', prompt: 'Make a polite request to a colleague or client.', es: 'Haz una peticion educada a un colega o cliente.' },
+      { label: 'Clarify', prompt: 'Ask for clarification professionally.', es: 'Pide aclaracion de forma profesional.' },
+      { label: 'Problem', prompt: 'Explain one work problem and a next step.', es: 'Explica un problema laboral y un siguiente paso.' },
+      { label: 'Close', prompt: 'Close a professional message politely.', es: 'Cierra un mensaje profesional educadamente.' }
+    ]
+  },
+  generic: {
+    kids: [
+      { label: 'Words', prompt: 'Say three words from today\'s class.', es: 'Di tres palabras de la clase de hoy.' },
+      { label: 'Like', prompt: 'What do you like about today\'s topic?', es: 'Que te gusta del tema de hoy?' },
+      { label: 'Easy', prompt: 'What is easy today?', es: 'Que es facil hoy?' },
+      { label: 'Sentence', prompt: 'Make one easy sentence about today\'s topic.', es: 'Haz una oracion facil sobre el tema de hoy.' },
+      { label: 'Question', prompt: 'Ask one simple question about today\'s topic.', es: 'Haz una pregunta simple sobre el tema de hoy.' },
+      { label: 'Partner', prompt: 'Ask your partner: What about you?', es: 'Pregunta: What about you?' }
+    ],
+    teens: [
+      { label: 'Idea', prompt: 'What do you already know about today\'s topic?', es: 'Que ya sabes del tema de hoy?' },
+      { label: 'Example', prompt: 'Give one real example connected to today\'s topic.', es: 'Da un ejemplo real conectado al tema de hoy.' },
+      { label: 'Opinion', prompt: 'What is your opinion about today\'s topic?', es: 'Cual es tu opinion sobre el tema de hoy?' },
+      { label: 'Question', prompt: 'Ask one clear question to start a conversation.', es: 'Haz una pregunta clara para empezar conversacion.' },
+      { label: 'Useful', prompt: 'How could this topic be useful outside class?', es: 'Como podria ser util este tema fuera de clase?' },
+      { label: 'Challenge', prompt: 'What part of this topic looks challenging?', es: 'Que parte de este tema parece desafiante?' }
+    ],
+    adults: [
+      { label: 'Context', prompt: 'Where could you use today\'s English in real life?', es: 'Donde podrias usar el ingles de hoy en la vida real?' },
+      { label: 'Experience', prompt: 'Share one experience connected to today\'s topic.', es: 'Comparte una experiencia conectada al tema de hoy.' },
+      { label: 'Need', prompt: 'What phrase from this topic would be useful for you?', es: 'Que frase de este tema seria util para ti?' },
+      { label: 'Question', prompt: 'Ask one practical question about today\'s topic.', es: 'Haz una pregunta practica sobre el tema de hoy.' },
+      { label: 'Example', prompt: 'Give one realistic example using today\'s topic.', es: 'Da un ejemplo realista usando el tema de hoy.' },
+      { label: 'Goal', prompt: 'What do you want to say better by the end of class?', es: 'Que quieres decir mejor al final de la clase?' }
+    ]
+  }
 };
 
 function normalizeText(value: string) {
@@ -1289,21 +1854,42 @@ function enhanceRoleplaySlide(slide: ClassSlide, cls: CurriculumClass) {
 
 function buildWarmupWheel(slide: ClassSlide, cls: CurriculumClass) {
   if (slide.type !== 'spinning-wheel') return slide;
-  if (!/warm-up wheel|warm up wheel|calentamiento ruleta|ruleta magica/.test(normalizeText(slide.title))) return slide;
 
-  const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''}`);
-  const seed = hashString(`${cls.id}-${slide.id}-${topic}`);
-  const prompts = rotate(TOPIC_PROMPTS[topic], seed, 6);
+  const searchText = `${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')} ${(slide.wheelItems || []).map(item => `${item.label} ${item.prompt || ''} ${item.es || ''}`).join(' ')}`;
+  const topic = inferTopicKey(searchText);
+  const audience = inferAudienceKey(cls);
+  const focus = inferStructureFocus(searchText);
+  const topicLabel = topicNounForBoss(topic, cls);
+  const seed = hashString(`${cls.id}-${slide.id}-${topic}-${audience}`);
+  const baseItems = rotate(WARMUP_WHEEL_BANK[topic]?.[audience] || WARMUP_WHEEL_BANK.generic[audience], seed, 5);
+  const focusItem: WarmupWheelItem = audience === 'kids'
+    ? {
+        label: 'Class Words',
+        prompt: `Make one short sentence about ${topicLabel}. Example: ${focus.example}`,
+        es: `Haz una oracion corta sobre ${topicLabel}.`
+      }
+    : {
+        label: 'Target Form',
+        prompt: `Ask one clear speaking question about ${topicLabel} using ${focus.label}. Example: ${focus.example}`,
+        es: `Haz una pregunta clara sobre ${topicLabel} usando ${focus.label}.`
+      };
+  const items = uniqueWarmupItems([...baseItems, focusItem]);
 
   return {
     ...slide,
-    wheelItems: prompts.map((prompt, index) => ({
-      label: prompt.split(/[?!.]/)[0].slice(0, 14) || `Prompt ${index + 1}`,
+    title: 'Warm-up Speaking Wheel / Ruleta de speaking',
+    description: audience === 'kids'
+      ? 'Spin, answer with a short sentence, and ask a partner.'
+      : 'Spin, answer clearly, and ask one follow-up question.',
+    wheelItems: items.map((item, index) => ({
+      label: item.label.slice(0, 14) || `Prompt ${index + 1}`,
       color: WHEEL_COLORS[index % WHEEL_COLORS.length],
-      prompt,
-      es: prompt
+      prompt: item.prompt,
+      es: item.es
     })),
-    content: ['Spin the wheel.', 'Answer with one complete idea.', 'Then ask one follow-up question.']
+    content: audience === 'kids'
+      ? ['Spin the wheel.', 'Answer with one short complete sentence.', 'Ask your partner one easy question.']
+      : ['Spin the wheel.', 'Answer with one complete idea connected to today\'s class.', 'Ask one natural follow-up question.']
   };
 }
 
