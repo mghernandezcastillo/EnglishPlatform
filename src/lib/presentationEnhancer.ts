@@ -481,15 +481,17 @@ function rotate<T>(items: T[], seed: number, count = items.length) {
 
 function inferTopicKey(text: string): TopicKey {
   const normalized = normalizeText(text);
-  if (/hello|greeting|introduc/.test(normalized)) return 'greetings';
-  if (/number|birthday|month|date|age/.test(normalized)) return 'numbers';
+  if (/email|formal|report|meeting|business|proposal|office|trabajo|work|client|customer|negotiation|leadership|teamwork|interview|entrevista/.test(normalized)) return 'business';
+  if (/debate|opinion|agree|disagree|acuerdo|desacuerdo|critical thinking|pensamiento critico|argument/.test(normalized)) return 'business';
+  if (/hello|greeting|introduc|saludos|despedidas/.test(normalized)) return 'greetings';
+  if (/number|birthday|month|date|age|time|hora/.test(normalized)) return 'numbers';
   if (/family|mother|father|sister|brother/.test(normalized)) return 'family';
   if (/routine|wake up|daily|morning|night/.test(normalized)) return 'routine';
   if (/food|drink|restaurant|menu|bill|meal|breakfast|lunch|dinner/.test(normalized)) return 'food';
-  if (/clothes|shirt|jacket|pants|wear|fashion/.test(normalized)) return 'clothes';
+  if (/clothes|shirt|jacket|pants|wear|fashion|ropa|apariencia|style|estilo/.test(normalized)) return 'clothes';
   if (/gadget|tech|device|app|phone|laptop|console/.test(normalized)) return 'gadgets';
   if (/school|classroom|subject|backpack|teacher|exam/.test(normalized)) return 'school';
-  if (/pet|animal|wild/.test(normalized)) return 'animals';
+  if (/\bpet\b|\bpets\b|\banimal\b|\banimals\b|wild/.test(normalized)) return 'animals';
   if (/body|face|hand|leg|eye|ear|nose/.test(normalized)) return 'body';
   if (/direction|city|place|turn left|go straight|museum|station/.test(normalized)) return 'directions';
   if (/hobby|sport|game|music|free time/.test(normalized)) return 'hobbies';
@@ -500,7 +502,6 @@ function inferTopicKey(text: string): TopicKey {
   if (/travel|trip|airport|hotel|vacation/.test(normalized)) return 'travel';
   if (/feeling|happy|sad|tired|angry|nervous/.test(normalized)) return 'feelings';
   if (/holiday|christmas|birthday party|celebration/.test(normalized)) return 'holidays';
-  if (/email|formal|report|meeting|business|proposal/.test(normalized)) return 'business';
   return 'generic';
 }
 
@@ -1414,15 +1415,167 @@ function enhanceEmojiSlide(slide: ClassSlide, cls: CurriculumClass) {
   };
 }
 
-function enhanceBossBattle(slide: ClassSlide) {
+type BossBattlePlan = NonNullable<ClassSlide['speakingBossBattle']>;
+
+function inferStructureFocus(text: string) {
+  const normalized = normalizeText(text);
+  const rules: Array<{ label: string; pattern: RegExp; example: string }> = [
+    { label: 'present perfect continuous', pattern: /present perfect continuous|have been|has been/, example: 'I have been practicing for two weeks.' },
+    { label: 'present perfect', pattern: /present perfect|life experiences|experiencias de vida|ever|never|already|yet/, example: 'I have tried something new.' },
+    { label: 'past continuous', pattern: /past continuous|pasado continuo|was .*ing|were .*ing/, example: 'I was studying when it happened.' },
+    { label: 'present continuous', pattern: /present continuous|present progressive|presente continuo|right now|clothes|ropa|weather|clima/, example: 'She is wearing a jacket today.' },
+    { label: 'past simple', pattern: /past simple|pasado simple|regular verbs|irregular verbs|biograf|anecdotas|recuerdos|past decisions?/, example: 'I visited a new place last year.' },
+    { label: 'past to be', pattern: /past.*to be|was\/were|was were|was and were/, example: 'I was at home yesterday.' },
+    { label: 'future with going to', pattern: /going to|planes|plans?|future goals?/, example: 'I am going to start a new goal.' },
+    { label: 'future with will', pattern: /will|future|predictions?|predicciones|promises?/, example: 'I will explain my idea clearly.' },
+    { label: 'modals of obligation', pattern: /must|have to|obligation|obligacion|rules|reglas/, example: 'We have to follow the rule.' },
+    { label: 'modals for advice', pattern: /should|ought to|advice|consejo/, example: 'You should explain the problem calmly.' },
+    { label: 'modals of possibility', pattern: /may|might|could|possibility|deduction|posibilidad|deduccion/, example: 'It might be a good option.' },
+    { label: 'can for ability or requests', pattern: /\bcan\b|can't|cannot|could|ability|abilities|habilidades?|permisos?|peticiones?/, example: 'I can ask a clear question.' },
+    { label: 'comparatives and superlatives', pattern: /comparative|superlative|comparativos?|superlativos?|better|best|more .* than|the most/, example: 'This option is better than the first one.' },
+    { label: 'conditionals', pattern: /conditional|condicional|if /, example: 'If I had more time, I would practice more.' },
+    { label: 'passive voice', pattern: /passive|voz pasiva|was built|is made|are produced/, example: 'The message was sent yesterday.' },
+    { label: 'reported speech', pattern: /reported speech|estilo indirecto|said that|told me/, example: 'She said that she was ready.' },
+    { label: 'phrasal verbs', pattern: /phrasal verbs?|look up|turn on|give up|get along/, example: 'I look up new words online.' },
+    { label: 'presentation openers', pattern: /presentation|presentacion|introductions? academicas?|alto impacto|pitch|ted/, example: 'Today, I am going to present my main idea.' },
+    { label: 'present simple', pattern: /present simple|rutina|routine|habits?|habitos?|usually|every day|holidays?|traditions?|seasons?/, example: 'I usually practice after class.' },
+    { label: 'verb to be', pattern: /verb to be|to be|introductions?|presentarse|how old|name|edad|numbers?|time|hora/, example: 'I am ready for the challenge.' }
+  ];
+
+  return rules.find((rule) => rule.pattern.test(normalized)) || {
+    label: 'topic-specific speaking phrases',
+    example: 'One important point is easy to explain.'
+  };
+}
+
+function topicNounForBoss(topic: TopicKey, cls: CurriculumClass) {
+  const titleTopic = getSpanishClassTopic(cls) || cleanClassSide(splitLocalizedTitle(cls.title || '')[0] || cls.title || 'today\'s topic');
+  const labels: Record<TopicKey, string> = {
+    greetings: 'greetings and introductions',
+    numbers: 'numbers, dates, and time',
+    family: 'family and relationships',
+    routine: 'daily routines and habits',
+    food: 'food, drinks, and ordering',
+    clothes: 'clothes, appearance, and style',
+    gadgets: 'technology and gadgets',
+    school: 'school and classroom life',
+    animals: 'animals and nature',
+    body: 'body parts and movement',
+    directions: 'places, transport, and directions',
+    hobbies: 'hobbies, sports, and free time',
+    house: 'rooms and things at home',
+    weather: 'weather and seasons',
+    jobs: 'jobs and responsibilities',
+    future: 'future plans and predictions',
+    travel: 'travel and trips',
+    feelings: 'feelings and reactions',
+    holidays: 'holidays and traditions',
+    business: 'work, business, and formal communication',
+    generic: titleTopic
+  };
+
+  return labels[topic] || titleTopic;
+}
+
+function bossAvatarForTopic(topic: TopicKey) {
+  const avatars: Record<TopicKey, string> = {
+    greetings: '👋',
+    numbers: '⏰',
+    family: '🏠',
+    routine: '📅',
+    food: '🍽️',
+    clothes: '👕',
+    gadgets: '💻',
+    school: '🎒',
+    animals: '🦁',
+    body: '💪',
+    directions: '🧭',
+    hobbies: '⚽',
+    house: '🏡',
+    weather: '🌦️',
+    jobs: '💼',
+    future: '🚀',
+    travel: '✈️',
+    feelings: '🙂',
+    holidays: '🎉',
+    business: '📊',
+    generic: '⚔️'
+  };
+  return avatars[topic] || avatars.generic;
+}
+
+function bossNameForTopic(topic: TopicKey, audience: AudienceKey) {
+  const prefix = audience === 'kids' ? 'The Mini' : audience === 'teens' ? 'The Challenge' : 'The Speaking';
+  const labels: Record<TopicKey, string> = {
+    greetings: 'Greeting Boss',
+    numbers: 'Time Boss',
+    family: 'Family Boss',
+    routine: 'Routine Boss',
+    food: 'Ordering Boss',
+    clothes: 'Style Boss',
+    gadgets: 'Tech Boss',
+    school: 'School Boss',
+    animals: 'Animal Boss',
+    body: 'Action Boss',
+    directions: 'Direction Boss',
+    hobbies: 'Hobby Boss',
+    house: 'Home Boss',
+    weather: 'Weather Boss',
+    jobs: 'Job Boss',
+    future: 'Future Boss',
+    travel: 'Travel Boss',
+    feelings: 'Feelings Boss',
+    holidays: 'Holiday Boss',
+    business: 'Business Boss',
+    generic: 'Boss'
+  };
+  return `${prefix} ${labels[topic] || labels.generic}`;
+}
+
+function buildBossBattlePlan(slide: ClassSlide, cls: CurriculumClass): BossBattlePlan {
+  const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''}`);
+  const audience = inferAudienceKey(cls);
+  const topicLabel = topicNounForBoss(topic, cls);
+  const focus = inferStructureFocus(`${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')}`);
+  const classTopic = cleanClassSide(splitLocalizedTitle(cls.title || '')[0] || cls.title || topicLabel);
+
+  const rememberPrompt =
+    audience === 'kids'
+      ? `Say 3 words about ${topicLabel} and one easy sentence.`
+      : `Say three key words and one useful phrase about ${topicLabel}.`;
+
+  const usePrompt =
+    audience === 'kids'
+      ? `You have 60 seconds: make two short sentences about ${topicLabel}. Example: ${focus.example}`
+      : `You have 60 seconds: make one affirmative sentence, one negative sentence, and one question using ${focus.label} in the context of ${topicLabel}. Example: ${focus.example}`;
+
+  const speakPrompt =
+    audience === 'kids'
+      ? `Speak for 30 seconds about ${topicLabel}. Use simple words and one complete sentence.`
+      : `Speak for 30 seconds about ${topicLabel}. Use ${focus.label} naturally at least once.`;
+
+  return {
+    ...(slide.speakingBossBattle || {}),
+    bossName: bossNameForTopic(topic, audience),
+    bossTitle: classTopic || topicLabel,
+    bossAvatar: bossAvatarForTopic(topic),
+    timerSeconds: 30,
+    prepareSeconds: 180,
+    rounds: {
+      remember: [rememberPrompt],
+      use: [usePrompt],
+      speak: [speakPrompt]
+    }
+  };
+}
+
+function enhanceBossBattle(slide: ClassSlide, cls: CurriculumClass) {
   if (slide.type !== 'speaking-boss-battle' || !slide.speakingBossBattle) return slide;
   return {
     ...slide,
-    speakingBossBattle: {
-      ...slide.speakingBossBattle,
-      timerSeconds: 30,
-      prepareSeconds: 180
-    }
+    description: 'Defeat the boss with today\'s English.',
+    content: [`Defeat the boss using ${topicNounForBoss(inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''}`), cls)}.`],
+    speakingBossBattle: buildBossBattlePlan(slide, cls)
   };
 }
 
@@ -1460,8 +1613,17 @@ function cleanClassSide(value: string) {
   );
 }
 
+function splitLocalizedTitle(value: string) {
+  const match = value.match(/\s+\/\s+(?=Clase|Nivel|Level)/i);
+  if (!match || match.index === undefined) return [value];
+  return [
+    value.slice(0, match.index),
+    value.slice(match.index + match[0].length)
+  ];
+}
+
 function getSpanishClassTopic(cls: CurriculumClass) {
-  const titleParts = (cls.title || '').split('/');
+  const titleParts = splitLocalizedTitle(cls.title || '');
   const spanishCandidate = titleParts[1]?.trim() || titleParts[0]?.trim() || '';
   return cleanClassSide(spanishCandidate);
 }
@@ -1648,7 +1810,8 @@ export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass 
               enhanceQuizTitle(
                 enhanceRoleplaySlide(
                   enhanceBossBattle(
-                    enhanceEmojiSlide(buildWarmupWheel(slide, baseClass), baseClass)
+                    enhanceEmojiSlide(buildWarmupWheel(slide, baseClass), baseClass),
+                    baseClass
                   ),
                   baseClass
                 )

@@ -101,6 +101,18 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
             <Sparkles className="h-4 w-4" />
             {config.patternName}
           </div>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {config.learningOpportunity && (
+              <span className="rounded-full bg-emerald-300/20 px-3 py-1 text-xs font-black uppercase tracking-widest text-emerald-100">
+                Oportunidad: {config.learningOpportunity}
+              </span>
+            )}
+            {config.difficulty && (
+              <span className="rounded-full bg-amber-300/20 px-3 py-1 text-xs font-black uppercase tracking-widest text-amber-100">
+                Dificultad: {config.difficulty}
+              </span>
+            )}
+          </div>
           <p className="mt-3 text-base font-bold text-white/80 sm:text-lg">{config.instructions}</p>
           <p className="mt-2 text-lg font-black text-white sm:text-2xl">{config.prompt}</p>
         </div>

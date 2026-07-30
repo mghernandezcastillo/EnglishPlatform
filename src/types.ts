@@ -62,6 +62,8 @@ export interface ClassSlide {
     instructions: string;
     prompt: string;
     accentColor?: string;
+    learningOpportunity?: string;
+    difficulty?: 'easy' | 'medium' | 'hard' | 'challenge';
     slots: {
       id: string;
       label: string;
