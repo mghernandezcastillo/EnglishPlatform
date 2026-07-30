@@ -72,8 +72,8 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
 
       <div className="flex min-h-0 flex-1 flex-col rounded-2xl border border-white/15 bg-white/95 p-5 text-slate-950 shadow-2xl sm:p-8 lg:p-10">
         {view.kind === 'players' && (
-          <div className="flex h-full flex-col justify-between gap-6">
-            <div>
+          <div className="flex h-full flex-col justify-center gap-8 sm:gap-10">
+            <div className="text-center">
               <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-violet-100 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-violet-700 sm:text-lg">
                 <UserRound className="h-5 w-5 sm:h-6 sm:w-6" />
                 Choose roles
@@ -82,26 +82,26 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
               <p className="mt-4 text-2xl font-black leading-tight text-slate-600 sm:text-4xl">Add names, then start the conversation game.</p>
             </div>
 
-            <div className="grid gap-5 lg:grid-cols-2">
-              <label className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-                <span className="mb-3 block text-xl font-black uppercase tracking-[0.12em] text-sky-700 sm:text-2xl">{roleplay.roles.a.label}</span>
+            <div className="mx-auto grid w-full max-w-6xl gap-4 lg:grid-cols-2">
+              <label className="rounded-3xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
+                <span className="mb-2 block text-xl font-black uppercase tracking-[0.12em] text-sky-700 sm:text-2xl">{roleplay.roles.a.label}</span>
                 <input
                   value={nameA}
                   onChange={(event) => setNameA(event.target.value)}
                   placeholder={roleplay.players?.aNamePlaceholder || 'Player A'}
-                  className="h-20 w-full rounded-2xl border border-slate-200 bg-white px-5 text-4xl font-black text-slate-950 outline-none placeholder:text-slate-400"
+                  className="h-16 w-full rounded-2xl border border-slate-200 bg-white px-5 text-3xl font-black text-slate-950 outline-none placeholder:text-slate-400 sm:h-20 sm:text-4xl"
                 />
-                <p className="mt-4 text-xl font-black leading-tight text-slate-600 sm:text-2xl">{roleplay.roles.a.goal}</p>
+                <p className="mt-3 text-xl font-black leading-tight text-slate-600 sm:text-2xl">{roleplay.roles.a.goal}</p>
               </label>
-              <label className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-                <span className="mb-3 block text-xl font-black uppercase tracking-[0.12em] text-fuchsia-700 sm:text-2xl">{roleplay.roles.b.label}</span>
+              <label className="rounded-3xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
+                <span className="mb-2 block text-xl font-black uppercase tracking-[0.12em] text-fuchsia-700 sm:text-2xl">{roleplay.roles.b.label}</span>
                 <input
                   value={nameB}
                   onChange={(event) => setNameB(event.target.value)}
                   placeholder={roleplay.players?.bNamePlaceholder || 'Player B'}
-                  className="h-20 w-full rounded-2xl border border-slate-200 bg-white px-5 text-4xl font-black text-slate-950 outline-none placeholder:text-slate-400"
+                  className="h-16 w-full rounded-2xl border border-slate-200 bg-white px-5 text-3xl font-black text-slate-950 outline-none placeholder:text-slate-400 sm:h-20 sm:text-4xl"
                 />
-                <p className="mt-4 text-xl font-black leading-tight text-slate-600 sm:text-2xl">{roleplay.roles.b.goal}</p>
+                <p className="mt-3 text-xl font-black leading-tight text-slate-600 sm:text-2xl">{roleplay.roles.b.goal}</p>
               </label>
             </div>
           </div>
