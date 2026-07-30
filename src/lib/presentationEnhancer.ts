@@ -1219,6 +1219,65 @@ function buildGuidedRoleplaySteps(plan: RoleplayPlan, topic: TopicKey, audience:
   const phrases = uniqueItems([...plan.usefulPhrases, ...ROLEPLAY_SUPPORT_PHRASES[audience]]);
   const aRole = plan.roles.a.label;
   const bRole = plan.roles.b.label;
+
+  if (topic === 'food') {
+    const waiterStart = audience === 'kids'
+      ? ['Hello! What do you want?', 'Do you want a snack?', 'Anything to drink?']
+      : ['Good evening. Are you ready to order?', 'Would you like to start with drinks?', 'I can help with the menu.'];
+    const customerOrder = audience === 'kids'
+      ? ['Can I have ...?', 'I want ...', 'Thank you!']
+      : ['I’d like ...', 'Could I have ...?', 'What do you recommend?'];
+    const waiterSupport = audience === 'kids'
+      ? ['Here you are.', 'Good choice!', 'Anything else?']
+      : ['I recommend ...', 'Of course.', 'Would you like anything else?'];
+    const politeClose = audience === 'kids'
+      ? ['The bill, please.', 'Here you are.', 'Thank you!']
+      : ['Could we have the bill, please?', 'Here you are.', 'Thank you for coming.'];
+
+    return [
+      {
+        id: 'step-1',
+        speaker: 'a',
+        title: `${aRole}: welcome`,
+        instruction: audience === 'kids'
+          ? `${aRole} says hello and asks what the customer wants.`
+          : `${aRole} welcomes the customer and asks if they are ready to order.`,
+        phrases: waiterStart,
+        vocabulary: words.slice(0, 5)
+      },
+      {
+        id: 'step-2',
+        speaker: 'b',
+        title: `${bRole}: order`,
+        instruction: audience === 'kids'
+          ? `${bRole} orders one food and one drink politely.`
+          : `${bRole} orders food, orders a drink, and asks one menu question.`,
+        phrases: customerOrder,
+        vocabulary: rotate(words, 1, 5)
+      },
+      {
+        id: 'step-3',
+        speaker: 'a',
+        title: `${aRole}: recommend`,
+        instruction: audience === 'kids'
+          ? `${aRole} gives the food and asks one more question.`
+          : `${aRole} answers the menu question, recommends one item, and confirms the order.`,
+        phrases: waiterSupport,
+        vocabulary: rotate(words, 2, 5)
+      },
+      {
+        id: 'step-4',
+        speaker: 'both',
+        title: 'Finish politely',
+        instruction: audience === 'kids'
+          ? 'The customer asks for the bill, and both players say thank you.'
+          : 'The customer asks for the bill, and the waiter closes the service politely.',
+        phrases: politeClose,
+        vocabulary: rotate(words, 3, 5)
+      }
+    ];
+  }
+
   const firstPhrase = phrases.slice(0, 3);
   const secondPhrase = rotate(phrases, 2, 3);
   const thirdPhrase = rotate(phrases, 4, 3);
