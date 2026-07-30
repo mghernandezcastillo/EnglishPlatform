@@ -129,6 +129,17 @@ export function SpeakingBossBattleGame({
     customSpeakSeconds;
   const prompt = roundKey ? mergedRounds[roundKey][0] || '' : '';
   const simplePrompt = roundKey ? simplifyPrompt(prompt, roundKey, activeSeconds) : null;
+  const displayPrompt = simplePrompt && roundKey === 'speak'
+    ? {
+        ...simplePrompt,
+        main: timerMode === 'prepare'
+          ? `Prepare for ${formatDurationText(customPrepareSeconds)}`
+          : `Speak for ${formatDurationText(customSpeakSeconds)}`,
+        support: timerMode === 'prepare'
+          ? 'Plan your answer first. Then switch to Speak.'
+          : 'Use a clear voice and keep going.'
+      }
+    : simplePrompt;
   const completedCount = hits.filter(Boolean).length;
   const bossHealth = Math.max(0, Math.round(100 - completedCount * (100 / roundMeta.length)));
 
@@ -243,19 +254,19 @@ export function SpeakingBossBattleGame({
           </div>
         )}
 
-        {currentRound && simplePrompt && (
+        {currentRound && displayPrompt && (
           <div className="flex h-full flex-col justify-center gap-6 sm:gap-8">
             <div>
               <div className={`mb-4 inline-flex items-center gap-3 rounded-full bg-gradient-to-r ${currentRound.color} px-5 py-2.5 text-base font-black uppercase tracking-[0.14em] text-white sm:text-xl`}>
                 <Icon className="h-6 w-6" />
                 {currentRound.title} Round
               </div>
-              <h2 className="text-5xl font-black leading-none sm:text-7xl lg:text-8xl">{simplePrompt.main}</h2>
+              <h2 className="text-5xl font-black leading-none sm:text-7xl lg:text-8xl">{displayPrompt.main}</h2>
               <div className="mt-6 rounded-3xl bg-slate-100 p-6 sm:p-8">
                 <p className="text-base font-black uppercase tracking-[0.14em] text-slate-500 sm:text-xl">Topic</p>
-                <p className="mt-2 text-4xl font-black leading-tight text-slate-800 sm:text-6xl lg:text-7xl">{simplePrompt.topic}</p>
+                <p className="mt-2 text-4xl font-black leading-tight text-slate-800 sm:text-6xl lg:text-7xl">{displayPrompt.topic}</p>
               </div>
-              <p className="mt-5 text-3xl font-bold leading-snug text-slate-600 sm:text-4xl">{simplePrompt.support}</p>
+              <p className="mt-5 text-3xl font-bold leading-snug text-slate-600 sm:text-4xl">{displayPrompt.support}</p>
             </div>
 
             {roundKey !== 'remember' && (
