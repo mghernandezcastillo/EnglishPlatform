@@ -206,13 +206,50 @@ const PATTERNS: StructurePattern[] = [
     accentColor: 'from-indigo-400 to-fuchsia-600',
     buildSlide: (variant, audience, text) => {
       const title = titleByVariant(variant, audience, 'Build with To Be / Arma con To Be');
-      const prompt = variant === 'question'
+      const isPersonalIntroContext = /presentarse|edad|curso|ciudad|gustos|redes sociales|social media|profile|bio/.test(text);
+      const prompt = isPersonalIntroContext
+        ? variant === 'question'
+          ? 'How old are you, and what grade are you in?'
+          : variant === 'negative'
+            ? 'My username is not my full name.'
+            : 'My name is Sam, I am 14 years old, and I am in 9th grade.'
+        : variant === 'question'
         ? promptFor(text, ['How old are you?', 'What is your name?', 'Are you ready?'])
         : variant === 'negative'
           ? promptFor(text, ['He is not at home today.', 'They are not in class.'])
           : promptFor(text, ['I am a student.', 'She is happy today.']);
       const parts =
-        variant === 'question'
+        isPersonalIntroContext
+          ? variant === 'question'
+            ? [
+                { label: 'Question word', text: 'How old', color: COLORS.question },
+                { label: 'To be', text: 'are', color: COLORS.auxiliary },
+                { label: 'Subject', text: 'you', color: COLORS.subject },
+                { label: 'Connector', text: 'and', color: COLORS.connector },
+                { label: 'Question phrase', text: 'what grade', color: COLORS.question },
+                { label: 'To be', text: 'are', color: COLORS.auxiliary },
+                { label: 'Subject', text: 'you', color: COLORS.subject },
+                { label: 'Complement', text: 'in', color: COLORS.complement }
+              ]
+            : variant === 'negative'
+              ? [
+                  { label: 'Subject', text: 'My username', color: COLORS.subject },
+                  { label: 'Negative to be', text: 'is not', color: COLORS.negative },
+                  { label: 'Complement', text: 'my full name', color: COLORS.complement }
+                ]
+              : [
+                  { label: 'Subject', text: 'My name', color: COLORS.subject },
+                  { label: 'To be', text: 'is', color: COLORS.auxiliary },
+                  { label: 'Name', text: 'Sam', color: COLORS.complement },
+                  { label: 'Subject', text: 'I', color: COLORS.subject },
+                  { label: 'To be', text: 'am', color: COLORS.auxiliary },
+                  { label: 'Age', text: '14 years old', color: COLORS.time },
+                  { label: 'Connector', text: 'and', color: COLORS.connector },
+                  { label: 'Subject', text: 'I', color: COLORS.subject },
+                  { label: 'To be', text: 'am', color: COLORS.auxiliary },
+                  { label: 'Grade', text: 'in 9th grade', color: COLORS.complement }
+                ]
+          : variant === 'question'
           ? [
               { label: 'Question word', text: 'How old', color: COLORS.question },
               { label: 'To be', text: 'are', color: COLORS.auxiliary },
@@ -234,7 +271,13 @@ const PATTERNS: StructurePattern[] = [
         title,
         description: 'Verb to be',
         content: [],
-        structureDrag: buildStructureDrag('Verb To Be', instructionByVariant(variant, audience, 'Focus on subject, to be, and complement.'), prompt, 'from-indigo-400 to-fuchsia-600', parts)
+        structureDrag: buildStructureDrag(
+          'Verb To Be',
+          instructionByVariant(variant, audience, isPersonalIntroContext ? 'Build a complete teen profile sentence with name, age, and school grade.' : 'Focus on subject, to be, and complement.'),
+          prompt,
+          'from-indigo-400 to-fuchsia-600',
+          parts
+        )
       };
     }
   },

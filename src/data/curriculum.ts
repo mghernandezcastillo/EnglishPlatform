@@ -398,7 +398,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "555-0123"
                 ],
                 "bgColor": "bg-gradient-to-br from-cyan-500 to-blue-600",
-                "imageUrl": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-2-phone-number.png"
               },
                 {
                     "id": "Icebreaker Wheel",
@@ -427,7 +427,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "14: Fourteen, 15: Fifteen",
                   "16-19: Six...teen, Seven...teen"
                 ],
-                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600"
+                "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
+                "imageUrl": "/images/adults-c1-2-numbers-11-20.png"
               },
               {
                 "id": "Diapositiva 3",
@@ -439,7 +440,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "100: One hundred"
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
-                "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-2-numbers-20-100.png"
               },
               {
                 "id": "Diapositiva 4",
@@ -451,7 +452,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "It's a quarter to six (5:45)"
                 ],
                 "bgColor": "bg-gradient-to-br from-teal-500 to-emerald-600",
-                "imageUrl": "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-2-telling-time.png"
               },
               {
                 "id": "Diapositiva 5",
@@ -465,7 +466,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Play (Jugar)"
                 ],
                 "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
-                "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-2-routine-verbs.png"
               }
             ],
             "action": "Explicar y modelar la pronunciación de los números y los tiempos."
@@ -486,17 +487,19 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "I drink coffee and I work at eight o'clock (8:00).",
                   "I go to sleep at a quarter to eleven (10:45)."
                 ],
-                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600"
+                "bgColor": "bg-gradient-to-br from-blue-400 to-cyan-600",
+                "imageUrl": "/images/adults-c1-2-reading-mark.png"
               },
               {
                 "id": "Diapositiva-Emoji-2",
-                "title": "Emoji Mission / Misión Emoji",
-                "description": "Numbers, dates and time: decode the emoji story",
+                "title": "Visual Clue Challenge / Desafío Visual",
+                "description": "Numbers and time: decode the visual clue",
                 "type": "emoji-game",
                 "content": ["🎂 + 📅 + 🕒"],
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
-                "options": ["I like blue shoes.", "My birthday is at three.", "The dog is sleeping."],
-                "correctOptionIndex": 1
+                "imageUrl": "/images/adults-c1-2-visual-clue.png",
+                "options": ["My birthday is at three.", "I like blue shoes.", "The dog is sleeping."],
+                "correctOptionIndex": 0
               },
               {
                 "id": "Diapositiva 7",
@@ -511,7 +514,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Half past three"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-2-time-315.png"
               },
               {
                 "id": "Diapositiva 8",
@@ -526,7 +530,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Forty-five"
                 ],
                 "correctOptionIndex": 2,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-2-number-45.png"
               },
               {
                 "id": "Diapositiva 9",
@@ -541,7 +546,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "play"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500"
+                "bgColor": "bg-gradient-to-br from-orange-400 to-red-500",
+                "imageUrl": "/images/adults-c1-2-coffee-700.png"
               },
               {
                 "id": "Diapositiva 10",
@@ -552,7 +558,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "2. I am fourty years old.",
                   "3. I wake up in 7 o'clock."
                 ],
-                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500"
+                "bgColor": "bg-gradient-to-br from-red-400 to-pink-500",
+                "imageUrl": "/images/adults-c1-2-find-mistake.png"
               }
             ],
             "action": "Guiar en la lectura, corregir pronunciación y avanzar en ejercicios."
@@ -572,7 +579,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Teacher: I eat lunch at 1:30 pm. And you?"
                 ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
-                "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-2-daily-routine-speaking.png"
               },
               {
                 "id": "Diapositiva 12",
@@ -587,7 +594,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Quarter past nine"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-2-time-0930.png"
               },
               {
                 "id": "Diapositiva 13",
@@ -602,7 +610,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "A thousand"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-2-number-100.png"
               },
               {
                 "id": "Diapositiva 14",
@@ -617,7 +626,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "cook"
                 ],
                 "correctOptionIndex": 1,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-2-sleep-1100.png"
               },
               {
                 "id": "Diapositiva 15",
@@ -632,7 +642,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Eighteen"
                 ],
                 "correctOptionIndex": 0,
-                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
+                "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600",
+                "imageUrl": "/images/adults-c1-2-number-88.png"
               },
                 {
                                   id: "slide-boss-battle",
@@ -679,7 +690,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "You can now tell the time like a pro!"
                 ],
                 "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
-                "imageUrl": "https://images.unsplash.com/photo-1525362081669-2b476bb628c3?auto=format&fit=crop&q=80&w=800"
+                "imageUrl": "/images/adults-c1-2-wrapup.png"
               },
               {
                 "id": "Diapositiva 17",
@@ -689,7 +700,8 @@ export const curriculumLevels: CurriculumLevel[] = [
                   "Write what time you do 5 activities in your day.",
                   "Example: I go to sleep at 10:30 pm."
                 ],
-                "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900"
+                "bgColor": "bg-gradient-to-br from-slate-700 to-slate-900",
+                "imageUrl": "/images/adults-c1-2-homework-routine.png"
               },
               {
                 "id": "Diapositiva-Video-Homework-2",

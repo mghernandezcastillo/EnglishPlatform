@@ -451,7 +451,7 @@ const TOPIC_PROMPTS: Record<TopicKey, string[]> = {
     'What is new in this class?',
     'What do you already know about this topic?',
     'What example can you give?',
-    'What question do you want to ask first?',
+    'What sentence can you make with today\'s topic?',
     'What part looks interesting to you?'
   ]
 };
