@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, Check, CheckCircle2, Flag, Play, RotateCcw, Sparkles, UserRound, Users2 } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import confetti from 'canvas-confetti';
+import { useEffect, useMemo, useState } from 'react';
 import { ClassSlide } from '../types';
 
 interface RolePlayCardProps {
@@ -14,6 +15,7 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
   const [nameB, setNameB] = useState('');
   const [viewIndex, setViewIndex] = useState(0);
   const [checkedItems, setCheckedItems] = useState<boolean[]>([]);
+  const [celebrated, setCelebrated] = useState(false);
 
   const steps = useMemo(() => roleplay?.steps || [], [roleplay]);
 
@@ -40,12 +42,14 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
     currentStep?.speaker === 'both' ? 'Together' :
     '';
   const completedCount = checkedItems.filter(Boolean).length;
+  const isComplete = completedCount === roleplay.successChecklist.length;
 
   const next = () => setViewIndex((index) => Math.min(views.length - 1, index + 1));
   const back = () => setViewIndex((index) => Math.max(0, index - 1));
   const reset = () => {
     setViewIndex(0);
     setCheckedItems([]);
+    setCelebrated(false);
   };
   const toggleCheck = (index: number) => {
     setCheckedItems((items) => {
@@ -54,6 +58,17 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
       return nextItems;
     });
   };
+
+  useEffect(() => {
+    if (view.kind !== 'finish' || !isComplete || celebrated) return;
+    setCelebrated(true);
+    confetti({
+      particleCount: 130,
+      spread: 78,
+      origin: { y: 0.58 },
+      colors: ['#10b981', '#8b5cf6', '#f59e0b', '#06b6d4', '#ffffff']
+    });
+  }, [celebrated, isComplete, view.kind]);
 
   return (
     <div className="flex h-full min-h-0 w-full flex-col overflow-hidden text-white">
@@ -180,6 +195,14 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
               </div>
               <h2 className="text-5xl font-black leading-tight sm:text-7xl lg:text-8xl">Win checklist</h2>
             </div>
+            {isComplete && (
+              <div className="rounded-3xl bg-gradient-to-r from-emerald-400 via-cyan-300 to-violet-400 p-1 shadow-2xl shadow-emerald-900/20">
+                <div className="rounded-[1.35rem] bg-white px-6 py-5 text-center">
+                  <p className="text-4xl font-black leading-tight text-slate-950 sm:text-6xl">Great job!</p>
+                  <p className="mt-2 text-2xl font-black text-slate-600 sm:text-3xl">Role play complete.</p>
+                </div>
+              </div>
+            )}
             <div className="grid gap-4 sm:grid-cols-2">
               {roleplay.successChecklist.map((item, index) => (
                 <button
@@ -199,7 +222,7 @@ export function RolePlayCard({ slide }: RolePlayCardProps) {
               ))}
             </div>
             <p className="rounded-3xl bg-slate-950 px-6 py-5 text-4xl font-black leading-tight text-white sm:text-5xl">
-              {completedCount === roleplay.successChecklist.length ? roleplay.victoryMessage || 'Conversation complete.' : 'Complete the checks, then switch roles.'}
+              {isComplete ? roleplay.victoryMessage || 'Conversation complete.' : 'Complete the checks, then switch roles.'}
             </p>
           </div>
         )}

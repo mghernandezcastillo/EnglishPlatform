@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight, Brain, Check, Flame, Minus, Plus, Play, RotateCcw, Shield, Swords, Timer, Trophy } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
 interface SpeakingBossBattleGameProps {
   bossName?: string;
@@ -111,6 +112,7 @@ export function SpeakingBossBattleGame({
   const [customSpeakSeconds, setCustomSpeakSeconds] = useState(timerSeconds);
   const [timer, setTimer] = useState(0);
   const [timerRunning, setTimerRunning] = useState(false);
+  const [celebrated, setCelebrated] = useState(false);
 
   const mergedRounds = useMemo(() => ({
     remember: rounds?.remember?.length ? rounds.remember : fallbackRounds.remember,
@@ -141,6 +143,7 @@ export function SpeakingBossBattleGame({
       }
     : simplePrompt;
   const completedCount = hits.filter(Boolean).length;
+  const isComplete = completedCount === roundMeta.length;
   const bossHealth = Math.max(0, Math.round(100 - completedCount * (100 / roundMeta.length)));
 
   const next = () => {
@@ -156,6 +159,7 @@ export function SpeakingBossBattleGame({
     setHits([false, false, false]);
     setTimerRunning(false);
     setTimer(0);
+    setCelebrated(false);
   };
   const hitBoss = () => {
     if (roundIndex >= 0) {
@@ -210,6 +214,17 @@ export function SpeakingBossBattleGame({
     }, 1000);
     return () => window.clearInterval(interval);
   }, [timerRunning]);
+
+  useEffect(() => {
+    if (currentView !== 'finish' || !isComplete || celebrated) return;
+    setCelebrated(true);
+    confetti({
+      particleCount: 160,
+      spread: 85,
+      origin: { y: 0.56 },
+      colors: ['#ef4444', '#facc15', '#8b5cf6', '#10b981', '#ffffff']
+    });
+  }, [celebrated, currentView, isComplete]);
 
   const Icon = currentRound?.icon || Swords;
 
@@ -341,10 +356,23 @@ export function SpeakingBossBattleGame({
 
         {currentView === 'finish' && (
           <div className="flex h-full flex-col items-center justify-center gap-6 text-center">
-            <Trophy className="h-32 w-32 text-yellow-500 sm:h-44 sm:w-44" />
+            <motion.div
+              animate={isComplete ? { scale: [1, 1.12, 1], rotate: [0, -4, 4, 0] } : undefined}
+              transition={{ duration: 1.2, repeat: isComplete ? Infinity : 0, repeatDelay: 1.5 }}
+            >
+              <Trophy className="h-32 w-32 text-yellow-500 drop-shadow-xl sm:h-44 sm:w-44" />
+            </motion.div>
             <h2 className="text-5xl font-black leading-none sm:text-7xl lg:text-8xl">
-              {completedCount === roundMeta.length ? 'Boss defeated!' : 'Finish the challenge'}
+              {isComplete ? 'Boss defeated!' : 'Finish the challenge'}
             </h2>
+            {isComplete && (
+              <div className="rounded-3xl bg-gradient-to-r from-yellow-300 via-emerald-300 to-violet-400 p-1 shadow-2xl shadow-yellow-900/20">
+                <div className="rounded-[1.35rem] bg-white px-6 py-5">
+                  <p className="text-4xl font-black leading-tight text-slate-950 sm:text-6xl">Excellent speaking!</p>
+                  <p className="mt-2 text-2xl font-black text-slate-600 sm:text-3xl">Challenge complete.</p>
+                </div>
+              </div>
+            )}
             <div className="grid w-full max-w-3xl gap-3 sm:grid-cols-3">
               {roundMeta.map((round, index) => (
                 <div key={round.key} className={`rounded-3xl p-5 text-3xl font-black sm:text-4xl ${hits[index] ? 'bg-emerald-400 text-emerald-950' : 'bg-slate-100 text-slate-700'}`}>

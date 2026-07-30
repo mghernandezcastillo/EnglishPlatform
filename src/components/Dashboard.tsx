@@ -11,6 +11,7 @@ import { PresentationViewer } from './PresentationViewer';
 import { useBrand } from '../hooks/useBrand';
 import { PreClassAssessment } from './PreClassAssessment';
 import { BrandWordmark } from './BrandWordmark';
+import { Diploma } from './Diploma';
 
 interface DashboardProps {
   completedLessonIds: string[];
@@ -477,6 +478,28 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                         ) : (
                           <div className="text-center py-8 text-gray-400 font-medium bg-white rounded-xl border border-dashed border-gray-200">
                             Pronto agregaremos más clases a este nivel.
+                          </div>
+                        )}
+
+                        {isFullyCompleted && (
+                          <div className="mt-6 rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-indigo-50 p-5 shadow-sm">
+                            <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                              <div>
+                                <h3 className="text-2xl font-black text-slate-950">Diploma de nivel completado</h3>
+                                <p className="text-sm font-semibold text-slate-600">Descarga o comparte el certificado de {level.title}.</p>
+                              </div>
+                              <span className="inline-flex w-max items-center gap-2 rounded-full bg-emerald-600 px-4 py-2 text-xs font-black uppercase tracking-wider text-white">
+                                <Trophy className="h-4 w-4" />
+                                100% completo
+                              </span>
+                            </div>
+                            <Diploma
+                              studentName={displayStudentName}
+                              levelName={level.title}
+                              brandName={displayBrandName}
+                              logoUrl={brand.logoUrl}
+                              certificateKind="level"
+                            />
                           </div>
                         )}
 

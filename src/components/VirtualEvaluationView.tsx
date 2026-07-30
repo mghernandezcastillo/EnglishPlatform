@@ -34,6 +34,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [isFinished, setIsFinished] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [finalScore, setFinalScore] = useState<{ score: number; total: number } | null>(null);
 
   const [inputValue, setInputValue] = useState('');
   const [isChecked, setIsChecked] = useState(false);
@@ -184,6 +185,8 @@ export function VirtualEvaluationView({ levelId }: Props) {
 
     try {
         await dbAdmin.saveEvaluationScore(studentName, levelId, correctCount, questions.length, finalAnswers);
+        setAnswers(finalAnswers);
+        setFinalScore({ score: correctCount, total: questions.length });
         
         // Increment attempts
         const newAttempts = attempts + 1;
@@ -211,10 +214,15 @@ export function VirtualEvaluationView({ levelId }: Props) {
 
   if (isFinished) {
     let score = 0;
-    questions.forEach(q => {
-      if ((answers[q.id] || '').toLowerCase() === q.correctAnswer.toLowerCase()) score++;
-    });
-    const percentage = Math.round((score / questions.length) * 100);
+    if (finalScore) {
+      score = finalScore.score;
+    } else {
+      questions.forEach(q => {
+        if ((answers[q.id] || '').toLowerCase() === q.correctAnswer.toLowerCase()) score++;
+      });
+    }
+    const totalQuestions = finalScore?.total || questions.length;
+    const percentage = Math.round((score / totalQuestions) * 100);
     const passed = percentage >= 80;
 
     return (
@@ -254,10 +262,9 @@ export function VirtualEvaluationView({ levelId }: Props) {
                  <Diploma 
                    studentName={studentName} 
                    levelName={level.title} 
-                   score={score} 
-                   total={questions.length} 
                    brandName={displayBrandName} 
                    logoUrl={brand.logoUrl} 
+                   certificateKind="level"
                  />
               </div>
             )}
@@ -268,6 +275,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
                       setIsFinished(false);
                       setCurrentQuestionIdx(0);
                       setAnswers({});
+                      setFinalScore(null);
                       setInputValue('');
                       setIsChecked(false);
                   }}
