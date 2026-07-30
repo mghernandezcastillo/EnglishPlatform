@@ -169,8 +169,8 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
       </div>
 
       {/* Main Slide Area */}
-      <div className={`flex-1 relative overflow-y-auto overflow-x-hidden ${isSpeakingBossBattle ? 'p-1 sm:p-3 lg:p-4' : isRoleplaySlide ? 'p-2 sm:p-4 lg:p-5' : 'p-2 sm:p-8'}`}>
-        <div className="min-h-full flex flex-col items-center justify-center pb-20 sm:pb-8">
+      <div className={`flex-1 relative overflow-y-auto overflow-x-hidden ${isSpeakingBossBattle || isRoleplaySlide ? 'p-1 sm:p-2 lg:p-3' : 'p-2 sm:p-8'}`}>
+        <div className={`min-h-full flex flex-col items-center justify-center ${isSpeakingBossBattle || isRoleplaySlide ? 'pb-2 sm:pb-3' : 'pb-20 sm:pb-8'}`}>
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -178,7 +178,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                className={`relative w-full ${isSpeakingBossBattle ? 'max-w-[min(1800px,98vw)] min-h-[calc(100vh-5.25rem)] sm:min-h-[calc(100vh-7.25rem)] rounded-xl sm:rounded-2xl' : isRoleplaySlide ? 'max-w-[min(1500px,98vw)] h-[calc(100vh-6.5rem)] min-h-[620px] rounded-xl sm:rounded-2xl' : isScreenShareExerciseSlide ? 'max-w-5xl min-h-[78vh] sm:min-h-[82vh] rounded-2xl sm:rounded-3xl' : 'max-w-6xl min-h-[75vh] rounded-2xl sm:rounded-3xl'} mx-auto shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0`}
+                className={`relative w-full ${isSpeakingBossBattle ? 'max-w-[min(1760px,99vw)] h-[calc(100vh-4.75rem)] min-h-[650px] rounded-xl sm:rounded-2xl' : isRoleplaySlide ? 'max-w-[min(1700px,99vw)] h-[calc(100vh-4.75rem)] min-h-[650px] rounded-xl sm:rounded-2xl' : isScreenShareExerciseSlide ? 'max-w-5xl min-h-[78vh] sm:min-h-[82vh] rounded-2xl sm:rounded-3xl' : 'max-w-6xl min-h-[75vh] rounded-2xl sm:rounded-3xl'} mx-auto shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0`}
             >
             {isOpeningSlide && (
               <>
@@ -197,7 +197,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               </>
             )}
             {/* Header */}
-            <div className={`${isSpeakingBossBattle ? 'sr-only' : isRoleplaySlide ? 'p-3 sm:p-4 lg:p-5 pb-1.5' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pb-1.5 sm:pb-2' : 'p-5 sm:p-8 pb-2 sm:pb-4'} shrink-0`}>
+            <div className={`${isSpeakingBossBattle || isRoleplaySlide ? 'sr-only' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pb-1.5 sm:pb-2' : 'p-5 sm:p-8 pb-2 sm:pb-4'} shrink-0`}>
               {isOpeningSlide && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
@@ -220,7 +220,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             </div>
 
             {/* Content Area */}
-            <div className={`flex-1 ${isSpeakingBossBattle ? 'p-2 sm:p-4 lg:p-5' : isRoleplaySlide ? 'p-3 sm:p-4 lg:p-5 pt-1.5' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pt-1.5 sm:pt-2' : 'p-5 sm:p-8 pt-2 sm:pt-4'} flex flex-col md:flex-row ${isOpeningSlide ? 'gap-5 sm:gap-8 md:items-stretch' : isScreenShareExerciseSlide ? 'gap-3 sm:gap-4' : 'gap-4 sm:gap-8'} overflow-y-auto overflow-x-hidden min-h-0 min-w-0`}>
+            <div className={`flex-1 ${isSpeakingBossBattle ? 'p-1 sm:p-2 lg:p-3' : isRoleplaySlide ? 'p-2 sm:p-3 lg:p-4' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pt-1.5 sm:pt-2' : 'p-5 sm:p-8 pt-2 sm:pt-4'} flex flex-col md:flex-row ${isOpeningSlide ? 'gap-5 sm:gap-8 md:items-stretch' : isScreenShareExerciseSlide ? 'gap-3 sm:gap-4' : 'gap-4 sm:gap-8'} overflow-y-auto overflow-x-hidden min-h-0 min-w-0`}>
               {/* Left text content */}
               <div className={`${isImmersiveSlide ? 'w-full' : isOpeningSlide ? 'md:w-[44%] md:flex-none' : 'flex-1'} min-w-0 flex flex-col ${isScreenShareExerciseSlide ? 'gap-2.5 sm:gap-4 justify-between' : 'gap-3 sm:gap-6'}`}>
                 {slide.type === 'spinning-wheel' && slide.wheelItems && (
@@ -440,7 +440,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             </div>
 
             {/* Teacher Suggestion (Small) */}
-            {section.action && !isSpeakingBossBattle && (
+            {section.action && !isSpeakingBossBattle && !isRoleplaySlide && (
               <div className={`${isScreenShareExerciseSlide ? 'bg-black/25 p-2.5 sm:p-3' : 'bg-black/30 p-3 sm:p-4'} backdrop-blur-md border-t border-white/10 shrink-0 mt-auto`}>
                 <p className={`${isScreenShareExerciseSlide ? 'text-[10px] sm:text-xs' : 'text-xs sm:text-sm'} text-yellow-300/90 font-medium flex items-center gap-2`}>
                   <span className="bg-yellow-400/20 px-2 py-1 rounded text-yellow-300 font-bold tracking-wide uppercase text-[10px] sm:text-xs">👩‍🏫 Nota para el profe</span>

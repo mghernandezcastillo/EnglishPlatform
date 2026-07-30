@@ -21,6 +21,16 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
 - **Images**: Use `imageUrl` with real Unsplash URLs (e.g., `https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800`).
 - **CRITICAL IMAGE RULE**: Before adding ANY Unsplash image URL to the codebase, YOU MUST verify it using the `run_command` tool with `curl -s -o /dev/null -w "%{http_code}" <url>`. If it returns 404, you MUST find another image. NEVER add a 404 image to the curriculum.
 
+## 🖥️ TEACHING METHOD / SCREEN-SHARE DESIGN REQUIREMENT
+- El profesor normalmente se une a Google Meet o Microsoft Teams desde un PC y comparte pantalla con el estudiante.
+- El estudiante puede ver la presentación desde PC, tablet o celular; el caso crítico es celular viendo una pantalla compartida.
+- Toda dinámica interactiva, diapositiva especial, juego, roleplay, boss battle, quiz o herramienta nueva DEBE diseñarse para ser legible en pantalla compartida sin que el estudiante haga zoom.
+- Priorizar formato de presentación por pasos: una acción principal por pantalla, tarjetas grandes, texto grande, instrucciones cortas y máximo 2-3 frases visibles por paso.
+- Evitar interfaces densas con muchas columnas, texto pequeño, grids complejos, paneles saturados o demasiada información simultánea.
+- En móvil debe entenderse claramente quién habla, qué debe hacer, qué frase puede usar y cómo avanzar.
+- Botones y controles deben ser grandes, claros y fáciles de distinguir durante una videollamada.
+- Antes de dar por terminado un cambio visual o interactivo, auditar que se vea razonablemente bien para pantalla compartida en PC y para estudiantes que miran desde celular.
+
 ## 🖼️ GENERATED IMAGE REQUIREMENT FOR PLAN-BASED CLASSES
 - Cuando se implemente TODO el contenido de una clase tomada de un plan `.md`, se DEBEN generar imágenes propias para las diapositivas visuales de esa clase antes de dar la tarea por terminada.
 - Las imágenes generadas deben estar relacionadas directamente con la frase, pregunta, respuesta correcta, vocabulario o actividad de la diapositiva.
