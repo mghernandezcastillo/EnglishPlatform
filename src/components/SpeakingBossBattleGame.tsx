@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'motion/react';
-import { Brain, Flame, Minus, Plus, RotateCcw, Shield, Swords, Timer, Trophy, Zap } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Brain, Check, Flame, Minus, Plus, Play, RotateCcw, Shield, Swords, Timer, Trophy } from 'lucide-react';
 import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 
 interface SpeakingBossBattleGameProps {
@@ -18,34 +18,31 @@ interface SpeakingBossBattleGameProps {
 
 const fallbackRounds = {
   remember: ['Say three key words and one useful phrase from today.'],
-  use: ['You have 3 minutes: create three sentences using today\'s grammar: one positive, one negative, and one question.'],
+  use: ['Make one positive sentence, one negative sentence, and one question.'],
   speak: ['Speak for 30 seconds about today\'s topic.']
 };
 
 const roundMeta = [
   {
     key: 'remember',
-    label: 'Round 1',
     title: 'Remember',
+    shortTask: 'Say 3 words + 1 phrase',
     icon: Brain,
-    color: 'from-sky-400 to-cyan-500',
-    action: 'Recall the language'
+    color: 'from-sky-400 to-cyan-500'
   },
   {
     key: 'use',
-    label: 'Round 2',
     title: 'Use',
+    shortTask: 'Make 3 sentences',
     icon: Shield,
-    color: 'from-emerald-400 to-teal-500',
-    action: 'Build a clean sentence'
+    color: 'from-emerald-400 to-teal-500'
   },
   {
     key: 'speak',
-    label: 'Round 3',
     title: 'Speak',
+    shortTask: 'Speak clearly',
     icon: Flame,
-    color: 'from-orange-400 to-red-500',
-    action: 'Talk without stopping'
+    color: 'from-orange-400 to-red-500'
   }
 ] as const;
 
@@ -65,6 +62,40 @@ function formatDurationText(totalSeconds: number) {
   return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} and ${seconds} seconds`;
 }
 
+function extractTopic(prompt: string, fallback: string) {
+  const aboutMatch = prompt.match(/\babout\s+(.+?)(?:\.|$)/i);
+  const contextMatch = prompt.match(/\bcontext of\s+(.+?)(?:\.|$)/i);
+  const topic = (aboutMatch?.[1] || contextMatch?.[1] || fallback).replace(/^today'?s topic$/i, fallback).trim();
+  return topic || fallback;
+}
+
+function simplifyPrompt(prompt: string, roundKey: 'remember' | 'use' | 'speak', seconds: number) {
+  const topic = extractTopic(prompt, 'today\'s topic');
+  if (roundKey === 'remember') {
+    return {
+      main: 'Say 3 words + 1 phrase',
+      topic,
+      support: 'No full speech yet. Just recall useful language.'
+    };
+  }
+  if (roundKey === 'use') {
+    const clean = prompt
+      .replace(/^You have .*?:\s*/i, '')
+      .replace(/\s*Example:.+$/i, '')
+      .trim();
+    return {
+      main: clean || 'Make one positive sentence, one negative sentence, and one question.',
+      topic,
+      support: `Use time: ${formatDurationText(seconds)}`
+    };
+  }
+  return {
+    main: `Speak for ${formatDurationText(seconds)}`,
+    topic,
+    support: 'Use a clear voice and keep going.'
+  };
+}
+
 export function SpeakingBossBattleGame({
   bossName = 'The English Boss',
   bossTitle = 'Final speaking challenge',
@@ -73,8 +104,8 @@ export function SpeakingBossBattleGame({
   prepareSeconds = 180,
   rounds
 }: SpeakingBossBattleGameProps) {
-  const [activeRound, setActiveRound] = useState(0);
-  const [hits, setHits] = useState(0);
+  const [viewIndex, setViewIndex] = useState(0);
+  const [hits, setHits] = useState<boolean[]>([false, false, false]);
   const [timerMode, setTimerMode] = useState<'prepare' | 'speak'>('prepare');
   const [customUseSeconds, setCustomUseSeconds] = useState(180);
   const [customPrepareSeconds, setCustomPrepareSeconds] = useState(prepareSeconds);
@@ -88,67 +119,72 @@ export function SpeakingBossBattleGame({
     speak: rounds?.speak?.length ? rounds.speak : fallbackRounds.speak
   }), [rounds]);
 
-  const current = roundMeta[activeRound];
-  const Icon = current.icon;
-  const currentPrompts = mergedRounds[current.key].map((prompt) =>
-    current.key === 'speak'
-      ? prompt.replace(/Speak for \d+ (seconds|minutes)/i, `Speak for ${formatDurationText(customSpeakSeconds)}`)
-      : current.key === 'use'
-        ? prompt.replace(/You have \d+ (seconds|minutes)/i, `You have ${formatDurationText(customUseSeconds)}`)
-        : prompt
-            .replace(/^You have \d+ (seconds|minutes)\s*:\s*/i, '')
-            .replace(/^Tienes \d+ (segundos|minutos)\s*:\s*/i, '')
-  );
-  const bossHealth = Math.max(0, Math.round(100 - hits * (100 / roundMeta.length)));
-  const isComplete = hits >= roundMeta.length;
-  const activePrepareSeconds =
-    current.key === 'use' ? customUseSeconds :
-    customPrepareSeconds;
-  const activeCustomSeconds = timerMode === 'prepare' ? activePrepareSeconds : customSpeakSeconds;
+  const views = ['intro', 'remember', 'use', 'speak', 'finish'] as const;
+  const currentView = views[Math.min(viewIndex, views.length - 1)];
+  const roundIndex = roundMeta.findIndex((round) => round.key === currentView);
+  const currentRound = roundIndex >= 0 ? roundMeta[roundIndex] : null;
+  const roundKey = currentRound?.key;
+  const activeSeconds =
+    roundKey === 'use' ? customUseSeconds :
+    timerMode === 'prepare' ? customPrepareSeconds :
+    customSpeakSeconds;
+  const prompt = roundKey ? mergedRounds[roundKey][0] || '' : '';
+  const simplePrompt = roundKey ? simplifyPrompt(prompt, roundKey, activeSeconds) : null;
+  const completedCount = hits.filter(Boolean).length;
+  const bossHealth = Math.max(0, Math.round(100 - completedCount * (100 / roundMeta.length)));
 
-  const setActivePrepareSeconds = (nextSeconds: number) => {
-    if (current.key === 'use') {
-      setCustomUseSeconds(nextSeconds);
-    } else {
-      setCustomPrepareSeconds(nextSeconds);
-    }
-  };
-
-  const startTimer = (mode: 'prepare' | 'speak') => {
-    setTimerMode(mode);
-    setTimer(mode === 'prepare' ? activePrepareSeconds : customSpeakSeconds);
-    setTimerRunning(true);
-  };
-
-  const stopTimer = () => {
+  const next = () => {
     setTimerRunning(false);
-    setTimer(current.key === 'remember' ? 0 : activeCustomSeconds);
+    setViewIndex((index) => Math.min(views.length - 1, index + 1));
+  };
+  const back = () => {
+    setTimerRunning(false);
+    setViewIndex((index) => Math.max(0, index - 1));
+  };
+  const reset = () => {
+    setViewIndex(0);
+    setHits([false, false, false]);
+    setTimerRunning(false);
+    setTimer(0);
+  };
+  const hitBoss = () => {
+    if (roundIndex >= 0) {
+      setHits((items) => items.map((item, index) => index === roundIndex ? true : item));
+    }
+    next();
   };
 
   const updateCustomSeconds = (mode: 'prepare' | 'speak', nextSeconds: number) => {
     const safeSeconds = Math.min(600, Math.max(5, Math.round(nextSeconds || 30)));
-    if (mode === 'prepare') {
-      setActivePrepareSeconds(safeSeconds);
+    if (roundKey === 'use') {
+      setCustomUseSeconds(safeSeconds);
+    } else if (mode === 'prepare') {
+      setCustomPrepareSeconds(safeSeconds);
     } else {
       setCustomSpeakSeconds(safeSeconds);
     }
-    if (!timerRunning && timerMode === mode) {
-      setTimer(safeSeconds);
-    }
+    if (!timerRunning) setTimer(safeSeconds);
   };
 
-  const hitBoss = () => {
-    setHits((value) => Math.min(roundMeta.length, value + 1));
-    setActiveRound((value) => Math.min(roundMeta.length - 1, value + 1));
-    setTimerRunning(false);
-    setTimer(current.key === 'remember' ? 0 : (timerMode === 'prepare' ? activePrepareSeconds : customSpeakSeconds));
+  const startTimer = (mode: 'prepare' | 'speak') => {
+    setTimerMode(mode);
+    const seconds = roundKey === 'use'
+      ? customUseSeconds
+      : mode === 'prepare'
+        ? customPrepareSeconds
+        : customSpeakSeconds;
+    setTimer(seconds);
+    setTimerRunning(true);
   };
 
   useEffect(() => {
-    if (!timerRunning) {
-      setTimer(current.key === 'remember' ? 0 : activeCustomSeconds);
+    if (roundKey === 'remember') {
+      setTimer(0);
+      setTimerRunning(false);
+      return;
     }
-  }, [activeRound, activeCustomSeconds, current.key, timerRunning]);
+    if (!timerRunning) setTimer(activeSeconds);
+  }, [activeSeconds, roundKey, timerRunning]);
 
   useEffect(() => {
     if (!timerRunning) return;
@@ -162,273 +198,196 @@ export function SpeakingBossBattleGame({
         return value - 1;
       });
     }, 1000);
-
     return () => window.clearInterval(interval);
   }, [timerRunning]);
 
-  return (
-    <div className="relative flex min-h-[calc(100vh-6.75rem)] w-full flex-col overflow-hidden rounded-2xl border border-white/20 bg-slate-950/30 p-3 shadow-2xl backdrop-blur-md sm:min-h-[calc(100vh-9rem)] sm:p-4 lg:min-h-[calc(100vh-10rem)] lg:p-5">
-      <motion.div
-        className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-yellow-300/20 blur-3xl"
-        animate={{ scale: [1, 1.25, 1], opacity: [0.5, 0.85, 0.5] }}
-        transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-      />
+  const Icon = currentRound?.icon || Swords;
 
-      <div className="relative z-10 flex flex-1 flex-col gap-3 lg:gap-4">
-        <section className="grid gap-3 rounded-2xl border border-white/15 bg-black/20 p-3 sm:p-4 lg:grid-cols-[1.05fr_1fr_0.95fr] lg:items-center lg:p-5">
-          <div className="flex items-center justify-between gap-4 lg:justify-start">
-            <div className="min-w-0">
-              <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-red-500 px-3 py-1 text-xs font-black uppercase tracking-widest text-white shadow-lg">
-                <Swords className="h-4 w-4" />
-                Boss Battle
-              </div>
-              <h2 className="truncate text-3xl font-black leading-tight sm:text-5xl lg:text-6xl">{bossName}</h2>
-              <p className="mt-1 truncate text-base font-bold text-white/75 sm:text-xl lg:text-2xl">{bossTitle}</p>
-            </div>
+  return (
+    <div className="flex h-full min-h-[calc(100vh-6rem)] w-full flex-col overflow-hidden rounded-2xl border border-white/20 bg-slate-950/35 p-3 text-white shadow-2xl backdrop-blur-md sm:p-5">
+      <div className="mb-3 flex shrink-0 items-center justify-between gap-3">
+        <div className="min-w-0">
+          <div className="inline-flex items-center gap-2 rounded-full bg-red-500 px-3 py-1.5 text-xs font-black uppercase tracking-[0.14em] text-white sm:text-sm">
+            <Swords className="h-4 w-4" />
+            Boss Battle
+          </div>
+          <p className="mt-1 truncate text-sm font-bold text-white/70 sm:text-base">{bossName} · {bossTitle}</p>
+        </div>
+        <div className="rounded-full bg-white/15 px-3 py-1.5 text-xs font-black uppercase tracking-[0.12em] text-white/80 sm:text-sm">
+          {viewIndex + 1}/{views.length}
+        </div>
+      </div>
+
+      <div className="flex min-h-0 flex-1 flex-col rounded-2xl border border-white/15 bg-white/95 p-4 text-slate-950 shadow-2xl sm:p-6 lg:p-8">
+        {currentView === 'intro' && (
+          <div className="flex h-full flex-col items-center justify-center gap-5 text-center">
             <motion.div
               animate={{ y: [0, -10, 0], rotate: [-3, 3, -3] }}
               transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
-              className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-white text-5xl shadow-2xl sm:h-28 sm:w-28 sm:text-7xl lg:h-32 lg:w-32 lg:text-8xl"
+              className="flex h-28 w-28 items-center justify-center rounded-3xl bg-slate-950 text-7xl shadow-2xl sm:h-36 sm:w-36 sm:text-8xl"
             >
               {bossAvatar}
             </motion.div>
-          </div>
-
-          <div className="lg:px-2">
-            <div className="mb-2 flex items-center justify-between text-sm font-black uppercase tracking-widest text-white/75 sm:text-base">
-              <span>Boss health</span>
-              <span>{bossHealth}%</span>
+            <div>
+              <h2 className="text-4xl font-black leading-tight sm:text-6xl lg:text-7xl">{bossName}</h2>
+              <p className="mt-2 text-2xl font-black text-slate-600 sm:text-4xl">{bossTitle}</p>
             </div>
-            <div className="h-6 overflow-hidden rounded-full border border-white/20 bg-black/35 shadow-inner sm:h-8">
-              <motion.div
-                className="h-full rounded-full bg-gradient-to-r from-lime-300 via-yellow-300 to-red-400"
-                initial={false}
-                animate={{ width: `${bossHealth}%` }}
-                transition={{ type: 'spring', stiffness: 120, damping: 18 }}
-              />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-3 gap-2 sm:gap-3">
-            {roundMeta.map((round, index) => {
-              const RoundIcon = round.icon;
-              const active = index === activeRound && !isComplete;
-              const done = index < hits;
-              return (
-                <button
-                  key={round.key}
-                  type="button"
-                  onClick={() => setActiveRound(index)}
-                  className={[
-                    'flex min-h-[72px] flex-col items-center justify-center gap-1 rounded-2xl border p-2 text-center transition-all sm:min-h-[88px] lg:min-h-[96px]',
-                    active && 'border-white bg-white text-slate-950 shadow-xl',
-                    done && !active && 'border-emerald-300/70 bg-emerald-400/25 text-white',
-                    !active && !done && 'border-white/15 bg-white/10 text-white/70 hover:bg-white/15'
-                  ].filter(Boolean).join(' ')}
-                >
-                  <RoundIcon className="h-6 w-6 sm:h-8 sm:w-8" />
-                  <span className="text-xs font-black uppercase leading-tight sm:text-base lg:text-lg">{round.title}</span>
-                </button>
-              );
-            })}
-          </div>
-        </section>
-
-        <section className="flex flex-1 flex-col gap-3 rounded-2xl border border-white/15 bg-white/12 p-3 sm:p-4 lg:gap-4 lg:p-5">
-          {isComplete ? (
-            <motion.div
-              initial={{ scale: 0.92, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              className="flex min-h-[360px] flex-1 flex-col items-center justify-center gap-4 text-center"
-            >
-              <Trophy className="h-20 w-20 text-yellow-300" />
-              <h3 className="text-3xl font-black sm:text-5xl">Boss defeated!</h3>
-              <p className="max-w-xl text-lg font-bold text-white/80">
-                Finish with one perfect introduction and a confident goodbye.
-              </p>
-              <button
-                type="button"
-                onClick={() => {
-                  setHits(0);
-                  setActiveRound(0);
-                  stopTimer();
-                }}
-                className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 font-black text-slate-950 shadow-xl transition hover:scale-105"
-              >
-                <RotateCcw className="h-5 w-5" />
-                Play again
-              </button>
-            </motion.div>
-          ) : (
-            <>
-              <div className={`rounded-2xl bg-gradient-to-br ${current.color} p-3 shadow-xl sm:p-4 lg:p-5`}>
-                <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-black/20 px-3 py-1 text-xs font-black uppercase tracking-widest sm:text-sm">
-                    <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
-                    {current.label}: {current.title}
-                  </div>
-                  <div className="rounded-full bg-white/20 px-3 py-1 text-xs font-black uppercase tracking-widest sm:text-sm">
-                    {current.action}
-                  </div>
-                </div>
-
-                <div className="grid gap-3">
-                  {currentPrompts.map((prompt, index) => (
-                    <motion.div
-                      key={`${current.key}-${prompt}`}
-                      initial={{ opacity: 0, x: 24 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.08, type: 'spring', stiffness: 180, damping: 18 }}
-                      className="rounded-2xl border border-white/25 bg-white p-4 text-2xl font-black leading-snug text-slate-950 shadow-lg sm:p-6 sm:text-4xl lg:text-5xl"
-                    >
-                      {prompt}
-                    </motion.div>
-                  ))}
-                </div>
+            <div className="w-full max-w-xl">
+              <div className="mb-2 flex items-center justify-between text-sm font-black uppercase tracking-widest text-slate-500 sm:text-base">
+                <span>Boss health</span>
+                <span>{bossHealth}%</span>
               </div>
+              <div className="h-8 overflow-hidden rounded-full bg-slate-200">
+                <motion.div className="h-full rounded-full bg-gradient-to-r from-lime-400 via-yellow-300 to-red-400" animate={{ width: `${bossHealth}%` }} />
+              </div>
+            </div>
+          </div>
+        )}
 
-              <div className="grid flex-1 gap-3 md:grid-cols-[0.68fr_1.32fr]">
-                <div className="rounded-2xl border border-white/15 bg-black/20 p-3 sm:p-4">
-                  {current.key === 'remember' ? (
-                    <>
-                      <div className="mb-3 flex items-center gap-2 text-sm font-black uppercase tracking-widest text-yellow-200 sm:text-base">
-                        <Brain className="h-5 w-5 sm:h-6 sm:w-6" />
-                        Recall round
-                      </div>
-                      <p className="text-lg font-bold leading-relaxed text-white/80 sm:text-2xl">
-                        No timer here. Let the student recall key words and one useful phrase, then move on.
-                      </p>
-                    </>
-                  ) : (
-                    <>
-                      <div className="mb-3 flex items-center gap-2 text-sm font-black uppercase tracking-widest text-yellow-200 sm:text-base">
-                        <Timer className="h-5 w-5 sm:h-6 sm:w-6" />
-                        Timers
-                      </div>
-                      {current.key === 'speak' && (
-                        <div className="mb-3 grid grid-cols-2 rounded-2xl border border-white/15 bg-black/25 p-1 text-xs font-black uppercase tracking-widest">
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setTimerMode('prepare');
-                              if (!timerRunning) setTimer(activePrepareSeconds);
-                            }}
-                            className={`rounded-xl px-3 py-2 transition ${timerMode === 'prepare' ? 'bg-white text-slate-950' : 'text-white/70 hover:bg-white/10'}`}
-                          >
-                            Prepare
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setTimerMode('speak');
-                              if (!timerRunning) setTimer(customSpeakSeconds);
-                            }}
-                            className={`rounded-xl px-3 py-2 transition ${timerMode === 'speak' ? 'bg-white text-slate-950' : 'text-white/70 hover:bg-white/10'}`}
-                          >
-                            Speak
-                          </button>
-                        </div>
-                      )}
-                      <div className="mb-3 grid grid-cols-[44px_1fr_44px] items-center gap-2">
-                        <button
-                          type="button"
-                          onClick={() => updateCustomSeconds(timerMode, activeCustomSeconds - 5)}
-                          className="flex h-11 items-center justify-center rounded-2xl bg-white/15 text-white transition hover:bg-white/25"
-                          aria-label="Decrease seconds"
-                        >
-                          <Minus className="h-5 w-5" />
-                        </button>
-                        <input
-                          type="number"
-                          min={5}
-                          max={600}
-                          step={5}
-                          value={activeCustomSeconds}
-                          onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}
-                          className="h-11 rounded-2xl border border-white/20 bg-white px-3 text-center text-lg font-black text-slate-950 outline-none"
-                          aria-label="Timer seconds"
-                        />
-                        <button
-                          type="button"
-                          onClick={() => updateCustomSeconds(timerMode, activeCustomSeconds + 5)}
-                          className="flex h-11 items-center justify-center rounded-2xl bg-white/15 text-white transition hover:bg-white/25"
-                          aria-label="Increase seconds"
-                        >
-                          <Plus className="h-5 w-5" />
-                        </button>
-                      </div>
-                      <p className="mb-2 text-center text-xs font-black uppercase tracking-widest text-white/60">
-                        {current.key === 'use' ? 'Use time' : (timerMode === 'prepare' ? 'Preparation time' : 'Speaking time')}
-                      </p>
-                      <div className="mb-4 text-center text-7xl font-black tabular-nums sm:text-8xl lg:text-9xl">
-                        {formatTimerLabel(timer)}
-                      </div>
-                      {current.key === 'use' ? (
-                        <button
-                          type="button"
-                          onClick={() => startTimer('prepare')}
-                          className="w-full rounded-2xl bg-emerald-300 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
-                        >
-                          Start Use
-                        </button>
-                      ) : (
-                        <div className="grid grid-cols-2 gap-2">
-                          <button
-                            type="button"
-                            onClick={() => startTimer('prepare')}
-                            className="rounded-2xl bg-yellow-300 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
-                          >
-                            Start Prep
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => startTimer('speak')}
-                            className="rounded-2xl bg-orange-400 px-4 py-3 font-black text-slate-950 shadow-lg transition hover:scale-105"
-                          >
-                            Start Speak
-                          </button>
-                        </div>
-                      )}
+        {currentRound && simplePrompt && (
+          <div className="flex h-full flex-col justify-center gap-5">
+            <div>
+              <div className={`mb-3 inline-flex items-center gap-2 rounded-full bg-gradient-to-r ${currentRound.color} px-3 py-1.5 text-xs font-black uppercase tracking-[0.14em] text-white sm:text-sm`}>
+                <Icon className="h-4 w-4" />
+                {currentRound.title} Round
+              </div>
+              <h2 className="text-4xl font-black leading-tight sm:text-6xl lg:text-7xl">{simplePrompt.main}</h2>
+              <div className="mt-4 rounded-2xl bg-slate-100 p-4">
+                <p className="text-sm font-black uppercase tracking-[0.14em] text-slate-500 sm:text-base">Topic</p>
+                <p className="mt-1 text-2xl font-black leading-tight text-slate-800 sm:text-4xl lg:text-5xl">{simplePrompt.topic}</p>
+              </div>
+              <p className="mt-3 text-xl font-bold leading-snug text-slate-600 sm:text-3xl">{simplePrompt.support}</p>
+            </div>
+
+            {roundKey !== 'remember' && (
+              <div className="grid gap-3 rounded-2xl bg-slate-100 p-4 lg:grid-cols-[0.8fr_1.2fr]">
+                <div>
+                  {roundKey === 'speak' && (
+                    <div className="mb-3 grid grid-cols-2 rounded-xl bg-white p-1 text-sm font-black uppercase tracking-widest text-slate-500">
                       <button
                         type="button"
-                        onClick={stopTimer}
-                        className="mt-2 w-full rounded-2xl bg-white/15 px-4 py-3 font-black text-white shadow-lg transition hover:bg-white/25"
+                        onClick={() => setTimerMode('prepare')}
+                        className={`rounded-lg px-3 py-2 ${timerMode === 'prepare' ? 'bg-slate-950 text-white' : ''}`}
                       >
-                        Reset
+                        Prepare
                       </button>
-                    </>
-                  )}
-                </div>
-
-                <div className="flex flex-col justify-between gap-3 rounded-2xl border border-white/15 bg-black/20 p-3 sm:p-4">
-                  <div>
-                    <div className="mb-2 flex items-center gap-2 text-sm font-black uppercase tracking-widest text-cyan-200 sm:text-base">
-                      <Zap className="h-5 w-5 sm:h-6 sm:w-6" />
-                      Teacher flow
+                      <button
+                        type="button"
+                        onClick={() => setTimerMode('speak')}
+                        className={`rounded-lg px-3 py-2 ${timerMode === 'speak' ? 'bg-slate-950 text-white' : ''}`}
+                      >
+                        Speak
+                      </button>
                     </div>
-                    <p className="text-xl font-bold leading-relaxed text-white/85 sm:text-3xl lg:text-4xl">
-                      One student answers. The class can help with one hint. If the answer is clear, hit the boss and move to the next round.
-                    </p>
-                  </div>
-                  {current.key === 'speak' && (
-                    <InlineAiSpeakingAssistant
-                      title="Asistente IA para Speak"
-                      initialQuestion={currentPrompts[0] || ''}
-                      candidateQuestions={currentPrompts}
-                    />
                   )}
+                  <div className="grid grid-cols-[52px_1fr_52px] items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => updateCustomSeconds(timerMode, activeSeconds - 5)}
+                      className="flex h-12 items-center justify-center rounded-xl bg-white text-slate-700"
+                      aria-label="Decrease seconds"
+                    >
+                      <Minus className="h-5 w-5" />
+                    </button>
+                    <input
+                      type="number"
+                      min={5}
+                      max={600}
+                      step={5}
+                      value={activeSeconds}
+                      onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}
+                      className="h-12 rounded-xl border border-slate-200 bg-white px-3 text-center text-2xl font-black text-slate-950 outline-none"
+                      aria-label="Timer seconds"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => updateCustomSeconds(timerMode, activeSeconds + 5)}
+                      className="flex h-12 items-center justify-center rounded-xl bg-white text-slate-700"
+                      aria-label="Increase seconds"
+                    >
+                      <Plus className="h-5 w-5" />
+                    </button>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between gap-3 rounded-2xl bg-slate-950 p-4 text-white">
+                  <div className="flex items-center gap-2 text-sm font-black uppercase tracking-widest text-white/70 sm:text-base">
+                    <Timer className="h-5 w-5" />
+                    Timer
+                  </div>
+                  <div className="text-6xl font-black tabular-nums sm:text-7xl">{formatTimerLabel(timer)}</div>
                   <button
                     type="button"
-                    onClick={hitBoss}
-                    className="rounded-2xl bg-gradient-to-r from-red-500 to-yellow-300 px-5 py-5 text-2xl font-black text-white shadow-2xl transition hover:scale-[1.02] sm:py-6 sm:text-4xl"
+                    onClick={() => startTimer(timerMode)}
+                    className="rounded-xl bg-yellow-300 px-4 py-3 text-base font-black text-slate-950 sm:text-xl"
                   >
-                    Hit Boss
+                    Start
                   </button>
                 </div>
               </div>
-            </>
+            )}
+
+            {roundKey === 'speak' && (
+              <InlineAiSpeakingAssistant
+                title="Asistente IA para Speak"
+                initialQuestion={prompt}
+                candidateQuestions={[prompt]}
+              />
+            )}
+          </div>
+        )}
+
+        {currentView === 'finish' && (
+          <div className="flex h-full flex-col items-center justify-center gap-5 text-center">
+            <Trophy className="h-24 w-24 text-yellow-500 sm:h-32 sm:w-32" />
+            <h2 className="text-4xl font-black leading-tight sm:text-6xl lg:text-7xl">
+              {completedCount === roundMeta.length ? 'Boss defeated!' : 'Finish the challenge'}
+            </h2>
+            <div className="grid w-full max-w-3xl gap-3 sm:grid-cols-3">
+              {roundMeta.map((round, index) => (
+                <div key={round.key} className={`rounded-2xl p-4 text-2xl font-black ${hits[index] ? 'bg-emerald-400 text-emerald-950' : 'bg-slate-100 text-slate-700'}`}>
+                  {hits[index] ? <Check className="mx-auto mb-2 h-8 w-8" /> : index + 1}
+                  {round.title}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="mt-auto flex shrink-0 items-center justify-between gap-2 pt-4">
+          <button
+            onClick={back}
+            disabled={viewIndex === 0}
+            className="inline-flex h-12 items-center gap-2 rounded-xl bg-slate-200 px-4 text-base font-black text-slate-700 disabled:opacity-40 sm:h-14 sm:text-xl"
+          >
+            <ArrowLeft className="h-5 w-5" />
+            Back
+          </button>
+          <button
+            onClick={reset}
+            className="inline-flex h-12 items-center gap-2 rounded-xl bg-slate-100 px-4 text-base font-black text-slate-600 sm:h-14 sm:text-xl"
+          >
+            <RotateCcw className="h-5 w-5" />
+            Reset
+          </button>
+          {currentRound ? (
+            <button
+              onClick={hitBoss}
+              className="inline-flex h-12 items-center gap-2 rounded-xl bg-red-500 px-4 text-base font-black text-white sm:h-14 sm:text-xl"
+            >
+              Hit Boss
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          ) : (
+            <button
+              onClick={next}
+              disabled={viewIndex === views.length - 1}
+              className="inline-flex h-12 items-center gap-2 rounded-xl bg-violet-600 px-4 text-base font-black text-white disabled:opacity-40 sm:h-14 sm:text-xl"
+            >
+              <Play className="h-5 w-5" />
+              Next
+            </button>
           )}
-        </section>
+        </div>
       </div>
     </div>
   );
