@@ -1855,23 +1855,34 @@ function enhanceRoleplaySlide(slide: ClassSlide, cls: CurriculumClass) {
 function buildWarmupWheel(slide: ClassSlide, cls: CurriculumClass) {
   if (slide.type !== 'spinning-wheel') return slide;
 
-  const searchText = `${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')} ${(slide.wheelItems || []).map(item => `${item.label} ${item.prompt || ''} ${item.es || ''}`).join(' ')}`;
+  const classText = `${cls.title} ${cls.description || ''} ${cls.objective || ''}`;
+  const searchText = `${classText} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')}`;
   const topic = inferTopicKey(searchText);
   const audience = inferAudienceKey(cls);
-  const focus = inferStructureFocus(searchText);
+  const focus = inferStructureFocus(classText);
   const topicLabel = topicNounForBoss(topic, cls);
   const seed = hashString(`${cls.id}-${slide.id}-${topic}-${audience}`);
   const baseItems = rotate(WARMUP_WHEEL_BANK[topic]?.[audience] || WARMUP_WHEEL_BANK.generic[audience], seed, 5);
-  const focusItem: WarmupWheelItem = audience === 'kids'
-    ? {
-        label: 'Class Words',
-        prompt: `Make one short sentence about ${topicLabel}. Example: ${focus.example}`,
-        es: `Haz una oracion corta sobre ${topicLabel}.`
-      }
+  const focusItem: WarmupWheelItem = focus.isExplicit
+    ? audience === 'kids'
+      ? {
+          label: 'Class Words',
+          prompt: `Make one short sentence about ${topicLabel}. Example: ${focus.example}`,
+          es: `Haz una oracion corta sobre ${topicLabel}.`
+        }
+      : {
+          label: 'Target Form',
+          prompt: `Ask one clear speaking question about ${topicLabel} using ${focus.label}. Example: ${focus.example}`,
+          es: `Haz una pregunta clara sobre ${topicLabel} usando ${focus.label}.`
+        }
     : {
-        label: 'Target Form',
-        prompt: `Ask one clear speaking question about ${topicLabel} using ${focus.label}. Example: ${focus.example}`,
-        es: `Haz una pregunta clara sobre ${topicLabel} usando ${focus.label}.`
+        label: audience === 'kids' ? 'Class Words' : 'Class Topic',
+        prompt: audience === 'kids'
+          ? `Make one short sentence about ${topicLabel}.`
+          : `Ask one clear warm-up question about ${topicLabel}.`,
+        es: audience === 'kids'
+          ? `Haz una oracion corta sobre ${topicLabel}.`
+          : `Haz una pregunta clara para calentar sobre ${topicLabel}.`
       };
   const items = uniqueWarmupItems([...baseItems, focusItem]);
 
@@ -2005,32 +2016,33 @@ type BossBattlePlan = NonNullable<ClassSlide['speakingBossBattle']>;
 
 function inferStructureFocus(text: string) {
   const normalized = normalizeText(text);
-  const rules: Array<{ label: string; pattern: RegExp; example: string }> = [
-    { label: 'present perfect continuous', pattern: /present perfect continuous|have been|has been/, example: 'I have been practicing for two weeks.' },
-    { label: 'present perfect', pattern: /present perfect|life experiences|experiencias de vida|ever|never|already|yet/, example: 'I have tried something new.' },
-    { label: 'past continuous', pattern: /past continuous|pasado continuo|was .*ing|were .*ing/, example: 'I was studying when it happened.' },
-    { label: 'present continuous', pattern: /present continuous|present progressive|presente continuo|right now|clothes|ropa|weather|clima/, example: 'She is wearing a jacket today.' },
-    { label: 'past simple', pattern: /past simple|pasado simple|regular verbs|irregular verbs|biograf|anecdotas|recuerdos|past decisions?/, example: 'I visited a new place last year.' },
-    { label: 'past to be', pattern: /past.*to be|was\/were|was were|was and were/, example: 'I was at home yesterday.' },
-    { label: 'future with going to', pattern: /going to|planes|plans?|future goals?/, example: 'I am going to start a new goal.' },
-    { label: 'future with will', pattern: /will|future|predictions?|predicciones|promises?/, example: 'I will explain my idea clearly.' },
-    { label: 'modals of obligation', pattern: /must|have to|obligation|obligacion|rules|reglas/, example: 'We have to follow the rule.' },
-    { label: 'modals for advice', pattern: /should|ought to|advice|consejo/, example: 'You should explain the problem calmly.' },
-    { label: 'modals of possibility', pattern: /may|might|could|possibility|deduction|posibilidad|deduccion/, example: 'It might be a good option.' },
-    { label: 'can for ability or requests', pattern: /\bcan\b|can't|cannot|could|ability|abilities|habilidades?|permisos?|peticiones?/, example: 'I can ask a clear question.' },
-    { label: 'comparatives and superlatives', pattern: /comparative|superlative|comparativos?|superlativos?|better|best|more .* than|the most/, example: 'This option is better than the first one.' },
-    { label: 'conditionals', pattern: /conditional|condicional|if /, example: 'If I had more time, I would practice more.' },
-    { label: 'passive voice', pattern: /passive|voz pasiva|was built|is made|are produced/, example: 'The message was sent yesterday.' },
-    { label: 'reported speech', pattern: /reported speech|estilo indirecto|said that|told me/, example: 'She said that she was ready.' },
-    { label: 'phrasal verbs', pattern: /phrasal verbs?|look up|turn on|give up|get along/, example: 'I look up new words online.' },
-    { label: 'presentation openers', pattern: /presentation|presentacion|introductions? academicas?|alto impacto|pitch|ted/, example: 'Today, I am going to present my main idea.' },
-    { label: 'present simple', pattern: /present simple|rutina|routine|habits?|habitos?|usually|every day|holidays?|traditions?|seasons?/, example: 'I usually practice after class.' },
-    { label: 'verb to be', pattern: /verb to be|to be|introductions?|presentarse|how old|name|edad|numbers?|time|hora/, example: 'I am ready for the challenge.' }
+  const rules: Array<{ label: string; pattern: RegExp; example: string; isExplicit?: boolean }> = [
+    { label: 'present perfect continuous', pattern: /present perfect continuous|presente perfecto continuo|have been|has been/, example: 'I have been practicing for two weeks.', isExplicit: true },
+    { label: 'present perfect', pattern: /present perfect|presente perfecto|life experiences|experiencias de vida|have you ever|has .* ever|have .* never|has .* never|already|yet/, example: 'I have tried something new.', isExplicit: true },
+    { label: 'past continuous', pattern: /past continuous|pasado continuo|was .*ing|were .*ing/, example: 'I was studying when it happened.', isExplicit: true },
+    { label: 'present continuous', pattern: /present continuous|present progressive|presente continuo|right now|ahora mismo/, example: 'She is wearing a jacket today.', isExplicit: true },
+    { label: 'past simple', pattern: /past simple|pasado simple|regular verbs|irregular verbs|biograf|anecdotas|recuerdos|past decisions?/, example: 'I visited a new place last year.', isExplicit: true },
+    { label: 'past to be', pattern: /past.*to be|was\/were|was were|was and were/, example: 'I was at home yesterday.', isExplicit: true },
+    { label: 'future with going to', pattern: /going to|future plans?|planes futuros|future goals?/, example: 'I am going to start a new goal.', isExplicit: true },
+    { label: 'future with will', pattern: /will|future predictions?|predictions?|predicciones|promises?/, example: 'I will explain my idea clearly.', isExplicit: true },
+    { label: 'modals of obligation', pattern: /must|have to|obligation|obligacion|rules|reglas/, example: 'We have to follow the rule.', isExplicit: true },
+    { label: 'modals for advice', pattern: /should|ought to|advice|consejo/, example: 'You should explain the problem calmly.', isExplicit: true },
+    { label: 'modals of possibility', pattern: /may|might|could|possibility|deduction|posibilidad|deduccion/, example: 'It might be a good option.', isExplicit: true },
+    { label: 'can for ability or requests', pattern: /\bcan\b|can't|cannot|could|ability|abilities|habilidades?|permisos?|peticiones?/, example: 'I can ask a clear question.', isExplicit: true },
+    { label: 'comparatives and superlatives', pattern: /comparative|superlative|comparativos?|superlativos?|better|best|more .* than|the most/, example: 'This option is better than the first one.', isExplicit: true },
+    { label: 'conditionals', pattern: /conditional|condicional|if /, example: 'If I had more time, I would practice more.', isExplicit: true },
+    { label: 'passive voice', pattern: /passive|voz pasiva|was built|is made|are produced/, example: 'The message was sent yesterday.', isExplicit: true },
+    { label: 'reported speech', pattern: /reported speech|estilo indirecto|said that|told me/, example: 'She said that she was ready.', isExplicit: true },
+    { label: 'phrasal verbs', pattern: /phrasal verbs?|look up|turn on|give up|get along/, example: 'I look up new words online.', isExplicit: true },
+    { label: 'presentation openers', pattern: /presentation|presentacion|introductions? academicas?|alto impacto|pitch|ted/, example: 'Today, I am going to present my main idea.', isExplicit: true },
+    { label: 'present simple', pattern: /present simple|presente simple|rutina|routine|habits?|habitos?|usually|every day|adverbios de frecuencia/, example: 'I usually practice after class.', isExplicit: true },
+    { label: 'verb to be', pattern: /verb to be|to be|introductions?|presentarse|how old|name|edad|numbers?|time|hora/, example: 'I am ready for the challenge.', isExplicit: true }
   ];
 
   return rules.find((rule) => rule.pattern.test(normalized)) || {
     label: 'topic-specific speaking phrases',
-    example: 'One important point is easy to explain.'
+    example: 'One important point is easy to explain.',
+    isExplicit: false
   };
 }
 
