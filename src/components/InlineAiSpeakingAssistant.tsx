@@ -183,6 +183,21 @@ export function InlineAiSpeakingAssistant({
 
     recorder.onstop = () => {
       cleanupMeter();
+      if (chunksRef.current.length === 0) {
+        setMode('done');
+        setStatus('No se capturo audio.');
+        setResult({
+          transcript: '',
+          summary: 'No se capturo audio para analizar.',
+          strengths: [],
+          corrections: ['Revisa que el audio correcto este seleccionado y vuelve a grabar.'],
+          grammarNotes: [],
+          vocabularySuggestions: [],
+          teacherNextSteps: ['Activar el audio correcto y repetir la prueba.'],
+          score: 0,
+        });
+        return;
+      }
       analyzeAudio(new Blob(chunksRef.current, { type: mimeType }));
     };
 
@@ -336,7 +351,7 @@ export function InlineAiSpeakingAssistant({
                 </div>
 
                 {result && (
-                  <div className="grid gap-4 lg:grid-cols-[0.42fr_1fr]">
+                  <div className="grid gap-4 lg:grid-cols-[0.55fr_1fr]">
                     <div className="rounded-2xl bg-white p-5 text-slate-950 sm:p-6">
                       <p className="text-xs font-black uppercase tracking-[0.14em] text-emerald-700 sm:text-sm">
                         {assistantMode === 'reading' ? 'Score lectura' : 'Score oral'}
@@ -344,13 +359,18 @@ export function InlineAiSpeakingAssistant({
                       <p className="mt-2 text-5xl font-black sm:text-7xl">{result.score}%</p>
                       <p className="mt-3 text-sm font-semibold text-slate-600 sm:text-lg">{result.summary}</p>
                     </div>
-                    <div className="rounded-2xl bg-white/5 p-5 sm:p-6">
-                      <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-100 sm:text-sm">
-                        {assistantMode === 'reading' ? 'Lectura detectada' : 'Lo que dijo'}
-                      </p>
-                      <p className="mt-2 text-base font-semibold leading-relaxed text-white/90 sm:text-xl">{result.transcript || 'No hubo transcripcion clara.'}</p>
+                    <div className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6">
+                      <div>
+                        <p className="text-xs font-black uppercase tracking-[0.14em] text-cyan-100 sm:text-sm">
+                          {assistantMode === 'reading' ? 'Lectura detectada' : 'Lo que dijo'}
+                        </p>
+                        <p className="mt-2 text-base font-semibold leading-relaxed text-white/90 sm:text-xl">{result.transcript || 'No hubo transcripcion clara.'}</p>
+                      </div>
+                      <ResultGroup title="Fortalezas" items={result.strengths} />
                       <ResultGroup title="Corregir" items={result.corrections} />
-                      <ResultGroup title="Siguiente paso" items={result.teacherNextSteps} />
+                      <ResultGroup title="Gramatica" items={result.grammarNotes} />
+                      <ResultGroup title="Vocabulario sugerido" items={result.vocabularySuggestions} />
+                      <ResultGroup title="Siguiente paso del profe" items={result.teacherNextSteps} />
                     </div>
                   </div>
                 )}
@@ -365,15 +385,15 @@ export function InlineAiSpeakingAssistant({
 
 function ResultGroup({ title, items }: { title: string; items: string[] }) {
   return (
-    <div className="mt-3">
-      <p className="mb-2 text-xs font-black uppercase tracking-[0.12em] text-white/55 sm:text-sm">{title}</p>
+    <div>
+      <p className="mb-2 text-xs font-black uppercase tracking-[0.14em] text-white/60 sm:text-sm">{title}</p>
       <div className="flex flex-wrap gap-2">
-        {items?.length ? items.slice(0, 5).map((item, index) => (
-          <span key={`${item}-${index}`} className="rounded-xl bg-cyan-100 px-3 py-2 text-xs font-black text-slate-950 sm:text-sm">
+        {items?.length ? items.slice(0, 8).map((item, index) => (
+          <span key={`${item}-${index}`} className="rounded-xl bg-cyan-100 px-3 py-1.5 text-xs font-black text-slate-950 sm:text-sm">
             {item}
           </span>
         )) : (
-          <span className="rounded-xl bg-white/10 px-3 py-2 text-xs font-bold text-white/70 sm:text-sm">Sin observaciones</span>
+          <span className="rounded-xl bg-white/10 px-3 py-1.5 text-xs font-bold text-white/70 sm:text-sm">Sin observaciones</span>
         )}
       </div>
     </div>
