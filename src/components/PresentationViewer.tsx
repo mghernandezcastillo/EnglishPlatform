@@ -178,7 +178,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className={`relative w-full ${isSpeakingBossBattle ? 'max-w-[min(1800px,98vw)] min-h-[calc(100vh-5.25rem)] sm:min-h-[calc(100vh-7.25rem)] rounded-xl sm:rounded-2xl' : isRoleplaySlide ? 'max-w-[min(1700px,96vw)] min-h-[calc(100vh-7.5rem)] rounded-2xl sm:rounded-3xl' : isScreenShareExerciseSlide ? 'max-w-5xl min-h-[78vh] sm:min-h-[82vh] rounded-2xl sm:rounded-3xl' : 'max-w-6xl min-h-[75vh] rounded-2xl sm:rounded-3xl'} mx-auto shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0`}
+                className={`relative w-full ${isSpeakingBossBattle ? 'max-w-[min(1800px,98vw)] min-h-[calc(100vh-5.25rem)] sm:min-h-[calc(100vh-7.25rem)] rounded-xl sm:rounded-2xl' : isRoleplaySlide ? 'max-w-[min(1500px,98vw)] h-[calc(100vh-6.5rem)] min-h-[620px] rounded-xl sm:rounded-2xl' : isScreenShareExerciseSlide ? 'max-w-5xl min-h-[78vh] sm:min-h-[82vh] rounded-2xl sm:rounded-3xl' : 'max-w-6xl min-h-[75vh] rounded-2xl sm:rounded-3xl'} mx-auto shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0`}
             >
             {isOpeningSlide && (
               <>
@@ -197,7 +197,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
               </>
             )}
             {/* Header */}
-            <div className={`${isSpeakingBossBattle ? 'sr-only' : isRoleplaySlide ? 'p-5 sm:p-8 lg:p-10 pb-2 sm:pb-3' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pb-1.5 sm:pb-2' : 'p-5 sm:p-8 pb-2 sm:pb-4'} shrink-0`}>
+            <div className={`${isSpeakingBossBattle ? 'sr-only' : isRoleplaySlide ? 'p-3 sm:p-4 lg:p-5 pb-1.5' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pb-1.5 sm:pb-2' : 'p-5 sm:p-8 pb-2 sm:pb-4'} shrink-0`}>
               {isOpeningSlide && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
@@ -209,18 +209,18 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   Inicio de clase
                 </motion.div>
               )}
-              <h1 className={`${isOpeningSlide ? 'text-3xl sm:text-5xl md:text-6xl leading-[0.95]' : isRoleplaySlide ? 'text-4xl sm:text-6xl lg:text-7xl leading-none' : isScreenShareExerciseSlide ? 'text-2xl sm:text-4xl' : 'text-2xl sm:text-5xl'} font-extrabold tracking-tight mb-1.5 sm:mb-2`}>
+              <h1 className={`${isOpeningSlide ? 'text-3xl sm:text-5xl md:text-6xl leading-[0.95]' : isRoleplaySlide ? 'text-xl sm:text-3xl lg:text-4xl leading-tight' : isScreenShareExerciseSlide ? 'text-2xl sm:text-4xl' : 'text-2xl sm:text-5xl'} font-extrabold tracking-tight mb-1.5 sm:mb-2`}>
                 {slide.title}
               </h1>
               {slide.description && (
-                <p className={`${isOpeningSlide ? 'max-w-3xl text-base sm:text-xl text-white/88' : isRoleplaySlide ? 'text-lg sm:text-2xl lg:text-3xl' : isScreenShareExerciseSlide ? 'text-sm sm:text-base' : 'text-base sm:text-xl'} font-medium`}>
+                <p className={`${isOpeningSlide ? 'max-w-3xl text-base sm:text-xl text-white/88' : isRoleplaySlide ? 'text-xs sm:text-base lg:text-lg' : isScreenShareExerciseSlide ? 'text-sm sm:text-base' : 'text-base sm:text-xl'} font-medium`}>
                   {slide.description}
                 </p>
               )}
             </div>
 
             {/* Content Area */}
-            <div className={`flex-1 ${isSpeakingBossBattle ? 'p-2 sm:p-4 lg:p-5' : isRoleplaySlide ? 'p-5 sm:p-8 lg:p-10 pt-2 sm:pt-3' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pt-1.5 sm:pt-2' : 'p-5 sm:p-8 pt-2 sm:pt-4'} flex flex-col md:flex-row ${isOpeningSlide ? 'gap-5 sm:gap-8 md:items-stretch' : isScreenShareExerciseSlide ? 'gap-3 sm:gap-4' : 'gap-4 sm:gap-8'} overflow-y-auto overflow-x-hidden min-h-0 min-w-0`}>
+            <div className={`flex-1 ${isSpeakingBossBattle ? 'p-2 sm:p-4 lg:p-5' : isRoleplaySlide ? 'p-3 sm:p-4 lg:p-5 pt-1.5' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pt-1.5 sm:pt-2' : 'p-5 sm:p-8 pt-2 sm:pt-4'} flex flex-col md:flex-row ${isOpeningSlide ? 'gap-5 sm:gap-8 md:items-stretch' : isScreenShareExerciseSlide ? 'gap-3 sm:gap-4' : 'gap-4 sm:gap-8'} overflow-y-auto overflow-x-hidden min-h-0 min-w-0`}>
               {/* Left text content */}
               <div className={`${isImmersiveSlide ? 'w-full' : isOpeningSlide ? 'md:w-[44%] md:flex-none' : 'flex-1'} min-w-0 flex flex-col ${isScreenShareExerciseSlide ? 'gap-2.5 sm:gap-4 justify-between' : 'gap-3 sm:gap-6'}`}>
                 {slide.type === 'spinning-wheel' && slide.wheelItems && (

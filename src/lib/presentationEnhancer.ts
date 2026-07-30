@@ -36,13 +36,19 @@ type AudienceKey = 'kids' | 'teens' | 'adults';
 type RoleplayPlan = {
   scenario: string;
   situation: string;
+  players?: {
+    aNamePlaceholder: string;
+    bNamePlaceholder: string;
+  };
   roles: {
     a: { label: string; goal: string };
     b: { label: string; goal: string };
   };
   mission: string[];
+  steps?: NonNullable<ClassSlide['roleplay']>['steps'];
   usefulPhrases: string[];
   successChecklist: string[];
+  victoryMessage?: string;
 };
 
 type WarmupWheelItem = {
@@ -177,6 +183,114 @@ const ROLEPLAY_SUPPORT_PHRASES: Record<AudienceKey, string[]> = {
   kids: ['And you?', 'I think ...', 'Thank you!'],
   teens: ['Tell me more.', 'I agree because ...', 'Can you explain that?'],
   adults: ['Could you tell me more?', 'That sounds useful because ...', 'Let me make sure I understand.']
+};
+
+const ROLEPLAY_TOPIC_WORDS: Record<TopicKey, Record<AudienceKey, string[]>> = {
+  greetings: {
+    kids: ['hello', 'name', 'friend', 'bye', 'happy'],
+    teens: ['hello', 'name', 'classmate', 'today', 'goodbye'],
+    adults: ['hello', 'name', 'colleague', 'meeting', 'goodbye']
+  },
+  numbers: {
+    kids: ['age', 'number', 'birthday', 'month', 'time'],
+    teens: ['age', 'birthday', 'date', 'time', 'number'],
+    adults: ['date', 'time', 'number', 'appointment', 'confirm']
+  },
+  family: {
+    kids: ['mom', 'dad', 'sister', 'brother', 'home'],
+    teens: ['family', 'friend', 'older', 'younger', 'close'],
+    adults: ['family', 'relative', 'home', 'relationship', 'support']
+  },
+  routine: {
+    kids: ['wake up', 'eat', 'school', 'play', 'sleep'],
+    teens: ['morning', 'school', 'homework', 'practice', 'weekend'],
+    adults: ['morning', 'work', 'schedule', 'habit', 'evening']
+  },
+  food: {
+    kids: ['food', 'drink', 'snack', 'please', 'thanks'],
+    teens: ['menu', 'drink', 'order', 'bill', 'please'],
+    adults: ['menu', 'order', 'recommend', 'bill', 'service']
+  },
+  clothes: {
+    kids: ['shirt', 'jacket', 'shoes', 'color', 'rain'],
+    teens: ['outfit', 'style', 'color', 'comfortable', 'weekend'],
+    adults: ['size', 'color', 'shirt', 'jacket', 'style']
+  },
+  gadgets: {
+    kids: ['phone', 'game', 'music', 'screen', 'app'],
+    teens: ['phone', 'app', 'laptop', 'headphones', 'screen'],
+    adults: ['device', 'app', 'tool', 'work', 'problem']
+  },
+  school: {
+    kids: ['pencil', 'book', 'teacher', 'class', 'bag'],
+    teens: ['subject', 'class', 'teacher', 'exam', 'project'],
+    adults: ['study', 'goal', 'class', 'practice', 'improve']
+  },
+  animals: {
+    kids: ['dog', 'cat', 'pet', 'run', 'home'],
+    teens: ['pet', 'wild', 'animal', 'care', 'favorite'],
+    adults: ['pet', 'nature', 'care', 'experience', 'opinion']
+  },
+  body: {
+    kids: ['head', 'hands', 'feet', 'jump', 'run'],
+    teens: ['body', 'sport', 'move', 'health', 'ability'],
+    adults: ['body', 'health', 'pain', 'exercise', 'symptom']
+  },
+  directions: {
+    kids: ['left', 'right', 'park', 'school', 'bus'],
+    teens: ['place', 'street', 'turn', 'bus', 'near'],
+    adults: ['street', 'corner', 'station', 'near', 'directions']
+  },
+  hobbies: {
+    kids: ['game', 'sport', 'music', 'friends', 'fun'],
+    teens: ['hobby', 'sport', 'music', 'free time', 'friends'],
+    adults: ['weekend', 'hobby', 'relax', 'free time', 'interest']
+  },
+  house: {
+    kids: ['room', 'bed', 'kitchen', 'sofa', 'home'],
+    teens: ['room', 'house', 'desk', 'bed', 'favorite'],
+    adults: ['home', 'apartment', 'room', 'kitchen', 'useful']
+  },
+  weather: {
+    kids: ['sunny', 'rainy', 'cold', 'hot', 'jacket'],
+    teens: ['weather', 'sunny', 'rainy', 'clothes', 'plans'],
+    adults: ['weather', 'forecast', 'plans', 'clothes', 'travel']
+  },
+  jobs: {
+    kids: ['doctor', 'teacher', 'work', 'help', 'school'],
+    teens: ['job', 'future', 'skill', 'team', 'workplace'],
+    adults: ['job', 'role', 'responsibility', 'meeting', 'skill']
+  },
+  future: {
+    kids: ['tomorrow', 'plan', 'play', 'school', 'home'],
+    teens: ['weekend', 'plan', 'goal', 'school', 'idea'],
+    adults: ['plan', 'goal', 'next step', 'decision', 'schedule']
+  },
+  travel: {
+    kids: ['trip', 'bag', 'car', 'plane', 'beach'],
+    teens: ['trip', 'destination', 'bag', 'transport', 'hotel'],
+    adults: ['trip', 'booking', 'hotel', 'flight', 'reservation']
+  },
+  feelings: {
+    kids: ['happy', 'sad', 'tired', 'angry', 'friend'],
+    teens: ['happy', 'stressed', 'tired', 'relaxed', 'reason'],
+    adults: ['mood', 'stress', 'confident', 'support', 'reaction']
+  },
+  holidays: {
+    kids: ['party', 'cake', 'gift', 'family', 'song'],
+    teens: ['holiday', 'tradition', 'food', 'family', 'party'],
+    adults: ['holiday', 'tradition', 'meaning', 'family', 'custom']
+  },
+  business: {
+    kids: ['help', 'team', 'idea', 'task', 'thanks'],
+    teens: ['message', 'request', 'project', 'team', 'reply'],
+    adults: ['email', 'meeting', 'request', 'client', 'next step']
+  },
+  generic: {
+    kids: ['word', 'idea', 'friend', 'question', 'answer'],
+    teens: ['topic', 'idea', 'example', 'question', 'opinion'],
+    adults: ['topic', 'example', 'question', 'purpose', 'result']
+  }
 };
 
 const ROLEPLAY_QUESTION_PROMPTS: Record<TopicKey, Record<AudienceKey, string[]>> = {
@@ -617,16 +731,16 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Today', prompt: 'Describe what you are wearing today.', es: 'Describe que llevas puesto hoy.' },
       { label: 'Opinion', prompt: 'What clothes are comfortable for school?', es: 'Que ropa es comoda para la escuela?' },
       { label: 'Compare', prompt: 'Do you prefer casual or formal clothes? Why?', es: 'Prefieres ropa casual o formal? Por que?' },
-      { label: 'Shopping', prompt: 'What item of clothing would you like to buy?', es: 'Que prenda te gustaria comprar?' },
+      { label: 'Shopping', prompt: 'What item of clothing do you want to buy?', es: 'Que prenda quieres comprar?' },
       { label: 'Ask', prompt: 'Ask one question about style or colors.', es: 'Haz una pregunta sobre estilo o colores.' }
     ],
     adults: [
       { label: 'Work', prompt: 'What do you usually wear for work or important plans?', es: 'Que usas normalmente para trabajo o planes importantes?' },
-      { label: 'Today', prompt: 'Describe your outfit today using one complete sentence.', es: 'Describe tu ropa de hoy con una oracion completa.' },
+      { label: 'Today', prompt: 'Describe your outfit today in one complete sentence.', es: 'Describe tu ropa de hoy con una oracion completa.' },
       { label: 'Weather', prompt: 'What do you wear in cold or rainy weather?', es: 'Que usas con clima frio o lluvioso?' },
       { label: 'Shopping', prompt: 'Ask for a size or color politely in a store.', es: 'Pide una talla o color educadamente en una tienda.' },
       { label: 'Style', prompt: 'What style feels professional to you?', es: 'Que estilo te parece profesional?' },
-      { label: 'Question', prompt: 'Ask someone what they would wear for an event.', es: 'Pregunta que usaria alguien para un evento.' }
+      { label: 'Question', prompt: 'Ask someone what they wear for an event.', es: 'Pregunta que usa alguien para un evento.' }
     ]
   },
   gadgets: {
@@ -643,7 +757,7 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Device', prompt: 'Do you prefer a phone, tablet, or laptop?', es: 'Prefieres celular, tablet o laptop?' },
       { label: 'Study', prompt: 'What technology helps you study?', es: 'Que tecnologia te ayuda a estudiar?' },
       { label: 'Limit', prompt: 'How much screen time is okay for you?', es: 'Cuanto tiempo de pantalla esta bien para ti?' },
-      { label: 'Future', prompt: 'What gadget would you like to have?', es: 'Que aparato te gustaria tener?' },
+      { label: 'Favorite', prompt: 'What gadget do you want to have?', es: 'Que aparato quieres tener?' },
       { label: 'Ask', prompt: 'Ask one question about technology habits.', es: 'Haz una pregunta sobre habitos tecnologicos.' }
     ],
     adults: [
@@ -691,15 +805,15 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Ask', prompt: 'Ask your partner about one animal.', es: 'Pregunta por un animal.' }
     ],
     teens: [
-      { label: 'Pet', prompt: 'Would you like to have a pet? Why?', es: 'Te gustaria tener una mascota? Por que?' },
-      { label: 'Wild', prompt: 'What wild animal would you like to see?', es: 'Que animal salvaje te gustaria ver?' },
+      { label: 'Pet', prompt: 'Do you want to have a pet? Why?', es: 'Quieres tener una mascota? Por que?' },
+      { label: 'Wild', prompt: 'What wild animal do you want to see?', es: 'Que animal salvaje quieres ver?' },
       { label: 'Compare', prompt: 'Which animal is smarter: a dog or a cat?', es: 'Que animal es mas inteligente: perro o gato?' },
       { label: 'Care', prompt: 'What does a pet need every day?', es: 'Que necesita una mascota todos los dias?' },
-      { label: 'Opinion', prompt: 'Should animals live in zoos? Give one reason.', es: 'Deben vivir animales en zoologicos? Da una razon.' },
+      { label: 'Opinion', prompt: 'Do animals need big spaces? Give one reason.', es: 'Los animales necesitan espacios grandes? Da una razon.' },
       { label: 'Ask', prompt: 'Ask one clear animal question.', es: 'Haz una pregunta clara sobre animales.' }
     ],
     adults: [
-      { label: 'Experience', prompt: 'Have you ever had a pet? Say one detail.', es: 'Has tenido mascota? Di un detalle.' },
+      { label: 'Experience', prompt: 'Did you have a pet before? Say one detail.', es: 'Tuviste mascota antes? Di un detalle.' },
       { label: 'Preference', prompt: 'Do you prefer dogs, cats, or another animal? Why?', es: 'Prefieres perros, gatos u otro animal? Por que?' },
       { label: 'Responsibility', prompt: 'What responsibility comes with having a pet?', es: 'Que responsabilidad viene con tener mascota?' },
       { label: 'Nature', prompt: 'What animal from nature interests you?', es: 'Que animal de la naturaleza te interesa?' },
@@ -720,7 +834,7 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Action', prompt: 'What action can you do well?', es: 'Que accion puedes hacer bien?' },
       { label: 'Sport', prompt: 'What body parts do you use in your favorite sport?', es: 'Que partes del cuerpo usas en tu deporte favorito?' },
       { label: 'Health', prompt: 'What do you do when you feel tired?', es: 'Que haces cuando te sientes cansado?' },
-      { label: 'Describe', prompt: 'Describe a person using two physical details.', es: 'Describe a una persona con dos detalles fisicos.' },
+      { label: 'Describe', prompt: 'Describe a person with two physical details.', es: 'Describe a una persona con dos detalles fisicos.' },
       { label: 'Ability', prompt: 'Say one thing you can and cannot do.', es: 'Di algo que puedes y no puedes hacer.' },
       { label: 'Ask', prompt: 'Ask one question with can.', es: 'Haz una pregunta con can.' }
     ],
@@ -772,7 +886,7 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Free Time', prompt: 'What do you usually do in your free time?', es: 'Que haces normalmente en tu tiempo libre?' },
       { label: 'Frequency', prompt: 'How often do you practice a hobby?', es: 'Con que frecuencia practicas un pasatiempo?' },
       { label: 'Friends', prompt: 'What activity is better with friends?', es: 'Que actividad es mejor con amigos?' },
-      { label: 'Try', prompt: 'What new hobby would you like to try?', es: 'Que pasatiempo nuevo te gustaria probar?' },
+      { label: 'Try', prompt: 'What new hobby do you want to try?', es: 'Que pasatiempo nuevo quieres probar?' },
       { label: 'Reason', prompt: 'Why do you enjoy your favorite activity?', es: 'Por que disfrutas tu actividad favorita?' },
       { label: 'Ask', prompt: 'Ask one question about free time.', es: 'Haz una pregunta sobre tiempo libre.' }
     ],
@@ -798,7 +912,7 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Favorite', prompt: 'What is your favorite room and why?', es: 'Cual es tu cuarto favorito y por que?' },
       { label: 'Describe', prompt: 'Describe your bedroom with two details.', es: 'Describe tu cuarto con dos detalles.' },
       { label: 'There Are', prompt: 'Say one sentence about what there are in your home.', es: 'Di una oracion sobre lo que hay en tu casa.' },
-      { label: 'Change', prompt: 'What would you change in your room?', es: 'Que cambiarias en tu cuarto?' },
+      { label: 'Change', prompt: 'What do you want to change in your room?', es: 'Que quieres cambiar en tu cuarto?' },
       { label: 'Activity', prompt: 'What do you usually do at home after class?', es: 'Que haces normalmente en casa despues de clase?' },
       { label: 'Ask', prompt: 'Ask one question about someone\'s home.', es: 'Haz una pregunta sobre la casa de alguien.' }
     ],
@@ -806,7 +920,7 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Home', prompt: 'Describe your home or apartment in one sentence.', es: 'Describe tu casa o apartamento en una oracion.' },
       { label: 'Room', prompt: 'Which room do you use most and why?', es: 'Que cuarto usas mas y por que?' },
       { label: 'Object', prompt: 'What object at home is useful every day?', es: 'Que objeto de casa es util todos los dias?' },
-      { label: 'Ideal', prompt: 'What would your ideal home have?', es: 'Que tendria tu casa ideal?' },
+      { label: 'Ideal', prompt: 'What does your ideal home have?', es: 'Que tiene tu casa ideal?' },
       { label: 'Routine', prompt: 'What do you usually do when you get home?', es: 'Que haces normalmente al llegar a casa?' },
       { label: 'Question', prompt: 'Ask someone about their home politely.', es: 'Pregunta por la casa de alguien educadamente.' }
     ]
@@ -849,7 +963,7 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
     teens: [
       { label: 'Future Job', prompt: 'What job sounds interesting for your future?', es: 'Que trabajo suena interesante para tu futuro?' },
       { label: 'Skills', prompt: 'What skill is important for that job?', es: 'Que habilidad es importante para ese trabajo?' },
-      { label: 'Place', prompt: 'Where would you like to work one day?', es: 'Donde te gustaria trabajar algun dia?' },
+      { label: 'Place', prompt: 'Where do you want to work one day?', es: 'Donde quieres trabajar algun dia?' },
       { label: 'Compare', prompt: 'Which is better: working alone or in a team?', es: 'Que es mejor: trabajar solo o en equipo?' },
       { label: 'Responsibility', prompt: 'What responsibility sounds difficult?', es: 'Que responsabilidad suena dificil?' },
       { label: 'Ask', prompt: 'Ask one career question.', es: 'Haz una pregunta sobre carrera.' }
@@ -865,27 +979,27 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
   },
   future: {
     kids: [
-      { label: 'Tomorrow', prompt: 'What are you going to do tomorrow?', es: 'Que vas a hacer manana?' },
-      { label: 'Later', prompt: 'What will you do after class?', es: 'Que haras despues de clase?' },
+      { label: 'Tomorrow', prompt: 'What is one plan for tomorrow?', es: 'Cual es un plan para manana?' },
+      { label: 'Later', prompt: 'What is one plan after class?', es: 'Cual es un plan despues de clase?' },
       { label: 'Dream', prompt: 'What do you want to be in the future?', es: 'Que quieres ser en el futuro?' },
-      { label: 'Trip', prompt: 'Where will you travel one day?', es: 'A donde viajaras algun dia?' },
-      { label: 'Plan', prompt: 'Say one plan with going to.', es: 'Di un plan con going to.' },
+      { label: 'Trip', prompt: 'What place do you want to visit one day?', es: 'Que lugar quieres visitar algun dia?' },
+      { label: 'Plan', prompt: 'Say one simple plan for this week.', es: 'Di un plan simple para esta semana.' },
       { label: 'Ask', prompt: 'Ask your partner about tomorrow.', es: 'Pregunta por manana.' }
     ],
     teens: [
-      { label: 'Weekend', prompt: 'What are you going to do this weekend?', es: 'Que vas a hacer este fin de semana?' },
-      { label: 'Prediction', prompt: 'What will happen at school this week?', es: 'Que pasara en la escuela esta semana?' },
-      { label: 'Goal', prompt: 'What goal are you going to work on?', es: 'En que meta vas a trabajar?' },
+      { label: 'Weekend', prompt: 'What is one plan for this weekend?', es: 'Cual es un plan para este fin de semana?' },
+      { label: 'Prediction', prompt: 'What event is possible at school this week?', es: 'Que evento es posible en la escuela esta semana?' },
+      { label: 'Goal', prompt: 'What goal is important this week?', es: 'Que meta es importante esta semana?' },
       { label: 'Plan', prompt: 'Say one plan and one reason.', es: 'Di un plan y una razon.' },
-      { label: 'Question', prompt: 'Ask one future question with will or going to.', es: 'Haz una pregunta futura con will o going to.' },
-      { label: 'Choice', prompt: 'Would you rather plan everything or decide later?', es: 'Prefieres planear todo o decidir despues?' }
+      { label: 'Question', prompt: 'Ask one easy question about plans.', es: 'Haz una pregunta facil sobre planes.' },
+      { label: 'Choice', prompt: 'Do you prefer planning or deciding later?', es: 'Prefieres planear o decidir despues?' }
     ],
     adults: [
       { label: 'Plan', prompt: 'What are you planning to do next week?', es: 'Que planeas hacer la proxima semana?' },
-      { label: 'Goal', prompt: 'What professional or personal goal will you focus on?', es: 'En que meta profesional o personal te enfocaras?' },
-      { label: 'Prediction', prompt: 'What change do you think will happen soon?', es: 'Que cambio crees que pasara pronto?' },
-      { label: 'Decision', prompt: 'What decision are you going to make this month?', es: 'Que decision vas a tomar este mes?' },
-      { label: 'Offer', prompt: 'Make one offer using will.', es: 'Haz una oferta usando will.' },
+      { label: 'Goal', prompt: 'What professional or personal goal is important now?', es: 'Que meta profesional o personal es importante ahora?' },
+      { label: 'Prediction', prompt: 'What change looks possible soon?', es: 'Que cambio parece posible pronto?' },
+      { label: 'Decision', prompt: 'What decision is important this month?', es: 'Que decision es importante este mes?' },
+      { label: 'Help', prompt: 'What help can you offer today?', es: 'Que ayuda puedes ofrecer hoy?' },
       { label: 'Question', prompt: 'Ask someone about their future plans.', es: 'Pregunta a alguien por sus planes futuros.' }
     ]
   },
@@ -899,15 +1013,15 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Ask', prompt: 'Ask your partner where they want to go.', es: 'Pregunta a donde quiere ir.' }
     ],
     teens: [
-      { label: 'Destination', prompt: 'Where would you like to travel and why?', es: 'A donde te gustaria viajar y por que?' },
-      { label: 'Pack', prompt: 'What three things would you pack first?', es: 'Que tres cosas empacarias primero?' },
+      { label: 'Destination', prompt: 'Where do you want to travel and why?', es: 'A donde quieres viajar y por que?' },
+      { label: 'Pack', prompt: 'What three things do you pack first?', es: 'Que tres cosas empacas primero?' },
       { label: 'Transport', prompt: 'What is the best way to travel in your city?', es: 'Cual es la mejor forma de viajar en tu ciudad?' },
       { label: 'Problem', prompt: 'What travel problem is annoying?', es: 'Que problema de viaje es molesto?' },
       { label: 'Plan', prompt: 'Plan one weekend trip in one sentence.', es: 'Planea un viaje de fin de semana en una oracion.' },
       { label: 'Ask', prompt: 'Ask a question about a trip.', es: 'Haz una pregunta sobre un viaje.' }
     ],
     adults: [
-      { label: 'Trip', prompt: 'Describe a trip you would like to take.', es: 'Describe un viaje que te gustaria hacer.' },
+      { label: 'Trip', prompt: 'Describe a trip you want to take.', es: 'Describe un viaje que quieres hacer.' },
       { label: 'Booking', prompt: 'Ask about a hotel, flight, or reservation politely.', es: 'Pregunta por hotel, vuelo o reserva educadamente.' },
       { label: 'Packing', prompt: 'What do you always pack first?', es: 'Que empacas siempre primero?' },
       { label: 'Experience', prompt: 'What travel experience do you remember clearly?', es: 'Que experiencia de viaje recuerdas claramente?' },
@@ -929,7 +1043,7 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Stress', prompt: 'What makes students feel stressed?', es: 'Que hace que estudiantes se sientan estresados?' },
       { label: 'Relax', prompt: 'What helps you relax after a long day?', es: 'Que te ayuda a relajarte despues de un dia largo?' },
       { label: 'Excited', prompt: 'What are you excited about this week?', es: 'Que te emociona esta semana?' },
-      { label: 'Advice', prompt: 'What should a nervous friend do?', es: 'Que deberia hacer un amigo nervioso?' },
+      { label: 'Advice', prompt: 'What helps a nervous friend?', es: 'Que ayuda a un amigo nervioso?' },
       { label: 'Ask', prompt: 'Ask a careful question about feelings.', es: 'Haz una pregunta cuidadosa sobre sentimientos.' }
     ],
     adults: [
@@ -955,7 +1069,7 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
       { label: 'Tradition', prompt: 'What tradition do you have with family or friends?', es: 'Que tradicion tienes con familia o amigos?' },
       { label: 'Food', prompt: 'What food is special in celebrations?', es: 'Que comida es especial en celebraciones?' },
       { label: 'Memory', prompt: 'Describe a celebration you remember.', es: 'Describe una celebracion que recuerdes.' },
-      { label: 'Plan', prompt: 'What are you going to do for the next holiday?', es: 'Que vas a hacer para la proxima festividad?' },
+      { label: 'Plan', prompt: 'What is one plan for the next holiday?', es: 'Cual es un plan para la proxima festividad?' },
       { label: 'Ask', prompt: 'Ask one question about traditions.', es: 'Haz una pregunta sobre tradiciones.' }
     ],
     adults: [
@@ -1013,9 +1127,9 @@ const WARMUP_WHEEL_BANK: Record<TopicKey, Record<AudienceKey, WarmupWheelItem[]>
     adults: [
       { label: 'Context', prompt: 'Where could you use today\'s English in real life?', es: 'Donde podrias usar el ingles de hoy en la vida real?' },
       { label: 'Experience', prompt: 'Share one experience connected to today\'s topic.', es: 'Comparte una experiencia conectada al tema de hoy.' },
-      { label: 'Need', prompt: 'What phrase from this topic would be useful for you?', es: 'Que frase de este tema seria util para ti?' },
+      { label: 'Need', prompt: 'What phrase from this topic is useful for you?', es: 'Que frase de este tema es util para ti?' },
       { label: 'Question', prompt: 'Ask one practical question about today\'s topic.', es: 'Haz una pregunta practica sobre el tema de hoy.' },
-      { label: 'Example', prompt: 'Give one realistic example using today\'s topic.', es: 'Da un ejemplo realista usando el tema de hoy.' },
+      { label: 'Example', prompt: 'Say one realistic example about today\'s topic.', es: 'Di un ejemplo realista sobre el tema de hoy.' },
       { label: 'Goal', prompt: 'What do you want to say better by the end of class?', es: 'Que quieres decir mejor al final de la clase?' }
     ]
   }
@@ -1046,35 +1160,141 @@ function rotate<T>(items: T[], seed: number, count = items.length) {
 
 function inferTopicKey(text: string): TopicKey {
   const normalized = normalizeText(text);
-  if (/email|formal|report|meeting|business|proposal|office|trabajo|work|client|customer|negotiation|leadership|teamwork|interview|entrevista/.test(normalized)) return 'business';
-  if (/debate|opinion|agree|disagree|acuerdo|desacuerdo|critical thinking|pensamiento critico|argument/.test(normalized)) return 'business';
   if (/hello|greeting|introduc|saludos|despedidas/.test(normalized)) return 'greetings';
-  if (/number|birthday|month|date|age|time|hora/.test(normalized)) return 'numbers';
-  if (/family|mother|father|sister|brother/.test(normalized)) return 'family';
-  if (/routine|wake up|daily|morning|night/.test(normalized)) return 'routine';
-  if (/food|drink|restaurant|menu|bill|meal|breakfast|lunch|dinner/.test(normalized)) return 'food';
-  if (/clothes|shirt|jacket|pants|wear|fashion|ropa|apariencia|style|estilo/.test(normalized)) return 'clothes';
-  if (/gadget|tech|device|app|phone|laptop|console/.test(normalized)) return 'gadgets';
-  if (/school|classroom|subject|backpack|teacher|exam/.test(normalized)) return 'school';
-  if (/\bpet\b|\bpets\b|\banimal\b|\banimals\b|wild/.test(normalized)) return 'animals';
-  if (/body|face|hand|leg|eye|ear|nose/.test(normalized)) return 'body';
-  if (/direction|city|place|turn left|go straight|museum|station/.test(normalized)) return 'directions';
-  if (/hobby|sport|game|music|free time/.test(normalized)) return 'hobbies';
-  if (/house|room|kitchen|bathroom|bedroom|living room/.test(normalized)) return 'house';
-  if (/weather|season|rain|sunny|cloudy|winter|summer/.test(normalized)) return 'weather';
-  if (/job|profession|doctor|teacher|worker|office/.test(normalized)) return 'jobs';
-  if (/future|going to|will|plan|tomorrow|next week/.test(normalized)) return 'future';
-  if (/travel|trip|airport|hotel|vacation/.test(normalized)) return 'travel';
-  if (/feeling|happy|sad|tired|angry|nervous/.test(normalized)) return 'feelings';
-  if (/holiday|christmas|birthday party|celebration/.test(normalized)) return 'holidays';
+  if (/number|numero|birthday|cumpleanos|month|mes|date|fecha|age|edad|time|hora|dias|ordinales/.test(normalized)) return 'numbers';
+  if (/family|familia|mother|madre|father|padre|sister|hermana|brother|hermano|posesivos/.test(normalized)) return 'family';
+  if (/routine|rutina|wake up|daily|diaria|morning|manana|night|noche|habits?|habitos?/.test(normalized)) return 'routine';
+  if (/food|comida|comidas|drink|bebida|bebidas|restaurant|restaurante|menu|bill|cuenta|meal|breakfast|lunch|dinner|snack|pedidos/.test(normalized)) return 'food';
+  if (/email|correo|formal|report|informe|meeting|reunion|business|negocio|proposal|propuesta|client|cliente|negotiation|negociacion|leadership|liderazgo|teamwork|interview|entrevista/.test(normalized)) return 'business';
+  if (/debate|opinion|agree|disagree|acuerdo|desacuerdo|critical thinking|pensamiento critico|argument/.test(normalized)) return 'business';
+  if (/clothes|shirt|jacket|pants|wear|fashion|ropa|apariencia|style|estilo|colores|colors|descripciones fisicas/.test(normalized)) return 'clothes';
+  if (/gadget|tech|tecnologia|technology|device|aparato|app|phone|celular|telefono|laptop|console|redes sociales/.test(normalized)) return 'gadgets';
+  if (/school|escuela|classroom|salon|subject|materia|backpack|teacher|exam|supplies/.test(normalized)) return 'school';
+  if (/\bpet\b|\bpets\b|\bmascota\b|\bmascotas\b|\banimal\b|\banimals\b|wild|salvaje|naturaleza|nature/.test(normalized)) return 'animals';
+  if (/body|cuerpo|face|cara|hand|mano|leg|pierna|eye|ojo|ear|oreja|nose|nariz|health|salud|partes/.test(normalized)) return 'body';
+  if (/direction|direcciones|city|ciudad|place|lugar|places|lugares|transporte|transport|turn left|go straight|museum|station|calle/.test(normalized)) return 'directions';
+  if (/hobby|pasatiempo|sport|deporte|game|juego|music|musica|free time|tiempo libre|peliculas|series/.test(normalized)) return 'hobbies';
+  if (/house|casa|room|cuarto|habitacion|kitchen|cocina|bathroom|bano|bedroom|living room|home/.test(normalized)) return 'house';
+  if (/weather|clima|season|estacion|rain|lluvia|sunny|cloudy|winter|summer/.test(normalized)) return 'weather';
+  if (/job|profession|profesion|profesiones|ocupacion|ocupaciones|doctor|teacher|worker|work|trabajo|oficina|office/.test(normalized)) return 'jobs';
+  if (/future|futuro|going to|will|plan|planes|predicciones|tomorrow|next week/.test(normalized)) return 'future';
+  if (/travel|viaje|trip|airport|aeropuerto|hotel|vacation|vacaciones/.test(normalized)) return 'travel';
+  if (/feeling|sentimiento|emocion|emociones|happy|sad|tired|angry|nervous/.test(normalized)) return 'feelings';
+  if (/holiday|christmas|birthday party|celebration|celebracion|tradicion|tradiciones|festivals?|festivales/.test(normalized)) return 'holidays';
   return 'generic';
 }
 
 function inferAudienceKey(cls: CurriculumClass): AudienceKey {
-  const normalized = normalizeText(`${cls.id} ${cls.title} ${cls.description || ''} ${cls.objective || ''}`);
+  const normalized = normalizeText([
+    cls.id,
+    cls.title,
+    cls.description || '',
+    cls.objective || '',
+    ...cls.sections.flatMap((section) => [
+      section.id,
+      section.title,
+      section.objective,
+      section.action,
+      ...section.slides.flatMap((slide) => [
+        slide.id,
+        slide.title,
+        slide.description || '',
+        ...(slide.content || [])
+      ])
+    ])
+  ].join(' '));
+  if (/\bkids?-|kids|kid|infantil|explorador|jugar|divirtiend|campeon|magic warm-up|ruleta magica/.test(normalized)) return 'kids';
   if (/teens|teen|adolescente/.test(normalized)) return 'teens';
-  if (/kids|kid|infantil|explorador|jugar|divirtiend|campeon|magic warm-up/.test(normalized)) return 'kids';
   return 'adults';
+}
+
+function roleplayNamePlaceholders(audience: AudienceKey) {
+  if (audience === 'kids') return { aNamePlaceholder: 'Teacher', bNamePlaceholder: 'Student' };
+  if (audience === 'teens') return { aNamePlaceholder: 'Student A', bNamePlaceholder: 'Student B' };
+  return { aNamePlaceholder: 'Teacher', bNamePlaceholder: 'Student' };
+}
+
+function buildGuidedRoleplaySteps(plan: RoleplayPlan, topic: TopicKey, audience: AudienceKey): NonNullable<RoleplayPlan['steps']> {
+  const words = ROLEPLAY_TOPIC_WORDS[topic]?.[audience] || ROLEPLAY_TOPIC_WORDS.generic[audience];
+  const phrases = uniqueItems([...plan.usefulPhrases, ...ROLEPLAY_SUPPORT_PHRASES[audience]]);
+  const aRole = plan.roles.a.label;
+  const bRole = plan.roles.b.label;
+  const firstPhrase = phrases.slice(0, 3);
+  const secondPhrase = rotate(phrases, 2, 3);
+  const thirdPhrase = rotate(phrases, 4, 3);
+  const finalPhrase = uniqueItems([...rotate(phrases, 1, 2), audience === 'kids' ? 'Thank you!' : 'Thanks, that helps.']).slice(0, 3);
+
+  return [
+    {
+      id: 'step-1',
+      speaker: 'a',
+      title: `${aRole}: start`,
+      instruction: audience === 'kids'
+        ? `${aRole} says hello and starts with one easy sentence.`
+        : `${aRole} opens the conversation and explains the situation in one clear sentence.`,
+      phrases: firstPhrase,
+      vocabulary: words.slice(0, 5)
+    },
+    {
+      id: 'step-2',
+      speaker: 'b',
+      title: `${bRole}: answer`,
+      instruction: audience === 'kids'
+        ? `${bRole} answers and asks one easy question.`
+        : `${bRole} responds, asks one useful question, and keeps the conversation moving.`,
+      phrases: secondPhrase,
+      vocabulary: rotate(words, 1, 5)
+    },
+    {
+      id: 'step-3',
+      speaker: 'a',
+      title: `${aRole}: add detail`,
+      instruction: plan.mission[1] || (audience === 'kids' ? 'Say one more idea with a class word.' : 'Add one detail and use one useful phrase.'),
+      phrases: thirdPhrase,
+      vocabulary: rotate(words, 2, 5)
+    },
+    {
+      id: 'step-4',
+      speaker: 'both',
+      title: 'Finish together',
+      instruction: plan.mission[2] || (audience === 'kids' ? 'Both players finish politely.' : 'Both players close the conversation with a clear final line.'),
+      phrases: finalPhrase,
+      vocabulary: rotate(words, 3, 5)
+    }
+  ];
+}
+
+function enrichRoleplayPlan(plan: RoleplayPlan, topic: TopicKey, audience: AudienceKey): RoleplayPlan {
+  const successChecklist = audience === 'kids'
+    ? ['Both players spoke', 'Used 2 class words', 'Asked 1 question', 'Finished politely']
+    : ['Both roles are clear', 'Used 2 useful phrases', 'Asked 1 follow-up question', 'Closed naturally'];
+
+  return {
+    ...plan,
+    players: roleplayNamePlaceholders(audience),
+    mission: plan.mission.slice(0, 3),
+    usefulPhrases: uniqueItems([
+      ...plan.usefulPhrases,
+      ...ROLEPLAY_QUESTION_PROMPTS[topic][audience],
+      ...ROLEPLAY_SUPPORT_PHRASES[audience]
+    ]).slice(0, 8),
+    successChecklist,
+    steps: buildGuidedRoleplaySteps(
+      {
+        ...plan,
+        usefulPhrases: uniqueItems([
+          ...plan.usefulPhrases,
+          ...ROLEPLAY_QUESTION_PROMPTS[topic][audience],
+          ...ROLEPLAY_SUPPORT_PHRASES[audience]
+        ])
+      },
+      topic,
+      audience
+    ),
+    victoryMessage: audience === 'kids'
+      ? 'Mini conversation complete!'
+      : 'Conversation complete. Switch roles and try it again.'
+  };
 }
 
 function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: CurriculumClass): RoleplayPlan {
@@ -1823,14 +2043,7 @@ function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: Curricul
   };
 
   const plan = libraries[topic][audience];
-  return {
-    ...plan,
-    usefulPhrases: uniqueItems([
-      ...plan.usefulPhrases,
-      ...ROLEPLAY_QUESTION_PROMPTS[topic][audience],
-      ...ROLEPLAY_SUPPORT_PHRASES[audience]
-    ])
-  };
+  return enrichRoleplayPlan(plan, topic, audience);
 }
 
 function enhanceRoleplaySlide(slide: ClassSlide, cls: CurriculumClass) {
@@ -1852,6 +2065,37 @@ function enhanceRoleplaySlide(slide: ClassSlide, cls: CurriculumClass) {
   };
 }
 
+function ensureRoleplaySlide(cls: CurriculumClass): CurriculumClass {
+  const hasRoleplay = cls.sections.some((section) => section.slides.some((slide) => (
+    slide.type === 'roleplay' || /role play|roleplay|juego de roles/.test(normalizeText(`${slide.title} ${slide.description || ''}`))
+  )));
+  if (hasRoleplay) return cls;
+
+  const productionIndex = cls.sections.findIndex((section) => /production|produccion|quiz/i.test(section.title));
+  const targetIndex = productionIndex >= 0 ? productionIndex : Math.min(3, cls.sections.length - 1);
+  const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''}`);
+  const audience = inferAudienceKey(cls);
+  const roleplay = buildRoleplayPlan(topic, audience, cls);
+  const slide: ClassSlide = {
+    id: `${cls.id}-guided-roleplay`,
+    title: `Role Play Quest: ${roleplay.scenario} / Mision Role Play`,
+    description: audience === 'kids' ? 'Choose names, follow the steps, and finish the mini conversation.' : 'Set the players, follow the turns, and complete the conversation.',
+    type: 'roleplay',
+    bgColor: 'bg-gradient-to-br from-emerald-500 to-teal-700',
+    content: [],
+    roleplay
+  };
+
+  return {
+    ...cls,
+    sections: cls.sections.map((section, index) => (
+      index === targetIndex
+        ? { ...section, slides: [...section.slides, slide] }
+        : section
+    ))
+  };
+}
+
 function buildWarmupWheel(slide: ClassSlide, cls: CurriculumClass) {
   if (slide.type !== 'spinning-wheel') return slide;
 
@@ -1859,32 +2103,21 @@ function buildWarmupWheel(slide: ClassSlide, cls: CurriculumClass) {
   const searchText = `${classText} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')}`;
   const topic = inferTopicKey(searchText);
   const audience = inferAudienceKey(cls);
-  const focus = inferStructureFocus(classText);
   const topicLabel = topicNounForBoss(topic, cls);
   const seed = hashString(`${cls.id}-${slide.id}-${topic}-${audience}`);
-  const baseItems = rotate(WARMUP_WHEEL_BANK[topic]?.[audience] || WARMUP_WHEEL_BANK.generic[audience], seed, 5);
-  const focusItem: WarmupWheelItem = focus.isExplicit
-    ? audience === 'kids'
-      ? {
-          label: 'Class Words',
-          prompt: `Make one short sentence about ${topicLabel}. Example: ${focus.example}`,
-          es: `Haz una oracion corta sobre ${topicLabel}.`
-        }
-      : {
-          label: 'Target Form',
-          prompt: `Ask one clear speaking question about ${topicLabel} using ${focus.label}. Example: ${focus.example}`,
-          es: `Haz una pregunta clara sobre ${topicLabel} usando ${focus.label}.`
-        }
-    : {
-        label: audience === 'kids' ? 'Class Words' : 'Class Topic',
-        prompt: audience === 'kids'
-          ? `Make one short sentence about ${topicLabel}.`
-          : `Ask one clear warm-up question about ${topicLabel}.`,
-        es: audience === 'kids'
-          ? `Haz una oracion corta sobre ${topicLabel}.`
-          : `Haz una pregunta clara para calentar sobre ${topicLabel}.`
-      };
-  const items = uniqueWarmupItems([...baseItems, focusItem]);
+  const baseItems = rotate(WARMUP_WHEEL_BANK[topic]?.[audience] || WARMUP_WHEEL_BANK.generic[audience], seed, 6);
+  const items = uniqueWarmupItems([
+    ...baseItems,
+    {
+      label: audience === 'kids' ? 'Class Words' : 'Class Topic',
+      prompt: audience === 'kids'
+        ? `Say three easy words about ${topicLabel}.`
+        : `Ask one easy warm-up question about ${topicLabel}.`,
+      es: audience === 'kids'
+        ? `Di tres palabras faciles sobre ${topicLabel}.`
+        : `Haz una pregunta facil para calentar sobre ${topicLabel}.`
+    }
+  ]);
 
   return {
     ...slide,
@@ -2395,7 +2628,7 @@ function enhanceSlideImage(slide: ClassSlide, cls: CurriculumClass) {
 }
 
 export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass {
-  const baseClass = injectStructureDragSlides(cls);
+  const baseClass = ensureRoleplaySlide(injectStructureDragSlides(cls));
 
   return {
     ...baseClass,

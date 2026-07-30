@@ -80,13 +80,26 @@ export interface ClassSlide {
   roleplay?: {
     scenario: string;
     situation: string;
+    players?: {
+      aNamePlaceholder: string;
+      bNamePlaceholder: string;
+    };
     roles: {
       a: { label: string; goal: string };
       b: { label: string; goal: string };
     };
     mission: string[];
+    steps?: {
+      id: string;
+      speaker: 'a' | 'b' | 'both';
+      title: string;
+      instruction: string;
+      phrases: string[];
+      vocabulary: string[];
+    }[];
     usefulPhrases: string[];
     successChecklist: string[];
+    victoryMessage?: string;
   };
   wheelItems?: { label: string; color: string; prompt?: string; es?: string }[];
   matchingPairs?: { left: string; right: string; id: string }[];
