@@ -481,28 +481,6 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                           </div>
                         )}
 
-                        {isFullyCompleted && (
-                          <div className="mt-6 rounded-3xl border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-indigo-50 p-5 shadow-sm">
-                            <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                              <div>
-                                <h3 className="text-2xl font-black text-slate-950">Diploma de nivel completado</h3>
-                                <p className="text-sm font-semibold text-slate-600">Descarga o comparte el certificado de {level.title}.</p>
-                              </div>
-                              <span className="inline-flex w-max items-center gap-2 rounded-full bg-emerald-600 px-4 py-2 text-xs font-black uppercase tracking-wider text-white">
-                                <Trophy className="h-4 w-4" />
-                                100% completo
-                              </span>
-                            </div>
-                            <Diploma
-                              studentName={displayStudentName}
-                              levelName={level.title}
-                              brandName={displayBrandName}
-                              logoUrl={brand.logoUrl}
-                              certificateKind="level"
-                            />
-                          </div>
-                        )}
-
                         {/* Evaluations UI for Students */}
                         {(level.oralEvaluation || level.virtualEvaluation !== undefined) && (
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -581,6 +559,46 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                                   </div>
                           </div>
                         )}
+
+                        <div className={`mt-6 rounded-3xl border p-5 shadow-sm ${
+                          isFullyCompleted
+                            ? 'border-blue-200 bg-gradient-to-br from-white via-blue-50 to-red-50'
+                            : 'border-slate-200 bg-white'
+                        }`}>
+                          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                            <div>
+                              <h3 className="text-2xl font-black text-slate-950">Certificado de finalización</h3>
+                              <p className="text-sm font-semibold text-slate-600">
+                                {isFullyCompleted
+                                  ? `Tu certificado de ${level.title} está listo para descargar o compartir.`
+                                  : `Completa todas las clases de ${level.title}; luego revisa el examen oral y el examen virtual.`}
+                              </p>
+                            </div>
+                            <span className={`inline-flex w-max items-center gap-2 rounded-full px-4 py-2 text-xs font-black uppercase tracking-wider ${
+                              isFullyCompleted ? 'bg-blue-900 text-white' : 'bg-slate-100 text-slate-500'
+                            }`}>
+                              <Trophy className="h-4 w-4" />
+                              {isFullyCompleted ? 'Disponible' : 'Bloqueado'}
+                            </span>
+                          </div>
+
+                          {isFullyCompleted ? (
+                            <Diploma
+                              studentName={displayStudentName}
+                              levelName={level.title}
+                              brandName={displayBrandName}
+                              logoUrl={brand.logoUrl}
+                              certificateKind="level"
+                            />
+                          ) : (
+                            <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center">
+                              <p className="text-lg font-black text-slate-700">El certificado aparecerá aquí al finalizar el nivel.</p>
+                              <p className="mt-2 text-sm font-semibold text-slate-500">
+                                Cuando esté disponible tendrá botones para descargar, compartir por WhatsApp y enviar por correo.
+                              </p>
+                            </div>
+                          )}
+                        </div>
                       </div>
                     </motion.div>
                   )}
