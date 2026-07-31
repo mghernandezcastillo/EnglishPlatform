@@ -167,13 +167,19 @@ async function startServer() {
       }
 
       // Dynamic Meta Tags Replacement
-      let title = "Plataforma de Inglés";
-      let description = "Accede a tu cuenta de estudiante para continuar con tu aprendizaje.";
+      let title = "Maven English";
+      let description = "Accede a tu plataforma de clases, evaluaciones y recursos de inglés.";
 
       const isKid = req.query.type === 'niño' || url.includes('type=ni%C3%B1o') || url.includes('type=niño');
       const brandName = isKid ? "Maven English for kids" : "Maven English";
 
-      if (req.query.evaluacion || url.includes('evaluacion=')) {
+      if (url.startsWith('/verbs/arena')) {
+        title = `AI Verb Arena - ${brandName}`;
+        description = "Juego de trivia infinita para practicar verbos, phrasal verbs e idioms.";
+      } else if (url.startsWith('/verbs')) {
+        title = `Verb Guide - ${brandName}`;
+        description = "Guía interactiva de verbos, phrasal verbs e idioms con buscador y PDF descargable.";
+      } else if (req.query.evaluacion || url.includes('evaluacion=')) {
         title = `Evaluación Virtual - ${brandName}`;
         description = "Accede a tu evaluación estructurada. Completa el cuestionario y revisa tus resultados.";
       } else if (req.query.studentId || url.includes('studentId=')) {
