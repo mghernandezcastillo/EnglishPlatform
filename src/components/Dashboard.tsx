@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { CurriculumClass } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces } from 'lucide-react';
+import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces, Search } from 'lucide-react';
 import { studentConfig, avatars } from '../config';
 import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
@@ -27,9 +27,10 @@ interface DashboardProps {
   onOpenSpeakingPractice: () => void;
   onOpenStoryForge: () => void;
   onOpenStructureMode: () => void;
+  onOpenVerbsGuide: () => void;
 }
 
-export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryForge, onOpenStructureMode }: DashboardProps) {
+export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryForge, onOpenStructureMode, onOpenVerbsGuide }: DashboardProps) {
   const { curriculumLevels, loading } = useCurriculum(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
@@ -117,7 +118,17 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
             <p className={`font-medium mt-2 ${isKid ? 'text-pink-600 text-lg' : 'text-gray-500'}`}>{studentConfig.motivation}</p>
           </div>
 
-        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-5">
+        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-6">
+          <button
+             onClick={onOpenVerbsGuide}
+             className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-cyan-500 via-blue-600 to-slate-950"
+          >
+             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
+               <Search className="w-5 h-5 text-white" />
+               <span className="font-bold text-white tracking-wide">Verb Guide</span>
+             </div>
+          </button>
           <button
              onClick={onOpenStructureMode}
              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-slate-950 via-indigo-700 to-cyan-500"

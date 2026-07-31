@@ -13,6 +13,7 @@ import { TeacherDashboard } from './components/TeacherDashboard';
 import { VirtualEvaluationView } from './components/VirtualEvaluationView';
 import { GlobalAiAssistant } from './components/GlobalAiAssistant';
 import { BrandWordmark } from './components/BrandWordmark';
+import { VerbsGuide } from './components/VerbsGuide';
 import { dbAdmin } from './lib/db';
 import { DbStudent, UserProgress } from './types';
 import { lessons } from './data/lessons';
@@ -35,7 +36,7 @@ export default function App() {
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], currentLessonId: '', level: 'Nivel Inicial' });
   const [isLoaded, setIsLoaded] = useState(false);
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode' | 'verbs_guide'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -183,6 +184,10 @@ export default function App() {
     setCurrentView('structure_mode');
   };
 
+  const handleOpenVerbsGuide = () => {
+    setCurrentView('verbs_guide');
+  };
+
   const handleCloseAssessment = (newLevel?: string) => {
     if (newLevel) {
        setProgress(prev => ({ ...prev, level: newLevel }));
@@ -242,6 +247,10 @@ export default function App() {
     if (levelId) {
       return <VirtualEvaluationView levelId={levelId} />;
     }
+  }
+
+  if (path.startsWith('/verbs')) {
+    return <VerbsGuide />;
   }
 
   if (!isLoaded) {
@@ -421,6 +430,8 @@ export default function App() {
           studentId={currentStudentId}
           studentName={progress.studentName}
         />
+      ) : currentView === 'verbs_guide' ? (
+        <VerbsGuide onBack={() => setCurrentView('dashboard')} />
       ) : (
           <Dashboard 
           completedLessonIds={progress.completedLessons}
@@ -436,6 +447,7 @@ export default function App() {
           onOpenSpeakingPractice={handleOpenSpeakingPractice}
           onOpenStoryForge={handleOpenStoryForge}
           onOpenStructureMode={handleOpenStructureMode}
+          onOpenVerbsGuide={handleOpenVerbsGuide}
         />
       )}
       <FloatingControls />
