@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, BookOpen, Download, FileText, MessageCircle, Search, Share2, Sparkles } from 'lucide-react';
+import { ArrowLeft, BookOpen, Download, FileText, Gamepad2, MessageCircle, Search, Share2, Sparkles } from 'lucide-react';
 import { BrandWordmark } from './BrandWordmark';
 import { useBrand } from '../hooks/useBrand';
 
@@ -130,6 +130,10 @@ export function VerbsGuide({ onBack }: VerbsGuideProps) {
     link.remove();
   };
 
+  const openArena = () => {
+    window.location.href = '/verbs/arena';
+  };
+
   return (
     <div className="min-h-screen bg-[#f5f7fb] text-slate-950">
       <header className="sticky top-0 z-30 border-b border-white/70 bg-white/85 backdrop-blur-xl">
@@ -165,6 +169,13 @@ export function VerbsGuide({ onBack }: VerbsGuideProps) {
               <Download className="h-4 w-4" />
               <span className="hidden sm:inline">PDF</span>
             </button>
+            <button
+              onClick={openArena}
+              className="hidden rounded-2xl bg-cyan-400 px-4 py-3 text-sm font-black text-slate-950 shadow-sm transition hover:bg-cyan-300 md:inline-flex md:items-center md:gap-2"
+            >
+              <Gamepad2 className="h-4 w-4" />
+              Arena
+            </button>
           </div>
         </div>
       </header>
@@ -197,6 +208,13 @@ export function VerbsGuide({ onBack }: VerbsGuideProps) {
                 >
                   <FileText className="h-5 w-5" />
                   Descargar PDF
+                </button>
+                <button
+                  onClick={openArena}
+                  className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-red-300 via-white to-cyan-300 px-5 py-3 text-base font-black text-slate-950 shadow-lg transition hover:scale-[1.02] active:scale-95"
+                >
+                  <Gamepad2 className="h-5 w-5" />
+                  Play AI Verb Arena
                 </button>
               </div>
             </div>

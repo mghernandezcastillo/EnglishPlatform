@@ -25,11 +25,17 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
 - El profesor normalmente se une a Google Meet o Microsoft Teams desde un PC y comparte pantalla con el estudiante.
 - El estudiante puede ver la presentación desde PC, tablet o celular; el caso crítico es celular viendo una pantalla compartida.
 - Toda dinámica interactiva, diapositiva especial, juego, roleplay, boss battle, quiz o herramienta nueva DEBE diseñarse para ser legible en pantalla compartida sin que el estudiante haga zoom.
+- La app se usa como herramienta visual principal de clase: el estudiante no necesariamente interactúa directamente con su dispositivo, sino que observa la pantalla compartida del profesor. Por eso la lectura rápida desde lejos importa más que mostrar mucha información al mismo tiempo.
+- Usar letra grande por defecto en experiencias de clase, juegos y diapositivas: títulos muy visibles, instrucciones de una línea cuando sea posible y opciones de respuesta grandes.
+- Aprovechar el espacio útil de la pantalla: evitar cajas pequeñas centradas con grandes áreas vacías alrededor. El contenido principal debe ocupar visualmente la mayor parte del viewport sin sentirse saturado.
+- Diseñar cada estado como una escena clara: inicio, misión/pregunta, respuesta correcta, error, explicación, transición y resultados. Cada escena debe tener una jerarquía visual obvia.
 - Priorizar formato de presentación por pasos: una acción principal por pantalla, tarjetas grandes, texto grande, instrucciones cortas y máximo 2-3 frases visibles por paso.
 - Evitar interfaces densas con muchas columnas, texto pequeño, grids complejos, paneles saturados o demasiada información simultánea.
 - En móvil debe entenderse claramente quién habla, qué debe hacer, qué frase puede usar y cómo avanzar.
 - Botones y controles deben ser grandes, claros y fáciles de distinguir durante una videollamada.
-- Antes de dar por terminado un cambio visual o interactivo, auditar que se vea razonablemente bien para pantalla compartida en PC y para estudiantes que miran desde celular.
+- Los botones principales deben parecer profesionales: buen contraste, estados hover/active, icono cuando ayude, altura generosa y texto corto.
+- Para juegos con temporizador, feedback o animaciones, el estado actual debe ser obvio incluso en una pantalla pequeña: tiempo, pregunta, opciones y resultado no deben competir entre sí.
+- Antes de dar por terminado un cambio visual o interactivo, auditar que se vea razonablemente bien para pantalla compartida en PC y para estudiantes que miran desde celular. Si hay mucho espacio muerto, texto pequeño o controles difíciles de leer, corregirlo antes de finalizar.
 
 ## 🖼️ GENERATED IMAGE REQUIREMENT FOR PLAN-BASED CLASSES
 - Cuando se implemente TODO el contenido de una clase tomada de un plan `.md`, se DEBEN generar imágenes propias para las diapositivas visuales de esa clase antes de dar la tarea por terminada.

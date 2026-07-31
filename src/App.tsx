@@ -14,6 +14,7 @@ import { VirtualEvaluationView } from './components/VirtualEvaluationView';
 import { GlobalAiAssistant } from './components/GlobalAiAssistant';
 import { BrandWordmark } from './components/BrandWordmark';
 import { VerbsGuide } from './components/VerbsGuide';
+import { VerbArenaGame } from './components/VerbArenaGame';
 import { dbAdmin } from './lib/db';
 import { DbStudent, UserProgress } from './types';
 import { lessons } from './data/lessons';
@@ -36,7 +37,7 @@ export default function App() {
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], currentLessonId: '', level: 'Nivel Inicial' });
   const [isLoaded, setIsLoaded] = useState(false);
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode' | 'verbs_guide'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode' | 'verbs_guide' | 'verb_arena'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -249,6 +250,10 @@ export default function App() {
     }
   }
 
+  if (path.startsWith('/verbs/arena')) {
+    return <VerbArenaGame onBack={() => { window.location.href = '/verbs'; }} />;
+  }
+
   if (path.startsWith('/verbs')) {
     return <VerbsGuide />;
   }
@@ -432,6 +437,8 @@ export default function App() {
         />
       ) : currentView === 'verbs_guide' ? (
         <VerbsGuide onBack={() => setCurrentView('dashboard')} />
+      ) : currentView === 'verb_arena' ? (
+        <VerbArenaGame onBack={() => setCurrentView('dashboard')} />
       ) : (
           <Dashboard 
           completedLessonIds={progress.completedLessons}
