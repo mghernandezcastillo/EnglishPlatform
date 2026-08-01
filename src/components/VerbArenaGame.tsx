@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ArrowLeft, CheckCircle2, Clock3, Gauge, MessageCircle, Play, RotateCcw, Settings2, Sparkles, Trophy, XCircle } from 'lucide-react';
 import { BrandWordmark } from './BrandWordmark';
@@ -134,12 +134,22 @@ function statusClass(status: Feedback) {
   return 'bg-slate-200 text-slate-800 ring-slate-300';
 }
 
+type GameSound = 'countdown' | 'start' | 'timer' | 'danger' | 'timeout' | 'correct' | 'wrong';
+
+function createAudioContext() {
+  const AudioContextClass = window.AudioContext || (window as Window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+  return AudioContextClass ? new AudioContextClass() : null;
+}
+
 interface VerbArenaGameProps {
   onBack?: () => void;
 }
 
 export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
   const { brand } = useBrand();
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const lastCountdownSoundRef = useRef<number | null>(null);
+  const lastTimerSoundRef = useRef<number | null>(null);
   const [items, setItems] = useState<GameItem[]>([]);
   const [phase, setPhase] = useState<Phase>('intro');
   const [mode, setMode] = useState<GameMode>('all');
@@ -169,10 +179,62 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
   const timerEnabled = timerSeconds > 0;
   const timerProgress = timerEnabled ? Math.max(0, Math.min(100, (timeLeft / timerSeconds) * 100)) : 100;
 
+  const unlockAudio = () => {
+    if (!audioContextRef.current) {
+      audioContextRef.current = createAudioContext();
+    }
+    if (audioContextRef.current?.state === 'suspended') {
+      audioContextRef.current.resume();
+    }
+  };
+
+  const playSound = (sound: GameSound) => {
+    if (typeof window === 'undefined') return;
+    unlockAudio();
+    const context = audioContextRef.current;
+    if (!context) return;
+
+    const sounds: Record<GameSound, { frequency: number; duration: number; volume: number; type?: OscillatorType }> = {
+      countdown: { frequency: 620, duration: 0.09, volume: 0.08 },
+      start: { frequency: 880, duration: 0.16, volume: 0.09 },
+      timer: { frequency: 420, duration: 0.045, volume: 0.035 },
+      danger: { frequency: 980, duration: 0.075, volume: 0.07 },
+      timeout: { frequency: 170, duration: 0.22, volume: 0.09, type: 'sawtooth' },
+      correct: { frequency: 1046, duration: 0.18, volume: 0.08 },
+      wrong: { frequency: 220, duration: 0.16, volume: 0.08, type: 'square' },
+    };
+    const { frequency, duration, volume, type = 'sine' } = sounds[sound];
+    const oscillator = context.createOscillator();
+    const gain = context.createGain();
+    const startAt = context.currentTime;
+    const endAt = startAt + duration;
+
+    oscillator.type = type;
+    oscillator.frequency.setValueAtTime(frequency, startAt);
+    if (sound === 'start' || sound === 'correct') {
+      oscillator.frequency.exponentialRampToValueAtTime(frequency * 1.35, endAt);
+    }
+    if (sound === 'timeout' || sound === 'wrong') {
+      oscillator.frequency.exponentialRampToValueAtTime(Math.max(80, frequency * 0.72), endAt);
+    }
+
+    gain.gain.setValueAtTime(0.0001, startAt);
+    gain.gain.exponentialRampToValueAtTime(volume, startAt + 0.012);
+    gain.gain.exponentialRampToValueAtTime(0.0001, endAt);
+
+    oscillator.connect(gain);
+    gain.connect(context.destination);
+    oscillator.start(startAt);
+    oscillator.stop(endAt + 0.02);
+  };
+
   const beginCountdown = () => {
+    unlockAudio();
     setSelectedAnswer(null);
     setFeedback(null);
     setCountdown(3);
+    lastCountdownSoundRef.current = null;
+    lastTimerSoundRef.current = null;
     setPhase('countdown');
   };
 
@@ -183,6 +245,8 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
     setTimeLeft(timerSeconds);
     setSelectedAnswer(null);
     setFeedback(null);
+    lastTimerSoundRef.current = null;
+    playSound('start');
     setPhase('question');
   };
 
@@ -195,6 +259,7 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
 
   const answerRound = (answer: string | null, answerFeedback: Feedback) => {
     if (!round || phase !== 'question') return;
+    playSound(answerFeedback === 'correct' ? 'correct' : answerFeedback === 'timeout' ? 'timeout' : 'wrong');
     setSelectedAnswer(answer);
     setFeedback(answerFeedback);
     setStats((prev) => ({
@@ -218,6 +283,10 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
 
   useEffect(() => {
     if (phase !== 'countdown') return;
+    if (countdown > 0 && countdown !== lastCountdownSoundRef.current) {
+      playSound('countdown');
+      lastCountdownSoundRef.current = countdown;
+    }
     if (countdown <= 0) {
       prepareRound();
       return;
@@ -228,6 +297,10 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
 
   useEffect(() => {
     if (phase !== 'question' || !timerEnabled) return;
+    if (timeLeft > 0 && timeLeft !== lastTimerSoundRef.current) {
+      playSound(timeLeft <= 3 ? 'danger' : 'timer');
+      lastTimerSoundRef.current = timeLeft;
+    }
     if (timeLeft <= 0) {
       answerRound(null, 'timeout');
       return;
