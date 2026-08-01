@@ -14,6 +14,10 @@ interface SurpriseResult {
   score: number;
 }
 
+type RawSurpriseResult = Partial<Omit<SurpriseResult, 'score'>> & {
+  score?: unknown;
+};
+
 const blobToBase64 = (blob: Blob) =>
   new Promise<string>((resolve, reject) => {
     const reader = new FileReader();
@@ -24,6 +28,37 @@ const blobToBase64 = (blob: Blob) =>
     reader.onerror = reject;
     reader.readAsDataURL(blob);
   });
+
+const stringifyFeedbackItem = (item: unknown) => {
+  if (typeof item === 'string') return item;
+  if (!item || typeof item !== 'object') return String(item || '');
+
+  const value = item as Record<string, unknown>;
+  if (typeof value.error === 'string' && typeof value.corrected === 'string') {
+    return `${value.error} -> ${value.corrected}`;
+  }
+  if (typeof value.error === 'string') return value.error;
+  if (typeof value.corrected === 'string') return value.corrected;
+  if (typeof value.text === 'string') return value.text;
+  if (typeof value.note === 'string') return value.note;
+  return Object.values(value).filter(Boolean).join(' -> ');
+};
+
+const normalizeFeedbackList = (items: unknown) => {
+  if (!Array.isArray(items)) return [];
+  return items.map(stringifyFeedbackItem).map(item => item.trim()).filter(Boolean);
+};
+
+const normalizeSurpriseResult = (raw: RawSurpriseResult | null | undefined): SurpriseResult => ({
+  transcript: typeof raw?.transcript === 'string' ? raw.transcript : '',
+  summary: typeof raw?.summary === 'string' ? raw.summary : '',
+  strengths: normalizeFeedbackList(raw?.strengths),
+  corrections: normalizeFeedbackList(raw?.corrections),
+  grammarNotes: normalizeFeedbackList(raw?.grammarNotes),
+  vocabularySuggestions: normalizeFeedbackList(raw?.vocabularySuggestions),
+  teacherNextSteps: normalizeFeedbackList(raw?.teacherNextSteps),
+  score: typeof raw?.score === 'number' ? Math.max(0, Math.min(100, Math.round(raw.score))) : 0,
+});
 
 const SAVED_RANDOM_QUESTIONS = [
   'Tell me about your day. What did you do today, and how did you feel?',
@@ -225,7 +260,7 @@ export function GlobalAiAssistant() {
       });
       const payload = await response.json();
       if (!response.ok) throw new Error(payload?.error || 'No se pudo analizar la respuesta.');
-      setResult(payload.result);
+      setResult(normalizeSurpriseResult(payload.result));
       setMode('done');
       setStatus('Resumen listo.');
     } catch (err: any) {

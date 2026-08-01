@@ -55,6 +55,8 @@ const timerOptions = [
   { label: 'Off', value: 0 },
 ];
 
+const optionLetters = ['A', 'B', 'C', 'D'];
+
 const categoryNames: Record<LexiconCategory, string> = {
   common_verb: 'Common Verb',
   irregular_verb: 'Irregular Verb',
@@ -82,15 +84,62 @@ function cleanAnswer(item: VerbGuideItem) {
   return (item.meaning_es || item.definition_en || '').replace(/\s+/g, ' ').trim();
 }
 
+const corruptedTextPattern = /[\u0000-\u001f\u007f-\u009f\uFFFDƙŞ]/;
+const mergedEntryPattern = /\s-\s[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ\s/()]{3,}\s/;
+
+function cleanDisplayText(value?: string | null) {
+  return (value || '')
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’`]/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function hasCorruptedText(value?: string | null) {
+  return corruptedTextPattern.test(value || '');
+}
+
+function isMergedImportTerm(value?: string | null) {
+  const text = cleanDisplayText(value);
+  return text.length > 58 || (text.match(/\bOr\b/g) || []).length > 2;
+}
+
+function isCleanExample(value?: string | null) {
+  const text = cleanDisplayText(value);
+  if (!text || text.length < 12 || text.length > 180) return false;
+  if (hasCorruptedText(text) || mergedEntryPattern.test(text) || text.includes('www.')) return false;
+  return true;
+}
+
+function getDisplayTerm(item: VerbGuideItem) {
+  return cleanDisplayText(isVerbCategory(item.category) ? item.base_verb || item.term : item.term);
+}
+
+function getDisplayAnswer(item: GameItem) {
+  return cleanDisplayText(item.answer);
+}
+
+function getDisplayExample(item: GameItem) {
+  return isCleanExample(item.example_en) ? cleanDisplayText(item.example_en) : null;
+}
+
+function getRoundKey(item: VerbGuideItem) {
+  return `${item.category}:${cleanDisplayText(item.term).toLowerCase()}:${cleanAnswer(item).toLowerCase()}`;
+}
+
 function toGameItems(items: VerbGuideItem[]) {
   return items
     .map((item) => ({ ...item, answer: cleanAnswer(item) }))
-    .filter((item) => item.term && item.answer.length > 1);
+    .filter((item) => item.term && item.answer.length > 1)
+    .filter((item) => !hasCorruptedText(item.term) && !hasCorruptedText(item.answer))
+    .filter((item) => !isMergedImportTerm(item.term));
 }
 
-function buildRound(pool: GameItem[], mode: GameMode): Round | null {
+function buildRound(pool: GameItem[], mode: GameMode, usedRoundKeys: Set<string>): Round | null {
   if (pool.length < 4) return null;
-  const item = pool[Math.floor(Math.random() * pool.length)];
+  const availableItems = pool.filter((candidate) => !usedRoundKeys.has(getRoundKey(candidate)));
+  if (availableItems.length === 0) return null;
+  const item = availableItems[Math.floor(Math.random() * availableItems.length)];
   const distractorSource = pool.filter((candidate) => candidate.answer !== item.answer && (mode === 'all' || candidate.category === item.category));
   const fallbackSource = pool.filter((candidate) => candidate.answer !== item.answer);
   const distractors = shuffle(distractorSource.length >= 3 ? distractorSource : fallbackSource)
@@ -109,15 +158,15 @@ function isVerbCategory(category: LexiconCategory) {
 }
 
 function formatMeaning(item: GameItem) {
-  return item.meaning_es || item.definition_en || item.answer;
+  return getDisplayAnswer(item);
 }
 
 function formatShareEntry(item: GameItem) {
   if (isVerbCategory(item.category)) {
     return `${item.base_verb || item.term} / ${item.past || '-'} / ${item.past_participle || '-'} = ${formatMeaning(item)}`;
   }
-  const example = item.example_en ? ` Example: ${item.example_en}` : '';
-  return `${item.term} = ${formatMeaning(item)}.${example}`;
+  const example = getDisplayExample(item) ? ` Example: ${getDisplayExample(item)}` : '';
+  return `${getDisplayTerm(item)} = ${formatMeaning(item)}.${example}`;
 }
 
 function statusLabel(status: Feedback) {
@@ -162,6 +211,8 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
   const [stats, setStats] = useState({ total: 0, correct: 0, wrong: 0, unknown: 0, timeout: 0 });
   const [reviewItems, setReviewItems] = useState<GameItem[]>([]);
   const [history, setHistory] = useState<AnswerHistoryItem[]>([]);
+  const [usedRoundKeys, setUsedRoundKeys] = useState<Set<string>>(new Set());
+  const [statusMessage, setStatusMessage] = useState('');
 
   useEffect(() => {
     document.title = 'AI Verb Arena | Maven English';
@@ -178,6 +229,8 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
   const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
   const timerEnabled = timerSeconds > 0;
   const timerProgress = timerEnabled ? Math.max(0, Math.min(100, (timeLeft / timerSeconds) * 100)) : 100;
+  const remainingRounds = Math.max(0, pool.length - usedRoundKeys.size);
+  const missedHistory = history.filter((entry) => entry.status !== 'correct');
 
   const unlockAudio = () => {
     if (!audioContextRef.current) {
@@ -239,8 +292,13 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
   };
 
   const prepareRound = () => {
-    const nextRound = buildRound(pool, mode);
-    if (!nextRound) return;
+    const nextRound = buildRound(pool, mode, usedRoundKeys);
+    if (!nextRound) {
+      setStatusMessage('No quedan palabras nuevas en esta sesión.');
+      setPhase('results');
+      return;
+    }
+    setUsedRoundKeys((prev) => new Set(prev).add(getRoundKey(nextRound.item)));
     setRound(nextRound);
     setTimeLeft(timerSeconds);
     setSelectedAnswer(null);
@@ -254,6 +312,8 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
     setStats({ total: 0, correct: 0, wrong: 0, unknown: 0, timeout: 0 });
     setReviewItems([]);
     setHistory([]);
+    setUsedRoundKeys(new Set());
+    setStatusMessage('');
     beginCountdown();
   };
 
@@ -338,6 +398,8 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
     if (missedItems.length < 4) return;
     setMode('all');
     setItems((prev) => [...missedItems, ...prev]);
+    setUsedRoundKeys(new Set());
+    setStatusMessage('');
     beginCountdown();
   };
 
@@ -482,6 +544,9 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="rounded-2xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-black backdrop-blur">
+                    New {remainingRounds}/{pool.length}
+                  </div>
+                  <div className="rounded-2xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-black backdrop-blur">
                     Score {stats.correct}/{stats.total}
                   </div>
                   <div className={`relative grid h-16 w-16 place-items-center rounded-full border ${timeLeft <= 3 && timerEnabled ? 'border-red-300 text-red-100' : 'border-cyan-200/40 text-white'} bg-slate-950/60 shadow-lg backdrop-blur`}>
@@ -497,7 +562,7 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                 <div className="text-center">
                   <div className="mb-3 text-base font-black uppercase tracking-[0.25em] text-cyan-100">What does it mean?</div>
                   <h2 className="mx-auto max-w-5xl break-words text-5xl font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
-                    {round.item.term}
+                    {getDisplayTerm(round.item)}
                   </h2>
                   {round.item.past && (
                     <div className="mt-5 inline-flex flex-wrap justify-center gap-2 rounded-2xl bg-white/8 p-2 text-sm font-black text-slate-200 sm:text-base">
@@ -512,9 +577,12 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                     <button
                       key={`${option}-${index}`}
                       onClick={() => handleAnswer(option)}
-                      className="min-h-24 rounded-3xl border border-white/10 bg-white px-5 py-4 text-left text-xl font-black leading-snug text-slate-950 shadow-lg transition hover:-translate-y-1 hover:border-cyan-200 hover:bg-cyan-50 active:scale-[0.99] sm:text-2xl"
+                      className="group flex min-h-24 items-center gap-4 rounded-3xl border border-white/10 bg-white px-4 py-4 text-left text-xl font-black leading-snug text-slate-950 shadow-lg transition hover:-translate-y-1 hover:border-cyan-200 hover:bg-cyan-50 active:scale-[0.99] sm:min-h-28 sm:px-5 sm:text-2xl"
                     >
-                      {option}
+                      <span className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-gradient-to-br ${categoryAccent[round.item.category]} text-xl font-black text-slate-950 shadow-md transition group-hover:scale-105 sm:h-14 sm:w-14 sm:text-2xl`}>
+                        {optionLetters[index]}
+                      </span>
+                      <span className="min-w-0 break-words">{cleanDisplayText(option)}</span>
                     </button>
                   ))}
                 </div>
@@ -530,7 +598,7 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
 
           {phase === 'feedback' && round && feedback && (
             <motion.section key="feedback" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.98 }} className="w-full">
-              <div className={`rounded-[2rem] border p-6 text-center shadow-2xl backdrop-blur-xl sm:p-8 lg:p-10 ${
+              <div className={`rounded-[2rem] border p-5 shadow-2xl backdrop-blur-xl sm:p-7 lg:p-9 ${
                 feedback === 'correct'
                   ? 'border-emerald-200/40 bg-emerald-400/16 shadow-emerald-900/30'
                   : 'border-red-200/35 bg-red-400/14 shadow-red-900/30'
@@ -538,27 +606,46 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                 <motion.div
                   initial={{ scale: 0.2, opacity: 0, rotate: -12 }}
                   animate={{ scale: 1, opacity: 1, rotate: 0 }}
-                  className="mx-auto mb-5 grid h-24 w-24 place-items-center rounded-full bg-white text-slate-950 shadow-xl"
+                  className="mx-auto mb-4 grid h-20 w-20 place-items-center rounded-full bg-white text-slate-950 shadow-xl sm:h-24 sm:w-24"
                 >
                   {feedback === 'correct' ? <CheckCircle2 className="h-14 w-14 text-emerald-600" /> : <XCircle className="h-14 w-14 text-red-600" />}
                 </motion.div>
-                <h2 className="text-5xl font-black leading-none sm:text-7xl">
+                <h2 className="text-center text-5xl font-black leading-none sm:text-7xl">
                   {feedback === 'correct' ? 'Excellent.' : feedback === 'unknown' ? 'Saved for review.' : feedback === 'timeout' ? 'Time is up.' : 'Not this one.'}
                 </h2>
-                <p className="mx-auto mt-5 max-w-4xl text-2xl font-bold leading-snug text-white">
-                  <span className="text-cyan-100">{round.item.term}</span> = {round.item.answer}
-                </p>
-                {selectedAnswer && selectedAnswer !== round.item.answer && (
-                  <p className="mt-4 text-lg font-semibold text-red-100">Your answer: {selectedAnswer}</p>
-                )}
-                {round.item.example_en && (
-                  <p className="mx-auto mt-5 max-w-3xl rounded-3xl bg-slate-950/45 p-5 text-lg font-semibold leading-8 text-slate-100">
-                    {round.item.example_en}
-                  </p>
+                <div className="mx-auto mt-6 grid max-w-5xl gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+                  <div className="rounded-3xl border border-white/10 bg-slate-950/52 p-5 text-left">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-100">Word / phrase</p>
+                    <p className="mt-2 break-words text-4xl font-black leading-none text-white sm:text-5xl">
+                      {getDisplayTerm(round.item)}
+                    </p>
+                    {isVerbCategory(round.item.category) && (
+                      <div className="mt-4 grid grid-cols-2 gap-2 text-sm font-black text-slate-100 sm:text-base">
+                        <span className="rounded-2xl bg-white/10 px-3 py-2">Past: {round.item.past || '-'}</span>
+                        <span className="rounded-2xl bg-white/10 px-3 py-2">Participle: {round.item.past_participle || '-'}</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="rounded-3xl bg-white p-5 text-left text-slate-950">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-emerald-700">Correct meaning</p>
+                    <p className="mt-2 break-words text-3xl font-black leading-tight sm:text-4xl">{getDisplayAnswer(round.item)}</p>
+                    {selectedAnswer && selectedAnswer !== round.item.answer && (
+                      <div className="mt-4 rounded-2xl bg-red-50 p-4">
+                        <p className="text-xs font-black uppercase tracking-[0.14em] text-red-700">Your answer</p>
+                        <p className="mt-1 text-lg font-black leading-snug text-red-900">{cleanDisplayText(selectedAnswer)}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                {getDisplayExample(round.item) && (
+                  <div className="mx-auto mt-4 max-w-5xl rounded-3xl border border-cyan-200/20 bg-cyan-300/10 p-5 text-left">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-100">Useful example</p>
+                    <p className="mt-2 text-2xl font-bold leading-snug text-white">{getDisplayExample(round.item)}</p>
+                  </div>
                 )}
                 <button
-                  onClick={beginCountdown}
-                  className="mt-7 min-h-16 rounded-2xl bg-white px-8 py-4 text-xl font-black text-slate-950 shadow-xl transition hover:scale-[1.03] active:scale-95"
+                  onClick={prepareRound}
+                  className="mx-auto mt-7 flex min-h-16 items-center justify-center rounded-2xl bg-white px-8 py-4 text-xl font-black text-slate-950 shadow-xl transition hover:scale-[1.03] active:scale-95"
                 >
                   Next Question
                 </button>
@@ -577,8 +664,13 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                     </div>
                     <h2 className="text-5xl font-black leading-none sm:text-7xl">Study results</h2>
                     <p className="mt-3 max-w-2xl text-lg font-semibold leading-7 text-slate-300">
-                      Reporte inteligente con las palabras practicadas, sus formas, significado y ejemplos para repasar.
+                      Feedback corto con solo las palabras que necesitan repaso.
                     </p>
+                    {statusMessage && (
+                      <p className="mt-3 inline-flex rounded-2xl border border-cyan-200/20 bg-cyan-300/10 px-4 py-2 text-base font-black text-cyan-50">
+                        {statusMessage}
+                      </p>
+                    )}
                   </div>
                   <div className="rounded-[2rem] bg-white p-5 text-center text-slate-950 shadow-xl">
                     <div className="text-sm font-black uppercase tracking-wider text-slate-500">Accuracy</div>
@@ -611,36 +703,42 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                   </div>
                 ) : (
                   <>
-                    <div className="mt-6 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+                    <div className="mt-6 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
                       <div className="rounded-3xl bg-white p-5 text-slate-950">
                         <h3 className="mb-4 flex items-center gap-2 text-2xl font-black">
                           <Gauge className="h-6 w-6 text-cyan-600" />
-                          Practice first
+                          Words to review
                         </h3>
-                        <div className="space-y-3">
-                          {history.filter((entry) => entry.status !== 'correct').slice(0, 6).map((entry) => (
-                            <div key={`${entry.item.term}-${entry.status}`} className="rounded-2xl bg-slate-50 p-4">
+                        {missedHistory.length ? (
+                          <div className="grid gap-3 xl:grid-cols-2">
+                            {missedHistory.map((entry, index) => (
+                              <div key={`${entry.item.term}-${entry.status}-${index}`} className="rounded-2xl bg-slate-50 p-4">
                               <div className="flex items-start justify-between gap-3">
-                                <div className="text-xl font-black">{entry.item.term}</div>
+                                <div className="text-xl font-black">{getDisplayTerm(entry.item)}</div>
                                 <span className={`shrink-0 rounded-full px-3 py-1 text-xs font-black ring-1 ${statusClass(entry.status)}`}>
                                   {statusLabel(entry.status)}
                                 </span>
                               </div>
-                              <div className="mt-2 text-sm font-bold leading-6 text-slate-600">{formatMeaning(entry.item)}</div>
-                            </div>
-                          ))}
-                          {history.every((entry) => entry.status === 'correct') && (
-                            <div className="rounded-2xl bg-emerald-50 p-5 text-lg font-black text-emerald-800">
-                              No priority review. Everything answered correctly.
-                            </div>
-                          )}
-                        </div>
+                                <div className="mt-2 text-base font-black leading-snug text-slate-700">{formatMeaning(entry.item)}</div>
+                                {entry.selectedAnswer && (
+                                  <div className="mt-2 text-sm font-bold leading-snug text-red-700">
+                                    Your answer: {cleanDisplayText(entry.selectedAnswer)}
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <div className="rounded-2xl bg-emerald-50 p-5 text-lg font-black text-emerald-800">
+                            No priority review. Everything answered correctly.
+                          </div>
+                        )}
                       </div>
 
                       <div className="rounded-3xl border border-cyan-200/20 bg-cyan-300/10 p-5">
                         <h3 className="mb-4 text-2xl font-black text-white">Smart study note</h3>
                         <p className="text-lg font-semibold leading-8 text-cyan-50">
-                          Primero repasa las tarjetas marcadas como wrong, I don't know o timeout. Luego juega otra ronda solo con esas palabras para reforzar memoria activa.
+                          Repasa solo estas palabras y vuelve a jugar una ronda corta con las falladas para reforzar memoria activa.
                         </p>
                         <button
                           onClick={shareResults}
@@ -649,67 +747,6 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                           <MessageCircle className="mr-2 inline h-5 w-5" />
                           Share report by WhatsApp
                         </button>
-                      </div>
-                    </div>
-
-                    <div className="mt-6 rounded-3xl bg-white p-4 text-slate-950 sm:p-5">
-                      <h3 className="mb-4 flex items-center gap-2 text-2xl font-black">
-                        <Gauge className="h-6 w-6 text-cyan-600" />
-                        Complete review deck
-                      </h3>
-                      <div className="grid gap-4 xl:grid-cols-2">
-                        {history.map((entry, index) => (
-                          <article key={`${entry.item.term}-${index}`} className="rounded-3xl border border-slate-200 bg-slate-50 p-4 shadow-sm sm:p-5">
-                            <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
-                              <div>
-                                <span className={`inline-flex rounded-full bg-gradient-to-r ${categoryAccent[entry.item.category]} px-3 py-1 text-xs font-black uppercase tracking-wider text-slate-950`}>
-                                  {categoryNames[entry.item.category]}
-                                </span>
-                                <h4 className="mt-3 break-words text-3xl font-black leading-none text-slate-950">{entry.item.term}</h4>
-                              </div>
-                              <span className={`rounded-full px-3 py-1 text-xs font-black ring-1 ${statusClass(entry.status)}`}>
-                                {statusLabel(entry.status)}
-                              </span>
-                            </div>
-
-                            {isVerbCategory(entry.item.category) ? (
-                              <div className="mb-4 grid grid-cols-3 gap-2">
-                                <div className="rounded-2xl bg-white p-3">
-                                  <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">Base</div>
-                                  <div className="mt-1 break-words text-lg font-black">{entry.item.base_verb || entry.item.term}</div>
-                                </div>
-                                <div className="rounded-2xl bg-white p-3">
-                                  <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">Past</div>
-                                  <div className="mt-1 break-words text-lg font-black">{entry.item.past || '-'}</div>
-                                </div>
-                                <div className="rounded-2xl bg-white p-3">
-                                  <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">Participle</div>
-                                  <div className="mt-1 break-words text-lg font-black">{entry.item.past_participle || '-'}</div>
-                                </div>
-                              </div>
-                            ) : null}
-
-                            <div className="rounded-2xl bg-white p-4">
-                              <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">
-                                {isVerbCategory(entry.item.category) ? 'Meaning' : 'Meaning / Translation'}
-                              </div>
-                              <p className="mt-1 text-xl font-black leading-snug text-slate-950">{formatMeaning(entry.item)}</p>
-                            </div>
-
-                            {entry.item.example_en && (
-                              <div className="mt-3 rounded-2xl bg-slate-950 p-4 text-white">
-                                <div className="text-[10px] font-black uppercase tracking-widest text-cyan-200">Example</div>
-                                <p className="mt-1 text-base font-bold leading-7">{entry.item.example_en}</p>
-                              </div>
-                            )}
-
-                            {entry.selectedAnswer && entry.selectedAnswer !== entry.item.answer && (
-                              <div className="mt-3 rounded-2xl bg-red-50 p-4 text-sm font-bold text-red-800">
-                                Your answer: {entry.selectedAnswer}
-                              </div>
-                            )}
-                          </article>
-                        ))}
                       </div>
                     </div>
                   </>

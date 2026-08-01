@@ -32,6 +32,7 @@ Return only compact JSON with this exact shape:
 Rules:
 - Only analyze clearly audible speech.
 - If audio is silent or unclear, transcript "", score 0, and explain in Spanish that no clear reading was detected.
+- Every array item must be a plain string. Never return objects inside arrays.
 - transcript: what the student read, cleaned but faithful.
 - summary: Spanish reading feedback, max 35 words.
 - strengths: max 4 short Spanish items about clear pronunciation, rhythm, or accurate words.
@@ -48,6 +49,7 @@ Return only compact JSON with this exact shape:
 Rules:
 - Only analyze clearly audible speech.
 - If audio is silent or unclear, transcript "", score 0, and explain that no clear answer was detected.
+- Every array item must be a plain string. Never return objects inside arrays.
 - transcript: what the student said, cleaned but faithful.
 - summary: Spanish summary, max 45 words.
 - strengths: max 5 short Spanish items.
