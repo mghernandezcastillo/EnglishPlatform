@@ -382,17 +382,20 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
           )}
 
           {phase === 'countdown' && (
-            <motion.section key="countdown" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="grid w-full place-items-center">
+            <motion.section key="countdown" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="grid min-h-[calc(100vh-112px)] w-full place-items-center">
               <motion.div
                 key={countdown}
                 initial={{ scale: 0.45, rotate: -8, opacity: 0 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1 }}
                 exit={{ scale: 1.35, opacity: 0 }}
-                className="grid h-[min(72vw,460px)] w-[min(72vw,460px)] place-items-center rounded-full border border-cyan-200/30 bg-cyan-300/10 text-center shadow-2xl shadow-cyan-500/30 backdrop-blur-xl"
+                className="grid h-[min(86vw,72vh,680px)] w-[min(86vw,72vh,680px)] place-items-center rounded-full border-4 border-cyan-100/70 bg-slate-950/72 text-center shadow-2xl shadow-cyan-300/40 ring-8 ring-cyan-300/15 backdrop-blur-xl"
               >
-                <div>
-                  <div className="text-sm font-black uppercase tracking-[0.35em] text-cyan-100">Next word</div>
-                  <div className="text-[8rem] font-black leading-none sm:text-[12rem]">{Math.max(countdown, 1)}</div>
+                <div className="px-4">
+                  <div className="text-2xl font-black uppercase tracking-[0.28em] text-cyan-100 sm:text-4xl">Next word</div>
+                  <div className="text-[34vw] font-black leading-none text-white drop-shadow-[0_0_36px_rgba(103,232,249,0.85)] sm:text-[22rem]">
+                    {Math.max(countdown, 1)}
+                  </div>
+                  <div className="text-xl font-black uppercase tracking-[0.2em] text-red-100 sm:text-3xl">Get ready</div>
                 </div>
               </motion.div>
             </motion.section>
