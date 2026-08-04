@@ -3188,10 +3188,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
     classes: [
       {
         id: "c-teens-basic-2-1",
-        title: "Class 1: Animals & Habitats / Clase 1: Animals & Habitats",
-        description: "A fun and interactive class for teens.",
+        title: "Class 1: Animals & Habitats / Clase 1: Animales y hábitats",
+        description: "Animals, habitats, and simple descriptions.",
         duration: "60 mins",
-        objective: "Master the topic of Animals & Habitats.",
+        objective: "Describe animals, habitats, and basic abilities.",
         sections: [
           {
             id: "s1",
@@ -3199,13 +3199,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Animals & Habitats.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 🦁 / Bienvenida! 🦁", description: "Animals & Habitats", imageUrl: "/images/teens-basic-2-class-01/slide-01.jpg", content: ["Today we explore animals and where they live.","You will describe pets and wild animals.","Get ready for the safari challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-01/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Wild", color: "#F59E0B", prompt: "What wild animal do you like?", es: "Que animal salvaje te gusta?" }, { label: "Habitat", color: "#10B981", prompt: "Where does a lion live?", es: "Donde vive un leon?" }, { label: "Fast", color: "#3B82F6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Cute", color: "#8B5CF6", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Scary", color: "#EC4899", prompt: "What animal is scary?", es: "Que animal da miedo?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-01/slide-03.jpg", content: ["✔️ Name pets and wild animals.","✔️ Say where animals live.","✔️ Describe animals with simple adjectives and can/can't."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -3213,54 +3209,46 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Pets and Wild Animals 🐾", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-01/slide-04.jpg", content: ["Dog, cat, hamster, parrot = pets","Lion, elephant, monkey, snake = wild animals","A hamster is small. A lion is strong."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Habitats 🌍", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-01/slide-05.jpg", content: ["Forest = bosque","Ocean = océano","Desert = desierto","Farm = granja","A camel lives in the desert."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Grammar: It lives in... 📍", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-01/slide-06.jpg", content: ["Use lives in for one animal.","A fish lives in the ocean.","Monkeys live in the forest."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Describe Animals ✨", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-01/slide-07.jpg", content: ["Big / small / fast / slow / dangerous / friendly","The elephant is big.","The dog is friendly."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Animal Abilities 💪", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-01/slide-08.jpg", content: ["Use can / can't.","A bird can fly.","A fish can't walk."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-1-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Animals and pets: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🐶 + 🐱 + 🦜"],
-                    options: ["I wake up at seven.", "I have three pets.", "This email is formal."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-01/slide-09.jpg", content: ["Mia: What animal do you like?","Leo: I like elephants. They are big and smart.","Mia: Where do they live?","Leo: They live in forests and grasslands."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-01/slide-10.jpg", content: ["Leo: A camel lives in the ______."], options: ["ocean","desert","bedroom"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-01/slide-11.jpg", content: ["Mia: A bird can ______."], options: ["fly","cook","drive"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-01/slide-12.jpg", content: ["Which animal is a pet?"], options: ["Lion","Hamster","Shark"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Animals and habitats: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-01/slide-13.jpg", content: ["🦁 + 🌍 + 🌳"], options: ["The lion lives in the forest.","I go to school by bus.","She has a blue jacket."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-01/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "Favorite animal?", color: "#EF4444" }, { label: "Where does it live?", color: "#F59E0B" }, { label: "Can it swim?", color: "#10B981" }, { label: "Is it dangerous?", color: "#3B82F6" }, { label: "Pet or wild?", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-01/slide-15.jpg", content: ["Which sentence is correct?"], options: ["A snake lives in the desert.","A snake live in the desert.","A snake are desert."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-01/slide-16.jpg", content: ["What means bosque?"], options: ["Ocean","Forest","Farm"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-01/slide-17.jpg", content: ["Choose the ability sentence."], options: ["A fish can swim.","A fish can school.","A fish is swim."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
+                                  imageUrl: "/images/teens-basic-2-class-01/slide-boss-battle.jpg",
                                   content: ["Defeat the boss using Animals & Habitats."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
@@ -3270,21 +3258,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to animals & habitats."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about animals & habitats using animal words: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about animals & habitats.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to animals & habitats."],
+                                      use: ["You have 60 seconds: create three sentences about animals & habitats: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about animals & habitats.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-01/slide-18.jpg", content: ["Student A: You are a zookeeper.","Student B: Ask about three animals.","Action: Describe where each animal lives and what it can do."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3294,10 +3274,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-01/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-01/slide-20.jpg", content: ["Write 5 sentences about animals.","Include habitat, adjective, and can/can't."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-01/slide-21.jpg", content: ["Watch the animal habitats video.","Write 4 animals and their habitats."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -3305,10 +3284,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       },
       {
         id: "c-teens-basic-2-2",
-        title: "Class 2: My Room & Dream House / Clase 2: My Room & Dream House",
-        description: "A fun and interactive class for teens.",
+        title: "Class 2: My Room & Dream House / Clase 2: Mi cuarto y casa soñada",
+        description: "Rooms, furniture, and dream house descriptions.",
         duration: "60 mins",
-        objective: "Master the topic of My Room & Dream House.",
+        objective: "Describe rooms, furniture, and dream houses with there is/there are.",
         sections: [
           {
             id: "s1",
@@ -3316,13 +3295,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Bedroom", color: "#EF4444", prompt: "What is the best thing in your room?", es: "Que es lo mejor de tu cuarto?" }, { label: "Dream House", color: "#F59E0B", prompt: "Does your dream house have a pool?", es: "Tu casa sonada tiene piscina?" }, { label: "Wall", color: "#10B981", prompt: "What is on your wall?", es: "Que hay en tu pared?" }, { label: "Gaming", color: "#3B82F6", prompt: "Where do you play games at home?", es: "Donde juegas en casa?" }, { label: "Chill Zone", color: "#8B5CF6", prompt: "Where do you relax at home?", es: "Donde te relajas en casa?" }, { label: "Upgrade", color: "#EC4899", prompt: "What would you add to your room?", es: "Que agregarias a tu cuarto?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of My Room & Dream House.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 🏠 / Bienvenida! 🏠", description: "My Room & Dream House", imageUrl: "/images/teens-basic-2-class-02/slide-01.jpg", content: ["Today we design rooms and dream houses.","You will describe furniture and places at home.","Get ready to build your dream space!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-02/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Bedroom", color: "#EF4444", prompt: "What is in your bedroom?", es: "Que hay en tu cuarto?" }, { label: "Wall", color: "#F59E0B", prompt: "What is on your wall?", es: "Que hay en tu pared?" }, { label: "Desk", color: "#10B981", prompt: "Do you have a desk?", es: "Tienes escritorio?" }, { label: "Dream", color: "#3B82F6", prompt: "What is in your dream house?", es: "Que hay en tu casa sonada?" }, { label: "Relax", color: "#8B5CF6", prompt: "Where do you relax?", es: "Donde te relajas?" }, { label: "Upgrade", color: "#EC4899", prompt: "What would you add?", es: "Que agregarias?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-02/slide-03.jpg", content: ["✔️ Name rooms and furniture.","✔️ Use there is / there are.","✔️ Describe your dream room."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -3330,54 +3305,46 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Rooms at Home 🚪", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-02/slide-04.jpg", content: ["Bedroom, bathroom, kitchen, living room, garden","My bedroom is small.","The kitchen is next to the living room."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Furniture 🛏️", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-02/slide-05.jpg", content: ["Bed, desk, chair, closet, lamp, sofa","There is a bed in my room.","There are two chairs."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Grammar: There is / There are 🏠", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-02/slide-06.jpg", content: ["There is = one thing","There are = two or more things","There is a desk. There are posters."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Prepositions Review 📍", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-02/slide-07.jpg", content: ["In, on, under, next to","The lamp is on the desk.","The shoes are under the bed."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Dream House Details ✨", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-02/slide-08.jpg", content: ["Pool, game room, balcony, studio, big garden","My dream house has a game room."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-2-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Rooms and places: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🛏️ + 🪑 + 🏠"],
-                    options: ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-02/slide-09.jpg", content: ["Alex: What is in your dream room?","Sofia: There is a big bed and a gaming desk.","Alex: Are there posters?","Sofia: Yes, there are music posters on the wall."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-02/slide-10.jpg", content: ["There ______ a lamp on my desk."], options: ["is","are","am"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-02/slide-11.jpg", content: ["There ______ two posters on the wall."], options: ["is","are","has"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-02/slide-12.jpg", content: ["Where do you sleep?"], options: ["Kitchen","Bedroom","Garden"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Rooms and furniture: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-02/slide-13.jpg", content: ["🛏️ + 🪑 + 🏠"], options: ["There is a chair in my room.","A lion lives in the forest.","I can play soccer."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-02/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "Your bedroom", color: "#EF4444" }, { label: "Dream house", color: "#F59E0B" }, { label: "On your desk", color: "#10B981" }, { label: "Under your bed", color: "#3B82F6" }, { label: "Favorite room", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-02/slide-15.jpg", content: ["Choose the correct sentence."], options: ["There are a bed.","There is a bed.","There am a bed."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-02/slide-16.jpg", content: ["Which is furniture?"], options: ["Lamp","Ocean","Doctor"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-02/slide-17.jpg", content: ["Which preposition means debajo?"], options: ["Under","On","Next to"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
+                                  imageUrl: "/images/teens-basic-2-class-02/slide-boss-battle.jpg",
                                   content: ["Defeat the boss using My Room & Dream House."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
@@ -3387,21 +3354,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to my room & dream house."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about my room & dream house using family words: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about my room & dream house.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to my room & dream house."],
+                                      use: ["You have 60 seconds: create three sentences about my room & dream house: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about my room & dream house.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-02/slide-18.jpg", content: ["Student A: You are an interior designer.","Student B: Describe your dream room.","Action: Ask what furniture there is and where it is."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3411,10 +3370,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-02/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-02/slide-20.jpg", content: ["Draw or describe your dream room.","Write 5 sentences using there is / there are."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-02/slide-21.jpg", content: ["Watch the rooms and furniture video.","Write 5 home words and one sentence for each."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -3422,10 +3380,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       },
       {
         id: "c-teens-basic-2-3",
-        title: "Class 3: Vehicles, Transport & City / Clase 3: Vehicles, Transport & City",
-        description: "A fun and interactive class for teens.",
+        title: "Class 3: Vehicles, Transport & City / Clase 3: Vehículos, transporte y ciudad",
+        description: "Transport, city places, and movement around town.",
         duration: "60 mins",
-        objective: "Master the topic of Vehicles, Transport & City.",
+        objective: "Talk about transport and city places using go by and simple directions.",
         sections: [
           {
             id: "s1",
@@ -3433,13 +3391,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Bus", color: "#EF4444", prompt: "Do you take the bus?", es: "Tomas el bus?" }, { label: "Ride", color: "#F59E0B", prompt: "What is your favorite way to travel?", es: "Cual es tu forma favorita de viajar?" }, { label: "City", color: "#10B981", prompt: "What place in the city do you like?", es: "Que lugar de la ciudad te gusta?" }, { label: "Weekend", color: "#3B82F6", prompt: "Where do you go on weekends?", es: "A donde vas los fines de semana?" }, { label: "Fast", color: "#8B5CF6", prompt: "What transport is fast?", es: "Que transporte es rapido?" }, { label: "Slow", color: "#EC4899", prompt: "What transport is slow but fun?", es: "Que transporte es lento pero divertido?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Vehicles, Transport & City.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 🚌 / Bienvenida! 🚌", description: "Vehicles, Transport & City", imageUrl: "/images/teens-basic-2-class-03/slide-01.jpg", content: ["Today we move around the city.","You will name transport and places.","Get ready for the city challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-03/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Bus", color: "#EF4444", prompt: "Do you take the bus?", es: "Tomas el bus?" }, { label: "Bike", color: "#F59E0B", prompt: "Can you ride a bike?", es: "Puedes montar bici?" }, { label: "Place", color: "#10B981", prompt: "Where do you go after school?", es: "A donde vas despues de clase?" }, { label: "Taxi", color: "#3B82F6", prompt: "When do people take a taxi?", es: "Cuando toman taxi?" }, { label: "Walk", color: "#8B5CF6", prompt: "Do you walk to school?", es: "Caminas a la escuela?" }, { label: "Favorite", color: "#EC4899", prompt: "What city place do you like?", es: "Que lugar de la ciudad te gusta?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-03/slide-03.jpg", content: ["✔️ Name vehicles and city places.","✔️ Use go by + transport.","✔️ Ask and answer where places are."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -3447,78 +3401,62 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Vehicles 🚗", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-03/slide-04.jpg", content: ["Bus, car, bike, train, taxi, subway","I go by bus.","She goes by bike."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "City Places 🏙️", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-03/slide-05.jpg", content: ["Park, mall, school, hospital, cinema, station","The station is near the mall."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Grammar: Go by... 🚌", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-03/slide-06.jpg", content: ["I go to school by bus.","He goes to the park by bike.","We go downtown by train."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Asking Where 📍", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-03/slide-07.jpg", content: ["Where is the cinema?","It is next to the mall.","It is near the station."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "City Safety 🚦", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-03/slide-08.jpg", content: ["Stop, cross, wait, traffic light","Wait at the traffic light."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-3-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Rooms and places: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🛏️ + 🪑 + 🏠"],
-                    options: ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-03/slide-09.jpg", content: ["Ben: How do you go to school?","Ana: I go by bus.","Ben: Where is the bus stop?","Ana: It is next to the park."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-03/slide-10.jpg", content: ["I go to school ______ bus."], options: ["by","in","on"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-03/slide-11.jpg", content: ["The cinema is ______ the mall."], options: ["next to","swim","yellow"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-03/slide-12.jpg", content: ["Which one is transport?"], options: ["Hospital","Train","Kitchen"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Transport and city: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-03/slide-13.jpg", content: ["🚌 + 🏫 + 📍"], options: ["I go to school by bus.","There is a bed in my room.","The cat is small."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-03/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "Go to school", color: "#EF4444" }, { label: "Favorite place", color: "#F59E0B" }, { label: "By bus or bike?", color: "#10B981" }, { label: "Near your house", color: "#3B82F6" }, { label: "City safety", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-03/slide-15.jpg", content: ["Which sentence is correct?"], options: ["I go by train.","I go for train.","I go train by."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-03/slide-16.jpg", content: ["Which is a city place?"], options: ["Cinema","Hamster","Pencil"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-03/slide-17.jpg", content: ["What means next to?"], options: ["Lejos de","Al lado de","Debajo de"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
+                                  imageUrl: "/images/teens-basic-2-class-03/slide-boss-battle.jpg",
                                   content: ["Defeat the boss using Vehicles, Transport & City."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Travel Boss",
+                                    bossName: "The City Boss",
                                     bossTitle: "Vehicles, Transport & City",
-                                    bossAvatar: "✈️",
+                                    bossAvatar: "🚌",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to vehicles, transport & city."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about vehicles, transport & city using travel words: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about vehicles, transport & city.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to vehicles, transport & city."],
+                                      use: ["You have 60 seconds: create three sentences about vehicles, transport & city: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about vehicles, transport & city.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-03/slide-18.jpg", content: ["Student A: You are new in town.","Student B: Give directions to a city place.","Action: Ask how to get there and what transport to use."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3528,10 +3466,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-03/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-03/slide-20.jpg", content: ["Write 5 sentences about your city.","Include two places and two types of transport."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-03/slide-21.jpg", content: ["Watch the transport video.","Write 5 transport words and 2 city places."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -3539,10 +3476,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       },
       {
         id: "c-teens-basic-2-4",
-        title: "Class 4: Dream Jobs & Professions / Clase 4: Dream Jobs & Professions",
-        description: "A fun and interactive class for teens.",
+        title: "Class 4: Dream Jobs & Professions / Clase 4: Trabajos soñados y profesiones",
+        description: "Jobs, workplaces, and future dreams.",
         duration: "60 mins",
-        objective: "Master the topic of Dream Jobs & Professions.",
+        objective: "Talk about jobs, workplaces, and what you want to be.",
         sections: [
           {
             id: "s1",
@@ -3550,13 +3487,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Dream Jobs & Professions.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 💼 / Bienvenida! 💼", description: "Dream Jobs & Professions", imageUrl: "/images/teens-basic-2-class-04/slide-01.jpg", content: ["Today we talk about dream jobs.","You will describe professions and workplaces.","Get ready for the career challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-04/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Job", color: "#EF4444", prompt: "What job do you like?", es: "Que trabajo te gusta?" }, { label: "Doctor", color: "#F59E0B", prompt: "Would you like to be a doctor?", es: "Te gustaria ser doctor?" }, { label: "Artist", color: "#10B981", prompt: "Are you creative?", es: "Eres creativo?" }, { label: "Teacher", color: "#3B82F6", prompt: "Who helps students?", es: "Quien ayuda estudiantes?" }, { label: "Place", color: "#8B5CF6", prompt: "Where does a chef work?", es: "Donde trabaja un chef?" }, { label: "Dream", color: "#EC4899", prompt: "What do you want to be?", es: "Que quieres ser?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-04/slide-03.jpg", content: ["✔️ Name common jobs.","✔️ Say where people work.","✔️ Use I want to be... because..."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -3564,78 +3497,62 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Jobs 💼", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-04/slide-04.jpg", content: ["Doctor, teacher, chef, engineer, artist, athlete","My cousin is a doctor.","A chef cooks food."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Workplaces 🏢", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-04/slide-05.jpg", content: ["Hospital, school, restaurant, office, studio, stadium","A teacher works at a school."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Grammar: Want to be 🌟", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-04/slide-06.jpg", content: ["I want to be a designer.","She wants to be a doctor.","Do you want to be a chef?"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Reasons with Because 💬", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-04/slide-07.jpg", content: ["I want to be a vet because I like animals.","He wants to be an athlete because he loves sports."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Job Skills 💪", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-04/slide-08.jpg", content: ["Creative, helpful, brave, smart, fast","A firefighter is brave."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-4-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Business English: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["📧 + 💼 + 🧑‍💼"],
-                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-04/slide-09.jpg", content: ["Luna: What do you want to be?","Mateo: I want to be an engineer.","Luna: Why?","Mateo: Because I like building things."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-04/slide-10.jpg", content: ["I want to ______ a doctor."], options: ["be","am","is"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-04/slide-11.jpg", content: ["A chef works in a ______."], options: ["restaurant","forest","bedroom"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-04/slide-12.jpg", content: ["Who works at a hospital?"], options: ["Doctor","Artist","Bus"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Jobs and professions: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-04/slide-13.jpg", content: ["👩‍⚕️ + 🏥 + ❤️"], options: ["A doctor works at a hospital.","I go by bike.","There are two chairs."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-04/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "Dream job", color: "#EF4444" }, { label: "Workplace", color: "#F59E0B" }, { label: "Because...", color: "#10B981" }, { label: "Job skill", color: "#3B82F6" }, { label: "Would you be...?", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-04/slide-15.jpg", content: ["Choose the correct sentence."], options: ["She wants to be a chef.","She want be chef.","She wants a chef be."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-04/slide-16.jpg", content: ["Where does a teacher work?"], options: ["School","Ocean","Taxi"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-04/slide-17.jpg", content: ["Which word is a job?"], options: ["Engineer","Kitchen","Fast"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
+                                  imageUrl: "/images/teens-basic-2-class-04/slide-boss-battle.jpg",
                                   content: ["Defeat the boss using Dream Jobs & Professions."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Interview Boss",
+                                    bossName: "The Career Boss",
                                     bossTitle: "Dream Jobs & Professions",
                                     bossAvatar: "💼",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to dream jobs & professions."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about dream jobs & professions using job words: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about dream jobs & professions.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to dream jobs & professions."],
+                                      use: ["You have 60 seconds: create three sentences about dream jobs & professions: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about dream jobs & professions.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-04/slide-18.jpg", content: ["Student A: You are a career coach.","Student B: Talk about your dream job.","Action: Ask job, workplace, and reason."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3645,10 +3562,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-04/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-04/slide-20.jpg", content: ["Write about your dream job in 5 sentences.","Include workplace, skills, and because."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-04/slide-21.jpg", content: ["Watch the jobs video.","Write 5 jobs and where they work."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -3656,10 +3572,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       },
       {
         id: "c-teens-basic-2-5",
-        title: "Clase 5: Habilidades con can / can’t",
-        description: "A fun and interactive class for teens.",
+        title: "Class 5: Habilidades con can / can’t / Clase 5: Habilidades con can / can’t",
+        description: "Abilities, talents, and simple challenges with can/can’t.",
         duration: "60 mins",
-        objective: "Master the topic of Habilidades con can / can’t.",
+        objective: "Talk about abilities using can, can’t, and short answers.",
         sections: [
           {
             id: "s1",
@@ -3667,13 +3583,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Can", color: "#EF4444", prompt: "What can you do well?", es: "Que puedes hacer bien?" }, { label: "Talent", color: "#F59E0B", prompt: "What talent do you have?", es: "Que talento tienes?" }, { label: "Sport", color: "#10B981", prompt: "Can you swim or run fast?", es: "Puedes nadar o correr rapido?" }, { label: "Music", color: "#3B82F6", prompt: "Can you sing or dance?", es: "Puedes cantar o bailar?" }, { label: "Learn", color: "#8B5CF6", prompt: "What skill do you want to learn?", es: "Que habilidad quieres aprender?" }, { label: "Challenge", color: "#EC4899", prompt: "What is hard but possible?", es: "Que es dificil pero posible?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Habilidades con can / can’t.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 🎯 / Bienvenida! 🎯", description: "Abilities with Can / Can't", imageUrl: "/images/teens-basic-2-class-05/slide-01.jpg", content: ["Today we talk about talents and abilities.","You will say what you can and can't do.","Get ready for the talent challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-05/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Sing", color: "#EF4444", prompt: "Can you sing?", es: "Puedes cantar?" }, { label: "Dance", color: "#F59E0B", prompt: "Can you dance?", es: "Puedes bailar?" }, { label: "Swim", color: "#10B981", prompt: "Can you swim?", es: "Puedes nadar?" }, { label: "Cook", color: "#3B82F6", prompt: "Can you cook?", es: "Puedes cocinar?" }, { label: "Skate", color: "#8B5CF6", prompt: "Can you skate?", es: "Puedes patinar?" }, { label: "Draw", color: "#EC4899", prompt: "Can you draw?", es: "Puedes dibujar?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-05/slide-03.jpg", content: ["✔️ Use can for ability.","✔️ Use can't for no ability.","✔️ Ask and answer Can you...?"], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -3681,78 +3593,62 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Ability Verbs ⚡", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-05/slide-04.jpg", content: ["Sing, dance, swim, cook, draw, skate","I can dance.","She can draw."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Grammar: Can ✅", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-05/slide-05.jpg", content: ["Use can + base verb.","I can play soccer.","He can speak English."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Grammar: Can't ❌", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-05/slide-06.jpg", content: ["Use can't for no ability.","I can't swim.","They can't cook."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Questions with Can ❓", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-05/slide-07.jpg", content: ["Can you sing?","Yes, I can.","No, I can't."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Talent Show Phrases 🎤", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-05/slide-08.jpg", content: ["I can do it!","Try again.","That is difficult, but fun."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-5-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Abilities: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🏆 + 🏃 + 🎵"],
-                    options: ["There are two chairs.", "I can run and sing.", "This is my passport."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-05/slide-09.jpg", content: ["Emma: Can you play the guitar?","Noah: No, I can't. But I can sing.","Emma: Cool! Can you dance too?","Noah: Yes, I can."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-05/slide-10.jpg", content: ["I ______ swim very well."], options: ["can","am","is"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-05/slide-11.jpg", content: ["Can you cook? No, I ______."], options: ["can","can't","do"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-05/slide-12.jpg", content: ["Which is an ability verb?"], options: ["Draw","Hospital","Chair"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Abilities: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-05/slide-13.jpg", content: ["🎤 + 💃 + ✅"], options: ["I can sing and dance.","The hamster is in the cage.","There is a cinema."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-05/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "Can you swim?", color: "#EF4444" }, { label: "Can you cook?", color: "#F59E0B" }, { label: "Talent", color: "#10B981" }, { label: "Can't do", color: "#3B82F6" }, { label: "Ask a friend", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-05/slide-15.jpg", content: ["Choose the correct question."], options: ["Can you dance?","Do you can dance?","Are you can dance?"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-05/slide-16.jpg", content: ["Short answer for yes:"], options: ["Yes, I can.","Yes, I am.","Yes, I do can."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-05/slide-17.jpg", content: ["What comes after can?"], options: ["Base verb","Verb + ing","Verb + s"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Abilities with Can."],
+                                  imageUrl: "/images/teens-basic-2-class-05/slide-boss-battle.jpg",
+                                  content: ["Defeat the boss using Abilities with Can / Can't."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Abilities with Can",
-                                    bossAvatar: "⚔️",
+                                    bossName: "The Ability Boss",
+                                    bossTitle: "Abilities with Can / Can't",
+                                    bossAvatar: "🎯",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to abilities with can."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about abilities with can using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about abilities with can.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to abilities with can / can't."],
+                                      use: ["You have 60 seconds: create three sentences about abilities with can / can't: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about abilities with can / can't.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-05/slide-18.jpg", content: ["Student A: You are a talent show judge.","Student B: Talk about your abilities.","Action: Ask three Can you...? questions."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3762,10 +3658,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-05/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-05/slide-20.jpg", content: ["Write 6 sentences about abilities.","Use three can and three can't sentences."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-05/slide-21.jpg", content: ["Watch the can/can't video.","Write 5 ability verbs."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -3774,9 +3669,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       {
         id: "c-teens-basic-2-6",
         title: "Class 6: Reglas escolares with must, have to, should / Clase 6: Reglas escolares con must, have to, should",
-        description: "A fun and interactive class for teens.",
+        description: "School rules, obligations, and advice.",
         duration: "60 mins",
-        objective: "Master the topic of Reglas escolares con must, have to, should.",
+        objective: "Use must, have to, and should for school rules and advice.",
         sections: [
           {
             id: "s1",
@@ -3784,13 +3679,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Rule", color: "#EF4444", prompt: "What rule is important?", es: "Que regla es importante?" }, { label: "Students", color: "#F59E0B", prompt: "What must students do?", es: "Que deben hacer los estudiantes?" }, { label: "Advice", color: "#10B981", prompt: "What advice helps you study?", es: "Que consejo te ayuda a estudiar?" }, { label: "Permission", color: "#3B82F6", prompt: "When do you ask Can I...?", es: "Cuando preguntas Can I...?" }, { label: "Duty", color: "#8B5CF6", prompt: "What do you have to do today?", es: "Que tienes que hacer hoy?" }, { label: "School", color: "#EC4899", prompt: "What school rule is useful?", es: "Que regla escolar es util?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Reglas escolares con must, have to, should.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 📏 / Bienvenida! 📏", description: "School Rules: Must, Have to, Should", imageUrl: "/images/teens-basic-2-class-06/slide-01.jpg", content: ["Today we talk about school rules.","You will explain obligations and advice.","Get ready for the rules challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-06/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Must", color: "#EF4444", prompt: "What must students do?", es: "Que deben hacer los estudiantes?" }, { label: "Have to", color: "#F59E0B", prompt: "What do you have to bring?", es: "Que tienes que traer?" }, { label: "Should", color: "#10B981", prompt: "What should students do?", es: "Que deberian hacer?" }, { label: "Phone", color: "#3B82F6", prompt: "Can students use phones?", es: "Pueden usar celulares?" }, { label: "Uniform", color: "#8B5CF6", prompt: "Do you wear a uniform?", es: "Usas uniforme?" }, { label: "Advice", color: "#EC4899", prompt: "Give one school tip.", es: "Da un consejo escolar." }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-06/slide-03.jpg", content: ["✔️ Use must for strong rules.","✔️ Use have to for obligations.","✔️ Use should for advice."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -3798,78 +3689,62 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "School Rules 🏫", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-06/slide-04.jpg", content: ["Arrive on time.","Listen to the teacher.","Do your homework.","Keep the classroom clean."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Grammar: Must 📌", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-06/slide-05.jpg", content: ["Must = strong rule.","You must be respectful.","Students must listen in class."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Grammar: Have to 🎒", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-06/slide-06.jpg", content: ["Have to = obligation.","I have to bring my notebook.","We have to wear the uniform."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Grammar: Should 💡", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-06/slide-07.jpg", content: ["Should = advice.","You should study before a test.","You should sleep well."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Negative Rules 🚫", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-06/slide-08.jpg", content: ["You must not run in the hallway.","You should not be late.","You don't have to bring a laptop."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-6-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Rules and advice: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🛑 + 📖 + 🆘"],
-                    options: ["I have already eaten.", "Students must follow rules.", "The app is cheaper."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-06/slide-09.jpg", content: ["Teacher: What do you have to bring tomorrow?","Sara: We have to bring our notebooks.","Teacher: Good. You should also study.","Sara: And we must arrive on time."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-06/slide-10.jpg", content: ["Students ______ listen to the teacher."], options: ["must","can't","likes"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-06/slide-11.jpg", content: ["I have ______ bring my notebook."], options: ["to","do","is"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-06/slide-12.jpg", content: ["Which sentence is advice?"], options: ["You should study.","You must not run.","I have to bring a pen."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "School rules: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-06/slide-13.jpg", content: ["📚 + ⏰ + ✅"], options: ["Students must arrive on time.","I like video games.","The bus is next to the park."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-06/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "One rule", color: "#EF4444" }, { label: "One obligation", color: "#F59E0B" }, { label: "One advice", color: "#10B981" }, { label: "Phone rule", color: "#3B82F6" }, { label: "Test advice", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-06/slide-15.jpg", content: ["Choose the strong rule."], options: ["You must be quiet.","You pizza quiet.","You is quiet."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-06/slide-16.jpg", content: ["Complete: I have ___ study."], options: ["to","can","must to"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-06/slide-17.jpg", content: ["Which word gives advice?"], options: ["Should","Train","Kitchen"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Modal Verbs for Advice."],
+                                  imageUrl: "/images/teens-basic-2-class-06/slide-boss-battle.jpg",
+                                  content: ["Defeat the boss using School Rules: Must, Have to, Should."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Modal Verbs for Advice",
-                                    bossAvatar: "⚔️",
+                                    bossName: "The Rules Boss",
+                                    bossTitle: "School Rules: Must, Have to, Should",
+                                    bossAvatar: "📏",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to modal verbs for advice."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about modal verbs for advice using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about modal verbs for advice.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to school rules: must, have to, should."],
+                                      use: ["You have 60 seconds: create three sentences about school rules: must, have to, should: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about school rules: must, have to, should.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-06/slide-18.jpg", content: ["Student A: You are a new student.","Student B: Explain the school rules.","Action: Use must, have to, and should."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3879,10 +3754,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-06/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-06/slide-20.jpg", content: ["Write 5 school rules.","Use must, have to, and should."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-06/slide-21.jpg", content: ["Watch the school rules video.","Write 3 rules and 2 pieces of advice."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -3891,9 +3765,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       {
         id: "c-teens-basic-2-7",
         title: "Class 7: Sports, Health and hábitos / Clase 7: Deportes, salud y hábitos",
-        description: "A fun and interactive class for teens.",
+        description: "Sports, healthy habits, and frequency.",
         duration: "60 mins",
-        objective: "Master the topic of Deportes, salud y hábitos.",
+        objective: "Talk about sports and healthy habits using frequency words.",
         sections: [
           {
             id: "s1",
@@ -3901,13 +3775,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Deportes, salud y hábitos.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! ⚽ / Bienvenida! ⚽", description: "Sports, Health & Habits", imageUrl: "/images/teens-basic-2-class-07/slide-01.jpg", content: ["Today we talk about sports and health.","You will describe healthy habits.","Get ready for the health challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-07/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Sport", color: "#EF4444", prompt: "What sport do you play?", es: "Que deporte practicas?" }, { label: "Healthy", color: "#F59E0B", prompt: "What is healthy?", es: "Que es saludable?" }, { label: "Water", color: "#10B981", prompt: "How much water do you drink?", es: "Cuanta agua tomas?" }, { label: "Sleep", color: "#3B82F6", prompt: "How many hours do you sleep?", es: "Cuantas horas duermes?" }, { label: "Exercise", color: "#8B5CF6", prompt: "Do you exercise?", es: "Haces ejercicio?" }, { label: "Snack", color: "#EC4899", prompt: "What snack is healthy?", es: "Que snack es saludable?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-07/slide-03.jpg", content: ["✔️ Name sports and health habits.","✔️ Use always, usually, sometimes, never.","✔️ Give simple health advice."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -3915,78 +3785,62 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Sports ⚽", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-07/slide-04.jpg", content: ["Soccer, basketball, tennis, swimming, running","I play soccer.","She goes swimming."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Healthy Habits 🥗", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-07/slide-05.jpg", content: ["Drink water, sleep well, eat fruit, exercise","I eat fruit every day."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Frequency Words 📊", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-07/slide-06.jpg", content: ["Always, usually, sometimes, never","I usually play basketball.","I never skip breakfast."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Giving Advice 💡", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-07/slide-07.jpg", content: ["You should drink water.","You should sleep eight hours.","You should not eat too much candy."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Talking About Health ❤️", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-07/slide-08.jpg", content: ["I feel tired.","I feel strong.","Exercise is good for me."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-7-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Technology: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["📱 + 💻 + 🎮"],
-                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-07/slide-09.jpg", content: ["Coach: Do you exercise after school?","Diego: I usually play soccer.","Coach: Great! Do you drink water?","Diego: Yes, I always drink water."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-07/slide-10.jpg", content: ["I usually ______ soccer after school."], options: ["play","plays","playing"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-07/slide-11.jpg", content: ["You ______ drink water."], options: ["should","is","likes"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-07/slide-12.jpg", content: ["Which one is a sport?"], options: ["Tennis","Notebook","Hospital"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Sports and health: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-07/slide-13.jpg", content: ["⚽ + 💧 + 🥗"], options: ["I play soccer and drink water.","There is a lamp in my room.","She wants to be a chef."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-07/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "Favorite sport", color: "#EF4444" }, { label: "Healthy snack", color: "#F59E0B" }, { label: "Always", color: "#10B981" }, { label: "Never", color: "#3B82F6" }, { label: "Advice", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-07/slide-15.jpg", content: ["Choose the frequency word."], options: ["Usually","Doctor","Chair"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-07/slide-16.jpg", content: ["Which sentence is correct?"], options: ["I play tennis.","I tennis play can.","I plays tennis."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-07/slide-17.jpg", content: ["Which is healthy?"], options: ["Drink water","Sleep 2 hours","Eat candy all day"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Sports, Health and hábitos."],
+                                  imageUrl: "/images/teens-basic-2-class-07/slide-boss-battle.jpg",
+                                  content: ["Defeat the boss using Sports, Health & Habits."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Health Boss",
-                                    bossTitle: "Sports, Health and hábitos",
-                                    bossAvatar: "🩺",
+                                    bossTitle: "Sports, Health & Habits",
+                                    bossAvatar: "⚽",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to sports, health and hábitos."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about sports, health and hábitos using body words: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about sports, health and hábitos.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to sports, health & habits."],
+                                      use: ["You have 60 seconds: create three sentences about sports, health & habits: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about sports, health & habits.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-07/slide-18.jpg", content: ["Student A: You are a health coach.","Student B: Talk about your habits.","Action: Give two pieces of advice."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3996,10 +3850,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-07/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-07/slide-20.jpg", content: ["Write your healthy routine in 5 sentences.","Use two frequency words."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-07/slide-21.jpg", content: ["Watch the sports and health video.","Write 5 sports or health words."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -4008,9 +3861,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       {
         id: "c-teens-basic-2-8",
         title: "Class 8: Ciudad, transporte and Places para salir / Clase 8: Ciudad, transporte y lugares para salir",
-        description: "A fun and interactive class for teens.",
+        description: "Places to go out, transport, and simple plans.",
         duration: "60 mins",
-        objective: "Master the topic of Ciudad, transporte y lugares para salir.",
+        objective: "Plan outings around the city using places, transport, and suggestions.",
         sections: [
           {
             id: "s1",
@@ -4018,13 +3871,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Hangout", color: "#EF4444", prompt: "Where do you hang out with friends?", es: "Donde sales con amigos?" }, { label: "Transport", color: "#F59E0B", prompt: "How do you get around your city?", es: "Como te mueves por tu ciudad?" }, { label: "Food Place", color: "#10B981", prompt: "Where do you go for snacks?", es: "A donde vas por snacks?" }, { label: "Meeting Point", color: "#3B82F6", prompt: "Where do teens meet in your city?", es: "Donde se reunen los adolescentes en tu ciudad?" }, { label: "Safe Ride", color: "#8B5CF6", prompt: "What transport feels safest?", es: "Que transporte se siente mas seguro?" }, { label: "Plan", color: "#EC4899", prompt: "Where would you go after class?", es: "A donde irias despues de clase?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Ciudad, transporte y lugares para salir.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 🗺️ / Bienvenida! 🗺️", description: "City, Transport & Places to Go Out", imageUrl: "/images/teens-basic-2-class-08/slide-01.jpg", content: ["Today we plan a day out in the city.","You will choose places and transport.","Get ready for the weekend plan challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-08/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Mall", color: "#EF4444", prompt: "Do you go to the mall?", es: "Vas al centro comercial?" }, { label: "Cinema", color: "#F59E0B", prompt: "What movie do you want to see?", es: "Que pelicula quieres ver?" }, { label: "Park", color: "#10B981", prompt: "What can you do at the park?", es: "Que puedes hacer en el parque?" }, { label: "Cafe", color: "#3B82F6", prompt: "Do you like cafes?", es: "Te gustan los cafes?" }, { label: "Transport", color: "#8B5CF6", prompt: "How do you get there?", es: "Como llegas alli?" }, { label: "Plan", color: "#EC4899", prompt: "Where should we go?", es: "A donde deberiamos ir?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-08/slide-03.jpg", content: ["✔️ Name places to go out.","✔️ Use let's and should for plans.","✔️ Say how to get there."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -4032,78 +3881,62 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Places to Go Out 🎬", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-08/slide-04.jpg", content: ["Mall, cinema, park, café, arcade, museum","Let's go to the cinema.","The café is near the park."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Transport Review 🚇", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-08/slide-05.jpg", content: ["By bus, by taxi, by bike, on foot","We can go by bus.","I go on foot."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Suggestions: Let's... 💬", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-08/slide-06.jpg", content: ["Let's go to the mall.","Let's watch a movie.","Let's meet at the park."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Advice: Should 💡", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-08/slide-07.jpg", content: ["We should leave at five.","You should bring money.","We should take the bus."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Making Plans 📅", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-08/slide-08.jpg", content: ["Where do you want to go?","What time should we meet?","How do we get there?"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-8-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Rooms and places: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🛏️ + 🪑 + 🏠"],
-                    options: ["I can swim fast.", "There is a chair in my room.", "She likes pizza."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-08/slide-09.jpg", content: ["Ava: Let's go to the cinema.","Nico: Good idea. How do we get there?","Ava: We can go by bus.","Nico: Great. We should meet at five."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-08/slide-10.jpg", content: ["Let's ______ to the park."], options: ["go","goes","going"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-08/slide-11.jpg", content: ["We can go ______ bus."], options: ["by","at","under"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-08/slide-12.jpg", content: ["Where can you watch a movie?"], options: ["Cinema","Hospital","Bedroom"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "City plans: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-08/slide-13.jpg", content: ["🎬 + 🚌 + ⏰"], options: ["Let's go to the cinema by bus.","A fish can swim.","I have a hamster."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-08/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "Where to go?", color: "#EF4444" }, { label: "How to get there?", color: "#F59E0B" }, { label: "What time?", color: "#10B981" }, { label: "Who goes?", color: "#3B82F6" }, { label: "Should bring?", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-08/slide-15.jpg", content: ["Choose the suggestion."], options: ["Let's go to the café.","We café at go.","Going café let."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-08/slide-16.jpg", content: ["Which is a place to go out?"], options: ["Arcade","Shoulder","Chef"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-08/slide-17.jpg", content: ["Complete: We should ___ at five."], options: ["meet","meets","meeting"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using City Places & Transportation."],
+                                  imageUrl: "/images/teens-basic-2-class-08/slide-boss-battle.jpg",
+                                  content: ["Defeat the boss using City, Transport & Places to Go Out."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Travel Boss",
-                                    bossTitle: "City Places & Transportation",
-                                    bossAvatar: "✈️",
+                                    bossName: "The Weekend City Boss",
+                                    bossTitle: "City, Transport & Places to Go Out",
+                                    bossAvatar: "🗺️",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to city places & transportation."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about city places & transportation using travel words: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about city places & transportation.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to city, transport & places to go out."],
+                                      use: ["You have 60 seconds: create three sentences about city, transport & places to go out: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about city, transport & places to go out.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-08/slide-18.jpg", content: ["Student A: Suggest a place to go out.","Student B: Ask about transport and time.","Action: Make a complete weekend plan."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -4113,10 +3946,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-08/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-08/slide-20.jpg", content: ["Write a weekend city plan.","Include place, time, transport, and one should sentence."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-08/slide-21.jpg", content: ["Watch the city places video.","Write 5 places and 2 transport phrases."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -4125,9 +3957,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       {
         id: "c-teens-basic-2-9",
         title: "Class 9: Describir series, películas, juegos and música / Clase 9: Describir series, películas, juegos y música",
-        description: "A fun and interactive class for teens.",
+        description: "Entertainment preferences and descriptions.",
         duration: "60 mins",
-        objective: "Master the topic of Describir series, películas, juegos y música.",
+        objective: "Describe series, movies, games, and music using opinion adjectives.",
         sections: [
           {
             id: "s1",
@@ -4135,13 +3967,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Like", color: "#EF4444", prompt: "What activity do you like?", es: "Que actividad te gusta?" }, { label: "Love", color: "#F59E0B", prompt: "What do you love doing?", es: "Que amas hacer?" }, { label: "Dislike", color: "#10B981", prompt: "What food do you dislike?", es: "Que comida no te gusta?" }, { label: "Choice", color: "#3B82F6", prompt: "Do you prefer pizza or burgers?", es: "Prefieres pizza o hamburguesas?" }, { label: "Fun", color: "#8B5CF6", prompt: "What is fun for you?", es: "Que es divertido para ti?" }, { label: "Music", color: "#EC4899", prompt: "What music do you like?", es: "Que musica te gusta?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Describir series, películas, juegos y música.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 🎮 / Bienvenida! 🎮", description: "Series, Movies, Games & Music", imageUrl: "/images/teens-basic-2-class-09/slide-01.jpg", content: ["Today we talk about entertainment.","You will describe shows, games, movies, and music.","Get ready for the fan challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-09/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Series", color: "#EF4444", prompt: "What series do you like?", es: "Que serie te gusta?" }, { label: "Movie", color: "#F59E0B", prompt: "What movie is fun?", es: "Que pelicula es divertida?" }, { label: "Game", color: "#10B981", prompt: "What game do you play?", es: "Que juego juegas?" }, { label: "Music", color: "#3B82F6", prompt: "What music do you like?", es: "Que musica te gusta?" }, { label: "Boring", color: "#8B5CF6", prompt: "What is boring?", es: "Que es aburrido?" }, { label: "Favorite", color: "#EC4899", prompt: "What is your favorite?", es: "Cual es tu favorito?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-09/slide-03.jpg", content: ["✔️ Name entertainment types.","✔️ Use opinion adjectives.","✔️ Explain likes and dislikes."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -4149,78 +3977,62 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Entertainment Words 🎧", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-09/slide-04.jpg", content: ["Series, movie, game, song, band, character","I like action movies.","She plays adventure games."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Opinion Adjectives ⭐", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-09/slide-05.jpg", content: ["Funny, exciting, scary, boring, cool, amazing","The movie is exciting.","The game is difficult."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Like / Love / Prefer ❤️", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-09/slide-06.jpg", content: ["I like pop music.","I love video games.","I prefer comedy series."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Dislike Politely 👎", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-09/slide-07.jpg", content: ["I don't like horror movies.","I think it is boring.","It is not my favorite."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Explain Your Opinion 💬", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-09/slide-08.jpg", content: ["I like it because it is funny.","I don't like it because it is slow."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-9-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Likes and hobbies: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🎵 + 🎮 + ❤️"],
-                    options: ["Where is the station?", "I like music and video games.", "I have to clean my room."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-09/slide-09.jpg", content: ["Mia: What game do you like?","Leo: I like adventure games.","Mia: Why?","Leo: Because they are exciting and fun."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-09/slide-10.jpg", content: ["I like this movie because it is ______."], options: ["exciting","hospital","under"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-09/slide-11.jpg", content: ["She ______ pop music."], options: ["likes","like","liking"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-09/slide-12.jpg", content: ["Which word is entertainment?"], options: ["Series","Uniform","Bathroom"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Likes and hobbies: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-09/slide-13.jpg", content: ["🎵 + 🎮 + ❤️"], options: ["I like music and video games.","Where is the station?","I have to clean my room."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-09/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "Favorite movie", color: "#EF4444" }, { label: "Favorite game", color: "#F59E0B" }, { label: "Music", color: "#10B981" }, { label: "Boring", color: "#3B82F6" }, { label: "Because...", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-09/slide-15.jpg", content: ["Choose the opinion adjective."], options: ["Amazing","Train","Doctor"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-09/slide-16.jpg", content: ["Which sentence is correct?"], options: ["I love music.","I music love to.","I loves music."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-09/slide-17.jpg", content: ["Complete: I like it because it ___ funny."], options: ["is","are","am"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Describir series, películas, juegos and música."],
+                                  imageUrl: "/images/teens-basic-2-class-09/slide-boss-battle.jpg",
+                                  content: ["Defeat the boss using Series, Movies, Games & Music."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Describir series, películas, juegos and música",
-                                    bossAvatar: "⚔️",
+                                    bossName: "The Entertainment Boss",
+                                    bossTitle: "Series, Movies, Games & Music",
+                                    bossAvatar: "🎮",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to describir series, películas, juegos and música."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about describir series, películas, juegos and música using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about describir series, películas, juegos and música.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to series, movies, games & music."],
+                                      use: ["You have 60 seconds: create three sentences about series, movies, games & music: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about series, movies, games & music.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-09/slide-18.jpg", content: ["Student A: Recommend a movie, series, game, or song.","Student B: Ask why.","Action: Use two opinion adjectives."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -4230,10 +4042,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-09/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-09/slide-20.jpg", content: ["Write a short review of a movie, series, game, or song.","Use 5 sentences and two opinion adjectives."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-09/slide-21.jpg", content: ["Watch the entertainment review video.","Write 4 opinion adjectives and one recommendation."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -4241,10 +4052,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       },
       {
         id: "c-teens-basic-2-10",
-        title: "Class 10: Conversación actual, rutinas and Review Speaking por retos / Clase 10: Conversación actual, rutinas y Repaso oral por retos",
-        description: "A fun and interactive class for teens.",
+        title: "Class 10: Conversación actual, rutinas and Review Speaking por retos / Clase 10: Conversación actual, rutinas y repaso oral por retos",
+        description: "Current conversations, routines, and speaking review challenges.",
         duration: "60 mins",
-        objective: "Master the topic of Conversación actual, rutinas y Repaso oral por retos.",
+        objective: "Review Level 2 topics through short speaking challenges and current conversations.",
         sections: [
           {
             id: "s1",
@@ -4252,13 +4063,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Conversación actual, rutinas y Repaso oral por retos.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome! 🏆 / Bienvenida! 🏆", description: "Current Conversations, Routines & Speaking Review", imageUrl: "/images/teens-basic-2-class-10/slide-01.jpg", content: ["Today is the Level 2 speaking review.","You will connect routines, plans, rules, abilities, and opinions.","Get ready for the final speaking challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-10/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Animal", color: "#EF4444", prompt: "Describe an animal.", es: "Describe un animal." }, { label: "Room", color: "#F59E0B", prompt: "Describe your room.", es: "Describe tu cuarto." }, { label: "City", color: "#10B981", prompt: "Plan a city trip.", es: "Planea una salida." }, { label: "Job", color: "#3B82F6", prompt: "Talk about a dream job.", es: "Habla de trabajo sonado." }, { label: "Rule", color: "#8B5CF6", prompt: "Say a school rule.", es: "Di una regla escolar." }, { label: "Opinion", color: "#EC4899", prompt: "Recommend a show or game.", es: "Recomienda una serie o juego." }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-10/slide-03.jpg", content: ["✔️ Review key Level 2 vocabulary.","✔️ Answer questions with complete sentences.","✔️ Speak for short timed challenges."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -4266,78 +4073,62 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "slide-4", title: "Review Map 🗺️", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-10/slide-04.jpg", content: ["Animals, rooms, city, jobs, abilities, rules, health, entertainment","Use complete sentences."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Speaking Formula 💬", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-2-class-10/slide-05.jpg", content: ["Answer + detail + because.","I like soccer because it is exciting.","My dream job is engineer because I like building."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Question Practice ❓", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-10/slide-06.jpg", content: ["Where does it live?","What can you do?","What should students do?","What do you like?"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Connect Ideas 🔗", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-2-class-10/slide-07.jpg", content: ["Use and, but, because.","I can swim, but I can't skate.","I like it because it is fun."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Challenge Language ⏱️", description: "Useful language", type: "normal", imageUrl: "/images/teens-basic-2-class-10/slide-08.jpg", content: ["First...","Also...","My example is...","That is my answer."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-2-10-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Review: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🏆 + 📖 + ⭐"],
-                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-2-class-10/slide-09.jpg", content: ["Coach: Choose one topic and speak for 30 seconds.","Student: I can talk about my dream job.","Coach: Add a reason and one question.","Student: I want to be a designer because I am creative."], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the challenge (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-10/slide-10.jpg", content: ["I can swim, ______ I can't skate."], options: ["but","because","under"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the challenge (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-10/slide-11.jpg", content: ["Students ______ arrive on time."], options: ["must","likes","bedroom"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-10/slide-12.jpg", content: ["Which phrase gives a reason?"], options: ["because it is fun","next to the park","by bus"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Level 2 review: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-2-class-10/slide-13.jpg", content: ["🏆 + 🎤 + ⭐"], options: ["I can speak about today's lesson.","The dog is hungry.","I bought new shoes."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Production y Quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el lenguaje en producción oral.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Spin and answer with a complete sentence.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-10/slide-14.jpg", content: ["Spin the wheel and answer with detail."], wheelItems: [{ label: "30-sec animal", color: "#EF4444" }, { label: "Dream room", color: "#F59E0B" }, { label: "City plan", color: "#10B981" }, { label: "Can/can't", color: "#3B82F6" }, { label: "Favorite media", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-10/slide-15.jpg", content: ["Choose the best speaking answer."], options: ["I like games because they are fun.","Games fun because like.","I games."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-10/slide-16.jpg", content: ["Which connector gives contrast?"], options: ["but","because","and then"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-2-class-10/slide-17.jpg", content: ["Which is a rule sentence?"], options: ["You must listen.","A hamster is small.","I love music."], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
+                                  imageUrl: "/images/teens-basic-2-class-10/slide-boss-battle.jpg",
                                   content: ["Defeat the boss using Current Conversations, Routines & Speaking Review."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Current Conversations, Routines & Speaking Review",
-                                    bossAvatar: "⚔️",
+                                    bossAvatar: "🏆",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to current conversations, routines & speaking review."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about current conversations, routines & speaking review using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about current conversations, routines & speaking review.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                      remember: ["You have 30 seconds: say three key words and one useful phrase connected to current conversations, routines & speaking review."],
+                                      use: ["You have 60 seconds: create three sentences about current conversations, routines & speaking review: one positive, one negative, and one question."],
+                                      speak: ["Speak for 30 seconds about current conversations, routines & speaking review.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-10/slide-18.jpg", content: ["Student A: Ask three Level 2 questions.","Student B: Answer with detail and because.","Action: Swap roles and try to speak for 30 seconds."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -4347,10 +4138,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-2-class-10/slide-19.jpg", content: ["Great work today!","You completed today's challenge."], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-2-class-10/slide-20.jpg", content: ["Prepare a 45-second Level 2 review speech.","Include one ability, one rule, one city plan, and one opinion."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "/images/teens-basic-2-class-10/slide-21.jpg", content: ["Watch the final speaking review video.","Write 5 useful phrases for your review speech."], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
