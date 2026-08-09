@@ -1850,13 +1850,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Family & Pets.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Family & Pets.", imageUrl: "/images/teens-basic-1-class-01/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-01/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   wheelItems: [{ label: "Color", color: "#EF4444", prompt: "What color do you like today?", es: "Que color te gusta hoy?" }, { label: "Mood", color: "#F59E0B", prompt: "How do you feel right now?", es: "Como te sientes ahora?" }, { label: "Clothes", color: "#10B981", prompt: "What color are your clothes?", es: "De que color es tu ropa?" }, { label: "Happy", color: "#3B82F6", prompt: "What makes you feel happy?", es: "Que te hace feliz?" }, { label: "Emoji", color: "#8B5CF6", prompt: "What emoji shows your mood?", es: "Que emoji muestra tu animo?" }, { label: "Object", color: "#EC4899", prompt: "What color do you see near you?", es: "Que color ves cerca?" }]
             },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Family Tree & Feelings.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Family Tree & Feelings.", imageUrl: "/images/teens-basic-1-class-01/slide-03.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -1866,13 +1866,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Family & Pets / Familia y Mascotas", description: "Introduction to Family & Pets.", content: ["This is my brother.", "I have a cute dog."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["This is my brother.", "I have a cute dog."], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Brother, Sister, Dog, Cat", content: ["Brother", " Sister", " Dog", " Cat"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["This is my brother.", "I have a cute dog."], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["This is my brother.", "I have a cute dog."], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: This is my brother."], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "Diapositiva 4", title: "Family & Pets / Familia y Mascotas", description: "Introduction to Family & Pets.", imageUrl: "/images/teens-basic-1-class-01/slide-04.jpg", content: ["This is my brother.", "I have a cute dog."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
+              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", imageUrl: "/images/teens-basic-1-class-01/slide-05.jpg", content: ["This is my brother.", "I have a cute dog."], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
+              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Brother, Sister, Dog, Cat", imageUrl: "/images/teens-basic-1-class-01/slide-06.jpg", content: ["Brother", " Sister", " Dog", " Cat"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
+              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", imageUrl: "/images/teens-basic-1-class-01/slide-07.jpg", content: ["This is my brother.", "I have a cute dog."], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
+              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", imageUrl: "/images/teens-basic-1-class-01/slide-08.jpg", content: ["This is my brother.", "I have a cute dog."], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
+              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", imageUrl: "/images/teens-basic-1-class-01/slide-09.jpg", content: ["Repeat: This is my brother."], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
+              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", imageUrl: "/images/teens-basic-1-class-01/slide-10.jpg", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
@@ -1882,19 +1882,20 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", imageUrl: "/images/teens-basic-1-class-01/slide-11.jpg", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", imageUrl: "/images/teens-basic-1-class-01/slide-12.jpg", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
+              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", imageUrl: "/images/teens-basic-1-class-01/slide-13.jpg", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", imageUrl: "/images/teens-basic-1-class-01/slide-14.jpg", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
+              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", imageUrl: "/images/teens-basic-1-class-01/slide-15.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
                 {
                     id: "c-teens-basic-1-1-emoji-mission",
                     title: "Emoji Mission / Misión Emoji",
                     description: "Colors and feelings: decode the emoji story",
                     type: "emoji-game",
+                    imageUrl: "/images/teens-basic-1-class-01/slide-emoji-mission.jpg",
                     content: ["🎨 + 👕 + 😊"],
                     options: ["I have two dogs.", "My shirt is blue and I am happy.", "Turn left at the bank."],
-                    correctOptionIndex: 1,
+                    correctOptionIndex: 0,
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
             ],
@@ -1906,12 +1907,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Uso libre del lenguaje.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
+              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", imageUrl: "/images/teens-basic-1-class-01/slide-16.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
+                                   description: "Defeat the boss with today's English.",
+                                   type: "speaking-boss-battle",
+                                   imageUrl: "/images/teens-basic-1-class-01/slide-boss-battle.jpg",
                                   content: ["Defeat the boss using Family Tree & Feelings."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
@@ -1934,8 +1936,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-01/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-01/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
           },
@@ -1945,7 +1947,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
+              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", imageUrl: "/images/teens-basic-1-class-01/slide-19.jpg", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
                   videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
                   content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
             }
@@ -1967,13 +1969,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Food & Cooking.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Food & Cooking.", imageUrl: "/images/teens-basic-1-class-02/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-02/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   wheelItems: [{ label: "Food", color: "#EF4444", prompt: "What food do you like?", es: "Que comida te gusta?" }, { label: "Drink", color: "#F59E0B", prompt: "What do you drink every day?", es: "Que tomas cada dia?" }, { label: "Snack", color: "#10B981", prompt: "What is your favorite snack?", es: "Cual es tu snack favorito?" }, { label: "Order", color: "#3B82F6", prompt: "What do you order at a restaurant?", es: "Que pides en un restaurante?" }, { label: "Taste", color: "#8B5CF6", prompt: "Do you prefer sweet or salty food?", es: "Prefieres dulce o salado?" }, { label: "Hungry", color: "#EC4899", prompt: "What do you eat when you are hungry?", es: "Que comes cuando tienes hambre?" }]
             },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Fast Food & Healthy Choices.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Fast Food & Healthy Choices.", imageUrl: "/images/teens-basic-1-class-02/slide-03.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -1983,13 +1985,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Food & Cooking / Comida y Cooking", description: "Introduction to Food & Cooking.", content: ["I can cook pasta.", "This burger is delicious."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["I can cook pasta.", "This burger is delicious."], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Food, Cook, Eat, Delicious", content: ["Food", " Cook", " Eat", " Delicious"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["I can cook pasta.", "This burger is delicious."], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["I can cook pasta.", "This burger is delicious."], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: I can cook pasta."], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "Diapositiva 4", title: "Food & Cooking / Comida y Cooking", description: "Introduction to Food & Cooking.", imageUrl: "/images/teens-basic-1-class-02/slide-04.jpg", content: ["I can cook pasta.", "This burger is delicious."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
+              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", imageUrl: "/images/teens-basic-1-class-02/slide-05.jpg", content: ["I can cook pasta.", "This burger is delicious."], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
+              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Food, Cook, Eat, Delicious", imageUrl: "/images/teens-basic-1-class-02/slide-06.jpg", content: ["Food", " Cook", " Eat", " Delicious"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
+              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", imageUrl: "/images/teens-basic-1-class-02/slide-07.jpg", content: ["I can cook pasta.", "This burger is delicious."], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
+              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", imageUrl: "/images/teens-basic-1-class-02/slide-08.jpg", content: ["I can cook pasta.", "This burger is delicious."], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
+              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", imageUrl: "/images/teens-basic-1-class-02/slide-09.jpg", content: ["Repeat: I can cook pasta."], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
+              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", imageUrl: "/images/teens-basic-1-class-02/slide-10.jpg", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
@@ -1999,16 +2001,17 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", imageUrl: "/images/teens-basic-1-class-02/slide-11.jpg", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", imageUrl: "/images/teens-basic-1-class-02/slide-12.jpg", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
+              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", imageUrl: "/images/teens-basic-1-class-02/slide-13.jpg", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", imageUrl: "/images/teens-basic-1-class-02/slide-14.jpg", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
+              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", imageUrl: "/images/teens-basic-1-class-02/slide-15.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
                 {
                     id: "c-teens-basic-1-2-emoji-mission",
                     title: "Emoji Mission / Misión Emoji",
                     description: "Food and drinks: decode the emoji story",
                     type: "emoji-game",
+                    imageUrl: "/images/teens-basic-1-class-02/slide-emoji-mission.jpg",
                     content: ["🍔 + 🍟 + 🥤"],
                     options: ["I am from Canada.", "I want a burger and a drink.", "Open your book."],
                     correctOptionIndex: 1,
@@ -2023,12 +2026,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Uso libre del lenguaje.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
+              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", imageUrl: "/images/teens-basic-1-class-02/slide-16.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
+                                   description: "Defeat the boss with today's English.",
+                                   type: "speaking-boss-battle",
+                                   imageUrl: "/images/teens-basic-1-class-02/slide-boss-battle.jpg",
                                   content: ["Defeat the boss using Fast Food & Healthy Choices."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
@@ -2051,8 +2055,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-02/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-02/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
           },
@@ -2062,7 +2066,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
+              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", imageUrl: "/images/teens-basic-1-class-02/slide-19.jpg", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
                   videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
                   content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
             }
@@ -2084,13 +2088,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Clothes & Style.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Clothes & Style.", imageUrl: "/images/teens-basic-1-class-03/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-03/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   wheelItems: [{ label: "Weather", color: "#EF4444", prompt: "How is the weather today?", es: "Como esta el clima hoy?" }, { label: "Season", color: "#F59E0B", prompt: "What season do you like?", es: "Que estacion te gusta?" }, { label: "Clothes", color: "#10B981", prompt: "What do you wear on cold days?", es: "Que usas en dias frios?" }, { label: "Temperature", color: "#3B82F6", prompt: "Do you prefer hot or cold weather?", es: "Prefieres calor o frio?" }, { label: "Rain", color: "#8B5CF6", prompt: "Do you like rainy days?", es: "Te gustan los dias lluviosos?" }, { label: "Sun", color: "#EC4899", prompt: "What do you do on sunny days?", es: "Que haces en dias soleados?" }]
             },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Fashion, Clothes & Weather.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Fashion, Clothes & Weather.", imageUrl: "/images/teens-basic-1-class-03/slide-03.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -2100,13 +2104,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Clothes & Style / Ropa y Style", description: "Introduction to Clothes & Style.", content: ["I am wearing a cool hoodie.", "Her shoes are new."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["I am wearing a cool hoodie.", "Her shoes are new."], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Hoodie, Shoes, Cool, Wear", content: ["Hoodie", " Shoes", " Cool", " Wear"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["I am wearing a cool hoodie.", "Her shoes are new."], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["I am wearing a cool hoodie.", "Her shoes are new."], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: I am wearing a cool hoodie."], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "Diapositiva 4", title: "Clothes & Style / Ropa y Style", description: "Introduction to Clothes & Style.", content: ["I am wearing a cool hoodie.", "Her shoes are new."], imageUrl: "/images/teens-basic-1-class-03/slide-04.jpg", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
+              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["I am wearing a cool hoodie.", "Her shoes are new."], imageUrl: "/images/teens-basic-1-class-03/slide-05.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
+              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Hoodie, Shoes, Cool, Wear", content: ["Hoodie", " Shoes", " Cool", " Wear"], imageUrl: "/images/teens-basic-1-class-03/slide-06.jpg", bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
+              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["I am wearing a cool hoodie.", "Her shoes are new."], imageUrl: "/images/teens-basic-1-class-03/slide-07.jpg", bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
+              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["I am wearing a cool hoodie.", "Her shoes are new."], imageUrl: "/images/teens-basic-1-class-03/slide-08.jpg", bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
+              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: I am wearing a cool hoodie."], imageUrl: "/images/teens-basic-1-class-03/slide-09.jpg", bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
+              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", imageUrl: "/images/teens-basic-1-class-03/slide-10.jpg", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
@@ -2116,11 +2120,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", imageUrl: "/images/teens-basic-1-class-03/slide-11.jpg", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", imageUrl: "/images/teens-basic-1-class-03/slide-12.jpg", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
+              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", imageUrl: "/images/teens-basic-1-class-03/slide-13.jpg", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", imageUrl: "/images/teens-basic-1-class-03/slide-14.jpg", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
+              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", imageUrl: "/images/teens-basic-1-class-03/slide-15.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
                 {
                     id: "c-teens-basic-1-3-emoji-mission",
                     title: "Emoji Mission / Misión Emoji",
@@ -2129,6 +2133,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     content: ["🌧️ + 🧥 + 🌳"],
                     options: ["I can spell my name.", "It is rainy and cold outside.", "The client is angry."],
                     correctOptionIndex: 1,
+                    imageUrl: "/images/teens-basic-1-class-03/slide-emoji-mission.jpg",
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
             ],
@@ -2140,13 +2145,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Uso libre del lenguaje.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
+              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", imageUrl: "/images/teens-basic-1-class-03/slide-16.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Fashion, Clothes & Weather."],
+                                  imageUrl: "/images/teens-basic-1-class-03/slide-boss-battle.jpg",
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Weather Closet Boss",
@@ -2168,8 +2174,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-03/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-03/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
           },
@@ -2179,7 +2185,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
+              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", imageUrl: "/images/teens-basic-1-class-03/slide-19.jpg", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
                   videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
                   content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
             }
@@ -2201,13 +2207,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Nature & Environment.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Nature & Environment.", imageUrl: "/images/teens-basic-1-class-04/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-04/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
+                  wheelItems: [{ label: "Park", color: "#EF4444", prompt: "What do you like to do in a park?", es: "Que te gusta hacer en un parque?" }, { label: "Forest", color: "#F59E0B", prompt: "Is a forest beautiful or scary for you?", es: "Un bosque es bonito o da miedo para ti?" }, { label: "Tree", color: "#10B981", prompt: "Can you describe a tree near your home?", es: "Puedes describir un arbol cerca de tu casa?" }, { label: "Recycle", color: "#3B82F6", prompt: "What can you recycle at school?", es: "Que puedes reciclar en la escuela?" }, { label: "Earth", color: "#8B5CF6", prompt: "How can teens help the Earth?", es: "Como pueden ayudar los adolescentes a la Tierra?" }, { label: "Outdoors", color: "#EC4899", prompt: "Do you prefer indoor or outdoor activities?", es: "Prefieres actividades adentro o al aire libre?" }]
             },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Nature, Parks & Outdoors.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Nature, Parks & Outdoors.", imageUrl: "/images/teens-basic-1-class-04/slide-03.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -2217,13 +2223,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Nature & Environment / Nature y Environment", description: "Introduction to Nature & Environment.", content: ["The forest is beautiful.", "We should recycle."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["The forest is beautiful.", "We should recycle."], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Nature, Tree, Recycle, Earth", content: ["Nature", " Tree", " Recycle", " Earth"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["The forest is beautiful.", "We should recycle."], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["The forest is beautiful.", "We should recycle."], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: The forest is beautiful."], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "Diapositiva 4", title: "Nature & Environment / Nature y Environment", description: "Introduction to Nature & Environment.", content: ["The forest is beautiful.", "We should recycle."], imageUrl: "/images/teens-basic-1-class-04/slide-04.jpg", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
+              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["The forest is beautiful.", "We should recycle."], imageUrl: "/images/teens-basic-1-class-04/slide-05.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
+              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Nature, Tree, Recycle, Earth", content: ["Nature", "Tree", "Recycle", "Earth"], imageUrl: "/images/teens-basic-1-class-04/slide-06.jpg", bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
+              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["The forest is beautiful.", "We should recycle."], imageUrl: "/images/teens-basic-1-class-04/slide-07.jpg", bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
+              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["The forest is beautiful.", "We should recycle."], imageUrl: "/images/teens-basic-1-class-04/slide-08.jpg", bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
+              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: The forest is beautiful."], imageUrl: "/images/teens-basic-1-class-04/slide-09.jpg", bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
+              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", imageUrl: "/images/teens-basic-1-class-04/slide-10.jpg", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
@@ -2233,19 +2239,20 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", imageUrl: "/images/teens-basic-1-class-04/slide-11.jpg", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", imageUrl: "/images/teens-basic-1-class-04/slide-12.jpg", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
+              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", imageUrl: "/images/teens-basic-1-class-04/slide-13.jpg", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", imageUrl: "/images/teens-basic-1-class-04/slide-14.jpg", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
+              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", imageUrl: "/images/teens-basic-1-class-04/slide-15.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
                 {
                     id: "c-teens-basic-1-4-emoji-mission",
                     title: "Emoji Mission / Misión Emoji",
-                    description: "Technology: decode the emoji story",
+                    description: "Nature: decode the emoji story",
                     type: "emoji-game",
-                    content: ["📱 + 💻 + 🎮"],
-                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
-                    correctOptionIndex: 1,
+                    content: ["🌲 + 🌳 + ♻️ + 🌎"],
+                    options: ["The forest is beautiful and we should recycle.", "I drink water at lunch.", "My cousin is funny."],
+                    correctOptionIndex: 0,
+                    imageUrl: "/images/teens-basic-1-class-04/slide-emoji-mission.jpg",
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
             ],
@@ -2257,18 +2264,19 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Uso libre del lenguaje.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
+              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", imageUrl: "/images/teens-basic-1-class-04/slide-16.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Nature, Parks & Outdoors."],
+                                  imageUrl: "/images/teens-basic-1-class-04/slide-boss-battle.jpg",
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
+                                    bossName: "The Forest Guardian",
                                     bossTitle: "Nature, Parks & Outdoors",
-                                    bossAvatar: "⚔️",
+                                    bossAvatar: "🌳",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
@@ -2285,8 +2293,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-04/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-04/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
           },
@@ -2296,7 +2304,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
+              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", imageUrl: "/images/teens-basic-1-class-04/slide-19.jpg", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
                   videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
                   content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
             }
@@ -2318,13 +2326,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with weekend plans.", imageUrl: "/images/teens-basic-1-class-05/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-05/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
                   wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
             },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Planes de fin de semana con will y going to.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Talk about weekend plans using will and going to.", imageUrl: "/images/teens-basic-1-class-05/slide-03.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -2334,13 +2342,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "Diapositiva 4", title: "Will or Going To? / Will o Going To?", description: "Use will for quick decisions and going to for plans.", content: ["I will help you later.", "I am going to play soccer this weekend."], imageUrl: "/images/teens-basic-1-class-05/slide-04.jpg", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
+              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["I will watch a movie tonight.", "We are going to study on Saturday."], imageUrl: "/images/teens-basic-1-class-05/slide-05.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
+              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Weekend, plan, future, activity", content: ["Weekend", "Plan", "Future", "Activity"], imageUrl: "/images/teens-basic-1-class-05/slide-06.jpg", bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
+              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["will + base verb: I will travel one day.", "am/is/are going to + verb: She is going to visit her family."], imageUrl: "/images/teens-basic-1-class-05/slide-07.jpg", bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
+              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["I will call my friend later.", "They are going to play soccer on Sunday."], imageUrl: "/images/teens-basic-1-class-05/slide-08.jpg", bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
+              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: I will watch a movie.", "Repeat: I am going to study."], imageUrl: "/images/teens-basic-1-class-05/slide-09.jpg", bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
+              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Will or going to?", imageUrl: "/images/teens-basic-1-class-05/slide-10.jpg", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
@@ -2350,11 +2358,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", imageUrl: "/images/teens-basic-1-class-05/slide-11.jpg", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", imageUrl: "/images/teens-basic-1-class-05/slide-12.jpg", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
+              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", imageUrl: "/images/teens-basic-1-class-05/slide-13.jpg", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", imageUrl: "/images/teens-basic-1-class-05/slide-14.jpg", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
+              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", imageUrl: "/images/teens-basic-1-class-05/slide-15.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
                 {
                     id: "c-teens-basic-1-5-emoji-mission",
                     title: "Emoji Mission / Misión Emoji",
@@ -2363,6 +2371,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     content: ["🔮 + 🚀 + 📅"],
                     options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
                     correctOptionIndex: 1,
+                    imageUrl: "/images/teens-basic-1-class-05/slide-emoji-mission.jpg",
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
             ],
@@ -2374,13 +2383,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Uso libre del lenguaje.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
+              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", imageUrl: "/images/teens-basic-1-class-05/slide-16.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using Weekend Plans with Will and Going To."],
+                                  imageUrl: "/images/teens-basic-1-class-05/slide-boss-battle.jpg",
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
                                     bossName: "The Future Boss",
@@ -2402,8 +2412,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-05/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-05/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
           },
@@ -2413,7 +2423,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
+              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", imageUrl: "/images/teens-basic-1-class-05/slide-19.jpg", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
                   videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
                   content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
             }
@@ -2435,13 +2445,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
+              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with invitations and plans.", imageUrl: "/images/teens-basic-1-class-06/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-06/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
+                  wheelItems: [{ label: "Invite", color: "#EF4444", prompt: "Invite a friend to do something this weekend.", es: "Invita a un amigo a hacer algo este fin de semana." }, { label: "Accept", color: "#F59E0B", prompt: "Accept an invitation politely.", es: "Acepta una invitacion de forma amable." }, { label: "Decline", color: "#10B981", prompt: "Decline an invitation politely.", es: "Rechaza una invitacion de forma amable." }, { label: "Movie", color: "#3B82F6", prompt: "Invite someone to watch a movie.", es: "Invita a alguien a ver una pelicula." }, { label: "Study", color: "#8B5CF6", prompt: "Invite someone to study together.", es: "Invita a alguien a estudiar juntos." }, { label: "Another Day", color: "#EC4899", prompt: "Suggest another day or time.", es: "Sugiere otro dia u hora." }]
             },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Invitaciones, aceptar y rechazar planes.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Invite people, accept plans, decline politely, and suggest another time.", imageUrl: "/images/teens-basic-1-class-06/slide-03.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -2451,13 +2461,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              { id: "Diapositiva 4", title: "Invitations & Responses / Invitaciones y respuestas", description: "Learn how to invite, accept, and decline politely.", content: ["Would you like to watch a movie?", "Sure, I would love to.", "Sorry, I can't. Maybe another day."], imageUrl: "/images/teens-basic-1-class-06/slide-04.jpg", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
+              { id: "Diapositiva 5", title: "Examples in Context / Ejemplos en contexto", description: "Let's read these phrases.", content: ["Do you want to play soccer after school?", "Yes, that sounds great.", "Sorry, I have homework today."], imageUrl: "/images/teens-basic-1-class-06/slide-05.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
+              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulario", description: "Useful words for making plans.", content: ["Invite", "Accept", "Decline", "Maybe another day"], imageUrl: "/images/teens-basic-1-class-06/slide-06.jpg", bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
+              { id: "Diapositiva 7", title: "Grammar Structure / Estructura", description: "How to form invitations and responses.", content: ["Would you like to + verb...?", "Sure, I would love to.", "Sorry, I can't. Maybe another day."], imageUrl: "/images/teens-basic-1-class-06/slide-07.jpg", bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
+              { id: "Diapositiva 8", title: "Practice Sentences / Frases de práctica", description: "Repeat after the teacher.", content: ["Would you like to go to the movies?", "Yes, that sounds great.", "Sorry, I can't today."], imageUrl: "/images/teens-basic-1-class-06/slide-08.jpg", bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
+              { id: "Diapositiva 9", title: "Pronunciation / Pronunciación", description: "Listen carefully.", content: ["Repeat: Would you like to go?", "Repeat: Sure, I would love to.", "Repeat: Sorry, I can't today."], imageUrl: "/images/teens-basic-1-class-06/slide-09.jpg", bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
+              { id: "Diapositiva 10", title: "Quick Check / Revisión rápida", description: "Invite, accept, or decline?", imageUrl: "/images/teens-basic-1-class-06/slide-10.jpg", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
@@ -2467,19 +2477,20 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
+              { id: "Diapositiva 11", title: "Exercise 1 / Ejercicio 1", description: "Fill in the invitation responses.", type: "grammar", imageUrl: "/images/teens-basic-1-class-06/slide-11.jpg", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "Diapositiva 12", title: "Exercise 2 / Ejercicio 2", description: "Match invitations with polite responses.", type: "matching-game", imageUrl: "/images/teens-basic-1-class-06/slide-12.jpg", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
+              { id: "Diapositiva 13", title: "Exercise 3 / Ejercicio 3", description: "Choose the best response to the invitation.", type: "grammar", imageUrl: "/images/teens-basic-1-class-06/slide-13.jpg", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
+              { id: "Diapositiva 14", title: "Exercise 4 / Ejercicio 4", description: "Correct the rude or unclear response.", type: "grammar", imageUrl: "/images/teens-basic-1-class-06/slide-14.jpg", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
+              { id: "Diapositiva 15", title: "Review / Repaso", description: "Review invitation, acceptance, decline, reason, and another time.", imageUrl: "/images/teens-basic-1-class-06/slide-15.jpg", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
                 {
                     id: "c-teens-basic-1-6-emoji-mission",
                     title: "Emoji Mission / Misión Emoji",
-                    description: "Future plans: decode the emoji story",
+                    description: "Invitations: decode the emoji story",
                     type: "emoji-game",
-                    content: ["🔮 + 🚀 + 📅"],
-                    options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
-                    correctOptionIndex: 1,
+                    content: ["📱 + 🎬 + ✅"],
+                    options: ["Yes, I would love to go to the movies.", "The dog is under the chair.", "I ate cereal yesterday."],
+                    correctOptionIndex: 0,
+                    imageUrl: "/images/teens-basic-1-class-06/slide-emoji-mission.jpg",
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
             ],
@@ -2491,36 +2502,37 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Uso libre del lenguaje.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
+              { id: "Diapositiva 16", title: "Speaking Time / Hora oral", description: "Invite, accept, decline, or suggest another time.", type: "speaking", imageUrl: "/images/teens-basic-1-class-06/slide-16.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
                                   description: "Defeat the boss with today's English.",
                                   type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Invitaciones, aceptar and rechazar planes."],
+                                  content: ["Defeat the boss using invitations, accepting, and declining plans."],
+                                  imageUrl: "/images/teens-basic-1-class-06/slide-boss-battle.jpg",
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                                   speakingBossBattle: {
-                                    bossName: "The Future Boss",
-                                    bossTitle: "Invitaciones, aceptar and rechazar planes",
-                                    bossAvatar: "🚀",
+                                    bossName: "The Invitation Boss",
+                                    bossTitle: "Invitations, Accepting and Declining Plans",
+                                    bossAvatar: "📱",
                                     timerSeconds: 30,
                                     prepareSeconds: 180,
                                     rounds: {
                                       remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to invitaciones, aceptar and rechazar planes."
+                                      "You have 30 seconds: say three key words and one useful phrase connected to invitations and plans."
                                     ],
                                       use: [
-                                      "You have 60 seconds: create three sentences about invitaciones, aceptar and rechazar planes using future plans: one positive, one negative, and one question."
+                                      "You have 60 seconds: create three invitation responses: one invitation, one acceptance, and one polite decline."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about invitaciones, aceptar and rechazar planes.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
+                                      "Speak for 30 seconds about making plans with friends.",
+                                      "Use what you learned today: invite someone, accept one plan, and decline one plan politely."
                                     ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out an invitation dialogue.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-06/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your invitation dialogue with the class.", imageUrl: "/images/teens-basic-1-class-06/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
           },
@@ -2530,9 +2542,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
+              { id: "Diapositiva 19", title: "Video Homework 📹 / Tarea en Video 📹", description: "Practice invitations after class.", type: "video", imageUrl: "/images/teens-basic-1-class-06/slide-19.jpg", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
                   videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
+                  content: ["Watch the video and write 5 invitation or response phrases.", "Bring one short invitation dialogue to the next class."]
             }
             ],
             action: "Anotar la tarea."
