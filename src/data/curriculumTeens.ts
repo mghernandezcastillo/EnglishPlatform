@@ -5,6 +5,7 @@ import imgTeenApps from '../assets/images/teens_apps_1782770528421.jpg';
 import imgTeenSports from '../assets/images/teens_actions_sports_1783000515177.jpg';
 import imgTeenBirthday from '../assets/images/teens_birthday_party_1782771276209.jpg';
 import imgTeenQuiz from '../assets/images/teens_c5_quiz1_1783004350357.jpg';
+import { organizeTeenBasicOneLevel } from './teenBasicOneOrganizer';
 
 const images = [
   "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800",
@@ -243,11 +244,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome to Class 3! 💪 / Bienvenida to Clase 3! 💪", description: "My Body & Actions", imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800", content: ["Are you ready to move?", "Today we learn about the body.", "And what actions we can do!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens_simon_says.jpg?v=3", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500",
+              { id: "slide-1", title: "Welcome to Class 3! 💪 / Bienvenida to Clase 3! 💪", description: "My Body & Actions", imageUrl: "/images/teens-basic-zero-class-03/slide-01.jpg", content: ["Are you ready to move?", "Today we learn about the body.", "And what actions we can do!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-zero-class-03/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500",
                   wheelItems: [{ label: "Body", color: "#EF4444", prompt: "What body part do you use a lot?", es: "Que parte del cuerpo usas mucho?" }, { label: "Action", color: "#F59E0B", prompt: "What action can you do now?", es: "Que accion puedes hacer ahora?" }, { label: "Jump", color: "#10B981", prompt: "Can you jump high?", es: "Puedes saltar alto?" }, { label: "Sport", color: "#3B82F6", prompt: "What sport uses your legs?", es: "Que deporte usa tus piernas?" }, { label: "Hands", color: "#8B5CF6", prompt: "What can you do with your hands?", es: "Que puedes hacer con tus manos?" }, { label: "Move", color: "#EC4899", prompt: "Do you prefer running or walking?", es: "Prefieres correr o caminar?" }]
             },
-              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", content: ["✔️ Name parts of the body.", "✔️ Talk about actions.", "✔️ Say 'I can' and 'I can't'."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-zero-class-03/slide-03.jpg", content: ["✔️ Name parts of the body.", "✔️ Talk about actions.", "✔️ Say 'I can' and 'I can't'."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -257,11 +258,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              { id: "slide-4", title: "My Body (Face) 👦 / My Cuerpo (Face) 👦", description: "Vocabulary", type: "normal", imageUrl: "/images/teens_body_face.jpg?v=3", content: ["Head = Cabeza", "Eyes = Ojos", "Ears = Orejas", "Nose = Nariz", "Mouth = Boca"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-5", title: "My Body (Limbs) 🦾 / My Cuerpo (Limbs) 🦾", description: "Vocabulary", type: "normal", imageUrl: "/images/teens_body_limbs.jpg?v=3", content: ["Arms = Brazos", "Hands = Manos", "Legs = Piernas", "Feet = Pies (Foot = Pie)"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-6", title: "Action Verbs 🏃 / Acciones Verbos 🏃", description: "Vocabulary", type: "normal", imageUrl: "/images/teens_actions_sports.jpg?v=4", content: ["Run = Correr", "Jump = Saltar", "Walk = Caminar", "Swim = Nadar", "Dance = Bailar"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-7", title: "Grammar: Can / Can't ✅", description: "Grammar", type: "normal", content: ["I CAN = Yo puedo", "I CAN'T = Yo no puedo", "Example: I can swim. I can't fly."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-8", title: "Grammar: Questions ❓ / Grammar: Preguntas ❓", description: "Grammar", type: "normal", content: ["Question: Can you jump?", "Answer: Yes, I can. / No, I can't.", "Example: Can you dance? Yes, I can!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+              { id: "slide-4", title: "My Body (Face) 👦 / My Cuerpo (Face) 👦", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-zero-class-03/slide-04.jpg", content: ["Head = Cabeza", "Eyes = Ojos", "Ears = Orejas", "Nose = Nariz", "Mouth = Boca"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "My Body (Limbs) 🦾 / My Cuerpo (Limbs) 🦾", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-zero-class-03/slide-05.jpg", content: ["Arms = Brazos", "Hands = Manos", "Legs = Piernas", "Feet = Pies (Foot = Pie)"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Action Verbs 🏃 / Acciones Verbos 🏃", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-zero-class-03/slide-06.jpg", content: ["Run = Correr", "Jump = Saltar", "Walk = Caminar", "Swim = Nadar", "Dance = Bailar"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Grammar: Can / Can't ✅", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-zero-class-03/slide-07.jpg", content: ["I CAN = Yo puedo", "I CAN'T = Yo no puedo", "Example: I can swim. I can't fly."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Grammar: Questions ❓ / Grammar: Preguntas ❓", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-zero-class-03/slide-08.jpg", content: ["Question: Can you jump?", "Answer: Yes, I can. / No, I can't.", "Example: Can you dance? Yes, I can!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
@@ -271,11 +272,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "slide-9", title: "Read the text 📱 / Read the text 📱", description: "Context", content: ["I am Leo. I am very active.", "I can run very fast and I can jump high.", "But I can't swim. It's too hard for me!"], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "slide-10", title: "Complete the sentence (1/3) / Completa the Oración (1/3)", description: "Quiz", content: ["Leo: I ______ swim. It's too hard!"], options: ["can", "can't", "am"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-11", title: "Complete the sentence (2/3) / Completa the Oración (2/3)", description: "Quiz", content: ["Teacher: ______ you jump high?", "Leo: Yes, I can!"], options: ["Do", "Are", "Can"], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-12", title: "What is this? (3/3) / What is this? (3/3)", description: "Quiz", content: ["You use them to see."], options: ["Eyes", "Ears", "Legs"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Body and actions: decode the emoji story", type: "emoji-game", content: ["🏃 + 🦘 + 👍"], options: ["My birthday is today.", "I can run and jump.", "The office is open."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
+              { id: "slide-9", title: "Read the text 📱 / Read the text 📱", description: "Context", imageUrl: "/images/teens-basic-zero-class-03/slide-09.jpg", content: ["I am Leo. I am very active.", "I can run very fast and I can jump high.", "But I can't swim. It's too hard for me!"], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the sentence (1/3) / Completa the Oración (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-03/slide-10.jpg", content: ["Leo: I ______ swim. It's too hard!"], options: ["can", "can't", "am"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the sentence (2/3) / Completa the Oración (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-03/slide-11.jpg", content: ["Teacher: ______ you jump high?", "Leo: Yes, I can!"], options: ["Do", "Are", "Can"], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "What is this? (3/3) / What is this? (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-03/slide-12.jpg", content: ["You use them to see."], options: ["Eyes", "Ears", "Legs"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Body and actions: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-zero-class-03/slide-13.jpg", content: ["🏃 + 🦘 + 👍"], options: ["My birthday is today.", "I can run and jump.", "The office is open."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -285,10 +286,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Uso libre del lenguaje.",
             slides: [
-              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Production", type: "spinning-wheel", content: ["Spin the wheel and ask your partner!"], wheelItems: [{ label: "Can you swim?", color: "#EF4444" }, { label: "Can you dance?", color: "#3B82F6" }, { label: "Can you run fast?", color: "#10B981" }, { label: "Can you jump high?", color: "#F59E0B" }, { label: "Can you touch your toes?", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
-              { id: "slide-15", title: "Fun Quiz! (1/3) / Divertido Quiz! (1/3)", description: "Quiz", content: ["What is 'Head' in Spanish?"], options: ["Mano", "Cabeza", "Pie"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
-              { id: "slide-16", title: "Fun Quiz! (2/3) / Divertido Quiz! (2/3)", description: "Quiz", content: ["I ____ run, but I ____ fly."], options: ["can / can", "can't / can't", "can / can't"], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
-              { id: "slide-17", title: "Fun Quiz! (3/3) / Divertido Quiz! (3/3)", description: "Quiz", content: ["You have two..."], options: ["Arms", "Heads", "Noses"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Production", type: "spinning-wheel", imageUrl: "/images/teens-basic-zero-class-03/slide-14.jpg", content: ["Spin the wheel and ask your partner!"], wheelItems: [{ label: "Can you swim?", color: "#EF4444" }, { label: "Can you dance?", color: "#3B82F6" }, { label: "Can you run fast?", color: "#10B981" }, { label: "Can you jump high?", color: "#F59E0B" }, { label: "Can you touch your toes?", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3) / Divertido Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-03/slide-15.jpg", content: ["What is 'Head' in Spanish?"], options: ["Mano", "Cabeza", "Pie"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3) / Divertido Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-03/slide-16.jpg", content: ["I ____ run, but I ____ fly."], options: ["can / can", "can't / can't", "can / can't"], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3) / Divertido Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-03/slide-17.jpg", content: ["You have two..."], options: ["Arms", "Heads", "Noses"], correctOptionIndex: 0, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
@@ -296,6 +297,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using My Body & Actions."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  imageUrl: "/images/teens-basic-zero-class-03/slide-boss-battle.jpg",
                                   speakingBossBattle: {
                                     bossName: "The Health Boss",
                                     bossTitle: "My Body & Actions",
@@ -316,7 +318,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: The Robot 🤖 / Juego de Roles: The Robot 🤖", description: "Production", content: ["Student A: You are a robot. Say what you can and can't do.", "Student B: You are the creator. Ask the robot questions.", "Action: 'Can you dance?' 'Yes, I can.'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: The Robot 🤖 / Juego de Roles: The Robot 🤖", description: "Production", imageUrl: "/images/teens-basic-zero-class-03/slide-18.jpg", content: ["Student A: You are a robot. Say what you can and can't do.", "Student B: You are the creator. Ask the robot questions.", "Action: 'Can you dance?' 'Yes, I can.'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -326,9 +328,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
-              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Write 3 sentences about what you CAN do.", "Write 3 sentences about what you CAN'T do."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about action verbs.", "Write down 2 new actions you learned!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-03/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-zero-class-03/slide-20.jpg", content: ["Write 3 sentences about what you CAN do.", "Write 3 sentences about what you CAN'T do."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", imageUrl: "/images/teens-basic-zero-class-03/slide-21.jpg", content: ["Watch this video about action verbs.", "Write down 2 new actions you learned!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -347,9 +349,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome to Class 4! 📱 / Bienvenida to Clase 4! 📱", description: "My Favorite Gadgets", imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800", content: ["Are you a tech lover?", "Today we talk about gadgets.", "And our favorite devices!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
-              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=800", content: ["✔️ Name common tech gadgets.", "✔️ Use 'I have' and 'I don't have'.", "✔️ Ask 'Do you have...?'."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              { id: "slide-1", title: "Welcome to Class 4! 📱 / Bienvenida to Clase 4! 📱", description: "My Favorite Gadgets", imageUrl: "/images/teens-basic-zero-class-04/slide-01.jpg", content: ["Are you a tech lover?", "Today we talk about gadgets.", "And our favorite devices!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-zero-class-04/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
+              { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-zero-class-04/slide-03.jpg", content: ["✔️ Name common tech gadgets.", "✔️ Use 'I have' and 'I don't have'.", "✔️ Ask 'Do you have...?'."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
             action: "Participar en la discusión."
           },
@@ -359,11 +361,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              { id: "slide-4", title: "Tech Gadgets 🎧 / Tech Dispositivos 🎧", description: "Vocabulary", type: "normal", imageUrl: "https://images.unsplash.com/photo-1550009158-9effb67484d4?auto=format&fit=crop&q=80&w=800", content: ["Smartphone = Teléfono inteligente", "Laptop = Computadora portátil", "Tablet = Tableta", "Headphones = Audífonos"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-5", title: "Gaming 🎮 / Gaming 🎮", description: "Vocabulary", type: "normal", imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800", content: ["Console = Consola", "Controller = Control", "Video games = Videojuegos", "Screen = Pantalla"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-6", title: "Grammar: Have / Don't have 🎒", description: "Grammar", type: "normal", imageUrl: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800", content: ["I HAVE = Yo tengo", "I DON'T HAVE = Yo no tengo", "Example: I have a smartphone. I don't have a tablet."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-7", title: "Grammar: Questions ❓ / Grammar: Preguntas ❓", description: "Grammar", type: "normal", imageUrl: "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&q=80&w=800", content: ["Question: Do you have a laptop?", "Answer: Yes, I do. / No, I don't.", "Example: Do you have headphones? Yes, I do!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "slide-8", title: "Adjectives for Tech ⚡ / Adjectives for Tech ⚡", description: "Vocabulary", type: "normal", imageUrl: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&q=80&w=800", content: ["New = Nuevo", "Old = Viejo", "Fast = Rápido", "Slow = Lento", "My phone is fast! = Mi teléfono es rápido."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
+              { id: "slide-4", title: "Tech Gadgets 🎧 / Tech Dispositivos 🎧", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-zero-class-04/slide-04.jpg", content: ["Smartphone = Teléfono inteligente", "Laptop = Computadora portátil", "Tablet = Tableta", "Headphones = Audífonos"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-5", title: "Gaming 🎮 / Gaming 🎮", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-zero-class-04/slide-05.jpg", content: ["Console = Consola", "Controller = Control", "Video games = Videojuegos", "Screen = Pantalla"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-6", title: "Grammar: Have / Don't have 🎒", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-zero-class-04/slide-06.jpg", content: ["I HAVE = Yo tengo", "I DON'T HAVE = Yo no tengo", "Example: I have a smartphone. I don't have a tablet."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-7", title: "Grammar: Questions ❓ / Grammar: Preguntas ❓", description: "Grammar", type: "normal", imageUrl: "/images/teens-basic-zero-class-04/slide-07.jpg", content: ["Question: Do you have a laptop?", "Answer: Yes, I do. / No, I don't.", "Example: Do you have headphones? Yes, I do!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-8", title: "Adjectives for Tech ⚡ / Adjectives for Tech ⚡", description: "Vocabulary", type: "normal", imageUrl: "/images/teens-basic-zero-class-04/slide-08.jpg", content: ["New = Nuevo", "Old = Viejo", "Fast = Rápido", "Slow = Lento", "My phone is fast! = Mi teléfono es rápido."], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" }
             ],
             action: "Tomar notas y repetir pronunciación."
           },
@@ -373,11 +375,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Practicar de forma controlada.",
             slides: [
-              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "https://images.unsplash.com/photo-1521931961826-bd48925d50a5?auto=format&fit=crop&q=80&w=800", content: ["Alex: Hey! Do you have a new console?", "Sam: Yes, I do! It is very fast.", "Alex: Cool! Do you have the new game?", "Sam: No, I don't. But I have headphones!"], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "slide-10", title: "Complete the chat (1/3) / Completa the Chat (1/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1544228428-2b87fbe6089a?auto=format&fit=crop&q=80&w=800", content: ["Alex: ______ you have a tablet?"], options: ["Are", "Do", "Is"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-11", title: "Complete the chat (2/3) / Completa the Chat (2/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800", content: ["Sam: Yes, I ______!"], options: ["have", "am", "do"], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-12", title: "Vocabulary check (3/3) / Vocabulary check (3/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800", content: ["You use them to listen to music."], options: ["Console", "Headphones", "Screen"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Technology: decode the emoji story", type: "emoji-game", imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800", content: ["📱 + 💻 + 🎮"], options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
+              { id: "slide-9", title: "Read the Chat 📱 / Lee el Chat 📱", description: "Context", imageUrl: "/images/teens-basic-zero-class-04/slide-09.jpg", content: ["Alex: Hey! Do you have a new console?", "Sam: Yes, I do! It is very fast.", "Alex: Cool! Do you have the new game?", "Sam: No, I don't. But I have headphones!"], bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+              { id: "slide-10", title: "Complete the chat (1/3) / Completa the Chat (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-04/slide-10.jpg", content: ["Alex: ______ you have a tablet?"], options: ["Are", "Do", "Is"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-11", title: "Complete the chat (2/3) / Completa the Chat (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-04/slide-11.jpg", content: ["Sam: Yes, I ______!"], options: ["have", "am", "do"], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-12", title: "Vocabulary check (3/3) / Vocabulary check (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-04/slide-12.jpg", content: ["You use them to listen to music."], options: ["Console", "Headphones", "Screen"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
+              { id: "slide-13", title: "Emoji Mission / Misión Emoji", description: "Technology: decode the emoji story", type: "emoji-game", imageUrl: "/images/teens-basic-zero-class-04/slide-13.jpg", content: ["📱 + 💻 + 🎮"], options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700" }
             ],
             action: "Completar los ejercicios."
           },
@@ -387,10 +389,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "15 minutos",
             objective: "Uso libre del lenguaje.",
             slides: [
-              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Production", type: "spinning-wheel", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", content: ["Spin the wheel and ask your partner!"], wheelItems: [{ label: "Do you have a tablet?", color: "#EF4444" }, { label: "Do you have headphones?", color: "#3B82F6" }, { label: "Do you have a laptop?", color: "#10B981" }, { label: "Do you have a console?", color: "#F59E0B" }, { label: "Is your phone new?", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
-              { id: "slide-15", title: "Fun Quiz! (1/3) / Divertido Quiz! (1/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800", content: ["How do you say 'Yo no tengo'?"], options: ["I have not", "I don't have", "I am not have"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
-              { id: "slide-16", title: "Fun Quiz! (2/3) / Divertido Quiz! (2/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1531297180b77-287d25e016f4?auto=format&fit=crop&q=80&w=800", content: ["What is the opposite of 'New'?"], options: ["Fast", "Old", "Slow"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
-              { id: "slide-17", title: "Fun Quiz! (3/3) / Divertido Quiz! (3/3)", description: "Quiz", imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800", content: ["How do you answer: 'Do you have a phone?'"], options: ["Yes, I have.", "Yes, I am.", "Yes, I do."], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-14", title: "Let's Talk! 💬 / Vamos a Hablar! 💬", description: "Production", type: "spinning-wheel", imageUrl: "/images/teens-basic-zero-class-04/slide-14.jpg", content: ["Spin the wheel and ask your partner!"], wheelItems: [{ label: "Do you have a tablet?", color: "#EF4444" }, { label: "Do you have headphones?", color: "#3B82F6" }, { label: "Do you have a laptop?", color: "#10B981" }, { label: "Do you have a console?", color: "#F59E0B" }, { label: "Is your phone new?", color: "#8B5CF6" }], bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
+              { id: "slide-15", title: "Fun Quiz! (1/3) / Divertido Quiz! (1/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-04/slide-15.jpg", content: ["How do you say 'Yo no tengo'?"], options: ["I have not", "I don't have", "I am not have"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-16", title: "Fun Quiz! (2/3) / Divertido Quiz! (2/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-04/slide-16.jpg", content: ["What is the opposite of 'New'?"], options: ["Fast", "Old", "Slow"], correctOptionIndex: 1, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
+              { id: "slide-17", title: "Fun Quiz! (3/3) / Divertido Quiz! (3/3)", description: "Quiz", imageUrl: "/images/teens-basic-zero-class-04/slide-17.jpg", content: ["How do you answer: 'Do you have a phone?'"], options: ["Yes, I have.", "Yes, I am.", "Yes, I do."], correctOptionIndex: 2, bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
                 {
                                   id: "slide-boss-battle",
                                   title: "Speaking Boss Battle",
@@ -398,6 +400,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                   type: "speaking-boss-battle",
                                   content: ["Defeat the boss using My Favorite Gadgets & Tech."],
                                   bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                                  imageUrl: "/images/teens-basic-zero-class-04/slide-boss-battle.jpg",
                                   speakingBossBattle: {
                                     bossName: "The Gadget Boss",
                                     bossTitle: "My Favorite Gadgets & Tech",
@@ -418,7 +421,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: The Tech Store 🛍️ / Juego de Roles: The Tech Store 🛍️", description: "Production", imageUrl: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&q=80&w=800", content: ["Student A: You work in a tech store.", "Student B: You are a customer looking for a laptop.", "Action: 'Do you have a fast laptop?' 'Yes, I do!'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: The Tech Store 🛍️ / Juego de Roles: The Tech Store 🛍️", description: "Production", imageUrl: "/images/teens-basic-zero-class-04/slide-18.jpg", content: ["Student A: You work in a tech store.", "Student B: You are a customer looking for a laptop.", "Action: 'Do you have a fast laptop?' 'Yes, I do!'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -428,9 +431,9 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "5 minutos",
             objective: "Cierre de clase.",
             slides: [
-              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
-              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&q=80&w=800", content: ["Make a list of 3 gadgets you have.", "Make a list of 3 gadgets you DON'T have."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", imageUrl: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=800", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about tech vocabulary.", "Write down 2 new words!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-04/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
+              { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-zero-class-04/slide-20.jpg", content: ["Make a list of 3 gadgets you have.", "Make a list of 3 gadgets you DON'T have."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", imageUrl: "/images/teens-basic-zero-class-04/slide-21.jpg", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about tech vocabulary.", "Write down 2 new words!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -12777,3 +12780,5 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
     ]
   }
 ];
+
+organizeTeenBasicOneLevel(curriculumTeensLevels);

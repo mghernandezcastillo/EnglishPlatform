@@ -2110,6 +2110,16 @@ function enhanceRoleplaySlide(slide: ClassSlide, cls: CurriculumClass) {
     return slide;
   }
 
+  const hasCompleteAuthoredRoleplay = Boolean(
+    slide.type === 'roleplay' &&
+    slide.roleplay?.scenario &&
+    slide.roleplay?.situation &&
+    slide.roleplay?.mission?.length &&
+    slide.roleplay?.usefulPhrases?.length &&
+    slide.roleplay?.successChecklist?.length
+  );
+  if (hasCompleteAuthoredRoleplay) return slide;
+
   const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')}`);
   const audience = inferAudienceKey(cls);
   const roleplay = buildRoleplayPlan(topic, audience, cls);
