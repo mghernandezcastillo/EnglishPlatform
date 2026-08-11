@@ -26,6 +26,10 @@ export function VirtualEvaluationView({ levelId }: Props) {
   const [studentType, setStudentType] = useState(() => {
     return new URLSearchParams(window.location.search).get('type') || 'adulto';
   });
+  const dashboardStudentId = new URLSearchParams(window.location.search).get('studentId');
+  const dashboardUrl = dashboardStudentId
+    ? `/?studentId=${encodeURIComponent(dashboardStudentId)}&finalizarNivel=${encodeURIComponent(levelId)}`
+    : '/';
   const [hasStarted, setHasStarted] = useState(() => {
     return !!new URLSearchParams(window.location.search).get('student');
   });
@@ -165,7 +169,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
           answers: answers,
           attempts: attempts
       }).then(() => {
-          window.location.href = '/'; // Go to home or dashboard
+          window.location.href = dashboardUrl;
       });
   };
 
@@ -183,7 +187,13 @@ export function VirtualEvaluationView({ levelId }: Props) {
     });
 
     try {
-        await dbAdmin.saveEvaluationScore(studentName, levelId, correctCount, questions.length, finalAnswers);
+        const percentage = Math.round((correctCount / questions.length) * 100);
+        await dbAdmin.saveEvaluationScore(studentName, levelId, correctCount, questions.length, {
+            ...finalAnswers,
+            __examType: 'virtual',
+            __passed: percentage >= 80,
+            __percentage: percentage
+        });
         setAnswers(finalAnswers);
         setFinalScore({ score: correctCount, total: questions.length });
         
@@ -258,9 +268,9 @@ export function VirtualEvaluationView({ levelId }: Props) {
 
             {passed && (
               <div className="mb-8 rounded-2xl border border-blue-200 bg-blue-50 p-5 text-left text-blue-950">
-                <p className="text-lg font-black">El examen virtual está aprobado, pero el nivel aún no está completo.</p>
+                <p className="text-lg font-black">El examen virtual está aprobado.</p>
                 <p className="mt-2 font-semibold text-blue-800">
-                  Realiza el examen oral con tu tutor. Después, el tutor debe marcar el nivel como aprobado para habilitar el certificado final.
+                  Regresa al panel. Si el examen oral también está aprobado, el tutor podrá completar el nivel y mostrar el certificado final.
                 </p>
               </div>
             )}
@@ -283,7 +293,7 @@ export function VirtualEvaluationView({ levelId }: Props) {
             )}
 
             <button 
-               onClick={() => window.location.href = '/'}
+               onClick={() => window.location.href = dashboardUrl}
                className={`w-full font-bold text-lg py-4 rounded-xl transition-all ${passed || attempts >= 2 ? 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-md' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}`}
             >
                 Volver al panel principal

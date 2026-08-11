@@ -173,6 +173,16 @@ export interface VirtualQuestion {
   imageUrl?: string;
 }
 
+export interface EvaluationRecord {
+  id?: string;
+  student_name: string;
+  level_id: string;
+  score: number;
+  total_questions: number;
+  answers?: Record<string, unknown>;
+  created_at?: string;
+}
+
 export interface CurriculumLevel {
   id: string;
   level?: string;

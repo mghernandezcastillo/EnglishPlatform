@@ -1,5 +1,5 @@
 import { supabase } from '../lib/supabase';
-import { DbStudent, DbGroup } from '../types';
+import { DbStudent, DbGroup, EvaluationRecord } from '../types';
 import { isLevelApprovalMarker } from './levelApproval';
 
 export const dbAdmin = {
@@ -208,13 +208,38 @@ export const dbAdmin = {
     localStorage.setItem('brand_settings', JSON.stringify(settings));
   },
 
-  getEvaluations: async (): Promise<any[]> => {
+  getEvaluations: async (): Promise<EvaluationRecord[]> => {
     const { data, error } = await supabase.from('evaluations').select('*').order('created_at', { ascending: false });
+    const local: EvaluationRecord[] = JSON.parse(localStorage.getItem('mock_evaluations') || '[]');
     if (error) {
        console.warn('Supabase not configured or table missing. Using local mock.', error);
-       return JSON.parse(localStorage.getItem('mock_evaluations') || '[]');
+       return local;
     }
-    return data || [];
+    return [...(data || []), ...local].sort((a, b) => (b.created_at || '').localeCompare(a.created_at || ''));
+  },
+
+  getEvaluationsForStudent: async (studentName: string): Promise<EvaluationRecord[]> => {
+    const normalizedName = (studentName || '').trim().toLowerCase();
+    if (!normalizedName) return [];
+
+    const { data, error } = await supabase
+      .from('evaluations')
+      .select('*')
+      .eq('student_name', studentName.trim())
+      .order('created_at', { ascending: false });
+
+    const local: EvaluationRecord[] = JSON.parse(localStorage.getItem('mock_evaluations') || '[]');
+    const localMatches = local.filter((evaluation) =>
+      (evaluation.student_name || '').trim().toLowerCase() === normalizedName
+    );
+
+    if (error) {
+      console.warn('Evaluation results not found in Supabase. Using local results.', error);
+      return localMatches.sort((a, b) => (b.created_at || '').localeCompare(a.created_at || ''));
+    }
+
+    const merged = [...(data || []), ...localMatches];
+    return merged.sort((a, b) => (b.created_at || '').localeCompare(a.created_at || ''));
   },
 
   getEvaluationProgress: async (levelId: string, studentName: string): Promise<any> => {

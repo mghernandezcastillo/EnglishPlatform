@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { dbAdmin } from '../lib/db';
-import { DbStudent, DbGroup } from '../types';
+import { DbStudent, DbGroup, EvaluationRecord } from '../types';
 import { Users, UserPlus, BookOpen, ChevronLeft, Save, Target } from 'lucide-react';
 import { avatars } from '../config';
 import { CurriculumView } from './CurriculumView';
 import { getCurriculumForType } from '../data/curriculumSelector';
 import { useBrand } from '../hooks/useBrand';
 import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from '../lib/levelApproval';
+import { evaluationExamType, evaluationPassed, evaluationPercentage, latestEvaluation, ORAL_PASS_PERCENT, VIRTUAL_PASS_PERCENT } from '../lib/evaluationResults';
 
 interface TeacherDashboardProps {
   onBack: () => void;
@@ -16,7 +17,7 @@ interface TeacherDashboardProps {
 export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardProps) {
   const [students, setStudents] = useState<DbStudent[]>([]);
   const [groups, setGroups] = useState<DbGroup[]>([]);
-  const [evaluations, setEvaluations] = useState<any[]>([]);
+  const [evaluations, setEvaluations] = useState<EvaluationRecord[]>([]);
   const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'settings'>('students');
   const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
   const [isEditingStudentInfo, setIsEditingStudentInfo] = useState(false);
@@ -54,10 +55,14 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     setEvaluations(e);
   };
 
-  const handleToggleLevelApproval = async (levelId: string, levelTitle: string) => {
+  const handleToggleLevelApproval = async (levelId: string, levelTitle: string, canApprove: boolean) => {
     if (!selectedStudent) return;
     const currentApprovals = approvedLevelIdsForStudent(selectedStudent);
     const isApproved = currentApprovals.includes(levelId);
+    if (!isApproved && !canApprove) {
+      showToast('Primero deben aprobarse el examen oral y el examen virtual.');
+      return;
+    }
     const approvedLevels = isApproved
       ? currentApprovals.filter((id) => id !== levelId)
       : [...currentApprovals, levelId];
@@ -115,6 +120,19 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     const hasOralEvaluation = Boolean(currentLevelObj?.oralEvaluation?.length);
     const hasVirtualEvaluation = Boolean(currentLevelObj?.virtualEvaluation?.length);
     const isCurrentLevelApproved = Boolean(currentLevelObj && approvedLevelIdsForStudent(selectedStudent).includes(currentLevelObj.id));
+    const visibleLessons = visibleCompletedLessonIds(selectedStudent.completed_lessons || []);
+    const classesCompleted = Boolean(currentLevelObj?.classes.length && currentLevelObj.classes.every((cls) => visibleLessons.includes(cls.id)));
+    const normalizedStudentName = selectedStudent.name.trim().toLowerCase();
+    const studentEvaluations = evaluations.filter((evaluation) =>
+      evaluation.student_name.trim().toLowerCase() === normalizedStudentName
+    );
+    const oralPassed = currentLevelObj
+      ? (!hasOralEvaluation || evaluationPassed(latestEvaluation(studentEvaluations, currentLevelObj.id, 'oral'), 'oral'))
+      : false;
+    const virtualPassed = currentLevelObj
+      ? (!hasVirtualEvaluation || evaluationPassed(latestEvaluation(studentEvaluations, currentLevelObj.id, 'virtual'), 'virtual'))
+      : false;
+    const examRequirementsMet = classesCompleted && oralPassed && virtualPassed;
 
     return (
         <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6">
@@ -266,6 +284,17 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                     Preguntas predefinidas para evaluar la fluidez y pronunciación de {selectedStudent.name} en el nivel {currentLevelObj.title}.
                                 </p>
                                 <button
+                                    type="button"
+                                    disabled={!classesCompleted}
+                                    onClick={() => {
+                                        sessionStorage.setItem('maven_open_oral_exam', currentLevelObj.id);
+                                        onEnterAsStudent?.(selectedStudent);
+                                    }}
+                                    className="mb-3 w-full rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-3 font-black text-white shadow-sm transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:from-slate-300 disabled:to-slate-400 disabled:hover:translate-y-0"
+                                >
+                                    {classesCompleted ? 'Abrir presentación del examen oral' : 'Completa primero las clases'}
+                                </button>
+                                <button
                                     onClick={() => {
                                         const qText = currentLevelObj?.oralEvaluation?.map(q => `*${q.topic}*: ${q.question}`).join('\n\n');
                                         const msg = `Hola ${selectedStudent.name}, aquí están las preguntas para que prepares tu examen oral del nivel ${currentLevelObj?.title}:\n\n${qText}`;
@@ -285,7 +314,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                 </p>
                                 <button
                                     onClick={() => {
-                                        const url = `${window.location.origin}/?evaluacion=${currentLevelObj?.id}&student=${encodeURIComponent(selectedStudent.name)}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}`;
+                                        const url = `${window.location.origin}/?evaluacion=${currentLevelObj?.id}&student=${encodeURIComponent(selectedStudent.name)}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}&studentId=${encodeURIComponent(selectedStudent.id)}`;
                                         const msg = `¡Hola ${selectedStudent.name}! Aquí está tu enlace directo para realizar el examen virtual del nivel ${currentLevelObj?.title}. ¡Mucho éxito!\n\n${url}`;
                                         window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
                                     }}
@@ -314,15 +343,22 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                     <p className={`max-w-3xl font-medium ${isCurrentLevelApproved ? 'text-emerald-800' : 'text-amber-800'}`}>
                       {isCurrentLevelApproved
                         ? `${currentLevelObj.title} ya fue aprobado por el tutor.`
-                        : `Después de realizar el examen oral de ${currentLevelObj.title}, registra aquí la decisión del tutor.`}
+                        : !classesCompleted
+                          ? 'Primero deben completarse todas las clases del nivel.'
+                          : !oralPassed
+                          ? 'Falta aprobar el examen oral desde la presentación guiada.'
+                          : !virtualPassed
+                            ? 'El examen oral está aprobado. Falta aprobar el examen virtual.'
+                            : 'Ambos exámenes están aprobados. Ya puedes completar formalmente el nivel.'}
                     </p>
                   </div>
                   <button
                     type="button"
-                    onClick={() => handleToggleLevelApproval(currentLevelObj.id, currentLevelObj.title)}
-                    className={`min-h-12 shrink-0 rounded-xl px-5 py-3 font-black text-white shadow-sm transition ${isCurrentLevelApproved ? 'bg-slate-600 hover:bg-slate-700' : 'bg-emerald-600 hover:bg-emerald-700'}`}
+                    disabled={!isCurrentLevelApproved && !examRequirementsMet}
+                    onClick={() => handleToggleLevelApproval(currentLevelObj.id, currentLevelObj.title, examRequirementsMet)}
+                    className={`min-h-12 shrink-0 rounded-xl px-5 py-3 font-black text-white shadow-sm transition ${isCurrentLevelApproved ? 'bg-slate-600 hover:bg-slate-700' : examRequirementsMet ? 'bg-emerald-600 hover:bg-emerald-700' : 'cursor-not-allowed bg-slate-300'}`}
                   >
-                    {isCurrentLevelApproved ? 'Revocar aprobación' : 'Aprobar después del examen oral'}
+                    {isCurrentLevelApproved ? 'Revocar aprobación' : examRequirementsMet ? 'Marcar nivel como completo' : 'Evaluaciones pendientes'}
                   </button>
                 </div>
               </div>
@@ -547,13 +583,16 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                     <tr className="bg-gray-50 border-b border-gray-100">
                       <th className="p-4 font-bold text-gray-600">Estudiante</th>
                       <th className="p-4 font-bold text-gray-600">Nivel Evaluado</th>
+                      <th className="p-4 font-bold text-gray-600">Tipo</th>
                       <th className="p-4 font-bold text-gray-600">Puntaje</th>
-                      <th className="p-4 font-bold text-gray-600 text-right">Porcentaje</th>
+                      <th className="p-4 font-bold text-gray-600 text-right">Resultado</th>
                     </tr>
                   </thead>
                   <tbody>
                      {evaluations.map((ev, i) => {
-                       const percentage = Math.round((ev.score / ev.total_questions) * 100);
+                       const percentage = evaluationPercentage(ev);
+                       const examType = evaluationExamType(ev);
+                       const passMark = examType === 'oral' ? ORAL_PASS_PERCENT : VIRTUAL_PASS_PERCENT;
                        return (
                          <tr key={ev.id || i} className="border-b border-gray-50 hover:bg-slate-50 transition-colors">
                            <td className="p-4 font-semibold text-gray-900">{ev.student_name}</td>
@@ -562,12 +601,17 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                {ev.level_id}
                              </span>
                            </td>
+                           <td className="p-4">
+                             <span className={`rounded-full px-3 py-1 text-xs font-black uppercase tracking-wide ${examType === 'oral' ? 'bg-amber-100 text-amber-800' : 'bg-cyan-100 text-cyan-800'}`}>
+                               {examType === 'oral' ? 'Oral' : 'Virtual'}
+                             </span>
+                           </td>
                            <td className="p-4 font-medium text-gray-700">
-                             {ev.score} / {ev.total_questions}
+                             {percentage}%
                            </td>
                            <td className="p-4 text-right">
-                             <div className={`font-black text-lg ${percentage >= 70 ? 'text-green-600' : percentage >= 50 ? 'text-amber-500' : 'text-red-500'}`}>
-                               {percentage}%
+                             <div className={`font-black text-lg ${percentage >= passMark ? 'text-green-600' : percentage >= 50 ? 'text-amber-500' : 'text-red-500'}`}>
+                               {percentage >= passMark ? 'Aprobado' : 'No aprobado'}
                              </div>
                            </td>
                          </tr>

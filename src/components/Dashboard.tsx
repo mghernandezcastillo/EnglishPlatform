@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { CurriculumClass } from '../types';
+import { CurriculumClass, CurriculumLevel, EvaluationRecord } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces, Search } from 'lucide-react';
+import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces, Search, Mic2 } from 'lucide-react';
 import { studentConfig, avatars } from '../config';
 import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
@@ -12,16 +12,21 @@ import { useBrand } from '../hooks/useBrand';
 import { PreClassAssessment } from './PreClassAssessment';
 import { BrandWordmark } from './BrandWordmark';
 import { Diploma } from './Diploma';
+import { OralEvaluationPresentation } from './OralEvaluationPresentation';
+import { dbAdmin } from '../lib/db';
+import { evaluationPassed, latestEvaluation } from '../lib/evaluationResults';
 
 interface DashboardProps {
   completedLessonIds: string[];
   approvedLevelIds: string[];
   userLevel: string;
   studentName?: string;
+  studentId?: string | null;
   avatarId?: string;
   studentType?: string;
   onStartLibraryLesson: (lessonId: string) => void;
   onFinishClass: (classId: string) => void;
+  onApproveLevel: (levelId: string) => Promise<void>;
   onToggleClass?: (classId: string) => void;
   onOpenAssessment: () => void;
   onOpenEntranceAssessment: () => void;
@@ -31,7 +36,7 @@ interface DashboardProps {
   onOpenVerbsGuide: () => void;
 }
 
-export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryForge, onOpenStructureMode, onOpenVerbsGuide }: DashboardProps) {
+export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenAssessment, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryForge, onOpenStructureMode, onOpenVerbsGuide }: DashboardProps) {
   const { curriculumLevels, loading } = useCurriculum(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
@@ -40,7 +45,53 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
   const [autoExpandedSeed, setAutoExpandedSeed] = useState('');
   const [presentingClass, setPresentingClass] = useState<CurriculumClass | null>(null);
   const [evaluatingClass, setEvaluatingClass] = useState<{ id: string, title: string } | null>(null);
+  const [oralExamLevel, setOralExamLevel] = useState<CurriculumLevel | null>(null);
+  const [evaluationRecords, setEvaluationRecords] = useState<EvaluationRecord[]>([]);
   const { brand } = useBrand();
+
+  useEffect(() => {
+    let active = true;
+    if (!studentName?.trim()) {
+      setEvaluationRecords([]);
+      return () => { active = false; };
+    }
+
+    dbAdmin.getEvaluationsForStudent(studentName).then((records) => {
+      if (active) setEvaluationRecords(records);
+    });
+
+    return () => { active = false; };
+  }, [studentName]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const completedVirtualLevelId = params.get('finalizarNivel');
+    if (!completedVirtualLevelId || curriculumLevels.length === 0 || evaluationRecords.length === 0) return;
+
+    const level = curriculumLevels.find((item) => item.id === completedVirtualLevelId);
+    if (!level?.oralEvaluation?.length) return;
+
+    const oralResult = latestEvaluation(evaluationRecords, level.id, 'oral');
+    const virtualResult = latestEvaluation(evaluationRecords, level.id, 'virtual');
+    if (!evaluationPassed(oralResult, 'oral') || !evaluationPassed(virtualResult, 'virtual')) return;
+
+    setExpandedLevel(level.id);
+    setOralExamLevel(level);
+    params.delete('finalizarNivel');
+    const nextSearch = params.toString();
+    window.history.replaceState({}, '', `${window.location.pathname}${nextSearch ? `?${nextSearch}` : ''}`);
+  }, [curriculumLevels, evaluationRecords]);
+
+  useEffect(() => {
+    const requestedLevelId = sessionStorage.getItem('maven_open_oral_exam');
+    if (!requestedLevelId || curriculumLevels.length === 0) return;
+    const level = curriculumLevels.find((item) => item.id === requestedLevelId);
+    if (!level?.oralEvaluation?.length) return;
+
+    setExpandedLevel(level.id);
+    setOralExamLevel(level);
+    sessionStorage.removeItem('maven_open_oral_exam');
+  }, [curriculumLevels]);
 
   useEffect(() => {
     if (curriculumLevels.length === 0) return;
@@ -70,6 +121,9 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
   const isKid = studentType === 'niño';
   const isTeen = studentType === 'adolescente';
   const displayBrandName = isKid ? 'Maven English for kids' : isTeen ? 'Maven English for teens' : brand.name;
+  const activeOralResult = oralExamLevel ? latestEvaluation(evaluationRecords, oralExamLevel.id, 'oral') : null;
+  const activeVirtualResult = oralExamLevel ? latestEvaluation(evaluationRecords, oralExamLevel.id, 'virtual') : null;
+  const activeVirtualPassed = evaluationPassed(activeVirtualResult, 'virtual');
 
   const handleSelectCategory = (categoryId: string, title: string) => {
     setActiveLibraryCategoryId(categoryId);
@@ -365,8 +419,12 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                const levelClasses = level.classes;
                const levelCompleted = levelClasses.filter(c => completedLessonIds.includes(c.id)).length;
                const areClassesCompleted = levelClasses.length > 0 && levelCompleted === levelClasses.length;
+               const oralResult = latestEvaluation(evaluationRecords, level.id, 'oral');
+               const virtualResult = latestEvaluation(evaluationRecords, level.id, 'virtual');
+               const oralPassed = level.oralEvaluation?.length ? evaluationPassed(oralResult, 'oral') : true;
+               const virtualPassed = level.virtualEvaluation?.length ? evaluationPassed(virtualResult, 'virtual') : true;
                const isTutorApproved = approvedLevelIds.includes(level.id);
-               const isFullyCompleted = areClassesCompleted && isTutorApproved;
+               const isFullyCompleted = areClassesCompleted && oralPassed && virtualPassed && isTutorApproved;
                const levelProgressPercentage = levelClasses.length > 0 ? Math.round((levelCompleted / levelClasses.length) * 100) : 0;
 
                return (
@@ -401,10 +459,22 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                             Nivel completado
                           </span>
                         )}
-                        {areClassesCompleted && !isTutorApproved && (
+                        {areClassesCompleted && !oralPassed && (
                           <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3 py-1 text-xs font-black uppercase tracking-wider text-amber-800 ring-1 ring-amber-200">
                             <Users className="h-3.5 w-3.5" />
                             Pendiente examen oral
+                          </span>
+                        )}
+                        {areClassesCompleted && oralPassed && !virtualPassed && (
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-cyan-100 px-3 py-1 text-xs font-black uppercase tracking-wider text-cyan-800 ring-1 ring-cyan-200">
+                            <BookOpen className="h-3.5 w-3.5" />
+                            Pendiente examen virtual
+                          </span>
+                        )}
+                        {areClassesCompleted && oralPassed && virtualPassed && !isTutorApproved && (
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-violet-100 px-3 py-1 text-xs font-black uppercase tracking-wider text-violet-800 ring-1 ring-violet-200">
+                            <Trophy className="h-3.5 w-3.5" />
+                            Pendiente aprobación del tutor
                           </span>
                         )}
                       </div>
@@ -514,6 +584,10 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                                               </div>
                                               <h3 className="font-bold text-amber-900 text-lg">Preparación Examen Oral</h3>
                                           </div>
+                                          <div className={`mb-4 inline-flex w-max items-center gap-2 rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-wider ${oralPassed ? 'bg-emerald-100 text-emerald-800' : 'bg-white text-amber-800 ring-1 ring-amber-200'}`}>
+                                              {oralPassed ? <CheckCircle className="h-4 w-4" /> : <Mic2 className="h-4 w-4" />}
+                                              {oralPassed ? 'Oral aprobado' : areClassesCompleted ? 'Listo para presentar' : 'Disponible al terminar las clases'}
+                                          </div>
                                           <p className="text-sm text-amber-800 mb-4 font-medium">Preguntas para practicar con tu tutor al final del nivel:</p>
                                           <div className="divide-y-2 divide-amber-200/50 divide-dashed border-2 border-amber-200/50 rounded-2xl bg-white/50 overflow-hidden mb-4">
                                               {level.oralEvaluation.map((q, idx) => (
@@ -529,17 +603,28 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                                               ))}
                                           </div>
                                       </div>
-                                      <button
-                                          onClick={() => {
-                                              const qText = level.oralEvaluation?.map(q => `*${q.topic}*: ${q.question}`).join('\n\n');
-                                              const msg = `Hola, quiero practicar las preguntas del examen oral de ${level.title}:\n\n${qText}`;
-                                              window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
-                                          }}
-                                          className="w-full mt-auto bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm"
-                                      >
-                                          <Share className="w-4 h-4" />
-                                          Compartir por WhatsApp
-                                      </button>
+                                      <div className="mt-auto grid gap-2">
+                                          <button
+                                              type="button"
+                                              disabled={!areClassesCompleted}
+                                              onClick={() => setOralExamLevel(level)}
+                                              className="flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-3 text-base font-black text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg disabled:cursor-not-allowed disabled:from-slate-300 disabled:to-slate-400 disabled:hover:translate-y-0"
+                                          >
+                                              <Mic2 className="h-5 w-5" />
+                                              {oralPassed ? 'Ver resultado oral' : areClassesCompleted ? 'Presentar examen oral' : 'Completa primero las clases'}
+                                          </button>
+                                          <button
+                                              onClick={() => {
+                                                  const qText = level.oralEvaluation?.map(q => `*${q.topic}*: ${q.question}`).join('\n\n');
+                                                  const msg = `Hola, quiero practicar las preguntas del examen oral de ${level.title}:\n\n${qText}`;
+                                                  window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+                                              }}
+                                              className="flex w-full items-center justify-center gap-2 rounded-xl border border-amber-300 bg-white px-4 py-3 font-bold text-amber-800 transition hover:bg-amber-100"
+                                          >
+                                              <Share className="w-4 h-4" />
+                                              Compartir preguntas
+                                          </button>
+                                      </div>
                                   </div>
                               )}
 
@@ -552,25 +637,31 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                                               </div>
                                               <h3 className="font-bold text-emerald-900 text-lg">Examen Virtual</h3>
                                           </div>
+                                          <div className={`mb-4 inline-flex w-max items-center gap-2 rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-wider ${virtualPassed ? 'bg-emerald-200 text-emerald-900' : oralPassed ? 'bg-white text-emerald-800 ring-1 ring-emerald-200' : 'bg-slate-100 text-slate-500'}`}>
+                                              {virtualPassed ? <CheckCircle className="h-4 w-4" /> : <BookOpen className="h-4 w-4" />}
+                                              {virtualPassed ? 'Virtual aprobado' : oralPassed ? 'Siguiente paso' : 'Después del examen oral'}
+                                          </div>
                                           <p className="text-sm text-emerald-800 mb-4 font-medium">Evalúa lo que aprendiste en este nivel respondiendo este cuestionario interactivo.</p>
                                       </div>
                                       <div className="w-full flex gap-2 mt-4">
                                           <button 
+                                              disabled={!oralPassed}
                                               onClick={() => {
-                                                  window.open(`/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}`, '_blank');
+                                                  window.open(`/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}${studentId ? `&studentId=${encodeURIComponent(studentId)}` : ''}`, '_blank');
                                               }}
-                                              className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm"
+                                              className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 font-bold text-white shadow-sm transition-all hover:bg-emerald-700 disabled:cursor-not-allowed disabled:bg-slate-300"
                                           >
-                                              Tomar Examen
+                                              {virtualPassed ? 'Ver examen' : oralPassed ? 'Tomar examen' : 'Primero aprueba el oral'}
                                               <Play className="w-4 h-4 fill-current" />
                                           </button>
                                           <button 
+                                              disabled={!oralPassed}
                                               onClick={() => {
-                                                  const url = `${window.location.origin}/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}`;
+                                                  const url = `${window.location.origin}/?evaluacion=${level.id}&student=${encodeURIComponent(studentName || '')}&type=${encodeURIComponent(studentType || 'adulto')}${studentId ? `&studentId=${encodeURIComponent(studentId)}` : ''}`;
                                                   const msg = `Aquí está mi enlace para realizar el examen virtual de ${level.title}:\n\n${url}`;
                                                   window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
                                               }}
-                                              className="bg-emerald-800 hover:bg-emerald-900 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center transition-all shadow-sm"
+                                              className="flex items-center justify-center rounded-xl bg-emerald-800 px-4 py-3 font-bold text-white shadow-sm transition-all hover:bg-emerald-900 disabled:cursor-not-allowed disabled:bg-slate-300"
                                               title="Compartir enlace"
                                           >
                                               <Share className="w-5 h-5" />
@@ -591,9 +682,13 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                               <p className="text-sm font-semibold text-slate-600">
                                 {isFullyCompleted
                                   ? `Tu certificado de ${level.title} está listo para descargar o compartir.`
-                                  : areClassesCompleted
-                                    ? 'Terminaste las clases. El nivel quedará completo cuando tu tutor apruebe el examen oral.'
-                                    : `Completa todas las clases de ${level.title} y luego realiza el examen oral con tu tutor.`}
+                                  : !areClassesCompleted
+                                    ? `Completa todas las clases de ${level.title} para iniciar las evaluaciones finales.`
+                                    : !oralPassed
+                                      ? 'El siguiente paso es presentar el examen oral con el tutor.'
+                                      : !virtualPassed
+                                        ? 'El oral está aprobado. Falta aprobar el examen virtual.'
+                                        : 'Ambos exámenes están aprobados. El tutor debe completar formalmente el nivel.'}
                               </p>
                             </div>
                             <span className={`inline-flex w-max items-center gap-2 rounded-full px-4 py-2 text-xs font-black uppercase tracking-wider ${
@@ -615,11 +710,17 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                           ) : (
                             <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center">
                               <p className="text-lg font-black text-slate-700">
-                                {areClassesCompleted ? 'Esperando aprobación del tutor.' : 'El certificado aparecerá aquí al finalizar el nivel.'}
+                                {!areClassesCompleted
+                                  ? 'El certificado aparecerá aquí al finalizar el nivel.'
+                                  : !oralPassed
+                                    ? 'Pendiente: examen oral.'
+                                    : !virtualPassed
+                                      ? 'Pendiente: examen virtual.'
+                                      : 'Esperando confirmación final del tutor.'}
                               </p>
                               <p className="mt-2 text-sm font-semibold text-slate-500">
-                                {areClassesCompleted
-                                  ? 'Después del examen oral, el tutor debe marcar este nivel como aprobado.'
+                                {areClassesCompleted && oralPassed && virtualPassed
+                                  ? 'El tutor puede marcar el nivel como completado desde el resultado del examen oral.'
                                   : 'Cuando esté disponible tendrá botones para descargar, compartir por WhatsApp y enviar por correo.'}
                               </p>
                             </div>
@@ -658,6 +759,28 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
             onPass={(passedClassId) => {
               onFinishClass(passedClassId);
             }}
+          />
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {oralExamLevel?.oralEvaluation && (
+          <OralEvaluationPresentation
+            levelId={oralExamLevel.id}
+            levelTitle={oralExamLevel.title}
+            questions={oralExamLevel.oralEvaluation}
+            studentName={displayStudentName}
+            studentType={studentType || 'adulto'}
+            studentId={studentId}
+            brandName={displayBrandName}
+            logoUrl={brand.logoUrl}
+            existingResult={activeOralResult}
+            virtualPassed={activeVirtualPassed}
+            levelApproved={approvedLevelIds.includes(oralExamLevel.id)}
+            onClose={() => setOralExamLevel(null)}
+            onSaved={(evaluation) => {
+              setEvaluationRecords((current) => [evaluation, ...current.filter((item) => item.id !== evaluation.id)]);
+            }}
+            onApproveLevel={onApproveLevel}
           />
         )}
       </AnimatePresence>

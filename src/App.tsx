@@ -16,7 +16,7 @@ import { BrandWordmark } from './components/BrandWordmark';
 import { VerbsGuide } from './components/VerbsGuide';
 import { VerbArenaGame } from './components/VerbArenaGame';
 import { dbAdmin } from './lib/db';
-import { approvedLevelIdsForStudent, visibleCompletedLessonIds } from './lib/levelApproval';
+import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from './lib/levelApproval';
 import { DbStudent, UserProgress } from './types';
 import { lessons } from './data/lessons';
 import { libraryLessons } from './data/libraryLessons';
@@ -153,6 +153,24 @@ export default function App() {
         await dbAdmin.updateStudentProgress(currentStudentId, classId);
       }
     }
+  };
+
+  const handleApproveLevel = async (levelId: string) => {
+    if ((progress.approvedLevelIds || []).includes(levelId)) return;
+    const approvedLevelIds = Array.from(new Set([...(progress.approvedLevelIds || []), levelId]));
+
+    if (currentStudentId) {
+      const columnUpdated = await dbAdmin.updateStudent(currentStudentId, { approved_levels: approvedLevelIds });
+      if (!columnUpdated) {
+        await dbAdmin.setStudentProgress(
+          currentStudentId,
+          [...progress.completedLessons, levelApprovalMarker(levelId)],
+          false
+        );
+      }
+    }
+
+    setProgress((current) => ({ ...current, approvedLevelIds }));
   };
 
   const handleCompleteLesson = () => {
@@ -448,10 +466,12 @@ export default function App() {
           approvedLevelIds={progress.approvedLevelIds || []}
           userLevel={progress.level || 'Nivel Inicial'}
           studentName={progress.studentName}
+          studentId={currentStudentId}
           avatarId={progress.avatarId}
           studentType={progress.studentType}
           onStartLibraryLesson={handleStartLibraryLesson}
           onFinishClass={handleFinishClass}
+          onApproveLevel={handleApproveLevel}
           onToggleClass={handleToggleClass}
           onOpenAssessment={handleOpenAssessment}
           onOpenEntranceAssessment={handleOpenEntranceAssessment}
