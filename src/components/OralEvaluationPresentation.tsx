@@ -32,15 +32,79 @@ const CRITERIA: Array<{
   shortLabel: string;
   helper: string;
   color: string;
+  descriptors: [string, string, string, string, string];
 }> = [
-  { id: 'communication', label: 'Comprensión y respuesta', shortLabel: 'Comprensión', helper: 'Entiende y responde lo que se le pide.', color: '#0ea5e9' },
-  { id: 'grammar', label: 'Gramática', shortLabel: 'Gramática', helper: 'Construye frases acordes con el nivel.', color: '#8b5cf6' },
-  { id: 'vocabulary', label: 'Vocabulario', shortLabel: 'Vocabulario', helper: 'Usa palabras relacionadas con el tema.', color: '#ec4899' },
-  { id: 'pronunciation', label: 'Pronunciación', shortLabel: 'Pronunciación', helper: 'Su mensaje se entiende con claridad.', color: '#f59e0b' },
-  { id: 'fluency', label: 'Fluidez', shortLabel: 'Fluidez', helper: 'Mantiene la respuesta sin pausas excesivas.', color: '#10b981' }
+  {
+    id: 'communication',
+    label: 'Cumplimiento de la tarea',
+    shortLabel: 'Tarea',
+    helper: 'Evalúa si realmente responde lo que se le pregunta.',
+    color: '#0ea5e9',
+    descriptors: [
+      'No responde la pregunta o su respuesta no corresponde al tema.',
+      'Responde solo una parte y necesita ayuda para continuar.',
+      'Comunica la idea principal, pero faltan detalles.',
+      'Responde de forma completa y pertinente.',
+      'Responde completamente, añade detalles y desarrolla su idea.'
+    ]
+  },
+  {
+    id: 'grammar',
+    label: 'Control gramatical',
+    shortLabel: 'Gramática',
+    helper: 'Observa las estructuras esperadas para este nivel.',
+    color: '#8b5cf6',
+    descriptors: [
+      'Los errores impiden comprender la idea.',
+      'Usa palabras o estructuras sueltas con errores frecuentes.',
+      'Usa la estructura esperada; los errores no bloquean el mensaje.',
+      'Construye frases mayormente correctas para su nivel.',
+      'Usa las estructuras con precisión y variedad para su nivel.'
+    ]
+  },
+  {
+    id: 'vocabulary',
+    label: 'Vocabulario en contexto',
+    shortLabel: 'Vocabulario',
+    helper: 'Valora palabras útiles y relacionadas con la pregunta.',
+    color: '#ec4899',
+    descriptors: [
+      'No encuentra las palabras necesarias para comunicar la idea.',
+      'Usa muy pocas palabras y repite constantemente.',
+      'Usa vocabulario básico relacionado con el tema.',
+      'Usa suficiente vocabulario y elige palabras apropiadas.',
+      'Usa vocabulario variado, preciso y apropiado para su nivel.'
+    ]
+  },
+  {
+    id: 'pronunciation',
+    label: 'Claridad al hablar',
+    shortLabel: 'Claridad',
+    helper: 'Evalúa si el mensaje se entiende, no si tiene acento latino.',
+    color: '#f59e0b',
+    descriptors: [
+      'El mensaje casi no se entiende.',
+      'Se entienden algunas partes y necesita repetir.',
+      'Se entiende con cierto esfuerzo.',
+      'Se entiende claramente con pequeños problemas.',
+      'Se entiende con facilidad durante toda la respuesta.'
+    ]
+  },
+  {
+    id: 'fluency',
+    label: 'Fluidez y continuidad',
+    shortLabel: 'Fluidez',
+    helper: 'Evalúa continuidad al responder, no velocidad al hablar.',
+    color: '#10b981',
+    descriptors: [
+      'No logra mantener la respuesta.',
+      'Las pausas frecuentes interrumpen la idea.',
+      'Completa la respuesta con algunas pausas.',
+      'Mantiene la respuesta con pocas interrupciones.',
+      'Habla de forma continua y natural para su nivel.'
+    ]
+  }
 ];
-
-const SCORE_LABELS = ['Sin calificar', 'Necesita apoyo', 'En desarrollo', 'Adecuado', 'Muy bien', 'Excelente'];
 
 interface OralEvaluationPresentationProps {
   levelId: string;
@@ -362,7 +426,7 @@ export function OralEvaluationPresentation({
                     <Headphones className="h-9 w-9 text-violet-300" />
                   </div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {CRITERIA.map((criterion) => {
                       const value = currentScores[criterion.id] || 0;
                       return (
@@ -370,15 +434,19 @@ export function OralEvaluationPresentation({
                           <div className="mb-2 flex items-center justify-between gap-3">
                             <div>
                               <p className="font-black text-slate-900">{criterion.label}</p>
-                              <p className="hidden text-xs font-semibold text-slate-500 sm:block">{criterion.helper}</p>
                             </div>
                             <span
-                              className="min-w-[112px] rounded-full px-3 py-1 text-center text-xs font-black text-white"
+                              className="min-w-[64px] rounded-full px-3 py-1 text-center text-xs font-black text-white"
                               style={{ backgroundColor: value ? criterion.color : '#94a3b8' }}
                             >
-                              {value ? `${value}/5 · ${SCORE_LABELS[value]}` : SCORE_LABELS[0]}
+                              {value ? `${value}/5` : '— /5'}
                             </span>
                           </div>
+                          <p className={`mb-2 min-h-8 text-sm font-bold leading-snug ${value ? 'text-slate-700' : 'text-slate-400'}`}>
+                            {value
+                              ? criterion.descriptors[value - 1]
+                              : 'Escucha la respuesta y mueve la barra para describir lo observado.'}
+                          </p>
                           <input
                             aria-label={`Calificación de ${criterion.label}`}
                             type="range"
@@ -390,8 +458,8 @@ export function OralEvaluationPresentation({
                             className="h-3 w-full cursor-pointer accent-violet-600"
                             style={{ accentColor: criterion.color }}
                           />
-                          <div className="mt-1 flex justify-between text-[10px] font-black text-slate-400">
-                            <span>1 · Apoyo</span><span>3 · Adecuado</span><span>5 · Excelente</span>
+                          <div className="mt-1 flex justify-between px-1 text-[10px] font-black text-slate-400">
+                            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
                           </div>
                         </div>
                       );
