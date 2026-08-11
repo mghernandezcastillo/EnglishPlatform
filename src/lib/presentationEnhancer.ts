@@ -33,23 +33,7 @@ type VisualPuzzle = {
 
 type AudienceKey = 'kids' | 'teens' | 'adults';
 
-type RoleplayPlan = {
-  scenario: string;
-  situation: string;
-  players?: {
-    aNamePlaceholder: string;
-    bNamePlaceholder: string;
-  };
-  roles: {
-    a: { label: string; goal: string };
-    b: { label: string; goal: string };
-  };
-  mission: string[];
-  steps?: NonNullable<ClassSlide['roleplay']>['steps'];
-  usefulPhrases: string[];
-  successChecklist: string[];
-  victoryMessage?: string;
-};
+type RoleplayPlan = NonNullable<ClassSlide['roleplay']>;
 
 type WarmupWheelItem = {
   label: string;
@@ -1357,6 +1341,146 @@ function enrichRoleplayPlan(plan: RoleplayPlan, topic: TopicKey, audience: Audie
 }
 
 function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: CurriculumClass): RoleplayPlan {
+  if (cls.id === 'c-teens-basic-zero-15') {
+    return {
+      mode: 'guided-conversation',
+      scenario: 'School day interview',
+      situation: 'Ask and answer about a real school-day routine.',
+      setupInstruction: 'Player A asks. Player B answers. You will switch roles at the end.',
+      conversationGoal: 'Complete a five-turn interview about morning, after school, and bedtime.',
+      modelDialogue: {
+        a: 'What time do you wake up?',
+        b: 'I wake up at 7:00.'
+      },
+      players: {
+        aNamePlaceholder: 'Player A',
+        bNamePlaceholder: 'Player B'
+      },
+      roles: {
+        a: { label: 'Interviewer', goal: 'Choose and say the blue questions.' },
+        b: { label: 'Student', goal: 'Use real activities and times.' }
+      },
+      mission: [
+        'Ask about the morning.',
+        'Answer with an activity and a time.',
+        'Ask about later, answer, and ask back.'
+      ],
+      steps: [
+        {
+          id: 'step-1',
+          speaker: 'a',
+          kind: 'ask',
+          title: 'Ask about the morning',
+          instruction: 'Choose ONE question and say it aloud.',
+          phrasePrompt: 'Choose one question',
+          phrases: [
+            'What time do you wake up?',
+            'What time do you have breakfast?',
+            'What time do you go to school?'
+          ],
+          vocabulary: [],
+          support: {
+            label: 'Then listen',
+            instruction: 'Your partner will answer that same question with a real time.'
+          },
+          nextLabel: 'I asked → hear the answer'
+        },
+        {
+          id: 'step-2',
+          speaker: 'b',
+          kind: 'answer',
+          title: 'Answer the question',
+          instruction: 'Choose the MATCHING answer. Replace ___ with your real time.',
+          phrasePrompt: 'Choose the matching answer',
+          phrases: [
+            'I wake up at ___.',
+            'I have breakfast at ___.',
+            'I go to school at ___.'
+          ],
+          vocabulary: [],
+          support: {
+            label: 'Add one time',
+            instruction: 'Use your real time or choose an example.',
+            items: ['6:30', '7:00', '7:30']
+          },
+          nextLabel: 'I answered → ask again'
+        },
+        {
+          id: 'step-3',
+          speaker: 'a',
+          kind: 'ask',
+          title: 'Ask about later',
+          instruction: 'Choose ONE new question and say it aloud.',
+          phrasePrompt: 'Choose one follow-up question',
+          phrases: [
+            'What do you do after school?',
+            'What time do you do homework?',
+            'What time do you go to bed?'
+          ],
+          vocabulary: [],
+          support: {
+            label: 'Then listen',
+            instruction: 'Your partner will answer, then ask “And you?”'
+          },
+          nextLabel: 'I asked → hear the answer'
+        },
+        {
+          id: 'step-4',
+          speaker: 'b',
+          kind: 'answer',
+          title: 'Answer and ask back',
+          instruction: 'Choose the MATCHING answer. Add your detail, then say “And you?”',
+          phrasePrompt: 'Choose the matching answer',
+          phrases: [
+            'After school, I ___.',
+            'I do homework at ___.',
+            'I go to bed at ___.'
+          ],
+          vocabulary: [],
+          support: {
+            label: 'Finish your turn',
+            instruction: 'After your answer, say:',
+            items: ['And you?']
+          },
+          nextLabel: 'I asked back → hear the answer'
+        },
+        {
+          id: 'step-5',
+          speaker: 'a',
+          kind: 'close',
+          title: 'Answer and close',
+          instruction: 'Answer the “And you?” question with ONE sentence. Then say “Thanks!”',
+          phrasePrompt: 'Choose one answer',
+          phrases: [
+            'I wake up at ___.',
+            'After school, I ___.',
+            'I go to bed at ___.'
+          ],
+          vocabulary: [],
+          support: {
+            label: 'Close the interview',
+            instruction: 'End with:',
+            items: ['Thanks!']
+          },
+          nextLabel: 'We finished → check the mission'
+        }
+      ],
+      usefulPhrases: [
+        'What time do you ...?',
+        'I ... at ...',
+        'After school, I ...',
+        'And you?'
+      ],
+      successChecklist: [
+        'Asked two clear questions',
+        'Both players answered',
+        'Used “at” before a time',
+        'Finished with “And you?” and “Thanks!”'
+      ],
+      victoryMessage: 'Interview complete! Switch roles and try again.'
+    };
+  }
+
   const topicLabel = cls.title.split('/')[0].trim();
   const genericChecklist =
     audience === 'kids'

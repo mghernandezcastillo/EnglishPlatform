@@ -139,6 +139,34 @@ function buildStructureDrag(
   };
 }
 
+function applyClassSpecificStructureOverride(
+  cls: CurriculumClass,
+  pattern: StructurePattern,
+  variant: PatternVariant,
+  built: ReturnType<StructurePattern['buildSlide']>
+) {
+  if (cls.id !== 'c-teens-basic-zero-12' || pattern.id !== 'to-be' || variant !== 'question') {
+    return built;
+  }
+
+  return {
+    ...built,
+    structureDrag: buildStructureDrag(
+      'Verb To Be',
+      'Put the blocks in order.',
+      'How old are you?',
+      built.structureDrag.accentColor,
+      [
+        { label: 'Question phrase', text: 'How old', color: COLORS.question },
+        { label: 'To be', text: 'are', color: COLORS.auxiliary },
+        { label: 'Subject', text: 'you', color: COLORS.subject }
+      ],
+      'Ask about age with verb to be.',
+      'easy'
+    )
+  };
+}
+
 function titleByVariant(variant: PatternVariant, audience: 'kids' | 'teens' | 'adults', fallback = 'Build the Sentence / Arma la Oracion') {
   if (variant === 'question') return audience === 'kids' ? 'Build the Question / Arma la Pregunta' : 'Build the Question / Arma la Pregunta';
   if (variant === 'negative') return audience === 'kids' ? 'Build the Negative / Arma la Negativa' : 'Build the Negative Sentence / Arma la Oracion Negativa';
@@ -1502,7 +1530,12 @@ function createStructureDragSlide(
     ...(slide.options || [])
   ].join(' '));
 
-  const built = pattern.buildSlide(variant, audience, fullText);
+  const built = applyClassSpecificStructureOverride(
+    cls,
+    pattern,
+    variant,
+    pattern.buildSlide(variant, audience, fullText)
+  );
 
   return {
     id: `${slide.id}-structure-drag-${pattern.id}-${variant}`,

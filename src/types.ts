@@ -78,8 +78,15 @@ export interface ClassSlide {
     }[];
   };
   roleplay?: {
+    mode?: 'guided-conversation';
     scenario: string;
     situation: string;
+    setupInstruction?: string;
+    conversationGoal?: string;
+    modelDialogue?: {
+      a: string;
+      b: string;
+    };
     players?: {
       aNamePlaceholder: string;
       bNamePlaceholder: string;
@@ -96,6 +103,14 @@ export interface ClassSlide {
       instruction: string;
       phrases: string[];
       vocabulary: string[];
+      kind?: 'ask' | 'answer' | 'react' | 'close';
+      phrasePrompt?: string;
+      support?: {
+        label: string;
+        instruction?: string;
+        items?: string[];
+      };
+      nextLabel?: string;
     }[];
     usefulPhrases: string[];
     successChecklist: string[];
