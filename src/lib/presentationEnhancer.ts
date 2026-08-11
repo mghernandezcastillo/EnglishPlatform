@@ -1347,7 +1347,7 @@ function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: Curricul
       scenario: 'School day interview',
       situation: 'Ask and answer about a real school-day routine.',
       setupInstruction: 'Player A asks. Player B answers. You will switch roles at the end.',
-      conversationGoal: 'Complete a five-turn interview about morning, after school, and bedtime.',
+      conversationGoal: 'Read the full dialogue from 1 to 5 without stopping between turns.',
       modelDialogue: {
         a: 'What time do you wake up?',
         b: 'I wake up at 7:00.'
@@ -1361,9 +1361,9 @@ function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: Curricul
         b: { label: 'Student', goal: 'Use real activities and times.' }
       },
       mission: [
-        'Ask about the morning.',
-        'Answer with an activity and a time.',
-        'Ask about later, answer, and ask back.'
+        'Follow the numbers from 1 to 5.',
+        'Replace [ACTIVITY] and [TIME] with your information.',
+        'Finish the dialogue, then switch roles.'
       ],
       steps: [
         {
@@ -1371,98 +1371,74 @@ function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: Curricul
           speaker: 'a',
           kind: 'ask',
           title: 'Ask about the morning',
-          instruction: 'Choose ONE question and say it aloud.',
-          phrasePrompt: 'Choose one question',
-          phrases: [
-            'What time do you wake up?',
-            'What time do you have breakfast?',
-            'What time do you go to school?'
-          ],
+          instruction: 'Choose one activity.',
+          phrasePrompt: 'Say this question',
+          phrases: ['What time do you [ACTIVITY]?'],
           vocabulary: [],
           support: {
-            label: 'Then listen',
-            instruction: 'Your partner will answer that same question with a real time.'
-          },
-          nextLabel: 'I asked → hear the answer'
+            label: 'ACTIVITY',
+            instruction: 'Choose one:',
+            items: ['wake up', 'have breakfast', 'go to school']
+          }
         },
         {
           id: 'step-2',
           speaker: 'b',
           kind: 'answer',
           title: 'Answer the question',
-          instruction: 'Choose the MATCHING answer. Replace ___ with your real time.',
-          phrasePrompt: 'Choose the matching answer',
-          phrases: [
-            'I wake up at ___.',
-            'I have breakfast at ___.',
-            'I go to school at ___.'
-          ],
+          instruction: 'Repeat the same activity. Add your real time.',
+          phrasePrompt: 'Say this answer',
+          phrases: ['I [SAME ACTIVITY] at [TIME].'],
           vocabulary: [],
           support: {
-            label: 'Add one time',
-            instruction: 'Use your real time or choose an example.',
+            label: 'TIME',
+            instruction: 'Use your time or an example:',
             items: ['6:30', '7:00', '7:30']
-          },
-          nextLabel: 'I answered → ask again'
+          }
         },
         {
           id: 'step-3',
           speaker: 'a',
           kind: 'ask',
           title: 'Ask about later',
-          instruction: 'Choose ONE new question and say it aloud.',
-          phrasePrompt: 'Choose one follow-up question',
-          phrases: [
-            'What do you do after school?',
-            'What time do you do homework?',
-            'What time do you go to bed?'
-          ],
+          instruction: 'Choose one new activity.',
+          phrasePrompt: 'Say this question',
+          phrases: ['What time do you [ACTIVITY]?'],
           vocabulary: [],
           support: {
-            label: 'Then listen',
-            instruction: 'Your partner will answer, then ask “And you?”'
-          },
-          nextLabel: 'I asked → hear the answer'
+            label: 'ACTIVITY',
+            instruction: 'Choose one:',
+            items: ['do homework', 'have dinner', 'go to bed']
+          }
         },
         {
           id: 'step-4',
           speaker: 'b',
           kind: 'answer',
           title: 'Answer and ask back',
-          instruction: 'Choose the MATCHING answer. Add your detail, then say “And you?”',
-          phrasePrompt: 'Choose the matching answer',
-          phrases: [
-            'After school, I ___.',
-            'I do homework at ___.',
-            'I go to bed at ___.'
-          ],
+          instruction: 'Repeat the same activity. Add your time and ask back.',
+          phrasePrompt: 'Say this answer',
+          phrases: ['I [SAME ACTIVITY] at [TIME]. And you?'],
           vocabulary: [],
           support: {
-            label: 'Finish your turn',
-            instruction: 'After your answer, say:',
-            items: ['And you?']
-          },
-          nextLabel: 'I asked back → hear the answer'
+            label: 'TIME',
+            instruction: 'Use your time or an example:',
+            items: ['4:00', '7:30', '10:00']
+          }
         },
         {
           id: 'step-5',
           speaker: 'a',
           kind: 'close',
           title: 'Answer and close',
-          instruction: 'Answer the “And you?” question with ONE sentence. Then say “Thanks!”',
-          phrasePrompt: 'Choose one answer',
-          phrases: [
-            'I wake up at ___.',
-            'After school, I ___.',
-            'I go to bed at ___.'
-          ],
+          instruction: 'Answer about the same activity and finish.',
+          phrasePrompt: 'Say this final answer',
+          phrases: ['I [SAME ACTIVITY] at [TIME]. Thanks!'],
           vocabulary: [],
           support: {
-            label: 'Close the interview',
-            instruction: 'End with:',
-            items: ['Thanks!']
-          },
-          nextLabel: 'We finished → check the mission'
+            label: 'TIME',
+            instruction: 'Use your real time.'
+          }
         }
       ],
       usefulPhrases: [
