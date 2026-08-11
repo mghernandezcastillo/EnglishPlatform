@@ -1347,7 +1347,7 @@ function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: Curricul
       scenario: 'School day interview',
       situation: 'Ask and answer about a real school-day routine.',
       setupInstruction: 'Player A asks. Player B answers. You will switch roles at the end.',
-      conversationGoal: 'Read the full dialogue from 1 to 5 without stopping between turns.',
+      conversationGoal: 'Complete a five-turn interview about morning, after school, and bedtime.',
       modelDialogue: {
         a: 'What time do you wake up?',
         b: 'I wake up at 7:00.'
@@ -1361,9 +1361,9 @@ function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: Curricul
         b: { label: 'Student', goal: 'Use real activities and times.' }
       },
       mission: [
-        'Follow the numbers from 1 to 5.',
-        'Replace [ACTIVITY] and [TIME] with your information.',
-        'Finish the dialogue, then switch roles.'
+        'Ask about the morning.',
+        'Answer with an activity and a time.',
+        'Ask about later, answer, and ask back.'
       ],
       steps: [
         {
@@ -1371,74 +1371,98 @@ function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: Curricul
           speaker: 'a',
           kind: 'ask',
           title: 'Ask about the morning',
-          instruction: 'Choose one activity.',
-          phrasePrompt: 'Say this question',
-          phrases: ['What time do you [ACTIVITY]?'],
+          instruction: 'Choose ONE question and say it aloud.',
+          phrasePrompt: 'Choose one question',
+          phrases: [
+            'What time do you wake up?',
+            'What time do you have breakfast?',
+            'What time do you go to school?'
+          ],
           vocabulary: [],
           support: {
-            label: 'ACTIVITY',
-            instruction: 'Choose one:',
-            items: ['wake up', 'have breakfast', 'go to school']
-          }
+            label: 'Then listen',
+            instruction: 'Your partner will answer that same question with a real time.'
+          },
+          nextLabel: 'Hear the answer'
         },
         {
           id: 'step-2',
           speaker: 'b',
           kind: 'answer',
           title: 'Answer the question',
-          instruction: 'Repeat the same activity. Add your real time.',
-          phrasePrompt: 'Say this answer',
-          phrases: ['I [SAME ACTIVITY] at [TIME].'],
+          instruction: 'Choose the MATCHING answer. Replace ___ with your real time.',
+          phrasePrompt: 'Choose the matching answer',
+          phrases: [
+            'I wake up at ___.',
+            'I have breakfast at ___.',
+            'I go to school at ___.'
+          ],
           vocabulary: [],
           support: {
-            label: 'TIME',
-            instruction: 'Use your time or an example:',
+            label: 'Add one time',
+            instruction: 'Use your real time or choose an example.',
             items: ['6:30', '7:00', '7:30']
-          }
+          },
+          nextLabel: 'Ask the next question'
         },
         {
           id: 'step-3',
           speaker: 'a',
           kind: 'ask',
           title: 'Ask about later',
-          instruction: 'Choose one new activity.',
-          phrasePrompt: 'Say this question',
-          phrases: ['What time do you [ACTIVITY]?'],
+          instruction: 'Choose ONE new question and say it aloud.',
+          phrasePrompt: 'Choose one follow-up question',
+          phrases: [
+            'What do you do after school?',
+            'What time do you do homework?',
+            'What time do you go to bed?'
+          ],
           vocabulary: [],
           support: {
-            label: 'ACTIVITY',
-            instruction: 'Choose one:',
-            items: ['do homework', 'have dinner', 'go to bed']
-          }
+            label: 'Then listen',
+            instruction: 'Your partner will answer, then ask “And you?”'
+          },
+          nextLabel: 'Hear the answer'
         },
         {
           id: 'step-4',
           speaker: 'b',
           kind: 'answer',
           title: 'Answer and ask back',
-          instruction: 'Repeat the same activity. Add your time and ask back.',
-          phrasePrompt: 'Say this answer',
-          phrases: ['I [SAME ACTIVITY] at [TIME]. And you?'],
+          instruction: 'Choose the MATCHING answer. Add your detail, then say “And you?”',
+          phrasePrompt: 'Choose the matching answer',
+          phrases: [
+            'After school, I ___.',
+            'I do homework at ___.',
+            'I go to bed at ___.'
+          ],
           vocabulary: [],
           support: {
-            label: 'TIME',
-            instruction: 'Use your time or an example:',
-            items: ['4:00', '7:30', '10:00']
-          }
+            label: 'Finish your turn',
+            instruction: 'After your answer, say:',
+            items: ['And you?']
+          },
+          nextLabel: 'Hear the final answer'
         },
         {
           id: 'step-5',
           speaker: 'a',
           kind: 'close',
           title: 'Answer and close',
-          instruction: 'Answer about the same activity and finish.',
-          phrasePrompt: 'Say this final answer',
-          phrases: ['I [SAME ACTIVITY] at [TIME]. Thanks!'],
+          instruction: 'Answer the “And you?” question with ONE sentence. Then say “Thanks!”',
+          phrasePrompt: 'Choose one answer',
+          phrases: [
+            'I wake up at ___.',
+            'After school, I ___.',
+            'I go to bed at ___.'
+          ],
           vocabulary: [],
           support: {
-            label: 'TIME',
-            instruction: 'Use your real time.'
-          }
+            label: 'Close the interview',
+            instruction: 'End with:',
+            items: ['Thanks!']
+          },
+          nextLabel: 'Check the mission'
         }
       ],
       usefulPhrases: [
@@ -2265,7 +2289,12 @@ function ensureRoleplaySlide(cls: CurriculumClass): CurriculumClass {
   };
 }
 
-function buildWarmupWheel(slide: ClassSlide, cls: CurriculumClass) {
+function isUsableAuthoredReviewItem(item: NonNullable<ClassSlide['wheelItems']>[number]) {
+  if (item.prompt?.trim()) return true;
+  return /\?|^(say|ask|describe|name|compare|explain|make|use|tell|show|give|talk|spell|count|choose|correct|complete|what|when|where|who|how|do|does|did|can|could|would|have|has|is|are|was|were)\b/i.test(item.label.trim());
+}
+
+function buildSpeakingWheel(slide: ClassSlide, cls: CurriculumClass, sectionIndex: number): ClassSlide {
   if (slide.type !== 'spinning-wheel') return slide;
 
   const classText = `${cls.title} ${cls.description || ''} ${cls.objective || ''}`;
@@ -2275,6 +2304,68 @@ function buildWarmupWheel(slide: ClassSlide, cls: CurriculumClass) {
   const topicLabel = topicNounForBoss(topic, cls);
   const seed = hashString(`${cls.id}-${slide.id}-${topic}-${audience}`);
   const baseItems = rotate(WARMUP_WHEEL_BANK[topic]?.[audience] || WARMUP_WHEEL_BANK.generic[audience], seed, 6);
+  const wheelLocations = cls.sections.flatMap((section, currentSectionIndex) =>
+    section.slides
+      .filter((candidate) => candidate.type === 'spinning-wheel')
+      .map((candidate) => ({ id: candidate.id, sectionIndex: currentSectionIndex }))
+  );
+  const wheelIndex = wheelLocations.findIndex((location) => location.id === slide.id && location.sectionIndex === sectionIndex);
+  const sectionTitle = normalizeText(cls.sections[sectionIndex]?.title || '');
+  const isWarmupSection = sectionIndex === 0 || /warm-up|warm up|calentamiento/.test(sectionTitle);
+  const isReview = wheelIndex > 0 || !isWarmupSection;
+
+  if (isReview) {
+    const authoredItems = (slide.wheelItems || [])
+      .filter((item) => item.label.trim())
+      .map((item) => {
+        const label = item.label.trim();
+        const hasReadyPrompt = isUsableAuthoredReviewItem(item);
+        const looksLikeSentence = /[.!?]$/.test(label) || label.split(/\s+/).length >= 4;
+        const generatedPrompt = looksLikeSentence
+          ? `Say “${label}” aloud. Then make one similar sentence with your information.`
+          : audience === 'kids'
+            ? `Read “${label}” aloud, then name one related example in English.`
+            : `Use “${label}” in one correct sentence about today’s class.`;
+        const generatedSpanish = looksLikeSentence
+          ? `Di “${label}” en voz alta y crea una oración parecida con tu información.`
+          : audience === 'kids'
+            ? `Lee “${label}” en voz alta y nombra un ejemplo relacionado en inglés.`
+            : `Usa “${label}” en una oración correcta sobre la clase de hoy.`;
+        return {
+          label,
+          prompt: item.prompt?.trim() || (hasReadyPrompt ? label : generatedPrompt),
+          es: item.es?.trim() || (hasReadyPrompt
+            ? 'Responde en inglés usando lo aprendido en esta clase.'
+            : generatedSpanish)
+        };
+      });
+    const reviewItems = uniqueWarmupItems([...authoredItems, ...baseItems]);
+
+    return {
+      ...slide,
+      wheelMode: 'review',
+      title: 'Class Review Wheel / Ruleta de repaso',
+      description:
+        audience === 'kids'
+          ? 'Gira y demuestra lo que aprendiste. Responde en inglés con una frase corta.'
+          : audience === 'teens'
+            ? 'Gira y responde usando el vocabulario o la estructura de esta clase.'
+            : 'Gira y usa el lenguaje objetivo de la clase en un ejemplo claro y realista.',
+      wheelItems: reviewItems.map((item, index) => ({
+        label: item.label.slice(0, 14) || `Review ${index + 1}`,
+        color: WHEEL_COLORS[index % WHEEL_COLORS.length],
+        prompt: item.prompt,
+        es: item.es
+      })),
+      content:
+        audience === 'kids'
+          ? ['Spin the wheel.', 'Use one class word.', 'Answer in one short English sentence.']
+          : audience === 'teens'
+            ? ['Spin the wheel.', 'Answer with today’s English.', 'Add one clear detail.']
+            : ['Spin the wheel.', 'Use today’s target language.', 'Give one clear real-life example.']
+    };
+  }
+
   const items = uniqueWarmupItems([
     ...baseItems,
     {
@@ -2290,6 +2381,7 @@ function buildWarmupWheel(slide: ClassSlide, cls: CurriculumClass) {
 
   return {
     ...slide,
+    wheelMode: 'warmup',
     title: 'Warm-up Speaking Wheel / Ruleta de speaking',
     description: audience === 'kids'
       ? 'Spin, answer with a short sentence, and ask a partner.'
@@ -2810,7 +2902,7 @@ export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass 
               enhanceQuizTitle(
                 enhanceRoleplaySlide(
                   enhanceBossBattle(
-                    enhanceEmojiSlide(buildWarmupWheel(slide, baseClass), baseClass),
+                    enhanceEmojiSlide(buildSpeakingWheel(slide, baseClass, baseClass.sections.indexOf(section)), baseClass),
                     baseClass
                   ),
                   baseClass

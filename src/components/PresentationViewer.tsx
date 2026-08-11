@@ -227,6 +227,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   <div className="flex-1 flex flex-col items-center justify-center py-2 sm:py-4">
                     <SpinningWheel
                       items={slide.wheelItems}
+                      mode={slide.wheelMode}
                       onSpinComplete={(item) => setSelectedSpeakingPrompt(item.prompt || item.label)}
                     />
                   </div>

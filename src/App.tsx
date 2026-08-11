@@ -16,6 +16,7 @@ import { BrandWordmark } from './components/BrandWordmark';
 import { VerbsGuide } from './components/VerbsGuide';
 import { VerbArenaGame } from './components/VerbArenaGame';
 import { dbAdmin } from './lib/db';
+import { approvedLevelIdsForStudent, visibleCompletedLessonIds } from './lib/levelApproval';
 import { DbStudent, UserProgress } from './types';
 import { lessons } from './data/lessons';
 import { libraryLessons } from './data/libraryLessons';
@@ -35,7 +36,7 @@ export default function App() {
   const [isTeacherUnlocked, setIsTeacherUnlocked] = useState(() => localStorage.getItem(TEACHER_UNLOCK_KEY) === 'true');
   const [currentStudentId, setCurrentStudentId] = useState<string | null>(null);
 
-  const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], currentLessonId: '', level: 'Nivel Inicial' });
+  const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], approvedLevelIds: [], currentLessonId: '', level: 'Nivel Inicial' });
   const [isLoaded, setIsLoaded] = useState(false);
   const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode' | 'verbs_guide' | 'verb_arena'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
@@ -59,7 +60,8 @@ export default function App() {
         if (s) {
           setCurrentStudentId(s.id);
           setProgress({
-            completedLessons: s.completed_lessons || [],
+            completedLessons: visibleCompletedLessonIds(s.completed_lessons || []),
+            approvedLevelIds: approvedLevelIdsForStudent(s),
             currentLessonId: '',
             level: s.level || 'Nivel Inicial',
             studentName: s.name,
@@ -97,7 +99,8 @@ export default function App() {
     if (st) {
       setCurrentStudentId(st.id);
       setProgress({
-        completedLessons: st.completed_lessons || [],
+        completedLessons: visibleCompletedLessonIds(st.completed_lessons || []),
+        approvedLevelIds: approvedLevelIdsForStudent(st),
         currentLessonId: '',
         level: st.level || 'Nivel Inicial',
         studentName: st.name,
@@ -204,7 +207,7 @@ export default function App() {
   };
 
   const confirmResetProgress = () => {
-    setProgress({ completedLessons: [], currentLessonId: '', level: 'Nivel Inicial' });
+    setProgress({ completedLessons: [], approvedLevelIds: [], currentLessonId: '', level: 'Nivel Inicial' });
     localStorage.removeItem(STORAGE_KEY);
     setShowResetModal(false);
   };
@@ -442,6 +445,7 @@ export default function App() {
       ) : (
           <Dashboard 
           completedLessonIds={progress.completedLessons}
+          approvedLevelIds={progress.approvedLevelIds || []}
           userLevel={progress.level || 'Nivel Inicial'}
           studentName={progress.studentName}
           avatarId={progress.avatarId}

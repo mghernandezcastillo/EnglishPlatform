@@ -39,6 +39,7 @@ export interface Lesson {
 
 export interface UserProgress {
   completedLessons: string[];
+  approvedLevelIds?: string[];
   currentLessonId: string;
   level?: string;
   studentName?: string;
@@ -116,6 +117,7 @@ export interface ClassSlide {
     successChecklist: string[];
     victoryMessage?: string;
   };
+  wheelMode?: 'warmup' | 'review';
   wheelItems?: { label: string; color: string; prompt?: string; es?: string }[];
   matchingPairs?: { left: string; right: string; id: string }[];
   mysteryPuzzleData?: { target: string; imageUrl?: string; emoji?: string; panels: { id: number; label: string; color: string }[] };
@@ -190,6 +192,7 @@ export interface DbStudent {
   level: string;
   type?: string;
   completed_lessons: string[];
+  approved_levels?: string[];
   group_id?: string;
   created_at?: string;
 }

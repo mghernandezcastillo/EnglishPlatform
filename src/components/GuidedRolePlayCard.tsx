@@ -18,7 +18,7 @@ interface GuidedRolePlayCardProps {
   slide: ClassSlide;
 }
 
-type ViewKind = 'players' | 'mission' | 'conversation' | 'finish';
+type ViewKind = 'players' | 'mission' | 'step' | 'finish';
 
 export function GuidedRolePlayCard({ slide }: GuidedRolePlayCardProps) {
   const roleplay = slide.roleplay!;
@@ -29,13 +29,15 @@ export function GuidedRolePlayCard({ slide }: GuidedRolePlayCardProps) {
   const [celebrated, setCelebrated] = useState(false);
   const steps = useMemo(() => roleplay.steps || [], [roleplay]);
 
-  const views: Array<{ kind: ViewKind }> = [
+  const views: Array<{ kind: ViewKind; stepIndex?: number }> = [
     { kind: 'players' },
     { kind: 'mission' },
-    { kind: 'conversation' },
+    ...steps.map((_, index) => ({ kind: 'step' as const, stepIndex: index })),
     { kind: 'finish' }
   ];
   const view = views[Math.min(viewIndex, views.length - 1)];
+  const currentStep = view.kind === 'step' ? steps[view.stepIndex || 0] : null;
+  const nextStep = view.kind === 'step' ? steps[(view.stepIndex || 0) + 1] : null;
   const displayNameA = nameA.trim() || roleplay.players?.aNamePlaceholder || 'Player A';
   const displayNameB = nameB.trim() || roleplay.players?.bNamePlaceholder || 'Player B';
   const isComplete = checkedItems.filter(Boolean).length === roleplay.successChecklist.length;
@@ -45,6 +47,12 @@ export function GuidedRolePlayCard({ slide }: GuidedRolePlayCardProps) {
     if (speaker === 'a') return displayNameA;
     if (speaker === 'b') return displayNameB;
     return `${displayNameA} + ${displayNameB}`;
+  };
+
+  const roleLabelFor = (speaker: 'a' | 'b' | 'both') => {
+    if (speaker === 'a') return roleplay.roles.a.label;
+    if (speaker === 'b') return roleplay.roles.b.label;
+    return 'Together';
   };
 
   const next = () => setViewIndex((index) => Math.min(views.length - 1, index + 1));
@@ -82,8 +90,9 @@ export function GuidedRolePlayCard({ slide }: GuidedRolePlayCardProps) {
 
   const nextLabel =
     view.kind === 'players' ? 'See the mission' :
-    view.kind === 'mission' ? 'Show the full dialogue' :
-    'We finished the conversation';
+    view.kind === 'mission' ? 'Start the conversation' :
+    nextStep ? `Next: ${playerNameFor(nextStep.speaker)}` :
+    'Check the mission';
 
   return (
     <div className="flex h-full min-h-0 w-full flex-col overflow-hidden text-white">
@@ -170,15 +179,21 @@ export function GuidedRolePlayCard({ slide }: GuidedRolePlayCardProps) {
               </h2>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-3">
-              {roleplay.mission.slice(0, 3).map((mission, index) => (
-                <div key={mission} className="rounded-3xl border-4 border-amber-200 bg-amber-50 p-4 text-center">
-                  <div className="mx-auto mb-2 flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400 text-xl font-black text-amber-950">
-                    {index + 1}
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+              {steps.map((step, index) => {
+                const isPlayerA = step.speaker === 'a';
+                return (
+                  <div key={step.id} className={`rounded-3xl border-4 p-4 ${isPlayerA ? 'border-sky-200 bg-sky-50' : 'border-emerald-200 bg-emerald-50'}`}>
+                    <div className={`mb-2 inline-flex h-10 min-w-10 items-center justify-center rounded-xl px-3 text-xl font-black text-white ${isPlayerA ? 'bg-sky-600' : 'bg-emerald-600'}`}>
+                      {index + 1}
+                    </div>
+                    <p className={`text-base font-black uppercase tracking-[0.08em] ${isPlayerA ? 'text-sky-700' : 'text-emerald-700'}`}>
+                      {playerNameFor(step.speaker)}
+                    </p>
+                    <p className="mt-1 text-xl font-black leading-tight sm:text-2xl">{step.title}</p>
                   </div>
-                  <p className="text-2xl font-black leading-tight text-amber-950 sm:text-3xl">{mission}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {roleplay.modelDialogue && (
@@ -194,62 +209,59 @@ export function GuidedRolePlayCard({ slide }: GuidedRolePlayCardProps) {
           </div>
         )}
 
-        {view.kind === 'conversation' && (
-          <div className="flex flex-1 flex-col gap-3">
-            <div className="text-center">
-              <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-violet-100 px-4 py-2 text-sm font-black uppercase tracking-[0.12em] text-violet-700 sm:text-lg">
-                <MessageSquareText className="h-5 w-5" />
-                Conversation time
+        {view.kind === 'step' && currentStep && (
+          <div className="flex flex-1 flex-col justify-center gap-4 sm:gap-5">
+            <div>
+              <div className={`mb-2 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-black uppercase tracking-[0.12em] sm:text-lg ${currentStep.kind === 'ask' ? 'bg-sky-100 text-sky-700' : 'bg-emerald-100 text-emerald-700'}`}>
+                Turn {(view.stepIndex || 0) + 1} · {playerNameFor(currentStep.speaker)} · {roleLabelFor(currentStep.speaker)}
               </div>
-              <h2 className="text-3xl font-black leading-none sm:text-4xl lg:text-5xl">Read from 1 to 5 — no clicks between turns</h2>
-              <p className="mt-2 text-lg font-bold text-slate-600 sm:text-2xl">Choose a yellow option and say the complete line aloud.</p>
+              <h2 className="text-4xl font-black leading-none sm:text-5xl lg:text-6xl">{currentStep.title}</h2>
+              <p className="mt-3 text-2xl font-black leading-tight text-slate-700 sm:text-4xl">{currentStep.instruction}</p>
             </div>
 
-            <div className="grid gap-2.5">
-              {steps.map((step, index) => {
-                const isPlayerA = step.speaker === 'a';
-                const colorClasses = isPlayerA
-                  ? 'border-sky-200 bg-sky-50 text-sky-950'
-                  : 'border-emerald-200 bg-emerald-50 text-emerald-950';
-                const numberClasses = isPlayerA ? 'bg-sky-600' : 'bg-emerald-600';
-
-                return (
-                  <div
-                    key={step.id}
-                    className={`w-[96%] rounded-2xl border-4 px-3 py-2.5 sm:w-[88%] sm:px-4 ${isPlayerA ? 'mr-auto' : 'ml-auto'} ${colorClasses}`}
-                  >
-                    <div className="flex flex-col gap-2 lg:flex-row lg:items-center">
-                      <div className="flex min-w-0 items-center gap-3 lg:w-[44%]">
-                        <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xl font-black text-white ${numberClasses}`}>
-                          {index + 1}
-                        </span>
-                        <div className="min-w-0">
-                          <p className="text-sm font-black uppercase tracking-[0.1em] sm:text-lg">
-                            {playerNameFor(step.speaker)} · {step.title}
-                          </p>
-                          <p className="text-xl font-black leading-tight sm:text-2xl">{step.phrases[0]}</p>
-                          <p className="mt-0.5 text-sm font-bold leading-tight opacity-70 sm:text-base">{step.instruction}</p>
-                        </div>
-                      </div>
-
-                      <div className="flex flex-1 flex-wrap items-center gap-2 lg:justify-end">
-                        <span className="text-xs font-black uppercase tracking-[0.1em] text-amber-700 sm:text-base">
-                          {step.support?.label || step.phrasePrompt}
-                        </span>
-                        {step.support?.items?.map((item) => (
-                          <span key={item} className="rounded-xl bg-amber-300 px-3 py-2 text-lg font-black leading-none text-amber-950 shadow-sm sm:text-2xl">
-                            {item}
-                          </span>
-                        ))}
-                        {(!step.support?.items || step.support.items.length === 0) && (
-                          <span className="rounded-xl bg-amber-300 px-3 py-2 text-lg font-black leading-none text-amber-950 sm:text-2xl">your real time</span>
-                        )}
-                      </div>
-                    </div>
+            <div className={`rounded-3xl border-4 p-4 sm:p-5 ${currentStep.kind === 'ask' ? 'border-sky-200 bg-sky-50' : 'border-emerald-200 bg-emerald-50'}`}>
+              <p className={`mb-3 text-base font-black uppercase tracking-[0.12em] sm:text-xl ${currentStep.kind === 'ask' ? 'text-sky-700' : 'text-emerald-700'}`}>
+                {currentStep.phrasePrompt || 'Choose one line'}
+              </p>
+              <div className="grid gap-3 lg:grid-cols-3">
+                {currentStep.phrases.slice(0, 3).map((phrase, index) => (
+                  <div key={phrase} className="flex min-h-[88px] items-center gap-3 rounded-2xl bg-white px-4 py-3 text-2xl font-black leading-tight text-slate-950 shadow-sm sm:text-3xl">
+                    <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xl font-black text-white ${currentStep.kind === 'ask' ? 'bg-sky-600' : 'bg-emerald-600'}`}>
+                      {index + 1}
+                    </span>
+                    {phrase}
                   </div>
-                );
-              })}
+                ))}
+              </div>
             </div>
+
+            {currentStep.support && (
+              <div className="flex flex-col gap-3 rounded-3xl bg-amber-100 px-5 py-4 text-amber-950 sm:flex-row sm:items-center">
+                <div className="sm:min-w-[240px]">
+                  <p className="text-base font-black uppercase tracking-[0.12em] text-amber-700 sm:text-xl">{currentStep.support.label}</p>
+                  {currentStep.support.instruction && (
+                    <p className="mt-1 text-xl font-black leading-tight sm:text-2xl">{currentStep.support.instruction}</p>
+                  )}
+                </div>
+                {currentStep.support.items && currentStep.support.items.length > 0 && (
+                  <div className="flex flex-1 flex-wrap gap-2 sm:justify-end">
+                    {currentStep.support.items.map((item) => (
+                      <span key={item} className="rounded-2xl bg-amber-400 px-4 py-3 text-2xl font-black text-amber-950 shadow-sm sm:text-3xl">{item}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {nextStep && (
+              <div className="flex items-center gap-3 rounded-2xl border-2 border-violet-200 bg-violet-50 px-4 py-3 text-violet-950">
+                <ArrowRight className="h-6 w-6 shrink-0 text-violet-600" />
+                <p className="text-lg font-black leading-tight sm:text-2xl">
+                  Up next: {playerNameFor(nextStep.speaker)} — {nextStep.title.toLowerCase()}
+                </p>
+                <p className="ml-auto hidden max-w-[46%] truncate text-lg font-bold text-violet-700 lg:block">“{nextStep.phrases[0]}”</p>
+              </div>
+            )}
           </div>
         )}
 

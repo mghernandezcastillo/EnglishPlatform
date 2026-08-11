@@ -15,6 +15,7 @@ import { Diploma } from './Diploma';
 
 interface DashboardProps {
   completedLessonIds: string[];
+  approvedLevelIds: string[];
   userLevel: string;
   studentName?: string;
   avatarId?: string;
@@ -30,7 +31,7 @@ interface DashboardProps {
   onOpenVerbsGuide: () => void;
 }
 
-export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryForge, onOpenStructureMode, onOpenVerbsGuide }: DashboardProps) {
+export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, avatarId, studentType, onStartLibraryLesson, onFinishClass, onToggleClass, onOpenAssessment, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryForge, onOpenStructureMode, onOpenVerbsGuide }: DashboardProps) {
   const { curriculumLevels, loading } = useCurriculum(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
@@ -47,12 +48,12 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
     if (autoExpandedSeed === seed) return;
 
     const firstIncompleteLevel = curriculumLevels.find(level =>
-      level.classes.some(cls => !completedLessonIds.includes(cls.id))
+      level.classes.some(cls => !completedLessonIds.includes(cls.id)) || !approvedLevelIds.includes(level.id)
     );
 
     setExpandedLevel(firstIncompleteLevel?.id ?? null);
     setAutoExpandedSeed(seed);
-  }, [curriculumLevels, completedLessonIds, studentType, autoExpandedSeed]);
+  }, [curriculumLevels, completedLessonIds, approvedLevelIds, studentType, autoExpandedSeed]);
 
   // Flatten curriculum classes to calculate next lesson
   const allCurriculumClasses = curriculumLevels.flatMap(level => level.classes.map(cls => ({...cls, levelId: level.id})));
@@ -363,7 +364,9 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                // Calculate level progress
                const levelClasses = level.classes;
                const levelCompleted = levelClasses.filter(c => completedLessonIds.includes(c.id)).length;
-               const isFullyCompleted = levelClasses.length > 0 && levelCompleted === levelClasses.length;
+               const areClassesCompleted = levelClasses.length > 0 && levelCompleted === levelClasses.length;
+               const isTutorApproved = approvedLevelIds.includes(level.id);
+               const isFullyCompleted = areClassesCompleted && isTutorApproved;
                const levelProgressPercentage = levelClasses.length > 0 ? Math.round((levelCompleted / levelClasses.length) * 100) : 0;
 
                return (
@@ -396,6 +399,12 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                           <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-3 py-1 text-xs font-black uppercase tracking-wider text-white shadow-sm">
                             <Sparkles className="h-3.5 w-3.5" />
                             Nivel completado
+                          </span>
+                        )}
+                        {areClassesCompleted && !isTutorApproved && (
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3 py-1 text-xs font-black uppercase tracking-wider text-amber-800 ring-1 ring-amber-200">
+                            <Users className="h-3.5 w-3.5" />
+                            Pendiente examen oral
                           </span>
                         )}
                       </div>
@@ -582,7 +591,9 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                               <p className="text-sm font-semibold text-slate-600">
                                 {isFullyCompleted
                                   ? `Tu certificado de ${level.title} está listo para descargar o compartir.`
-                                  : `Completa todas las clases de ${level.title}; luego revisa el examen oral y el examen virtual.`}
+                                  : areClassesCompleted
+                                    ? 'Terminaste las clases. El nivel quedará completo cuando tu tutor apruebe el examen oral.'
+                                    : `Completa todas las clases de ${level.title} y luego realiza el examen oral con tu tutor.`}
                               </p>
                             </div>
                             <span className={`inline-flex w-max items-center gap-2 rounded-full px-4 py-2 text-xs font-black uppercase tracking-wider ${
@@ -603,9 +614,13 @@ export function Dashboard({ completedLessonIds, userLevel, studentName, avatarId
                             />
                           ) : (
                             <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center">
-                              <p className="text-lg font-black text-slate-700">El certificado aparecerá aquí al finalizar el nivel.</p>
+                              <p className="text-lg font-black text-slate-700">
+                                {areClassesCompleted ? 'Esperando aprobación del tutor.' : 'El certificado aparecerá aquí al finalizar el nivel.'}
+                              </p>
                               <p className="mt-2 text-sm font-semibold text-slate-500">
-                                Cuando esté disponible tendrá botones para descargar, compartir por WhatsApp y enviar por correo.
+                                {areClassesCompleted
+                                  ? 'Después del examen oral, el tutor debe marcar este nivel como aprobado.'
+                                  : 'Cuando esté disponible tendrá botones para descargar, compartir por WhatsApp y enviar por correo.'}
                               </p>
                             </div>
                           )}

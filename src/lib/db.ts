@@ -1,5 +1,6 @@
 import { supabase } from '../lib/supabase';
 import { DbStudent, DbGroup } from '../types';
+import { isLevelApprovalMarker } from './levelApproval';
 
 export const dbAdmin = {
   getGroups: async (): Promise<DbGroup[]> => {
@@ -35,19 +36,19 @@ export const dbAdmin = {
     return data || [];
   },
 
-  createStudent: async (student: Omit<DbStudent, 'id' | 'created_at' | 'completed_lessons'>): Promise<DbStudent | null> => {
+  createStudent: async (student: Omit<DbStudent, 'id' | 'created_at' | 'completed_lessons' | 'approved_levels'>): Promise<DbStudent | null> => {
     const { data, error } = await supabase.from('students').insert([{ ...student, completed_lessons: [] }]).select().single();
     if (error) {
       console.error('Error creating student in Supabase:', error);
       const mock = JSON.parse(localStorage.getItem('mock_students') || '[]');
-      const newSt = { ...student, id: crypto.randomUUID(), completed_lessons: [], created_at: new Date().toISOString() };
+      const newSt = { ...student, id: crypto.randomUUID(), completed_lessons: [], approved_levels: [], created_at: new Date().toISOString() };
       localStorage.setItem('mock_students', JSON.stringify([...mock, newSt]));
       return newSt;
     }
     return data;
   },
 
-  updateStudent: async (id: string, updates: Partial<DbStudent>): Promise<void> => {
+  updateStudent: async (id: string, updates: Partial<DbStudent>): Promise<boolean> => {
     const { error } = await supabase.from('students').update(updates).eq('id', id);
     if (error) {
       console.error('Error updating student in Supabase:', error);
@@ -57,7 +58,9 @@ export const dbAdmin = {
         mock[idx] = { ...mock[idx], ...updates };
         localStorage.setItem('mock_students', JSON.stringify(mock));
       }
+      return false;
     }
+    return true;
   },
 
   deleteStudent: async (id: string): Promise<void> => {
@@ -71,6 +74,7 @@ export const dbAdmin = {
   },
 
   updateStudentProgress: async (id: string, lessonId: string) => {
+    if (!lessonId) return;
     const { data: student } = await supabase.from('students').select('completed_lessons').eq('id', id).single();
     if (student) {
       const { error } = await supabase.from('students')
@@ -87,18 +91,24 @@ export const dbAdmin = {
     }
   },
   
-  setStudentProgress: async (id: string, completedLessons: string[]) => {
+  setStudentProgress: async (id: string, completedLessons: string[], preserveLevelApprovals = true) => {
     const { data: student } = await supabase.from('students').select('completed_lessons').eq('id', id).single();
     if (student) {
+      const approvalMarkers = preserveLevelApprovals
+        ? (student.completed_lessons || []).filter(isLevelApprovalMarker)
+        : [];
       const { error } = await supabase.from('students')
-        .update({ completed_lessons: Array.from(new Set(completedLessons)) })
+        .update({ completed_lessons: Array.from(new Set([...completedLessons, ...approvalMarkers])) })
         .eq('id', id);
       if (error) console.error(error);
     } else {
       const mockMap: DbStudent[] = JSON.parse(localStorage.getItem('mock_students') || '[]');
       const st = mockMap.find(s => s.id === id);
       if (st) {
-        st.completed_lessons = Array.from(new Set(completedLessons));
+        const approvalMarkers = preserveLevelApprovals
+          ? (st.completed_lessons || []).filter(isLevelApprovalMarker)
+          : [];
+        st.completed_lessons = Array.from(new Set([...completedLessons, ...approvalMarkers]));
         localStorage.setItem('mock_students', JSON.stringify(mockMap));
       }
     }

@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS students (
   avatar_id TEXT NOT NULL,
   level TEXT NOT NULL,
   completed_lessons TEXT[] DEFAULT '{}'::TEXT[],
+  approved_levels TEXT[] DEFAULT '{}'::TEXT[],
   group_id UUID REFERENCES groups(id) ON DELETE SET NULL,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );

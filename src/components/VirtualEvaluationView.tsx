@@ -4,7 +4,6 @@ import { getCurriculumForType } from '../data/curriculumSelector';
 import { dbAdmin } from '../lib/db';
 import { VirtualQuestion } from '../types';
 import { useBrand } from '../hooks/useBrand';
-import { Diploma } from './Diploma';
 import { BrandWordmark } from './BrandWordmark';
 
 interface Props {
@@ -236,11 +235,11 @@ export function VirtualEvaluationView({ levelId }: Props) {
             </div>
             
             <h1 className="text-3xl font-extrabold text-gray-900 mb-2">
-               {passed ? '¡Felicitaciones!' : 'Has terminado'}
+               {passed ? '¡Examen virtual aprobado!' : 'Has terminado'}
             </h1>
             <p className="text-lg text-gray-600 mb-8">
                {passed 
-                 ? `Has aprobado el nivel ${level.title} con éxito, ` 
+                  ? `Aprobaste el examen virtual de ${level.title}, `
                  : `Has completado el examen de ${level.title}, `}
                <span className="font-bold">{studentName}</span>.
             </p>
@@ -258,14 +257,11 @@ export function VirtualEvaluationView({ levelId }: Props) {
             </div>
 
             {passed && (
-              <div className="mb-8">
-                 <Diploma 
-                   studentName={studentName} 
-                   levelName={level.title} 
-                   brandName={displayBrandName} 
-                   logoUrl={brand.logoUrl} 
-                   certificateKind="level"
-                 />
+              <div className="mb-8 rounded-2xl border border-blue-200 bg-blue-50 p-5 text-left text-blue-950">
+                <p className="text-lg font-black">El examen virtual está aprobado, pero el nivel aún no está completo.</p>
+                <p className="mt-2 font-semibold text-blue-800">
+                  Realiza el examen oral con tu tutor. Después, el tutor debe marcar el nivel como aprobado para habilitar el certificado final.
+                </p>
               </div>
             )}
 

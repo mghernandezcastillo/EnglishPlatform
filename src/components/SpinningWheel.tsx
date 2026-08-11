@@ -12,9 +12,10 @@ interface WheelItem {
 interface SpinningWheelProps {
   items: WheelItem[];
   onSpinComplete?: (item: WheelItem) => void;
+  mode?: 'warmup' | 'review';
 }
 
-export function SpinningWheel({ items, onSpinComplete }: SpinningWheelProps) {
+export function SpinningWheel({ items, onSpinComplete, mode = 'warmup' }: SpinningWheelProps) {
   const [isSpinning, setIsSpinning] = useState(false);
   const [selectedItem, setSelectedItem] = useState<WheelItem | null>(null);
   const controls = useAnimation();
@@ -145,9 +146,17 @@ export function SpinningWheel({ items, onSpinComplete }: SpinningWheelProps) {
               >
                 <Sparkles className="w-7 h-7" />
               </motion.div>
-              <p className="text-sm font-black uppercase tracking-[0.22em] text-indigo-500">Icebreaker</p>
-              <p className="mt-2 text-xl font-black">Spin and answer out loud</p>
-              <p className="mt-2 text-sm font-semibold text-slate-500">La pregunta aparecerá aquí cuando la ruleta se detenga.</p>
+              <p className="text-sm font-black uppercase tracking-[0.22em] text-indigo-500">
+                {mode === 'review' ? 'Class review' : 'Icebreaker'}
+              </p>
+              <p className="mt-2 text-xl font-black">
+                {mode === 'review' ? 'Spin and show what you learned' : 'Spin and answer out loud'}
+              </p>
+              <p className="mt-2 text-sm font-semibold text-slate-500">
+                {mode === 'review'
+                  ? 'La consigna de repaso aparecerá aquí. Responde en inglés.'
+                  : 'La pregunta aparecerá aquí cuando la ruleta se detenga.'}
+              </p>
             </div>
           ) : (
             <motion.div

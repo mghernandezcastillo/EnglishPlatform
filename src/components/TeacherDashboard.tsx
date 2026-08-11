@@ -6,6 +6,7 @@ import { avatars } from '../config';
 import { CurriculumView } from './CurriculumView';
 import { getCurriculumForType } from '../data/curriculumSelector';
 import { useBrand } from '../hooks/useBrand';
+import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from '../lib/levelApproval';
 
 interface TeacherDashboardProps {
   onBack: () => void;
@@ -53,6 +54,30 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     setEvaluations(e);
   };
 
+  const handleToggleLevelApproval = async (levelId: string, levelTitle: string) => {
+    if (!selectedStudent) return;
+    const currentApprovals = approvedLevelIdsForStudent(selectedStudent);
+    const isApproved = currentApprovals.includes(levelId);
+    const approvedLevels = isApproved
+      ? currentApprovals.filter((id) => id !== levelId)
+      : [...currentApprovals, levelId];
+    const columnUpdated = await dbAdmin.updateStudent(selectedStudent.id, { approved_levels: approvedLevels });
+    const targetMarker = levelApprovalMarker(levelId);
+    const completedLessons = (selectedStudent.completed_lessons || []).filter((id) => id !== targetMarker);
+    if (!columnUpdated && !isApproved) completedLessons.push(targetMarker);
+    await dbAdmin.setStudentProgress(selectedStudent.id, completedLessons, false);
+
+    const updatedStudent = {
+      ...selectedStudent,
+      approved_levels: approvedLevels,
+      completed_lessons: Array.from(new Set(completedLessons))
+    };
+
+    setSelectedStudent(updatedStudent);
+    setStudents((current) => current.map((student) => student.id === updatedStudent.id ? updatedStudent : student));
+    showToast(isApproved ? `Aprobación de ${levelTitle} revocada.` : `${levelTitle} aprobado por el tutor.`);
+  };
+
   const handleCreateStudent = async () => {
     if (!newStudent.name) return;
     await dbAdmin.createStudent({
@@ -89,6 +114,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     }
     const hasOralEvaluation = Boolean(currentLevelObj?.oralEvaluation?.length);
     const hasVirtualEvaluation = Boolean(currentLevelObj?.virtualEvaluation?.length);
+    const isCurrentLevelApproved = Boolean(currentLevelObj && approvedLevelIdsForStudent(selectedStudent).includes(currentLevelObj.id));
 
     return (
         <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6">
@@ -274,7 +300,34 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                     <div className="text-gray-500 py-8 text-center text-lg font-medium">No hay evaluaciones configuradas para este nivel aún.</div>
                 )}
             </div>
-            
+
+            {currentLevelObj && (
+              <div className={`mb-8 rounded-2xl border p-6 ${isCurrentLevelApproved ? 'border-emerald-300 bg-emerald-50' : 'border-amber-300 bg-amber-50'}`}>
+                <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+                  <div>
+                    <div className="mb-2 flex items-center gap-2">
+                      <Target className={`h-6 w-6 ${isCurrentLevelApproved ? 'text-emerald-700' : 'text-amber-700'}`} />
+                      <h3 className={`text-xl font-black ${isCurrentLevelApproved ? 'text-emerald-950' : 'text-amber-950'}`}>
+                        Aprobación del nivel
+                      </h3>
+                    </div>
+                    <p className={`max-w-3xl font-medium ${isCurrentLevelApproved ? 'text-emerald-800' : 'text-amber-800'}`}>
+                      {isCurrentLevelApproved
+                        ? `${currentLevelObj.title} ya fue aprobado por el tutor.`
+                        : `Después de realizar el examen oral de ${currentLevelObj.title}, registra aquí la decisión del tutor.`}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => handleToggleLevelApproval(currentLevelObj.id, currentLevelObj.title)}
+                    className={`min-h-12 shrink-0 rounded-xl px-5 py-3 font-black text-white shadow-sm transition ${isCurrentLevelApproved ? 'bg-slate-600 hover:bg-slate-700' : 'bg-emerald-600 hover:bg-emerald-700'}`}
+                  >
+                    {isCurrentLevelApproved ? 'Revocar aprobación' : 'Aprobar después del examen oral'}
+                  </button>
+                </div>
+              </div>
+            )}
+
             <div className="mb-6">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">Otro Material</h2>
                 <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
@@ -421,7 +474,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                   </div>
                 </div>
                 <div className="flex justify-between items-center text-sm text-gray-500 mt-4 border-t pt-4">
-                  <span>Clases completadas: <strong className="text-gray-900">{st.completed_lessons?.length || 0}</strong></span>
+                  <span>Clases completadas: <strong className="text-gray-900">{visibleCompletedLessonIds(st.completed_lessons || []).length}</strong></span>
                   {st.group_id && <span className="flex items-center gap-1"><Users className="w-4 h-4"/> Grupo</span>}
                 </div>
               </div>
