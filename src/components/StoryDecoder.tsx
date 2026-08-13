@@ -9,6 +9,8 @@ import {
   CheckCircle2,
   ChevronDown,
   ChevronRight,
+  CircleHelp,
+  GraduationCap,
   Layers3,
   Lightbulb,
   LoaderCircle,
@@ -127,6 +129,89 @@ const blockStyles = [
   'from-yellow-300 via-amber-500 to-violet-900'
 ];
 
+const grammarUses: Record<string, string> = {
+  'Subject + Verb + Complement': 'Es la base de la oración inglesa: primero quién realiza la acción, después la acción y finalmente la información que completa la idea.',
+  'To Be como verbo principal': 'Usa am, is o are para identificar, describir o ubicar al sujeto sin añadir otro verbo principal.',
+  'To Be en negativo y pregunta': 'Coloca not después de to be para negar; en preguntas, mueve am, is o are delante del sujeto.',
+  'Verbos base y complementos': 'El verbo expresa la acción y el complemento indica qué, dónde, cuándo, cómo o con quién sucede.',
+  'Do / Does como auxiliares': 'Do y does forman preguntas y negativas en presente; el verbo principal permanece en su forma base.',
+  'Preguntas básicas con Wh-': 'La palabra interrogativa abre la pregunta y va seguida del auxiliar, el sujeto y el verbo principal.',
+  'Present Simple': 'Expresa hábitos, rutinas, hechos y situaciones generalmente verdaderas.',
+  'Present Simple con he/she/it': 'Con he, she o it, el verbo afirmativo normalmente termina en -s o -es; después de does vuelve a su forma base.',
+  'Present Continuous': 'Describe una acción que está ocurriendo ahora o una situación temporal mediante to be + verbo en -ing.',
+  'Present Simple vs Present Continuous': 'Usa presente simple para hábitos y presente continuo para acciones actuales o temporales.',
+  'Present Perfect': 'Conecta una experiencia o acción pasada con el presente mediante have/has + participio pasado.',
+  'Present Perfect Continuous': 'Destaca la duración de una actividad iniciada antes y conectada con el presente: have/has been + -ing.',
+  'Past Simple': 'Expresa acciones terminadas en un momento pasado usando la forma pasada del verbo.',
+  'Past Simple con did': 'Did forma preguntas y negativas en pasado; después de did, el verbo vuelve a su forma base.',
+  'Past Continuous': 'Describe una acción que estaba en progreso en un momento pasado: was/were + verbo en -ing.',
+  'Past Simple vs Past Continuous': 'El pasado continuo presenta la acción en progreso y el pasado simple el evento terminado que ocurre o interrumpe.',
+  'Past Perfect': 'Muestra que una acción ocurrió antes que otra acción pasada: had + participio pasado.',
+  'Past Perfect Continuous': 'Destaca cuánto tiempo llevaba ocurriendo una actividad antes de otro momento pasado.',
+  'Future Simple with will': 'Will + verbo base expresa decisiones espontáneas, predicciones, promesas y hechos futuros.',
+  'Be Going To': 'Am/is/are going to + verbo base expresa planes previos o predicciones basadas en evidencia.',
+  'Present Continuous para futuro': 'To be + -ing puede expresar un arreglo futuro ya organizado, normalmente con tiempo definido.',
+  'Present Simple para horarios futuros': 'El presente simple expresa horarios, calendarios y eventos programados oficialmente.',
+  'Future Continuous': 'Will be + -ing describe una acción que estará en progreso en un momento futuro.',
+  'Future Perfect': 'Will have + participio indica que algo estará terminado antes de un punto futuro.',
+  'Future Perfect Continuous': 'Will have been + -ing destaca la duración acumulada de una actividad hasta un punto futuro.',
+  'Future in the Past': 'Would o was/were going to presenta como futuro algo que se veía desde un momento pasado.',
+  'Can / Could': 'Can y could van con verbo base para expresar capacidad, posibilidad, permiso o peticiones.',
+  'May / Might': 'May y might + verbo base expresan posibilidad; might suele comunicar mayor incertidumbre.',
+  'Must / Have to / Need to': 'Estas formas expresan obligación o necesidad con diferentes matices de autoridad y urgencia.',
+  'Should / Ought to / Had better': 'Se usan para consejos; had better comunica una advertencia o consecuencia más fuerte.',
+  'Would / Would rather': 'Would expresa situaciones hipotéticas o cortesía; would rather comunica una preferencia.',
+  'Be able to / allowed to / supposed to': 'Estas expresiones distinguen capacidad, permiso y expectativa u obligación esperada.',
+  'Modal Continuous': 'Modal + be + -ing presenta una posibilidad, deducción u obligación relacionada con una acción en progreso.',
+  'Modal Perfect': 'Modal + have + participio permite opinar, deducir o lamentar una acción pasada.',
+  'Modal Perfect Continuous': 'Modal + have been + -ing permite deducir o valorar la duración de una actividad pasada.',
+  'Modales en voz pasiva': 'Modal + be + participio enfoca la acción o resultado, no a la persona que la realiza.',
+  'Zero Conditional': 'If + presente, presente expresa resultados generales, reglas y hechos que siempre ocurren.',
+  'First Conditional': 'If + presente, will + verbo base expresa una condición futura real o posible.',
+  'Second Conditional': 'If + pasado, would + verbo base expresa situaciones presentes o futuras hipotéticas.',
+  'Third Conditional': 'If + past perfect, would have + participio imagina un resultado diferente para un pasado que ya no puede cambiar.',
+  'Mixed Conditionals': 'Combina tiempos de distintos condicionales para conectar una causa pasada con un resultado presente o viceversa.',
+  'Unless / As long as / In case': 'Unless significa “si no”, as long as establece una condición e in case expresa precaución.',
+  'Passive Present Simple': 'Am/is/are + participio presenta acciones habituales o hechos enfocándose en quien recibe la acción.',
+  'Passive Present Continuous': 'Am/is/are being + participio muestra que algo está siendo realizado ahora.',
+  'Passive Present Perfect': 'Have/has been + participio conecta con el presente una acción ya realizada sobre el sujeto.',
+  'Passive Past Simple': 'Was/were + participio presenta una acción terminada en el pasado enfocándose en su receptor.',
+  'Passive Past Continuous': 'Was/were being + participio muestra que una acción pasiva estaba en progreso.',
+  'Passive Past Perfect': 'Had been + participio muestra que una acción pasiva ocurrió antes de otra acción pasada.',
+  'Passive Future Simple': 'Will be + participio indica que algo será realizado en el futuro.',
+  'Passive Future Perfect': 'Will have been + participio indica que algo ya estará realizado antes de un punto futuro.',
+  'Passive with Modals': 'Modal + be + participio combina posibilidad, obligación o recomendación con voz pasiva.',
+  'Imperative': 'Comienza con el verbo base para dar instrucciones; usa do not + verbo base para prohibiciones.',
+  'Subjunctive with verb base': 'Después de recommend, suggest o insist that, usa el verbo base sin -s para expresar recomendación o exigencia.',
+  'Subjunctive with were': 'En situaciones irreales usa were con cualquier sujeto después de if o wish.',
+  'Wish / If only - present wishes': 'Wish o if only + pasado simple expresa que una situación presente es diferente de lo deseado.',
+  'Wish / If only - past regrets': 'Wish o if only + past perfect expresa arrepentimiento por algo ocurrido o no ocurrido.',
+  'Wish + would': 'Wish + sujeto + would expresa el deseo de que una situación o conducta cambie.',
+  'Infinitives with to': 'Algunos verbos y adjetivos necesitan to + verbo base para completar su significado.',
+  'Bare infinitives': 'Después de modales y verbos como make o let se usa el verbo base sin to.',
+  'Gerunds': 'La forma en -ing puede funcionar como sustantivo o aparecer después de determinados verbos y preposiciones.',
+  'Present and past participles': 'El participio en -ing suele describir la causa o acción; el participio pasado describe el efecto o resultado.',
+  'Have something done': 'Have + objeto + participio indica que otra persona realiza un servicio o acción para el sujeto.',
+  'Get something done': 'Get + objeto + participio expresa conseguir que otra persona realice una acción o servicio.',
+  'Make / Let / Have someone do': 'Make, let y have van seguidos de persona + verbo base para causar, permitir o encargar una acción.',
+  'Get someone to do something': 'Get + persona + to + verbo base expresa persuadir o lograr que alguien haga algo.',
+  'Used to': 'Used to + verbo base expresa estados o hábitos pasados que ya no son actuales.',
+  'Would for past habits': 'Would + verbo base recuerda acciones repetidas del pasado, pero normalmente no estados.',
+  'Be used to': 'Be used to + sustantivo o -ing significa estar acostumbrado a una situación.',
+  'Get used to': 'Get used to + sustantivo o -ing expresa el proceso de acostumbrarse.',
+  'Reported Speech - present to past': 'Al reportar desde un punto pasado, las formas presentes normalmente retroceden a formas pasadas.',
+  'Reported Speech - continuous and perfect shifts': 'Al reportar, present continuous suele pasar a past continuous y present perfect a past perfect.',
+  'Will/can/may to would/could/might': 'En estilo indirecto, will, can y may normalmente cambian a would, could y might.',
+  'Reported questions': 'Reported questions usa asked + wh-word o if/whether y después mantiene el orden de una afirmación.',
+  'Indirect Questions': 'Una introducción cortés va seguida de wh/if + sujeto + verbo, sin invertir como en una pregunta directa.',
+  'Polite requests and formal questions': 'Could, would y expresiones indirectas suavizan peticiones y preguntas formales.',
+  'Time Marker Mastery': 'Los marcadores temporales ayudan a elegir el tiempo verbal y la relación correcta entre acciones.',
+  'Auxiliary Mastery': 'El auxiliar determina pregunta, negación, tiempo o modalidad y controla la forma del verbo principal.',
+  'Verb Form Mastery': 'El entorno gramatical determina si el verbo debe ir en base, -s, pasado, participio o -ing.',
+  'Error Correction Arena': 'Revisa concordancia, auxiliar, forma verbal, tiempo y orden para localizar y corregir el error.',
+  'Final Structure Boss Battle': 'Integra tiempos, auxiliares y estructuras según el significado y la relación temporal de toda la historia.'
+};
+
 function shuffle<T>(items: T[]) {
   const result = [...items];
   for (let index = result.length - 1; index > 0; index -= 1) {
@@ -140,13 +225,13 @@ function normalizeSentence(value: string) {
   return value
     .toLowerCase()
     .replace(/[’‘]/g, "'")
-    .replace(/\s+([.,!?;:])/g, '$1')
+    .replace(/[.,!?;:“”"¿¡()[\]{}]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
 
 function sentenceFromTokens(tokens: string[]) {
-  return tokens.join(' ').replace(/\s+([.,!?;:])/g, '$1').replace(/\s+/g, ' ').trim();
+  return tokens.join(' ').replace(/\s+/g, ' ').trim();
 }
 
 function getPuzzleTokens(line: StoryLine, mode: PuzzleMode) {
@@ -250,6 +335,88 @@ function DecoderIntro({ loading, onStart }: { loading: boolean; onStart: () => v
   );
 }
 
+function GrammarGuideModal({
+  block,
+  lesson,
+  story,
+  onClose
+}: {
+  block: DecoderBlock;
+  lesson: DecoderLesson;
+  story: DecoderStory;
+  onClose: () => void;
+}) {
+  const examples = story.lines.filter((line) => line.line_role === 'target').slice(0, 3);
+  const commonErrors = Array.from(new Set(story.lines.flatMap((line) => line.common_errors))).slice(0, 2);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[80] flex items-center justify-center bg-slate-950/80 p-3 backdrop-blur-md sm:p-6"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget) onClose();
+      }}
+    >
+      <motion.section
+        initial={{ opacity: 0, y: 30, scale: 0.96 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 20, scale: 0.97 }}
+        className="max-h-[92vh] w-full max-w-4xl overflow-y-auto rounded-[2rem] border border-indigo-100 bg-white p-5 text-slate-950 shadow-2xl sm:p-7"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="grammar-guide-title"
+      >
+        <div className="flex items-start gap-4">
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-700 text-white shadow-lg">
+            <GraduationCap className="h-7 w-7" />
+          </div>
+          <div className="min-w-0 flex-1">
+            <div className="text-xs font-black uppercase tracking-[0.2em] text-indigo-500">{block.name}</div>
+            <h2 id="grammar-guide-title" className="mt-1 text-2xl font-black leading-tight sm:text-4xl">{lesson.topic}</h2>
+          </div>
+          <button type="button" onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-100 transition hover:bg-rose-500 hover:text-white" aria-label="Cerrar explicación"><X className="h-5 w-5" /></button>
+        </div>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl bg-indigo-50 p-5">
+            <div className="text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Cómo funciona</div>
+            <p className="mt-2 text-lg font-bold leading-relaxed text-slate-700">{grammarUses[lesson.topic] || lesson.learning_goal}</p>
+          </div>
+          <div className="rounded-2xl bg-slate-950 p-5 text-white">
+            <div className="text-xs font-black uppercase tracking-[0.18em] text-cyan-300">Fórmula</div>
+            <p className="mt-3 text-xl font-black leading-tight text-yellow-300 sm:text-2xl">{lesson.pattern}</p>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <div className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-slate-500">Ejemplos de esta historia</div>
+          <div className="grid gap-3">
+            {examples.map((example, index) => (
+              <div key={example.line_id} className="grid gap-2 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:grid-cols-[auto_1fr] sm:items-start">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 font-black text-white">{index + 1}</div>
+                <div>
+                  <p className="text-lg font-black text-slate-950 sm:text-xl">{example.en}</p>
+                  <p className="mt-1 font-semibold text-slate-500">{example.es}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {(lesson.confuses_with.length > 0 || commonErrors.length > 0) && (
+          <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4">
+            <div className="text-xs font-black uppercase tracking-[0.18em] text-amber-700">Ten cuidado</div>
+            {lesson.confuses_with.length > 0 && <p className="mt-2 font-bold text-amber-950">No lo confundas con: {lesson.confuses_with.join(' · ')}</p>}
+            {commonErrors.map((error) => <p key={error} className="mt-1 font-semibold text-amber-900">• {error}</p>)}
+          </div>
+        )}
+      </motion.section>
+    </motion.div>
+  );
+}
+
 export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const progressKey = `${STORAGE_KEY}:${studentId || 'local'}`;
   const [curriculum, setCurriculum] = useState<DecoderCurriculum | null>(null);
@@ -268,6 +435,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [attempts, setAttempts] = useState(0);
   const [hintIndex, setHintIndex] = useState(-1);
   const [feedback, setFeedback] = useState<'idle' | 'wrong-sentence' | 'correct'>('idle');
+  const [showGrammarGuide, setShowGrammarGuide] = useState(false);
   const [progress, setProgress] = useState<DecoderProgress>(EMPTY_PROGRESS);
 
   useEffect(() => {
@@ -355,6 +523,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
   const openStory = (story: DecoderStory, storyIndex: number) => {
     if (!isStoryUnlocked(storyIndex)) return;
+    setShowGrammarGuide(false);
     setActiveStory(story);
     const savedLine = progress.lineByStory[story.story_id] || 0;
     setLineIndex(completedStorySet.has(story.story_id) ? 0 : Math.min(savedLine, story.lines.length - 1));
@@ -401,6 +570,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     if (!activeStory || !currentLine) return;
     if (lineIndex < activeStory.lines.length - 1) {
       const nextLine = lineIndex + 1;
+      setFeedback('idle');
       setProgress((current) => ({
         ...current,
         lineByStory: { ...current.lineByStory, [activeStory.story_id]: nextLine }
@@ -594,8 +764,14 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   if (screen === 'player' && activeStory && activeLesson && activeBlock && currentLine) {
     const selectedIndexSet = new Set(selectedTokenIndexes);
     const needsChoice = selectedTokenIndexes.length === 0;
+    const visibleStoryLines = activeStory.lines.slice(0, lineIndex + (feedback === 'correct' ? 1 : 0));
     return (
       <div className="fixed inset-0 z-50 flex min-h-0 flex-col overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 text-white">
+        <AnimatePresence>
+          {showGrammarGuide && (
+            <GrammarGuideModal block={activeBlock} lesson={activeLesson} story={activeStory} onClose={() => setShowGrammarGuide(false)} />
+          )}
+        </AnimatePresence>
         <header className="z-30 shrink-0 border-b border-white/10 bg-slate-950/75 px-3 py-2 backdrop-blur-xl sm:px-5 sm:py-3">
           <div className="mx-auto flex max-w-[1500px] items-center gap-3">
             <button type="button" onClick={() => setScreen('lesson')} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-white hover:text-slate-950" aria-label="Volver a historias"><ArrowLeft className="h-5 w-5" /></button>
@@ -607,7 +783,8 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
         </header>
 
         <main className="min-h-0 flex-1 overflow-y-auto px-3 py-3 sm:px-5 sm:py-4">
-          <div className="mx-auto flex min-h-full max-w-[1320px] flex-col justify-center gap-3">
+          <div className="mx-auto grid min-h-full max-w-[1500px] content-start gap-3 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
+            <div className="space-y-3">
             <section className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.07] p-4 shadow-2xl backdrop-blur-xl sm:p-6">
               <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-cyan-400/20 blur-3xl" />
               <div className="absolute -bottom-20 -left-12 h-52 w-52 rounded-full bg-violet-500/20 blur-3xl" />
@@ -616,6 +793,11 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                   <div className="flex flex-wrap items-center gap-2">
                     <span className={`rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-widest ${currentLine.line_role === 'target' ? 'bg-yellow-300 text-yellow-950' : 'bg-cyan-300 text-cyan-950'}`}>{currentLine.line_role === 'target' ? 'Frase objetivo' : 'Historia'}</span>
                     <span className="rounded-full bg-white/10 px-3 py-1.5 text-xs font-black text-white/70">Dificultad {currentLine.difficulty}</span>
+                    <button type="button" onClick={() => setShowGrammarGuide(true)} className="group flex min-h-10 items-center gap-2 rounded-full border border-violet-300/30 bg-violet-300/15 px-3 text-left text-xs font-black text-violet-100 transition hover:bg-violet-300 hover:text-violet-950">
+                      <GraduationCap className="h-4 w-4 shrink-0" />
+                      <span><span className="hidden opacity-65 sm:inline">Estás aprendiendo: </span>{activeLesson.topic}</span>
+                      <CircleHelp className="h-4 w-4 shrink-0 opacity-70 transition group-hover:scale-110" />
+                    </button>
                   </div>
                   <div className="flex flex-wrap gap-1 rounded-xl bg-slate-950/40 p-1">
                     {puzzleModes.map((item) => <button key={item.id} type="button" onClick={() => setMode(item.id)} className={`min-h-10 rounded-lg px-3 text-xs font-black transition ${mode === item.id ? 'bg-yellow-300 text-yellow-950 shadow-lg' : 'text-white/65 hover:bg-white/10 hover:text-white'}`} title={item.detail}>{item.label}</button>)}
@@ -664,6 +846,42 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                 )}
               </AnimatePresence>
             </section>
+            </div>
+
+            <aside className="order-first overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.08] shadow-2xl backdrop-blur-xl lg:order-last lg:sticky lg:top-0">
+              <div className="border-b border-white/10 bg-gradient-to-r from-indigo-500/25 to-cyan-400/20 p-4">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex min-w-0 items-center gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-300 text-cyan-950"><BookOpen className="h-5 w-5" /></div>
+                    <div className="min-w-0">
+                      <div className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-cyan-200">Historia en progreso</div>
+                      <h3 className="truncate text-base font-black">{activeStory.title}</h3>
+                    </div>
+                  </div>
+                  <span className="shrink-0 rounded-full bg-white/10 px-3 py-1 text-xs font-black">{visibleStoryLines.length}/{activeStory.lines.length}</span>
+                </div>
+              </div>
+              <div className="max-h-36 overflow-y-auto p-3 lg:max-h-[calc(100vh-15rem)] lg:min-h-[320px] lg:p-4">
+                {visibleStoryLines.length === 0 ? (
+                  <div className="flex min-h-24 flex-col items-center justify-center rounded-xl border border-dashed border-white/15 px-4 text-center text-sm font-bold text-white/40 lg:min-h-[280px]">
+                    <Sparkles className="mb-2 h-6 w-6 text-yellow-300/60" />
+                    Tu historia aparecerá aquí a medida que completes cada frase.
+                  </div>
+                ) : (
+                  <div className="space-y-2">
+                    {visibleStoryLines.map((line, index) => (
+                      <motion.div key={line.line_id} initial={{ opacity: 0, x: 18 }} animate={{ opacity: 1, x: 0 }} className={`rounded-xl border p-3 ${index === visibleStoryLines.length - 1 ? 'border-cyan-300/35 bg-cyan-300/15' : 'border-white/8 bg-slate-950/25'}`}>
+                        <div className="mb-1 text-[0.6rem] font-black uppercase tracking-widest text-cyan-300/70">Línea {index + 1}</div>
+                        <p className="text-sm font-bold leading-relaxed text-white/90">{line.en}</p>
+                      </motion.div>
+                    ))}
+                    {feedback !== 'correct' && lineIndex < activeStory.lines.length && (
+                      <div className="rounded-xl border border-dashed border-yellow-300/25 bg-yellow-300/5 p-3 text-xs font-black text-yellow-100/55">Construyendo la línea {lineIndex + 1}…</div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </aside>
           </div>
         </main>
 
