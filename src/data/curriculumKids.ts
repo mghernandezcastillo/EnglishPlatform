@@ -1,4 +1,6 @@
 import { CurriculumLevel } from '../types';
+import { applyKidsClassOverrides } from './kidsClassOverrides';
+import { applyKidsEvaluationOverrides } from './kidsEvaluationOverrides';
 import imgMagicGreeting from '../assets/images/cute_greeting_symbols_1781981906141.jpg';
 import imgWhale from '../assets/images/cute_blue_whale_1781981941128.jpg';
 import imgFrog from '../assets/images/happy_green_frog_1781981959109.jpg';
@@ -11249,3 +11251,6 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
     ]
   }
 ];
+
+applyKidsClassOverrides(curriculumKidsLevels);
+applyKidsEvaluationOverrides(curriculumKidsLevels);

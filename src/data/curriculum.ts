@@ -1,4 +1,6 @@
 import { CurriculumLevel } from '../types';
+import { applyAdultClassOverrides } from './adultClassOverrides';
+import { applyAdultEvaluationOverrides } from './adultEvaluationOverrides';
 import imgAdultAvatar from '../assets/images/male_3d_avatar_1781219297751.jpg';
 import imgAdultHomework from '../assets/images/adults_c10_homework_1783000709392.jpg';
 import imgAdultDirectionsAsk from '../assets/images/directions_ask_1782951949049.jpg';
@@ -30520,3 +30522,6 @@ export const curriculumLevels: CurriculumLevel[] = [
     ]
   }
 ];
+
+applyAdultClassOverrides(curriculumLevels);
+applyAdultEvaluationOverrides(curriculumLevels);
