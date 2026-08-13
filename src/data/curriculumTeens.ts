@@ -6,6 +6,7 @@ import imgTeenSports from '../assets/images/teens_actions_sports_1783000515177.j
 import imgTeenBirthday from '../assets/images/teens_birthday_party_1782771276209.jpg';
 import imgTeenQuiz from '../assets/images/teens_c5_quiz1_1783004350357.jpg';
 import { organizeTeenBasicOneLevel } from './teenBasicOneOrganizer';
+import { applyTeenEvaluationOverrides } from './teenEvaluationOverrides';
 
 const images = [
   "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800",
@@ -1670,24 +1671,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
     ],
     oralEvaluation: [
       {
-        topic: "PERSONAL IDENTITY",
-        question: "Greet the tutor, introduce yourself, say your age, birthday month, city and grade, then spell your name or username."
+        topic: "INTRODUCTION",
+        question: "Introduce yourself with age, school, and favorite things."
       },
       {
-        topic: "PEOPLE & APPEARANCE",
-        question: "Describe one family member or friend: say who they are, what they look like and what they are wearing."
+        topic: "GRAMMAR IN USE",
+        question: "Spell your name and ask a classmate to spell theirs."
       },
       {
-        topic: "SCHOOL & OBJECTS",
-        question: "Describe your classroom or backpack using school subjects, supplies, shapes or patterns, there is/are and a place word."
+        topic: "VOCABULARY",
+        question: "Talk about three objects in your bag or classroom."
       },
       {
-        topic: "LIKES & POSSESSIONS",
-        question: "Talk about a snack, a drink, a hobby and a gadget you like or do not like, and say which gadget you have."
+        topic: "INTERACTION",
+        question: "Describe two friends using the verb be."
       },
       {
-        topic: "ACTIONS & ROUTINE",
-        question: "Describe an animal or pet, say two actions you can or cannot do, and explain two parts of your daily routine with times."
+        topic: "FLUENCY",
+        question: "Ask and answer basic personal information questions."
       }
     ],
     virtualEvaluation: [
@@ -12825,3 +12826,4 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
 ];
 
 organizeTeenBasicOneLevel(curriculumTeensLevels);
+applyTeenEvaluationOverrides(curriculumTeensLevels);
