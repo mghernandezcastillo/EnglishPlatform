@@ -1670,172 +1670,208 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
     ],
     oralEvaluation: [
       {
-        topic: "INTRODUCTION",
-        question: "Introduce yourself with age, school, and favorite things."
+        topic: "PERSONAL IDENTITY",
+        question: "Greet the tutor, introduce yourself, say your age, birthday month, city and grade, then spell your name or username."
       },
       {
-        topic: "GRAMMAR IN USE",
-        question: "Spell your name and ask a classmate to spell theirs."
+        topic: "PEOPLE & APPEARANCE",
+        question: "Describe one family member or friend: say who they are, what they look like and what they are wearing."
       },
       {
-        topic: "VOCABULARY",
-        question: "Talk about three objects in your bag or classroom."
+        topic: "SCHOOL & OBJECTS",
+        question: "Describe your classroom or backpack using school subjects, supplies, shapes or patterns, there is/are and a place word."
       },
       {
-        topic: "INTERACTION",
-        question: "Describe two friends using the verb be."
+        topic: "LIKES & POSSESSIONS",
+        question: "Talk about a snack, a drink, a hobby and a gadget you like or do not like, and say which gadget you have."
       },
       {
-        topic: "FLUENCY",
-        question: "Ask and answer basic personal information questions."
+        topic: "ACTIONS & ROUTINE",
+        question: "Describe an animal or pet, say two actions you can or cannot do, and explain two parts of your daily routine with times."
       }
     ],
     virtualEvaluation: [
       {
-        id: "teens-basic-zero-virtual-01",
+        id: "teens-basic-zero-v2-greetings",
         type: "multiple-choice",
-        question: "Which sentence is correct for Teen Basic Zero?",
+        question: "You meet a new classmate in the morning. Which greeting is appropriate?",
         options: [
-          "My name are Alex.",
-          "My name is Alex.",
-          "Me name is Alex."
+          "Good morning!",
+          "Good night!",
+          "Goodbye!"
         ],
-        correctAnswer: "My name is Alex.",
-        imageUrl: imgTeenAssessment
+        correctAnswer: "Good morning!",
+        imageUrl: "/images/teens-basic-zero-class-01/slide-04.jpg"
       },
       {
-        id: "teens-basic-zero-virtual-02",
+        id: "teens-basic-zero-v2-age-birthday",
         type: "multiple-choice",
-        question: "What does \"classmate\" mean in Spanish?",
+        question: "Choose the correct answer to: How old are you?",
         options: [
-          "antes",
-          "classmate",
-          "nunca"
+          "I have fourteen years.",
+          "I'm fourteen years old.",
+          "My birthday fourteen."
         ],
-        correctAnswer: "classmate",
-        imageUrl: imgTeenGadget
+        correctAnswer: "I'm fourteen years old.",
+        imageUrl: "/images/teens-basic-zero-class-02/slide-06.jpg"
       },
       {
-        id: "teens-basic-zero-virtual-03",
+        id: "teens-basic-zero-v2-body-actions",
         type: "multiple-choice",
-        question: "Choose the sentence connected to introductions, classroom English, numbers, friends, and basic identity.",
+        question: "Which sentence says that a person has the ability to swim?",
         options: [
-          "I no understand yesterday.",
-          "I am sixteen years old.",
-          "Beautiful quickly table."
+          "I can swim.",
+          "I am swim.",
+          "I can swimming."
         ],
-        correctAnswer: "I am sixteen years old.",
-        imageUrl: imgTeenApps
+        correctAnswer: "I can swim.",
+        imageUrl: "/images/teens-basic-zero-class-03/slide-07.jpg"
       },
       {
-        id: "teens-basic-zero-virtual-04",
+        id: "teens-basic-zero-v2-gadgets",
         type: "multiple-choice",
-        question: "Which grammar area is most important in this level?",
-        options: [
-          "Advanced legal writing",
-          "verb be and basic identity",
-          "Chemical formulas"
-        ],
-        correctAnswer: "verb be and basic identity",
-        imageUrl: imgTeenSports
-      },
-      {
-        id: "teens-basic-zero-virtual-05",
-        type: "listening",
-        question: "Listen and choose the best summary.",
-        options: [
-          "The speaker talks about food only.",
-          "Alex is sixteen and likes music.",
-          "The speaker gives a phone number only."
-        ],
-        correctAnswer: "Alex is sixteen and likes music.",
-        audioText: "Hi, I am Alex. I am sixteen, I like music, and my favorite color is black.",
-        imageUrl: imgTeenBirthday
-      },
-      {
-        id: "teens-basic-zero-virtual-06",
-        type: "multiple-choice",
-        question: "Which answer is complete and natural?",
+        question: "Choose the natural answer to: Do you have headphones?",
         options: [
           "Yes, I do.",
-          "Because yesterday.",
-          "At the blue."
+          "Yes, I have do.",
+          "Yes, I am."
         ],
         correctAnswer: "Yes, I do.",
-        imageUrl: imgTeenQuiz
-      },
-      {
-        id: "teens-basic-zero-virtual-07",
-        type: "multiple-choice",
-        question: "Which topic belongs in this exam?",
-        options: [
-          "Random math equations",
-          "introductions, classroom English, numbers, friends, and basic identity",
-          "Only Spanish pronunciation"
-        ],
-        correctAnswer: "introductions, classroom English, numbers, friends, and basic identity",
-        imageUrl: imgTeenAssessment
-      },
-      {
-        id: "teens-basic-zero-virtual-08",
-        type: "multiple-choice",
-        question: "Choose the best question form.",
-        options: [
-          "Do you like English?",
-          "You like English?",
-          "Does you likes English?"
-        ],
-        correctAnswer: "Do you like English?",
         imageUrl: imgTeenGadget
       },
       {
-        id: "teens-basic-zero-virtual-09",
+        id: "teens-basic-zero-v2-snacks-drinks",
         type: "multiple-choice",
-        question: "Choose the best negative sentence.",
+        question: "Which sentence means “No me gusta el refresco”?",
         options: [
-          "I do not understand the question.",
-          "I not understand the question.",
-          "I no understands the question."
+          "I don't like soda.",
+          "I like soda.",
+          "I don't have soda."
         ],
-        correctAnswer: "I do not understand the question.",
-        imageUrl: imgTeenApps
+        correctAnswer: "I don't like soda.",
+        imageUrl: "/images/teens-basic-zero-class-05/slide-06-like-dont-like.jpg"
       },
       {
-        id: "teens-basic-zero-virtual-10",
-        type: "listening",
-        question: "Listen and identify the main idea.",
+        id: "teens-basic-zero-v2-shapes-patterns",
+        type: "multiple-choice",
+        question: "Choose the correct description for two red squares.",
         options: [
-          "The speaker gives personal or practical information.",
-          "The speaker says random words with no meaning.",
-          "The speaker only counts numbers."
+          "It is two red square.",
+          "They are two red squares.",
+          "They is red squares."
         ],
-        correctAnswer: "The speaker gives personal or practical information.",
-        audioText: "Hi, I am Alex. I am sixteen, I like music, and my favorite color is black.",
+        correctAnswer: "They are two red squares.",
+        imageUrl: "/images/teens-basic-zero-class-06/slide-06-it-is-they-are.jpg"
+      },
+      {
+        id: "teens-basic-zero-v2-school-supplies",
+        type: "multiple-choice",
+        question: "Complete the sentence: There ___ two notebooks in my backpack.",
+        options: [
+          "is",
+          "are",
+          "am"
+        ],
+        correctAnswer: "are",
+        imageUrl: "/images/teens-basic-zero-class-07/slide-06-there-is-there-are.jpg"
+      },
+      {
+        id: "teens-basic-zero-v2-pets-animals",
+        type: "multiple-choice",
+        question: "Complete the sentence: My sister ___ a small cat.",
+        options: [
+          "have",
+          "has",
+          "is have"
+        ],
+        correctAnswer: "has",
+        imageUrl: "/images/teens-basic-zero-class-08/slide-06-have-pets.jpg"
+      },
+      {
+        id: "teens-basic-zero-v2-hobbies",
+        type: "multiple-choice",
+        question: "Complete the sentence: I like ___ video games in my free time.",
+        options: [
+          "play",
+          "playing",
+          "plays"
+        ],
+        correctAnswer: "playing",
         imageUrl: imgTeenSports
       },
       {
-        id: "teens-basic-zero-virtual-11",
+        id: "teens-basic-zero-v2-family-friends",
         type: "multiple-choice",
-        question: "What level of English does this exam review?",
+        question: "My aunt's daughter is my ___.",
         options: [
-          "Only pronunciation with no grammar",
-          "Pre-A1 communication",
-          "University literature only"
+          "cousin",
+          "sister",
+          "grandmother"
         ],
-        correctAnswer: "Pre-A1 communication",
-        imageUrl: imgTeenBirthday
+        correctAnswer: "cousin",
+        imageUrl: "/images/teens-basic-1-class-01/slide-04.jpg"
       },
       {
-        id: "teens-basic-zero-virtual-12",
+        id: "teens-basic-zero-v2-spelling-usernames",
         type: "multiple-choice",
-        question: "Which response shows good communication?",
+        question: "Which answer correctly spells the name Maya?",
         options: [
-          "Can you repeat that, please?",
-          "Repeat now bad.",
-          "No speaking never."
+          "It's M-A-Y-A.",
+          "It's M-E-Y-E.",
+          "It's M-I-A."
         ],
-        correctAnswer: "Can you repeat that, please?",
-        imageUrl: imgTeenQuiz
+        correctAnswer: "It's M-A-Y-A.",
+        imageUrl: imgTeenApps
+      },
+      {
+        id: "teens-basic-zero-v2-personal-introduction",
+        type: "listening",
+        question: "Listen to Ana's introduction. Where does she live?",
+        options: [
+          "She lives in Cali.",
+          "She lives in Lima.",
+          "She lives in Madrid."
+        ],
+        correctAnswer: "She lives in Cali.",
+        audioText: "Hi! I'm Ana. I'm fourteen years old, I live in Cali, and I'm in eighth grade. I like music and social media.",
+        imageUrl: imgTeenAssessment
+      },
+      {
+        id: "teens-basic-zero-v2-clothes-appearance",
+        type: "multiple-choice",
+        question: "Complete the description: She ___ long curly hair and she is wearing a hoodie.",
+        options: [
+          "have",
+          "has",
+          "is"
+        ],
+        correctAnswer: "has",
+        imageUrl: "/images/teens-class-13/slide-07.jpg"
+      },
+      {
+        id: "teens-basic-zero-v2-classroom-place",
+        type: "multiple-choice",
+        question: "The pencil is on top of the desk. Complete: The pencil is ___ the desk.",
+        options: [
+          "on",
+          "under",
+          "in"
+        ],
+        correctAnswer: "on",
+        imageUrl: "/images/teens-class-14/slide-06.jpg"
+      },
+      {
+        id: "teens-basic-zero-v2-daily-routine",
+        type: "listening",
+        question: "Listen to Leo's routine. What time does he go to school?",
+        options: [
+          "At seven o'clock.",
+          "At seven thirty.",
+          "At eight o'clock."
+        ],
+        correctAnswer: "At seven thirty.",
+        audioText: "I wake up at seven o'clock, have breakfast, and go to school at seven thirty.",
+        imageUrl: "/images/teens-class-15/slide-06.jpg"
       }
     ]
   },
@@ -3039,172 +3075,175 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
     ],
     oralEvaluation: [
       {
-        topic: "INTRODUCTION",
-        question: "Describe your school day from morning to night."
+        topic: "FAMILY & FEELINGS",
+        question: "Describe a family photo: introduce two people, say how they feel, and use this/these and have/has."
       },
       {
-        topic: "GRAMMAR IN USE",
-        question: "Talk about your favorite app, game, or social network."
+        topic: "FOOD & HEALTHY CHOICES",
+        question: "Order a meal and a drink politely, state a preference, and explain one healthy choice with because."
       },
       {
-        topic: "VOCABULARY",
-        question: "Ask and answer questions about hobbies using do or does."
+        topic: "CLOTHES, WEATHER & SHOPPING",
+        question: "Describe what someone is wearing for today's weather, then ask the price, color and size of one item."
       },
       {
-        topic: "INTERACTION",
-        question: "Explain which school subject you like and why."
+        topic: "NATURE & PARKS",
+        question: "Describe a park with there is/are, name two outdoor activities, and give one responsible suggestion with should."
       },
       {
-        topic: "FLUENCY",
-        question: "Compare your routine on weekdays and weekends."
+        topic: "FUTURE PLANS & INVITATIONS",
+        question: "Invite the tutor to a weekend activity, respond to a change of plan, and use going to for a plan and will for a quick decision or prediction."
+      },
+      {
+        topic: "TECHNOLOGY & TRIP PLANNING",
+        question: "Explain what you use an app for and one online safety rule, then ask for help and confirm a trip's date, time, place and one task."
       }
     ],
     virtualEvaluation: [
       {
-        id: "teens-basic-1-virtual-01",
+        id: "teens-basic-1-v2-family-feelings",
         type: "multiple-choice",
-        question: "Which sentence is correct for Teen Basic 1?",
+        question: "Complete the family introduction: ___ are my parents. They are happy today.",
         options: [
-          "She play video games after school.",
-          "She plays video games after school.",
-          "She playing video games after school."
+          "This",
+          "These",
+          "It"
         ],
-        correctAnswer: "She plays video games after school.",
-        imageUrl: imgTeenAssessment
+        correctAnswer: "These",
+        imageUrl: "/images/teens-basic-1-class-01/slide-06.jpg"
       },
       {
-        id: "teens-basic-1-virtual-02",
+        id: "teens-basic-1-v2-healthy-choices",
         type: "multiple-choice",
-        question: "What does \"after school\" mean in Spanish?",
+        question: "Complete the reason: I choose water ___ it is healthy.",
         options: [
-          "antes",
-          "after school",
-          "nunca"
+          "because",
+          "but",
+          "or"
         ],
-        correctAnswer: "after school",
-        imageUrl: imgTeenGadget
+        correctAnswer: "because",
+        imageUrl: "/images/teens-basic-1-class-02/slide-08.jpg"
       },
       {
-        id: "teens-basic-1-virtual-03",
+        id: "teens-basic-1-v2-clothes-weather",
         type: "multiple-choice",
-        question: "Choose the sentence connected to daily routines, school subjects, hobbies, likes, and technology.",
+        question: "It is cold and rainy. Choose the correct sentence about Maya's clothes.",
         options: [
-          "I no understand yesterday.",
-          "I check my messages after dinner.",
-          "Beautiful quickly table."
+          "Maya wearing boots and a jacket.",
+          "Maya is wearing boots and a jacket.",
+          "Maya wear boots and a jacket now."
         ],
-        correctAnswer: "I check my messages after dinner.",
-        imageUrl: imgTeenApps
+        correctAnswer: "Maya is wearing boots and a jacket.",
+        imageUrl: "/images/teens-basic-1-class-03/slide-08.jpg"
       },
       {
-        id: "teens-basic-1-virtual-04",
+        id: "teens-basic-1-v2-nature-parks",
         type: "multiple-choice",
-        question: "Which grammar area is most important in this level?",
+        question: "Which sentence correctly describes a park with two benches?",
         options: [
-          "Advanced legal writing",
-          "present simple",
-          "Chemical formulas"
+          "There is two benches.",
+          "There are two benches.",
+          "They are there two benches."
         ],
-        correctAnswer: "present simple",
-        imageUrl: imgTeenSports
+        correctAnswer: "There are two benches.",
+        imageUrl: "/images/teens-basic-1-class-04/slide-06.jpg"
       },
       {
-        id: "teens-basic-1-virtual-05",
+        id: "teens-basic-1-v2-weekend-future",
+        type: "multiple-choice",
+        question: "The plan was decided yesterday. Complete: We ___ visit our cousins on Saturday.",
+        options: [
+          "are going to",
+          "will to",
+          "going"
+        ],
+        correctAnswer: "are going to",
+        imageUrl: "/images/teens-basic-1-class-05/slide-05.jpg"
+      },
+      {
+        id: "teens-basic-1-v2-invitations",
+        type: "multiple-choice",
+        question: "Which response declines an invitation politely and suggests another time?",
+        options: [
+          "No. Bad plan.",
+          "Sorry, I can't today. How about Sunday?",
+          "I not go today."
+        ],
+        correctAnswer: "Sorry, I can't today. How about Sunday?",
+        imageUrl: "/images/teens-basic-1-class-06/slide-06.jpg"
+      },
+      {
+        id: "teens-basic-1-v2-shopping",
+        type: "multiple-choice",
+        question: "Choose the correct question about the price of jeans.",
+        options: [
+          "How much is these jeans?",
+          "How much are these jeans?",
+          "How many price are these jeans?"
+        ],
+        correctAnswer: "How much are these jeans?",
+        imageUrl: "/images/teens-basic-1-class-07/slide-05.jpg"
+      },
+      {
+        id: "teens-basic-1-v2-cafe-order",
+        type: "multiple-choice",
+        question: "Which is the most polite café order?",
+        options: [
+          "Give me a sandwich.",
+          "I would like a sandwich, please.",
+          "I wanting sandwich now."
+        ],
+        correctAnswer: "I would like a sandwich, please.",
+        imageUrl: "/images/teens-basic-1-class-08/slide-06.jpg"
+      },
+      {
+        id: "teens-basic-1-v2-technology-purpose",
+        type: "multiple-choice",
+        question: "Which sentence correctly explains the purpose of a device?",
+        options: [
+          "I use my laptop to do homework.",
+          "I use my laptop do homework.",
+          "I to use my laptop homework."
+        ],
+        correctAnswer: "I use my laptop to do homework.",
+        imageUrl: "/images/teens-basic-1-class-09/slide-05.jpg"
+      },
+      {
+        id: "teens-basic-1-v2-help-clarification",
+        type: "multiple-choice",
+        question: "You did not understand the meeting time. What should you say?",
+        options: [
+          "Could you repeat the time, please?",
+          "Repeat time now.",
+          "What time you saying?"
+        ],
+        correctAnswer: "Could you repeat the time, please?",
+        imageUrl: "/images/teens-basic-1-class-10/slide-05.jpg"
+      },
+      {
+        id: "teens-basic-1-v2-online-safety",
+        type: "multiple-choice",
+        question: "Which information should you keep private online?",
+        options: [
+          "Your password",
+          "Your favorite color",
+          "A movie title"
+        ],
+        correctAnswer: "Your password",
+        imageUrl: "/images/teens-basic-1-class-09/slide-08.jpg"
+      },
+      {
+        id: "teens-basic-1-v2-trip-plan-listening",
         type: "listening",
-        question: "Listen and choose the best summary.",
+        question: "Listen to the final trip plan. Where will the group meet?",
         options: [
-          "The speaker talks about food only.",
-          "Emma watches videos after dinner.",
-          "The speaker gives a phone number only."
+          "At Central Station.",
+          "At the beach.",
+          "At school."
         ],
-        correctAnswer: "Emma watches videos after dinner.",
-        audioText: "Emma gets up at six, goes to school at seven, and watches videos after dinner.",
-        imageUrl: imgTeenBirthday
-      },
-      {
-        id: "teens-basic-1-virtual-06",
-        type: "multiple-choice",
-        question: "Which answer is complete and natural?",
-        options: [
-          "Yes, I do.",
-          "Because yesterday.",
-          "At the blue."
-        ],
-        correctAnswer: "Yes, I do.",
-        imageUrl: imgTeenQuiz
-      },
-      {
-        id: "teens-basic-1-virtual-07",
-        type: "multiple-choice",
-        question: "Which topic belongs in this exam?",
-        options: [
-          "Random math equations",
-          "daily routines, school subjects, hobbies, likes, and technology",
-          "Only Spanish pronunciation"
-        ],
-        correctAnswer: "daily routines, school subjects, hobbies, likes, and technology",
-        imageUrl: imgTeenAssessment
-      },
-      {
-        id: "teens-basic-1-virtual-08",
-        type: "multiple-choice",
-        question: "Choose the best question form.",
-        options: [
-          "Do you like English?",
-          "You like English?",
-          "Does you likes English?"
-        ],
-        correctAnswer: "Do you like English?",
-        imageUrl: imgTeenGadget
-      },
-      {
-        id: "teens-basic-1-virtual-09",
-        type: "multiple-choice",
-        question: "Choose the best negative sentence.",
-        options: [
-          "I do not understand the question.",
-          "I not understand the question.",
-          "I no understands the question."
-        ],
-        correctAnswer: "I do not understand the question.",
-        imageUrl: imgTeenApps
-      },
-      {
-        id: "teens-basic-1-virtual-10",
-        type: "listening",
-        question: "Listen and identify the main idea.",
-        options: [
-          "The speaker gives personal or practical information.",
-          "The speaker says random words with no meaning.",
-          "The speaker only counts numbers."
-        ],
-        correctAnswer: "The speaker gives personal or practical information.",
-        audioText: "Emma gets up at six, goes to school at seven, and watches videos after dinner.",
-        imageUrl: imgTeenSports
-      },
-      {
-        id: "teens-basic-1-virtual-11",
-        type: "multiple-choice",
-        question: "What level of English does this exam review?",
-        options: [
-          "Only pronunciation with no grammar",
-          "A1 communication",
-          "University literature only"
-        ],
-        correctAnswer: "A1 communication",
-        imageUrl: imgTeenBirthday
-      },
-      {
-        id: "teens-basic-1-virtual-12",
-        type: "multiple-choice",
-        question: "Which response shows good communication?",
-        options: [
-          "Can you repeat that, please?",
-          "Repeat now bad.",
-          "No speaking never."
-        ],
-        correctAnswer: "Can you repeat that, please?",
-        imageUrl: imgTeenQuiz
+        correctAnswer: "At Central Station.",
+        audioText: "We are going to meet at Central Station at nine thirty on Saturday. Lia will bring the snacks, and Omar will buy the tickets.",
+        imageUrl: "/images/teens-basic-1-class-10/slide-07.jpg"
       }
     ]
   },

@@ -65,11 +65,11 @@ export function VirtualEvaluationView({ levelId }: Props) {
   useEffect(() => {
     if (studentName.trim() && !hasStarted) {
       dbAdmin.getEvaluationProgress(levelId, studentName).then((progress) => {
-         if (progress && progress.answers && Object.keys(progress.answers).length > 0) {
-             setHasProgress(true);
-         } else {
-             setHasProgress(false);
-         }
+         const currentQuestionIds = new Set(questions.map((question) => question.id));
+         const savedAnswerIds = Object.keys(progress?.answers || {}).filter((id) => !id.startsWith('__'));
+         const hasCompatibleProgress = savedAnswerIds.length > 0
+           && savedAnswerIds.every((id) => currentQuestionIds.has(id));
+         setHasProgress(hasCompatibleProgress);
          
          if (progress) {
              setAttempts(progress.attempts || 0);
@@ -111,18 +111,27 @@ export function VirtualEvaluationView({ levelId }: Props) {
     if (studentName.trim().length > 1) {
       setIsLoadingProgress(true);
       dbAdmin.getEvaluationProgress(levelId, studentName).then((progress) => {
-         if (progress) {
-             setCurrentQuestionIdx(progress.currentQuestionIdx || 0);
-             setAnswers(progress.answers || {});
+         const currentQuestionIds = new Set(questions.map((question) => question.id));
+         const savedAnswers = progress?.answers || {};
+         const savedAnswerIds = Object.keys(savedAnswers).filter((id) => !id.startsWith('__'));
+         const savedQuestionIndex = progress?.currentQuestionIdx || 0;
+         const hasCompatibleProgress = savedAnswerIds.every((id) => currentQuestionIds.has(id))
+           && savedQuestionIndex >= 0
+           && savedQuestionIndex < questions.length;
+
+         if (progress && hasCompatibleProgress) {
+             setCurrentQuestionIdx(savedQuestionIndex);
+             setAnswers(savedAnswers);
              setAttempts(progress.attempts || 0);
-             if (progress.answers && progress.answers[questions[progress.currentQuestionIdx || 0]?.id]) {
-                setInputValue(progress.answers[questions[progress.currentQuestionIdx || 0]?.id]);
+             if (savedAnswers[questions[savedQuestionIndex]?.id]) {
+                setInputValue(savedAnswers[questions[savedQuestionIndex]?.id]);
              } else {
                 setInputValue('');
              }
          } else {
              setCurrentQuestionIdx(0);
              setAnswers({});
+             setAttempts(progress?.attempts || 0);
              setInputValue('');
              setIsChecked(false);
          }
