@@ -4679,122 +4679,282 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
         ]
       },      {
         id: "c-teens-basic-3-2",
-        title: "Class 2: Sports, Competitions & Teams / Clase 2: Sports, Competitions & Teams",
-        description: "A fun and interactive class for teens.",
+        title: "Class 2: Sports, Competitions & Teams / Clase 2: Deportes, competencias y equipos",
+        description: "Teens learn sports vocabulary, team roles, match results, and simple comparisons.",
         duration: "60 mins",
-        objective: "Master the topic of Sports, Competitions & Teams.",
+        objective: "Talk about sports, teams, scores, winners, and simple comparisons.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar deportes favoritos y experiencias con equipos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Sports & Hobbies.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Animal", color: "#F59E0B", prompt: "What animal do you like?", es: "Que animal te gusta?" }, { label: "Cute", color: "#10B981", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Wild", color: "#3B82F6", prompt: "What wild animal do you know?", es: "Que animal salvaje conoces?" }, { label: "Fast", color: "#8B5CF6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Home", color: "#EC4899", prompt: "What animal can live at home?", es: "Que animal puede vivir en casa?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Sports, Competitions & Teams.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 2! 🏆 / Bienvenida a Clase 2! 🏆",
+                description: "Sports, Competitions & Teams",
+                content: ["What sport do you like?", "Do you support a team?", "Today we talk about sports and competitions."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-01-welcome-sports-teams.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 via-sky-600 to-emerald-500"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Sports Warm-up Wheel / Ruleta de deportes",
+                description: "Spin and answer with one complete sentence.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say if you like or play that sport.", "Add one reason."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-02-warmup-wheel-sports.jpg",
+                wheelItems: [
+                  { label: "Soccer", color: "#16A34A", prompt: "Do you like soccer? Why?", es: "Te gusta el futbol? Por que?" },
+                  { label: "Basketball", color: "#F97316", prompt: "Do you play basketball?", es: "Juegas basquetbol?" },
+                  { label: "Running", color: "#FACC15", prompt: "Who is fast in your class?", es: "Quien es rapido en tu clase?" },
+                  { label: "Swimming", color: "#0EA5E9", prompt: "Can you swim?", es: "Puedes nadar?" },
+                  { label: "Volleyball", color: "#8B5CF6", prompt: "Is volleyball easy or difficult?", es: "El voleibol es facil o dificil?" },
+                  { label: "Tennis", color: "#EC4899", prompt: "Do you watch tennis?", es: "Ves tenis?" }
+                ],
+                bgColor: "bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-600"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can talk about a match.",
+                content: ["Name common sports.", "Talk about teams, players, coaches, and captains.", "Say who wins and compare players or teams."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-03-objectives-sports.jpg",
+                bgColor: "bg-gradient-to-br from-fuchsia-500 via-pink-500 to-rose-500"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Responder preguntas cortas sobre deportes y equipos."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Presentar vocabulario deportivo, roles y comparativos.",
             slides: [
-              { id: "Diapositiva 4", title: "Sports & Hobbies / Deportes y Pasatiempos", description: "Introduction to Sports & Hobbies.", content: ["I play soccer every day.", "She likes to draw."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["I play soccer every day.", "She likes to draw."], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Soccer, Draw, Play, Hobby", content: ["Soccer", " Draw", " Play", " Hobby"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["I play soccer every day.", "She likes to draw."], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["I play soccer every day.", "She likes to draw."], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: I play soccer every day."], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Sports Vocabulary / Vocabulario de deportes",
+                description: "Name the sport you see.",
+                content: ["soccer", "basketball", "volleyball", "tennis", "swimming", "running"],
+                imageUrl: "/images/teens-basic-3-class-02/slide-04-sports-vocabulary.jpg",
+                bgColor: "bg-gradient-to-br from-blue-500 to-cyan-500"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Team Roles / Roles del equipo",
+                description: "Use these words to describe people in a team.",
+                content: ["team = grupo que juega junto", "player = persona que juega", "coach = entrenador", "captain = lider del equipo"],
+                imageUrl: "/images/teens-basic-3-class-02/slide-05-team-roles.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Competition Verbs / Verbos de competencia",
+                description: "Talk about what happens in a match.",
+                content: ["play a match", "score a goal", "win the game", "lose the game"],
+                imageUrl: "/images/teens-basic-3-class-02/slide-06-competition-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Comparatives in Sports / Comparativos en deportes",
+                description: "Compare two players or teams.",
+                content: ["Blue Team is faster than Red Team.", "This player is stronger than that player.", "Soccer is more popular than tennis in my city."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-07-comparatives-sports.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-500 to-green-500"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Useful Match Phrases / Frases utiles del partido",
+                description: "Say the result clearly.",
+                content: ["The Blue Team wins.", "The Red Team loses.", "The score is three to one.", "The captain scores a goal."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-08-match-report.jpg",
+                bgColor: "bg-gradient-to-br from-green-500 to-lime-500"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Repetir vocabulario y formar frases con equipos reales o inventados."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Practica y comprension",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Comprobar vocabulario, verbos de competencia y roles.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-2-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Animals and pets: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🐶 + 🐱 + 🦜"],
-                    options: ["I wake up at seven.", "I have three pets.", "This email is formal."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read the Match Report / Lee el reporte del partido",
+                description: "Find the team, the score, and the winner.",
+                content: ["The Blue Team plays against the Red Team.", "The captain scores two goals.", "The final score is 3-1.", "Blue Team wins the match."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-08-match-report.jpg",
+                bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Sport (1/3)",
+                description: "This sport uses a ball and a goal.",
+                content: ["This sport uses a ball and a goal."],
+                options: ["soccer", "swimming", "tennis"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-02/slide-09-soccer-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Verb (2/3)",
+                description: "The player kicks the ball into the net.",
+                content: ["The player kicks the ball into the net."],
+                options: ["lose a game", "score a goal", "support a team"],
+                correctOptionIndex: 1,
+                imageUrl: "/images/teens-basic-3-class-02/slide-10-score-goal-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-500 to-rose-600"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Choose the Role (3/3)",
+                description: "This person leads the team.",
+                content: ["This person leads the team."],
+                options: ["captain", "score", "match"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-02/slide-11-captain-team-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-500 to-pink-600"
+              },
+              {
+                id: "c-teens-basic-3-2-emoji-mission",
+                title: "Emoji Mission / Mision Emoji",
+                description: "Decode the sports story.",
+                type: "emoji-game",
+                content: ["⚽ + 👕👕 + 🥅 + 🏆"],
+                options: ["The team scores and wins.", "I wake up at seven.", "The dog is under the chair."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-02/slide-12-emoji-sports.jpg",
+                bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Elegir respuestas y explicar con una frase corta."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Produccion y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el vocabulario deportivo en conversacion.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Sports, Competitions & Teams."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Safari Boss",
-                                    bossTitle: "Sports, Competitions & Teams",
-                                    bossAvatar: "🦁",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to sports, competitions & teams."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about sports, competitions & teams using animal words: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about sports, competitions & teams.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 13",
+                title: "Let's Talk Sports! / Hablemos de deportes!",
+                description: "Spin and answer with your opinion.",
+                type: "spinning-wheel",
+                content: ["Answer with a complete sentence.", "Use because when possible.", "Ask one follow-up question."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-13-speaking-wheel-sports.jpg",
+                wheelItems: [
+                  { label: "Sport", color: "#16A34A", prompt: "What sport do you play?", es: "Que deporte juegas?" },
+                  { label: "Team", color: "#0EA5E9", prompt: "What team do you support?", es: "Que equipo apoyas?" },
+                  { label: "Compare", color: "#FACC15", prompt: "Who is faster: you or your friend?", es: "Quien es mas rapido: tu o tu amigo?" },
+                  { label: "Winner", color: "#8B5CF6", prompt: "What team can win today?", es: "Que equipo puede ganar hoy?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600"
+              },
+              {
+                id: "Diapositiva 14",
+                title: "Fun Quiz! 1/3",
+                description: "Choose the correct comparison.",
+                content: ["Blue is ______ than Red."],
+                options: ["fast", "faster", "fastest"],
+                correctOptionIndex: 1,
+                imageUrl: "/images/teens-basic-3-class-02/slide-14-faster-than-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 2/3",
+                description: "Blue Team 3 - Red Team 1. What happened?",
+                content: ["Blue Team 3 - Red Team 1"],
+                options: ["Blue Team wins.", "Red Team wins.", "The score is zero-zero."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-02/slide-15-blue-team-wins-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 3/3",
+                description: "Which sentence talks about a favorite team?",
+                content: ["Choose the team sentence."],
+                options: ["I support Blue Team.", "I brush my teeth.", "I have a pencil."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-02/slide-16-support-team-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Sports Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use sports, team words, scores, and comparisons."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-boss-battle-sports-boss.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                speakingBossBattle: {
+                  bossName: "The Sports Boss",
+                  bossTitle: "Sports, Competitions & Teams",
+                  bossAvatar: "🏆",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say five sports words and three team words."],
+                    use: ["Make three sentences: one sport you play, one team you support, and one comparison."],
+                    speak: ["Speak for 30 seconds about a sports team or match.", "Include a score, a winner, and one comparison."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Sports Interview / Entrevista deportiva",
+                description: "Ask and answer like a sports reporter.",
+                type: "roleplay",
+                content: ["A: What sport do you play?", "B: I play soccer.", "A: What team do you support?", "B: I support Blue Team.", "A: Who is faster?", "B: Blue Team is faster than Red Team."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-17-sports-interview-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-500 to-indigo-600"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Hablar sobre deportes usando frases completas."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar practica independiente.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 18",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now talk about sports and teams.",
+                content: ["I play soccer.", "I support Blue Team.", "Blue Team is faster than Red Team."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-18-class-complete-sports.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 19",
+                title: "Homework",
+                description: "Write about your favorite sport and team.",
+                type: "homework",
+                content: ["Write 6 sentences about your favorite sport or team.", "Include one score: 2-1, 3-0, etc.", "Compare two players or two teams using faster, stronger, or more popular."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-19-homework-sports.jpg",
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Video Homework 📹",
+                description: "Watch, listen, and collect useful sports phrases.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/tgUSHk6JaTY",
+                content: ["Watch the video about sports vocabulary.", "Write 5 sports phrases from the video.", "Bring one sentence about a team to the next class."],
+                imageUrl: "/images/teens-basic-3-class-02/slide-20-video-homework-sports.jpg",
+                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y preparar frases deportivas."
           }
         ]
-      },
-      {
+      },      {
         id: "c-teens-basic-3-3",
         title: "Class 3: Holidays, Festivals & Traditions / Clase 3: Holidays, Festivals & Traditions",
         description: "A fun and interactive class for teens.",
