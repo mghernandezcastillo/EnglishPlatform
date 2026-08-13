@@ -429,6 +429,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [activeLesson, setActiveLesson] = useState<DecoderLesson | null>(null);
   const [activeStory, setActiveStory] = useState<DecoderStory | null>(null);
   const [lineIndex, setLineIndex] = useState(0);
+  const [revealedLineCount, setRevealedLineCount] = useState(0);
   const [mode, setMode] = useState<PuzzleMode>('easy');
   const [tokenRevision, setTokenRevision] = useState(0);
   const [selectedTokenIndexes, setSelectedTokenIndexes] = useState<number[]>([]);
@@ -526,7 +527,9 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     setShowGrammarGuide(false);
     setActiveStory(story);
     const savedLine = progress.lineByStory[story.story_id] || 0;
-    setLineIndex(completedStorySet.has(story.story_id) ? 0 : Math.min(savedLine, story.lines.length - 1));
+    const storyComplete = completedStorySet.has(story.story_id);
+    setLineIndex(storyComplete ? 0 : Math.min(savedLine, story.lines.length - 1));
+    setRevealedLineCount(storyComplete ? story.lines.length : Math.min(savedLine, story.lines.length - 1));
     setScreen('player');
   };
 
@@ -563,6 +566,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
       return;
     }
     setFeedback('correct');
+    setRevealedLineCount((current) => Math.max(current, lineIndex + 1));
     confetti({ particleCount: 130, spread: 85, origin: { y: 0.62 }, colors: ['#22d3ee', '#fde047', '#a78bfa', '#34d399'] });
   };
 
@@ -595,6 +599,52 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     utterance.rate = 0.86;
     window.speechSynthesis.speak(utterance);
   };
+
+  const highestReachableLineIndex = activeStory
+    ? Math.min(revealedLineCount, activeStory.lines.length - 1)
+    : 0;
+  const canGoToPreviousLine = screen === 'player' && lineIndex > 0;
+  const canGoToNextLine = screen === 'player' && Boolean(activeStory) && (
+    feedback === 'correct' || lineIndex < highestReachableLineIndex
+  );
+
+  const goToPreviousLine = () => {
+    if (!canGoToPreviousLine) return;
+    setFeedback('idle');
+    setLineIndex((current) => Math.max(0, current - 1));
+  };
+
+  const goToNextLine = () => {
+    if (!activeStory || !canGoToNextLine) return;
+    if (feedback === 'correct') {
+      continueStory();
+      return;
+    }
+    setFeedback('idle');
+    setLineIndex((current) => Math.min(current + 1, highestReachableLineIndex));
+  };
+
+  useEffect(() => {
+    if (screen !== 'player' || showGrammarGuide) return;
+
+    const handleArrowNavigation = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null;
+      if (target?.closest('input, textarea, select, [contenteditable="true"]')) return;
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+
+      if (event.key === 'ArrowLeft' && canGoToPreviousLine) {
+        event.preventDefault();
+        goToPreviousLine();
+      }
+      if (event.key === 'ArrowRight' && canGoToNextLine) {
+        event.preventDefault();
+        goToNextLine();
+      }
+    };
+
+    window.addEventListener('keydown', handleArrowNavigation);
+    return () => window.removeEventListener('keydown', handleArrowNavigation);
+  }, [screen, showGrammarGuide, canGoToPreviousLine, canGoToNextLine, feedback, highestReachableLineIndex, activeStory]);
 
   if (screen === 'intro') {
     return (
@@ -764,7 +814,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   if (screen === 'player' && activeStory && activeLesson && activeBlock && currentLine) {
     const selectedIndexSet = new Set(selectedTokenIndexes);
     const needsChoice = selectedTokenIndexes.length === 0;
-    const visibleStoryLines = activeStory.lines.slice(0, lineIndex + (feedback === 'correct' ? 1 : 0));
+    const visibleStoryLines = activeStory.lines.slice(0, Math.max(revealedLineCount, lineIndex + (feedback === 'correct' ? 1 : 0)));
     return (
       <div className="fixed inset-0 z-50 flex min-h-0 flex-col overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 text-white">
         <AnimatePresence>
@@ -776,6 +826,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
           <div className="mx-auto flex max-w-[1500px] items-center gap-3">
             <button type="button" onClick={() => setScreen('lesson')} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-white hover:text-slate-950" aria-label="Volver a historias"><ArrowLeft className="h-5 w-5" /></button>
             <div className="min-w-0 flex-1"><div className="truncate text-xs font-black uppercase tracking-[0.16em] text-cyan-300">{activeLesson.topic}</div><div className="truncate text-lg font-black sm:text-xl">{activeStory.title}</div></div>
+            <div className="hidden shrink-0 items-center gap-1 rounded-xl bg-white/5 px-2 py-1 text-white/55 md:flex" title="También puedes navegar con las flechas del teclado"><kbd className="rounded-md bg-white/10 px-2 py-1 text-sm font-black">←</kbd><kbd className="rounded-md bg-white/10 px-2 py-1 text-sm font-black">→</kbd></div>
             <div className="shrink-0 text-right"><div className="text-lg font-black text-yellow-300">{lineIndex + 1}/{activeStory.lines.length}</div><div className="hidden text-[0.6rem] font-black uppercase tracking-widest text-white/50 sm:block">líneas</div></div>
             <button type="button" onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-rose-500" aria-label="Cerrar Story Decoder"><X className="h-5 w-5" /></button>
           </div>
@@ -888,14 +939,20 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
         <footer className="z-30 shrink-0 border-t border-white/10 bg-slate-950/85 px-3 py-2 backdrop-blur-xl sm:px-5 sm:py-3">
           <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-2">
             <div className="flex gap-2">
-              <button type="button" disabled={feedback === 'correct'} onClick={resetAnswer} className="flex min-h-12 items-center gap-2 rounded-xl bg-white/10 px-4 font-black transition hover:bg-white/20 disabled:opacity-40" title="Reiniciar respuesta"><RotateCcw className="h-5 w-5" /><span className="hidden sm:inline">Reiniciar</span></button>
-              <button type="button" disabled={feedback === 'correct'} onClick={showHint} className="flex min-h-12 items-center gap-2 rounded-xl bg-yellow-300/15 px-4 font-black text-yellow-200 transition hover:bg-yellow-300 hover:text-yellow-950 disabled:opacity-40"><Lightbulb className="h-5 w-5" /><span className="hidden sm:inline">Pista</span></button>
+              <button type="button" disabled={!canGoToPreviousLine} onClick={goToPreviousLine} aria-label="Línea anterior" aria-keyshortcuts="ArrowLeft" className="flex min-h-12 items-center gap-2 rounded-xl bg-cyan-300/15 px-3 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950 disabled:cursor-not-allowed disabled:opacity-30" title="Línea anterior (←)"><ArrowLeft className="h-5 w-5" /><span className="hidden lg:inline">Anterior</span></button>
+              <button type="button" disabled={feedback === 'correct'} onClick={resetAnswer} className="hidden min-h-12 items-center gap-2 rounded-xl bg-white/10 px-3 font-black transition hover:bg-white/20 disabled:opacity-40 sm:flex" title="Reiniciar respuesta"><RotateCcw className="h-5 w-5" /><span className="hidden lg:inline">Reiniciar</span></button>
+              <button type="button" disabled={feedback === 'correct'} onClick={showHint} className="flex min-h-12 items-center gap-2 rounded-xl bg-yellow-300/15 px-3 font-black text-yellow-200 transition hover:bg-yellow-300 hover:text-yellow-950 disabled:opacity-40"><Lightbulb className="h-5 w-5" /><span className="hidden lg:inline">Pista</span></button>
             </div>
-            {feedback === 'correct' ? (
-              <button type="button" onClick={continueStory} className="flex min-h-12 items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-300 to-cyan-300 px-5 text-base font-black text-slate-950 shadow-xl transition hover:-translate-y-0.5 sm:px-7 sm:text-lg">{lineIndex === activeStory.lines.length - 1 ? <Trophy className="h-5 w-5" /> : <ArrowRight className="h-5 w-5" />}{lineIndex === activeStory.lines.length - 1 ? 'Completar historia' : 'Siguiente línea'}</button>
-            ) : (
-              <button type="button" disabled={needsChoice} onClick={checkAnswer} className="flex min-h-12 items-center gap-2 rounded-xl bg-gradient-to-r from-yellow-300 to-orange-400 px-5 text-base font-black text-slate-950 shadow-xl transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 sm:px-7 sm:text-lg"><Target className="h-5 w-5" /> Comprobar</button>
-            )}
+            <div className="flex gap-2">
+              {feedback !== 'correct' && lineIndex < highestReachableLineIndex && (
+                <button type="button" onClick={goToNextLine} aria-label="Línea siguiente" aria-keyshortcuts="ArrowRight" className="flex min-h-12 items-center gap-2 rounded-xl bg-cyan-300/15 px-3 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950" title="Línea siguiente (→)"><span className="hidden lg:inline">Siguiente</span><ArrowRight className="h-5 w-5" /></button>
+              )}
+              {feedback === 'correct' ? (
+                <button type="button" onClick={goToNextLine} aria-keyshortcuts="ArrowRight" className="flex min-h-12 items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-300 to-cyan-300 px-5 text-base font-black text-slate-950 shadow-xl transition hover:-translate-y-0.5 sm:px-7 sm:text-lg">{lineIndex === activeStory.lines.length - 1 ? <Trophy className="h-5 w-5" /> : <ArrowRight className="h-5 w-5" />}{lineIndex === activeStory.lines.length - 1 ? 'Completar historia' : 'Siguiente línea'}</button>
+              ) : (
+                <button type="button" disabled={needsChoice} onClick={checkAnswer} className="flex min-h-12 items-center gap-2 rounded-xl bg-gradient-to-r from-yellow-300 to-orange-400 px-3 text-base font-black text-slate-950 shadow-xl transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 sm:px-7 sm:text-lg"><Target className="h-5 w-5" /> Comprobar</button>
+              )}
+            </div>
           </div>
         </footer>
       </div>
