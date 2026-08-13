@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import { User, Settings, Image as ImageIcon } from 'lucide-react';
+import { User, Settings } from 'lucide-react';
 import { Dashboard } from './components/Dashboard';
 import { LessonPlayer } from './components/LessonPlayer';
-import { Assessment } from './components/Assessment';
 import { EntranceAssessment } from './components/EntranceAssessment';
 import { FloatingControls } from './components/FloatingControls';
 import { SpeakingPractice } from './components/SpeakingPractice';
-import { StoryForge } from './components/StoryForge';
+import { StoryDecoder } from './components/StoryDecoder';
 import { StructureMode } from './components/StructureMode';
 import { RoleSelection } from './components/RoleSelection';
 import { TeacherDashboard } from './components/TeacherDashboard';
@@ -15,6 +14,8 @@ import { GlobalAiAssistant } from './components/GlobalAiAssistant';
 import { BrandWordmark } from './components/BrandWordmark';
 import { VerbsGuide } from './components/VerbsGuide';
 import { VerbArenaGame } from './components/VerbArenaGame';
+import { CertificateView } from './components/CertificateView';
+import { OralQuestionBankView } from './components/OralQuestionBankView';
 import { dbAdmin } from './lib/db';
 import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from './lib/levelApproval';
 import { DbStudent, UserProgress } from './types';
@@ -38,7 +39,7 @@ export default function App() {
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], approvedLevelIds: [], currentLessonId: '', level: 'Nivel Inicial' });
   const [isLoaded, setIsLoaded] = useState(false);
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'assessment' | 'entrance_assessment' | 'speaking_practice' | 'story_forge' | 'structure_mode' | 'verbs_guide' | 'verb_arena'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -186,16 +187,12 @@ export default function App() {
     setCurrentView('dashboard');
   };
 
-  const handleOpenAssessment = () => {
-    setCurrentView('assessment');
-  };
-
   const handleOpenEntranceAssessment = () => {
     setCurrentView('entrance_assessment');
   };
 
-  const handleOpenStoryForge = () => {
-    setCurrentView('story_forge');
+  const handleOpenStoryDecoder = () => {
+    setCurrentView('story_decoder');
   };
 
   const handleOpenSpeakingPractice = () => {
@@ -256,11 +253,21 @@ export default function App() {
 
   const urlParams = new URLSearchParams(window.location.search);
   const evalLevelId = urlParams.get('evaluacion');
+  const certificateLevelId = urlParams.get('certificado');
+  const oralQuestionsLevelId = urlParams.get('preguntasOrales');
   
   const path = window.location.pathname;
   
   if (evalLevelId) {
     return <VirtualEvaluationView levelId={evalLevelId} />;
+  }
+
+  if (certificateLevelId !== null) {
+    return <CertificateView levelId={certificateLevelId} />;
+  }
+
+  if (oralQuestionsLevelId) {
+    return <OralQuestionBankView levelId={oralQuestionsLevelId} />;
   }
 
   if (path.startsWith('/evaluacion/')) {
@@ -277,6 +284,10 @@ export default function App() {
 
   if (path.startsWith('/verbs')) {
     return <VerbsGuide />;
+  }
+
+  if (path.startsWith('/story-decoder')) {
+    return <StoryDecoder onClose={() => { window.location.href = '/'; }} studentId={urlParams.get('studentId')} />;
   }
 
   if (!isLoaded) {
@@ -442,12 +453,10 @@ export default function App() {
           onComplete={handleCompleteLesson}
           onExit={handleExitLesson}
         />
-      ) : currentView === 'assessment' ? (
-        <Assessment progress={progress} onClose={handleCloseAssessment} />
       ) : currentView === 'entrance_assessment' ? (
         <EntranceAssessment progress={progress} onClose={handleCloseAssessment} />
-      ) : currentView === 'story_forge' ? (
-        <StoryForge onClose={() => setCurrentView('dashboard')} />
+      ) : currentView === 'story_decoder' ? (
+        <StoryDecoder onClose={() => setCurrentView('dashboard')} studentId={currentStudentId} />
       ) : currentView === 'speaking_practice' ? (
         <SpeakingPractice onClose={() => setCurrentView('dashboard')} />
       ) : currentView === 'structure_mode' ? (
@@ -473,10 +482,9 @@ export default function App() {
           onFinishClass={handleFinishClass}
           onApproveLevel={handleApproveLevel}
           onToggleClass={handleToggleClass}
-          onOpenAssessment={handleOpenAssessment}
           onOpenEntranceAssessment={handleOpenEntranceAssessment}
           onOpenSpeakingPractice={handleOpenSpeakingPractice}
-          onOpenStoryForge={handleOpenStoryForge}
+          onOpenStoryDecoder={handleOpenStoryDecoder}
           onOpenStructureMode={handleOpenStructureMode}
           onOpenVerbsGuide={handleOpenVerbsGuide}
         />

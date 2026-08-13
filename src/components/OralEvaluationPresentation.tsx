@@ -15,16 +15,21 @@ import {
   Sparkles,
   Trophy,
   Volume2,
-  X
+  X,
+  ExternalLink
 } from 'lucide-react';
-import { EvaluationRecord, OralQuestion } from '../types';
+import { EvaluationRecord, OralQuestion, VirtualQuestion } from '../types';
 import { dbAdmin } from '../lib/db';
 import { evaluationPassed, ORAL_PASS_PERCENT, evaluationPercentage } from '../lib/evaluationResults';
 import { Diploma } from './Diploma';
+import { VirtualEvaluationResult } from './VirtualEvaluationResult';
+import { playAudio, prepareAudio, stopAudio } from '../lib/audio';
 
-type CriterionId = 'communication' | 'grammar' | 'vocabulary' | 'pronunciation' | 'fluency';
+type CriterionId = 'listening' | 'communication' | 'grammar' | 'vocabulary' | 'pronunciation' | 'fluency';
 type RubricScores = Record<number, Partial<Record<CriterionId, number>>>;
 type Phase = 'intro' | 'questions' | 'result' | 'celebration' | 'certificate';
+
+const SCALE_LABELS = ['No demostrado', 'Inicial', 'En desarrollo', 'Logrado', 'Sólido'] as const;
 
 const CRITERIA: Array<{
   id: CriterionId;
@@ -35,24 +40,38 @@ const CRITERIA: Array<{
   descriptors: [string, string, string, string, string];
 }> = [
   {
+    id: 'listening',
+    label: 'Comprensión auditiva (Listening)',
+    shortLabel: 'Listening',
+    helper: '¿Comprendió la pregunta oral y las instrucciones sin depender de traducción?',
+    color: '#06b6d4',
+    descriptors: [
+      'No comprende la pregunta, incluso después de repetirla o reformularla.',
+      'Reconoce palabras aisladas, pero necesita traducción o mucha ayuda para responder.',
+      'Comprende la idea principal después de una repetición lenta o una reformulación.',
+      'Comprende la pregunta y sus detalles; solo necesita una repetición ocasional.',
+      'Comprende la pregunta y las preguntas de seguimiento a la primera, con autonomía.'
+    ]
+  },
+  {
     id: 'communication',
-    label: 'Cumplimiento de la tarea',
-    shortLabel: 'Tarea',
-    helper: 'Evalúa si realmente responde lo que se le pregunta.',
+    label: 'Respuesta oral (Speaking)',
+    shortLabel: 'Speaking',
+    helper: '¿Respondió oralmente todo lo solicitado con ideas pertinentes?',
     color: '#0ea5e9',
     descriptors: [
-      'No responde la pregunta o su respuesta no corresponde al tema.',
-      'Responde solo una parte y necesita ayuda para continuar.',
-      'Comunica la idea principal, pero faltan detalles.',
-      'Responde de forma completa y pertinente.',
-      'Responde completamente, añade detalles y desarrolla su idea.'
+      'No produce una respuesta oral relacionada con la pregunta.',
+      'Responde con palabras o fragmentos y cubre solo una parte de la tarea.',
+      'Comunica la idea principal, aunque omite algunos puntos solicitados.',
+      'Responde todos los puntos con frases completas y pertinentes.',
+      'Responde completamente, desarrolla sus ideas y maneja preguntas de seguimiento.'
     ]
   },
   {
     id: 'grammar',
     label: 'Control gramatical',
     shortLabel: 'Gramática',
-    helper: 'Observa las estructuras esperadas para este nivel.',
+    helper: '¿Usó correctamente las estructuras enseñadas en este nivel?',
     color: '#8b5cf6',
     descriptors: [
       'Los errores impiden comprender la idea.',
@@ -66,7 +85,7 @@ const CRITERIA: Array<{
     id: 'vocabulary',
     label: 'Vocabulario en contexto',
     shortLabel: 'Vocabulario',
-    helper: 'Valora palabras útiles y relacionadas con la pregunta.',
+    helper: '¿Usó palabras suficientes, precisas y relacionadas con el tema?',
     color: '#ec4899',
     descriptors: [
       'No encuentra las palabras necesarias para comunicar la idea.',
@@ -80,7 +99,7 @@ const CRITERIA: Array<{
     id: 'pronunciation',
     label: 'Claridad al hablar',
     shortLabel: 'Claridad',
-    helper: 'Evalúa si el mensaje se entiende, no si tiene acento latino.',
+    helper: '¿Se entendieron sus sonidos, palabras y entonación? No se penaliza el acento.',
     color: '#f59e0b',
     descriptors: [
       'El mensaje casi no se entiende.',
@@ -94,7 +113,7 @@ const CRITERIA: Array<{
     id: 'fluency',
     label: 'Fluidez y continuidad',
     shortLabel: 'Fluidez',
-    helper: 'Evalúa continuidad al responder, no velocidad al hablar.',
+    helper: '¿Mantuvo la respuesta con continuidad? Se evalúa el flujo, no la velocidad.',
     color: '#10b981',
     descriptors: [
       'No logra mantener la respuesta.',
@@ -116,11 +135,13 @@ interface OralEvaluationPresentationProps {
   brandName: string;
   logoUrl?: string;
   existingResult?: EvaluationRecord | null;
-  virtualPassed: boolean;
+  virtualResult?: EvaluationRecord | null;
+  virtualQuestions: VirtualQuestion[];
   levelApproved: boolean;
   onClose: () => void;
   onSaved: (evaluation: EvaluationRecord) => void;
   onApproveLevel: (levelId: string) => Promise<void>;
+  onRefreshResults: () => Promise<void>;
 }
 
 function resultDetails(result?: EvaluationRecord | null) {
@@ -139,11 +160,13 @@ export function OralEvaluationPresentation({
   brandName,
   logoUrl,
   existingResult,
-  virtualPassed,
+  virtualResult,
+  virtualQuestions,
   levelApproved,
   onClose,
   onSaved,
-  onApproveLevel
+  onApproveLevel,
+  onRefreshResults
 }: OralEvaluationPresentationProps) {
   const [phase, setPhase] = useState<Phase>(existingResult ? 'result' : 'intro');
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -151,14 +174,18 @@ export function OralEvaluationPresentation({
   const [result, setResult] = useState<EvaluationRecord | null>(existingResult || null);
   const [isSaving, setIsSaving] = useState(false);
   const [isApproving, setIsApproving] = useState(false);
+  const [isRefreshingVirtual, setIsRefreshingVirtual] = useState(false);
+  const [oralSyncError, setOralSyncError] = useState(false);
 
   const currentQuestion = questions[questionIndex];
   const currentScores = scores[questionIndex] || {};
   const currentComplete = CRITERIA.every((criterion) => (currentScores[criterion.id] || 0) > 0);
   const oralPassed = evaluationPassed(result, 'oral');
+  const virtualPassed = evaluationPassed(virtualResult || null, 'virtual');
   const percentage = evaluationPercentage(result);
   const criterionAverages = resultDetails(result);
   const virtualUrl = `${window.location.origin}/?evaluacion=${levelId}&student=${encodeURIComponent(studentName)}&type=${encodeURIComponent(studentType)}${studentId ? `&studentId=${encodeURIComponent(studentId)}` : ''}`;
+  const oralQuestionsUrl = `${window.location.origin}/?preguntasOrales=${encodeURIComponent(levelId)}&type=${encodeURIComponent(studentType)}`;
 
   const completedCriteria = useMemo(() => {
     return Object.values(scores).reduce((total, questionScores) =>
@@ -183,13 +210,18 @@ export function OralEvaluationPresentation({
     };
   }, [phase]);
 
+  useEffect(() => {
+    prepareAudio();
+    return stopAudio;
+  }, []);
+
+  useEffect(() => {
+    stopAudio();
+  }, [questionIndex, phase]);
+
   const speakQuestion = () => {
-    if (!currentQuestion || !('speechSynthesis' in window)) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(currentQuestion.question);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.88;
-    window.speechSynthesis.speak(utterance);
+    if (!currentQuestion) return;
+    playAudio(currentQuestion.question, 'en-US');
   };
 
   const setCriterionScore = (criterionId: CriterionId, value: number) => {
@@ -230,7 +262,8 @@ export function OralEvaluationPresentation({
       questionScores
     };
 
-    await dbAdmin.saveEvaluationScore(studentName, levelId, finalPercentage, 100, answers);
+    const savedRemotely = await dbAdmin.saveEvaluationScore(studentName, levelId, finalPercentage, 100, answers);
+    setOralSyncError(!savedRemotely);
     const savedResult: EvaluationRecord = {
       id: crypto.randomUUID(),
       student_name: studentName,
@@ -256,6 +289,26 @@ export function OralEvaluationPresentation({
   const shareVirtualExam = () => {
     const message = `Aquí está el enlace para realizar el examen virtual de ${levelTitle}:\n\n${virtualUrl}`;
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+  };
+
+  const refreshVirtualResult = async () => {
+    setIsRefreshingVirtual(true);
+    await onRefreshResults();
+    setIsRefreshingVirtual(false);
+  };
+
+  const retryOralSync = async () => {
+    if (!result?.answers) return;
+    setIsSaving(true);
+    const savedRemotely = await dbAdmin.saveEvaluationScore(
+      studentName,
+      levelId,
+      result.score,
+      result.total_questions,
+      result.answers,
+    );
+    setOralSyncError(!savedRemotely);
+    setIsSaving(false);
   };
 
   const approveLevel = async () => {
@@ -329,16 +382,26 @@ export function OralEvaluationPresentation({
                     Es hora de mostrar lo que puedes decir en inglés.
                   </h2>
                   <p className="mt-5 max-w-2xl text-lg font-semibold leading-relaxed text-blue-100 sm:text-xl">
-                    {studentName}, responde con naturalidad. El tutor escuchará y calificará cinco elementos en cada pregunta.
+                    {studentName}, responde con naturalidad. El tutor calificará {CRITERIA.length} habilidades claramente definidas en cada pregunta.
                   </p>
-                  <button
-                    type="button"
-                    onClick={() => setPhase('questions')}
-                    className="mt-9 inline-flex min-h-16 w-full items-center justify-center gap-3 rounded-2xl bg-white px-7 text-xl font-black text-indigo-800 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl sm:w-auto"
-                  >
-                    <Play className="h-6 w-6 fill-current" />
-                    Iniciar examen
-                  </button>
+                  <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+                    <button
+                      type="button"
+                      onClick={() => setPhase('questions')}
+                      className="inline-flex min-h-16 w-full items-center justify-center gap-3 rounded-2xl bg-white px-7 text-xl font-black text-indigo-800 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl sm:w-auto"
+                    >
+                      <Play className="h-6 w-6 fill-current" />
+                      Iniciar examen
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(oralQuestionsUrl, '_blank', 'noopener,noreferrer')}
+                      className="inline-flex min-h-16 w-full items-center justify-center gap-3 rounded-2xl bg-white/10 px-6 text-lg font-black text-white ring-1 ring-white/25 transition hover:bg-white/20 sm:w-auto"
+                    >
+                      <ExternalLink className="h-5 w-5" />
+                      Ver preguntas sugeridas
+                    </button>
+                  </div>
                 </section>
 
                 <aside className="rounded-[2rem] border border-white/15 bg-white/[0.08] p-6 backdrop-blur-xl sm:p-8">
@@ -421,9 +484,21 @@ export function OralEvaluationPresentation({
                   <div className="mb-5 flex items-center justify-between gap-4">
                     <div>
                       <p className="text-xs font-black uppercase tracking-[0.22em] text-violet-600">Panel del tutor</p>
-                      <h3 className="mt-1 text-2xl font-black sm:text-3xl">Califica lo que escuchas</h3>
+                      <h3 className="mt-1 text-2xl font-black sm:text-3xl">Califica {CRITERIA.length} habilidades</h3>
                     </div>
                     <Headphones className="h-9 w-9 text-violet-300" />
+                  </div>
+
+                  <div className="mb-4 rounded-2xl border border-violet-200 bg-violet-50 p-4">
+                    <p className="font-black text-violet-950">Escala común para todos los criterios</p>
+                    <div className="mt-3 grid grid-cols-5 gap-1.5">
+                      {SCALE_LABELS.map((label, index) => (
+                        <div key={label} className="rounded-xl bg-white px-1 py-2 text-center ring-1 ring-violet-100">
+                          <p className="text-lg font-black text-violet-700">{index + 1}</p>
+                          <p className="text-[9px] font-black leading-tight text-slate-600 sm:text-[10px]">{label}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
                   <div className="space-y-3">
@@ -434,6 +509,7 @@ export function OralEvaluationPresentation({
                           <div className="mb-2 flex items-center justify-between gap-3">
                             <div>
                               <p className="font-black text-slate-900">{criterion.label}</p>
+                              <p className="mt-1 text-sm font-semibold leading-snug text-slate-600">{criterion.helper}</p>
                             </div>
                             <span
                               className="min-w-[64px] rounded-full px-3 py-1 text-center text-xs font-black text-white"
@@ -442,25 +518,32 @@ export function OralEvaluationPresentation({
                               {value ? `${value}/5` : '— /5'}
                             </span>
                           </div>
-                          <p className={`mb-2 min-h-8 text-sm font-bold leading-snug ${value ? 'text-slate-700' : 'text-slate-400'}`}>
-                            {value
-                              ? criterion.descriptors[value - 1]
-                              : 'Escucha la respuesta y mueve la barra para describir lo observado.'}
-                          </p>
-                          <input
-                            aria-label={`Calificación de ${criterion.label}`}
-                            type="range"
-                            min="1"
-                            max="5"
-                            step="1"
-                            value={value || 1}
-                            onChange={(event) => setCriterionScore(criterion.id, Number(event.target.value))}
-                            className="h-3 w-full cursor-pointer accent-violet-600"
-                            style={{ accentColor: criterion.color }}
-                          />
-                          <div className="mt-1 flex justify-between px-1 text-[10px] font-black text-slate-400">
-                            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                          <div className="mt-3 grid grid-cols-5 gap-1.5">
+                            {SCALE_LABELS.map((label, index) => {
+                              const score = index + 1;
+                              const selected = value === score;
+                              return (
+                                <button
+                                  key={label}
+                                  type="button"
+                                  aria-label={`${criterion.label}: ${score}, ${label}. ${criterion.descriptors[index]}`}
+                                  aria-pressed={selected}
+                                  title={criterion.descriptors[index]}
+                                  onClick={() => setCriterionScore(criterion.id, score)}
+                                  className={`min-h-14 rounded-xl border-2 px-1 py-2 text-center transition ${selected ? 'scale-[1.03] text-white shadow-md' : 'border-slate-200 bg-white text-slate-600 hover:border-slate-400 hover:bg-slate-100'}`}
+                                  style={selected ? { backgroundColor: criterion.color, borderColor: criterion.color } : undefined}
+                                >
+                                  <span className="block text-lg font-black leading-none">{score}</span>
+                                  <span className="mt-1 block text-[9px] font-black leading-tight sm:text-[10px]">{label}</span>
+                                </button>
+                              );
+                            })}
                           </div>
+                          <p className={`mt-3 min-h-12 rounded-xl px-3 py-2 text-sm font-bold leading-snug ${value ? 'bg-white text-slate-800 ring-1 ring-slate-200' : 'bg-slate-100 text-slate-400'}`}>
+                            {value
+                              ? `Nivel ${value} — ${SCALE_LABELS[value - 1]}: ${criterion.descriptors[value - 1]}`
+                              : 'Sin calificar. Selecciona el nivel que mejor describa lo observado.'}
+                          </p>
                         </div>
                       );
                     })}
@@ -478,7 +561,7 @@ export function OralEvaluationPresentation({
                   <ArrowLeft className="h-5 w-5" /> Anterior
                 </button>
                 <div className="text-center text-sm font-bold text-slate-300">
-                  {currentComplete ? 'Pregunta calificada. Puedes continuar.' : 'Mueve las cinco barras para continuar.'}
+                  {currentComplete ? 'Pregunta calificada. Puedes continuar.' : `Selecciona un nivel para las ${CRITERIA.length} habilidades.`}
                 </div>
                 <button
                   type="button"
@@ -533,18 +616,44 @@ export function OralEvaluationPresentation({
                 </section>
 
                 <section className="rounded-[2rem] bg-white p-6 text-slate-900 shadow-2xl sm:p-8">
+                  {oralSyncError && (
+                    <div className="mb-5 rounded-2xl border border-rose-200 bg-rose-50 p-4 text-rose-900">
+                      <p className="font-black">El resultado oral todavía no se sincronizó con Supabase.</p>
+                      <button
+                        type="button"
+                        disabled={isSaving}
+                        onClick={retryOralSync}
+                        className="mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-rose-600 px-4 font-black text-white disabled:opacity-60"
+                      >
+                        <RefreshCw className={`h-4 w-4 ${isSaving ? 'animate-spin' : ''}`} />
+                        {isSaving ? 'Sincronizando...' : 'Reintentar sincronización oral'}
+                      </button>
+                    </div>
+                  )}
                   <p className="text-xs font-black uppercase tracking-[0.22em] text-violet-600">Resultado por criterio</p>
+                  {typeof criterionAverages.listening !== 'number' && (
+                    <p className="mt-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold leading-relaxed text-amber-900">
+                      Este resultado fue registrado con la rúbrica anterior. La comprensión auditiva no se calificó por separado y por eso aparece como “No evaluado”.
+                    </p>
+                  )}
                   <div className="mt-4 grid gap-3 sm:grid-cols-2">
                     {CRITERIA.map((criterion) => {
-                      const average = criterionAverages[criterion.id] || 0;
+                      const rawAverage = criterionAverages[criterion.id];
+                      const wasEvaluated = typeof rawAverage === 'number';
+                      const average = wasEvaluated ? rawAverage : 0;
                       return (
                         <div key={criterion.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
                           <div className="flex items-center justify-between gap-3">
                             <span className="font-black">{criterion.shortLabel}</span>
-                            <span className="text-xl font-black" style={{ color: criterion.color }}>{average}/5</span>
+                            <span className={`${wasEvaluated ? 'text-xl' : 'text-sm'} font-black`} style={{ color: criterion.color }}>
+                              {wasEvaluated ? `${average}/5` : 'No evaluado'}
+                            </span>
                           </div>
                           <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-200">
-                            <div className="h-full rounded-full" style={{ width: `${(average / 5) * 100}%`, backgroundColor: criterion.color }} />
+                            <div
+                              className="h-full rounded-full"
+                              style={{ width: wasEvaluated ? `${(average / 5) * 100}%` : '0%', backgroundColor: criterion.color }}
+                            />
                           </div>
                         </div>
                       );
@@ -569,6 +678,22 @@ export function OralEvaluationPresentation({
                           <p className={`mt-2 text-xs font-black uppercase tracking-widest ${levelApproved ? 'text-emerald-300' : 'text-violet-300'}`}>Paso 3</p>
                           <p className="font-black">Completar nivel</p>
                         </div>
+                      </div>
+
+                      <div className="mt-5 rounded-2xl bg-white p-3 text-slate-900">
+                        <VirtualEvaluationResult
+                          evaluation={virtualResult}
+                          questions={virtualQuestions}
+                        />
+                        <button
+                          type="button"
+                          disabled={isRefreshingVirtual}
+                          onClick={refreshVirtualResult}
+                          className="mt-3 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-4 font-black text-slate-800 transition hover:bg-slate-100 disabled:opacity-60"
+                        >
+                          <RefreshCw className={`h-4 w-4 ${isRefreshingVirtual ? 'animate-spin' : ''}`} />
+                          {isRefreshingVirtual ? 'Consultando...' : 'Actualizar resultado virtual'}
+                        </button>
                       </div>
 
                       {!virtualPassed ? (
@@ -658,6 +783,8 @@ export function OralEvaluationPresentation({
                   brandName={brandName}
                   logoUrl={logoUrl}
                   certificateKind="level"
+                  levelId={levelId}
+                  studentType={studentType}
                 />
               </div>
             </motion.main>

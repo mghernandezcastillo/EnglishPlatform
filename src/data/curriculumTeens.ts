@@ -7,6 +7,7 @@ import imgTeenBirthday from '../assets/images/teens_birthday_party_1782771276209
 import imgTeenQuiz from '../assets/images/teens_c5_quiz1_1783004350357.jpg';
 import { organizeTeenBasicOneLevel } from './teenBasicOneOrganizer';
 import { applyTeenEvaluationOverrides } from './teenEvaluationOverrides';
+import { enhanceOralEvaluations, removeDecorativeEvaluationImages } from './oralEvaluationEnhancements';
 
 const images = [
   "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800",
@@ -3077,27 +3078,27 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
     oralEvaluation: [
       {
         topic: "FAMILY & FEELINGS",
-        question: "Describe a family photo: introduce two people, say how they feel, and use this/these and have/has."
+        question: "Imagine a family photo. Introduce two people, explain their relationship to you, and say how each person feels today."
       },
       {
         topic: "FOOD & HEALTHY CHOICES",
-        question: "Order a meal and a drink politely, state a preference, and explain one healthy choice with because."
+        question: "Role-play ordering a meal and a drink at a café. State your preference politely and explain one healthy choice using because."
       },
       {
         topic: "CLOTHES, WEATHER & SHOPPING",
-        question: "Describe what someone is wearing for today's weather, then ask the price, color and size of one item."
+        question: "Describe suitable clothes for today's weather. Then role-play asking a shop assistant about the price, color, and size of one item."
       },
       {
         topic: "NATURE & PARKS",
-        question: "Describe a park with there is/are, name two outdoor activities, and give one responsible suggestion with should."
+        question: "Describe a park using there is and there are. Name two activities people can do there and give one rule for taking care of the park."
       },
       {
         topic: "FUTURE PLANS & INVITATIONS",
-        question: "Invite the tutor to a weekend activity, respond to a change of plan, and use going to for a plan and will for a quick decision or prediction."
+        question: "Invite the tutor to a weekend activity. Explain your plan with going to, then respond naturally when one detail of the plan changes."
       },
       {
         topic: "TECHNOLOGY & TRIP PLANNING",
-        question: "Explain what you use an app for and one online safety rule, then ask for help and confirm a trip's date, time, place and one task."
+        question: "Explain what you use a favorite app or device for, give one online safety rule, and ask for clarification if you do not understand a detail."
       }
     ],
     virtualEvaluation: [
@@ -12827,3 +12828,5 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
 
 organizeTeenBasicOneLevel(curriculumTeensLevels);
 applyTeenEvaluationOverrides(curriculumTeensLevels);
+enhanceOralEvaluations(curriculumTeensLevels, 'adolescente');
+removeDecorativeEvaluationImages(curriculumTeensLevels);

@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import { CurriculumClass, CurriculumLevel, EvaluationRecord } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces, Search, Mic2 } from 'lucide-react';
+import { BookOpen, CheckCircle, Play, Sparkles, Layers, ArrowLeft, GraduationCap, Clock, ChevronDown, Users, Share, Trophy, ClipboardCheck, Braces, Search, Mic2, RefreshCw, ExternalLink } from 'lucide-react';
 import { studentConfig, avatars } from '../config';
 import { LibraryCategories } from './LibraryCategories';
 import { libraryLessons } from '../data/libraryLessons';
@@ -15,6 +15,7 @@ import { Diploma } from './Diploma';
 import { OralEvaluationPresentation } from './OralEvaluationPresentation';
 import { dbAdmin } from '../lib/db';
 import { evaluationPassed, latestEvaluation } from '../lib/evaluationResults';
+import { VirtualEvaluationResult } from './VirtualEvaluationResult';
 
 interface DashboardProps {
   completedLessonIds: string[];
@@ -28,15 +29,14 @@ interface DashboardProps {
   onFinishClass: (classId: string) => void;
   onApproveLevel: (levelId: string) => Promise<void>;
   onToggleClass?: (classId: string) => void;
-  onOpenAssessment: () => void;
   onOpenEntranceAssessment: () => void;
   onOpenSpeakingPractice: () => void;
-  onOpenStoryForge: () => void;
+  onOpenStoryDecoder: () => void;
   onOpenStructureMode: () => void;
   onOpenVerbsGuide: () => void;
 }
 
-export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenAssessment, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryForge, onOpenStructureMode, onOpenVerbsGuide }: DashboardProps) {
+export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide }: DashboardProps) {
   const { curriculumLevels, loading } = useCurriculum(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
@@ -47,21 +47,34 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
   const [evaluatingClass, setEvaluatingClass] = useState<{ id: string, title: string } | null>(null);
   const [oralExamLevel, setOralExamLevel] = useState<CurriculumLevel | null>(null);
   const [evaluationRecords, setEvaluationRecords] = useState<EvaluationRecord[]>([]);
+  const [isRefreshingEvaluations, setIsRefreshingEvaluations] = useState(false);
   const { brand } = useBrand();
 
-  useEffect(() => {
-    let active = true;
+  const refreshEvaluations = useCallback(async () => {
     if (!studentName?.trim()) {
       setEvaluationRecords([]);
-      return () => { active = false; };
+      return;
     }
-
-    dbAdmin.getEvaluationsForStudent(studentName).then((records) => {
-      if (active) setEvaluationRecords(records);
-    });
-
-    return () => { active = false; };
+    setIsRefreshingEvaluations(true);
+    const records = await dbAdmin.getEvaluationsForStudent(studentName);
+    setEvaluationRecords(records);
+    setIsRefreshingEvaluations(false);
   }, [studentName]);
+
+  useEffect(() => {
+    refreshEvaluations();
+    const refreshWhenVisible = () => {
+      if (document.visibilityState === 'visible') refreshEvaluations();
+    };
+    const timer = window.setInterval(refreshWhenVisible, 15000);
+    window.addEventListener('focus', refreshWhenVisible);
+    document.addEventListener('visibilitychange', refreshWhenVisible);
+    return () => {
+      window.clearInterval(timer);
+      window.removeEventListener('focus', refreshWhenVisible);
+      document.removeEventListener('visibilitychange', refreshWhenVisible);
+    };
+  }, [refreshEvaluations]);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -123,7 +136,6 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
   const displayBrandName = isKid ? 'Maven English for kids' : isTeen ? 'Maven English for teens' : brand.name;
   const activeOralResult = oralExamLevel ? latestEvaluation(evaluationRecords, oralExamLevel.id, 'oral') : null;
   const activeVirtualResult = oralExamLevel ? latestEvaluation(evaluationRecords, oralExamLevel.id, 'virtual') : null;
-  const activeVirtualPassed = evaluationPassed(activeVirtualResult, 'virtual');
 
   const handleSelectCategory = (categoryId: string, title: string) => {
     setActiveLibraryCategoryId(categoryId);
@@ -173,7 +185,7 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
             <p className={`font-medium mt-2 ${isKid ? 'text-pink-600 text-lg' : 'text-gray-500'}`}>{studentConfig.motivation}</p>
           </div>
 
-        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-6">
+        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-5">
           <button
              onClick={onOpenVerbsGuide}
              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-cyan-500 via-blue-600 to-slate-950"
@@ -214,22 +226,13 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
              </div>
           </button>
           <button 
-             onClick={onOpenStoryForge}
-             className={`relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-fuchsia-400 to-pink-500 hover:shadow-fuchsia-300/50' : 'bg-gradient-to-br from-fuchsia-500 to-purple-600'}`}
-          >
-             <div className="absolute inset-0 bg-white/20 hover:bg-transparent transition-colors"></div>
-             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
-               <span className="font-bold text-white tracking-wide">{isKid ? '✨ ¡Crea un Cuento!' : '✨ StoryForge'}</span>
-             </div>
-          </button>
-          <button 
-             onClick={onOpenAssessment}
-             className={`group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 ${isKid ? 'bg-gradient-to-br from-yellow-400 to-orange-500 hover:shadow-orange-300/50' : 'bg-gradient-to-br from-amber-400 to-orange-500'}`}
+             onClick={onOpenStoryDecoder}
+             className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 via-indigo-700 to-cyan-600 p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95"
           >
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
              <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
-               <Sparkles className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">{isKid ? '✨ ¡Súper Juego!' : 'Evaluación Inicial'}</span>
+               <BookOpen className="w-5 h-5 text-white" />
+               <span className="font-bold text-white tracking-wide">Story Decoder</span>
              </div>
           </button>
         </div>
@@ -588,20 +591,20 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                                               {oralPassed ? <CheckCircle className="h-4 w-4" /> : <Mic2 className="h-4 w-4" />}
                                               {oralPassed ? 'Oral aprobado' : areClassesCompleted ? 'Listo para presentar' : 'Disponible al terminar las clases'}
                                           </div>
-                                          <p className="text-sm text-amber-800 mb-4 font-medium">Preguntas para practicar con tu tutor al final del nivel:</p>
-                                          <div className="divide-y-2 divide-amber-200/50 divide-dashed border-2 border-amber-200/50 rounded-2xl bg-white/50 overflow-hidden mb-4">
-                                              {level.oralEvaluation.map((q, idx) => (
-                                                  <div key={idx} className="p-4 flex gap-4 focus-within:bg-amber-50 hover:bg-white transition-colors">
-                                                      <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-amber-500 text-white font-black text-sm shadow-sm pt-0.5">
-                                                          {idx + 1}
-                                                      </div>
-                                                      <div>
-                                                          <div className="text-xs font-extrabold text-amber-500 uppercase tracking-widest mb-1">{q.topic}</div>
-                                                          <div className="text-sm text-gray-900 font-bold">{q.question}</div>
-                                                      </div>
-                                                  </div>
-                                              ))}
-                                          </div>
+                                          <p className="mb-4 text-sm font-medium text-amber-800">
+                                            Abre en una pantalla independiente el banco de preguntas sugeridas para este nivel. Puedes usar las que mejor se adapten al estudiante.
+                                          </p>
+                                          <button
+                                            type="button"
+                                            onClick={() => {
+                                              const url = `${window.location.origin}/?preguntasOrales=${encodeURIComponent(level.id)}&type=${encodeURIComponent(studentType || 'adulto')}`;
+                                              window.open(url, '_blank', 'noopener,noreferrer');
+                                            }}
+                                            className="mb-4 flex min-h-14 w-full items-center justify-center gap-2 rounded-xl border-2 border-amber-300 bg-white px-4 py-3 font-black text-amber-900 transition hover:bg-amber-100"
+                                          >
+                                            <ExternalLink className="h-5 w-5" />
+                                            Abrir banco de preguntas
+                                          </button>
                                       </div>
                                       <div className="mt-auto grid gap-2">
                                           <button
@@ -642,6 +645,21 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                                               {virtualPassed ? 'Virtual aprobado' : oralPassed ? 'Siguiente paso' : 'Después del examen oral'}
                                           </div>
                                           <p className="text-sm text-emerald-800 mb-4 font-medium">Evalúa lo que aprendiste en este nivel respondiendo este cuestionario interactivo.</p>
+                                          <div className="mb-4 max-h-96 overflow-y-auto">
+                                            <VirtualEvaluationResult
+                                              evaluation={virtualResult}
+                                              questions={level.virtualEvaluation || []}
+                                            />
+                                          </div>
+                                          <button
+                                            type="button"
+                                            disabled={isRefreshingEvaluations}
+                                            onClick={refreshEvaluations}
+                                            className="mb-2 flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-emerald-300 bg-white px-4 font-black text-emerald-800 transition hover:bg-emerald-100 disabled:opacity-60"
+                                          >
+                                            <RefreshCw className={`h-4 w-4 ${isRefreshingEvaluations ? 'animate-spin' : ''}`} />
+                                            {isRefreshingEvaluations ? 'Consultando resultado...' : 'Actualizar resultado del estudiante'}
+                                          </button>
                                       </div>
                                       <div className="w-full flex gap-2 mt-4">
                                           <button 
@@ -681,7 +699,7 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                               <h3 className="text-2xl font-black text-slate-950">Certificado de finalización</h3>
                               <p className="text-sm font-semibold text-slate-600">
                                 {isFullyCompleted
-                                  ? `Tu certificado de ${level.title} está listo para descargar o compartir.`
+                                  ? `Tu certificado de ${level.title} está listo para descargar o compartir mediante un enlace.`
                                   : !areClassesCompleted
                                     ? `Completa todas las clases de ${level.title} para iniciar las evaluaciones finales.`
                                     : !oralPassed
@@ -706,6 +724,8 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                               brandName={displayBrandName}
                               logoUrl={brand.logoUrl}
                               certificateKind="level"
+                              levelId={level.id}
+                              studentType={studentType || 'adulto'}
                             />
                           ) : (
                             <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center">
@@ -721,8 +741,18 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
                               <p className="mt-2 text-sm font-semibold text-slate-500">
                                 {areClassesCompleted && oralPassed && virtualPassed
                                   ? 'El tutor puede marcar el nivel como completado desde el resultado del examen oral.'
-                                  : 'Cuando esté disponible tendrá botones para descargar, compartir por WhatsApp y enviar por correo.'}
+                                  : 'Cuando esté disponible podrás descargarlo o copiar un mensaje con su enlace para WhatsApp.'}
                               </p>
+                              {areClassesCompleted && oralPassed && virtualPassed && !isTutorApproved && (
+                                <button
+                                  type="button"
+                                  onClick={() => setOralExamLevel(level)}
+                                  className="mt-5 inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 px-5 text-lg font-black text-white shadow-lg transition hover:-translate-y-0.5"
+                                >
+                                  <ClipboardCheck className="h-5 w-5" />
+                                  Revisar resultados y completar nivel
+                                </button>
+                              )}
                             </div>
                           )}
                         </div>
@@ -774,13 +804,15 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
             brandName={displayBrandName}
             logoUrl={brand.logoUrl}
             existingResult={activeOralResult}
-            virtualPassed={activeVirtualPassed}
+            virtualResult={activeVirtualResult}
+            virtualQuestions={oralExamLevel.virtualEvaluation || []}
             levelApproved={approvedLevelIds.includes(oralExamLevel.id)}
             onClose={() => setOralExamLevel(null)}
             onSaved={(evaluation) => {
               setEvaluationRecords((current) => [evaluation, ...current.filter((item) => item.id !== evaluation.id)]);
             }}
             onApproveLevel={onApproveLevel}
+            onRefreshResults={refreshEvaluations}
           />
         )}
       </AnimatePresence>

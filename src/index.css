@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap');
 @import "tailwindcss";
+@source not "../public/data/story-decoder-curriculum.json";
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -318,5 +319,104 @@ body {
     padding: 0.5rem 0.65rem;
     border-radius: 0.85rem;
     font-size: clamp(0.85rem, 2vw, 1.25rem);
+  }
+}
+
+.story-decoder-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: radial-gradient(circle at center, black, transparent 78%);
+}
+
+.story-decoder-scene {
+  perspective: 1200px;
+  perspective-origin: 50% 42%;
+}
+
+.story-decoder-book,
+.story-decoder-cube {
+  transform-style: preserve-3d;
+}
+
+.story-decoder-book-shadow {
+  position: absolute;
+  inset: auto 8% -13% 8%;
+  height: 22%;
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.3);
+  filter: blur(24px);
+  transform: rotateX(76deg) translateZ(-80px);
+}
+
+.story-decoder-pages {
+  position: absolute;
+  top: 8%;
+  bottom: 8%;
+  width: 49.5%;
+  overflow: hidden;
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  background: linear-gradient(145deg, #ffffff 0%, #eefaff 70%, #dbeafe 100%);
+  box-shadow:
+    0 28px 55px rgba(2, 6, 23, 0.42),
+    inset 0 -12px 20px rgba(99, 102, 241, 0.08);
+  backface-visibility: hidden;
+}
+
+.story-decoder-pages-left {
+  left: 1%;
+  border-radius: 22px 7px 12px 28px;
+  transform: rotateY(12deg) rotateZ(-2deg);
+  transform-origin: right center;
+}
+
+.story-decoder-pages-right {
+  right: 1%;
+  border-radius: 7px 22px 28px 12px;
+  transform: rotateY(-12deg) rotateZ(2deg);
+  transform-origin: left center;
+}
+
+.story-decoder-page-lines {
+  position: absolute;
+  inset: 28% 12% 13%;
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(79, 70, 229, 0.28) 0,
+    rgba(79, 70, 229, 0.28) 4px,
+    transparent 4px,
+    transparent 24px
+  );
+}
+
+.story-decoder-cube::before,
+.story-decoder-cube::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.story-decoder-cube::before {
+  inset: 5px -10px -10px 9px;
+  z-index: -1;
+  border-radius: inherit;
+  background: rgba(15, 23, 42, 0.35);
+  transform: translateZ(-18px);
+  filter: blur(2px);
+}
+
+.story-decoder-cube::after {
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-decoder-book,
+  .story-decoder-cube {
+    transform: none !important;
   }
 }

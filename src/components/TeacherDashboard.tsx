@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import { dbAdmin } from '../lib/db';
 import { DbStudent, DbGroup, EvaluationRecord } from '../types';
-import { Users, UserPlus, BookOpen, ChevronLeft, Save, Target } from 'lucide-react';
+import { Users, UserPlus, BookOpen, ChevronLeft, Save, Target, ExternalLink, RefreshCw } from 'lucide-react';
 import { avatars } from '../config';
 import { CurriculumView } from './CurriculumView';
 import { getCurriculumForType } from '../data/curriculumSelector';
 import { useBrand } from '../hooks/useBrand';
 import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from '../lib/levelApproval';
 import { evaluationExamType, evaluationPassed, evaluationPercentage, latestEvaluation, ORAL_PASS_PERCENT, VIRTUAL_PASS_PERCENT } from '../lib/evaluationResults';
+import { VirtualEvaluationResult } from './VirtualEvaluationResult';
 
 interface TeacherDashboardProps {
   onBack: () => void;
@@ -126,11 +127,13 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     const studentEvaluations = evaluations.filter((evaluation) =>
       evaluation.student_name.trim().toLowerCase() === normalizedStudentName
     );
+    const oralResult = currentLevelObj ? latestEvaluation(studentEvaluations, currentLevelObj.id, 'oral') : null;
+    const virtualResult = currentLevelObj ? latestEvaluation(studentEvaluations, currentLevelObj.id, 'virtual') : null;
     const oralPassed = currentLevelObj
-      ? (!hasOralEvaluation || evaluationPassed(latestEvaluation(studentEvaluations, currentLevelObj.id, 'oral'), 'oral'))
+      ? (!hasOralEvaluation || evaluationPassed(oralResult, 'oral'))
       : false;
     const virtualPassed = currentLevelObj
-      ? (!hasVirtualEvaluation || evaluationPassed(latestEvaluation(studentEvaluations, currentLevelObj.id, 'virtual'), 'virtual'))
+      ? (!hasVirtualEvaluation || evaluationPassed(virtualResult, 'virtual'))
       : false;
     const examRequirementsMet = classesCompleted && oralPassed && virtualPassed;
 
@@ -296,13 +299,12 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                 </button>
                                 <button
                                     onClick={() => {
-                                        const qText = currentLevelObj?.oralEvaluation?.map(q => `*${q.topic}*: ${q.question}`).join('\n\n');
-                                        const msg = `Hola ${selectedStudent.name}, aquí están las preguntas para que prepares tu examen oral del nivel ${currentLevelObj?.title}:\n\n${qText}`;
-                                        window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+                                        const url = `${window.location.origin}/?preguntasOrales=${encodeURIComponent(currentLevelObj.id)}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}`;
+                                        window.open(url, '_blank', 'noopener,noreferrer');
                                     }}
-                                    className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-4 rounded-xl w-full text-center transition-all bg-amber-600"
+                                    className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-amber-300 bg-white px-4 py-3 font-black text-amber-900 transition hover:bg-amber-100"
                                 >
-                                    Compartir Preguntas a WhatsApp
+                                    <ExternalLink className="h-5 w-5" /> Abrir banco de preguntas
                                 </button>
                             </div>
                         )}
@@ -312,6 +314,19 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                 <p className="text-emerald-800 mb-6 flex-1">
                                     Examen de opciones múltiples, gramática y dictado en plataforma. La calificación se guardará automáticamente en el panel.
                                 </p>
+                                <div className="mb-4 max-h-96 overflow-y-auto">
+                                  <VirtualEvaluationResult
+                                    evaluation={virtualResult}
+                                    questions={currentLevelObj.virtualEvaluation || []}
+                                  />
+                                </div>
+                                <button
+                                  type="button"
+                                  onClick={loadData}
+                                  className="mb-3 flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-emerald-300 bg-white px-4 font-black text-emerald-800 transition hover:bg-emerald-100"
+                                >
+                                  <RefreshCw className="h-4 w-4" /> Actualizar resultado
+                                </button>
                                 <button
                                     onClick={() => {
                                         const url = `${window.location.origin}/?evaluacion=${currentLevelObj?.id}&student=${encodeURIComponent(selectedStudent.name)}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}&studentId=${encodeURIComponent(selectedStudent.id)}`;

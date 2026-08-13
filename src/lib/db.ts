@@ -272,7 +272,7 @@ export const dbAdmin = {
     localStorage.removeItem(`virtual_exam_progress_${levelId}_${studentSafe}`);
   },
 
-  saveEvaluationScore: async (studentName: string, levelId: string, score: number, total: number, answers: any) => {
+  saveEvaluationScore: async (studentName: string, levelId: string, score: number, total: number, answers: any): Promise<boolean> => {
     const { error } = await supabase.from('evaluations').insert([{ 
         student_name: studentName, 
         level_id: levelId, 
@@ -286,6 +286,8 @@ export const dbAdmin = {
        const mock = JSON.parse(localStorage.getItem('mock_evaluations') || '[]');
        mock.push({ id: crypto.randomUUID(), student_name: studentName, level_id: levelId, score, total_questions: total, answers, created_at: new Date().toISOString() });
        localStorage.setItem('mock_evaluations', JSON.stringify(mock));
+       return false;
     }
+    return true;
   }
 };

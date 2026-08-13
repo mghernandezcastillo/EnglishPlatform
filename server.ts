@@ -173,7 +173,10 @@ async function startServer() {
       const isKid = req.query.type === 'niño' || url.includes('type=ni%C3%B1o') || url.includes('type=niño');
       const brandName = isKid ? "Maven English for kids" : "Maven English";
 
-      if (url.startsWith('/verbs/arena')) {
+      if (url.startsWith('/story-decoder')) {
+        title = `Story Decoder - ${brandName}`;
+        description = "Historias interactivas para construir frases y reconocer estructuras del inglés.";
+      } else if (url.startsWith('/verbs/arena')) {
         title = `AI Verb Arena - ${brandName}`;
         description = "Juego de trivia infinita para practicar verbos, phrasal verbs e idioms.";
       } else if (url.startsWith('/verbs')) {

@@ -5,6 +5,7 @@ import { dbAdmin } from '../lib/db';
 import { VirtualQuestion } from '../types';
 import { useBrand } from '../hooks/useBrand';
 import { BrandWordmark } from './BrandWordmark';
+import { playAudio, prepareAudio, stopAudio } from '../lib/audio';
 
 interface Props {
   levelId: string;
@@ -38,10 +39,12 @@ export function VirtualEvaluationView({ levelId }: Props) {
   const [isFinished, setIsFinished] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [finalScore, setFinalScore] = useState<{ score: number; total: number } | null>(null);
+  const [isResultSynced, setIsResultSynced] = useState<boolean | null>(null);
 
   const [inputValue, setInputValue] = useState('');
   const [isChecked, setIsChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [audioStatus, setAudioStatus] = useState<'idle' | 'playing' | 'error'>('idle');
   
   const { brand } = useBrand();
   const displayBrandName = studentType === 'niño' ? 'Maven English for kids' : studentType === 'adolescente' ? 'Maven English for teens' : brand.name;
@@ -59,6 +62,16 @@ export function VirtualEvaluationView({ levelId }: Props) {
       document.title = `Evaluación: ${level.title} ${studentName ? `- ${studentName}` : ''}`;
     }
   }, [level, studentName]);
+
+  useEffect(() => {
+    setAudioStatus('idle');
+    stopAudio();
+  }, [currentQuestionIdx]);
+
+  useEffect(() => {
+    prepareAudio();
+    return stopAudio;
+  }, []);
   
   const [hasProgress, setHasProgress] = useState(false);
 
@@ -197,12 +210,14 @@ export function VirtualEvaluationView({ levelId }: Props) {
 
     try {
         const percentage = Math.round((correctCount / questions.length) * 100);
-        await dbAdmin.saveEvaluationScore(studentName, levelId, correctCount, questions.length, {
+        const savedRemotely = await dbAdmin.saveEvaluationScore(studentName, levelId, correctCount, questions.length, {
             ...finalAnswers,
             __examType: 'virtual',
             __passed: percentage >= 80,
-            __percentage: percentage
+            __percentage: percentage,
+            __studentId: dashboardStudentId || undefined,
         });
+        setIsResultSynced(savedRemotely);
         setAnswers(finalAnswers);
         setFinalScore({ score: correctCount, total: questions.length });
         
@@ -218,16 +233,41 @@ export function VirtualEvaluationView({ levelId }: Props) {
         });
     } catch(e) {
         console.error(e);
+        setIsResultSynced(false);
     }
 
     setIsSubmitting(false);
     setIsFinished(true);
   };
 
-  const playAudio = (text: string) => {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    window.speechSynthesis.speak(utterance);
+  const retryResultSync = async () => {
+    if (!finalScore) return;
+    setIsSubmitting(true);
+    const percentage = Math.round((finalScore.score / finalScore.total) * 100);
+    const savedRemotely = await dbAdmin.saveEvaluationScore(
+      studentName,
+      levelId,
+      finalScore.score,
+      finalScore.total,
+      {
+        ...answers,
+        __examType: 'virtual',
+        __passed: percentage >= 80,
+        __percentage: percentage,
+        __studentId: dashboardStudentId || undefined,
+      },
+    );
+    setIsResultSynced(savedRemotely);
+    setIsSubmitting(false);
+  };
+
+  const playEvaluationAudio = (text: string) => {
+    setAudioStatus('playing');
+    const started = playAudio(text, 'en-US', {
+      onEnd: () => setAudioStatus('idle'),
+      onError: () => setAudioStatus('error'),
+    });
+    if (!started) setAudioStatus('error');
   };
 
   if (isFinished) {
@@ -274,6 +314,28 @@ export function VirtualEvaluationView({ levelId }: Props) {
                           : "No has alcanzado el 80% y has agotado tus 2 intentos permitidos. Por favor, consulta con tu tutor.")}
                 </div>
             </div>
+
+            {isResultSynced === false && (
+              <div className="mb-6 rounded-2xl border border-rose-200 bg-rose-50 p-5 text-left text-rose-900">
+                <p className="font-black">El resultado quedó guardado en este dispositivo, pero todavía no llegó al panel del tutor.</p>
+                <p className="mt-2 text-sm font-semibold">Comprueba la conexión a internet y vuelve a sincronizar antes de cerrar esta página.</p>
+                <button
+                  type="button"
+                  disabled={isSubmitting}
+                  onClick={retryResultSync}
+                  className="mt-4 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-rose-600 px-4 font-black text-white disabled:opacity-60"
+                >
+                  <RefreshCw className="h-5 w-5" />
+                  {isSubmitting ? 'Sincronizando...' : 'Reintentar sincronización'}
+                </button>
+              </div>
+            )}
+
+            {isResultSynced && (
+              <p className="mb-6 rounded-xl bg-emerald-100 px-4 py-3 text-sm font-black text-emerald-800">
+                Resultado sincronizado con el panel del tutor.
+              </p>
+            )}
 
             {passed && (
               <div className="mb-8 rounded-2xl border border-blue-200 bg-blue-50 p-5 text-left text-blue-950">
@@ -434,22 +496,19 @@ export function VirtualEvaluationView({ levelId }: Props) {
                    {q.type === 'listening' && (
                        <div className="mb-8 p-6 bg-slate-50 rounded-2xl flex flex-col items-center justify-center border border-slate-100">
                            <button 
-                               onClick={() => q.audioText && playAudio(q.audioText)}
+                               onClick={() => q.audioText && playEvaluationAudio(q.audioText)}
+                               aria-label="Reproducir audio de la pregunta"
                                className="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center shadow-indigo-200 shadow-xl hover:bg-indigo-700 hover:scale-105 active:scale-95 transition-all text-white group"
                            >
-                               <Play className="w-8 h-8 ml-1" fill="currentColor" />
+                               <Play className={`w-8 h-8 ml-1 ${audioStatus === 'playing' ? 'animate-pulse' : ''}`} fill="currentColor" />
                            </button>
-                           <p className="mt-4 font-bold text-gray-500 tracking-wide uppercase text-sm">Escucha el audio</p>
-                       </div>
-                   )}
-
-                   {q.imageUrl && (
-                       <div className="mb-8 overflow-hidden rounded-2xl border border-slate-100 bg-slate-100">
-                           <img
-                             src={q.imageUrl}
-                             alt=""
-                             className="h-44 w-full object-cover"
-                           />
+                           <p className={`mt-4 font-bold tracking-wide uppercase text-sm ${audioStatus === 'error' ? 'text-rose-600' : 'text-gray-500'}`}>
+                             {audioStatus === 'playing'
+                               ? 'Reproduciendo...'
+                               : audioStatus === 'error'
+                                 ? 'No se pudo reproducir. Revisa el volumen y vuelve a tocar.'
+                                 : 'Toca para escuchar el audio'}
+                           </p>
                        </div>
                    )}
 
