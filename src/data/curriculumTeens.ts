@@ -4402,122 +4402,282 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
     classes: [
       {
         id: "c-teens-basic-3-1",
-        title: "Class 1: Daily Routine & Time / Clase 1: Daily Routine & Time",
-        description: "A fun and interactive class for teens.",
+        title: "Class 1: Daily Routine & Time / Clase 1: Rutina diaria y hora",
+        description: "Teens learn to describe daily routines, tell time, and use frequency adverbs in simple conversations.",
         duration: "60 mins",
-        objective: "Master the topic of Daily Routine & Time.",
+        objective: "Talk about daily routines using times, present simple, and frequency adverbs.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar vocabulario de rutina diaria y horas.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Lucky", color: "#EF4444", prompt: "What is your lucky number?", es: "Cual es tu numero de suerte?" }, { label: "Age", color: "#F59E0B", prompt: "How old is someone in your family?", es: "Que edad tiene alguien de tu familia?" }, { label: "Time", color: "#10B981", prompt: "What time do you wake up?", es: "A que hora despiertas?" }, { label: "Phone", color: "#3B82F6", prompt: "What numbers are easy for you?", es: "Que numeros son faciles para ti?" }, { label: "Count", color: "#8B5CF6", prompt: "How many people are in class?", es: "Cuantas personas hay en clase?" }, { label: "Price", color: "#EC4899", prompt: "What price feels expensive?", es: "Que precio parece caro?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Daily Routine & Time.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 1! ⏰ / Bienvenida a Clase 1! ⏰",
+                description: "Daily Routine & Time",
+                content: ["What time do you wake up?", "Today we talk about routines and time.", "Use complete English sentences."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-01-welcome-daily-routine-time.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-600 via-sky-600 to-cyan-500"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Routine Warm-up Wheel / Ruleta de rutina",
+                description: "Spin and answer with one complete sentence.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say what time you do the activity.", "Ask one classmate too."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-02-warmup-wheel-routine-time.jpg",
+                wheelItems: [
+                  { label: "Wake up", color: "#0EA5E9", prompt: "What time do you wake up?", es: "A que hora te despiertas?" },
+                  { label: "Breakfast", color: "#F59E0B", prompt: "What time do you have breakfast?", es: "A que hora desayunas?" },
+                  { label: "School", color: "#10B981", prompt: "What time do you go to school?", es: "A que hora vas a la escuela?" },
+                  { label: "Homework", color: "#8B5CF6", prompt: "What time do you do homework?", es: "A que hora haces tarea?" },
+                  { label: "Free time", color: "#EC4899", prompt: "What do you usually do after school?", es: "Que haces normalmente despues de la escuela?" },
+                  { label: "Bedtime", color: "#1D4ED8", prompt: "What time do you go to bed?", es: "A que hora te vas a dormir?" }
+                ],
+                bgColor: "bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-600"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can talk about your routine clearly.",
+                content: ["Tell the time in English.", "Describe your daily routine.", "Use usually, always, sometimes, and never."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-03-objectives-routine-time.jpg",
+                bgColor: "bg-gradient-to-br from-fuchsia-500 via-pink-500 to-rose-500"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Responder con frases completas sobre rutina y hora."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender verbos de rutina, horas, preposiciones y frecuencia.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Daily Routine Verbs / Verbos de rutina",
+                description: "Use these verbs to describe your day.",
+                content: ["wake up", "brush my teeth", "have breakfast", "go to school", "do homework", "go to bed"],
+                imageUrl: "/images/teens-basic-3-class-01/slide-04-routine-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-blue-500 to-cyan-500"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Telling Time / Decir la hora",
+                description: "Practice the most useful time phrases.",
+                content: ["It's seven o'clock.", "It's half past seven.", "It's quarter past eight.", "It's quarter to nine."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-05-telling-time.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Present Simple Routine / Rutina en presente simple",
+                description: "Use -s with he and she.",
+                content: ["I wake up at 6:30.", "She wakes up at 7:00.", "He goes to school at 8:00.", "Remember: he/she/it + verb + s."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-06-present-simple-routine.jpg",
+                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Time Prepositions / Preposiciones de tiempo",
+                description: "Choose the correct word before time expressions.",
+                content: ["AT + exact time: at 7:00", "IN + part of day: in the morning", "ON + day: on Monday", "AT night"],
+                imageUrl: "/images/teens-basic-3-class-01/slide-07-time-prepositions.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-500 to-green-500"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Frequency Adverbs / Adverbios de frecuencia",
+                description: "Say how often something happens.",
+                content: ["always = 100%", "usually = most days", "sometimes = not every day", "never = 0%"],
+                imageUrl: "/images/teens-basic-3-class-01/slide-08-frequency-adverbs.jpg",
+                bgColor: "bg-gradient-to-br from-green-500 to-lime-500"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Repetir ejemplos y crear frases propias."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Practica y comprension",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Comprobar uso de tiempos, rutinas y frecuencia.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-1-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Numbers, dates and time: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🎂 + 📅 + 🕒"],
-                    options: ["I like blue shoes.", "My birthday is at three.", "The dog is sleeping."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Mia's Schedule / Lee el horario de Mia",
+                description: "Find the routine verbs and times.",
+                content: ["Mia wakes up at 6:30.", "She has breakfast at 7:00.", "She goes to school at 7:45.", "After school, she usually does homework and listens to music."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-09-mias-schedule.jpg",
+                bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Complete the Sentence (1/3)",
+                description: "Mia ______ up at 6:30.",
+                content: ["Mia ______ up at 6:30."],
+                options: ["wake", "wakes", "waking"],
+                correctOptionIndex: 1,
+                imageUrl: "/images/teens-basic-3-class-01/slide-10-wakes-up-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Preposition (2/3)",
+                description: "I have breakfast ______ 7:00.",
+                content: ["I have breakfast ______ 7:00."],
+                options: ["in", "on", "at"],
+                correctOptionIndex: 2,
+                imageUrl: "/images/teens-basic-3-class-01/slide-11-at-seven-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-500 to-rose-600"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Choose the Frequency Word (3/3)",
+                description: "I do this every day. I ______ do it.",
+                content: ["I do this every day. I ______ do it."],
+                options: ["never", "usually", "yesterday"],
+                correctOptionIndex: 1,
+                imageUrl: "/images/teens-basic-3-class-01/slide-12-usually-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-500 to-pink-600"
+              },
+              {
+                id: "c-teens-basic-3-1-emoji-mission",
+                title: "Emoji Mission / Mision Emoji",
+                description: "Decode the daily routine story.",
+                type: "emoji-game",
+                content: ["⏰ + 🪥 + 🚌 + 📚"],
+                options: ["I wake up, brush my teeth, and go to school.", "I bought new shoes yesterday.", "My cousin is taller than me."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-01/slide-13-emoji-routine-time.jpg",
+                bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Completar los ejercicios y justificar respuestas."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Produccion y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el tema en conversacion y reto final.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Daily Routine & Time."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Time Boss",
-                                    bossTitle: "Daily Routine & Time",
-                                    bossAvatar: "⏰",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to daily routine & time."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about daily routine & time using numbers: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about daily routine & time.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Let's Talk! / Hablemos!",
+                description: "Spin and answer with your real routine.",
+                type: "spinning-wheel",
+                content: ["Answer with a complete sentence.", "Add a time.", "Use usually if you can."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-14-speaking-wheel-routine.jpg",
+                wheelItems: [
+                  { label: "Wake up", color: "#0EA5E9", prompt: "What time do you wake up?", es: "A que hora te despiertas?" },
+                  { label: "Breakfast", color: "#F59E0B", prompt: "What time do you have breakfast?", es: "A que hora desayunas?" },
+                  { label: "School", color: "#10B981", prompt: "What time do you go to school?", es: "A que hora vas a la escuela?" },
+                  { label: "After school", color: "#8B5CF6", prompt: "What do you usually do after school?", es: "Que haces usualmente despues de clase?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "What time is 8:15?",
+                content: ["8:15 = ?"],
+                options: ["It's quarter past eight.", "It's half past eight.", "It's quarter to eight."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-01/slide-15-quarter-past-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Which sentence is correct?",
+                content: ["Choose the correct present simple sentence."],
+                options: ["He go to school.", "He goes to school.", "He going to school."],
+                correctOptionIndex: 1,
+                imageUrl: "/images/teens-basic-3-class-01/slide-16-goes-to-school-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What does usually mean?",
+                content: ["usually = ?"],
+                options: ["siempre", "usualmente", "nunca"],
+                correctOptionIndex: 1,
+                imageUrl: "/images/teens-basic-3-class-01/slide-17-usually-final-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Time Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use routine verbs, times, and frequency words."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-boss-battle-time-boss.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                speakingBossBattle: {
+                  bossName: "The Time Boss",
+                  bossTitle: "Daily Routine & Time",
+                  bossAvatar: "⏰",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say four routine verbs and two time phrases."],
+                    use: ["Make three sentences: one with I, one with he/she, and one with usually."],
+                    speak: ["Speak for 30 seconds about your school-day routine.", "Include at least two times and one frequency word."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Routine Interview / Entrevista de rutina",
+                description: "Ask and answer like a real conversation.",
+                type: "roleplay",
+                content: ["A: What time do you wake up?", "B: I wake up at 6:30.", "A: What do you usually do after school?", "B: I usually do homework and listen to music."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-18-routine-interview-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-500 to-indigo-600"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Responder en voz alta usando frases completas."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar practica independiente.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now talk about your routine and time.",
+                content: ["I wake up at 6:30.", "She goes to school at 8:00.", "I usually do homework after school."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-19-class-complete-routine.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write about your real daily routine.",
+                type: "homework",
+                content: ["Write 6 sentences about your daily routine.", "Use at least 4 times.", "Use 2 frequency words: usually, always, sometimes, or never."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-20-homework-daily-routine.jpg",
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch, listen, and collect useful phrases.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                content: ["Watch the video about time and daily routines.", "Write 5 useful phrases from the video.", "Bring one example sentence to the next class."],
+                imageUrl: "/images/teens-basic-3-class-01/slide-21-video-homework-time.jpg",
+                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y preparar ejemplos."
           }
         ]
-      },
-      {
+      },      {
         id: "c-teens-basic-3-2",
         title: "Class 2: Sports, Competitions & Teams / Clase 2: Sports, Competitions & Teams",
         description: "A fun and interactive class for teens.",

@@ -4,7 +4,9 @@ import confetti from 'canvas-confetti';
 import {
   ArrowLeft,
   ArrowRight,
+  BookmarkPlus,
   BookOpen,
+  BookMarked,
   Check,
   CheckCircle2,
   ChevronDown,
@@ -25,9 +27,11 @@ import {
   Volume2,
   X
 } from 'lucide-react';
+import { StoryVocabularyLibrary, decodeSharedVocabulary, type SavedVocabularyWord } from './StoryVocabularyLibrary';
+import { findStoryWordTranslation } from '../data/storyDecoderTranslations';
 
 type PuzzleMode = 'easy' | 'medium' | 'hard' | 'expert';
-type DecoderScreen = 'intro' | 'roadmap' | 'lesson' | 'player';
+type DecoderScreen = 'intro' | 'roadmap' | 'lesson' | 'player' | 'vocabulary';
 
 type StoryPuzzle = {
   easy_blocks: string[];
@@ -53,6 +57,7 @@ type StoryLine = {
   common_errors: string[];
   hints: string[];
   tutor_explanation: string;
+  vocabulary_candidates?: string[];
 };
 
 type DecoderStory = {
@@ -106,7 +111,17 @@ interface StoryDecoderProps {
 
 const DATA_URL = '/data/story-decoder-curriculum.json';
 const STORAGE_KEY = 'maven_story_decoder_progress';
+const VOCABULARY_STORAGE_KEY = 'maven_story_decoder_vocabulary';
 const EMPTY_PROGRESS: DecoderProgress = { completedStoryIds: [], lineByStory: {} };
+
+function loadStoredVocabulary(key: string) {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(key) || '[]');
+    return Array.isArray(parsed) ? parsed as SavedVocabularyWord[] : [];
+  } catch {
+    return [];
+  }
+}
 
 const puzzleModes: { id: PuzzleMode; label: string; detail: string }[] = [
   { id: 'easy', label: 'Bloques', detail: 'Ideas completas' },
@@ -417,13 +432,93 @@ function GrammarGuideModal({
   );
 }
 
+function VocabularyCaptureModal({
+  line,
+  savedWords,
+  showEnglishContext,
+  getSuggestion,
+  onSave,
+  onClose,
+  onOpenLibrary
+}: {
+  line: StoryLine;
+  savedWords: SavedVocabularyWord[];
+  showEnglishContext: boolean;
+  getSuggestion: (word: string) => string;
+  onSave: (english: string, spanish: string) => void;
+  onClose: () => void;
+  onOpenLibrary: () => void;
+}) {
+  const candidates = useMemo(() => {
+    const sentenceWords = line.en.match(/[\p{L}\p{M}]+(?:[’'][\p{L}\p{M}]+)*/gu) || [];
+    const source = [...(line.vocabulary_candidates || []), ...sentenceWords];
+    return shuffle(Array.from(new Set(source.map((word) => word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '')).filter(Boolean))));
+  }, [line]);
+  const [selectedWord, setSelectedWord] = useState(candidates[0] || '');
+  const selectedSavedWord = savedWords.find((word) => word.english.toLocaleLowerCase('en-US') === selectedWord.toLocaleLowerCase('en-US'));
+  const [translation, setTranslation] = useState(() => selectedSavedWord?.spanish || getSuggestion(selectedWord));
+  const [savedMessage, setSavedMessage] = useState('');
+
+  const selectWord = (word: string) => {
+    const existing = savedWords.find((savedWord) => savedWord.english.toLocaleLowerCase('en-US') === word.toLocaleLowerCase('en-US'));
+    setSelectedWord(word);
+    setTranslation(existing?.spanish || getSuggestion(word));
+    setSavedMessage('');
+  };
+
+  const saveWord = () => {
+    if (!selectedWord.trim() || !translation.trim()) return;
+    onSave(selectedWord.trim(), translation.trim());
+    setSavedMessage('¡Palabra guardada!');
+  };
+
+  return (
+    <motion.div className="fixed inset-0 z-[90] flex items-center justify-center overflow-y-auto bg-slate-950/80 p-3 backdrop-blur-md sm:p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
+      <motion.section initial={{ opacity: 0, scale: 0.94, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.96 }} className="w-full max-w-3xl overflow-hidden rounded-[2rem] border border-white/15 bg-white text-slate-950 shadow-2xl">
+        <div className="flex items-center gap-3 bg-gradient-to-r from-indigo-700 via-violet-700 to-cyan-700 p-5 text-white sm:p-6">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/15"><BookmarkPlus className="h-6 w-6" /></div>
+          <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.18em] text-cyan-200">Vocabulario de esta frase</div><h2 className="text-xl font-black sm:text-2xl">¿Qué palabra quieres recordar?</h2></div>
+          <button type="button" onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-white hover:text-slate-950" aria-label="Cerrar"><X className="h-5 w-5" /></button>
+        </div>
+        <div className="max-h-[72vh] overflow-y-auto p-5 sm:p-7">
+          <div className="rounded-2xl bg-slate-100 p-4">
+            {showEnglishContext && <p className="text-lg font-black text-slate-900">{line.en}</p>}
+            {!showEnglishContext && <p className="text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Frase que estás construyendo</p>}
+            <p className={`${showEnglishContext ? 'mt-1' : 'mt-2 text-lg'} font-semibold text-slate-500`}>{line.es}</p>
+          </div>
+          <div className="mt-5 text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Selecciona una palabra</div>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {candidates.map((word) => {
+              const saved = savedWords.some((savedWord) => savedWord.english.toLocaleLowerCase('en-US') === word.toLocaleLowerCase('en-US'));
+              return <button key={word} type="button" onClick={() => selectWord(word)} className={`min-h-12 rounded-xl border-2 px-4 text-lg font-black transition ${selectedWord === word ? 'border-indigo-600 bg-indigo-600 text-white' : saved ? 'border-emerald-200 bg-emerald-50 text-emerald-800' : 'border-slate-200 bg-white hover:border-indigo-300'}`}>{word}{saved && <span className="ml-2 text-xs">✓</span>}</button>;
+            })}
+          </div>
+          <label className="mt-6 block text-xs font-black uppercase tracking-[0.18em] text-indigo-500" htmlFor="story-word-translation">Traducción en español</label>
+          <input id="story-word-translation" value={translation} onChange={(event) => { setTranslation(event.target.value); setSavedMessage(''); }} placeholder="Escribe qué significa en español" className="mt-2 min-h-14 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 text-xl font-black outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100" autoFocus />
+          {!translation && <p className="mt-2 text-sm font-semibold text-amber-700">Esta palabra puede depender del contexto. Escribe la traducción que aprendiste en la frase.</p>}
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:justify-between">
+            <button type="button" onClick={onOpenLibrary} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-slate-100 px-5 font-black text-slate-700 transition hover:bg-slate-950 hover:text-white"><BookMarked className="h-5 w-5" /> Ver mis palabras ({savedWords.length})</button>
+            <button type="button" disabled={!selectedWord || !translation.trim()} onClick={saveWord} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-7 text-lg font-black text-slate-950 shadow-lg disabled:opacity-40"><BookmarkPlus className="h-5 w-5" /> {savedMessage || (selectedSavedWord ? 'Actualizar palabra' : 'Guardar palabra')}</button>
+          </div>
+        </div>
+      </motion.section>
+    </motion.div>
+  );
+}
+
 export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const progressKey = `${STORAGE_KEY}:${studentId || 'local'}`;
+  const vocabularyKey = `${VOCABULARY_STORAGE_KEY}:${studentId || 'local'}`;
+  const [initialSharedVocabulary] = useState(() => decodeSharedVocabulary(new URLSearchParams(window.location.search).get('vocab')));
   const [curriculum, setCurriculum] = useState<DecoderCurriculum | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState('');
   const [loadRevision, setLoadRevision] = useState(0);
-  const [screen, setScreen] = useState<DecoderScreen>('intro');
+  const [screen, setScreen] = useState<DecoderScreen>(initialSharedVocabulary.length ? 'vocabulary' : 'intro');
+  const [vocabularyReturnScreen, setVocabularyReturnScreen] = useState<DecoderScreen>('roadmap');
+  const [isSharedVocabulary, setIsSharedVocabulary] = useState(initialSharedVocabulary.length > 0);
+  const [vocabulary, setVocabulary] = useState<SavedVocabularyWord[]>(() => initialSharedVocabulary.length ? initialSharedVocabulary : loadStoredVocabulary(vocabularyKey));
+  const [verbTranslations, setVerbTranslations] = useState<Record<string, string>>({});
   const [expandedBlockId, setExpandedBlockId] = useState<number>(1);
   const [activeBlock, setActiveBlock] = useState<DecoderBlock | null>(null);
   const [activeLesson, setActiveLesson] = useState<DecoderLesson | null>(null);
@@ -437,6 +532,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [hintIndex, setHintIndex] = useState(-1);
   const [feedback, setFeedback] = useState<'idle' | 'wrong-sentence' | 'correct'>('idle');
   const [showGrammarGuide, setShowGrammarGuide] = useState(false);
+  const [showVocabularyCapture, setShowVocabularyCapture] = useState(false);
   const [progress, setProgress] = useState<DecoderProgress>(EMPTY_PROGRESS);
 
   useEffect(() => {
@@ -475,6 +571,31 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     localStorage.setItem(progressKey, JSON.stringify(progress));
   }, [progress, progressKey]);
 
+  useEffect(() => {
+    if (!isSharedVocabulary) localStorage.setItem(vocabularyKey, JSON.stringify(vocabulary));
+  }, [vocabulary, vocabularyKey, isSharedVocabulary]);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/data/verbs-guide.json')
+      .then((response) => response.ok ? response.json() : [])
+      .then((entries: Array<{ term?: string; base_verb?: string; past?: string; past_participle?: string; meaning_es?: string }>) => {
+        if (cancelled) return;
+        const translations: Record<string, string> = {};
+        entries.forEach((entry) => {
+          if (!entry.meaning_es) return;
+          const meaning = entry.meaning_es.toLocaleLowerCase('es');
+          [entry.term, entry.base_verb, entry.past, entry.past_participle].filter(Boolean).forEach((form) => {
+            const key = String(form).toLocaleLowerCase('en-US').trim();
+            if (key && !translations[key]) translations[key] = meaning;
+          });
+        });
+        setVerbTranslations(translations);
+      })
+      .catch(() => undefined);
+    return () => { cancelled = true; };
+  }, []);
+
   const orderedLessons = useMemo(
     () => curriculum?.blocks.flatMap((block) => block.lessons.map((lesson) => ({ block, lesson }))) || [],
     [curriculum]
@@ -502,6 +623,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     setAttempts(0);
     setHintIndex(-1);
     setFeedback('idle');
+    setShowVocabularyCapture(false);
     setTokenRevision((value) => value + 1);
   }, [lineIndex, mode, activeStory?.story_id]);
 
@@ -531,6 +653,60 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     setLineIndex(storyComplete ? 0 : Math.min(savedLine, story.lines.length - 1));
     setRevealedLineCount(storyComplete ? story.lines.length : Math.min(savedLine, story.lines.length - 1));
     setScreen('player');
+  };
+
+  const openVocabulary = () => {
+    setShowVocabularyCapture(false);
+    setVocabularyReturnScreen(screen === 'vocabulary' ? 'roadmap' : screen);
+    setScreen('vocabulary');
+  };
+
+  const closeVocabulary = () => {
+    if (isSharedVocabulary) {
+      onClose();
+      return;
+    }
+    setScreen(vocabularyReturnScreen === 'vocabulary' ? 'roadmap' : vocabularyReturnScreen);
+  };
+
+  const saveVocabularyWord = (english: string, spanish: string) => {
+    if (!currentLine || !activeStory) return;
+    const id = english.toLocaleLowerCase('en-US').trim();
+    const word: SavedVocabularyWord = {
+      id,
+      english,
+      spanish,
+      exampleEn: currentLine.en,
+      exampleEs: currentLine.es,
+      storyTitle: activeStory.title,
+      addedAt: Date.now()
+    };
+    setVocabulary((current) => {
+      const existingIndex = current.findIndex((item) => item.id === id);
+      if (existingIndex === -1) return [word, ...current];
+      return current.map((item, index) => index === existingIndex ? { ...item, ...word, addedAt: item.addedAt } : item);
+    });
+  };
+
+  const deleteVocabularyWord = (id: string) => {
+    setVocabulary((current) => current.filter((word) => word.id !== id));
+  };
+
+  const importSharedVocabulary = () => {
+    const localWords = loadStoredVocabulary(vocabularyKey);
+    const merged = [...localWords];
+    vocabulary.forEach((word) => {
+      const id = word.english.toLocaleLowerCase('en-US').trim();
+      if (!merged.some((localWord) => localWord.english.toLocaleLowerCase('en-US').trim() === id)) {
+        merged.push({ ...word, id, storyTitle: word.storyTitle || 'Vocabulario compartido', addedAt: Date.now() });
+      }
+    });
+    localStorage.setItem(vocabularyKey, JSON.stringify(merged));
+    setVocabulary(merged);
+    setIsSharedVocabulary(false);
+    const nextUrl = new URL(window.location.href);
+    nextUrl.searchParams.delete('vocab');
+    window.history.replaceState({}, '', `${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`);
   };
 
   const toggleToken = (index: number) => {
@@ -625,7 +801,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   };
 
   useEffect(() => {
-    if (screen !== 'player' || showGrammarGuide) return;
+    if (screen !== 'player' || showGrammarGuide || showVocabularyCapture) return;
 
     const handleArrowNavigation = (event: KeyboardEvent) => {
       const target = event.target as HTMLElement | null;
@@ -644,11 +820,30 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
     window.addEventListener('keydown', handleArrowNavigation);
     return () => window.removeEventListener('keydown', handleArrowNavigation);
-  }, [screen, showGrammarGuide, canGoToPreviousLine, canGoToNextLine, feedback, highestReachableLineIndex, activeStory]);
+  }, [screen, showGrammarGuide, showVocabularyCapture, canGoToPreviousLine, canGoToNextLine, feedback, highestReachableLineIndex, activeStory]);
+
+  if (screen === 'vocabulary') {
+    return (
+      <StoryVocabularyLibrary
+        words={vocabulary}
+        shared={isSharedVocabulary}
+        onBack={closeVocabulary}
+        onDelete={deleteVocabularyWord}
+        onImportShared={importSharedVocabulary}
+      />
+    );
+  }
 
   if (screen === 'intro') {
     return (
       <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950">
+        <button
+          type="button"
+          onClick={openVocabulary}
+          className="fixed left-4 top-4 z-[60] flex min-h-12 items-center gap-2 rounded-2xl border border-white/15 bg-slate-950/50 px-4 font-black text-white shadow-xl backdrop-blur-xl transition hover:bg-cyan-300 hover:text-cyan-950"
+        >
+          <BookMarked className="h-5 w-5" /> Mis palabras <span className="rounded-full bg-white/15 px-2 py-0.5 text-xs">{vocabulary.length}</span>
+        </button>
         <button
           type="button"
           onClick={onClose}
@@ -684,6 +879,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
               <div className="text-xs font-black uppercase tracking-[0.2em] text-indigo-500">Currículo narrativo completo</div>
               <div className="truncate text-2xl font-black tracking-tight sm:text-3xl">Story Decoder</div>
             </div>
+            <button type="button" onClick={openVocabulary} className="flex min-h-12 shrink-0 items-center gap-2 rounded-2xl bg-indigo-100 px-3 font-black text-indigo-800 transition hover:bg-indigo-700 hover:text-white sm:px-4"><BookMarked className="h-5 w-5" /><span className="hidden lg:inline">Mis palabras</span><span className="rounded-full bg-white/60 px-2 py-0.5 text-xs text-indigo-800">{vocabulary.length}</span></button>
             <div className="hidden min-w-[240px] sm:block">
               <div className="mb-1 flex justify-between text-xs font-black uppercase tracking-widest text-slate-500">
                 <span>{completedStorySet.size}/{totalStories} historias</span><span>{progressPercentage}%</span>
@@ -773,6 +969,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
           <div className="mx-auto flex max-w-6xl items-center gap-3">
             <button type="button" onClick={() => setScreen('roadmap')} className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 transition hover:bg-white hover:text-slate-950"><ArrowLeft className="h-6 w-6" /></button>
             <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.2em] text-cyan-200">Bloque {activeBlock.block_id} · Clase {activeLesson.lesson_id}</div><div className="truncate text-xl font-black sm:text-2xl">{activeLesson.topic}</div></div>
+            <button type="button" onClick={openVocabulary} className="flex min-h-12 shrink-0 items-center gap-2 rounded-2xl bg-white/10 px-3 font-black transition hover:bg-cyan-300 hover:text-cyan-950"><BookMarked className="h-5 w-5" /><span className="hidden lg:inline">Mis palabras</span><span className="rounded-full bg-white/15 px-2 py-0.5 text-xs">{vocabulary.length}</span></button>
             {lessonComplete && <div className="hidden items-center gap-2 rounded-full bg-emerald-300 px-4 py-2 text-sm font-black text-emerald-950 sm:flex"><Trophy className="h-5 w-5" /> Clase completa</div>}
           </div>
         </header>
@@ -821,11 +1018,23 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
           {showGrammarGuide && (
             <GrammarGuideModal block={activeBlock} lesson={activeLesson} story={activeStory} onClose={() => setShowGrammarGuide(false)} />
           )}
+          {showVocabularyCapture && (
+            <VocabularyCaptureModal
+              line={currentLine}
+              savedWords={vocabulary}
+              showEnglishContext={feedback === 'correct'}
+              getSuggestion={(word) => findStoryWordTranslation(word, verbTranslations)}
+              onSave={saveVocabularyWord}
+              onClose={() => setShowVocabularyCapture(false)}
+              onOpenLibrary={openVocabulary}
+            />
+          )}
         </AnimatePresence>
         <header className="z-30 shrink-0 border-b border-white/10 bg-slate-950/75 px-3 py-2 backdrop-blur-xl sm:px-5 sm:py-3">
           <div className="mx-auto flex max-w-[1500px] items-center gap-3">
             <button type="button" onClick={() => setScreen('lesson')} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-white hover:text-slate-950" aria-label="Volver a historias"><ArrowLeft className="h-5 w-5" /></button>
             <div className="min-w-0 flex-1"><div className="truncate text-xs font-black uppercase tracking-[0.16em] text-cyan-300">{activeLesson.topic}</div><div className="truncate text-lg font-black sm:text-xl">{activeStory.title}</div></div>
+            <button type="button" onClick={openVocabulary} className="flex h-11 shrink-0 items-center gap-2 rounded-xl bg-cyan-300/15 px-3 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950" title="Abrir mis palabras"><BookMarked className="h-5 w-5" /><span className="hidden xl:inline">Mis palabras</span><span className="rounded-full bg-white/15 px-2 py-0.5 text-xs">{vocabulary.length}</span></button>
             <div className="hidden shrink-0 items-center gap-1 rounded-xl bg-white/5 px-2 py-1 text-white/55 md:flex" title="También puedes navegar con las flechas del teclado"><kbd className="rounded-md bg-white/10 px-2 py-1 text-sm font-black">←</kbd><kbd className="rounded-md bg-white/10 px-2 py-1 text-sm font-black">→</kbd></div>
             <div className="shrink-0 text-right"><div className="text-lg font-black text-yellow-300">{lineIndex + 1}/{activeStory.lines.length}</div><div className="hidden text-[0.6rem] font-black uppercase tracking-widest text-white/50 sm:block">líneas</div></div>
             <button type="button" onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-rose-500" aria-label="Cerrar Story Decoder"><X className="h-5 w-5" /></button>
@@ -849,6 +1058,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                       <span><span className="hidden opacity-65 sm:inline">Estás aprendiendo: </span>{activeLesson.topic}</span>
                       <CircleHelp className="h-4 w-4 shrink-0 opacity-70 transition group-hover:scale-110" />
                     </button>
+                    <button type="button" onClick={() => setShowVocabularyCapture(true)} className="flex min-h-10 items-center gap-2 rounded-full border border-yellow-200 bg-gradient-to-r from-yellow-300 to-orange-400 px-4 text-xs font-black text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:shadow-yellow-300/25 sm:text-sm" title="Guardar una palabra de esta frase"><BookmarkPlus className="h-4 w-4 shrink-0" /> Guardar palabra</button>
                   </div>
                   <div className="flex flex-wrap gap-1 rounded-xl bg-slate-950/40 p-1">
                     {puzzleModes.map((item) => <button key={item.id} type="button" onClick={() => setMode(item.id)} className={`min-h-10 rounded-lg px-3 text-xs font-black transition ${mode === item.id ? 'bg-yellow-300 text-yellow-950 shadow-lg' : 'text-white/65 hover:bg-white/10 hover:text-white'}`} title={item.detail}>{item.label}</button>)}
@@ -891,7 +1101,10 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                     <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-xl"><CheckCircle2 className="h-8 w-8 text-emerald-600" /></div>
                     <div className="mt-3 text-2xl font-black">¡Frase completa!</div>
                     <p className="mx-auto mt-2 max-w-5xl text-[clamp(1.5rem,3.4vw,3rem)] font-black leading-tight">{currentLine.en}</p>
-                    <button type="button" onClick={speakEnglish} className="mx-auto mt-4 flex min-h-12 items-center gap-2 rounded-xl bg-slate-950 px-5 font-black text-white transition hover:-translate-y-0.5"><Volume2 className="h-5 w-5" /> Escuchar respuesta</button>
+                    <div className="mt-4 flex flex-wrap justify-center gap-3">
+                      <button type="button" onClick={speakEnglish} className="flex min-h-12 items-center gap-2 rounded-xl bg-slate-950 px-5 font-black text-white transition hover:-translate-y-0.5"><Volume2 className="h-5 w-5" /> Escuchar respuesta</button>
+                      <button type="button" onClick={() => setShowVocabularyCapture(true)} className="flex min-h-12 items-center gap-2 rounded-xl bg-white px-5 font-black text-indigo-800 shadow-lg transition hover:-translate-y-0.5"><BookmarkPlus className="h-5 w-5" /> Guardar palabras</button>
+                    </div>
                     {attempts > 1 && <p className="mt-3 text-xs font-black uppercase tracking-widest opacity-60">Resuelto en {attempts} intentos</p>}
                   </motion.div>
                 )}
