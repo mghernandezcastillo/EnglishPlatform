@@ -450,10 +450,10 @@ export function OralEvaluationPresentation({
                           <input
                             aria-label={`Calificación de ${criterion.label}`}
                             type="range"
-                            min="0"
+                            min="1"
                             max="5"
                             step="1"
-                            value={value}
+                            value={value || 1}
                             onChange={(event) => setCriterionScore(criterion.id, Number(event.target.value))}
                             className="h-3 w-full cursor-pointer accent-violet-600"
                             style={{ accentColor: criterion.color }}
