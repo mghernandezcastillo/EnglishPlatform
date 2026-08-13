@@ -9,7 +9,6 @@ import {
   CheckCircle2,
   ChevronDown,
   ChevronRight,
-  CircleHelp,
   Layers3,
   Lightbulb,
   LoaderCircle,
@@ -128,18 +127,6 @@ const blockStyles = [
   'from-yellow-300 via-amber-500 to-violet-900'
 ];
 
-const genericStructureChoices = [
-  'Subject + Verb + Complement',
-  'Subject + Auxiliary + Base Verb + Complement',
-  'Auxiliary + Subject + Base Verb + Complement?',
-  'Wh-word + Auxiliary + Subject + Base Verb?',
-  'Subject + To Be + Verb-ing + Complement',
-  'Subject + Have/Has + Past Participle',
-  'If-clause + Main clause',
-  'Subject + Modal + Base Verb',
-  'Object + To Be + Past Participle'
-];
-
 function shuffle<T>(items: T[]) {
   const result = [...items];
   for (let index = result.length - 1; index > 0; index -= 1) {
@@ -147,19 +134,6 @@ function shuffle<T>(items: T[]) {
     [result[index], result[target]] = [result[target], result[index]];
   }
   return result;
-}
-
-function stableHash(value: string) {
-  return [...value].reduce((total, character) => ((total * 31) + character.charCodeAt(0)) >>> 0, 7);
-}
-
-function stableOrder<T>(items: T[], seed: string) {
-  const value = stableHash(seed);
-  return [...items].sort((a, b) => {
-    const first = stableHash(`${value}-${String(a)}`);
-    const second = stableHash(`${value}-${String(b)}`);
-    return first - second;
-  });
 }
 
 function normalizeSentence(value: string) {
@@ -180,16 +154,6 @@ function getPuzzleTokens(line: StoryLine, mode: PuzzleMode) {
   if (mode === 'hard') return line.puzzle.hard_word_by_word;
   if (mode === 'expert') return line.puzzle.expert_with_distractors;
   return line.puzzle.easy_blocks;
-}
-
-function buildStructureChoices(line: StoryLine, lesson: DecoderLesson) {
-  const correct = line.pattern || lesson.pattern;
-  const candidates = [
-    ...lesson.confuses_with,
-    ...genericStructureChoices
-  ].filter((choice) => normalizeSentence(choice) !== normalizeSentence(correct));
-  const wrongChoices = stableOrder(Array.from(new Set(candidates)), line.line_id).slice(0, 2);
-  return stableOrder([correct, ...wrongChoices], `${line.line_id}-answers`);
 }
 
 function DecoderIntro({ loading, onStart }: { loading: boolean; onStart: () => void }) {
@@ -301,10 +265,9 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [mode, setMode] = useState<PuzzleMode>('easy');
   const [tokenRevision, setTokenRevision] = useState(0);
   const [selectedTokenIndexes, setSelectedTokenIndexes] = useState<number[]>([]);
-  const [selectedStructure, setSelectedStructure] = useState('');
   const [attempts, setAttempts] = useState(0);
   const [hintIndex, setHintIndex] = useState(-1);
-  const [feedback, setFeedback] = useState<'idle' | 'wrong-sentence' | 'wrong-structure' | 'correct'>('idle');
+  const [feedback, setFeedback] = useState<'idle' | 'wrong-sentence' | 'correct'>('idle');
   const [progress, setProgress] = useState<DecoderProgress>(EMPTY_PROGRESS);
 
   useEffect(() => {
@@ -360,11 +323,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     if (!currentLine) return [];
     return shuffle(getPuzzleTokens(currentLine, mode)).map((text, index) => ({ id: `${tokenRevision}-${index}-${text}`, text }));
   }, [currentLine, mode, tokenRevision]);
-  const structureChoices = useMemo(
-    () => currentLine && activeLesson ? buildStructureChoices(currentLine, activeLesson) : [],
-    [currentLine, activeLesson]
-  );
-
   const selectedTokens = selectedTokenIndexes.map((index) => shuffledTokens[index]).filter(Boolean);
   const assembledSentence = sentenceFromTokens(selectedTokens.map((token) => token.text));
   const totalStories = curriculum?.statistics.story_count || 240;
@@ -372,7 +330,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
   useEffect(() => {
     setSelectedTokenIndexes([]);
-    setSelectedStructure('');
     setAttempts(0);
     setHintIndex(-1);
     setFeedback('idle');
@@ -414,7 +371,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
   const resetAnswer = () => {
     setSelectedTokenIndexes([]);
-    setSelectedStructure('');
     setFeedback('idle');
     setTokenRevision((value) => value + 1);
   };
@@ -426,11 +382,10 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   };
 
   const checkAnswer = () => {
-    if (!currentLine || !activeLesson || selectedTokenIndexes.length === 0 || !selectedStructure) return;
+    if (!currentLine || selectedTokenIndexes.length === 0) return;
 
     const acceptedAnswers = [currentLine.preferred_answer, ...currentLine.accepted_answers].map(normalizeSentence);
     const sentenceCorrect = acceptedAnswers.includes(normalizeSentence(assembledSentence));
-    const structureCorrect = normalizeSentence(selectedStructure) === normalizeSentence(currentLine.pattern || activeLesson.pattern);
     setAttempts((value) => value + 1);
 
     if (!sentenceCorrect) {
@@ -438,12 +393,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
       showHint();
       return;
     }
-    if (!structureCorrect) {
-      setFeedback('wrong-structure');
-      showHint();
-      return;
-    }
-
     setFeedback('correct');
     confetti({ particleCount: 130, spread: 85, origin: { y: 0.62 }, colors: ['#22d3ee', '#fde047', '#a78bfa', '#34d399'] });
   };
@@ -644,7 +593,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
   if (screen === 'player' && activeStory && activeLesson && activeBlock && currentLine) {
     const selectedIndexSet = new Set(selectedTokenIndexes);
-    const needsChoice = selectedTokenIndexes.length === 0 || !selectedStructure;
+    const needsChoice = selectedTokenIndexes.length === 0;
     return (
       <div className="fixed inset-0 z-50 flex min-h-0 flex-col overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 text-white">
         <header className="z-30 shrink-0 border-b border-white/10 bg-slate-950/75 px-3 py-2 backdrop-blur-xl sm:px-5 sm:py-3">
@@ -658,74 +607,61 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
         </header>
 
         <main className="min-h-0 flex-1 overflow-y-auto px-3 py-3 sm:px-5 sm:py-4">
-          <div className="mx-auto grid min-h-full max-w-[1500px] content-start gap-3 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] xl:items-start">
-            <section className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.07] p-4 shadow-2xl backdrop-blur-xl sm:p-6 xl:sticky xl:top-0">
-              <div className="absolute right-0 top-0 h-44 w-44 translate-x-16 -translate-y-16 rounded-full bg-cyan-400/20 blur-3xl" />
+          <div className="mx-auto flex min-h-full max-w-[1320px] flex-col justify-center gap-3">
+            <section className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.07] p-4 shadow-2xl backdrop-blur-xl sm:p-6">
+              <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-cyan-400/20 blur-3xl" />
+              <div className="absolute -bottom-20 -left-12 h-52 w-52 rounded-full bg-violet-500/20 blur-3xl" />
               <div className="relative">
-                <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-                  <div className="flex items-center gap-2">
-                    <span className={`rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-widest ${currentLine.line_role === 'target' ? 'bg-yellow-300 text-yellow-950' : 'bg-cyan-300 text-cyan-950'}`}>{currentLine.line_role === 'target' ? 'Estructura objetivo' : 'Línea de contexto'}</span>
+                <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className={`rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-widest ${currentLine.line_role === 'target' ? 'bg-yellow-300 text-yellow-950' : 'bg-cyan-300 text-cyan-950'}`}>{currentLine.line_role === 'target' ? 'Frase objetivo' : 'Historia'}</span>
                     <span className="rounded-full bg-white/10 px-3 py-1.5 text-xs font-black text-white/70">Dificultad {currentLine.difficulty}</span>
                   </div>
-                  <button type="button" onClick={speakEnglish} className="flex min-h-11 items-center gap-2 rounded-xl bg-white/10 px-4 font-black transition hover:bg-cyan-300 hover:text-cyan-950"><Volume2 className="h-5 w-5" /> Escuchar</button>
-                </div>
-                <div className="rounded-2xl border border-cyan-300/20 bg-slate-950/40 p-4 sm:p-6">
-                  <div className="text-xs font-black uppercase tracking-[0.22em] text-cyan-300">English</div>
-                  <p className="mt-2 text-[clamp(2rem,4.8vw,4.6rem)] font-black leading-[1.02] tracking-tight text-white">{currentLine.en}</p>
-                </div>
-                <div className="mt-3 rounded-2xl border border-violet-300/15 bg-violet-300/10 p-4 sm:p-5">
-                  <div className="text-xs font-black uppercase tracking-[0.22em] text-violet-300">Español</div>
-                  <p className="mt-1 text-[clamp(1.25rem,2.5vw,2.1rem)] font-bold leading-tight text-violet-50">{currentLine.es}</p>
-                </div>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  <span className="rounded-xl bg-white/10 px-3 py-2 text-xs font-black uppercase tracking-widest text-white/60">Foco</span>
-                  {currentLine.focus_tokens.map((token) => <span key={token} className="rounded-xl bg-cyan-300 px-3 py-2 text-sm font-black text-cyan-950">{token}</span>)}
-                </div>
-              </div>
-            </section>
-
-            <section className="space-y-3">
-              <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.07] p-4 shadow-2xl backdrop-blur-xl sm:p-5">
-                <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-                  <div><div className="text-xs font-black uppercase tracking-[0.2em] text-yellow-300">Paso 1</div><h2 className="text-xl font-black sm:text-2xl">Construye la frase</h2></div>
                   <div className="flex flex-wrap gap-1 rounded-xl bg-slate-950/40 p-1">
                     {puzzleModes.map((item) => <button key={item.id} type="button" onClick={() => setMode(item.id)} className={`min-h-10 rounded-lg px-3 text-xs font-black transition ${mode === item.id ? 'bg-yellow-300 text-yellow-950 shadow-lg' : 'text-white/65 hover:bg-white/10 hover:text-white'}`} title={item.detail}>{item.label}</button>)}
                   </div>
                 </div>
 
-                <div className="min-h-24 rounded-2xl border-2 border-dashed border-white/15 bg-slate-950/35 p-3 sm:p-4">
-                  {selectedTokens.length ? (
-                    <div className="flex flex-wrap gap-2">
-                      {selectedTokens.map((token, position) => {
-                        const originalIndex = selectedTokenIndexes[position];
-                        return <button key={`${token.id}-selected`} type="button" onClick={() => toggleToken(originalIndex)} className="min-h-12 rounded-xl bg-gradient-to-br from-cyan-200 to-cyan-400 px-4 text-left text-[clamp(1rem,2vw,1.35rem)] font-black text-cyan-950 shadow-lg transition hover:-translate-y-0.5">{token.text}</button>;
-                      })}
-                    </div>
-                  ) : <div className="flex min-h-16 items-center justify-center text-center text-base font-bold text-white/40"><Layers3 className="mr-2 h-5 w-5" /> Toca los bloques en el orden correcto</div>}
+                <div className="flex min-h-[190px] flex-col items-center justify-center rounded-[1.5rem] border border-violet-300/20 bg-gradient-to-br from-violet-400/15 via-indigo-300/10 to-cyan-300/10 p-5 text-center sm:min-h-[250px] sm:p-8">
+                  <div className="text-xs font-black uppercase tracking-[0.25em] text-violet-300">Construye esta frase en inglés</div>
+                  <p className="mt-4 max-w-6xl text-[clamp(2rem,5.3vw,5.3rem)] font-black leading-[1.02] tracking-tight text-white">{currentLine.es}</p>
                 </div>
 
-                <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
+                <div className="mt-3 min-h-24 rounded-2xl border-2 border-dashed border-cyan-300/25 bg-slate-950/45 p-3 sm:p-4">
+                  {selectedTokens.length ? (
+                    <div className="flex min-h-16 flex-wrap items-center justify-center gap-2">
+                      {selectedTokens.map((token, position) => {
+                        const originalIndex = selectedTokenIndexes[position];
+                        return <button key={`${token.id}-selected`} type="button" onClick={() => toggleToken(originalIndex)} className="min-h-14 rounded-xl bg-gradient-to-br from-cyan-200 to-cyan-400 px-4 text-center text-[clamp(1.05rem,2.2vw,1.55rem)] font-black text-cyan-950 shadow-lg transition hover:-translate-y-0.5">{token.text}</button>;
+                      })}
+                    </div>
+                  ) : <div className="flex min-h-16 items-center justify-center text-center text-lg font-bold text-white/40"><Layers3 className="mr-2 h-6 w-6" /> Presiona las opciones para armar la frase completa</div>}
+                </div>
+
+                <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
                   {shuffledTokens.map((token, index) => {
                     const selected = selectedIndexSet.has(index);
-                    return <button key={token.id} type="button" disabled={selected || feedback === 'correct'} onClick={() => toggleToken(index)} className={`min-h-14 rounded-xl border px-3 py-2 text-[clamp(0.95rem,1.7vw,1.2rem)] font-black leading-tight transition ${selected ? 'border-emerald-300/20 bg-emerald-300/10 text-emerald-100/30' : 'border-white/15 bg-white text-slate-950 shadow-lg hover:-translate-y-0.5 hover:border-yellow-300 hover:bg-yellow-50'}`}>{token.text}</button>;
+                    return <button key={token.id} type="button" disabled={selected || feedback === 'correct'} onClick={() => toggleToken(index)} className={`min-h-16 rounded-xl border px-3 py-2 text-[clamp(1rem,1.8vw,1.3rem)] font-black leading-tight transition ${selected ? 'border-emerald-300/20 bg-emerald-300/10 text-emerald-100/30' : 'border-white/15 bg-white text-slate-950 shadow-lg hover:-translate-y-0.5 hover:border-yellow-300 hover:bg-yellow-50'}`}>{token.text}</button>;
                   })}
                 </div>
               </div>
+            </section>
 
-              <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.07] p-4 shadow-2xl backdrop-blur-xl sm:p-5">
-                <div className="mb-3"><div className="text-xs font-black uppercase tracking-[0.2em] text-violet-300">Paso 2</div><h2 className="text-xl font-black sm:text-2xl">¿Cómo está armada?</h2></div>
-                <div className="grid gap-2">
-                  {structureChoices.map((choice) => <button key={choice} type="button" disabled={feedback === 'correct'} onClick={() => { setSelectedStructure(choice); setFeedback('idle'); }} className={`flex min-h-14 items-center gap-3 rounded-xl border p-3 text-left text-base font-black leading-tight transition sm:text-lg ${selectedStructure === choice ? 'border-violet-300 bg-violet-300 text-violet-950 shadow-lg' : 'border-white/15 bg-white/10 text-white hover:bg-white/15'}`}><span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg ${selectedStructure === choice ? 'bg-violet-950 text-white' : 'bg-white/10'}`}>{selectedStructure === choice ? <Check className="h-5 w-5" /> : <CircleHelp className="h-4 w-4" />}</span>{choice}</button>)}
-                </div>
-              </div>
-
+            <section>
               <AnimatePresence mode="wait">
                 {hintIndex >= 0 && currentLine.hints.length > 0 && feedback !== 'correct' && (
                   <motion.div key={`hint-${hintIndex}`} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="rounded-2xl border border-yellow-300/30 bg-yellow-300 p-4 text-lg font-black text-yellow-950 shadow-xl"><div className="mb-1 flex items-center gap-2 text-xs uppercase tracking-widest opacity-65"><Lightbulb className="h-4 w-4" /> Pista {hintIndex + 1}</div>{currentLine.hints[Math.min(hintIndex, currentLine.hints.length - 1)]}</motion.div>
                 )}
-                {feedback === 'wrong-sentence' && <motion.div key="wrong-sentence" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="rounded-2xl border border-rose-300/30 bg-rose-500 p-4 text-lg font-black text-white shadow-xl">La estructura de la frase todavía no encaja. Revisa el orden y elimina cualquier distractor.</motion.div>}
-                {feedback === 'wrong-structure' && <motion.div key="wrong-structure" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="rounded-2xl border border-orange-300/30 bg-orange-400 p-4 text-lg font-black text-orange-950 shadow-xl">La frase está bien construida. Ahora observa el auxiliar y la forma verbal para identificar su patrón.</motion.div>}
-                {feedback === 'correct' && <motion.div key="correct" initial={{ opacity: 0, scale: 0.94, y: 12 }} animate={{ opacity: 1, scale: 1, y: 0 }} className="overflow-hidden rounded-[1.75rem] border border-emerald-200/50 bg-gradient-to-r from-emerald-300 via-cyan-300 to-yellow-300 p-5 text-slate-950 shadow-2xl"><div className="flex items-start gap-4"><div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white shadow-xl"><CheckCircle2 className="h-8 w-8 text-emerald-600" /></div><div><div className="text-2xl font-black">¡Código descifrado!</div><p className="mt-1 text-base font-bold leading-snug opacity-80">{currentLine.tutor_explanation}</p>{attempts > 1 && <p className="mt-2 text-xs font-black uppercase tracking-widest opacity-60">Resuelto en {attempts} intentos</p>}</div></div></motion.div>}
+                {feedback === 'wrong-sentence' && <motion.div key="wrong-sentence" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="rounded-2xl border border-rose-300/30 bg-rose-500 p-4 text-center text-lg font-black text-white shadow-xl">La frase todavía no está completa o el orden no es correcto. Retira los bloques necesarios y vuelve a intentarlo.</motion.div>}
+                {feedback === 'correct' && (
+                  <motion.div key="correct" initial={{ opacity: 0, scale: 0.94, y: 12 }} animate={{ opacity: 1, scale: 1, y: 0 }} className="overflow-hidden rounded-[1.75rem] border border-emerald-200/50 bg-gradient-to-r from-emerald-300 via-cyan-300 to-yellow-300 p-5 text-center text-slate-950 shadow-2xl sm:p-6">
+                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white shadow-xl"><CheckCircle2 className="h-8 w-8 text-emerald-600" /></div>
+                    <div className="mt-3 text-2xl font-black">¡Frase completa!</div>
+                    <p className="mx-auto mt-2 max-w-5xl text-[clamp(1.5rem,3.4vw,3rem)] font-black leading-tight">{currentLine.en}</p>
+                    <button type="button" onClick={speakEnglish} className="mx-auto mt-4 flex min-h-12 items-center gap-2 rounded-xl bg-slate-950 px-5 font-black text-white transition hover:-translate-y-0.5"><Volume2 className="h-5 w-5" /> Escuchar respuesta</button>
+                    {attempts > 1 && <p className="mt-3 text-xs font-black uppercase tracking-widest opacity-60">Resuelto en {attempts} intentos</p>}
+                  </motion.div>
+                )}
               </AnimatePresence>
             </section>
           </div>
