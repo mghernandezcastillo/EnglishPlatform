@@ -12,6 +12,8 @@ import {
   ChevronDown,
   ChevronRight,
   CircleHelp,
+  Eye,
+  EyeOff,
   GraduationCap,
   Layers3,
   Lightbulb,
@@ -531,6 +533,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [attempts, setAttempts] = useState(0);
   const [hintIndex, setHintIndex] = useState(-1);
   const [feedback, setFeedback] = useState<'idle' | 'wrong-sentence' | 'correct'>('idle');
+  const [wordsRevealed, setWordsRevealed] = useState(false);
   const [showGrammarGuide, setShowGrammarGuide] = useState(false);
   const [showVocabularyCapture, setShowVocabularyCapture] = useState(false);
   const [progress, setProgress] = useState<DecoderProgress>(EMPTY_PROGRESS);
@@ -624,6 +627,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     setHintIndex(-1);
     setFeedback('idle');
     setShowVocabularyCapture(false);
+    setWordsRevealed(false);
     setTokenRevision((value) => value + 1);
   }, [lineIndex, mode, activeStory?.story_id]);
 
@@ -1081,11 +1085,41 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                   ) : <div className="flex min-h-16 items-center justify-center text-center text-lg font-bold text-white/40"><Layers3 className="mr-2 h-6 w-6" /> Presiona las opciones para armar la frase completa</div>}
                 </div>
 
-                <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-                  {shuffledTokens.map((token, index) => {
-                    const selected = selectedIndexSet.has(index);
-                    return <button key={token.id} type="button" disabled={selected || feedback === 'correct'} onClick={() => toggleToken(index)} className={`min-h-16 rounded-xl border px-3 py-2 text-[clamp(1rem,1.8vw,1.3rem)] font-black leading-tight transition ${selected ? 'border-emerald-300/20 bg-emerald-300/10 text-emerald-100/30' : 'border-white/15 bg-white text-slate-950 shadow-lg hover:-translate-y-0.5 hover:border-yellow-300 hover:bg-yellow-50'}`}>{token.text}</button>;
-                  })}
+                <div className="mt-3 flex items-center justify-between gap-2">
+                  <div className="text-xs font-black uppercase tracking-[0.2em] text-white/40">Banco de palabras</div>
+                  <button
+                    type="button"
+                    onClick={() => setWordsRevealed((value) => !value)}
+                    className={`flex min-h-9 items-center gap-2 rounded-full border px-3 text-xs font-black transition ${wordsRevealed ? 'border-white/15 bg-white/10 text-white/60 hover:bg-white/20' : 'border-yellow-300/40 bg-yellow-300/15 text-yellow-200 hover:bg-yellow-300 hover:text-yellow-950'}`}
+                  >
+                    {wordsRevealed ? <><EyeOff className="h-4 w-4" /> Ocultar palabras</> : <><Eye className="h-4 w-4" /> Mostrar palabras</>}
+                  </button>
+                </div>
+
+                <div className="relative mt-2">
+                  <div className={`grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 ${!wordsRevealed ? 'pointer-events-none select-none' : ''}`}>
+                    {shuffledTokens.map((token, index) => {
+                      const selected = selectedIndexSet.has(index);
+                      return (
+                        <button key={token.id} type="button" disabled={selected || feedback === 'correct' || !wordsRevealed} onClick={() => toggleToken(index)} className={`min-h-16 rounded-xl border px-3 py-2 text-[clamp(1rem,1.8vw,1.3rem)] font-black leading-tight transition ${selected ? 'border-emerald-300/20 bg-emerald-300/10 text-emerald-100/30' : 'border-white/15 bg-white text-slate-950 shadow-lg hover:-translate-y-0.5 hover:border-yellow-300 hover:bg-yellow-50'}`}>
+                          <span className={!wordsRevealed ? 'blur-sm' : ''}>{token.text}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                  {!wordsRevealed && (
+                    <div className="absolute inset-0 flex items-center justify-center p-2">
+                      <motion.button
+                        type="button"
+                        onClick={() => setWordsRevealed(true)}
+                        animate={{ scale: [1, 1.05, 1] }}
+                        transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+                        className="pointer-events-auto flex items-center gap-2 rounded-full border border-yellow-200/60 bg-gradient-to-r from-yellow-300 via-amber-300 to-orange-400 px-5 py-3 text-center text-sm font-black text-slate-950 shadow-2xl transition hover:-translate-y-0.5 sm:text-base"
+                      >
+                        <Eye className="h-5 w-5 shrink-0" /> Di la frase en voz alta, luego toca el ojo para ver las palabras
+                      </motion.button>
+                    </div>
+                  )}
                 </div>
               </div>
             </section>
