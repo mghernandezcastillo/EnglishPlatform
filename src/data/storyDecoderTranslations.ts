@@ -518,6 +518,38 @@ const learningTranslations: Record<string, string> = {
   work: 'trabajar / trabajo'
 };
 
+const phraseTranslations: Record<string, string> = {
+  'be able to': 'poder',
+  'be allowed to': 'tener permiso de',
+  'be supposed to': 'se supone que / deber',
+  'catch up with': 'ponerse al día con',
+  'check up on': 'revisar / comprobar',
+  'come up with': 'idear / inventar',
+  'cut down on': 'reducir / bajar',
+  'drop out of': 'abandonar',
+  'get along with': 'llevarse bien con',
+  'get away with': 'salirse con la suya',
+  'get rid of': 'deshacerse de',
+  'get used to': 'acostumbrarse a',
+  'give up': 'rendirse / dejar de intentar',
+  'go on': 'continuar',
+  'look after': 'cuidar de',
+  'look for': 'buscar',
+  'look up': 'buscar / consultar',
+  'pick up': 'recoger / aprender',
+  'put on': 'ponerse',
+  'run out of': 'quedarse sin',
+  'stick with': 'seguir con',
+  'take advantage of': 'aprovechar',
+  'take care of': 'cuidar de / encargarse de',
+  'take off': 'quitarse / despegar',
+  'take out': 'sacar',
+  'think back on': 'recordar',
+  'turn off': 'apagar',
+  'turn on': 'encender',
+  'used to': 'solía / acostumbraba a'
+};
+
 function candidateLemmas(word: string) {
   const normalized = word.toLocaleLowerCase('en-US').replace(/[’']/g, '').trim();
   const candidates = [normalized];
@@ -539,7 +571,23 @@ function candidateLemmas(word: string) {
   return Array.from(new Set(candidates));
 }
 
+function candidatePhrases(word: string) {
+  const normalized = word.toLocaleLowerCase('en-US').replace(/[’']/g, '').trim();
+  if (!normalized.includes(' ')) return [];
+  const [first, ...rest] = normalized.split(/\s+/);
+  const tail = rest.join(' ');
+  if (!first || !tail) return [normalized];
+  return Array.from(new Set([
+    normalized,
+    ...candidateLemmas(first).map((candidate) => `${candidate} ${tail}`)
+  ]));
+}
+
 export function findStoryWordTranslation(word: string, verbTranslations: Record<string, string>) {
+  for (const candidate of candidatePhrases(word)) {
+    const translation = phraseTranslations[candidate] || verbTranslations[candidate] || learningTranslations[candidate] || commonTranslations[candidate];
+    if (translation) return translation;
+  }
   for (const candidate of candidateLemmas(word)) {
     const translation = verbTranslations[candidate] || learningTranslations[candidate] || commonTranslations[candidate];
     if (translation) return translation;

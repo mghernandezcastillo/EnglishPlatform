@@ -453,8 +453,17 @@ function VocabularyCaptureModal({
 }) {
   const candidates = useMemo(() => {
     const sentenceWords = line.en.match(/[\p{L}\p{M}]+(?:[’'][\p{L}\p{M}]+)*/gu) || [];
-    const source = [...(line.vocabulary_candidates || []), ...sentenceWords];
-    return shuffle(Array.from(new Set(source.map((word) => word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '')).filter(Boolean))));
+    const source = [
+      ...(line.vocabulary_candidates || []),
+      ...(line.puzzle.easy_blocks || []),
+      ...(line.puzzle.medium_blocks || []),
+      ...sentenceWords
+    ];
+    return Array.from(new Set(source.map((word) => word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '').trim()).filter(Boolean)))
+      .sort((left, right) => {
+        const lengthDiff = right.split(/\s+/).length - left.split(/\s+/).length;
+        return lengthDiff !== 0 ? lengthDiff : left.localeCompare(right, 'en-US');
+      });
   }, [line]);
   const [selectedWord, setSelectedWord] = useState(candidates[0] || '');
   const selectedSavedWord = savedWords.find((word) => word.english.toLocaleLowerCase('en-US') === selectedWord.toLocaleLowerCase('en-US'));
@@ -479,7 +488,7 @@ function VocabularyCaptureModal({
       <motion.section initial={{ opacity: 0, scale: 0.94, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.96 }} className="w-full max-w-3xl overflow-hidden rounded-[2rem] border border-white/15 bg-white text-slate-950 shadow-2xl">
         <div className="flex items-center gap-3 bg-gradient-to-r from-indigo-700 via-violet-700 to-cyan-700 p-5 text-white sm:p-6">
           <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/15"><BookmarkPlus className="h-6 w-6" /></div>
-          <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.18em] text-cyan-200">Vocabulario de esta frase</div><h2 className="text-xl font-black sm:text-2xl">¿Qué palabra quieres recordar?</h2></div>
+          <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.18em] text-cyan-200">Vocabulario de esta frase</div><h2 className="text-xl font-black sm:text-2xl">¿Qué palabra o expresión quieres recordar?</h2></div>
           <button type="button" onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-white hover:text-slate-950" aria-label="Cerrar"><X className="h-5 w-5" /></button>
         </div>
         <div className="max-h-[72vh] overflow-y-auto p-5 sm:p-7">
@@ -488,7 +497,7 @@ function VocabularyCaptureModal({
             {!showEnglishContext && <p className="text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Frase que estás construyendo</p>}
             <p className={`${showEnglishContext ? 'mt-1' : 'mt-2 text-lg'} font-semibold text-slate-500`}>{line.es}</p>
           </div>
-          <div className="mt-5 text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Selecciona una palabra</div>
+          <div className="mt-5 text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Selecciona una palabra o expresión</div>
           <div className="mt-2 flex flex-wrap gap-2">
             {candidates.map((word) => {
               const saved = savedWords.some((savedWord) => savedWord.english.toLocaleLowerCase('en-US') === word.toLocaleLowerCase('en-US'));
@@ -500,7 +509,7 @@ function VocabularyCaptureModal({
           {!translation && <p className="mt-2 text-sm font-semibold text-amber-700">Esta palabra puede depender del contexto. Escribe la traducción que aprendiste en la frase.</p>}
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:justify-between">
             <button type="button" onClick={onOpenLibrary} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-slate-100 px-5 font-black text-slate-700 transition hover:bg-slate-950 hover:text-white"><BookMarked className="h-5 w-5" /> Ver mis palabras ({savedWords.length})</button>
-            <button type="button" disabled={!selectedWord || !translation.trim()} onClick={saveWord} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-7 text-lg font-black text-slate-950 shadow-lg disabled:opacity-40"><BookmarkPlus className="h-5 w-5" /> {savedMessage || (selectedSavedWord ? 'Actualizar palabra' : 'Guardar palabra')}</button>
+            <button type="button" disabled={!selectedWord || !translation.trim()} onClick={saveWord} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-7 text-lg font-black text-slate-950 shadow-lg disabled:opacity-40"><BookmarkPlus className="h-5 w-5" /> {savedMessage || (selectedSavedWord ? 'Actualizar' : 'Guardar')}</button>
           </div>
         </div>
       </motion.section>
@@ -1062,7 +1071,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                       <span><span className="hidden opacity-65 sm:inline">Estás aprendiendo: </span>{activeLesson.topic}</span>
                       <CircleHelp className="h-4 w-4 shrink-0 opacity-70 transition group-hover:scale-110" />
                     </button>
-                    <button type="button" onClick={() => setShowVocabularyCapture(true)} className="flex min-h-10 items-center gap-2 rounded-full border border-yellow-200 bg-gradient-to-r from-yellow-300 to-orange-400 px-4 text-xs font-black text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:shadow-yellow-300/25 sm:text-sm" title="Guardar una palabra de esta frase"><BookmarkPlus className="h-4 w-4 shrink-0" /> Guardar palabra</button>
+                    <button type="button" onClick={() => setShowVocabularyCapture(true)} className="flex min-h-10 items-center gap-2 rounded-full border border-yellow-200 bg-gradient-to-r from-yellow-300 to-orange-400 px-4 text-xs font-black text-slate-950 shadow-lg transition hover:-translate-y-0.5 hover:shadow-yellow-300/25 sm:text-sm" title="Guardar una palabra o expresión de esta frase"><BookmarkPlus className="h-4 w-4 shrink-0" /> Guardar palabra / frase</button>
                   </div>
                   <div className="flex flex-wrap gap-1 rounded-xl bg-slate-950/40 p-1">
                     {puzzleModes.map((item) => <button key={item.id} type="button" onClick={() => setMode(item.id)} className={`min-h-10 rounded-lg px-3 text-xs font-black transition ${mode === item.id ? 'bg-yellow-300 text-yellow-950 shadow-lg' : 'text-white/65 hover:bg-white/10 hover:text-white'}`} title={item.detail}>{item.label}</button>)}
@@ -1126,7 +1135,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                     <p className="mx-auto mt-2 max-w-5xl text-[clamp(1.5rem,3.4vw,3rem)] font-black leading-tight">{currentLine.en}</p>
                     <div className="mt-4 flex flex-wrap justify-center gap-3">
                       <button type="button" onClick={speakEnglish} className="flex min-h-12 items-center gap-2 rounded-xl bg-slate-950 px-5 font-black text-white transition hover:-translate-y-0.5"><Volume2 className="h-5 w-5" /> Escuchar respuesta</button>
-                      <button type="button" onClick={() => setShowVocabularyCapture(true)} className="flex min-h-12 items-center gap-2 rounded-xl bg-white px-5 font-black text-indigo-800 shadow-lg transition hover:-translate-y-0.5"><BookmarkPlus className="h-5 w-5" /> Guardar palabras</button>
+                      <button type="button" onClick={() => setShowVocabularyCapture(true)} className="flex min-h-12 items-center gap-2 rounded-xl bg-white px-5 font-black text-indigo-800 shadow-lg transition hover:-translate-y-0.5"><BookmarkPlus className="h-5 w-5" /> Guardar palabra / frase</button>
                     </div>
                     {attempts > 1 && <p className="mt-3 text-xs font-black uppercase tracking-widest opacity-60">Resuelto en {attempts} intentos</p>}
                   </motion.div>

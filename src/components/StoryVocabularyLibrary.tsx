@@ -246,13 +246,26 @@ export function StoryVocabularyLibrary({ words, shared, onBack, onDelete, onImpo
         </section>
 
         {!words.length ? (
-          <div className="mt-6 flex min-h-[360px] flex-col items-center justify-center rounded-[2rem] border-2 border-dashed border-indigo-200 bg-white p-8 text-center"><Sparkles className="h-12 w-12 text-indigo-300" /><h2 className="mt-4 text-2xl font-black">Aún no has guardado palabras</h2><p className="mt-2 max-w-lg font-semibold text-slate-500">Completa una frase de Story Decoder y pulsa “Guardar palabras”.</p></div>
+          <div className="mt-6 flex min-h-[360px] flex-col items-center justify-center rounded-[2rem] border-2 border-dashed border-indigo-200 bg-white p-8 text-center"><Sparkles className="h-12 w-12 text-indigo-300" /><h2 className="mt-4 text-2xl font-black">Aún no has guardado palabras o expresiones</h2><p className="mt-2 max-w-lg font-semibold text-slate-500">Completa una frase de Story Decoder y pulsa “Guardar palabra / frase”.</p></div>
         ) : (
           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {words.map((word, index) => (
               <motion.article key={word.id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.025, 0.3) }} className="group relative overflow-hidden rounded-[1.75rem] border border-indigo-100 bg-white p-5 shadow-lg shadow-indigo-950/5">
-                <div className="flex items-start gap-3"><button type="button" onClick={() => speak(word.english)} className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-100 text-cyan-800 transition hover:bg-cyan-500 hover:text-white" aria-label={`Escuchar ${word.english}`}><Volume2 className="h-5 w-5" /></button><div className="min-w-0 flex-1"><h2 className="break-words text-2xl font-black text-slate-950">{word.english}</h2><p className="mt-1 text-lg font-black text-indigo-700">{word.spanish}</p></div>{!shared && <button type="button" onClick={() => onDelete(word.id)} className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-slate-300 transition hover:bg-rose-50 hover:text-rose-600" aria-label={`Eliminar ${word.english}`}><Trash2 className="h-5 w-5" /></button>}</div>
+                <div className="flex items-start gap-3">
+                  <button type="button" onClick={() => speak(word.english)} className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-100 text-cyan-800 transition hover:bg-cyan-500 hover:text-white" aria-label={`Escuchar ${word.english}`}><Volume2 className="h-5 w-5" /></button>
+                  <div className="min-w-0 flex-1">
+                    <h2 className="break-words text-2xl font-black text-slate-950">{word.english}</h2>
+                    <p className="mt-1 text-lg font-black text-indigo-700">{word.spanish}</p>
+                  </div>
+                </div>
                 {word.exampleEn && <div className="mt-4 rounded-xl bg-slate-50 p-3"><p className="font-bold text-slate-800">{word.exampleEn}</p><p className="mt-1 text-sm font-semibold text-slate-500">{word.exampleEs}</p></div>}
+                {!shared && (
+                  <div className="mt-4 flex justify-end">
+                    <button type="button" onClick={() => onDelete(word.id)} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-rose-200 bg-rose-50 px-4 font-black text-rose-700 transition hover:bg-rose-500 hover:text-white" aria-label={`Eliminar ${word.english}`}>
+                      <Trash2 className="h-4 w-4" /> Eliminar
+                    </button>
+                  </div>
+                )}
               </motion.article>
             ))}
           </div>

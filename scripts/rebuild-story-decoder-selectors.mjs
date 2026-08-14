@@ -36,6 +36,16 @@ const PREDICATE_WORDS = new Set([
   'organized', 'possible', 'prepared', 'proud', 'ready', 'responsible', 'safe',
   'similar', 'sorry', 'supposed', 'sure', 'tired', 'used', 'wrong'
 ]);
+const VERB_FORMS_BY_BASE = new Map();
+const VERB_BASES_BY_FORM = new Map();
+const PHRASE_PATTERNS_BY_BASE = new Map();
+const REGISTERED_PHRASE_KEYS = new Set();
+const PHRASE_BREAK_IGNORES = new Set([
+  'of', 'to', 'for', 'with', 'at', 'on', 'in', 'up', 'out', 'off', 'down', 'back',
+  'over', 'under', 'into', 'onto', 'from', 'about', 'around', 'after', 'before',
+  'through', 'away', 'along', 'across', 'against', 'between', 'among', 'toward',
+  'towards', 'without'
+]);
 
 function words(value) {
   return value.match(/[\p{L}\p{M}\p{N}]+(?:[\u2019'][\p{L}\p{M}\p{N}]+)*(?:-[\p{L}\p{M}\p{N}]+)*/gu) || [];
@@ -43,6 +53,144 @@ function words(value) {
 
 function lower(value) {
   return String(value || '').toLocaleLowerCase('en-US').replace(/[\u2019]/g, "'");
+}
+
+function getRegularVerbForms(base) {
+  const forms = new Set();
+  const normalizedBase = lower(base);
+  if (!normalizedBase) return forms;
+
+  forms.add(normalizedBase);
+  if (normalizedBase === 'be') {
+    ['am', 'is', 'are', 'was', 'were', 'be', 'been', 'being'].forEach((form) => forms.add(form));
+    return forms;
+  }
+  if (normalizedBase === 'do') {
+    ['do', 'does', 'did', 'doing', 'done'].forEach((form) => forms.add(form));
+    return forms;
+  }
+  if (normalizedBase === 'have') {
+    ['have', 'has', 'had', 'having'].forEach((form) => forms.add(form));
+    return forms;
+  }
+
+  if (/[^aeiou]y$/.test(normalizedBase)) forms.add(`${normalizedBase.slice(0, -1)}ies`);
+  else if (/(s|x|z|ch|sh|o)$/.test(normalizedBase)) forms.add(`${normalizedBase}es`);
+  else forms.add(`${normalizedBase}s`);
+
+  if (normalizedBase.endsWith('ie')) forms.add(`${normalizedBase.slice(0, -2)}ying`);
+  else if (normalizedBase.endsWith('e') && !normalizedBase.endsWith('ee')) forms.add(`${normalizedBase.slice(0, -1)}ing`);
+  else forms.add(`${normalizedBase}ing`);
+
+  if (normalizedBase.endsWith('e')) forms.add(`${normalizedBase}d`);
+  else if (/[^aeiou]y$/.test(normalizedBase)) forms.add(`${normalizedBase.slice(0, -1)}ied`);
+  else forms.add(`${normalizedBase}ed`);
+
+  return forms;
+}
+
+function registerVerbFamily(base, extraForms = []) {
+  const normalizedBase = lower(base);
+  if (!normalizedBase) return;
+
+  const family = new Set(getRegularVerbForms(normalizedBase));
+  for (const form of extraForms.filter(Boolean).flatMap((form) => words(String(form)))) {
+    const normalized = lower(form);
+    if (normalized) family.add(normalized);
+  }
+
+  VERB_FORMS_BY_BASE.set(normalizedBase, family);
+  for (const form of family) {
+    const bases = VERB_BASES_BY_FORM.get(form) || new Set();
+    bases.add(normalizedBase);
+    VERB_BASES_BY_FORM.set(form, bases);
+    VERBS.add(form);
+  }
+}
+
+function registerPhrasePattern(patternWords) {
+  const normalized = patternWords.map((word) => lower(word)).filter(Boolean);
+  if (normalized.length < 2) return;
+
+  const key = normalized.join(' ');
+  if (REGISTERED_PHRASE_KEYS.has(key)) return;
+  REGISTERED_PHRASE_KEYS.add(key);
+
+  const head = normalized[0];
+  const bucket = PHRASE_PATTERNS_BY_BASE.get(head) || [];
+  bucket.push({ head, words: normalized, length: normalized.length });
+  bucket.sort((a, b) => b.length - a.length);
+  PHRASE_PATTERNS_BY_BASE.set(head, bucket);
+}
+
+function parsePhraseCandidates(term) {
+  const cleaned = String(term || '')
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/[\/|]+/g, ' or ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!cleaned) return [];
+
+  const tokens = words(cleaned);
+  const phrases = [];
+  let current = [];
+
+  for (const token of tokens) {
+    const normalized = lower(token);
+    if (normalized === 'or') {
+      if (current.length >= 2) phrases.push(current);
+      current = [];
+      continue;
+    }
+
+    if (current.length > 0 && isVerb(token) && !PHRASE_BREAK_IGNORES.has(normalized)) {
+      if (current.length >= 2) phrases.push(current);
+      current = [token];
+      continue;
+    }
+
+    current.push(token);
+  }
+
+  if (current.length >= 2) phrases.push(current);
+  return phrases;
+}
+
+function matchPhraseGroup(tokens, startIndex) {
+  const current = lower(tokens[startIndex]);
+  const candidateBases = VERB_BASES_BY_FORM.get(current);
+  if (!candidateBases) return 0;
+
+  let bestMatch = 0;
+  for (const base of candidateBases) {
+    const patterns = PHRASE_PATTERNS_BY_BASE.get(base) || [];
+    const family = VERB_FORMS_BY_BASE.get(base) || new Set();
+    for (const pattern of patterns) {
+      if (startIndex + pattern.length > tokens.length) continue;
+      let matched = true;
+      for (let offset = 0; offset < pattern.length; offset += 1) {
+        const normalized = lower(tokens[startIndex + offset]);
+        if (offset === 0) {
+          if (!family.has(normalized)) {
+            matched = false;
+            break;
+          }
+          continue;
+        }
+        if (normalized !== pattern.words[offset]) {
+          matched = false;
+          break;
+        }
+      }
+      if (matched) bestMatch = Math.max(bestMatch, pattern.length);
+    }
+  }
+
+  return bestMatch;
+}
+
+function isKnownPhraseChunk(tokens) {
+  return tokens.length > 1 && matchPhraseGroup(tokens, 0) === tokens.length;
 }
 
 function addRegularForms(lexicon, rawBase) {
@@ -61,15 +209,17 @@ function addRegularForms(lexicon, rawBase) {
 }
 
 const VERBS = new Set(AUXILIARIES);
+registerVerbFamily('be');
+registerVerbFamily('do');
+registerVerbFamily('have');
 for (const entry of verbEntries) {
   const forms = [entry.base_verb, entry.past, entry.past_participle];
   if (entry.category === 'common_verb' || entry.category === 'irregular_verb') forms.push(entry.term);
+  const headForm = words(String(entry.base_verb || entry.term || ''))[0] || words(String(entry.term || ''))[0];
+  if (headForm) registerVerbFamily(headForm, forms);
   forms.filter(Boolean).forEach((form) => {
     const firstForm = words(String(form))[0];
-    if (firstForm) {
-      VERBS.add(lower(firstForm));
-      addRegularForms(VERBS, firstForm);
-    }
+    if (firstForm) VERBS.add(lower(firstForm));
   });
 }
 [
@@ -82,12 +232,17 @@ for (const entry of verbEntries) {
   'suggest', 'take', 'tell', 'understand', 'use', 'visit', 'want', 'write',
   'avoid', 'cost', 'decide', 'happen', 'hope', 'pass', 'prefer', 'promise', 'propose', 'repeat',
   'return', 'ring', 'share', 'stay', 'thank', 'wonder'
-].forEach((form) => addRegularForms(VERBS, form));
+].forEach((form) => registerVerbFamily(form));
 ['discouraged', 'supposed', 'challenging', 'incorrect', 'allowed', 'able', 'getting', 'running', 'sitting', 'planned', 'accepted'].forEach((form) => VERBS.add(form));
+
+for (const entry of verbEntries) {
+  if (entry.category !== 'phrasal_verb' && entry.category !== 'idiom') continue;
+  parsePhraseCandidates(entry.term).forEach(registerPhrasePattern);
+}
 
 function isVerb(value) {
   const token = lower(value);
-  return VERBS.has(token);
+  return VERBS.has(token) || VERB_BASES_BY_FORM.has(token);
 }
 
 function findVerbIndex(tokens, startIndex = 1) {
@@ -149,6 +304,10 @@ function takeVerbGroup(tokens, verbIndex) {
   if (/^changes?$/.test(first) && lower(tokens[end]) === 'to') return end + 1;
   if (lower(tokens[end]) === 'to' && tokens[end + 1] && isVerb(tokens[end + 1])) return end + 2;
   if (end === tokens.length - 1 && ['away', 'back', 'by', 'down', 'in', 'off', 'on', 'out', 'over', 'up'].includes(lower(tokens[end]))) return end + 1;
+
+  const phraseEnd = matchPhraseGroup(tokens, verbIndex);
+  if (phraseEnd > 0) return verbIndex + phraseEnd;
+
   return end;
 }
 
@@ -344,7 +503,7 @@ function naturalBlocks(sentence) {
 function mediumBlocks(easyBlocks) {
   return easyBlocks.flatMap((block) => {
     const tokens = words(block);
-    if (tokens.length <= 2 || DETERMINERS.has(lower(tokens[0])) || COMPLEMENT_BOUNDARIES.has(lower(tokens[0]))) return [tokens.join(' ')];
+    if (tokens.length <= 2 || isKnownPhraseChunk(tokens) || DETERMINERS.has(lower(tokens[0])) || COMPLEMENT_BOUNDARIES.has(lower(tokens[0]))) return [tokens.join(' ')];
     if (tokens.length === 3 && (AUXILIARIES.has(lower(tokens[0])) || isVerb(tokens[0]))) return [tokens[0], tokens.slice(1).join(' ')];
     return splitLongChunk(tokens.join(' '), 3);
   }).filter(Boolean);
