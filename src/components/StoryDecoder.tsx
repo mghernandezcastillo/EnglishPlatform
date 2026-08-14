@@ -1087,13 +1087,15 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
                 <div className="mt-3 flex items-center justify-between gap-2">
                   <div className="text-xs font-black uppercase tracking-[0.2em] text-white/40">Banco de palabras</div>
-                  <button
+                  <motion.button
                     type="button"
                     onClick={() => setWordsRevealed((value) => !value)}
+                    animate={!wordsRevealed ? { opacity: [1, 0.35, 1] } : { opacity: 1 }}
+                    transition={!wordsRevealed ? { duration: 1.3, repeat: Infinity, ease: 'easeInOut' } : undefined}
                     className={`flex min-h-9 items-center gap-2 rounded-full border px-3 text-xs font-black transition ${wordsRevealed ? 'border-white/15 bg-white/10 text-white/60 hover:bg-white/20' : 'border-yellow-300/40 bg-yellow-300/15 text-yellow-200 hover:bg-yellow-300 hover:text-yellow-950'}`}
                   >
                     {wordsRevealed ? <><EyeOff className="h-4 w-4" /> Ocultar palabras</> : <><Eye className="h-4 w-4" /> Mostrar palabras</>}
-                  </button>
+                  </motion.button>
                 </div>
 
                 <div className="relative mt-2">
@@ -1107,19 +1109,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                       );
                     })}
                   </div>
-                  {!wordsRevealed && (
-                    <div className="absolute inset-0 flex items-center justify-center p-2">
-                      <motion.button
-                        type="button"
-                        onClick={() => setWordsRevealed(true)}
-                        animate={{ scale: [1, 1.05, 1] }}
-                        transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-                        className="pointer-events-auto flex items-center gap-2 rounded-full border border-yellow-200/60 bg-gradient-to-r from-yellow-300 via-amber-300 to-orange-400 px-5 py-3 text-center text-sm font-black text-slate-950 shadow-2xl transition hover:-translate-y-0.5 sm:text-base"
-                      >
-                        <Eye className="h-5 w-5 shrink-0" /> Di la frase en voz alta, luego toca el ojo para ver las palabras
-                      </motion.button>
-                    </div>
-                  )}
                 </div>
               </div>
             </section>
