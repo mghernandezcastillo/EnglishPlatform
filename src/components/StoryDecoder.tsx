@@ -781,8 +781,10 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   }, [lineIndex, mode, activeStory?.story_id]);
 
   const isLessonUnlocked = (lessonId: number) => {
-    const index = orderedLessons.findIndex(({ lesson }) => lesson.lesson_id === lessonId);
-    return index <= 0 || completedLessonSet.has(orderedLessons[index - 1].lesson.lesson_id);
+    // El currículo es navegable desde el inicio: el alumno puede consultar
+    // cualquier bloque o lección sin completar los anteriores. El progreso
+    // sigue determinando únicamente las etiquetas y porcentajes de avance.
+    return orderedLessons.some(({ lesson }) => lesson.lesson_id === lessonId);
   };
 
   const openLesson = (block: DecoderBlock, lesson: DecoderLesson) => {
