@@ -34,6 +34,23 @@ function auditAudience(audience: string, levels: CurriculumLevel[]): AuditResult
       classIds.add(lesson.id);
       if (lesson.sections.length !== 5) errors.push(`${lesson.id}: tiene ${lesson.sections.length} secciones; se esperaban 5`);
 
+      const cover = lesson.sections[0]?.slides[0];
+      if (!cover) {
+        errors.push(`${lesson.id}: no tiene diapositiva inicial`);
+      } else {
+        const coverText = [cover.title, cover.description, ...(cover.content || [])].join(' ');
+        if (!cover.imageUrl) errors.push(`${lesson.id}: portada sin imagen`);
+        if (!cover.content || cover.content.length < 2 || cover.content.length > 3) {
+          errors.push(`${lesson.id}: la portada debe tener 2 o 3 mensajes breves`);
+        }
+        if (/progression focus|enfoque de progresión|final mission|this lesson advances toward/i.test(coverText)) {
+          errors.push(`${lesson.id}: la portada contiene texto técnico de progresión`);
+        }
+        if (/^(?:class|clase)\s+\d+\s*:/i.test(cover.title)) {
+          errors.push(`${lesson.id}: la portada usa el título técnico completo de la clase`);
+        }
+      }
+
       lesson.sections.forEach((section, sectionIndex) => {
         if (sectionIds.has(section.id)) errors.push(`${audience}: sección duplicada ${section.id}`);
         sectionIds.add(section.id);

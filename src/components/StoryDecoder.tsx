@@ -28,6 +28,7 @@ import {
   Target,
   Trophy,
   Volume2,
+  Trash2,
   X
 } from 'lucide-react';
 import { StoryVocabularyLibrary, decodeSharedVocabulary, type SavedVocabularyWord } from './StoryVocabularyLibrary';
@@ -273,6 +274,17 @@ function DecoderIntro({ loading, onStart }: { loading: boolean; onStart: () => v
     { text: 'STORY', className: 'left-[4%] bottom-[8%] bg-yellow-300 text-yellow-950', delay: 0.7 },
     { text: 'MEANING', className: 'right-[6%] bottom-[18%] bg-emerald-300 text-emerald-950', delay: 1.05 }
   ];
+  const orbitCards = [
+    { label: 'LEE', detail: 'Primero mira la historia completa.', className: 'left-[6%] top-[16%] sm:left-[3%] sm:top-[18%]', delay: 0 },
+    { label: 'CONSTRUYE', detail: 'Ordena la frase paso a paso.', className: 'right-[2%] top-[22%] sm:right-[2%] sm:top-[20%]', delay: 0.55 },
+    { label: 'GUARDA', detail: 'Añade vocabulario útil a tu lista.', className: 'left-[0%] bottom-[14%] sm:left-[2%] sm:bottom-[16%]', delay: 0.95 },
+    { label: 'REPASA', detail: 'Vuelve luego con tests rápidos.', className: 'right-[5%] bottom-[12%] sm:right-[3%] sm:bottom-[14%]', delay: 1.25 }
+  ];
+  const introSteps = [
+    { title: 'Lee', detail: 'Entiende la historia en español.' },
+    { title: 'Arma', detail: 'Construye la frase en inglés.' },
+    { title: 'Repasa', detail: 'Guarda palabras y practícalas.' }
+  ];
 
   return (
     <div className="story-decoder-intro relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 px-4 py-10 text-white">
@@ -318,6 +330,14 @@ function DecoderIntro({ loading, onStart }: { loading: boolean; onStart: () => v
           <p className="mx-auto mt-6 max-w-2xl text-[clamp(1.1rem,2vw,1.5rem)] font-semibold leading-relaxed text-indigo-100/85 lg:mx-0">
             Lee la historia, descubre su arquitectura y construye cada frase en inglés pieza por pieza.
           </p>
+          <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-3">
+            {introSteps.map((step) => (
+              <div key={step.title} className="rounded-2xl border border-white/10 bg-white/10 p-4 text-left shadow-2xl backdrop-blur-xl">
+                <div className="text-xs font-black uppercase tracking-[0.22em] text-cyan-200">{step.title}</div>
+                <p className="mt-2 text-sm font-semibold leading-relaxed text-indigo-50/85">{step.detail}</p>
+              </div>
+            ))}
+          </div>
           <button
             type="button"
             disabled={loading}
@@ -330,7 +350,38 @@ function DecoderIntro({ loading, onStart }: { loading: boolean; onStart: () => v
           </button>
         </motion.div>
 
-        <div className="story-decoder-scene order-1 flex min-h-[300px] items-center justify-center lg:order-2 lg:min-h-[560px]">
+        <div className="story-decoder-scene order-1 relative flex min-h-[300px] items-center justify-center lg:order-2 lg:min-h-[560px]">
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <motion.div
+              className="absolute h-[220px] w-[220px] rounded-full border border-cyan-300/20 border-dashed sm:h-[360px] sm:w-[360px]"
+              animate={{ rotate: 360, scale: [1, 1.03, 1] }}
+              transition={{ duration: 22, repeat: Infinity, ease: 'linear' }}
+            />
+            <motion.div
+              className="absolute h-[300px] w-[300px] rounded-full border border-violet-300/14 border-dashed sm:h-[470px] sm:w-[470px]"
+              animate={{ rotate: -360, scale: [1.02, 0.98, 1.02] }}
+              transition={{ duration: 32, repeat: Infinity, ease: 'linear' }}
+            />
+            <div className="absolute h-[150px] w-[150px] rounded-full bg-cyan-300/20 blur-3xl sm:h-[260px] sm:w-[260px]" />
+            <div className="absolute h-[220px] w-[220px] rounded-full bg-fuchsia-400/12 blur-3xl sm:h-[360px] sm:w-[360px]" />
+          </div>
+          {orbitCards.map((card) => (
+            <motion.div
+              key={card.label}
+              className={`story-decoder-cube absolute hidden w-40 rounded-2xl border border-white/12 bg-slate-950/45 px-4 py-3 text-left shadow-2xl backdrop-blur-xl sm:block ${card.className}`}
+              initial={{ opacity: 0, y: 12, rotateX: 35, rotateY: -18 }}
+              animate={{ opacity: 1, y: [0, -10, 0], rotateX: [10, -6, 10], rotateZ: [-2, 2, -2] }}
+              transition={{
+                opacity: { delay: card.delay, duration: 0.6 },
+                y: { duration: 5.5, repeat: Infinity, ease: 'easeInOut', delay: card.delay },
+                rotateX: { duration: 5.5, repeat: Infinity, ease: 'easeInOut', delay: card.delay },
+                rotateZ: { duration: 5.5, repeat: Infinity, ease: 'easeInOut', delay: card.delay }
+              }}
+            >
+              <div className="text-[0.62rem] font-black uppercase tracking-[0.24em] text-cyan-200">{card.label}</div>
+              <p className="mt-1 text-sm font-bold leading-snug text-white/88">{card.detail}</p>
+            </motion.div>
+          ))}
           <motion.div
             className="story-decoder-book relative h-[220px] w-[290px] sm:h-[300px] sm:w-[400px]"
             initial={{ opacity: 0, scale: 0.6, rotateX: 40 }}
@@ -449,6 +500,7 @@ function VocabularyCaptureModal({
   getSuggestion,
   verbBaseForms,
   onSave,
+  onDelete,
   onClose,
   onOpenLibrary
 }: {
@@ -458,6 +510,7 @@ function VocabularyCaptureModal({
   getSuggestion: (word: string) => string;
   verbBaseForms: Record<string, string>;
   onSave: (english: string, spanish: string) => void;
+  onDelete: (id: string) => void;
   onClose: () => void;
   onOpenLibrary: () => void;
 }) {
@@ -510,6 +563,12 @@ function VocabularyCaptureModal({
     setSavedMessage('¡Palabra guardada!');
   };
 
+  const deleteWord = () => {
+    if (!selectedSavedWord) return;
+    onDelete(selectedSavedWord.id);
+    setSavedMessage('¡Palabra eliminada!');
+  };
+
   useEffect(() => {
     if (!candidates.length) return;
     if (!selectedWord || !candidates.some((candidate) => candidate.value === selectedWord)) {
@@ -554,7 +613,14 @@ function VocabularyCaptureModal({
           </div>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:justify-between">
             <button type="button" onClick={onOpenLibrary} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-slate-100 px-5 font-black text-slate-700 transition hover:bg-slate-950 hover:text-white"><BookMarked className="h-5 w-5" /> Ver mis palabras ({savedWords.length})</button>
-            <button type="button" disabled={!manualEnglish.trim() || !manualSpanish.trim()} onClick={saveWord} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-7 text-lg font-black text-slate-950 shadow-lg disabled:opacity-40"><BookmarkPlus className="h-5 w-5" /> {savedMessage || (selectedSavedWord ? 'Actualizar' : 'Guardar')}</button>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              {selectedSavedWord && (
+                <button type="button" onClick={deleteWord} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl border border-rose-200 bg-rose-50 px-6 text-lg font-black text-rose-700 transition hover:bg-rose-500 hover:text-white">
+                  <X className="h-5 w-5" /> Eliminar
+                </button>
+              )}
+              <button type="button" disabled={!manualEnglish.trim() || !manualSpanish.trim()} onClick={saveWord} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-7 text-lg font-black text-slate-950 shadow-lg disabled:opacity-40"><BookmarkPlus className="h-5 w-5" /> {savedMessage || (selectedSavedWord ? 'Actualizar' : 'Guardar')}</button>
+            </div>
           </div>
         </div>
       </motion.section>
@@ -1157,11 +1223,12 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
               savedWords={vocabulary}
               showEnglishContext={feedback === 'correct'}
               getSuggestion={(word) => findStoryWordTranslation(word, verbTranslations)}
-              verbBaseForms={verbBaseForms}
-              onSave={saveVocabularyWord}
-              onClose={() => setShowVocabularyCapture(false)}
-              onOpenLibrary={openVocabulary}
-            />
+          verbBaseForms={verbBaseForms}
+          onSave={saveVocabularyWord}
+          onDelete={deleteVocabularyWord}
+          onClose={() => setShowVocabularyCapture(false)}
+          onOpenLibrary={openVocabulary}
+        />
           )}
         </AnimatePresence>
         <header className="z-30 shrink-0 border-b border-white/10 bg-slate-950/75 px-3 py-2 backdrop-blur-xl sm:px-5 sm:py-3">
@@ -1268,6 +1335,54 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
             </div>
 
             <aside className="order-first overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.08] shadow-2xl backdrop-blur-xl lg:order-last lg:sticky lg:top-0">
+              <div className="border-b border-white/10 bg-slate-950/25 p-3 sm:p-4">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <div className="text-[0.62rem] font-black uppercase tracking-[0.18em] text-yellow-200">Lista de esta historia</div>
+                    <div className="mt-1 text-sm font-bold text-white/80">{currentStoryVocabulary.length} palabra{currentStoryVocabulary.length === 1 ? '' : 's'} guardada{currentStoryVocabulary.length === 1 ? '' : 's'}</div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={openStoryVocabularyReview}
+                    disabled={!currentStoryVocabulary.length}
+                    className="flex min-h-11 shrink-0 items-center gap-2 rounded-xl bg-yellow-300 px-3 text-xs font-black text-slate-950 transition hover:bg-yellow-200 disabled:cursor-not-allowed disabled:opacity-35"
+                  >
+                    <Brain className="h-4 w-4" /> Repasar
+                  </button>
+                </div>
+                <div className="mt-3 space-y-2">
+                  {currentStoryVocabulary.length === 0 ? (
+                    <div className="rounded-xl border border-dashed border-white/15 bg-white/5 p-3 text-xs font-semibold leading-relaxed text-white/45">
+                      Guarda palabras o expresiones de esta historia para repasarlas aquí.
+                    </div>
+                  ) : (
+                    <>
+                      {currentStoryVocabulary.slice(0, 6).map((word) => (
+                        <div key={word.id} className="flex items-start gap-2 rounded-xl border border-white/10 bg-white/5 p-3">
+                          <div className="min-w-0 flex-1">
+                            <div className="truncate text-sm font-black text-white">{word.english}</div>
+                            <div className="mt-1 text-xs font-semibold text-cyan-100/75">{word.spanish}</div>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => deleteVocabularyWord(word.id)}
+                            className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/10 text-white/70 transition hover:bg-rose-500 hover:text-white"
+                            aria-label={`Eliminar ${word.english}`}
+                            title="Eliminar palabra"
+                          >
+                            <Trash2 className="h-4 w-4" />
+                          </button>
+                        </div>
+                      ))}
+                      {currentStoryVocabulary.length > 6 && (
+                        <div className="rounded-xl border border-dashed border-white/10 bg-white/5 px-3 py-2 text-[0.7rem] font-black uppercase tracking-[0.18em] text-white/45">
+                          +{currentStoryVocabulary.length - 6} más en Mis palabras
+                        </div>
+                      )}
+                    </>
+                  )}
+                </div>
+              </div>
               <div className="border-b border-white/10 bg-gradient-to-r from-indigo-500/25 to-cyan-400/20 p-4">
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex min-w-0 items-center gap-3">

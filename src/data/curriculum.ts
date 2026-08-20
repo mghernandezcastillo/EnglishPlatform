@@ -5353,7 +5353,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Review: decode the emoji story",
                 "type": "emoji-game",
                 "content": ["🏆 + 📖 + ⭐"],
-                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                "options": ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
                 "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
@@ -8859,7 +8859,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "emoji-game",
                 "content": ["🏆 + 📖 + ⭐"],
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
-                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                "options": ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                 "correctOptionIndex": 1
               }
             ],
@@ -12460,7 +12460,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                     description: "Review: decode the emoji story",
                     type: "emoji-game",
                     content: ["🏆 + 📖 + ⭐"],
-                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    options: ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                     correctOptionIndex: 1,
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
@@ -12804,7 +12804,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                     description: "Review: decode the emoji story",
                     type: "emoji-game",
                     content: ["🏆 + 📖 + ⭐"],
-                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    options: ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                     correctOptionIndex: 1,
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
@@ -16191,7 +16191,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                     description: "Review: decode the emoji story",
                     type: "emoji-game",
                     content: ["🏆 + 📖 + ⭐"],
-                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    options: ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                     correctOptionIndex: 1,
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
@@ -18206,7 +18206,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Review: decode the emoji story",
                 "type": "emoji-game",
                 "content": ["🏆 + 📖 + ⭐"],
-                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                "options": ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
@@ -20088,7 +20088,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Review: decode the emoji story",
                 "type": "emoji-game",
                 "content": ["🏆 + 📖 + ⭐"],
-                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                "options": ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
@@ -20624,7 +20624,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Review: decode the emoji story",
                 "type": "emoji-game",
                 "content": ["🏆 + 📖 + ⭐"],
-                "options": ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                "options": ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                 "correctOptionIndex": 1,
                 "bgColor": "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
@@ -27241,7 +27241,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                     description: "Review: decode the emoji story",
                     type: "emoji-game",
                     content: ["🏆 + 📖 + ⭐"],
-                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    options: ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                     correctOptionIndex: 1,
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }
@@ -30237,7 +30237,7 @@ export const curriculumLevels: CurriculumLevel[] = [
                     description: "Review: decode the emoji story",
                     type: "emoji-game",
                     content: ["🏆 + 📖 + ⭐"],
-                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
+                    options: ["The dog is hungry.", "I remember today's lesson.", "I bought new shoes."],
                     correctOptionIndex: 1,
                     bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
                   }

@@ -23,6 +23,14 @@ type ClassProgression = {
   homework?: string[];
 };
 
+const brokenImageReplacements: Record<string, string> = {
+  'https://images.unsplash.com/photo-1517598024396-46c53fb3af66?auto=format&fit=crop&q=80&w=800': '/images/adults-c1-1-reading-sarah.png',
+  'https://images.unsplash.com/photo-1514643034934-2e917711204d?auto=format&fit=crop&q=80&w=800': '/images/adults-c1-1-friends.png',
+  'https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800': '/images/teens_welcome.jpg',
+  'https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800': '/images/teens_social_welcome.jpg',
+  'https://images.unsplash.com/photo-1580236021644-8d4822bc6d88?auto=format&fit=crop&q=80&w=800': '/images/teens_apps.jpg',
+};
+
 const levelProgression: Record<CurriculumAudience, Record<string, LevelProgression>> = {
   adulto: {
     'basic-zero': {
@@ -975,6 +983,21 @@ function contentIsMissingOrPlaceholder(slide: ClassSlide) {
 }
 
 function completeTeenClass(cls: CurriculumClass, kernel: TeenLessonKernel, spec: ClassProgression) {
+  const welcome = cls.sections[0]?.slides[0];
+  if (welcome) {
+    const visibleWelcomeText = [welcome.title, welcome.description, ...(welcome.content || [])].join(' ');
+    if (!welcome.content?.length || /important topic|progression focus|final mission/i.test(visibleWelcomeText)) {
+      const shortTheme = spec.title.replace(/^Class\s+\d+:\s*/i, '').split('/')[0].trim();
+      welcome.title = /welcome|bienvenid|review|repaso|congrat/i.test(welcome.title) ? welcome.title : 'Welcome! / ¡Bienvenidos!';
+      welcome.description = `${shortTheme} / Inicio de clase`;
+      welcome.content = [
+        `Welcome to ${shortTheme}.`,
+        'Get ready to listen, speak, and participate.',
+        'Let’s begin with a quick warm-up!',
+      ];
+    }
+  }
+
   const grammar = cls.sections[1]?.slides || [];
   const points = spec.teachingPoints || progressionFromKernel(cls, kernel).teachingPoints || [];
   grammar.slice(0, 5).forEach((slide, index) => {
@@ -1100,13 +1123,6 @@ function applyClassProgression(cls: CurriculumClass, spec: ClassProgression) {
   cls.description = spec.description;
   cls.objective = spec.objective;
 
-  const welcome = cls.sections[0]?.slides[0];
-  if (welcome) {
-    welcome.title = spec.title.replace(/^Class\s+\d+:\s*/i, '').replace(/^Clase\s+\d+:\s*/i, '');
-    welcome.description = 'Progression focus / Enfoque de progresión';
-    welcome.content = [spec.bridge, spec.objective, `Final mission: ${spec.goals[2]}`];
-  }
-
   const objectives = findObjectivesSlide(cls);
   if (objectives) {
     objectives.title = 'Progression Goals 🎯 / Metas de progresión 🎯';
@@ -1219,7 +1235,13 @@ function assertStableCurriculum(
 
         sectionBefore.slides.forEach((slideBefore) => {
           const slideAfter = sectionAfter.slides.find((slide) => slide.id === slideBefore.id);
-          if (!slideAfter || (slideAfter.imageUrl || '') !== slideBefore.imageUrl) {
+          const allowedRepair = brokenImageReplacements[slideBefore.imageUrl];
+          const imageChangedUnexpectedly = slideBefore.imageUrl
+            ? allowedRepair
+              ? slideAfter?.imageUrl !== allowedRepair
+              : (slideAfter?.imageUrl || '') !== slideBefore.imageUrl
+            : false;
+          if (!slideAfter || imageChangedUnexpectedly) {
             throw new Error(`Curriculum progression for ${audience} removed a stable slide or changed its image reference.`);
           }
         });
@@ -1243,9 +1265,12 @@ export function applyCurriculumProgression(levels: CurriculumLevel[], audience: 
 
       cls.sections.forEach((section, sectionIndex) => {
         section.slides.forEach((slide) => {
+          if (slide.imageUrl && brokenImageReplacements[slide.imageUrl]) {
+            slide.imageUrl = brokenImageReplacements[slide.imageUrl];
+          }
           if (!slide.content?.length) {
             const fallback: string[][] = [
-              [`Welcome to ${cls.title}.`, cls.objective, 'Connect today’s goal with one thing you already know.'],
+              ['Welcome! / ¡Bienvenidos!', 'Get ready to listen, speak, and participate.', 'Let’s begin with a quick warm-up!'],
               [`Language focus: ${cls.objective}`, 'Study the model, notice the form, and explain its meaning.', 'Create one accurate example.'],
               [`Practice focus: ${cls.objective}`, 'Answer with a complete idea.', 'Explain the clue that supports your answer.'],
               [`Speaking mission: ${cls.objective}`, 'Use the target language in a complete response.', 'Add one reason, detail, or follow-up question.'],
@@ -1258,6 +1283,42 @@ export function applyCurriculumProgression(levels: CurriculumLevel[], audience: 
           }
         });
       });
+
+      const cover = cls.sections[0]?.slides[0];
+      if (cover) {
+        if (/^(?:class|clase)\s+\d+\s*:/i.test(cover.title)) {
+          const shortTheme = cls.title.replace(/^(?:class|clase)\s+\d+\s*:\s*/i, '').split('/')[0].trim();
+          cover.title = 'Welcome! / ¡Bienvenidos!';
+          if (!cover.description || /inicio|start/i.test(cover.description)) {
+            cover.description = `${shortTheme} / Inicio de clase`;
+          }
+        }
+
+        if (!cover.imageUrl) {
+          cover.imageUrl = cls.sections
+            .flatMap((section) => section.slides)
+            .find((slide) => slide.id !== cover.id && slide.imageUrl)?.imageUrl;
+        }
+
+        const coverContent = [...(cover.content || [])];
+        if (coverContent.length > 3) {
+          const objectives = findObjectivesSlide(cls);
+          const continuation = coverContent.slice(3);
+          if (objectives && objectives.id !== cover.id) {
+            objectives.content = [
+              ...(objectives.content || []),
+              ...continuation.filter((line) => !objectives.content?.includes(line)),
+            ];
+          }
+          cover.content = coverContent.slice(0, 3);
+        } else if (coverContent.length < 2) {
+          cover.content = [
+            ...coverContent,
+            'Get ready to listen, speak, and participate.',
+            'Let’s begin with a quick warm-up!',
+          ].slice(0, 3);
+        }
+      }
     }
   }
 

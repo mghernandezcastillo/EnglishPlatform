@@ -521,6 +521,8 @@ const learningTranslations: Record<string, string> = {
 const phraseTranslations: Record<string, string> = {
   'be able to': 'poder',
   'be allowed to': 'tener permiso de',
+  'be getting used to': 'estar acostumbrándose a',
+  'be used to': 'estar acostumbrado/a a',
   'be supposed to': 'se supone que / deber',
   'catch up with': 'ponerse al día con',
   'check up on': 'revisar / comprobar',
@@ -553,6 +555,14 @@ const phraseTranslations: Record<string, string> = {
   'turn on': 'encender',
   'work on': 'trabajar en',
   'write down': 'anotar',
+  'would rather': 'preferir / preferiría',
+  'had better': 'sería mejor que / más vale que',
+  'need to': 'necesitar / tener que',
+  'have to': 'tener que',
+  'get something done': 'hacer que algo se haga / conseguir que algo se haga',
+  'have something done': 'hacer que algo se haga / mandar hacer algo',
+  'make someone do': 'hacer que alguien haga algo',
+  'let someone do': 'dejar que alguien haga algo',
   'used to': 'solía / acostumbraba a'
 };
 

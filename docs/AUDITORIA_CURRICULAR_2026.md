@@ -6,10 +6,10 @@ Fecha: 20 de agosto de 2026
 
 | Programa | Niveles | Clases | Diapositivas | Referencias visuales |
 |---|---:|---:|---:|---:|
-| Adultos | 8 | 89 | 1.913 | 552 |
+| Adultos | 8 | 89 | 1.913 | 556 |
 | Niños | 4 | 32 | 672 | 224 |
 | Adolescentes | 9 | 99 | 2.238 | 954 |
-| **Total** | **21** | **220** | **4.823** | **1.730** |
+| **Total** | **21** | **220** | **4.823** | **1.734** |
 
 La auditoría cubrió estructura, secuencia MCER, objetivos, repetición temática, contenido de diapositivas, quizzes, tareas, videos, fondos, IDs y referencias de imágenes.
 
@@ -89,6 +89,14 @@ Se completó el contenido específico de todas las clases adolescentes desde Bas
 - Cuando una clase adolescente incompleta necesitó resumen o tarea, se añadieron diapositivas con IDs nuevos y se reutilizó una referencia visual ya presente en esa misma clase.
 - Una validación en tiempo de carga bloquea cualquier futura transformación que elimine un elemento estable o cambie su imagen.
 
+## Auditoría de portadas
+
+Las 220 primeras diapositivas fueron revisadas como una categoría independiente. La portada conserva su función de bienvenida o activación breve: imagen grande, título corto y dos o tres mensajes. Los textos técnicos de progresión, objetivos extensos y misión final se mantienen fuera de la portada. Cuatro clases adultas que no tenían imagen asignada ahora reutilizan una imagen ya existente dentro de su propia clase; ninguna referencia visual original fue reemplazada.
+
+## Auditoría de imágenes
+
+Se comprobaron las 1.734 apariciones visuales de las 220 clases, correspondientes a 1.002 referencias únicas. Las 918 imágenes locales existen y las 84 URLs remotas restantes responden con un archivo de imagen válido. Cinco URLs antiguas de Unsplash respondían 404 y, por reutilizarse, afectaban 52 diapositivas; se sustituyeron únicamente esas referencias dañadas por imágenes locales que ya existían en el proyecto.
+
 ## Criterio recomendado para futuras clases
 
 Antes de agregar una clase con un tema ya usado, registrar siempre cuatro campos: **conocimiento previo**, **resultado nuevo**, **estructura nueva** y **producto final**. Si el resultado nuevo no puede describirse sin repetir el anterior, conviene reemplazar la temática o convertir la clase en una aplicación real, no en otra presentación de vocabulario.
@@ -101,6 +109,7 @@ Antes de agregar una clase con un tema ya usado, registrar siempre cuatro campos
 - Cero quizzes con cantidad de opciones o respuesta correcta inválida.
 - Cero fondos sin degradado.
 - Cero videos sin URL.
+- 220 portadas con imagen, texto breve y sin lenguaje técnico de progresión.
 - Auditoría de evaluaciones aprobada para los tres programas.
 - Compilación de producción aprobada.
 
@@ -108,6 +117,7 @@ La comprobación puede repetirse con:
 
 ```bash
 npm run audit:curriculum
+npm run audit:images
 npm run audit:evaluations
 npm run build
 ```

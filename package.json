@@ -11,6 +11,7 @@
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "audit:curriculum": "tsx scripts/audit-curriculum-progression.ts",
+    "audit:images": "tsx scripts/audit-curriculum-images.ts",
     "audit:evaluations": "node scripts/audit-evaluations.mjs"
   },
   "dependencies": {
