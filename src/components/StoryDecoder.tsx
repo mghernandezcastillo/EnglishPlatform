@@ -794,6 +794,11 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
   const isStoryUnlocked = (storyIndex: number) => {
     if (!activeLesson || storyIndex === 0) return true;
+    // Una historia ya completada siempre se puede volver a practicar,
+    // incluso si una historia anterior quedó pendiente por un progreso
+    // antiguo o importado. Antes esta excepción faltaba y el botón
+    // "Practicar otra vez" podía quedar visualmente activo pero bloqueado.
+    if (completedStorySet.has(activeLesson.stories[storyIndex].story_id)) return true;
     return completedStorySet.has(activeLesson.stories[storyIndex - 1].story_id);
   };
 
