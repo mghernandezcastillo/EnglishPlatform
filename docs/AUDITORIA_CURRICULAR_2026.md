@@ -95,7 +95,7 @@ Las 220 primeras diapositivas fueron revisadas como una categoría independiente
 
 ## Auditoría de imágenes
 
-Se comprobaron las 1.734 apariciones visuales de las 220 clases, correspondientes a 1.002 referencias únicas. Las 918 imágenes locales existen y las 84 URLs remotas restantes responden con un archivo de imagen válido. Cinco URLs antiguas de Unsplash respondían 404 y, por reutilizarse, afectaban 52 diapositivas; se sustituyeron únicamente esas referencias dañadas por imágenes locales que ya existían en el proyecto.
+Se comprobaron las 1.734 apariciones visuales de las 220 clases, consolidadas en 1.000 imágenes únicas. Las 84 fotografías que todavía dependían de Unsplash fueron verificadas con `curl`, conservadas localmente y conectadas mediante un mapa estable; el currículo ya no depende de imágenes remotas durante la clase. También se detectaron y restauraron desde sus originales 15 archivos públicos cuyo contenido binario estaba corrupto. La prueba final del servidor de producción entregó correctamente las 975 imágenes públicas utilizadas por las clases.
 
 ## Criterio recomendado para futuras clases
 

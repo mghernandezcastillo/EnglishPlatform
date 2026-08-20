@@ -55,7 +55,20 @@ for (const reference of localReferences) {
     failures.push({ ...reference, reason: `archivo local inexistente: ${filePath || cleanUrl}` });
     continue;
   }
-  if (fs.statSync(filePath).size === 0) failures.push({ ...reference, reason: `archivo local vacío: ${filePath}` });
+  if (fs.statSync(filePath).size === 0) {
+    failures.push({ ...reference, reason: `archivo local vacío: ${filePath}` });
+    continue;
+  }
+
+  const signature = Buffer.alloc(8);
+  const descriptor = fs.openSync(filePath, 'r');
+  fs.readSync(descriptor, signature, 0, signature.length, 0);
+  fs.closeSync(descriptor);
+  const extension = path.extname(cleanUrl).toLowerCase();
+  const isJpeg = signature[0] === 0xff && signature[1] === 0xd8 && signature[2] === 0xff;
+  const isPng = signature.equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));
+  if ((extension === '.jpg' || extension === '.jpeg') && !isJpeg) failures.push({ ...reference, reason: `contenido no coincide con extensión JPEG: ${filePath}` });
+  if (extension === '.png' && !isPng) failures.push({ ...reference, reason: `contenido no coincide con extensión PNG: ${filePath}` });
 }
 
 for (let index = 0; index < remoteReferences.length; index += 8) {

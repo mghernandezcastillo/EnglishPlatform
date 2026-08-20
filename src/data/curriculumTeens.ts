@@ -8,6 +8,7 @@ import imgTeenQuiz from '../assets/images/teens_c5_quiz1_1783004350357.jpg';
 import { organizeTeenBasicOneLevel } from './teenBasicOneOrganizer';
 import { applyTeenEvaluationOverrides } from './teenEvaluationOverrides';
 import { applyCurriculumProgression } from './curriculumProgression';
+import { localizeCurriculumImages } from './curriculumImageMap';
 import { enhanceOralEvaluations, removeDecorativeEvaluationImages } from './oralEvaluationEnhancements';
 
 const images = [
@@ -13157,3 +13158,4 @@ applyCurriculumProgression(curriculumTeensLevels, 'adolescente');
 applyTeenEvaluationOverrides(curriculumTeensLevels);
 enhanceOralEvaluations(curriculumTeensLevels, 'adolescente');
 removeDecorativeEvaluationImages(curriculumTeensLevels);
+localizeCurriculumImages(curriculumTeensLevels);
