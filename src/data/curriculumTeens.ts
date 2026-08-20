@@ -7,6 +7,7 @@ import imgTeenBirthday from '../assets/images/teens_birthday_party_1782771276209
 import imgTeenQuiz from '../assets/images/teens_c5_quiz1_1783004350357.jpg';
 import { organizeTeenBasicOneLevel } from './teenBasicOneOrganizer';
 import { applyTeenEvaluationOverrides } from './teenEvaluationOverrides';
+import { applyCurriculumProgression } from './curriculumProgression';
 import { enhanceOralEvaluations, removeDecorativeEvaluationImages } from './oralEvaluationEnhancements';
 
 const images = [
@@ -13152,6 +13153,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
 ];
 
 organizeTeenBasicOneLevel(curriculumTeensLevels);
+applyCurriculumProgression(curriculumTeensLevels, 'adolescente');
 applyTeenEvaluationOverrides(curriculumTeensLevels);
 enhanceOralEvaluations(curriculumTeensLevels, 'adolescente');
 removeDecorativeEvaluationImages(curriculumTeensLevels);

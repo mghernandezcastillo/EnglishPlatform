@@ -539,19 +539,38 @@ const phraseTranslations: Record<string, string> = {
   'pick up': 'recoger / aprender',
   'put on': 'ponerse',
   'run out of': 'quedarse sin',
+  'set up': 'montar / preparar',
   'stick with': 'seguir con',
   'take advantage of': 'aprovechar',
   'take care of': 'cuidar de / encargarse de',
   'take off': 'quitarse / despegar',
   'take out': 'sacar',
+  'take a look at': 'echar un vistazo a',
   'think back on': 'recordar',
+  'feel proud of': 'sentirse orgulloso de',
+  'turn around': 'dar la vuelta',
   'turn off': 'apagar',
   'turn on': 'encender',
+  'work on': 'trabajar en',
+  'write down': 'anotar',
   'used to': 'solía / acostumbraba a'
 };
 
+const knownPhraseKeys = new Set(Object.keys(phraseTranslations));
+const beForms = new Set(['am', 'is', 'are', 'was', 'were', 'be', 'been', 'being']);
+const auxiliaryForms = new Set(['will', 'would', 'can', 'could', 'may', 'might', 'must', 'should', 'shall', 'do', 'does', 'did', 'have', 'has', 'had']);
+
+function normalizeStoryTerm(term: string) {
+  return term
+    .toLocaleLowerCase('en-US')
+    .replace(/[’']/g, '')
+    .replace(/[^\p{L}\p{M}\s]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function candidateLemmas(word: string) {
-  const normalized = word.toLocaleLowerCase('en-US').replace(/[’']/g, '').trim();
+  const normalized = normalizeStoryTerm(word);
   const candidates = [normalized];
 
   if (normalized.endsWith('ies') && normalized.length > 4) candidates.push(`${normalized.slice(0, -3)}y`);
@@ -572,7 +591,7 @@ function candidateLemmas(word: string) {
 }
 
 function candidatePhrases(word: string) {
-  const normalized = word.toLocaleLowerCase('en-US').replace(/[’']/g, '').trim();
+  const normalized = normalizeStoryTerm(word);
   if (!normalized.includes(' ')) return [];
   const [first, ...rest] = normalized.split(/\s+/);
   const tail = rest.join(' ');
@@ -581,6 +600,67 @@ function candidatePhrases(word: string) {
     normalized,
     ...candidateLemmas(first).map((candidate) => `${candidate} ${tail}`)
   ]));
+}
+
+function longestKnownPhrasePrefix(candidate: string) {
+  const normalized = normalizeStoryTerm(candidate);
+  let best = '';
+  for (const phrase of knownPhraseKeys) {
+    if (normalized === phrase || normalized.startsWith(`${phrase} `)) {
+      if (phrase.length > best.length) best = phrase;
+    }
+  }
+  return best;
+}
+
+function canonicalPhraseCandidate(term: string, verbBaseForms: Record<string, string>) {
+  const normalized = normalizeStoryTerm(term);
+  if (!normalized) return '';
+
+  if (!normalized.includes(' ')) {
+    return verbBaseForms[normalized] || '';
+  }
+
+  const [first, ...rest] = normalized.split(/\s+/);
+  const tail = rest.join(' ');
+  if (!first || !tail) return '';
+
+  const variants = new Set<string>([normalized]);
+  const firstBase = verbBaseForms[first];
+  if (firstBase) variants.add([firstBase, ...rest].join(' '));
+
+  if (auxiliaryForms.has(first) && tail) {
+    variants.add(tail);
+  }
+
+  if (beForms.has(first) && ['able to', 'supposed to', 'going to'].some((suffix) => tail === suffix || tail.startsWith(`${suffix} `))) {
+    variants.add(`be ${tail}`);
+  }
+
+  for (const variant of variants) {
+    if (knownPhraseKeys.has(variant)) return variant;
+    const prefix = longestKnownPhrasePrefix(variant);
+    if (prefix) return prefix;
+  }
+
+  return '';
+}
+
+export function canonicalizeStoryVocabularyTerm(term: string, verbBaseForms: Record<string, string>) {
+  const normalized = normalizeStoryTerm(term);
+  if (!normalized) return '';
+  const canonicalPhrase = canonicalPhraseCandidate(normalized, verbBaseForms);
+  if (canonicalPhrase) return canonicalPhrase;
+
+  if (!normalized.includes(' ')) {
+    return verbBaseForms[normalized] || normalized;
+  }
+
+  return normalized;
+}
+
+export function normalizeSavedVocabularyTerm(term: string, verbBaseForms: Record<string, string>) {
+  return canonicalizeStoryVocabularyTerm(term, verbBaseForms);
 }
 
 export function findStoryWordTranslation(word: string, verbTranslations: Record<string, string>) {

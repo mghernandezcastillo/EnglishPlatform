@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
+    "audit:curriculum": "tsx scripts/audit-curriculum-progression.ts",
     "audit:evaluations": "node scripts/audit-evaluations.mjs"
   },
   "dependencies": {

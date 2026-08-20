@@ -46,8 +46,31 @@ function cleanTheme(title: string): string {
   return title.replace(/^Class \d+:\s*/i, '').replace(/^Clase \d+:\s*/i, '').replace(/\s*\/.*$/, '').trim();
 }
 
+function rotationSeed(id: string, offset: number): 0 | 1 | 2 {
+  return ((Array.from(id).reduce((total, char) => total + char.charCodeAt(0), 0) + offset) % 3) as 0 | 1 | 2;
+}
+
+function rotateQuizAnswer<T extends { options: [string, string, string]; correctOptionIndex: 0 | 1 | 2 }>(item: T, shift: 0 | 1 | 2): T {
+  if (shift === 0) return item;
+  const correct = item.options[item.correctOptionIndex];
+  const options = [...item.options.slice(shift), ...item.options.slice(0, shift)] as [string, string, string];
+  return {
+    ...item,
+    options,
+    correctOptionIndex: options.indexOf(correct) as 0 | 1 | 2,
+  };
+}
+
 function buildKidsClass(seed: SeedClass, data: KidsClassData): CurriculumClass {
   const theme = cleanTheme(seed.title);
+  const checks = data.checks.map((item, index) => rotateQuizAnswer(item, rotationSeed(seed.id, index))) as KidsClassData['checks'];
+  const emoji = rotateQuizAnswer(data.emoji, rotationSeed(seed.id, 4));
+  const funChecks = [
+    quiz(`Which sentence uses ${data.words[0]}?`, [data.models[0], data.models[1], data.models[2]], 0),
+    quiz(`Which sentence uses ${data.words[1]}?`, [data.models[1], data.models[0], data.models[2]], 0),
+    quiz(`Which sentence uses ${data.words[2]}?`, [data.models[2], data.models[0], data.models[1]], 0),
+  ].map((item, index) => rotateQuizAnswer(item, rotationSeed(seed.id, index + 6))) as [ReturnType<typeof quiz>, ReturnType<typeof quiz>, ReturnType<typeof quiz>];
+
   return buildBlueprintClass({
     id: seed.id,
     title: seed.title,
@@ -71,14 +94,10 @@ function buildKidsClass(seed: SeedClass, data: KidsClassData): CurriculumClass {
       { title: 'Mini Review / Repaso', content: [`Can you say ${data.words[0]}?`, `Can you say ${data.words[1]}?`, `Can you say ${data.words[2]}?`] },
     ],
     context: { title: 'Mini Story / Mini historia', content: data.context, imageUrl: seed.imageUrl },
-    checks: data.checks,
-    emoji: { prompt: 'Emoji Mission / Mision Emoji', content: data.emoji.content, options: data.emoji.options, correctOptionIndex: data.emoji.correctOptionIndex },
+    checks,
+    emoji: { prompt: 'Emoji Mission / Mision Emoji', content: emoji.content, options: emoji.options, correctOptionIndex: emoji.correctOptionIndex },
     talk: { title: "Let's Talk! / A hablar", content: data.talk, imageUrl: seed.imageUrl },
-    funChecks: [
-      quiz(`Choose the correct word about ${theme}.`, [data.words[0], data.extraWords[0], 'table'], 0),
-      quiz('Choose the best sentence.', [data.models[0], 'I am pizza blue.', 'Go under green.'], 0),
-      quiz('Choose the best answer.', ['Yes, I can say it.', 'No sentence toy.', 'Because Monday red.'], 0),
-    ],
+    funChecks,
     share: { title: 'Share Time / Comparte', content: data.share, imageUrl: seed.imageUrl },
     summary: { title: 'Great Job! / Muy bien', content: [`You used words about ${theme}.`, 'You answered simple questions in English.', 'Keep practicing the key words out loud.'], imageUrl: seed.imageUrl },
     homework: data.homework,

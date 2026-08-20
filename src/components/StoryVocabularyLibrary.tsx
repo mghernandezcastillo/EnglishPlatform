@@ -21,12 +21,16 @@ export type SavedVocabularyWord = {
   exampleEn: string;
   exampleEs: string;
   storyTitle: string;
+  storyId?: string;
   addedAt: number;
 };
 
 type StoryVocabularyLibraryProps = {
   words: SavedVocabularyWord[];
   shared: boolean;
+  contextLabel?: string;
+  subtitle?: string;
+  initialView?: 'library' | 'quiz';
   onBack: () => void;
   onDelete: (id: string) => void;
   onImportShared: () => void;
@@ -94,9 +98,9 @@ export function decodeSharedVocabulary(value: string | null): SavedVocabularyWor
   }
 }
 
-export function StoryVocabularyLibrary({ words, shared, onBack, onDelete, onImportShared }: StoryVocabularyLibraryProps) {
-  const [view, setView] = useState<'library' | 'quiz' | 'result'>('library');
-  const [quizWords, setQuizWords] = useState<SavedVocabularyWord[]>([]);
+export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, initialView = 'library', onBack, onDelete, onImportShared }: StoryVocabularyLibraryProps) {
+  const [view, setView] = useState<'library' | 'quiz' | 'result'>(initialView === 'quiz' && words.length ? 'quiz' : 'library');
+  const [quizWords, setQuizWords] = useState<SavedVocabularyWord[]>(() => initialView === 'quiz' && words.length ? shuffle(words).slice(0, Math.min(words.length, 10)) : []);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [score, setScore] = useState(0);
@@ -178,7 +182,7 @@ export function StoryVocabularyLibrary({ words, shared, onBack, onDelete, onImpo
         <header className="shrink-0 border-b border-white/10 bg-slate-950/70 px-4 py-3 backdrop-blur-xl">
           <div className="mx-auto flex max-w-5xl items-center gap-3">
             <button type="button" onClick={() => setView('library')} className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 hover:bg-white hover:text-slate-950" aria-label="Volver al vocabulario"><ArrowLeft className="h-6 w-6" /></button>
-            <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.2em] text-cyan-300">Test de memoria</div><div className="text-xl font-black">¿Qué significa esta palabra?</div></div>
+            <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.2em] text-cyan-300">{contextLabel ? `Repaso de ${contextLabel}` : 'Test de memoria'}</div><div className="text-xl font-black">¿Qué significa esta palabra?</div></div>
             <div className="rounded-xl bg-white/10 px-4 py-2 text-lg font-black text-yellow-300">{questionIndex + 1}/{quizWords.length}</div>
           </div>
           <div className="mx-auto mt-3 h-2 max-w-5xl overflow-hidden rounded-full bg-white/10"><motion.div className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-yellow-300" animate={{ width: `${((questionIndex + 1) / quizWords.length) * 100}%` }} /></div>
@@ -229,7 +233,7 @@ export function StoryVocabularyLibrary({ words, shared, onBack, onDelete, onImpo
       <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 px-4 py-3 shadow-sm backdrop-blur-xl sm:px-6">
         <div className="mx-auto flex max-w-7xl items-center gap-3">
           <button type="button" onClick={onBack} className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-slate-100 transition hover:bg-slate-950 hover:text-white" aria-label="Volver"><ArrowLeft className="h-6 w-6" /></button>
-          <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.2em] text-indigo-500">{shared ? 'Colección compartida' : 'Mi vocabulario'}</div><div className="truncate text-xl font-black sm:text-3xl">Palabras aprendidas</div></div>
+          <div className="min-w-0 flex-1"><div className="text-xs font-black uppercase tracking-[0.2em] text-indigo-500">{contextLabel ? 'Repaso de historia' : shared ? 'Colección compartida' : 'Mi vocabulario'}</div><div className="truncate text-xl font-black sm:text-3xl">{contextLabel || 'Palabras aprendidas'}</div></div>
           <span className="rounded-full bg-indigo-100 px-4 py-2 text-sm font-black text-indigo-800">{words.length} palabras</span>
         </div>
       </header>
@@ -237,7 +241,7 @@ export function StoryVocabularyLibrary({ words, shared, onBack, onDelete, onImpo
       <main className="mx-auto max-w-7xl px-4 py-7 sm:px-6">
         <section className="overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-900 p-6 text-white shadow-2xl sm:p-9">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
-            <div><div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-black uppercase tracking-widest text-cyan-200"><BookMarked className="h-4 w-4" /> Tu memoria en crecimiento</div><h1 className="mt-4 text-[clamp(2.4rem,6vw,5rem)] font-black leading-none">Guarda. Recuerda. Usa.</h1><p className="mt-3 max-w-2xl text-lg font-semibold text-white/70">Repasa el significado y comprueba tu memoria con preguntas rápidas de tres opciones.</p></div>
+            <div><div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-black uppercase tracking-widest text-cyan-200"><BookMarked className="h-4 w-4" /> Tu memoria en crecimiento</div><h1 className="mt-4 text-[clamp(2.4rem,6vw,5rem)] font-black leading-none">{contextLabel || 'Guarda. Recuerda. Usa.'}</h1><p className="mt-3 max-w-2xl text-lg font-semibold text-white/70">{subtitle || 'Repasa el significado y comprueba tu memoria con preguntas rápidas de tres opciones.'}</p></div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
               <button type="button" disabled={!words.length} onClick={startQuiz} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-yellow-300 to-orange-400 px-6 text-lg font-black text-slate-950 shadow-xl disabled:opacity-40"><Brain className="h-6 w-6" /> Test de memoria</button>
               {shared ? <button type="button" onClick={onImportShared} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-300 px-6 font-black text-emerald-950"><BookMarked className="h-5 w-5" /> Guardar en mi vocabulario</button> : <button type="button" disabled={!words.length} onClick={shareLibrary} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-6 font-black transition hover:bg-white hover:text-slate-950 disabled:opacity-40"><Share2 className="h-5 w-5" /> {shareStatus || 'Compartir enlace'}</button>}
@@ -246,7 +250,7 @@ export function StoryVocabularyLibrary({ words, shared, onBack, onDelete, onImpo
         </section>
 
         {!words.length ? (
-          <div className="mt-6 flex min-h-[360px] flex-col items-center justify-center rounded-[2rem] border-2 border-dashed border-indigo-200 bg-white p-8 text-center"><Sparkles className="h-12 w-12 text-indigo-300" /><h2 className="mt-4 text-2xl font-black">Aún no has guardado palabras o expresiones</h2><p className="mt-2 max-w-lg font-semibold text-slate-500">Completa una frase de Story Decoder y pulsa “Guardar palabra / frase”.</p></div>
+          <div className="mt-6 flex min-h-[360px] flex-col items-center justify-center rounded-[2rem] border-2 border-dashed border-indigo-200 bg-white p-8 text-center"><Sparkles className="h-12 w-12 text-indigo-300" /><h2 className="mt-4 text-2xl font-black">{contextLabel ? 'Todavía no hay palabras guardadas en esta historia' : 'Aún no has guardado palabras o expresiones'}</h2><p className="mt-2 max-w-lg font-semibold text-slate-500">{contextLabel ? 'Guarda una palabra o expresión desde la historia y luego vuelve aquí para practicarla.' : 'Completa una frase de Story Decoder y pulsa “Guardar palabra / frase”.'}</p></div>
         ) : (
           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {words.map((word, index) => (

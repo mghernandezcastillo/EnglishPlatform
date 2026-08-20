@@ -7,6 +7,7 @@ import {
   BookmarkPlus,
   BookOpen,
   BookMarked,
+  Brain,
   Check,
   CheckCircle2,
   ChevronDown,
@@ -19,7 +20,7 @@ import {
   Lightbulb,
   LoaderCircle,
   LockKeyhole,
-  Map,
+  Map as MapIcon,
   Play,
   RefreshCw,
   RotateCcw,
@@ -30,7 +31,7 @@ import {
   X
 } from 'lucide-react';
 import { StoryVocabularyLibrary, decodeSharedVocabulary, type SavedVocabularyWord } from './StoryVocabularyLibrary';
-import { findStoryWordTranslation } from '../data/storyDecoderTranslations';
+import { canonicalizeStoryVocabularyTerm, findStoryWordTranslation, normalizeSavedVocabularyTerm } from '../data/storyDecoderTranslations';
 
 type PuzzleMode = 'easy' | 'medium' | 'hard' | 'expert';
 type DecoderScreen = 'intro' | 'roadmap' | 'lesson' | 'player' | 'vocabulary';
@@ -104,6 +105,13 @@ type DecoderCurriculum = {
 type DecoderProgress = {
   completedStoryIds: string[];
   lineByStory: Record<string, number>;
+};
+
+type VocabularyReviewContext = {
+  title: string;
+  subtitle: string;
+  words: SavedVocabularyWord[];
+  initialView: 'library' | 'quiz';
 };
 
 interface StoryDecoderProps {
@@ -439,6 +447,7 @@ function VocabularyCaptureModal({
   savedWords,
   showEnglishContext,
   getSuggestion,
+  verbBaseForms,
   onSave,
   onClose,
   onOpenLibrary
@@ -447,6 +456,7 @@ function VocabularyCaptureModal({
   savedWords: SavedVocabularyWord[];
   showEnglishContext: boolean;
   getSuggestion: (word: string) => string;
+  verbBaseForms: Record<string, string>;
   onSave: (english: string, spanish: string) => void;
   onClose: () => void;
   onOpenLibrary: () => void;
@@ -459,29 +469,53 @@ function VocabularyCaptureModal({
       ...(line.puzzle.medium_blocks || []),
       ...sentenceWords
     ];
-    return Array.from(new Set(source.map((word) => word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '').trim()).filter(Boolean)))
+    const candidateMap = new globalThis.Map<string, { value: string; label: string }>();
+    source.forEach((word) => {
+      const original = word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '').trim();
+      if (!original) return;
+      const value = canonicalizeStoryVocabularyTerm(original, verbBaseForms);
+      if (!value) return;
+      const label = value.includes(' ')
+        ? value
+        : (/^[A-ZÁÉÍÓÚÑ]/.test(original) ? original : value);
+      if (!candidateMap.has(value.toLocaleLowerCase('en-US'))) {
+        candidateMap.set(value.toLocaleLowerCase('en-US'), { value, label });
+      }
+    });
+    return Array.from(candidateMap.values())
       .sort((left, right) => {
-        const lengthDiff = right.split(/\s+/).length - left.split(/\s+/).length;
-        return lengthDiff !== 0 ? lengthDiff : left.localeCompare(right, 'en-US');
+        const lengthDiff = right.value.split(/\s+/).length - left.value.split(/\s+/).length;
+        return lengthDiff !== 0 ? lengthDiff : left.label.localeCompare(right.label, 'en-US');
       });
-  }, [line]);
-  const [selectedWord, setSelectedWord] = useState(candidates[0] || '');
-  const selectedSavedWord = savedWords.find((word) => word.english.toLocaleLowerCase('en-US') === selectedWord.toLocaleLowerCase('en-US'));
-  const [translation, setTranslation] = useState(() => selectedSavedWord?.spanish || getSuggestion(selectedWord));
+  }, [line, verbBaseForms]);
+  const [selectedWord, setSelectedWord] = useState(candidates[0]?.value || '');
+  const [manualEnglish, setManualEnglish] = useState(candidates[0]?.value || '');
+  const [manualSpanish, setManualSpanish] = useState(() => getSuggestion(candidates[0]?.value || ''));
   const [savedMessage, setSavedMessage] = useState('');
+  const selectedSavedWord = savedWords.find((word) => word.english.toLocaleLowerCase('en-US').trim() === manualEnglish.toLocaleLowerCase('en-US').trim());
 
   const selectWord = (word: string) => {
     const existing = savedWords.find((savedWord) => savedWord.english.toLocaleLowerCase('en-US') === word.toLocaleLowerCase('en-US'));
     setSelectedWord(word);
-    setTranslation(existing?.spanish || getSuggestion(word));
+    setManualEnglish(word);
+    setManualSpanish(existing?.spanish || getSuggestion(word));
     setSavedMessage('');
   };
 
   const saveWord = () => {
-    if (!selectedWord.trim() || !translation.trim()) return;
-    onSave(selectedWord.trim(), translation.trim());
+    const english = manualEnglish.trim();
+    const spanish = manualSpanish.trim();
+    if (!english || !spanish) return;
+    onSave(english, spanish);
     setSavedMessage('¡Palabra guardada!');
   };
+
+  useEffect(() => {
+    if (!candidates.length) return;
+    if (!selectedWord || !candidates.some((candidate) => candidate.value === selectedWord)) {
+      selectWord(candidates[0].value);
+    }
+  }, [candidates, selectedWord]);
 
   return (
     <motion.div className="fixed inset-0 z-[90] flex items-center justify-center overflow-y-auto bg-slate-950/80 p-3 backdrop-blur-md sm:p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
@@ -497,19 +531,30 @@ function VocabularyCaptureModal({
             {!showEnglishContext && <p className="text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Frase que estás construyendo</p>}
             <p className={`${showEnglishContext ? 'mt-1' : 'mt-2 text-lg'} font-semibold text-slate-500`}>{line.es}</p>
           </div>
-          <div className="mt-5 text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Selecciona una palabra o expresión</div>
+          <div className="mt-5 text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Selecciona una sugerencia o escribe tu propia palabra</div>
           <div className="mt-2 flex flex-wrap gap-2">
-            {candidates.map((word) => {
-              const saved = savedWords.some((savedWord) => savedWord.english.toLocaleLowerCase('en-US') === word.toLocaleLowerCase('en-US'));
-              return <button key={word} type="button" onClick={() => selectWord(word)} className={`min-h-12 rounded-xl border-2 px-4 text-lg font-black transition ${selectedWord === word ? 'border-indigo-600 bg-indigo-600 text-white' : saved ? 'border-emerald-200 bg-emerald-50 text-emerald-800' : 'border-slate-200 bg-white hover:border-indigo-300'}`}>{word}{saved && <span className="ml-2 text-xs">✓</span>}</button>;
+            {candidates.map((candidate) => {
+              const saved = savedWords.some((savedWord) => savedWord.english.toLocaleLowerCase('en-US').trim() === candidate.value.toLocaleLowerCase('en-US').trim());
+              return <button key={candidate.value} type="button" onClick={() => selectWord(candidate.value)} className={`min-h-12 rounded-xl border-2 px-4 text-lg font-black transition ${selectedWord === candidate.value ? 'border-indigo-600 bg-indigo-600 text-white' : saved ? 'border-emerald-200 bg-emerald-50 text-emerald-800' : 'border-slate-200 bg-white hover:border-indigo-300'}`}>{candidate.label}{saved && <span className="ml-2 text-xs">✓</span>}</button>;
             })}
           </div>
-          <label className="mt-6 block text-xs font-black uppercase tracking-[0.18em] text-indigo-500" htmlFor="story-word-translation">Traducción en español</label>
-          <input id="story-word-translation" value={translation} onChange={(event) => { setTranslation(event.target.value); setSavedMessage(''); }} placeholder="Escribe qué significa en español" className="mt-2 min-h-14 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 text-xl font-black outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100" autoFocus />
-          {!translation && <p className="mt-2 text-sm font-semibold text-amber-700">Esta palabra puede depender del contexto. Escribe la traducción que aprendiste en la frase.</p>}
+          <div className="mt-6 rounded-2xl border border-indigo-100 bg-indigo-50/70 p-4">
+            <div className="text-xs font-black uppercase tracking-[0.18em] text-indigo-500">Guardar manualmente</div>
+            <div className="mt-3 grid gap-3">
+              <div>
+                <label className="block text-xs font-black uppercase tracking-[0.18em] text-indigo-500" htmlFor="story-word-english">Palabra o expresión en inglés</label>
+                <input id="story-word-english" value={manualEnglish} onChange={(event) => { setManualEnglish(event.target.value); setSavedMessage(''); }} placeholder="Ej.: take care of" className="mt-2 min-h-14 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 text-xl font-black outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100" />
+              </div>
+              <div>
+                <label className="block text-xs font-black uppercase tracking-[0.18em] text-indigo-500" htmlFor="story-word-translation">Traducción en español</label>
+                <input id="story-word-translation" value={manualSpanish} onChange={(event) => { setManualSpanish(event.target.value); setSavedMessage(''); }} placeholder="Escribe qué significa en español" className="mt-2 min-h-14 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 text-xl font-black outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100" autoFocus />
+              </div>
+              {!manualSpanish && <p className="text-sm font-semibold text-amber-700">La traducción puede depender del contexto. Escribe la que quieres repasar.</p>}
+            </div>
+          </div>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:justify-between">
             <button type="button" onClick={onOpenLibrary} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-slate-100 px-5 font-black text-slate-700 transition hover:bg-slate-950 hover:text-white"><BookMarked className="h-5 w-5" /> Ver mis palabras ({savedWords.length})</button>
-            <button type="button" disabled={!selectedWord || !translation.trim()} onClick={saveWord} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-7 text-lg font-black text-slate-950 shadow-lg disabled:opacity-40"><BookmarkPlus className="h-5 w-5" /> {savedMessage || (selectedSavedWord ? 'Actualizar' : 'Guardar')}</button>
+            <button type="button" disabled={!manualEnglish.trim() || !manualSpanish.trim()} onClick={saveWord} className="flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-7 text-lg font-black text-slate-950 shadow-lg disabled:opacity-40"><BookmarkPlus className="h-5 w-5" /> {savedMessage || (selectedSavedWord ? 'Actualizar' : 'Guardar')}</button>
           </div>
         </div>
       </motion.section>
@@ -530,6 +575,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [isSharedVocabulary, setIsSharedVocabulary] = useState(initialSharedVocabulary.length > 0);
   const [vocabulary, setVocabulary] = useState<SavedVocabularyWord[]>(() => initialSharedVocabulary.length ? initialSharedVocabulary : loadStoredVocabulary(vocabularyKey));
   const [verbTranslations, setVerbTranslations] = useState<Record<string, string>>({});
+  const [verbBaseForms, setVerbBaseForms] = useState<Record<string, string>>({});
   const [expandedBlockId, setExpandedBlockId] = useState<number>(1);
   const [activeBlock, setActiveBlock] = useState<DecoderBlock | null>(null);
   const [activeLesson, setActiveLesson] = useState<DecoderLesson | null>(null);
@@ -545,6 +591,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [wordsRevealed, setWordsRevealed] = useState(false);
   const [showGrammarGuide, setShowGrammarGuide] = useState(false);
   const [showVocabularyCapture, setShowVocabularyCapture] = useState(false);
+  const [vocabularyReviewContext, setVocabularyReviewContext] = useState<VocabularyReviewContext | null>(null);
   const [progress, setProgress] = useState<DecoderProgress>(EMPTY_PROGRESS);
 
   useEffect(() => {
@@ -588,21 +635,44 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   }, [vocabulary, vocabularyKey, isSharedVocabulary]);
 
   useEffect(() => {
+    if (!Object.keys(verbBaseForms).length) return;
+    setVocabulary((current) => {
+      let changed = false;
+      const normalized = current.map((word) => {
+        const english = normalizeSavedVocabularyTerm(word.english, verbBaseForms) || word.english.trim();
+        const id = english.toLocaleLowerCase('en-US').trim();
+        if (english !== word.english || id !== word.id) {
+          changed = true;
+          return { ...word, english, id };
+        }
+        return word;
+      });
+      if (!changed || isSharedVocabulary) return current;
+      localStorage.setItem(vocabularyKey, JSON.stringify(normalized));
+      return normalized;
+    });
+  }, [verbBaseForms, vocabularyKey, isSharedVocabulary]);
+
+  useEffect(() => {
     let cancelled = false;
     fetch('/data/verbs-guide.json')
       .then((response) => response.ok ? response.json() : [])
       .then((entries: Array<{ term?: string; base_verb?: string; past?: string; past_participle?: string; meaning_es?: string }>) => {
         if (cancelled) return;
         const translations: Record<string, string> = {};
+        const baseForms: Record<string, string> = {};
         entries.forEach((entry) => {
           if (!entry.meaning_es) return;
           const meaning = entry.meaning_es.toLocaleLowerCase('es');
+          const base = String(entry.base_verb || entry.term || '').toLocaleLowerCase('en-US').trim();
           [entry.term, entry.base_verb, entry.past, entry.past_participle].filter(Boolean).forEach((form) => {
             const key = String(form).toLocaleLowerCase('en-US').trim();
             if (key && !translations[key]) translations[key] = meaning;
+            if (key && base && !baseForms[key]) baseForms[key] = base;
           });
         });
         setVerbTranslations(translations);
+        setVerbBaseForms(baseForms);
       })
       .catch(() => undefined);
     return () => { cancelled = true; };
@@ -629,6 +699,10 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const assembledSentence = sentenceFromTokens(selectedTokens.map((token) => token.text));
   const totalStories = curriculum?.statistics.story_count || 240;
   const progressPercentage = totalStories ? Math.round((completedStorySet.size / totalStories) * 100) : 0;
+  const currentStoryVocabulary = useMemo(() => {
+    if (!activeStory) return [];
+    return vocabulary.filter((word) => word.storyId === activeStory.story_id || word.storyTitle === activeStory.title);
+  }, [activeStory?.story_id, activeStory?.title, vocabulary]);
 
   useEffect(() => {
     setSelectedTokenIndexes([]);
@@ -669,29 +743,48 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   };
 
   const openVocabulary = () => {
+    setVocabularyReviewContext(null);
     setShowVocabularyCapture(false);
     setVocabularyReturnScreen(screen === 'vocabulary' ? 'roadmap' : screen);
     setScreen('vocabulary');
   };
 
+  const openStoryVocabularyReview = () => {
+    if (!activeStory) return;
+    if (!currentStoryVocabulary.length) return;
+    setShowVocabularyCapture(false);
+    setVocabularyReviewContext({
+      title: activeStory.title,
+      subtitle: 'Test rápido con las palabras guardadas de esta historia.',
+      words: currentStoryVocabulary,
+      initialView: 'quiz'
+    });
+    setVocabularyReturnScreen('player');
+    setScreen('vocabulary');
+  };
+
   const closeVocabulary = () => {
+    const returnScreen = vocabularyReturnScreen === 'vocabulary' ? 'roadmap' : vocabularyReturnScreen;
+    setVocabularyReviewContext(null);
     if (isSharedVocabulary) {
       onClose();
       return;
     }
-    setScreen(vocabularyReturnScreen === 'vocabulary' ? 'roadmap' : vocabularyReturnScreen);
+    setScreen(returnScreen);
   };
 
   const saveVocabularyWord = (english: string, spanish: string) => {
     if (!currentLine || !activeStory) return;
-    const id = english.toLocaleLowerCase('en-US').trim();
+    const canonicalEnglish = normalizeSavedVocabularyTerm(english, verbBaseForms) || english.trim();
+    const id = canonicalEnglish.toLocaleLowerCase('en-US').trim();
     const word: SavedVocabularyWord = {
       id,
-      english,
-      spanish,
+      english: canonicalEnglish,
+      spanish: spanish.trim(),
       exampleEn: currentLine.en,
       exampleEs: currentLine.es,
       storyTitle: activeStory.title,
+      storyId: activeStory.story_id,
       addedAt: Date.now()
     };
     setVocabulary((current) => {
@@ -711,7 +804,9 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     vocabulary.forEach((word) => {
       const id = word.english.toLocaleLowerCase('en-US').trim();
       if (!merged.some((localWord) => localWord.english.toLocaleLowerCase('en-US').trim() === id)) {
-        merged.push({ ...word, id, storyTitle: word.storyTitle || 'Vocabulario compartido', addedAt: Date.now() });
+        const english = normalizeSavedVocabularyTerm(word.english, verbBaseForms) || word.english;
+        const normalizedId = english.toLocaleLowerCase('en-US').trim();
+        merged.push({ ...word, id: normalizedId, english, storyTitle: word.storyTitle || 'Vocabulario compartido', addedAt: Date.now() });
       }
     });
     localStorage.setItem(vocabularyKey, JSON.stringify(merged));
@@ -780,6 +875,28 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     setScreen('lesson');
   };
 
+  const resetCurrentStory = () => {
+    if (!activeStory) return;
+    setProgress((current) => {
+      const { [activeStory.story_id]: _removedLine, ...lineByStory } = current.lineByStory;
+      return {
+        completedStoryIds: current.completedStoryIds.filter((storyId) => storyId !== activeStory.story_id),
+        lineByStory
+      };
+    });
+    setLineIndex(0);
+    setRevealedLineCount(0);
+    setSelectedTokenIndexes([]);
+    setAttempts(0);
+    setHintIndex(-1);
+    setFeedback('idle');
+    setWordsRevealed(false);
+    setShowGrammarGuide(false);
+    setShowVocabularyCapture(false);
+    setVocabularyReviewContext(null);
+    setTokenRevision((value) => value + 1);
+  };
+
   const speakEnglish = () => {
     if (!currentLine || !('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel();
@@ -838,8 +955,11 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   if (screen === 'vocabulary') {
     return (
       <StoryVocabularyLibrary
-        words={vocabulary}
-        shared={isSharedVocabulary}
+        words={vocabularyReviewContext?.words || vocabulary}
+        shared={isSharedVocabulary && !vocabularyReviewContext}
+        contextLabel={vocabularyReviewContext?.title}
+        subtitle={vocabularyReviewContext?.subtitle}
+        initialView={vocabularyReviewContext?.initialView}
         onBack={closeVocabulary}
         onDelete={deleteVocabularyWord}
         onImportShared={importSharedVocabulary}
@@ -908,7 +1028,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
           <section className="mb-8 overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-900 p-6 text-white shadow-2xl sm:p-8">
             <div className="grid items-center gap-6 md:grid-cols-[1fr_auto]">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-black uppercase tracking-widest text-cyan-100"><Map className="h-4 w-4" /> Temario completo</div>
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-black uppercase tracking-widest text-cyan-100"><MapIcon className="h-4 w-4" /> Temario completo</div>
                 <h2 className="mt-4 text-[clamp(2rem,5vw,4rem)] font-black leading-none tracking-tight">80 clases. Cero estructuras por fuera.</h2>
                 <p className="mt-3 max-w-3xl text-lg font-semibold text-indigo-100/80">Avanza por fases: completa las tres historias de una clase para activar la siguiente.</p>
               </div>
@@ -1037,6 +1157,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
               savedWords={vocabulary}
               showEnglishContext={feedback === 'correct'}
               getSuggestion={(word) => findStoryWordTranslation(word, verbTranslations)}
+              verbBaseForms={verbBaseForms}
               onSave={saveVocabularyWord}
               onClose={() => setShowVocabularyCapture(false)}
               onOpenLibrary={openVocabulary}
@@ -1048,6 +1169,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
             <button type="button" onClick={() => setScreen('lesson')} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-white hover:text-slate-950" aria-label="Volver a historias"><ArrowLeft className="h-5 w-5" /></button>
             <div className="min-w-0 flex-1"><div className="truncate text-xs font-black uppercase tracking-[0.16em] text-cyan-300">{activeLesson.topic}</div><div className="truncate text-lg font-black sm:text-xl">{activeStory.title}</div></div>
             <button type="button" onClick={openVocabulary} className="flex h-11 shrink-0 items-center gap-2 rounded-xl bg-cyan-300/15 px-3 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950" title="Abrir mis palabras"><BookMarked className="h-5 w-5" /><span className="hidden xl:inline">Mis palabras</span><span className="rounded-full bg-white/15 px-2 py-0.5 text-xs">{vocabulary.length}</span></button>
+            <button type="button" onClick={resetCurrentStory} className="flex h-11 shrink-0 items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 font-black text-white/85 transition hover:bg-rose-500 hover:text-white" title="Borrar el progreso de esta historia y empezar desde cero"><RotateCcw className="h-5 w-5" /><span className="hidden xl:inline">Reiniciar historia</span></button>
             <div className="hidden shrink-0 items-center gap-1 rounded-xl bg-white/5 px-2 py-1 text-white/55 md:flex" title="También puedes navegar con las flechas del teclado"><kbd className="rounded-md bg-white/10 px-2 py-1 text-sm font-black">←</kbd><kbd className="rounded-md bg-white/10 px-2 py-1 text-sm font-black">→</kbd></div>
             <div className="shrink-0 text-right"><div className="text-lg font-black text-yellow-300">{lineIndex + 1}/{activeStory.lines.length}</div><div className="hidden text-[0.6rem] font-black uppercase tracking-widest text-white/50 sm:block">líneas</div></div>
             <button type="button" onClick={onClose} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-rose-500" aria-label="Cerrar Story Decoder"><X className="h-5 w-5" /></button>
@@ -1136,6 +1258,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                     <div className="mt-4 flex flex-wrap justify-center gap-3">
                       <button type="button" onClick={speakEnglish} className="flex min-h-12 items-center gap-2 rounded-xl bg-slate-950 px-5 font-black text-white transition hover:-translate-y-0.5"><Volume2 className="h-5 w-5" /> Escuchar respuesta</button>
                       <button type="button" onClick={() => setShowVocabularyCapture(true)} className="flex min-h-12 items-center gap-2 rounded-xl bg-white px-5 font-black text-indigo-800 shadow-lg transition hover:-translate-y-0.5"><BookmarkPlus className="h-5 w-5" /> Guardar palabra / frase</button>
+                      <button type="button" onClick={openStoryVocabularyReview} disabled={!currentStoryVocabulary.length} className="flex min-h-12 items-center gap-2 rounded-xl bg-slate-950/85 px-5 font-black text-cyan-100 shadow-lg transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-35"><Brain className="h-5 w-5" /> Repasar palabras de esta historia</button>
                     </div>
                     {attempts > 1 && <p className="mt-3 text-xs font-black uppercase tracking-widest opacity-60">Resuelto en {attempts} intentos</p>}
                   </motion.div>

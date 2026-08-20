@@ -1259,9 +1259,9 @@
             },
             {
               "story_id": "B01L01B",
-              "title": "Una tarde en la biblioteca: Una decisión útil",
-              "type": "Uso natural",
-              "value": "disciplina",
+              "title": "La huerta del cole: Una idea clara",
+              "type": "Pr?ctica guiada",
+              "value": "cooperaci?n",
               "audience": [
                 "children",
                 "teens",
@@ -1283,58 +1283,62 @@
                 {
                   "line_id": "B01L01B01",
                   "line_role": "context",
-                  "es": "Camila y Andrés tienen una meta clara en la biblioteca.",
-                  "en": "Camila and Andrés have a clear goal at the library.",
-                  "preferred_answer": "Camila and Andrés have a clear goal at the library.",
+                  "es": "Sof?a y David tienen una meta clara en la huerta del colegio.",
+                  "en": "Sofia and David have a clear goal in the school garden.",
+                  "preferred_answer": "Sofia and David have a clear goal in the school garden.",
                   "accepted_answers": [
-                    "Camila and Andrés have a clear goal at the library."
+                    "Sofia and David have a clear goal in the school garden."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
                   "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
-                    "Camila",
+                    "Sofia",
                     "and",
-                    "Andr",
-                    "s"
+                    "David",
+                    "have"
                   ],
                   "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Camila and Andrés",
+                      "Sofia and David",
                       "have",
                       "a clear goal",
-                      "at the library"
+                      "in",
+                      "the school garden"
                     ],
                     "medium_blocks": [
-                      "Camila and Andrés",
+                      "Sofia and David",
                       "have",
                       "a clear goal",
-                      "at the library"
+                      "in",
+                      "the school garden"
                     ],
                     "hard_word_by_word": [
-                      "Camila",
+                      "Sofia",
                       "and",
-                      "Andrés",
+                      "David",
                       "have",
                       "a",
                       "clear",
                       "goal",
-                      "at",
+                      "in",
                       "the",
-                      "library"
+                      "school",
+                      "garden"
                     ],
                     "expert_with_distractors": [
-                      "Camila",
+                      "Sofia",
                       "and",
-                      "Andrés",
+                      "David",
                       "have",
                       "a",
                       "clear",
                       "goal",
-                      "at",
+                      "in",
                       "the",
-                      "library",
+                      "school",
+                      "garden",
                       "does",
                       "did",
                       "is",
@@ -1364,11 +1368,10 @@
                   ],
                   "tutor_explanation": "Esta línea sostiene la continuidad de la historia y recicla estructuras ya estudiadas. El tutor debe corregir el orden y el vocabulario sin introducir una regla nueva.",
                   "vocabulary_candidates": [
-                    "Camila",
-                    "Andr",
-                    "clear",
+                    "Sofia",
+                    "David",
                     "goal",
-                    "library"
+                    "garden"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -1382,11 +1385,11 @@
                 {
                   "line_id": "B01L01B02",
                   "line_role": "target",
-                  "es": "Camila organiza los libros cada mañana.",
-                  "en": "Camila organizes the books every morning.",
-                  "preferred_answer": "Camila organizes the books every morning.",
+                  "es": "Sof?a organiza las semillas cada ma?ana.",
+                  "en": "Sofia organizes the seeds every morning.",
+                  "preferred_answer": "Sofia organizes the seeds every morning.",
                   "accepted_answers": [
-                    "Camila organizes the books every morning."
+                    "Sofia organizes the seeds every morning."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
@@ -1394,33 +1397,33 @@
                   "focus_tokens": [
                     "morning"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Camila",
+                      "Sofia",
                       "organizes",
-                      "the books",
+                      "the seeds",
                       "every morning"
                     ],
                     "medium_blocks": [
-                      "Camila",
+                      "Sofia",
                       "organizes",
-                      "the books",
+                      "the seeds",
                       "every morning"
                     ],
                     "hard_word_by_word": [
-                      "Camila",
+                      "Sofia",
                       "organizes",
                       "the",
-                      "books",
+                      "seeds",
                       "every",
                       "morning"
                     ],
                     "expert_with_distractors": [
-                      "Camila",
+                      "Sofia",
                       "organizes",
                       "the",
-                      "books",
+                      "seeds",
                       "every",
                       "morning",
                       "does",
@@ -1457,9 +1460,9 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Camila",
+                    "Sofia",
                     "organizes",
-                    "books",
+                    "seeds",
                     "every",
                     "morning"
                   ],
@@ -1475,47 +1478,47 @@
                 {
                   "line_id": "B01L01B03",
                   "line_role": "target",
-                  "es": "Andrés ayuda a Camila después del desayuno.",
-                  "en": "Andrés helps Camila after breakfast.",
-                  "preferred_answer": "Andrés helps Camila after breakfast.",
+                  "es": "David ayuda a Sof?a despu?s del desayuno.",
+                  "en": "David helps Sofia after breakfast.",
+                  "preferred_answer": "David helps Sofia after breakfast.",
                   "accepted_answers": [
-                    "Andrés helps Camila after breakfast."
+                    "David helps Sofia after breakfast."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "Andr",
-                    "s",
-                    "helps"
+                    "David",
+                    "helps",
+                    "Sofia"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Andrés",
+                      "David",
                       "helps",
-                      "Camila",
+                      "Sofia",
                       "after",
                       "breakfast"
                     ],
                     "medium_blocks": [
-                      "Andrés",
+                      "David",
                       "helps",
-                      "Camila",
+                      "Sofia",
                       "after",
                       "breakfast"
                     ],
                     "hard_word_by_word": [
-                      "Andrés",
+                      "David",
                       "helps",
-                      "Camila",
+                      "Sofia",
                       "after",
                       "breakfast"
                     ],
                     "expert_with_distractors": [
-                      "Andrés",
+                      "David",
                       "helps",
-                      "Camila",
+                      "Sofia",
                       "after",
                       "breakfast",
                       "does",
@@ -1552,9 +1555,9 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Andr",
+                    "David",
                     "helps",
-                    "Camila",
+                    "Sofia",
                     "after",
                     "breakfast"
                   ],
@@ -1570,30 +1573,32 @@
                 {
                   "line_id": "B01L01B04",
                   "line_role": "target",
-                  "es": "Los dos revisan el club de lectura antes del mediodía.",
-                  "en": "They both review the reading club before noon.",
-                  "preferred_answer": "They both review the reading club before noon.",
+                  "es": "Los dos repasan el plan antes del mediod?a.",
+                  "en": "They both review the plan before noon.",
+                  "preferred_answer": "They both review the plan before noon.",
                   "accepted_answers": [
-                    "They both review the reading club before noon."
+                    "They both review the plan before noon."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "reading"
+                    "They",
+                    "both",
+                    "review"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
                       "They both",
                       "review",
-                      "the reading club",
+                      "the plan",
                       "before noon"
                     ],
                     "medium_blocks": [
                       "They both",
                       "review",
-                      "the reading club",
+                      "the plan",
                       "before noon"
                     ],
                     "hard_word_by_word": [
@@ -1601,8 +1606,7 @@
                       "both",
                       "review",
                       "the",
-                      "reading",
-                      "club",
+                      "plan",
                       "before",
                       "noon"
                     ],
@@ -1611,8 +1615,7 @@
                       "both",
                       "review",
                       "the",
-                      "reading",
-                      "club",
+                      "plan",
                       "before",
                       "noon",
                       "does",
@@ -1651,9 +1654,9 @@
                   "vocabulary_candidates": [
                     "both",
                     "review",
-                    "reading",
-                    "club",
-                    "before"
+                    "plan",
+                    "before",
+                    "noon"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -1667,11 +1670,11 @@
                 {
                   "line_id": "B01L01B05",
                   "line_role": "context",
-                  "es": "Antes de comenzar, hablan del plan y reparten las tareas.",
-                  "en": "Before starting, they talk about the plan and divide the tasks.",
-                  "preferred_answer": "Before starting, they talk about the plan and divide the tasks.",
+                  "es": "Antes de comenzar, hablan de las semillas y reparten las tareas.",
+                  "en": "Before starting, they talk about the seeds and divide the tasks.",
+                  "preferred_answer": "Before starting, they talk about the seeds and divide the tasks.",
                   "accepted_answers": [
-                    "Before starting, they talk about the plan and divide the tasks."
+                    "Before starting, they talk about the seeds and divide the tasks."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
@@ -1688,7 +1691,7 @@
                       "Before starting",
                       "they",
                       "talk",
-                      "about the plan",
+                      "about the seeds",
                       "and divide",
                       "the tasks"
                     ],
@@ -1696,7 +1699,7 @@
                       "Before starting",
                       "they",
                       "talk",
-                      "about the plan",
+                      "about the seeds",
                       "and divide",
                       "the tasks"
                     ],
@@ -1707,7 +1710,7 @@
                       "talk",
                       "about",
                       "the",
-                      "plan",
+                      "seeds",
                       "and",
                       "divide",
                       "the",
@@ -1720,7 +1723,7 @@
                       "talk",
                       "about",
                       "the",
-                      "plan",
+                      "seeds",
                       "and",
                       "divide",
                       "the",
@@ -1759,8 +1762,8 @@
                     "Before",
                     "starting",
                     "talk",
-                    "about",
-                    "plan"
+                    "seeds",
+                    "tasks"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -1774,41 +1777,39 @@
                 {
                   "line_id": "B01L01B06",
                   "line_role": "target",
-                  "es": "Camila prepara una lista sencilla.",
-                  "en": "Camila prepares a simple list.",
-                  "preferred_answer": "Camila prepares a simple list.",
+                  "es": "Sof?a prepara una lista simple.",
+                  "en": "Sofia prepares a simple list.",
+                  "preferred_answer": "Sofia prepares a simple list.",
                   "accepted_answers": [
-                    "Camila prepares a simple list."
+                    "Sofia prepares a simple list."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "Camila",
-                    "prepares",
-                    "a"
+                    "prepares"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Camila",
+                      "Sofia",
                       "prepares",
                       "a simple list"
                     ],
                     "medium_blocks": [
-                      "Camila",
+                      "Sofia",
                       "prepares",
                       "a simple list"
                     ],
                     "hard_word_by_word": [
-                      "Camila",
+                      "Sofia",
                       "prepares",
                       "a",
                       "simple",
                       "list"
                     ],
                     "expert_with_distractors": [
-                      "Camila",
+                      "Sofia",
                       "prepares",
                       "a",
                       "simple",
@@ -1847,7 +1848,7 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Camila",
+                    "Sofia",
                     "prepares",
                     "simple",
                     "list"
@@ -1864,51 +1865,51 @@
                 {
                   "line_id": "B01L01B07",
                   "line_role": "target",
-                  "es": "Andrés lleva las herramientas a la biblioteca.",
-                  "en": "Andrés carries the tools to the library.",
-                  "preferred_answer": "Andrés carries the tools to the library.",
+                  "es": "David lleva el agua a la huerta.",
+                  "en": "David carries the water to the garden.",
+                  "preferred_answer": "David carries the water to the garden.",
                   "accepted_answers": [
-                    "Andrés carries the tools to the library."
+                    "David carries the water to the garden."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "to"
+                    "carries"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Andrés",
+                      "David",
                       "carries",
-                      "the tools",
+                      "the water",
                       "to",
-                      "the library"
+                      "the garden"
                     ],
                     "medium_blocks": [
-                      "Andrés",
+                      "David",
                       "carries",
-                      "the tools",
+                      "the water",
                       "to",
-                      "the library"
+                      "the garden"
                     ],
                     "hard_word_by_word": [
-                      "Andrés",
+                      "David",
                       "carries",
                       "the",
-                      "tools",
+                      "water",
                       "to",
                       "the",
-                      "library"
+                      "garden"
                     ],
                     "expert_with_distractors": [
-                      "Andrés",
+                      "David",
                       "carries",
                       "the",
-                      "tools",
+                      "water",
                       "to",
                       "the",
-                      "library",
+                      "garden",
                       "does",
                       "did",
                       "is",
@@ -1941,10 +1942,10 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Andr",
+                    "David",
                     "carries",
-                    "tools",
-                    "library"
+                    "water",
+                    "garden"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -1958,30 +1959,32 @@
                 {
                   "line_id": "B01L01B08",
                   "line_role": "target",
-                  "es": "El equipo cuida el lugar durante la actividad.",
-                  "en": "The team takes care of the place during the activity.",
-                  "preferred_answer": "The team takes care of the place during the activity.",
+                  "es": "El equipo cuida las plantas durante la actividad.",
+                  "en": "The team takes care of the plants during the activity.",
+                  "preferred_answer": "The team takes care of the plants during the activity.",
                   "accepted_answers": [
-                    "The team takes care of the place during the activity."
+                    "The team takes care of the plants during the activity."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "during"
+                    "takes",
+                    "care",
+                    "of"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
                       "The team",
                       "takes care of",
-                      "the place",
+                      "the plants",
                       "during the activity"
                     ],
                     "medium_blocks": [
                       "The team",
                       "takes care of",
-                      "the place",
+                      "the plants",
                       "during the activity"
                     ],
                     "hard_word_by_word": [
@@ -1991,7 +1994,7 @@
                       "care",
                       "of",
                       "the",
-                      "place",
+                      "plants",
                       "during",
                       "the",
                       "activity"
@@ -2003,7 +2006,7 @@
                       "care",
                       "of",
                       "the",
-                      "place",
+                      "plants",
                       "during",
                       "the",
                       "activity",
@@ -2042,10 +2045,9 @@
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
                     "team",
-                    "takes",
-                    "care",
-                    "place",
-                    "during"
+                    "take care of",
+                    "plants",
+                    "activity"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2059,42 +2061,42 @@
                 {
                   "line_id": "B01L01B09",
                   "line_role": "context",
-                  "es": "El problema exige paciencia, pero nadie se rinde.",
-                  "en": "The problem requires patience, but nobody gives up.",
-                  "preferred_answer": "The problem requires patience, but nobody gives up.",
+                  "es": "El trabajo es dif?cil, pero nadie se rinde.",
+                  "en": "The work is hard, but nobody gives up.",
+                  "preferred_answer": "The work is hard, but nobody gives up.",
                   "accepted_answers": [
-                    "The problem requires patience, but nobody gives up."
+                    "The work is hard, but nobody gives up."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
                   "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "The",
-                    "problem",
-                    "requires",
-                    "patience"
+                    "work",
+                    "is",
+                    "hard"
                   ],
                   "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "The problem",
-                      "requires",
-                      "patience",
+                      "The work",
+                      "is",
+                      "hard",
                       "but nobody",
                       "gives up"
                     ],
                     "medium_blocks": [
-                      "The problem",
-                      "requires",
-                      "patience",
+                      "The work",
+                      "is",
+                      "hard",
                       "but nobody",
                       "gives up"
                     ],
                     "hard_word_by_word": [
                       "The",
-                      "problem",
-                      "requires",
-                      "patience",
+                      "work",
+                      "is",
+                      "hard",
                       "but",
                       "nobody",
                       "gives",
@@ -2102,9 +2104,9 @@
                     ],
                     "expert_with_distractors": [
                       "The",
-                      "problem",
-                      "requires",
-                      "patience",
+                      "work",
+                      "is",
+                      "hard",
                       "but",
                       "nobody",
                       "gives",
@@ -2140,11 +2142,9 @@
                   ],
                   "tutor_explanation": "Esta línea sostiene la continuidad de la historia y recicla estructuras ya estudiadas. El tutor debe corregir el orden y el vocabulario sin introducir una regla nueva.",
                   "vocabulary_candidates": [
-                    "problem",
-                    "requires",
-                    "patience",
-                    "nobody",
-                    "gives"
+                    "work",
+                    "hard",
+                    "gives up"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2158,45 +2158,44 @@
                 {
                   "line_id": "B01L01B10",
                   "line_role": "target",
-                  "es": "Camila termina una tarea importante.",
-                  "en": "Camila finishes an important task.",
-                  "preferred_answer": "Camila finishes an important task.",
+                  "es": "Sof?a anota los resultados.",
+                  "en": "Sofia writes down the results.",
+                  "preferred_answer": "Sofia writes down the results.",
                   "accepted_answers": [
-                    "Camila finishes an important task."
+                    "Sofia writes down the results."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "Camila",
-                    "finishes",
-                    "an"
+                    "writes",
+                    "down"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Camila",
-                      "finishes",
-                      "an important task"
+                      "Sofia",
+                      "writes",
+                      "down the results"
                     ],
                     "medium_blocks": [
-                      "Camila",
-                      "finishes",
-                      "an important task"
+                      "Sofia",
+                      "writes",
+                      "down the results"
                     ],
                     "hard_word_by_word": [
-                      "Camila",
-                      "finishes",
-                      "an",
-                      "important",
-                      "task"
+                      "Sofia",
+                      "writes",
+                      "down",
+                      "the",
+                      "results"
                     ],
                     "expert_with_distractors": [
-                      "Camila",
-                      "finishes",
-                      "an",
-                      "important",
-                      "task",
+                      "Sofia",
+                      "writes",
+                      "down",
+                      "the",
+                      "results",
                       "does",
                       "did",
                       "is",
@@ -2231,10 +2230,9 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Camila",
-                    "finishes",
-                    "important",
-                    "task"
+                    "Sofia",
+                    "writes down",
+                    "results"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2248,11 +2246,11 @@
                 {
                   "line_id": "B01L01B11",
                   "line_role": "target",
-                  "es": "Todos agradecen la ayuda al final.",
-                  "en": "Everyone appreciates the help at the end.",
-                  "preferred_answer": "Everyone appreciates the help at the end.",
+                  "es": "Todos agradecen la ayuda despu?s del trabajo.",
+                  "en": "Everyone appreciates the help after the work.",
+                  "preferred_answer": "Everyone appreciates the help after the work.",
                   "accepted_answers": [
-                    "Everyone appreciates the help at the end."
+                    "Everyone appreciates the help after the work."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
@@ -2260,39 +2258,39 @@
                   "focus_tokens": [
                     "Everyone",
                     "appreciates",
-                    "the"
+                    "help"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
                       "Everyone",
                       "appreciates",
                       "the help",
-                      "at the end"
+                      "after the work"
                     ],
                     "medium_blocks": [
                       "Everyone",
                       "appreciates",
                       "the help",
-                      "at the end"
+                      "after the work"
                     ],
                     "hard_word_by_word": [
                       "Everyone",
                       "appreciates",
                       "the",
                       "help",
-                      "at",
+                      "after",
                       "the",
-                      "end"
+                      "work"
                     ],
                     "expert_with_distractors": [
                       "Everyone",
                       "appreciates",
                       "the",
                       "help",
-                      "at",
+                      "after",
                       "the",
-                      "end",
+                      "work",
                       "does",
                       "did",
                       "is",
@@ -2330,7 +2328,7 @@
                     "Everyone",
                     "appreciates",
                     "help",
-                    "end"
+                    "work"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2344,11 +2342,11 @@
                 {
                   "line_id": "B01L01B12",
                   "line_role": "context",
-                  "es": "Al final, agradecen la ayuda y anotan lo que aprendieron.",
-                  "en": "In the end, they appreciate the help and write down what they learned.",
-                  "preferred_answer": "In the end, they appreciate the help and write down what they learned.",
+                  "es": "Al final, se sienten orgullosos de la huerta.",
+                  "en": "In the end, they feel proud of the garden.",
+                  "preferred_answer": "In the end, they feel proud of the garden.",
                   "accepted_answers": [
-                    "In the end, they appreciate the help and write down what they learned."
+                    "In the end, they feel proud of the garden."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
@@ -2356,8 +2354,7 @@
                   "focus_tokens": [
                     "In",
                     "the",
-                    "end",
-                    ","
+                    "end"
                   ],
                   "difficulty": 1,
                   "puzzle": {
@@ -2365,51 +2362,41 @@
                       "In",
                       "the end",
                       "they",
-                      "appreciate",
-                      "the help",
-                      "and write down",
-                      "what they",
-                      "learned"
+                      "feel",
+                      "proud",
+                      "of",
+                      "the garden"
                     ],
                     "medium_blocks": [
                       "In",
                       "the end",
                       "they",
-                      "appreciate",
-                      "the help",
-                      "and write down",
-                      "what they",
-                      "learned"
+                      "feel",
+                      "proud",
+                      "of",
+                      "the garden"
                     ],
                     "hard_word_by_word": [
                       "In",
                       "the",
                       "end",
                       "they",
-                      "appreciate",
+                      "feel",
+                      "proud",
+                      "of",
                       "the",
-                      "help",
-                      "and",
-                      "write",
-                      "down",
-                      "what",
-                      "they",
-                      "learned"
+                      "garden"
                     ],
                     "expert_with_distractors": [
                       "In",
                       "the",
                       "end",
                       "they",
-                      "appreciate",
+                      "feel",
+                      "proud",
+                      "of",
                       "the",
-                      "help",
-                      "and",
-                      "write",
-                      "down",
-                      "what",
-                      "they",
-                      "learned",
+                      "garden",
                       "does",
                       "did",
                       "is",
@@ -2442,10 +2429,8 @@
                   "tutor_explanation": "Esta línea sostiene la continuidad de la historia y recicla estructuras ya estudiadas. El tutor debe corregir el orden y el vocabulario sin introducir una regla nueva.",
                   "vocabulary_candidates": [
                     "end",
-                    "appreciate",
-                    "help",
-                    "write",
-                    "down"
+                    "feel proud of",
+                    "garden"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2460,9 +2445,9 @@
             },
             {
               "story_id": "B01L01C",
-              "title": "Un día en familia: Lo que aprendieron",
-              "type": "Integración",
-              "value": "gratitud",
+              "title": "El picnic de domingo: Todo listo",
+              "type": "Integraci?n",
+              "value": "familia",
               "audience": [
                 "children",
                 "teens",
@@ -2484,56 +2469,63 @@
                 {
                   "line_id": "B01L01C01",
                   "line_role": "context",
-                  "es": "Julia y Mateo tienen una meta clara en la casa.",
-                  "en": "Julia and Mateo have a clear goal at home.",
-                  "preferred_answer": "Julia and Mateo have a clear goal at home.",
+                  "es": "Nora y su hermano tienen una meta clara en el parque.",
+                  "en": "Nora and her brother have a clear goal in the park.",
+                  "preferred_answer": "Nora and her brother have a clear goal in the park.",
                   "accepted_answers": [
-                    "Julia and Mateo have a clear goal at home."
+                    "Nora and her brother have a clear goal in the park."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
                   "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
-                    "Julia",
+                    "Nora",
                     "and",
-                    "Mateo",
-                    "have"
+                    "her",
+                    "brother"
                   ],
                   "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Julia and Mateo",
+                      "Nora and her brother",
                       "have",
                       "a clear goal",
-                      "at home"
+                      "in",
+                      "the park"
                     ],
                     "medium_blocks": [
-                      "Julia and Mateo",
+                      "Nora and",
+                      "her brother",
                       "have",
                       "a clear goal",
-                      "at home"
+                      "in",
+                      "the park"
                     ],
                     "hard_word_by_word": [
-                      "Julia",
+                      "Nora",
                       "and",
-                      "Mateo",
+                      "her",
+                      "brother",
                       "have",
                       "a",
                       "clear",
                       "goal",
-                      "at",
-                      "home"
+                      "in",
+                      "the",
+                      "park"
                     ],
                     "expert_with_distractors": [
-                      "Julia",
+                      "Nora",
                       "and",
-                      "Mateo",
+                      "her",
+                      "brother",
                       "have",
                       "a",
                       "clear",
                       "goal",
-                      "at",
-                      "home",
+                      "in",
+                      "the",
+                      "park",
                       "does",
                       "did",
                       "is",
@@ -2563,11 +2555,10 @@
                   ],
                   "tutor_explanation": "Esta línea sostiene la continuidad de la historia y recicla estructuras ya estudiadas. El tutor debe corregir el orden y el vocabulario sin introducir una regla nueva.",
                   "vocabulary_candidates": [
-                    "Julia",
-                    "Mateo",
-                    "clear",
+                    "Nora",
+                    "brother",
                     "goal",
-                    "home"
+                    "park"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2581,45 +2572,47 @@
                 {
                   "line_id": "B01L01C02",
                   "line_role": "target",
-                  "es": "Julia organiza la cena cada mañana.",
-                  "en": "Julia organizes dinner every morning.",
-                  "preferred_answer": "Julia organizes dinner every morning.",
+                  "es": "Nora prepara la fruta cada domingo.",
+                  "en": "Nora prepares the fruit every Sunday.",
+                  "preferred_answer": "Nora prepares the fruit every Sunday.",
                   "accepted_answers": [
-                    "Julia organizes dinner every morning."
+                    "Nora prepares the fruit every Sunday."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "morning"
+                    "Sunday"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Julia",
-                      "organizes",
-                      "dinner",
-                      "every morning"
+                      "Nora",
+                      "prepares",
+                      "the fruit",
+                      "every Sunday"
                     ],
                     "medium_blocks": [
-                      "Julia",
-                      "organizes",
-                      "dinner",
-                      "every morning"
+                      "Nora",
+                      "prepares",
+                      "the fruit",
+                      "every Sunday"
                     ],
                     "hard_word_by_word": [
-                      "Julia",
-                      "organizes",
-                      "dinner",
+                      "Nora",
+                      "prepares",
+                      "the",
+                      "fruit",
                       "every",
-                      "morning"
+                      "Sunday"
                     ],
                     "expert_with_distractors": [
-                      "Julia",
-                      "organizes",
-                      "dinner",
+                      "Nora",
+                      "prepares",
+                      "the",
+                      "fruit",
                       "every",
-                      "morning",
+                      "Sunday",
                       "does",
                       "did",
                       "is",
@@ -2654,11 +2647,11 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Julia",
-                    "organizes",
-                    "dinner",
+                    "Nora",
+                    "prepares",
+                    "fruit",
                     "every",
-                    "morning"
+                    "Sunday"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2672,47 +2665,49 @@
                 {
                   "line_id": "B01L01C03",
                   "line_role": "target",
-                  "es": "Mateo ayuda a Julia después del desayuno.",
-                  "en": "Mateo helps Julia after breakfast.",
-                  "preferred_answer": "Mateo helps Julia after breakfast.",
+                  "es": "Su hermano ayuda a Nora despu?s del desayuno.",
+                  "en": "Her brother helps Nora after breakfast.",
+                  "preferred_answer": "Her brother helps Nora after breakfast.",
                   "accepted_answers": [
-                    "Mateo helps Julia after breakfast."
+                    "Her brother helps Nora after breakfast."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "Mateo",
+                    "brother",
                     "helps",
-                    "Julia"
+                    "Nora"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Mateo",
+                      "Her brother",
                       "helps",
-                      "Julia",
+                      "Nora",
                       "after",
                       "breakfast"
                     ],
                     "medium_blocks": [
-                      "Mateo",
+                      "Her brother",
                       "helps",
-                      "Julia",
+                      "Nora",
                       "after",
                       "breakfast"
                     ],
                     "hard_word_by_word": [
-                      "Mateo",
+                      "Her",
+                      "brother",
                       "helps",
-                      "Julia",
+                      "Nora",
                       "after",
                       "breakfast"
                     ],
                     "expert_with_distractors": [
-                      "Mateo",
+                      "Her",
+                      "brother",
                       "helps",
-                      "Julia",
+                      "Nora",
                       "after",
                       "breakfast",
                       "does",
@@ -2749,9 +2744,9 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Mateo",
+                    "brother",
                     "helps",
-                    "Julia",
+                    "Nora",
                     "after",
                     "breakfast"
                   ],
@@ -2767,30 +2762,32 @@
                 {
                   "line_id": "B01L01C04",
                   "line_role": "target",
-                  "es": "Los dos revisan la reunión familiar antes del mediodía.",
-                  "en": "They both review the family gathering before noon.",
-                  "preferred_answer": "They both review the family gathering before noon.",
+                  "es": "Los dos repasan la lista del picnic antes del mediod?a.",
+                  "en": "They both review the picnic list before noon.",
+                  "preferred_answer": "They both review the picnic list before noon.",
                   "accepted_answers": [
-                    "They both review the family gathering before noon."
+                    "They both review the picnic list before noon."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "gathering"
+                    "They",
+                    "both",
+                    "review"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
                       "They both",
                       "review",
-                      "the family gathering",
+                      "the picnic list",
                       "before noon"
                     ],
                     "medium_blocks": [
                       "They both",
                       "review",
-                      "the family gathering",
+                      "the picnic list",
                       "before noon"
                     ],
                     "hard_word_by_word": [
@@ -2798,8 +2795,8 @@
                       "both",
                       "review",
                       "the",
-                      "family",
-                      "gathering",
+                      "picnic",
+                      "list",
                       "before",
                       "noon"
                     ],
@@ -2808,8 +2805,8 @@
                       "both",
                       "review",
                       "the",
-                      "family",
-                      "gathering",
+                      "picnic",
+                      "list",
                       "before",
                       "noon",
                       "does",
@@ -2848,9 +2845,8 @@
                   "vocabulary_candidates": [
                     "both",
                     "review",
-                    "family",
-                    "gathering",
-                    "before"
+                    "picnic",
+                    "list"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2864,11 +2860,11 @@
                 {
                   "line_id": "B01L01C05",
                   "line_role": "context",
-                  "es": "Antes de comenzar, hablan del plan y reparten las tareas.",
-                  "en": "Before starting, they talk about the plan and divide the tasks.",
-                  "preferred_answer": "Before starting, they talk about the plan and divide the tasks.",
+                  "es": "Antes de comenzar, hablan de la comida y reparten las tareas.",
+                  "en": "Before starting, they talk about the food and divide the tasks.",
+                  "preferred_answer": "Before starting, they talk about the food and divide the tasks.",
                   "accepted_answers": [
-                    "Before starting, they talk about the plan and divide the tasks."
+                    "Before starting, they talk about the food and divide the tasks."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
@@ -2885,7 +2881,7 @@
                       "Before starting",
                       "they",
                       "talk",
-                      "about the plan",
+                      "about the food",
                       "and divide",
                       "the tasks"
                     ],
@@ -2893,7 +2889,7 @@
                       "Before starting",
                       "they",
                       "talk",
-                      "about the plan",
+                      "about the food",
                       "and divide",
                       "the tasks"
                     ],
@@ -2904,7 +2900,7 @@
                       "talk",
                       "about",
                       "the",
-                      "plan",
+                      "food",
                       "and",
                       "divide",
                       "the",
@@ -2917,7 +2913,7 @@
                       "talk",
                       "about",
                       "the",
-                      "plan",
+                      "food",
                       "and",
                       "divide",
                       "the",
@@ -2956,8 +2952,8 @@
                     "Before",
                     "starting",
                     "talk",
-                    "about",
-                    "plan"
+                    "food",
+                    "tasks"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -2971,45 +2967,54 @@
                 {
                   "line_id": "B01L01C06",
                   "line_role": "target",
-                  "es": "Julia prepara una lista sencilla.",
-                  "en": "Julia prepares a simple list.",
-                  "preferred_answer": "Julia prepares a simple list.",
+                  "es": "Nora anota las bebidas en una tarjeta.",
+                  "en": "Nora writes down the drinks on a card.",
+                  "preferred_answer": "Nora writes down the drinks on a card.",
                   "accepted_answers": [
-                    "Julia prepares a simple list."
+                    "Nora writes down the drinks on a card."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "Julia",
-                    "prepares",
-                    "a"
+                    "writes",
+                    "down"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Julia",
-                      "prepares",
-                      "a simple list"
+                      "Nora",
+                      "writes",
+                      "down the drinks",
+                      "on",
+                      "a card"
                     ],
                     "medium_blocks": [
-                      "Julia",
-                      "prepares",
-                      "a simple list"
+                      "Nora",
+                      "writes",
+                      "down the drinks",
+                      "on",
+                      "a card"
                     ],
                     "hard_word_by_word": [
-                      "Julia",
-                      "prepares",
+                      "Nora",
+                      "writes",
+                      "down",
+                      "the",
+                      "drinks",
+                      "on",
                       "a",
-                      "simple",
-                      "list"
+                      "card"
                     ],
                     "expert_with_distractors": [
-                      "Julia",
-                      "prepares",
+                      "Nora",
+                      "writes",
+                      "down",
+                      "the",
+                      "drinks",
+                      "on",
                       "a",
-                      "simple",
-                      "list",
+                      "card",
                       "does",
                       "did",
                       "is",
@@ -3044,10 +3049,10 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Julia",
-                    "prepares",
-                    "simple",
-                    "list"
+                    "Nora",
+                    "writes down",
+                    "drinks",
+                    "card"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -3061,49 +3066,55 @@
                 {
                   "line_id": "B01L01C07",
                   "line_role": "target",
-                  "es": "Mateo lleva las herramientas a la casa.",
-                  "en": "Mateo carries the tools to home.",
-                  "preferred_answer": "Mateo carries the tools to home.",
+                  "es": "Su hermano lleva la manta al parque.",
+                  "en": "Her brother carries the blanket to the park.",
+                  "preferred_answer": "Her brother carries the blanket to the park.",
                   "accepted_answers": [
-                    "Mateo carries the tools to home."
+                    "Her brother carries the blanket to the park."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "to"
+                    "brother",
+                    "carries",
+                    "blanket"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Mateo",
+                      "Her brother",
                       "carries",
-                      "the tools",
+                      "the blanket",
                       "to",
-                      "home"
+                      "the park"
                     ],
                     "medium_blocks": [
-                      "Mateo",
+                      "Her brother",
                       "carries",
-                      "the tools",
+                      "the blanket",
                       "to",
-                      "home"
+                      "the park"
                     ],
                     "hard_word_by_word": [
-                      "Mateo",
+                      "Her",
+                      "brother",
                       "carries",
                       "the",
-                      "tools",
+                      "blanket",
                       "to",
-                      "home"
+                      "the",
+                      "park"
                     ],
                     "expert_with_distractors": [
-                      "Mateo",
+                      "Her",
+                      "brother",
                       "carries",
                       "the",
-                      "tools",
+                      "blanket",
                       "to",
-                      "home",
+                      "the",
+                      "park",
                       "does",
                       "did",
                       "is",
@@ -3136,10 +3147,10 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Mateo",
+                    "brother",
                     "carries",
-                    "tools",
-                    "home"
+                    "blanket",
+                    "park"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -3153,55 +3164,54 @@
                 {
                   "line_id": "B01L01C08",
                   "line_role": "target",
-                  "es": "El equipo cuida el lugar durante la actividad.",
-                  "en": "The team takes care of the place during the activity.",
-                  "preferred_answer": "The team takes care of the place during the activity.",
+                  "es": "La familia cuida a los ni?os durante el picnic.",
+                  "en": "The family looks after the children during the picnic.",
+                  "preferred_answer": "The family looks after the children during the picnic.",
                   "accepted_answers": [
-                    "The team takes care of the place during the activity."
+                    "The family looks after the children during the picnic."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "during"
+                    "looks",
+                    "after"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "The team",
-                      "takes care of",
-                      "the place",
-                      "during the activity"
+                      "The family",
+                      "looks",
+                      "after the children",
+                      "during the picnic"
                     ],
                     "medium_blocks": [
-                      "The team",
-                      "takes care of",
-                      "the place",
-                      "during the activity"
+                      "The family",
+                      "looks",
+                      "after the children",
+                      "during the picnic"
                     ],
                     "hard_word_by_word": [
                       "The",
-                      "team",
-                      "takes",
-                      "care",
-                      "of",
+                      "family",
+                      "looks",
+                      "after",
                       "the",
-                      "place",
+                      "children",
                       "during",
                       "the",
-                      "activity"
+                      "picnic"
                     ],
                     "expert_with_distractors": [
                       "The",
-                      "team",
-                      "takes",
-                      "care",
-                      "of",
+                      "family",
+                      "looks",
+                      "after",
                       "the",
-                      "place",
+                      "children",
                       "during",
                       "the",
-                      "activity",
+                      "picnic",
                       "does",
                       "did",
                       "is",
@@ -3236,11 +3246,10 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "team",
-                    "takes",
-                    "care",
-                    "place",
-                    "during"
+                    "family",
+                    "look after",
+                    "children",
+                    "picnic"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -3254,42 +3263,42 @@
                 {
                   "line_id": "B01L01C09",
                   "line_role": "context",
-                  "es": "El problema exige paciencia, pero nadie se rinde.",
-                  "en": "The problem requires patience, but nobody gives up.",
-                  "preferred_answer": "The problem requires patience, but nobody gives up.",
+                  "es": "El viento es fuerte, pero nadie se rinde.",
+                  "en": "The wind is strong, but nobody gives up.",
+                  "preferred_answer": "The wind is strong, but nobody gives up.",
                   "accepted_answers": [
-                    "The problem requires patience, but nobody gives up."
+                    "The wind is strong, but nobody gives up."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
                   "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "The",
-                    "problem",
-                    "requires",
-                    "patience"
+                    "wind",
+                    "is",
+                    "strong"
                   ],
                   "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "The problem",
-                      "requires",
-                      "patience",
+                      "The wind",
+                      "is",
+                      "strong",
                       "but nobody",
                       "gives up"
                     ],
                     "medium_blocks": [
-                      "The problem",
-                      "requires",
-                      "patience",
+                      "The wind",
+                      "is",
+                      "strong",
                       "but nobody",
                       "gives up"
                     ],
                     "hard_word_by_word": [
                       "The",
-                      "problem",
-                      "requires",
-                      "patience",
+                      "wind",
+                      "is",
+                      "strong",
                       "but",
                       "nobody",
                       "gives",
@@ -3297,9 +3306,9 @@
                     ],
                     "expert_with_distractors": [
                       "The",
-                      "problem",
-                      "requires",
-                      "patience",
+                      "wind",
+                      "is",
+                      "strong",
                       "but",
                       "nobody",
                       "gives",
@@ -3335,11 +3344,9 @@
                   ],
                   "tutor_explanation": "Esta línea sostiene la continuidad de la historia y recicla estructuras ya estudiadas. El tutor debe corregir el orden y el vocabulario sin introducir una regla nueva.",
                   "vocabulary_candidates": [
-                    "problem",
-                    "requires",
-                    "patience",
-                    "nobody",
-                    "gives"
+                    "wind",
+                    "strong",
+                    "gives up"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
@@ -3353,41 +3360,39 @@
                 {
                   "line_id": "B01L01C10",
                   "line_role": "target",
-                  "es": "Julia termina una tarea importante.",
-                  "en": "Julia finishes an important task.",
-                  "preferred_answer": "Julia finishes an important task.",
+                  "es": "Nora termina una tarea importante.",
+                  "en": "Nora finishes an important task.",
+                  "preferred_answer": "Nora finishes an important task.",
                   "accepted_answers": [
-                    "Julia finishes an important task."
+                    "Nora finishes an important task."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "Subject + Verb + Complement",
                   "pattern": "Subject + Verb + Complement",
                   "focus_tokens": [
-                    "Julia",
-                    "finishes",
-                    "an"
+                    "finishes"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
-                      "Julia",
+                      "Nora",
                       "finishes",
                       "an important task"
                     ],
                     "medium_blocks": [
-                      "Julia",
+                      "Nora",
                       "finishes",
                       "an important task"
                     ],
                     "hard_word_by_word": [
-                      "Julia",
+                      "Nora",
                       "finishes",
                       "an",
                       "important",
                       "task"
                     ],
                     "expert_with_distractors": [
-                      "Julia",
+                      "Nora",
                       "finishes",
                       "an",
                       "important",
@@ -3426,7 +3431,7 @@
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + Verb + Complement. Patrón: Subject + Verb + Complement. El tutor debe guiar al estudiante a elegir el auxiliar y la forma verbal por función y contexto, no por traducción palabra por palabra.",
                   "vocabulary_candidates": [
-                    "Julia",
+                    "Nora",
                     "finishes",
                     "important",
                     "task"
@@ -3455,9 +3460,9 @@
                   "focus_tokens": [
                     "Everyone",
                     "appreciates",
-                    "the"
+                    "help"
                   ],
-                  "difficulty": 2,
+                  "difficulty": 1,
                   "puzzle": {
                     "easy_blocks": [
                       "Everyone",
@@ -3539,11 +3544,11 @@
                 {
                   "line_id": "B01L01C12",
                   "line_role": "context",
-                  "es": "Al final, agradecen la ayuda y anotan lo que aprendieron.",
-                  "en": "In the end, they appreciate the help and write down what they learned.",
-                  "preferred_answer": "In the end, they appreciate the help and write down what they learned.",
+                  "es": "Al final, se sienten listos para el pr?ximo picnic.",
+                  "en": "In the end, they feel ready for the next picnic.",
+                  "preferred_answer": "In the end, they feel ready for the next picnic.",
                   "accepted_answers": [
-                    "In the end, they appreciate the help and write down what they learned."
+                    "In the end, they feel ready for the next picnic."
                   ],
                   "lesson_target": "Subject + Verb + Complement",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
@@ -3551,8 +3556,7 @@
                   "focus_tokens": [
                     "In",
                     "the",
-                    "end",
-                    ","
+                    "end"
                   ],
                   "difficulty": 1,
                   "puzzle": {
@@ -3560,51 +3564,43 @@
                       "In",
                       "the end",
                       "they",
-                      "appreciate",
-                      "the help",
-                      "and write down",
-                      "what they",
-                      "learned"
+                      "feel",
+                      "ready",
+                      "for",
+                      "the next picnic"
                     ],
                     "medium_blocks": [
                       "In",
                       "the end",
                       "they",
-                      "appreciate",
-                      "the help",
-                      "and write down",
-                      "what they",
-                      "learned"
+                      "feel",
+                      "ready",
+                      "for",
+                      "the next picnic"
                     ],
                     "hard_word_by_word": [
                       "In",
                       "the",
                       "end",
                       "they",
-                      "appreciate",
+                      "feel",
+                      "ready",
+                      "for",
                       "the",
-                      "help",
-                      "and",
-                      "write",
-                      "down",
-                      "what",
-                      "they",
-                      "learned"
+                      "next",
+                      "picnic"
                     ],
                     "expert_with_distractors": [
                       "In",
                       "the",
                       "end",
                       "they",
-                      "appreciate",
+                      "feel",
+                      "ready",
+                      "for",
                       "the",
-                      "help",
-                      "and",
-                      "write",
-                      "down",
-                      "what",
-                      "they",
-                      "learned",
+                      "next",
+                      "picnic",
                       "does",
                       "did",
                       "is",
@@ -3637,10 +3633,8 @@
                   "tutor_explanation": "Esta línea sostiene la continuidad de la historia y recicla estructuras ya estudiadas. El tutor debe corregir el orden y el vocabulario sin introducir una regla nueva.",
                   "vocabulary_candidates": [
                     "end",
-                    "appreciate",
-                    "help",
-                    "write",
-                    "down"
+                    "ready",
+                    "picnic"
                   ],
                   "neural_recall_design": {
                     "attempt_1": "bloques grandes; reconocer patrón",
