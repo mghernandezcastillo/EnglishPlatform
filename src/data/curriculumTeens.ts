@@ -4983,7 +4983,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 description: "Spin and answer with one complete sentence.",
                 type: "spinning-wheel",
                 content: ["Spin the wheel.", "Say what holiday or tradition you celebrate.", "Ask one partner too."],
-                imageUrl: "/images/teens-basic-3-class-03/slide-01-welcome-holidays-festivals.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-02-warmup-wheel-holidays.jpg",
                 wheelItems: [
                   { label: "Christmas", color: "#EF4444", prompt: "How do you celebrate Christmas?", es: "Como celebras Navidad?" },
                   { label: "New Year", color: "#F59E0B", prompt: "What do you do on New Year's Eve?", es: "Que haces en ano nuevo?" },
@@ -4999,7 +4999,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Objectives / Objetivos",
                 description: "By the end, you can talk about holidays and family traditions.",
                 content: ["Name major world holidays and festivals.", "Use celebration verbs: celebrate, decorate, prepare, give gifts.", "Describe how you and your family celebrate special dates."],
-                imageUrl: "/images/teens-basic-3-class-03/slide-08-my-country-phrase.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-03-objectives-holidays.jpg",
                 bgColor: "bg-gradient-to-br from-pink-500 via-rose-500 to-amber-500"
               }
             ],
@@ -5085,7 +5085,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 content: ["People wear colorful costumes, dance in the streets, and watch parades."],
                 options: ["Carnival", "A regular Monday", "A math test"],
                 correctOptionIndex: 0,
-                imageUrl: "/images/teens-basic-3-class-03/slide-07-traditions-vocabulary.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-11-carnival-parade-quiz.jpg",
                 bgColor: "bg-gradient-to-br from-red-500 to-rose-600"
               },
               {
@@ -5095,7 +5095,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 content: ["At midnight on New Year's Eve, people watch colorful ______ in the sky."],
                 options: ["snowballs", "fireworks", "laptops"],
                 correctOptionIndex: 1,
-                imageUrl: "/images/teens-basic-3-class-03/slide-04-holiday-vocabulary.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-12-fireworks-newyear-quiz.jpg",
                 bgColor: "bg-gradient-to-br from-rose-500 to-pink-600"
               },
               {
@@ -5106,7 +5106,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 content: ["🎄 + 👨‍👩‍👧‍👦 + 🎁 + 🍲"],
                 options: ["We gather as a family, open gifts, and enjoy dinner.", "I am going to the gym right now.", "He lost his backpack on the bus."],
                 correctOptionIndex: 0,
-                imageUrl: "/images/teens-basic-3-class-03/slide-05-celebration-verbs.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-13-emoji-holiday-mission.jpg",
                 bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
               }
             ],
@@ -5124,7 +5124,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 description: "Spin and answer with your real traditions.",
                 type: "spinning-wheel",
                 content: ["Answer with a complete sentence.", "Add who you celebrate with.", "Use words like usually or always."],
-                imageUrl: "/images/teens-basic-3-class-03/slide-01-welcome-holidays-festivals.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-14-speaking-wheel-holidays.jpg",
                 wheelItems: [
                   { label: "Favorite", color: "#EF4444", prompt: "What is your favorite holiday?", es: "Cual es tu fiesta favorita?" },
                   { label: "Food", color: "#F59E0B", prompt: "What special dish does your family prepare?", es: "Que plato especial prepara tu familia?" },
@@ -5140,7 +5140,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 content: ["What do families usually do on major holidays?"],
                 options: ["They gather and share a meal.", "They take school exams.", "They turn off all the lights forever."],
                 correctOptionIndex: 0,
-                imageUrl: "/images/teens-basic-3-class-03/slide-05-celebration-verbs.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-15-family-meal-quiz.jpg",
                 bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600"
               },
               {
@@ -5150,7 +5150,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 content: ["Which sentence correctly describes a holiday tradition?"],
                 options: ["We celebrate Independence Day with fireworks.", "We running quickly at the stadium.", "Holiday is yesterday tomorrow."],
                 correctOptionIndex: 0,
-                imageUrl: "/images/teens-basic-3-class-03/slide-06-we-celebrate-structure.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-16-independence-fireworks-quiz.jpg",
                 bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600"
               },
               {
@@ -5160,7 +5160,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 content: ["tradition = ?"],
                 options: ["costumbre o tradición cultural transmitida", "horario de clases de la mañana", "tarea difícil de matemáticas"],
                 correctOptionIndex: 0,
-                imageUrl: "/images/teens-basic-3-class-03/slide-07-traditions-vocabulary.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-17-tradition-custom-quiz.jpg",
                 bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
               },
               {
@@ -5169,7 +5169,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 description: "Defeat the Festival Boss with today's English.",
                 type: "speaking-boss-battle",
                 content: ["Use holiday vocabulary, celebration verbs, and family traditions."],
-                imageUrl: "/images/teens-basic-3-class-03/slide-08-my-country-phrase.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-18-boss-battle-festival.jpg",
                 bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
                 speakingBossBattle: {
                   bossName: "The Festival Boss",
@@ -5190,7 +5190,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 description: "Ask and answer like two international exchange students.",
                 type: "roleplay",
                 content: ["A: What is the biggest celebration in your city?", "B: Carnival is huge! People dance in parades with colorful costumes.", "A: How does your family celebrate New Year?", "B: We gather for a big dinner and watch fireworks at midnight!"],
-                imageUrl: "/images/teens-basic-3-class-03/slide-09-context-dialogue.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-19-holiday-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-500 to-indigo-600"
               }
             ],
@@ -5207,7 +5207,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Class Complete! / Clase completada!",
                 description: "You can now describe holidays, festivals, and traditions in English.",
                 content: ["We celebrate Christmas and New Year.", "My family gathers to prepare traditional food.", "People wear colorful costumes in parades."],
-                imageUrl: "/images/teens-basic-3-class-03/slide-01-welcome-holidays-festivals.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-20-class-complete-celebration.jpg",
                 bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
               },
               {
@@ -5216,7 +5216,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 description: "Write about your favorite holiday or tradition.",
                 type: "homework",
                 content: ["Write 6 sentences about a festival or celebration you enjoy.", "Include the name of the holiday, the month, and who you celebrate with.", "Use at least 3 verbs: celebrate, decorate, gather, prepare, or give gifts."],
-                imageUrl: "/images/teens-basic-3-class-03/slide-06-we-celebrate-structure.jpg",
+                imageUrl: "/images/teens-basic-3-class-03/slide-21-homework-holidays.jpg",
                 bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
               },
               {
@@ -5224,8 +5224,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Video Homework 📹",
                 description: "Watch, listen, and collect useful festival phrases.",
                 type: "video",
-                videoUrl: "https://www.youtube.com/embed/5-j9i7mO74Y",
-                content: ["Watch the video about cultural holidays and festivals.", "Write 5 useful phrases or words about traditions from the video.", "Bring one example sentence about your family tradition to the next class."],
+                videoUrl: "https://www.youtube.com/embed/on_1sS6Ii8M",
+                content: ["Watch the video about talking about hometown, culture and traditions.", "Write 5 useful phrases or words about traditions from the video.", "Bring one example sentence about your family tradition to the next class."],
                 imageUrl: "/images/teens-basic-3-class-03/slide-08-my-country-phrase.jpg",
                 bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
               }
