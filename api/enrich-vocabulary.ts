@@ -73,6 +73,11 @@ CRITICAL INTELLIGENCE & EXTRACTION RULES:
    - "level": CEFR level ("A1", "A2", "B1", "B2", "C1", "C2").
    - "ipa": Phonetic transcription (e.g. "/faɪnd aʊt/").
 
+5. LATIN AMERICAN / COLOMBIAN SPANISH STRICT REQUIREMENT:
+   - ALL Spanish definitions, labels, tips, and translations MUST be in natural Latin American Spanish (Colombia / Latin America).
+   - STRICTLY FORBIDDEN: Do NOT use Spain/Castilian regionalisms or Spain-specific slang (NEVER use 'apañárselas', 'apanyárselas', 'molar', 'guay', 'chaval', 'coche', 'ordenador', 'aparcar', 'vosotros', etc.).
+   - Use standard, clear Latin American expressions: e.g. for "get by" use "Defenderse / Arreglárselas / Sobrevivir con lo justo / Salir adelante", use "carro / auto", "computador", "lentes".
+
 Return ONLY valid JSON matching this exact structure:
 [
   {

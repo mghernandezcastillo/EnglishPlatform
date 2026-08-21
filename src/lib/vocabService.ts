@@ -93,6 +93,38 @@ const FALLBACK_KNOWLEDGE: Record<string, Partial<VocabItem>> = {
       }
     ]
   },
+  'get by': {
+    type: 'phrasal_verb',
+    ipa: '/ɡɛt baɪ/',
+    level: 'B1',
+    isMultiMeaning: true,
+    meanings: [
+      {
+        meaningNumber: 1,
+        meaningLabel: 'Defenderse / Arreglárselas / Sobrevivir con lo justo',
+        definitionEs: 'Lograr salir adelante o manejar una situación con dificultad o recursos limitados.',
+        definitionEn: 'To manage to live or do what is needed with difficulty or limited resources.',
+        usageTip: 'Intransitivo. Se usa con "on" para dinero o recursos (get by on salary).',
+        contextExamples: [
+          { en: 'I do not speak fluent French, but I know enough to get by.', es: 'No hablo francés fluido, pero sé lo suficiente para defenderme.', cloze: 'I do not speak fluent French, but I know enough to [_____].', highlightWord: 'get by' },
+          { en: 'It is tough, but we can get by on my salary for now.', es: 'Es difícil, pero podemos arreglárnoslas con mi salario por ahora.', cloze: 'It is tough, but we can [_____] on my salary for now.', highlightWord: 'get by' },
+          { en: 'How does he get by with so little money?', es: '¿Cómo hace para sobrevivir con tan poco dinero?', cloze: 'How does he [_____] with so little money?', highlightWord: 'get by' }
+        ]
+      },
+      {
+        meaningNumber: 2,
+        meaningLabel: 'Pasar / Abrirse paso (físicamente)',
+        definitionEs: 'Moverse o pasar a través de un lugar estrecho o con mucha gente.',
+        definitionEn: 'To pass or move past someone or something in a crowded or narrow space.',
+        usageTip: 'Frecuente al pedir permiso: "Excuse me, can I get by?".',
+        contextExamples: [
+          { en: 'Excuse me, could you please move your cart so I can get by?', es: 'Disculpe, ¿podría mover su carrito para que pueda pasar?', cloze: 'Excuse me, could you please move your cart so I can [_____]?', highlightWord: 'get by' },
+          { en: 'The hallway was so crowded that nobody could get by.', es: 'El pasillo estaba tan lleno de gente que nadie podía pasar.', cloze: 'The hallway was so crowded that nobody could [_____].', highlightWord: 'get by' },
+          { en: 'Step aside and let the ambulance get by.', es: 'Hazte a un lado y deja que la ambulancia pase.', cloze: 'Step aside and let the ambulance [_____].', highlightWord: 'get by' }
+        ]
+      }
+    ]
+  },
   'piece of cake': {
     type: 'idiom',
     ipa: '/piːs əv keɪk/',
