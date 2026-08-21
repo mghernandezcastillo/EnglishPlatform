@@ -151,6 +151,8 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   const slideSpeakingQuestions = [
     selectedSpeakingPrompt,
     ...(slide.type !== 'spinning-wheel' ? slide.content || [] : []),
+  ].filter((line): line is string => Boolean(line?.trim()));
+
   const isOpeningSlide =
     currentIndex === 0 &&
     slide.type !== 'emoji-game' &&
