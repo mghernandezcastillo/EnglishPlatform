@@ -6,12 +6,14 @@ import {
   BookMarked,
   Brain,
   LibraryBig,
+  Pencil,
   RefreshCw,
   Share2,
   Sparkles,
   Trash2,
   Trophy,
   Volume2,
+  Eye,
 } from 'lucide-react';
 
 export type SavedVocabularyWord = {
@@ -33,6 +35,7 @@ type StoryVocabularyLibraryProps = {
   initialView?: 'library' | 'quiz';
   onBack: () => void;
   onDelete: (id: string) => void;
+  onUpdate: (id: string, english: string, spanish: string) => void;
   onImportShared: () => void;
 };
 
@@ -98,13 +101,17 @@ export function decodeSharedVocabulary(value: string | null): SavedVocabularyWor
   }
 }
 
-export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, initialView = 'library', onBack, onDelete, onImportShared }: StoryVocabularyLibraryProps) {
+export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, initialView = 'library', onBack, onDelete, onUpdate, onImportShared }: StoryVocabularyLibraryProps) {
   const [view, setView] = useState<'library' | 'quiz' | 'result'>(initialView === 'quiz' && words.length ? 'quiz' : 'library');
   const [quizWords, setQuizWords] = useState<SavedVocabularyWord[]>(() => initialView === 'quiz' && words.length ? shuffle(words).slice(0, Math.min(words.length, 10)) : []);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [answersVisible, setAnswersVisible] = useState(false);
   const [score, setScore] = useState(0);
   const [shareStatus, setShareStatus] = useState('');
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editingEnglish, setEditingEnglish] = useState('');
+  const [editingSpanish, setEditingSpanish] = useState('');
   const currentWord = quizWords[questionIndex] || null;
 
   const options = useMemo(() => {
@@ -121,6 +128,7 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
     setQuizWords(shuffle(words).slice(0, Math.min(words.length, 10)));
     setQuestionIndex(0);
     setSelectedAnswer('');
+    setAnswersVisible(false);
     setScore(0);
     setView('quiz');
   };
@@ -141,6 +149,7 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
     }
     setQuestionIndex((current) => current + 1);
     setSelectedAnswer('');
+    setAnswersVisible(false);
   };
 
   const speak = (text: string) => {
@@ -150,6 +159,24 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
     utterance.lang = 'en-US';
     utterance.rate = 0.82;
     window.speechSynthesis.speak(utterance);
+  };
+
+  const startEditing = (word: SavedVocabularyWord) => {
+    setEditingId(word.id);
+    setEditingEnglish(word.english);
+    setEditingSpanish(word.spanish);
+  };
+
+  const cancelEditing = () => {
+    setEditingId(null);
+    setEditingEnglish('');
+    setEditingSpanish('');
+  };
+
+  const saveEditing = () => {
+    if (!editingId || !editingEnglish.trim() || !editingSpanish.trim()) return;
+    onUpdate(editingId, editingEnglish, editingSpanish);
+    cancelEditing();
   };
 
   const shareLibrary = async () => {
@@ -191,13 +218,17 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
           <motion.section key={currentWord.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-4xl rounded-[2.5rem] border border-white/15 bg-white/[0.08] p-5 text-center shadow-2xl backdrop-blur-xl sm:p-10">
             <button type="button" onClick={() => speak(currentWord.english)} className="mx-auto flex min-h-14 items-center gap-3 rounded-2xl bg-cyan-300/15 px-5 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950"><Volume2 className="h-6 w-6" /> Escuchar</button>
             <h1 className="mt-7 text-[clamp(3.5rem,11vw,8rem)] font-black leading-none tracking-tight text-white">{currentWord.english}</h1>
-            <div className="mx-auto mt-9 grid max-w-3xl gap-3 sm:grid-cols-3">
-              {options.map((answer) => {
-                const chosen = selectedAnswer === answer;
-                const correct = selectedAnswer && answer === currentWord.spanish;
-                return <button key={answer} type="button" disabled={Boolean(selectedAnswer)} onClick={() => chooseAnswer(answer)} className={`min-h-24 rounded-2xl border-2 p-4 text-xl font-black transition ${correct ? 'border-emerald-200 bg-emerald-400 text-emerald-950' : chosen ? 'border-rose-200 bg-rose-500 text-white' : 'border-white/15 bg-white text-slate-950 hover:-translate-y-1 hover:border-yellow-300'}`}>{answer}</button>;
-              })}
-            </div>
+            {!answersVisible ? (
+              <button type="button" onClick={() => setAnswersVisible(true)} className="mx-auto mt-9 flex min-h-20 w-full max-w-3xl items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-yellow-300 to-orange-400 px-6 text-2xl font-black text-slate-950 shadow-xl transition hover:-translate-y-1 hover:from-yellow-200 hover:to-orange-300"><Eye className="h-8 w-8" /> Ver posibles respuestas</button>
+            ) : (
+              <div className="mx-auto mt-9 grid max-w-3xl gap-3 sm:grid-cols-3">
+                {options.map((answer) => {
+                  const chosen = selectedAnswer === answer;
+                  const correct = selectedAnswer && answer === currentWord.spanish;
+                  return <button key={answer} type="button" disabled={Boolean(selectedAnswer)} onClick={() => chooseAnswer(answer)} className={`min-h-24 rounded-2xl border-2 p-4 text-xl font-black transition ${correct ? 'border-emerald-200 bg-emerald-400 text-emerald-950' : chosen ? 'border-rose-200 bg-rose-500 text-white' : 'border-white/15 bg-white text-slate-950 hover:-translate-y-1 hover:border-yellow-300'}`}>{answer}</button>;
+                })}
+              </div>
+            )}
             {selectedAnswer && (
               <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className={`mx-auto mt-5 max-w-3xl rounded-2xl p-4 text-lg font-black ${answeredCorrectly ? 'bg-emerald-300 text-emerald-950' : 'bg-rose-500 text-white'}`}>
                 {answeredCorrectly ? '¡Correcto! La recordaste.' : `La respuesta correcta es: ${currentWord.spanish}`}
@@ -258,16 +289,20 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
                 <div className="flex items-start gap-3">
                   <button type="button" onClick={() => speak(word.english)} className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-100 text-cyan-800 transition hover:bg-cyan-500 hover:text-white" aria-label={`Escuchar ${word.english}`}><Volume2 className="h-5 w-5" /></button>
                   <div className="min-w-0 flex-1">
-                    <h2 className="break-words text-2xl font-black text-slate-950">{word.english}</h2>
-                    <p className="mt-1 text-lg font-black text-indigo-700">{word.spanish}</p>
+                    {editingId === word.id ? (
+                      <div className="space-y-2">
+                        <input value={editingEnglish} onChange={(event) => setEditingEnglish(event.target.value)} className="min-h-11 w-full rounded-xl border-2 border-indigo-200 px-3 text-xl font-black outline-none focus:border-indigo-500" aria-label="Editar palabra en inglés" />
+                        <input value={editingSpanish} onChange={(event) => setEditingSpanish(event.target.value)} className="min-h-11 w-full rounded-xl border-2 border-indigo-200 px-3 text-lg font-black text-indigo-700 outline-none focus:border-indigo-500" aria-label="Editar significado en español" />
+                      </div>
+                    ) : (
+                      <><h2 className="break-words text-2xl font-black text-slate-950">{word.english}</h2><p className="mt-1 text-lg font-black text-indigo-700">{word.spanish}</p></>
+                    )}
                   </div>
                 </div>
                 {word.exampleEn && <div className="mt-4 rounded-xl bg-slate-50 p-3"><p className="font-bold text-slate-800">{word.exampleEn}</p><p className="mt-1 text-sm font-semibold text-slate-500">{word.exampleEs}</p></div>}
                 {!shared && (
                   <div className="mt-4 flex justify-end">
-                    <button type="button" onClick={() => onDelete(word.id)} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-rose-200 bg-rose-50 px-4 font-black text-rose-700 transition hover:bg-rose-500 hover:text-white" aria-label={`Eliminar ${word.english}`}>
-                      <Trash2 className="h-4 w-4" /> Eliminar
-                    </button>
+                    {editingId === word.id ? <div className="flex gap-2"><button type="button" onClick={cancelEditing} className="min-h-11 rounded-xl bg-slate-100 px-4 font-black text-slate-700">Cancelar</button><button type="button" onClick={saveEditing} disabled={!editingEnglish.trim() || !editingSpanish.trim()} className="min-h-11 rounded-xl bg-emerald-500 px-4 font-black text-white disabled:opacity-40">Guardar cambios</button></div> : <div className="flex gap-2"><button type="button" onClick={() => startEditing(word)} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-indigo-200 bg-indigo-50 px-4 font-black text-indigo-700 transition hover:bg-indigo-500 hover:text-white" aria-label={`Editar ${word.english}`}><Pencil className="h-4 w-4" /> Editar</button><button type="button" onClick={() => onDelete(word.id)} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-rose-200 bg-rose-50 px-4 font-black text-rose-700 transition hover:bg-rose-500 hover:text-white" aria-label={`Eliminar ${word.english}`}><Trash2 className="h-4 w-4" /> Eliminar</button></div>}
                   </div>
                 )}
               </motion.article>

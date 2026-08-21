@@ -871,6 +871,15 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     setVocabulary((current) => current.filter((word) => word.id !== id));
   };
 
+  const updateVocabularyWord = (id: string, english: string, spanish: string) => {
+    const canonicalEnglish = normalizeSavedVocabularyTerm(english, verbBaseForms) || english.trim();
+    const normalizedId = canonicalEnglish.toLocaleLowerCase('en-US').trim();
+    if (!normalizedId || !spanish.trim()) return;
+    setVocabulary((current) => current.map((word) => word.id === id
+      ? { ...word, id: normalizedId, english: canonicalEnglish, spanish: spanish.trim() }
+      : word));
+  };
+
   const importSharedVocabulary = () => {
     const localWords = loadStoredVocabulary(vocabularyKey);
     const merged = [...localWords];
@@ -1035,6 +1044,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
         initialView={vocabularyReviewContext?.initialView}
         onBack={closeVocabulary}
         onDelete={deleteVocabularyWord}
+        onUpdate={updateVocabularyWord}
         onImportShared={importSharedVocabulary}
       />
     );
