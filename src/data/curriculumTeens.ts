@@ -4958,118 +4958,279 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
         ]
       },      {
         id: "c-teens-basic-3-3",
-        title: "Class 3: Holidays, Festivals & Traditions / Clase 3: Holidays, Festivals & Traditions",
-        description: "A fun and interactive class for teens.",
+        title: "Class 3: Holidays, Festivals & Traditions / Clase 3: Días festivos, festivales y tradiciones",
+        description: "Teens learn vocabulary for world celebrations, traditions, action verbs, and how to describe family festive customs.",
         duration: "60 mins",
-        objective: "Master the topic of Holidays, Festivals & Traditions.",
+        objective: "Talk about holidays, festivals, and family traditions using celebration verbs and simple present structures.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar vocabulario de fiestas, tradiciones familiares y celebraciones.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Holiday", color: "#EF4444", prompt: "What holiday do you like?", es: "Que fiesta te gusta?" }, { label: "Family", color: "#F59E0B", prompt: "Who do you see on holidays?", es: "A quien ves en fiestas?" }, { label: "Food", color: "#10B981", prompt: "What holiday food do you like?", es: "Que comida de fiesta te gusta?" }, { label: "Gift", color: "#3B82F6", prompt: "Do you like gifts?", es: "Te gustan los regalos?" }, { label: "Place", color: "#8B5CF6", prompt: "Where do you celebrate?", es: "Donde celebras?" }, { label: "Song", color: "#EC4899", prompt: "What holiday song do you know?", es: "Que cancion festiva conoces?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Holidays, Festivals & Traditions.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 3! 🎉 / Bienvenida a Clase 3! 🎉",
+                description: "Holidays, Festivals & Traditions",
+                content: ["What is your favorite holiday?", "Today we talk about holidays, festivals, and traditions.", "We will share how people celebrate around the world."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-01-welcome-holidays-festivals.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Holidays Warm-up Wheel / Ruleta de celebraciones",
+                description: "Spin and answer with one complete sentence.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say what holiday or tradition you celebrate.", "Ask one partner too."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-01-welcome-holidays-festivals.jpg",
+                wheelItems: [
+                  { label: "Christmas", color: "#EF4444", prompt: "How do you celebrate Christmas?", es: "Como celebras Navidad?" },
+                  { label: "New Year", color: "#F59E0B", prompt: "What do you do on New Year's Eve?", es: "Que haces en ano nuevo?" },
+                  { label: "Easter", color: "#10B981", prompt: "Do you have special food for Easter?", es: "Tienes comida especial en Pascua?" },
+                  { label: "Carnival", color: "#3B82F6", prompt: "Do people wear costumes for Carnival?", es: "La gente usa disfraces en Carnaval?" },
+                  { label: "Family Day", color: "#8B5CF6", prompt: "Who gathers with you on special dates?", es: "Quien se reune contigo en fechas especiales?" },
+                  { label: "Tradition", color: "#EC4899", prompt: "What is your favorite family tradition?", es: "Cual es tu tradicion familiar favorita?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-500 via-pink-500 to-rose-500"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can talk about holidays and family traditions.",
+                content: ["Name major world holidays and festivals.", "Use celebration verbs: celebrate, decorate, prepare, give gifts.", "Describe how you and your family celebrate special dates."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-08-my-country-phrase.jpg",
+                bgColor: "bg-gradient-to-br from-pink-500 via-rose-500 to-amber-500"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Responder preguntas cortas sobre celebraciones y tradiciones."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender vocabulario de días festivos, verbos de acción y estructuras de celebración.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Holidays & Celebrations / Días festivos y celebraciones",
+                description: "Learn names of popular world celebrations.",
+                content: ["Christmas", "New Year", "Carnival", "Easter", "Mother's Day", "Independence Day"],
+                imageUrl: "/images/teens-basic-3-class-03/slide-04-holiday-vocabulary.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-600"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Celebration Verbs / Verbos de celebración",
+                description: "Useful action verbs for special events.",
+                content: ["celebrate = festejar / celebrar", "decorate = adornar / decorar", "gather = reunirse con la familia", "prepare = preparar comida especial", "give gifts = dar regalos"],
+                imageUrl: "/images/teens-basic-3-class-03/slide-05-celebration-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-500 to-teal-500"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Sentence Structure: How We Celebrate / Cómo celebramos",
+                description: "Talk about what people do on special occasions.",
+                content: ["We celebrate Christmas in December.", "They decorate the house with lights.", "My family gathers for a special dinner.", "Pattern: Subject + Action Verb + Holiday / Detail"],
+                imageUrl: "/images/teens-basic-3-class-03/slide-06-we-celebrate-structure.jpg",
+                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Festival Elements & Traditions / Elementos festivos y tradiciones",
+                description: "Key elements in festivals and traditions.",
+                content: ["parade = desfile cultural", "fireworks = fuegos artificiales", "costumes = trajes típicos", "feast = banquete festivo", "custom = costumbre familiar"],
+                imageUrl: "/images/teens-basic-3-class-03/slide-07-traditions-vocabulary.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-500 to-green-600"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Expressing Traditions / Expresando tradiciones",
+                description: "Use these model phrases to describe traditions.",
+                content: ["In my country, we celebrate Independence Day in July.", "On New Year's Eve, people watch fireworks at midnight.", "We usually eat traditional dishes with our grandparents."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-08-my-country-phrase.jpg",
+                bgColor: "bg-gradient-to-br from-green-500 to-lime-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Repetir vocabulario y crear frases sobre festividades familiares."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Comprobar el uso de vocabulario de festividades, verbos y tradiciones.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-3-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Holidays: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🎅 + ⭐ + 🏠"],
-                    options: ["The laptop is new.", "My holiday is at home.", "I was late yesterday."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Lucas and Sofia's Dialogue / Lee el diálogo",
+                description: "Find the celebration verbs and holiday traditions.",
+                content: ["Lucas: What is your favorite holiday, Sofia?", "Sofia: I love Christmas because my whole family gathers.", "Lucas: That is wonderful! Do you decorate together?", "Sofia: Yes, we decorate the tree and prepare delicious food!"],
+                imageUrl: "/images/teens-basic-3-class-03/slide-09-context-dialogue.jpg",
+                bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Correct Verb (1/3)",
+                description: "Every December, we ______ the Christmas tree with lights.",
+                content: ["Every December, we ______ the Christmas tree with lights."],
+                options: ["decorate", "cancel", "forget"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-03/slide-10-decorate-tree-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-400 to-red-500"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Identify the Celebration (2/3)",
+                description: "People wear colorful costumes, dance in the streets, and watch parades.",
+                content: ["People wear colorful costumes, dance in the streets, and watch parades."],
+                options: ["Carnival", "A regular Monday", "A math test"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-03/slide-07-traditions-vocabulary.jpg",
+                bgColor: "bg-gradient-to-br from-red-500 to-rose-600"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Complete the Sentence (3/3)",
+                description: "At midnight on New Year's Eve, people watch colorful ______ in the sky.",
+                content: ["At midnight on New Year's Eve, people watch colorful ______ in the sky."],
+                options: ["snowballs", "fireworks", "laptops"],
+                correctOptionIndex: 1,
+                imageUrl: "/images/teens-basic-3-class-03/slide-04-holiday-vocabulary.jpg",
+                bgColor: "bg-gradient-to-br from-rose-500 to-pink-600"
+              },
+              {
+                id: "c-teens-basic-3-3-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the holiday celebration story.",
+                type: "emoji-game",
+                content: ["🎄 + 👨‍👩‍👧‍👦 + 🎁 + 🍲"],
+                options: ["We gather as a family, open gifts, and enjoy dinner.", "I am going to the gym right now.", "He lost his backpack on the bus."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-03/slide-05-celebration-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Completar los ejercicios y justificar las respuestas."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Usar el tema en conversación y reto final.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Holidays, Festivals & Traditions."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Holidays, Festivals & Traditions",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to holidays, festivals & traditions."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about holidays, festivals & traditions using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about holidays, festivals & traditions.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Let's Talk Holidays! / Hablemos de fiestas!",
+                description: "Spin and answer with your real traditions.",
+                type: "spinning-wheel",
+                content: ["Answer with a complete sentence.", "Add who you celebrate with.", "Use words like usually or always."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-01-welcome-holidays-festivals.jpg",
+                wheelItems: [
+                  { label: "Favorite", color: "#EF4444", prompt: "What is your favorite holiday?", es: "Cual es tu fiesta favorita?" },
+                  { label: "Food", color: "#F59E0B", prompt: "What special dish does your family prepare?", es: "Que plato especial prepara tu familia?" },
+                  { label: "Decorate", color: "#10B981", prompt: "Do you decorate your home for holidays?", es: "Decoras tu casa para las fiestas?" },
+                  { label: "Celebrate", color: "#3B82F6", prompt: "How do you celebrate New Year?", es: "Como celebras ano nuevo?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "What do families usually do on major holidays?",
+                content: ["What do families usually do on major holidays?"],
+                options: ["They gather and share a meal.", "They take school exams.", "They turn off all the lights forever."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-03/slide-05-celebration-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Which sentence correctly describes a holiday tradition?",
+                content: ["Which sentence correctly describes a holiday tradition?"],
+                options: ["We celebrate Independence Day with fireworks.", "We running quickly at the stadium.", "Holiday is yesterday tomorrow."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-03/slide-06-we-celebrate-structure.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What does 'tradition' mean in Spanish?",
+                content: ["tradition = ?"],
+                options: ["costumbre o tradición cultural transmitida", "horario de clases de la mañana", "tarea difícil de matemáticas"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-03/slide-07-traditions-vocabulary.jpg",
+                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Festival Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use holiday vocabulary, celebration verbs, and family traditions."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-08-my-country-phrase.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
+                speakingBossBattle: {
+                  bossName: "The Festival Boss",
+                  bossTitle: "Holidays, Festivals & Traditions",
+                  bossAvatar: "🎭",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say four holidays and three celebration verbs."],
+                    use: ["Make three sentences: one about your favorite holiday, one about family food, and one with 'We celebrate...'."],
+                    speak: ["Speak for 30 seconds about your favorite festival or celebration.", "Explain when it happens, who you celebrate with, and what traditions you enjoy."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Holiday Interview / Entrevista de tradiciones",
+                description: "Ask and answer like two international exchange students.",
+                type: "roleplay",
+                content: ["A: What is the biggest celebration in your city?", "B: Carnival is huge! People dance in parades with colorful costumes.", "A: How does your family celebrate New Year?", "B: We gather for a big dinner and watch fireworks at midnight!"],
+                imageUrl: "/images/teens-basic-3-class-03/slide-09-context-dialogue.jpg",
+                bgColor: "bg-gradient-to-br from-sky-500 to-indigo-600"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Hablar sobre tradiciones usando frases completas."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar práctica independiente.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now describe holidays, festivals, and traditions in English.",
+                content: ["We celebrate Christmas and New Year.", "My family gathers to prepare traditional food.", "People wear colorful costumes in parades."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-01-welcome-holidays-festivals.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write about your favorite holiday or tradition.",
+                type: "homework",
+                content: ["Write 6 sentences about a festival or celebration you enjoy.", "Include the name of the holiday, the month, and who you celebrate with.", "Use at least 3 verbs: celebrate, decorate, gather, prepare, or give gifts."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-06-we-celebrate-structure.jpg",
+                bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch, listen, and collect useful festival phrases.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/5-j9i7mO74Y",
+                content: ["Watch the video about cultural holidays and festivals.", "Write 5 useful phrases or words about traditions from the video.", "Bring one example sentence about your family tradition to the next class."],
+                imageUrl: "/images/teens-basic-3-class-03/slide-08-my-country-phrase.jpg",
+                bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y preparar ejemplos de tradiciones familiares."
           }
         ]
       },
