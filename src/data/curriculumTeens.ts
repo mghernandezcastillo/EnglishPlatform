@@ -108,13 +108,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about hello & introductions using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about hello & introductions.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds introducing yourself in English. Mention your greeting, your name, how you are feeling today, and say goodbye politely.",
+                                        "Example to guide you: 'Hello everyone! My name is Lucas and I am 14 years old. I am feeling great and happy to be in this class. Nice to meet you all, and have a wonderful day! See you later!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: New Student 🎒 / Juego de Roles: New Student 🎒", description: "Production", imageUrl: "/images/teens-basic-zero-class-01/slide-18.jpg", content: ["Student A: You are the new kid in school.", "Student B: You are a friendly classmate.", "Action: Say hi, ask names, and say 'Nice to meet you!'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: New Student 🎒 / Juego de Roles: New Student 🎒", description: "Production", imageUrl: "/images/teens-basic-zero-class-01/slide-18.jpg", content: [
+                  "Let's say that you are meeting a new classmate on the first day of school, and you want to introduce yourself and make friends.",
+                  "Student A: Greet warmly, ask their name, and how they are feeling today.",
+                  "Student B: Respond with your name, share how you feel, and ask them back.",
+                  "A: 'Hi! I'm Alex. What's your name?'",
+                  "B: 'Hey Alex! My name is Jordan. Nice to meet you!'",
+                  "A: 'Nice to meet you too, Jordan! How are you doing today?'",
+                  "B: 'I'm feeling great and excited for English class! How about you?'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -211,13 +219,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers, ages & birthdays using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about numbers, ages & birthdays.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your age, your favorite number, and when your birthday is. Mention months and numbers in English.",
+                                        "Example to guide you: 'Hi! I am 15 years old. My birthday is in August, which is my favorite month because of summer break. My lucky number is twenty-four. Thank you!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: Birthday Party 🥳 / Juego de Roles: Cumpleaños Party 🥳", description: "Production", imageUrl: "/images/teens-basic-zero-class-02/slide-18.jpg", content: ["Student A: It's your birthday! Tell your age.", "Student B: Ask when the birthday is and say Happy Birthday!", "Action: Use 'How old are you?' and 'When is your birthday?'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: Birthday Party 🥳 / Juego de Roles: Cumpleaños Party 🥳", description: "Production", imageUrl: "/images/teens-basic-zero-class-02/slide-18.jpg", content: [
+                  "Let's say that you and your friend are filling out a registration card for a school youth club, and you need to exchange your age and birthday information.",
+                  "Student A: Ask your partner their age and the month of their birthday.",
+                  "Student B: State your age clearly and name your birthday month.",
+                  "A: 'Hey Mia! How old are you this year?'",
+                  "B: 'I am 14 years old! When is your birthday?'",
+                  "A: 'My birthday is in October. What about yours?'",
+                  "B: 'Awesome! Mine is in May, so I will turn 15 soon!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -316,13 +332,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my body & actions using body words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my body & actions.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your favorite physical activity and the body movements you do.",
+                                        "Example to guide you: 'I love playing basketball. In every game, I run fast on the court, jump high to score points, and use my hands to dribble the ball. It keeps my legs strong and gives me lots of energy!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: The Robot 🤖 / Juego de Roles: The Robot 🤖", description: "Production", imageUrl: "/images/teens-basic-zero-class-03/slide-18.jpg", content: ["Student A: You are a robot. Say what you can and can't do.", "Student B: You are the creator. Ask the robot questions.", "Action: 'Can you dance?' 'Yes, I can.'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: The Robot 🤖 / Juego de Roles: The Robot 🤖", description: "Production", imageUrl: "/images/teens-basic-zero-class-03/slide-18.jpg", content: [
+                  "Let's say that you are warming up in P.E. class, and you want to guide your workout partner through three energetic stretching moves.",
+                  "Student A: Name body parts and give movement instructions (jump, stretch, touch your toes).",
+                  "Student B: Follow the instructions, confirm what you are doing, and suggest the next move.",
+                  "A: 'Let's stretch our arms and touch our toes!'",
+                  "B: 'Got it! My legs and back feel much more flexible now.'",
+                  "A: 'Now, let's jump five times and shake our hands!'",
+                  "B: 'Haha, that was fun! My whole body is full of energy!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -419,13 +443,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my favorite gadgets & tech using technology words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my favorite gadgets & tech.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your favorite technology gadget and how it helps you every day.",
+                                        "Example to guide you: 'My favorite gadget is my wireless headphones. I use them every afternoon to listen to podcasts and English songs while studying. They are lightweight, convenient, and help me focus without any noise!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: The Tech Store 🛍️ / Juego de Roles: The Tech Store 🛍️", description: "Production", imageUrl: "/images/teens-basic-zero-class-04/slide-18.jpg", content: ["Student A: You work in a tech store.", "Student B: You are a customer looking for a laptop.", "Action: 'Do you have a fast laptop?' 'Yes, I do!'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: The Tech Store 🛍️ / Juego de Roles: The Tech Store 🛍️", description: "Production", imageUrl: "/images/teens-basic-zero-class-04/slide-18.jpg", content: [
+                  "Let's say that you are comparing tech gadgets with a classmate at lunch, and you want to talk about your favorite device and what you use it for.",
+                  "Student A: Ask which gadget your partner uses most and why.",
+                  "Student B: Describe your smartphone or tablet and mention your favorite feature.",
+                  "A: 'Hey Leo! What gadget do you use the most every day?'",
+                  "B: 'I use my smartphone all the time to listen to music and study.'",
+                  "A: 'Cool! Do you also use a tablet or laptop for school projects?'",
+                  "B: 'Yes, I use my laptop for typing essays and editing videos!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -522,13 +554,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about yummy snacks & drinks using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about yummy snacks & drinks.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite snacks, drinks, and healthy eating habits.",
+                                        "Example to guide you: 'For an afternoon snack, I usually choose fresh fruit like bananas or strawberries, accompanied by a cold bottle of water. When I study with friends, we also enjoy popcorn. Eating healthy snacks helps me stay active throughout the school day!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: At the Cafeteria 🏫 / Juego de Roles: At the Cafeteria 🏫", description: "Production", imageUrl: "/images/teens-basic-zero-class-05/slide-18-cafeteria-roleplay.jpg", content: ["Student A: You are ordering lunch.", "Student B: You work in the cafeteria.", "Action: 'Do you like pizza?' 'Yes, I do!'"], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: At the Cafeteria 🏫 / Juego de Roles: At the Cafeteria 🏫", description: "Production", imageUrl: "/images/teens-basic-zero-class-05/slide-18-cafeteria-roleplay.jpg", content: [
+                  "Let's say that you and your friend are at the school cafeteria snack bar, and you want to decide what snack and drink to buy together.",
+                  "Student A: Ask what snacks and drinks your partner likes and suggest options.",
+                  "Student B: State your food preferences and express what you would like to order.",
+                  "A: 'I'm getting hungry! What snack would you like to get?'",
+                  "B: 'I feel like having a crunchy apple and an orange juice.'",
+                  "A: 'Nice choice! I'm going to order a granola bar and cold water.'",
+                  "B: 'Great, healthy snacks give us good energy for afternoon classes!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -625,13 +665,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about shapes & patterns using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about shapes & patterns.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing shapes, patterns, and designs in objects around you.",
+                                        "Example to guide you: 'In my classroom, I can see many geometric shapes. The whiteboard is a large rectangle, the wall clock is a smooth circle, and our floor tiles form a checkered square pattern. Combining different shapes creates balance and modern design!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: At the store 👕 / Juego de Roles: At the store 👕", description: "Production", content: ["Student A: You want a striped shirt.", "Student B: You work at the store.", "Action: 'Do you have a striped shirt?' 'Yes!'"], imageUrl: "/images/teens-basic-zero-class-06/slide-18-store-roleplay-striped-shirt.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: At the store 👕 / Juego de Roles: At the store 👕", description: "Production", content: [
+                  "Let's say that you and your art partner are designing a geometric poster for the school festival, and you want to choose the shapes and colors.",
+                  "Student A: Suggest geometric shapes (circles, triangles, rectangles) and color patterns.",
+                  "Student B: Agree or suggest complementary shapes and describe where to place them.",
+                  "A: 'Let's put bright yellow triangles in the corners and a big blue circle in the center!'",
+                  "B: 'That looks eye-catching! Can we add green squares along the border?'",
+                  "A: 'Yes! That creates a cool geometric pattern.'",
+                  "B: 'Perfect! The contrast between the shapes makes our poster stand out!'"
+                ], imageUrl: "/images/teens-basic-zero-class-06/slide-18-store-roleplay-striped-shirt.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -728,13 +776,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about school subjects & supplies using classroom words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about school subjects & supplies.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing the essential school supplies inside your backpack.",
+                                        "Example to guide you: 'Inside my backpack, I always carry three notebooks for my main subjects, a sturdy folder for homework sheets, and a pencil case filled with pens, pencils, and an eraser. Having all my school supplies organized helps me study efficiently and stay ready for every lesson!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: First day of school 🏫 / Juego de Roles: First day de Escuela 🏫", description: "Production", content: ["Student A: You are a new student.", "Student B: You are asking about their favorite subjects.", "Action: 'What is your favorite subject?' 'I love Science.'"], imageUrl: "/images/teens-basic-zero-class-07/slide-18-first-day-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: First day of school 🏫 / Juego de Roles: First day de Escuela 🏫", description: "Production", content: [
+                  "Let's say that you are organizing your study desk with a classmate before an exam, and you want to check if you have all the necessary supplies.",
+                  "Student A: Ask if your partner has pens, a notebook, a ruler, and highlighters.",
+                  "Student B: Check your pencil case, lend an extra item, and confirm what you need.",
+                  "A: 'Hey Carlos! Do you have a blue pen and a highlighter I can borrow?'",
+                  "B: 'Sure! I have two pens in my pencil case and a yellow highlighter.'",
+                  "A: 'Thanks a lot! Do we also need a ruler for math today?'",
+                  "B: 'Yes, bring your ruler and geometry set for the geometry test!'"
+                ], imageUrl: "/images/teens-basic-zero-class-07/slide-18-first-day-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -831,13 +887,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about pets & animal friends using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about pets & animal friends.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite animal or pet, describing its features and personality.",
+                                        "Example to guide you: 'My favorite animal is a golden retriever dog. Dogs are loyal, friendly, and very intelligent pets. If I have free time, I love taking care of animals, feeding them healthy food, and going on long walks outdoors!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: The Pet Store 🐾 / Juego de Roles: The Mascotas Store 🐾", description: "Production", content: ["Student A: You want to buy a pet.", "Student B: You work at the pet store.", "Action: 'Do you have cute dogs?' 'Yes, we have a small dog.'"], imageUrl: "/images/teens-basic-zero-class-08/slide-18-pet-store-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: The Pet Store 🐾 / Juego de Roles: The Mascotas Store 🐾", description: "Production", content: [
+                  "Let's say that you and your friend are showing pictures of your pets on your phone, and you want to describe what they look like and what they do.",
+                  "Student A: Ask about your friend's pet, its name, breed, and favorite habits.",
+                  "Student B: Describe your pet's appearance, personality, and funny behaviors.",
+                  "A: 'Look at my puppy! His name is Toby and he has fluffy golden fur.'",
+                  "B: 'He is adorable! Is he playful or calm at home?'",
+                  "A: 'He is super playful and loves chasing tennis balls in the park!'",
+                  "B: 'My cat Luna is the opposite; she loves sleeping on the sunny windowsill all afternoon!'"
+                ], imageUrl: "/images/teens-basic-zero-class-08/slide-18-pet-store-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -934,13 +998,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my hobbies & free time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my hobbies & free time.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your top hobbies and what makes them exciting.",
+                                        "Example to guide you: 'In my free time, my favorite hobby is drawing digital art on my tablet and playing soccer with my friends. Drawing allows me to express my creativity, while sports keep me active and energized. Having fun hobbies helps me relax after a busy school week!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: Interview 🎤 / Juego de Roles: Interview 🎤", description: "Production", content: ["Student A: You are a famous YouTuber.", "Student B: You are interviewing them about their hobbies.", "Action: 'What do you do in your free time?'"], imageUrl: "/images/teens-basic-zero-class-09/slide-18-youtuber-interview-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: Interview 🎤 / Juego de Roles: Interview 🎤", description: "Production", content: [
+                  "Let's say that you are planning your weekend activities with a classmate, and you want to share your favorite hobbies.",
+                  "Student A: Ask what hobbies your partner enjoys in their free time.",
+                  "Student B: Describe what you like doing (playing music, video games, skateboarding, painting) and invite them.",
+                  "A: 'What do you usually like doing on Saturday afternoons?'",
+                  "B: 'I love playing electric guitar and skateboarding at the local park!'",
+                  "A: 'That sounds really fun! How long have you been playing guitar?'",
+                  "B: 'For about a year! Would you like to come skateboard with us this weekend?'"
+                ], imageUrl: "/images/teens-basic-zero-class-09/slide-18-youtuber-interview-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1037,13 +1109,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about family & friends using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about family & friends.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your family members or close friends and what you appreciate about them.",
+                                        "Example to guide you: 'My family is very close and supportive. I live with my parents and my younger sister. We love having dinner together every evening and watching movies on weekends. My best friends at school are also like family to me because we always help each other study and have fun!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: Family Album 📸 / Juego de Roles: Familia Album 📸", description: "Production", content: ["Student A: Show a 'photo' and describe your family.", "Student B: Ask questions. 'Who is he?' 'Is she tall?'", "Action: Use 'This is my...' and 'His/Her name is...'"], imageUrl: "/images/teens-basic-zero-class-10/slide-18-family-album-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: Family Album 📸 / Juego de Roles: Familia Album 📸", description: "Production", content: [
+                  "Let's say that you are introducing your family members to a friend using family photos from a weekend celebration.",
+                  "Student A: Point to the photo, ask who each person is and what they are like.",
+                  "Student B: Introduce your parents, siblings, or cousins and describe their personality.",
+                  "A: 'Who is that cheerful person next to you in the photo?'",
+                  "B: 'That is my older brother Marco! He is funny and loves playing basketball.'",
+                  "A: 'And who is the lady smiling with the birthday cake?'",
+                  "B: 'That is my mother. She is kind, supportive, and bakes the best desserts!'"
+                ], imageUrl: "/images/teens-basic-zero-class-10/slide-18-family-album-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1984,13 +2064,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about family tree & feelings using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about family tree & feelings.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing how you and your family members feel in different situations using emotion adjectives.",
+                                        "Example to guide you: 'When we have family game night, my brother and I feel extremely excited and cheerful. When I have big exams, I feel a little nervous, but my parents are always supportive and encourage me. Talking to my family always makes me feel calm and confident!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-01/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
+                content: [
+                  "Let's say that you notice your friend looks a bit stressed about school projects, and you want to ask how they are feeling and offer support.",
+                  "Student A: Ask how your friend is feeling today and why they look worried.",
+                  "Student B: Explain your feelings (tired, nervous, overwhelmed) and describe what happened.",
+                  "A: 'Hey Sophia! You look a bit tired today. How are you feeling?'",
+                  "B: 'I feel a little overwhelmed because I have a math test tomorrow.'",
+                  "A: 'Don't worry! We can review the formulas together during lunch break.'",
+                  "B: 'Thank you so much! That makes me feel much more confident!'"
+                ], imageUrl: "/images/teens-basic-1-class-01/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-01/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -2103,13 +2192,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fast food & healthy choices using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about fast food & healthy choices.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your eating habits and how you maintain a healthy lifestyle.",
+                                        "Example to guide you: 'To stay healthy, I try to eat balanced meals every day. For breakfast, I have oatmeal with berries and almond milk. During lunch, I choose fresh salads and grilled chicken. I avoid sugary sodas and drink plenty of water to keep my energy high during sports!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-02/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
+                content: [
+                  "Let's say that you and your gym partner are planning a healthy meal plan for sports training, and you want to choose nutritious ingredients.",
+                  "Student A: Ask about your partner's diet and suggest healthy meal options.",
+                  "Student B: Describe what healthy foods you like eating and what habits you want to improve.",
+                  "A: 'What healthy food do you usually eat before workout sessions?'",
+                  "B: 'I like eating a banana with peanut butter and drinking lots of water.'",
+                  "A: 'That's great for energy! What do you eat after training?'",
+                  "B: 'I usually eat brown rice with vegetables and fish to help my muscles recover!'"
+                ], imageUrl: "/images/teens-basic-1-class-02/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-02/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -2222,13 +2320,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fashion, clothes & weather using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about fashion, clothes & weather.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing what clothes you wear in different seasons and weather conditions.",
+                                        "Example to guide you: 'When it is rainy and cold outside, I wear a warm woolen jacket, blue jeans, and waterproof boots with an umbrella. On sunny summer days, I prefer wearing a lightweight cotton T-shirt, shorts, sunglasses, and comfortable sneakers to stay cool and active outdoors!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-03/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
+                content: [
+                  "Let's say that you and a friend are packing for a weekend trip where the weather is unpredictable, and you want to make sure you have the right clothes.",
+                  "Student A: Check the weather forecast and ask what clothes your friend is packing.",
+                  "Student B: Explain the weather (windy, chilly, sunny) and describe the outfits you chose.",
+                  "A: 'The forecast says it will be windy and rainy on Saturday. What are you wearing?'",
+                  "B: 'I'm packing a hooded raincoat, a warm hoodie, and sturdy sneakers.'",
+                  "A: 'Good idea! What about Sunday when the sun comes out?'",
+                  "B: 'I packed a light T-shirt and a cap so we can hike comfortably!'"
+                ], imageUrl: "/images/teens-basic-1-class-03/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-03/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -2341,13 +2448,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about nature, parks & outdoors using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about nature, parks & outdoors.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite natural park or outdoor spot and what you enjoy doing there.",
+                                        "Example to guide you: 'My favorite natural place is our city park by the lake. It is surrounded by tall pine trees and blooming flowers. I love riding my bicycle along the trails, breathing fresh air, and having picnics with friends while listening to birds singing. Protecting nature is essential for our planet!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-04/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
+                content: [
+                  "Let's say that you are organizing a nature cleanup and photography day at the local ecological reserve with a friend.",
+                  "Student A: Propose visiting the national park and describe the natural landscape.",
+                  "Student B: Agree, suggest bringing trash bags and cameras, and name activities to do.",
+                  "A: 'Let's visit the nature reserve this Saturday morning!'",
+                  "B: 'I love that idea! We can hike the mountain trail and take photos of the lake.'",
+                  "A: 'Can we also bring eco-friendly bags to pick up any plastic along the path?'",
+                  "B: 'Definitely! Keeping our parks clean protects the wildlife and makes the trails beautiful!'"
+                ], imageUrl: "/images/teens-basic-1-class-04/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-04/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -2460,13 +2576,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about weekend plans with will and going to using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about weekend plans with will and going to.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your plans for the upcoming weekend using 'be going to' and 'will'.",
+                                        "Example to guide you: 'This weekend, I am going to have a busy and fun schedule. On Saturday morning, I am going to practice with my basketball team. In the evening, my friends and I will watch a new sci-fi movie at the cinema. On Sunday, I will finish my school science project and relax with my family!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-05/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
+                content: [
+                  "Let's say that you are discussing upcoming weekend plans with a classmate, and you want to invite them to join an activity.",
+                  "Student A: Ask what your friend is going to do on Saturday and Sunday.",
+                  "Student B: Share your scheduled plans and ask what they have planned.",
+                  "A: 'Hey Lucas! What are you going to do this Saturday afternoon?'",
+                  "B: 'I am going to visit the modern art museum with my sister. What about you?'",
+                  "A: 'I am going to play soccer in the morning, but I'm free in the evening!'",
+                  "B: 'Awesome! Would you like to join us for dinner at the pizza place afterwards?'"
+                ], imageUrl: "/images/teens-basic-1-class-05/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-05/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -2579,13 +2704,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three invitation responses: one invitation, one acceptance, and one polite decline."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about making plans with friends.",
-                                      "Use what you learned today: invite someone, accept one plan, and decline one plan politely."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to politely accept and decline invitations with realistic excuses in English.",
+                                        "Example to guide you: 'When a friend invites me to an event I can attend, I say: 'I'd love to! Thank you for inviting me!' But if I am busy with family commitments or studying for exams, I politely decline by saying: 'I'm sorry, I'd love to come, but I have a doctor's appointment. Maybe next time!' Being polite keeps friendships strong!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out an invitation dialogue.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-06/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out an invitation dialogue.", type: "roleplay",
+                content: [
+                  "Let's say that you are inviting a friend to your birthday celebration, and your friend has another commitment they need to explain politely.",
+                  "Student A: Invite your friend to your celebration giving the time, date, and place.",
+                  "Student B: Politely explain that you have a prior family event, apologize, and suggest meeting later.",
+                  "A: 'Hey! I'm celebrating my birthday this Friday at 6:00 PM. Would you like to come?'",
+                  "B: 'Happy early birthday! I'd love to, but I have to attend my cousin's wedding that night.'",
+                  "A: 'Oh, don't worry! Family comes first.'",
+                  "B: 'Thank you for understanding! Can we hang out on Sunday afternoon instead?'"
+                ], imageUrl: "/images/teens-basic-1-class-06/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your invitation dialogue with the class.", imageUrl: "/images/teens-basic-1-class-06/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -2698,13 +2832,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three shopping phrases: ask a price, ask for a color or size, and say how you will pay."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about buying clothes.",
-                                      "Use what you learned today: name one item, ask the price, and say how you want to pay."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about shopping for clothing, comparing prices, and finding bargains in English.",
+                                        "Example to guide you: 'When I go shopping for clothes, I always look for comfortable hoodies and quality sneakers. I ask the sales assistant: 'How much does this jacket cost?' and 'Is there a discount on these shoes?' Comparing prices helps me manage my budget and buy the best products without overspending!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out a clothing store situation.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-07/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out a clothing store situation.", type: "roleplay",
+                content: [
+                  "Let's say that you are at a sports clothing store, and you want to ask the clerk about sizes, colors, and prices of athletic gear.",
+                  "Student A: Act as the store assistant, greet the shopper, and offer help.",
+                  "Student B: Ask for a specific size, color, the price, and whether they accept card payments.",
+                  "A: 'Good afternoon! How can I help you today?'",
+                  "B: 'Hi! How much is this black sports jacket in size medium?'",
+                  "A: 'That jacket is forty-five dollars, and today it has a twenty percent discount!'",
+                  "B: 'That is a great deal! Can I try it on in the fitting room?'"
+                ], imageUrl: "/images/teens-basic-1-class-07/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your shopping dialogue with the class.", imageUrl: "/images/teens-basic-1-class-07/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -2817,13 +2960,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three food order phrases: one polite order, one drink request, and one preference."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about ordering food at a cafe.",
-                                      "Use what you learned today: order food, ask for a drink, and say one preference."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing how to order food and beverages politely at a cafe or restaurant.",
+                                        "Example to guide you: 'When I visit a cafe with friends, I use polite phrases like: 'Could I please have an iced matcha latte and a toasted turkey bagel?' If I have dietary preferences, I ask: 'Does this pastry contain nuts?' Using polite language with the server shows good manners and ensures a pleasant dining experience!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out a cafe order.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-08/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out a cafe order.", type: "roleplay",
+                content: [
+                  "Let's say that you are at a lively urban coffee shop, and you want to order a beverage and a snack from the barista.",
+                  "Student A: Act as the friendly barista, take the order, and suggest a snack.",
+                  "Student B: Order a drink with specific preferences (size, milk type) and a pastry.",
+                  "A: 'Welcome to Central Cafe! What can I get started for you today?'",
+                  "B: 'Hi! Could I please have a medium caramel iced coffee with oat milk?'",
+                  "A: 'Sure! Would you like a warm chocolate muffin or a cinnamon roll with that?'",
+                  "B: 'I'll take the chocolate muffin, please. How much is the total?'"
+                ], imageUrl: "/images/teens-basic-1-class-08/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your cafe order dialogue with the class.", imageUrl: "/images/teens-basic-1-class-08/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -2936,13 +3088,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three technology phrases: one device habit, one app preference, and one screen time idea."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about your favorite apps and devices.",
-                                      "Use what you learned today: name one device, one app, and one safe online habit."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about how modern technology apps and software help you with your studies and hobbies.",
+                                        "Example to guide you: 'Technology plays a major role in my daily education. I use language learning apps to practice English vocabulary, cloud storage to organize school assignments, and video editing tools to create creative projects. Using digital tools responsibly allows me to learn faster and connect with people worldwide!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Ask for help using an app or device.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-09/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Ask for help using an app or device.", type: "roleplay",
+                content: [
+                  "Let's say that you are showing a classmate a productivity or language study app that helped you improve your grades.",
+                  "Student A: Ask which app your partner uses to organize homework and practice English.",
+                  "Student B: Explain the app's key features, how it works, and why it is effective.",
+                  "A: 'How do you keep all your study notes and English vocabulary so organized?'",
+                  "B: 'I use a smart flashcard app on my phone that quizzes me every day!'",
+                  "A: 'Is it easy to create digital decks with audio and images?'",
+                  "B: 'Yes, it takes two minutes! It even tracks your streak and sends helpful reminders!'"
+                ], imageUrl: "/images/teens-basic-1-class-09/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your favorite app or device and one safe online habit.", imageUrl: "/images/teens-basic-1-class-09/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -3055,13 +3216,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three phrases: one chat message, one call request, and one trip plan."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about an event or trip you want to plan.",
-                                      "Use what you learned today: ask for help, give a place, and give a date or time."
-                                    ]
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to ask for help, repetition, and clarification politely in English.",
+                                        "Example to guide you: 'Whenever I don't understand an instruction in class, I politely ask my teacher: 'Could you please repeat that?' or 'What does this word mean in this context?' Asking for clarification is a sign of a proactive learner because it helps you master concepts without confusion and improves your communication skills!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Call or chat with a friend to ask for help planning a trip.", type: "roleplay", imageUrl: "/images/teens-basic-1-class-10/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Call or chat with a friend to ask for help planning a trip.", type: "roleplay",
+                content: [
+                  "Let's say that you are working on a complex group science project, and you need your partner to clarify an instruction you didn't understand.",
+                  "Student A: Explain a multi-step project task to your teammate.",
+                  "Student B: Ask for clarification politely using 'Could you explain what you mean by...?'",
+                  "A: 'First we need to synthesize the survey data, and then format the chart.'",
+                  "B: 'Excuse me, could you please explain what you mean by synthesizing the data?'",
+                  "A: 'Sure! It means grouping all student answers into three main percentage categories.'",
+                  "B: 'Ah, I understand now! Let's start grouping the responses right away!'"
+                ], imageUrl: "/images/teens-basic-1-class-10/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Present your event or trip plan to the class.", imageUrl: "/images/teens-basic-1-class-10/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -3337,11 +3507,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to animals & habitats."],
                                       use: ["You have 60 seconds: create three sentences about animals & habitats: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about animals & habitats.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing the personality qualities you value most in yourself and your friends.",
+                                        "Example to guide you: 'The qualities I value most in a friend are honesty, kindness, and a good sense of humor. I consider myself a curious and hardworking student who enjoys helping others. Having loyal and positive friends motivates me to achieve my goals and overcome any challenge!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-01/slide-18.jpg", content: ["Student A: You are a zookeeper.","Student B: Ask about three animals.","Action: Describe where each animal lives and what it can do."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-01/slide-18.jpg", content: [
+                  "Let's say that you are interviewing a classmate for a school leadership committee, and you want to ask about their personal strengths and qualities.",
+                  "Student A: Ask what personality qualities make your partner a great team leader.",
+                  "Student B: Describe your strengths (responsible, creative, empathetic) with real examples.",
+                  "A: 'What personal qualities make you a strong candidate for the student council?'",
+                  "B: 'I am very organized, empathetic, and I listen carefully to everyone's ideas.'",
+                  "A: 'How do you handle disagreements within a team?'",
+                  "B: 'I stay calm, encourage open communication, and find solutions that benefit everyone!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3433,11 +3614,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to my room & dream house."],
                                       use: ["You have 60 seconds: create three sentences about my room & dream house: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about my room & dream house.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing household responsibilities and how sharing chores builds teamwork at home.",
+                                        "Example to guide you: 'At home, my family shares daily responsibilities to keep our house organized. My daily chore is washing the dishes after dinner and walking the dog in the afternoon. On weekends, I clean my bedroom and take out the recycling. Sharing chores teaches responsibility and keeps our home clean!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-02/slide-18.jpg", content: ["Student A: You are an interior designer.","Student B: Describe your dream room.","Action: Ask what furniture there is and where it is."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-02/slide-18.jpg", content: [
+                  "Let's say that you and your sibling are organizing a chore schedule for the week so you can finish your homework and have free time.",
+                  "Student A: Propose dividing household tasks (vacuuming, laundry, washing dishes).",
+                  "Student B: Agree on who takes which task and set a completion deadline.",
+                  "A: 'Let's organize our chores so we can both finish early on Saturday.'",
+                  "B: 'Good plan! I can wash the dishes and water the plants every morning.'",
+                  "A: 'Great! I will vacuum the living room and take out the trash.'",
+                  "B: 'Perfect! If we work together, we will finish everything in under an hour!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3529,11 +3721,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to vehicles, transport & city."],
                                       use: ["You have 60 seconds: create three sentences about vehicles, transport & city: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about vehicles, transport & city.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite academic subjects, your strengths, and your future career interests.",
+                                        "Example to guide you: 'My favorite subjects at school are biology and chemistry because I am fascinated by how living organisms function. I am strong at solving logic problems and conducting lab experiments. In the future, I hope to study medicine or biotechnology to help cure diseases and protect human health!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-03/slide-18.jpg", content: ["Student A: You are new in town.","Student B: Give directions to a city place.","Action: Ask how to get there and what transport to use."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-03/slide-18.jpg", content: [
+                  "Let's say that you and your study partner are choosing elective courses for next term, and you want to discuss your academic strengths.",
+                  "Student A: Ask which subjects your partner excels in and what electives they prefer.",
+                  "Student B: Share your favorite academic subjects and explain why they align with your goals.",
+                  "A: 'Which elective subjects are you planning to take next semester?'",
+                  "B: 'I'm choosing Computer Science and Graphic Design because I love digital technology.'",
+                  "A: 'Are you strong at coding algorithms?'",
+                  "B: 'I've been learning Python for six months, and I really enjoy building interactive games!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3625,11 +3828,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to dream jobs & professions."],
                                       use: ["You have 60 seconds: create three sentences about dream jobs & professions: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about dream jobs & professions.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to give clear navigational directions to a landmark in your city.",
+                                        "Example to guide you: 'If someone asks for directions to the city library from the central station, I tell them: 'Go straight along Main Avenue for three blocks. Turn left at the traffic light onto Oak Street. Walk past the bookstore, and the library will be on your right, across from the park.' Giving clear directions is very helpful!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-04/slide-18.jpg", content: ["Student A: You are a career coach.","Student B: Talk about your dream job.","Action: Ask job, workplace, and reason."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-04/slide-18.jpg", content: [
+                  "Let's say that you are helping a tourist on the street who is trying to find the modern art museum, and you want to give clear step-by-step directions.",
+                  "Student A: Act as the tourist, ask where the museum is and whether it is within walking distance.",
+                  "Student B: Give detailed directions using prepositions of place and navigational verbs.",
+                  "A: 'Excuse me! Could you tell me how to get to the Modern Art Museum?'",
+                  "B: 'Sure! Walk straight ahead along this boulevard for two blocks until you see the fountain.'",
+                  "A: 'Do I turn left or right at the fountain?'",
+                  "B: 'Turn right onto Green Street. Walk past the cinema, and the museum is right across from the park!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3721,11 +3935,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to abilities with can / can't."],
                                       use: ["You have 60 seconds: create three sentences about abilities with can / can't: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about abilities with can / can't.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds giving a review of your favorite movie or TV series, describing the plot and why you recommend it.",
+                                        "Example to guide you: 'My favorite movie is an inspiring science fiction film called Interstellar. The plot follows a team of brave astronauts who travel through a wormhole to find a habitable planet for humanity. The visual effects are breathtaking and the emotional soundtrack made it an unforgettable cinema masterpiece. I highly recommend it!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-05/slide-18.jpg", content: ["Student A: You are a talent show judge.","Student B: Talk about your abilities.","Action: Ask three Can you...? questions."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-05/slide-18.jpg", content: [
+                  "Let's say that you and a friend are deciding which movie to watch at the cinema this Friday, and you want to compare different genres and actors.",
+                  "Student A: Suggest an action or mystery film and describe the premise.",
+                  "Student B: Mention your preferred genre (sci-fi, comedy), discuss the actors, and agree on a screening time.",
+                  "A: 'Have you seen the trailer for the new mystery detective movie?'",
+                  "B: 'Yes! The plot looks full of unexpected twists and suspense.'",
+                  "A: 'Would you like to watch the 6:30 PM screening this Friday?'",
+                  "B: 'Definitely! Let's book the tickets online so we can get great seats in the middle!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3817,11 +4042,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to school rules: must, have to, should."],
                                       use: ["You have 60 seconds: create three sentences about school rules: must, have to, should: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about school rules: must, have to, should.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to prepare your favorite simple recipe using cooking action verbs.",
+                                        "Example to guide you: 'To make a delicious homemade guacamole, first you cut two ripe avocados in half and scoop the pulp into a bowl. Next, chop fresh tomatoes, onions, and cilantro. Squeeze the juice of one fresh lime and add a pinch of salt. Finally, mash everything gently with a fork and serve with crunchy tortilla chips!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-06/slide-18.jpg", content: ["Student A: You are a new student.","Student B: Explain the school rules.","Action: Use must, have to, and should."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-06/slide-18.jpg", content: [
+                  "Let's say that you and your friend are cooking a healthy homemade dinner together, and you want to explain the preparation steps.",
+                  "Student A: Ask what ingredients and utensils are needed for the dish.",
+                  "Student B: Explain the cooking steps in order using verbs like chop, boil, mix, and bake.",
+                  "A: 'What ingredients do we need to prepare the homemade pasta sauce?'",
+                  "B: 'We need fresh tomatoes, garlic, olive oil, basil, and a pinch of black pepper.'",
+                  "A: 'Should I dice the tomatoes or blend them?'",
+                  "B: 'Dice the tomatoes first, sauté the garlic in olive oil, and simmer everything for fifteen minutes!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -3913,11 +4149,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to sports, health & habits."],
                                       use: ["You have 60 seconds: create three sentences about sports, health & habits: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about sports, health & habits.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to describe common health symptoms and give caring advice in English.",
+                                        "Example to guide you: 'When someone has a cold or a headache, it is important to describe the symptoms accurately. If I feel unwell, I say: 'I have a sore throat, a fever, and a mild cough.' Helpful health advice includes drinking warm herbal tea with honey, getting plenty of rest, and consulting a doctor if symptoms persist!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-07/slide-18.jpg", content: ["Student A: You are a health coach.","Student B: Talk about your habits.","Action: Give two pieces of advice."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-07/slide-18.jpg", content: [
+                  "Let's say that you are visiting the school nurse because you started feeling dizzy and developed a headache during gym class.",
+                  "Student A: Act as the school nurse, ask what symptoms the student has and when they started.",
+                  "Student B: Explain your symptoms (headache, fever, sore throat) and ask for advice.",
+                  "A: 'Hello! How are you feeling, and what seems to be the problem?'",
+                  "B: 'Hi, I have a throbbing headache and I started feeling dizzy after running in P.E.'",
+                  "A: 'Let me check your temperature. Drink this glass of cool water and rest here for a few minutes.'",
+                  "B: 'Thank you! Should I take any medicine if the headache continues?'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -4009,11 +4256,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to city, transport & places to go out."],
                                       use: ["You have 60 seconds: create three sentences about city, transport & places to go out: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about city, transport & places to go out.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your personal clothing style, favorite colors, and how you choose outfits.",
+                                        "Example to guide you: 'My personal style is casual, modern, and comfortable. I love wearing oversized hoodies in earthy tones like olive green or beige, paired with classic denim jeans and clean white sneakers. When shopping, I prioritize sustainable fabrics and durable quality over fast-fashion trends!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-08/slide-18.jpg", content: ["Student A: Suggest a place to go out.","Student B: Ask about transport and time.","Action: Make a complete weekend plan."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-08/slide-18.jpg", content: [
+                  "Let's say that you and your friend are shopping for outfits for the end-of-year school party, and you want to give each other fashion advice.",
+                  "Student A: Ask for your friend's opinion on a stylish jacket and dress shoes.",
+                  "Student B: Give honest feedback on the color, fit, and suggest matching accessories.",
+                  "A: 'What do you think of this navy blue blazer for the school celebration?'",
+                  "B: 'It looks very elegant! The dark blue color matches your style perfectly.'",
+                  "A: 'Do you think I should wear it with black shoes or brown loafers?'",
+                  "B: 'Brown loafers would give it a modern, stylish contrast!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -4105,11 +4363,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to series, movies, games & music."],
                                       use: ["You have 60 seconds: create three sentences about series, movies, games & music: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about series, movies, games & music.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about actions young people can take to protect the environment and combat climate change.",
+                                        "Example to guide you: 'Protecting the environment starts with daily conscious choices. In my routine, I reduce single-use plastics by carrying a reusable water bottle and cloth shopping bags. I always separate recyclables and turn off electrical appliances when not in use. If every teen takes small green actions, we can preserve our planet for future generations!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-09/slide-18.jpg", content: ["Student A: Recommend a movie, series, game, or song.","Student B: Ask why.","Action: Use two opinion adjectives."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-09/slide-18.jpg", content: [
+                  "Let's say that you and a classmate are proposing an eco-friendly recycling initiative for your school campus.",
+                  "Student A: Propose installing separated recycling bins for paper, plastic, and organic waste.",
+                  "Student B: Support the idea and suggest organizing a student workshop on reducing energy waste.",
+                  "A: 'Our school should install distinct recycling bins in every hallway.'",
+                  "B: 'That's a fantastic idea! We could also organize a student campaign on saving electricity.'",
+                  "A: 'Yes! We can design posters encouraging students to turn off lights when leaving classrooms.'",
+                  "B: 'Let's present this green proposal to our principal next Monday!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -4201,11 +4470,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to current conversations, routines & speaking review."],
                                       use: ["You have 60 seconds: create three sentences about current conversations, routines & speaking review: one positive, one negative, and one question."],
-                                      speak: ["Speak for 30 seconds about current conversations, routines & speaking review.", "Use what you learned today: include a positive sentence, a negative sentence, and a question."]
+                                      speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your future goals, dreams, and what steps you are taking to achieve them.",
+                                        "Example to guide you: 'My main future goal is to study software engineering at a top university and develop apps that help communities solve real-world problems. To achieve this dream, I practice coding every week, read technology journals, and work hard to master English fluency. Dedication and consistency turn dreams into reality!'"
+                                      ]
                                     }
                                   }
                                 },
-              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-10/slide-18.jpg", content: ["Student A: Ask three Level 2 questions.","Student B: Answer with detail and because.","Action: Swap roles and try to speak for 30 seconds."], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+              { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-10/slide-18.jpg", content: [
+                  "Let's say that you are having a career counseling session with a mentor, and you want to discuss your long-term ambitions and study path.",
+                  "Student A: Act as the mentor, ask what career fields interest the student and why.",
+                  "Student B: Explain your passion (engineering, arts, medicine) and describe the skills you are developing.",
+                  "A: 'What career field are you most passionate about pursuing after high school?'",
+                  "B: 'I am deeply passionate about biomedical engineering and healthcare innovation.'",
+                  "A: 'What steps are you currently taking to prepare for university admissions?'",
+                  "B: 'I am focusing on advanced science courses, practicing English daily, and volunteering at a local clinic!'"
+                ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -4622,11 +4902,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Daily Routine & Time",
                   bossAvatar: "⏰",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say four routine verbs and two time phrases."],
                     use: ["Make three sentences: one with I, one with he/she, and one with usually."],
-                    speak: ["Speak for 30 seconds about your school-day routine.", "Include at least two times and one frequency word."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your daily routine from morning to night. Mention what time you wake up, your school habits, and how you spend your free time in the evening using present simple and frequency adverbs.",
+                                        "Example to guide you: 'Every weekday, I wake up at 6:30 AM and have breakfast with my family. At 7:30 AM, I walk to school. In the afternoon, I usually do my homework and play basketball. Finally, I always read a book before going to sleep at 10:00 PM.'"
+                                      ]
                   }
                 }
               },
@@ -4635,7 +4918,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Routine Interview / Entrevista de rutina",
                 description: "Ask and answer like a real conversation.",
                 type: "roleplay",
-                content: ["A: What time do you wake up?", "B: I wake up at 6:30.", "A: What do you usually do after school?", "B: I usually do homework and listen to music."],
+                content: [
+                  "Let's say that you are talking with an exchange student about your daily schedules, and you want to compare how your typical school days look.",
+                  "Student A: Ask what time your partner gets up, how they get to school, and what they do after classes.",
+                  "Student B: Describe your morning routine, school hours, and evening hobbies with time expressions.",
+                  "A: 'What time do you usually wake up on school days?'",
+                  "B: 'I usually wake up at 7:00 AM, take a quick shower, and eat cereal for breakfast.'",
+                  "A: 'Do you walk to school or take the bus?'",
+                  "B: 'I take the bus at 7:45 AM. After classes, I always practice guitar and do my homework!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-01/slide-18-routine-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-500 to-indigo-600"
               }
@@ -4899,11 +5190,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Sports, Competitions & Teams",
                   bossAvatar: "🏆",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say five sports words and three team words."],
                     use: ["Make three sentences: one sport you play, one team you support, and one comparison."],
-                    speak: ["Speak for 30 seconds about a sports team or match.", "Include a score, a winner, and one comparison."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your favorite sport or physical activity. Mention the equipment needed, how often you practice, and why teamwork and fair play are important to you.",
+                                        "Example to guide you: 'My favorite sport is soccer. I train three times a week with my school team on the field. You need a ball, cleats, and shin guards. I love soccer because teamwork and fair play teach us to support each other and celebrate victories together!'"
+                                      ]
                   }
                 }
               },
@@ -4912,7 +5206,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Sports Interview / Entrevista deportiva",
                 description: "Ask and answer like a sports reporter.",
                 type: "roleplay",
-                content: ["A: What sport do you play?", "B: I play soccer.", "A: What team do you support?", "B: I support Blue Team.", "A: Who is faster?", "B: Blue Team is faster than Red Team."],
+                content: [
+                  "Let's say that you are inviting a classmate to join your sports team after school, and you want to explain how the practice works and what equipment they need.",
+                  "Student A: Invite your classmate to the team practice and explain the rules and benefits.",
+                  "Student B: Ask about the training schedule, required sports gear, and show excitement.",
+                  "A: 'Hey! Would you like to join our volleyball practice this Thursday?'",
+                  "B: 'That sounds exciting! What time does the practice start and what gear do I need?'",
+                  "A: 'We train from 4:00 PM to 5:30 PM on the court. Just bring knee pads, comfortable sneakers, and a water bottle.'",
+                  "B: 'Awesome! I love playing team sports. Count me in for Thursday!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-02/slide-17-sports-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-500 to-indigo-600"
               }
@@ -5176,11 +5478,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Holidays, Festivals & Traditions",
                   bossAvatar: "🎭",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say four holidays and three celebration verbs."],
                     use: ["Make three sentences: one about your favorite holiday, one about family food, and one with 'We celebrate...'."],
-                    speak: ["Speak for 30 seconds about your favorite festival or celebration.", "Explain when it happens, who you celebrate with, and what traditions you enjoy."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite holiday or family tradition. Mention when it is celebrated, special foods you eat, and unique customs you practice.",
+                                        "Example to guide you: 'My favorite holiday is New Year's Eve, celebrated on December 31st. My entire family gathers to cook a delicious feast, wear bright clothes, and watch fireworks at midnight. We make 12 wishes for the new year and hug each other with joy!'"
+                                      ]
                   }
                 }
               },
@@ -5189,7 +5494,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Holiday Interview / Entrevista de tradiciones",
                 description: "Ask and answer like two international exchange students.",
                 type: "roleplay",
-                content: ["A: What is the biggest celebration in your city?", "B: Carnival is huge! People dance in parades with colorful costumes.", "A: How does your family celebrate New Year?", "B: We gather for a big dinner and watch fireworks at midnight!"],
+                content: [
+                  "Let's say that you are talking with an international friend about holidays, and you want to explain your country's most colorful cultural celebration.",
+                  "Student A: Ask your partner how their family celebrates their most important annual holiday.",
+                  "Student B: Describe the date, traditional costumes, special meals, and festive music of your holiday.",
+                  "A: 'How does your family celebrate your favorite national festival?'",
+                  "B: 'We celebrate with lively street parades, colorful decorations, and traditional music.'",
+                  "A: 'What special food do you eat together?'",
+                  "B: 'We prepare sweet pastries and a big family dinner. Everyone dances and enjoys the fireworks!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-03/slide-19-holiday-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-500 to-indigo-600"
               }
@@ -5454,11 +5767,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Space, Science & Future",
                   bossAvatar: "🚀",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say four space words and three future science verbs."],
                     use: ["Make three sentences: one with 'will', one with 'won't', and one with 'in the future'."],
-                    speak: ["Speak for 30 seconds about how science and space travel will change our world by the year 2050.", "Mention at least two specific technologies or discoveries."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds about how science, technology, and space exploration will change our world by the year 2050. Use will and won't to make at least three clear predictions.",
+                                        "Example to guide you: 'In the year 2050, I believe scientists will discover water on Mars and astronauts will build permanent space colonies. Clean solar energy will power all our cities, and smart robots will assist doctors in hospitals. We won't use fossil fuels anymore!'"
+                                      ]
                   }
                 }
               },
@@ -5467,7 +5783,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Future Mission Interview / Entrevista de misión espacial",
                 description: "Roleplay a science reporter interviewing a young researcher.",
                 type: "roleplay",
-                content: ["A: Welcome! What will your team explore on the next mission?", "B: We will send an automated rover to study ice on Mars.", "A: When will the mission launch?", "B: The rocket will launch next year and reach Mars in seven months!"],
+                content: [
+                  "Let's say that you are a science student participating in a panel on future space exploration, and you want to share your vision of human life in 2050.",
+                  "Student A: Ask what scientific breakthroughs will happen and if people will live on other planets.",
+                  "Student B: Share your future predictions using 'will' and 'won't' and explain new space technologies.",
+                  "A: 'Do you think humans will build permanent bases on the Moon in the next 30 years?'",
+                  "B: 'Yes! Scientists will use robotic rovers and 3D printers to construct lunar stations.'",
+                  "A: 'Will normal tourists be able to travel to space too?'",
+                  "B: 'Definitely! Commercial rockets will become much cheaper, and space travel will be safe for everyone!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-04/slide-19-future-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
               }
@@ -5732,11 +6056,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Was/Were & Childhood Memories",
                   bossAvatar: "⏳",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say four childhood words and three past personality adjectives."],
                     use: ["Make three sentences: one with 'I was', one with 'We were', and one with 'wasn't'."],
-                    speak: ["Speak for 30 seconds about what you were like when you were 7 or 8 years old.", "Mention your favorite toy, your best friend, and how your school was."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing what you were like when you were 7 or 8 years old. Mention your personality, your favorite childhood toy, your primary school, and your best friend using was and were.",
+                                        "Example to guide you: 'When I was seven years old, I was very playful and energetic. My favorite toy was a red scooter, and my best friend was Mateo. We were inseparable in primary school and spent every recess playing in the playground. It was a wonderful time!'"
+                                      ]
                   }
                 }
               },
@@ -5745,7 +6072,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Childhood Photo Interview / Entrevista de fotos de infancia",
                 description: "Roleplay two friends looking at old family albums.",
                 type: "roleplay",
-                content: ["A: Who is that in the photo? You were so energetic!", "B: Yes! That was my seventh birthday party.", "A: Were your cousins there too?", "B: Yes, we were all together in my grandma's garden!"],
+                content: [
+                  "Let's say that you are looking at old childhood photos with a close friend, and you want to tell them about your early school days and favorite toys.",
+                  "Student A: Point at a funny childhood picture and ask where your friend was and who was with them.",
+                  "Student B: Explain who was in the picture, what you were doing, and describe your personality back then.",
+                  "A: 'Look at this photo! You were so small! Where were you?'",
+                  "B: 'Haha! That was my primary school graduation. I was six years old.'",
+                  "A: 'Were you shy or outgoing back then?'",
+                  "B: 'I was a bit shy at first, but my friends and I were always running around the school yard!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-05/slide-19-memory-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
               }
@@ -6010,11 +6345,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Vacations, Travel & Anecdotes",
                   bossAvatar: "✈️",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say four travel words and four past verbs (two regular, two irregular)."],
                     use: ["Make three sentences: one about where you went, one about what you ate, and one with 'didn't'."],
-                    speak: ["Speak for 30 seconds telling an exciting vacation anecdote.", "Include: destination, who you traveled with, what you saw, and a funny or memorable moment."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing an unforgettable vacation or travel experience. Mention where you went, who you traveled with, 2 activities you did, and one funny mishap using past simple verbs.",
+                                        "Example to guide you: 'Last summer, I traveled to the coast with my family. We stayed in a cabin near the beach and swam in the ocean every morning. One afternoon, we went hiking, but suddenly it started raining! Fortunately, we found a cozy cafe and drank hot chocolate!'"
+                                      ]
                   }
                 }
               },
@@ -6023,7 +6361,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Travel Anecdote Interview / Entrevista de anécdotas",
                 description: "Roleplay two friends talking about their favorite trip.",
                 type: "roleplay",
-                content: ["A: Where did you travel on your last vacation?", "B: We traveled to a coastal town and rented a small house.", "A: What was the best part of the trip?", "B: First, we learned to surf, and then we watched stunning sunsets every evening!"],
+                content: [
+                  "Let's say that you are talking with a friend about your last vacation, and you want to tell them about an exciting journey and an unexpected adventure you had.",
+                  "Student A: Ask your partner where they traveled, how they got there, and what the best highlight was.",
+                  "Student B: Describe your trip using past verbs (visited, went, saw, stayed) and share one surprising moment.",
+                  "A: 'Where did you travel on your last vacation?'",
+                  "B: 'I went to a scenic mountain town with my cousins! We rented a wooden cabin by the lake.'",
+                  "A: 'Did you do any outdoor sports there?'",
+                  "B: 'Yes! First we learned to kayak, and suddenly we saw wild eagles flying above us! It was breathtaking!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-06/slide-19-travel-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
               }
@@ -6288,11 +6634,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Biographies of Artists & Athletes",
                   bossAvatar: "🏆",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say four biographical verbs and three milestone words."],
                     use: ["Make three sentences: one with 'was born in', one with 'at age...', and one with 'won'."],
-                    speak: ["Speak for 30 seconds presenting the biography of an inspiring artist, athlete, or innovator.", "Include: birthplace, early life, greatest achievement, and why they inspire you."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds presenting the biography of an inspiring artist, athlete, or innovator you admire. Mention where they were born, their early challenges, and their greatest achievements.",
+                                        "Example to guide you: 'I admire Lionel Messi. He was born in Rosario, Argentina in 1987. When he was young, he overcame health difficulties and trained tirelessly. At age 13, he moved to Barcelona. He won multiple Ballon d'Or awards and led his team to World Cup victory!'"
+                                      ]
                   }
                 }
               },
@@ -6301,7 +6650,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Biography TV Interview / Entrevista biográfica",
                 description: "Roleplay a TV talk show host and a biographer.",
                 type: "roleplay",
-                content: ["A: Welcome! Today we are discussing the life of Lionel Messi. Where was he born?", "B: He was born in Rosario, Argentina in 1987.", "A: When did his career change?", "B: At the age of 13, he moved to Barcelona and trained every day to become a legend!"],
+                content: [
+                  "Let's say that you are co-hosting a school presentation about influential creators, and you want to explain why a famous athlete or artist inspires young people.",
+                  "Student A: Ask about the person's birthplace, their early milestones, and when they became famous.",
+                  "Student B: Share key biographical dates, obstacles they overcame, and their most famous masterpiece or trophy.",
+                  "A: 'Who is the famous innovator you are presenting today?'",
+                  "B: 'I am presenting Nikola Tesla. He was born in 1856 and created alternating current.'",
+                  "A: 'What was his greatest milestone?'",
+                  "B: 'He designed modern electrical motors and inspired clean energy technology for the future!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-07/slide-19-biography-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
               }
@@ -6566,11 +6923,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Storytelling Connectors",
                   bossAvatar: "📖",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say five storytelling connectors (one for sequence, one for surprise, one for contrast, one for cause, one for resolution)."],
                     use: ["Make three connected sentences telling a mini-anecdote using 'First', 'Suddenly', and 'So'."],
-                    speak: ["Speak for 30 seconds telling an exciting story about an adventure, a funny mishap, or a mystery.", "Use at least four distinct connectors: 'First', 'Although', 'Suddenly', 'In the end'."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds telling an exciting story about an adventure or a mystery. Use at least four storytelling connectors: First, Suddenly, Meanwhile, and In the end.",
+                                        "Example to guide you: 'First, my friends and I decided to explore an old mountain path. Although the sky was overcast, we kept walking. Suddenly, thunder roared and heavy rain poured down! Meanwhile, we searched for shelter and found a dry cave. In the end, the sun returned and we made it home safely!'"
+                                      ]
                   }
                 }
               },
@@ -6579,7 +6939,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Witness News Interview / Entrevista a testigo",
                 description: "Roleplay a news reporter interviewing a student who witnessed a funny event.",
                 type: "roleplay",
-                content: ["A: Can you explain what happened at school yesterday?", "B: First, we were in the science lab. Suddenly, the volcano experiment exploded with pink foam!", "A: What did everyone do?", "B: Although it was messy, everybody laughed and helped clean up. In the end, we won the science prize!"],
+                content: [
+                  "Let's say that you are telling a friend about a surprising and funny event that happened at school yesterday, and you want to use dramatic storytelling connectors.",
+                  "Student A: Ask what happened and prompt for more details using 'What happened next?'",
+                  "Student B: Narrate the event step-by-step using 'First', 'Suddenly', 'Meanwhile', and 'In the end'.",
+                  "A: 'You look excited! What happened in your science class yesterday?'",
+                  "B: 'First, our teacher mixed two liquids for an experiment. Suddenly, pink foam erupted all over the desk!'",
+                  "A: 'Oh no! What did everyone do?'",
+                  "B: 'Meanwhile, the students cheered and helped clean up. In the end, our experiment won first prize!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-08/slide-19-story-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
               }
@@ -6844,11 +7212,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Everyday Problems & How to Explain Them",
                   bossAvatar: "🛠️",
                   timerSeconds: 30,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say four common problem words and three troubleshooting verbs."],
                     use: ["Make three sentences: one starting with 'There is a problem with...', one with 'The issue is that...', and one polite request with 'Could you please...'."],
-                    speak: ["Speak for 30 seconds roleplaying a customer reporting a technical issue with a phone or computer.", "Explain what is broken, what you already tried, and politely ask for a solution."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining an everyday problem with a gadget, bike, or school item. State what is broken, what caused it, and make a polite request for help.",
+                                        "Example to guide you: 'Excuse me, there is an issue with my tablet. The screen is cracked and the device keeps freezing whenever I open my homework app. I tried restarting it, but it still won't respond. Could you please check if it can be repaired or replaced? I would really appreciate your help!'"
+                                      ]
                   }
                 }
               },
@@ -6857,7 +7228,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Tech Support Roleplay / Juego de roles de soporte técnico",
                 description: "Roleplay a customer and a tech support specialist.",
                 type: "roleplay",
-                content: ["A: Hello, tech support! How can I assist you today?", "B: Hi! There is an issue with my tablet. The screen keeps freezing during my video classes.", "A: I see. Have you tried updating the operating system?", "B: Yes, but the problem persists. Could you please check if it needs a hardware repair?"],
+                content: [
+                  "Let's say that you are visiting a repair technician because your laptop screen froze right before an important assignment, and you want to request assistance politely.",
+                  "Student A: Act as the tech specialist, ask what the problem is and what symptoms occurred.",
+                  "Student B: Explain the issue clearly with 'There is a problem with...' and politely ask for a solution.",
+                  "A: 'Hello! How can I assist you with your device today?'",
+                  "B: 'Hi! There is an issue with my laptop. The screen froze completely and the battery drained rapidly.'",
+                  "A: 'I see. Did you install any new updates recently?'",
+                  "B: 'No, it happened suddenly during my online class. Could you please check if the battery needs replacing?'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-09/slide-19-tech-support-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
               }
@@ -7122,11 +7501,14 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Level 3 Grand Finale",
                   bossAvatar: "👑",
                   timerSeconds: 45,
-                  prepareSeconds: 120,
+                  prepareSeconds: 180,
                   rounds: {
                     remember: ["Say three verbs for each -ed sound: three for /t/, three for /d/, and three for /ɪd/."],
                     use: ["Make three sentences: one about a past vacation (irregular verb), one with 'when I was little', and one future prediction with 'will'."],
-                    speak: ["Speak for 45 seconds delivering your Capstone Speech summarizing what you learned in Level 3 Teen Champion.", "Demonstrate clear pronunciation, confident posture, and rich vocabulary."]
+                    speak: [
+                                        "You have 3 minutes to prepare. Then speak for 45 seconds delivering your Capstone Graduation Speech for Level 3. Mention 1 childhood memory with was/were, 1 vacation anecdote with irregular verbs, and 1 future prediction with will.",
+                                        "Example to guide you: 'Hello everyone! During Level 3, I made tremendous progress in English. When I was younger, I was shy, but now I speak with confidence. Last summer, I traveled with my family and practiced English on vacation. In the future, I will use English to travel the world, study science, and achieve my goals. Thank you for an amazing journey!'"
+                                      ]
                   }
                 }
               },
@@ -7135,7 +7517,15 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 title: "Podcast Interview / Entrevista de podcast",
                 description: "Roleplay two teens co-hosting a graduation podcast episode.",
                 type: "roleplay",
-                content: ["A: Welcome to our Level 3 graduation podcast! What was your favorite topic in this course?", "B: I loved the space and future class because we made predictions with 'will' and 'won't'!", "A: How did your pronunciation improve?", "B: Now I know the difference between /t/, /d/, and /ɪd/ endings, so I speak much more naturally!"],
+                content: [
+                  "Let's say that you and your classmate are co-hosting the final podcast episode of Level 3, and you want to reflect on your progress and celebrate graduating as Teen Champions.",
+                  "Student A: Ask your co-host what their favorite topic was and how their pronunciation improved.",
+                  "Student B: Share your favorite class (space, storytelling, or travel) and give advice to new students.",
+                  "A: 'Welcome to our Level 3 graduation podcast! What was your favorite topic in this course?'",
+                  "B: 'I loved the Space and Future class because we made exciting predictions with will and won't!'",
+                  "A: 'How did your English pronunciation improve?'",
+                  "B: 'Now I pronounce -ed endings naturally with /t/, /d/, and /ɪd/ sounds, and I feel confident speaking!'"
+                ],
                 imageUrl: "/images/teens-basic-3-class-10/slide-19-video-project-interview-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
               }
