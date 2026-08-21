@@ -14,6 +14,7 @@ import { GlobalAiAssistant } from './components/GlobalAiAssistant';
 import { BrandWordmark } from './components/BrandWordmark';
 import { VerbsGuide } from './components/VerbsGuide';
 import { VerbArenaGame } from './components/VerbArenaGame';
+import { VocabVault } from './components/VocabVault';
 import { CertificateView } from './components/CertificateView';
 import { OralQuestionBankView } from './components/OralQuestionBankView';
 import { dbAdmin } from './lib/db';
@@ -39,7 +40,7 @@ export default function App() {
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], approvedLevelIds: [], currentLessonId: '', level: 'Nivel Inicial' });
   const [isLoaded, setIsLoaded] = useState(false);
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena' | 'vocab_vault'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -205,6 +206,10 @@ export default function App() {
 
   const handleOpenVerbsGuide = () => {
     setCurrentView('verbs_guide');
+  };
+
+  const handleOpenVocabVault = () => {
+    setCurrentView('vocab_vault');
   };
 
   const handleCloseAssessment = (newLevel?: string) => {
@@ -469,6 +474,12 @@ export default function App() {
         <VerbsGuide onBack={() => setCurrentView('dashboard')} />
       ) : currentView === 'verb_arena' ? (
         <VerbArenaGame onBack={() => setCurrentView('dashboard')} />
+      ) : currentView === 'vocab_vault' ? (
+        <VocabVault
+          studentId={currentStudentId}
+          studentName={progress.studentName}
+          onBack={() => setCurrentView('dashboard')}
+        />
       ) : (
           <Dashboard 
           completedLessonIds={progress.completedLessons}
@@ -487,6 +498,7 @@ export default function App() {
           onOpenStoryDecoder={handleOpenStoryDecoder}
           onOpenStructureMode={handleOpenStructureMode}
           onOpenVerbsGuide={handleOpenVerbsGuide}
+          onOpenVocabVault={handleOpenVocabVault}
         />
       )}
       <FloatingControls />

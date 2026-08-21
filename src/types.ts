@@ -213,3 +213,37 @@ export interface DbGroup {
   description: string;
   created_at?: string;
 }
+
+export interface VocabExample {
+  en: string;
+  es: string;
+  cloze: string;
+  highlightWord?: string;
+}
+
+export interface VocabMeaning {
+  meaningNumber: number;
+  meaningLabel: string;
+  definitionEs: string;
+  definitionEn: string;
+  usageTip?: string;
+  contextExamples: VocabExample[];
+}
+
+export interface VocabItem {
+  id: string;
+  studentId?: string | null;
+  term: string;
+  type: 'phrasal_verb' | 'idiom' | 'expression' | 'word' | 'slang' | 'collocation';
+  ipa?: string;
+  level: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+  isMultiMeaning: boolean;
+  meanings: VocabMeaning[];
+  sourceNote?: string;
+  masteryScore: number; // 0 to 100
+  reviewCount: number;
+  correctStreak: number;
+  lastTestedAt?: string;
+  nextReviewAt?: string;
+  createdAt: string;
+}

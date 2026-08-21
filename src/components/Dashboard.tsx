@@ -34,9 +34,10 @@ interface DashboardProps {
   onOpenStoryDecoder: () => void;
   onOpenStructureMode: () => void;
   onOpenVerbsGuide: () => void;
+  onOpenVocabVault?: () => void;
 }
 
-export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide }: DashboardProps) {
+export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide, onOpenVocabVault }: DashboardProps) {
   const { curriculumLevels, loading } = useCurriculum(studentType);
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
@@ -185,7 +186,17 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
             <p className={`font-medium mt-2 ${isKid ? 'text-pink-600 text-lg' : 'text-gray-500'}`}>{studentConfig.motivation}</p>
           </div>
 
-        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-5">
+        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+          <button
+             onClick={onOpenVocabVault}
+             className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500"
+          >
+             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
+               <Sparkles className="w-5 h-5 text-white" />
+               <span className="font-bold text-white tracking-wide">Vocab Vault IA</span>
+             </div>
+          </button>
           <button
              onClick={onOpenVerbsGuide}
              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-cyan-500 via-blue-600 to-slate-950"

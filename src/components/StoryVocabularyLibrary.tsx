@@ -41,6 +41,58 @@ type StoryVocabularyLibraryProps = {
 
 const fallbackAnswers = ['casa', 'tiempo', 'trabajo', 'persona', 'lugar', 'ayuda'];
 
+function renderHighlightedSentence(sentence: string, targetWord: string) {
+  if (!sentence) return null;
+  const cleanTarget = targetWord?.trim() || '';
+  if (!cleanTarget) return <span>&ldquo;{sentence}&rdquo;</span>;
+
+  const escaped = cleanTarget.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  let matchPattern = `\\b${escaped}\\b`;
+  const testRegex = new RegExp(matchPattern, 'i');
+
+  if (!testRegex.test(sentence)) {
+    const words = cleanTarget.split(/\s+/).filter(Boolean);
+    if (words.length > 1) {
+      const subEscaped = words.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+      matchPattern = `\\b(?:${subEscaped})\\w*\\b`;
+    } else if (cleanTarget.length >= 3) {
+      const stem = cleanTarget.replace(/(?:ing|ed|es|s)$/i, '');
+      if (stem.length >= 3) {
+        matchPattern = `\\b${stem.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\w*\\b`;
+      } else {
+        matchPattern = escaped;
+      }
+    } else {
+      matchPattern = escaped;
+    }
+  }
+
+  const splitRegex = new RegExp(`(${matchPattern})`, 'gi');
+  const isMatchRegex = new RegExp(`^(${matchPattern})$`, 'i');
+  const parts = sentence.split(splitRegex);
+
+  return (
+    <span>
+      &ldquo;
+      {parts.map((part, index) => {
+        if (isMatchRegex.test(part)) {
+          return (
+            <span
+              key={index}
+              className="rounded-lg bg-yellow-400/25 px-2 py-0.5 font-black text-yellow-300 underline decoration-yellow-400/70 decoration-2 underline-offset-4 shadow-sm"
+            >
+              {part}
+            </span>
+          );
+        }
+        return <span key={index}>{part}</span>;
+      })}
+      &rdquo;
+    </span>
+  );
+}
+
 function shuffle<T>(items: T[]) {
   const result = [...items];
   for (let index = result.length - 1; index > 0; index -= 1) {
@@ -217,11 +269,19 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
         <main className="flex min-h-0 flex-1 items-center justify-center overflow-y-auto p-4 sm:p-8">
           <motion.section key={currentWord.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-4xl rounded-[2.5rem] border border-white/15 bg-white/[0.08] p-5 text-center shadow-2xl backdrop-blur-xl sm:p-10">
             <button type="button" onClick={() => speak(currentWord.english)} className="mx-auto flex min-h-14 items-center gap-3 rounded-2xl bg-cyan-300/15 px-5 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950"><Volume2 className="h-6 w-6" /> Escuchar</button>
-            <h1 className="mt-7 text-[clamp(3.5rem,11vw,8rem)] font-black leading-none tracking-tight text-white">{currentWord.english}</h1>
+            <h1 className="mt-6 text-[clamp(3rem,9vw,6.5rem)] font-black leading-tight tracking-tight text-white">{currentWord.english}</h1>
+            {currentWord.exampleEn && (
+              <div className="mx-auto mt-4 max-w-3xl rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-md">
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-cyan-300/80 mb-1.5">Frase de la historia</p>
+                <p className="text-xl sm:text-2xl font-bold leading-relaxed text-indigo-100/90">
+                  {renderHighlightedSentence(currentWord.exampleEn, currentWord.english)}
+                </p>
+              </div>
+            )}
             {!answersVisible ? (
-              <button type="button" onClick={() => setAnswersVisible(true)} className="mx-auto mt-9 flex min-h-20 w-full max-w-3xl items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-yellow-300 to-orange-400 px-6 text-2xl font-black text-slate-950 shadow-xl transition hover:-translate-y-1 hover:from-yellow-200 hover:to-orange-300"><Eye className="h-8 w-8" /> Ver posibles respuestas</button>
+              <button type="button" onClick={() => setAnswersVisible(true)} className="mx-auto mt-7 flex min-h-20 w-full max-w-3xl items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-yellow-300 to-orange-400 px-6 text-2xl font-black text-slate-950 shadow-xl transition hover:-translate-y-1 hover:from-yellow-200 hover:to-orange-300"><Eye className="h-8 w-8" /> Ver posibles respuestas</button>
             ) : (
-              <div className="mx-auto mt-9 grid max-w-3xl gap-3 sm:grid-cols-3">
+              <div className="mx-auto mt-7 grid max-w-3xl gap-3 sm:grid-cols-3">
                 {options.map((answer) => {
                   const chosen = selectedAnswer === answer;
                   const correct = selectedAnswer && answer === currentWord.spanish;
