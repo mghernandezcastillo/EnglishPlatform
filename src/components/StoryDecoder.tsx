@@ -541,17 +541,22 @@ function VocabularyCaptureModal({
         return lengthDiff !== 0 ? lengthDiff : left.label.localeCompare(right.label, 'en-US');
       });
   }, [line, verbBaseForms]);
+  const initialSuggestion = candidates[0]?.value ? getSuggestion(candidates[0].value) : '';
   const [selectedWord, setSelectedWord] = useState(candidates[0]?.value || '');
   const [manualEnglish, setManualEnglish] = useState(candidates[0]?.value || '');
-  const [manualSpanish, setManualSpanish] = useState(() => getSuggestion(candidates[0]?.value || ''));
+  const [manualSpanish, setManualSpanish] = useState(() => {
+    const existing = savedWords.find((savedWord) => savedWord.english.toLocaleLowerCase('en-US').trim() === (candidates[0]?.value || '').toLocaleLowerCase('en-US').trim());
+    return existing?.spanish || initialSuggestion;
+  });
   const [savedMessage, setSavedMessage] = useState('');
   const selectedSavedWord = savedWords.find((word) => word.english.toLocaleLowerCase('en-US').trim() === manualEnglish.toLocaleLowerCase('en-US').trim());
 
   const selectWord = (word: string) => {
-    const existing = savedWords.find((savedWord) => savedWord.english.toLocaleLowerCase('en-US') === word.toLocaleLowerCase('en-US'));
+    const existing = savedWords.find((savedWord) => savedWord.english.toLocaleLowerCase('en-US').trim() === word.toLocaleLowerCase('en-US').trim());
+    const autoSpanish = existing?.spanish || getSuggestion(word);
     setSelectedWord(word);
     setManualEnglish(word);
-    setManualSpanish(existing?.spanish || getSuggestion(word));
+    setManualSpanish(autoSpanish);
     setSavedMessage('');
   };
 
@@ -575,6 +580,8 @@ function VocabularyCaptureModal({
       selectWord(candidates[0].value);
     }
   }, [candidates, selectedWord]);
+
+  const currentSuggestion = getSuggestion(manualEnglish);
 
   return (
     <motion.div className="fixed inset-0 z-[90] flex items-center justify-center overflow-y-auto bg-slate-950/80 p-3 backdrop-blur-md sm:p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
@@ -602,13 +609,52 @@ function VocabularyCaptureModal({
             <div className="mt-3 grid gap-3">
               <div>
                 <label className="block text-xs font-black uppercase tracking-[0.18em] text-indigo-500" htmlFor="story-word-english">Palabra o expresión en inglés</label>
-                <input id="story-word-english" value={manualEnglish} onChange={(event) => { setManualEnglish(event.target.value); setSavedMessage(''); }} placeholder="Ej.: take care of" className="mt-2 min-h-14 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 text-xl font-black outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100" />
+                <input
+                  id="story-word-english"
+                  value={manualEnglish}
+                  onChange={(event) => {
+                    const newEnglish = event.target.value;
+                    setManualEnglish(newEnglish);
+                    setSavedMessage('');
+                    const existing = savedWords.find((savedWord) => savedWord.english.toLocaleLowerCase('en-US').trim() === newEnglish.toLocaleLowerCase('en-US').trim());
+                    const suggestion = existing?.spanish || getSuggestion(newEnglish);
+                    if (suggestion) {
+                      setManualSpanish(suggestion);
+                    }
+                  }}
+                  placeholder="Ej.: take care of"
+                  className="mt-2 min-h-14 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 text-xl font-black outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100"
+                />
               </div>
               <div>
                 <label className="block text-xs font-black uppercase tracking-[0.18em] text-indigo-500" htmlFor="story-word-translation">Traducción en español</label>
-                <input id="story-word-translation" value={manualSpanish} onChange={(event) => { setManualSpanish(event.target.value); setSavedMessage(''); }} placeholder="Escribe qué significa en español" className="mt-2 min-h-14 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 text-xl font-black outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100" autoFocus />
+                <input
+                  id="story-word-translation"
+                  value={manualSpanish}
+                  onChange={(event) => {
+                    setManualSpanish(event.target.value);
+                    setSavedMessage('');
+                  }}
+                  placeholder="Escribe qué significa en español"
+                  className="mt-2 min-h-14 w-full rounded-2xl border-2 border-slate-200 bg-white px-4 text-xl font-black outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100"
+                  autoFocus
+                />
+                {currentSuggestion && currentSuggestion !== manualSpanish && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setManualSpanish(currentSuggestion);
+                      setSavedMessage('');
+                    }}
+                    className="mt-2 inline-flex items-center gap-1.5 rounded-xl border border-indigo-200 bg-white px-3 py-1.5 text-xs font-black text-indigo-700 shadow-sm transition hover:bg-indigo-50 hover:border-indigo-400"
+                  >
+                    <span>Sugerencia del sistema:</span>
+                    <span className="rounded-md bg-indigo-100 px-1.5 py-0.5 text-indigo-900">{currentSuggestion}</span>
+                    <span className="text-[0.7rem] text-indigo-500">(clic para aplicar)</span>
+                  </button>
+                )}
               </div>
-              {!manualSpanish && <p className="text-sm font-semibold text-amber-700">La traducción puede depender del contexto. Escribe la que quieres repasar.</p>}
+              {!manualSpanish && !currentSuggestion && <p className="text-sm font-semibold text-amber-700">La traducción puede depender del contexto. Escribe la que quieres repasar.</p>}
             </div>
           </div>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:justify-between">
