@@ -1,22 +1,14 @@
-import { ArrowLeft, ArrowRight, Check, CheckCircle2, Flag, Play, RotateCcw, Sparkles, UserRound, Users2 } from 'lucide-react';
-import confetti from 'canvas-confetti';
-import { useEffect, useMemo, useState } from 'react';
 import { ClassSlide } from '../types';
-import { GuidedRolePlayCard } from './GuidedRolePlayCard';
+import { LetsSayCard } from './LetsSayCard';
 
 interface RolePlayCardProps {
   slide: ClassSlide;
 }
 
-type ViewKind = 'players' | 'mission' | 'step' | 'finish';
-
 export function RolePlayCard({ slide }: RolePlayCardProps) {
-  if (slide.roleplay?.mode === 'guided-conversation') {
-    return <GuidedRolePlayCard slide={slide} />;
-  }
-
-  return <LegacyRolePlayCard slide={slide} />;
+  return <LetsSayCard slide={slide} />;
 }
+
 
 function LegacyRolePlayCard({ slide }: RolePlayCardProps) {
   const roleplay = slide.roleplay;

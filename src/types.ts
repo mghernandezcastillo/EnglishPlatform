@@ -56,7 +56,7 @@ export interface ClassSlide {
   bgColor?: string;
   options?: string[];
   correctOptionIndex?: number;
-  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag';
+  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'lets-say' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag';
   videoUrl?: string; // e.g. youtube embed url
   structureDrag?: {
     patternName: string;

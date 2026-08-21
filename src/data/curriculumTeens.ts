@@ -5236,118 +5236,279 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       },
       {
         id: "c-teens-basic-3-4",
-        title: "Class 4: Space, Science & Future / Clase 4: Space, Science & Future",
-        description: "A fun and interactive class for teens.",
+        title: "Class 4: Space, Science & Future / Clase 4: El espacio, la ciencia y el futuro",
+        description: "Teens learn vocabulary for space exploration, scientific breakthroughs, and making future predictions using will and won't.",
         duration: "60 mins",
-        objective: "Master the topic of Space, Science & Future.",
+        objective: "Talk about space missions, technological innovations, and future predictions using will, won't, and time expressions.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar ideas previas sobre el espacio, descubrimientos científicos y visiones del futuro.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Future Dreams.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Space, Science & Future.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 4! 🚀 / Bienvenida a Clase 4! 🚀",
+                description: "Space, Science & Future",
+                content: ["Would you travel to space if you could?", "Today we explore space, science discoveries, and future predictions.", "Use complete sentences to share your ideas."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-01-welcome-space-future.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Future Predictions Wheel / Ruleta del futuro",
+                description: "Spin and make a future prediction.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say what you think will happen in the future.", "Ask one partner for their opinion."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-02-warmup-wheel-future.jpg",
+                wheelItems: [
+                  { label: "Space Travel", color: "#3B82F6", prompt: "Will tourists visit the Moon soon?", es: "Los turistas visitaran la Luna pronto?" },
+                  { label: "Robots", color: "#10B981", prompt: "How will robots help humans in the future?", es: "Como ayudaran los robots en el futuro?" },
+                  { label: "Energy", color: "#F59E0B", prompt: "Will cars be 100% electric in 10 years?", es: "Los autos seran 100% electricos en 10 anos?" },
+                  { label: "Mars", color: "#EF4444", prompt: "Will humans live on Mars one day?", es: "Viviran los humanos en Marte algun dia?" },
+                  { label: "Medicine", color: "#8B5CF6", prompt: "What disease will science cure first?", es: "Que enfermedad curara la ciencia primero?" },
+                  { label: "AI & School", color: "#EC4899", prompt: "Will AI change how we study at school?", es: "Cambiara la IA la forma en que estudiamos?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-indigo-700 to-cyan-600"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can make clear future predictions.",
+                content: ["Name space objects: planets, rockets, satellites, telescopes.", "Use 'will' and 'won't' to make scientific predictions.", "Discuss what life will be like in the next decades."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-03-objectives-science.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 via-blue-700 to-indigo-800"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Compartir opiniones sobre el espacio y la tecnología del futuro."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender vocabulario espacial, científico y la estructura con 'will' / 'won't'.",
             slides: [
-              { id: "Diapositiva 4", title: "Future Dreams / Futuro Dreams", description: "Introduction to Future Dreams.", content: ["I will be a scientist.", "I want to travel the world."], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["I will be a scientist.", "I want to travel the world."], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Future, Dream, Will, Want", content: ["Future", " Dream", " Will", " Want"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["I will be a scientist.", "I want to travel the world."], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["I will be a scientist.", "I want to travel the world."], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: I will be a scientist."], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Space & Science Vocabulary / Vocabulario espacial y científico",
+                description: "Key words for discussing modern astronomy and science.",
+                content: ["planet = planeta", "rocket = cohete espacial", "satellite = satélite artificial", "telescope = telescopio", "astronaut = astronauta", "orbit = órbita"],
+                imageUrl: "/images/teens-basic-3-class-04/slide-04-space-science-vocabulary.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Future Science Verbs / Verbos de ciencia y futuro",
+                description: "Verbs used to describe future breakthroughs.",
+                content: ["discover = descubrir nuevos datos o planetas", "explore = explorar el universo", "invent = inventar nueva tecnología", "build = construir bases espaciales", "predict = predecir el futuro"],
+                imageUrl: "/images/teens-basic-3-class-04/slide-05-future-action-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-teal-700"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Grammar: Will / Won't for Predictions / Predicciones",
+                description: "Use 'will' (positive) and 'won't' (negative) for future events.",
+                content: ["Positive: Scientists WILL discover water on distant planets.", "Negative: Humans WON'T travel to other galaxies soon.", "Question: WILL people live on Mars in 2050?", "Rule: Subject + will/won't + base verb (no -s or -ed)"],
+                imageUrl: "/images/teens-basic-3-class-04/slide-06-will-future-grammar.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Future Time Expressions / Expresiones de tiempo futuro",
+                description: "Indicate when something will happen.",
+                content: ["in the future = en el futuro", "in 20 years = en 20 años", "one day = algún día", "soon = pronto / en poco tiempo", "next decade = la próxima década"],
+                imageUrl: "/images/teens-basic-3-class-04/slide-07-future-predictions-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Expressing Future Predictions / Expresando predicciones",
+                description: "Model sentences for class discussion.",
+                content: ["I think robots will assist doctors in hospitals.", "Scientists believe solar energy will power most cities.", "One day, astronauts will build a permanent base on the Moon."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-08-expressing-future-plans.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-cyan-700"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Formar oraciones de predicción con 'will' y expresiones de tiempo."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Evaluar la comprensión de vocabulario científico y estructuras de futuro.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-4-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Future plans: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🔮 + 🚀 + 📅"],
-                    options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Alex and Maya's Dialogue / Lee el diálogo",
+                description: "Find the future predictions with will.",
+                content: ["Alex: Maya, do you think people will live on Mars?", "Maya: Yes, I believe astronauts will build a station there soon.", "Alex: That is exciting! Will normal tourists travel too?", "Maya: In the next 30 years, space travel will be cheaper!"],
+                imageUrl: "/images/teens-basic-3-class-04/slide-09-context-dialogue-future.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Space Vehicle (1/3)",
+                description: "Engineers build a powerful ______ to launch satellites into orbit.",
+                content: ["Engineers build a powerful ______ to launch satellites into orbit."],
+                options: ["rocket", "bicycle", "shopping cart"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-04/slide-10-rocket-launch-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Instrument (2/3)",
+                description: "Astronomers use a large ______ to observe distant stars and galaxies.",
+                content: ["Astronomers use a large ______ to observe distant stars and galaxies."],
+                options: ["telescope", "microwave", "thermometer"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-04/slide-11-telescope-stars-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Choose the Correct Grammar (3/3)",
+                description: "In the future, clean technology ______ protect the environment.",
+                content: ["In the future, clean technology ______ protect the environment."],
+                options: ["will", "yesterday", "did"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-04/slide-12-robot-assist-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-3-4-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the space exploration mission.",
+                type: "emoji-game",
+                content: ["🚀 + 👨‍🚀 + 🪐 + 🛰️"],
+                options: ["Astronauts will explore new planets with satellites.", "I forgot my homework at home.", "We went to the beach last summer."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-04/slide-13-emoji-future-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Completar ejercicios y justificar el uso de will y vocabulario."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Debatir sobre avances tecnológicos y resolver el reto final.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Space, Science & Future."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Future Boss",
-                                    bossTitle: "Space, Science & Future",
-                                    bossAvatar: "🚀",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to space, science & future."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about space, science & future using future plans: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about space, science & future.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Let's Predict the Future! / ¡Predigamos el futuro!",
+                description: "Spin and share your vision of the future.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Answer using: 'I think that in the future...'", "Use 'will' or 'won't'."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-14-speaking-wheel-space.jpg",
+                wheelItems: [
+                  { label: "Moon Base", color: "#3B82F6", prompt: "Will people work on the Moon?", es: "Trabajara la gente en la Luna?" },
+                  { label: "Flying Cars", color: "#10B981", prompt: "Will flying vehicles exist in our cities?", es: "Existiran vehiculos voladores en las ciudades?" },
+                  { label: "Clean Energy", color: "#F59E0B", prompt: "Will renewable energy replace fossil fuels?", es: "La energia limpia reemplazara el petroleo?" },
+                  { label: "Education", color: "#8B5CF6", prompt: "How will classrooms look in 2050?", es: "Como seran las aulas en 2050?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "Which planet is known as the Red Planet in space research?",
+                content: ["Which planet is known as the Red Planet in space research?"],
+                options: ["Mars", "Jupiter", "Venus"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-04/slide-15-mars-mission-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Which sentence expresses a correct future prediction?",
+                content: ["Choose the correct future sentence."],
+                options: ["Solar energy will power smart homes.", "Solar energy power yesterday home.", "Solar energy will powered home."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-04/slide-16-future-energy-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What does 'breakthrough' mean in science?",
+                content: ["scientific breakthrough = ?"],
+                options: ["un gran avance o descubrimiento científico", "un objeto roto sin solución", "una pausa corta para comer"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-04/slide-17-will-predict-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Future Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use space vocabulary, future will/won't, and time expressions."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-18-boss-battle-future.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Future Boss",
+                  bossTitle: "Space, Science & Future",
+                  bossAvatar: "🚀",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say four space words and three future science verbs."],
+                    use: ["Make three sentences: one with 'will', one with 'won't', and one with 'in the future'."],
+                    speak: ["Speak for 30 seconds about how science and space travel will change our world by the year 2050.", "Mention at least two specific technologies or discoveries."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Future Mission Interview / Entrevista de misión espacial",
+                description: "Roleplay a science reporter interviewing a young researcher.",
+                type: "roleplay",
+                content: ["A: Welcome! What will your team explore on the next mission?", "B: We will send an automated rover to study ice on Mars.", "A: When will the mission launch?", "B: The rocket will launch next year and reach Mars in seven months!"],
+                imageUrl: "/images/teens-basic-3-class-04/slide-19-future-interview-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Hablar sobre predicciones futuras usando 'will' y 'won't'."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar práctica escrita y audiovisual.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now discuss space, science, and future predictions in English.",
+                content: ["I can make predictions with will and won't.", "I know key space and astronomy vocabulary.", "I can describe technological breakthroughs."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-20-class-complete-space.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write your predictions for the year 2050.",
+                type: "homework",
+                content: ["Write 6 sentences about the world in the year 2050.", "Include 3 positive predictions using 'will' (space, energy, technology).", "Include 2 negative predictions using 'won't'.", "Use at least two time expressions like 'in 20 years' or 'one day'."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-21-homework-future.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to future scientific ideas.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/aI_fREymNjI",
+                content: ["Watch the video lesson about future communication and technology.", "Write 5 key phrases or predictions you hear.", "Bring one prediction to share in the next class warm-up."],
+                imageUrl: "/images/teens-basic-3-class-04/slide-08-expressing-future-plans.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y preparar predicciones para la próxima sesión."
           }
         ]
       },
