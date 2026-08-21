@@ -5514,703 +5514,1669 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
       },
       {
         id: "c-teens-basic-3-5",
-        title: "Class 5: Was/were and recuerdos of infancia / Clase 5: Was/were y recuerdos de infancia",
-        description: "A fun and interactive class for teens.",
+        title: "Class 5: Past To Be: Was/Were & Childhood Memories / Clase 5: Pasado To Be (Was/Were) y recuerdos de infancia",
+        description: "Teens learn to use was and were to talk about childhood memories, past emotions, old friends, and early school days.",
         duration: "60 mins",
-        objective: "Master the topic of Was/were y recuerdos de infancia.",
+        objective: "Describe past states, childhood habits, and nostalgic memories using was, were, wasn't, and weren't.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar vocabulario de infancia y recuerdos pasados.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Was/were y recuerdos de infancia.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 5! 🧸 / Bienvenida a Clase 5! 🧸",
+                description: "Past To Be: Was / Were & Childhood Memories",
+                content: ["What was your favorite toy when you were little?", "Today we look back at childhood memories and learn 'was' and 'were'.", "Share your real childhood stories in English."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-01-welcome-childhood.jpg",
+                bgColor: "bg-gradient-to-br from-amber-700 via-orange-800 to-rose-900"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Childhood Memories Wheel / Ruleta de recuerdos",
+                description: "Spin and answer about your past.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say how things were when you were little.", "Ask one partner too."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-02-warmup-wheel-memories.jpg",
+                wheelItems: [
+                  { label: "Favorite Toy", color: "#EF4444", prompt: "What was your favorite toy as a child?", es: "Cual era tu juguete favorito de nino?" },
+                  { label: "Old School", color: "#F59E0B", prompt: "Were you shy or outgoing in primary school?", es: "Eras timido o sociable en primaria?" },
+                  { label: "Childhood Pet", color: "#10B981", prompt: "Did you have a pet? What was its name?", es: "Tenias mascota? Como se llamaba?" },
+                  { label: "Best Friend", color: "#3B82F6", prompt: "Who was your best friend five years ago?", es: "Quien era tu mejor amigo hace cinco anos?" },
+                  { label: "Dream Job", color: "#8B5CF6", prompt: "What was your dream job when you were seven?", es: "Cual era tu sueno cuando tenias siete anos?" },
+                  { label: "Favorite Food", color: "#EC4899", prompt: "What was your favorite meal back then?", es: "Cual era tu comida favorita en ese tiempo?" }
+                ],
+                bgColor: "bg-gradient-to-br from-orange-600 via-amber-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can talk about childhood in the past.",
+                content: ["Use 'was' with I, he, she, it.", "Use 'were' with you, we, they.", "Describe past childhood places, toys, feelings, and memories."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-03-objectives-past.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 via-pink-600 to-purple-700"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Compartir recuerdos y anécdotas de infancia."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Dominar 'was' y 'were', adjetivos de personalidad infantil y expresiones de tiempo pasado.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Childhood Vocabulary / Vocabulario de infancia",
+                description: "Key words for describing early years.",
+                content: ["childhood = infancia / niñez", "toy = juguete", "primary school = escuela primaria", "playground = patio de juegos", "cartoon = dibujo animado", "memory = recuerdo"],
+                imageUrl: "/images/teens-basic-3-class-05/slide-04-childhood-vocabulary.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Past Personality Adjectives / Adjetivos de personalidad",
+                description: "How were you when you were little?",
+                content: ["shy = tímido / penoso", "outgoing = extrovertido / sociable", "playful = juguetón", "curious = curioso", "energetic = muy activo / enérgico"],
+                imageUrl: "/images/teens-basic-3-class-05/slide-05-past-feelings-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-600 to-purple-700"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Grammar: Was & Were / El pasado del verbo To Be",
+                description: "Choose 'was' or 'were' depending on the subject.",
+                content: ["I / He / She / It + WAS (I was happy / She was small)", "You / We / They + WERE (We were best friends)", "Negative: wasn't (was not) / weren't (were not)", "Question: Were you shy? Yes, I was. / No, I wasn't."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-06-was-were-grammar.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Past Time Expressions / Expresiones de tiempo en pasado",
+                description: "Anchor your memories in time.",
+                content: ["when I was little = cuando era pequeño/a", "in primary school = en la escuela primaria", "five years ago = hace cinco años", "back then = en aquel entonces", "in 2018 = en el año 2018"],
+                imageUrl: "/images/teens-basic-3-class-05/slide-07-past-time-expressions.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Describing Past Memories / Expresando recuerdos",
+                description: "Model sentences for class sharing.",
+                content: ["When I was seven, my favorite toy was a red scooter.", "We were very playful in elementary school.", "My childhood house was near a beautiful park."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-08-expressing-memories.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Formar oraciones usando was/were y expresiones de infancia."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Comprobar el dominio de was/were y vocabulario de recuerdos.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-5-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Past and memories: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["👶 + 👴 + 📖"],
-                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Emma and Diego's Dialogue / Lee el diálogo",
+                description: "Notice the past to be verbs in context.",
+                content: ["Emma: Look at this photo! Diego, you were so small!", "Diego: Haha yes! I was six years old back then.", "Emma: Were you energetic at school?", "Diego: Yes! My friends and I were always in the playground."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-09-context-dialogue-memories.jpg",
+                bgColor: "bg-gradient-to-br from-lime-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Correct Form (1/3)",
+                description: "When I ______ six years old, I had a cute puppy.",
+                content: ["When I ______ six years old, I had a cute puppy."],
+                options: ["was", "were", "are"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-05/slide-10-was-child-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Correct Form (2/3)",
+                description: "Leo and Mateo ______ best friends in primary school.",
+                content: ["Leo and Mateo ______ best friends in primary school."],
+                options: ["were", "was", "is"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-05/slide-11-were-friends-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Complete the Negative Sentence (3/3)",
+                description: "I ______ afraid of the dark when I was a child.",
+                content: ["I ______ afraid of the dark when I was a child."],
+                options: ["wasn't", "weren't", "not is"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-05/slide-12-was-happy-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-3-5-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the childhood memory story.",
+                type: "emoji-game",
+                content: ["👶 + 🧸 + 🏫 + 🎈"],
+                options: ["When I was a child, my teddy bear and school games were special.", "I will buy a new phone next week.", "She travels by train every morning."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-05/slide-13-emoji-childhood-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver los ejercicios justificando el sujeto con was o were."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Contar anécdotas de niñez y superar el reto final de conversación.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Past To Be: Was/Were."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Past To Be: Was/Were",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to past to be: was/were."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about past to be: was/were using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about past to be: was/were.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Let's Talk Childhood! / ¡Hablemos de la niñez!",
+                description: "Spin and tell a true childhood memory.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say 'When I was little...' and complete the idea.", "Use 'was' or 'were'."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-14-speaking-wheel-childhood.jpg",
+                wheelItems: [
+                  { label: "Personality", color: "#EF4444", prompt: "Were you quiet or noisy as a kid?", es: "Eras callado o ruidoso de nino?" },
+                  { label: "School", color: "#F59E0B", prompt: "How was your first day of school?", es: "Como fue tu primer dia de escuela?" },
+                  { label: "Favorite Place", color: "#10B981", prompt: "Where was your favorite playground?", es: "Donde era tu lugar de juegos favorito?" },
+                  { label: "Teacher", color: "#3B82F6", prompt: "Who was your favorite primary teacher?", es: "Quien era tu profesor favorito en primaria?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "Which sentence correctly describes a childhood toy?",
+                content: ["Which sentence correctly describes a childhood toy?"],
+                options: ["My favorite toy was a wooden train.", "My favorite toy were a wooden train.", "My favorite toy is tomorrow."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-05/slide-15-toy-memory-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Choose the correct past question.",
+                content: ["Choose the correct question about the past."],
+                options: ["Were you happy in primary school?", "Was you happy in primary school?", "Are you happy five years ago?"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-05/slide-16-school-past-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What does 'when I was little' mean in Spanish?",
+                content: ["when I was little = ?"],
+                options: ["cuando era pequeño / cuando era niño", "cuando sea grande en el futuro", "ahora mismo en este momento"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-05/slide-17-wasnt-afraid-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Memory Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use was/were, childhood vocabulary, and past time expressions."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-18-boss-battle-memories.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Memory Boss",
+                  bossTitle: "Was/Were & Childhood Memories",
+                  bossAvatar: "⏳",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say four childhood words and three past personality adjectives."],
+                    use: ["Make three sentences: one with 'I was', one with 'We were', and one with 'wasn't'."],
+                    speak: ["Speak for 30 seconds about what you were like when you were 7 or 8 years old.", "Mention your favorite toy, your best friend, and how your school was."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Childhood Photo Interview / Entrevista de fotos de infancia",
+                description: "Roleplay two friends looking at old family albums.",
+                type: "roleplay",
+                content: ["A: Who is that in the photo? You were so energetic!", "B: Yes! That was my seventh birthday party.", "A: Were your cousins there too?", "B: Yes, we were all together in my grandma's garden!"],
+                imageUrl: "/images/teens-basic-3-class-05/slide-19-memory-interview-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Describir recuerdos propios con frases completas en pasado."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar práctica de redacción.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now talk about your childhood memories in English.",
+                content: ["I can use was and were accurately.", "I can describe my childhood personality and toys.", "I can ask about past memories."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-20-class-complete-memories.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write about your childhood memories.",
+                type: "homework",
+                content: ["Write 6 sentences about your childhood memories.", "Use 'was' at least 3 times and 'were' at least 2 times.", "Mention your favorite toy, your primary school, and your personality back then."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-21-homework-childhood.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to childhood memories in English.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/on_1sS6Ii8M",
+                content: ["Watch the video lesson about talking about childhood memories and hometown.", "Write 5 useful phrases with was/were that you hear.", "Bring one photo or memory description to share next class."],
+                imageUrl: "/images/teens-basic-3-class-05/slide-08-expressing-memories.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y preparar anécdotas de niñez."
           }
         ]
       },
       {
         id: "c-teens-basic-3-6",
-        title: "Class 6: Vacaciones, Travel and anécdotas / Clase 6: Vacaciones, viajes y anécdotas",
-        description: "A fun and interactive class for teens.",
+        title: "Class 6: Vacations, Travel & Anecdotes / Clase 6: Vacaciones, viajes y anécdotas",
+        description: "Teens learn past simple regular and irregular verbs to talk about unforgettable trips, holiday activities, and funny travel anecdotes.",
         duration: "60 mins",
-        objective: "Master the topic of Vacaciones, viajes y anécdotas.",
+        objective: "Describe past vacations, destinations, activities, and travel experiences using simple past verbs and connectors.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar vocabulario de viajes, destinos de vacaciones y anécdotas.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Vacaciones, viajes y anécdotas.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 6! ✈️ / Bienvenida a Clase 6! ✈️",
+                description: "Vacations, Travel & Anecdotes",
+                content: ["Where did you go on your last vacation?", "Today we talk about past journeys, exciting places, and funny travel stories.", "Use past simple verbs to share your experiences."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-01-welcome-travel.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-900 via-blue-900 to-indigo-900"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Vacation Memories Wheel / Ruleta de viajes",
+                description: "Spin and tell a past travel story.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say what happened on a past trip.", "Ask a classmate about their holidays."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-02-warmup-wheel-travel.jpg",
+                wheelItems: [
+                  { label: "Best Trip", color: "#3B82F6", prompt: "What was your most unforgettable trip?", es: "Cual fue tu viaje mas inolvidable?" },
+                  { label: "Transport", color: "#10B981", prompt: "Did you travel by plane, bus, or car?", es: "Viajaste en avion, bus o auto?" },
+                  { label: "Beach or Mountain", color: "#F59E0B", prompt: "Did you prefer the beach or the mountains?", es: "Preferiste la playa o la montana?" },
+                  { label: "Food", color: "#EF4444", prompt: "What delicious dish did you try on vacation?", es: "Que plato delicioso probaste de vacaciones?" },
+                  { label: "Travel Mishap", color: "#8B5CF6", prompt: "Did you ever lose anything on a trip?", es: "Perdiste alguna vez algo en un viaje?" },
+                  { label: "Souvenir", color: "#EC4899", prompt: "What souvenir did you buy?", es: "Que recuerdo compraste?" }
+                ],
+                bgColor: "bg-gradient-to-br from-blue-700 via-cyan-600 to-teal-600"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can tell stories about past vacations.",
+                content: ["Name vacation destinations: beach, cabin, campsite, historic city.", "Use regular and irregular past verbs (visited, went, saw, stayed).", "Tell funny or exciting travel anecdotes with time connectors."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-03-objectives-travel.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 via-emerald-600 to-cyan-700"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Compartir anécdotas de viajes y vacaciones."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender vocabulario de viaje y el pasado simple de verbos regulares e irregulares.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Travel & Vacation Vocabulary / Vocabulario de viajes",
+                description: "Essential words for travelers.",
+                content: ["destination = destino turístico", "luggage = equipaje / maletas", "souvenir = recuerdo de viaje", "boarding pass = pase de abordar", "sightseeing = recorrido turístico", "journey = viaje / trayecto"],
+                imageUrl: "/images/teens-basic-3-class-06/slide-04-travel-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Past Vacation Verbs / Verbos de vacaciones en pasado",
+                description: "Regular and irregular past actions.",
+                content: ["visit ➔ visited (visitamos monumentos)", "travel ➔ traveled (viajamos en avión)", "stay ➔ stayed (nos hospedamos en un hotel)", "go ➔ went (fuimos a la playa)", "see ➔ saw (vimos paisajes increíbles)", "buy ➔ bought (compramos recuerdos)"],
+                imageUrl: "/images/teens-basic-3-class-06/slide-05-travel-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-600 to-purple-700"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Grammar: Past Simple for Anecdotes / Pasado simple para anécdotas",
+                description: "Form affirmative, negative, and question sentences in past.",
+                content: ["Affirmative: Last summer, we WENT to the beach and SWAM in the ocean.", "Negative: We DIDN'T STAY in a luxury hotel; we camped outside.", "Question: DID you take many photos? Yes, I did! / No, I didn't."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-06-past-travel-grammar.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Travel Anecdotes & Sequencers / Conectores de anécdotas",
+                description: "Order the events of your trip.",
+                content: ["First = Primero", "Then = Luego", "After that = Después de eso", "Suddenly = De repente / De pronto", "Finally = Finalmente"],
+                imageUrl: "/images/teens-basic-3-class-06/slide-07-travel-anecdotes-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Telling a Travel Anecdote / Contando una anécdota",
+                description: "Model anecdote for class presentation.",
+                content: ["Last July, my family traveled to the mountains.", "First, we rented a cabin. Then, we went hiking in the national park.", "Suddenly, it started raining, but we found a cozy cafe and drank hot chocolate!"],
+                imageUrl: "/images/teens-basic-3-class-06/slide-08-expressing-vacations.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Formar oraciones en pasado con conectores de secuencia."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Comprobar el uso del pasado simple y conectores de viaje.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-6-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Past trips: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["✈️ + 🏖️ + 📅"],
-                    options: ["I am studying right now.", "I went on vacation last year.", "Please spell your name."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Liam and Chloe's Dialogue / Lee el diálogo",
+                description: "Find the irregular past verbs in the conversation.",
+                content: ["Liam: Chloe, how was your vacation in Brazil?", "Chloe: It was incredible! We stayed near the beach and swam every day.", "Liam: Did you try typical food?", "Chloe: Yes! We ate fresh tropical fruits and bought cool souvenirs."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-09-context-dialogue-travel.jpg",
+                bgColor: "bg-gradient-to-br from-lime-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Correct Past Verb (1/3)",
+                description: "Last summer, our family ______ to an island and relaxed on the beach.",
+                content: ["Last summer, our family ______ to an island and relaxed on the beach."],
+                options: ["traveled", "traveling", "will travel"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-06/slide-10-beach-vacation-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Irregular Verb (2/3)",
+                description: "During our trip to the forest, we ______ a beautiful deer.",
+                content: ["During our trip to the forest, we ______ a beautiful deer."],
+                options: ["saw", "seed", "seeing"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-06/slide-11-mountain-cabin-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Choose the Correct Word (3/3)",
+                description: "At the airport, the passenger showed her passport and ______ pass.",
+                content: ["At the airport, the passenger showed her passport and ______ pass."],
+                options: ["boarding", "swimming", "jumping"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-06/slide-12-flight-luggage-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-3-6-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the vacation camping story.",
+                type: "emoji-game",
+                content: ["🏕️ + 🔥 + 🌲 + 🌌"],
+                options: ["We went camping in the forest and sat by the campfire under the stars.", "I lost my library card at school.", "She is baking a chocolate cake right now."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-06/slide-13-emoji-travel-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver ejercicios justificando la forma pasada de los verbos."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Relatar una anécdota completa y superar el reto final de viaje.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Vacations, Travel & Anecdotes."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Travel Boss",
-                                    bossTitle: "Vacations, Travel & Anecdotes",
-                                    bossAvatar: "✈️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to vacations, travel & anecdotes."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about vacations, travel & anecdotes using travel words: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about vacations, travel & anecdotes.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Let's Share Travel Stories! / ¡Compartamos historias de viaje!",
+                description: "Spin and tell a true or imaginary vacation anecdote.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Start with: 'On my last trip...'", "Use at least two past verbs."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-14-speaking-wheel-travel.jpg",
+                wheelItems: [
+                  { label: "Destination", color: "#EF4444", prompt: "Where did you go and who with?", es: "A donde fuiste y con quien?" },
+                  { label: "Best Moment", color: "#F59E0B", prompt: "What was the most fun activity?", es: "Cual fue la actividad mas divertida?" },
+                  { label: "Surprise", color: "#10B981", prompt: "What unexpected thing happened?", es: "Que cosa inesperada paso?" },
+                  { label: "Recommendation", color: "#3B82F6", prompt: "Would you visit that place again?", es: "Visitarias ese lugar otra vez?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "What is an object you buy on a trip to remember the place?",
+                content: ["What is an object you buy on a trip to remember the place?"],
+                options: ["a souvenir", "a math textbook", "a chemistry beaker"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-06/slide-15-souvenir-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Which sentence correctly uses the past simple negative?",
+                content: ["Choose the correct negative sentence."],
+                options: ["We didn't miss our flight.", "We didn't missed our flight.", "We not miss our flight."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-06/slide-16-lost-passport-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "Which landmark did tourists visit in Paris?",
+                content: ["Which famous landmark is located in Paris?"],
+                options: ["The Eiffel Tower", "The Pyramids of Giza", "The Statue of Liberty"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-06/slide-17-famous-monument-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Travel Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use travel vocabulary, regular/irregular past verbs, and sequencers."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-18-boss-battle-travel.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Travel Boss",
+                  bossTitle: "Vacations, Travel & Anecdotes",
+                  bossAvatar: "✈️",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say four travel words and four past verbs (two regular, two irregular)."],
+                    use: ["Make three sentences: one about where you went, one about what you ate, and one with 'didn't'."],
+                    speak: ["Speak for 30 seconds telling an exciting vacation anecdote.", "Include: destination, who you traveled with, what you saw, and a funny or memorable moment."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Travel Anecdote Interview / Entrevista de anécdotas",
+                description: "Roleplay two friends talking about their favorite trip.",
+                type: "roleplay",
+                content: ["A: Where did you travel on your last vacation?", "B: We traveled to a coastal town and rented a small house.", "A: What was the best part of the trip?", "B: First, we learned to surf, and then we watched stunning sunsets every evening!"],
+                imageUrl: "/images/teens-basic-3-class-06/slide-19-travel-interview-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Relatar anécdotas de viaje con detalle y fluidez."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar práctica de redacción de viajes.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now tell stories about your vacations and travels in English.",
+                content: ["I can describe past vacations with regular and irregular verbs.", "I can use time connectors (first, then, after that, suddenly).", "I know essential travel vocabulary."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-20-class-complete-travel.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write your vacation blog post.",
+                type: "homework",
+                content: ["Write 6 sentences about a real or dream vacation trip in the past.", "Use at least 4 past simple verbs (went, visited, saw, bought, stayed).", "Include at least two sequencers: 'First', 'Then', or 'After that'."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-21-homework-travel.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to travel stories in English.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                content: ["Watch the video lesson about dates, times, and travel plans in English.", "Write 5 key phrases or expressions you hear.", "Bring one sentence describing your next dream vacation destination."],
+                imageUrl: "/images/teens-basic-3-class-06/slide-08-expressing-vacations.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y preparar la anécdota para la próxima sesión."
           }
         ]
       },
       {
         id: "c-teens-basic-3-7",
-        title: "Class 7: Biografías of artistas, deportistas o creadores / Clase 7: Biografías de artistas, deportistas o creadores",
-        description: "A fun and interactive class for teens.",
+        title: "Class 7: Biographies of Artists, Athletes & Creators / Clase 7: Biografías de artistas, deportistas y creadores",
+        description: "Teens learn how to narrate the lives, struggles, milestones, and greatest achievements of famous historical and contemporary figures.",
         duration: "60 mins",
-        objective: "Master the topic of Biografías de artistas, deportistas o creadores.",
+        objective: "Recount the biography of an inspiring figure using past simple dates, milestones, and achievement vocabulary.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar conocimientos previos sobre personajes inspiradores y sus logros.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1493863487042-32a2491b4fa0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Yesterday", color: "#EF4444", prompt: "What did you do yesterday?", es: "Que hiciste ayer?" }, { label: "Childhood", color: "#F59E0B", prompt: "What did you like as a child?", es: "Que te gustaba de pequeno?" }, { label: "Memory", color: "#10B981", prompt: "What is a good memory?", es: "Cual es un buen recuerdo?" }, { label: "Trip", color: "#3B82F6", prompt: "Where did you go once?", es: "A donde fuiste una vez?" }, { label: "Story", color: "#8B5CF6", prompt: "What past story can you tell?", es: "Que historia pasada puedes contar?" }, { label: "Famous", color: "#EC4899", prompt: "Who was famous in the past?", es: "Quien fue famoso en el pasado?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Biografías de artistas, deportistas o creadores.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 7! 🌟 / Bienvenida a Clase 7! 🌟",
+                description: "Biographies of Artists, Athletes & Creators",
+                content: ["Who is your favorite artist, athlete, or innovator?", "Today we explore inspiring lives, historical milestones, and great achievements.", "Learn to tell real life stories in English."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-01-welcome-biographies.jpg",
+                bgColor: "bg-gradient-to-br from-amber-900 via-yellow-900 to-stone-900"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Inspiring Legends Wheel / Ruleta de leyendas",
+                description: "Spin and talk about an inspiring person.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say who inspires you in that category.", "Ask a classmate about their idol."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-02-warmup-wheel-idols.jpg",
+                wheelItems: [
+                  { label: "Soccer Star", color: "#10B981", prompt: "Who is the greatest soccer player in history?", es: "Quien es el mejor futbolista de la historia?" },
+                  { label: "Music Icon", color: "#8B5CF6", prompt: "What singer or musician wrote your favorite song?", es: "Que cantante o musico escribio tu cancion favorita?" },
+                  { label: "Famous Painter", color: "#EC4899", prompt: "What painter or visual artist do you know?", es: "Que pintor o artista visual conoces?" },
+                  { label: "Tech Inventor", color: "#3B82F6", prompt: "Who created the most useful modern invention?", es: "Quien creo el invento moderno mas util?" },
+                  { label: "Author", color: "#F59E0B", prompt: "What author wrote an unforgettable book?", es: "Que autor escribio un libro inolvidable?" },
+                  { label: "Brave Leader", color: "#EF4444", prompt: "Who was an inspiring leader for human rights?", es: "Quien fue un lider inspirador de derechos humanos?" }
+                ],
+                bgColor: "bg-gradient-to-br from-yellow-600 via-amber-600 to-orange-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can summarize an inspiring life story.",
+                content: ["Use biographical verbs (was born, grew up, trained, achieved, won).", "Express dates and milestones with 'in + year' and 'at age...'.", "Present a 30-second biography of a role model you admire."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-03-objectives-biographies.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 via-orange-600 to-red-700"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Compartir figuras inspiradoras y sus aportes al mundo."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender vocabulario de logros biográficos y estructuras de tiempo para relatar vidas.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Biography Vocabulary / Vocabulario biográfico",
+                description: "Key terms for describing historical lives.",
+                content: ["milestone = hito / logro crucial", "achievement = logro personal o profesional", "career = trayectoria / carrera", "championship = campeonato", "masterpiece = obra maestra", "inspiration = fuente de inspiración"],
+                imageUrl: "/images/teens-basic-3-class-07/slide-04-biography-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Biographical Life Verbs / Verbos de trayectoria de vida",
+                description: "Past verbs used in life stories.",
+                content: ["be born ➔ was/were born (nació en)", "grow up ➔ grew up (creció en)", "train ➔ trained (entrenó duro)", "create ➔ created (creó obras)", "win ➔ won (ganó premios o medallas)", "become ➔ became (se convirtió en)"],
+                imageUrl: "/images/teens-basic-3-class-07/slide-05-biography-milestones-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Grammar: Timeline & Time Markers / Líneas de tiempo",
+                description: "Connect life events in chronological order.",
+                content: ["In 1995: Frida Kahlo was born in 1907 in Mexico.", "At the age of 17: Messi joined Barcelona's first team.", "Later in life: She became an international symbol of art.", "Formula: Subject + Past Verb + Time / Place Marker"],
+                imageUrl: "/images/teens-basic-3-class-07/slide-06-past-biography-grammar.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Achievements & Overcoming Obstacles / Logros y superación",
+                description: "How great people overcome difficulties.",
+                content: ["overcome ➔ overcame difficulties (superó obstáculos)", "lead ➔ led the team to victory (lideró al equipo)", "publish ➔ published a best-seller (publicó un libro)", "inspire ➔ inspired millions of youth (inspiró a millones)"],
+                imageUrl: "/images/teens-basic-3-class-07/slide-07-achievements-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Presenting a Short Biography / Presentando una biografía",
+                description: "Model biography presentation.",
+                content: ["Frida Kahlo was born in Mexico in 1907.", "She grew up in Coyoacán and started painting after an accident.", "Throughout her career, she created famous self-portraits and inspired millions worldwide."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-08-expressing-biography.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Construir oraciones biográficas con fechas y verbos pasados."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Comprobar la precisión con verbos biográficos y conectores cronológicos.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-7-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Past and memories: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["👶 + 👴 + 📖"],
-                    options: ["I will call you later.", "I was a child before.", "This phone is expensive."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Sofia and Carlos's Dialogue / Lee el diálogo",
+                description: "Identify the biographical facts in their discussion.",
+                content: ["Sofia: Who are you researching for history class?", "Carlos: I'm writing about Nikola Tesla. He was born in 1856.", "Sofia: What did he invent?", "Carlos: He invented alternating current and designed modern electrical motors!"],
+                imageUrl: "/images/teens-basic-3-class-07/slide-09-context-dialogue-biographies.jpg",
+                bgColor: "bg-gradient-to-br from-lime-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Correct Form (1/3)",
+                description: "Usain Bolt ______ his first Olympic gold medal in Beijing 2008.",
+                content: ["Usain Bolt ______ his first Olympic gold medal in Beijing 2008."],
+                options: ["won", "winned", "winning"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-07/slide-10-athlete-gold-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Correct Verb (2/3)",
+                description: "Vincent van Gogh ______ many of his most famous paintings in France.",
+                content: ["Vincent van Gogh ______ many of his most famous paintings in France."],
+                options: ["painted", "painteded", "paints tomorrow"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-07/slide-11-artist-canvas-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Complete the Time Expression (3/3)",
+                description: "______ the age of 18, she became a professional musician.",
+                content: ["______ the age of 18, she became a professional musician."],
+                options: ["At", "In", "On"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-07/slide-12-musician-concert-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-3-7-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the famous artist life story.",
+                type: "emoji-game",
+                content: ["🎨 + 🖼️ + 🌍 + 🏆"],
+                options: ["An artist painted masterpieces and won international fame.", "The weather is very cold today.", "I need to recharge my battery."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-07/slide-13-emoji-biography-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver los ejercicios justificando las formas de pasado."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Presentar la biografía de un ídolo y resolver el reto final.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Biographies of Artists, Athletes & Creators."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Biographies of Artists, Athletes & Creators",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to biographies of artists, athletes & creators."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about biographies of artists, athletes & creators using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about biographies of artists, athletes & creators.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Let's Talk Role Models! / ¡Hablemos de ídolos!",
+                description: "Spin and present a famous figure.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Give three facts about that person.", "Use 'was born in...', 'grew up...', 'achieved...'."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-14-speaking-wheel-rolemodels.jpg",
+                wheelItems: [
+                  { label: "Athlete", color: "#EF4444", prompt: "What athlete trained hard and won world titles?", es: "Que atleta entreno duro y gano titulos mundiales?" },
+                  { label: "Scientist", color: "#F59E0B", prompt: "What scientist discovered something revolutionary?", es: "Que cientifico descubrio algo revolucionario?" },
+                  { label: "Musician", color: "#10B981", prompt: "What singer became a world sensation?", es: "Que cantante se convirtio en una sensacion mundial?" },
+                  { label: "Artist", color: "#3B82F6", prompt: "What creator inspired you with their art?", es: "Que creador te inspiro con su arte?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "What did the author do after writing the novel?",
+                content: ["What did the author do after writing the novel?"],
+                options: ["She published it and won a literary prize.", "She erased all letters forever.", "She played tennis in the kitchen."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-07/slide-15-author-book-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Which sentence correctly states where an inventor grew up?",
+                content: ["Choose the correct sentence."],
+                options: ["He grew up in a small town.", "He growed up in a small town.", "He growing up yesterday."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-07/slide-16-inventor-lab-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What does 'masterpiece' mean?",
+                content: ["masterpiece = ?"],
+                options: ["una obra de arte o creación cumbre / obra maestra", "una pieza rota sin valor", "un entrenamiento deportivo corto"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-07/slide-17-career-achievement-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Legend Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use biographical verbs, dates, and milestone vocabulary."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-18-boss-battle-biography.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Legend Boss",
+                  bossTitle: "Biographies of Artists & Athletes",
+                  bossAvatar: "🏆",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say four biographical verbs and three milestone words."],
+                    use: ["Make three sentences: one with 'was born in', one with 'at age...', and one with 'won'."],
+                    speak: ["Speak for 30 seconds presenting the biography of an inspiring artist, athlete, or innovator.", "Include: birthplace, early life, greatest achievement, and why they inspire you."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Biography TV Interview / Entrevista biográfica",
+                description: "Roleplay a TV talk show host and a biographer.",
+                type: "roleplay",
+                content: ["A: Welcome! Today we are discussing the life of Lionel Messi. Where was he born?", "B: He was born in Rosario, Argentina in 1987.", "A: When did his career change?", "B: At the age of 13, he moved to Barcelona and trained every day to become a legend!"],
+                imageUrl: "/images/teens-basic-3-class-07/slide-19-biography-interview-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Presentar biografías con claridad y vocabulario formal."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar redacción de una biografía.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now tell inspiring life stories and biographies in English.",
+                content: ["I can use biographical verbs in past simple.", "I can organize life events chronologically with dates.", "I can describe greatest achievements."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-20-class-complete-biographies.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write a mini-biography of a person you admire.",
+                type: "homework",
+                content: ["Write a 6-sentence biography of an athlete, artist, or scientist you admire.", "Include when and where they were born.", "Mention at least two major achievements or awards using past verbs.", "Conclude with why this person inspires you."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-21-homework-biographies.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to biographical stories.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/aI_fREymNjI",
+                content: ["Watch the video lesson about talking about remarkable people and life stories.", "Write down 5 key verbs or achievements mentioned in the video.", "Bring your mini-biography to read to a partner next class."],
+                imageUrl: "/images/teens-basic-3-class-07/slide-08-expressing-biography.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y preparar la mini-biografía."
           }
         ]
       },
       {
         id: "c-teens-basic-3-8",
-        title: "Class 8: Conectores para contar historias / Clase 8: Conectores para contar historias",
-        description: "A fun and interactive class for teens.",
+        title: "Class 8: Storytelling Connectors / Clase 8: Conectores para contar historias",
+        description: "Teens master narrative linkers to structure exciting stories, build suspense, show contrast, and bring anecdotes to life.",
         duration: "60 mins",
-        objective: "Master the topic of Conectores para contar historias.",
+        objective: "Connect ideas smoothly in past narratives using time sequence, cause-and-effect, and contrast connectors.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar la imaginación narrativa y reconocer el poder de los conectores en una historia.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Conectores para contar historias.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 8! 📖 / Bienvenida a Clase 8! 📖",
+                description: "Storytelling Connectors",
+                content: ["Have you ever told a suspense story around a campfire?", "Today we learn the secret words that make stories dramatic, clear, and exciting.", "Connect your ideas like a professional author."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-01-welcome-storytelling.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Story Plot Wheel / Ruleta de tramas",
+                description: "Spin and continue the story plot.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Start the story sentence.", "Pass to a classmate to continue using 'Suddenly...' or 'Meanwhile...'."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-02-warmup-wheel-storyline.jpg",
+                wheelItems: [
+                  { label: "Lost in Forest", color: "#10B981", prompt: "First, we entered the dark forest...", es: "Primero, entramos al bosque oscuro..." },
+                  { label: "Strange Sound", color: "#8B5CF6", prompt: "Suddenly, a strange noise came from the attic...", es: "De repente, un ruido extrano vino del atico..." },
+                  { label: "Locked Room", color: "#EC4899", prompt: "Although the door was locked, we saw a light...", es: "Aunque la puerta estaba cerrada, vimos una luz..." },
+                  { label: "Mystery Clue", color: "#3B82F6", prompt: "Meanwhile, my friend found an old map...", es: "Mientras tanto, mi amigo encontro un mapa viejo..." },
+                  { label: "Sudden Storm", color: "#F59E0B", prompt: "Because of the storm, the power went out...", es: "Por la tormenta, se corto la electricidad..." },
+                  { label: "Happy Ending", color: "#EF4444", prompt: "In the end, we solved the mystery...", es: "Al final, resolvimos el misterio..." }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-indigo-700 to-slate-800"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can tell structured stories in English.",
+                content: ["Use sequence connectors (First, Then, After that, Finally).", "Add suspense and contrast with 'Suddenly', 'Meanwhile', and 'Although'.", "Explain cause and effect with 'Because' and 'So'."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-03-objectives-connectors.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-700 via-blue-800 to-indigo-900"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Construir tramas cortas conectando oraciones con fluidez."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender los conectores narrativos de secuencia, contraste, simultaneidad y causa.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Sequence Connectors / Conectores de secuencia",
+                description: "Organize events from beginning to end.",
+                content: ["First = Primero (al inicio de la historia)", "Then / Next = Luego / Después", "After that = Después de eso", "Finally / In the end = Finalmente / Al final"],
+                imageUrl: "/images/teens-basic-3-class-08/slide-04-connectors-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Suspense & Simultaneous Connectors / Suspenso y simultaneidad",
+                description: "Add dramatic turns and parallel actions.",
+                content: ["Suddenly = De repente / De pronto (cambio inesperado)", "Meanwhile = Mientras tanto (otra acción al mismo tiempo)", "While = Mientras que (durante una acción)", "Fortunately = Afortunadamente / Por suerte"],
+                imageUrl: "/images/teens-basic-3-class-08/slide-05-narrative-action-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Cause, Result & Contrast / Causa, resultado y contraste",
+                description: "Explain why things happened and contrast ideas.",
+                content: ["Because = Porque (da la razón)", "So = Por lo tanto / Así que (da el resultado)", "Although / Even though = Aunque (contraste inesperado)", "However = Sin embargo"],
+                imageUrl: "/images/teens-basic-3-class-08/slide-06-connectors-grammar.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Story Structure Formula / Fórmula de una historia",
+                description: "How to structure an engaging narrative.",
+                content: ["1. Beginning: First, we arrived at the campsite.", "2. Complication: Suddenly, the wind started blowing hard.", "3. Climax: Meanwhile, we searched for shelter.", "4. Resolution: Fortunately, in the end we found a warm cabin."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-07-contrast-cause-connectors.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Suspense Story / Historia modelo de suspenso",
+                description: "Read how connectors link every sentence.",
+                content: ["First, my friends and I went for a walk in the woods.", "Although the weather was cloudy, we kept walking.", "Suddenly, it started raining heavily, so we ran to a shed.", "In the end, the sun came out and we saw a double rainbow!"],
+                imageUrl: "/images/teens-basic-3-class-08/slide-08-expressing-storytelling.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Practicar oraciones combinando conectores de causa y tiempo."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Evaluar la selección correcta de conectores según el contexto de la historia.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-8-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Technology: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["📱 + 💻 + 🎮"],
-                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Lucas and Mia's Dialogue / Lee el diálogo",
+                description: "Notice the narrative connectors in action.",
+                content: ["Lucas: You won't believe what happened yesterday!", "Mia: What happened?", "Lucas: First, I forgot my house keys. Then, suddenly it started pouring rain!", "Mia: Oh no! What did you do?", "Lucas: Fortunately, my mom arrived ten minutes later, so I went inside!"],
+                imageUrl: "/images/teens-basic-3-class-08/slide-09-context-dialogue-story.jpg",
+                bgColor: "bg-gradient-to-br from-lime-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Surprise Connector (1/3)",
+                description: "We were walking peacefully. ______, a huge lightning flash lit the sky!",
+                content: ["We were walking peacefully. ______, a huge lightning flash lit the sky!"],
+                options: ["Suddenly", "Because", "Yesterday"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-08/slide-10-suddenly-rain-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Simultaneous Action Connector (2/3)",
+                description: "Tom was cooking dinner. ______, Sarah was setting the dining table.",
+                content: ["Tom was cooking dinner. ______, Sarah was setting the dining table."],
+                options: ["Meanwhile", "Because", "Although"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-08/slide-11-meanwhile-scene-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Choose the Cause Connector (3/3)",
+                description: "We couldn't play tennis outside ______ the court was completely wet.",
+                content: ["We couldn't play tennis outside ______ the court was completely wet."],
+                options: ["because", "suddenly", "first"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-08/slide-12-because-clue-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-3-8-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the suspense story chain.",
+                type: "emoji-game",
+                content: ["🏃 ➔ ⚡ ➔ 🚪 ➔ 🗝️"],
+                options: ["We ran from the storm, found a door, and fortunately found the key.", "I am playing video games on Sunday.", "The supermarket is open every day."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-08/slide-13-emoji-story-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Completar los ejercicios justificando la relación entre oraciones."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Narrar historias completas con giros inesperados y superar el reto final.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Storytelling Connectors."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Storytelling Connectors",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to storytelling connectors."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about storytelling connectors using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about storytelling connectors.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Let's Tell a Mystery Story! / ¡Contemos una historia de misterio!",
+                description: "Spin and narrate what happened next.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Start with the connector shown.", "Tell two connected past sentences."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-14-speaking-wheel-storyteller.jpg",
+                wheelItems: [
+                  { label: "Suddenly...", color: "#EF4444", prompt: "Use 'Suddenly' to introduce an unexpected event.", es: "Usa 'Suddenly' para un giro inesperado." },
+                  { label: "Meanwhile...", color: "#F59E0B", prompt: "Use 'Meanwhile' for what another character was doing.", es: "Usa 'Meanwhile' para otra accion simultanea." },
+                  { label: "Although...", color: "#10B981", prompt: "Use 'Although' to describe a difficult situation overcome.", es: "Usa 'Although' para describir un obstaculo superado." },
+                  { label: "In the end...", color: "#3B82F6", prompt: "Use 'In the end' to explain how the story resolved.", es: "Usa 'In the end' para concluir la historia." }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "______ it was raining heavily, the team finished the marathon.",
+                content: ["Choose the correct contrast word."],
+                options: ["Although", "Because", "So"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-08/slide-15-although-challenge-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "We searched for the missing dog everywhere. ______, we found him sleeping under the bed!",
+                content: ["Choose the best resolution connector."],
+                options: ["Finally", "Because", "First"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-08/slide-16-finally-resolution-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What does 'meanwhile' express in a narrative?",
+                content: ["meanwhile = ?"],
+                options: ["mientras tanto / una acción que ocurre en paralelo", "el final absoluto de todo", "la primera acción de la mañana"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-08/slide-17-in-the-end-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Storyteller Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use sequence connectors, suspense words, and past simple."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-18-boss-battle-storyteller.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Storyteller Boss",
+                  bossTitle: "Storytelling Connectors",
+                  bossAvatar: "📖",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say five storytelling connectors (one for sequence, one for surprise, one for contrast, one for cause, one for resolution)."],
+                    use: ["Make three connected sentences telling a mini-anecdote using 'First', 'Suddenly', and 'So'."],
+                    speak: ["Speak for 30 seconds telling an exciting story about an adventure, a funny mishap, or a mystery.", "Use at least four distinct connectors: 'First', 'Although', 'Suddenly', 'In the end'."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Witness News Interview / Entrevista a testigo",
+                description: "Roleplay a news reporter interviewing a student who witnessed a funny event.",
+                type: "roleplay",
+                content: ["A: Can you explain what happened at school yesterday?", "B: First, we were in the science lab. Suddenly, the volcano experiment exploded with pink foam!", "A: What did everyone do?", "B: Although it was messy, everybody laughed and helped clean up. In the end, we won the science prize!"],
+                imageUrl: "/images/teens-basic-3-class-08/slide-19-story-interview-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Contar historias con dramatismo y riqueza de conectores."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar redacción de una historia corta.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now tell engaging, well-connected stories in English.",
+                content: ["I can structure narratives with sequence linkers.", "I can add suspense with 'suddenly' and 'meanwhile'.", "I can explain causes and contrasts with 'because', 'so', and 'although'."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-20-class-complete-storytelling.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write your own short suspense or adventure story.",
+                type: "homework",
+                content: ["Write a 6-sentence story about an unexpected event or adventure.", "Use at least 4 different connectors (e.g. First, Although, Suddenly, Meanwhile, So, In the end).", "Highlight or underline the connectors you used."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-21-homework-storytelling.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to story narration in English.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
+                content: ["Watch the video lesson about storytelling and connecting past events.", "Write down 5 narrative phrases or time expressions you hear.", "Bring your short story to share in the next warm-up activity."],
+                imageUrl: "/images/teens-basic-3-class-08/slide-08-expressing-storytelling.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y escribir la historia de suspenso."
           }
         ]
       },
       {
         id: "c-teens-basic-3-9",
-        title: "Class 9: Problemas cotidianos and cómo explicarlos / Clase 9: Problemas cotidianos y cómo explicarlos",
-        description: "A fun and interactive class for teens.",
+        title: "Class 9: Everyday Problems & How to Explain Them / Clase 9: Problemas cotidianos y cómo explicarlos",
+        description: "Teens learn how to describe daily technical glitches, minor accidents, and common problems, and make polite requests for help.",
         duration: "60 mins",
-        objective: "Master the topic of Problemas cotidianos y cómo explicarlos.",
+        objective: "Explain everyday mishaps, broken objects, and malfunctions, and request assistance politely in English.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar vocabulario sobre pequeños problemas diarios y situaciones cotidianas.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Problemas cotidianos y cómo explicarlos.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 9! 🛠️ / Bienvenida a Clase 9! 🛠️",
+                description: "Everyday Problems & How to Explain Them",
+                content: ["Has your phone battery ever died when you needed it most?", "Today we learn how to clearly explain common glitches, accidents, and problems in English.", "Speak politely and find solutions with confidence."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-01-welcome-problems.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 via-zinc-900 to-amber-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Daily Mishaps Wheel / Ruleta de imprevistos",
+                description: "Spin and explain how you solve the problem.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say what happened.", "Ask a classmate what they would do in that situation."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-02-warmup-wheel-mishaps.jpg",
+                wheelItems: [
+                  { label: "Dead Battery", color: "#EF4444", prompt: "My phone battery ran out and I need to call home...", es: "Mi bateria murio y necesito llamar a casa..." },
+                  { label: "Lost Keys", color: "#F59E0B", prompt: "I can't find my locker keys anywhere...", es: "No encuentro las llaves de mi casillero..." },
+                  { label: "Flat Tire", color: "#10B981", prompt: "My bicycle has a flat tire on the way to school...", es: "Mi bicicleta tiene una llanta pinchada..." },
+                  { label: "Forgot Password", color: "#3B82F6", prompt: "I forgot my student portal password...", es: "Olvide la contrasena de mi portal de estudiante..." },
+                  { label: "Spilled Drink", color: "#8B5CF6", prompt: "I accidentally spilled juice on my homework...", es: "Sin querer derrame jugo sobre mi tarea..." },
+                  { label: "Frozen Screen", color: "#EC4899", prompt: "My laptop screen froze during class...", es: "La pantalla de mi laptop se congelo en clase..." }
+                ],
+                bgColor: "bg-gradient-to-br from-amber-700 via-orange-700 to-red-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you can explain daily problems and request help.",
+                content: ["Name common problems: cracked screen, dead battery, missing item, flat tire.", "Use problem adjectives (broken, stuck, stained, out of order).", "Make polite requests: 'Could you help me...?', 'Would you mind...?'."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-03-objectives-troubleshooting.jpg",
+                bgColor: "bg-gradient-to-br from-orange-600 via-amber-600 to-yellow-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Describir imprevistos cotidianos y proponer soluciones."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender vocabulario de averías, adjetivos de problemas y fórmulas de solicitud educada.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Everyday Problem Vocabulary / Vocabulario de problemas",
+                description: "Key words for daily malfunctions.",
+                content: ["out of order = fuera de servicio", "flat tire = llanta desinflada o ponchada", "cracked screen = pantalla estrellada", "dead battery = batería agotada", "stuck = atorado / trabado", "leak = fuga de agua o líquido"],
+                imageUrl: "/images/teens-basic-3-class-09/slide-04-everyday-problems-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Troubleshooting Verbs / Verbos de resolución",
+                description: "Actions to fix or report problems.",
+                content: ["repair / fix = reparar / arreglar", "replace = reemplazar por uno nuevo", "reboot / restart = reiniciar el dispositivo", "recharge = recargar la batería", "report = reportar un inconveniente"],
+                imageUrl: "/images/teens-basic-3-class-09/slide-05-problem-solving-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Grammar: Explaining the Problem / Explicando el problema",
+                description: "Clear formulas to describe what went wrong.",
+                content: ["There is a problem with... (There is a problem with the Wi-Fi connection.)", "The issue is that... (The issue is that my document won't print.)", "It isn't working because... (It isn't working because the battery died.)", "My [object] is broken / cracked / stuck."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-06-explaining-problems-grammar.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Polite Requests for Help / Solicitudes amables de ayuda",
+                description: "How to ask for assistance respectfully.",
+                content: ["Could you please help me...? = ¿Podrías por favor ayudarme a...?", "Would you mind checking...? = ¿Te importaría revisar...?", "Excuse me, could you take a look at...? = Disculpe, ¿podría echar un vistazo a...?", "I would appreciate your help = Agradecería tu ayuda"],
+                imageUrl: "/images/teens-basic-3-class-09/slide-07-polite-requests-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Explaining a Solution / Explicando la solución",
+                description: "Model dialogue for polite problem solving.",
+                content: ["Student: Excuse me, there is a problem with my laptop. The screen is frozen.", "Technician: Let's see. First, we will restart the system. Then, we can check for software updates.", "Student: Thank you so much! It works perfectly now."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-08-expressing-solutions.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Construir oraciones de reclamo educado y explicación de fallas."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Comprobar la comprensión de vocabulario de fallas y solicitudes educadas.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-9-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Dates and birthdays: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["📅 + 🎂 + ⭐"],
-                    options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Daniel and Elena's Dialogue / Lee el diálogo",
+                description: "Identify how Daniel explains his technical issue.",
+                content: ["Daniel: Elena, do you have a phone charger I can borrow?", "Elena: Sure! What happened to your phone?", "Daniel: The battery died while I was reading the science article for class.", "Elena: Here you go! Plug it in near that desk."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-09-context-dialogue-problems.jpg",
+                bgColor: "bg-gradient-to-br from-lime-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Correct Problem (1/3)",
+                description: "My smartphone turned black and won't turn on because the ______ is completely dead.",
+                content: ["My smartphone turned black and won't turn on because the ______ is completely dead."],
+                options: ["battery", "keyboard", "notebook"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-09/slide-10-battery-dead-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Polite Request (2/3)",
+                description: "Excuse me, ______ you please help me fix my bicycle chain?",
+                content: ["Excuse me, ______ you please help me fix my bicycle chain?"],
+                options: ["could", "must", "did"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-09/slide-11-flat-tire-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Complete the Sentence (3/3)",
+                description: "I cannot log into my school email because I forgot my ______.",
+                content: ["I cannot log into my school email because I forgot my ______."],
+                options: ["password", "lunchbox", "backpack"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-09/slide-12-forgot-password-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-3-9-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the troubleshooting process.",
+                type: "emoji-game",
+                content: ["📱 + 🪫 + 🔌 + 🔋 + ⚡"],
+                options: ["The phone battery was empty, so I plugged it in and recharged it.", "I went swimming yesterday afternoon.", "The cat jumped on top of the fence."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-09/slide-13-emoji-problem-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Completar los ejercicios justificando la expresión adecuada."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Explicar problemas en situaciones reales y superar el reto final.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Everyday Problems and How to Explain Them."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Everyday Problems and How to Explain Them",
-                                    bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to everyday problems and how to explain them."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about everyday problems and how to explain them using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about everyday problems and how to explain them.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Let's Solve Everyday Problems! / ¡Resolvamos problemas cotidianos!",
+                description: "Spin and explain how you would resolve the situation.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "State the problem clearly: 'There is an issue with...'", "Make a polite request for assistance."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-14-speaking-wheel-problems.jpg",
+                wheelItems: [
+                  { label: "Lost Ticket", color: "#EF4444", prompt: "You lost your movie ticket. Explain to the cinema staff.", es: "Perdiste tu entrada al cine. Explica al encargado." },
+                  { label: "Slow Wi-Fi", color: "#F59E0B", prompt: "The school Wi-Fi is too slow. Report it politely.", es: "El wifi de la escuela esta muy lento. Reportalo amablemente." },
+                  { label: "Cracked Glass", color: "#10B981", prompt: "Your phone screen cracked. Ask the repair technician for cost and time.", es: "Se astillo tu pantalla. Pregunta al tecnico costo y tiempo." },
+                  { label: "Wrong Item", color: "#3B82F6", prompt: "The store delivered the wrong jacket size. Request an exchange.", es: "La tienda envio la talla incorrecta. Pide un cambio." }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "What should you say if an elevator is broken?",
+                content: ["What should you say if an elevator is broken?"],
+                options: ["The elevator is out of order.", "The elevator is singing a song.", "The elevator is on vacation."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-09/slide-15-broken-screen-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Which sentence is the most polite way to ask for assistance?",
+                content: ["Choose the most polite sentence."],
+                options: ["Could you please help me find my locker keys?", "Hey, find my keys now!", "Give me my keys immediately."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-09/slide-16-lost-item-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What does 'stuck' mean when describing a mechanical problem?",
+                content: ["stuck = ?"],
+                options: ["atascado / trabado / que no se puede mover", "nuevo y reluciente", "muy rápido y ligero"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-09/slide-17-polite-complaint-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle",
+                description: "Defeat the Troubleshooter Boss with today's English.",
+                type: "speaking-boss-battle",
+                content: ["Use problem vocabulary, polite request formulas, and clear explanations."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-18-boss-battle-troubleshooter.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Troubleshooter Boss",
+                  bossTitle: "Everyday Problems & How to Explain Them",
+                  bossAvatar: "🛠️",
+                  timerSeconds: 30,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say four common problem words and three troubleshooting verbs."],
+                    use: ["Make three sentences: one starting with 'There is a problem with...', one with 'The issue is that...', and one polite request with 'Could you please...'."],
+                    speak: ["Speak for 30 seconds roleplaying a customer reporting a technical issue with a phone or computer.", "Explain what is broken, what you already tried, and politely ask for a solution."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Tech Support Roleplay / Juego de roles de soporte técnico",
+                description: "Roleplay a customer and a tech support specialist.",
+                type: "roleplay",
+                content: ["A: Hello, tech support! How can I assist you today?", "B: Hi! There is an issue with my tablet. The screen keeps freezing during my video classes.", "A: I see. Have you tried updating the operating system?", "B: Yes, but the problem persists. Could you please check if it needs a hardware repair?"],
+                imageUrl: "/images/teens-basic-3-class-09/slide-19-tech-support-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Explicar fallas con cortesía y claridad."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar redacción de un reporte de soporte.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete! / Clase completada!",
+                description: "You can now explain everyday problems and ask for help politely in English.",
+                content: ["I can describe common malfunctions and accidents accurately.", "I can formulate polite requests with 'could' and 'would'.", "I can explain technical issues step by step."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-20-class-complete-problems.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write a polite problem report email.",
+                type: "homework",
+                content: ["Write a 6-sentence email to a store or tech support describing a problem with a device or product.", "Use 'There is an issue with...' and describe the symptom.", "Include at least two polite request expressions (e.g., 'Could you please...?', 'I would appreciate...').", "Ask for a replacement or a repair."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-21-homework-problems.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to problem solving and customer service dialogues.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/on_1sS6Ii8M",
+                content: ["Watch the video lesson about practical daily conversations and problem solving.", "Write down 5 polite phrases for asking for help or explaining an issue.", "Bring your email draft to share in the next class warm-up."],
+                imageUrl: "/images/teens-basic-3-class-09/slide-08-expressing-solutions.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar el correo de soporte técnico."
           }
         ]
       },
       {
         id: "c-teens-basic-3-10",
-        title: "Class 10: Verbs irregulares and terminaciones -ed. Proyecto en video / Clase 10: Verbos irregulares y terminaciones -ed. Proyecto en video",
-        description: "A fun and interactive class for teens.",
+        title: "Class 10: Irregular Verbs & -ed Endings. Video Project / Clase 10: Verbos irregulares y terminaciones -ed. Proyecto en video",
+        description: "Level 3 Capstone Class! Teens master the three pronunciation rules of -ed endings, practice challenging irregular past verbs, and present their graduation video project.",
         duration: "60 mins",
-        objective: "Master the topic of Verbos irregulares y terminaciones -ed. Proyecto en video.",
+        objective: "Master regular -ed phonetics (/t/, /d/, /ɪd/), review key irregular past verbs, and deliver a 1-minute capstone video presentation.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar la confianza oral y celebrar el logro de llegar a la clase final del Nivel 3.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Remember", color: "#EF4444", prompt: "What do you remember today?", es: "Que recuerdas hoy?" }, { label: "Easy", color: "#F59E0B", prompt: "What was easy for you?", es: "Que fue facil para ti?" }, { label: "Hard", color: "#10B981", prompt: "What was hard for you?", es: "Que fue dificil para ti?" }, { label: "Favorite", color: "#3B82F6", prompt: "What was your favorite part?", es: "Cual fue tu parte favorita?" }, { label: "Goal", color: "#8B5CF6", prompt: "What is your next goal?", es: "Cual es tu proxima meta?" }, { label: "Win", color: "#EC4899", prompt: "What is one win from class?", es: "Cual es un logro de clase?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Verbos irregulares y terminaciones -ed. Proyecto en video.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 10: Level 3 Capstone! 🎬 / ¡Bienvenida a Clase 10: Proyecto Final! 🎬",
+                description: "Irregular Verbs, -ed Endings & Capstone Video Project",
+                content: ["Congratulations on reaching the final class of Teen Champion Level 3!", "Today we master English pronunciation of -ed and create an unforgettable video project.", "Showcase everything you learned with confidence!"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-01-welcome-level-graduation.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Past Verb Lightning Wheel / Ruleta relámpago de verbos",
+                description: "Spin and say the past form in 3 seconds.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say the past tense form immediately.", "Pronounce the ending sound clearly."],
+                imageUrl: "/images/teens-basic-3-class-10/slide-02-warmup-wheel-past-verbs.jpg",
+                wheelItems: [
+                  { label: "watch ➔ ?", color: "#EF4444", prompt: "watch ➔ watched (/t/ sound)", es: "watch ➔ watched (sonido /t/)" },
+                  { label: "play ➔ ?", color: "#F59E0B", prompt: "play ➔ played (/d/ sound)", es: "play ➔ played (sonido /d/)" },
+                  { label: "visit ➔ ?", color: "#10B981", prompt: "visit ➔ visited (/ɪd/ sound)", es: "visit ➔ visited (sonido /ɪd/)" },
+                  { label: "buy ➔ ?", color: "#3B82F6", prompt: "buy ➔ bought (irregular)", es: "buy ➔ bought (irregular)" },
+                  { label: "teach ➔ ?", color: "#8B5CF6", prompt: "teach ➔ taught (irregular)", es: "teach ➔ taught (irregular)" },
+                  { label: "catch ➔ ?", color: "#EC4899", prompt: "catch ➔ caught (irregular)", es: "catch ➔ caught (irregular)" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end, you pronounce -ed like a native speaker and present your video.",
+                content: ["Master the 3 pronunciation rules of regular past -ed (/t/, /d/, /ɪd/).", "Conquer key irregular verb families (bought, taught, caught, thought).", "Deliver your 1-minute Capstone Video Presentation summarizing your English journey."],
+                imageUrl: "/images/teens-basic-3-class-10/slide-03-objectives-capstone.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Pronunciar verbos en pasado y preparar la presentación del proyecto."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender las tres reglas de pronunciación de -ed y patrones de verbos irregulares.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "The 3 Sounds of -ed / Los 3 sonidos de -ed",
+                description: "Never pronounce 'ed' as a full extra syllable unless it ends in T or D.",
+                content: ["1. /t/ sound (after voiceless p, k, f, s, sh, ch): watched, helped, walked, laughed", "2. /d/ sound (after voiced b, g, v, z, m, n, l, r, vowels): played, cleaned, loved, stayed", "3. /ɪd/ sound (ONLY after T or D): visited, started, needed, decided"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-04-pronunciation-ed-rules.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Challenging Irregular Verb Families / Familias de verbos irregulares",
+                description: "Notice the -ought / -aught sound patterns.",
+                content: ["buy ➔ bought (compró)", "bring ➔ brought (trajo)", "think ➔ thought (pensó)", "teach ➔ taught (enseñó)", "catch ➔ caught (atrapó)", "drive ➔ drove (condujo)"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-05-irregular-verb-patterns.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Capstone Video Script Structure / Estructura del video final",
+                description: "Organize your 60-second video presentation.",
+                content: ["1. Greeting & Intro: 'Hello everyone! Today I want to share my Level 3 story.'", "2. Past Anecdote: 'Last year, I traveled to... and visited...'", "3. Future Prediction: 'In the future, I will study... and explore...'", "4. Inspiring Conclusion: 'English opened new doors for me!'"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-06-past-simple-mastery-grammar.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Filming & Public Speaking Tips / Consejos de oratoria y grabación",
+                description: "Deliver your speech like a professional.",
+                content: ["eye contact = contacto visual directo con la cámara", "clear volume = voz clara y volumen adecuado", "body language = gestos naturales y postura erguida", "smooth transitions = conectar ideas con First, Suddenly, In the end"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-07-video-project-steps-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Capstone Video Pitch / Presentación modelo",
+                description: "Read this sample 60-second graduation speech.",
+                content: ["Hello! My name is Alex. When I was younger, I was shy in English class.", "During this level, I practiced every day. I visited new places, learned about science breakthroughs, and spoke with confidence!", "In the future, I will travel the world and inspire other teens. Thank you!"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-08-expressing-video-pitch.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Practicar la pronunciación de -ed y ensayar el guión del video."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Evaluar la fonética de -ed y la selección correcta de verbos irregulares.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-3-10-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Review: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🏆 + 📖 + ⭐"],
-                    options: ["The dog is hungry.", "I remember today?s lesson.", "I bought new shoes."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Mateo and Valeria's Filming Dialogue / Lee el diálogo",
+                description: "Notice the -ed endings in their speech.",
+                content: ["Mateo: Valeria, is the camera rolling?", "Valeria: Yes! Three, two, one, action!", "Mateo: Today I visited (/ɪd/) the museum and watched (/t/) a movie about astronauts.", "Valeria: Cut! Perfect pronunciation on both verbs!"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-09-context-dialogue-filming.jpg",
+                bgColor: "bg-gradient-to-br from-lime-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Identify the /ɪd/ Sound (1/3)",
+                description: "Which verb ends in the /ɪd/ extra-syllable sound?",
+                content: ["Which verb ends in the /ɪd/ sound?"],
+                options: ["started", "played", "watched"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-10/slide-10-sound-id-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Irregular Past Form (2/3)",
+                description: "Yesterday, my brother ______ a new microphone for his podcast.",
+                content: ["Yesterday, my brother ______ a new microphone for his podcast."],
+                options: ["bought", "buyed", "buys"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-10/slide-11-irregular-bought-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Identify the /t/ Sound (3/3)",
+                description: "Which verb ends with a sharp /t/ sound?",
+                content: ["Which verb ends with a /t/ sound?"],
+                options: ["helped", "cleaned", "needed"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-10/slide-12-sound-t-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-3-10-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Capstone Video Graduation.",
+                type: "emoji-game",
+                content: ["🎬 + 🎙️ + 🌟 + 🎓 + 🏆"],
+                options: ["We filmed our project, spoke into the microphone, and graduated as champions.", "I need to buy bread at the bakery.", "The bus arrives at six thirty."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-10/slide-13-emoji-capstone-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver ejercicios fonéticos y justificar el sonido final."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Presentar el proyecto final en vivo y derrotar al Boss supremo del Nivel 3.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Irregular Verbs, -ed Endings & Video Projects."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Time Machine Boss",
-                                    bossTitle: "Irregular Verbs, -ed Endings & Video Projects",
-                                    bossAvatar: "🕹️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to irregular verbs, -ed endings & video projects."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about irregular verbs, -ed endings & video projects using past verbs: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                      "Speak for 30 seconds about irregular verbs, -ed endings & video projects.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Capstone Video Pitch Showcase! / ¡Muestra del proyecto en video!",
+                description: "Spin and deliver a 45-second live pitch to the class.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Deliver your speech on that theme.", "Use correct -ed pronunciation and past verbs."],
+                imageUrl: "/images/teens-basic-3-class-10/slide-14-speaking-wheel-video-topics.jpg",
+                wheelItems: [
+                  { label: "My Best Trip", color: "#EF4444", prompt: "Describe your favorite vacation with past verbs and connectors.", es: "Describe tus vacaciones favoritas con verbos pasados y conectores." },
+                  { label: "Childhood", color: "#F59E0B", prompt: "Talk about what you were like when you were 7 years old.", es: "Habla sobre como eras cuando tenias 7 anos." },
+                  { label: "Future 2050", color: "#10B981", prompt: "Share three predictions about science, space, and technology in 2050.", es: "Comparte tres predicciones sobre ciencia y tecnologia en 2050." },
+                  { label: "My Role Model", color: "#3B82F6", prompt: "Present a mini-biography of a creator or athlete who inspires you.", es: "Presenta una mini-biografia de alguien que te inspire." }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "The goalkeeper jumped and ______ the ball in the last minute of the match!",
+                content: ["Choose the correct past irregular verb."],
+                options: ["caught", "catched", "catch"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-10/slide-15-irregular-caught-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Which verb ends in the smooth voiced /d/ sound?",
+                content: ["Which verb ends in the /d/ sound?"],
+                options: ["played", "decided", "laughed"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-10/slide-16-sound-d-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What makes a video project presentation engaging and professional?",
+                content: ["What makes a video presentation professional?"],
+                options: ["Clear pronunciation, eye contact, and well-connected ideas", "Looking at the floor and mumbling quietly", "Reading very fast without breathing"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-3-class-10/slide-17-filming-editing-quiz.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Grand Champion Boss",
+                description: "Defeat the Level 3 Final Boss and claim your Teen Champion title!",
+                type: "speaking-boss-battle",
+                content: ["Use -ed pronunciation, irregular verbs, future predictions, and storytelling connectors."],
+                imageUrl: "/images/teens-basic-3-class-10/slide-18-boss-battle-grandmaster.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Grand Champion Boss",
+                  bossTitle: "Level 3 Grand Finale",
+                  bossAvatar: "👑",
+                  timerSeconds: 45,
+                  prepareSeconds: 120,
+                  rounds: {
+                    remember: ["Say three verbs for each -ed sound: three for /t/, three for /d/, and three for /ɪd/."],
+                    use: ["Make three sentences: one about a past vacation (irregular verb), one with 'when I was little', and one future prediction with 'will'."],
+                    speak: ["Speak for 45 seconds delivering your Capstone Speech summarizing what you learned in Level 3 Teen Champion.", "Demonstrate clear pronunciation, confident posture, and rich vocabulary."]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Podcast Interview / Entrevista de podcast",
+                description: "Roleplay two teens co-hosting a graduation podcast episode.",
+                type: "roleplay",
+                content: ["A: Welcome to our Level 3 graduation podcast! What was your favorite topic in this course?", "B: I loved the space and future class because we made predictions with 'will' and 'won't'!", "A: How did your pronunciation improve?", "B: Now I know the difference between /t/, /d/, and /ɪd/ endings, so I speak much more naturally!"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-19-video-project-interview-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Presentar el discurso final y celebrar la culminación del Nivel 3."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Celebrar la graduación del nivel y asignar la grabación del video final.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Level 3 Complete: You are a Teen Champion! 🏆 / ¡Nivel 3 Completado: Eres un Campeón! 🏆",
+                description: "You have mastered routines, sports, space, memories, vacations, biographies, storytelling, and problem solving!",
+                content: ["I can communicate in past, present, and future with confidence.", "I can pronounce regular -ed endings accurately.", "I am ready for Level 4!"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-20-class-complete-champion.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Record and submit your 1-minute Capstone Video.",
+                type: "homework",
+                content: ["Record a 1-minute video presenting your 'English Champion Story'.", "Include: 1 past memory with was/were, 1 vacation story with irregular verbs, and 1 future goal with 'will'.", "Pay attention to clear -ed pronunciation and positive body language.", "Upload your video link to the platform!"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-21-homework-video-project.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to pronunciation mastery and capstone projects.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/aI_fREymNjI",
+                content: ["Watch the video lesson on English public speaking and clear pronunciation.", "Practice shadowing the speaker's rhythm and intonation.", "Upload your completed graduation video!"],
+                imageUrl: "/images/teens-basic-3-class-10/slide-08-expressing-video-pitch.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Celebrar el éxito del Nivel 3 y grabar el video final."
           }
         ]
       }
