@@ -11,6 +11,7 @@ import { PronunciationAssessmentSlide } from './PronunciationAssessmentSlide';
 import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 import { StructureDragExercise } from './StructureDragExercise';
 import { RolePlayCard } from './RolePlayCard';
+import { AccuracyContrastCard } from './AccuracyContrastCard';
 import { enhancePresentationClass } from '../lib/presentationEnhancer';
 
 interface PresentationViewerProps {
@@ -98,10 +99,25 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   if (!currentData) return null;
   const { section, slide } = currentData;
   const isLastSlide = currentIndex === allSlides.length - 1;
-  const isImmersiveSlide = slide.type === 'emoji-game' || slide.type === 'speaking-boss-battle' || slide.type === 'speaking-assessment-experimental';
   const isSpeakingBossBattle = slide.type === 'speaking-boss-battle';
   const isRoleplaySlide = slide.type === 'roleplay' || slide.type === 'lets-say' || Boolean(slide.roleplay);
   const isStructureDragSlide = slide.type === 'structure-drag';
+  const isAccuracyContrastSlide =
+    !isSpeakingBossBattle &&
+    !isRoleplaySlide &&
+    slide.type !== 'spinning-wheel' &&
+    slide.type !== 'matching-game' &&
+    slide.type !== 'mystery-puzzle' &&
+    slide.type !== 'emoji-game' &&
+    slide.type !== 'structure-drag' &&
+    (/accuracy contrast|contraste de precisi[oó]n/i.test(slide.title || '') ||
+      Boolean(slide.content && slide.content.some((line) => /^correct this:/i.test(line) || /^accurate:/i.test(line))));
+
+  const isImmersiveSlide =
+    slide.type === 'emoji-game' ||
+    slide.type === 'speaking-boss-battle' ||
+    slide.type === 'speaking-assessment-experimental' ||
+    isAccuracyContrastSlide;
   const isOptionExerciseSlide =
     !!slide.options?.length &&
     slide.type !== 'emoji-game' &&
@@ -135,13 +151,13 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   const slideSpeakingQuestions = [
     selectedSpeakingPrompt,
     ...(slide.type !== 'spinning-wheel' ? slide.content || [] : []),
-  ].filter((line): line is string => Boolean(line?.trim()));
   const isOpeningSlide =
     currentIndex === 0 &&
     slide.type !== 'emoji-game' &&
     slide.type !== 'speaking-boss-battle' &&
     slide.type !== 'speaking-assessment-experimental' &&
     slide.type !== 'structure-drag' &&
+    !isAccuracyContrastSlide &&
     slide.type !== 'roleplay';
 
   return (
@@ -290,7 +306,11 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   <RolePlayCard slide={slide} />
                 )}
 
-                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && slide.content?.map((line, i) => {
+                {isAccuracyContrastSlide && (
+                  <AccuracyContrastCard slide={slide} />
+                )}
+
+                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && slide.content?.map((line, i) => {
                   if (slide.type === 'reading') {
                     return (
                       <div key={i} className="text-base sm:text-xl md:text-2xl font-medium leading-relaxed bg-black/10 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg text-justify">
@@ -405,7 +425,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
+              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
                 <motion.div
                   initial={isOpeningSlide ? { opacity: 0, scale: 0.96, y: 16 } : false}
                   animate={isOpeningSlide ? { opacity: 1, scale: 1, y: 0 } : undefined}
