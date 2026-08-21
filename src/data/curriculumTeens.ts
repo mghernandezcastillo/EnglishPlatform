@@ -7891,1271 +7891,2891 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
     classes: [
       {
         id: "c-teens-basic-4-1",
-        title: "Class 1: My Opinions & Perspectives / Clase 1: My Opinions & Perspectives",
-        description: "A fun and interactive class for teens.",
+        title: "Class 1: My Opinions & Perspectives / Clase 1: Mis opiniones y perspectivas",
+        description: "Welcome to Level 4 Teen Pro! Teens master how to express personal viewpoints, agree, disagree respectfully, and defend their opinions with clear reasoning.",
         duration: "60 mins",
-        objective: "Master the topic of My Opinions & Perspectives.",
+        objective: "State opinions with 'In my opinion' and 'I believe', agree and disagree politely, and provide compelling reasons using 'because' and 'for instance'.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar la confianza para expresar puntos de vista sobre temas de interés juvenil.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of My Opinions & Perspectives.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Level 4: Teen Pro! 🎙️ / ¡Bienvenida a Nivel 4: Adolescente Pro! 🎙️",
+                description: "My Opinions & Perspectives",
+                content: ["Welcome to Level 4 Teen Pro!", "Today we learn how to express our true thoughts with confidence.", "Share your ideas, agree, disagree, and debate respectfully!"],
+                imageUrl: "/images/teens-basic-4-class-01/slide-01-welcome-opinions.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Debate Hot-Topic Wheel / Ruleta de debate",
+                description: "Spin and state your personal opinion in one complete sentence.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Say what you think about the topic.", "Give one quick reason."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-02-warmup-wheel-opinions.jpg",
+                wheelItems: [
+                  { label: "Phones in class", color: "#EF4444", prompt: "Should smartphones be allowed in class?", es: "¿Deberian permitirse celulares en clase?" },
+                  { label: "School uniforms", color: "#F59E0B", prompt: "Are school uniforms useful or boring?", es: "¿Los uniformes escolares son utiles o aburridos?" },
+                  { label: "Gaming as sport", color: "#10B981", prompt: "Do you consider esports a real sport?", es: "¿Consideras los esports un deporte real?" },
+                  { label: "Books vs Movies", color: "#3B82F6", prompt: "Are books better than movie adaptations?", es: "¿Los libros son mejores que las peliculas?" },
+                  { label: "Social media", color: "#8B5CF6", prompt: "Is social media more helpful or distracting?", es: "¿Las redes sociales ayudan o distraen?" },
+                  { label: "AI in homework", color: "#EC4899", prompt: "Does AI make homework easier or less creative?", es: "¿La IA hace la tarea mas facil o menos creativa?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can structure and defend opinions.",
+                content: ["Use opinion starters (In my opinion, I believe, From my perspective).", "Agree enthusiastically and disagree with polite respect.", "Justify ideas using connectors like because, since, and for example."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-03-objectives-opinions.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Compartir opiniones y reaccionar a las ideas de los compañeros."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender frases para dar opiniones, expresar acuerdo/desacuerdo y justificar.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Opinion Starters / Frases para iniciar una opinión",
+                description: "Choose a natural starter instead of repeating 'I think'.",
+                content: ["In my opinion,... = En mi opinión...", "I strongly believe that... = Creo firmemente que...", "From my perspective,... = Desde mi perspectiva...", "As I see it,... = Como yo lo veo..."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-04-opinion-starters-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Agreeing with Others / Expresar acuerdo",
+                description: "Show that you share someone's point of view.",
+                content: ["I completely agree with you. = Estoy totalmente de acuerdo contigo.", "That's a great point! = ¡Ese es un gran punto!", "You're absolutely right. = Tienes toda la razón.", "I see what you mean. = Veo a qué te refieres."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-05-agreeing-disagreeing.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Disagreeing Politely / Desacuerdo cortés",
+                description: "Disagree with respect without sounding aggressive.",
+                content: ["I see your point, but... = Veo tu punto, pero...", "I'm not so sure about that because... = No estoy tan seguro de eso porque...", "I look at it a bit differently. = Lo veo un poco diferente.", "I respectfully disagree. = Respetuosamente estoy en desacuerdo."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-06-giving-reasons-because.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Justifying Your Ideas / Justificar con argumentos",
+                description: "Support your claims with solid reasoning.",
+                content: ["...because it helps us save time. = ...porque nos ayuda a ahorrar tiempo.", "...since it creates better focus. = ...ya que genera mejor concentración.", "For instance,... / For example,... = Por ejemplo,...", "The main reason is that... = La razón principal es que..."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-07-polite-disagreement-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Persuasive Speech / Discurso modelo de opinión",
+                description: "Read this sample persuasive speech on school start times.",
+                content: ["In my opinion, high schools should start at 8:30 AM instead of 7:00 AM.", "The main reason is that teenagers need at least eight hours of sleep to focus properly.", "For example, studies show well-rested students get better grades in math and science. As I see it, later schedules improve both health and learning!"],
+                imageUrl: "/images/teens-basic-4-class-01/slide-08-expressing-perspective-model.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y practicar la pronunciación de frases de debate."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Identificar frases de acuerdo, desacuerdo y justificación.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-1-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Opinions: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["💡 + 👍 + 💬"],
-                    options: ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Leo and Mia's Debate / Lee el debate entre Leo y Mia",
+                description: "Notice how they agree and disagree with respect.",
+                content: ["Leo: In my opinion, digital tablets are better than paper textbooks because they are lighter.", "Mia: That's a good point, but paper books cause less eye fatigue.", "Leo: I see what you mean, although tablets allow instant internet research.", "Mia: True! Maybe a hybrid combination is the best solution!"],
+                imageUrl: "/images/teens-basic-4-class-01/slide-09-context-dialogue-debate.jpg",
+                bgColor: "bg-gradient-to-br from-lime-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Identify Polite Disagreement (1/3)",
+                description: "Which phrase expresses polite disagreement?",
+                content: ["Which phrase expresses polite disagreement?"],
+                options: ["I see your point, but I look at it differently.", "You are wrong and I am right.", "I completely agree with everything."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-01/slide-10-opinion-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Opinion Starter (2/3)",
+                description: "______ my perspective, esports require intense mental focus and teamwork.",
+                content: ["______ my perspective, esports require intense mental focus."],
+                options: ["From", "At", "On"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-01/slide-11-agree-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Select the Reasoning Connector (3/3)",
+                description: "I prefer reading books ______ they stimulate imagination more deeply than movies.",
+                content: ["I prefer reading books ______ they stimulate imagination."],
+                options: ["because", "although", "so that"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-01/slide-12-because-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-4-1-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Opinion Debate story.",
+                type: "emoji-game",
+                content: ["💡 + 🗣️ + 🤝 + 🏆"],
+                options: ["We shared our opinions respectfully, listened to each other, and reached an agreement.", "I bought new running shoes yesterday.", "The plane leaves at eight o'clock."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-01/slide-13-emoji-opinion-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver los ejercicios y justificar las opciones correctas."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Participar en un debate en vivo y defender posturas en el Boss Battle.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using My Opinions & Perspectives."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "My Opinions & Perspectives",
-                                    bossAvatar: "⚔️",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to my opinions & perspectives."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about my opinions & perspectives using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Live Teen Debate Wheel / Ruleta de debate en vivo",
+                description: "Spin and deliver a 45-second persuasive argument on the selected topic.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "State your viewpoint clearly.", "Use In my opinion and give at least one reason."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-14-speaking-wheel-controversies.jpg",
+                wheelItems: [
+                  { label: "Online vs In-person", color: "#EF4444", prompt: "Which is more effective: online classes or in-person school?", es: "¿Que es mas efectivo: clases virtuales o presenciales?" },
+                  { label: "Gaming Careers", color: "#F59E0B", prompt: "Can professional video gaming be a viable long-term career?", es: "¿Puede ser una carrera viable ser gamer profesional?" },
+                  { label: "AI in Creative Arts", color: "#10B981", prompt: "Will AI replace human artists and music creators?", es: "¿Reemplazara la IA a artistas humanos y musicos?" },
+                  { label: "City vs Countryside", color: "#3B82F6", prompt: "Where is life healthier for teenagers: big cities or peaceful towns?", es: "¿Donde es la vida mas saludable: grandes ciudades o pueblos tranquilos?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "How do you respond when you strongly share a friend's idea?",
+                content: ["Which phrase shows strong agreement?"],
+                options: ["I completely agree with you!", "I'm not so sure.", "I have no opinion."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-01/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "What makes an argument persuasive and credible?",
+                content: ["What makes an argument persuasive?"],
+                options: ["Providing clear examples, facts, and logical reasons", "Shouting louder than everyone else", "Repeating the same word ten times"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-01/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "Complete the sentence: 'From my perspective, team sports teach ______.'",
+                content: ["Complete the sentence logically."],
+                options: ["leadership and discipline", "how to sleep longer", "nothing at all"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-01/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Perspective Boss",
+                description: "Defeat the Boss using opinion starters, agreement/disagreement, and strong reasons!",
+                type: "speaking-boss-battle",
+                content: ["Use In my opinion, I believe, agree/disagree, and because."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-18-boss-battle-opinion-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Perspective Boss",
+                  bossTitle: "My Opinions & Perspectives",
+                  bossAvatar: "🎙️",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say three opinion starters and two polite disagreement phrases."],
+                    use: ["Make three sentences: one stating an opinion (In my opinion), one with because, and one question asking someone's perspective."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds expressing your opinion on whether smartphones help students learn or distract them. Include 2 reasons and a clear conclusion.",
+                      "Example to guide you: 'In my opinion, smartphones are powerful learning tools if students use them responsibly. For example, educational apps let us research information instantly and practice languages. However, we should keep them on silent during lessons to avoid distractions. Overall, balance is the key!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Podcast Debate / Debate de podcast",
+                description: "Roleplay two teens co-hosting a school discussion podcast.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that you and a classmate are co-hosting a school debate podcast about whether high school should start at 9:00 AM, and you want to share different perspectives.",
+                  "Student A: State your opinion that starting later is healthier for students and give a reason.",
+                  "Student B: Agree with the health benefit, but raise a practical point about afternoon extracurricular activities.",
+                  "A: 'In my opinion, starting school at 9:00 AM would help all students get better sleep and focus in morning classes.'",
+                  "B: 'I see your point, but if we start later, our sports practices and clubs will finish after dark!'",
+                  "A: 'That's a fair concern. Maybe we could shorten passing periods to balance the schedule?'",
+                  "B: 'That sounds like a smart compromise! Let's propose that idea on our next podcast episode!'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-01/slide-19-opinion-podcast-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Debatir en parejas y presentar argumentos convincentes."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de un párrafo de opinión.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Expressed Your Voice! 🏆 / ¡Clase Completa: Expresaste tu Voz! 🏆",
+                description: "You learned how to give opinions, debate respectfully, and defend ideas logically!",
+                content: ["I can state opinions using In my opinion and I believe.", "I can agree and disagree politely in conversations.", "I can justify my claims with clear reasons."],
+                imageUrl: "/images/teens-basic-4-class-01/slide-20-class-complete-opinions.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write a short opinion paragraph (5 sentences) on a topic you care about.",
+                type: "homework",
+                content: ["Choose one topic: 'Should video gaming be an Olympic sport?' OR 'Are printed books better than e-books?'.", "Write a 5-sentence paragraph stating your opinion, giving 2 reasons with 'because' and 'for instance', and writing a strong conclusion.", "Upload your paragraph to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-01/slide-21-homework-opinion-essay.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to natural opinions and debates in English.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/on_1sS6Ii8M",
+                content: ["Watch the video lesson about giving opinions and polite conversational expressions.", "Write down 3 useful phrases the speakers use to agree or disagree.", "Be ready to share them in next class warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-01/slide-08-expressing-perspective-model.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar el párrafo de opinión."
           }
         ]
       },
       {
         id: "c-teens-basic-4-2",
-        title: "Class 2: Giving Good Advice / Clase 2: Giving Good Advice",
-        description: "A fun and interactive class for teens.",
+        title: "Class 2: Giving Good Advice / Clase 2: Dar buenos consejos",
+        description: "Teens master modal verbs for recommendations, obligation, and rules (should, shouldn't, must, have to), giving constructive guidance for study habits and life dilemmas.",
         duration: "60 mins",
-        objective: "Master the topic of Giving Good Advice.",
+        objective: "Give helpful advice with 'should/shouldn't', state obligations with 'must/have to', express prohibitions with 'mustn't', and ask for recommendations politely.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar el pensamiento crítico para resolver dilemas juveniles y dar consejos útiles.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Rule", color: "#EF4444", prompt: "What rule is important?", es: "Que regla es importante?" }, { label: "Students", color: "#F59E0B", prompt: "What must students do?", es: "Que deben hacer los estudiantes?" }, { label: "Advice", color: "#10B981", prompt: "What advice helps you study?", es: "Que consejo te ayuda a estudiar?" }, { label: "Permission", color: "#3B82F6", prompt: "When do you ask Can I...?", es: "Cuando preguntas Can I...?" }, { label: "Duty", color: "#8B5CF6", prompt: "What do you have to do today?", es: "Que tienes que hacer hoy?" }, { label: "School", color: "#EC4899", prompt: "What school rule is useful?", es: "Que regla escolar es util?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Giving Good Advice.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 2: Giving Good Advice! 💡 / ¡Bienvenida a la Clase 2: Dar buenos consejos! 💡",
+                description: "Giving Good Advice & Helpful Recommendations",
+                content: ["Welcome back, Teen Pros!", "Today we learn how to give and ask for great advice.", "Help your friends solve real study and life dilemmas in English!"],
+                imageUrl: "/images/teens-basic-4-class-02/slide-01-welcome-advice.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-blue-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Teen Dilemma Wheel / Ruleta de dilemas",
+                description: "Spin and give one helpful recommendation using 'You should...'.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Listen to the dilemma.", "Give one piece of advice using should or have to."],
+                imageUrl: "/images/teens-basic-4-class-02/slide-02-warmup-wheel-advice.jpg",
+                wheelItems: [
+                  { label: "Exam Stress", color: "#EF4444", prompt: "A friend feels stressed before a big math test. What should they do?", es: "¿Un amigo esta estresado por un examen. Que deberia hacer?" },
+                  { label: "Phone Addiction", color: "#F59E0B", prompt: "A friend checks social media until 2:00 AM. What advice can you give?", es: "¿Un amigo mira redes hasta las 2 AM. Que consejo le das?" },
+                  { label: "Lost Homework", color: "#10B981", prompt: "Someone forgot their science project at home. How can they solve it?", es: "¿Alguien olvido su proyecto de ciencias. Como resolverlo?" },
+                  { label: "Stage Fright", color: "#3B82F6", prompt: "A student is nervous about a class presentation. What should they practice?", es: "¿Un estudiante tiene panico escenico. Que deberia practicar?" },
+                  { label: "Waking Up Early", color: "#8B5CF6", prompt: "What is your best tip to wake up energetic in the morning?", es: "¿Cual es tu mejor consejo para levantarte con energia?" },
+                  { label: "Making Friends", color: "#EC4899", prompt: "A new student joined your school. What should they do to make friends?", es: "¿Llego un nuevo estudiante. Que deberia hacer para hacer amigos?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-indigo-700 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can give and ask for advice fluently.",
+                content: ["Use 'should' and 'shouldn't' for positive and negative recommendations.", "Use 'must' and 'have to' for school rules and obligations.", "Ask for advice politely with 'What should I do?' and 'Do you have any suggestions?'."],
+                imageUrl: "/images/teens-basic-4-class-02/slide-03-objectives-advice.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 via-blue-600 to-indigo-700"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Compartir consejos y reaccionar a los dilemas de los compañeros."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender los modales de consejo (should/shouldn't) y obligación (must/have to).",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Giving Recommendations: Should & Shouldn't / Consejos con Should",
+                description: "Use 'should' for good ideas and 'shouldn't' for bad ideas.",
+                content: ["You should organize your study desk. = Deberías organizar tu escritorio de estudio.", "You should drink plenty of water. = Deberías tomar bastante agua.", "You shouldn't stay up late on school nights. = No deberías desvelarte en noches de escuela.", "You shouldn't study with the TV on. = No deberías estudiar con el televisor prendido."],
+                imageUrl: "/images/teens-basic-4-class-02/slide-04-should-must-vocab.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Obligations & Rules: Must & Have to / Obligaciones y Reglas",
+                description: "Use 'must' and 'have to' when something is necessary or required by rule.",
+                content: ["Students have to wear the school uniform. = Los estudiantes tienen que usar el uniforme escolar.", "You must silence your phone during the exam. = Debes silenciar tu celular durante el examen.", "We have to finish the lab report by Friday. = Tenemos que terminar el informe de laboratorio para el viernes.", "You mustn't cheat on tests. = No debes hacer trampa en los exámenes."],
+                imageUrl: "/images/teens-basic-4-class-02/slide-05-giving-study-tips.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Asking for Advice Politely / Pedir consejos con cortesía",
+                description: "Useful questions when you need guidance or support.",
+                content: ["What should I do? = ¿Qué debería hacer?", "What do you suggest? = ¿Qué sugieres?", "Do you have any tips for managing time? = ¿Tienes algún consejo para organizar el tiempo?", "If you were in my shoes, what would you do? = Si estuvieras en mi lugar, ¿qué harías?"],
+                imageUrl: "/images/teens-basic-4-class-02/slide-06-health-wellbeing-advice.jpg",
+                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Strong Advice: Had Better & Ought To / Consejos con urgencia",
+                description: "Express urgent advice to prevent a negative consequence.",
+                content: ["You had better study tonight, or you will fail tomorrow! = ¡Más vale que estudies esta noche o reprobarás mañana!", "You ought to talk to your teacher about the deadline. = Deberías hablar con tu profesor sobre la fecha límite.", "You had better leave now to catch the bus! = ¡Más vale que salgas ya para alcanzar el autobús!"],
+                imageUrl: "/images/teens-basic-4-class-02/slide-07-asking-for-advice-phrases.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Advice Speech / Discurso modelo de consejos",
+                description: "Read this sample guide on healthy study habits for high school.",
+                content: ["If you want to reduce exam anxiety, you should break big projects into 25-minute study intervals.", "You also have to take five-minute breaks to stretch and hydrate.", "You shouldn't cram the entire textbook the night before the test because sleep is vital for memory recall!"],
+                imageUrl: "/images/teens-basic-4-class-02/slide-08-model-advice-speech.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y practicar la pronunciación de verbos modales."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Diferenciar entre sugerencias (should) y obligaciones obligatorias (must/have to).",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-2-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Rules and advice: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🛑 + 📖 + 🆘"],
-                    options: ["I have already eaten.", "Students must follow rules.", "The app is cheaper."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Carlos and Sofia's Dialogue / Lee el diálogo de Carlos y Sofia",
+                description: "Notice how Sofia offers practical solutions using modal verbs.",
+                content: ["Carlos: I have two essays and soccer practice today. I don't know what to do!", "Sofia: Don't panic! You should write the first essay before practice while your mind is fresh.", "Carlos: What about the second essay?", "Sofia: You have to submit it tomorrow afternoon, so you can finish it tomorrow morning. You shouldn't stay up past midnight!"],
+                imageUrl: "/images/teens-basic-4-class-02/slide-09-context-dialogue-advice.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 to-lime-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Friendly Recommendation (1/3)",
+                description: "You look exhausted. You ______ take a short power nap before studying.",
+                content: ["You look exhausted. You ______ take a short power nap."],
+                options: ["should", "mustn't", "have"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-02/slide-10-should-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Identify the Strict Rule (2/3)",
+                description: "In the chemistry lab, students ______ wear safety goggles at all times.",
+                content: ["In the lab, students ______ wear safety goggles."],
+                options: ["must", "maybe", "should not"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-02/slide-11-must-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Select the Prohibition (3/3)",
+                description: "To protect your privacy online, you ______ share your passwords with strangers.",
+                content: ["You ______ share your passwords with strangers."],
+                options: ["shouldn't", "should", "have to"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-02/slide-12-advice-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-cyan-700"
+              },
+              {
+                id: "c-teens-basic-4-2-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Smart Study Advice story.",
+                type: "emoji-game",
+                content: ["🛑 + 📖 + 🆘 + 💡"],
+                options: ["When exam stress gets overwhelming, you should pause, read your notes, ask for help, and find a smart solution.", "The train arrived at platform three on schedule.", "I had orange juice and toast for breakfast."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-02/slide-13-emoji-advice-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver las preguntas y explicar por qué se usa should o must."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Dar consejos personalizados y superar la batalla de speaking.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Giving Good Advice."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Giving Good Advice",
-                                    bossAvatar: "⚔️",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to giving good advice."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about giving good advice using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Teen Advice Hot-Seat / Ruleta de consejos en vivo",
+                description: "Spin and give 2 pieces of advice to solve the problem immediately.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Give two pieces of advice.", "Use should and shouldn't."],
+                imageUrl: "/images/teens-basic-4-class-02/slide-14-speaking-wheel-dilemmas.jpg",
+                wheelItems: [
+                  { label: "Phone at Night", color: "#EF4444", prompt: "How can someone stop looking at their phone in bed?", es: "¿Como dejar de ver el celular en la cama?" },
+                  { label: "Speaking Anxiety", color: "#F59E0B", prompt: "What should a shy student do to practice English speaking?", es: "¿Que deberia hacer un estudiante timido para hablar ingles?" },
+                  { label: "Messy Room", color: "#10B981", prompt: "How can a teenager keep their bedroom organized easily?", es: "¿Como mantener el cuarto ordenado facilmente?" },
+                  { label: "Healthy Snacks", color: "#3B82F6", prompt: "What should you eat when you need energy for studying?", es: "¿Que comer cuando necesitas energia para estudiar?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "Which modal verb is best for giving friendly, optional suggestions?",
+                content: ["Which modal is best for friendly suggestions?"],
+                options: ["should", "must", "cannot"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-02/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "What is the meaning of 'You have to submit your homework by 3:00 PM'?",
+                content: ["What does 'have to submit' mean?"],
+                options: ["It is an obligatory requirement/deadline", "It is an optional suggestion", "You don't need to do it"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-02/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "How do you ask for advice politely?",
+                content: ["Which question asks for advice?"],
+                options: ["What should I do in this situation?", "Where are my keys?", "How much does this cost?"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-02/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Advice Boss",
+                description: "Defeat the Boss by giving structured, practical advice using should, shouldn't, and have to!",
+                type: "speaking-boss-battle",
+                content: ["Use should, shouldn't, must, and have to."],
+                imageUrl: "/images/teens-basic-4-class-02/slide-18-boss-battle-advice-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Advice Boss",
+                  bossTitle: "Giving Good Advice",
+                  bossAvatar: "💡",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say three phrases for giving advice and two phrases for rules."],
+                    use: ["Make three sentences: one with should, one with shouldn't, and one with have to."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds giving 3 practical pieces of advice to a friend preparing for final exams.",
+                      "Example to guide you: 'If you want to ace your final exams, you should create a realistic study schedule using short 25-minute sessions. Also, you must get at least eight hours of sleep every night so your brain stays sharp. Finally, you shouldn't study with your phone next to you to avoid unnecessary distractions. You've got this!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Peer Mentor Roleplay / Juego de roles de mentoría escolar",
+                description: "Roleplay a student asking for advice and a peer mentor offering solutions.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that your friend is stressed about balancing soccer practice with three upcoming school projects, and you want to offer them practical advice.",
+                  "Student A (Stressed Student): Explain your heavy schedule and ask what you should do.",
+                  "Student B (Peer Mentor): Give 2 practical recommendations using should and have to.",
+                  "A: 'I have three projects due on Friday and soccer practice every afternoon. What should I do?'",
+                  "B: 'Don't worry! You should talk to your coach about adjusting practice, and you have to prioritize the most difficult project first.'",
+                  "A: 'Do you think I should stay up late studying tonight?'",
+                  "B: 'No, you definitely shouldn't do that! Rest is essential, so work for two focused hours and then go to sleep!'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-02/slide-19-school-counselor-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Dar consejos en parejas y presentar soluciones prácticas."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de una columna de consejos.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Are a Master Advisor! 🏆 / ¡Clase Completa: Eres un Gran Consejero! 🏆",
+                description: "You mastered should, shouldn't, must, and have to!",
+                content: ["I can give helpful advice using should and shouldn't.", "I can state rules and duties using must and have to.", "I can ask for advice politely."],
+                imageUrl: "/images/teens-basic-4-class-02/slide-20-class-complete-advice.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write an advice column response (5 sentences) to a student who struggles with morning routines.",
+                type: "homework",
+                content: ["Read the dilemma: 'Dear Advisor, I always arrive late to my first period class and forget my supplies.'", "Write a 5-sentence response using 'You should...', 'You have to...', and 'You shouldn't...'.", "Upload your response to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-02/slide-21-homework-advice-letter.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to modal verbs in everyday English.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/3vW4gLzZ8-0",
+                content: ["Watch the video lesson on giving advice with should and shouldn't.", "Write down 3 advice examples mentioned in the video.", "Share your favorite tip in next class warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-02/slide-08-model-advice-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar la columna de consejos."
           }
         ]
       },
       {
         id: "c-teens-basic-4-3",
-        title: "Class 3: Conditions & Outcomes / Clase 3: Conditions & Outcomes",
-        description: "A fun and interactive class for teens.",
+        title: "Class 3: Conditions & Scientific Facts / Clase 3: Condiciones y Hechos Científicos (Zero Conditional)",
+        description: "Teens master Zero Conditional and cause-and-effect structures (If/When + Simple Present, Simple Present) to describe scientific laws, habits, and gadget functions.",
         duration: "60 mins",
-        objective: "Master the topic of Conditions & Outcomes.",
+        objective: "Express universal truths, scientific facts, daily habits, and tech outcomes using Zero Conditional with 'If' and 'When'.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar la curiosidad científica y el razonamiento de causa y efecto en inglés.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Today", color: "#EF4444", prompt: "What day is today?", es: "Que dia es hoy?" }, { label: "Month", color: "#F59E0B", prompt: "What month is your favorite?", es: "Cual es tu mes favorito?" }, { label: "Birthday", color: "#10B981", prompt: "When is your birthday?", es: "Cuando cumples anos?" }, { label: "Weekend", color: "#3B82F6", prompt: "What do you do on weekends?", es: "Que haces fines de semana?" }, { label: "Year", color: "#8B5CF6", prompt: "What year is it now?", es: "Que ano es ahora?" }, { label: "Holiday", color: "#EC4899", prompt: "What date do you like?", es: "Que fecha te gusta?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Conditions & Outcomes.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 3: Conditions & Scientific Facts! 🔬 / ¡Bienvenida a la Clase 3! 🔬",
+                description: "Zero Conditional & Cause-Effect Rules",
+                content: ["Welcome back, Teen Pros!", "Today we explore how the world works using Zero Conditional.", "Learn how to describe scientific laws, habits, and tech functions with 'If' and 'When'!"],
+                imageUrl: "/images/teens-basic-4-class-03/slide-01-welcome-conditions.jpg",
+                bgColor: "bg-gradient-to-br from-teal-950 via-cyan-950 to-indigo-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Cause & Effect Wheel / Ruleta de causa y efecto",
+                description: "Spin and state what happens automatically in each situation.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Read the condition.", "Complete the sentence with the automatic result."],
+                imageUrl: "/images/teens-basic-4-class-03/slide-02-warmup-wheel-conditions.jpg",
+                wheelItems: [
+                  { label: "Heat Ice", color: "#EF4444", prompt: "If you heat ice to 100°C, what happens?", es: "¿Si calientas hielo, que pasa?" },
+                  { label: "No Battery", color: "#F59E0B", prompt: "When your phone battery reaches 0%, what happens?", es: "¿Cuando la bateria llega a 0%, que pasa?" },
+                  { label: "Mix Colors", color: "#10B981", prompt: "If you mix blue and yellow, what color do you get?", es: "¿Si mezclas azul y amarillo, que color obtienes?" },
+                  { label: "Drink Coffee", color: "#3B82F6", prompt: "If you drink strong coffee at 11:00 PM, how do you feel?", es: "¿Si tomas cafe tarde, como te sientes?" },
+                  { label: "Rainy Day", color: "#8B5CF6", prompt: "When it rains heavily, what do you do?", es: "¿Cuando llueve fuerte, que haces?" },
+                  { label: "No Internet", color: "#EC4899", prompt: "If the Wi-Fi disconnects during a game, what happens?", es: "¿Si se cae el Wi-Fi en un juego, que pasa?" }
+                ],
+                bgColor: "bg-gradient-to-br from-teal-700 via-emerald-700 to-indigo-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can formulate Zero Conditional statements flawlessly.",
+                content: ["Master the Zero Conditional formula: If/When + Present Simple, Present Simple.", "Explain scientific laws and natural phenomena.", "Describe automatic technology commands and personal routines."],
+                imageUrl: "/images/teens-basic-4-class-03/slide-03-objectives-conditions.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Explicar causas y efectos con oraciones completas en presente."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender la estructura del condicional cero para verdades universales y hábitos.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Zero Conditional Structure / Estructura del Condicional Cero",
+                description: "Used for general truths, scientific facts, and 100% guaranteed results.",
+                content: ["Formula: If + Present Simple, + Present Simple", "If you heat water to 100°C, it boils. = Si calientas agua a 100°C, hierve.", "If you freeze water, it becomes ice. = Si congelas agua, se convierte en hielo.", "Note: Both clauses use the simple present tense!"],
+                imageUrl: "/images/teens-basic-4-class-03/slide-04-zero-conditional-rules.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-cyan-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Using 'When' instead of 'If' / Uso de 'When'",
+                description: "Use 'when' when the condition happens regularly with certainty.",
+                content: ["When the sun sets, it gets dark. = Cuando el sol se oculta, oscurece.", "When you press the power button, the screen turns on. = Cuando presionas el botón de encendido, la pantalla se prende.", "When I wake up early, I feel energized. = Cuando me despierto temprano, me siento con energía."],
+                imageUrl: "/images/teens-basic-4-class-03/slide-05-daily-habits-cause-effect.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-700 to-teal-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Gadgets & Tech Functions / Funciones tecnológicas automáticas",
+                description: "Describe how devices respond to user actions.",
+                content: ["If you swipe left, you see the next photo. = Si deslizas a la izquierda, ves la siguiente foto.", "If you plug in headphones, the sound mutes on speaker. = Si conectas audífonos, el altavoz se silencia.", "When battery saver is ON, apps consume less power. = Cuando el ahorro de batería está activo, las apps consumen menos energía."],
+                imageUrl: "/images/teens-basic-4-class-03/slide-06-tech-cause-effect.jpg",
+                bgColor: "bg-gradient-to-br from-teal-700 to-emerald-800"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Clause Inversion / Inversión de cláusulas",
+                description: "You can change the order without changing the meaning (no comma needed!).",
+                content: ["Ice melts if you leave it in the sun. = El hielo se derrite si lo dejas al sol.", "Your phone charges faster if you turn on airplane mode. = Tu celular carga más rápido si activas el modo avión.", "Plants die when they don't get sunlight. = Las plantas mueren cuando no reciben luz solar."],
+                imageUrl: "/images/teens-basic-4-class-03/slide-07-when-if-clauses.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-700 to-green-800"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Science & Tech Presentation / Presentación modelo",
+                description: "Read this sample explanation of smartphone battery optimization.",
+                content: ["When you use high screen brightness, your battery drains very quickly.", "If you enable dark mode on OLED screens, each dark pixel turns off and conserves energy.", "Therefore, your device lasts much longer if you optimize your display settings!"],
+                imageUrl: "/images/teens-basic-4-class-03/slide-08-model-cause-effect-speech.jpg",
+                bgColor: "bg-gradient-to-br from-green-700 to-lime-800"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y practicar la pronunciación de cláusulas condicionales."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Completar oraciones de condicional cero con las formas verbales correctas.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-3-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Dates and birthdays: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["📅 + 🎂 + ⭐"],
-                    options: ["The cat is under the table.", "My birthday is in July.", "I am wearing a jacket."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Diego and Maya's Tech Talk / Lee el diálogo tecnológico",
+                description: "Notice how they describe automatic gadget outcomes.",
+                content: ["Diego: Why does my phone get warm when I play 3D games?", "Maya: When you run heavy graphic games, the processor works at maximum speed and generates heat.", "Diego: What happens if I close background apps?", "Maya: If you close background apps, the phone cools down and runs smoothly!"],
+                imageUrl: "/images/teens-basic-4-class-03/slide-09-context-dialogue-conditions.jpg",
+                bgColor: "bg-gradient-to-br from-lime-600 to-yellow-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Complete the Scientific Fact (1/3)",
+                description: "If you heat ice above zero degrees Celsius, it ______ into water.",
+                content: ["If you heat ice above zero degrees, it ______."],
+                options: ["melts", "will melted", "melted"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-03/slide-10-condition-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-orange-500 to-red-600"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Habit Outcome (2/3)",
+                description: "When students ______ regular study breaks, they retain information better.",
+                content: ["When students ______ breaks, they retain info better."],
+                options: ["take", "taking", "took"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-03/slide-11-when-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-red-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Select the Tech Command (3/3)",
+                description: "If you double-click the home button, the task manager ______ instantly.",
+                content: ["If you double-click the button, the app ______."],
+                options: ["opens", "opened", "opening"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-03/slide-12-outcome-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-pink-700"
+              },
+              {
+                id: "c-teens-basic-4-3-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Scientific Cause & Effect story.",
+                type: "emoji-game",
+                content: ["☀️ + 🧊 + 💧 + 🌱"],
+                options: ["When the warm sun shines on ice, it melts into water and nourishes growing plants.", "I bought a blue jacket at the shopping mall.", "We took a taxi to the airport."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-03/slide-13-emoji-condition-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver los ejercicios identificando el presente en ambas cláusulas."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Explicar hechos reales y derrotar al jefe en el Boss Battle.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Conditions & Outcomes."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Conditions & Outcomes",
-                                    bossAvatar: "⚔️",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to conditions & outcomes."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about conditions & outcomes using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Science & Life Facts Wheel / Ruleta de hechos científicos",
+                description: "Spin and deliver a complete Zero Conditional rule in 30 seconds.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "State the condition and the outcome.", "Use If or When."],
+                imageUrl: "/images/teens-basic-4-class-03/slide-14-speaking-wheel-science-facts.jpg",
+                wheelItems: [
+                  { label: "Boiling Water", color: "#EF4444", prompt: "What happens when you heat water to 100°C?", es: "¿Que pasa cuando calientas agua a 100°C?" },
+                  { label: "Plant Sunlight", color: "#F59E0B", prompt: "What happens if a houseplant receives no sunlight?", es: "¿Que pasa si una planta no recibe luz solar?" },
+                  { label: "Exercise & Mood", color: "#10B981", prompt: "How does your body feel when you exercise regularly?", es: "¿Como se siente tu cuerpo cuando haces ejercicio?" },
+                  { label: "Night Mode Tech", color: "#3B82F6", prompt: "What happens when you turn on night mode on your phone?", es: "¿Que pasa cuando activas el modo nocturno?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "What verb tense is used in BOTH parts of a Zero Conditional sentence?",
+                content: ["Which tense is used in Zero Conditional?"],
+                options: ["Present Simple in both clauses", "Past Simple and Will", "Future Continuous and Past"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-03/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "When is Zero Conditional primarily used?",
+                content: ["When is Zero Conditional used?"],
+                options: ["For scientific facts, universal truths, and automatic results", "For imaginary past dreams", "For uncertain future predictions"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-03/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "Which sentence is correctly formed?",
+                content: ["Which sentence is correct Zero Conditional?"],
+                options: ["If you mix red and white, you get pink.", "If you will mix red and white, you get pink.", "If you mixed red and white, you will got pink."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-03/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Scientific Boss",
+                description: "Defeat the Boss using If and When with scientific facts and habits!",
+                type: "speaking-boss-battle",
+                content: ["Use Zero Conditional: If/When + Present Simple, Present Simple."],
+                imageUrl: "/images/teens-basic-4-class-03/slide-18-boss-battle-condition-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Scientific Boss",
+                  bossTitle: "Conditions & Scientific Facts",
+                  bossAvatar: "🔬",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say three verbs used for scientific facts (melts, boils, freezes, charges)."],
+                    use: ["Make three sentences: one with If, one with When, and one question about cause and effect."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds explaining 3 real cause-and-effect facts about healthy habits or technology.",
+                      "Example to guide you: 'When you exercise regularly, your body releases endorphins and reduces stress. Also, if you drink plenty of water throughout the day, your brain stays hydrated and focused. Finally, if you activate night mode on your phone before bed, it blocks blue light and helps you fall asleep much faster!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Science Fair Demo / Demostración de feria de ciencias",
+                description: "Roleplay two students presenting a science and tech project at the school fair.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that you and a classmate are presenting an interactive science and technology project at the school science fair, and you want to demonstrate cause-and-effect rules.",
+                  "Student A (Lead Presenter): Explain what happens when water reaches different temperatures.",
+                  "Student B (Tech Partner): Explain how the digital sensor records temperature and triggers an alert.",
+                  "A: 'Welcome to our experiment! If water reaches 100 degrees Celsius, it boils and transforms into steam.'",
+                  "B: 'And when our digital sensor detects steam, it automatically sends a temperature alert to our tablet!'",
+                  "A: 'What happens if the temperature drops below zero?'",
+                  "B: 'If the water freezes, the sensor displays a blue ice icon on screen! It works seamlessly!'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-03/slide-19-science-fair-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Presentar demostraciones en parejas y usar condicional cero."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de 5 reglas de causa y efecto.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Mastered Zero Conditional! 🏆 / ¡Clase Completa: Dominas el Condicional Cero! 🏆",
+                description: "You learned how to explain cause and effect, scientific laws, and gadget rules!",
+                content: ["I can form Zero Conditional sentences using If and When.", "I can describe scientific facts and natural laws.", "I can explain automatic technology functions."],
+                imageUrl: "/images/teens-basic-4-class-03/slide-20-class-complete-conditions.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write 5 real cause-and-effect rules using If and When about your daily life or technology.",
+                type: "homework",
+                content: ["Write 5 complete Zero Conditional sentences (e.g., 'When I listen to calm music, I focus better on math.').", "Include at least two technology rules and two health habits.", "Upload your sentences to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-03/slide-21-homework-condition-rules.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to Zero Conditional in action.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/fGkL03FvjH8",
+                content: ["Watch the video lesson about Zero Conditional rules and examples.", "Write down 3 cause-and-effect sentences from the video.", "Share them with the class in next warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-03/slide-08-model-cause-effect-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar las 5 oraciones condicionales."
           }
         ]
       },
       {
         id: "c-teens-basic-4-4",
-        title: "Class 4: Messaging & Online Chats / Clase 4: Messaging & Online Chats",
-        description: "A fun and interactive class for teens.",
+        title: "Class 4: Messaging, Texting & Online Communication / Clase 4: Mensajería, Texting y Comunicación en Línea",
+        description: "Teens master modern digital communication: common text acronyms (BRB, BTW, TBH, IDK, IMO), group chat etiquette, voice notes, and polite online messaging.",
         duration: "60 mins",
-        objective: "Master the topic of Messaging & Online Chats.",
+        objective: "Decode and use common internet acronyms, write polite and clear online messages for group projects, and distinguish between casual texting and formal emails.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar el vocabulario digital que los adolescentes usan diariamente en sus dispositivos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Messaging & Online Chats.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 4: Messaging & Texting! 📱 / ¡Bienvenida a la Clase 4! 📱",
+                description: "Digital Communication, Acronyms & Online Etiquette",
+                content: ["Welcome back, Teen Pros!", "Today we decode the secret language of texting and digital messaging.", "Master internet abbreviations, voice note etiquette, and clear online communication!"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-01-welcome-texting.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Digital Chat Wheel / Ruleta de mensajería",
+                description: "Spin and share your digital habits in one complete sentence.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Answer the question.", "Ask a classmate about their texting habits."],
+                imageUrl: "/images/teens-basic-4-class-04/slide-02-warmup-wheel-texting.jpg",
+                wheelItems: [
+                  { label: "Favorite App", color: "#EF4444", prompt: "Which messaging app do you use the most every day?", es: "¿Que app de mensajeria usas mas a diario?" },
+                  { label: "Voice vs Text", color: "#F59E0B", prompt: "Do you prefer sending voice notes or typing text messages?", es: "¿Prefieres mandar audios o escribir mensajes?" },
+                  { label: "Group Chat Rule", color: "#10B981", prompt: "What is one important rule for school project group chats?", es: "¿Cual es una regla clave en chats grupales de la escuela?" },
+                  { label: "Decode TBH", color: "#3B82F6", prompt: "What does TBH mean in English texting slang?", es: "¿Que significa TBH en mensajes de texto?" },
+                  { label: "Notifications", color: "#8B5CF6", prompt: "Do you keep your group chat notifications on or muted?", es: "¿Mantienes tus chats en silencio o con notificaciones?" },
+                  { label: "Emoji Style", color: "#EC4899", prompt: "Which emoji do you use most frequently with friends?", es: "¿Que emoji usas con mas frecuencia con amigos?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can communicate fluently in digital English.",
+                content: ["Understand and use top chat acronyms (BRB, BTW, TBH, IDK, IMO, RN).", "Write clear, respectful messages in school project group chats.", "Distinguish between informal texting and polite formal emails."],
+                imageUrl: "/images/teens-basic-4-class-04/slide-03-objectives-texting.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Compartir hábitos de chat y descifrar acrónimos en inglés."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender los acrónimos clave, expresiones de chat y normas de etiqueta digital.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Top Texting Acronyms / Acrónimos esenciales de chat",
+                description: "Shortcuts used globally in English chats and gaming.",
+                content: ["BRB = Be Right Back (Ya vuelvo)", "BTW = By The Way (Por cierto)", "TBH = To Be Honest (Para ser honesto)", "IMO / IMHO = In My (Humble) Opinion (En mi opinión)", "IDK = I Don't Know (No sé)", "RN = Right Now (Justo ahora)"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-04-chat-slang-acronyms.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Group Chat Etiquette & Actions / Acciones en chats grupales",
+                description: "Common digital verbs for coordinating with classmates.",
+                content: ["Drop a reaction 👍 = Reaccionar con un emoji", "Pin the message 📌 = Fijar el mensaje importante", "Tag / Mention someone @ = Mencionar o etiquetar a alguien", "Mute the group chat 🔕 = Silenciar el grupo temporalmente"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-05-polite-texting-rules.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Voice Notes & Tone / Notas de voz y tono de mensaje",
+                description: "How to express emotion and clarity in written text.",
+                content: ["'Send me a quick voice note' = Mándame un audio corto", "ALL CAPS = SHOUTING / Gritar en texto (¡evitar en mensajes normales!)", "Ending with '...' = Suggests hesitation or suspense", "Adding a friendly emoji softens the tone = Hace el mensaje más amable"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-06-voice-notes-reactions.jpg",
+                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Casual Chat vs Formal Email / Chat casual vs Correo formal",
+                description: "Know when to use informal slang vs professional language.",
+                content: ["Chat: 'Hey guys, check the doc RN!' = ¡Oigan, revisen el doc ya!", "Email: 'Dear Ms. Johnson, Attached is our completed project report. Best regards.' = Estimada Sra. Johnson, Adjunto nuestro reporte. Saludos cordiales.", "Rule: Never use texting acronyms (IDK, TBH) in formal academic emails!"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-07-group-chat-etiquette.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Group Project Chat / Chat modelo de proyecto",
+                description: "Read this sample team conversation coordinating a school presentation.",
+                content: ["Liam: 'Hey team! BTW, our presentation is on Thursday. Have we finished slide 5?'", "Zoe: 'TBH, I still need to add the chart. I'll upload it RN!'", "Liam: 'Awesome! Drop a 👍 in the chat once you check the final draft. BRB, grabbing water!'"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-08-model-texting-speech.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y practicar la pronunciación de acrónimos en conversaciones."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Identificar el significado y uso adecuado de acrónimos de mensajería.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-4-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Technology: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["📱 + 💻 + 🎮"],
-                    options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Liam and Zoe's Chat / Lee la conversación digital",
+                description: "Notice how they coordinate their school assignment efficiently.",
+                content: ["Liam: 'Are you free for a 10-minute video call to practice our speech?'", "Zoe: 'IDK if my Wi-Fi is fast enough, but I can send audio clips.'", "Liam: 'Perfect. IMO, that's even faster. Send them over whenever you're ready!'", "Zoe: 'Will do! TBH, we are almost 100% prepared!'"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-09-context-dialogue-chat.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 to-lime-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Decode the Chat Acronym (1/3)",
+                description: "What does 'BTW' mean in messaging?",
+                content: ["What does 'BTW' mean?"],
+                options: ["By The Way", "Bring The Water", "Before The Weekend"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-04/slide-10-acronym-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Identify Honest Opinion (2/3)",
+                description: "Which acronym means 'To Be Honest'?",
+                content: ["Which acronym means 'To Be Honest'?"],
+                options: ["TBH", "BRB", "RN"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-04/slide-11-polite-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Select Group Chat Best Practice (3/3)",
+                description: "How should you ask a team member to read an urgent document?",
+                content: ["How to ask team members politely in a chat?"],
+                options: ["Hey @team! Please review the shared slides when you have a moment 👍", "DO IT NOW OR WE LOSE", "No message at all"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-04/slide-12-voice-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-cyan-700"
+              },
+              {
+                id: "c-teens-basic-4-4-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Digital Teamwork story.",
+                type: "emoji-game",
+                content: ["📱 + 💬 + 🤝 + 🚀"],
+                options: ["We discussed our project in the group chat, agreed on the slides, and launched our presentation successfully.", "I went swimming in the lake with my cousins.", "The train stops at central station."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-04/slide-13-emoji-chat-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver las preguntas y redactar respuestas de chat en inglés."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Simular mensajes digitales en vivo y superar el Boss Battle.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Messaging & Online Chats."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Messaging & Online Chats",
-                                    bossAvatar: "⚔️",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to messaging & online chats."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about messaging & online chats using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Digital Dilemmas Wheel / Ruleta de situaciones digitales",
+                description: "Spin and deliver a polite, clear response in 30 seconds.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Read the scenario.", "Respond politely in English."],
+                imageUrl: "/images/teens-basic-4-class-04/slide-14-speaking-wheel-online-etiquette.jpg",
+                wheelItems: [
+                  { label: "Late Partner", color: "#EF4444", prompt: "A team member hasn't sent their slides 2 hours before the deadline. What message do you send?", es: "¿Un companero no envio sus diapositivas. Que mensaje mandas?" },
+                  { label: "Voice Note Dilemma", color: "#F59E0B", prompt: "You are in a noisy bus and a friend sends a 3-minute audio. What do you text back?", es: "¿Estas en el bus y te mandan un audio largo. Que respondes?" },
+                  { label: "Clarifying Doubt", color: "#10B981", prompt: "You didn't understand the homework assignment. How do you ask in the group chat?", es: "¿No entendiste la tarea. Como preguntas en el grupo?" },
+                  { label: "Muting a Chat", color: "#3B82F6", prompt: "Explain to a friend politely why you have notifications muted during study time.", es: "¿Explica por que silenciaste las notificaciones para estudiar." }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "What does 'BRB' stand for when you need to step away from your keyboard?",
+                content: ["What does 'BRB' stand for?"],
+                options: ["Be Right Back", "Big Red Button", "Buy Red Backpack"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-04/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Why is writing in ALL CAPS discouraged in digital etiquette?",
+                content: ["Why avoid writing in ALL CAPS?"],
+                options: ["Because it is perceived as shouting or aggressive tone", "Because it uses more internet data", "Because keyboards don't allow it"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-04/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "When should you use 'Dear Professor...' instead of 'Hey'?",
+                content: ["When should you use 'Dear Professor'?"],
+                options: ["In formal academic emails to teachers and advisors", "In a Discord gaming chat with friends", "In an Instagram direct message"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-04/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Digital Chat Boss",
+                description: "Defeat the Boss by explaining 3 key rules for effective digital communication in English!",
+                type: "speaking-boss-battle",
+                content: ["Use acronyms (BRB, BTW, TBH, IMO) and group chat vocabulary."],
+                imageUrl: "/images/teens-basic-4-class-04/slide-18-boss-battle-chat-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Digital Chat Boss",
+                  bossTitle: "Messaging & Online Chats",
+                  bossAvatar: "📱",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say four common chat acronyms (BRB, BTW, TBH, IDK, IMO, RN)."],
+                    use: ["Make three sentences: one with BTW, one with IMO, and one question about sending voice notes."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds explaining 3 golden rules for healthy and polite group chat communication among teens.",
+                      "Example to guide you: 'When participating in school group chats, you should always stay on topic and avoid spamming unnecessary memes during study hours. Also, if you need to explain something complex, sending a clear 20-second voice note is much better than typing a huge paragraph. Finally, always respect your friends\\' rest by not sending messages past 10:00 PM!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Project Coordination Chat / Juego de roles de chat de proyecto",
+                description: "Roleplay two classmates organizing their rehearsal via digital messaging.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that you and a classmate are coordinating the final rehearsal for a history project via messaging and voice notes, and you need to finalize the schedule.",
+                  "Student A: Send a text checking if your partner reviewed the final slides.",
+                  "Student B: Respond using chat acronyms (BTW, TBH, RN) and confirm your rehearsal time.",
+                  "A: 'Hey Alex! Did you check the final history slides on our shared drive?'",
+                  "B: 'Hey! TBH, I just reviewed them RN and they look amazing! BTW, what time is our video rehearsal?'",
+                  "A: 'Can we connect at 5:00 PM for twenty minutes?'",
+                  "B: 'Sounds perfect! I will pin the link in our chat. BRB, getting ready!'",
+                ],
+                imageUrl: "/images/teens-basic-4-class-04/slide-19-group-project-chat-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Coordinar proyectos en parejas usando expresiones de mensajería."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de una guía de etiqueta digital.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Are a Digital Communication Pro! 🏆 / ¡Clase Completa: Eres Pro Digital! 🏆",
+                description: "You mastered internet acronyms, voice note etiquette, and polite online messaging!",
+                content: ["I know top chat acronyms (BRB, BTW, TBH, IDK, IMO, RN).", "I can communicate clearly in group chats.", "I can distinguish between casual texts and formal emails."],
+                imageUrl: "/images/teens-basic-4-class-04/slide-20-class-complete-texting.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write 5 golden rules for school group chats in English.",
+                type: "homework",
+                content: ["Write 5 complete sentences titled '5 Golden Rules for School Group Chats'.", "Include at least two acronyms (BTW, IMO, TBH) and advice with 'should/shouldn't'.", "Upload your digital guide to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-21-homework-chat-rules.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to internet slang and digital etiquette.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/P6e0bS_3i0M",
+                content: ["Watch the video lesson about English texting abbreviations and modern slang.", "Write down 4 acronyms with their meanings.", "Share your favorite abbreviation in next class warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-04/slide-08-model-texting-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar la guía de etiqueta digital."
           }
         ]
       },
       {
         id: "c-teens-basic-4-5",
-        title: "Class 5: Primer condicional para planes and consecuencias / Clase 5: Primer condicional para planes y consecuencias",
-        description: "A fun and interactive class for teens.",
+        title: "Class 5: Future Possibilities & Consequences / Clase 5: Posibilidades Futuras y Consecuencias (First Conditional)",
+        description: "Teens master First Conditional structures (If + Simple Present, will / won't + Verb) and 'unless' to discuss real possibilities, weekend plans, and future consequences.",
         duration: "60 mins",
-        objective: "Master the topic of Primer condicional para planes y consecuencias.",
+        objective: "Talk about real future conditions, cause-and-consequences using 'If + present, will + verb', negative outcomes with 'won't', and exceptions with 'unless'.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar predicciones y planes futuros con causas y consecuencias reales.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1511632765486-a01c80cb8fa6?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Later", color: "#EF4444", prompt: "What will you do later?", es: "Que haras luego?" }, { label: "Plan", color: "#F59E0B", prompt: "What are your plans for tomorrow?", es: "Cuales son tus planes para manana?" }, { label: "Travel", color: "#10B981", prompt: "Where will you travel one day?", es: "A donde viajaras algun dia?" }, { label: "Soon", color: "#3B82F6", prompt: "What will happen soon?", es: "Que pasara pronto?" }, { label: "Study", color: "#8B5CF6", prompt: "Will you study tonight?", es: "Estudiaras esta noche?" }, { label: "Goal", color: "#EC4899", prompt: "What is one future goal?", es: "Cual es una meta futura?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Primer condicional para planes y consecuencias.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 5: Future Possibilities! 🔮 / ¡Bienvenida a la Clase 5! 🔮",
+                description: "First Conditional & Future Consequences",
+                content: ["Welcome back, Teen Pros!", "Today we unlock the power of predicting real future outcomes.", "Learn how to talk about your plans, goals, and possibilities using First Conditional!"],
+                imageUrl: "/images/teens-basic-4-class-05/slide-01-welcome-future-plans.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Future Scenarios Wheel / Ruleta de escenarios futuros",
+                description: "Spin and complete the future prediction using 'I will...'.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Read the condition.", "State the future consequence using will or won't."],
+                imageUrl: "/images/teens-basic-4-class-05/slide-02-warmup-wheel-future-plans.jpg",
+                wheelItems: [
+                  { label: "Sunny Weekend", color: "#EF4444", prompt: "If the weather is sunny this Saturday, what will you do?", es: "¿Si hace sol este sabado, que haras?" },
+                  { label: "Save Money", color: "#F59E0B", prompt: "If you save your allowance for 6 months, what will you buy?", es: "¿Si ahorras 6 meses, que compraras?" },
+                  { label: "Daily English", color: "#10B981", prompt: "If you practice English 20 mins a day, what will happen?", es: "¿Si practicas 20 min al dia, que pasara?" },
+                  { label: "Wake Up Late", color: "#3B82F6", prompt: "If you wake up late tomorrow morning, how will you get to school?", es: "¿Si te levantas tarde, como llegaras?" },
+                  { label: "Win a Contest", color: "#8B5CF6", prompt: "If you win a school scholarship or prize, how will you celebrate?", es: "¿Si ganas un concurso, como celebraras?" },
+                  { label: "Rain on Sports Day", color: "#EC4899", prompt: "What will happen if it rains heavily during sports day?", es: "¿Que pasara si llueve en el dia deportivo?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can formulate First Conditional statements accurately.",
+                content: ["Master the First Conditional structure: If + Simple Present, will / won't + Base Verb.", "Express future possibilities, promises, and warnings.", "Use 'unless' to express negative conditions (unless = if not)."],
+                imageUrl: "/images/teens-basic-4-class-05/slide-03-objectives-future-plans.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Hacer predicciones con causas y consecuencias en inglés."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender la estructura del primer condicional y el uso de unless.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "First Conditional Structure / Estructura del Primer Condicional",
+                description: "Used for real, possible situations in the future and their likely results.",
+                content: ["Formula: If + Present Simple, will + Base Verb", "If I study hard tonight, I will pass the exam tomorrow. = Si estudio duro esta noche, pasaré el examen mañana.", "If it rains tomorrow, we will stay home. = Si llueve mañana, nos quedaremos en casa.", "Rule: The 'if' clause NEVER uses will!"],
+                imageUrl: "/images/teens-basic-4-class-05/slide-04-first-conditional-rules.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Negative Outcomes: Won't & Don't / Consecuencias negativas con Won't",
+                description: "Express warnings and negative consequences.",
+                content: ["If we don't hurry, we will miss the bus! = ¡Si no nos apuramos, perderemos el autobús!", "If you don't charge your phone, it won't turn on. = Si no cargas tu celular, no encenderá.", "You won't improve your skills if you don't practice consistently. = No mejorarás tus habilidades si no practicas con constancia."],
+                imageUrl: "/images/teens-basic-4-class-05/slide-05-positive-outcomes-will.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Using 'Unless' (If Not) / Uso de 'Unless'",
+                description: "'Unless' means 'except if' or 'if... not'.",
+                content: ["We will play basketball outside unless it rains. = Jugaremos baloncesto afuera a menos que llueva.", "Unless you study, you won't pass. = A menos que estudies, no aprobarás.", "I will arrive at 4:00 PM unless traffic is heavy. = Llegaré a las 4:00 PM a menos que haya mucho tráfico."],
+                imageUrl: "/images/teens-basic-4-class-05/slide-06-negative-consequences-wont.jpg",
+                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Asking Future Condition Questions / Preguntas en Primer Condicional",
+                description: "Formulate engaging questions about future possibilities.",
+                content: ["What will you do if the party is canceled? = ¿Qué harás si se cancela la fiesta?", "Where will you go if you have free time this weekend? = ¿A dónde irás si tienes tiempo libre este fin de semana?", "If you get a scholarship, what university will you choose? = Si ganas una beca, ¿qué universidad elegirás?"],
+                imageUrl: "/images/teens-basic-4-class-05/slide-07-unless-clauses.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Future Goals Speech / Discurso modelo de metas futuras",
+                description: "Read this sample vision speech about high school and future dreams.",
+                content: ["If I dedicate one hour every afternoon to my science project, I will build an impressive robotics prototype.", "If my team wins the regional tournament, we will qualify for the national championship.", "Unless we encounter technical issues, our robot will perform flawlessly!"],
+                imageUrl: "/images/teens-basic-4-class-05/slide-08-model-first-conditional-speech.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y practicar la pronunciación de oraciones con will y unless."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Completar oraciones de primer condicional con el tiempo verbal adecuado.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-5-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Future plans: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🔮 + 🚀 + 📅"],
-                    options: ["The dog is under the chair.", "I will travel in the future.", "I ate cereal yesterday."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Mateo and Camila's Weekend Plan / Lee el diálogo de fin de semana",
+                description: "Notice how they plan alternative options depending on the weather.",
+                content: ["Mateo: Are we still going mountain biking on Saturday?", "Camila: If the weather is sunny, we will definitely go at 8:00 AM.", "Mateo: What will we do if it rains heavily?", "Camila: If it rains, we will meet at the community center and play indoor volleyball instead!"],
+                imageUrl: "/images/teens-basic-4-class-05/slide-09-context-dialogue-future.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 to-lime-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Complete the Future Outcome (1/3)",
+                description: "If you practice your speech today, you ______ confident on stage tomorrow.",
+                content: ["If you practice today, you ______ confident tomorrow."],
+                options: ["will feel", "feels", "felt"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-05/slide-10-condition-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Choose the Present Condition (2/3)",
+                description: "If my brother ______ his room, our parents will let him play video games.",
+                content: ["If my brother ______ his room, he will play."],
+                options: ["cleans", "will clean", "cleaned"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-05/slide-11-wont-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Identify the Exception (3/3)",
+                description: "We will go to the outdoor festival ______ it rains thunderstorm all day.",
+                content: ["We will go to the festival ______ it rains."],
+                options: ["unless", "if", "because"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-05/slide-12-unless-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-cyan-700"
+              },
+              {
+                id: "c-teens-basic-4-5-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Future Achievement story.",
+                type: "emoji-game",
+                content: ["🔮 + 🚀 + 📅 + 🏆"],
+                options: ["If we set clear goals and practice consistently every day, we will launch our dreams and win the trophy.", "I cooked pasta with tomatoes yesterday.", "The library opens at nine in the morning."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-05/slide-13-emoji-future-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver las preguntas y justificar por qué se usa will o presente simple."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Expresar planes futuros y superar la batalla de speaking.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using First Conditional."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Future Boss",
-                                    bossTitle: "First Conditional",
-                                    bossAvatar: "🚀",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to first conditional."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about first conditional using future plans: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Future Decisions Hot-Seat / Ruleta de decisiones futuras",
+                description: "Spin and deliver a complete First Conditional sentence in 30 seconds.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "State the condition and consequence.", "Use If and will/won't."],
+                imageUrl: "/images/teens-basic-4-class-05/slide-14-speaking-wheel-future-scenarios.jpg",
+                wheelItems: [
+                  { label: "Saving Money", color: "#EF4444", prompt: "If you save 50 dollars this month, what will you buy?", es: "¿Si ahorras 50 dolares, que compraras?" },
+                  { label: "School Vacation", color: "#F59E0B", prompt: "Where will you travel if you have two weeks off in summer?", es: "¿A donde viajaras si tienes dos semanas libres?" },
+                  { label: "Missing Homework", color: "#10B981", prompt: "What will happen if a student forgets their assignment tomorrow?", es: "¿Que pasara si alguien olvida su tarea manana?" },
+                  { label: "Learning Languages", color: "#3B82F6", prompt: "How will your future career improve if you become fluent in English?", es: "¿Como mejorara tu carrera si eres fluido en ingles?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "Which part of the First Conditional sentence takes the Simple Present tense?",
+                content: ["Which clause takes Simple Present?"],
+                options: ["The 'If' condition clause", "The main result clause", "Both clauses always take will"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-05/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "What does 'Unless you wake up early, you will be late' mean?",
+                content: ["What does 'Unless you wake up early' mean?"],
+                options: ["If you do not wake up early, you will be late", "Because you wake up early, you will be late", "You will never wake up early"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-05/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "Which sentence is grammatically correct?",
+                content: ["Which sentence is grammatically correct?"],
+                options: ["If it snows this winter, we will build a giant snowman.", "If it will snow this winter, we build a snowman.", "If it snowed, we will building a snowman."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-05/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Future Possibilities Boss",
+                description: "Defeat the Boss using First Conditional to explain future goals and consequences!",
+                type: "speaking-boss-battle",
+                content: ["Use First Conditional: If + Present Simple, will/won't + Verb."],
+                imageUrl: "/images/teens-basic-4-class-05/slide-18-boss-battle-future-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Future Possibilities Boss",
+                  bossTitle: "Future Possibilities & Consequences",
+                  bossAvatar: "🔮",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say three future goal verbs (graduate, travel, succeed, achieve)."],
+                    use: ["Make three sentences: one with If + will, one with won't, and one with unless."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds explaining 3 real future goals and what will happen if you achieve them.",
+                      "Example to guide you: 'If I practice speaking English for fifteen minutes every single day, my fluency and pronunciation will improve dramatically. Also, if I save twenty percent of my allowance, I will buy a new laptop for my coding projects by December. Finally, unless something unexpected happens, I will join the school debate team next semester!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Summer Trip Contingency Plan / Juego de roles de planes de viaje",
+                description: "Roleplay two classmates planning summer camping and contingencies.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that you and a classmate are planning a summer camping trip and discussing alternative plans in case the weather changes, and you want to be fully prepared.",
+                  "Student A: Propose a camping location and say what you will do if the weather is clear.",
+                  "Student B: Propose an alternative plan using 'if it rains' or 'unless'.",
+                  "A: 'If the weather is sunny next weekend, we will camp near the lake and hike to the waterfall.'",
+                  "B: 'That sounds amazing! But what will we do if it starts raining heavily on Saturday?'",
+                  "A: 'If it rains, we will rent a wooden cabin with a fireplace instead of sleeping in tents.'",
+                  "B: 'Great idea! We will go ahead with the trip unless a severe storm warning is issued!'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-05/slide-19-future-travel-planning-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Planear contingencias en parejas usando el primer condicional."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de 5 metas condicionales.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Mastered First Conditional! 🏆 / ¡Clase Completa: Dominas el Primer Condicional! 🏆",
+                description: "You learned how to predict future outcomes, give warnings, and plan with 'unless'!",
+                content: ["I can form First Conditional sentences using If + Present, will + Verb.", "I can describe real consequences and warnings.", "I can use 'unless' for exceptions."],
+                imageUrl: "/images/teens-basic-4-class-05/slide-20-class-complete-future.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write 5 future goals and consequences using 'If + will' and 'unless'.",
+                type: "homework",
+                content: ["Write 5 complete First Conditional sentences about your school, hobbies, or dreams (e.g., 'If I pass all my tests, my parents will take me to a concert.').", "Include at least one sentence with 'unless'.", "Upload your sentences to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-05/slide-21-homework-future-goals.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to First Conditional in everyday life.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/9kjvP_X3U7g",
+                content: ["Watch the video lesson about First Conditional rules and examples.", "Write down 3 conditional sentences from the video.", "Share them with the class in next warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-05/slide-08-model-first-conditional-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar las 5 metas condicionales."
           }
         ]
       },
       {
         id: "c-teens-basic-4-6",
-        title: "Class 6: Comparativos and superlativos: apps, celulares, películas and Sports / Clase 6: Comparativos y superlativos: apps, celulares, películas y deportes",
-        description: "A fun and interactive class for teens.",
+        title: "Class 6: Comparatives & Superlatives (Tech, Movies & Sports) / Clase 6: Comparativos y Superlativos (Tecnología, Películas y Deportes)",
+        description: "Teens master comparative and superlative adjectives (short and long adjectives, -er/-est, more/the most, irregulars good/better/best, bad/worse/worst) to review gadgets, movies, and athletes.",
         duration: "60 mins",
-        objective: "Master the topic of Comparativos y superlativos: apps, celulares, películas y deportes.",
+        objective: "Compare items using '-er than' and 'more than', declare number one rankings with 'the -est' and 'the most', and use irregular adjectives accurately.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar el vocabulario comparativo debatiendo enfrentamientos legendarios del mundo juvenil.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", content: ["Welcome to class!", "Today we are going to learn about Comparatives and Superlatives.", "Let's talk about apps, phones, movies and sports!"], imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], imageUrl: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  description: "Spin and answer one easy question.",
-                  type: "spinning-wheel",
-                  wheelItems: [{ label: "App", color: "#EF4444", prompt: "What app do you use most?", es: "Que app usas mas?" }, { label: "Device", color: "#F59E0B", prompt: "Do you prefer a phone or laptop?", es: "Prefieres celular o laptop?" }, { label: "Games", color: "#10B981", prompt: "Do you play video games?", es: "Juegas videojuegos?" }, { label: "Gadget", color: "#3B82F6", prompt: "What gadget helps you daily?", es: "Que aparato te ayuda a diario?" }, { label: "Sound", color: "#8B5CF6", prompt: "Do you prefer headphones or speakers?", es: "Prefieres audifonos o parlantes?" }, { label: "Screen", color: "#EC4899", prompt: "How much screen time is okay?", es: "Cuanto tiempo de pantalla esta bien?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", content: ["- Learn to compare things using Comparatives.", "- Learn to say what is 'the most' or 'the best' using Superlatives.", "- Talk about technology, entertainment, and sports.", "- Have fun comparing our favorite things!"], imageUrl: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 6: Comparatives & Superlatives! ⚡ / ¡Bienvenida a la Clase 6! ⚡",
+                description: "Comparatives & Superlatives: Tech, Movies & Sports",
+                content: ["Welcome back, Teen Pros!", "Today we rank and compare our favorite gadgets, movies, and sports.", "Learn how to express which is faster, better, and the absolute best in English!"],
+                imageUrl: "/images/teens-basic-4-class-06/slide-01-welcome-comparatives.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Epic Showdowns Wheel / Ruleta de comparaciones épicas",
+                description: "Spin and compare the two contenders using comparative adjectives.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Compare both options.", "Use -er than or more than."],
+                imageUrl: "/images/teens-basic-4-class-06/slide-02-warmup-wheel-comparatives.jpg",
+                wheelItems: [
+                  { label: "iOS vs Android", color: "#EF4444", prompt: "Which smartphone operating system is faster and more customizable?", es: "¿Cual sistema es mas rapido y personalizable?" },
+                  { label: "Messi vs Ronaldo", color: "#F59E0B", prompt: "Who is the more complete athlete and who is the better dribbler?", es: "¿Quien es el atleta mas completo?" },
+                  { label: "Marvel vs DC", color: "#10B981", prompt: "Which cinematic universe has more exciting storylines?", es: "¿Cual universo tiene tramas mas emocionantes?" },
+                  { label: "PC vs Console", color: "#3B82F6", prompt: "Is gaming on PC better than playing on console?", es: "¿Jugar en PC es mejor que en consola?" },
+                  { label: "Action vs Sci-Fi", color: "#8B5CF6", prompt: "Which movie genre is more entertaining for a Friday night?", es: "¿Que genero es mas entretenido un viernes?" },
+                  { label: "City vs Beach", color: "#EC4899", prompt: "Which vacation spot is more relaxing for teens?", es: "¿Que lugar de vacaciones es mas relajante?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can compare and rank anything in English.",
+                content: ["Use short comparative adjectives (-er than) and long comparatives (more... than).", "Form short superlatives (the -est) and long superlatives (the most...).", "Master irregular forms: good -> better -> the best / bad -> worse -> the worst."],
+                imageUrl: "/images/teens-basic-4-class-06/slide-03-objectives-comparatives.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Comparar opciones juveniles y defender sus elecciones."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender las reglas morfológicas de comparativos y superlativos regulares e irregulares.",
             slides: [
-              { id: "Diapositiva 4", title: "Comparatives: Short Adjectives / Comparatives: Short Adjectives", type: "normal", content: ["To compare two things, we use comparative adjectives.", "For short adjectives (1 syllable), add '-er' + 'than'.", "Fast -> Faster than", "Old -> Older than", "My phone is older than yours."], imageUrl: "https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Comparatives: Long Adjectives / Comparatives: Long Adjectives", type: "normal", content: ["For long adjectives (2+ syllables), use 'more' + adjective + 'than'.", "Interesting -> More interesting than", "Expensive -> More expensive than", "This app is more expensive than that one."], imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Superlatives: Short Adjectives / Superlatives: Short Adjectives", type: "normal", content: ["To say something is the #1 in a group, use superlative adjectives.", "For short adjectives, add 'the' + adjective + '-est'.", "Fast -> The fastest", "Old -> The oldest", "He is the fastest player in the team."], imageUrl: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Superlatives: Long Adjectives / Superlatives: Long Adjectives", type: "normal", content: ["For long adjectives, use 'the most' + adjective.", "Interesting -> The most interesting", "Popular -> The most popular", "TikTok is the most popular app in my class."], imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Irregular Adjectives / Irregular Adjectives", type: "normal", content: ["Some adjectives completely change their form!", "Good -> Better than -> The best", "Bad -> Worse than -> The worst", "Far -> Further than -> The furthest", "Messi is the best player in the world!"], imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-green-500 to-lime-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Short Adjectives: Comparatives & Superlatives / Adjetivos cortos",
+                description: "Add '-er than' to compare two, and 'the -est' for the #1 in a group.",
+                content: ["Fast -> Faster than -> The fastest (rápido / más rápido / el más rápido)", "Light -> Lighter than -> The lightest (ligero / más ligero / el más ligero)", "Cool -> Cooler than -> The coolest", "Example: My new headphones are lighter than my old ones, but these are the fastest charging earbuds!"],
+                imageUrl: "/images/teens-basic-4-class-06/slide-04-short-comparatives-rules.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Long Adjectives: More & The Most / Adjetivos largos (2+ sílabas)",
+                description: "Use 'more... than' and 'the most...' without changing the adjective.",
+                content: ["Powerful -> More powerful than -> The most powerful (potente)", "Expensive -> More expensive than -> The most expensive (costoso)", "Exciting -> More exciting than -> The most exciting (emocionante)", "Example: This gaming laptop is more powerful than my tablet, and it has the most vibrant display!"],
+                imageUrl: "/images/teens-basic-4-class-06/slide-05-long-adjectives-more.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Irregular Adjectives / Adjetivos irregulares clave",
+                description: "These adjectives change completely and must be memorized.",
+                content: ["Good -> Better than -> The best (bueno / mejor / el mejor)", "Bad -> Worse than -> The worst (malo / peor / el peor)", "Far -> Farther/Further than -> The farthest/furthest (lejano)", "Example: Fiber optic internet is better than DSL, and this is the best provider in town!"],
+                imageUrl: "/images/teens-basic-4-class-06/slide-06-superlatives-est-most.jpg",
+                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Equality & Similarity: As... As / Comparación de igualdad",
+                description: "Show that two things have the exact same quality.",
+                content: ["Formula: as + adjective + as (tan... como)", "This budget phone is as fast as a flagship model. = Este celular económico es tan rápido como un modelo de gama alta.", "Negative: not as... as (no tan... como)", "Basketball is not as dangerous as rugby. = El baloncesto no es tan peligroso como el rugby."],
+                imageUrl: "/images/teens-basic-4-class-06/slide-07-irregular-comparatives-better-worse.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Tech Review Speech / Reseña modelo de tecnología",
+                description: "Read this sample gadget review comparing two laptops for students.",
+                content: ["When comparing the Pro laptop with the Air laptop, the Pro is noticeably heavier, but it is much more powerful for 4K video editing and coding.", "In contrast, the Air is lighter, more portable, and easier to carry in a backpack all day.", "For general high school students, the Air offers the best battery life and the greatest value!"],
+                imageUrl: "/images/teens-basic-4-class-06/slide-08-model-comparative-speech.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y practicar la pronunciación de comparativos y superlativos."
           },
           {
             id: "s3",
-            title: "3. Practice & Concept Checking / 3. Práctica y Concept Checking",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Completar comparativos y superlativos en oraciones tecnológicas y deportivas.",
             slides: [
-              { id: "Diapositiva 9", title: "Context / Context", content: ["Mike: 'Hey! Did you see the new Avengers movie?'", "Sarah: 'Yes! It was better than the last one.'", "Mike: 'I agree. But I think Batman is the best superhero ever.'", "Sarah: 'No way! Iron Man\\'s suit is more expensive and cooler!'"], imageUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 10", title: "Complete the sentence (1/3) / Completa the Oración (1/3)", content: ["My new laptop is _______ than my old one."], options: ["fastest", "faster", "more fast"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 11", title: "Complete the sentence (2/3) / Completa the Oración (2/3)", content: ["I think soccer is the _______ sport in the world."], options: ["most popular", "more popular", "popularest"], correctOptionIndex: 0, imageUrl: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 12", title: "Complete the sentence (3/3) / Completa the Oración (3/3)", content: ["That was the _______ movie I have ever seen!"], options: ["bad", "worse", "worst"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 13", title: "Emoji Mission / Misión Emoji", type: "emoji-game", content: ["📱 + 💻 + 🎮"], options: ["I drink water at lunch.", "My favorite gadgets are here.", "My cousin is funny."], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1580236021644-8d4822bc6d88?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700",
-                  description: "Technology: decode the emoji story"
-            }
+              {
+                id: "Diapositiva 9",
+                title: "Read Lucas and Elena's Review / Lee el diálogo comparativo",
+                description: "Notice how they compare consoles and wireless headsets.",
+                content: ["Lucas: Have you tested the new wireless headset?", "Elena: Yes! The sound quality is better than the previous version, and the battery is longer.", "Lucas: Is it the most comfortable headset you have tried?", "Elena: Definitely! It is lighter than all my other headphones and fits perfectly!"],
+                imageUrl: "/images/teens-basic-4-class-06/slide-09-context-dialogue-comparison.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 to-lime-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Complete the Short Comparative (1/3)",
+                description: "The new electric sports car accelerates ______ than a traditional sedan.",
+                content: ["The sports car accelerates ______ than the sedan."],
+                options: ["faster", "fastest", "more fast"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-06/slide-10-comparative-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Select the Long Superlative (2/3)",
+                description: "Mount Everest is ______ mountain in the world.",
+                content: ["Mount Everest is ______ mountain in the world."],
+                options: ["the highest", "the most high", "higher than"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-06/slide-11-superlative-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Identify the Irregular Form (3/3)",
+                description: "Today's sci-fi movie sequel was much ______ than the first movie.",
+                content: ["The sequel was much ______ than the first movie."],
+                options: ["better", "gooder", "best"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-06/slide-12-irregular-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-cyan-700"
+              },
+              {
+                id: "c-teens-basic-4-6-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Tech Showdown story.",
+                type: "emoji-game",
+                content: ["📱 + 📷 + 🏆 + ⭐"],
+                options: ["This smartphone has a better camera, faster processor, and is the most powerful device of the year.", "I ate cereal with strawberries for breakfast.", "The train arrived at platform three."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-06/slide-13-emoji-comparison-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver las preguntas y justificar el uso de -er, more, -est o the most."
           },
           {
             id: "s4",
-            title: "4. Production & Quiz / 4. Production y Quiz",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Presentar reseñas comparativas y superar la batalla de speaking.",
             slides: [
-              { id: "Diapositiva 14", title: "Let's Talk! / Vamos a Hablar!", content: ["Compare your phone with your classmate's phone.", "Which one is bigger?", "Which one is older?", "Which one has the best camera?"], imageUrl: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-emerald-500 to-teal-600" },
-              { id: "Diapositiva 15", title: "Fun Quiz! 1/3 / Divertido Quiz! 1/3", content: ["Which app is _______, WhatsApp or Telegram?"], options: ["better", "best", "gooder"], correctOptionIndex: 0, imageUrl: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-pink-500 to-rose-600" },
-              { id: "Diapositiva 16", title: "Fun Quiz! 2/3 / Divertido Quiz! 2/3", content: ["Usain Bolt is the _______ man in history."], options: ["faster", "fastest", "most fast"], correctOptionIndex: 1, imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-rose-500 to-red-600" },
-              { id: "Diapositiva 17", title: "Fun Quiz! 3/3 / Divertido Quiz! 3/3", content: ["I think Science Fiction movies are _______ than Romantic movies."], options: ["most interesting", "interesting", "more interesting"], correctOptionIndex: 2, imageUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-red-500 to-orange-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Comparativos and superlativos: apps, celulares, películas and Sports."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Hobby Boss",
-                                    bossTitle: "Comparativos and superlativos: apps, celulares, películas and Sports",
-                                    bossAvatar: "🎮",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to comparativos and superlativos: apps, celulares, películas and sports."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about comparativos and superlativos: apps, celulares, películas and sports using hobbies: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Comparativos and superlativos: apps, celulares, películas and Sports. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Comparativos and superlativos: apps, celulares, películas and Sports, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 18", title: "Roleplay/Share / Juego de Roles/Share", content: [
-                  "Let's say that you and a classmate are discussing Comparativos and superlativos: apps, celulares, películas and Sports, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Comparativos and superlativos: apps, celulares, películas and Sports.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Comparativos and superlativos: apps, celulares, películas and Sports?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-500 to-yellow-600" }
+              {
+                id: "Diapositiva 14",
+                title: "Ultimate Showdown Wheel / Ruleta de enfrentamiento final",
+                description: "Spin and deliver a 45-second comparative review between the two contenders.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Compare both options.", "Use better, faster, or the most."],
+                imageUrl: "/images/teens-basic-4-class-06/slide-14-speaking-wheel-showdowns.jpg",
+                wheelItems: [
+                  { label: "Console vs PC", color: "#EF4444", prompt: "Which is more convenient: gaming console or gaming desktop PC?", es: "¿Que es mas comodo: consola o PC gamer?" },
+                  { label: "Headphones vs Earbuds", color: "#F59E0B", prompt: "Which provides the best audio: over-ear headphones or compact earbuds?", es: "¿Cual tiene mejor audio: audifonos de diadema o in-ear?" },
+                  { label: "Marvel vs Anime", color: "#10B981", prompt: "Which has the most creative animation: superhero films or anime series?", es: "¿Cual tiene animacion mas creativa: peliculas de heroes o anime?" },
+                  { label: "Basketball vs Football", color: "#3B82F6", prompt: "Which sport is more intense to watch live in a stadium?", es: "¿Que deporte es mas intenso en vivo en el estadio?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "What is the comparative form of the irregular adjective 'bad'?",
+                content: ["What is the comparative of 'bad'?"],
+                options: ["worse", "baddest", "more bad"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-06/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "How do you form the superlative for a 3-syllable adjective like 'expensive'?",
+                content: ["How to form superlative of 'expensive'?"],
+                options: ["the most expensive", "expensivest", "more expensive"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-06/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "Complete: 'This wireless speaker is not ______ loud ______ that studio monitor.'",
+                content: ["Complete the equality structure."],
+                options: ["as / as", "more / than", "so / than"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-06/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Comparison Boss",
+                description: "Defeat the Boss using comparative and superlative adjectives to deliver a sharp review!",
+                type: "speaking-boss-battle",
+                content: ["Use -er than, more than, the -est, the most, better, and best."],
+                imageUrl: "/images/teens-basic-4-class-06/slide-18-boss-battle-comparative-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Comparison Boss",
+                  bossTitle: "Comparatives & Superlatives",
+                  bossAvatar: "⚡",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say three comparative forms (faster, more powerful, better) and three superlatives (the fastest, the most exciting, the best)."],
+                    use: ["Make three sentences: one comparing two gadgets (-er than), one comparing two sports (more... than), and one declaring the #1 (the best / the most)."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds comparing two smartphones, movies, or athletes, and declaring the undisputed number one.",
+                      "Example to guide you: 'When comparing the Pro laptop with the Air laptop, the Pro is noticeably heavier, but it is much more powerful for 4K video editing. In contrast, the Air is lighter, more portable, and easier to carry to high school every day. Overall, for students on the move, the Air is the best choice!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Tech Review YouTube Roleplay / Juego de roles de reseña tecnológica",
+                description: "Roleplay two tech reviewers co-hosting a YouTube gadget review episode.",
+                type: "roleplay",
+                content: [
+                  "Let's say that you and a classmate are co-hosting a tech YouTube channel and comparing two popular smartphones to help your viewers decide which one to buy.",
+                  "Student A: Present Phone X, highlighting that it is cheaper and lighter.",
+                  "Student B: Present Phone Y, highlighting that it has a more powerful processor and the best camera.",
+                  "A: 'Welcome back tech fans! Today we compare Phone X and Phone Y. Phone X is lighter and more affordable than Phone Y.'",
+                  "B: 'That is true, but Phone Y is much more powerful and features the most advanced camera sensor on the market!'",
+                  "A: 'Which phone has longer battery life during intensive gaming?'",
+                  "B: 'Phone Y lasts longer, making it the best overall device for power users!'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-06/slide-19-tech-review-podcast-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Presentar reseñas en parejas usando comparativos y superlativos."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de una reseña comparativa.",
             slides: [
-              { id: "Diapositiva 19", title: "Class Complete! / Clase Completa!", content: ["Excellent job today!", "You are the best students!", "Keep practicing comparing things around you."], imageUrl: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
-              { id: "Diapositiva 20", title: "Homework / Tarea", type: "homework", content: ["Write 5 sentences using comparatives comparing two sports.", "Write 5 sentences using superlatives talking about your family (e.g. who is the tallest).", "Bring them to the next class!"], imageUrl: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "Diapositiva 21", title: "Video Homework 📹 / Tarea en Video 📹", type: "video", content: ["Watch this video about comparing smartphones.", "Write down 3 comparatives and 2 superlatives you hear in the video.", "Be ready to share them next class!"], videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw", imageUrl: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Mastered Comparatives & Superlatives! 🏆 / ¡Clase Completa! 🏆",
+                description: "You learned how to compare items with -er/more and rank the #1 with -est/the most!",
+                content: ["I can compare two items using '-er than' and 'more than'.", "I can identify the #1 item using 'the -est' and 'the most'.", "I know irregular forms (better, best, worse, worst)."],
+                imageUrl: "/images/teens-basic-4-class-06/slide-20-class-complete-comparatives.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write a 5-sentence comparative review comparing two gadgets, movies, or athletes.",
+                type: "homework",
+                content: ["Choose two items to compare (e.g., PlayStation vs Nintendo Switch, or Two Favorite Movies).", "Write 5 sentences using at least two comparatives, two superlatives, and one irregular form (better/best).", "Upload your review to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-06/slide-21-homework-comparative-review.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to comparative and superlative adjectives in real contexts.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/5aC74F4uNfQ",
+                content: ["Watch the video lesson about comparatives and superlatives.", "Write down 3 comparatives and 2 superlatives mentioned in the video.", "Share them with the class in next warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-06/slide-08-model-comparative-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar la reseña comparativa."
           }
         ]
       },
       {
         id: "c-teens-basic-4-7",
-        title: "Clase 7: Too / enough para problemas y soluciones",
-        description: "A fun and interactive class for teens.",
+        title: "Class 7: Too & Enough: Problems and Solutions / Clase 7: Too y Enough para Problemas y Soluciones",
+        description: "Teens master expressing excess ('too + adjective'), sufficiency ('adjective + enough'), and quantity limits ('enough + noun') to describe everyday dilemmas and propose smart solutions.",
         duration: "60 mins",
-        objective: "Master the topic of Too / enough para problemas y soluciones.",
+        objective: "Describe problems using 'too + adjective' and 'not enough + noun', identify sufficiency with 'adjective + enough', and present practical solutions.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar el vocabulario de dilemas cotidianos usando too y enough.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Opinion", color: "#EF4444", prompt: "What is your opinion?", es: "Cual es tu opinion?" }, { label: "Agree", color: "#F59E0B", prompt: "What topic do you agree with?", es: "Con que tema estas de acuerdo?" }, { label: "Tip", color: "#10B981", prompt: "What easy tip can you give?", es: "Que consejo facil puedes dar?" }, { label: "If", color: "#3B82F6", prompt: "If you had free time, what would you do?", es: "Si tuvieras tiempo, que harias?" }, { label: "Maybe", color: "#8B5CF6", prompt: "What might happen this week?", es: "Que podria pasar esta semana?" }, { label: "Solution", color: "#EC4899", prompt: "What solution sounds simple?", es: "Que solucion suena simple?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Too / enough para problemas y soluciones.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 7: Too & Enough! 💡 / ¡Bienvenida a la Clase 7! 💡",
+                description: "Problems, Excess, Sufficiency & Solutions",
+                content: ["Welcome back, Teen Pros!", "Today we tackle everyday teen problems and find smart solutions.", "Learn how to use 'too' for excess and 'enough' for sufficiency in English!"],
+                imageUrl: "/images/teens-basic-4-class-07/slide-01-welcome-too-enough.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Everyday Dilemmas Wheel / Ruleta de dilemas diarios",
+                description: "Spin and describe the situation using too or not enough.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Read the dilemma.", "Propose a solution using enough or too."],
+                imageUrl: "/images/teens-basic-4-class-07/slide-02-warmup-wheel-too-enough.jpg",
+                wheelItems: [
+                  { label: "Phone Storage", color: "#EF4444", prompt: "Your phone says 'Storage Full'. Do you have enough gigabytes?", es: "¿Tienes suficiente memoria en tu celular?" },
+                  { label: "Noisy Room", color: "#F59E0B", prompt: "Your room is too noisy for studying. What do you do?", es: "¿Tu habitacion es demasiado ruidosa para estudiar. Que haces?" },
+                  { label: "Concert Ticket", color: "#10B981", prompt: "The concert ticket is too expensive. Can you save enough money?", es: "¿El boleto es muy caro. Puedes ahorrar suficiente dinero?" },
+                  { label: "School Morning", color: "#3B82F6", prompt: "Are you energetic enough when you wake up at 6:00 AM?", es: "¿Tienes suficiente energia a las 6:00 AM?" },
+                  { label: "Cold Weather", color: "#8B5CF6", prompt: "Is it warm enough today to go skateboarding in the park?", es: "¿Esta suficientemente calido para patinar?" },
+                  { label: "Heavy Bag", color: "#EC4899", prompt: "Your school backpack is too heavy. What items do you remove?", es: "¿Tu mochila es demasiado pesada. Que cosas sacas?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can express limits and solutions with precision.",
+                content: ["Use 'too + adjective' to express excess or negative problems (too loud, too expensive).", "Use 'adjective + enough' to express sufficiency (fast enough, old enough).", "Use 'enough + noun' and 'not enough + noun' (enough time, not enough space)."],
+                imageUrl: "/images/teens-basic-4-class-07/slide-03-objectives-too-enough.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Compartir dilemas cotidianos y proponer soluciones."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender las tres posiciones clave de too y enough.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Excess: Too + Adjective / Demasiado (problema o exceso)",
+                description: "'Too' goes BEFORE the adjective and usually implies a negative issue.",
+                content: ["Formula: too + adjective (+ to + verb)", "This backpack is too heavy to carry. = Esta mochila es demasiado pesada para cargar.", "The coffee is too hot to drink. = El café está demasiado caliente para tomar.", "It is too late to start a movie now. = Es demasiado tarde para empezar una película."],
+                imageUrl: "/images/teens-basic-4-class-07/slide-04-too-adjective-rules.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Sufficiency: Adjective + Enough / Suficientemente (después del adjetivo)",
+                description: "'Enough' goes AFTER the adjective to indicate adequacy.",
+                content: ["Formula: adjective + enough (+ to + verb)", "He is tall enough to reach the top shelf. = Es suficientemente alto para alcanzar el estante.", "Are you confident enough to give the speech? = ¿Estás suficientemente seguro para dar el discurso?", "Negative: not + adj + enough (The Wi-Fi is not fast enough for streaming 4K video.)"],
+                imageUrl: "/images/teens-basic-4-class-07/slide-05-adjective-enough-rules.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Quantity: Enough + Noun / Suficiente cantidad (antes del sustantivo)",
+                description: "'Enough' goes BEFORE countable or uncountable nouns.",
+                content: ["Formula: enough + noun", "I have enough money to buy the headset. = Tengo suficiente dinero para comprar los audífonos.", "We don't have enough time before the bell rings. = No tenemos suficiente tiempo antes del timbre.", "Do we have enough chairs for all our guests? = ¿Tenemos suficientes sillas para todos?"],
+                imageUrl: "/images/teens-basic-4-class-07/slide-06-enough-noun-rules.jpg",
+                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Too Much vs Too Many / Demasiada cantidad",
+                description: "Distinguish between uncountable and countable excess.",
+                content: ["Too much + Uncountable noun: 'I have too much homework tonight!' (demasiada tarea)", "Too many + Plural Countable noun: 'There are too many notifications on my screen!' (demasiadas notificaciones)", "Proposing solutions: 'Let's take a 10-minute break to clear our minds.'"],
+                imageUrl: "/images/teens-basic-4-class-07/slide-07-problem-solution-pairs.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Problem-Solving Speech / Discurso modelo de resolución",
+                description: "Read this sample proposal for fixing school study areas.",
+                content: ["Our main cafeteria is often too noisy during lunch hours, and there are not enough quiet study rooms in the library.", "Because the desks are not big enough for group laptops, we propose converting the old art hall into a collaborative tech workspace.", "With enough power outlets and comfortable chairs, students will work much more effectively!"],
+                imageUrl: "/images/teens-basic-4-class-07/slide-08-model-too-enough-speech.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y dominar la posición de too y enough."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Identificar la posición correcta de too y enough en ejercicios.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-7-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Opinions: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["💡 + 👍 + 💬"],
-                    options: ["She has a red backpack.", "I think it is a good idea.", "Turn right at the park."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Maya and Noah's Dialogue / Lee el diálogo de organización",
+                description: "Notice how they manage party space and budget.",
+                content: ["Maya: Is this venue big enough to host fifty students?", "Noah: Yes, but the sound system is too quiet for the whole room.", "Maya: Do we have enough budget to rent two extra speakers?", "Noah: If we all contribute five dollars, we will have more than enough!"],
+                imageUrl: "/images/teens-basic-4-class-07/slide-09-context-dialogue-problems.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 to-lime-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Identify Excess (1/3)",
+                description: "This new gaming monitor is ______ expensive for my current allowance.",
+                content: ["The monitor is ______ expensive for my budget."],
+                options: ["too", "enough", "many"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-07/slide-10-too-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Position After Adjective (2/3)",
+                description: "Is the water warm ______ for us to go swimming in the outdoor pool?",
+                content: ["Is the water warm ______ to swim?"],
+                options: ["enough", "too", "much"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-07/slide-11-enough-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Quantity Before Noun (3/3)",
+                description: "We don't have ______ memory on this flash drive to save the 4K video file.",
+                content: ["We don't have ______ memory for the video."],
+                options: ["enough", "too", "enough of"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-07/slide-12-noun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-cyan-700"
+              },
+              {
+                id: "c-teens-basic-4-7-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Smart Solution story.",
+                type: "emoji-game",
+                content: ["💡 + 👍 + ⏰ + 🧩"],
+                options: ["We didn't have enough time to finish the puzzle, but we found a smart solution and solved it together.", "I brushed my teeth after eating dinner.", "The yellow bus turned left at the supermarket."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-07/slide-13-emoji-too-enough-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver las preguntas y verificar el orden de las palabras."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Exponer problemas y soluciones en vivo y superar el Boss Battle.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Too and Enough for Excess and Sufficiency."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Too and Enough for Excess and Sufficiency",
-                                    bossAvatar: "⚔️",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to too and enough for excess and sufficiency."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about too and enough for excess and sufficiency using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Problem Solver Wheel / Ruleta de resolución de problemas",
+                description: "Spin and formulate the problem with 'too' and the solution with 'enough'.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "State the problem (too...).", "Propose a solution (enough...)."],
+                imageUrl: "/images/teens-basic-4-class-07/slide-14-speaking-wheel-dilemmas.jpg",
+                wheelItems: [
+                  { label: "Slow Wi-Fi", color: "#EF4444", prompt: "The Wi-Fi is too slow during online class. What solution do you propose?", es: "¿El Wi-Fi es muy lento. Que solucion propones?" },
+                  { label: "Overpacked Schedule", color: "#F59E0B", prompt: "You have too many extracurricular activities. How do you find enough rest?", es: "¿Tienes demasiadas actividades. Como descansas lo suficiente?" },
+                  { label: "Small Desk", color: "#10B981", prompt: "Your study desk is not big enough for 3 monitors. How do you organize it?", es: "¿Tu escritorio no es suficientemente grande. Como lo organizas?" },
+                  { label: "Expensive Concert", color: "#3B82F6", prompt: "A festival ticket is too expensive. How can your group raise enough funds?", es: "¿El boleto es muy costoso. Como recaudan fondos suficientes?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "Where does 'enough' go when modifying an adjective like 'strong'?",
+                content: ["Where does 'enough' go with adjectives?"],
+                options: ["AFTER the adjective (strong enough)", "BEFORE the adjective (enough strong)", "At the end of every sentence"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-07/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "Which sentence correctly describes having too many tasks?",
+                content: ["Which sentence is correct?"],
+                options: ["I have too many assignments to finish tonight.", "I have too much assignments to finish tonight.", "I have assignments enough too finish."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-07/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "What does 'The movie was too boring to watch' mean?",
+                content: ["What does 'too boring to watch' mean?"],
+                options: ["The movie was so boring that we could not finish watching it.", "The movie was very exciting and we loved it.", "The movie was short enough."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-07/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Dilemma Solver Boss",
+                description: "Defeat the Boss using 'too' and 'enough' to describe a problem and present a smart solution!",
+                type: "speaking-boss-battle",
+                content: ["Use too + adj, adj + enough, and enough + noun."],
+                imageUrl: "/images/teens-basic-4-class-07/slide-18-boss-battle-too-enough-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Dilemma Solver Boss",
+                  bossTitle: "Too & Enough: Problems & Solutions",
+                  bossAvatar: "💡",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say three phrases with 'too' (too loud, too expensive, too late) and three with 'enough' (fast enough, enough time, enough money)."],
+                    use: ["Make three sentences: one with too + adj, one with not + adj + enough, and one with enough + noun."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds describing a common school or hobby problem using 'too' and 'enough', and presenting your solution.",
+                      "Example to guide you: 'Last week, our computer lab was too crowded and there weren\\'t enough working laptops for everyone in our coding club. Because the Wi-Fi wasn\\'t fast enough, we decided to pair up two students per laptop. This solved our hardware problem and actually helped us collaborate much better!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "School Event Budgeting / Juego de roles de presupuesto",
+                description: "Roleplay two students budgeting a school end-of-year festival.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that you and a classmate are budgeting a school party and deciding if you have enough money and space for the music equipment.",
+                  "Student A: Explain that the main hall is too small and the DJ is too expensive.",
+                  "Student B: Propose an alternative venue and check if you have enough funds.",
+                  "A: 'I checked the auditorium, but it is too small for 200 students and the rental is too expensive.'",
+                  "B: 'What if we use the open sports courtyard? Is it spacious enough for our stage?'",
+                  "A: 'Yes! And do we have enough money for lighting and sound speakers?'",
+                  "B: 'If we sell tickets for four dollars, we will have more than enough budget!'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-07/slide-19-event-planning-budget-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Resolver problemas de presupuesto en parejas."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de problemas y soluciones.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Mastered Too & Enough! 🏆 / ¡Clase Completa! 🏆",
+                description: "You learned how to pinpoint excess with 'too' and adequacy with 'enough'!",
+                content: ["I know how to use 'too + adjective' for problems.", "I know 'adjective + enough' for sufficiency.", "I know 'enough + noun' for quantity."],
+                imageUrl: "/images/teens-basic-4-class-07/slide-20-class-complete-too-enough.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write 5 problem-and-solution sentences using 'too' and 'enough'.",
+                type: "homework",
+                content: ["Write 5 complete sentences about real situations at home, school, or sports (e.g., 'My room was too messy, so I spent enough time organizing it.').", "Use both 'too + adj' and 'adj + enough'.", "Upload your sentences to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-07/slide-21-homework-too-enough-solutions.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to 'too' and 'enough' in everyday conversations.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/a9hVGBmFqgE",
+                content: ["Watch the video lesson about Too and Enough rules.", "Write down 3 example sentences from the video.", "Share them with the class in next warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-07/slide-08-model-too-enough-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar las 5 soluciones."
           }
         ]
       },
       {
         id: "c-teens-basic-4-8",
-        title: "Class 8: Consejos entre amigos with should / Clase 8: Consejos entre amigos con should",
-        description: "A fun and interactive class for teens.",
+        title: "Class 8: Giving Advice to Friends (Should, Shouldn't & Ought to) / Clase 8: Consejos entre Amigos",
+        description: "Teens master giving empathetic and actionable advice to peers using 'should', 'shouldn't', 'ought to', 'had better', and 'If I were you, I would...'.",
         duration: "60 mins",
-        objective: "Master the topic of Consejos entre amigos con should.",
+        objective: "Give and ask for advice politely, use modal verbs (should, shouldn't, ought to, had better), and provide structured recommendations for teen lifestyle challenges.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar el lenguaje empático y de apoyo entre compañeros.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Family", color: "#EF4444", prompt: "Who lives in your home?", es: "Quien vive en tu casa?" }, { label: "Funny", color: "#F59E0B", prompt: "Who is funny in your family?", es: "Quien es divertido en tu familia?" }, { label: "Talk", color: "#10B981", prompt: "Who do you talk to every day?", es: "Con quien hablas cada dia?" }, { label: "Size", color: "#3B82F6", prompt: "Is your family big or small?", es: "Tu familia es grande o pequena?" }, { label: "Pet", color: "#8B5CF6", prompt: "Who has a pet at home?", es: "Quien tiene mascota en casa?" }, { label: "Friend", color: "#EC4899", prompt: "Who is your best friend?", es: "Quien es tu mejor amigo?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Consejos entre amigos con should.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 8: Giving Advice to Friends! 🤝 / ¡Bienvenida a la Clase 8! 🤝",
+                description: "Peer Advice, Empathy & Modal Verbs",
+                content: ["Welcome back, Teen Pros!", "Today we become supportive advisors and trusted friends.", "Learn how to give great advice using 'should', 'ought to', and 'had better' in English!"],
+                imageUrl: "/images/teens-basic-4-class-08/slide-01-welcome-advice-friends.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Friendship Dilemmas Wheel / Ruleta de dilemas entre amigos",
+                description: "Spin and offer a thoughtful piece of advice using 'You should...'.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Hear your friend's problem.", "Give one clear recommendation."],
+                imageUrl: "/images/teens-basic-4-class-08/slide-02-warmup-wheel-advice.jpg",
+                wheelItems: [
+                  { label: "Exam Stress", color: "#EF4444", prompt: "A friend is stressed before finals. What advice do you give?", es: "¿Un amigo esta estresado por examenes. Que le aconsejas?" },
+                  { label: "Friend Argument", color: "#F59E0B", prompt: "Two friends had a misunderstanding. How should they resolve it?", es: "¿Dos amigos discutieron. Como deberian resolverlo?" },
+                  { label: "Audition Fear", color: "#10B981", prompt: "Your best friend wants to audition for the play but feels nervous. What do you say?", es: "¿Tu amigo tiene miedo a una audicion. Que le dices?" },
+                  { label: "Time Management", color: "#3B82F6", prompt: "A classmate stays up until 3:00 AM on social media. What is your tip?", es: "¿Un companero duerme tarde por redes. Cual es tu consejo?" },
+                  { label: "Trying New Sports", color: "#8B5CF6", prompt: "A friend wants to start skateboarding or tennis. How do you encourage them?", es: "¿Un amigo quiere empezar un deporte. Como lo animas?" },
+                  { label: "Choosing a Major", color: "#EC4899", prompt: "How should high schoolers explore future career options?", es: "¿Como deberian explorar carreras los estudiantes?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can offer supportive advice with varied modal structures.",
+                content: ["Give recommendations with 'should' and 'shouldn't'.", "Use 'ought to' and 'had better' for stronger advice and warnings.", "Express empathetic advice with 'If I were you, I would...'."],
+                imageUrl: "/images/teens-basic-4-class-08/slide-03-objectives-advice.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Ofrecer consejos a amigos y compañeros en inglés."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender los diferentes niveles de consejos con modales.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Gentle Advice: Should & Shouldn't / Consejos suaves con Should",
+                description: "Used for general good ideas and recommendations.",
+                content: ["Formula: Subject + should / shouldn't + Base Verb", "You should get at least 8 hours of sleep before the big test. = Deberías dormir al menos 8 horas antes del examen.", "You shouldn't spend all weekend scrolling on your phone without going outside. = No deberías pasar todo el fin de semana en el celular.", "Question: What should I do about my science project?"],
+                imageUrl: "/images/teens-basic-4-class-08/slide-04-should-shouldnt-rules.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "Strong Advice: Ought To & Had Better / Consejos fuertes y advertencias",
+                description: "'Ought to' expresses moral duty, while 'had better' warns of consequences.",
+                content: ["Ought to: 'You ought to apologize to your brother.' = Deberías disculparte con tu hermano.", "Had better (You'd better): 'You had better submit your essay today or you will lose points!' = ¡Será mejor que envíes tu ensayo hoy o perderás puntos!", "Rule: 'Had better' carries a subtle warning of negative consequences!"],
+                imageUrl: "/images/teens-basic-4-class-08/slide-05-ought-to-had-better.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Empathetic Advice: If I Were You... / Si yo fuera tú...",
+                description: "Put yourself in your friend's shoes using Second Conditional phrasing.",
+                content: ["Formula: If I were you, I would + Base Verb", "If I were you, I would talk to the coach directly after practice. = Si yo fuera tú, hablaría con el entrenador directamente después de la práctica.", "If I were you, I wouldn't worry so much about other people's opinions. = Si yo fuera tú, no me preocuparía tanto por las opiniones ajenas."],
+                imageUrl: "/images/teens-basic-4-class-08/slide-06-if-i-were-you.jpg",
+                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Softening Expressions & Asking / Frases para suavizar sugerencias",
+                description: "How to sound polite, friendly, and non-judgmental.",
+                content: ["'Why don't you try taking a short 10-minute walk?' = ¿Por qué no intentas dar un paseo de 10 minutos?", "'Have you considered making a study schedule?' = ¿Has considerado hacer un horario de estudio?", "'If you ask me, taking a break is the healthiest option.' = Si me preguntas, tomar un descanso es la opción más sana."],
+                imageUrl: "/images/teens-basic-4-class-08/slide-07-giving-receiving-advice-phrases.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Advice Column Speech / Discurso modelo de consejería",
+                description: "Read this sample response to a student struggling with presentation fear.",
+                content: ["When a classmate tells me they are terrified of public speaking, I always say: 'You should practice your speech in front of a mirror three times.'", "If I were you, I would record myself on my phone to check my body language and pacing.", "You'd better arrive five minutes early to test the microphone so you feel totally in control!"],
+                imageUrl: "/images/teens-basic-4-class-08/slide-08-model-advice-speech.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y practicar la pronunciación de should, ought to y had better."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Identificar y aplicar el modal adecuado según el nivel de consejo.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-8-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Family and home: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["👪 + 🏠 + ❤️"],
-                    options: ["The bus is late.", "I love my family at home.", "I eat fries every day."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Carlos and Sofia's Dialogue / Lee el diálogo de apoyo",
+                description: "Notice how Carlos encourages Sofia before her audition.",
+                content: ["Sofia: I really want to join the school drama club, but I'm afraid I will forget my lines on stage!", "Carlos: If I were you, I would audition anyway! You shouldn't let fear stop you.", "Sofia: What should I do the morning of the audition?", "Carlos: You ought to do deep breathing exercises and arrive early. You'd better drink warm tea to soothe your voice!"],
+                imageUrl: "/images/teens-basic-4-class-08/slide-09-context-dialogue-advice.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 to-lime-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Best Recommendation (1/3)",
+                description: "You have a slight headache. You ______ drink a glass of water and rest your eyes.",
+                content: ["You have a headache. You ______ drink water."],
+                options: ["should", "must not", "would rather"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-08/slide-10-should-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Identify Urgent Warning (2/3)",
+                description: "The bus leaves in 3 minutes! We ______ run or we will miss the departure!",
+                content: ["The bus leaves in 3 minutes! We ______ run."],
+                options: ["had better", "should to", "ought"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-08/slide-11-had-better-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Complete the Conditional Advice (3/3)",
+                description: "If I ______ you, I would talk to the teacher about an extension.",
+                content: ["If I ______ you, I would talk to the teacher."],
+                options: ["were", "am", "was to"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-08/slide-12-if-i-were-you-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-cyan-700"
+              },
+              {
+                id: "c-teens-basic-4-8-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the True Friendship story.",
+                type: "emoji-game",
+                content: ["❤️ + 🤝 + 💡 + 🛡️"],
+                options: ["When a friend feels stressed, we should listen with empathy, offer good advice, and protect our friendship.", "I bought a blue bicycle at the sports store.", "We ate sandwiches during the biology class."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-08/slide-13-emoji-advice-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver las preguntas y fundamentar las opciones de consejo."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Simular sesiones de consejería entre pares y superar el Boss Battle.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Modal Verbs for Advice."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Modal Verbs for Advice",
-                                    bossAvatar: "⚔️",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to modal verbs for advice."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about modal verbs for advice using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Peer Counseling Hot-Seat / Ruleta de consejería juvenil",
+                description: "Spin and give 45 seconds of structured advice to your partner.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Listen to the dilemma.", "Give advice with should, ought to, and If I were you."],
+                imageUrl: "/images/teens-basic-4-class-08/slide-14-speaking-wheel-advice-dilemmas.jpg",
+                wheelItems: [
+                  { label: "Overwhelmed with Homework", color: "#EF4444", prompt: "A friend has 4 projects due on the same day. What advice do you give?", es: "¿Un amigo tiene 4 entregas el mismo dia. Que le aconsejas?" },
+                  { label: "Nervous Athlete", color: "#F59E0B", prompt: "A teammate is terrified before the championship final. How do you motivate them?", es: "¿Un companero de equipo tiene miedo a la final. Como lo motivas?" },
+                  { label: "Social Media Drama", color: "#10B981", prompt: "Someone posted an embarrassing photo in a class group. What should your friend do?", es: "¿Publicaron una foto incomoda en un grupo. Que deberia hacer tu amigo?" },
+                  { label: "Balancing Hobbies", color: "#3B82F6", prompt: "A classmate wants to learn guitar but doesn't have time. What is your recommendation?", es: "¿Un companero quiere aprender guitarra pero no tiene tiempo. Que recomiendas?" }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "Which modal verb carries a strong warning of negative consequences?",
+                content: ["Which modal implies a warning?"],
+                options: ["had better", "might", "could"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-08/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "What follows the modal 'ought' when giving advice?",
+                content: ["What follows 'ought'?"],
+                options: ["to + Base Verb (ought to do)", "ing (ought doing)", "ed (ought done)"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-08/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "Complete: 'Why ______ you take a 15-minute break and drink some water?'",
+                content: ["Complete the polite suggestion."],
+                options: ["don't", "aren't", "haven't"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-08/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Wise Mentor Boss",
+                description: "Defeat the Boss by giving empathetic, well-structured advice to a friend under pressure!",
+                type: "speaking-boss-battle",
+                content: ["Use should, shouldn't, ought to, had better, and If I were you."],
+                imageUrl: "/images/teens-basic-4-class-08/slide-18-boss-battle-advice-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Wise Mentor Boss",
+                  bossTitle: "Giving Advice to Friends",
+                  bossAvatar: "🤝",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say three advice expressions (you should, you ought to, you'd better, if I were you)."],
+                    use: ["Make three sentences: one with should, one with had better, and one with 'If I were you...'."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds giving 3 empathetic pieces of advice to a friend struggling with exam anxiety.",
+                      "Example to guide you: 'If a friend is feeling overwhelmed by upcoming exams, I would first tell them that they shouldn\\'t panic. You should break your study sessions into 25-minute blocks and take short walks to clear your mind. Also, you\\'d better get at least eight hours of good sleep before the test instead of pulling an all-nighter!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Peer Counseling Support / Juego de roles de consejería entre pares",
+                description: "Roleplay two friends discussing school stress and finding actionable solutions.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that you and a classmate are doing a peer-counseling session where one is feeling overwhelmed by homework and the other offers supportive advice.",
+                  "Student A: Share your stress about having multiple tests on Friday.",
+                  "Student B: Provide 3 supportive suggestions using 'should', 'had better', and 'If I were you'.",
+                  "A: 'I feel completely overwhelmed! I have a math quiz and a history paper due this Friday.'",
+                  "B: 'Take a deep breath! If I were you, I would make a clear checklist and tackle one task at a time.'",
+                  "A: 'Do you think I should study late into the night?'",
+                  "B: 'No, you shouldn\\'t! You\\'d better get enough sleep, otherwise you won\\'t focus during the test!'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-08/slide-19-peer-counseling-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Practicar consejería entre pares en inglés."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de una columna de consejos.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Are a Great Advisor! 🏆 / ¡Clase Completa: Eres un Gran Consejero! 🏆",
+                description: "You learned how to offer thoughtful advice with should, ought to, and had better!",
+                content: ["I know how to give advice with should and shouldn't.", "I can use ought to and had better for strong advice.", "I can use 'If I were you' with empathy."],
+                imageUrl: "/images/teens-basic-4-class-08/slide-20-class-complete-advice.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write an Advice Column response (5 sentences) to a teen dilemma.",
+                type: "homework",
+                content: ["Imagine a student asks: 'I am always tired in the morning and late for class. What should I do?'", "Write 5 sentences of advice using 'should', 'shouldn't', 'had better', and 'If I were you...'.", "Upload your advice letter to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-08/slide-21-homework-advice-letter.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to modal verbs of advice in real life.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/Pj1e71qD4hU",
+                content: ["Watch the video lesson about giving advice in English.", "Write down 3 advice sentences you hear in the video.", "Share them with the class in next warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-08/slide-08-model-advice-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar la carta de consejos."
           }
         ]
       },
       {
         id: "c-teens-basic-4-9",
-        title: "Class 9: Mensajes, emails and chats informales/formales / Clase 9: Mensajes, emails y chats informales/formales",
-        description: "A fun and interactive class for teens.",
+        title: "Class 9: Informal vs Formal Messages, Emails & Digital Tone / Clase 9: Mensajes, Emails y Tono Formal e Informal",
+        description: "Teens learn professional digital etiquette: writing structured academic emails, using polite requests (Could you please / I would appreciate), formal greetings and sign-offs, versus casual messaging with peers.",
         duration: "60 mins",
-        objective: "Master the topic of Mensajes, emails y chats informales/formales.",
+        objective: "Structure formal emails with clear subject lines, respectful salutations, polite request formulas, and professional sign-offs, while maintaining appropriate tone for different audiences.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Reconocer las diferencias entre mensajería informal con amigos y correos académicos o profesionales.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Shape", color: "#EF4444", prompt: "What shape do you see?", es: "Que forma ves?" }, { label: "Find", color: "#F59E0B", prompt: "Where can you find a circle?", es: "Donde puedes encontrar un circulo?" }, { label: "Draw", color: "#10B981", prompt: "Can you draw a triangle?", es: "Puedes dibujar un triangulo?" }, { label: "Pattern", color: "#3B82F6", prompt: "Do you like stripes or dots?", es: "Te gustan rayas o puntos?" }, { label: "Color", color: "#8B5CF6", prompt: "What color is the shape?", es: "De que color es la forma?" }, { label: "Object", color: "#EC4899", prompt: "What object has this shape?", es: "Que objeto tiene esta forma?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Mensajes, emails y chats informales/formales.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 9: Formal vs Informal Digital Tone! ✉️ / ¡Bienvenida a la Clase 9! ✉️",
+                description: "Academic Emails, Polite Requests & Professional Tone",
+                content: ["Welcome back, Teen Pros!", "Today we bridge the gap between casual texting and formal communication.", "Master how to write impactful academic emails, polite requests, and professional inquiries!"],
+                imageUrl: "/images/teens-basic-4-class-09/slide-01-welcome-formal-informal.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Communication Context Wheel / Ruleta de contextos de comunicación",
+                description: "Spin and decide: Should this message be Formal or Informal?",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Read the scenario.", "State whether it requires formal or informal style."],
+                imageUrl: "/images/teens-basic-4-class-09/slide-02-warmup-wheel-email-tone.jpg",
+                wheelItems: [
+                  { label: "High School Principal", color: "#EF4444", prompt: "You are writing to the school principal about a student club. Formal or Informal?", es: "¿Escribes al director sobre un club. Formal o informal?" },
+                  { label: "Gaming Discord", color: "#F59E0B", prompt: "You are coordinating a multiplayer gaming match with friends. Formal or Informal?", es: "¿Coordinas un juego con amigos. Formal o informal?" },
+                  { label: "Internship Inquiry", color: "#10B981", prompt: "You are applying for a summer volunteer internship. What tone should you use?", es: "¿Pides una pasantia voluntaria de verano. Que tono usas?" },
+                  { label: "Homework Submission", color: "#3B82F6", prompt: "You are submitting an essay attachment to your English teacher via email.", es: "¿Envias tu ensayo al profesor de ingles por correo." },
+                  { label: "Best Friend's Birthday", color: "#8B5CF6", prompt: "Inviting friends to your birthday party on WhatsApp.", es: "¿Invitas amigos a tu cumpleanos por WhatsApp." },
+                  { label: "University Workshop", color: "#EC4899", prompt: "Asking a university professor about attending a free weekend lecture.", es: "¿Preguntas a un profesor universitario sobre una charla." }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you can compose professional academic emails in English.",
+                content: ["Identify the essential 5 components of a formal email (Subject, Salutation, Purpose, Details, Sign-off).", "Use polite modal requests ('Could you please...', 'I would appreciate it if...').", "Avoid informal abbreviations (IDK, TBH, BRB) in formal contexts."],
+                imageUrl: "/images/teens-basic-4-class-09/slide-03-objectives-email-tone.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Distinguir entre registros formales e informales en inglés."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender la estructura y fórmulas de cortesía para correos formales.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Informal Chat vs Formal Email / Chat informal vs Correo formal",
+                description: "Observe the key contrasts in tone, vocabulary, and punctuation.",
+                content: ["Informal: 'Hey! Send me the slides RN 👍' (Casual, abbreviations, emoji)", "Formal: 'Dear Ms. Carter, Attached please find our presentation slides for tomorrow\\'s science review. Best regards, David.'", "Rule: Never use slang (u, rn, idk, omg) in professional academic emails!"],
+                imageUrl: "/images/teens-basic-4-class-09/slide-04-informal-chat-style.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "The 5 Anatomy Steps of a Formal Email / Los 5 pasos de un correo formal",
+                description: "Every professional email follows this standard structure.",
+                content: ["1. Clear Subject Line: 'Inquiry Regarding Science Fair Deadline - Emma Watson'", "2. Formal Salutation: 'Dear Mr. Miller,' / 'Dear Professor Adams,'", "3. Stating the Purpose: 'I am writing to inquire about / to submit...'", "4. Call to Action / Request: 'Could you please confirm if...'", "5. Professional Sign-off: 'Sincerely,' / 'Best regards,' followed by full name."],
+                imageUrl: "/images/teens-basic-4-class-09/slide-05-formal-email-structure.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Greetings and Sign-offs / Saludos y despedidas formales",
+                description: "Choose the right formula depending on how well you know the recipient.",
+                content: ["Formal Greetings: 'Dear Mr. Smith,' (men) / 'Dear Ms. Davis,' (women) / 'Dear Admissions Committee,' (team)", "Semi-Formal Greetings: 'Good morning Dr. Evans,'", "Formal Sign-offs: 'Sincerely,' (Sinceramente) / 'Best regards,' (Saludos cordiales) / 'Respectfully,' (Respetuosamente)"],
+                imageUrl: "/images/teens-basic-4-class-09/slide-06-greetings-closings-comparison.jpg",
+                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Polite Request Formulas / Fórmulas de petición educada",
+                description: "Use conditional modals (could, would) to sound polite and respectful.",
+                content: ["'Could you please let me know if...' = ¿Podría por favor hacerme saber si...?", "'I would appreciate it if you could review my draft.' = Le agradecería si pudiera revisar mi borrador.", "'Would it be possible to schedule a short 10-minute meeting?' = ¿Sería posible agendar una reunión corta?", "'Thank you in advance for your time and assistance.' = Gracias de antemano por su tiempo."],
+                imageUrl: "/images/teens-basic-4-class-09/slide-07-polite-requests-would-could.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Formal Email Walkthrough / Ejemplo modelo de correo formal",
+                description: "Read this full email written by a high school student to a coordinator.",
+                content: ["Subject: Request for Summer Science Workshop Syllabus - Emma Davis", "Dear Dr. Martinez,", "I am writing to express my strong interest in attending the upcoming summer robotics workshop. Could you please provide the course schedule and list of required software? I would appreciate it if you could confirm my registration.", "Thank you very much for your guidance.", "Sincerely, Emma Davis (Grade 10)."],
+                imageUrl: "/images/teens-basic-4-class-09/slide-08-model-email-speech.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y practicar la redacción de peticiones formales."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Identificar elementos de cortesía y corrección en correos electrónicos.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-9-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Shapes: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["🔴 + ◻️ + 🎨"],
-                    options: ["I like chicken and fries.", "I see a red circle and a square.", "He can ride a bike."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Emma and David's Draft Review / Lee la revisión de borrador",
+                description: "Notice how they refine their email to sound completely professional.",
+                content: ["David: 'I wrote: Hey Dr. Martinez, send me the info!'", "Emma: 'No David! That is too informal for a university professor.'", "David: 'How should I change it?'", "Emma: 'Write: Dear Dr. Martinez, I am writing to inquire about the program details. Could you please provide the syllabus? Best regards, David.'"],
+                imageUrl: "/images/teens-basic-4-class-09/slide-09-context-dialogue-email.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 to-lime-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Choose the Formal Greeting (1/3)",
+                description: "Which is the most appropriate greeting for a scholarship application email?",
+                content: ["Which is the appropriate greeting?"],
+                options: ["Dear Scholarship Committee,", "Hey what's up guys,", "Yo committee,"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-09/slide-10-formal-greeting-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Select the Polite Request (2/3)",
+                description: "How should you ask a teacher to check your attached essay?",
+                content: ["How to ask a teacher politely?"],
+                options: ["Could you please review my attached draft when you have a moment?", "Check this doc right now!", "Read my paper ASAP."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-09/slide-11-polite-request-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Identify the Professional Sign-off (3/3)",
+                description: "Which is a formal email closing phrase?",
+                content: ["Which is a formal sign-off?"],
+                options: ["Sincerely,", "Later dude,", "Cya,"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-09/slide-12-signoff-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-cyan-700"
+              },
+              {
+                id: "c-teens-basic-4-9-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Professional Achievement story.",
+                type: "emoji-game",
+                content: ["✉️ + 💻 + 🤝 + ⭐"],
+                options: ["We drafted a polite, professional email to our advisor, asked our question clearly, and received a helpful reply.", "I ate a burger with french fries at lunch.", "The soccer match started at seven o'clock."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-09/slide-13-emoji-email-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver las preguntas y evaluar registros de formalidad."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Simular redacción y presentación de correos formales y superar el Boss Battle.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Informal and Formal Messages, Emails & Chats."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Informal and Formal Messages, Emails & Chats",
-                                    bossAvatar: "⚔️",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to informal and formal messages, emails & chats."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about informal and formal messages, emails & chats using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Email Scenario Hot-Seat / Ruleta de situaciones de correo",
+                description: "Spin and deliver the opening lines of a formal email for this scenario.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "State the subject line.", "Deliver the formal greeting and opening sentence."],
+                imageUrl: "/images/teens-basic-4-class-09/slide-14-speaking-wheel-email-scenarios.jpg",
+                wheelItems: [
+                  { label: "Requesting Extension", color: "#EF4444", prompt: "You need 2 extra days for your history project due to illness. Formulate the email opening.", es: "¿Pides 2 dias mas por enfermedad. Formula la apertura." },
+                  { label: "Letter of Recommendation", color: "#F59E0B", prompt: "Ask your science teacher for a university recommendation letter.", es: "¿Pides carta de recomendacion a tu profesor." },
+                  { label: "Joining School Council", color: "#10B981", prompt: "Write to the student council president expressing your desire to join.", es: "¿Escribes al presidente del consejo estudiantil." },
+                  { label: "Workshop Inquiry", color: "#3B82F6", prompt: "Inquire about schedule and fees for an art and design summer camp.", es: "¿Pides informacion sobre un campamento de arte." }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "Why is a specific subject line essential in a formal academic email?",
+                content: ["Why is a clear subject line essential?"],
+                options: ["It informs the recipient immediately of the email's purpose and urgency.", "It makes the email look colorful.", "It is required to open attachments."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-09/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "What title is standard for an adult woman whose marital status is unspecified?",
+                content: ["What title is standard for adult women?"],
+                options: ["Ms. (e.g., Ms. Davis)", "Mrs.", "Miss"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-09/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "Complete: 'Thank you in ______ for your assistance.'",
+                content: ["Complete the polite closing phrase."],
+                options: ["advance", "before", "future"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-09/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Professional Email Boss",
+                description: "Defeat the Boss by delivering a flawless formal spoken email proposal in English!",
+                type: "speaking-boss-battle",
+                content: ["Use formal greetings, purpose statement, polite requests, and sign-offs."],
+                imageUrl: "/images/teens-basic-4-class-09/slide-18-boss-battle-email-master.jpg",
+                bgColor: "bg-gradient-to-br from-violet-700 via-fuchsia-700 to-red-600",
+                speakingBossBattle: {
+                  bossName: "The Professional Email Boss",
+                  bossTitle: "Informal vs Formal Messages & Emails",
+                  bossAvatar: "✉️",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say three formal greetings (Dear Mr., Dear Ms., Dear Professor) and three sign-offs (Sincerely, Best regards, Respectfully)."],
+                    use: ["Make three sentences: one stating purpose (I am writing to...), one polite request (Could you please...), and one thanking (Thank you in advance...)."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds delivering a professional spoken email message requesting permission for a high school club event.",
+                      "Example to guide you: 'Dear Principal Evans, I am writing on behalf of our student robotics club to request permission to use the main science lab this Saturday. We have prepared our project presentation and our advisor will supervise the entire rehearsal. Could you please let us know if the room is available? Thank you for your time and support. Sincerely, Jordan Lee.'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Workshop Inquiry Roleplay / Juego de roles de solicitud formal",
+                description: "Roleplay two students drafting and proofreading a formal application email.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that you and a classmate are drafting a formal inquiry email to a university admissions officer requesting information about a summer science workshop.",
+                  "Student A: Propose the subject line and formal opening greeting.",
+                  "Student B: Formulate the body paragraphs and polite request using 'Could you please...'.",
+                  "A: 'For the subject line: Summer Science Workshop Inquiry - Sofia Lopez. And greeting: Dear Dr. Jenkins,'",
+                  "B: 'Great! In the body: I am writing to express my interest in the upcoming biology workshop. Could you please send the application guidelines and scholarship details?'",
+                  "A: 'Excellent! And for the sign-off: Thank you in advance for your assistance. Sincerely, Sofia Lopez.'",
+                  "B: 'The tone is completely respectful, clear, and professional!'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-09/slide-19-internship-application-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Redactar y revisar correos formales en parejas."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Cerrar la clase y asignar la redacción de un correo formal académico.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Class Complete: You Mastered Professional Digital Tone! 🏆 / ¡Clase Completa! 🏆",
+                description: "You learned how to format academic emails, use polite requests, and choose the right register!",
+                content: ["I know how to structure a formal email.", "I can formulate polite requests with 'could' and 'would'.", "I know appropriate greetings and professional sign-offs."],
+                imageUrl: "/images/teens-basic-4-class-09/slide-20-class-complete-email.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Draft a 5-part formal academic email to a teacher or coordinator.",
+                type: "homework",
+                content: ["Write a complete formal email (Subject, Salutation, Purpose, Polite Request, and Sign-off).", "Topic: Requesting feedback on a research project or asking for an extension.", "Upload your drafted email to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-09/slide-21-homework-formal-email.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and practice listening to formal email etiquette and professional writing.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/5F_fN91Y5l0",
+                content: ["Watch the video lesson about writing professional English emails.", "Write down 3 useful formal phrases from the video.", "Share them with the class in next warm-up!"],
+                imageUrl: "/images/teens-basic-4-class-09/slide-08-model-email-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Anotar la tarea y redactar el correo formal académico."
           }
         ]
       },
       {
         id: "c-teens-basic-4-10",
-        title: "Class 10: Atención al cliente juvenil and evaluación of transición / Clase 10: Atención al cliente juvenil y evaluación de transición",
-        description: "A fun and interactive class for teens.",
+        title: "Class 10: Teen Leadership, Customer Service & Capstone Review / Clase 10: Liderazgo Juvenil, Atención al Cliente y Evaluación de Nivel 4",
+        description: "Teens synthesize their entire Level 4 mastery: professional customer service phrases, handling client complaints calmly, leading collaborative team projects, and delivering their Level 4 Grand Capstone presentation.",
         duration: "60 mins",
-        objective: "Master the topic of Atención al cliente juvenil y evaluación de transición.",
+        objective: "Apply professional customer service communication, resolve client dilemmas with empathy, lead team consensus, and deliver a comprehensive spoken capstone demonstrating Level 4 mastery.",
         sections: [
           {
             id: "s1",
             title: "1. Warm-up / 1. Calentamiento",
             duration: "10 minutos",
-            objective: "Romper el hielo y activar conocimientos previos.",
+            objective: "Activar habilidades de liderazgo juvenil, resolución de problemas y atención al cliente.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Important Topic.", imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
-              { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
-                  type: "spinning-wheel",
-                  content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
-                  wheelItems: [{ label: "Work", color: "#EF4444", prompt: "What makes work easier?", es: "Que facilita el trabajo?" }, { label: "Email", color: "#F59E0B", prompt: "What makes an email clear?", es: "Que hace claro un correo?" }, { label: "Client", color: "#10B981", prompt: "How do you greet a client?", es: "Como saludas a un cliente?" }, { label: "Problem", color: "#3B82F6", prompt: "What work problem is common?", es: "Que problema laboral es comun?" }, { label: "Meeting", color: "#8B5CF6", prompt: "Do you like short meetings?", es: "Te gustan las reuniones cortas?" }, { label: "Deal", color: "#EC4899", prompt: "What makes a good deal?", es: "Que hace bueno un trato?" }]
-            },
-              { id: "Diapositiva 3", title: "Objectives / Objetivos", description: "Master the topic of Atención al cliente juvenil y evaluación de transición.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
+              {
+                id: "Diapositiva 1",
+                title: "Welcome to Class 10: Level 4 Grand Capstone! 🎓 / ¡Bienvenida a la Clase 10! 🎓",
+                description: "Leadership, Customer Service & Level 4 Graduation",
+                content: ["Welcome to the Level 4 Grand Finale, Teen Pros!", "Today you demonstrate your leadership, customer service mastery, and overall English fluency.", "Deliver your capstone presentation and celebrate graduating from Level 4!"],
+                imageUrl: "/images/teens-basic-4-class-10/slide-01-welcome-capstone-leadership.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950"
+              },
+              {
+                id: "Diapositiva 2",
+                title: "Leadership & Service Wheel / Ruleta de liderazgo y servicio",
+                description: "Spin and solve the workplace or leadership challenge in 30 seconds.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Read the scenario.", "Respond with professional customer service phrasing."],
+                imageUrl: "/images/teens-basic-4-class-10/slide-02-warmup-wheel-leadership.jpg",
+                wheelItems: [
+                  { label: "Upset Client", color: "#EF4444", prompt: "A customer says their online order arrived damaged. What is your first sentence?", es: "¿Un cliente dice que su pedido llego danado. Que le dices?" },
+                  { label: "Team Disagreement", color: "#F59E0B", prompt: "Two team members have conflicting ideas for the project. How do you lead consensus?", es: "¿Dos companeros tienen conflicto de ideas. Como guias el consenso?" },
+                  { label: "Job Interview", color: "#10B981", prompt: "Describe your greatest strength when working in high school teams.", es: "¿Describe tu mayor fortaleza trabajando en equipo?" },
+                  { label: "Meeting Schedule", color: "#3B82F6", prompt: "How do you start an official student council meeting on time?", es: "¿Como inicias una reunion oficial a tiempo?" },
+                  { label: "Product Return", color: "#8B5CF6", prompt: "A buyer wants a refund without a receipt. How do you explain store policy politely?", es: "¿Un cliente pide reembolso sin recibo. Como explicas la politica?" },
+                  { label: "Level 4 Highlight", color: "#EC4899", prompt: "What was the most useful English topic you learned in Level 4?", es: "¿Cual fue el tema mas util que aprendiste en el Nivel 4?" }
+                ],
+                bgColor: "bg-gradient-to-br from-purple-700 via-pink-700 to-rose-700"
+              },
+              {
+                id: "Diapositiva 3",
+                title: "Objectives / Objetivos",
+                description: "By the end of this class, you graduate from Teen Level 4 with full honors.",
+                content: ["Master professional customer service communication and conflict resolution.", "Lead team meetings using collaborative leadership phrasing.", "Synthesize Level 4 grammar (Conditionals, Comparatives, Too/Enough, Modals of Advice)."],
+                imageUrl: "/images/teens-basic-4-class-10/slide-03-objectives-capstone.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 via-rose-600 to-amber-600"
+              }
             ],
-            action: "Participar en la discusión."
+            action: "Resolver situaciones de servicio al cliente y liderazgo en inglés."
           },
           {
             id: "s2",
             title: "2. Grammar / Vocabulary",
             duration: "20 minutos",
-            objective: "Presentar el tema principal.",
+            objective: "Aprender vocabulario de atención al cliente y repasar la gramática del Nivel 4.",
             slides: [
-              { id: "Diapositiva 4", title: "Important Topic / Important Topic", description: "Introduction to Important Topic.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-blue-400 to-cyan-500" },
-              { id: "Diapositiva 5", title: "Examples in Context / Examples in Context", description: "Let's read these phrases.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500" },
-              { id: "Diapositiva 6", title: "Vocabulary Words / Vocabulary Words", description: "Word 1, Word 2, Word 3", content: ["Word 1", " Word 2", " Word 3"], bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500" },
-              { id: "Diapositiva 7", title: "Grammar Structure / Grammar Structure", description: "How to form sentences.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-500" },
-              { id: "Diapositiva 8", title: "Practice Sentences / Práctica Sentences", description: "Repeat after the teacher.", content: ["Example A", "Example B"], bgColor: "bg-gradient-to-br from-green-500 to-lime-500" },
-              { id: "Diapositiva 9", title: "Pronunciation / Pronunciation", description: "Listen carefully.", content: ["Repeat: Example A"], bgColor: "bg-gradient-to-br from-lime-500 to-yellow-500" },
-              { id: "Diapositiva 10", title: "Quick Check / Quick Check", description: "Do you have any questions?", bgColor: "bg-gradient-to-br from-yellow-500 to-amber-500" }
+              {
+                id: "Diapositiva 4",
+                title: "Customer Service Phrases / Frases de atención al cliente",
+                description: "Essential phrases for welcoming clients and active listening.",
+                content: ["'Good morning! How may I assist you today?' = ¡Buenos días! ¿Cómo puedo ayudarle hoy?", "'I completely understand your frustration, and I apologize for the inconvenience.' = Entiendo su molestia y me disculpo por el inconveniente.", "'Let me check our system right away.' = Permítame verificar nuestro sistema de inmediato."],
+                imageUrl: "/images/teens-basic-4-class-10/slide-04-customer-service-phrases.jpg",
+                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
+              },
+              {
+                id: "Diapositiva 5",
+                title: "De-escalating Complaints & Solutions / Resolución de quejas",
+                description: "Turn negative customer experiences into positive outcomes.",
+                content: ["Step 1: Listen without interrupting.", "Step 2: Empathize ('Thank you for bringing this to our attention.').", "Step 3: Propose a clear solution ('I can offer an immediate replacement or a full refund. Which do you prefer?').", "Step 4: Confirm satisfaction ('Is there anything else I can do to assist you?')."],
+                imageUrl: "/images/teens-basic-4-class-10/slide-05-handling-complaints-calmly.jpg",
+                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
+              },
+              {
+                id: "Diapositiva 6",
+                title: "Collaborative Leadership Verbs / Verbos de liderazgo colaborativo",
+                description: "Key expressions for running successful team meetings.",
+                content: ["Delegate tasks = Asignar y delegar responsabilidades ('Let\\'s delegate the research to Maya.')", "Reach a consensus = Llegar a un acuerdo unánime ('Do we have a consensus on the deadline?')", "Meet a milestone = Cumplir una meta clave ('If we stay focused, we will meet our Friday milestone.')"],
+                imageUrl: "/images/teens-basic-4-class-10/slide-06-leadership-meeting-verbs.jpg",
+                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
+              },
+              {
+                id: "Diapositiva 7",
+                title: "Level 4 Grammar Master Recap / Resumen gramatical maestro",
+                description: "Review of all key structural pillars of Level 4.",
+                content: ["1. Zero Conditional: 'If water freezes, it turns into ice.' (Universal scientific facts)", "2. First Conditional: 'If I study hard, I will pass the exam.' (Future possibilities)", "3. Comparatives & Superlatives: 'faster than' / 'the most powerful' / 'better than'", "4. Too & Enough: 'too expensive' / 'fast enough' / 'enough time'", "5. Advice Modals: 'You should / ought to / had better / If I were you...'"],
+                imageUrl: "/images/teens-basic-4-class-10/slide-07-level4-grammar-master-recap.jpg",
+                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
+              },
+              {
+                id: "Diapositiva 8",
+                title: "Model Grand Capstone Speech / Discurso modelo de graduación",
+                description: "Read this inspiring speech demonstrating Level 4 communicative mastery.",
+                content: ["Throughout Level 4, I learned that effective communication requires both confidence and empathy.", "Whether I am writing a formal academic email to a university, coordinating a group science project with classmates, or resolving a customer problem calmly, I can now express my perspectives clearly.", "In the future, I will use English to lead international student initiatives and collaborate on global projects!"],
+                imageUrl: "/images/teens-basic-4-class-10/slide-08-model-capstone-speech.jpg",
+                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
+              }
             ],
-            action: "Tomar notas y repetir pronunciación."
+            action: "Tomar notas y repasar las estructuras de todo el Nivel 4."
           },
           {
             id: "s3",
-            title: "3. Practice / 3. Práctica",
+            title: "3. Practice & Concept Checking / 3. Práctica y comprensión",
             duration: "15 minutos",
-            objective: "Practicar de forma controlada.",
+            objective: "Comprobar el dominio de frases de servicio al cliente y gramática de Nivel 4.",
             slides: [
-              { id: "Diapositiva 11", title: "Exercise 1 / Exercise 1", description: "Fill in the blanks.", type: "grammar", bgColor: "bg-gradient-to-br from-orange-400 to-red-500" },
-              { id: "Diapositiva 12", title: "Exercise 2 / Exercise 2", description: "Match the columns.", type: "matching-game", bgColor: "bg-gradient-to-br from-red-500 to-rose-600" },
-              { id: "Diapositiva 13", title: "Exercise 3 / Exercise 3", description: "Choose the correct option.", type: "grammar", bgColor: "bg-gradient-to-br from-rose-500 to-pink-600" },
-              { id: "Diapositiva 14", title: "Exercise 4 / Exercise 4", description: "Correct the mistakes.", type: "grammar", bgColor: "bg-gradient-to-br from-pink-500 to-fuchsia-600" },
-              { id: "Diapositiva 15", title: "Review / Repaso", description: "Let's check the answers.", bgColor: "bg-gradient-to-br from-fuchsia-500 to-purple-600" },
-                {
-                    id: "c-teens-basic-4-10-emoji-mission",
-                    title: "Emoji Mission / Misión Emoji",
-                    description: "Business English: decode the emoji story",
-                    type: "emoji-game",
-                    content: ["📧 + 💼 + 🧑‍💼"],
-                    options: ["I have a green T-shirt.", "I sent a work email.", "We played soccer outside."],
-                    correctOptionIndex: 1,
-                    bgColor: "bg-gradient-to-br from-fuchsia-600 via-purple-600 to-indigo-700"
-                  }
+              {
+                id: "Diapositiva 9",
+                title: "Read Alex and Chloe's Customer Service Dialogue / Lee el diálogo de atención",
+                description: "Notice how Chloe handles a client whose book order was delayed.",
+                content: ["Alex: 'Excuse me! I ordered this chemistry textbook two weeks ago and it still hasn't arrived!'", "Chloe: 'Good morning sir. I apologize for the delay. May I have your order number so I can track it right now?'", "Alex: 'Here it is: #4829.'", "Chloe: 'Thank you. It arrived at our store this morning! Let me fetch it from the storage room immediately.'"],
+                imageUrl: "/images/teens-basic-4-class-10/slide-09-context-dialogue-service.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 to-lime-600"
+              },
+              {
+                id: "Diapositiva 10",
+                title: "Identify Customer Service Greeting (1/3)",
+                description: "What is the most professional way to greet a customer entering your store?",
+                content: ["What is the most professional greeting?"],
+                options: ["Good morning! How may I assist you today?", "What do you want?", "Wait a minute, I'm busy."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-10/slide-10-service-greeting-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-green-600 to-emerald-700"
+              },
+              {
+                id: "Diapositiva 11",
+                title: "Handle a Client Complaint (2/3)",
+                description: "How should you respond when a customer is dissatisfied with a product?",
+                content: ["How to respond to a customer complaint?"],
+                options: ["I apologize for the inconvenience. Let me find a solution right away.", "That's not my problem.", "You should have been more careful."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-10/slide-11-problem-resolution-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-emerald-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 12",
+                title: "Leadership Vocabulary (3/3)",
+                description: "What does 'delegating tasks' mean in project management?",
+                content: ["What does 'delegating tasks' mean?"],
+                options: ["Assigning specific responsibilities to different team members", "Doing all the work alone", "Canceling the project meeting"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-10/slide-12-leadership-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-cyan-700"
+              },
+              {
+                id: "c-teens-basic-4-10-emoji-mission",
+                title: "Emoji Mission / Misión Emoji",
+                description: "Decode the Level 4 Graduation story.",
+                type: "emoji-game",
+                content: ["🎓 + 🏆 + 🌐 + 🎤"],
+                options: ["We completed all 10 classes of Level 4, demonstrated our English leadership, and achieved our Pro certificate.", "I lost my red umbrella in the rain.", "The bakery opens at seven in the morning."],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-10/slide-13-emoji-capstone-mission.jpg",
+                bgColor: "bg-gradient-to-br from-purple-800 via-indigo-800 to-cyan-700"
+              }
             ],
-            action: "Completar los ejercicios."
+            action: "Resolver las preguntas y consolidar conocimientos de Nivel 4."
           },
           {
             id: "s4",
-            title: "4. Production / 4. Production",
+            title: "4. Production & Quiz / 4. Producción y quiz",
             duration: "15 minutos",
-            objective: "Uso libre del lenguaje.",
+            objective: "Simular casos de servicio al cliente y superar el Boss Battle Final de Nivel 4.",
             slides: [
-              { id: "Diapositiva 16", title: "Speaking Time / Oral Hora", description: "Talk with your partner.", type: "speaking", bgColor: "bg-gradient-to-br from-indigo-500 to-blue-600" },
-                {
-                                  id: "slide-boss-battle",
-                                  title: "Speaking Boss Battle",
-                                  description: "Defeat the boss with today's English.",
-                                  type: "speaking-boss-battle",
-                                  content: ["Defeat the boss using Teen Customer Service & Transition Evaluation."],
-                                  bgColor: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500",
-                                  speakingBossBattle: {
-                                    bossName: "The Speaking Boss",
-                                    bossTitle: "Teen Customer Service & Transition Evaluation",
-                                    bossAvatar: "⚔️",
-                                    "timerSeconds": 30,
-                                    "prepareSeconds": 180,
-                                    rounds: {
-                                      remember: [
-                                      "You have 30 seconds: say three key words and one useful phrase connected to teen customer service & transition evaluation."
-                                    ],
-                                      use: [
-                                      "You have 60 seconds: create three sentences about teen customer service & transition evaluation using keywords: one positive, one negative, and one question."
-                                    ],
-                                      speak: [
-                                        
-                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
-                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
-                                        
-                                      ]
-                                    }
-                                  }
-                                },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+              {
+                id: "Diapositiva 14",
+                title: "Leadership & Customer Service Hot-Seat / Ruleta de liderazgo",
+                description: "Spin and deliver a 45-second professional leadership speech for this challenge.",
+                type: "spinning-wheel",
+                content: ["Spin the wheel.", "Read the scenario.", "Respond with empathy, clarity, and leadership."],
+                imageUrl: "/images/teens-basic-4-class-10/slide-14-speaking-wheel-capstone-scenarios.jpg",
+                wheelItems: [
+                  { label: "Delayed Repair", color: "#EF4444", prompt: "A customer's smartphone repair took 3 days longer than promised. How do you resolve it?", es: "¿La reparacion tardo 3 dias mas de lo prometido. Como lo resuelves?" },
+                  { label: "Project Leader", color: "#F59E0B", prompt: "Open a team meeting and delegate 3 key tasks for the science fair.", es: "¿Abre una reunion de equipo y delega 3 tareas para la feria de ciencias." },
+                  { label: "Store Return", color: "#10B981", prompt: "A customer bought the wrong shirt size. Offer an exchange and thank them.", es: "¿Un cliente compro la talla equivocada. Ofrece cambio y agradece." },
+                  { label: "Level 4 Summary", color: "#3B82F6", prompt: "Share what English skill you feel most proud of mastering in Level 4.", es: "¿Comparte la habilidad en ingles que mas orgullo te da dominar." }
+                ],
+                bgColor: "bg-gradient-to-br from-indigo-600 to-blue-700"
+              },
+              {
+                id: "Diapositiva 15",
+                title: "Fun Quiz! 1/3",
+                description: "Which condition structure describes guaranteed scientific cause and effect?",
+                content: ["Which conditional describes scientific facts?"],
+                options: ["Zero Conditional (If + Present, Present)", "First Conditional (If + Present, Will)", "Second Conditional"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-10/slide-15-fun-quiz1.jpg",
+                bgColor: "bg-gradient-to-br from-blue-600 to-cyan-700"
+              },
+              {
+                id: "Diapositiva 16",
+                title: "Fun Quiz! 2/3",
+                description: "What is the comparative form of the adjective 'good'?",
+                content: ["What is the comparative of 'good'?"],
+                options: ["better", "gooder", "best"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-10/slide-16-fun-quiz2.jpg",
+                bgColor: "bg-gradient-to-br from-cyan-600 to-teal-700"
+              },
+              {
+                id: "Diapositiva 17",
+                title: "Fun Quiz! 3/3",
+                description: "How do you soften advice to make it empathetic?",
+                content: ["How to soften advice?"],
+                options: ["'If I were you, I would...' / 'Why don't you try...?'", "'You must do it now!'", "'Do what I say!'"],
+                correctOptionIndex: 0,
+                imageUrl: "/images/teens-basic-4-class-10/slide-17-fun-quiz3.jpg",
+                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
+              },
+              {
+                id: "slide-boss-battle",
+                title: "Speaking Boss Battle: The Grandmaster Capstone Boss",
+                description: "Defeat the Ultimate Level 4 Boss by delivering your Grand Capstone spoken reflection in English!",
+                type: "speaking-boss-battle",
+                content: ["Use Level 4 vocabulary: Conditionals, Comparatives, Too/Enough, Modals of Advice."],
+                imageUrl: "/images/teens-basic-4-class-10/slide-18-boss-battle-grandmaster-level4.jpg",
+                bgColor: "bg-gradient-to-br from-amber-600 via-rose-600 to-purple-800",
+                speakingBossBattle: {
+                  bossName: "The Grandmaster Capstone Boss",
+                  bossTitle: "Level 4 Grand Finale & Leadership",
+                  bossAvatar: "🎓",
+                  timerSeconds: 30,
+                  prepareSeconds: 180,
+                  rounds: {
+                    remember: ["Say four key communication verbs (delegate, resolve, apologize, propose)."],
+                    use: ["Make three sentences: one with First Conditional (If... will), one with 'too/enough', and one with advice (should / If I were you)."],
+                    speak: [
+                      "You have 3 minutes to prepare. Then speak for 30 seconds delivering your Level 4 Capstone presentation explaining how you will use English for leadership, career goals, and future projects.",
+                      "Example to guide you: 'Throughout Level 4, I learned that effective communication requires both confidence and empathy. Whether I am writing a formal academic email to a university, coordinating a group science project with classmates, or resolving a customer problem calmly, I can now express my perspectives clearly. In the future, I will use English to lead international student initiatives and collaborate on global projects!'"
+                    ]
+                  }
+                }
+              },
+              {
+                id: "Diapositiva 18",
+                title: "Tech Repair Customer Service / Juego de roles de atención al cliente",
+                description: "Roleplay resolving a delayed repair dilemma with active listening and clear solutions.",
+                type: "roleplay",
                 content: [
-                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
-                  "Student A: Ask your partner about their experience with Emoji Mission.",
-                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
-                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
-                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
-                  "A: 'How do you plan to use what we learned outside of class?'",
-                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
-                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
-              { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
+                  "Let's say that you are working as a customer service lead at a tech repair store and a customer arrives upset because their laptop repair was delayed.",
+                  "Student A: Play the customer whose laptop was delayed 2 days before an assignment deadline.",
+                  "Student B: Play the customer service lead who listens, apologizes, and offers a solution with a discount.",
+                  "A: 'I brought my laptop on Monday and you said it would be ready by Wednesday. I have a major project due tomorrow!'",
+                  "B: 'Good afternoon. I completely understand your frustration and I sincerely apologize for the delay. Let me check the repair status right away.'",
+                  "A: 'Is it finished yet?'",
+                  "B: 'Yes, our technician just completed the testing! Because of the inconvenience, we will waive the repair fee by 30%. May I help you test it now?'"
+                ],
+                imageUrl: "/images/teens-basic-4-class-10/slide-19-customer-service-showdown-roleplay.jpg",
+                bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
+              }
             ],
-            action: "Conversar libremente."
+            action: "Simular casos de servicio al cliente en parejas."
           },
           {
             id: "s5",
-            title: "5. Wrap-up & Homework / 5. Cierre y Tarea",
+            title: "5. Wrap-up & Homework / 5. Cierre y tarea",
             duration: "5 minutos",
-            objective: "Cierre de clase.",
+            objective: "Celebrar la graduación del Nivel 4 y asignar el portafolio final.",
             slides: [
-              { id: "Diapositiva 19", title: "Video Homework ?? / Tarea en Video ??", description: "Complete the exercises on the platform.", type: "video", bgColor: "bg-gradient-to-br from-slate-700 to-slate-900",
-                  videoUrl: "https://www.youtube.com/embed/DRl6tpsxchw",
-                  content: ["Watch the video and write 5 useful words or phrases.", "Bring one example sentence to the next class."]
-            }
+              {
+                id: "Diapositiva 19",
+                title: "Congratulations! You Graduated from Teen Level 4! 🏆 / ¡Felicidades! ¡Te Graduaste del Nivel 4! 🏆",
+                description: "You have completed all 10 classes and mastered advanced communication, conditionals, and digital tone!",
+                content: ["I can communicate professionally in emails and customer service.", "I master Zero and First Conditionals.", "I can compare anything with precision.", "I give great advice and lead projects."],
+                imageUrl: "/images/teens-basic-4-class-10/slide-20-class-complete-level4-graduation.jpg",
+                bgColor: "bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-600"
+              },
+              {
+                id: "Diapositiva 20",
+                title: "Homework",
+                description: "Write your Level 4 Capstone Portfolio Reflection (5 sentences).",
+                type: "homework",
+                content: ["Write 5 complete sentences reflecting on your English journey in Level 4 (e.g., 'In Level 4, I learned how to give advice using should and had better...').", "Include your goals for Level 5!", "Upload your reflection portfolio to the platform!"],
+                imageUrl: "/images/teens-basic-4-class-10/slide-21-homework-capstone-portfolio.jpg",
+                bgColor: "bg-gradient-to-br from-violet-600 to-fuchsia-600"
+              },
+              {
+                id: "Diapositiva 21",
+                title: "Video Homework 📹",
+                description: "Watch and celebrate mastering intermediate English fluency.",
+                type: "video",
+                videoUrl: "https://www.youtube.com/embed/Pj1e71qD4hU",
+                content: ["Watch the video summary on English fluency and leadership.", "Write down 3 key takeaways for your ongoing learning journey.", "Celebrate completing Level 4 with your class!"],
+                imageUrl: "/images/teens-basic-4-class-10/slide-08-model-capstone-speech.jpg",
+                bgColor: "bg-gradient-to-br from-slate-900 to-indigo-950"
+              }
             ],
-            action: "Anotar la tarea."
+            action: "Celebrar la graduación y completar el portafolio final de Nivel 4."
           }
         ]
       }
