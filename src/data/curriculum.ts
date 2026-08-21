@@ -329,8 +329,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about introduction and verb to be using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Introduction and Verb To Be. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Introduction and Verb To Be. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Introduction and Verb To Be. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Introduction and Verb To Be is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -671,8 +673,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers & time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Numbers & Time. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Numbers & Time. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Numbers and La Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Numbers and La Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -997,8 +1001,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about colors, emociones and descripción using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Colors, Emociones and Descripción. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Colors, Emociones and Descripción. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Colors, Emociones and Descripción. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Colors, Emociones and Descripción is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -1327,8 +1333,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about family vocabulary & possessives using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Family Vocabulary & Possessives. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Family Vocabulary & Possessives. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Family and Posesivos. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Family and Posesivos is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -1652,8 +1660,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about there is using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about There is. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about There is. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on There is. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about There is is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -1983,8 +1993,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about meses, días and numbers ordinales using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Meses, Días and Numbers Ordinales. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Meses, Días and Numbers Ordinales. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Meses, Días and Numbers Ordinales. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Meses, Días and Numbers Ordinales is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -2316,8 +2328,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about articles & demonstratives using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Articles & Demonstratives. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Articles & Demonstratives. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Artículos and Demostrativos. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Artículos and Demostrativos is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -2641,8 +2655,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about body parts & pets using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Body Parts & Pets. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Body Parts & Pets. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Partes del Body and Pets. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Partes del Body and Pets is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -2979,8 +2995,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about food and necesidades básicas using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Food and Necesidades Básicas. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Food and Necesidades Básicas. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds describing how to handle a dining experience or explain a polite request at a restaurant. Mention ordering preferences, dietary requirements, and polite service expressions.",
+                                          "Example to guide you: 'When dining out, I always communicate politely with the service staff. I usually ask for a table near the window and inquire if the daily specials contain gluten or dairy. If there is an issue with my order, I explain it calmly and ask for assistance with courtesy.'"
+                                        
                                       ]
                                     }
                                   }
@@ -3362,8 +3380,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about directions & prepositions of place using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Directions & Prepositions of Place. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Directions & Prepositions of Place. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Direcciones and Preposiciones of Lugar. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Direcciones and Preposiciones of Lugar is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -3688,8 +3708,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about greetings, farewells & survival conversation using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Greetings, Farewells & Survival Conversation. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Greetings, Farewells & Survival Conversation. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Greetings, despedidas and conversación of supervivencia. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Greetings, despedidas and conversación of supervivencia is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -4010,8 +4032,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about the alphabet & spelling names using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about The Alphabet & Spelling Names. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about The Alphabet & Spelling Names. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on El alfabeto and deletreo of Names. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about El alfabeto and deletreo of Names is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -4360,8 +4384,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about países, nacionalidades and procedencia using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Países, nacionalidades and procedencia. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Países, nacionalidades and procedencia. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Países, nacionalidades and procedencia. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Países, nacionalidades and procedencia is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -4371,14 +4397,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay 🎭 / Juego de Roles 🎭",
                 "description": "International Conference",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Países, nacionalidades and procedencia in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Países, nacionalidades and procedencia, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Países, nacionalidades and procedencia moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=800"
               }
@@ -4730,8 +4756,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about professions and ocupaciones comunes using job words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Professions and ocupaciones comunes. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Professions and ocupaciones comunes. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Professions and ocupaciones comunes. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Professions and ocupaciones comunes is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -4741,14 +4769,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay 🎭 / Juego de Roles 🎭",
                 "description": "Guess the job",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Professions and ocupaciones comunes in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Professions and ocupaciones comunes, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Professions and ocupaciones comunes moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=800"
               }
@@ -5100,8 +5128,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about family vocabulary & possessives using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Family Vocabulary & Possessives. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Family Vocabulary & Possessives. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Vocabulario of la Family and posesivos. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Vocabulario of la Family and posesivos is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -5111,14 +5141,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay 🎭 / Juego de Roles 🎭",
                 "description": "Show and Tell",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Vocabulario of la Family and posesivos in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Vocabulario of la Family and posesivos, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Vocabulario of la Family and posesivos moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
                 "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
               }
@@ -5467,8 +5497,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about basic zero general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Basic Zero General Review. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Basic Zero General Review. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Review General of Basic Zero. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Review General of Basic Zero is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -5478,14 +5510,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay 🎭 / Juego de Roles 🎭",
                 "description": "Introduce yourself to the class.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Review General of Basic Zero in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Review General of Basic Zero, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Review General of Basic Zero moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-indigo-500 to-blue-600",
                 "imageUrl": "https://images.unsplash.com/photo-1514643034934-2e917711204d?auto=format&fit=crop&q=80&w=800"
               }
@@ -5996,8 +6028,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present simple (i, you, we, they) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Present Simple (I, You, We, They). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Present Simple (I, You, We, They). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Present Simple (I, You, We, They). Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Present Simple (I, You, We, They) is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -6007,14 +6041,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay 🎭 / Juego de Roles 🎭",
                 "description": "Activity",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Present Simple (I, You, We, They) in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Present Simple (I, You, We, They), state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Present Simple (I, You, We, They) moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
                 "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
               }
@@ -6346,8 +6380,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present simple (he, she, it) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Present Simple (He, She, It). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Present Simple (He, She, It). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Present Simple (He, She, It). Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Present Simple (He, She, It) is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -6357,14 +6393,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay 🎭 / Juego de Roles 🎭",
                 "description": "Activity",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Present Simple (He, She, It) in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Present Simple (He, She, It), state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Present Simple (He, She, It) moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
                 "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
               }
@@ -6697,8 +6733,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present simple (negative & interrogative) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Present Simple (Negative & Interrogative). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Present Simple (Negative & Interrogative). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Present Simple (Negative & Interrogative). Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Present Simple (Negative & Interrogative) is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -6708,14 +6746,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay 🎭 / Juego de Roles 🎭",
                 "description": "Activity",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Present Simple (Negative & Interrogative) in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Present Simple (Negative & Interrogative), state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Present Simple (Negative & Interrogative) moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
                 "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
               }
@@ -7048,8 +7086,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about professions & workplaces using job words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Professions & Workplaces. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Professions & Workplaces. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Professions and Places of Trabajo. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Professions and Places of Trabajo is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -7059,14 +7099,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay 🎭 / Juego de Roles 🎭",
                 "description": "Activity",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Professions and Places of Trabajo in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Professions and Places of Trabajo, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Professions and Places of Trabajo moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-lime-500 to-green-600",
                 "imageUrl": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&q=80&w=800"
               }
@@ -7388,8 +7428,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about daily routines & time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Daily Routines & Time. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Daily Routines & Time. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Rutinas diarias and la Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Rutinas diarias and la Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -7710,8 +7752,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about adverbs of frequency using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Adverbs of Frequency. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Adverbs of Frequency. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Adverbios of frecuencia (always, sometimes, never). Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Adverbios of frecuencia (always, sometimes, never) is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -8049,8 +8093,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about food, drinks & restaurant vocabulary using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Food, Drinks & Restaurant Vocabulary. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Food, Drinks & Restaurant Vocabulary. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds describing how to handle a dining experience or explain a polite request at a restaurant. Mention ordering preferences, dietary requirements, and polite service expressions.",
+                                          "Example to guide you: 'When dining out, I always communicate politely with the service staff. I usually ask for a table near the window and inquire if the daily specials contain gluten or dairy. If there is an issue with my order, I explain it calmly and ask for assistance with courtesy.'"
+                                        
                                       ]
                                     }
                                   }
@@ -8380,8 +8426,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about sustantivos contables e incontables (some, any) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Sustantivos contables e incontables (some, any). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Sustantivos contables e incontables (some, any). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Sustantivos contables e incontables (some, any). Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Sustantivos contables e incontables (some, any) is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -8700,8 +8748,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about gustos and preferencias (like, love, hate + ing) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Gustos and preferencias (like, love, hate + ing). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Gustos and preferencias (like, love, hate + ing). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Gustos and preferencias (like, love, hate + ing). Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Gustos and preferencias (like, love, hate + ing) is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -8995,8 +9045,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about basic 1 general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Basic 1 General Review. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Basic 1 General Review. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Review General of Basic 1. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Review General of Basic 1 is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -9513,8 +9565,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about routines & present simple using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Routines & Present Simple. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Routines & Present Simple. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Rutinas and Present Simple. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Rutinas and Present Simple is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -9850,8 +9904,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present progressive using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Present Progressive. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Present Progressive. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Present Progressive. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Present Progressive is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -10188,8 +10244,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about expresando preferencias (gustos) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Expresando Preferencias (Gustos). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Expresando Preferencias (Gustos). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Expresando Preferencias (Gustos). Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Expresando Preferencias (Gustos) is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -10526,8 +10584,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about comparación entre tiempos verbales using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Comparación entre Tiempos Verbales. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Comparación entre Tiempos Verbales. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Comparación entre Tiempos Verbales. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Comparación entre Tiempos Verbales is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -10881,8 +10941,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about state and action verbs in present continuous using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about State and Action Verbs in Present Continuous. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about State and Action Verbs in Present Continuous. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -11228,8 +11290,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about weather & seasons using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Weather & Seasons. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Weather & Seasons. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -11487,8 +11551,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about imperatives for giving instructions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Imperatives for Giving Instructions. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Imperatives for Giving Instructions. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -11837,8 +11903,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about asking for and giving street directions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Asking for and Giving Street Directions. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Asking for and Giving Street Directions. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -11849,14 +11917,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "description": "Student A is a tourist. Student B is a local.",
                 "type": "roleplay",
                 "content": [
-                "Let's say that you are in a conversation about Tourist in town  Juego de Roles Tourist in town, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about Tourist in town  Juego de Roles Tourist in town.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on Tourist in town  Juego de Roles Tourist in town?'",
-                "B: 'Hi! I find Tourist in town  Juego de Roles Tourist in town very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-pink-500 to-rose-600"
               },
               {
@@ -12189,8 +12257,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about conversaciones telefónicas básicas using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Conversaciones telefónicas básicas. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Conversaciones telefónicas básicas. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -12620,8 +12690,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about review of present simple vs. continuous using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Review of Present Simple vs. Continuous. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Review of Present Simple vs. Continuous. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -12911,8 +12983,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about final level project using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Final Level Project. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Final Level Project. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -12924,14 +12998,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -13417,8 +13491,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about abilities & possibilities with can using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Abilities & Possibilities with Can. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Abilities & Possibilities with Can. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -13430,14 +13506,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -13741,8 +13817,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about permisos and peticiones (can i...?, could you...?) using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Permisos and peticiones (Can I...?, Could you...?). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Permisos and peticiones (Can I...?, Could you...?). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -13754,14 +13832,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -14066,8 +14144,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about obligaciones (have to using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Obligaciones (Have to. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Obligaciones (Have to. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -14079,14 +14159,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -14390,8 +14470,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about clothes, colors and descripciones físicas using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Clothes, Colors and descripciones físicas. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Clothes, Colors and descripciones físicas. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -14403,14 +14485,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -14714,8 +14796,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about city places & transportation using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about City Places & Transportation. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about City Places & Transportation. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -14727,14 +14811,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -15039,8 +15123,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about past to be: was/were using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Past To Be: Was/Were. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Past To Be: Was/Were. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -15052,14 +15138,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -15363,8 +15449,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about talking about childhood and memories using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Talking About Childhood and Memories. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Talking About Childhood and Memories. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -15376,14 +15464,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -15687,8 +15775,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about biographies of famous people using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Biographies of Famous People. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Biographies of Famous People. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -15700,14 +15790,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -16010,8 +16100,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fechas, años and meses using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Fechas, años and meses. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Fechas, años and meses. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -16023,14 +16115,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -16335,8 +16427,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about basic 3 general review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Basic 3 General Review. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Basic 3 General Review. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -16348,14 +16442,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -16881,8 +16975,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about past simple - verbs regulares using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Past Simple - Verbs Regulares. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Past Simple - Verbs Regulares. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -16892,14 +16988,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -17267,8 +17363,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about past simple - verbs irregulares using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Past Simple - Verbs Irregulares. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Past Simple - Verbs Irregulares. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -17278,14 +17376,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -17652,8 +17750,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about forming questions and negatives in the past using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Forming Questions and Negatives in the Past. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Forming Questions and Negatives in the Past. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -17663,14 +17763,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -18035,8 +18135,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about travel & vacations using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Travel & Vacations. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Travel & Vacations. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -18046,14 +18148,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -18418,8 +18520,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about contando anécdotas usando conectores (first, then, finally) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Contando anécdotas usando conectores (first, then, finally). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Contando anécdotas usando conectores (first, then, finally). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -18429,14 +18533,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -18797,8 +18901,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about expresando planes futuros with going to using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Expresando planes futuros with Going to. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Expresando planes futuros with Going to. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -18808,14 +18914,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -19179,8 +19285,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about predicciones and decisiones rápidas with will using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Predicciones and decisiones rápidas with Will. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Predicciones and decisiones rápidas with Will. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -19190,14 +19298,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -19556,8 +19664,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about diferencias entre will and going to using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Diferencias entre Will and Going to. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Diferencias entre Will and Going to. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -19567,14 +19677,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -19940,8 +20050,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about giving opinions and agreeing or disagreeing using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Giving Opinions and Agreeing or Disagreeing. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Giving Opinions and Agreeing or Disagreeing. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -19951,14 +20063,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -20326,8 +20438,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about intermediate level preparation using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Intermediate Level Preparation. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Intermediate Level Preparation. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Speaking Time. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Speaking Time is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -20337,14 +20451,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay / Juego de Roles",
                 "type": "normal",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing Roleplay in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Roleplay, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Roleplay moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600",
                 "description": "Let's learn and practice!"
               },
@@ -20851,8 +20965,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about basic verb tenses review using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Basic Verb Tenses Review. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Basic Verb Tenses Review. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -20862,14 +20978,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -21181,8 +21297,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about first conditional using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about First Conditional. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about First Conditional. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -21192,14 +21310,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -21513,8 +21631,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about modal verbs for advice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Modal Verbs for Advice. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Modal Verbs for Advice. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -21524,14 +21644,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -21844,8 +21964,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about modal verbs for possibility using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Modal Verbs for Possibility. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Modal Verbs for Possibility. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -21855,14 +21977,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -22177,8 +22299,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about comparativos and superlativos using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Comparativos and superlativos. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Comparativos and superlativos. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -22188,14 +22312,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -22509,8 +22633,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about too and enough for excess and sufficiency using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Too and Enough for Excess and Sufficiency. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Too and Enough for Excess and Sufficiency. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -22520,14 +22646,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -22837,8 +22963,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about work and office vocabulary using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Work and Office Vocabulary. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Work and Office Vocabulary. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -22848,14 +22976,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -23169,8 +23297,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about redactando correos electrónicos formales using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Redactando correos electrónicos formales. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Redactando correos electrónicos formales. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -23180,14 +23310,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -23502,8 +23632,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present perfect for life experiences using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Present Perfect for Life Experiences. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Present Perfect for Life Experiences. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -23513,14 +23645,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -23834,8 +23966,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about diferencias entre past simple and present perfect using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Diferencias entre Past Simple and Present Perfect. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Diferencias entre Past Simple and Present Perfect. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -23845,14 +23979,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -24164,8 +24298,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about gerunds and infinitives after verbs using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Gerunds and Infinitives After Verbs. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Gerunds and Infinitives After Verbs. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -24175,14 +24311,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -24498,8 +24634,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about introduction to common phrasal verbs using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Introduction to Common Phrasal Verbs. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Introduction to Common Phrasal Verbs. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on 4. Production & Quiz. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about 4. Production & Quiz is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -24509,14 +24647,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "title": "Roleplay & Share / Juego de Roles y Share",
                 "description": "Work with your partner.",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ],
+                  "Let's say that you and a colleague are discussing 4. Production & Quiz in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of 4. Production & Quiz, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle 4. Production & Quiz moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ],
                 "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
               }
             ]
@@ -24976,8 +25114,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about pronunciación: connected speech and entonación using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Pronunciación: Connected speech and entonación. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Pronunciación: Connected speech and entonación. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -24989,14 +25129,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -25261,8 +25401,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about second conditional using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Second Conditional. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Second Conditional. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -25274,14 +25416,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -25546,8 +25688,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about third conditional using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Third Conditional. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Third Conditional. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -25559,14 +25703,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -25832,8 +25976,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about reported speech (estilo indirecto) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Reported Speech (estilo indirecto). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Reported Speech (estilo indirecto). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -25845,14 +25991,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -26118,8 +26264,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about relative clauses (who, which, that, where) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Relative Clauses (who, which, that, where). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Relative Clauses (who, which, that, where). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -26131,14 +26279,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -26404,8 +26552,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about advanced business and negotiation vocabulary using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Advanced Business and Negotiation Vocabulary. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Advanced Business and Negotiation Vocabulary. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -26417,14 +26567,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -26690,8 +26840,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about solving problems and customer complaints using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Solving Problems and Customer Complaints. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Solving Problems and Customer Complaints. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -26703,14 +26855,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -26976,8 +27128,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about future continuous and future perfect using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Future Continuous and Future Perfect. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Future Continuous and Future Perfect. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -26989,14 +27143,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -27262,8 +27416,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about advanced phrasal verbs in context using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Advanced Phrasal Verbs in Context. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Advanced Phrasal Verbs in Context. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -27275,14 +27431,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -27548,8 +27704,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about review avanzado using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Review avanzado. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Review avanzado. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -27561,14 +27719,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -28012,8 +28170,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about idioms and expresiones idiomáticas using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Idioms and expresiones idiomáticas. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Idioms and expresiones idiomáticas. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -28025,14 +28185,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -28298,8 +28458,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about inversion for formal emphasis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Inversion for Formal Emphasis. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Inversion for Formal Emphasis. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -28311,14 +28473,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -28584,8 +28746,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about cleft sentences for emphasis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Cleft Sentences for Emphasis. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Cleft Sentences for Emphasis. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -28597,14 +28761,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -28870,8 +29034,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about lenguaje diplomático and atenuadores (hedging) using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Lenguaje diplomático and atenuadores (Hedging). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Lenguaje diplomático and atenuadores (Hedging). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -28883,14 +29049,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -29155,8 +29321,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about preparing high-impact introductions using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Preparing High-impact Introductions. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Preparing High-impact Introductions. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -29168,14 +29336,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -29441,8 +29609,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about discurso persuasivo and argumentación using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Discurso persuasivo and argumentación. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Discurso persuasivo and argumentación. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -29454,14 +29624,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -29727,8 +29897,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about debates on complex topics using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Debates on Complex Topics. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Debates on Complex Topics. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -29740,14 +29912,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -30013,8 +30185,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about storytelling in professional settings using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Storytelling in Professional Settings. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Storytelling in Professional Settings. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -30026,14 +30200,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -30298,8 +30472,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about analyzing opinion articles and news using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Analyzing Opinion Articles and News. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Analyzing Opinion Articles and News. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -30311,14 +30487,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",
@@ -30584,8 +30760,10 @@ export const curriculumLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about final masters project using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Final Masters Project. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Final Masters Project. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your perspective on Emoji Mission. Connect your ideas logically using the vocabulary and structures learned in today's class.",
+                                          "Example to guide you: 'Speaking about Emoji Mission is essential in modern everyday communication. When sharing ideas on this topic, I structure my thoughts with clear examples, use precise vocabulary, and express my viewpoint with confidence and clarity.'"
+                                        
                                       ]
                                     }
                                   }
@@ -30597,14 +30775,14 @@ export const curriculumLevels: CurriculumLevel[] = [
                 "type": "roleplay",
                 "bgColor": "bg-gradient-to-br from-pink-600 to-rose-700",
                 "content": [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ]
+                  "Let's say that you and a colleague are discussing Emoji Mission in a professional and practical setting, and you want to exchange views and solve a situation together.",
+                  "Student A: Introduce the topic of Emoji Mission, state a key point, and ask for your partner's input.",
+                  "Student B: Share your perspective using complete sentences and suggest a constructive next step.",
+                  "A: 'Hello! I would like to get your input on how we should handle Emoji Mission moving forward.'",
+                  "B: 'Hi! I think our best approach is to apply the key strategies we reviewed and prioritize clear communication.'",
+                  "A: 'That sounds effective. How do you propose we implement this starting this week?'",
+                  "B: 'Let us outline the main steps together and schedule a brief follow-up to track our progress!'"
+                ]
               },
               {
                 "id": "Diapositiva 18",

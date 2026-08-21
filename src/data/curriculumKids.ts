@@ -325,8 +325,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about hello & amazing colors! 🌈 using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Hello & Amazing Colors! 🌈. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Hello & Amazing Colors! 🌈. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -660,8 +662,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers & animal friends! 🐶 using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Numbers & Animal Friends! 🐶. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Numbers & Animal Friends! 🐶. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -991,8 +995,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my body & fun actions! 🏃 using body words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Body & Fun Actions! 🏃. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Body & Fun Actions! 🏃. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -1319,8 +1325,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my favorite toys! 🪁 using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Favorite Toys! 🪁. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Favorite Toys! 🪁. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -1647,8 +1655,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about yummy fruits! 🍓 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Yummy Fruits! 🍓. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Yummy Fruits! 🍓. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -1975,8 +1985,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about super shapes! 🟢 using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Super Shapes! 🟢. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Super Shapes! 🟢. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -2303,8 +2315,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about school supplies! 🎒 using classroom words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about School Supplies! 🎒. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about School Supplies! 🎒. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -2631,8 +2645,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about farm animals! 🐮 using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Farm Animals! 🐮. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Farm Animals! 🐮. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -3138,8 +3154,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my family & feelings! 👨‍👩‍👧‍👦 using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Family & Feelings! 👨‍👩‍👧‍👦. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Family & Feelings! 👨‍👩‍👧‍👦. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -3466,8 +3484,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about yummy fast food! 🍕 using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Yummy Fast Food! 🍕. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Yummy Fast Food! 🍕. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -3794,8 +3814,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my clothes & the weather! 👕 using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Clothes & The Weather! 👕. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Clothes & The Weather! 👕. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -4122,8 +4144,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about amazing nature! 🌳 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Amazing Nature! 🌳. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Amazing Nature! 🌳. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -4450,8 +4474,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about cool bugs & insects 🐛 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Cool Bugs & Insects 🐛. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Cool Bugs & Insects 🐛. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -4778,8 +4804,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about under the sea! 🐠 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Under the Sea! 🐠. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Under the Sea! 🐠. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -5106,8 +5134,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about action heroes! 🦸‍♂️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Action Heroes! 🦸‍♂️. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Action Heroes! 🦸‍♂️. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -5434,8 +5464,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers 11-20! 🔢 using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Numbers 11-20! 🔢. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Numbers 11-20! 🔢. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -5941,8 +5973,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about wild animals safari! 🦁 using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Wild Animals Safari! 🦁. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Wild Animals Safari! 🦁. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -6269,8 +6303,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my awesome house 🏠 using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Awesome House 🏠. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Awesome House 🏠. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -6597,8 +6633,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about zoom! vehicles in town 🚗 using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Zoom! Vehicles in Town 🚗. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Zoom! Vehicles in Town 🚗. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -6925,8 +6963,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about when i grow up! 👩‍⚕️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about When I Grow Up! 👩‍⚕️. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about When I Grow Up! 👩‍⚕️. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -7253,8 +7293,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about make some music! 🎸 using hobbies: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Make some Music! 🎸. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Make some Music! 🎸. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -7581,8 +7623,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about days of the week 📅 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Days of the Week 📅. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Days of the Week 📅. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -7909,8 +7953,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about let's go shopping! 🛒 using shopping phrases: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Let's Go Shopping! 🛒. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Let's Go Shopping! 🛒. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -8237,8 +8283,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about playground fun! 🛝 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Playground Fun! 🛝. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Playground Fun! 🛝. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -8744,8 +8792,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my daily routine ⏰ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Daily Routine ⏰. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Daily Routine ⏰. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -9072,8 +9122,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fun hobbies & sports! ⚽️ using hobbies: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Fun Hobbies & Sports! ⚽️. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Fun Hobbies & Sports! ⚽️. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -9400,8 +9452,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about happy holidays! 🎄 using technology words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Happy Holidays! 🎄. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Happy Holidays! 🎄. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -9728,8 +9782,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about outer space adventure! 🚀 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Outer Space Adventure! 🚀. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Outer Space Adventure! 🚀. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -10056,8 +10112,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about awesome fairy tales! 🧚 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Awesome Fairy Tales! 🧚. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Awesome Fairy Tales! 🧚. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -10384,8 +10442,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about the 4 seasons! ❄️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about The 4 Seasons! ❄️. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about The 4 Seasons! ❄️. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -10712,8 +10772,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about be a helper! 🤝 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Be a Helper! 🤝. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Be a Helper! 🤝. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }
@@ -11040,8 +11102,10 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about around the world! 🌍 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Around the World! 🌍. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Around the World! 🌍. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds about Emoji Mission! Use the fun words and phrases you learned today!",
+                                          "Example to guide you: 'I love learning about Emoji Mission in English class! It is super fun, exciting, and easy to practice with my friends and teacher every day!'"
+                                        
                                       ]
                                     }
                                   }

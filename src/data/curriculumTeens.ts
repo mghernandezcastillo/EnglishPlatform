@@ -108,20 +108,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about hello & introductions using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds introducing yourself in English. Mention your greeting, your name, how you are feeling today, and say goodbye politely.",
-                                        "Example to guide you: 'Hello everyone! My name is Lucas and I am 14 years old. I am feeling great and happy to be in this class. Nice to meet you all, and have a wonderful day! See you later!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Hello & Introductions. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Hello & Introductions, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: New Student 🎒 / Juego de Roles: New Student 🎒", description: "Production", imageUrl: "/images/teens-basic-zero-class-01/slide-18.jpg", content: [
-                  "Let's say that you are meeting a new classmate on the first day of school, and you want to introduce yourself and make friends.",
-                  "Student A: Greet warmly, ask their name, and how they are feeling today.",
-                  "Student B: Respond with your name, share how you feel, and ask them back.",
-                  "A: 'Hi! I'm Alex. What's your name?'",
-                  "B: 'Hey Alex! My name is Jordan. Nice to meet you!'",
-                  "A: 'Nice to meet you too, Jordan! How are you doing today?'",
-                  "B: 'I'm feeling great and excited for English class! How about you?'"
+                  "Let's say that you and a classmate are discussing Hello & Introductions, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Hello & Introductions.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Hello & Introductions?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -219,20 +221,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers, ages & birthdays using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your age, your favorite number, and when your birthday is. Mention months and numbers in English.",
-                                        "Example to guide you: 'Hi! I am 15 years old. My birthday is in August, which is my favorite month because of summer break. My lucky number is twenty-four. Thank you!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Numbers, Ages & Birthdays. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Numbers, Ages & Birthdays, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: Birthday Party 🥳 / Juego de Roles: Cumpleaños Party 🥳", description: "Production", imageUrl: "/images/teens-basic-zero-class-02/slide-18.jpg", content: [
-                  "Let's say that you and your friend are filling out a registration card for a school youth club, and you need to exchange your age and birthday information.",
-                  "Student A: Ask your partner their age and the month of their birthday.",
-                  "Student B: State your age clearly and name your birthday month.",
-                  "A: 'Hey Mia! How old are you this year?'",
-                  "B: 'I am 14 years old! When is your birthday?'",
-                  "A: 'My birthday is in October. What about yours?'",
-                  "B: 'Awesome! Mine is in May, so I will turn 15 soon!'"
+                  "Let's say that you and a classmate are discussing Numbers, Ages & Birthdays, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Numbers, Ages & Birthdays.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Numbers, Ages & Birthdays?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -332,20 +336,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my body & actions using body words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your favorite physical activity and the body movements you do.",
-                                        "Example to guide you: 'I love playing basketball. In every game, I run fast on the court, jump high to score points, and use my hands to dribble the ball. It keeps my legs strong and gives me lots of energy!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on My Body & Actions. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about My Body & Actions, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: The Robot 🤖 / Juego de Roles: The Robot 🤖", description: "Production", imageUrl: "/images/teens-basic-zero-class-03/slide-18.jpg", content: [
-                  "Let's say that you are warming up in P.E. class, and you want to guide your workout partner through three energetic stretching moves.",
-                  "Student A: Name body parts and give movement instructions (jump, stretch, touch your toes).",
-                  "Student B: Follow the instructions, confirm what you are doing, and suggest the next move.",
-                  "A: 'Let's stretch our arms and touch our toes!'",
-                  "B: 'Got it! My legs and back feel much more flexible now.'",
-                  "A: 'Now, let's jump five times and shake our hands!'",
-                  "B: 'Haha, that was fun! My whole body is full of energy!'"
+                  "Let's say that you and a classmate are discussing My Body & Actions, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with My Body & Actions.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on My Body & Actions?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -443,20 +449,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my favorite gadgets & tech using technology words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your favorite technology gadget and how it helps you every day.",
-                                        "Example to guide you: 'My favorite gadget is my wireless headphones. I use them every afternoon to listen to podcasts and English songs while studying. They are lightweight, convenient, and help me focus without any noise!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on My Favorite Gadgets & Tech. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about My Favorite Gadgets & Tech, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: The Tech Store 🛍️ / Juego de Roles: The Tech Store 🛍️", description: "Production", imageUrl: "/images/teens-basic-zero-class-04/slide-18.jpg", content: [
-                  "Let's say that you are comparing tech gadgets with a classmate at lunch, and you want to talk about your favorite device and what you use it for.",
-                  "Student A: Ask which gadget your partner uses most and why.",
-                  "Student B: Describe your smartphone or tablet and mention your favorite feature.",
-                  "A: 'Hey Leo! What gadget do you use the most every day?'",
-                  "B: 'I use my smartphone all the time to listen to music and study.'",
-                  "A: 'Cool! Do you also use a tablet or laptop for school projects?'",
-                  "B: 'Yes, I use my laptop for typing essays and editing videos!'"
+                  "Let's say that you and a classmate are discussing My Favorite Gadgets & Tech, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with My Favorite Gadgets & Tech.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on My Favorite Gadgets & Tech?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -554,20 +562,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about yummy snacks & drinks using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite snacks, drinks, and healthy eating habits.",
-                                        "Example to guide you: 'For an afternoon snack, I usually choose fresh fruit like bananas or strawberries, accompanied by a cold bottle of water. When I study with friends, we also enjoy popcorn. Eating healthy snacks helps me stay active throughout the school day!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Yummy Snacks & Drinks. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Yummy Snacks & Drinks, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: At the Cafeteria 🏫 / Juego de Roles: At the Cafeteria 🏫", description: "Production", imageUrl: "/images/teens-basic-zero-class-05/slide-18-cafeteria-roleplay.jpg", content: [
-                  "Let's say that you and your friend are at the school cafeteria snack bar, and you want to decide what snack and drink to buy together.",
-                  "Student A: Ask what snacks and drinks your partner likes and suggest options.",
-                  "Student B: State your food preferences and express what you would like to order.",
-                  "A: 'I'm getting hungry! What snack would you like to get?'",
-                  "B: 'I feel like having a crunchy apple and an orange juice.'",
-                  "A: 'Nice choice! I'm going to order a granola bar and cold water.'",
-                  "B: 'Great, healthy snacks give us good energy for afternoon classes!'"
+                  "Let's say that you and a classmate are discussing Yummy Snacks & Drinks, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Yummy Snacks & Drinks.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Yummy Snacks & Drinks?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -665,20 +675,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about shapes & patterns using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing shapes, patterns, and designs in objects around you.",
-                                        "Example to guide you: 'In my classroom, I can see many geometric shapes. The whiteboard is a large rectangle, the wall clock is a smooth circle, and our floor tiles form a checkered square pattern. Combining different shapes creates balance and modern design!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Shapes & Patterns. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Shapes & Patterns, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: At the store 👕 / Juego de Roles: At the store 👕", description: "Production", content: [
-                  "Let's say that you and your art partner are designing a geometric poster for the school festival, and you want to choose the shapes and colors.",
-                  "Student A: Suggest geometric shapes (circles, triangles, rectangles) and color patterns.",
-                  "Student B: Agree or suggest complementary shapes and describe where to place them.",
-                  "A: 'Let's put bright yellow triangles in the corners and a big blue circle in the center!'",
-                  "B: 'That looks eye-catching! Can we add green squares along the border?'",
-                  "A: 'Yes! That creates a cool geometric pattern.'",
-                  "B: 'Perfect! The contrast between the shapes makes our poster stand out!'"
+                  "Let's say that you and a classmate are discussing Shapes & Patterns, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Shapes & Patterns.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Shapes & Patterns?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-zero-class-06/slide-18-store-roleplay-striped-shirt.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -776,20 +788,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about school subjects & supplies using classroom words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing the essential school supplies inside your backpack.",
-                                        "Example to guide you: 'Inside my backpack, I always carry three notebooks for my main subjects, a sturdy folder for homework sheets, and a pencil case filled with pens, pencils, and an eraser. Having all my school supplies organized helps me study efficiently and stay ready for every lesson!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on School Subjects & Supplies. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about School Subjects & Supplies, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: First day of school 🏫 / Juego de Roles: First day de Escuela 🏫", description: "Production", content: [
-                  "Let's say that you are organizing your study desk with a classmate before an exam, and you want to check if you have all the necessary supplies.",
-                  "Student A: Ask if your partner has pens, a notebook, a ruler, and highlighters.",
-                  "Student B: Check your pencil case, lend an extra item, and confirm what you need.",
-                  "A: 'Hey Carlos! Do you have a blue pen and a highlighter I can borrow?'",
-                  "B: 'Sure! I have two pens in my pencil case and a yellow highlighter.'",
-                  "A: 'Thanks a lot! Do we also need a ruler for math today?'",
-                  "B: 'Yes, bring your ruler and geometry set for the geometry test!'"
+                  "Let's say that you and a classmate are discussing School Subjects & Supplies, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with School Subjects & Supplies.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on School Subjects & Supplies?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-zero-class-07/slide-18-first-day-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -887,20 +901,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about pets & animal friends using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite animal or pet, describing its features and personality.",
-                                        "Example to guide you: 'My favorite animal is a golden retriever dog. Dogs are loyal, friendly, and very intelligent pets. If I have free time, I love taking care of animals, feeding them healthy food, and going on long walks outdoors!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Pets & Animal Friends. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Pets & Animal Friends, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: The Pet Store 🐾 / Juego de Roles: The Mascotas Store 🐾", description: "Production", content: [
-                  "Let's say that you and your friend are showing pictures of your pets on your phone, and you want to describe what they look like and what they do.",
-                  "Student A: Ask about your friend's pet, its name, breed, and favorite habits.",
-                  "Student B: Describe your pet's appearance, personality, and funny behaviors.",
-                  "A: 'Look at my puppy! His name is Toby and he has fluffy golden fur.'",
-                  "B: 'He is adorable! Is he playful or calm at home?'",
-                  "A: 'He is super playful and loves chasing tennis balls in the park!'",
-                  "B: 'My cat Luna is the opposite; she loves sleeping on the sunny windowsill all afternoon!'"
+                  "Let's say that you and a classmate are discussing Pets & Animal Friends, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Pets & Animal Friends.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Pets & Animal Friends?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-zero-class-08/slide-18-pet-store-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -998,20 +1014,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my hobbies & free time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your top hobbies and what makes them exciting.",
-                                        "Example to guide you: 'In my free time, my favorite hobby is drawing digital art on my tablet and playing soccer with my friends. Drawing allows me to express my creativity, while sports keep me active and energized. Having fun hobbies helps me relax after a busy school week!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on My Hobbies & Free Time. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about My Hobbies & Free Time, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: Interview 🎤 / Juego de Roles: Interview 🎤", description: "Production", content: [
-                  "Let's say that you are planning your weekend activities with a classmate, and you want to share your favorite hobbies.",
-                  "Student A: Ask what hobbies your partner enjoys in their free time.",
-                  "Student B: Describe what you like doing (playing music, video games, skateboarding, painting) and invite them.",
-                  "A: 'What do you usually like doing on Saturday afternoons?'",
-                  "B: 'I love playing electric guitar and skateboarding at the local park!'",
-                  "A: 'That sounds really fun! How long have you been playing guitar?'",
-                  "B: 'For about a year! Would you like to come skateboard with us this weekend?'"
+                  "Let's say that you and a classmate are discussing My Hobbies & Free Time, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with My Hobbies & Free Time.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on My Hobbies & Free Time?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-zero-class-09/slide-18-youtuber-interview-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -1109,20 +1127,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about family & friends using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your family members or close friends and what you appreciate about them.",
-                                        "Example to guide you: 'My family is very close and supportive. I live with my parents and my younger sister. We love having dinner together every evening and watching movies on weekends. My best friends at school are also like family to me because we always help each other study and have fun!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Family & Friends. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Family & Friends, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: Family Album 📸 / Juego de Roles: Familia Album 📸", description: "Production", content: [
-                  "Let's say that you are introducing your family members to a friend using family photos from a weekend celebration.",
-                  "Student A: Point to the photo, ask who each person is and what they are like.",
-                  "Student B: Introduce your parents, siblings, or cousins and describe their personality.",
-                  "A: 'Who is that cheerful person next to you in the photo?'",
-                  "B: 'That is my older brother Marco! He is funny and loves playing basketball.'",
-                  "A: 'And who is the lady smiling with the birthday cake?'",
-                  "B: 'That is my mother. She is kind, supportive, and bakes the best desserts!'"
+                  "Let's say that you and a classmate are discussing Family & Friends, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Family & Friends.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Family & Friends?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-zero-class-10/slide-18-family-album-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -1220,21 +1240,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three examples: spell a name, say a safe username, and ask one username question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Alphabet, Spelling Names & Usernames. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Alphabet, Spelling Names & Usernames. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Alfabeto, deletreo and usernames. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Alfabeto, deletreo and usernames, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: New Friends 🤝 / Juego de Roles: New Friends 🤝", description: "Production", content: [
-                "Let's say that you are in a conversation about New Friends 🤝  Juego de Roles New Friends 🤝, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about New Friends 🤝  Juego de Roles New Friends 🤝.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on New Friends 🤝  Juego de Roles New Friends 🤝?'",
-                "B: 'Hi! I find New Friends 🤝  Juego de Roles New Friends 🤝 very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], imageUrl: "/images/teens-basic-zero-class-11/slide-18-new-friends-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                  "Let's say that you and a classmate are discussing Alfabeto, deletreo and usernames, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Alfabeto, deletreo and usernames.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Alfabeto, deletreo and usernames?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], imageUrl: "/images/teens-basic-zero-class-11/slide-18-new-friends-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1331,21 +1353,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create a mini bio with your name, age, city, grade, and one hobby."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Presentarse: edad, curso, ciudad, gustos and redes sociales. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Presentarse: edad, curso, ciudad, gustos and redes sociales. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Presentarse: edad, curso, ciudad, gustos and redes sociales. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Presentarse: edad, curso, ciudad, gustos and redes sociales, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: Meet and Greet 🤝 / Juego de Roles: Meet y Greet 🤝", description: "Production", content: [
-                "Let's say that you are in a conversation about Meet and Greet 🤝  Juego de Roles Meet y Greet 🤝, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about Meet and Greet 🤝  Juego de Roles Meet y Greet 🤝.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on Meet and Greet 🤝  Juego de Roles Meet y Greet 🤝?'",
-                "B: 'Hi! I find Meet and Greet 🤝  Juego de Roles Meet y Greet 🤝 very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], imageUrl: "/images/teens-basic-zero-class-12/slide-18-meet-greet-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                  "Let's say that you and a classmate are discussing Presentarse: edad, curso, ciudad, gustos and redes sociales, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Presentarse: edad, curso, ciudad, gustos and redes sociales.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Presentarse: edad, curso, ciudad, gustos and redes sociales?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], imageUrl: "/images/teens-basic-zero-class-12/slide-18-meet-greet-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1442,21 +1466,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: describe what you are wearing, describe someone's appearance, and ask one style question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Clothes, estilo personal and apariencia. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Clothes, estilo personal and apariencia. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Clothes, estilo personal and apariencia. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Clothes, estilo personal and apariencia, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: Guess Who! 🤔 / Juego de Roles: Guess Who! 🤔", description: "Production", content: [
-                "Let's say that you are in a conversation about Guess Who! 🤔  Juego de Roles Guess Who! 🤔, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about Guess Who! 🤔  Juego de Roles Guess Who! 🤔.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on Guess Who! 🤔  Juego de Roles Guess Who! 🤔?'",
-                "B: 'Hi! I find Guess Who! 🤔  Juego de Roles Guess Who! 🤔 very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], imageUrl: "/images/teens-basic-zero-class-13/slide-18-guess-who-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                  "Let's say that you and a classmate are discussing Clothes, estilo personal and apariencia, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Clothes, estilo personal and apariencia.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Clothes, estilo personal and apariencia?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], imageUrl: "/images/teens-basic-zero-class-13/slide-18-guess-who-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1552,21 +1578,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about school subjects & classroom objects using classroom words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about School Subjects & Classroom Objects. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about School Subjects & Classroom Objects. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on School, materias and objetos del salón. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about School, materias and objetos del salón, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: Lost & Found 🔍 / Juego de Roles: Lost y Found 🔍", description: "Production", content: [
-                "Let's say that you are in a conversation about Lost & Found 🔍  Juego de Roles Lost y Found 🔍, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about Lost & Found 🔍  Juego de Roles Lost y Found 🔍.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on Lost & Found 🔍  Juego de Roles Lost y Found 🔍?'",
-                "B: 'Hi! I find Lost & Found 🔍  Juego de Roles Lost y Found 🔍 very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], imageUrl: "/images/teens-class-14/slide-18.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                  "Let's say that you and a classmate are discussing School, materias and objetos del salón, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with School, materias and objetos del salón.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on School, materias and objetos del salón?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], imageUrl: "/images/teens-class-14/slide-18.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1662,21 +1690,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about rutina diaria básica using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Rutina diaria básica. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Rutina diaria básica. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Rutina diaria básica. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Rutina diaria básica, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: Interview 🎤 / Juego de Roles: Interview 🎤", description: "Production", content: [
-                "Let's say that you are in a conversation about Interview 🎤  Juego de Roles Interview 🎤, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about Interview 🎤  Juego de Roles Interview 🎤.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on Interview 🎤  Juego de Roles Interview 🎤?'",
-                "B: 'Hi! I find Interview 🎤  Juego de Roles Interview 🎤 very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], imageUrl: "/images/teens-class-15/slide-18.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                  "Let's say that you and a classmate are discussing Rutina diaria básica, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Rutina diaria básica.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Rutina diaria básica?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], imageUrl: "/images/teens-class-15/slide-18.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1772,21 +1802,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about level 0 review & final challenge 🏆 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Level 0 Review & Final Challenge 🏆. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Level 0 Review & Final Challenge 🏆. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Level 0 Review & Final Challenge. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Level 0 Review & Final Challenge, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "slide-18", title: "Roleplay: Interview / Juego de Roles: Interview", description: "Interview your partner.", content: [
-                "Let's say that you are in a conversation about Interview  Juego de Roles Interview, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about Interview  Juego de Roles Interview.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on Interview  Juego de Roles Interview?'",
-                "B: 'Hi! I find Interview  Juego de Roles Interview very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], bgColor: "bg-gradient-to-br from-emerald-500 to-green-600", imageUrl: "/images/teens-class-16/slide-18.jpg" }
+                  "Let's say that you and a classmate are discussing Level 0 Review & Final Challenge, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Level 0 Review & Final Challenge.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Level 0 Review & Final Challenge?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], bgColor: "bg-gradient-to-br from-emerald-500 to-green-600", imageUrl: "/images/teens-class-16/slide-18.jpg" }
             ],
             action: "Conversar libremente."
           },
@@ -2112,21 +2144,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about family tree & feelings using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing how you and your family members feel in different situations using emotion adjectives.",
-                                        "Example to guide you: 'When we have family game night, my brother and I feel extremely excited and cheerful. When I have big exams, I feel a little nervous, but my parents are always supportive and encourage me. Talking to my family always makes me feel calm and confident!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
                 content: [
-                  "Let's say that you notice your friend looks a bit stressed about school projects, and you want to ask how they are feeling and offer support.",
-                  "Student A: Ask how your friend is feeling today and why they look worried.",
-                  "Student B: Explain your feelings (tired, nervous, overwhelmed) and describe what happened.",
-                  "A: 'Hey Sophia! You look a bit tired today. How are you feeling?'",
-                  "B: 'I feel a little overwhelmed because I have a math test tomorrow.'",
-                  "A: 'Don't worry! We can review the formulas together during lunch break.'",
-                  "B: 'Thank you so much! That makes me feel much more confident!'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-01/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-01/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -2240,21 +2274,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fast food & healthy choices using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your eating habits and how you maintain a healthy lifestyle.",
-                                        "Example to guide you: 'To stay healthy, I try to eat balanced meals every day. For breakfast, I have oatmeal with berries and almond milk. During lunch, I choose fresh salads and grilled chicken. I avoid sugary sodas and drink plenty of water to keep my energy high during sports!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
                 content: [
-                  "Let's say that you and your gym partner are planning a healthy meal plan for sports training, and you want to choose nutritious ingredients.",
-                  "Student A: Ask about your partner's diet and suggest healthy meal options.",
-                  "Student B: Describe what healthy foods you like eating and what habits you want to improve.",
-                  "A: 'What healthy food do you usually eat before workout sessions?'",
-                  "B: 'I like eating a banana with peanut butter and drinking lots of water.'",
-                  "A: 'That's great for energy! What do you eat after training?'",
-                  "B: 'I usually eat brown rice with vegetables and fish to help my muscles recover!'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-02/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-02/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -2368,21 +2404,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fashion, clothes & weather using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing what clothes you wear in different seasons and weather conditions.",
-                                        "Example to guide you: 'When it is rainy and cold outside, I wear a warm woolen jacket, blue jeans, and waterproof boots with an umbrella. On sunny summer days, I prefer wearing a lightweight cotton T-shirt, shorts, sunglasses, and comfortable sneakers to stay cool and active outdoors!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
                 content: [
-                  "Let's say that you and a friend are packing for a weekend trip where the weather is unpredictable, and you want to make sure you have the right clothes.",
-                  "Student A: Check the weather forecast and ask what clothes your friend is packing.",
-                  "Student B: Explain the weather (windy, chilly, sunny) and describe the outfits you chose.",
-                  "A: 'The forecast says it will be windy and rainy on Saturday. What are you wearing?'",
-                  "B: 'I'm packing a hooded raincoat, a warm hoodie, and sturdy sneakers.'",
-                  "A: 'Good idea! What about Sunday when the sun comes out?'",
-                  "B: 'I packed a light T-shirt and a cap so we can hike comfortably!'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-03/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-03/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -2496,21 +2534,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about nature, parks & outdoors using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite natural park or outdoor spot and what you enjoy doing there.",
-                                        "Example to guide you: 'My favorite natural place is our city park by the lake. It is surrounded by tall pine trees and blooming flowers. I love riding my bicycle along the trails, breathing fresh air, and having picnics with friends while listening to birds singing. Protecting nature is essential for our planet!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
                 content: [
-                  "Let's say that you are organizing a nature cleanup and photography day at the local ecological reserve with a friend.",
-                  "Student A: Propose visiting the national park and describe the natural landscape.",
-                  "Student B: Agree, suggest bringing trash bags and cameras, and name activities to do.",
-                  "A: 'Let's visit the nature reserve this Saturday morning!'",
-                  "B: 'I love that idea! We can hike the mountain trail and take photos of the lake.'",
-                  "A: 'Can we also bring eco-friendly bags to pick up any plastic along the path?'",
-                  "B: 'Definitely! Keeping our parks clean protects the wildlife and makes the trails beautiful!'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-04/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-04/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -2624,21 +2664,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about weekend plans with will and going to using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your plans for the upcoming weekend using 'be going to' and 'will'.",
-                                        "Example to guide you: 'This weekend, I am going to have a busy and fun schedule. On Saturday morning, I am going to practice with my basketball team. In the evening, my friends and I will watch a new sci-fi movie at the cinema. On Sunday, I will finish my school science project and relax with my family!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay",
                 content: [
-                  "Let's say that you are discussing upcoming weekend plans with a classmate, and you want to invite them to join an activity.",
-                  "Student A: Ask what your friend is going to do on Saturday and Sunday.",
-                  "Student B: Share your scheduled plans and ask what they have planned.",
-                  "A: 'Hey Lucas! What are you going to do this Saturday afternoon?'",
-                  "B: 'I am going to visit the modern art museum with my sister. What about you?'",
-                  "A: 'I am going to play soccer in the morning, but I'm free in the evening!'",
-                  "B: 'Awesome! Would you like to join us for dinner at the pizza place afterwards?'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-05/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", imageUrl: "/images/teens-basic-1-class-05/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -2752,21 +2794,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three invitation responses: one invitation, one acceptance, and one polite decline."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to politely accept and decline invitations with realistic excuses in English.",
-                                        "Example to guide you: 'When a friend invites me to an event I can attend, I say: 'I'd love to! Thank you for inviting me!' But if I am busy with family commitments or studying for exams, I politely decline by saying: 'I'm sorry, I'd love to come, but I have a doctor's appointment. Maybe next time!' Being polite keeps friendships strong!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out an invitation dialogue.", type: "roleplay",
                 content: [
-                  "Let's say that you are inviting a friend to your birthday celebration, and your friend has another commitment they need to explain politely.",
-                  "Student A: Invite your friend to your celebration giving the time, date, and place.",
-                  "Student B: Politely explain that you have a prior family event, apologize, and suggest meeting later.",
-                  "A: 'Hey! I'm celebrating my birthday this Friday at 6:00 PM. Would you like to come?'",
-                  "B: 'Happy early birthday! I'd love to, but I have to attend my cousin's wedding that night.'",
-                  "A: 'Oh, don't worry! Family comes first.'",
-                  "B: 'Thank you for understanding! Can we hang out on Sunday afternoon instead?'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-06/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your invitation dialogue with the class.", imageUrl: "/images/teens-basic-1-class-06/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -2880,21 +2924,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three shopping phrases: ask a price, ask for a color or size, and say how you will pay."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about shopping for clothing, comparing prices, and finding bargains in English.",
-                                        "Example to guide you: 'When I go shopping for clothes, I always look for comfortable hoodies and quality sneakers. I ask the sales assistant: 'How much does this jacket cost?' and 'Is there a discount on these shoes?' Comparing prices helps me manage my budget and buy the best products without overspending!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out a clothing store situation.", type: "roleplay",
                 content: [
-                  "Let's say that you are at a sports clothing store, and you want to ask the clerk about sizes, colors, and prices of athletic gear.",
-                  "Student A: Act as the store assistant, greet the shopper, and offer help.",
-                  "Student B: Ask for a specific size, color, the price, and whether they accept card payments.",
-                  "A: 'Good afternoon! How can I help you today?'",
-                  "B: 'Hi! How much is this black sports jacket in size medium?'",
-                  "A: 'That jacket is forty-five dollars, and today it has a twenty percent discount!'",
-                  "B: 'That is a great deal! Can I try it on in the fitting room?'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-07/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your shopping dialogue with the class.", imageUrl: "/images/teens-basic-1-class-07/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -3008,21 +3054,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three food order phrases: one polite order, one drink request, and one preference."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing how to order food and beverages politely at a cafe or restaurant.",
-                                        "Example to guide you: 'When I visit a cafe with friends, I use polite phrases like: 'Could I please have an iced matcha latte and a toasted turkey bagel?' If I have dietary preferences, I ask: 'Does this pastry contain nuts?' Using polite language with the server shows good manners and ensures a pleasant dining experience!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Act out a cafe order.", type: "roleplay",
                 content: [
-                  "Let's say that you are at a lively urban coffee shop, and you want to order a beverage and a snack from the barista.",
-                  "Student A: Act as the friendly barista, take the order, and suggest a snack.",
-                  "Student B: Order a drink with specific preferences (size, milk type) and a pastry.",
-                  "A: 'Welcome to Central Cafe! What can I get started for you today?'",
-                  "B: 'Hi! Could I please have a medium caramel iced coffee with oat milk?'",
-                  "A: 'Sure! Would you like a warm chocolate muffin or a cinnamon roll with that?'",
-                  "B: 'I'll take the chocolate muffin, please. How much is the total?'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-08/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your cafe order dialogue with the class.", imageUrl: "/images/teens-basic-1-class-08/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -3136,21 +3184,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three technology phrases: one device habit, one app preference, and one screen time idea."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about how modern technology apps and software help you with your studies and hobbies.",
-                                        "Example to guide you: 'Technology plays a major role in my daily education. I use language learning apps to practice English vocabulary, cloud storage to organize school assignments, and video editing tools to create creative projects. Using digital tools responsibly allows me to learn faster and connect with people worldwide!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Ask for help using an app or device.", type: "roleplay",
                 content: [
-                  "Let's say that you are showing a classmate a productivity or language study app that helped you improve your grades.",
-                  "Student A: Ask which app your partner uses to organize homework and practice English.",
-                  "Student B: Explain the app's key features, how it works, and why it is effective.",
-                  "A: 'How do you keep all your study notes and English vocabulary so organized?'",
-                  "B: 'I use a smart flashcard app on my phone that quizzes me every day!'",
-                  "A: 'Is it easy to create digital decks with audio and images?'",
-                  "B: 'Yes, it takes two minutes! It even tracks your streak and sends helpful reminders!'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-09/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Share your favorite app or device and one safe online habit.", imageUrl: "/images/teens-basic-1-class-09/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -3264,21 +3314,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three phrases: one chat message, one call request, and one trip plan."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to ask for help, repetition, and clarification politely in English.",
-                                        "Example to guide you: 'Whenever I don't understand an instruction in class, I politely ask my teacher: 'Could you please repeat that?' or 'What does this word mean in this context?' Asking for clarification is a sign of a proactive learner because it helps you master concepts without confusion and improves your communication skills!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de roles", description: "Call or chat with a friend to ask for help planning a trip.", type: "roleplay",
                 content: [
-                  "Let's say that you are working on a complex group science project, and you need your partner to clarify an instruction you didn't understand.",
-                  "Student A: Explain a multi-step project task to your teammate.",
-                  "Student B: Ask for clarification politely using 'Could you explain what you mean by...?'",
-                  "A: 'First we need to synthesize the survey data, and then format the chart.'",
-                  "B: 'Excuse me, could you please explain what you mean by synthesizing the data?'",
-                  "A: 'Sure! It means grouping all student answers into three main percentage categories.'",
-                  "B: 'Ah, I understand now! Let's start grouping the responses right away!'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], imageUrl: "/images/teens-basic-1-class-10/slide-17.jpg", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Compartir", description: "Present your event or trip plan to the class.", imageUrl: "/images/teens-basic-1-class-10/slide-18.jpg", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
@@ -3556,20 +3608,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to animals & habitats."],
                                       use: ["You have 60 seconds: create three sentences about animals & habitats: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing the personality qualities you value most in yourself and your friends.",
-                                        "Example to guide you: 'The qualities I value most in a friend are honesty, kindness, and a good sense of humor. I consider myself a curious and hardworking student who enjoys helping others. Having loyal and positive friends motivates me to achieve my goals and overcome any challenge!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Animals & Habitats. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Animals & Habitats, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-01/slide-18.jpg", content: [
-                  "Let's say that you are interviewing a classmate for a school leadership committee, and you want to ask about their personal strengths and qualities.",
-                  "Student A: Ask what personality qualities make your partner a great team leader.",
-                  "Student B: Describe your strengths (responsible, creative, empathetic) with real examples.",
-                  "A: 'What personal qualities make you a strong candidate for the student council?'",
-                  "B: 'I am very organized, empathetic, and I listen carefully to everyone's ideas.'",
-                  "A: 'How do you handle disagreements within a team?'",
-                  "B: 'I stay calm, encourage open communication, and find solutions that benefit everyone!'"
+                  "Let's say that you and a classmate are discussing Animals & Habitats, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Animals & Habitats.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Animals & Habitats?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -3663,20 +3717,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to my room & dream house."],
                                       use: ["You have 60 seconds: create three sentences about my room & dream house: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing household responsibilities and how sharing chores builds teamwork at home.",
-                                        "Example to guide you: 'At home, my family shares daily responsibilities to keep our house organized. My daily chore is washing the dishes after dinner and walking the dog in the afternoon. On weekends, I clean my bedroom and take out the recycling. Sharing chores teaches responsibility and keeps our home clean!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on My Room & Dream House. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about My Room & Dream House, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-02/slide-18.jpg", content: [
-                  "Let's say that you and your sibling are organizing a chore schedule for the week so you can finish your homework and have free time.",
-                  "Student A: Propose dividing household tasks (vacuuming, laundry, washing dishes).",
-                  "Student B: Agree on who takes which task and set a completion deadline.",
-                  "A: 'Let's organize our chores so we can both finish early on Saturday.'",
-                  "B: 'Good plan! I can wash the dishes and water the plants every morning.'",
-                  "A: 'Great! I will vacuum the living room and take out the trash.'",
-                  "B: 'Perfect! If we work together, we will finish everything in under an hour!'"
+                  "Let's say that you and a classmate are discussing My Room & Dream House, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with My Room & Dream House.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on My Room & Dream House?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -3770,20 +3826,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to vehicles, transport & city."],
                                       use: ["You have 60 seconds: create three sentences about vehicles, transport & city: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite academic subjects, your strengths, and your future career interests.",
-                                        "Example to guide you: 'My favorite subjects at school are biology and chemistry because I am fascinated by how living organisms function. I am strong at solving logic problems and conducting lab experiments. In the future, I hope to study medicine or biotechnology to help cure diseases and protect human health!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Vehicles, Transport & City. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Vehicles, Transport & City, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-03/slide-18.jpg", content: [
-                  "Let's say that you and your study partner are choosing elective courses for next term, and you want to discuss your academic strengths.",
-                  "Student A: Ask which subjects your partner excels in and what electives they prefer.",
-                  "Student B: Share your favorite academic subjects and explain why they align with your goals.",
-                  "A: 'Which elective subjects are you planning to take next semester?'",
-                  "B: 'I'm choosing Computer Science and Graphic Design because I love digital technology.'",
-                  "A: 'Are you strong at coding algorithms?'",
-                  "B: 'I've been learning Python for six months, and I really enjoy building interactive games!'"
+                  "Let's say that you and a classmate are discussing Vehicles, Transport & City, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Vehicles, Transport & City.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Vehicles, Transport & City?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -3877,20 +3935,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to dream jobs & professions."],
                                       use: ["You have 60 seconds: create three sentences about dream jobs & professions: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to give clear navigational directions to a landmark in your city.",
-                                        "Example to guide you: 'If someone asks for directions to the city library from the central station, I tell them: 'Go straight along Main Avenue for three blocks. Turn left at the traffic light onto Oak Street. Walk past the bookstore, and the library will be on your right, across from the park.' Giving clear directions is very helpful!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Dream Jobs & Professions. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Dream Jobs & Professions, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-04/slide-18.jpg", content: [
-                  "Let's say that you are helping a tourist on the street who is trying to find the modern art museum, and you want to give clear step-by-step directions.",
-                  "Student A: Act as the tourist, ask where the museum is and whether it is within walking distance.",
-                  "Student B: Give detailed directions using prepositions of place and navigational verbs.",
-                  "A: 'Excuse me! Could you tell me how to get to the Modern Art Museum?'",
-                  "B: 'Sure! Walk straight ahead along this boulevard for two blocks until you see the fountain.'",
-                  "A: 'Do I turn left or right at the fountain?'",
-                  "B: 'Turn right onto Green Street. Walk past the cinema, and the museum is right across from the park!'"
+                  "Let's say that you and a classmate are discussing Dream Jobs & Professions, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Dream Jobs & Professions.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Dream Jobs & Professions?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -3984,20 +4044,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to abilities with can / can't."],
                                       use: ["You have 60 seconds: create three sentences about abilities with can / can't: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds giving a review of your favorite movie or TV series, describing the plot and why you recommend it.",
-                                        "Example to guide you: 'My favorite movie is an inspiring science fiction film called Interstellar. The plot follows a team of brave astronauts who travel through a wormhole to find a habitable planet for humanity. The visual effects are breathtaking and the emotional soundtrack made it an unforgettable cinema masterpiece. I highly recommend it!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Habilidades con can. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Habilidades con can, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-05/slide-18.jpg", content: [
-                  "Let's say that you and a friend are deciding which movie to watch at the cinema this Friday, and you want to compare different genres and actors.",
-                  "Student A: Suggest an action or mystery film and describe the premise.",
-                  "Student B: Mention your preferred genre (sci-fi, comedy), discuss the actors, and agree on a screening time.",
-                  "A: 'Have you seen the trailer for the new mystery detective movie?'",
-                  "B: 'Yes! The plot looks full of unexpected twists and suspense.'",
-                  "A: 'Would you like to watch the 6:30 PM screening this Friday?'",
-                  "B: 'Definitely! Let's book the tickets online so we can get great seats in the middle!'"
+                  "Let's say that you and a classmate are discussing Habilidades con can, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Habilidades con can.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Habilidades con can?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -4091,20 +4153,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to school rules: must, have to, should."],
                                       use: ["You have 60 seconds: create three sentences about school rules: must, have to, should: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to prepare your favorite simple recipe using cooking action verbs.",
-                                        "Example to guide you: 'To make a delicious homemade guacamole, first you cut two ripe avocados in half and scoop the pulp into a bowl. Next, chop fresh tomatoes, onions, and cilantro. Squeeze the juice of one fresh lime and add a pinch of salt. Finally, mash everything gently with a fork and serve with crunchy tortilla chips!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Reglas escolares with must, have to, should. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Reglas escolares with must, have to, should, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-06/slide-18.jpg", content: [
-                  "Let's say that you and your friend are cooking a healthy homemade dinner together, and you want to explain the preparation steps.",
-                  "Student A: Ask what ingredients and utensils are needed for the dish.",
-                  "Student B: Explain the cooking steps in order using verbs like chop, boil, mix, and bake.",
-                  "A: 'What ingredients do we need to prepare the homemade pasta sauce?'",
-                  "B: 'We need fresh tomatoes, garlic, olive oil, basil, and a pinch of black pepper.'",
-                  "A: 'Should I dice the tomatoes or blend them?'",
-                  "B: 'Dice the tomatoes first, sauté the garlic in olive oil, and simmer everything for fifteen minutes!'"
+                  "Let's say that you and a classmate are discussing Reglas escolares with must, have to, should, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Reglas escolares with must, have to, should.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Reglas escolares with must, have to, should?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -4198,20 +4262,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to sports, health & habits."],
                                       use: ["You have 60 seconds: create three sentences about sports, health & habits: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining how to describe common health symptoms and give caring advice in English.",
-                                        "Example to guide you: 'When someone has a cold or a headache, it is important to describe the symptoms accurately. If I feel unwell, I say: 'I have a sore throat, a fever, and a mild cough.' Helpful health advice includes drinking warm herbal tea with honey, getting plenty of rest, and consulting a doctor if symptoms persist!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Sports, Health and hábitos. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Sports, Health and hábitos, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-07/slide-18.jpg", content: [
-                  "Let's say that you are visiting the school nurse because you started feeling dizzy and developed a headache during gym class.",
-                  "Student A: Act as the school nurse, ask what symptoms the student has and when they started.",
-                  "Student B: Explain your symptoms (headache, fever, sore throat) and ask for advice.",
-                  "A: 'Hello! How are you feeling, and what seems to be the problem?'",
-                  "B: 'Hi, I have a throbbing headache and I started feeling dizzy after running in P.E.'",
-                  "A: 'Let me check your temperature. Drink this glass of cool water and rest here for a few minutes.'",
-                  "B: 'Thank you! Should I take any medicine if the headache continues?'"
+                  "Let's say that you and a classmate are discussing Sports, Health and hábitos, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Sports, Health and hábitos.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Sports, Health and hábitos?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -4305,20 +4371,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to city, transport & places to go out."],
                                       use: ["You have 60 seconds: create three sentences about city, transport & places to go out: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your personal clothing style, favorite colors, and how you choose outfits.",
-                                        "Example to guide you: 'My personal style is casual, modern, and comfortable. I love wearing oversized hoodies in earthy tones like olive green or beige, paired with classic denim jeans and clean white sneakers. When shopping, I prioritize sustainable fabrics and durable quality over fast-fashion trends!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Ciudad, transporte and Places para salir. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Ciudad, transporte and Places para salir, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-08/slide-18.jpg", content: [
-                  "Let's say that you and your friend are shopping for outfits for the end-of-year school party, and you want to give each other fashion advice.",
-                  "Student A: Ask for your friend's opinion on a stylish jacket and dress shoes.",
-                  "Student B: Give honest feedback on the color, fit, and suggest matching accessories.",
-                  "A: 'What do you think of this navy blue blazer for the school celebration?'",
-                  "B: 'It looks very elegant! The dark blue color matches your style perfectly.'",
-                  "A: 'Do you think I should wear it with black shoes or brown loafers?'",
-                  "B: 'Brown loafers would give it a modern, stylish contrast!'"
+                  "Let's say that you and a classmate are discussing Ciudad, transporte and Places para salir, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Ciudad, transporte and Places para salir.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Ciudad, transporte and Places para salir?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -4412,20 +4480,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to series, movies, games & music."],
                                       use: ["You have 60 seconds: create three sentences about series, movies, games & music: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about actions young people can take to protect the environment and combat climate change.",
-                                        "Example to guide you: 'Protecting the environment starts with daily conscious choices. In my routine, I reduce single-use plastics by carrying a reusable water bottle and cloth shopping bags. I always separate recyclables and turn off electrical appliances when not in use. If every teen takes small green actions, we can preserve our planet for future generations!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Describir series, películas, juegos and música. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Describir series, películas, juegos and música, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-09/slide-18.jpg", content: [
-                  "Let's say that you and a classmate are proposing an eco-friendly recycling initiative for your school campus.",
-                  "Student A: Propose installing separated recycling bins for paper, plastic, and organic waste.",
-                  "Student B: Support the idea and suggest organizing a student workshop on reducing energy waste.",
-                  "A: 'Our school should install distinct recycling bins in every hallway.'",
-                  "B: 'That's a fantastic idea! We could also organize a student campaign on saving electricity.'",
-                  "A: 'Yes! We can design posters encouraging students to turn off lights when leaving classrooms.'",
-                  "B: 'Let's present this green proposal to our principal next Monday!'"
+                  "Let's say that you and a classmate are discussing Describir series, películas, juegos and música, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Describir series, películas, juegos and música.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Describir series, películas, juegos and música?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -4519,20 +4589,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to current conversations, routines & speaking review."],
                                       use: ["You have 60 seconds: create three sentences about current conversations, routines & speaking review: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your future goals, dreams, and what steps you are taking to achieve them.",
-                                        "Example to guide you: 'My main future goal is to study software engineering at a top university and develop apps that help communities solve real-world problems. To achieve this dream, I practice coding every week, read technology journals, and work hard to master English fluency. Dedication and consistency turn dreams into reality!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Conversación actual, rutinas and Review Speaking por retos. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Conversación actual, rutinas and Review Speaking por retos, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
               { id: "slide-18", title: "Roleplay / Juego de Roles", description: "Practice with a partner.", imageUrl: "/images/teens-basic-2-class-10/slide-18.jpg", content: [
-                  "Let's say that you are having a career counseling session with a mentor, and you want to discuss your long-term ambitions and study path.",
-                  "Student A: Act as the mentor, ask what career fields interest the student and why.",
-                  "Student B: Explain your passion (engineering, arts, medicine) and describe the skills you are developing.",
-                  "A: 'What career field are you most passionate about pursuing after high school?'",
-                  "B: 'I am deeply passionate about biomedical engineering and healthcare innovation.'",
-                  "A: 'What steps are you currently taking to prepare for university admissions?'",
-                  "B: 'I am focusing on advanced science courses, practicing English daily, and volunteering at a local clinic!'"
+                  "Let's say that you and a classmate are discussing Conversación actual, rutinas and Review Speaking por retos, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Conversación actual, rutinas and Review Speaking por retos.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Conversación actual, rutinas and Review Speaking por retos?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ], bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
@@ -4955,8 +5027,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say four routine verbs and two time phrases."],
                     use: ["Make three sentences: one with I, one with he/she, and one with usually."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your daily routine from morning to night. Mention what time you wake up, your school habits, and how you spend your free time in the evening using present simple and frequency adverbs.",
-                                        "Example to guide you: 'Every weekday, I wake up at 6:30 AM and have breakfast with my family. At 7:30 AM, I walk to school. In the afternoon, I usually do my homework and play basketball. Finally, I always read a book before going to sleep at 10:00 PM.'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -5243,8 +5317,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say five sports words and three team words."],
                     use: ["Make three sentences: one sport you play, one team you support, and one comparison."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing your favorite sport or physical activity. Mention the equipment needed, how often you practice, and why teamwork and fair play are important to you.",
-                                        "Example to guide you: 'My favorite sport is soccer. I train three times a week with my school team on the field. You need a ball, cleats, and shin guards. I love soccer because teamwork and fair play teach us to support each other and celebrate victories together!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -5531,8 +5607,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say four holidays and three celebration verbs."],
                     use: ["Make three sentences: one about your favorite holiday, one about family food, and one with 'We celebrate...'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite holiday or family tradition. Mention when it is celebrated, special foods you eat, and unique customs you practice.",
-                                        "Example to guide you: 'My favorite holiday is New Year's Eve, celebrated on December 31st. My entire family gathers to cook a delicious feast, wear bright clothes, and watch fireworks at midnight. We make 12 wishes for the new year and hug each other with joy!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -5820,8 +5898,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say four space words and three future science verbs."],
                     use: ["Make three sentences: one with 'will', one with 'won't', and one with 'in the future'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about how science, technology, and space exploration will change our world by the year 2050. Use will and won't to make at least three clear predictions.",
-                                        "Example to guide you: 'In the year 2050, I believe scientists will discover water on Mars and astronauts will build permanent space colonies. Clean solar energy will power all our cities, and smart robots will assist doctors in hospitals. We won't use fossil fuels anymore!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -6109,8 +6189,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say four childhood words and three past personality adjectives."],
                     use: ["Make three sentences: one with 'I was', one with 'We were', and one with 'wasn't'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing what you were like when you were 7 or 8 years old. Mention your personality, your favorite childhood toy, your primary school, and your best friend using was and were.",
-                                        "Example to guide you: 'When I was seven years old, I was very playful and energetic. My favorite toy was a red scooter, and my best friend was Mateo. We were inseparable in primary school and spent every recess playing in the playground. It was a wonderful time!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -6398,8 +6480,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say four travel words and four past verbs (two regular, two irregular)."],
                     use: ["Make three sentences: one about where you went, one about what you ate, and one with 'didn't'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds describing an unforgettable vacation or travel experience. Mention where you went, who you traveled with, 2 activities you did, and one funny mishap using past simple verbs.",
-                                        "Example to guide you: 'Last summer, I traveled to the coast with my family. We stayed in a cabin near the beach and swam in the ocean every morning. One afternoon, we went hiking, but suddenly it started raining! Fortunately, we found a cozy cafe and drank hot chocolate!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -6687,8 +6771,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say four biographical verbs and three milestone words."],
                     use: ["Make three sentences: one with 'was born in', one with 'at age...', and one with 'won'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds presenting the biography of an inspiring artist, athlete, or innovator you admire. Mention where they were born, their early challenges, and their greatest achievements.",
-                                        "Example to guide you: 'I admire Lionel Messi. He was born in Rosario, Argentina in 1987. When he was young, he overcame health difficulties and trained tirelessly. At age 13, he moved to Barcelona. He won multiple Ballon d'Or awards and led his team to World Cup victory!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -6976,8 +7062,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say five storytelling connectors (one for sequence, one for surprise, one for contrast, one for cause, one for resolution)."],
                     use: ["Make three connected sentences telling a mini-anecdote using 'First', 'Suddenly', and 'So'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds telling an exciting story about an adventure or a mystery. Use at least four storytelling connectors: First, Suddenly, Meanwhile, and In the end.",
-                                        "Example to guide you: 'First, my friends and I decided to explore an old mountain path. Although the sky was overcast, we kept walking. Suddenly, thunder roared and heavy rain poured down! Meanwhile, we searched for shelter and found a dry cave. In the end, the sun returned and we made it home safely!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -7265,8 +7353,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say four common problem words and three troubleshooting verbs."],
                     use: ["Make three sentences: one starting with 'There is a problem with...', one with 'The issue is that...', and one polite request with 'Could you please...'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds explaining an everyday problem with a gadget, bike, or school item. State what is broken, what caused it, and make a polite request for help.",
-                                        "Example to guide you: 'Excuse me, there is an issue with my tablet. The screen is cracked and the device keeps freezing whenever I open my homework app. I tried restarting it, but it still won't respond. Could you please check if it can be repaired or replaced? I would really appreciate your help!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -7277,13 +7367,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                 description: "Roleplay a customer and a tech support specialist.",
                 type: "roleplay",
                 content: [
-                  "Let's say that you are visiting a repair technician because your laptop screen froze right before an important assignment, and you want to request assistance politely.",
-                  "Student A: Act as the tech specialist, ask what the problem is and what symptoms occurred.",
-                  "Student B: Explain the issue clearly with 'There is a problem with...' and politely ask for a solution.",
-                  "A: 'Hello! How can I assist you with your device today?'",
-                  "B: 'Hi! There is an issue with my laptop. The screen froze completely and the battery drained rapidly.'",
-                  "A: 'I see. Did you install any new updates recently?'",
-                  "B: 'No, it happened suddenly during my online class. Could you please check if the battery needs replacing?'"
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
                 ],
                 imageUrl: "/images/teens-basic-3-class-09/slide-19-tech-support-roleplay.jpg",
                 bgColor: "bg-gradient-to-br from-sky-600 to-indigo-700"
@@ -7554,8 +7644,10 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     remember: ["Say three verbs for each -ed sound: three for /t/, three for /d/, and three for /ɪd/."],
                     use: ["Make three sentences: one about a past vacation (irregular verb), one with 'when I was little', and one future prediction with 'will'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 45 seconds delivering your Capstone Graduation Speech for Level 3. Mention 1 childhood memory with was/were, 1 vacation anecdote with irregular verbs, and 1 future prediction with will.",
-                                        "Example to guide you: 'Hello everyone! During Level 3, I made tremendous progress in English. When I was younger, I was shy, but now I speak with confidence. Last summer, I traveled with my family and practiced English on vacation. In the future, I will use English to travel the world, study science, and achieve my goals. Thank you for an amazing journey!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                   }
                 }
@@ -7888,22 +7980,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my opinions & perspectives using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Opinions & Perspectives. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Opinions & Perspectives. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8014,22 +8108,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about giving good advice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Giving Good Advice. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Giving Good Advice. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8140,22 +8236,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about conditions & outcomes using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Conditions & Outcomes. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Conditions & Outcomes. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8266,22 +8364,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about messaging & online chats using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Messaging & Online Chats. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Messaging & Online Chats. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8392,22 +8492,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about first conditional using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about First Conditional. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about First Conditional. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8511,21 +8613,23 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about comparativos and superlativos: apps, celulares, películas and sports using hobbies: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Comparativos and superlativos: apps, celulares, películas and Sports. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Comparativos and superlativos: apps, celulares, películas and Sports. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Comparativos and superlativos: apps, celulares, películas and Sports. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Comparativos and superlativos: apps, celulares, películas and Sports, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 18", title: "Roleplay/Share / Juego de Roles/Share", content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-500 to-yellow-600" }
+                  "Let's say that you and a classmate are discussing Comparativos and superlativos: apps, celulares, películas and Sports, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Comparativos and superlativos: apps, celulares, películas and Sports.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Comparativos and superlativos: apps, celulares, películas and Sports?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-500 to-yellow-600" }
             ],
             action: "Conversar libremente."
           },
@@ -8634,22 +8738,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about too and enough for excess and sufficiency using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Too and Enough for Excess and Sufficiency. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Too and Enough for Excess and Sufficiency. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8760,22 +8866,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about modal verbs for advice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Modal Verbs for Advice. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Modal Verbs for Advice. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8886,22 +8994,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about informal and formal messages, emails & chats using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Informal and Formal Messages, Emails & Chats. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Informal and Formal Messages, Emails & Chats. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9012,22 +9122,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about teen customer service & transition evaluation using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Teen Customer Service & Transition Evaluation. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Teen Customer Service & Transition Evaluation. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9317,22 +9429,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my life experiences using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Life Experiences. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Life Experiences. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9443,22 +9557,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about teen slang & phrasal verbs using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Teen Slang & Phrasal Verbs. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Teen Slang & Phrasal Verbs. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9569,22 +9685,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about possibilities & deductions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Possibilities & Deductions. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Possibilities & Deductions. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9695,22 +9813,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about if i ruled the world (conditionals) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about If I ruled the world (Conditionals). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about If I ruled the world (Conditionals). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9821,22 +9941,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about agreeing & disagreeing using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Agreeing & Disagreeing. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Agreeing & Disagreeing. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9947,22 +10069,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about podcast & debate basics using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Podcast & Debate Basics. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Podcast & Debate Basics. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10073,22 +10197,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present perfect for life experiences using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Present Perfect for Life Experiences. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Present Perfect for Life Experiences. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10199,22 +10325,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about frequent phrasal verbs in teen conversations using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Frequent Phrasal Verbs in Teen Conversations. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Frequent Phrasal Verbs in Teen Conversations. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10325,22 +10453,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about modals of possibility and deduction using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Modals of Possibility and Deduction. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Modals of Possibility and Deduction. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10451,22 +10581,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about second conditional using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Second Conditional. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Second Conditional. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10577,22 +10709,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about respectful opinions, agreement & disagreement using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Respectful Opinions, Agreement & Disagreement. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Respectful Opinions, Agreement & Disagreement. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10703,22 +10837,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about podcast or debate projects and scholarship or job interviews using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Podcast or Debate Projects and Scholarship or Job Interviews. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Podcast or Debate Projects and Scholarship or Job Interviews. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11008,22 +11144,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about gossip & news (reported speech) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Gossip & News (Reported Speech). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Gossip & News (Reported Speech). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11134,22 +11272,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about describing the details (relative clauses) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Describing the Details (Relative Clauses). Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Describing the Details (Relative Clauses). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11260,22 +11400,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about tech & passive voice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Tech & Passive Voice. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Tech & Passive Voice. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11386,22 +11528,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about real idioms in context using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Real Idioms in Context. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Real Idioms in Context. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11512,22 +11656,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about reported speech in gossip, news & conversations using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Reported Speech in Gossip, News & Conversations. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Reported Speech in Gossip, News & Conversations. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11638,22 +11784,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about relative clauses and detailed descriptions of people and things using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Relative Clauses and Detailed Descriptions of People and Things. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Relative Clauses and Detailed Descriptions of People and Things. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11764,22 +11912,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about passive voice in news and technology using technology words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Passive Voice in News and Technology. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Passive Voice in News and Technology. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11890,22 +12040,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about phrasal verbs and real-life idioms using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Phrasal Verbs and Real-life Idioms. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Phrasal Verbs and Real-life Idioms. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12016,22 +12168,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about debates: ia, redes sociales, medioambiente and educación using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Debates: IA, redes sociales, medioambiente and educación. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Debates: IA, redes sociales, medioambiente and educación. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12142,22 +12296,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about work or volunteer interviews and problem solving using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Work or Volunteer Interviews and Problem Solving. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Work or Volunteer Interviews and Problem Solving. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12447,22 +12603,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about future goals & plans using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Future Goals & Plans. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Future Goals & Plans. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12573,22 +12731,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about past decisions & mixed conditionals using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Past Decisions & Mixed Conditionals. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Past Decisions & Mixed Conditionals. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12699,22 +12859,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about diplomacy & nuance using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Diplomacy & Nuance. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Diplomacy & Nuance. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12825,22 +12987,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about academic writing & essays using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Academic Writing & Essays. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Academic Writing & Essays. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12951,22 +13115,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about leadership & teamwork using job words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Leadership & Teamwork. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Leadership & Teamwork. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13077,22 +13243,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about future continuous, future perfect & goal planning using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Future Continuous, Future Perfect & Goal Planning. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Future Continuous, Future Perfect & Goal Planning. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13203,22 +13371,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about mixed conditionals and past decisions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Mixed Conditionals and Past Decisions. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Mixed Conditionals and Past Decisions. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13329,22 +13499,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about cleft sentences for emphasis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Cleft Sentences for Emphasis. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Cleft Sentences for Emphasis. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13455,22 +13627,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about essays, opinions & academic presentations using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Essays, Opinions & Academic Presentations. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Essays, Opinions & Academic Presentations. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13581,22 +13755,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about meetings, leadership & teamwork using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Meetings, Leadership & Teamwork. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Meetings, Leadership & Teamwork. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13707,22 +13883,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about final project: business pitch or conference talk using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Final Project: Business Pitch or Conference Talk. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Final Project: Business Pitch or Conference Talk. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14012,22 +14190,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about critical thinking & debate using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Critical Thinking & Debate. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Critical Thinking & Debate. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14138,22 +14318,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about pop culture & media analysis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Pop Culture & Media Analysis. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Pop Culture & Media Analysis. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14264,22 +14446,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about university & academic english using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about University & Academic English. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about University & Academic English. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14390,22 +14574,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about content creation & ted talks using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Content Creation & TED Talks. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Content Creation & TED Talks. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14516,22 +14702,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about debate competitivo and pensamiento crítico using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Debate competitivo and pensamiento crítico. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Debate competitivo and pensamiento crítico. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14642,22 +14830,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about movie, music, news & digital culture analysis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Movie, Music, News & Digital Culture Analysis. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Movie, Music, News & Digital Culture Analysis. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14768,22 +14958,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about academic english for university and exchange programs using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Academic English for University and Exchange Programs. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Academic English for University and Exchange Programs. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14894,22 +15086,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about podcast, video essay & ted-style presentation creation using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Podcast, Video Essay & TED-style Presentation Creation. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Podcast, Video Essay & TED-style Presentation Creation. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -15020,22 +15214,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about global issues: technology, ethics, climate & society using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Global Issues: Technology, Ethics, Climate & Society. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about Global Issues: Technology, Ethics, Climate & Society. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -15146,22 +15342,24 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about c1 interview preparation & conversation club using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about C1 Interview Preparation & Conversation Club. Connect your ideas using the structures and vocabulary practiced today.",
-                                        "Example to guide you: 'In today's lesson, I practiced speaking about C1 Interview Preparation & Conversation Club. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                        
+                                          "You have 3 minutes to prepare. Then speak for 30 seconds expressing your thoughts on Emoji Mission. Connect your ideas using the grammar structures and vocabulary practiced today.",
+                                          "Example to guide you: 'In today's class about Emoji Mission, I learned how to express my ideas clearly. Practicing with real examples helps me build fluency, expand my vocabulary, and communicate confidently with friends!'"
+                                        
                                       ]
                                     }
                                   }
                                 },
                 { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
                 content: [
-                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
-                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
-                "Student B: Respond naturally with complete sentences using today's vocabulary.",
-                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
-                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
-                "A: 'That's true! Can you give me an example from your experience?'",
-                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
-              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                  "Let's say that you and a classmate are discussing Emoji Mission, and you want to share your personal experiences and opinions.",
+                  "Student A: Ask your partner about their experience with Emoji Mission.",
+                  "Student B: Answer with detailed sentences using today's vocabulary and ask them back.",
+                  "A: 'Hey! What did you think about today's topic on Emoji Mission?'",
+                  "B: 'I really enjoyed it! It gives us great vocabulary to talk about our daily experiences.'",
+                  "A: 'How do you plan to use what we learned outside of class?'",
+                  "B: 'I'm going to practice using these phrases in our group projects and conversations!'"
+                ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
