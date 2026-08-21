@@ -61,6 +61,7 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
   const [filterType, setFilterType] = useState<'all' | 'phrasal_verb' | 'idiom' | 'word' | 'multi' | 'needs_review'>('all');
   const [activeMeaningTabs, setActiveMeaningTabs] = useState<Record<string, number>>({});
   const [audioPlayingId, setAudioPlayingId] = useState<string | null>(null);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
 
   // Load items on mount
   const loadData = async () => {
@@ -484,13 +485,36 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
                           {item.masteryScore}%
                         </span>
                       </div>
-                      <button
-                        onClick={() => handleDeleteItem(item.id)}
-                        className="text-slate-300 hover:text-rose-500 p-1.5 rounded-lg transition-colors"
-                        title="Eliminar de la bóveda"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
+
+                      {deletingId === item.id ? (
+                        <div className="flex items-center gap-1.5 bg-rose-50 border border-rose-200 p-1 rounded-xl animate-in fade-in">
+                          <span className="text-[11px] font-bold text-rose-700 pl-1">¿Borrar?</span>
+                          <button
+                            onClick={() => {
+                              handleDeleteItem(item.id);
+                              setDeletingId(null);
+                            }}
+                            className="px-2 py-0.5 bg-rose-600 text-white rounded-lg text-xs font-black hover:bg-rose-700 transition-colors"
+                          >
+                            Sí
+                          </button>
+                          <button
+                            onClick={() => setDeletingId(null)}
+                            className="px-1.5 py-0.5 text-slate-500 hover:text-slate-700 text-xs font-bold"
+                          >
+                            No
+                          </button>
+                        </div>
+                      ) : (
+                        <button
+                          onClick={() => setDeletingId(item.id)}
+                          className="flex items-center gap-1 text-slate-400 hover:text-rose-600 hover:bg-rose-50 px-2 py-1 rounded-xl transition-colors text-xs font-semibold"
+                          title="Eliminar este elemento"
+                        >
+                          <Trash2 className="w-3.5 h-3.5" />
+                          <span>Borrar</span>
+                        </button>
+                      )}
                     </div>
                   </div>
 

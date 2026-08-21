@@ -276,6 +276,15 @@ export function StoryVocabularyLibrary({ words, shared, contextLabel, subtitle, 
                 <p className="text-xl sm:text-2xl font-bold leading-relaxed text-indigo-100/90">
                   {renderHighlightedSentence(currentWord.exampleEn, currentWord.english)}
                 </p>
+                {selectedAnswer && currentWord.exampleEs && (
+                  <motion.p
+                    initial={{ opacity: 0, y: -4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mt-2.5 border-t border-white/10 pt-2 text-sm sm:text-base font-semibold italic text-slate-300/90"
+                  >
+                    &ldquo;{currentWord.exampleEs}&rdquo;
+                  </motion.p>
+                )}
               </div>
             )}
             {!answersVisible ? (

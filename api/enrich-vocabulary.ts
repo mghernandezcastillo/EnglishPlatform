@@ -40,64 +40,99 @@ export default async function handler(req: any, res: any) {
     const ai = new GoogleGenAI({ apiKey });
 
     const prompt = `You are a world-class ESL lexicographer and English teacher for Spanish-speaking students.
-Analyze the following English terms/phrases and generate rich, structured pedagogical data.
+Analyze the following raw input terms or sentences entered by a student and generate structured pedagogical data.
 
-Terms to analyze:
+Raw input items from user:
 ${JSON.stringify(termList)}
 
-CRITICAL INSTRUCTIONS:
-1. For each term, determine its type: "phrasal_verb", "idiom", "expression", "word", "slang", or "collocation".
-2. Multi-meaning evaluation:
-   - If it is a phrasal verb, idiom, or multi-use word with distinct primary meanings in daily life (e.g. "take off" = despegar / quitarse ropa / tener éxito repentino; "break down" = descomponerse / colapsar emocionalmente / desglosar), set "isMultiMeaning": true and include 2 to 4 distinct meanings.
-   - If it has only one primary meaning, set "isMultiMeaning": false and provide exactly 1 meaning.
-3. For EVERY meaning in "meanings":
-   - "meaningNumber": 1, 2, etc.
-   - "meaningLabel": Short Spanish descriptor (e.g. "Despegar (avión)", "Quitarse (prenda)", "Descomponerse (máquina)").
-   - "definitionEs": Clear, high-yield explanation in Spanish.
-   - "definitionEn": Natural, concise definition in English.
-   - "usageTip": Practical tip in Spanish about prepositions, formality, or separability (max 15 words).
-   - "contextExamples": MUST contain EXACTLY 3 natural, everyday sentences showing THIS specific meaning.
-     Each example MUST have:
-     - "en": Complete, natural English sentence.
-     - "es": Natural Spanish translation.
-     - "cloze": The English sentence where the target term (or conjugated form) is replaced by "[_____]".
-     - "highlightWord": The conjugated/inflected form used (e.g. "took off", "break down").
-4. "level": CEFR level estimate ("A1", "A2", "B1", "B2", "C1", "C2").
-5. "ipa": Approximate IPA phonetic pronunciation (e.g. "/teɪk ɒf/").
+CRITICAL INTELLIGENCE & EXTRACTION RULES:
+1. CORE TARGET EXTRACTION:
+   - If the user entered a whole sentence or phrase clause (e.g. "I'm trying to find out", "She decided to call it a day", "He has to get over it"), DO NOT set the entire sentence as the "term".
+   - Extract the TRUE learning element / base lemma as "term" (e.g. "find out", "call it a day", "get over").
+   - Then USE the user's original sentence (completed naturally if it was cut off, e.g. "I'm trying to find out the truth.") as Example #1 for the matching meaning!
 
-Return ONLY valid JSON matching this exact array structure:
+2. TYPE CLASSIFICATION:
+   - "phrasal_verb", "idiom", "expression", "collocation", "word", or "slang".
+
+3. MULTI-MEANING & COMPREHENSIVE COVERAGE:
+   - If the term has multiple common meanings in everyday English (e.g. "take off", "break down", "look up", "get over", "set up", "run into"), you MUST include ALL distinct everyday meanings (2, 3, 4, or up to 5 meanings). Do not artificially limit or skip real meanings.
+   - For EACH meaning:
+     * "meaningNumber": 1, 2, 3...
+     * "meaningLabel": Short Spanish descriptor (e.g. "Descubrir / Enterarse de algo", "Averiguar información").
+     * "definitionEs": Clear, high-yield explanation in Spanish.
+     * "definitionEn": Natural, concise definition in English.
+     * "usageTip": Practical tip in Spanish (transitivity, separability, register).
+     * "contextExamples": MUST contain 3 (or 4) realistic everyday sentences showing THIS specific meaning.
+       Each example:
+       - "en": Natural English sentence.
+       - "es": Natural Spanish translation.
+       - "cloze": Sentence with target term replaced by "[_____]".
+       - "highlightWord": Conjugated/inflected form used.
+
+4. LEVEL & IPA:
+   - "level": CEFR level ("A1", "A2", "B1", "B2", "C1", "C2").
+   - "ipa": Phonetic transcription (e.g. "/faɪnd aʊt/").
+
+Return ONLY valid JSON matching this exact structure:
 [
   {
-    "term": "take off",
+    "term": "find out",
     "type": "phrasal_verb",
-    "ipa": "/teɪk ɒf/",
+    "ipa": "/faɪnd aʊt/",
     "level": "A2",
     "isMultiMeaning": true,
     "meanings": [
       {
         "meaningNumber": 1,
-        "meaningLabel": "Despegar (avión / transporte)",
-        "definitionEs": "Cuando un avión u otra aeronave abandona el suelo y empieza a volar.",
-        "definitionEn": "To leave the ground and begin to fly.",
-        "usageTip": "Intransitivo: no lleva objeto directo.",
+        "meaningLabel": "Descubrir / Enterarse de una información",
+        "definitionEs": "Obtener conocimiento sobre algo o enterarse de un hecho que no sabías.",
+        "definitionEn": "To discover a fact or obtain information about something.",
+        "usageTip": "Muy común con cláusulas: find out what/who/how o find out about.",
         "contextExamples": [
           {
-            "en": "The flight will take off in ten minutes.",
-            "es": "El vuelo despegará en diez minutos.",
-            "cloze": "The flight will [_____] in ten minutes.",
-            "highlightWord": "take off"
+            "en": "I am trying to find out what really happened yesterday.",
+            "es": "Estoy intentando averiguar qué pasó realmente ayer.",
+            "cloze": "I am trying to [_____] what really happened yesterday.",
+            "highlightWord": "find out"
           },
           {
-            "en": "We watched the heavy planes taking off into the clouds.",
-            "es": "Observamos cómo los pesados aviones despegaban hacia las nubes.",
-            "cloze": "We watched the heavy planes [_____] into the clouds.",
-            "highlightWord": "taking off"
+            "en": "She was shocked when she found out about the surprise party.",
+            "es": "Se sorprendió cuando se enteró de la fiesta sorpresa.",
+            "cloze": "She was shocked when she [_____] about the surprise party.",
+            "highlightWord": "found out"
           },
           {
-            "en": "Due to bad weather, the aircraft couldn't take off on time.",
-            "es": "Debido al mal tiempo, el avión no pudo despegar a tiempo.",
-            "cloze": "Due to bad weather, the aircraft couldn't [_____] on time.",
-            "highlightWord": "take off"
+            "en": "We will find out the exam results tomorrow morning.",
+            "es": "Nos enteraremos de los resultados del examen mañana por la mañana.",
+            "cloze": "We will [_____] the exam results tomorrow morning.",
+            "highlightWord": "find out"
+          }
+        ]
+      },
+      {
+        "meaningNumber": 2,
+        "meaningLabel": "Descubrir a alguien en una mentira / falta",
+        "definitionEs": "Atrapar a alguien que estaba engañando o cometiendo un error secreto.",
+        "definitionEn": "To discover that someone has been dishonest or behaving badly.",
+        "usageTip": "Usualmente en voz pasiva: be found out.",
+        "contextExamples": [
+          {
+            "en": "He cheated on the test and was soon found out by the teacher.",
+            "es": "Hizo trampa en el examen y pronto fue descubierto por el profesor.",
+            "cloze": "He cheated on the test and was soon [_____] by the teacher.",
+            "highlightWord": "found out"
+          },
+          {
+            "en": "If you keep lying, you will definitely be found out.",
+            "es": "Si sigues mintiendo, definitivamente serás descubierto.",
+            "cloze": "If you keep lying, you will definitely [_____].",
+            "highlightWord": "be found out"
+          },
+          {
+            "en": "The fraudster operated for months before being found out.",
+            "es": "El estafador operó durante meses antes de ser descubierto.",
+            "cloze": "The fraudster operated for months before [_____].",
+            "highlightWord": "being found out"
           }
         ]
       }
