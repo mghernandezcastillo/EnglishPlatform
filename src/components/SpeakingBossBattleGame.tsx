@@ -70,6 +70,7 @@ interface ChallengeItem {
   border: string;
   bg: string;
   text: string;
+  example?: string;
 }
 
 interface ParsedRoundData {
@@ -81,15 +82,154 @@ interface ParsedRoundData {
   items: ChallengeItem[];
 }
 
+function getContextualSentenceExamples(topic: string, focus?: string) {
+  const t = (topic + ' ' + (focus || '')).toLowerCase();
+  
+  if (t.includes('routine') || t.includes('time') || t.includes('schedule') || t.includes('daily')) {
+    return {
+      pos: "I wake up at 7:00 AM every weekday.",
+      neg: "I don't go to bed late on school nights.",
+      q: "What time do you have breakfast?"
+    };
+  }
+  if (t.includes('sport') || t.includes('team') || t.includes('competition')) {
+    return {
+      pos: "I train with my soccer team on Thursdays.",
+      neg: "We don't give up when a match is difficult.",
+      q: "What equipment do you need for practice?"
+    };
+  }
+  if (t.includes('holiday') || t.includes('festival') || t.includes('tradition')) {
+    return {
+      pos: "We celebrate New Year's Eve with a family feast.",
+      neg: "We don't eat heavy food before the parade.",
+      q: "When does your family celebrate this festival?"
+    };
+  }
+  if (t.includes('space') || t.includes('future') || t.includes('science') || t.includes('tech')) {
+    return {
+      pos: "Scientists will build permanent solar stations.",
+      neg: "We won't use polluting fossil fuels in 2050.",
+      q: "Will robots assist doctors in hospitals?"
+    };
+  }
+  if (t.includes('childhood') || t.includes('memories') || t.includes('was') || t.includes('were')) {
+    return {
+      pos: "When I was little, I was very energetic.",
+      neg: "My best friend and I weren't shy in primary school.",
+      q: "Where were you born and who was your favorite teacher?"
+    };
+  }
+  if (t.includes('vacation') || t.includes('travel') || t.includes('trip') || t.includes('anecdote')) {
+    return {
+      pos: "I traveled to the coast and swam every day.",
+      neg: "We didn't miss our morning flight.",
+      q: "Where did you go on your last vacation?"
+    };
+  }
+  if (t.includes('biograph') || t.includes('artist') || t.includes('athlete') || t.includes('creator')) {
+    return {
+      pos: "He was born in 1987 and won multiple trophies.",
+      neg: "She didn't give up despite early difficulties.",
+      q: "What was his greatest milestone?"
+    };
+  }
+  if (t.includes('connector') || t.includes('story')) {
+    return {
+      pos: "First, we explored the trail, and suddenly it started raining.",
+      neg: "Meanwhile, we didn't panic and found shelter.",
+      q: "What happened in the end of the story?"
+    };
+  }
+  if (t.includes('problem') || t.includes('explain') || t.includes('repair') || t.includes('trouble')) {
+    return {
+      pos: "There is an issue with my laptop screen.",
+      neg: "The battery doesn't hold a charge anymore.",
+      q: "Could you please help me fix this device?"
+    };
+  }
+  if (t.includes('verb') || t.includes('-ed') || t.includes('pronunciation')) {
+    return {
+      pos: "I visited (/ɪd/) the museum and watched (/t/) a film.",
+      neg: "I didn't buy unnecessary items yesterday.",
+      q: "Did you practice the three sounds of -ed?"
+    };
+  }
+  if (t.includes('school') || t.includes('subject') || t.includes('supplies') || t.includes('classroom')) {
+    return {
+      pos: "My favorite subject is biology because I love science.",
+      neg: "I don't forget my notebooks at home.",
+      q: "Do you have an extra highlighter I can borrow?"
+    };
+  }
+  if (t.includes('food') || t.includes('cafe') || t.includes('snack') || t.includes('drink')) {
+    return {
+      pos: "I usually order an iced matcha with oat milk.",
+      neg: "I don't drink sugary sodas during the week.",
+      q: "Could I please have a toasted bagel?"
+    };
+  }
+  if (t.includes('clothe') || t.includes('weather') || t.includes('wear')) {
+    return {
+      pos: "I wear a waterproof raincoat when it is rainy.",
+      neg: "I don't wear heavy jackets in summer.",
+      q: "What outfit do you wear on sunny days?"
+    };
+  }
+  if (t.includes('greeting') || t.includes('hello') || t.includes('introduction') || t.includes('name')) {
+    return {
+      pos: "My name is Alex and I am 14 years old.",
+      neg: "I'm not nervous today, I feel great.",
+      q: "How are you doing this morning?"
+    };
+  }
+  if (t.includes('number') || t.includes('age') || t.includes('birthday')) {
+    return {
+      pos: "I am 15 years old and my birthday is in August.",
+      neg: "My lucky number isn't seven, it's twenty-four.",
+      q: "When is your birthday and how old are you?"
+    };
+  }
+  if (t.includes('pet') || t.includes('animal')) {
+    return {
+      pos: "My dog Toby is very friendly and playful.",
+      neg: "My cat doesn't like noisy rooms.",
+      q: "What is your favorite animal and why?"
+    };
+  }
+  if (t.includes('hobby') || t.includes('free time')) {
+    return {
+      pos: "I love playing electric guitar in my free time.",
+      neg: "I don't watch TV on weekday afternoons.",
+      q: "What hobbies do you enjoy on weekends?"
+    };
+  }
+  if (t.includes('family') || t.includes('friend')) {
+    return {
+      pos: "My older brother is funny and supportive.",
+      neg: "We don't argue over minor chores.",
+      q: "Who is your closest family member?"
+    };
+  }
+
+  // Fallback
+  const cleanTopic = topic.replace(/^[a-z0-9\s-]*:\s*/i, '').trim();
+  return {
+    pos: `I practice speaking about ${cleanTopic} with my classmates.`,
+    neg: `I don't have problems understanding ${cleanTopic}.`,
+    q: `What is your favorite part about ${cleanTopic}?`
+  };
+}
+
 function parseBossPrompt(
   prompt: string,
   roundKey: 'remember' | 'use' | 'speak',
-  seconds: number,
+  speakSeconds: number,
   fallbackTopic: string
 ): ParsedRoundData {
-  const exampleMatch = prompt.match(/\bExample:\s*(.+)$/i);
-  const example = exampleMatch ? exampleMatch[1].trim() : undefined;
-  const promptClean = prompt.replace(/\s*Example:.+$/i, '').trim();
+  const exampleMatch = prompt.match(/(?:Example(?:\s+to\s+guide\s+you)?|Ejemplo):\s*["']?([\s\S]+?)["']?$/i);
+  const rawExample = exampleMatch ? exampleMatch[1].replace(/["']$/g, '').trim() : undefined;
+  const promptClean = prompt.replace(/(?:Example(?:\s+to\s+guide\s+you)?|Ejemplo):[\s\S]+$/i, '').trim();
 
   let topic = fallbackTopic;
   const contextMatch = promptClean.match(/\b(?:in the context of|connected to)\s+([^:.]+?)(?:\s+using|\s+Example|\.|$)/i);
@@ -115,7 +255,7 @@ function parseBossPrompt(
       headline: 'Recall Key Vocabulary',
       topic,
       focus,
-      example,
+      example: rawExample,
       support: 'Quick warm-up! Say key words and a phrase from today.',
       items: [
         {
@@ -142,6 +282,7 @@ function parseBossPrompt(
 
   if (roundKey === 'use') {
     const isTwo = /two short sentences|2 sentences/i.test(promptClean);
+    const examples = getContextualSentenceExamples(topic, focus);
     const items: ChallengeItem[] = isTwo
       ? [
           {
@@ -149,6 +290,7 @@ function parseBossPrompt(
             badgeBg: 'bg-emerald-600 text-white',
             title: 'First Sentence',
             desc: `Make 1 short sentence about ${topic}`,
+            example: examples.pos,
             bg: 'bg-emerald-50/80',
             border: 'border-emerald-200',
             text: 'text-emerald-950'
@@ -158,6 +300,7 @@ function parseBossPrompt(
             badgeBg: 'bg-teal-600 text-white',
             title: 'Second Sentence',
             desc: focus ? `Use ${focus}` : `Make a second sentence about ${topic}`,
+            example: examples.neg,
             bg: 'bg-teal-50/80',
             border: 'border-teal-200',
             text: 'text-teal-950'
@@ -169,6 +312,7 @@ function parseBossPrompt(
             badgeBg: 'bg-emerald-600 text-white',
             title: 'Positive Statement',
             desc: 'Make 1 true affirmative sentence',
+            example: examples.pos,
             bg: 'bg-emerald-50/80',
             border: 'border-emerald-300',
             text: 'text-emerald-950'
@@ -178,6 +322,7 @@ function parseBossPrompt(
             badgeBg: 'bg-rose-600 text-white',
             title: 'Negative Statement',
             desc: "Make 1 negative sentence (not / don't / never)",
+            example: examples.neg,
             bg: 'bg-rose-50/80',
             border: 'border-rose-300',
             text: 'text-rose-950'
@@ -187,6 +332,7 @@ function parseBossPrompt(
             badgeBg: 'bg-violet-600 text-white',
             title: 'Ask a Question',
             desc: 'Ask 1 question to your teacher or partner',
+            example: examples.q,
             bg: 'bg-violet-50/80',
             border: 'border-violet-300',
             text: 'text-violet-950'
@@ -197,8 +343,8 @@ function parseBossPrompt(
       headline: isTwo ? 'Create 2 Sentences' : 'Create 3 Target Sentences',
       topic,
       focus,
-      example,
-      support: `Target challenge: form your sentences clearly using today's structures.`,
+      example: rawExample,
+      support: `Take your time to construct each sentence accurately using today's structures.`,
       items
     };
   }
@@ -208,14 +354,14 @@ function parseBossPrompt(
     headline: `Speaking Challenge`,
     topic,
     focus,
-    example,
-    support: `Speak for ${formatDurationText(seconds)} without stopping.`,
+    example: rawExample,
+    support: `Prepare your ideas (3 min), then speak for ${formatDurationText(speakSeconds)} without stopping.`,
     items: [
       {
         badge: '🎙️ Fluency',
         badgeBg: 'bg-amber-600 text-white',
         title: 'Continuous Speech',
-        desc: `Speak for ${formatDurationText(seconds)} smoothly and clearly`,
+        desc: `Speak for ${formatDurationText(speakSeconds)} smoothly and clearly`,
         bg: 'bg-amber-50/80',
         border: 'border-amber-300',
         text: 'text-amber-950'
@@ -244,10 +390,9 @@ export function SpeakingBossBattleGame({
   const [viewIndex, setViewIndex] = useState(0);
   const [hits, setHits] = useState<boolean[]>([false, false, false]);
   const [timerMode, setTimerMode] = useState<'prepare' | 'speak'>('prepare');
-  const [customUseSeconds, setCustomUseSeconds] = useState(180);
   const [customPrepareSeconds, setCustomPrepareSeconds] = useState(prepareSeconds);
   const [customSpeakSeconds, setCustomSpeakSeconds] = useState(timerSeconds);
-  const [timer, setTimer] = useState(0);
+  const [timer, setTimer] = useState(prepareSeconds);
   const [timerRunning, setTimerRunning] = useState(false);
   const [celebrated, setCelebrated] = useState(false);
 
@@ -262,12 +407,10 @@ export function SpeakingBossBattleGame({
   const roundIndex = roundMeta.findIndex((round) => round.key === currentView);
   const currentRound = roundIndex >= 0 ? roundMeta[roundIndex] : null;
   const roundKey = currentRound?.key;
-  const activeSeconds =
-    roundKey === 'use' ? customUseSeconds :
-    timerMode === 'prepare' ? customPrepareSeconds :
-    customSpeakSeconds;
-  const prompt = roundKey ? mergedRounds[roundKey][0] || '' : '';
-  const parsedData = roundKey ? parseBossPrompt(prompt, roundKey, activeSeconds, bossTitle) : null;
+  
+  const activeSeconds = timerMode === 'prepare' ? customPrepareSeconds : customSpeakSeconds;
+  const prompt = roundKey ? (mergedRounds[roundKey] || []).join('\n') : '';
+  const parsedData = roundKey ? parseBossPrompt(prompt, roundKey, customSpeakSeconds, bossTitle) : null;
   const completedCount = hits.filter(Boolean).length;
   const isComplete = completedCount === roundMeta.length;
   const bossHealth = Math.max(0, Math.round(100 - completedCount * (100 / roundMeta.length)));
@@ -284,7 +427,8 @@ export function SpeakingBossBattleGame({
     setViewIndex(0);
     setHits([false, false, false]);
     setTimerRunning(false);
-    setTimer(0);
+    setTimer(prepareSeconds);
+    setTimerMode('prepare');
     setCelebrated(false);
   };
   const hitBoss = () => {
@@ -294,11 +438,15 @@ export function SpeakingBossBattleGame({
     next();
   };
 
+  const handleModeChange = (mode: 'prepare' | 'speak') => {
+    setTimerMode(mode);
+    setTimerRunning(false);
+    setTimer(mode === 'prepare' ? customPrepareSeconds : customSpeakSeconds);
+  };
+
   const updateCustomSeconds = (mode: 'prepare' | 'speak', nextSeconds: number) => {
     const safeSeconds = Math.min(600, Math.max(5, Math.round(nextSeconds || 30)));
-    if (roundKey === 'use') {
-      setCustomUseSeconds(safeSeconds);
-    } else if (mode === 'prepare') {
+    if (mode === 'prepare') {
       setCustomPrepareSeconds(safeSeconds);
     } else {
       setCustomSpeakSeconds(safeSeconds);
@@ -308,23 +456,21 @@ export function SpeakingBossBattleGame({
 
   const startTimer = (mode: 'prepare' | 'speak') => {
     setTimerMode(mode);
-    const seconds = roundKey === 'use'
-      ? customUseSeconds
-      : mode === 'prepare'
-        ? customPrepareSeconds
-        : customSpeakSeconds;
+    const seconds = mode === 'prepare' ? customPrepareSeconds : customSpeakSeconds;
     setTimer(seconds);
     setTimerRunning(true);
   };
 
   useEffect(() => {
-    if (roundKey === 'remember') {
+    if (roundKey !== 'speak') {
       setTimer(0);
       setTimerRunning(false);
       return;
     }
-    if (!timerRunning) setTimer(activeSeconds);
-  }, [activeSeconds, roundKey, timerRunning]);
+    if (!timerRunning) {
+      setTimer(timerMode === 'prepare' ? customPrepareSeconds : customSpeakSeconds);
+    }
+  }, [roundKey, timerMode, customPrepareSeconds, customSpeakSeconds, timerRunning]);
 
   useEffect(() => {
     if (!timerRunning) return;
@@ -447,42 +593,51 @@ export function SpeakingBossBattleGame({
                         {item.desc}
                       </p>
                     </div>
+
+                    {item.example && (
+                      <div className="mt-3 rounded-xl border border-slate-200/90 bg-white/95 px-3 py-2 text-xs sm:text-sm font-bold text-slate-800 shadow-sm">
+                        <span className="mr-1.5 font-black uppercase text-[10px] tracking-wider text-slate-500">Ex:</span>
+                        <span className="italic text-slate-950">"{item.example}"</span>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
 
               {parsedData.example && (
-                <div className="flex items-center gap-3 rounded-2xl border border-amber-200 bg-amber-50/90 px-4 py-2.5 text-amber-950 shadow-sm">
-                  <span className="shrink-0 text-lg sm:text-xl">💡</span>
+                <div className="flex items-start gap-3 rounded-2xl border-2 border-amber-300 bg-amber-50/95 p-3.5 sm:p-4 text-amber-950 shadow-md">
+                  <span className="shrink-0 text-xl sm:text-2xl">💡</span>
                   <div className="min-w-0 text-xs sm:text-sm lg:text-base">
-                    <span className="font-black uppercase tracking-wider text-amber-800 mr-2 text-[11px] sm:text-xs">Example:</span>
-                    <span className="font-bold italic text-amber-950">"{parsedData.example}"</span>
+                    <div className="font-black uppercase tracking-wider text-amber-800 text-[11px] sm:text-xs mb-1">
+                      Model Example to Guide You:
+                    </div>
+                    <p className="font-bold italic text-slate-950 leading-relaxed">
+                      "{parsedData.example}"
+                    </p>
                   </div>
                 </div>
               )}
             </div>
 
-            {roundKey !== 'remember' && (
+            {roundKey === 'speak' && (
               <div className="grid gap-3 rounded-2xl bg-slate-100 p-3 sm:p-4 lg:grid-cols-[0.85fr_1.15fr]">
                 <div>
-                  {roundKey === 'speak' && (
-                    <div className="mb-2 grid grid-cols-2 rounded-xl border border-slate-200 bg-white p-1 text-xs sm:text-sm font-black uppercase tracking-widest text-slate-500 shadow-sm">
-                      <button
-                        type="button"
-                        onClick={() => setTimerMode('prepare')}
-                        className={`rounded-lg px-3 py-2 transition ${timerMode === 'prepare' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
-                      >
-                        Prepare
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setTimerMode('speak')}
-                        className={`rounded-lg px-3 py-2 transition ${timerMode === 'speak' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
-                      >
-                        Speak
-                      </button>
-                    </div>
-                  )}
+                  <div className="mb-2 grid grid-cols-2 rounded-xl border border-slate-200 bg-white p-1 text-xs sm:text-sm font-black uppercase tracking-widest text-slate-500 shadow-sm">
+                    <button
+                      type="button"
+                      onClick={() => handleModeChange('prepare')}
+                      className={`rounded-lg px-3 py-2 transition ${timerMode === 'prepare' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
+                    >
+                      Prepare (3:00)
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleModeChange('speak')}
+                      className={`rounded-lg px-3 py-2 transition ${timerMode === 'speak' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
+                    >
+                      Speak ({customSpeakSeconds}s)
+                    </button>
+                  </div>
                   <div className="grid grid-cols-[52px_1fr_52px] items-center gap-2">
                     <button
                       type="button"
@@ -516,7 +671,7 @@ export function SpeakingBossBattleGame({
                 <div className="flex items-center justify-between gap-3 rounded-2xl bg-slate-950 p-3.5 text-white sm:p-4">
                   <div className="flex items-center gap-2 text-xs sm:text-sm font-black uppercase tracking-widest text-white/70">
                     <Timer className="h-5 w-5" />
-                    Timer
+                    {timerMode === 'prepare' ? 'Prep Timer' : 'Speak Timer'}
                   </div>
                   <div className="text-4xl font-black tabular-nums leading-none sm:text-5xl lg:text-6xl">{formatTimerLabel(timer)}</div>
                   <button

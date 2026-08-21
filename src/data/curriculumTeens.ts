@@ -98,8 +98,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Greeting Boss",
                                     bossTitle: "Hello & Introductions",
                                     bossAvatar: "👾",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to hello & introductions."
@@ -209,8 +209,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "Numbers, Ages & Birthdays",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to numbers, ages & birthdays."
@@ -219,7 +219,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers, ages & birthdays using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your age, your favorite number, and when your birthday is. Mention months and numbers in English.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your age, your favorite number, and when your birthday is. Mention months and numbers in English.",
                                         "Example to guide you: 'Hi! I am 15 years old. My birthday is in August, which is my favorite month because of summer break. My lucky number is twenty-four. Thank you!'"
                                       ]
                                     }
@@ -322,8 +322,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Health Boss",
                                     bossTitle: "My Body & Actions",
                                     bossAvatar: "🩺",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my body & actions."
@@ -433,8 +433,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Gadget Boss",
                                     bossTitle: "My Favorite Gadgets & Tech",
                                     bossAvatar: "📱",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my favorite gadgets & tech."
@@ -544,8 +544,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Hungry Boss",
                                     bossTitle: "Yummy Snacks & Drinks",
                                     bossAvatar: "🍔",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to yummy snacks & drinks."
@@ -554,7 +554,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about yummy snacks & drinks using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite snacks, drinks, and healthy eating habits.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite snacks, drinks, and healthy eating habits.",
                                         "Example to guide you: 'For an afternoon snack, I usually choose fresh fruit like bananas or strawberries, accompanied by a cold bottle of water. When I study with friends, we also enjoy popcorn. Eating healthy snacks helps me stay active throughout the school day!'"
                                       ]
                                     }
@@ -655,8 +655,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Color Boss",
                                     bossTitle: "Shapes & Patterns",
                                     bossAvatar: "🎨",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to shapes & patterns."
@@ -766,8 +766,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Classroom Boss",
                                     bossTitle: "School Subjects & Supplies",
                                     bossAvatar: "🎒",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to school subjects & supplies."
@@ -877,8 +877,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Safari Boss",
                                     bossTitle: "Pets & Animal Friends",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to pets & animal friends."
@@ -887,7 +887,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about pets & animal friends using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite animal or pet, describing its features and personality.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite animal or pet, describing its features and personality.",
                                         "Example to guide you: 'My favorite animal is a golden retriever dog. Dogs are loyal, friendly, and very intelligent pets. If I have free time, I love taking care of animals, feeding them healthy food, and going on long walks outdoors!'"
                                       ]
                                     }
@@ -988,8 +988,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Time Boss",
                                     bossTitle: "My Hobbies & Free Time",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my hobbies & free time."
@@ -998,7 +998,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my hobbies & free time using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your top hobbies and what makes them exciting.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your top hobbies and what makes them exciting.",
                                         "Example to guide you: 'In my free time, my favorite hobby is drawing digital art on my tablet and playing soccer with my friends. Drawing allows me to express my creativity, while sports keep me active and energized. Having fun hobbies helps me relax after a busy school week!'"
                                       ]
                                     }
@@ -1099,8 +1099,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Home Boss",
                                     bossTitle: "Family & Friends",
                                     bossAvatar: "🏠",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to family & friends."
@@ -1210,8 +1210,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Spelling Boss",
                                     bossTitle: "Alphabet, Spelling Names & Usernames",
                                     bossAvatar: "👾",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to the alphabet, spelling names, and usernames."
@@ -1220,13 +1220,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three examples: spell a name, say a safe username, and ask one username question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about the alphabet, spelling your name, and your safe username.",
-                                      "Use what you learned today: include @, underscore, or dot."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Alphabet, Spelling Names & Usernames. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Alphabet, Spelling Names & Usernames. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: New Friends 🤝 / Juego de Roles: New Friends 🤝", description: "Production", content: ["Student A: Ask for their username to add them.", "Student B: Tell them your username and spell it.", "Action: '@cool_gamer. C-O-O-L underscore...'"], imageUrl: "/images/teens-basic-zero-class-11/slide-18-new-friends-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: New Friends 🤝 / Juego de Roles: New Friends 🤝", description: "Production", content: [
+                "Let's say that you are in a conversation about New Friends 🤝  Juego de Roles New Friends 🤝, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about New Friends 🤝  Juego de Roles New Friends 🤝.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on New Friends 🤝  Juego de Roles New Friends 🤝?'",
+                "B: 'Hi! I find New Friends 🤝  Juego de Roles New Friends 🤝 very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], imageUrl: "/images/teens-basic-zero-class-11/slide-18-new-friends-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1313,8 +1321,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Presentarse: edad, curso, ciudad, gustos and redes sociales",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase for introducing yourself."
@@ -1323,13 +1331,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create a mini bio with your name, age, city, grade, and one hobby."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds introducing yourself completely.",
-                                      "Use what you learned today: include age, city, grade, likes, and one question for your partner."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Presentarse: edad, curso, ciudad, gustos and redes sociales. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Presentarse: edad, curso, ciudad, gustos and redes sociales. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: Meet and Greet 🤝 / Juego de Roles: Meet y Greet 🤝", description: "Production", content: ["Student A: Introduce yourself completely.", "Student B: Listen and ask one question.", "Action: 'Hi, I'm... I'm... I like... What about you?'"], imageUrl: "/images/teens-basic-zero-class-12/slide-18-meet-greet-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: Meet and Greet 🤝 / Juego de Roles: Meet y Greet 🤝", description: "Production", content: [
+                "Let's say that you are in a conversation about Meet and Greet 🤝  Juego de Roles Meet y Greet 🤝, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about Meet and Greet 🤝  Juego de Roles Meet y Greet 🤝.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on Meet and Greet 🤝  Juego de Roles Meet y Greet 🤝?'",
+                "B: 'Hi! I find Meet and Greet 🤝  Juego de Roles Meet y Greet 🤝 very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], imageUrl: "/images/teens-basic-zero-class-12/slide-18-meet-greet-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1416,8 +1432,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Style Closet Boss",
                                     bossTitle: "Clothes, estilo personal and apariencia",
                                     bossAvatar: "🧥",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three clothing words and one useful style phrase."
@@ -1426,13 +1442,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: describe what you are wearing, describe someone's appearance, and ask one style question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about clothes, personal style, and appearance.",
-                                      "Use what you learned today: include wearing, has/have, clothes, hair, and glasses."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Clothes, estilo personal and apariencia. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Clothes, estilo personal and apariencia. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: Guess Who! 🤔 / Juego de Roles: Guess Who! 🤔", description: "Production", content: ["Student A: Describe a famous person or classmate.", "Student B: Guess who it is!", "Action: 'He has short hair and he is wearing glasses.'"], imageUrl: "/images/teens-basic-zero-class-13/slide-18-guess-who-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: Guess Who! 🤔 / Juego de Roles: Guess Who! 🤔", description: "Production", content: [
+                "Let's say that you are in a conversation about Guess Who! 🤔  Juego de Roles Guess Who! 🤔, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about Guess Who! 🤔  Juego de Roles Guess Who! 🤔.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on Guess Who! 🤔  Juego de Roles Guess Who! 🤔?'",
+                "B: 'Hi! I find Guess Who! 🤔  Juego de Roles Guess Who! 🤔 very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], imageUrl: "/images/teens-basic-zero-class-13/slide-18-guess-who-roleplay.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1518,8 +1542,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Classroom Boss",
                                     bossTitle: "School Subjects & Classroom Objects",
                                     bossAvatar: "🎒",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to school subjects & classroom objects."
@@ -1528,13 +1552,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about school subjects & classroom objects using classroom words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about school subjects & classroom objects.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about School Subjects & Classroom Objects. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about School Subjects & Classroom Objects. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: Lost & Found 🔍 / Juego de Roles: Lost y Found 🔍", description: "Production", content: ["Student A: You lost something (a pen, a book).", "Student B: Tell them where it is using prepositions.", "Action: 'Where is my pen?' 'It is under your notebook.'"], imageUrl: "/images/teens-class-14/slide-18.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: Lost & Found 🔍 / Juego de Roles: Lost y Found 🔍", description: "Production", content: [
+                "Let's say that you are in a conversation about Lost & Found 🔍  Juego de Roles Lost y Found 🔍, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about Lost & Found 🔍  Juego de Roles Lost y Found 🔍.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on Lost & Found 🔍  Juego de Roles Lost y Found 🔍?'",
+                "B: 'Hi! I find Lost & Found 🔍  Juego de Roles Lost y Found 🔍 very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], imageUrl: "/images/teens-class-14/slide-18.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1620,8 +1652,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Rutina diaria básica",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to rutina diaria básica."
@@ -1630,13 +1662,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about rutina diaria básica using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about rutina diaria básica.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Rutina diaria básica. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Rutina diaria básica. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: Interview 🎤 / Juego de Roles: Interview 🎤", description: "Production", content: ["Student A: Ask about your partner's routine.", "Student B: Answer the questions.", "Action: 'What time do you...?' 'I ... at ...'"], imageUrl: "/images/teens-class-15/slide-18.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
+                { id: "slide-18", title: "Roleplay: Interview 🎤 / Juego de Roles: Interview 🎤", description: "Production", content: [
+                "Let's say that you are in a conversation about Interview 🎤  Juego de Roles Interview 🎤, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about Interview 🎤  Juego de Roles Interview 🎤.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on Interview 🎤  Juego de Roles Interview 🎤?'",
+                "B: 'Hi! I find Interview 🎤  Juego de Roles Interview 🎤 very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], imageUrl: "/images/teens-class-15/slide-18.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700" }
             ],
             action: "Conversar libremente."
           },
@@ -1722,8 +1762,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Level 0 Review & Final Challenge 🏆",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to level 0 review & final challenge 🏆."
@@ -1732,13 +1772,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about level 0 review & final challenge 🏆 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about level 0 review & final challenge 🏆.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Level 0 Review & Final Challenge 🏆. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Level 0 Review & Final Challenge 🏆. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "slide-18", title: "Roleplay: Interview / Juego de Roles: Interview", description: "Interview your partner.", content: ["Student A: Ask about name, age, favorite colors, and pets.", "Student B: Answer the questions. Then swap!"], bgColor: "bg-gradient-to-br from-emerald-500 to-green-600", imageUrl: "/images/teens-class-16/slide-18.jpg" }
+                { id: "slide-18", title: "Roleplay: Interview / Juego de Roles: Interview", description: "Interview your partner.", content: [
+                "Let's say that you are in a conversation about Interview  Juego de Roles Interview, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about Interview  Juego de Roles Interview.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on Interview  Juego de Roles Interview?'",
+                "B: 'Hi! I find Interview  Juego de Roles Interview very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], bgColor: "bg-gradient-to-br from-emerald-500 to-green-600", imageUrl: "/images/teens-class-16/slide-18.jpg" }
             ],
             action: "Conversar libremente."
           },
@@ -2054,8 +2102,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Home Boss",
                                     bossTitle: "Family Tree & Feelings",
                                     bossAvatar: "🏠",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to family tree & feelings."
@@ -2182,8 +2230,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Hungry Boss",
                                     bossTitle: "Fast Food & Healthy Choices",
                                     bossAvatar: "🍔",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to fast food & healthy choices."
@@ -2192,7 +2240,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fast food & healthy choices using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your eating habits and how you maintain a healthy lifestyle.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your eating habits and how you maintain a healthy lifestyle.",
                                         "Example to guide you: 'To stay healthy, I try to eat balanced meals every day. For breakfast, I have oatmeal with berries and almond milk. During lunch, I choose fresh salads and grilled chicken. I avoid sugary sodas and drink plenty of water to keep my energy high during sports!'"
                                       ]
                                     }
@@ -2310,8 +2358,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Weather Closet Boss",
                                     bossTitle: "Fashion, Clothes & Weather",
                                     bossAvatar: "🧥",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to fashion, clothes & weather."
@@ -2438,8 +2486,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Forest Guardian",
                                     bossTitle: "Nature, Parks & Outdoors",
                                     bossAvatar: "🌳",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to nature, parks & outdoors."
@@ -2448,7 +2496,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about nature, parks & outdoors using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite natural park or outdoor spot and what you enjoy doing there.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite natural park or outdoor spot and what you enjoy doing there.",
                                         "Example to guide you: 'My favorite natural place is our city park by the lake. It is surrounded by tall pine trees and blooming flowers. I love riding my bicycle along the trails, breathing fresh air, and having picnics with friends while listening to birds singing. Protecting nature is essential for our planet!'"
                                       ]
                                     }
@@ -2566,8 +2614,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Future Boss",
                                     bossTitle: "Weekend Plans with Will and Going To",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to weekend plans with will and going to."
@@ -2694,8 +2742,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Invitation Boss",
                                     bossTitle: "Invitations, Accepting and Declining Plans",
                                     bossAvatar: "📱",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to invitations and plans."
@@ -2822,8 +2870,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Shopping Boss",
                                     bossTitle: "Shopping, Prices and Clothes",
                                     bossAvatar: "🛍️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to shopping, precios and clothes."
@@ -2832,7 +2880,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three shopping phrases: ask a price, ask for a color or size, and say how you will pay."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about shopping for clothing, comparing prices, and finding bargains in English.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about shopping for clothing, comparing prices, and finding bargains in English.",
                                         "Example to guide you: 'When I go shopping for clothes, I always look for comfortable hoodies and quality sneakers. I ask the sales assistant: 'How much does this jacket cost?' and 'Is there a discount on these shoes?' Comparing prices helps me manage my budget and buy the best products without overspending!'"
                                       ]
                                     }
@@ -2950,8 +2998,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Hungry Boss",
                                     bossTitle: "Food, snacks and pedidos",
                                     bossAvatar: "🍔",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to food, snacks and pedidos."
@@ -3078,8 +3126,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Gadget Boss",
                                     bossTitle: "Technology, Apps and Social Media",
                                     bossAvatar: "📱",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to technology and apps."
@@ -3088,7 +3136,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three technology phrases: one device habit, one app preference, and one screen time idea."
                                     ],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about how modern technology apps and software help you with your studies and hobbies.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about how modern technology apps and software help you with your studies and hobbies.",
                                         "Example to guide you: 'Technology plays a major role in my daily education. I use language learning apps to practice English vocabulary, cloud storage to organize school assignments, and video editing tools to create creative projects. Using digital tools responsibly allows me to learn faster and connect with people worldwide!'"
                                       ]
                                     }
@@ -3206,8 +3254,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Planner Boss",
                                     bossTitle: "Chats, Help Calls and Trip Projects",
                                     bossAvatar: "📞",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one polite help phrase."
@@ -3502,8 +3550,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Safari Boss",
                                     bossTitle: "Animals & Habitats",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to animals & habitats."],
                                       use: ["You have 60 seconds: create three sentences about animals & habitats: one positive, one negative, and one question."],
@@ -3609,8 +3657,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Home Boss",
                                     bossTitle: "My Room & Dream House",
                                     bossAvatar: "🏠",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to my room & dream house."],
                                       use: ["You have 60 seconds: create three sentences about my room & dream house: one positive, one negative, and one question."],
@@ -3716,13 +3764,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The City Boss",
                                     bossTitle: "Vehicles, Transport & City",
                                     bossAvatar: "🚌",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to vehicles, transport & city."],
                                       use: ["You have 60 seconds: create three sentences about vehicles, transport & city: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite academic subjects, your strengths, and your future career interests.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite academic subjects, your strengths, and your future career interests.",
                                         "Example to guide you: 'My favorite subjects at school are biology and chemistry because I am fascinated by how living organisms function. I am strong at solving logic problems and conducting lab experiments. In the future, I hope to study medicine or biotechnology to help cure diseases and protect human health!'"
                                       ]
                                     }
@@ -3823,8 +3871,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Career Boss",
                                     bossTitle: "Dream Jobs & Professions",
                                     bossAvatar: "💼",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to dream jobs & professions."],
                                       use: ["You have 60 seconds: create three sentences about dream jobs & professions: one positive, one negative, and one question."],
@@ -3930,8 +3978,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Ability Boss",
                                     bossTitle: "Abilities with Can / Can't",
                                     bossAvatar: "🎯",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to abilities with can / can't."],
                                       use: ["You have 60 seconds: create three sentences about abilities with can / can't: one positive, one negative, and one question."],
@@ -4037,8 +4085,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Rules Boss",
                                     bossTitle: "School Rules: Must, Have to, Should",
                                     bossAvatar: "📏",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to school rules: must, have to, should."],
                                       use: ["You have 60 seconds: create three sentences about school rules: must, have to, should: one positive, one negative, and one question."],
@@ -4144,8 +4192,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Health Boss",
                                     bossTitle: "Sports, Health & Habits",
                                     bossAvatar: "⚽",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to sports, health & habits."],
                                       use: ["You have 60 seconds: create three sentences about sports, health & habits: one positive, one negative, and one question."],
@@ -4251,8 +4299,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Weekend City Boss",
                                     bossTitle: "City, Transport & Places to Go Out",
                                     bossAvatar: "🗺️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to city, transport & places to go out."],
                                       use: ["You have 60 seconds: create three sentences about city, transport & places to go out: one positive, one negative, and one question."],
@@ -4358,13 +4406,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Entertainment Boss",
                                     bossTitle: "Series, Movies, Games & Music",
                                     bossAvatar: "🎮",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to series, movies, games & music."],
                                       use: ["You have 60 seconds: create three sentences about series, movies, games & music: one positive, one negative, and one question."],
                                       speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about actions young people can take to protect the environment and combat climate change.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about actions young people can take to protect the environment and combat climate change.",
                                         "Example to guide you: 'Protecting the environment starts with daily conscious choices. In my routine, I reduce single-use plastics by carrying a reusable water bottle and cloth shopping bags. I always separate recyclables and turn off electrical appliances when not in use. If every teen takes small green actions, we can preserve our planet for future generations!'"
                                       ]
                                     }
@@ -4465,8 +4513,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Current Conversations, Routines & Speaking Review",
                                     bossAvatar: "🏆",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: ["You have 30 seconds: say three key words and one useful phrase connected to current conversations, routines & speaking review."],
                                       use: ["You have 60 seconds: create three sentences about current conversations, routines & speaking review: one positive, one negative, and one question."],
@@ -4901,8 +4949,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Time Boss",
                   bossTitle: "Daily Routine & Time",
                   bossAvatar: "⏰",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say four routine verbs and two time phrases."],
                     use: ["Make three sentences: one with I, one with he/she, and one with usually."],
@@ -5189,8 +5237,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Sports Boss",
                   bossTitle: "Sports, Competitions & Teams",
                   bossAvatar: "🏆",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say five sports words and three team words."],
                     use: ["Make three sentences: one sport you play, one team you support, and one comparison."],
@@ -5477,13 +5525,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Festival Boss",
                   bossTitle: "Holidays, Festivals & Traditions",
                   bossAvatar: "🎭",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say four holidays and three celebration verbs."],
                     use: ["Make three sentences: one about your favorite holiday, one about family food, and one with 'We celebrate...'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about your favorite holiday or family tradition. Mention when it is celebrated, special foods you eat, and unique customs you practice.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about your favorite holiday or family tradition. Mention when it is celebrated, special foods you eat, and unique customs you practice.",
                                         "Example to guide you: 'My favorite holiday is New Year's Eve, celebrated on December 31st. My entire family gathers to cook a delicious feast, wear bright clothes, and watch fireworks at midnight. We make 12 wishes for the new year and hug each other with joy!'"
                                       ]
                   }
@@ -5766,13 +5814,13 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Future Boss",
                   bossTitle: "Space, Science & Future",
                   bossAvatar: "🚀",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say four space words and three future science verbs."],
                     use: ["Make three sentences: one with 'will', one with 'won't', and one with 'in the future'."],
                     speak: [
-                                        "You have 3 minutes to prepare. Then speak for 30 seconds about how science, technology, and space exploration will change our world by the year 2050. Use will and won't to make at least three clear predictions.",
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about how science, technology, and space exploration will change our world by the year 2050. Use will and won't to make at least three clear predictions.",
                                         "Example to guide you: 'In the year 2050, I believe scientists will discover water on Mars and astronauts will build permanent space colonies. Clean solar energy will power all our cities, and smart robots will assist doctors in hospitals. We won't use fossil fuels anymore!'"
                                       ]
                   }
@@ -6055,8 +6103,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Memory Boss",
                   bossTitle: "Was/Were & Childhood Memories",
                   bossAvatar: "⏳",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say four childhood words and three past personality adjectives."],
                     use: ["Make three sentences: one with 'I was', one with 'We were', and one with 'wasn't'."],
@@ -6344,8 +6392,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Travel Boss",
                   bossTitle: "Vacations, Travel & Anecdotes",
                   bossAvatar: "✈️",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say four travel words and four past verbs (two regular, two irregular)."],
                     use: ["Make three sentences: one about where you went, one about what you ate, and one with 'didn't'."],
@@ -6633,8 +6681,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Legend Boss",
                   bossTitle: "Biographies of Artists & Athletes",
                   bossAvatar: "🏆",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say four biographical verbs and three milestone words."],
                     use: ["Make three sentences: one with 'was born in', one with 'at age...', and one with 'won'."],
@@ -6922,8 +6970,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Storyteller Boss",
                   bossTitle: "Storytelling Connectors",
                   bossAvatar: "📖",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say five storytelling connectors (one for sequence, one for surprise, one for contrast, one for cause, one for resolution)."],
                     use: ["Make three connected sentences telling a mini-anecdote using 'First', 'Suddenly', and 'So'."],
@@ -7211,8 +7259,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossName: "The Troubleshooter Boss",
                   bossTitle: "Everyday Problems & How to Explain Them",
                   bossAvatar: "🛠️",
-                  timerSeconds: 30,
-                  prepareSeconds: 180,
+                  "timerSeconds": 30,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say four common problem words and three troubleshooting verbs."],
                     use: ["Make three sentences: one starting with 'There is a problem with...', one with 'The issue is that...', and one polite request with 'Could you please...'."],
@@ -7501,7 +7549,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   bossTitle: "Level 3 Grand Finale",
                   bossAvatar: "👑",
                   timerSeconds: 45,
-                  prepareSeconds: 180,
+                  "prepareSeconds": 180,
                   rounds: {
                     remember: ["Say three verbs for each -ed sound: three for /t/, three for /d/, and three for /ɪd/."],
                     use: ["Make three sentences: one about a past vacation (irregular verb), one with 'when I was little', and one future prediction with 'will'."],
@@ -7830,8 +7878,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "My Opinions & Perspectives",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my opinions & perspectives."
@@ -7840,13 +7888,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my opinions & perspectives using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my opinions & perspectives.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Opinions & Perspectives. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Opinions & Perspectives. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -7947,8 +8004,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Giving Good Advice",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to giving good advice."
@@ -7957,13 +8014,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about giving good advice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about giving good advice.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Giving Good Advice. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Giving Good Advice. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8064,8 +8130,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Conditions & Outcomes",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to conditions & outcomes."
@@ -8074,13 +8140,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about conditions & outcomes using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about conditions & outcomes.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Conditions & Outcomes. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Conditions & Outcomes. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8181,8 +8256,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Messaging & Online Chats",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to messaging & online chats."
@@ -8191,13 +8266,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about messaging & online chats using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about messaging & online chats.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Messaging & Online Chats. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Messaging & Online Chats. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8298,8 +8382,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Future Boss",
                                     bossTitle: "First Conditional",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to first conditional."
@@ -8308,13 +8392,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about first conditional using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about first conditional.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about First Conditional. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about First Conditional. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8408,8 +8501,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Hobby Boss",
                                     bossTitle: "Comparativos and superlativos: apps, celulares, películas and Sports",
                                     bossAvatar: "🎮",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to comparativos and superlativos: apps, celulares, películas and sports."
@@ -8418,13 +8511,21 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about comparativos and superlativos: apps, celulares, películas and sports using hobbies: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about comparativos and superlativos: apps, celulares, películas and sports.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Comparativos and superlativos: apps, celulares, películas and Sports. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Comparativos and superlativos: apps, celulares, películas and Sports. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 18", title: "Roleplay/Share / Juego de Roles/Share", content: ["With a partner, make a list of the top 3 best movies you both agree on.", "Then, list the top 3 worst apps.", "Share your lists with the class and explain why using superlatives!"], imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-500 to-yellow-600" }
+                { id: "Diapositiva 18", title: "Roleplay/Share / Juego de Roles/Share", content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], imageUrl: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=800", bgColor: "bg-gradient-to-br from-orange-500 to-yellow-600" }
             ],
             action: "Conversar libremente."
           },
@@ -8523,8 +8624,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Too and Enough for Excess and Sufficiency",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to too and enough for excess and sufficiency."
@@ -8533,13 +8634,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about too and enough for excess and sufficiency using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about too and enough for excess and sufficiency.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Too and Enough for Excess and Sufficiency. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Too and Enough for Excess and Sufficiency. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8640,8 +8750,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Modal Verbs for Advice",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to modal verbs for advice."
@@ -8650,13 +8760,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about modal verbs for advice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about modal verbs for advice.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Modal Verbs for Advice. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Modal Verbs for Advice. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8757,8 +8876,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Informal and Formal Messages, Emails & Chats",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to informal and formal messages, emails & chats."
@@ -8767,13 +8886,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about informal and formal messages, emails & chats using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about informal and formal messages, emails & chats.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Informal and Formal Messages, Emails & Chats. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Informal and Formal Messages, Emails & Chats. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -8874,8 +9002,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Teen Customer Service & Transition Evaluation",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to teen customer service & transition evaluation."
@@ -8884,13 +9012,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about teen customer service & transition evaluation using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about teen customer service & transition evaluation.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Teen Customer Service & Transition Evaluation. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Teen Customer Service & Transition Evaluation. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9170,8 +9307,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "My Life Experiences",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my life experiences."
@@ -9180,13 +9317,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my life experiences using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my life experiences.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Life Experiences. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Life Experiences. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9287,8 +9433,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Teen Slang & Phrasal Verbs",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to teen slang & phrasal verbs."
@@ -9297,13 +9443,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about teen slang & phrasal verbs using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about teen slang & phrasal verbs.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Teen Slang & Phrasal Verbs. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Teen Slang & Phrasal Verbs. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9404,8 +9559,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Possibilities & Deductions",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to possibilities & deductions."
@@ -9414,13 +9569,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about possibilities & deductions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about possibilities & deductions.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Possibilities & Deductions. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Possibilities & Deductions. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9521,8 +9685,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "If I ruled the world (Conditionals)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to if i ruled the world (conditionals)."
@@ -9531,13 +9695,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about if i ruled the world (conditionals) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about if i ruled the world (conditionals).",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about If I ruled the world (Conditionals). Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about If I ruled the world (Conditionals). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9638,8 +9811,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Agreeing & Disagreeing",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to agreeing & disagreeing."
@@ -9648,13 +9821,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about agreeing & disagreeing using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about agreeing & disagreeing.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Agreeing & Disagreeing. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Agreeing & Disagreeing. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9755,8 +9937,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Podcast & Debate Basics",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to podcast & debate basics."
@@ -9765,13 +9947,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about podcast & debate basics using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about podcast & debate basics.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Podcast & Debate Basics. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Podcast & Debate Basics. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9872,8 +10063,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Present Perfect for Life Experiences",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to present perfect for life experiences."
@@ -9882,13 +10073,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about present perfect for life experiences using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about present perfect for life experiences.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Present Perfect for Life Experiences. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Present Perfect for Life Experiences. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -9989,8 +10189,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Frequent Phrasal Verbs in Teen Conversations",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to frequent phrasal verbs in teen conversations."
@@ -9999,13 +10199,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about frequent phrasal verbs in teen conversations using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about frequent phrasal verbs in teen conversations.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Frequent Phrasal Verbs in Teen Conversations. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Frequent Phrasal Verbs in Teen Conversations. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10106,8 +10315,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Modals of Possibility and Deduction",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to modals of possibility and deduction."
@@ -10116,13 +10325,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about modals of possibility and deduction using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about modals of possibility and deduction.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Modals of Possibility and Deduction. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Modals of Possibility and Deduction. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10223,8 +10441,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Second Conditional",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to second conditional."
@@ -10233,13 +10451,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about second conditional using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about second conditional.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Second Conditional. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Second Conditional. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10340,8 +10567,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Safari Boss",
                                     bossTitle: "Respectful Opinions, Agreement & Disagreement",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to respectful opinions, agreement & disagreement."
@@ -10350,13 +10577,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about respectful opinions, agreement & disagreement using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about respectful opinions, agreement & disagreement.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Respectful Opinions, Agreement & Disagreement. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Respectful Opinions, Agreement & Disagreement. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10457,8 +10693,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Podcast or Debate Projects and Scholarship or Job Interviews",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to podcast or debate projects and scholarship or job interviews."
@@ -10467,13 +10703,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about podcast or debate projects and scholarship or job interviews using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about podcast or debate projects and scholarship or job interviews.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Podcast or Debate Projects and Scholarship or Job Interviews. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Podcast or Debate Projects and Scholarship or Job Interviews. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10753,8 +10998,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Gossip & News (Reported Speech)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to gossip & news (reported speech)."
@@ -10763,13 +11008,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about gossip & news (reported speech) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about gossip & news (reported speech).",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Gossip & News (Reported Speech). Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Gossip & News (Reported Speech). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10870,8 +11124,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Describing the Details (Relative Clauses)",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to describing the details (relative clauses)."
@@ -10880,13 +11134,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about describing the details (relative clauses) using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about describing the details (relative clauses).",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Describing the Details (Relative Clauses). Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Describing the Details (Relative Clauses). It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -10987,8 +11250,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Tech & Passive Voice",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to tech & passive voice."
@@ -10997,13 +11260,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about tech & passive voice using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about tech & passive voice.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Tech & Passive Voice. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Tech & Passive Voice. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11104,8 +11376,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Real Idioms in Context",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to real idioms in context."
@@ -11114,13 +11386,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about real idioms in context using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about real idioms in context.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Real Idioms in Context. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Real Idioms in Context. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11221,8 +11502,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Reported Speech in Gossip, News & Conversations",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to reported speech in gossip, news & conversations."
@@ -11231,13 +11512,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about reported speech in gossip, news & conversations using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about reported speech in gossip, news & conversations.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Reported Speech in Gossip, News & Conversations. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Reported Speech in Gossip, News & Conversations. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11338,8 +11628,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Relative Clauses and Detailed Descriptions of People and Things",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to relative clauses and detailed descriptions of people and things."
@@ -11348,13 +11638,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about relative clauses and detailed descriptions of people and things using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about relative clauses and detailed descriptions of people and things.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Relative Clauses and Detailed Descriptions of People and Things. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Relative Clauses and Detailed Descriptions of People and Things. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11455,8 +11754,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Gadget Boss",
                                     bossTitle: "Passive Voice in News and Technology",
                                     bossAvatar: "📱",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to passive voice in news and technology."
@@ -11465,13 +11764,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about passive voice in news and technology using technology words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about passive voice in news and technology.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Passive Voice in News and Technology. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Passive Voice in News and Technology. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11572,8 +11880,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Phrasal Verbs and Real-life Idioms",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to phrasal verbs and real-life idioms."
@@ -11582,13 +11890,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about phrasal verbs and real-life idioms using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about phrasal verbs and real-life idioms.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Phrasal Verbs and Real-life Idioms. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Phrasal Verbs and Real-life Idioms. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11689,8 +12006,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Debates: IA, redes sociales, medioambiente and educación",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to debates: ia, redes sociales, medioambiente and educación."
@@ -11699,13 +12016,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about debates: ia, redes sociales, medioambiente and educación using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about debates: ia, redes sociales, medioambiente and educación.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Debates: IA, redes sociales, medioambiente and educación. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Debates: IA, redes sociales, medioambiente and educación. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -11806,8 +12132,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Work or Volunteer Interviews and Problem Solving",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to work or volunteer interviews and problem solving."
@@ -11816,13 +12142,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about work or volunteer interviews and problem solving using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about work or volunteer interviews and problem solving.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Work or Volunteer Interviews and Problem Solving. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Work or Volunteer Interviews and Problem Solving. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12102,8 +12437,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Future Boss",
                                     bossTitle: "Future Goals & Plans",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to future goals & plans."
@@ -12112,13 +12447,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about future goals & plans using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about future goals & plans.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Future Goals & Plans. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Future Goals & Plans. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12219,8 +12563,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Time Machine Boss",
                                     bossTitle: "Past Decisions & Mixed Conditionals",
                                     bossAvatar: "🕹️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to past decisions & mixed conditionals."
@@ -12229,13 +12573,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about past decisions & mixed conditionals using past verbs: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about past decisions & mixed conditionals.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Past Decisions & Mixed Conditionals. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Past Decisions & Mixed Conditionals. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12336,8 +12689,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Diplomacy & Nuance",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to diplomacy & nuance."
@@ -12346,13 +12699,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about diplomacy & nuance using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about diplomacy & nuance.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Diplomacy & Nuance. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Diplomacy & Nuance. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12453,8 +12815,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Academic Writing & Essays",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to academic writing & essays."
@@ -12463,13 +12825,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about academic writing & essays using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about academic writing & essays.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Academic Writing & Essays. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Academic Writing & Essays. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12570,8 +12941,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Interview Boss",
                                     bossTitle: "Leadership & Teamwork",
                                     bossAvatar: "💼",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to leadership & teamwork."
@@ -12580,13 +12951,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about leadership & teamwork using job words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about leadership & teamwork.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Leadership & Teamwork. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Leadership & Teamwork. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12687,8 +13067,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Future Boss",
                                     bossTitle: "Future Continuous, Future Perfect & Goal Planning",
                                     bossAvatar: "🚀",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to future continuous, future perfect & goal planning."
@@ -12697,13 +13077,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about future continuous, future perfect & goal planning using future plans: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about future continuous, future perfect & goal planning.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Future Continuous, Future Perfect & Goal Planning. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Future Continuous, Future Perfect & Goal Planning. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12804,8 +13193,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Mixed Conditionals and Past Decisions",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to mixed conditionals and past decisions."
@@ -12814,13 +13203,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about mixed conditionals and past decisions using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about mixed conditionals and past decisions.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Mixed Conditionals and Past Decisions. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Mixed Conditionals and Past Decisions. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -12921,8 +13319,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Cleft Sentences for Emphasis",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to cleft sentences for emphasis."
@@ -12931,13 +13329,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about cleft sentences for emphasis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about cleft sentences for emphasis.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Cleft Sentences for Emphasis. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Cleft Sentences for Emphasis. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13038,8 +13445,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Greeting Boss",
                                     bossTitle: "Essays, Opinions & Academic Presentations",
                                     bossAvatar: "👾",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to essays, opinions & academic presentations."
@@ -13048,13 +13455,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about essays, opinions & academic presentations using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about essays, opinions & academic presentations.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Essays, Opinions & Academic Presentations. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Essays, Opinions & Academic Presentations. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13155,8 +13571,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Meetings, Leadership & Teamwork",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to meetings, leadership & teamwork."
@@ -13165,13 +13581,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about meetings, leadership & teamwork using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about meetings, leadership & teamwork.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Meetings, Leadership & Teamwork. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Meetings, Leadership & Teamwork. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13272,8 +13697,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Final Project: Business Pitch or Conference Talk",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to final project: business pitch or conference talk."
@@ -13282,13 +13707,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about final project: business pitch or conference talk using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about final project: business pitch or conference talk.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Final Project: Business Pitch or Conference Talk. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Final Project: Business Pitch or Conference Talk. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13568,8 +14002,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Critical Thinking & Debate",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to critical thinking & debate."
@@ -13578,13 +14012,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about critical thinking & debate using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about critical thinking & debate.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Critical Thinking & Debate. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Critical Thinking & Debate. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13685,8 +14128,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Pop Culture & Media Analysis",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to pop culture & media analysis."
@@ -13695,13 +14138,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about pop culture & media analysis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about pop culture & media analysis.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Pop Culture & Media Analysis. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Pop Culture & Media Analysis. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13802,8 +14254,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "University & Academic English",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to university & academic english."
@@ -13812,13 +14264,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about university & academic english using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about university & academic english.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about University & Academic English. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about University & Academic English. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -13919,8 +14380,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Content Creation & TED Talks",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to content creation & ted talks."
@@ -13929,13 +14390,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about content creation & ted talks using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about content creation & ted talks.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Content Creation & TED Talks. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Content Creation & TED Talks. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14036,8 +14506,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Safari Boss",
                                     bossTitle: "Debate competitivo and pensamiento crítico",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to debate competitivo and pensamiento crítico."
@@ -14046,13 +14516,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about debate competitivo and pensamiento crítico using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about debate competitivo and pensamiento crítico.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Debate competitivo and pensamiento crítico. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Debate competitivo and pensamiento crítico. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14153,8 +14632,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Movie, Music, News & Digital Culture Analysis",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to movie, music, news & digital culture analysis."
@@ -14163,13 +14642,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about movie, music, news & digital culture analysis using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about movie, music, news & digital culture analysis.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Movie, Music, News & Digital Culture Analysis. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Movie, Music, News & Digital Culture Analysis. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14270,8 +14758,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Academic English for University and Exchange Programs",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to academic english for university and exchange programs."
@@ -14280,13 +14768,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about academic english for university and exchange programs using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about academic english for university and exchange programs.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Academic English for University and Exchange Programs. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Academic English for University and Exchange Programs. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14387,8 +14884,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "Podcast, Video Essay & TED-style Presentation Creation",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to podcast, video essay & ted-style presentation creation."
@@ -14397,13 +14894,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about podcast, video essay & ted-style presentation creation using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about podcast, video essay & ted-style presentation creation.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Podcast, Video Essay & TED-style Presentation Creation. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Podcast, Video Essay & TED-style Presentation Creation. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14504,8 +15010,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Weather Closet Boss",
                                     bossTitle: "Global Issues: Technology, Ethics, Climate & Society",
                                     bossAvatar: "🧥",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to global issues: technology, ethics, climate & society."
@@ -14514,13 +15020,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about global issues: technology, ethics, climate & society using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about global issues: technology, ethics, climate & society.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Global Issues: Technology, Ethics, Climate & Society. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Global Issues: Technology, Ethics, Climate & Society. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."
@@ -14621,8 +15136,8 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                     bossName: "The Speaking Boss",
                                     bossTitle: "C1 Interview Preparation & Conversation Club",
                                     bossAvatar: "⚔️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to c1 interview preparation & conversation club."
@@ -14631,13 +15146,22 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about c1 interview preparation & conversation club using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about c1 interview preparation & conversation club.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about C1 Interview Preparation & Conversation Club. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about C1 Interview Preparation & Conversation Club. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 },
-                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles", description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
+                { id: "Diapositiva 17", title: "Roleplay / Juego de Roles",
+                content: [
+                "Let's say that you are in a conversation about daily conversations and practical English, and you want to exchange information and share your thoughts.",
+                "Student A: Start the conversation by asking a question about daily conversations and practical English.",
+                "Student B: Respond naturally with complete sentences using today's vocabulary.",
+                "A: 'Hello! What are your thoughts on daily conversations and practical English?'",
+                "B: 'Hi! I find daily conversations and practical English very interesting because it helps us communicate better.'",
+                "A: 'That's true! Can you give me an example from your experience?'",
+                "B: 'Sure! In my routine, I practice every day to improve my fluency!'"
+              ], description: "Act out a situation.", type: "roleplay", bgColor: "bg-gradient-to-br from-blue-500 to-cyan-600" },
               { id: "Diapositiva 18", title: "Share / Share", description: "Share with the class.", bgColor: "bg-gradient-to-br from-cyan-500 to-teal-600" }
             ],
             action: "Conversar libremente."

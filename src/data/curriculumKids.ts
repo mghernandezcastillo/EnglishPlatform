@@ -315,8 +315,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Greeting Monster Boss",
                                     bossTitle: "Hello & Amazing Colors! 🌈",
                                     bossAvatar: "👾",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to hello & amazing colors! 🌈."
@@ -325,9 +325,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about hello & amazing colors! 🌈 using greetings: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about hello & amazing colors! 🌈.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Hello & Amazing Colors! 🌈. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Hello & Amazing Colors! 🌈. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -650,8 +650,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Time Monster Boss",
                                     bossTitle: "Numbers & Animal Friends! 🐶",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to numbers & animal friends! 🐶."
@@ -660,9 +660,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers & animal friends! 🐶 using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about numbers & animal friends! 🐶.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Numbers & Animal Friends! 🐶. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Numbers & Animal Friends! 🐶. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -981,8 +981,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Health Monster Boss",
                                     bossTitle: "My Body & Fun Actions! 🏃",
                                     bossAvatar: "🩺",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my body & fun actions! 🏃."
@@ -991,9 +991,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my body & fun actions! 🏃 using body words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my body & fun actions! 🏃.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Body & Fun Actions! 🏃. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Body & Fun Actions! 🏃. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -1309,8 +1309,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Color Monster Boss",
                                     bossTitle: "My Favorite Toys! 🪁",
                                     bossAvatar: "🎨",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my favorite toys! 🪁."
@@ -1319,9 +1319,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my favorite toys! 🪁 using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my favorite toys! 🪁.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Favorite Toys! 🪁. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Favorite Toys! 🪁. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -1637,8 +1637,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Yummy Fruits! 🍓",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to yummy fruits! 🍓."
@@ -1647,9 +1647,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about yummy fruits! 🍓 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about yummy fruits! 🍓.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Yummy Fruits! 🍓. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Yummy Fruits! 🍓. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -1965,8 +1965,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Color Monster Boss",
                                     bossTitle: "Super Shapes! 🟢",
                                     bossAvatar: "🎨",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to super shapes! 🟢."
@@ -1975,9 +1975,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about super shapes! 🟢 using colors: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about super shapes! 🟢.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Super Shapes! 🟢. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Super Shapes! 🟢. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -2293,8 +2293,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Classroom Monster Boss",
                                     bossTitle: "School Supplies! 🎒",
                                     bossAvatar: "🎒",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to school supplies! 🎒."
@@ -2303,9 +2303,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about school supplies! 🎒 using classroom words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about school supplies! 🎒.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about School Supplies! 🎒. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about School Supplies! 🎒. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -2621,8 +2621,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Safari Monster Boss",
                                     bossTitle: "Farm Animals! 🐮",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to farm animals! 🐮."
@@ -2631,9 +2631,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about farm animals! 🐮 using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about farm animals! 🐮.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Farm Animals! 🐮. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Farm Animals! 🐮. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -3128,8 +3128,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Home Monster Boss",
                                     bossTitle: "My Family & Feelings! 👨‍👩‍👧‍👦",
                                     bossAvatar: "🏠",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my family & feelings! 👨‍👩‍👧‍👦."
@@ -3138,9 +3138,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my family & feelings! 👨‍👩‍👧‍👦 using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my family & feelings! 👨‍👩‍👧‍👦.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Family & Feelings! 👨‍👩‍👧‍👦. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Family & Feelings! 👨‍👩‍👧‍👦. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -3456,8 +3456,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Hungry Monster Boss",
                                     bossTitle: "Yummy Fast Food! 🍕",
                                     bossAvatar: "🍔",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to yummy fast food! 🍕."
@@ -3466,9 +3466,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about yummy fast food! 🍕 using food words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about yummy fast food! 🍕.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Yummy Fast Food! 🍕. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Yummy Fast Food! 🍕. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -3784,8 +3784,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Weather Closet Monster Boss",
                                     bossTitle: "My Clothes & The Weather! 👕",
                                     bossAvatar: "🧥",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my clothes & the weather! 👕."
@@ -3794,9 +3794,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my clothes & the weather! 👕 using clothes: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my clothes & the weather! 👕.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Clothes & The Weather! 👕. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Clothes & The Weather! 👕. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -4112,8 +4112,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Amazing Nature! 🌳",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to amazing nature! 🌳."
@@ -4122,9 +4122,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about amazing nature! 🌳 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about amazing nature! 🌳.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Amazing Nature! 🌳. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Amazing Nature! 🌳. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -4440,8 +4440,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Cool Bugs & Insects 🐛",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to cool bugs & insects 🐛."
@@ -4450,9 +4450,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about cool bugs & insects 🐛 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about cool bugs & insects 🐛.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Cool Bugs & Insects 🐛. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Cool Bugs & Insects 🐛. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -4768,8 +4768,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Under the Sea! 🐠",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to under the sea! 🐠."
@@ -4778,9 +4778,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about under the sea! 🐠 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about under the sea! 🐠.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Under the Sea! 🐠. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Under the Sea! 🐠. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -5096,8 +5096,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Action Heroes! 🦸‍♂️",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to action heroes! 🦸‍♂️."
@@ -5106,9 +5106,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about action heroes! 🦸‍♂️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about action heroes! 🦸‍♂️.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Action Heroes! 🦸‍♂️. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Action Heroes! 🦸‍♂️. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -5424,8 +5424,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Time Monster Boss",
                                     bossTitle: "Numbers 11-20! 🔢",
                                     bossAvatar: "⏰",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to numbers 11-20! 🔢."
@@ -5434,9 +5434,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about numbers 11-20! 🔢 using numbers: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about numbers 11-20! 🔢.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Numbers 11-20! 🔢. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Numbers 11-20! 🔢. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -5931,8 +5931,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Safari Monster Boss",
                                     bossTitle: "Wild Animals Safari! 🦁",
                                     bossAvatar: "🦁",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to wild animals safari! 🦁."
@@ -5941,9 +5941,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about wild animals safari! 🦁 using animal words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about wild animals safari! 🦁.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Wild Animals Safari! 🦁. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Wild Animals Safari! 🦁. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -6259,8 +6259,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Home Monster Boss",
                                     bossTitle: "My Awesome House 🏠",
                                     bossAvatar: "🏠",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my awesome house 🏠."
@@ -6269,9 +6269,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my awesome house 🏠 using family words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my awesome house 🏠.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Awesome House 🏠. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Awesome House 🏠. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -6587,8 +6587,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Travel Monster Boss",
                                     bossTitle: "Zoom! Vehicles in Town 🚗",
                                     bossAvatar: "✈️",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to zoom! vehicles in town 🚗."
@@ -6597,9 +6597,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about zoom! vehicles in town 🚗 using travel words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about zoom! vehicles in town 🚗.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Zoom! Vehicles in Town 🚗. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Zoom! Vehicles in Town 🚗. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -6915,8 +6915,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "When I Grow Up! 👩‍⚕️",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to when i grow up! 👩‍⚕️."
@@ -6925,9 +6925,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about when i grow up! 👩‍⚕️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about when i grow up! 👩‍⚕️.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about When I Grow Up! 👩‍⚕️. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about When I Grow Up! 👩‍⚕️. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -7243,8 +7243,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Hobby Monster Boss",
                                     bossTitle: "Make some Music! 🎸",
                                     bossAvatar: "🎮",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to make some music! 🎸."
@@ -7253,9 +7253,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about make some music! 🎸 using hobbies: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about make some music! 🎸.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Make some Music! 🎸. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Make some Music! 🎸. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -7571,8 +7571,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Days of the Week 📅",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to days of the week 📅."
@@ -7581,9 +7581,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about days of the week 📅 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about days of the week 📅.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Days of the Week 📅. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Days of the Week 📅. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -7899,8 +7899,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Discount Monster Boss",
                                     bossTitle: "Let's Go Shopping! 🛒",
                                     bossAvatar: "🛒",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to let's go shopping! 🛒."
@@ -7909,9 +7909,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about let's go shopping! 🛒 using shopping phrases: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about let's go shopping! 🛒.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Let's Go Shopping! 🛒. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Let's Go Shopping! 🛒. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -8227,8 +8227,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Playground Fun! 🛝",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to playground fun! 🛝."
@@ -8237,9 +8237,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about playground fun! 🛝 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about playground fun! 🛝.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Playground Fun! 🛝. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Playground Fun! 🛝. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -8734,8 +8734,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "My Daily Routine ⏰",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to my daily routine ⏰."
@@ -8744,9 +8744,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about my daily routine ⏰ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about my daily routine ⏰.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about My Daily Routine ⏰. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about My Daily Routine ⏰. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -9062,8 +9062,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Hobby Monster Boss",
                                     bossTitle: "Fun Hobbies & Sports! ⚽️",
                                     bossAvatar: "🎮",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to fun hobbies & sports! ⚽️."
@@ -9072,9 +9072,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about fun hobbies & sports! ⚽️ using hobbies: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about fun hobbies & sports! ⚽️.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Fun Hobbies & Sports! ⚽️. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Fun Hobbies & Sports! ⚽️. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -9390,8 +9390,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Gadget Monster Boss",
                                     bossTitle: "Happy Holidays! 🎄",
                                     bossAvatar: "📱",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to happy holidays! 🎄."
@@ -9400,9 +9400,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about happy holidays! 🎄 using technology words: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about happy holidays! 🎄.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Happy Holidays! 🎄. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Happy Holidays! 🎄. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -9718,8 +9718,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Outer Space Adventure! 🚀",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to outer space adventure! 🚀."
@@ -9728,9 +9728,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about outer space adventure! 🚀 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about outer space adventure! 🚀.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Outer Space Adventure! 🚀. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Outer Space Adventure! 🚀. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -10046,8 +10046,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Awesome Fairy Tales! 🧚",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to awesome fairy tales! 🧚."
@@ -10056,9 +10056,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about awesome fairy tales! 🧚 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about awesome fairy tales! 🧚.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Awesome Fairy Tales! 🧚. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Awesome Fairy Tales! 🧚. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -10374,8 +10374,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "The 4 Seasons! ❄️",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to the 4 seasons! ❄️."
@@ -10384,9 +10384,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about the 4 seasons! ❄️ using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about the 4 seasons! ❄️.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about The 4 Seasons! ❄️. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about The 4 Seasons! ❄️. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -10702,8 +10702,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Be a Helper! 🤝",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to be a helper! 🤝."
@@ -10712,9 +10712,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about be a helper! 🤝 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about be a helper! 🤝.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Be a Helper! 🤝. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Be a Helper! 🤝. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
@@ -11030,8 +11030,8 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                     bossName: "The Super English Monster Boss",
                                     bossTitle: "Around the World! 🌍",
                                     bossAvatar: "⭐",
-                                    timerSeconds: 30,
-                                    prepareSeconds: 180,
+                                    "timerSeconds": 30,
+                                    "prepareSeconds": 180,
                                     rounds: {
                                       remember: [
                                       "You have 30 seconds: say three key words and one useful phrase connected to around the world! 🌍."
@@ -11040,9 +11040,9 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
                                       "You have 60 seconds: create three sentences about around the world! 🌍 using keywords: one positive, one negative, and one question."
                                     ],
                                       speak: [
-                                      "Speak for 30 seconds about around the world! 🌍.",
-                                      "Use what you learned today: include a positive sentence, a negative sentence, and a question."
-                                    ]
+                                        "You have 3 minutes to prepare. Then Speak for 30 seconds about Around the World! 🌍. Connect your ideas using the structures and vocabulary practiced today.",
+                                        "Example to guide you: 'In today's lesson, I practiced speaking about Around the World! 🌍. It is very useful because I can express my ideas clearly and communicate with confidence in English!'"
+                                      ]
                                     }
                                   }
                                 }
