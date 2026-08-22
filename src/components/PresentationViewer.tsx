@@ -12,6 +12,7 @@ import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 import { StructureDragExercise } from './StructureDragExercise';
 import { RolePlayCard } from './RolePlayCard';
 import { AccuracyContrastCard } from './AccuracyContrastCard';
+import { VocabularyFlipCards } from './VocabularyFlipCards';
 import { enhancePresentationClass } from '../lib/presentationEnhancer';
 
 interface PresentationViewerProps {
@@ -113,10 +114,17 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
     (/accuracy contrast|contraste de precisi[oó]n/i.test(slide.title || '') ||
       Boolean(slide.content && slide.content.some((line) => /^correct this:/i.test(line) || /^accurate:/i.test(line))));
 
+  const isVocabularySlide =
+    !isSpeakingBossBattle &&
+    !isRoleplaySlide &&
+    !isStructureDragSlide &&
+    (slide.type === 'vocabulary' || Boolean(slide.vocabularyCards && slide.vocabularyCards.length > 0));
+
   const isImmersiveSlide =
     slide.type === 'emoji-game' ||
     slide.type === 'speaking-boss-battle' ||
     slide.type === 'speaking-assessment-experimental' ||
+    isVocabularySlide ||
     isAccuracyContrastSlide;
   const isOptionExerciseSlide =
     !!slide.options?.length &&
@@ -124,6 +132,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
     slide.type !== 'speaking-boss-battle' &&
     slide.type !== 'speaking-assessment-experimental' &&
     slide.type !== 'structure-drag' &&
+    !isVocabularySlide &&
     !isRoleplaySlide;
   const isScreenShareExerciseSlide =
     isOptionExerciseSlide &&
@@ -160,6 +169,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
     slide.type !== 'speaking-assessment-experimental' &&
     slide.type !== 'structure-drag' &&
     !isAccuracyContrastSlide &&
+    !isVocabularySlide &&
     slide.type !== 'roleplay';
 
   return (
@@ -312,7 +322,14 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   <AccuracyContrastCard slide={slide} />
                 )}
 
-                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && slide.content?.map((line, i) => {
+                {isVocabularySlide && slide.vocabularyCards && slide.vocabularyCards.length > 0 && (
+                  <VocabularyFlipCards
+                    cards={slide.vocabularyCards}
+                    audience={cls.id.includes('kid') ? 'kids' : cls.id.includes('teen') ? 'teens' : 'adults'}
+                  />
+                )}
+
+                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.content?.map((line, i) => {
                   if (slide.type === 'reading') {
                     return (
                       <div key={i} className="text-base sm:text-xl md:text-2xl font-medium leading-relaxed bg-black/10 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg text-justify">
@@ -333,7 +350,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                   );
                 })}
 
-                {isOptionalAiSpeakingSlide && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && (
+                {isOptionalAiSpeakingSlide && !slide.hideAiAssistant && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isVocabularySlide && (
                   <InlineAiSpeakingAssistant
                     title={isReadingPracticeSlide ? 'Asistente IA de lectura' : 'Asistente IA de esta diapositiva'}
                     initialQuestion={selectedSpeakingPrompt || slideSpeakingQuestions[0] || ''}
@@ -367,7 +384,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                 )}
 
                 {/* Interactive Options Area (inline with content) */}
-                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && slide.options && slide.options.length > 0 && (
+                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isVocabularySlide && slide.options && slide.options.length > 0 && (
                   <div className={`flex flex-col ${isScreenShareExerciseSlide ? 'gap-2.5 sm:gap-3 pt-2 sm:pt-3' : 'gap-3 mt-auto pt-4 sm:pt-6'} w-full`}>
                     {slide.options.map((opt, idx) => {
                       const isSelected = selectedOption === idx;
@@ -427,7 +444,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
+              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
                 <motion.div
                   initial={isOpeningSlide ? { opacity: 0, scale: 0.96, y: 16 } : false}
                   animate={isOpeningSlide ? { opacity: 1, scale: 1, y: 0 } : undefined}

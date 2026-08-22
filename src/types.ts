@@ -47,6 +47,16 @@ export interface UserProgress {
   studentType?: string;
 }
 
+export interface VocabularyCard {
+  word: string;
+  translation: string;
+  phonetic?: string;
+  example?: string;
+  exampleEs?: string;
+  iconName?: string;
+  imageUrl?: string;
+}
+
 export interface ClassSlide {
   id: string;
   title: string;
@@ -58,6 +68,7 @@ export interface ClassSlide {
   correctOptionIndex?: number;
   type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'lets-say' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag';
   videoUrl?: string; // e.g. youtube embed url
+  vocabularyCards?: VocabularyCard[];
   structureDrag?: {
     patternName: string;
     instructions: string;
@@ -138,6 +149,9 @@ export interface ClassSlide {
     maxDurationSeconds?: number;
     silenceStopSeconds?: number;
   };
+  hideAiAssistant?: boolean;
+  customButtonText?: string;
+  notes?: string;
 }
 
 export interface ClassSection {

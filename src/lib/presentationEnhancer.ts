@@ -1,4 +1,4 @@
-import { ClassSlide, CurriculumClass } from '../types';
+import { ClassSlide, CurriculumClass, VocabularyCard } from '../types';
 import { injectStructureDragSlides } from './structureDrag';
 
 type TopicKey =
@@ -52,7 +52,8 @@ const IMAGELESS_INTERACTIVE_TYPES = new Set<ClassSlide['type']>([
   'speaking-boss-battle',
   'spinning-wheel',
   'structure-drag',
-  'video'
+  'video',
+  'vocabulary'
 ]);
 
 const TOPIC_VISUALS: Record<TopicKey, Record<AudienceKey, string>> = {
@@ -2874,6 +2875,128 @@ function buildSlideSearchText(slide: ClassSlide, cls: CurriculumClass) {
   ].join(' ');
 }
 
+export function parseVocabularyLine(line: string): VocabularyCard | null {
+  const trimmed = line.trim();
+  if (!trimmed) return null;
+
+  // Pattern 0: Multiple parens in line, e.g. "He (Él) / She (Ella) / It (Eso)"
+  const multiMatches = [...trimmed.matchAll(/([A-Za-z0-9\s'-]+?)\s*\(([^)]+)\)/g)];
+  if (multiMatches.length > 1) {
+    const words = multiMatches.map((m) => m[1].replace(/^[-•*]\s*/, '').trim()).join(' / ');
+    const translations = multiMatches.map((m) => m[2].trim()).join(' / ');
+    return { word: words, translation: translations };
+  }
+
+  // Pattern 1: Word (Translation) - Example sentence
+  const matchWithExample = trimmed.match(/^([^(]+?)\s*\(([^)]+)\)\s*[-–—:]\s*(.+)$/);
+  if (matchWithExample) {
+    const word = matchWithExample[1].replace(/^[-•*]\s*/, '').trim();
+    const translation = matchWithExample[2].trim();
+    const example = matchWithExample[3].trim();
+    if (word && translation) {
+      return { word, translation, example };
+    }
+  }
+
+  // Pattern 2: Word (Translation)
+  const matchParens = trimmed.match(/^([^(]+?)\s*\(([^)]+)\)$/);
+  if (matchParens) {
+    const word = matchParens[1].replace(/^[-•*]\s*/, '').trim();
+    const translation = matchParens[2].trim();
+
+    // Check if it's purely a grammatical contraction like "I am (I'm)" or "Do not (Don't)"
+    const isContraction =
+      /^(i|you|he|she|it|we|they|do|does|did|is|are|am|was|were|will|have|has|had|can|could|would|should)/i.test(word) &&
+      /'|’/.test(translation) &&
+      !/[áéíóúñÁÉÍÓÚÑ]/.test(translation);
+
+    if (word && translation && !isContraction) {
+      return { word, translation };
+    }
+  }
+
+  // Pattern 3: Word - Translation (e.g. "Apple - Manzana", "Wake up - Despertarse")
+  const matchDash = trimmed.match(/^([A-Za-z\s'/?!]{2,30})\s*[-–—:]\s*([A-Za-zÁÉÍÓÚáéíóúñÑüÜ\s'/?!,()]{2,40})$/);
+  if (matchDash) {
+    const word = matchDash[1].replace(/^[-•*]\s*/, '').trim();
+    const translation = matchDash[2].trim();
+    const isSpecialHeader = /^(rule|regla|example|ejemplo|note|nota)/i.test(word);
+    if (word && translation && !isSpecialHeader) {
+      return { word, translation };
+    }
+  }
+
+  return null;
+}
+
+function enhanceVocabularySlide(
+  slide: ClassSlide,
+  cls: CurriculumClass,
+  sectionIndex: number,
+  slideIndex: number
+): ClassSlide {
+  // If already explicitly defined
+  if (slide.vocabularyCards && slide.vocabularyCards.length > 0) {
+    return {
+      ...slide,
+      type: 'vocabulary'
+    };
+  }
+
+  // Exclude non-content/interactive types
+  if (
+    slide.type === 'emoji-game' ||
+    slide.type === 'speaking-boss-battle' ||
+    slide.type === 'speaking-assessment-experimental' ||
+    slide.type === 'structure-drag' ||
+    slide.type === 'spinning-wheel' ||
+    slide.type === 'matching-game' ||
+    slide.type === 'mystery-puzzle' ||
+    slide.type === 'roleplay' ||
+    slide.type === 'lets-say' ||
+    slide.type === 'homework' ||
+    slide.type === 'video' ||
+    slide.type === 'reading' ||
+    Boolean(slide.options && slide.options.length > 0) ||
+    Boolean(slide.roleplay) ||
+    (sectionIndex === 0 && slideIndex === 0)
+  ) {
+    return slide;
+  }
+
+  // Exclude accuracy contrast slides
+  const title = slide.title || '';
+  if (/accuracy contrast|contraste de precisi[oó]n/i.test(title)) {
+    return slide;
+  }
+
+  if (!slide.content || slide.content.length === 0) {
+    return slide;
+  }
+
+  const parsedCards: VocabularyCard[] = [];
+  for (const line of slide.content) {
+    const parsed = parseVocabularyLine(line);
+    if (parsed) {
+      parsedCards.push(parsed);
+    }
+  }
+
+  const normalizedTitle = normalizeText(title);
+  const isVocabularyTitle = /vocabular|word|verb|palabra|adjectiv|noun|expression|phras|action|pronoun|pronombre/i.test(normalizedTitle);
+  const matchRatio = parsedCards.length / slide.content.length;
+
+  if ((isVocabularyTitle && parsedCards.length >= 2) || matchRatio >= 0.6) {
+    return {
+      ...slide,
+      type: 'vocabulary',
+      vocabularyCards: parsedCards
+    };
+  }
+
+  return slide;
+}
+
 function enhanceSlideImage(slide: ClassSlide, cls: CurriculumClass) {
   if (slide.imageUrl) return slide;
   if (slide.type && IMAGELESS_INTERACTIVE_TYPES.has(slide.type)) return slide;
@@ -2893,24 +3016,29 @@ export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass 
 
   return {
     ...baseClass,
-    sections: baseClass.sections.map((section) => ({
+    sections: baseClass.sections.map((section, sectionIndex) => ({
       ...section,
       slides: section.slides.map((slide, slideIndex) =>
         enhanceSlideImage(
-          enhanceWelcomeSlide(
-            enhanceExerciseTitle(
-              enhanceQuizTitle(
-                enhanceRoleplaySlide(
-                  enhanceBossBattle(
-                    enhanceEmojiSlide(buildSpeakingWheel(slide, baseClass, baseClass.sections.indexOf(section)), baseClass),
+          enhanceVocabularySlide(
+            enhanceWelcomeSlide(
+              enhanceExerciseTitle(
+                enhanceQuizTitle(
+                  enhanceRoleplaySlide(
+                    enhanceBossBattle(
+                      enhanceEmojiSlide(buildSpeakingWheel(slide, baseClass, sectionIndex), baseClass),
+                      baseClass
+                    ),
                     baseClass
-                  ),
-                  baseClass
+                  )
                 )
-              )
+              ),
+              baseClass,
+              sectionIndex,
+              slideIndex
             ),
             baseClass,
-            baseClass.sections.indexOf(section),
+            sectionIndex,
             slideIndex
           ),
           baseClass
@@ -2919,3 +3047,4 @@ export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass 
     }))
   };
 }
+

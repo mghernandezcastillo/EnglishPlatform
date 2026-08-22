@@ -9,6 +9,7 @@ import { useBrand } from '../hooks/useBrand';
 import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from '../lib/levelApproval';
 import { evaluationExamType, evaluationPassed, evaluationPercentage, latestEvaluation, ORAL_PASS_PERCENT, VIRTUAL_PASS_PERCENT } from '../lib/evaluationResults';
 import { VirtualEvaluationResult } from './VirtualEvaluationResult';
+import { AdminSlideManager } from './admin/AdminSlideManager';
 
 interface TeacherDashboardProps {
   onBack: () => void;
@@ -19,7 +20,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
   const [students, setStudents] = useState<DbStudent[]>([]);
   const [groups, setGroups] = useState<DbGroup[]>([]);
   const [evaluations, setEvaluations] = useState<EvaluationRecord[]>([]);
-  const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'settings'>('students');
+  const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'cms' | 'settings'>('students');
   const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
   const [isEditingStudentInfo, setIsEditingStudentInfo] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
@@ -431,6 +432,12 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
              Material & Exámenes
           </button>
           <button 
+            onClick={() => setActiveTab('cms')}
+            className={`px-6 py-3 rounded-xl font-bold transition-all flex items-center gap-2 ${activeTab === 'cms' ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/20' : 'bg-gray-100 text-indigo-700 hover:bg-indigo-50'}`}
+          >
+            <span>✨ Editor de Diapositivas / CMS</span>
+          </button>
+          <button 
             onClick={() => setActiveTab('settings')}
             className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'settings' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
           >
@@ -696,6 +703,12 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
               Guardar Configuración
             </button>
           </div>
+        </div>
+      )}
+
+      {activeTab === 'cms' && (
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <AdminSlideManager />
         </div>
       )}
 
