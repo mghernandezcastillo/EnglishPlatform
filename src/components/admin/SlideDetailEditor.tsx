@@ -32,6 +32,8 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
     setGeneratedPromptPreview(p);
   }, [editedSlide, track, selectedStyle]);
 
+  const [generationStepText, setGenerationStepText] = useState('');
+
   const handleSave = () => {
     onSave(editedSlide);
     setSaveSuccessToast(true);
@@ -40,13 +42,20 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
 
   const handleGenerateAiImage = async () => {
     setIsGeneratingImage(true);
+    setGenerationStepText('🧠 Analizando contexto con Gemini...');
     try {
-      const res = await GeminiImageService.generateSlideImage(editedSlide, track, selectedStyle);
+      const res = await GeminiImageService.generateSlideImage(
+        editedSlide, 
+        track, 
+        selectedStyle,
+        (step) => setGenerationStepText(step)
+      );
       setEditedSlide(prev => ({ ...prev, imageUrl: res.imageUrl }));
     } catch (err) {
       console.error('Error generating image:', err);
     } finally {
       setIsGeneratingImage(false);
+      setGenerationStepText('');
     }
   };
 
@@ -676,12 +685,27 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
                     <img
                       src={editedSlide.imageUrl}
                       alt={editedSlide.title}
-                      className="w-full h-full object-cover"
+                      className={`w-full h-full object-cover transition-all duration-300 ${isGeneratingImage ? 'opacity-30 blur-sm scale-105' : 'opacity-100'}`}
                     />
                   ) : (
                     <div className="flex flex-col items-center text-slate-600 gap-2">
                       <ImageIcon className="w-8 h-8" />
                       <span className="text-xs">Sin imagen asignada</span>
+                    </div>
+                  )}
+
+                  {/* Generating AI Animation Overlay */}
+                  {isGeneratingImage && (
+                    <div className="absolute inset-0 z-20 flex flex-col items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md text-white text-center animate-fade-in">
+                      <div className="relative mb-2">
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 animate-spin blur-md opacity-80" />
+                        <div className="absolute inset-0.5 rounded-full bg-slate-950 flex items-center justify-center">
+                          <Sparkles className="w-6 h-6 text-pink-400 animate-bounce" />
+                        </div>
+                      </div>
+                      <span className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-300 animate-pulse">
+                        {generationStepText || 'Generando con Gemini AI...'}
+                      </span>
                     </div>
                   )}
                 </div>

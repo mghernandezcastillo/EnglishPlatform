@@ -148,35 +148,52 @@ export class GeminiImageService {
   ): Promise<{ imageUrl: string; promptUsed: string }> {
     onProgressUpdate?.('🧠 Analizando contexto pedagógico con Gemini AI...');
     
-    // 1. Deep Semantic Context Analysis
+    // 1. Deep Semantic Context Analysis with Gemini 2.5 Flash
     const analysis = await this.analyzeSlideWithGemini(slide, track);
     const prompt = `${this.buildPrompt(slide, track, styleId)}. Scene: ${analysis.visualDescription}`;
 
-    onProgressUpdate?.('🎨 Diseñando escena visual contextual...');
+    onProgressUpdate?.('🎨 Creando imagen con IA contextual...');
 
-    // 2. High-relevance contextual photography matching the exact pedagogical scene
-    const searchTerms = encodeURIComponent(
-      analysis.keywords.slice(0, 4).join(',') || 'english,learning,people'
-    );
-    
-    const curatedImagePool = [
-      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=1000'
-    ];
+    // 2. Generate customized AI image
+    const aiUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1280&height=720&nologo=true&seed=${Math.floor(Math.random() * 1000000)}`;
 
-    // Select based on keyword hash so same context gets a consistent, perfect visual match
-    const hash = (analysis.visualDescription + slide.id).split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    const selectedUrl = `${curatedImagePool[hash % curatedImagePool.length]}&sig=${Date.now()}`;
+    try {
+      onProgressUpdate?.('☁️ Subiendo imagen a Supabase Storage...');
+      const imgResp = await fetch(aiUrl);
+      if (imgResp.ok) {
+        const arrayBuffer = await imgResp.arrayBuffer();
+        const blob = new Blob([arrayBuffer], { type: 'image/jpeg' });
+        const cleanSlideId = (slide.id || 'slide').replace(/[^a-zA-Z0-9-]/g, '');
+        const filename = `gen-${track}-${cleanSlideId}-${Date.now()}.jpg`;
 
-    onProgressUpdate?.('☁️ Guardando en Supabase...');
+        const { error: uploadError } = await supabase.storage
+          .from('curriculum-images')
+          .upload(`generated/${filename}`, blob, {
+            contentType: 'image/jpeg',
+            upsert: true
+          });
+
+        if (!uploadError) {
+          const { data: pubData } = supabase.storage
+            .from('curriculum-images')
+            .getPublicUrl(`generated/${filename}`);
+
+          return {
+            imageUrl: pubData.publicUrl,
+            promptUsed: prompt
+          };
+        }
+      }
+    } catch (fetchOrUploadErr) {
+      console.warn('Direct upload to Supabase Storage failed, using direct AI image URL:', fetchOrUploadErr);
+      return {
+        imageUrl: aiUrl,
+        promptUsed: prompt
+      };
+    }
 
     return {
-      imageUrl: selectedUrl,
+      imageUrl: aiUrl,
       promptUsed: prompt
     };
   }
