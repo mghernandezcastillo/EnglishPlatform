@@ -1,4 +1,4 @@
-﻿import { ClassSlide } from '../types';
+import { ClassSlide } from '../types';
 import { SLIDE_TYPE_REGISTRY } from '../config/slideTypeRegistry';
 import { supabase } from './supabase';
 
@@ -142,14 +142,24 @@ Respond ONLY with valid JSON: {"visualDescription": "...", "keywords": ["word1",
     const style = STYLE_PRESETS.find(s => s.id === styleId) || STYLE_PRESETS[0];
     const analysis = await this.analyzeSlideWithGemini(slide, track);
 
-    onProgressUpdate?.('Generando imagen con Flux AI...');
+    onProgressUpdate?.('Generando imagen con Flux AI... (10-15s)');
     const prompt = `${analysis.visualDescription}, ${style.promptSuffix}, vertical portrait composition 4:5`;
     const negativePrompt = style.negativePrompt;
     const seed = Math.floor(Math.random() * 999999999);
 
     const aiUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=800&height=1000&nologo=true&seed=${seed}&model=flux&negative=${encodeURIComponent(negativePrompt)}&enhance=true`;
 
-    return { imageUrl: aiUrl, promptUsed: prompt };
+    try {
+      // Fetch the image so the loading spinner stays active until it's fully downloaded
+      const response = await fetch(aiUrl);
+      if (!response.ok) throw new Error('Network response was not ok');
+      const blob = await response.blob();
+      const localUrl = URL.createObjectURL(blob);
+      return { imageUrl: localUrl, promptUsed: prompt };
+    } catch (e) {
+      console.error('Error pre-fetching AI image, falling back to direct URL:', e);
+      return { imageUrl: aiUrl, promptUsed: prompt };
+    }
   }
 
   public static async commitSlideImage(
