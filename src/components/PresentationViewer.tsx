@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronLeft, ChevronRight, X, Play, Image as ImageIcon, CheckCircle, Edit3, Sparkles, Eye, Palette } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X, Play, Image as ImageIcon, CheckCircle, Edit3, Sparkles, Eye, Palette, RefreshCcw } from 'lucide-react';
 import { CurriculumClass, ClassSection, ClassSlide } from '../types';
 import { SpinningWheel } from './SpinningWheel';
 import { MatchingGame } from './MatchingGame';
@@ -40,6 +40,8 @@ export function PresentationViewer({
   const [isEditingSlide, setIsEditingSlide] = useState(false);
   const [isQuickGeneratingImage, setIsQuickGeneratingImage] = useState(false);
   const [generationStepText, setGenerationStepText] = useState('');
+  const [pendingGeneratedImage, setPendingGeneratedImage] = useState<{ url: string; prompt: string } | null>(null);
+  const [isSavingPendingImage, setIsSavingPendingImage] = useState(false);
 
   useEffect(() => {
     setCurrentClass(cls);
@@ -78,6 +80,7 @@ export function PresentationViewer({
     setSelectedOption(null);
     setShowResult(false);
     setSelectedSpeakingPrompt('');
+    setPendingGeneratedImage(null);
   }, [currentIndex]);
 
   useEffect(() => {
@@ -140,7 +143,7 @@ export function PresentationViewer({
 
   const handleQuickGenerateAiImage = async () => {
     setIsQuickGeneratingImage(true);
-    setGenerationStepText('🧠 Analizando contexto con Gemini...');
+    setGenerationStepText('🧠 Analizando contexto con Gemini AI...');
     try {
       const res = await GeminiImageService.generateSlideImage(
         slide, 
@@ -148,14 +151,36 @@ export function PresentationViewer({
         'photoreal-pro',
         (step) => setGenerationStepText(step)
       );
-      const updatedSlide = { ...slide, imageUrl: res.imageUrl };
-      handleSaveCurrentSlide(updatedSlide);
+      setPendingGeneratedImage({ url: res.imageUrl, prompt: res.promptUsed });
     } catch (e) {
       console.error('Error generating image:', e);
     } finally {
       setIsQuickGeneratingImage(false);
       setGenerationStepText('');
     }
+  };
+
+  const handleAcceptPendingImage = async () => {
+    if (!pendingGeneratedImage) return;
+    setIsSavingPendingImage(true);
+    try {
+      const permUrl = await GeminiImageService.commitSlideImage(
+        pendingGeneratedImage.url,
+        slide.id,
+        track
+      );
+      const updatedSlide = { ...slide, imageUrl: permUrl };
+      handleSaveCurrentSlide(updatedSlide);
+      setPendingGeneratedImage(null);
+    } catch (e) {
+      console.error('Error committing image to Supabase:', e);
+    } finally {
+      setIsSavingPendingImage(false);
+    }
+  };
+
+  const handleDiscardPendingImage = () => {
+    setPendingGeneratedImage(null);
   };
 
   const isLastSlide = currentIndex === allSlides.length - 1;
@@ -556,14 +581,14 @@ export function PresentationViewer({
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.type !== 'spinning-wheel' && (slide.imageUrl || isQuickGeneratingImage) ? (
+              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.type !== 'spinning-wheel' && (slide.imageUrl || pendingGeneratedImage?.url || isQuickGeneratingImage) ? (
                 <motion.div
                   initial={isOpeningSlide ? { opacity: 0, scale: 0.96, y: 16 } : false}
                   animate={isOpeningSlide ? { opacity: 1, scale: 1, y: 0 } : undefined}
                   transition={isOpeningSlide ? { duration: 0.55, delay: 0.14 } : undefined}
-                  className={`${isOpeningSlide ? 'md:w-[56%] md:flex-none rounded-[1.75rem] border border-white/15 bg-white/10 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.28)] backdrop-blur-md' : 'flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 p-2 backdrop-blur-sm'} min-w-0 flex flex-col items-center justify-center text-center min-h-[240px] sm:min-h-[400px] relative`}
+                  className={`w-full ${isOpeningSlide ? 'md:w-[52%]' : 'max-w-[340px] sm:max-w-[400px]'} aspect-[4/5] max-h-[520px] rounded-2xl sm:rounded-3xl border-2 border-white/20 shadow-2xl bg-black/25 overflow-hidden relative flex items-center justify-center shrink-0 self-center`}
                 >
-                  <div className={`relative w-full h-full overflow-hidden ${isOpeningSlide ? 'rounded-[1.3rem] border border-white/10' : 'rounded-lg sm:rounded-xl'}`}>
+                  <div className="relative w-full h-full overflow-hidden rounded-2xl sm:rounded-3xl">
                     {isOpeningSlide && (
                       <>
                         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/28 via-transparent to-white/8" />
@@ -579,12 +604,12 @@ export function PresentationViewer({
                       </>
                     )}
 
-                    {slide.imageUrl && (
+                    {(pendingGeneratedImage?.url || slide.imageUrl) && (
                       <motion.img
-                        src={slide.imageUrl}
+                        src={pendingGeneratedImage?.url || slide.imageUrl}
                         referrerPolicy="no-referrer"
                         alt={slide.title}
-                        className={`w-full h-full object-cover transition-all duration-500 ${isQuickGeneratingImage ? 'opacity-25 blur-sm scale-105' : 'opacity-100'}`}
+                        className={`w-full h-full object-cover transition-all duration-500 ${isQuickGeneratingImage ? 'opacity-20 blur-sm scale-105' : 'opacity-100'}`}
                         animate={isOpeningSlide && !isQuickGeneratingImage ? { scale: [1.02, 1.06, 1.02] } : undefined}
                         transition={isOpeningSlide ? { duration: 9, repeat: Infinity, ease: 'easeInOut' } : undefined}
                       />
@@ -592,26 +617,82 @@ export function PresentationViewer({
 
                     {/* In-Image AI Generating Animation Overlay */}
                     {isQuickGeneratingImage && (
-                      <div className="absolute inset-0 z-30 flex flex-col items-center justify-center p-6 bg-slate-950/85 backdrop-blur-md text-white text-center rounded-xl animate-fade-in">
-                        {/* Glowing Animated Ring with Sparkles */}
-                        <div className="relative mb-4 flex items-center justify-center">
-                          <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 animate-spin blur-md opacity-80" />
-                          <div className="absolute inset-1 rounded-full bg-slate-950 flex items-center justify-center shadow-inner">
-                            <Sparkles className="w-7 h-7 text-pink-400 animate-bounce" />
+                      <div className="absolute inset-0 z-30 flex flex-col items-center justify-center p-6 bg-slate-950/85 backdrop-blur-md text-white text-center rounded-2xl animate-fade-in">
+                        <div className="relative mb-3 flex items-center justify-center">
+                          <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 animate-spin blur-md opacity-80" />
+                          <div className="absolute inset-1 rounded-full bg-slate-950 flex items-center justify-center">
+                            <Sparkles className="w-6 h-6 text-pink-400 animate-bounce" />
                           </div>
                         </div>
 
-                        <h4 className="text-base font-black tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 animate-pulse">
-                          {generationStepText || 'Generando Nueva Imagen con IA...'}
+                        <h4 className="text-sm font-black tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 animate-pulse">
+                          {generationStepText || 'Generando con Gemini AI...'}
                         </h4>
                         
-                        <p className="text-xs text-slate-300 mt-1.5 max-w-xs leading-relaxed font-medium">
-                          Leyendo el contexto pedagógico de la diapositiva y creando la escena visual perfecta.
+                        <p className="text-[11px] text-slate-300 mt-1 max-w-[230px] leading-snug font-medium">
+                          Leyendo el contenido de la diapositiva y creando la escena contextual.
                         </p>
 
-                        <div className="mt-4 flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-[11px] text-pink-300 shadow-sm">
-                          <span className="w-2 h-2 rounded-full bg-pink-400 animate-ping" />
-                          <span>Gemini AI + Supabase</span>
+                        <div className="mt-3 flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-white/10 border border-white/10 text-[10px] text-pink-300">
+                          <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-ping" />
+                          <span>Gemini 2.5 Flash</span>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Pending Generated Image Approval Bar */}
+                    {pendingGeneratedImage && !isQuickGeneratingImage && (
+                      <div className="absolute inset-0 z-20 flex flex-col justify-between p-3 bg-gradient-to-t from-black/90 via-transparent to-black/80 rounded-2xl animate-fade-in">
+                        <div className="flex items-center justify-center">
+                          <span className="bg-purple-600/90 text-white font-bold text-[11px] px-3 py-1 rounded-full shadow-lg border border-purple-400/30 flex items-center gap-1.5 backdrop-blur-md">
+                            <Sparkles className="w-3 h-3 text-pink-300" /> Vista Previa (Sin Guardar)
+                          </span>
+                        </div>
+
+                        <div className="space-y-2 bg-slate-950/90 p-3 rounded-2xl border border-white/15 backdrop-blur-md">
+                          <p className="text-[11px] text-center text-slate-300 font-semibold">
+                            ¿Guardar esta imagen en la diapositiva?
+                          </p>
+                          <div className="grid grid-cols-2 gap-2">
+                            <button
+                              type="button"
+                              onClick={handleAcceptPendingImage}
+                              disabled={isSavingPendingImage}
+                              className="flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-3 rounded-xl text-xs shadow-lg shadow-emerald-600/25 transition-all col-span-2 disabled:opacity-50"
+                            >
+                              {isSavingPendingImage ? (
+                                <>
+                                  <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                                  <span>Guardando en Supabase...</span>
+                                </>
+                              ) : (
+                                <>
+                                  <CheckCircle className="w-4 h-4" />
+                                  <span>Guardar y Reemplazar</span>
+                                </>
+                              )}
+                            </button>
+
+                            <button
+                              type="button"
+                              onClick={handleQuickGenerateAiImage}
+                              disabled={isSavingPendingImage}
+                              className="flex items-center justify-center gap-1 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-1.5 px-2 rounded-xl text-[11px] border border-slate-700 transition-all"
+                            >
+                              <RefreshCcw className="w-3 h-3 text-indigo-400" />
+                              <span>Probar Otra</span>
+                            </button>
+
+                            <button
+                              type="button"
+                              onClick={handleDiscardPendingImage}
+                              disabled={isSavingPendingImage}
+                              className="flex items-center justify-center gap-1 bg-rose-950/80 hover:bg-rose-900 text-rose-300 font-bold py-1.5 px-2 rounded-xl text-[11px] border border-rose-800/50 transition-all"
+                            >
+                              <X className="w-3 h-3" />
+                              <span>Descartar</span>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     )}

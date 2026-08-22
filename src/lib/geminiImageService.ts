@@ -75,7 +75,7 @@ export class GeminiImageService {
     }
 
     const basePrompt = typeConfig.extractVisualPrompt(slide, track);
-    return `${basePrompt}. Exact scene: ${subject}. Target Audience: ${track}. Aesthetic: ${style.promptSuffix}. Avoid: ${style.negativePrompt}.`;
+    return `${basePrompt}. Exact scene: ${subject}. Target Audience: ${track}. Aesthetic: ${style.promptSuffix}. Avoid: ${style.negativePrompt}, letterbox, grey bars, borders, margins, split screen, text.`;
   }
 
   /**
@@ -138,7 +138,7 @@ export class GeminiImageService {
   }
 
   /**
-   * Generate or retrieve an ultra-contextual image for a specific slide
+   * Generate an ultra-contextual AI image for a specific slide with fixed 4:5 vertical proportion
    */
   public static async generateSlideImage(
     slide: ClassSlide,
@@ -154,16 +154,33 @@ export class GeminiImageService {
 
     onProgressUpdate?.('🎨 Creando imagen con IA contextual...');
 
-    // 2. Generate customized AI image
-    const aiUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1280&height=720&nologo=true&seed=${Math.floor(Math.random() * 1000000)}`;
+    // 2. Generate customized vertical 4:5 AI image (800x1000) for fixed aspect ratio
+    const aiUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=800&height=1000&nologo=true&seed=${Math.floor(Math.random() * 1000000)}`;
+
+    return {
+      imageUrl: aiUrl,
+      promptUsed: prompt
+    };
+  }
+
+  /**
+   * Permanently commit and upload an accepted image to Supabase Storage
+   */
+  public static async commitSlideImage(
+    imageUrl: string,
+    slideId: string,
+    track: string = 'adulto'
+  ): Promise<string> {
+    if (imageUrl.includes('supabase.co/storage')) {
+      return imageUrl; // Already in Supabase Storage
+    }
 
     try {
-      onProgressUpdate?.('☁️ Subiendo imagen a Supabase Storage...');
-      const imgResp = await fetch(aiUrl);
+      const imgResp = await fetch(imageUrl);
       if (imgResp.ok) {
         const arrayBuffer = await imgResp.arrayBuffer();
         const blob = new Blob([arrayBuffer], { type: 'image/jpeg' });
-        const cleanSlideId = (slide.id || 'slide').replace(/[^a-zA-Z0-9-]/g, '');
+        const cleanSlideId = (slideId || 'slide').replace(/[^a-zA-Z0-9-]/g, '');
         const filename = `gen-${track}-${cleanSlideId}-${Date.now()}.jpg`;
 
         const { error: uploadError } = await supabase.storage
@@ -178,24 +195,14 @@ export class GeminiImageService {
             .from('curriculum-images')
             .getPublicUrl(`generated/${filename}`);
 
-          return {
-            imageUrl: pubData.publicUrl,
-            promptUsed: prompt
-          };
+          return pubData.publicUrl;
         }
       }
-    } catch (fetchOrUploadErr) {
-      console.warn('Direct upload to Supabase Storage failed, using direct AI image URL:', fetchOrUploadErr);
-      return {
-        imageUrl: aiUrl,
-        promptUsed: prompt
-      };
+    } catch (e) {
+      console.warn('Could not upload to Supabase Storage, keeping direct image URL:', e);
     }
 
-    return {
-      imageUrl: aiUrl,
-      promptUsed: prompt
-    };
+    return imageUrl;
   }
 
   /**
