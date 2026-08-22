@@ -38,12 +38,14 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
   };
 
   const handleGenerateAiImage = async () => {
+    // Clear previous pending image so the animation is visible on "Probar Otra"
+    setPendingImagePreview(null);
     setIsGeneratingImage(true);
-    setGenerationStepText('🧠 Analizando contexto con Gemini AI...');
+    setGenerationStepText('🧠 Analizando diapositiva con Gemini AI...');
     try {
       const res = await GeminiImageService.generateSlideImage(
-        editedSlide, 
-        track, 
+        editedSlide,
+        track,
         selectedStyle,
         (step) => setGenerationStepText(step)
       );
@@ -63,7 +65,8 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
       const permUrl = await GeminiImageService.commitSlideImage(
         pendingImagePreview.url,
         editedSlide.id,
-        track
+        track,
+        (step) => setGenerationStepText(step)
       );
       setEditedSlide(prev => ({ ...prev, imageUrl: permUrl }));
       setPendingImagePreview(null);
@@ -71,11 +74,14 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
       console.error('Error committing image:', e);
     } finally {
       setIsCommittingImage(false);
+      setGenerationStepText('');
     }
   };
 
   const handleDiscardImage = () => {
     setPendingImagePreview(null);
+    setIsGeneratingImage(false);
+    setGenerationStepText('');
   };
 
   // Content line handlers

@@ -142,12 +142,14 @@ export function PresentationViewer({
   };
 
   const handleQuickGenerateAiImage = async () => {
+    // Clear any previous pending image immediately so animation shows correctly
+    setPendingGeneratedImage(null);
     setIsQuickGeneratingImage(true);
-    setGenerationStepText('🧠 Analizando contexto con Gemini AI...');
+    setGenerationStepText('🧠 Analizando diapositiva con Gemini AI...');
     try {
       const res = await GeminiImageService.generateSlideImage(
-        slide, 
-        track, 
+        slide,
+        track,
         'photoreal-pro',
         (step) => setGenerationStepText(step)
       );
@@ -167,7 +169,8 @@ export function PresentationViewer({
       const permUrl = await GeminiImageService.commitSlideImage(
         pendingGeneratedImage.url,
         slide.id,
-        track
+        track,
+        (step) => setGenerationStepText(step)
       );
       const updatedSlide = { ...slide, imageUrl: permUrl };
       handleSaveCurrentSlide(updatedSlide);
@@ -176,11 +179,15 @@ export function PresentationViewer({
       console.error('Error committing image to Supabase:', e);
     } finally {
       setIsSavingPendingImage(false);
+      setGenerationStepText('');
     }
   };
 
+  // Discard: clear pending and restore original slide image
   const handleDiscardPendingImage = () => {
     setPendingGeneratedImage(null);
+    setIsQuickGeneratingImage(false);
+    setGenerationStepText('');
   };
 
   const isLastSlide = currentIndex === allSlides.length - 1;
