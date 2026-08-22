@@ -76,13 +76,49 @@ export class AdminCurriculumService {
     });
   }
 
+  /**
+   * Update class metadata (title, description, duration, objective)
+   */
+  public static updateClassDetails(
+    track: AudienceTrack,
+    classId: string,
+    details: { title?: string; description?: string; duration?: string; objective?: string }
+  ): CurriculumClass | null {
+    const levels = this.getCurriculum(track);
+    let targetClass: CurriculumClass | null = null;
+
+    for (const lvl of levels) {
+      const cls = lvl.classes.find(c => c.id === classId);
+      if (cls) {
+        targetClass = JSON.parse(JSON.stringify(cls));
+        break;
+      }
+    }
+
+    if (!targetClass) return null;
+
+    if (details.title !== undefined) targetClass.title = details.title;
+    if (details.description !== undefined) targetClass.description = details.description;
+    if (details.duration !== undefined) targetClass.duration = details.duration;
+    if (details.objective !== undefined) targetClass.objective = details.objective;
+
+    this.saveClass(track, targetClass);
+    return targetClass;
+  }
+
   public static async syncClassToSupabase(track: AudienceTrack, cls: CurriculumClass): Promise<void> {
     try {
-      // Find class in DB
+      // Update class metadata in DB
       const { data: dbClass } = await supabase
         .from('curr_classes')
-        .select('id')
+        .update({
+          title: cls.title,
+          description: cls.description,
+          duration: cls.duration,
+          objective: cls.objective
+        })
         .eq('class_id', cls.id)
+        .select('id')
         .maybeSingle();
 
       if (!dbClass) return;

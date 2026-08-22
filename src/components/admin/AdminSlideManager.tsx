@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { 
   Layers, Sparkles, Play, Download, RefreshCcw, 
   ChevronRight, BookOpen, Clock, Target, CheckCircle, 
-  Users, Sliders, ArrowLeft, Eye, Copy, Check
+  Users, Sliders, ArrowLeft, Eye, Copy, Check, Edit3, Save, X
 } from 'lucide-react';
 import { CurriculumLevel, CurriculumClass, ClassSlide } from '../../types';
 import { AdminCurriculumService, AudienceTrack } from '../../lib/adminCurriculumService';
@@ -22,10 +22,15 @@ export function AdminSlideManager({ onBack }: AdminSlideManagerProps) {
   const [selectedLevelId, setSelectedLevelId] = useState<string>('');
   const [selectedClassId, setSelectedClassId] = useState<string>('');
 
+  // Class Info Edit Modal / Drawer
+  const [isEditingClassInfo, setIsEditingClassInfo] = useState(false);
+  const [classForm, setClassForm] = useState({ title: '', description: '', duration: '', objective: '' });
+
   // Modals state
   const [editingSlideContext, setEditingSlideContext] = useState<{ sectionId: string; slide: ClassSlide } | null>(null);
   const [showBatchModal, setShowBatchModal] = useState(false);
   const [showLivePreview, setShowLivePreview] = useState(false);
+  const [isLiveEditMode, setIsLiveEditMode] = useState(false);
   const [showExportModal, setShowExportModal] = useState(false);
   const [copiedExport, setCopiedExport] = useState(false);
 
@@ -53,10 +58,29 @@ export function AdminSlideManager({ onBack }: AdminSlideManagerProps) {
   const activeLevel = levels.find(l => l.id === selectedLevelId) || levels[0];
   const activeClass = activeLevel?.classes.find(c => c.id === selectedClassId) || activeLevel?.classes[0];
 
+  useEffect(() => {
+    if (activeClass) {
+      setClassForm({
+        title: activeClass.title || '',
+        description: activeClass.description || '',
+        duration: activeClass.duration || '60 minutos',
+        objective: activeClass.objective || ''
+      });
+    }
+  }, [activeClass?.id, activeClass?.title, activeClass?.description]);
+
   // Refresh current data from service
   const reloadData = () => {
     const lvls = AdminCurriculumService.getCurriculum(selectedTrack);
     setLevels(lvls);
+  };
+
+  const handleSaveClassInfo = () => {
+    if (!activeClass) return;
+    AdminCurriculumService.updateClassDetails(selectedTrack, activeClass.id, classForm);
+    reloadData();
+    setIsEditingClassInfo(false);
+    showToast('Información de la clase actualizada y guardada');
   };
 
   // Handlers for slide edits
@@ -273,33 +297,139 @@ export function AdminSlideManager({ onBack }: AdminSlideManagerProps) {
           {activeClass ? (
             <>
               {/* Class Action Bar */}
-              <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-xs font-mono bg-indigo-950 border border-indigo-800/60 text-indigo-400 px-2.5 py-0.5 rounded-full font-bold">
-                      {activeClass.id}
-                    </span>
-                    <span className="text-xs text-slate-400">{activeClass.duration || '60 minutos'}</span>
+              <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl space-y-4">
+                {isEditingClassInfo ? (
+                  <div className="space-y-4 bg-slate-950/60 p-4 rounded-2xl border border-indigo-500/40">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold uppercase tracking-wider text-indigo-400 flex items-center gap-1.5">
+                        <Edit3 className="w-3.5 h-3.5" /> Editar Información de la Clase
+                      </span>
+                      <span className="text-xs font-mono text-slate-500">{activeClass.id}</span>
+                    </div>
+
+                    <div className="space-y-3">
+                      <div>
+                        <label className="block text-xs font-bold text-slate-400 mb-1">Título / Nombre de la Clase</label>
+                        <input
+                          type="text"
+                          value={classForm.title}
+                          onChange={e => setClassForm({ ...classForm, title: e.target.value })}
+                          placeholder="Ej: Class 1: Introduction and Verb To Be / Clase 1..."
+                          className="w-full bg-slate-800 border border-slate-700 rounded-xl px-3.5 py-2 text-white text-sm font-bold focus:outline-none focus:border-indigo-500"
+                        />
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                          <label className="block text-xs font-bold text-slate-400 mb-1">Descripción</label>
+                          <input
+                            type="text"
+                            value={classForm.description}
+                            onChange={e => setClassForm({ ...classForm, description: e.target.value })}
+                            placeholder="Descripción de la clase..."
+                            className="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-indigo-500"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-bold text-slate-400 mb-1">Duración</label>
+                          <input
+                            type="text"
+                            value={classForm.duration}
+                            onChange={e => setClassForm({ ...classForm, duration: e.target.value })}
+                            placeholder="Ej: 60 minutos"
+                            className="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-indigo-500"
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <label className="block text-xs font-bold text-slate-400 mb-1">Objetivo de la Clase</label>
+                        <textarea
+                          rows={2}
+                          value={classForm.objective}
+                          onChange={e => setClassForm({ ...classForm, objective: e.target.value })}
+                          placeholder="Qué logrará el estudiante al finalizar..."
+                          className="w-full bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-white text-xs focus:outline-none focus:border-indigo-500"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-end gap-2 pt-2 border-t border-slate-850">
+                      <button
+                        type="button"
+                        onClick={() => setIsEditingClassInfo(false)}
+                        className="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-white"
+                      >
+                        Cancelar
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleSaveClassInfo}
+                        className="flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-4 py-1.5 rounded-xl text-xs shadow-md shadow-indigo-600/20"
+                      >
+                        <Save className="w-3.5 h-3.5" /> Guardar Información de la Clase
+                      </button>
+                    </div>
                   </div>
-                  <h2 className="text-2xl font-black text-white leading-tight">{activeClass.title}</h2>
-                  <p className="text-xs text-slate-400 mt-1">{activeClass.description}</p>
-                </div>
+                ) : (
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-xs font-mono bg-indigo-950 border border-indigo-800/60 text-indigo-400 px-2.5 py-0.5 rounded-full font-bold">
+                          {activeClass.id}
+                        </span>
+                        <span className="text-xs text-slate-400">{activeClass.duration || '60 minutos'}</span>
+                      </div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h2 className="text-2xl font-black text-white leading-tight">{activeClass.title}</h2>
+                        <button
+                          onClick={() => setIsEditingClassInfo(true)}
+                          className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-indigo-400 hover:text-indigo-300 transition-colors"
+                          title="Editar título y detalles de la clase"
+                        >
+                          <Edit3 className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                      <p className="text-xs text-slate-400 mt-1">{activeClass.description}</p>
+                    </div>
 
-                <div className="flex items-center gap-2.5 shrink-0 flex-wrap">
-                  <button
-                    onClick={() => setShowLivePreview(true)}
-                    className="flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-xl text-xs shadow-lg shadow-emerald-600/20 transition-all"
-                  >
-                    <Eye className="w-3.5 h-3.5" /> Vista Previa
-                  </button>
+                    <div className="flex items-center gap-2.5 shrink-0 flex-wrap">
+                      <button
+                        onClick={() => setIsEditingClassInfo(true)}
+                        className="flex items-center gap-1.5 bg-slate-800 hover:bg-slate-750 text-indigo-300 font-bold px-3 py-2 rounded-xl text-xs border border-slate-700 transition-all"
+                      >
+                        <Edit3 className="w-3.5 h-3.5" /> Editar Info
+                      </button>
 
-                  <button
-                    onClick={() => setShowBatchModal(true)}
-                    className="flex items-center gap-1.5 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold px-4 py-2 rounded-xl text-xs shadow-lg shadow-pink-600/20 transition-all"
-                  >
-                    <Sparkles className="w-3.5 h-3.5" /> Imágenes IA Masivas
-                  </button>
-                </div>
+                      <button
+                        onClick={() => {
+                          setIsLiveEditMode(true);
+                          setShowLivePreview(true);
+                        }}
+                        className="flex items-center gap-1.5 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold px-4 py-2 rounded-xl text-xs shadow-lg shadow-indigo-600/25 transition-all"
+                      >
+                        <Edit3 className="w-3.5 h-3.5" /> Abrir en Modo Edición
+                      </button>
+
+                      <button
+                        onClick={() => {
+                          setIsLiveEditMode(false);
+                          setShowLivePreview(true);
+                        }}
+                        className="flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-xl text-xs shadow-lg shadow-emerald-600/20 transition-all"
+                      >
+                        <Eye className="w-3.5 h-3.5" /> Vista Previa
+                      </button>
+
+                      <button
+                        onClick={() => setShowBatchModal(true)}
+                        className="flex items-center gap-1.5 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold px-4 py-2 rounded-xl text-xs shadow-lg shadow-pink-600/20 transition-all"
+                      >
+                        <Sparkles className="w-3.5 h-3.5" /> Imágenes IA Masivas
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* 5-Section Class Organizer */}
@@ -340,10 +470,13 @@ export function AdminSlideManager({ onBack }: AdminSlideManagerProps) {
         />
       )}
 
-      {/* Live Presentation Preview Modal */}
+      {/* Live Presentation Preview & Editor Modal */}
       {showLivePreview && activeClass && (
         <PresentationViewer
           cls={activeClass}
+          track={selectedTrack}
+          initialEditMode={isLiveEditMode}
+          onSlideUpdate={reloadData}
           onClose={() => setShowLivePreview(false)}
         />
       )}
