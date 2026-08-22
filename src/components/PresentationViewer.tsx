@@ -319,20 +319,6 @@ export function PresentationViewer({
             <div className="flex items-center gap-2 shrink-0">
               <button
                 type="button"
-                onClick={handleQuickGenerateAiImage}
-                disabled={isQuickGeneratingImage}
-                className="flex items-center gap-1.5 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-bold px-3 py-1.5 rounded-xl shadow-md disabled:opacity-50 transition-all"
-              >
-                {isQuickGeneratingImage ? (
-                  <div className="w-3.5 h-3.5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                ) : (
-                  <Sparkles className="w-3.5 h-3.5" />
-                )}
-                <span>{isQuickGeneratingImage ? 'Generando...' : 'Regenerar Imagen IA'}</span>
-              </button>
-
-              <button
-                type="button"
                 onClick={() => setIsEditingSlide(true)}
                 className="flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-3.5 py-1.5 rounded-xl shadow-md shadow-indigo-600/30 transition-all"
               >
@@ -621,6 +607,11 @@ export function PresentationViewer({
                         transition={isOpeningSlide ? { duration: 9, repeat: Infinity, ease: 'easeInOut' } : undefined}
                       />
                     )}
+                    
+                    {/* Empty placeholder if no image but generating */}
+                    {!pendingGeneratedImage?.url && !slide.imageUrl && isQuickGeneratingImage && (
+                       <div className="w-full h-full bg-slate-900/50"></div>
+                    )}
 
                     {/* In-Image AI Generating Animation Overlay */}
                     {isQuickGeneratingImage && (
@@ -706,6 +697,32 @@ export function PresentationViewer({
                   </div>
                 </motion.div>
               ) : null}
+
+              {/* Edit Mode AI Generator Controls (Appears BELOW the image or where image would be) */}
+              {isEditMode && slide.type !== 'spinning-wheel' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'structure-drag' && !isRoleplaySlide && (
+                <div className={`flex flex-col items-center mt-2 ${!slide.imageUrl && !pendingGeneratedImage && !isQuickGeneratingImage ? 'flex-1 justify-center' : 'w-full'}`}>
+                  {!pendingGeneratedImage && (
+                    <button
+                      type="button"
+                      onClick={handleQuickGenerateAiImage}
+                      disabled={isQuickGeneratingImage}
+                      className="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-bold px-5 py-3 rounded-xl shadow-lg disabled:opacity-50 transition-all w-full max-w-[340px] sm:max-w-[400px]"
+                    >
+                      {isQuickGeneratingImage ? (
+                        <>
+                          <div className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
+                          <span>Generando (10-15s)...</span>
+                        </>
+                      ) : (
+                        <>
+                          <Sparkles className="w-5 h-5" />
+                          <span>Generar Imagen con IA</span>
+                        </>
+                      )}
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Teacher Suggestion (Small) */}
