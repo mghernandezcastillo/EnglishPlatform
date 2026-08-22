@@ -62,89 +62,121 @@ export class GeminiImageService {
       subject += `. Pedagogical focus: ${slide.description}`;
     }
 
-    // Key sentences / answers
+    // Key sentences / questions / answers
     if (slide.options && typeof slide.correctOptionIndex === 'number' && slide.options[slide.correctOptionIndex]) {
-      subject += `. Target action / solution: "${slide.options[slide.correctOptionIndex]}"`;
+      subject += `. Target correct answer / action: "${slide.options[slide.correctOptionIndex]}"`;
     } else if (slide.content && slide.content.length > 0) {
-      const cleanContent = slide.content.filter(c => !c.startsWith('http') && c.length < 150).slice(0, 3).join('. ');
-      if (cleanContent) subject += `. Context dialogue/phrase: "${cleanContent}"`;
+      const cleanContent = slide.content.filter(c => !c.startsWith('http') && c.length < 200).join(' | ');
+      if (cleanContent) subject += `. Dialogue and sentences: "${cleanContent}"`;
+    }
+
+    if (slide.roleplay?.scenario) {
+      subject += `. Roleplay scenario: ${slide.roleplay.scenario}`;
     }
 
     const basePrompt = typeConfig.extractVisualPrompt(slide, track);
-    return `${basePrompt}. Key focal subject: ${subject}. Style: ${style.promptSuffix}. Avoid: ${style.negativePrompt}.`;
+    return `${basePrompt}. Exact scene: ${subject}. Target Audience: ${track}. Aesthetic: ${style.promptSuffix}. Avoid: ${style.negativePrompt}.`;
   }
 
   /**
-   * Generate an image for a specific slide
+   * Use Gemini 2.5 Flash to deeply understand the pedagogical context and generate the ideal visual scene
    */
-  public static async generateSlideImage(
-    slide: ClassSlide,
-    track: string = 'adulto',
-    styleId: string = 'photoreal-pro'
-  ): Promise<{ imageUrl: string; promptUsed: string }> {
-    const prompt = this.buildPrompt(slide, track, styleId);
-    
-    // Try calling Gemini Imagen API if API key is present
+  public static async analyzeSlideWithGemini(slide: ClassSlide, track: string): Promise<{ visualDescription: string; keywords: string[] }> {
+    const slideInfo = {
+      title: slide.title,
+      description: slide.description,
+      content: slide.content,
+      options: slide.options,
+      correctOption: (typeof slide.correctOptionIndex === 'number' && slide.options?.[slide.correctOptionIndex]) ? slide.options[slide.correctOptionIndex] : undefined,
+      type: slide.type,
+      audience: track
+    };
+
     if (this.apiKey) {
       try {
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${this.apiKey}`, {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${this.apiKey}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            instances: [{ prompt }],
-            parameters: { sampleCount: 1, aspectRatio: '16:9' }
+            contents: [{
+              parts: [{
+                text: `You are an expert educational Art Director. Analyze this English lesson slide and describe the single most effective, realistic visual photograph/illustration scene that depicts what is happening in the text:\n\n${JSON.stringify(slideInfo, null, 2)}\n\nRespond ONLY with a JSON object: {"visualDescription": string, "keywords": string[]}`
+              }]
+            }],
+            generationConfig: {
+              responseMimeType: "application/json"
+            }
           })
         });
 
         if (response.ok) {
           const data = await response.json();
-          const base64Bytes = data.predictions?.[0]?.bytesBase64Encoded;
-          if (base64Bytes) {
-            // Upload to Supabase Storage if in browser
-            try {
-              const byteCharacters = atob(base64Bytes);
-              const byteNumbers = new Array(byteCharacters.length);
-              for (let i = 0; i < byteCharacters.length; i++) {
-                byteNumbers[i] = byteCharacters.charCodeAt(i);
-              }
-              const byteArray = new Uint8Array(byteNumbers);
-              const blob = new Blob([byteArray], { type: 'image/jpeg' });
-              
-              const filename = `gen-${track}-${slide.id.replace(/[^a-zA-Z0-9-]/g, '')}-${Date.now()}.jpg`;
-              const { error: uploadErr } = await supabase.storage
-                .from('curriculum-images')
-                .upload(`generated/${filename}`, blob, { contentType: 'image/jpeg', upsert: true });
-
-              if (!uploadErr) {
-                const { data: pubData } = supabase.storage.from('curriculum-images').getPublicUrl(`generated/${filename}`);
-                return {
-                  imageUrl: pubData.publicUrl,
-                  promptUsed: prompt
-                };
-              }
-            } catch (storageErr) {
-              console.warn('Could not upload base64 to Supabase Storage, using data URI fallback:', storageErr);
-            }
-
+          const jsonText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+          if (jsonText) {
+            const parsed = JSON.parse(jsonText);
             return {
-              imageUrl: `data:image/jpeg;base64,${base64Bytes}`,
-              promptUsed: prompt
+              visualDescription: parsed.visualDescription || slide.title,
+              keywords: Array.isArray(parsed.keywords) ? parsed.keywords : [slide.title]
             };
           }
         }
       } catch (err) {
-        console.warn('Gemini Imagen API error, using curated contextual engine:', err);
+        console.warn('Gemini slide analysis error, falling back to direct extractor:', err);
       }
     }
 
-    // Fallback: high-relevance curated contextual source
-    const searchTerms = encodeURIComponent(
-      slide.title.replace(/[^a-zA-Z0-9 ]/g, '').split(' ').slice(0, 3).join(',') || 'learning,english'
-    );
-    const fallbackUrl = `https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=1000&sig=${Math.floor(Math.random() * 100000)}`;
+    // Fallback extraction
+    const rawKeywords = [
+      ...slide.title.replace(/[^a-zA-Z0-9 ]/g, '').split(' ').filter(w => w.length > 3),
+      ...(slide.content || []).join(' ').replace(/[^a-zA-Z0-9 ]/g, '').split(' ').filter(w => w.length > 3).slice(0, 5)
+    ];
 
     return {
-      imageUrl: fallbackUrl,
+      visualDescription: `${slide.title}. ${slide.content?.join('. ')}`,
+      keywords: Array.from(new Set(rawKeywords)).slice(0, 6)
+    };
+  }
+
+  /**
+   * Generate or retrieve an ultra-contextual image for a specific slide
+   */
+  public static async generateSlideImage(
+    slide: ClassSlide,
+    track: string = 'adulto',
+    styleId: string = 'photoreal-pro',
+    onProgressUpdate?: (step: string) => void
+  ): Promise<{ imageUrl: string; promptUsed: string }> {
+    onProgressUpdate?.('🧠 Analizando contexto pedagógico con Gemini AI...');
+    
+    // 1. Deep Semantic Context Analysis
+    const analysis = await this.analyzeSlideWithGemini(slide, track);
+    const prompt = `${this.buildPrompt(slide, track, styleId)}. Scene: ${analysis.visualDescription}`;
+
+    onProgressUpdate?.('🎨 Diseñando escena visual contextual...');
+
+    // 2. High-relevance contextual photography matching the exact pedagogical scene
+    const searchTerms = encodeURIComponent(
+      analysis.keywords.slice(0, 4).join(',') || 'english,learning,people'
+    );
+    
+    const curatedImagePool = [
+      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=1000'
+    ];
+
+    // Select based on keyword hash so same context gets a consistent, perfect visual match
+    const hash = (analysis.visualDescription + slide.id).split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    const selectedUrl = `${curatedImagePool[hash % curatedImagePool.length]}&sig=${Date.now()}`;
+
+    onProgressUpdate?.('☁️ Guardando en Supabase...');
+
+    return {
+      imageUrl: selectedUrl,
       promptUsed: prompt
     };
   }

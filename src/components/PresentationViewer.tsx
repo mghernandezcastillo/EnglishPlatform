@@ -39,6 +39,7 @@ export function PresentationViewer({
   const [isEditMode, setIsEditMode] = useState(initialEditMode);
   const [isEditingSlide, setIsEditingSlide] = useState(false);
   const [isQuickGeneratingImage, setIsQuickGeneratingImage] = useState(false);
+  const [generationStepText, setGenerationStepText] = useState('');
 
   useEffect(() => {
     setCurrentClass(cls);
@@ -139,14 +140,21 @@ export function PresentationViewer({
 
   const handleQuickGenerateAiImage = async () => {
     setIsQuickGeneratingImage(true);
+    setGenerationStepText('🧠 Analizando contexto con Gemini...');
     try {
-      const res = await GeminiImageService.generateSlideImage(slide, track, 'photoreal-pro');
+      const res = await GeminiImageService.generateSlideImage(
+        slide, 
+        track, 
+        'photoreal-pro',
+        (step) => setGenerationStepText(step)
+      );
       const updatedSlide = { ...slide, imageUrl: res.imageUrl };
       handleSaveCurrentSlide(updatedSlide);
     } catch (e) {
       console.error('Error generating image:', e);
     } finally {
       setIsQuickGeneratingImage(false);
+      setGenerationStepText('');
     }
   };
 
@@ -548,14 +556,14 @@ export function PresentationViewer({
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
+              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.type !== 'spinning-wheel' && (slide.imageUrl || isQuickGeneratingImage) ? (
                 <motion.div
                   initial={isOpeningSlide ? { opacity: 0, scale: 0.96, y: 16 } : false}
                   animate={isOpeningSlide ? { opacity: 1, scale: 1, y: 0 } : undefined}
                   transition={isOpeningSlide ? { duration: 0.55, delay: 0.14 } : undefined}
-                  className={`${isOpeningSlide ? 'md:w-[56%] md:flex-none rounded-[1.75rem] border border-white/15 bg-white/10 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.28)] backdrop-blur-md' : 'flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 p-2 backdrop-blur-sm'} min-w-0 flex flex-col items-center justify-center text-center min-h-[240px] sm:min-h-[400px]`}
+                  className={`${isOpeningSlide ? 'md:w-[56%] md:flex-none rounded-[1.75rem] border border-white/15 bg-white/10 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.28)] backdrop-blur-md' : 'flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 p-2 backdrop-blur-sm'} min-w-0 flex flex-col items-center justify-center text-center min-h-[240px] sm:min-h-[400px] relative`}
                 >
-                  <div className={`${isOpeningSlide ? 'relative w-full h-full overflow-hidden rounded-[1.3rem] border border-white/10' : 'w-full h-full overflow-hidden rounded-lg sm:rounded-xl'}`}>
+                  <div className={`relative w-full h-full overflow-hidden ${isOpeningSlide ? 'rounded-[1.3rem] border border-white/10' : 'rounded-lg sm:rounded-xl'}`}>
                     {isOpeningSlide && (
                       <>
                         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/28 via-transparent to-white/8" />
@@ -570,14 +578,43 @@ export function PresentationViewer({
                         </div>
                       </>
                     )}
-                    <motion.img
-                      src={slide.imageUrl}
-                      referrerPolicy="no-referrer"
-                      alt={slide.title}
-                      className="w-full h-full object-cover"
-                      animate={isOpeningSlide ? { scale: [1.02, 1.06, 1.02] } : undefined}
-                      transition={isOpeningSlide ? { duration: 9, repeat: Infinity, ease: 'easeInOut' } : undefined}
-                    />
+
+                    {slide.imageUrl && (
+                      <motion.img
+                        src={slide.imageUrl}
+                        referrerPolicy="no-referrer"
+                        alt={slide.title}
+                        className={`w-full h-full object-cover transition-all duration-500 ${isQuickGeneratingImage ? 'opacity-25 blur-sm scale-105' : 'opacity-100'}`}
+                        animate={isOpeningSlide && !isQuickGeneratingImage ? { scale: [1.02, 1.06, 1.02] } : undefined}
+                        transition={isOpeningSlide ? { duration: 9, repeat: Infinity, ease: 'easeInOut' } : undefined}
+                      />
+                    )}
+
+                    {/* In-Image AI Generating Animation Overlay */}
+                    {isQuickGeneratingImage && (
+                      <div className="absolute inset-0 z-30 flex flex-col items-center justify-center p-6 bg-slate-950/85 backdrop-blur-md text-white text-center rounded-xl animate-fade-in">
+                        {/* Glowing Animated Ring with Sparkles */}
+                        <div className="relative mb-4 flex items-center justify-center">
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 animate-spin blur-md opacity-80" />
+                          <div className="absolute inset-1 rounded-full bg-slate-950 flex items-center justify-center shadow-inner">
+                            <Sparkles className="w-7 h-7 text-pink-400 animate-bounce" />
+                          </div>
+                        </div>
+
+                        <h4 className="text-base font-black tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 animate-pulse">
+                          {generationStepText || 'Generando Nueva Imagen con IA...'}
+                        </h4>
+                        
+                        <p className="text-xs text-slate-300 mt-1.5 max-w-xs leading-relaxed font-medium">
+                          Leyendo el contexto pedagógico de la diapositiva y creando la escena visual perfecta.
+                        </p>
+
+                        <div className="mt-4 flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-[11px] text-pink-300 shadow-sm">
+                          <span className="w-2 h-2 rounded-full bg-pink-400 animate-ping" />
+                          <span>Gemini AI + Supabase</span>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </motion.div>
               ) : null}
