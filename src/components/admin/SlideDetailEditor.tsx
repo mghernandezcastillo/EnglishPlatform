@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { 
   X, Save, Sparkles, Image as ImageIcon, CheckCircle, Trash2, 
   Plus, Play, Volume2, ShieldAlert, Sliders, Layers, HelpCircle, 
-  Sparkle, Palette, FileText, Eye, Check, RefreshCcw
+  Sparkle, Palette, FileText, Eye, Check
 } from 'lucide-react';
 import { ClassSlide } from '../../types';
 import { SLIDE_TYPE_REGISTRY, BG_GRADIENT_PRESETS } from '../../config/slideTypeRegistry';
@@ -27,9 +27,10 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
   const typeConfig = SLIDE_TYPE_REGISTRY[editedSlide.type || 'standard'] || SLIDE_TYPE_REGISTRY.standard;
 
   // Real-time prompt preview
-  const [generationStepText, setGenerationStepText] = useState('');
-  const [pendingImagePreview, setPendingImagePreview] = useState<{ url: string; prompt: string } | null>(null);
-  const [isCommittingImage, setIsCommittingImage] = useState(false);
+  React.useEffect(() => {
+    const p = GeminiImageService.buildPrompt(editedSlide, track, selectedStyle);
+    setGeneratedPromptPreview(p);
+  }, [editedSlide, track, selectedStyle]);
 
   const handleSave = () => {
     onSave(editedSlide);
@@ -38,50 +39,15 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
   };
 
   const handleGenerateAiImage = async () => {
-    // Clear previous pending image so the animation is visible on "Probar Otra"
-    setPendingImagePreview(null);
     setIsGeneratingImage(true);
-    setGenerationStepText('🧠 Analizando diapositiva con Gemini AI...');
     try {
-      const res = await GeminiImageService.generateSlideImage(
-        editedSlide,
-        track,
-        selectedStyle,
-        (step) => setGenerationStepText(step)
-      );
-      setPendingImagePreview({ url: res.imageUrl, prompt: res.promptUsed });
+      const res = await GeminiImageService.generateSlideImage(editedSlide, track, selectedStyle);
+      setEditedSlide(prev => ({ ...prev, imageUrl: res.imageUrl }));
     } catch (err) {
       console.error('Error generating image:', err);
     } finally {
       setIsGeneratingImage(false);
-      setGenerationStepText('');
     }
-  };
-
-  const handleAcceptImage = async () => {
-    if (!pendingImagePreview) return;
-    setIsCommittingImage(true);
-    try {
-      const permUrl = await GeminiImageService.commitSlideImage(
-        pendingImagePreview.url,
-        editedSlide.id,
-        track,
-        (step) => setGenerationStepText(step)
-      );
-      setEditedSlide(prev => ({ ...prev, imageUrl: permUrl }));
-      setPendingImagePreview(null);
-    } catch (e) {
-      console.error('Error committing image:', e);
-    } finally {
-      setIsCommittingImage(false);
-      setGenerationStepText('');
-    }
-  };
-
-  const handleDiscardImage = () => {
-    setPendingImagePreview(null);
-    setIsGeneratingImage(false);
-    setGenerationStepText('');
   };
 
   // Content line handlers
@@ -673,8 +639,27 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
               {/* Generation Actions & Preview */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                 <div className="space-y-3">
+                  <button
+                    type="button"
+                    disabled={isGeneratingImage}
+                    onClick={handleGenerateAiImage}
+                    className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3 px-4 rounded-2xl shadow-xl shadow-indigo-600/30 text-sm transition-all disabled:opacity-50"
+                  >
+                    {isGeneratingImage ? (
+                      <>
+                        <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                        <span>Generando con Gemini AI...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Sparkles className="w-4 h-4" />
+                        <span>Generar Imagen con Gemini AI</span>
+                      </>
+                    )}
+                  </button>
+
                   <div>
-                    <label className="block text-xs font-bold text-slate-400 mb-1">Escribe/pega una URL directa si no deseas IA:</label>
+                    <label className="block text-xs font-bold text-slate-400 mb-1">O escribe/pega una URL directa:</label>
                     <input
                       type="text"
                       value={editedSlide.imageUrl || ''}
@@ -685,13 +670,13 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
                   </div>
                 </div>
 
-                {/* Preview Thumbnail with Fixed 4:5 Aspect Ratio */}
-                <div className="w-full max-w-[280px] mx-auto aspect-[4/5] rounded-2xl border-2 border-slate-700 bg-slate-950 overflow-hidden relative flex items-center justify-center shadow-xl">
-                  {(pendingImagePreview?.url || editedSlide.imageUrl) ? (
+                {/* Preview Thumbnail */}
+                <div className="aspect-video w-full rounded-2xl border border-slate-700 bg-slate-950 overflow-hidden relative flex items-center justify-center">
+                  {editedSlide.imageUrl ? (
                     <img
-                      src={pendingImagePreview?.url || editedSlide.imageUrl}
+                      src={editedSlide.imageUrl}
                       alt={editedSlide.title}
-                      className={`w-full h-full object-cover transition-all duration-300 ${isGeneratingImage ? 'opacity-30 blur-sm scale-105' : 'opacity-100'}`}
+                      className="w-full h-full object-cover"
                     />
                   ) : (
                     <div className="flex flex-col items-center text-slate-600 gap-2">
@@ -699,98 +684,7 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
                       <span className="text-xs">Sin imagen asignada</span>
                     </div>
                   )}
-
-                  {/* Generating AI Animation Overlay */}
-                  {isGeneratingImage && (
-                    <div className="absolute inset-0 z-20 flex flex-col items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md text-white text-center animate-fade-in">
-                      <div className="relative mb-2">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 animate-spin blur-md opacity-80" />
-                        <div className="absolute inset-0.5 rounded-full bg-slate-950 flex items-center justify-center">
-                          <Sparkles className="w-6 h-6 text-pink-400 animate-bounce" />
-                        </div>
-                      </div>
-                      <span className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-300 animate-pulse">
-                        {generationStepText || 'Generando con Gemini AI...'}
-                      </span>
-                    </div>
-                  )}
-
-                  {/* Pending Image Approval Controls */}
-                  {pendingImagePreview && !isGeneratingImage && (
-                    <div className="absolute inset-0 z-20 flex flex-col justify-between p-3 bg-gradient-to-t from-black/90 via-transparent to-black/80 animate-fade-in">
-                      <div className="flex items-center justify-center">
-                        <span className="bg-purple-600 text-white font-bold text-[10px] px-2.5 py-0.5 rounded-full shadow-lg border border-purple-400/30 flex items-center gap-1 backdrop-blur-md">
-                          <Sparkles className="w-3 h-3 text-pink-300" /> Vista Previa
-                        </span>
-                      </div>
-
-                      <div className="space-y-1.5 bg-slate-950/90 p-2.5 rounded-xl border border-white/10 backdrop-blur-md">
-                        <button
-                          type="button"
-                          onClick={handleAcceptImage}
-                          disabled={isCommittingImage}
-                          className="w-full flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-1.5 px-3 rounded-lg text-xs shadow-lg transition-all disabled:opacity-50"
-                        >
-                          {isCommittingImage ? (
-                            <>
-                              <div className="w-3 h-3 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                              <span>Guardando...</span>
-                            </>
-                          ) : (
-                            <>
-                              <CheckCircle className="w-3.5 h-3.5" />
-                              <span>Aplicar Imagen</span>
-                            </>
-                          )}
-                        </button>
-
-                        <div className="grid grid-cols-2 gap-1.5">
-                          <button
-                            type="button"
-                            onClick={handleGenerateAiImage}
-                            disabled={isCommittingImage}
-                            className="flex items-center justify-center gap-1 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-1 px-2 rounded-lg text-[10px] border border-slate-700 transition-all"
-                          >
-                            <RefreshCcw className="w-3 h-3 text-indigo-400" />
-                            <span>Probar Otra</span>
-                          </button>
-
-                          <button
-                            type="button"
-                            onClick={handleDiscardImage}
-                            disabled={isCommittingImage}
-                            className="flex items-center justify-center gap-1 bg-rose-950/80 hover:bg-rose-900 text-rose-300 font-bold py-1 px-2 rounded-lg text-[10px] border border-rose-800/50 transition-all"
-                          >
-                            <X className="w-3 h-3" />
-                            <span>Descartar</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  )}
                 </div>
-                
-                {/* AI Generator Button - Placed directly below the image per user request */}
-                {!pendingImagePreview && (
-                  <button
-                    type="button"
-                    disabled={isGeneratingImage}
-                    onClick={handleGenerateAiImage}
-                    className="w-full max-w-[280px] mx-auto mt-4 flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3 px-4 rounded-xl shadow-xl shadow-indigo-600/30 text-sm transition-all disabled:opacity-50"
-                  >
-                    {isGeneratingImage ? (
-                      <>
-                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        <span>Generando (10-15s)...</span>
-                      </>
-                    ) : (
-                      <>
-                        <Sparkles className="w-5 h-5" />
-                        <span>Generar Imagen con IA</span>
-                      </>
-                    )}
-                  </button>
-                )}
               </div>
             </div>
           )}
