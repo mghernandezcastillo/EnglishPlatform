@@ -673,27 +673,8 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
               {/* Generation Actions & Preview */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                 <div className="space-y-3">
-                  <button
-                    type="button"
-                    disabled={isGeneratingImage}
-                    onClick={handleGenerateAiImage}
-                    className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3 px-4 rounded-2xl shadow-xl shadow-indigo-600/30 text-sm transition-all disabled:opacity-50"
-                  >
-                    {isGeneratingImage ? (
-                      <>
-                        <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        <span>Generando con Gemini AI...</span>
-                      </>
-                    ) : (
-                      <>
-                        <Sparkles className="w-4 h-4" />
-                        <span>Generar Imagen con Gemini AI</span>
-                      </>
-                    )}
-                  </button>
-
                   <div>
-                    <label className="block text-xs font-bold text-slate-400 mb-1">O escribe/pega una URL directa:</label>
+                    <label className="block text-xs font-bold text-slate-400 mb-1">Escribe/pega una URL directa si no deseas IA:</label>
                     <input
                       type="text"
                       value={editedSlide.imageUrl || ''}
@@ -788,6 +769,28 @@ export function SlideDetailEditor({ slide, track, onSave, onClose }: SlideDetail
                     </div>
                   )}
                 </div>
+                
+                {/* AI Generator Button - Placed directly below the image per user request */}
+                {!pendingImagePreview && (
+                  <button
+                    type="button"
+                    disabled={isGeneratingImage}
+                    onClick={handleGenerateAiImage}
+                    className="w-full max-w-[280px] mx-auto mt-4 flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3 px-4 rounded-xl shadow-xl shadow-indigo-600/30 text-sm transition-all disabled:opacity-50"
+                  >
+                    {isGeneratingImage ? (
+                      <>
+                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                        <span>Generando (10-15s)...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Sparkles className="w-5 h-5" />
+                        <span>Generar Imagen con IA</span>
+                      </>
+                    )}
+                  </button>
+                )}
               </div>
             </div>
           )}
