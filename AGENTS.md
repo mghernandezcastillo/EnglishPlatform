@@ -84,21 +84,29 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
 ### 5️⃣ Section 5: Wrap-up & Homework (3 slides)
 - **Slide 1 (Class Complete!)**: Congratulatory message.
   - **MUST HAVE**: `imageUrl` and `bgColor` (e.g., `from-yellow-400 to-orange-500`).
-- **Slide 2 (Homework)**:
+- **Slide 2 (Homework 📝)**:
   - **MUST HAVE**: `type: "homework"`, `title: "Homework"`.
-  - `content`: Explicit written instructions (e.g., "Write 5 sentences about...").
+  - **HOMEWORK AUDIT RULE**: You MUST verify that the homework instructions are clearly written, practical, motivating, and 100% contextualized to what was taught in that specific class (e.g., "Write 3 questions asking for someone's age and birthday").
+  - `content`: Explicit written instructions.
   - `bgColor` (e.g., `from-violet-500 to-fuchsia-600`).
 - **Slide 3 (Video Homework 📹)**:
   - **MUST HAVE**: `type: "video"`, `title: "Video Homework 📹"`.
-  - **MUST HAVE**: `videoUrl` (e.g., `"https://www.youtube.com/embed/xFsYrTIndhI"`).
+  - **VIDEO LINK VERIFICATION RULE**: You MUST test and verify that `videoUrl` is a valid, working, active YouTube embed URL (`https://www.youtube.com/embed/VIDEO_ID`). Broken or unavailable video links are strictly forbidden.
   - `content`: Specific instructions for the video.
   - `bgColor` (e.g., `from-slate-800 to-indigo-900`).
+
+## 👥 AUDIENCE ADAPTATION (TEENS, KIDS, ADULTS)
+This entire protocol applies across all tracks with age-appropriate visual & pedagogical standards:
+- **Teens (13–17)**: Modern high school, friendships, casual tech, sports, hobbies, vibrant streetwear.
+- **Kids (6–12)**: Playful, colorful, friendly animals, interactive games, animated illustrations, simple vocabulary.
+- **Adults (18+)**: Real-world communication, workplace, daily routines, travel, professional contexts.
 
 ## 🛑 STRICT PROHIBITIONS
 - NEVER leave `content` undefined.
 - NEVER create a quiz/multiple choice slide without the `options` array.
 - NEVER omit `bgColor` from any slide.
 - NEVER repeat the same image across different slides of the same class. Every visual slide must have a 100% unique image.
-- NEVER use adult hipster photos or cartoon illustrations with blank speech bubbles in teen classes.
+- NEVER leave a broken or unverified YouTube link in the video homework slide.
 - NEVER use generic placeholders like "Option A" or "Wrong option". You MUST generate real, pedagogically sound content for every single slide and option.
+
 
