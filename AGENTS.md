@@ -71,11 +71,15 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
   - `bgColor` (e.g., `from-pink-500 to-rose-600`).
 
 ### 4️⃣ Section 4: Production & Quiz (5 slides)
-- **Slide 1 (Let's Talk!)**: Speaking prompt for students. `bgColor` (e.g., `from-emerald-500 to-teal-600`).
+- **Slide 1 (Let's Talk!)**: Speaking prompt for students with spinning wheel. `bgColor` (e.g., `from-emerald-500 to-teal-600`).
 - **Slides 2-4 (Fun Quiz! X/3)**:
   - **MUST HAVE**: `options` (Array of EXACTLY 3 real strings), `correctOptionIndex` (0, 1, or 2).
   - `bgColor` (e.g., `from-pink-500 to-rose-600`).
-- **Slide 5 (Roleplay/Share)**: Partner activity.
+  - **MUST HAVE UNIQUE IMAGES**: Every single quiz slide must have a distinct, non-repeating, context-accurate image.
+- **Slide 5 (Roleplay / Let's Say That... 🎭)**:
+  - **ROLEPLAY DESIGN RULE**: The roleplay slide must feature a **single, large, central prompt card** proposing a clear conversational scenario starting with `"Let's say that..."` (e.g. `"Let's say that you meet a new classmate in the cafeteria. Ask their name, age, and what food they like!"`).
+  - Keep the screen ultra-clean and legible for screen-share: the prompt gives the scenario and the teacher conducts the conversation freely with the student.
+  - Avoid dense scripts, walls of dialogue, or complex multi-step tabs.
 
 ### 5️⃣ Section 5: Wrap-up & Homework (3 slides)
 - **Slide 1 (Class Complete!)**: Congratulatory message.
@@ -94,4 +98,7 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
 - NEVER leave `content` undefined.
 - NEVER create a quiz/multiple choice slide without the `options` array.
 - NEVER omit `bgColor` from any slide.
-- NEVER use generic placeholders like "Follow the instructions on screen" or "Option A" or "Wrong option". You MUST generate real, pedagogically sound content for every single slide and option.
+- NEVER repeat the same image across different slides of the same class. Every visual slide must have a 100% unique image.
+- NEVER use adult hipster photos or cartoon illustrations with blank speech bubbles in teen classes.
+- NEVER use generic placeholders like "Option A" or "Wrong option". You MUST generate real, pedagogically sound content for every single slide and option.
+
