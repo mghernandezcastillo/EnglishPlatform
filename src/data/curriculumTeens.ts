@@ -249,7 +249,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-02/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-zero-class-02/slide-20.jpg", content: ["Write down the ages and birthdays of 3 friends or family members.", "Example: My mom is 40. Her birthday is in April."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", imageUrl: "/images/teens-basic-zero-class-02/slide-21.jpg", content: ["Watch this video about numbers and ages.", "Practice counting to 100!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/D0Ajq682yrA", imageUrl: "/images/teens-basic-zero-class-02/slide-21.jpg", content: ["Watch this video about numbers and ages.", "Practice counting to 100!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -364,7 +364,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-03/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-zero-class-03/slide-20.jpg", content: ["Write 3 sentences about what you CAN do.", "Write 3 sentences about what you CAN'T do."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", imageUrl: "/images/teens-basic-zero-class-03/slide-21.jpg", content: ["Watch this video about action verbs.", "Write down 2 new actions you learned!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/SUt8q0EKbms", imageUrl: "/images/teens-basic-zero-class-03/slide-21.jpg", content: ["Watch this video about action verbs.", "Write down 2 new actions you learned!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -477,7 +477,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-04/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-zero-class-04/slide-20.jpg", content: ["Make a list of 3 gadgets you have.", "Make a list of 3 gadgets you DON'T have."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", imageUrl: "/images/teens-basic-zero-class-04/slide-21.jpg", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about tech vocabulary.", "Write down 2 new words!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", imageUrl: "/images/teens-basic-zero-class-04/slide-21.jpg", videoUrl: "https://www.youtube.com/embed/7_s3BTR6W_E", content: ["Watch this video about tech vocabulary.", "Write down 2 new words!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -590,7 +590,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-05/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", imageUrl: "/images/teens-basic-zero-class-05/slide-20.jpg", content: ["Write a list of 3 foods you like.", "Write a list of 3 foods you DON'T like."], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", imageUrl: "/images/teens-basic-zero-class-05/slide-21.jpg", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about food vocabulary.", "Write down 2 new foods you learned!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", imageUrl: "/images/teens-basic-zero-class-05/slide-21.jpg", videoUrl: "https://www.youtube.com/embed/13mftBvRmvM", content: ["Watch this video about food vocabulary.", "Write down 2 new foods you learned!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -703,7 +703,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-06/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Describe your favorite shirt.", "Write what color it is and if it has a pattern."], imageUrl: "/images/teens-basic-zero-class-06/slide-20.jpg", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about shapes.", "Write down 2 new shapes you learned!"], imageUrl: "/images/teens-basic-zero-class-06/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/TJhfl5vdxp4", content: ["Watch this video about shapes.", "Write down 2 new shapes you learned!"], imageUrl: "/images/teens-basic-zero-class-06/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -816,7 +816,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-07/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Write a list of 5 things in your backpack.", "Write what your favorite subject is and why."], imageUrl: "/images/teens-basic-zero-class-07/slide-20.jpg", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about school subjects.", "Write down 2 new subjects you learned!"], imageUrl: "/images/teens-basic-zero-class-07/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/41cJ0mqWses", content: ["Watch this video about school subjects.", "Write down 2 new subjects you learned!"], imageUrl: "/images/teens-basic-zero-class-07/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -929,7 +929,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-08/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Write a short text about your favorite animal.", "Why do you like it? Is it big or small?"], imageUrl: "/images/teens-basic-zero-class-08/slide-20.jpg", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/rXidsSt9Ss0", content: ["Watch this video about animals.", "Write down 2 new animals you learned!"], imageUrl: "/images/teens-basic-zero-class-08/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/pWepfJ-8XU0", content: ["Watch this video about animals.", "Write down 2 new animals you learned!"], imageUrl: "/images/teens-basic-zero-class-08/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -1042,7 +1042,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-09/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Write a paragraph (3-4 lines) about your free time.", "Include 2 things you like doing and 1 thing you never do."], imageUrl: "/images/teens-basic-zero-class-09/slide-20.jpg", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about hobbies.", "Write down 2 new hobbies you learned!"], imageUrl: "/images/teens-basic-zero-class-09/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/N1o4oOXLOZc", content: ["Watch this video about hobbies.", "Write down 2 new hobbies you learned!"], imageUrl: "/images/teens-basic-zero-class-09/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -1155,7 +1155,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-10/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Draw your family tree or write about your best friend.", "Use 3 adjectives (tall, funny, smart, etc.)."], imageUrl: "/images/teens-basic-zero-class-10/slide-20.jpg", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about family.", "Write down 2 new family members you learned!"], imageUrl: "/images/teens-basic-zero-class-10/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/FHaObkHEkHQ", content: ["Watch this video about family.", "Write down 2 new family members you learned!"], imageUrl: "/images/teens-basic-zero-class-10/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -1381,7 +1381,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-12/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Write your own 'Bio' for social media (3-4 sentences).", "Include your name, age, city, and one hobby."], imageUrl: "/images/teens-basic-zero-class-12/slide-20.jpg", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about introductions.", "Practice saying your bio aloud!"], imageUrl: "/images/teens-basic-zero-class-12/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/2NmsAJbL2c8", content: ["Watch this video about introductions.", "Practice saying your bio aloud!"], imageUrl: "/images/teens-basic-zero-class-12/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -1606,7 +1606,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-14/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Write 3 sentences saying where things are in your room.", "Example: My shoes are under the bed."], imageUrl: "/images/teens-basic-zero-class-14/slide-20.jpg", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about prepositions.", "Write down the prepositions you hear!"], imageUrl: "/images/teens-basic-zero-class-14/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/bPrT4nS2Qc8", content: ["Watch this video about prepositions.", "Write down the prepositions you hear!"], imageUrl: "/images/teens-basic-zero-class-14/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -1718,7 +1718,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Class Complete! 🏆 / Clase Completa! 🏆", description: "Wrap-up", imageUrl: "/images/teens-basic-zero-class-15/slide-19.jpg", content: ["Awesome job today!", "You leveled up your English!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "Homework", type: "homework", content: ["Write your daily routine in 4 sentences.", "Include wake up, breakfast, lunch, and sleep times."], imageUrl: "/images/teens-basic-zero-class-15/slide-20.jpg", bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch this video about daily routines.", "Write down 2 new verbs you learned!"], imageUrl: "/images/teens-basic-zero-class-15/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Video", type: "video", videoUrl: "https://www.youtube.com/embed/M4FMEml4wKE", content: ["Watch this video about daily routines.", "Write down 2 new verbs you learned!"], imageUrl: "/images/teens-basic-zero-class-15/slide-21.jpg", bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900" }
             ],
             action: "Anotar la tarea."
           }
@@ -1830,7 +1830,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             slides: [
               { id: "slide-19", title: "Level 0 Complete! 🏆 / Nivel 0 Completa! 🏆", description: "Congratulations!", content: ["You finished Level 0!", "You are awesome!"], bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500", imageUrl: "/images/teens-basic-zero-class-16/slide-19.jpg" },
               { id: "slide-20", title: "Homework 📝 / Tarea 📝", description: "End of level project.", type: "homework", content: ["Create a poster about yourself.", "Include your age, favorite hobbies, snacks, and pets.", "Use colors!"], bgColor: "bg-gradient-to-br from-violet-500 to-fuchsia-600", imageUrl: "/images/teens-basic-zero-class-16/slide-20.jpg" },
-              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Listen and learn.", type: "video", videoUrl: "https://www.youtube.com/embed/Fw0rdSHzWFY", content: ["Watch the final review video.", "Sing along and practice everything you learned!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900", imageUrl: "/images/teens-basic-zero-class-16/slide-21.jpg" }
+              { id: "slide-21", title: "Video Homework 📹 / Tarea en Video 📹", description: "Listen and learn.", type: "video", videoUrl: "https://www.youtube.com/embed/xFsYrTIndhI", content: ["Watch the final review video.", "Sing along and practice everything you learned!"], bgColor: "bg-gradient-to-br from-slate-800 to-indigo-900", imageUrl: "/images/teens-basic-zero-class-16/slide-21.jpg" }
             ],
             action: "Anotar la tarea."
           }
