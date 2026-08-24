@@ -33,6 +33,7 @@ import {
 } from 'lucide-react';
 import { StoryVocabularyLibrary, decodeSharedVocabulary, type SavedVocabularyWord } from './StoryVocabularyLibrary';
 import { canonicalizeStoryVocabularyTerm, findStoryWordTranslation, normalizeSavedVocabularyTerm } from '../data/storyDecoderTranslations';
+import { storyDecoderDb } from '../lib/storyDecoderDb';
 
 type PuzzleMode = 'easy' | 'medium' | 'hard' | 'expert';
 type DecoderScreen = 'intro' | 'roadmap' | 'lesson' | 'player' | 'vocabulary';
@@ -743,7 +744,64 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   }, [progress, progressKey]);
 
   useEffect(() => {
-    if (!isSharedVocabulary) localStorage.setItem(vocabularyKey, JSON.stringify(vocabulary));
+    if (isSharedVocabulary) return;
+    let cancelled = false;
+
+    const loadData = async () => {
+      let localWords: SavedVocabularyWord[] = [];
+      try {
+        const stored = localStorage.getItem(vocabularyKey);
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed)) localWords = parsed;
+        }
+        if (!localWords.length && studentId) {
+          const localFallback = localStorage.getItem(`${VOCABULARY_STORAGE_KEY}:local`);
+          if (localFallback) {
+            const parsed = JSON.parse(localFallback);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              localWords = parsed;
+              localStorage.setItem(vocabularyKey, JSON.stringify(parsed));
+            }
+          }
+        }
+      } catch {
+        localWords = [];
+      }
+
+      if (!cancelled) {
+        setVocabulary(localWords);
+      }
+
+      if (studentId) {
+        const remoteWords = await storyDecoderDb.getVocabulary(studentId);
+        if (!cancelled && remoteWords.length > 0) {
+          setVocabulary((prev) => {
+            const merged = [...prev];
+            remoteWords.forEach((rw) => {
+              if (!merged.some((m) => m.id === rw.id)) {
+                merged.push(rw);
+              }
+            });
+            try {
+              localStorage.setItem(vocabularyKey, JSON.stringify(merged));
+            } catch (err) {
+              console.error('Error saving merged vocabulary:', err);
+            }
+            return merged;
+          });
+        }
+      }
+    };
+
+    loadData();
+    return () => { cancelled = true; };
+  }, [vocabularyKey, isSharedVocabulary, studentId]);
+
+  useEffect(() => {
+    if (!isSharedVocabulary && vocabulary.length > 0) {
+      localStorage.setItem(vocabularyKey, JSON.stringify(vocabulary));
+    }
   }, [vocabulary, vocabularyKey, isSharedVocabulary]);
 
   useEffect(() => {
@@ -893,37 +951,87 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   };
 
   const saveVocabularyWord = (english: string, spanish: string) => {
-    if (!currentLine || !activeStory) return;
     const canonicalEnglish = normalizeSavedVocabularyTerm(english, verbBaseForms) || english.trim();
     const id = canonicalEnglish.toLocaleLowerCase('en-US').trim();
+    if (!id || !spanish.trim()) return;
+
     const word: SavedVocabularyWord = {
       id,
       english: canonicalEnglish,
       spanish: spanish.trim(),
-      exampleEn: currentLine.en,
-      exampleEs: currentLine.es,
-      storyTitle: activeStory.title,
-      storyId: activeStory.story_id,
+      exampleEn: currentLine?.en || '',
+      exampleEs: currentLine?.es || '',
+      storyTitle: activeStory?.title || 'Story Decoder',
+      storyId: activeStory?.story_id,
       addedAt: Date.now()
     };
+
     setVocabulary((current) => {
       const existingIndex = current.findIndex((item) => item.id === id);
-      if (existingIndex === -1) return [word, ...current];
-      return current.map((item, index) => index === existingIndex ? { ...item, ...word, addedAt: item.addedAt } : item);
+      const next = existingIndex === -1
+        ? [word, ...current]
+        : current.map((item, index) => index === existingIndex ? { ...item, ...word, addedAt: item.addedAt } : item);
+
+      try {
+        localStorage.setItem(vocabularyKey, JSON.stringify(next));
+        localStorage.setItem(`${VOCABULARY_STORAGE_KEY}:local`, JSON.stringify(next));
+      } catch (err) {
+        console.error('Error saving vocabulary word:', err);
+      }
+      return next;
     });
+
+    if (studentId) {
+      storyDecoderDb.saveWord(studentId, word);
+    }
+
+    if (isSharedVocabulary) {
+      setIsSharedVocabulary(false);
+    }
   };
 
   const deleteVocabularyWord = (id: string) => {
-    setVocabulary((current) => current.filter((word) => word.id !== id));
+    setVocabulary((current) => {
+      const next = current.filter((word) => word.id !== id);
+      try {
+        localStorage.setItem(vocabularyKey, JSON.stringify(next));
+        localStorage.setItem(`${VOCABULARY_STORAGE_KEY}:local`, JSON.stringify(next));
+      } catch (err) {
+        console.error('Error deleting vocabulary word:', err);
+      }
+      return next;
+    });
+
+    if (studentId) {
+      storyDecoderDb.deleteWord(studentId, id);
+    }
   };
 
   const updateVocabularyWord = (id: string, english: string, spanish: string) => {
     const canonicalEnglish = normalizeSavedVocabularyTerm(english, verbBaseForms) || english.trim();
     const normalizedId = canonicalEnglish.toLocaleLowerCase('en-US').trim();
     if (!normalizedId || !spanish.trim()) return;
-    setVocabulary((current) => current.map((word) => word.id === id
-      ? { ...word, id: normalizedId, english: canonicalEnglish, spanish: spanish.trim() }
-      : word));
+    let updatedWordObj: SavedVocabularyWord | null = null;
+    setVocabulary((current) => {
+      const next = current.map((word) => {
+        if (word.id === id) {
+          updatedWordObj = { ...word, id: normalizedId, english: canonicalEnglish, spanish: spanish.trim() };
+          return updatedWordObj;
+        }
+        return word;
+      });
+      try {
+        localStorage.setItem(vocabularyKey, JSON.stringify(next));
+        localStorage.setItem(`${VOCABULARY_STORAGE_KEY}:local`, JSON.stringify(next));
+      } catch (err) {
+        console.error('Error updating vocabulary word:', err);
+      }
+      return next;
+    });
+
+    if (studentId && updatedWordObj) {
+      storyDecoderDb.updateWord(studentId, updatedWordObj);
+    }
   };
 
   const importSharedVocabulary = () => {

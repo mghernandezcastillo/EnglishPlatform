@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronLeft, ChevronRight, X, Play, Image as ImageIcon, CheckCircle, Edit3, Sparkles, Eye, Palette } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X, Play, Image as ImageIcon, CheckCircle } from 'lucide-react';
 import { CurriculumClass, ClassSection, ClassSlide } from '../types';
 import { SpinningWheel } from './SpinningWheel';
 import { MatchingGame } from './MatchingGame';
@@ -11,41 +11,22 @@ import { PronunciationAssessmentSlide } from './PronunciationAssessmentSlide';
 import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
 import { StructureDragExercise } from './StructureDragExercise';
 import { RolePlayCard } from './RolePlayCard';
+import { AlphabetPronunciationGame } from './AlphabetPronunciationGame';
 import { AccuracyContrastCard } from './AccuracyContrastCard';
-import { VocabularyFlipCards } from './VocabularyFlipCards';
 import { enhancePresentationClass } from '../lib/presentationEnhancer';
-import { SlideDetailEditor } from './admin/SlideDetailEditor';
-import { AdminCurriculumService, AudienceTrack } from '../lib/adminCurriculumService';
-import { GeminiImageService } from '../lib/geminiImageService';
 
 interface PresentationViewerProps {
   cls: CurriculumClass;
-  track?: AudienceTrack;
-  initialEditMode?: boolean;
   onClose: () => void;
   onComplete?: () => void;
-  onSlideUpdate?: (sectionId: string, updatedSlide: ClassSlide) => void;
+  track?: string;
+  initialEditMode?: boolean;
+  onSlideUpdate?: () => void;
 }
 
-export function PresentationViewer({ 
-  cls, 
-  track = 'adulto', 
-  initialEditMode = false, 
-  onClose, 
-  onComplete,
-  onSlideUpdate 
-}: PresentationViewerProps) {
-  const [currentClass, setCurrentClass] = useState<CurriculumClass>(cls);
-  const [isEditMode, setIsEditMode] = useState(initialEditMode);
-  const [isEditingSlide, setIsEditingSlide] = useState(false);
-  const [isQuickGeneratingImage, setIsQuickGeneratingImage] = useState(false);
-
-  useEffect(() => {
-    setCurrentClass(cls);
-  }, [cls]);
-
+export function PresentationViewer({ cls, onClose, onComplete }: PresentationViewerProps) {
   const experimentalSpeakingEnabled = import.meta.env.VITE_EXPERIMENTAL_SPEAKING_ASSESSMENT === 'true';
-  const enhancedClass = useMemo(() => enhancePresentationClass(currentClass), [currentClass]);
+  const enhancedClass = useMemo(() => enhancePresentationClass(cls), [cls]);
   // Flatten all slides from sections
   const allSlides: { section: ClassSection, slide: ClassSlide, totalSlides: number, index: number }[] = [];
   let index = 0;
@@ -66,6 +47,7 @@ export function PresentationViewer({
   const [showResult, setShowResult] = useState(false);
   const [meetingAudioStream, setMeetingAudioStream] = useState<MediaStream | null>(null);
   const [selectedSpeakingPrompt, setSelectedSpeakingPrompt] = useState('');
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     return () => {
@@ -77,6 +59,7 @@ export function PresentationViewer({
     setSelectedOption(null);
     setShowResult(false);
     setSelectedSpeakingPrompt('');
+    setImageError(false);
   }, [currentIndex]);
 
   useEffect(() => {
@@ -121,38 +104,10 @@ export function PresentationViewer({
   const currentData = allSlides[currentIndex];
   if (!currentData) return null;
   const { section, slide } = currentData;
-
-  const handleSaveCurrentSlide = (updatedSlide: ClassSlide) => {
-    const clonedClass: CurriculumClass = JSON.parse(JSON.stringify(currentClass));
-    const targetSection = clonedClass.sections.find(s => s.id === section.id);
-    if (targetSection) {
-      const sIdx = targetSection.slides.findIndex(s => s.id === slide.id);
-      if (sIdx >= 0) {
-        targetSection.slides[sIdx] = updatedSlide;
-      }
-    }
-    setCurrentClass(clonedClass);
-    AdminCurriculumService.updateSlide(track, cls.id, section.id, updatedSlide);
-    onSlideUpdate?.(section.id, updatedSlide);
-    setIsEditingSlide(false);
-  };
-
-  const handleQuickGenerateAiImage = async () => {
-    setIsQuickGeneratingImage(true);
-    try {
-      const res = await GeminiImageService.generateSlideImage(slide, track, 'photoreal-pro');
-      const updatedSlide = { ...slide, imageUrl: res.imageUrl };
-      handleSaveCurrentSlide(updatedSlide);
-    } catch (e) {
-      console.error('Error generating image:', e);
-    } finally {
-      setIsQuickGeneratingImage(false);
-    }
-  };
-
   const isLastSlide = currentIndex === allSlides.length - 1;
   const isSpeakingBossBattle = slide.type === 'speaking-boss-battle';
-  const isRoleplaySlide = slide.type === 'roleplay' || slide.type === 'lets-say' || Boolean(slide.roleplay);
+  const isAlphabetGame = slide.type === 'alphabet-game';
+  const isRoleplaySlide = slide.type === 'roleplay' || slide.type === 'lets-say' || slide.type === 'speaking-scene' || isAlphabetGame || Boolean(slide.speakingScene) || Boolean(slide.letsSay) || (Boolean(slide.roleplay) && !slide.options?.length);
   const isStructureDragSlide = slide.type === 'structure-drag';
   const isAccuracyContrastSlide =
     !isSpeakingBossBattle &&
@@ -165,17 +120,11 @@ export function PresentationViewer({
     (/accuracy contrast|contraste de precisi[oó]n/i.test(slide.title || '') ||
       Boolean(slide.content && slide.content.some((line) => /^correct this:/i.test(line) || /^accurate:/i.test(line))));
 
-  const isVocabularySlide =
-    !isSpeakingBossBattle &&
-    !isRoleplaySlide &&
-    !isStructureDragSlide &&
-    (slide.type === 'vocabulary' || Boolean(slide.vocabularyCards && slide.vocabularyCards.length > 0));
-
   const isImmersiveSlide =
     slide.type === 'emoji-game' ||
     slide.type === 'speaking-boss-battle' ||
     slide.type === 'speaking-assessment-experimental' ||
-    isVocabularySlide ||
+    isRoleplaySlide ||
     isAccuracyContrastSlide;
   const isOptionExerciseSlide =
     !!slide.options?.length &&
@@ -183,13 +132,8 @@ export function PresentationViewer({
     slide.type !== 'speaking-boss-battle' &&
     slide.type !== 'speaking-assessment-experimental' &&
     slide.type !== 'structure-drag' &&
-    !isVocabularySlide &&
     !isRoleplaySlide;
-  const isScreenShareExerciseSlide =
-    isOptionExerciseSlide &&
-    !slide.imageUrl &&
-    slide.type !== 'video' &&
-    slide.type !== 'homework';
+  const isScreenShareExerciseSlide = isOptionExerciseSlide;
 
   const bgColorMap: Record<string, string> = {
     'intro': 'bg-blue-600',
@@ -220,36 +164,21 @@ export function PresentationViewer({
     slide.type !== 'speaking-assessment-experimental' &&
     slide.type !== 'structure-drag' &&
     !isAccuracyContrastSlide &&
-    !isVocabularySlide &&
     slide.type !== 'roleplay';
 
   return (
     <div className="fixed inset-0 z-[200] bg-black/90 backdrop-blur flex flex-col">
       {/* Top Bar */}
-      <div className="flex items-center justify-between p-3 sm:p-4 bg-black/60 border-b border-white/10 text-white shrink-0">
-        <div className="flex-1 min-w-0 mr-3">
-          <h2 className="text-lg sm:text-xl font-bold truncate">{currentClass.title}</h2>
+      <div className="flex items-center justify-between p-3 sm:p-4 bg-black/50 text-white shrink-0">
+        <div className="flex-1 min-w-0 mr-2">
+          <h2 className="text-lg sm:text-xl font-bold truncate">{cls.title}</h2>
           <p className="text-gray-400 text-xs sm:text-sm truncate">{section.title} ({section.duration})</p>
         </div>
-
         <div className="flex items-center gap-2 sm:gap-4 shrink-0">
-          {/* Mode Switcher */}
-          <div className="flex items-center bg-white/10 p-1 rounded-xl border border-white/10">
-            <button
-              onClick={() => setIsEditMode(false)}
-              className={`px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${!isEditMode ? 'bg-indigo-600 text-white shadow-md' : 'text-gray-400 hover:text-white'}`}
-            >
-              <Eye className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Modo</span> Clase
-            </button>
-            <button
-              onClick={() => setIsEditMode(true)}
-              className={`px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${isEditMode ? 'bg-indigo-600 text-white shadow-md' : 'text-gray-400 hover:text-white'}`}
-            >
-              <Edit3 className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Modo</span> Edición
-            </button>
+          <div className="hidden sm:block text-gray-400 text-sm font-medium">
+            Diapositiva {currentIndex + 1} de {allSlides.length}
           </div>
-
-          <div className="hidden sm:block text-gray-400 text-xs font-medium font-mono">
+          <div className="sm:hidden text-gray-400 text-xs font-medium">
             {currentIndex + 1} / {allSlides.length}
           </div>
           <button 
@@ -263,45 +192,6 @@ export function PresentationViewer({
 
       {/* Main Slide Area */}
       <div className={`flex-1 relative overflow-y-auto overflow-x-hidden ${isSpeakingBossBattle || isRoleplaySlide ? 'p-1 sm:p-2 lg:p-3' : 'p-2 sm:p-8'}`}>
-        {/* Floating Edit Toolbar when in Edit Mode */}
-        {isEditMode && (
-          <div className="max-w-6xl mx-auto w-full mb-3 bg-slate-900/90 border border-indigo-500/40 rounded-2xl p-2.5 shadow-2xl backdrop-blur-md flex flex-wrap items-center justify-between gap-3 text-xs z-30">
-            <div className="flex items-center gap-2">
-              <span className="font-bold font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-400 border border-indigo-800/60">
-                {slide.id}
-              </span>
-              <span className="font-bold text-white truncate max-w-xs sm:max-w-md">
-                {slide.title}
-              </span>
-              <span className="text-[10px] text-slate-400">({section.title.split('/')[0]})</span>
-            </div>
-
-            <div className="flex items-center gap-2 shrink-0">
-              <button
-                type="button"
-                onClick={handleQuickGenerateAiImage}
-                disabled={isQuickGeneratingImage}
-                className="flex items-center gap-1.5 bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-bold px-3 py-1.5 rounded-xl shadow-md disabled:opacity-50 transition-all"
-              >
-                {isQuickGeneratingImage ? (
-                  <div className="w-3.5 h-3.5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                ) : (
-                  <Sparkles className="w-3.5 h-3.5" />
-                )}
-                <span>{isQuickGeneratingImage ? 'Generando...' : 'Regenerar Imagen IA'}</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setIsEditingSlide(true)}
-                className="flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-3.5 py-1.5 rounded-xl shadow-md shadow-indigo-600/30 transition-all"
-              >
-                <Edit3 className="w-3.5 h-3.5" /> Editar Esta Diapositiva
-              </button>
-            </div>
-          </div>
-        )}
-
         <div className={`min-h-full flex flex-col items-center justify-center ${isSpeakingBossBattle || isRoleplaySlide ? 'pb-2 sm:pb-3' : 'pb-20 sm:pb-8'}`}>
           <AnimatePresence mode="wait">
             <motion.div
@@ -398,6 +288,11 @@ export function PresentationViewer({
                     bossName={slide.speakingBossBattle?.bossName}
                     bossTitle={slide.speakingBossBattle?.bossTitle}
                     bossAvatar={slide.speakingBossBattle?.bossAvatar}
+                    mission={slide.speakingBossBattle?.mission}
+                    starterPhrase={slide.speakingBossBattle?.starterPhrase}
+                    powerWords={slide.speakingBossBattle?.powerWords}
+                    targetGrammar={slide.speakingBossBattle?.targetGrammar}
+                    checklist={slide.speakingBossBattle?.checklist}
                     timerSeconds={slide.speakingBossBattle?.timerSeconds}
                     prepareSeconds={slide.speakingBossBattle?.prepareSeconds}
                     rounds={slide.speakingBossBattle?.rounds}
@@ -418,7 +313,11 @@ export function PresentationViewer({
                   <StructureDragExercise slide={slide} />
                 )}
 
-                {isRoleplaySlide && (
+                {isAlphabetGame && (
+                  <AlphabetPronunciationGame slide={slide} />
+                )}
+
+                {isRoleplaySlide && !isAlphabetGame && (
                   <RolePlayCard slide={slide} />
                 )}
 
@@ -426,14 +325,7 @@ export function PresentationViewer({
                   <AccuracyContrastCard slide={slide} />
                 )}
 
-                {isVocabularySlide && slide.vocabularyCards && slide.vocabularyCards.length > 0 && (
-                  <VocabularyFlipCards
-                    cards={slide.vocabularyCards}
-                    audience={cls.id.includes('kid') ? 'kids' : cls.id.includes('teen') ? 'teens' : 'adults'}
-                  />
-                )}
-
-                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.content?.map((line, i) => {
+                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && slide.content?.map((line, i) => {
                   if (slide.type === 'reading') {
                     return (
                       <div key={i} className="text-base sm:text-xl md:text-2xl font-medium leading-relaxed bg-black/10 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg text-justify">
@@ -454,7 +346,7 @@ export function PresentationViewer({
                   );
                 })}
 
-                {isOptionalAiSpeakingSlide && !slide.hideAiAssistant && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isVocabularySlide && (
+                {isOptionalAiSpeakingSlide && !slide.hideAiAssistant && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && (
                   <InlineAiSpeakingAssistant
                     title={isReadingPracticeSlide ? 'Asistente IA de lectura' : 'Asistente IA de esta diapositiva'}
                     initialQuestion={selectedSpeakingPrompt || slideSpeakingQuestions[0] || ''}
@@ -488,25 +380,26 @@ export function PresentationViewer({
                 )}
 
                 {/* Interactive Options Area (inline with content) */}
-                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isVocabularySlide && slide.options && slide.options.length > 0 && (
-                  <div className={`flex flex-col ${isScreenShareExerciseSlide ? 'gap-2.5 sm:gap-3 pt-2 sm:pt-3' : 'gap-3 mt-auto pt-4 sm:pt-6'} w-full`}>
+                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && slide.options && slide.options.length > 0 && (
+                  <div className="flex flex-col gap-3 sm:gap-4.5 pt-2 sm:pt-4 w-full">
                     {slide.options.map((opt, idx) => {
                       const isSelected = selectedOption === idx;
                       const isCorrect = idx === slide.correctOptionIndex;
                       const isRevealed = showResult && isSelected;
-                      
-                      let btnClass = `${isScreenShareExerciseSlide ? 'px-4 sm:px-5 py-3.5 sm:py-5 min-h-[64px] sm:min-h-[82px] rounded-xl sm:rounded-2xl text-lg sm:text-2xl leading-tight' : 'px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-xl'} font-bold transition-all shadow-xl border-2 flex-grow text-center `;
-                      
+                      const optionLetter = ['A', 'B', 'C', 'D', 'E'][idx] || String(idx + 1);
+
+                      let btnClass = "w-full px-5 sm:px-7 py-3.5 sm:py-5 min-h-[66px] sm:min-h-[82px] lg:min-h-[90px] rounded-2xl sm:rounded-3xl text-xl sm:text-3xl lg:text-[2.1rem] font-black transition-all shadow-xl border-2 flex items-center justify-between text-left ";
+
                       if (!showResult) {
-                        btnClass += "bg-white text-gray-900 border-white hover:scale-105 hover:bg-gray-100";
+                        btnClass += "bg-white text-slate-950 border-white hover:scale-[1.02] hover:bg-slate-50 active:scale-[0.99] cursor-pointer";
                       } else if (isRevealed) {
                         btnClass += isCorrect 
-                          ? "bg-emerald-500 text-white border-emerald-400 scale-105" 
-                          : "bg-red-500 text-white border-red-400 opacity-50";
+                          ? "bg-emerald-500 text-white border-emerald-400 scale-[1.02] shadow-2xl shadow-emerald-500/40 ring-4 ring-emerald-300" 
+                          : "bg-rose-500 text-white border-rose-400 opacity-60";
                       } else {
                         btnClass += isCorrect
-                          ? "bg-emerald-500 text-white border-emerald-400"
-                          : "bg-white/20 text-white/50 border-white/10 opacity-50";
+                          ? "bg-emerald-500 text-white border-emerald-400 ring-2 ring-emerald-300"
+                          : "bg-white/20 text-white/40 border-white/10 opacity-40";
                       }
 
                       return (
@@ -516,7 +409,20 @@ export function PresentationViewer({
                           onClick={() => handleOptionSelect(idx)}
                           className={btnClass}
                         >
-                          {opt}
+                          <div className="flex items-center gap-3 sm:gap-5 min-w-0 flex-1">
+                            <span className={`inline-flex items-center justify-center w-10 h-10 sm:w-13 sm:h-13 rounded-xl font-black text-lg sm:text-2xl shrink-0 ${
+                              !showResult ? 'bg-slate-900/10 text-slate-900' : 'bg-white/20 text-white'
+                            }`}>
+                              {optionLetter}
+                            </span>
+                            <span className="truncate leading-tight font-black">{opt}</span>
+                          </div>
+                          {showResult && isCorrect && (
+                            <CheckCircle className="w-7 h-7 sm:w-9 sm:h-9 text-white shrink-0 ml-2" />
+                          )}
+                          {showResult && isRevealed && !isCorrect && (
+                            <span className="text-xl sm:text-2xl font-black shrink-0 ml-2 text-white">✕</span>
+                          )}
                         </button>
                       );
                     })}
@@ -548,7 +454,7 @@ export function PresentationViewer({
                     className="w-full h-full border-0"
                   ></iframe>
                 </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.type !== 'spinning-wheel' && slide.imageUrl ? (
+              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && slide.type !== 'spinning-wheel' && slide.imageUrl && !imageError ? (
                 <motion.div
                   initial={isOpeningSlide ? { opacity: 0, scale: 0.96, y: 16 } : false}
                   animate={isOpeningSlide ? { opacity: 1, scale: 1, y: 0 } : undefined}
@@ -575,6 +481,7 @@ export function PresentationViewer({
                       referrerPolicy="no-referrer"
                       alt={slide.title}
                       className="w-full h-full object-cover"
+                      onError={() => setImageError(true)}
                       animate={isOpeningSlide ? { scale: [1.02, 1.06, 1.02] } : undefined}
                       transition={isOpeningSlide ? { duration: 9, repeat: Infinity, ease: 'easeInOut' } : undefined}
                     />
@@ -638,16 +545,6 @@ export function PresentationViewer({
           style={{ width: `${((currentIndex + 1) / allSlides.length) * 100}%` }}
         />
       </div>
-
-      {/* Slide Detail Editor Modal */}
-      {isEditingSlide && (
-        <SlideDetailEditor
-          slide={slide}
-          track={track}
-          onSave={handleSaveCurrentSlide}
-          onClose={() => setIsEditingSlide(false)}
-        />
-      )}
     </div>
   );
 }

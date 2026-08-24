@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { DragEvent as ReactDragEvent } from 'react';
-import { CheckCircle2, RefreshCw, Sparkles } from 'lucide-react';
+import { CheckCircle2, RefreshCw, Sparkles, XCircle } from 'lucide-react';
+import confetti from 'canvas-confetti';
 import { ClassSlide } from '../types';
 
 interface StructureDragExerciseProps {
@@ -91,6 +92,9 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
   const checkAnswer = () => {
     if (!allFilled) return;
     setChecked(true);
+    if (allCorrect) {
+      confetti({ particleCount: 75, spread: 65, origin: { y: 0.65 } });
+    }
   };
 
   return (
@@ -102,9 +106,9 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
             {config.patternName}
           </div>
           <div className="mt-3 flex flex-wrap gap-2">
-            {config.learningOpportunity && (
+            {checked && allCorrect && config.learningOpportunity && (
               <span className="rounded-full bg-emerald-300/20 px-3 py-1 text-xs font-black uppercase tracking-widest text-emerald-100">
-                Oportunidad: {config.learningOpportunity}
+                Estructura: {config.learningOpportunity}
               </span>
             )}
             {config.difficulty && (
@@ -113,13 +117,23 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
               </span>
             )}
           </div>
-          <p className="mt-3 text-base font-bold text-white/80 sm:text-lg">{config.instructions}</p>
-          <p className="mt-2 text-lg font-black text-white sm:text-2xl">{config.prompt}</p>
+          <p className="mt-3 text-base font-bold text-white/90 sm:text-lg">{config.instructions}</p>
+          {checked && allCorrect ? (
+            <div className="mt-2.5 inline-flex items-center gap-2.5 rounded-xl bg-emerald-400/20 border border-emerald-400/40 px-3.5 py-2 text-lg font-black text-emerald-200 sm:text-2xl shadow-md">
+              <CheckCircle2 className="h-6 w-6 text-emerald-400 shrink-0" />
+              <span>{config.prompt}</span>
+            </div>
+          ) : (
+            <div className="mt-2 flex items-center gap-2 text-sm font-semibold text-white/55">
+              <span className="inline-block h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
+              <span>Arrastra y ordena las piezas en los espacios para formar la estructura correcta</span>
+            </div>
+          )}
         </div>
         <button
           type="button"
           onClick={reset}
-          className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 text-sm font-black text-white hover:bg-white/20"
+          className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 text-sm font-black text-white hover:bg-white/20 transition"
         >
           <RefreshCw className="h-4 w-4" />
           Reiniciar
@@ -218,13 +232,23 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
               type="button"
               disabled={!allFilled}
               onClick={checkAnswer}
-              className="rounded-xl bg-white px-4 py-3 font-black text-slate-950 disabled:opacity-40"
+              className="rounded-xl bg-white px-4 py-3 font-black text-slate-950 shadow-md transition hover:bg-slate-100 disabled:opacity-40"
             >
               Comprobar estructura
             </button>
             {checked && (
-              <div className={`rounded-xl px-4 py-3 text-sm font-black ${allCorrect ? 'bg-emerald-300 text-emerald-950' : 'bg-rose-300 text-rose-950'}`}>
-                {allCorrect ? 'Estructura correcta.' : 'Revisa el orden y vuelve a intentar.'}
+              <div className={`flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-black shadow-md ${allCorrect ? 'bg-emerald-300 text-emerald-950' : 'bg-rose-300 text-rose-950'}`}>
+                {allCorrect ? (
+                  <>
+                    <CheckCircle2 className="h-5 w-5 shrink-0" />
+                    <span>¡Estructura correcta! Excelente trabajo.</span>
+                  </>
+                ) : (
+                  <>
+                    <XCircle className="h-5 w-5 shrink-0" />
+                    <span>Revisa el orden de las piezas y vuelve a intentar.</span>
+                  </>
+                )}
               </div>
             )}
           </div>

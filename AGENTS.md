@@ -37,14 +37,36 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
 - Para juegos con temporizador, feedback o animaciones, el estado actual debe ser obvio incluso en una pantalla pequeña: tiempo, pregunta, opciones y resultado no deben competir entre sí.
 - Antes de dar por terminado un cambio visual o interactivo, auditar que se vea razonablemente bien para pantalla compartida en PC y para estudiantes que miran desde celular. Si hay mucho espacio muerto, texto pequeño o controles difíciles de leer, corregirlo antes de finalizar.
 
-## 🖼️ GENERATED IMAGE REQUIREMENT FOR PLAN-BASED CLASSES
-- Cuando se implemente TODO el contenido de una clase tomada de un plan `.md`, se DEBEN generar imágenes propias para las diapositivas visuales de esa clase antes de dar la tarea por terminada.
-- Las imágenes generadas deben estar relacionadas directamente con la frase, pregunta, respuesta correcta, vocabulario o actividad de la diapositiva.
-- Guardar las imágenes finales dentro del proyecto, preferiblemente en `public/images` o en la carpeta de assets usada por el módulo, con nombres descriptivos y estables.
-- Actualizar la clase para usar esas imágenes mediante `imageUrl` o el campo visual equivalente. No dejar referencias a imágenes temporales fuera del workspace.
-- En preguntas de selección múltiple, priorizar una imagen principal grande que acompañe la diapositiva completa y esté relacionada con la frase, la pregunta o la respuesta correcta. No convertir las opciones en miniaturas salvo que el diseño de esa actividad lo pida explícitamente.
-- No usar imágenes genéricas, placeholders ni assets no relacionados solo para cumplir el campo visual.
-- Si se usa Unsplash como excepción, verificar primero cada URL según la regla crítica de imágenes.
+## 🖼️ GENERATED IMAGE REQUIREMENT & 1-TO-1 SEQUENTIAL MAPPING PROTOCOL
+- **REGLA DE ORO DE UNICIDAD (1:1)**: Cada diapositiva visual de una clase DEBE contar con su propia imagen única y personalizada. Queda TERMINANTEMENTE PROHIBIDO reusar o copiar la misma ruta de imagen (ej. `slide-17.jpg` o `slide-01.jpg`) en múltiples diapositivas de una misma clase.
+- **Estructura oficial de carpetas**:
+  - Todas las imágenes de una clase se guardan en `public/images/<audience>-<level>-class-<number>/` (formato con 2 dígitos, ej: `public/images/teens-basic-3-class-08/`, `public/images/adults-basic-1-class-02/`).
+- **Convención de nombres de archivo**:
+  - Las imágenes se nombran estrictamente de forma secuencial por diapositiva:
+    `slide-01.jpg`, `slide-02.jpg`, `slide-03.jpg`, ..., `slide-22.jpg`.
+- **Mapeo secuencial obligatorio en archivos de datos (`curriculum.ts`, `curriculumTeens.ts`, `curriculumKids.ts`)**:
+  - Al generar o actualizar una clase, las propiedades `imageUrl` deben coincidir 1-a-1 con el índice de la diapositiva:
+    - **Sección 1 (Warm-up)**:
+      - Diapositiva 1 (Welcome) -> `/images/<folder>/slide-01.jpg`
+      - Diapositiva 2 (Warm-up Wheel/Activity) -> `/images/<folder>/slide-02.jpg`
+      - Diapositiva 3 (Objectives) -> `/images/<folder>/slide-03.jpg`
+    - **Sección 2 (Grammar / Vocabulary)**:
+      - Diapositivas 4 a 8 -> `/images/<folder>/slide-04.jpg` hasta `slide-08.jpg`
+    - **Sección 3 (Practice & Concept Checking)**:
+      - Diapositivas 9 a 13 (Context, Quizzes 1-3, Emoji Game) -> `/images/<folder>/slide-09.jpg` hasta `slide-13.jpg`
+    - **Sección 4 (Production & Quiz)**:
+      - Diapositivas 14 a 19 (Speaking Wheel, Fun Quizzes 1-3, Boss Battle, Speaking Scene/Roleplay) -> `/images/<folder>/slide-14.jpg` hasta `slide-19.jpg`
+    - **Sección 5 (Wrap-up & Homework)**:
+      - Diapositivas 20 a 22 (Class Complete, Homework, Video Homework) -> `/images/<folder>/slide-20.jpg` hasta `slide-22.jpg`
+- **Contexto pedagógico de las imágenes**:
+  - Cada imagen generada debe reflejar con precisión el contenido, vocabulario, pregunta o situación comunicativa de esa diapositiva en particular.
+  - En preguntas de selección múltiple, la imagen principal debe ilustrar la frase, contexto o respuesta correcta.
+- **Auditoría obligatoria post-generación**:
+  - Antes de dar por terminada cualquier tarea de generación de imágenes, el agente DEBE ejecutar una verificación automatizada que valide:
+    1. Que la cantidad de imágenes únicas en la clase sea igual a la cantidad de diapositivas con imagen (`uniqueImages === totalSlidesWithImages`).
+    2. Que cada ruta referenciada en `imageUrl` exista físicamente en disco (`fs.existsSync`).
+- **Si se usa Unsplash como excepción**:
+  - Verificar obligatoriamente cada URL con `curl -s -o /dev/null -w "%{http_code}" <url>`. Jamás incluir URLs 404 o no verificadas.
 
 ## 📝 MICRO STRUCTURE (SLIDE BY SLIDE BLUEPRINT)
 

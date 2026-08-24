@@ -886,7 +886,7 @@ function findObjectivesSlide(cls: CurriculumClass): ClassSlide | undefined {
 
 function findRoleplaySlide(cls: CurriculumClass): ClassSlide | undefined {
   const slides = cls.sections[3]?.slides || [];
-  return slides.find((slide) => slide.type === 'roleplay' || /roleplay|juego de roles|share|comparte/i.test(slide.title));
+  return slides.find((slide) => slide.type === 'roleplay' || slide.type === 'lets-say' || slide.type === 'alphabet-game' || /roleplay|juego de roles|lets-say|let's say|alphabet|spelling|share|comparte/i.test(slide.title));
 }
 
 function findHomeworkSlide(cls: CurriculumClass): ClassSlide | undefined {
@@ -1078,7 +1078,7 @@ function completeTeenClass(cls: CurriculumClass, kernel: TeenLessonKernel, spec:
   if (wrap) {
     const firstImage = cls.sections.flatMap((section) => section.slides).find((slide) => slide.imageUrl)?.imageUrl;
     const currentVideo = wrap.slides.find((slide) => slide.type === 'video') || wrap.slides[wrap.slides.length - 1];
-    const summary = wrap.slides.find((slide) => /complete|summary|great job|class complete/i.test(slide.title));
+    const summary = wrap.slides.find((slide) => /complete|summary|great job|class complete|congrat|graduat|felicidad/i.test(slide.title));
     const homework = wrap.slides.find((slide) => slide.type === 'homework');
     if (!summary) {
       wrap.slides.unshift({
@@ -1163,7 +1163,7 @@ function applyClassProgression(cls: CurriculumClass, spec: ClassProgression) {
       productionSlide.content = spec.production;
     }
     const roleplay = findRoleplaySlide(cls);
-    if (roleplay && spec.roleplay) {
+    if (roleplay && spec.roleplay && !roleplay.speakingScene && !roleplay.letsSay && !roleplay.alphabetGame) {
       roleplay.title = 'Applied Roleplay / Roleplay aplicado';
       roleplay.content = spec.roleplay;
       if (roleplay.roleplay) {

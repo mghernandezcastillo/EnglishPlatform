@@ -7,6 +7,11 @@ interface SpeakingBossBattleGameProps {
   bossName?: string;
   bossTitle?: string;
   bossAvatar?: string;
+  mission?: string;
+  starterPhrase?: string;
+  powerWords?: string[];
+  targetGrammar?: string;
+  checklist?: string[];
   timerSeconds?: number;
   prepareSeconds?: number;
   rounds?: {
@@ -225,7 +230,12 @@ function parseBossPrompt(
   prompt: string,
   roundKey: 'remember' | 'use' | 'speak',
   speakSeconds: number,
-  fallbackTopic: string
+  fallbackTopic: string,
+  mission?: string,
+  starterPhrase?: string,
+  powerWords?: string[],
+  targetGrammar?: string,
+  checklist?: string[]
 ): ParsedRoundData {
   const exampleMatch = prompt.match(/(?:Example(?:\s+to\s+guide\s+you)?|Ejemplo):\s*["']?([\s\S]+?)["']?$/i);
   const rawExample = exampleMatch ? exampleMatch[1].replace(/["']$/g, '').trim() : undefined;
@@ -241,42 +251,48 @@ function parseBossPrompt(
   }
   topic = topic.replace(/^today'?s topic$/i, fallbackTopic).trim() || fallbackTopic;
 
-  let focus: string | undefined = undefined;
-  const focusMatch = promptClean.match(/\busing\s+([^:.]+?)(?:\s+in the context of|\s*:\s*one positive|\s*:\s*make|\.|$)/i);
-  if (focusMatch?.[1]?.trim()) {
-    const raw = focusMatch[1].trim();
-    if (!/^what you learned|^words|^simple words/i.test(raw)) {
-      focus = raw;
+  let focus: string | undefined = targetGrammar;
+  if (!focus) {
+    const focusMatch = promptClean.match(/\busing\s+([^:.]+?)(?:\s+in the context of|\s*:\s*one positive|\s*:\s*make|\.|$)/i);
+    if (focusMatch?.[1]?.trim()) {
+      const raw = focusMatch[1].trim();
+      if (!/^what you learned|^words|^simple words/i.test(raw)) {
+        focus = raw;
+      }
     }
   }
 
   if (roundKey === 'remember') {
+    const items: ChallengeItem[] = [
+      {
+        badge: '🔤 Power Words',
+        badgeBg: 'bg-sky-500 text-white',
+        title: 'Say Key Vocabulary',
+        desc: powerWords?.length ? powerWords.join('  •  ') : `Name 3 important words related to ${topic}`,
+        example: powerWords?.[0],
+        bg: 'bg-sky-50/80',
+        border: 'border-sky-200',
+        text: 'text-sky-950'
+      },
+      {
+        badge: '💬 Model Phrase',
+        badgeBg: 'bg-indigo-500 text-white',
+        title: 'Say Starter Phrase',
+        desc: starterPhrase ? `Practice saying: "${starterPhrase}"` : 'Say 1 complete expression or sentence',
+        example: starterPhrase,
+        bg: 'bg-indigo-50/80',
+        border: 'border-indigo-200',
+        text: 'text-indigo-950'
+      }
+    ];
+
     return {
       headline: 'Recall Key Vocabulary',
       topic,
       focus,
       example: rawExample,
       support: 'Quick warm-up! Say key words and a phrase from today.',
-      items: [
-        {
-          badge: '🔤 3 Words',
-          badgeBg: 'bg-sky-500 text-white',
-          title: 'Say 3 Key Words',
-          desc: `Name 3 important words related to ${topic}`,
-          bg: 'bg-sky-50/80',
-          border: 'border-sky-200',
-          text: 'text-sky-950'
-        },
-        {
-          badge: '💬 1 Phrase',
-          badgeBg: 'bg-indigo-500 text-white',
-          title: 'Say 1 Useful Phrase',
-          desc: 'Say 1 complete expression or sentence',
-          bg: 'bg-indigo-50/80',
-          border: 'border-indigo-200',
-          text: 'text-indigo-950'
-        }
-      ]
+      items
     };
   }
 
@@ -350,32 +366,69 @@ function parseBossPrompt(
   }
 
   // speak round
+  const items: ChallengeItem[] = mission
+    ? [
+        {
+          badge: '🎯 30s Mission',
+          badgeBg: 'bg-rose-600 text-white',
+          title: 'Speaking Challenge',
+          desc: mission,
+          bg: 'bg-rose-50/90',
+          border: 'border-rose-300',
+          text: 'text-rose-950'
+        },
+        {
+          badge: '🚀 Starter Phrase',
+          badgeBg: 'bg-emerald-600 text-white',
+          title: 'Start Speaking With:',
+          desc: starterPhrase ? `"${starterPhrase}"` : `Begin by introducing your point on ${topic}`,
+          example: starterPhrase,
+          bg: 'bg-emerald-50/90',
+          border: 'border-emerald-300',
+          text: 'text-emerald-950'
+        },
+        {
+          badge: '⚡ Power Words & Grammar',
+          badgeBg: 'bg-amber-600 text-white',
+          title: targetGrammar || (focus ? `Structure: ${focus}` : 'Target Vocabulary'),
+          desc: powerWords?.length ? powerWords.join('  •  ') : `Connect ideas using today's language about ${topic}`,
+          bg: 'bg-amber-50/90',
+          border: 'border-amber-300',
+          text: 'text-amber-950'
+        }
+      ]
+    : [
+        {
+          badge: '🎙️ Fluency',
+          badgeBg: 'bg-amber-600 text-white',
+          title: 'Continuous Speech',
+          desc: `Speak for ${formatDurationText(speakSeconds)} smoothly and clearly`,
+          bg: 'bg-amber-50/80',
+          border: 'border-amber-300',
+          text: 'text-amber-950'
+        },
+        {
+          badge: '🎯 Target Focus',
+          badgeBg: 'bg-rose-600 text-white',
+          title: focus ? `Structure: ${focus}` : 'Topic Vocabulary',
+          desc: `Connect ideas and use language about ${topic}`,
+          bg: 'bg-rose-50/80',
+          border: 'border-rose-300',
+          text: 'text-rose-950'
+        }
+      ];
+
+  const checklistNote = checklist?.length
+    ? `📋 Checklist (3 Points to Cover): ${checklist.join('  •  ')}`
+    : undefined;
+
   return {
-    headline: `Speaking Challenge`,
+    headline: mission ? '30s Speaking Challenge' : 'Speaking Challenge',
     topic,
-    focus,
-    example: rawExample,
-    support: `Prepare your ideas (3 min), then speak for ${formatDurationText(speakSeconds)} without stopping.`,
-    items: [
-      {
-        badge: '🎙️ Fluency',
-        badgeBg: 'bg-amber-600 text-white',
-        title: 'Continuous Speech',
-        desc: `Speak for ${formatDurationText(speakSeconds)} smoothly and clearly`,
-        bg: 'bg-amber-50/80',
-        border: 'border-amber-300',
-        text: 'text-amber-950'
-      },
-      {
-        badge: '🎯 Target Focus',
-        badgeBg: 'bg-rose-600 text-white',
-        title: focus ? `Structure: ${focus}` : 'Topic Vocabulary',
-        desc: `Connect ideas and use language about ${topic}`,
-        bg: 'bg-rose-50/80',
-        border: 'border-rose-300',
-        text: 'text-rose-950'
-      }
-    ]
+    focus: targetGrammar || focus,
+    example: checklistNote || rawExample,
+    support: mission ? `Read your mission, start with the phrase, and speak for ${formatDurationText(speakSeconds)}!` : `Prepare your ideas (3 min), then speak for ${formatDurationText(speakSeconds)} without stopping.`,
+    items
   };
 }
 
@@ -383,6 +436,11 @@ export function SpeakingBossBattleGame({
   bossName = 'The English Boss',
   bossTitle = 'Final speaking challenge',
   bossAvatar = '⚔️',
+  mission,
+  starterPhrase,
+  powerWords,
+  targetGrammar,
+  checklist,
   timerSeconds = 30,
   prepareSeconds = 180,
   rounds
@@ -410,7 +468,19 @@ export function SpeakingBossBattleGame({
   
   const activeSeconds = timerMode === 'prepare' ? customPrepareSeconds : customSpeakSeconds;
   const prompt = roundKey ? (mergedRounds[roundKey] || []).join('\n') : '';
-  const parsedData = roundKey ? parseBossPrompt(prompt, roundKey, customSpeakSeconds, bossTitle) : null;
+  const parsedData = roundKey
+    ? parseBossPrompt(
+        prompt,
+        roundKey,
+        customSpeakSeconds,
+        bossTitle,
+        mission,
+        starterPhrase,
+        powerWords,
+        targetGrammar,
+        checklist
+      )
+    : null;
   const completedCount = hits.filter(Boolean).length;
   const isComplete = completedCount === roundMeta.length;
   const bossHealth = Math.max(0, Math.round(100 - completedCount * (100 / roundMeta.length)));
@@ -542,22 +612,22 @@ export function SpeakingBossBattleGame({
         )}
 
         {currentRound && parsedData && (
-          <div className="flex h-full flex-col justify-between gap-4">
-            <div className="flex flex-col gap-3">
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <div className={`inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r ${currentRound.color} px-4 py-1.5 text-sm font-black uppercase tracking-[0.14em] text-white sm:text-base`}>
-                  <Icon className="h-5 w-5" />
+          <div className="flex h-full flex-col justify-between gap-5 sm:gap-6 flex-1 min-h-0">
+            <div className="flex flex-col gap-4 sm:gap-6 flex-1 justify-around">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className={`inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r ${currentRound.color} px-5 py-2 text-base sm:text-xl font-black uppercase tracking-[0.14em] text-white shadow-md`}>
+                  <Icon className="h-6 w-6" />
                   {currentRound.title} Round · Challenge {roundIndex + 1}/3
                 </div>
 
-                <div className="flex flex-wrap items-center gap-2">
-                  <div className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs sm:text-sm font-bold text-slate-700">
-                    <span className="text-slate-400 font-semibold uppercase text-[11px] tracking-wider">Topic:</span>
+                <div className="flex flex-wrap items-center gap-2.5">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100 px-4 py-1.5 text-sm sm:text-base font-bold text-slate-700">
+                    <span className="text-slate-400 font-semibold uppercase text-xs sm:text-sm tracking-wider">Topic:</span>
                     <span className="font-extrabold text-slate-900">{parsedData.topic}</span>
                   </div>
                   {parsedData.focus && (
-                    <div className="inline-flex items-center gap-1.5 rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs sm:text-sm font-bold text-indigo-900">
-                      <span className="text-indigo-500 font-semibold uppercase text-[11px] tracking-wider">Focus:</span>
+                    <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-sm sm:text-base font-bold text-indigo-900">
+                      <span className="text-indigo-500 font-semibold uppercase text-xs sm:text-sm tracking-wider">Focus:</span>
                       <span className="font-extrabold text-indigo-700">{parsedData.focus}</span>
                     </div>
                   )}
@@ -565,39 +635,39 @@ export function SpeakingBossBattleGame({
               </div>
 
               <div>
-                <h2 className="text-2xl font-black text-slate-900 sm:text-4xl lg:text-5xl tracking-tight">
+                <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
                   {parsedData.headline}
                 </h2>
-                <p className="mt-1 text-sm sm:text-base font-semibold text-slate-500">
+                <p className="mt-2 text-lg sm:text-2xl lg:text-3xl font-bold text-slate-600">
                   {parsedData.support}
                 </p>
               </div>
 
-              <div className={`grid gap-3 sm:gap-4 ${parsedData.items.length === 3 ? 'grid-cols-1 md:grid-cols-3' : 'grid-cols-1 md:grid-cols-2'}`}>
+              <div className={`grid gap-4 sm:gap-6 flex-1 ${parsedData.items.length === 3 ? 'grid-cols-1 md:grid-cols-3' : 'grid-cols-1 md:grid-cols-2'}`}>
                 {parsedData.items.map((item, idx) => (
                   <div
                     key={idx}
-                    className={`flex flex-col justify-between rounded-2xl border-2 p-4 sm:p-5 shadow-sm transition ${item.bg} ${item.border}`}
+                    className={`flex flex-col justify-between rounded-3xl border-3 p-5 sm:p-7 lg:p-8 shadow-md transition ${item.bg} ${item.border}`}
                   >
                     <div>
-                      <div className="mb-2.5 flex items-center justify-between">
-                        <span className={`inline-flex items-center rounded-lg px-2.5 py-1 text-xs sm:text-sm font-black uppercase tracking-wider shadow-sm ${item.badgeBg}`}>
+                      <div className="mb-3 flex items-center justify-between">
+                        <span className={`inline-flex items-center rounded-xl px-3.5 py-1.5 text-sm sm:text-base font-black uppercase tracking-wider shadow-sm ${item.badgeBg}`}>
                           {item.badge}
                         </span>
-                        <span className="text-xs font-black text-slate-400">Step {idx + 1}</span>
+                        <span className="text-sm sm:text-base font-black text-slate-400">Step {idx + 1}</span>
                       </div>
-                      <h3 className={`text-lg sm:text-xl lg:text-2xl font-black tracking-tight ${item.text}`}>
+                      <h3 className={`text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight ${item.text}`}>
                         {item.title}
                       </h3>
-                      <p className="mt-1.5 text-xs sm:text-sm lg:text-base font-semibold text-slate-600 leading-relaxed">
+                      <p className="mt-2.5 text-base sm:text-xl lg:text-2xl font-bold text-slate-700 leading-relaxed">
                         {item.desc}
                       </p>
                     </div>
 
                     {item.example && (
-                      <div className="mt-3 rounded-xl border border-slate-200/90 bg-white/95 px-3 py-2 text-xs sm:text-sm font-bold text-slate-800 shadow-sm">
-                        <span className="mr-1.5 font-black uppercase text-[10px] tracking-wider text-slate-500">Ex:</span>
-                        <span className="italic text-slate-950">"{item.example}"</span>
+                      <div className="mt-4 rounded-2xl border-2 border-slate-200/90 bg-white/95 px-4 py-3 text-base sm:text-xl lg:text-2xl font-bold text-slate-900 shadow-sm">
+                        <span className="mr-2 font-black uppercase text-xs sm:text-sm tracking-wider text-slate-500">Ex:</span>
+                        <span className="italic font-black text-slate-950">"{item.example}"</span>
                       </div>
                     )}
                   </div>
@@ -605,10 +675,10 @@ export function SpeakingBossBattleGame({
               </div>
 
               {parsedData.example && (
-                <div className="flex items-start gap-3 rounded-2xl border-2 border-amber-300 bg-amber-50/95 p-3.5 sm:p-4 text-amber-950 shadow-md">
-                  <span className="shrink-0 text-xl sm:text-2xl">💡</span>
-                  <div className="min-w-0 text-xs sm:text-sm lg:text-base">
-                    <div className="font-black uppercase tracking-wider text-amber-800 text-[11px] sm:text-xs mb-1">
+                <div className="flex items-start gap-4 rounded-3xl border-3 border-amber-300 bg-amber-50/95 p-4 sm:p-6 text-amber-950 shadow-md">
+                  <span className="shrink-0 text-3xl sm:text-4xl">💡</span>
+                  <div className="min-w-0 text-base sm:text-xl lg:text-2xl">
+                    <div className="font-black uppercase tracking-wider text-amber-900 text-xs sm:text-sm mb-1.5">
                       Model Example to Guide You:
                     </div>
                     <p className="font-bold italic text-slate-950 leading-relaxed">
@@ -620,32 +690,32 @@ export function SpeakingBossBattleGame({
             </div>
 
             {roundKey === 'speak' && (
-              <div className="grid gap-3 rounded-2xl bg-slate-100 p-3 sm:p-4 lg:grid-cols-[0.85fr_1.15fr]">
+              <div className="grid gap-4 rounded-3xl bg-slate-100 p-4 sm:p-6 lg:grid-cols-[0.85fr_1.15fr] shadow-inner">
                 <div>
-                  <div className="mb-2 grid grid-cols-2 rounded-xl border border-slate-200 bg-white p-1 text-xs sm:text-sm font-black uppercase tracking-widest text-slate-500 shadow-sm">
+                  <div className="mb-3 grid grid-cols-2 rounded-2xl border border-slate-200 bg-white p-1 text-sm sm:text-base font-black uppercase tracking-widest text-slate-500 shadow-sm">
                     <button
                       type="button"
                       onClick={() => handleModeChange('prepare')}
-                      className={`rounded-lg px-3 py-2 transition ${timerMode === 'prepare' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
+                      className={`rounded-xl px-4 py-2.5 transition ${timerMode === 'prepare' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
                     >
                       Prepare (3:00)
                     </button>
                     <button
                       type="button"
                       onClick={() => handleModeChange('speak')}
-                      className={`rounded-lg px-3 py-2 transition ${timerMode === 'speak' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
+                      className={`rounded-xl px-4 py-2.5 transition ${timerMode === 'speak' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
                     >
                       Speak ({customSpeakSeconds}s)
                     </button>
                   </div>
-                  <div className="grid grid-cols-[52px_1fr_52px] items-center gap-2">
+                  <div className="grid grid-cols-[56px_1fr_56px] items-center gap-2.5">
                     <button
                       type="button"
                       onClick={() => updateCustomSeconds(timerMode, activeSeconds - 5)}
-                      className="flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
+                      className="flex h-14 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
                       aria-label="Decrease seconds"
                     >
-                      <Minus className="h-5 w-5" />
+                      <Minus className="h-6 w-6" />
                     </button>
                     <input
                       type="number"
@@ -654,32 +724,32 @@ export function SpeakingBossBattleGame({
                       step={5}
                       value={activeSeconds}
                       onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}
-                      className="h-12 rounded-xl border border-slate-200 bg-white px-2 text-center text-2xl font-black text-slate-950 shadow-sm outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100"
+                      className="h-14 rounded-2xl border border-slate-200 bg-white px-2 text-center text-3xl font-black text-slate-950 shadow-sm outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100"
                       aria-label="Timer seconds"
                     >
                     </input>
                     <button
                       type="button"
                       onClick={() => updateCustomSeconds(timerMode, activeSeconds + 5)}
-                      className="flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
+                      className="flex h-14 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
                       aria-label="Increase seconds"
                     >
-                      <Plus className="h-5 w-5" />
+                      <Plus className="h-6 w-6" />
                     </button>
                   </div>
                 </div>
-                <div className="flex items-center justify-between gap-3 rounded-2xl bg-slate-950 p-3.5 text-white sm:p-4">
-                  <div className="flex items-center gap-2 text-xs sm:text-sm font-black uppercase tracking-widest text-white/70">
-                    <Timer className="h-5 w-5" />
+                <div className="flex items-center justify-between gap-4 rounded-2xl bg-slate-950 p-4 text-white sm:p-5">
+                  <div className="flex items-center gap-2.5 text-sm sm:text-base font-black uppercase tracking-widest text-white/70">
+                    <Timer className="h-6 w-6" />
                     {timerMode === 'prepare' ? 'Prep Timer' : 'Speak Timer'}
                   </div>
-                  <div className="text-4xl font-black tabular-nums leading-none sm:text-5xl lg:text-6xl">{formatTimerLabel(timer)}</div>
+                  <div className="text-5xl font-black tabular-nums leading-none sm:text-6xl lg:text-7xl">{formatTimerLabel(timer)}</div>
                   <button
                     type="button"
                     onClick={() => startTimer(timerMode)}
-                    className="inline-flex items-center gap-1.5 rounded-xl bg-emerald-400 px-4 py-2.5 text-base font-black text-emerald-950 shadow-lg shadow-emerald-950/20 transition hover:bg-emerald-300 sm:text-lg"
+                    className="inline-flex items-center gap-2 rounded-2xl bg-emerald-400 px-5 py-3 text-lg font-black text-emerald-950 shadow-lg shadow-emerald-950/20 transition hover:bg-emerald-300 sm:text-xl"
                   >
-                    <Play className="h-5 w-5" />
+                    <Play className="h-6 w-6" />
                     Start
                   </button>
                 </div>

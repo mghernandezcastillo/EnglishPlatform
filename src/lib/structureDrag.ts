@@ -1,4 +1,5 @@
 import { ClassSection, ClassSlide, CurriculumClass } from '../types';
+import { getCustomClassStructure } from '../data/classStructureMap';
 
 type PatternVariant = 'affirmative' | 'negative' | 'question';
 
@@ -104,8 +105,13 @@ function normalizeText(value: string) {
 }
 
 function audienceFromClass(cls: CurriculumClass): 'kids' | 'teens' | 'adults' {
-  const text = normalizeText(cls.title);
-  if (text.includes('kids') || text.includes('infantil') || text.includes('explorer')) return 'kids';
+  const id = cls.id || '';
+  if (id.startsWith('c-teens-')) return 'teens';
+  if (id.startsWith('c-adults-')) return 'adults';
+  if (id.startsWith('c-be-') || id.startsWith('c-ba-') || id.startsWith('c-bc-')) return 'kids';
+
+  const text = normalizeText(`${cls.id} ${cls.title} ${cls.description || ''}`);
+  if (text.includes('kids') || text.includes('infantil') || text.includes('explorer') || text.includes('adventurer') || text.includes('champion')) return 'kids';
   if (text.includes('teen') || text.includes('adolescente')) return 'teens';
   return 'adults';
 }
@@ -1517,6 +1523,27 @@ function createStructureDragSlide(
   variant: PatternVariant
 ): ClassSlide {
   const audience = audienceFromClass(cls);
+  const custom = getCustomClassStructure(audience, cls.id);
+  if (custom) {
+    return {
+      id: `${slide.id}-structure-drag-custom`,
+      type: 'structure-drag',
+      bgColor: `bg-gradient-to-br ${custom.accentColor}`,
+      title: custom.title,
+      description: custom.patternName,
+      content: [],
+      structureDrag: buildStructureDrag(
+        custom.patternName,
+        custom.instructions,
+        custom.prompt,
+        custom.accentColor,
+        custom.parts,
+        custom.learningOpportunity,
+        custom.difficulty
+      )
+    };
+  }
+
   const fullText = normalizeText([
     cls.title,
     cls.description || '',
@@ -1546,6 +1573,45 @@ function createStructureDragSlide(
 }
 
 export function injectStructureDragSlides(cls: CurriculumClass): CurriculumClass {
+  const audience = audienceFromClass(cls);
+  const custom = getCustomClassStructure(audience, cls.id);
+
+  if (custom) {
+    const targetSection = cls.sections[2] || cls.sections[1] || cls.sections[0];
+    const anchorSlide = targetSection.slides.find(shouldInspectSlide) || targetSection.slides[0];
+
+    const generatedSlide: ClassSlide = {
+      id: `${anchorSlide.id}-structure-drag-custom`,
+      type: 'structure-drag',
+      bgColor: `bg-gradient-to-br ${custom.accentColor}`,
+      title: custom.title,
+      description: custom.patternName,
+      content: [],
+      structureDrag: buildStructureDrag(
+        custom.patternName,
+        custom.instructions,
+        custom.prompt,
+        custom.accentColor,
+        custom.parts,
+        custom.learningOpportunity,
+        custom.difficulty
+      )
+    };
+
+    const sections = cls.sections.map((section) => {
+      if (section.id !== targetSection.id) return section;
+      const slides = section.slides.flatMap((slide) => {
+        if (slide.id === anchorSlide.id) {
+          return [slide, generatedSlide];
+        }
+        return [slide];
+      });
+      return { ...section, slides };
+    });
+
+    return { ...cls, sections };
+  }
+
   let bestWinner: { sectionId: string; slideId: string; generatedSlide: ClassSlide; score: number } | null = null;
 
   cls.sections.forEach((section) => {

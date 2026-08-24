@@ -14,33 +14,6 @@ export interface SlideTypeConfig {
 }
 
 export const SLIDE_TYPE_REGISTRY: Record<string, SlideTypeConfig> = {
-  vocabulary: {
-    type: 'vocabulary',
-    name: 'Tarjetas de Vocabulario 🎴 (3D Flipcards)',
-    category: 'interactive',
-    description: 'Tarjetas interactivas 3D con audio pronunciación y traducción en español al voltear.',
-    supportsImage: false,
-    supportsQuizOptions: false,
-    hasSpecialSchema: false,
-    defaultBgColor: 'bg-gradient-to-br from-indigo-600 to-purple-700',
-    createDefaultSlide: (id, title = 'Key Vocabulary / Vocabulario Clave') => ({
-      id,
-      title,
-      description: 'Haz clic en cada tarjeta para escuchar y voltear su traducción.',
-      content: [
-        'Work (Trabajar)',
-        'Study (Estudiar)',
-        'Run (Correr)',
-        'Eat (Comer)'
-      ],
-      bgColor: 'bg-gradient-to-br from-indigo-600 to-purple-700',
-      type: 'vocabulary'
-    }),
-    extractVisualPrompt: (slide, track = 'adultos') => {
-      const words = slide.content?.join(', ') || slide.title;
-      return `Vocabulary flashcards illustration for ${track}: "${words}". Vibrant, educational, clean icon style.`;
-    }
-  },
   standard: {
     type: 'standard',
     name: 'Diapositiva Estándar / Contenido',

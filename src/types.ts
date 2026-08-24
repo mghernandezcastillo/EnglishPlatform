@@ -47,16 +47,6 @@ export interface UserProgress {
   studentType?: string;
 }
 
-export interface VocabularyCard {
-  word: string;
-  translation: string;
-  phonetic?: string;
-  example?: string;
-  exampleEs?: string;
-  iconName?: string;
-  imageUrl?: string;
-}
-
 export interface ClassSlide {
   id: string;
   title: string;
@@ -66,9 +56,84 @@ export interface ClassSlide {
   bgColor?: string;
   options?: string[];
   correctOptionIndex?: number;
-  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'lets-say' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag';
+  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'lets-say' | 'speaking-scene' | 'alphabet-game' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag';
+  speakingScene?: {
+    topic: string;
+    topicEs: string;
+    cues: {
+      icon?: string;
+      label: string;
+      labelEs?: string;
+      questionExample?: string;
+    }[];
+    roleA: {
+      label: string;
+      labelEs?: string;
+      action: string;
+      actionEs?: string;
+      avatar?: string;
+    };
+    roleB: {
+      label: string;
+      labelEs?: string;
+      action: string;
+      actionEs?: string;
+      avatar?: string;
+    };
+    helpWords: {
+      emoji?: string;
+      word: string;
+      translation: string;
+    }[];
+    hiddenPhrases?: {
+      ask: { en: string; es: string }[];
+      answer: { en: string; es: string }[];
+    };
+  };
+  letsSay?: {
+    /** The cinematic prompt shown big on screen: "Let's say that..." */
+    prompt: string;
+    promptEs: string;
+    roleA: {
+      emoji?: string;
+      label: string;
+      labelEs?: string;
+      mission: string;
+      missionEs?: string;
+      starterPhrase: string;
+      starterPhraseEs?: string;
+      usefulPhrases?: string[];
+    };
+    roleB: {
+      emoji?: string;
+      label: string;
+      labelEs?: string;
+      mission: string;
+      missionEs?: string;
+      starterPhrase: string;
+      starterPhraseEs?: string;
+      usefulPhrases?: string[];
+    };
+    usefulVocabulary?: string[];
+    successChecklist?: string[];
+    /** 'kids' = large font, 1-2 phrases, emoji-centric layout */
+    mode?: 'default' | 'kids';
+  };
+  alphabetGame?: {
+    title?: string;
+    titleEs?: string;
+    /** Letters to show. Defaults to A-Z if omitted */
+    letters?: string[];
+    /** Bonus round: spell a username/word letter by letter */
+    bonusSpelling?: {
+      enabled: boolean;
+      placeholder?: string;
+      placeholderEs?: string;
+    };
+    /** Show TTS audio button for pronunciation model */
+    showAudio?: boolean;
+  };
   videoUrl?: string; // e.g. youtube embed url
-  vocabularyCards?: VocabularyCard[];
   structureDrag?: {
     patternName: string;
     instructions: string;
@@ -136,6 +201,11 @@ export interface ClassSlide {
     bossName: string;
     bossTitle?: string;
     bossAvatar?: string;
+    mission?: string;
+    starterPhrase?: string;
+    powerWords?: string[];
+    targetGrammar?: string;
+    checklist?: string[];
     timerSeconds?: number;
     prepareSeconds?: number;
     rounds: {
@@ -153,6 +223,8 @@ export interface ClassSlide {
   customButtonText?: string;
   notes?: string;
 }
+
+export type SpeakingSceneData = NonNullable<ClassSlide['speakingScene']>;
 
 export interface ClassSection {
   id: string;

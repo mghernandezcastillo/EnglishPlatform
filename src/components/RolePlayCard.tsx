@@ -1,10 +1,11 @@
 import { ClassSlide } from '../types';
-import { LetsSayCard } from './LetsSayCard';
+import { SpeakingSceneCard } from './SpeakingSceneCard';
 
 interface RolePlayCardProps {
   slide: ClassSlide;
 }
 
 export function RolePlayCard({ slide }: RolePlayCardProps) {
-  return <LetsSayCard slide={slide} />;
+  return <SpeakingSceneCard slide={slide} />;
 }
+

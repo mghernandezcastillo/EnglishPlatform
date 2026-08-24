@@ -1,4 +1,5 @@
 import { ClassSlide, CurriculumClass, CurriculumLevel } from '../types';
+import { resolveSpeakingScene } from '../lib/speakingSceneResolver';
 
 type CopySlide = {
   title: string;
@@ -699,7 +700,7 @@ function organizeClass(cls: CurriculumClass): CurriculumClass {
           choiceSlide('slide-16', plan.quiz[1], 'bg-gradient-to-br from-rose-500 to-fuchsia-600', image(16)),
           choiceSlide('slide-17', plan.quiz[2], 'bg-gradient-to-br from-fuchsia-500 to-purple-600', image(17)),
           boss,
-          addImage({ id: 'slide-18', ...plan.roleplay, type: 'roleplay', roleplay: createRoleplayData(plan), bgColor: 'bg-gradient-to-br from-blue-600 to-indigo-700' }, image(18)),
+          addImage({ id: 'slide-18', ...plan.roleplay, type: 'speaking-scene', speakingScene: resolveSpeakingScene({ ...plan.roleplay, id: 'slide-18' } as any, plan.classTitle), roleplay: createRoleplayData(plan), bgColor: 'bg-gradient-to-br from-blue-600 to-indigo-700' }, image(18)),
         ],
       },
       {

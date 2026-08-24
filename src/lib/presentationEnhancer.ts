@@ -1,5 +1,7 @@
-import { ClassSlide, CurriculumClass, VocabularyCard } from '../types';
+import { ClassSlide, CurriculumClass } from '../types';
 import { injectStructureDragSlides } from './structureDrag';
+import { getCustomEmojiPuzzle } from '../data/classEmojiMap';
+import { getCustomSpeakingBossMission } from '../data/classSpeakingBossMap';
 
 type TopicKey =
   | 'greetings'
@@ -52,8 +54,7 @@ const IMAGELESS_INTERACTIVE_TYPES = new Set<ClassSlide['type']>([
   'speaking-boss-battle',
   'spinning-wheel',
   'structure-drag',
-  'video',
-  'vocabulary'
+  'video'
 ]);
 
 const TOPIC_VISUALS: Record<TopicKey, Record<AudienceKey, string>> = {
@@ -2230,64 +2231,12 @@ function buildRoleplayPlan(topic: TopicKey, audience: AudienceKey, cls: Curricul
   return enrichRoleplayPlan(plan, topic, audience);
 }
 
-function enhanceRoleplaySlide(slide: ClassSlide, cls: CurriculumClass) {
-  if (slide.type !== 'roleplay' && !/role play|roleplay|juego de roles/.test(normalizeText(`${slide.title} ${slide.description || ''}`))) {
-    return slide;
-  }
-
-  const hasCompleteAuthoredRoleplay = Boolean(
-    slide.type === 'roleplay' &&
-    slide.roleplay?.scenario &&
-    slide.roleplay?.situation &&
-    slide.roleplay?.mission?.length &&
-    slide.roleplay?.usefulPhrases?.length &&
-    slide.roleplay?.successChecklist?.length
-  );
-  if (hasCompleteAuthoredRoleplay) return slide;
-
-  const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')}`);
-  const audience = inferAudienceKey(cls);
-  const roleplay = buildRoleplayPlan(topic, audience, cls);
-
-  return {
-    ...slide,
-    type: 'roleplay' as const,
-    title: `Role Play: ${roleplay.scenario} / Role Play: ${roleplay.scenario}`,
-    description: audience === 'kids' ? 'Act, ask, answer, and switch.' : 'Take the roles, follow the mission, and use the target language.',
-    content: [],
-    roleplay
-  };
+function enhanceRoleplaySlide(slide: ClassSlide, _cls: CurriculumClass) {
+  return slide;
 }
 
 function ensureRoleplaySlide(cls: CurriculumClass): CurriculumClass {
-  const hasRoleplay = cls.sections.some((section) => section.slides.some((slide) => (
-    slide.type === 'roleplay' || /role play|roleplay|juego de roles/.test(normalizeText(`${slide.title} ${slide.description || ''}`))
-  )));
-  if (hasRoleplay) return cls;
-
-  const productionIndex = cls.sections.findIndex((section) => /production|produccion|quiz/i.test(section.title));
-  const targetIndex = productionIndex >= 0 ? productionIndex : Math.min(3, cls.sections.length - 1);
-  const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''}`);
-  const audience = inferAudienceKey(cls);
-  const roleplay = buildRoleplayPlan(topic, audience, cls);
-  const slide: ClassSlide = {
-    id: `${cls.id}-guided-roleplay`,
-    title: `Role Play Quest: ${roleplay.scenario} / Mision Role Play`,
-    description: audience === 'kids' ? 'Choose names, follow the steps, and finish the mini conversation.' : 'Set the players, follow the turns, and complete the conversation.',
-    type: 'roleplay',
-    bgColor: 'bg-gradient-to-br from-emerald-500 to-teal-700',
-    content: [],
-    roleplay
-  };
-
-  return {
-    ...cls,
-    sections: cls.sections.map((section, index) => (
-      index === targetIndex
-        ? { ...section, slides: [...section.slides, slide] }
-        : section
-    ))
-  };
+  return cls;
 }
 
 function isUsableAuthoredReviewItem(item: NonNullable<ClassSlide['wheelItems']>[number]) {
@@ -2297,6 +2246,9 @@ function isUsableAuthoredReviewItem(item: NonNullable<ClassSlide['wheelItems']>[
 
 function buildSpeakingWheel(slide: ClassSlide, cls: CurriculumClass, sectionIndex: number): ClassSlide {
   if (slide.type !== 'spinning-wheel') return slide;
+  if (slide.wheelItems && slide.wheelItems.length > 0) {
+    return slide;
+  }
 
   const classText = `${cls.title} ${cls.description || ''} ${cls.objective || ''}`;
   const searchText = `${classText} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')}`;
@@ -2345,13 +2297,14 @@ function buildSpeakingWheel(slide: ClassSlide, cls: CurriculumClass, sectionInde
     return {
       ...slide,
       wheelMode: 'review',
-      title: 'Class Review Wheel / Ruleta de repaso',
+      title: slide.title || 'Class Review Wheel / Ruleta de repaso',
       description:
-        audience === 'kids'
+        slide.description ||
+        (audience === 'kids'
           ? 'Gira y demuestra lo que aprendiste. Responde en inglés con una frase corta.'
           : audience === 'teens'
             ? 'Gira y responde usando el vocabulario o la estructura de esta clase.'
-            : 'Gira y usa el lenguaje objetivo de la clase en un ejemplo claro y realista.',
+            : 'Gira y usa el lenguaje objetivo de la clase en un ejemplo claro y realista.'),
       wheelItems: reviewItems.map((item, index) => ({
         label: item.label.slice(0, 14) || `Review ${index + 1}`,
         color: WHEEL_COLORS[index % WHEEL_COLORS.length],
@@ -2359,11 +2312,13 @@ function buildSpeakingWheel(slide: ClassSlide, cls: CurriculumClass, sectionInde
         es: item.es
       })),
       content:
-        audience === 'kids'
-          ? ['Spin the wheel.', 'Use one class word.', 'Answer in one short English sentence.']
-          : audience === 'teens'
-            ? ['Spin the wheel.', 'Answer with today’s English.', 'Add one clear detail.']
-            : ['Spin the wheel.', 'Use today’s target language.', 'Give one clear real-life example.']
+        slide.content?.length
+          ? slide.content
+          : audience === 'kids'
+            ? ['Spin the wheel.', 'Use one class word.', 'Answer in one short English sentence.']
+            : audience === 'teens'
+              ? ['Spin the wheel.', 'Answer with today’s English.', 'Add one clear detail.']
+              : ['Spin the wheel.', 'Use today’s target language.', 'Give one clear real-life example.']
     };
   }
 
@@ -2493,6 +2448,20 @@ function buildVisualPuzzle(topic: TopicKey, seed: number): VisualPuzzle {
 
 function enhanceEmojiSlide(slide: ClassSlide, cls: CurriculumClass) {
   if (slide.type !== 'emoji-game') return slide;
+  const audience = inferAudienceKey(cls);
+  const custom = getCustomEmojiPuzzle(audience, cls.id);
+
+  if (custom) {
+    return {
+      ...slide,
+      title: 'Visual Clue Challenge / Desafio Visual',
+      description: custom.description,
+      content: custom.content,
+      options: custom.options,
+      correctOptionIndex: custom.correctOptionIndex
+    };
+  }
+
   const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''}`);
   const seed = hashString(`${cls.id}-${slide.id}-${topic}`);
   const puzzle = buildVisualPuzzle(topic, seed);
@@ -2626,8 +2595,27 @@ function bossNameForTopic(topic: TopicKey, audience: AudienceKey) {
 }
 
 function buildBossBattlePlan(slide: ClassSlide, cls: CurriculumClass): BossBattlePlan {
-  const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''}`);
   const audience = inferAudienceKey(cls);
+  const custom = getCustomSpeakingBossMission(audience, cls.id);
+
+  if (custom) {
+    return {
+      ...(slide.speakingBossBattle || {}),
+      bossName: custom.bossName,
+      bossTitle: custom.bossTitle,
+      bossAvatar: custom.bossAvatar,
+      mission: custom.mission,
+      starterPhrase: custom.starterPhrase,
+      powerWords: custom.powerWords,
+      targetGrammar: custom.targetGrammar,
+      checklist: custom.checklist,
+      timerSeconds: slide.speakingBossBattle?.timerSeconds || 30,
+      prepareSeconds: slide.speakingBossBattle?.prepareSeconds || 180,
+      rounds: custom.rounds
+    };
+  }
+
+  const topic = inferTopicKey(`${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''}`);
   const topicLabel = topicNounForBoss(topic, cls);
   const focus = inferStructureFocus(`${cls.title} ${cls.description || ''} ${cls.objective || ''} ${slide.title} ${slide.description || ''} ${(slide.content || []).join(' ')}`);
   const classTopic = cleanClassSide(splitLocalizedTitle(cls.title || '')[0] || cls.title || topicLabel);
@@ -2875,128 +2863,6 @@ function buildSlideSearchText(slide: ClassSlide, cls: CurriculumClass) {
   ].join(' ');
 }
 
-export function parseVocabularyLine(line: string): VocabularyCard | null {
-  const trimmed = line.trim();
-  if (!trimmed) return null;
-
-  // Pattern 0: Multiple parens in line, e.g. "He (Él) / She (Ella) / It (Eso)"
-  const multiMatches = [...trimmed.matchAll(/([A-Za-z0-9\s'-]+?)\s*\(([^)]+)\)/g)];
-  if (multiMatches.length > 1) {
-    const words = multiMatches.map((m) => m[1].replace(/^[-•*]\s*/, '').trim()).join(' / ');
-    const translations = multiMatches.map((m) => m[2].trim()).join(' / ');
-    return { word: words, translation: translations };
-  }
-
-  // Pattern 1: Word (Translation) - Example sentence
-  const matchWithExample = trimmed.match(/^([^(]+?)\s*\(([^)]+)\)\s*[-–—:]\s*(.+)$/);
-  if (matchWithExample) {
-    const word = matchWithExample[1].replace(/^[-•*]\s*/, '').trim();
-    const translation = matchWithExample[2].trim();
-    const example = matchWithExample[3].trim();
-    if (word && translation) {
-      return { word, translation, example };
-    }
-  }
-
-  // Pattern 2: Word (Translation)
-  const matchParens = trimmed.match(/^([^(]+?)\s*\(([^)]+)\)$/);
-  if (matchParens) {
-    const word = matchParens[1].replace(/^[-•*]\s*/, '').trim();
-    const translation = matchParens[2].trim();
-
-    // Check if it's purely a grammatical contraction like "I am (I'm)" or "Do not (Don't)"
-    const isContraction =
-      /^(i|you|he|she|it|we|they|do|does|did|is|are|am|was|were|will|have|has|had|can|could|would|should)/i.test(word) &&
-      /'|’/.test(translation) &&
-      !/[áéíóúñÁÉÍÓÚÑ]/.test(translation);
-
-    if (word && translation && !isContraction) {
-      return { word, translation };
-    }
-  }
-
-  // Pattern 3: Word - Translation (e.g. "Apple - Manzana", "Wake up - Despertarse")
-  const matchDash = trimmed.match(/^([A-Za-z\s'/?!]{2,30})\s*[-–—:]\s*([A-Za-zÁÉÍÓÚáéíóúñÑüÜ\s'/?!,()]{2,40})$/);
-  if (matchDash) {
-    const word = matchDash[1].replace(/^[-•*]\s*/, '').trim();
-    const translation = matchDash[2].trim();
-    const isSpecialHeader = /^(rule|regla|example|ejemplo|note|nota)/i.test(word);
-    if (word && translation && !isSpecialHeader) {
-      return { word, translation };
-    }
-  }
-
-  return null;
-}
-
-function enhanceVocabularySlide(
-  slide: ClassSlide,
-  cls: CurriculumClass,
-  sectionIndex: number,
-  slideIndex: number
-): ClassSlide {
-  // If already explicitly defined
-  if (slide.vocabularyCards && slide.vocabularyCards.length > 0) {
-    return {
-      ...slide,
-      type: 'vocabulary'
-    };
-  }
-
-  // Exclude non-content/interactive types
-  if (
-    slide.type === 'emoji-game' ||
-    slide.type === 'speaking-boss-battle' ||
-    slide.type === 'speaking-assessment-experimental' ||
-    slide.type === 'structure-drag' ||
-    slide.type === 'spinning-wheel' ||
-    slide.type === 'matching-game' ||
-    slide.type === 'mystery-puzzle' ||
-    slide.type === 'roleplay' ||
-    slide.type === 'lets-say' ||
-    slide.type === 'homework' ||
-    slide.type === 'video' ||
-    slide.type === 'reading' ||
-    Boolean(slide.options && slide.options.length > 0) ||
-    Boolean(slide.roleplay) ||
-    (sectionIndex === 0 && slideIndex === 0)
-  ) {
-    return slide;
-  }
-
-  // Exclude accuracy contrast slides
-  const title = slide.title || '';
-  if (/accuracy contrast|contraste de precisi[oó]n/i.test(title)) {
-    return slide;
-  }
-
-  if (!slide.content || slide.content.length === 0) {
-    return slide;
-  }
-
-  const parsedCards: VocabularyCard[] = [];
-  for (const line of slide.content) {
-    const parsed = parseVocabularyLine(line);
-    if (parsed) {
-      parsedCards.push(parsed);
-    }
-  }
-
-  const normalizedTitle = normalizeText(title);
-  const isVocabularyTitle = /vocabular|word|verb|palabra|adjectiv|noun|expression|phras|action|pronoun|pronombre/i.test(normalizedTitle);
-  const matchRatio = parsedCards.length / slide.content.length;
-
-  if ((isVocabularyTitle && parsedCards.length >= 2) || matchRatio >= 0.6) {
-    return {
-      ...slide,
-      type: 'vocabulary',
-      vocabularyCards: parsedCards
-    };
-  }
-
-  return slide;
-}
-
 function enhanceSlideImage(slide: ClassSlide, cls: CurriculumClass) {
   if (slide.imageUrl) return slide;
   if (slide.type && IMAGELESS_INTERACTIVE_TYPES.has(slide.type)) return slide;
@@ -3016,29 +2882,24 @@ export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass 
 
   return {
     ...baseClass,
-    sections: baseClass.sections.map((section, sectionIndex) => ({
+    sections: baseClass.sections.map((section) => ({
       ...section,
       slides: section.slides.map((slide, slideIndex) =>
         enhanceSlideImage(
-          enhanceVocabularySlide(
-            enhanceWelcomeSlide(
-              enhanceExerciseTitle(
-                enhanceQuizTitle(
-                  enhanceRoleplaySlide(
-                    enhanceBossBattle(
-                      enhanceEmojiSlide(buildSpeakingWheel(slide, baseClass, sectionIndex), baseClass),
-                      baseClass
-                    ),
+          enhanceWelcomeSlide(
+            enhanceExerciseTitle(
+              enhanceQuizTitle(
+                enhanceRoleplaySlide(
+                  enhanceBossBattle(
+                    enhanceEmojiSlide(buildSpeakingWheel(slide, baseClass, baseClass.sections.indexOf(section)), baseClass),
                     baseClass
-                  )
+                  ),
+                  baseClass
                 )
-              ),
-              baseClass,
-              sectionIndex,
-              slideIndex
+              )
             ),
             baseClass,
-            sectionIndex,
+            baseClass.sections.indexOf(section),
             slideIndex
           ),
           baseClass
@@ -3047,4 +2908,3 @@ export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass 
     }))
   };
 }
-

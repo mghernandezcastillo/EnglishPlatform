@@ -90,19 +90,19 @@ export function EmojiMadnessGame({ content = [], options = [], correctOptionInde
               whileHover={!isAnswered ? { scale: 1.015, x: 6 } : undefined}
               whileTap={!isAnswered ? { scale: 0.98 } : undefined}
               className={[
-                'flex min-h-[52px] items-center justify-between gap-3 rounded-xl border-2 px-3.5 py-2.5 text-left text-sm font-black shadow-xl transition-all sm:min-h-[56px] sm:px-4 sm:text-base',
-                !revealed && 'border-white bg-white text-slate-900 hover:bg-yellow-50',
-                showCorrect && 'border-emerald-300 bg-emerald-500 text-white',
-                showWrong && 'border-red-300 bg-red-500 text-white',
+                'flex min-h-[60px] sm:min-h-[72px] items-center justify-between gap-3 sm:gap-4 rounded-2xl border-2 px-4 sm:px-6 py-3 sm:py-4 text-left text-base sm:text-2xl lg:text-[1.75rem] font-black shadow-xl transition-all',
+                !revealed && 'border-white bg-white text-slate-900 hover:bg-yellow-50 active:scale-[0.99] cursor-pointer',
+                showCorrect && 'border-emerald-300 bg-emerald-500 text-white scale-[1.02] shadow-2xl shadow-emerald-500/40',
+                showWrong && 'border-rose-300 bg-rose-500 text-white opacity-60',
                 revealed && !showCorrect && !showWrong && 'border-white/10 bg-white/15 text-white/50'
               ].filter(Boolean).join(' ')}
             >
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/10 text-xs">
+              <span className="flex h-9 w-9 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-black/10 text-base sm:text-xl font-black">
                 {String.fromCharCode(65 + index)}
               </span>
               <span className="flex-1 leading-snug">{option}</span>
-              {showCorrect && <CheckCircle className="h-5 w-5 shrink-0" />}
-              {showWrong && <XCircle className="h-5 w-5 shrink-0" />}
+              {showCorrect && <CheckCircle className="h-6 w-6 sm:h-8 sm:w-8 shrink-0 ml-2" />}
+              {showWrong && <XCircle className="h-6 w-6 sm:h-8 sm:w-8 shrink-0 ml-2" />}
             </motion.button>
           );
         })}
