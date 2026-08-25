@@ -280,7 +280,7 @@ export function SlideRenderer({
     ? 'bg-gradient-to-br from-[#0f1442] via-[#1a113f] to-[#0c0a24]'
     : isOptionExerciseSlide
     ? 'bg-gradient-to-br from-[#101442] via-[#1a113e] to-[#0c0924]'
-    : slide.type === 'emoji-game'
+    : slide.type === 'emoji-game' || slide.type === 'structure-drag'
     ? 'bg-gradient-to-br from-[#0c0d28] via-[#140e3a] to-[#08081c]'
     : isSpinningWheelSlide
     ? 'bg-gradient-to-br from-[#0a0d24] via-[#0f1738] to-[#080a1c]'
@@ -963,6 +963,8 @@ export function SlideRenderer({
           options={slide.options}
           correctOptionIndex={slide.correctOptionIndex}
         />
+      ) : slide.type === 'structure-drag' ? (
+        <StructureDragExercise slide={slide} />
       ) : isSpinningWheelSlide && slide.wheelItems ? (
         <div className="w-full h-full flex flex-col items-center justify-center min-h-0 p-4">
           <SpinningWheel
@@ -975,41 +977,49 @@ export function SlideRenderer({
         </div>
       ) : (
         <>
-          {/* Header */}
-          <div className={`${
-            isScreenShareExerciseSlide ? 'p-4 sm:p-6 pb-1.5 sm:pb-2' : 'p-4 sm:p-7 pb-2 sm:pb-3'
-          } shrink-0`}>
-            <h1 className={`${
-              isScreenShareExerciseSlide ? 'text-2xl sm:text-4xl lg:text-[2.5rem]'
-                : 'text-2xl sm:text-5xl'
-            } font-black tracking-tight mb-1 sm:mb-1.5`}>
-              {isScreenShareExerciseSlide && slide.title?.includes('/') ? (
-                <>
-                  <span className="bg-gradient-to-r from-amber-300 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-sm">
-                    {slide.title.split('/')[0].trim()}
-                  </span>
-                  <span className="text-white/40 mx-2.5 font-normal">/</span>
-                  <span className="bg-gradient-to-r from-cyan-300 to-sky-300 bg-clip-text text-transparent">
-                    {slide.title.split('/')[1].trim()}
-                  </span>
-                </>
-              ) : isScreenShareExerciseSlide ? (
-                <span className="bg-gradient-to-r from-amber-300 via-yellow-100 to-white bg-clip-text text-transparent">
-                  {slide.title}
-                </span>
-              ) : (
-                slide.title
-              )}
-            </h1>
-            {slide.description && (
-              <p className={`${
-                isScreenShareExerciseSlide ? 'text-xs sm:text-sm text-amber-300 font-bold uppercase tracking-wider'
-                  : 'text-base sm:text-xl font-medium'
-              }`}>
-                {isScreenShareExerciseSlide ? `🎯 ${slide.description}` : slide.description}
-              </p>
-            )}
-          </div>
+          {(() => {
+            const rawTitle = slide.title || '';
+            const cleanTitle = rawTitle
+              .replace(/\(\s*\d+\s*\(\s*(\d+)\s*\/\s*(\d+)\s*\)\s*\)/g, '($1/$2)')
+              .replace(/\(\s*(\d+)\s*\/\s*(\d+)\s*\)/g, '($1/$2)');
+
+            return (
+              <div className={`${
+                isScreenShareExerciseSlide ? 'p-4 sm:p-6 pb-1.5 sm:pb-2' : 'p-4 sm:p-7 pb-2 sm:pb-3'
+              } shrink-0`}>
+                <h1 className={`${
+                  isScreenShareExerciseSlide ? 'text-2xl sm:text-4xl lg:text-[2.5rem]'
+                    : 'text-2xl sm:text-5xl'
+                } font-black tracking-tight mb-1 sm:mb-1.5`}>
+                  {isScreenShareExerciseSlide && cleanTitle.includes('/') ? (
+                    <>
+                      <span className="bg-gradient-to-r from-amber-300 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-sm">
+                        {cleanTitle.split('/')[0].trim()}
+                      </span>
+                      <span className="text-white/40 mx-2.5 font-normal">/</span>
+                      <span className="bg-gradient-to-r from-cyan-300 to-sky-300 bg-clip-text text-transparent">
+                        {cleanTitle.split('/')[1].trim()}
+                      </span>
+                    </>
+                  ) : isScreenShareExerciseSlide ? (
+                    <span className="bg-gradient-to-r from-amber-300 via-yellow-100 to-white bg-clip-text text-transparent">
+                      {cleanTitle}
+                    </span>
+                  ) : (
+                    slide.title
+                  )}
+                </h1>
+                {slide.description && (
+                  <p className={`${
+                    isScreenShareExerciseSlide ? 'text-xs sm:text-sm text-amber-300 font-bold uppercase tracking-wider'
+                      : 'text-base sm:text-xl font-medium'
+                  }`}>
+                    {isScreenShareExerciseSlide ? `🎯 ${slide.description}` : slide.description}
+                  </p>
+                )}
+              </div>
+            );
+          })()}
 
           {/* Content Area */}
           <div className={`flex-1 ${
@@ -1021,7 +1031,7 @@ export function SlideRenderer({
           } overflow-hidden min-h-0 min-w-0`}>
 
             {/* Left text content */}
-            <div className="flex-1 min-w-0 flex flex-col justify-between gap-2.5 sm:gap-4">
+            <div className="flex-1 min-w-0 flex flex-col justify-between gap-3 sm:gap-4">
 
               {slide.type === 'matching-game' && slide.matchingPairs && (
                 <div className="flex-1 flex flex-col items-center justify-center">
@@ -1037,7 +1047,6 @@ export function SlideRenderer({
                 </div>
               )}
 
-              {slide.type === 'structure-drag' && <StructureDragExercise slide={slide} />}
               {isAlphabetGame && <AlphabetPronunciationGame slide={slide} />}
               {isAccuracyContrastSlide && <AccuracyContrastCard slide={slide} />}
 
@@ -1052,7 +1061,7 @@ export function SlideRenderer({
               {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' &&
                 slide.type !== 'mystery-puzzle' &&
                 slide.type !== 'speaking-assessment-experimental' &&
-                slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide &&
+                !isRoleplaySlide && !isAccuracyContrastSlide &&
                 (!isVocabularySlide || !slide.vocabularyCards || slide.vocabularyCards.length === 0) && slide.content?.map((line, i) => {
                   if (slide.type === 'reading') {
                     return (
@@ -1067,7 +1076,7 @@ export function SlideRenderer({
                       animate={{ opacity: 1, y: 0 }}
                       className={`${
                         isScreenShareExerciseSlide
-                          ? 'text-2xl sm:text-3xl md:text-[2.4rem] font-black leading-snug p-5 sm:p-7 min-h-[90px] sm:min-h-[110px] flex items-center bg-[#101740]/95 rounded-2xl sm:rounded-3xl border-2 border-cyan-400/70 shadow-[0_0_25px_rgba(6,182,212,0.35)] backdrop-blur-md text-white drop-shadow-sm'
+                          ? 'text-2xl sm:text-3xl md:text-[2.4rem] font-black leading-snug p-5 sm:p-7 min-h-[105px] sm:min-h-[125px] flex items-center justify-center text-center bg-[#101740]/95 rounded-2xl sm:rounded-3xl border-2 border-cyan-400/80 shadow-[0_0_25px_rgba(6,182,212,0.35)] backdrop-blur-md text-white drop-shadow-sm'
                           : 'text-lg sm:text-3xl font-medium leading-relaxed p-4 sm:p-6 bg-black/10 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg'
                       }`}
                     >
@@ -1079,7 +1088,7 @@ export function SlideRenderer({
               {/* AI assistant */}
               {isOptionalAiSpeakingSlide && !slide.hideAiAssistant &&
                 slide.type !== 'speaking-assessment-experimental' &&
-                slide.type !== 'structure-drag' && !isRoleplaySlide && !isVocabularySlide && (
+                !isRoleplaySlide && !isVocabularySlide && (
                 <InlineAiSpeakingAssistant
                   title={isReadingPracticeSlide ? 'Asistente IA de lectura' : 'Asistente IA de esta diapositiva'}
                   initialQuestion={selectedSpeakingPrompt || slideSpeakingQuestions[0] || ''}
@@ -1107,16 +1116,16 @@ export function SlideRenderer({
               )}
 
               {/* Multiple choice options */}
-              {slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' &&
+              {slide.type !== 'speaking-assessment-experimental' &&
                 !isRoleplaySlide && !isVocabularySlide && slide.options && slide.options.length > 0 && (
-                <div className="flex flex-col gap-3 sm:gap-3.5 pt-1 sm:pt-2 w-full">
+                <div className="flex-1 flex flex-col justify-between gap-3 sm:gap-4 pt-1 sm:pt-2 w-full min-h-0">
                   {slide.options.map((opt, idx) => {
                     const isSelected = selectedOption === idx;
                     const isCorrect = idx === slide.correctOptionIndex;
                     const isRevealed = showResult && isSelected;
                     const letter = ['A', 'B', 'C', 'D', 'E'][idx] || String(idx + 1);
 
-                    let btn = 'w-full px-5 sm:px-7 py-3.5 sm:py-4 min-h-[66px] sm:min-h-[76px] lg:min-h-[84px] rounded-2xl sm:rounded-3xl text-xl sm:text-2xl lg:text-[1.85rem] font-black transition-all shadow-xl border-2 flex items-center justify-between text-left backdrop-blur-md ';
+                    let btn = 'w-full px-5 sm:px-7 py-4 sm:py-5 min-h-[70px] sm:min-h-[80px] lg:min-h-[88px] flex-1 rounded-2xl sm:rounded-3xl text-xl sm:text-2xl lg:text-[1.95rem] font-black transition-all shadow-xl border-2 flex items-center justify-between text-left backdrop-blur-md ';
 
                     if (!showResult) {
                       btn += 'bg-[#18113c]/90 border-violet-500/50 hover:border-cyan-400/80 hover:bg-[#20154d] text-white hover:scale-[1.02] active:scale-[0.99] cursor-pointer shadow-lg shadow-violet-950/40';
@@ -1132,8 +1141,8 @@ export function SlideRenderer({
 
                     return (
                       <button key={idx} disabled={showResult} onClick={() => handleOptionSelect(idx)} className={btn}>
-                        <div className="flex items-center gap-3 sm:gap-5 min-w-0 flex-1">
-                          <span className={`inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-2xl font-black text-lg sm:text-xl shrink-0 shadow-md ${
+                        <div className="flex items-center gap-3.5 sm:gap-5 min-w-0 flex-1">
+                          <span className={`inline-flex items-center justify-center w-11 h-11 sm:w-13 sm:h-13 rounded-2xl font-black text-xl sm:text-2xl shrink-0 shadow-md ${
                             !showResult
                               ? 'bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-cyan-500/30'
                               : 'bg-white/25 text-white'
@@ -1158,14 +1167,14 @@ export function SlideRenderer({
             </div>
 
             {/* Right: Image or Video */}
-            {slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' &&
+            {slide.type !== 'speaking-assessment-experimental' &&
               !isRoleplaySlide && !isVocabularySlide && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
               <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl flex flex-col items-center justify-center overflow-hidden min-h-[300px] sm:min-h-[400px]">
                 <iframe src={slide.videoUrl} title={slide.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen className="w-full h-full border-0" />
               </div>
-            ) : slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' &&
+            ) : slide.type !== 'speaking-assessment-experimental' &&
               !isRoleplaySlide && !isAccuracyContrastSlide && !isVocabularySlide && slide.type !== 'spinning-wheel' &&
               slide.imageUrl && !imageError ? (
               <div className="w-[42%] h-full flex items-center justify-center min-h-0">

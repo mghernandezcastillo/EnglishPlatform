@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { DragEvent as ReactDragEvent } from 'react';
-import { CheckCircle2, RefreshCw, Sparkles, XCircle } from 'lucide-react';
+import { CheckCircle2, RefreshCw, Sparkles, XCircle, ArrowRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { ClassSlide } from '../types';
 
@@ -18,6 +18,14 @@ function shuffleTokens(tokens: DragToken[]) {
   }
   return copy;
 }
+
+const TOKEN_GRADIENTS = [
+  'bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-600 border-cyan-300',
+  'bg-gradient-to-r from-amber-600 via-orange-600 to-rose-600 border-amber-300',
+  'bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 border-purple-300',
+  'bg-gradient-to-r from-fuchsia-600 via-pink-600 to-rose-600 border-pink-300',
+  'bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 border-emerald-300',
+];
 
 export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
   const config = slide.structureDrag;
@@ -49,6 +57,7 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
       });
       return updated;
     });
+    setChecked(false);
   };
 
   const placeToken = (slotId: string, token: DragToken) => {
@@ -93,55 +102,50 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
     if (!allFilled) return;
     setChecked(true);
     if (allCorrect) {
-      confetti({ particleCount: 75, spread: 65, origin: { y: 0.65 } });
+      confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } });
     }
   };
 
   return (
-    <div className="rounded-2xl border border-white/15 bg-black/20 p-4 shadow-xl sm:p-5">
-      <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-widest text-cyan-100">
-            <Sparkles className="h-4 w-4" />
-            {config.patternName}
-          </div>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {checked && allCorrect && config.learningOpportunity && (
-              <span className="rounded-full bg-emerald-300/20 px-3 py-1 text-xs font-black uppercase tracking-widest text-emerald-100">
-                Estructura: {config.learningOpportunity}
+    <div className="w-full h-full flex flex-col justify-between p-3 sm:p-5 overflow-hidden min-h-0 select-text">
+      {/* Top Header Bar */}
+      <div className="shrink-0 flex items-center justify-between gap-3 pb-2 border-b border-white/10">
+        <div className="flex items-center gap-3 min-w-0">
+          <div>
+            <h1 className="text-xl sm:text-3xl lg:text-[2.1rem] font-black tracking-tight text-white flex items-center gap-2">
+              <span className="bg-gradient-to-r from-amber-300 via-yellow-200 to-white bg-clip-text text-transparent">
+                {slide.title || 'Build The Sentence 🧱'}
               </span>
-            )}
-            {config.difficulty && (
-              <span className="rounded-full bg-amber-300/20 px-3 py-1 text-xs font-black uppercase tracking-widest text-amber-100">
-                Dificultad: {config.difficulty}
-              </span>
-            )}
+            </h1>
+            <p className="text-xs sm:text-sm font-bold text-cyan-300 truncate">
+              {config.instructions || 'Arrastra o toca las piezas para formar la estructura en el orden correcto.'}
+            </p>
           </div>
-          <p className="mt-3 text-base font-bold text-white/90 sm:text-lg">{config.instructions}</p>
-          {checked && allCorrect ? (
-            <div className="mt-2.5 inline-flex items-center gap-2.5 rounded-xl bg-emerald-400/20 border border-emerald-400/40 px-3.5 py-2 text-lg font-black text-emerald-200 sm:text-2xl shadow-md">
-              <CheckCircle2 className="h-6 w-6 text-emerald-400 shrink-0" />
-              <span>{config.prompt}</span>
-            </div>
-          ) : (
-            <div className="mt-2 flex items-center gap-2 text-sm font-semibold text-white/55">
-              <span className="inline-block h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
-              <span>Arrastra y ordena las piezas en los espacios para formar la estructura correcta</span>
-            </div>
-          )}
         </div>
-        <button
-          type="button"
-          onClick={reset}
-          className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 text-sm font-black text-white hover:bg-white/20 transition"
-        >
-          <RefreshCw className="h-4 w-4" />
-          Reiniciar
-        </button>
+
+        <div className="flex items-center gap-2 shrink-0">
+          {config.patternName && (
+            <span className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-cyan-500/20 border border-cyan-400/40 px-3 py-1 text-xs font-black uppercase tracking-wider text-cyan-200">
+              <Sparkles className="h-3.5 w-3.5 text-cyan-300" />
+              {config.patternName}
+            </span>
+          )}
+          <button
+            type="button"
+            onClick={reset}
+            className="inline-flex items-center gap-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 text-xs sm:text-sm font-black text-white transition active:scale-95 shadow-md"
+            title="Reiniciar ejercicio"
+          >
+            <RefreshCw className="h-3.5 w-3.5" />
+            <span>Reiniciar</span>
+          </button>
+        </div>
       </div>
 
-      <div className="grid gap-3 lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="grid gap-3">
+      {/* Main Arena (2 Columns: Slots & Pieces) */}
+      <div className="flex-1 grid grid-cols-1 md:grid-cols-[1.12fr_0.88fr] gap-3 sm:gap-4 py-2 min-h-0 overflow-hidden">
+        {/* Left Column: Slots / Steps Sequence */}
+        <div className="flex-1 flex flex-col justify-between gap-2 sm:gap-2.5 min-h-0 h-full">
           {config.slots.map((slot, index) => {
             const token = placed[slot.id];
             const isCorrect = checked && token?.text === slot.text;
@@ -159,17 +163,16 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
                 onClick={() => {
                   if (activeToken) placeToken(slot.id, activeToken);
                 }}
-                className={`rounded-2xl border-2 border-dashed p-4 transition sm:p-5 ${
+                className={`flex-1 min-h-0 rounded-2xl border-2 transition-all p-2 sm:p-2.5 flex flex-col justify-center ${
                   isCorrect
-                    ? 'border-emerald-300 bg-emerald-300/20'
+                    ? 'border-emerald-400 bg-emerald-950/40 shadow-[0_0_20px_rgba(16,185,129,0.3)]'
                     : isWrong
-                      ? 'border-rose-300 bg-rose-300/15'
-                      : 'border-white/20 bg-white/5'
+                      ? 'border-rose-400 bg-rose-950/40 shadow-[0_0_20px_rgba(244,63,94,0.3)]'
+                      : activeToken
+                        ? 'border-cyan-400/80 bg-cyan-950/30 hover:border-cyan-300 ring-2 ring-cyan-400/40 cursor-pointer'
+                        : 'border-white/20 bg-slate-900/50 hover:border-white/40'
                 }`}
               >
-                <div className="mb-2 text-xs font-black uppercase tracking-widest text-white/60">
-                  Paso {index + 1}: {slot.label}
-                </div>
                 {token ? (
                   <button
                     type="button"
@@ -177,17 +180,40 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
                       event.stopPropagation();
                       returnTokenToPool(token);
                     }}
-                    className={`${token.color} flex min-h-[72px] w-full items-center justify-between gap-3 rounded-2xl px-4 py-3 text-left text-slate-950 shadow-lg`}
+                    className={`w-full h-full flex items-center justify-between px-4 sm:px-5 py-2 rounded-xl text-left text-white shadow-xl transition hover:scale-[1.01] active:scale-[0.99] border-2 ${
+                      isCorrect
+                        ? 'bg-gradient-to-r from-emerald-600 to-teal-600 border-emerald-300'
+                        : isWrong
+                          ? 'bg-gradient-to-r from-rose-600 to-pink-600 border-rose-300'
+                          : TOKEN_GRADIENTS[index % TOKEN_GRADIENTS.length]
+                    }`}
                   >
-                    <div>
-                      <div className="text-xs font-black uppercase tracking-widest opacity-60">{token.label}</div>
-                      <div className="text-lg font-black leading-tight sm:text-xl">{token.text}</div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white/80">
+                        Paso {index + 1}: {slot.label}
+                      </div>
+                      <div className="text-base sm:text-xl lg:text-[1.45rem] font-black leading-tight text-white truncate drop-shadow-sm">
+                        {token.text}
+                      </div>
                     </div>
-                    {isCorrect && <CheckCircle2 className="h-6 w-6 shrink-0 text-emerald-700" />}
+                    {isCorrect ? (
+                      <CheckCircle2 className="h-6 w-6 sm:h-7 sm:w-7 shrink-0 text-white ml-2 drop-shadow-md" />
+                    ) : isWrong ? (
+                      <XCircle className="h-6 w-6 sm:h-7 sm:w-7 shrink-0 text-white ml-2 drop-shadow-md" />
+                    ) : (
+                      <span className="text-xs font-black text-white/75 bg-black/20 px-2 py-1 rounded-lg shrink-0 ml-2">
+                        Toca para quitar
+                      </span>
+                    )}
                   </button>
                 ) : (
-                  <div className="flex min-h-[72px] items-center justify-center rounded-2xl bg-black/20 px-4 text-center text-sm font-bold text-white/45 sm:text-base">
-                    Arrastra o toca una pieza
+                  <div className="w-full h-full flex items-center justify-between px-4 sm:px-5 rounded-xl border-2 border-dashed border-white/25 bg-black/20 text-white/50 hover:border-cyan-400/60 transition">
+                    <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-cyan-300/80">
+                      Paso {index + 1}: {slot.label}
+                    </span>
+                    <span className="text-xs sm:text-sm font-bold text-white/50 flex items-center gap-1">
+                      Arrastra o toca una pieza <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
                   </div>
                 )}
               </div>
@@ -195,11 +221,21 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
           })}
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-          <div className="mb-3 text-xs font-black uppercase tracking-widest text-white/60">Piezas de estructura</div>
-          <div className="grid gap-3">
-            {pool.map((token) => {
+        {/* Right Column: Pool of Pieces */}
+        <div className="flex-1 h-full min-h-0 flex flex-col justify-between bg-[#110e30]/80 border-2 border-purple-500/30 rounded-2xl sm:rounded-3xl p-2.5 sm:p-3.5 shadow-xl backdrop-blur-md">
+          <div className="shrink-0 flex items-center justify-between pb-1.5 border-b border-white/10">
+            <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-purple-300">
+              🧩 Piezas de Estructura
+            </span>
+            <span className="text-xs font-bold text-gray-300 bg-white/10 px-2 py-0.5 rounded-full">
+              {pool.length} disponibles
+            </span>
+          </div>
+
+          <div className="flex-1 flex flex-col justify-between gap-2 sm:gap-2.5 min-h-0 py-1.5">
+            {pool.map((token, idx) => {
               const selected = activeTokenId === token.id;
+              const grad = TOKEN_GRADIENTS[idx % TOKEN_GRADIENTS.length];
               return (
                 <button
                   key={token.id}
@@ -210,49 +246,74 @@ export function StructureDragExercise({ slide }: StructureDragExerciseProps) {
                     setActiveTokenId(token.id);
                   }}
                   onDragEnd={() => setActiveTokenId(null)}
-                  onClick={() => setActiveTokenId((current) => current === token.id ? null : token.id)}
-                  className={`${token.color} rounded-2xl border-2 px-4 py-3 text-left text-slate-950 shadow-lg transition ${
-                    selected ? 'border-slate-950/60 ring-2 ring-white/70 scale-[0.98]' : 'border-transparent hover:scale-[0.99]'
+                  onClick={() => setActiveTokenId((current) => (current === token.id ? null : token.id))}
+                  className={`flex-1 min-h-0 w-full flex items-center justify-between px-4 sm:px-5 py-2 rounded-2xl border-2 text-left text-white shadow-xl transition-all ${grad} ${
+                    selected
+                      ? 'ring-4 ring-cyan-400 scale-[1.02] border-white shadow-cyan-500/50'
+                      : 'hover:scale-[1.01] hover:brightness-110 active:scale-[0.99]'
                   }`}
                 >
-                  <div className="text-xs font-black uppercase tracking-widest opacity-60">{token.label}</div>
-                  <div className="text-lg font-black leading-tight sm:text-xl">{token.text}</div>
+                  <div className="min-w-0 flex-1">
+                    <div className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white/80">
+                      {token.label}
+                    </div>
+                    <div className="text-base sm:text-xl lg:text-[1.45rem] font-black leading-tight text-white truncate drop-shadow-sm">
+                      {token.text}
+                    </div>
+                  </div>
+                  <span className="text-xs font-black bg-black/30 px-2.5 py-1 rounded-xl shrink-0 ml-2 shadow-inner">
+                    {selected ? '✓ Elegida' : 'Tocar'}
+                  </span>
                 </button>
               );
             })}
             {!pool.length && (
-              <div className="rounded-2xl border border-white/10 bg-black/20 px-4 py-6 text-center text-sm font-bold text-white/55">
-                Todas las piezas están colocadas.
+              <div className="flex-1 flex items-center justify-center rounded-2xl border-2 border-dashed border-emerald-400/40 bg-emerald-950/20 p-4 text-center">
+                <span className="text-sm sm:text-base font-black text-emerald-300 flex items-center gap-2">
+                  ✨ ¡Todas las piezas están colocadas!
+                </span>
               </div>
             )}
           </div>
 
-          <div className="mt-4 flex flex-wrap gap-3">
+          <div className="shrink-0 pt-1.5">
             <button
               type="button"
               disabled={!allFilled}
               onClick={checkAnswer}
-              className="rounded-xl bg-white px-4 py-3 font-black text-slate-950 shadow-md transition hover:bg-slate-100 disabled:opacity-40"
+              className={`w-full py-2.5 sm:py-3 px-4 rounded-xl sm:rounded-2xl font-black text-sm sm:text-base transition-all shadow-xl flex items-center justify-center gap-2 ${
+                allFilled
+                  ? 'bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 text-slate-950 hover:brightness-110 active:scale-[0.98] animate-pulse cursor-pointer shadow-cyan-500/30'
+                  : 'bg-white/10 text-white/40 border border-white/10 cursor-not-allowed'
+              }`}
             >
-              Comprobar estructura
+              <CheckCircle2 className="h-5 w-5" />
+              <span>{checked ? 'Volver a Comprobar' : 'Comprobar Estructura'}</span>
             </button>
-            {checked && (
-              <div className={`flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-black shadow-md ${allCorrect ? 'bg-emerald-300 text-emerald-950' : 'bg-rose-300 text-rose-950'}`}>
-                {allCorrect ? (
-                  <>
-                    <CheckCircle2 className="h-5 w-5 shrink-0" />
-                    <span>¡Estructura correcta! Excelente trabajo.</span>
-                  </>
-                ) : (
-                  <>
-                    <XCircle className="h-5 w-5 shrink-0" />
-                    <span>Revisa el orden de las piezas y vuelve a intentar.</span>
-                  </>
-                )}
-              </div>
-            )}
           </div>
         </div>
+      </div>
+
+      {/* Bottom Feedback Banner */}
+      <div className="shrink-0 pt-1.5 border-t border-white/10 flex items-center justify-between gap-2">
+        {checked ? (
+          allCorrect ? (
+            <div className="flex-1 flex items-center gap-2 rounded-xl bg-emerald-500/20 border border-emerald-400/50 px-3.5 py-1.5 text-xs sm:text-sm font-black text-emerald-200">
+              <CheckCircle2 className="h-5 w-5 text-emerald-400 shrink-0" />
+              <span>¡Excelente! {config.prompt}</span>
+            </div>
+          ) : (
+            <div className="flex-1 flex items-center gap-2 rounded-xl bg-rose-500/20 border border-rose-400/50 px-3.5 py-1.5 text-xs sm:text-sm font-black text-rose-200">
+              <XCircle className="h-5 w-5 text-rose-400 shrink-0" />
+              <span>Revisa el orden de las piezas y vuelve a intentar.</span>
+            </div>
+          )
+        ) : (
+          <div className="text-xs sm:text-sm font-semibold text-white/50 flex items-center gap-2">
+            <span className="inline-block h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
+            <span>Toca o arrastra cada pieza hacia su paso correspondiente.</span>
+          </div>
+        )}
       </div>
     </div>
   );
