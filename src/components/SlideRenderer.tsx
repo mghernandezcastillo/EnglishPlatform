@@ -22,6 +22,7 @@ import { AccuracyContrastCard } from './AccuracyContrastCard';
 import { VocabularyFlipCards } from './VocabularyFlipCards';
 import { HomeworkSlideCard } from './HomeworkSlideCard';
 import { VideoHomeworkSlideCard } from './VideoHomeworkSlideCard';
+import { SlideSelectionTranslator } from './SlideSelectionTranslator';
 
 const COMPACT_W = 1280;
 const COMPACT_H = 720;
@@ -1198,7 +1199,7 @@ export function SlideRenderer({
     return (
       <div
         ref={wrapperRef}
-        className="relative overflow-hidden rounded-2xl shadow-2xl m-auto shrink-0"
+        className="relative overflow-hidden rounded-2xl shadow-2xl m-auto shrink-0 select-text"
         style={{
           width: COMPACT_W * scale,
           height: COMPACT_H * scale,
@@ -1215,7 +1216,9 @@ export function SlideRenderer({
             left: 0,
           }}
         >
-          {slideJSX}
+          <SlideSelectionTranslator className="w-full h-full">
+            {slideJSX}
+          </SlideSelectionTranslator>
         </div>
       </div>
     );
@@ -1223,8 +1226,10 @@ export function SlideRenderer({
 
   // ── Normal wrapper ─────────────────────────────────────────────────────────
   return (
-    <div className={`${className} flex flex-col overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl`}>
-      {slideJSX}
+    <div className={`${className} flex flex-col overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl select-text`}>
+      <SlideSelectionTranslator className="w-full h-full flex flex-col">
+        {slideJSX}
+      </SlideSelectionTranslator>
     </div>
   );
 }
