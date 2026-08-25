@@ -3930,306 +3930,301 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     ]
   },
   "teens:c-teens-basic-1-1": {
-    "patternName": "Present Simple Routines & School Life",
+    "patternName": "Family Introductions & Feelings",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe your science homework routine.",
-    "prompt": "We finish our science projects before five.",
-    "learningOpportunity": "Use base verb with plural subjects in Present Simple + time marker.",
+    "instructions": "Put the blocks in order to introduce your parents and their mood.",
+    "prompt": "These are my parents and they are happy today.",
+    "learningOpportunity": "Use These are for plural family members + feelings with be.",
     "difficulty": "easy",
     "accentColor": "from-emerald-500 to-teal-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "We",
+        "label": "Plural demonstrative",
+        "text": "These are",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Verb",
-        "text": "finish",
+        "label": "Family noun",
+        "text": "my parents",
         "color": "bg-violet-300"
       },
       {
-        "label": "Object",
-        "text": "our science projects",
+        "label": "Connector & subject",
+        "text": "and they are",
         "color": "bg-yellow-300"
       },
       {
-        "label": "Time marker",
-        "text": "before five.",
+        "label": "Feeling & time",
+        "text": "happy today.",
         "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-1-2": {
-    "patternName": "Present Simple 3rd Person Habits",
+    "patternName": "Healthy Choices with Because",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order using third person singular -s.",
-    "prompt": "He streams gaming videos on his channel.",
-    "learningOpportunity": "Add -s to third person singular verbs (stream -> streams).",
+    "instructions": "Put the blocks in order to explain a healthy habit choice.",
+    "prompt": "I drink fresh water because I need steady energy.",
+    "learningOpportunity": "Connect daily habits with reasons using because.",
     "difficulty": "easy",
     "accentColor": "from-teal-500 to-cyan-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "He",
+        "label": "Subject & habit",
+        "text": "I drink",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Verb (-s)",
-        "text": "streams",
+        "label": "Healthy drink",
+        "text": "fresh water",
         "color": "bg-violet-300"
       },
       {
-        "label": "Object",
-        "text": "gaming videos",
+        "label": "Reason connector",
+        "text": "because",
         "color": "bg-yellow-300"
       },
       {
-        "label": "Platform",
-        "text": "on his channel.",
+        "label": "Energy clause",
+        "text": "I need steady energy.",
         "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-1-3": {
-    "patternName": "Negative & Interrogative Present Simple",
-    "variant": "question",
-    "title": "Build the Question / Arma la Pregunta",
-    "instructions": "Put the blocks in order to ask about daily extracurricular practice.",
-    "prompt": "Does she play basketball after class?",
-    "learningOpportunity": "Invert Does + subject + base verb + time expression.",
+    "patternName": "Weather Forecast & Outfit Decisions",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to choose clothes for the weather.",
+    "prompt": "I wear a warm jacket because it will be cold.",
+    "learningOpportunity": "Connect clothing choices with weather forecasts using because.",
     "difficulty": "easy",
     "accentColor": "from-cyan-500 to-blue-700",
     "parts": [
       {
-        "label": "Auxiliary",
-        "text": "Does",
+        "label": "Subject & action",
+        "text": "I wear",
         "color": "bg-indigo-300"
       },
       {
-        "label": "Subject",
-        "text": "she",
+        "label": "Clothing item",
+        "text": "a warm jacket",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Base verb & sport",
-        "text": "play basketball",
+        "label": "Connector",
+        "text": "because",
         "color": "bg-violet-300"
       },
       {
-        "label": "Time",
-        "text": "after class?",
+        "label": "Weather prediction",
+        "text": "it will be cold.",
         "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-1-4": {
-    "patternName": "Sports, Clubs & School Activities",
+    "patternName": "Nature Locations with There is / There are",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to talk about robotics club meetings.",
-    "prompt": "Our robotics club meets every Thursday afternoon.",
-    "learningOpportunity": "Connect club subject nouns with scheduled meeting times.",
+    "instructions": "Put the blocks in order to describe park nature.",
+    "prompt": "There are tall trees around the beautiful lake.",
+    "learningOpportunity": "Use There are + plural noun + prepositional phrase.",
     "difficulty": "easy",
     "accentColor": "from-blue-500 to-indigo-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "Our robotics club",
+        "label": "Existential plural",
+        "text": "There are",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Verb (-s)",
-        "text": "meets",
+        "label": "Natural feature",
+        "text": "tall trees",
         "color": "bg-violet-300"
       },
       {
-        "label": "Recurring time",
-        "text": "every Thursday afternoon.",
+        "label": "Preposition of place",
+        "text": "around",
+        "color": "bg-yellow-300"
+      },
+      {
+        "label": "Park location",
+        "text": "the beautiful lake.",
         "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-1-5": {
-    "patternName": "Time, Clocks & Event Scheduling",
+    "patternName": "Weekend Plans with Going To",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to state when the school festival begins.",
-    "prompt": "The music festival starts at four sharp.",
-    "learningOpportunity": "Use at + hour + sharp for precise schedule announcements.",
+    "instructions": "Put the blocks in order to confirm a weekend sports plan.",
+    "prompt": "We are going to play soccer on Saturday afternoon.",
+    "learningOpportunity": "Form future plans with be going to + base verb + day & time.",
     "difficulty": "easy",
     "accentColor": "from-indigo-500 to-purple-700",
     "parts": [
       {
-        "label": "Event subject",
-        "text": "The music festival",
+        "label": "Subject & be",
+        "text": "We are",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Verb (-s)",
-        "text": "starts",
+        "label": "Future plan",
+        "text": "going to play soccer",
         "color": "bg-violet-300"
       },
       {
-        "label": "Precise time",
-        "text": "at four sharp.",
+        "label": "Day & time",
+        "text": "on Saturday afternoon.",
         "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-1-6": {
-    "patternName": "Adverbs of Frequency (Always, Usually, Never)",
-    "variant": "affirmative",
-    "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order placing the frequency adverb correctly.",
-    "prompt": "I usually study with my classmates online.",
-    "learningOpportunity": "Place usually between the subject and the main action verb.",
+    "patternName": "Polite Invitations with Would Like",
+    "variant": "question",
+    "title": "Build the Invitation / Arma la Invitación",
+    "instructions": "Put the blocks in order to invite a friend to the mall.",
+    "prompt": "Would you like to come to the mall with us?",
+    "learningOpportunity": "Use Would you like to come + destination + with us.",
     "difficulty": "easy",
     "accentColor": "from-purple-500 to-pink-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "I",
+        "label": "Invitation modal",
+        "text": "Would you",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Frequency",
-        "text": "usually",
-        "color": "bg-orange-300"
-      },
-      {
-        "label": "Verb phrase",
-        "text": "study with my classmates",
+        "label": "Infinitive phrase",
+        "text": "like to come",
         "color": "bg-violet-300"
       },
       {
-        "label": "Mode",
-        "text": "online.",
+        "label": "Destination",
+        "text": "to the mall",
         "color": "bg-yellow-300"
+      },
+      {
+        "label": "Group phrase",
+        "text": "with us?",
+        "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-1-7": {
-    "patternName": "Ordering Fast Food & Café Snacks",
+    "patternName": "Clothing Store Pricing & Sizes",
     "variant": "question",
-    "title": "Build the Polite Question / Arma la Pregunta Cortés",
-    "instructions": "Put the blocks in order to order a snack combo at the food court.",
-    "prompt": "Can I have a cheese pizza slice, please?",
-    "learningOpportunity": "Form polite snack orders with Can I have + item + please.",
+    "title": "Build the Question / Arma la Pregunta",
+    "instructions": "Put the blocks in order to ask the price and size of jeans.",
+    "prompt": "How much are these black jeans in size medium?",
+    "learningOpportunity": "Use How much are + plural clothing item + in size medium.",
     "difficulty": "easy",
     "accentColor": "from-rose-500 to-red-700",
     "parts": [
       {
-        "label": "Modal",
-        "text": "Can",
+        "label": "Price phrase",
+        "text": "How much are",
         "color": "bg-emerald-300"
       },
       {
-        "label": "Subject",
-        "text": "I",
+        "label": "Clothing item",
+        "text": "these black jeans",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Verb",
-        "text": "have",
-        "color": "bg-violet-300"
-      },
-      {
-        "label": "Food item & courtesy",
-        "text": "a cheese pizza slice, please?",
+        "label": "Size specification",
+        "text": "in size medium?",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-1-8": {
-    "patternName": "Shopping for Tech Accessories & Clothes",
-    "variant": "question",
-    "title": "Build the Question / Arma la Pregunta",
-    "instructions": "Put the blocks in order to ask the price of wireless headphones.",
-    "prompt": "How much are these wireless headphones?",
-    "learningOpportunity": "Use How much are + plural noun for electronics pricing.",
+    "patternName": "Polite Café Ordering",
+    "variant": "affirmative",
+    "title": "Build the Polite Order / Arma el Pedido Cortés",
+    "instructions": "Put the blocks in order to order food and drink politely.",
+    "prompt": "I would like a toasted bagel and orange juice, please.",
+    "learningOpportunity": "Use I would like + snack + and + drink + please.",
     "difficulty": "easy",
     "accentColor": "from-amber-500 to-orange-700",
     "parts": [
       {
-        "label": "Price phrase",
-        "text": "How much",
+        "label": "Polite formula",
+        "text": "I would like",
         "color": "bg-emerald-300"
       },
       {
-        "label": "To be",
-        "text": "are",
-        "color": "bg-indigo-300"
+        "label": "Food item",
+        "text": "a toasted bagel",
+        "color": "bg-cyan-300"
       },
       {
-        "label": "Plural product",
-        "text": "these wireless headphones?",
-        "color": "bg-cyan-300"
+        "label": "Drink item",
+        "text": "and orange juice,",
+        "color": "bg-violet-300"
+      },
+      {
+        "label": "Courtesy",
+        "text": "please.",
+        "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-1-9": {
-    "patternName": "Teen Hobbies & Gerund Preferences",
+    "patternName": "Device Purpose with Use...To",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order using love with gerund activities.",
-    "prompt": "They love editing short videos for social media.",
-    "learningOpportunity": "Pair love with gerund verb (-ing) + purpose phrase.",
+    "instructions": "Put the blocks in order to explain what you use your laptop for.",
+    "prompt": "I use my laptop to do homework every evening.",
+    "learningOpportunity": "Pair use + device + to + base verb + time frequency.",
     "difficulty": "easy",
     "accentColor": "from-emerald-500 to-green-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "They",
+        "label": "Subject & device",
+        "text": "I use my laptop",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Preference verb",
-        "text": "love",
+        "label": "Purpose infinitive",
+        "text": "to do homework",
         "color": "bg-violet-300"
       },
       {
-        "label": "Gerund action",
-        "text": "editing short videos",
-        "color": "bg-yellow-300"
-      },
-      {
-        "label": "Purpose",
-        "text": "for social media.",
+        "label": "Time frequency",
+        "text": "every evening.",
         "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-1-10": {
-    "patternName": "Level 1 Review & Campus Showcase",
+    "patternName": "Phone & Chat Help Requests",
     "variant": "question",
     "title": "Build the Question / Arma la Pregunta",
-    "instructions": "Put the blocks in order to ask a friend about their favorite school club.",
-    "prompt": "Which school club do you want to join this term?",
-    "learningOpportunity": "Form selective questions with Which + noun + do you want to join.",
+    "instructions": "Put the blocks in order to ask a friend to confirm trip details.",
+    "prompt": "Can you help me confirm the meeting place?",
+    "learningOpportunity": "Form polite help requests with Can you help me + base verb + object.",
     "difficulty": "medium",
     "accentColor": "from-blue-600 to-indigo-800",
     "parts": [
       {
-        "label": "Question phrase",
-        "text": "Which school club",
+        "label": "Polite request",
+        "text": "Can you help me",
         "color": "bg-emerald-300"
       },
       {
-        "label": "Auxiliary & subject",
-        "text": "do you",
-        "color": "bg-indigo-300"
-      },
-      {
-        "label": "Infinitive phrase",
-        "text": "want to join",
+        "label": "Action verb",
+        "text": "confirm",
         "color": "bg-violet-300"
       },
       {
-        "label": "Time phrase",
-        "text": "this term?",
+        "label": "Trip detail",
+        "text": "the meeting place?",
         "color": "bg-orange-300"
       }
     ]

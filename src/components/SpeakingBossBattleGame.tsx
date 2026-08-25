@@ -571,216 +571,360 @@ export function SpeakingBossBattleGame({
   const Icon = currentRound?.icon || Swords;
 
   return (
-    <div className="flex h-full min-h-[calc(100vh-5rem)] w-full flex-col overflow-hidden rounded-3xl border border-white/20 bg-slate-950/35 p-2 text-white shadow-2xl backdrop-blur-md sm:p-3">
-      <div className="mb-2 flex shrink-0 items-center justify-between gap-3">
-        <div className="min-w-0">
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-500 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-white sm:text-base">
-            <Swords className="h-5 w-5" />
-            Boss Battle
+    <div className="relative flex h-full w-full min-h-0 flex-col overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-rose-500/40 bg-gradient-to-br from-[#180e2b] via-[#240f2e] to-[#12081c] p-2 sm:p-3 text-white shadow-[0_0_40px_rgba(244,63,94,0.25)] backdrop-blur-md">
+      {/* Ambient energetic battle lighting */}
+      <div
+        className="pointer-events-none absolute -top-20 left-1/4 w-[500px] h-[280px] bg-rose-600/20 blur-3xl"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute -bottom-16 right-1/4 w-[500px] h-[280px] bg-amber-500/15 blur-3xl"
+        aria-hidden="true"
+      />
+
+      {/* Top HUD Bar */}
+      <div className="relative z-10 mb-1.5 flex shrink-0 items-center justify-between gap-2 px-1">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 px-3 py-1 text-xs sm:text-sm font-black uppercase tracking-[0.14em] text-white shadow-[0_0_15px_rgba(225,29,72,0.5)]">
+            <Swords className="h-4 w-4 animate-pulse" />
+            <span>Boss Battle</span>
           </div>
-          <p className="mt-1 truncate text-base font-bold text-white/75 sm:text-xl">{bossName} · {bossTitle}</p>
+          <p className="truncate text-xs sm:text-base font-extrabold text-white/90 drop-shadow-sm">
+            {bossName} <span className="text-rose-400">·</span> <span className="text-amber-300 font-bold">{bossTitle}</span>
+          </p>
         </div>
-        <div className="rounded-full bg-white/15 px-4 py-2 text-sm font-black uppercase tracking-[0.12em] text-white/85 sm:text-base">
-          {viewIndex + 1}/{views.length}
+        <div className="rounded-xl bg-[#2a133d]/90 border border-purple-400/40 px-3 py-1 text-[11px] sm:text-xs font-black uppercase tracking-[0.15em] text-purple-200 shadow-md">
+          Round {viewIndex + 1} / {views.length}
         </div>
       </div>
 
-      <div className="flex min-h-0 flex-1 flex-col rounded-3xl border border-white/15 bg-white/95 p-4 text-slate-950 shadow-2xl sm:p-6 lg:p-7">
+      {/* Main Arena White Stage Card (High contrast & readability) */}
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col rounded-2xl sm:rounded-[1.5rem] border-2 border-white/40 bg-white/98 p-3.5 sm:p-5 text-slate-950 shadow-2xl justify-between overflow-hidden">
+        {/* VIEW: Intro */}
         {currentView === 'intro' && (
-          <div className="flex h-full flex-col items-center justify-center gap-6 text-center">
-            <motion.div
-              animate={{ y: [0, -10, 0], rotate: [-3, 3, -3] }}
-              transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
-              className="flex h-36 w-36 items-center justify-center rounded-3xl bg-slate-950 text-8xl shadow-2xl sm:h-44 sm:w-44 sm:text-9xl"
-            >
-              {bossAvatar}
-            </motion.div>
-            <div>
-              <h2 className="text-5xl font-black leading-none sm:text-7xl lg:text-8xl">{bossName}</h2>
-              <p className="mt-3 text-3xl font-black leading-tight text-slate-600 sm:text-5xl">{bossTitle}</p>
+          <div className="flex h-full flex-col items-center justify-center gap-3 sm:gap-4 text-center my-auto">
+            {/* Animated Boss Box with Energy Aura */}
+            <div className="relative flex items-center justify-center">
+              <motion.div
+                animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
+                transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute inset-0 rounded-full bg-rose-500 blur-2xl"
+              />
+              <motion.div
+                animate={{ y: [0, -8, 0], rotate: [-2, 2, -2] }}
+                transition={{ duration: 2.6, repeat: Infinity, ease: 'easeInOut' }}
+                className="relative flex h-24 w-24 sm:h-32 sm:w-32 items-center justify-center rounded-2xl sm:rounded-3xl bg-gradient-to-br from-slate-900 via-rose-950 to-slate-950 border-3 border-rose-500 text-6xl sm:text-7xl shadow-[0_0_25px_rgba(244,63,94,0.6)] select-none"
+              >
+                {bossAvatar}
+              </motion.div>
             </div>
-            <div className="w-full max-w-3xl">
-              <div className="mb-3 flex items-center justify-between text-base font-black uppercase tracking-widest text-slate-500 sm:text-xl">
-                <span>Boss health</span>
-                <span>{bossHealth}%</span>
+
+            <div>
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-slate-950">
+                {bossName}
+              </h2>
+              <p className="mt-1.5 text-lg sm:text-2xl lg:text-3xl font-black leading-tight bg-gradient-to-r from-rose-600 to-amber-600 bg-clip-text text-transparent">
+                {bossTitle}
+              </p>
+            </div>
+
+            {/* Boss Health Bar */}
+            <div className="w-full max-w-2xl px-2 mt-1">
+              <div className="mb-1.5 flex items-center justify-between text-xs sm:text-sm font-black uppercase tracking-widest text-slate-600">
+                <span className="flex items-center gap-1.5">
+                  <span className="text-rose-600">❤️</span> Boss Health
+                </span>
+                <span className="font-mono text-rose-600 font-black">{bossHealth}%</span>
               </div>
-              <div className="h-10 overflow-hidden rounded-full bg-slate-200 sm:h-12">
-                <motion.div className="h-full rounded-full bg-gradient-to-r from-lime-400 via-yellow-300 to-red-400" animate={{ width: `${bossHealth}%` }} />
+              <div className="h-7 sm:h-8 overflow-hidden rounded-xl bg-slate-200 border-2 border-slate-300 p-0.5 shadow-inner">
+                <motion.div
+                  className="h-full rounded-lg bg-gradient-to-r from-rose-500 via-amber-400 to-emerald-400 shadow-md transition-all"
+                  animate={{ width: `${bossHealth}%` }}
+                  transition={{ duration: 0.5 }}
+                />
               </div>
             </div>
           </div>
         )}
 
+        {/* VIEW: Challenge Rounds */}
         {currentRound && parsedData && (
-          <div className="flex h-full flex-col justify-between gap-5 sm:gap-6 flex-1 min-h-0">
-            <div className="flex flex-col gap-4 sm:gap-6 flex-1 justify-around">
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <div className={`inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r ${currentRound.color} px-5 py-2 text-base sm:text-xl font-black uppercase tracking-[0.14em] text-white shadow-md`}>
-                  <Icon className="h-6 w-6" />
-                  {currentRound.title} Round · Challenge {roundIndex + 1}/3
-                </div>
+          <div className="flex h-full flex-col justify-between gap-2 sm:gap-2.5 flex-1 min-h-0">
+            {/* Header Badges */}
+            <div className="flex flex-wrap items-center justify-between gap-2 shrink-0">
+              <div
+                className={`inline-flex items-center gap-2 rounded-xl bg-gradient-to-r ${currentRound.color} px-3.5 py-1.5 text-xs sm:text-sm font-black uppercase tracking-[0.14em] text-white shadow-md`}
+              >
+                <Icon className="h-4 w-4" />
+                <span>{currentRound.title} Round · Challenge {roundIndex + 1}/3</span>
+              </div>
 
-                <div className="flex flex-wrap items-center gap-2.5">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100 px-4 py-1.5 text-sm sm:text-base font-bold text-slate-700">
-                    <span className="text-slate-400 font-semibold uppercase text-xs sm:text-sm tracking-wider">Topic:</span>
-                    <span className="font-extrabold text-slate-900">{parsedData.topic}</span>
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-100 px-3 py-1 text-xs sm:text-sm font-bold text-slate-800 shadow-sm">
+                  <span className="text-slate-400 font-semibold uppercase text-[10px] tracking-wider">Topic:</span>
+                  <span className="font-extrabold text-slate-950">{parsedData.topic}</span>
+                </div>
+                {parsedData.focus && (
+                  <div className="inline-flex items-center gap-1.5 rounded-xl border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs sm:text-sm font-bold text-indigo-950 shadow-sm">
+                    <span className="text-indigo-500 font-semibold uppercase text-[10px] tracking-wider">Focus:</span>
+                    <span className="font-extrabold text-indigo-700">{parsedData.focus}</span>
                   </div>
-                  {parsedData.focus && (
-                    <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-sm sm:text-base font-bold text-indigo-900">
-                      <span className="text-indigo-500 font-semibold uppercase text-xs sm:text-sm tracking-wider">Focus:</span>
-                      <span className="font-extrabold text-indigo-700">{parsedData.focus}</span>
+                )}
+              </div>
+            </div>
+
+            {/* Title & Instructions */}
+            <div className="shrink-0">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-950 tracking-tight leading-tight">
+                {parsedData.headline}
+              </h2>
+              <p className="mt-0.5 text-xs sm:text-sm lg:text-base font-bold text-slate-600">
+                {parsedData.support}
+              </p>
+            </div>
+
+            {/* Stage content: 2-column layout for speak round, horizontal grid for rounds 1 & 2 */}
+            {roundKey === 'speak' ? (
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4 flex-1 min-h-0 items-stretch">
+                {/* Left Column: Mission, Starter Phrase, Power Words & Checklist (7/12) */}
+                <div className="lg:col-span-7 flex flex-col justify-between gap-2 min-h-0">
+                  {/* Step 1: Mission */}
+                  {parsedData.items[0] && (
+                    <div className="rounded-2xl border-2 border-rose-300 bg-rose-50/90 p-2.5 sm:p-3 shadow-sm flex flex-col justify-center">
+                      <div className="flex items-center justify-between mb-0.5">
+                        <span className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs font-black uppercase tracking-wider bg-rose-600 text-white shadow-sm">
+                          {parsedData.items[0].badge}
+                        </span>
+                        <span className="text-[10px] font-black text-rose-500 uppercase tracking-wider">Mission Prompt</span>
+                      </div>
+                      <p className="text-xs sm:text-sm lg:text-base font-extrabold text-slate-900 leading-snug">
+                        {parsedData.items[0].desc}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Step 2: Starter Phrase */}
+                  {parsedData.items[1] && (
+                    <div className="rounded-2xl border-2 border-emerald-300 bg-emerald-50/90 p-2.5 sm:p-3 shadow-sm flex flex-col justify-center">
+                      <div className="flex items-center justify-between mb-0.5">
+                        <span className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs font-black uppercase tracking-wider bg-emerald-600 text-white shadow-sm">
+                          {parsedData.items[1].badge}
+                        </span>
+                        <span className="text-[10px] font-black text-emerald-600 uppercase tracking-wider">Start Speaking With</span>
+                      </div>
+                      <p className="text-xs sm:text-sm lg:text-base font-black italic text-emerald-950 leading-snug">
+                        {parsedData.items[1].desc}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Step 3: Power Words */}
+                  {parsedData.items[2] && (
+                    <div className="rounded-2xl border-2 border-amber-300 bg-amber-50/90 p-2.5 sm:p-3 shadow-sm flex flex-col justify-center">
+                      <div className="flex items-center justify-between mb-0.5">
+                        <span className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs font-black uppercase tracking-wider bg-amber-600 text-white shadow-sm">
+                          {parsedData.items[2].badge}
+                        </span>
+                        <span className="text-[10px] font-black text-amber-600 uppercase tracking-wider">Target Vocabulary</span>
+                      </div>
+                      <p className="text-[11px] sm:text-xs lg:text-sm font-bold text-amber-950 leading-snug">
+                        {parsedData.items[2].desc}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Checklist / Model Example */}
+                  {parsedData.example && (
+                    <div className="rounded-2xl border-2 border-indigo-300 bg-indigo-50/95 p-2 sm:p-2.5 text-indigo-950 shadow-sm flex items-center gap-2">
+                      <span className="text-base sm:text-lg shrink-0">💡</span>
+                      <p className="text-[11px] sm:text-xs lg:text-sm font-bold text-indigo-950 leading-tight">
+                        {parsedData.example}
+                      </p>
                     </div>
                   )}
                 </div>
-              </div>
 
-              <div>
-                <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
-                  {parsedData.headline}
-                </h2>
-                <p className="mt-2 text-lg sm:text-2xl lg:text-3xl font-bold text-slate-600">
-                  {parsedData.support}
-                </p>
-              </div>
-
-              <div className={`grid gap-4 sm:gap-6 flex-1 ${parsedData.items.length === 3 ? 'grid-cols-1 md:grid-cols-3' : 'grid-cols-1 md:grid-cols-2'}`}>
-                {parsedData.items.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className={`flex flex-col justify-between rounded-3xl border-3 p-5 sm:p-7 lg:p-8 shadow-md transition ${item.bg} ${item.border}`}
-                  >
-                    <div>
-                      <div className="mb-3 flex items-center justify-between">
-                        <span className={`inline-flex items-center rounded-xl px-3.5 py-1.5 text-sm sm:text-base font-black uppercase tracking-wider shadow-sm ${item.badgeBg}`}>
-                          {item.badge}
-                        </span>
-                        <span className="text-sm sm:text-base font-black text-slate-400">Step {idx + 1}</span>
-                      </div>
-                      <h3 className={`text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight ${item.text}`}>
-                        {item.title}
-                      </h3>
-                      <p className="mt-2.5 text-base sm:text-xl lg:text-2xl font-bold text-slate-700 leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
-
-                    {item.example && (
-                      <div className="mt-4 rounded-2xl border-2 border-slate-200/90 bg-white/95 px-4 py-3 text-base sm:text-xl lg:text-2xl font-bold text-slate-900 shadow-sm">
-                        <span className="mr-2 font-black uppercase text-xs sm:text-sm tracking-wider text-slate-500">Ex:</span>
-                        <span className="italic font-black text-slate-950">"{item.example}"</span>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              {parsedData.example && (
-                <div className="flex items-start gap-4 rounded-3xl border-3 border-amber-300 bg-amber-50/95 p-4 sm:p-6 text-amber-950 shadow-md">
-                  <span className="shrink-0 text-3xl sm:text-4xl">💡</span>
-                  <div className="min-w-0 text-base sm:text-xl lg:text-2xl">
-                    <div className="font-black uppercase tracking-wider text-amber-900 text-xs sm:text-sm mb-1.5">
-                      Model Example to Guide You:
-                    </div>
-                    <p className="font-bold italic text-slate-950 leading-relaxed">
-                      "{parsedData.example}"
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {roundKey === 'speak' && (
-              <div className="grid gap-4 rounded-3xl bg-slate-100 p-4 sm:p-6 lg:grid-cols-[0.85fr_1.15fr] shadow-inner">
-                <div>
-                  <div className="mb-3 grid grid-cols-2 rounded-2xl border border-slate-200 bg-white p-1 text-sm sm:text-base font-black uppercase tracking-widest text-slate-500 shadow-sm">
+                {/* Right Column: Speaking Timer Console (5/12) */}
+                <div className="lg:col-span-5 rounded-2xl sm:rounded-3xl bg-slate-950 p-3 sm:p-4 shadow-xl border-2 border-slate-800 text-white flex flex-col justify-between min-h-0">
+                  {/* Mode Switcher */}
+                  <div className="grid grid-cols-2 rounded-xl border border-slate-800 bg-slate-900 p-1 text-xs font-black uppercase tracking-wider text-slate-400">
                     <button
                       type="button"
                       onClick={() => handleModeChange('prepare')}
-                      className={`rounded-xl px-4 py-2.5 transition ${timerMode === 'prepare' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
+                      className={`rounded-lg py-1.5 transition ${
+                        timerMode === 'prepare'
+                          ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md'
+                          : 'hover:text-white'
+                      }`}
                     >
                       Prepare (3:00)
                     </button>
                     <button
                       type="button"
                       onClick={() => handleModeChange('speak')}
-                      className={`rounded-xl px-4 py-2.5 transition ${timerMode === 'speak' ? 'bg-slate-950 text-white shadow-md' : 'text-slate-500 hover:bg-slate-100 hover:text-slate-800'}`}
+                      className={`rounded-lg py-1.5 transition ${
+                        timerMode === 'speak'
+                          ? 'bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-md'
+                          : 'hover:text-white'
+                      }`}
                     >
                       Speak ({customSpeakSeconds}s)
                     </button>
                   </div>
-                  <div className="grid grid-cols-[56px_1fr_56px] items-center gap-2.5">
+
+                  {/* Big Digital Clock Display */}
+                  <div className="flex flex-col items-center justify-center my-auto py-2 bg-slate-900/90 rounded-2xl border border-slate-800">
+                    <span className="text-[11px] font-black uppercase tracking-widest text-slate-400 mb-0.5 flex items-center gap-1.5">
+                      <Timer className="h-3.5 w-3.5 text-amber-400 animate-spin" style={{ animationDuration: '4s' }} />
+                      {timerMode === 'prepare' ? 'Prep Timer' : 'Speak Timer'}
+                    </span>
+                    <div className="text-5xl sm:text-6xl lg:text-7xl font-mono font-black tabular-nums leading-none text-emerald-400 drop-shadow-[0_0_20px_rgba(52,211,153,0.6)]">
+                      {formatTimerLabel(timer)}
+                    </div>
+                  </div>
+
+                  {/* Adjuster & Start Button Controls */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1 bg-slate-900 rounded-xl border border-slate-800 p-1">
+                      <button
+                        type="button"
+                        onClick={() => updateCustomSeconds(timerMode, activeSeconds - 5)}
+                        className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 bg-slate-800 text-white shadow-sm hover:bg-slate-700 active:scale-95"
+                        aria-label="Decrease seconds"
+                      >
+                        <Minus className="h-4 w-4" />
+                      </button>
+                      <span className="w-10 text-center font-mono font-bold text-amber-300 text-xs">
+                        {activeSeconds}s
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => updateCustomSeconds(timerMode, activeSeconds + 5)}
+                        className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 bg-slate-800 text-white shadow-sm hover:bg-slate-700 active:scale-95"
+                        aria-label="Increase seconds"
+                      >
+                        <Plus className="h-4 w-4" />
+                      </button>
+                    </div>
+
                     <button
                       type="button"
-                      onClick={() => updateCustomSeconds(timerMode, activeSeconds - 5)}
-                      className="flex h-14 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
-                      aria-label="Decrease seconds"
+                      onClick={() => (timerRunning ? setTimerRunning(false) : startTimer(timerMode))}
+                      className={`flex-1 inline-flex items-center justify-center gap-2 rounded-xl py-2.5 px-4 text-xs sm:text-sm font-black text-slate-950 shadow-lg transition hover:scale-105 active:scale-95 ${
+                        timerRunning
+                          ? 'bg-amber-400 hover:bg-amber-300 shadow-amber-400/30'
+                          : 'bg-gradient-to-r from-emerald-500 to-teal-400 shadow-emerald-500/30'
+                      }`}
                     >
-                      <Minus className="h-6 w-6" />
-                    </button>
-                    <input
-                      type="number"
-                      min={5}
-                      max={600}
-                      step={5}
-                      value={activeSeconds}
-                      onChange={(event) => updateCustomSeconds(timerMode, Number(event.target.value))}
-                      className="h-14 rounded-2xl border border-slate-200 bg-white px-2 text-center text-3xl font-black text-slate-950 shadow-sm outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-100"
-                      aria-label="Timer seconds"
-                    >
-                    </input>
-                    <button
-                      type="button"
-                      onClick={() => updateCustomSeconds(timerMode, activeSeconds + 5)}
-                      className="flex h-14 items-center justify-center rounded-2xl border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950"
-                      aria-label="Increase seconds"
-                    >
-                      <Plus className="h-6 w-6" />
+                      {timerRunning ? (
+                        <>
+                          <RotateCcw className="h-4 w-4" />
+                          <span>Pause</span>
+                        </>
+                      ) : (
+                        <>
+                          <Play className="h-4 w-4 fill-current" />
+                          <span>Start Timer</span>
+                        </>
+                      )}
                     </button>
                   </div>
                 </div>
-                <div className="flex items-center justify-between gap-4 rounded-2xl bg-slate-950 p-4 text-white sm:p-5">
-                  <div className="flex items-center gap-2.5 text-sm sm:text-base font-black uppercase tracking-widest text-white/70">
-                    <Timer className="h-6 w-6" />
-                    {timerMode === 'prepare' ? 'Prep Timer' : 'Speak Timer'}
-                  </div>
-                  <div className="text-5xl font-black tabular-nums leading-none sm:text-6xl lg:text-7xl">{formatTimerLabel(timer)}</div>
-                  <button
-                    type="button"
-                    onClick={() => startTimer(timerMode)}
-                    className="inline-flex items-center gap-2 rounded-2xl bg-emerald-400 px-5 py-3 text-lg font-black text-emerald-950 shadow-lg shadow-emerald-950/20 transition hover:bg-emerald-300 sm:text-xl"
-                  >
-                    <Play className="h-6 w-6" />
-                    Start
-                  </button>
+              </div>
+            ) : (
+              /* Challenges 1 and 2 (remember and use) */
+              <div className="flex flex-col justify-between gap-2.5 flex-1 min-h-0">
+                <div
+                  className={`grid gap-2.5 sm:gap-3.5 flex-1 min-h-0 ${
+                    parsedData.items.length === 3 ? 'grid-cols-1 md:grid-cols-3' : 'grid-cols-1 md:grid-cols-2'
+                  }`}
+                >
+                  {parsedData.items.map((item, idx) => (
+                    <motion.div
+                      key={idx}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: idx * 0.08, duration: 0.3 }}
+                      className={`flex flex-col justify-between rounded-2xl border-2 p-3 sm:p-4 shadow-md transition-all ${item.bg} ${item.border}`}
+                    >
+                      <div>
+                        <div className="mb-1.5 flex items-center justify-between">
+                          <span
+                            className={`inline-flex items-center rounded-lg px-2.5 py-0.5 text-xs font-black uppercase tracking-wider shadow-sm ${item.badgeBg}`}
+                          >
+                            {item.badge}
+                          </span>
+                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                            Step {idx + 1}
+                          </span>
+                        </div>
+                        <h3 className={`text-base sm:text-lg lg:text-xl font-black tracking-tight leading-snug ${item.text}`}>
+                          {item.title}
+                        </h3>
+                        <p className="mt-1 text-xs sm:text-sm font-bold text-slate-700 leading-snug">
+                          {item.desc}
+                        </p>
+                      </div>
+
+                      {item.example && (
+                        <div className="mt-2 rounded-xl border border-slate-200/90 bg-white/95 px-2.5 py-1.5 text-xs sm:text-sm font-bold text-slate-900 shadow-sm">
+                          <span className="mr-1.5 font-black uppercase text-[10px] tracking-wider text-slate-500">Ex:</span>
+                          <span className="italic font-black text-slate-950">"{item.example}"</span>
+                        </div>
+                      )}
+                    </motion.div>
+                  ))}
                 </div>
+
+                {parsedData.example && (
+                  <div className="flex items-start gap-2.5 rounded-2xl border-2 border-amber-300 bg-amber-50/95 p-2.5 sm:p-3 text-amber-950 shadow-sm shrink-0">
+                    <span className="shrink-0 text-xl sm:text-2xl">💡</span>
+                    <div className="min-w-0 text-xs sm:text-sm">
+                      <span className="font-black uppercase tracking-wider text-amber-900 text-[10px] mr-1.5">
+                        Model Example:
+                      </span>
+                      <span className="font-bold italic text-slate-950">
+                        "{parsedData.example}"
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </div>
         )}
 
+        {/* VIEW: Finish / Victory */}
         {currentView === 'finish' && (
-          <div className="flex h-full flex-col items-center justify-center gap-6 text-center">
+          <div className="flex h-full flex-col items-center justify-center gap-4 text-center my-auto">
             <motion.div
-              animate={isComplete ? { scale: [1, 1.12, 1], rotate: [0, -4, 4, 0] } : undefined}
-              transition={{ duration: 1.2, repeat: isComplete ? Infinity : 0, repeatDelay: 1.5 }}
+              animate={isComplete ? { scale: [1, 1.15, 1], rotate: [0, -6, 6, 0] } : undefined}
+              transition={{ duration: 1.5, repeat: isComplete ? Infinity : 0, repeatDelay: 1.2 }}
             >
-              <Trophy className="h-32 w-32 text-yellow-500 drop-shadow-xl sm:h-44 sm:w-44" />
+              <Trophy className="h-24 w-24 sm:h-32 sm:w-32 text-amber-400 filter drop-shadow-[0_0_25px_rgba(251,191,36,0.6)]" />
             </motion.div>
-            <h2 className="text-5xl font-black leading-none sm:text-7xl lg:text-8xl">
-              {isComplete ? 'Boss defeated!' : 'Finish the challenge'}
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-slate-950">
+              {isComplete ? 'Boss Defeated! 👑' : 'Finish the Challenge'}
             </h2>
             {isComplete && (
-              <div className="rounded-3xl bg-gradient-to-r from-yellow-300 via-emerald-300 to-violet-400 p-1 shadow-2xl shadow-yellow-900/20">
-                <div className="rounded-[1.35rem] bg-white px-6 py-5">
-                  <p className="text-4xl font-black leading-tight text-slate-950 sm:text-6xl">Excellent speaking!</p>
-                  <p className="mt-2 text-2xl font-black text-slate-600 sm:text-3xl">Challenge complete.</p>
+              <div className="rounded-2xl bg-gradient-to-r from-yellow-400 via-emerald-400 to-purple-500 p-1 shadow-xl shadow-yellow-500/20 max-w-xl w-full">
+                <div className="rounded-xl bg-white px-5 py-4">
+                  <p className="text-2xl sm:text-4xl font-black leading-tight text-slate-950">Excellent Speaking!</p>
+                  <p className="mt-1 text-sm sm:text-base font-bold text-slate-600">Challenge successfully completed.</p>
                 </div>
               </div>
             )}
-            <div className="grid w-full max-w-3xl gap-3 sm:grid-cols-3">
+            <div className="grid w-full max-w-2xl gap-2.5 sm:grid-cols-3">
               {roundMeta.map((round, index) => (
-                <div key={round.key} className={`rounded-3xl p-5 text-3xl font-black sm:text-4xl ${hits[index] ? 'bg-emerald-400 text-emerald-950' : 'bg-slate-100 text-slate-700'}`}>
-                  {hits[index] ? <Check className="mx-auto mb-3 h-10 w-10" /> : index + 1}
+                <div
+                  key={round.key}
+                  className={`rounded-2xl p-3 text-base sm:text-xl font-black transition-all shadow-sm ${
+                    hits[index]
+                      ? 'bg-gradient-to-br from-emerald-400 to-teal-500 text-white shadow-emerald-500/30'
+                      : 'bg-slate-100 text-slate-500'
+                  }`}
+                >
+                  {hits[index] ? <Check className="mx-auto mb-1 h-6 w-6 stroke-[3]" /> : <span className="block mb-1 font-mono text-base text-slate-400">{index + 1}</span>}
                   {round.title}
                 </div>
               ))}
@@ -788,38 +932,39 @@ export function SpeakingBossBattleGame({
           </div>
         )}
 
-        <div className="mt-auto flex shrink-0 items-center justify-between gap-3 pt-5">
+        {/* Bottom Arena Controls */}
+        <div className="mt-auto flex shrink-0 items-center justify-between gap-3 pt-2 border-t-2 border-slate-100">
           <button
             onClick={back}
             disabled={viewIndex === 0}
-            className="inline-flex h-16 items-center gap-3 rounded-2xl border border-slate-200 bg-white px-5 text-xl font-black text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40 sm:h-20 sm:px-6 sm:text-2xl"
+            className="inline-flex h-11 sm:h-12 items-center gap-2 rounded-xl border-2 border-slate-200 bg-white px-4 sm:px-5 text-sm sm:text-base font-black text-slate-700 shadow-sm transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            <ArrowLeft className="h-7 w-7" />
-            Back
+            <ArrowLeft className="h-5 w-5" />
+            <span>Back</span>
           </button>
           <button
             onClick={reset}
-            className="inline-flex h-16 items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-5 text-xl font-black text-slate-600 shadow-sm transition hover:border-slate-300 hover:bg-white hover:text-slate-900 sm:h-20 sm:px-6 sm:text-2xl"
+            className="inline-flex h-11 sm:h-12 items-center gap-2 rounded-xl border-2 border-slate-200 bg-slate-50 px-4 sm:px-5 text-sm sm:text-base font-black text-slate-600 shadow-sm transition hover:bg-white hover:text-slate-950"
           >
-            <RotateCcw className="h-7 w-7" />
-            Reset
+            <RotateCcw className="h-5 w-5" />
+            <span>Reset</span>
           </button>
           {currentRound ? (
             <button
               onClick={hitBoss}
-              className="inline-flex h-16 items-center gap-3 rounded-2xl bg-gradient-to-r from-red-500 to-rose-600 px-5 text-xl font-black text-white shadow-lg shadow-red-900/20 transition hover:from-red-400 hover:to-rose-500 sm:h-20 sm:px-6 sm:text-2xl"
+              className="inline-flex h-11 sm:h-12 items-center gap-2.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 px-5 sm:px-7 text-sm sm:text-lg font-black text-white shadow-lg shadow-red-600/30 transition hover:scale-105 active:scale-95 cursor-pointer"
             >
-              Hit Boss
-              <ArrowRight className="h-7 w-7" />
+              <span>Hit Boss ⚔️</span>
+              <ArrowRight className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={next}
               disabled={viewIndex === views.length - 1}
-              className="inline-flex h-16 items-center gap-3 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 px-5 text-xl font-black text-white shadow-lg shadow-indigo-900/20 transition hover:from-violet-500 hover:to-indigo-500 disabled:cursor-not-allowed disabled:opacity-40 sm:h-20 sm:px-6 sm:text-2xl"
+              className="inline-flex h-11 sm:h-12 items-center gap-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 px-5 sm:px-7 text-sm sm:text-lg font-black text-white shadow-lg shadow-indigo-600/30 transition hover:scale-105 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
             >
-              <Play className="h-7 w-7" />
-              Next
+              <Play className="h-5 w-5 fill-current" />
+              <span>Next</span>
             </button>
           )}
         </div>

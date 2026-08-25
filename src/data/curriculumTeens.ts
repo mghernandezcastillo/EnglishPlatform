@@ -118,108 +118,108 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                                 },
                 { id: "slide-18", imageUrl: "/images/teens-basic-zero-class-01/slide-19.jpg", bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700",
                     type: "speaking-scene",
-                    title: "Speaking Time: Hello & Introductions · Hello & Introductions 💬 / Hablen de Hello & Introductions · Hello & Introductions 💬",
-                    description: "Practice real conversation about Hello & Introductions · Hello & Introductions.",
+                    title: "Speaking Time: Meet a New Friend 👋 / Conoce a un nuevo amigo 👋",
+                    description: "Practice introducing yourself and greeting a new friend.",
                     speakingScene: {
-                                            "topic": "Talk about Hello & Introductions · Hello & Introductions",
-                                            "topicEs": "Hablen sobre Hello & Introductions · Hello & Introductions",
-                                            "cues": [
-                                              {
-                                                "icon": "🎯",
-                                                "label": "TOPIC?",
-                                                "labelEs": "¿Tema principal?",
-                                                "questionExample": "What do you think about Hello & Introductions · Hello & Introductions?"
-                                              },
-                                              {
-                                                "icon": "💡",
-                                                "label": "EXAMPLE?",
-                                                "labelEs": "¿Ejemplo de la vida real?",
-                                                "questionExample": "Can you give an example?"
-                                              },
-                                              {
-                                                "icon": "⭐",
-                                                "label": "OPINION?",
-                                                "labelEs": "¿Por qué es importante?",
-                                                "questionExample": "Why is it important?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Teacher",
-                                              "labelEs": "Profesor",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "👩‍🏫"
-                                            },
-                                            "roleB": {
-                                              "label": "Student",
-                                              "labelEs": "Estudiante",
-                                              "action": "Answer",
-                                              "actionEs": "Responder",
-                                              "avatar": "👨‍🎓"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "💬",
-                                                "word": "practice",
-                                                "translation": "practicar"
-                                              },
-                                              {
-                                                "emoji": "💡",
-                                                "word": "real example",
-                                                "translation": "ejemplo real"
-                                              },
-                                              {
-                                                "emoji": "⭐",
-                                                "word": "important",
-                                                "translation": "importante"
-                                              },
-                                              {
-                                                "emoji": "🗣️",
-                                                "word": "speak clearly",
-                                                "translation": "hablar claro"
-                                              },
-                                              {
-                                                "emoji": "✨",
-                                                "word": "fluency",
-                                                "translation": "fluidez"
-                                              },
-                                              {
-                                                "emoji": "🎯",
-                                                "word": "goal",
-                                                "translation": "meta"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "How would you explain this in your own words?",
-                                                  "es": "¿Cómo explicarías esto con tus propias palabras?"
-                                                },
-                                                {
-                                                  "en": "What is a good example from your daily life?",
-                                                  "es": "¿Cuál es un buen ejemplo de tu vida diaria?"
-                                                },
-                                                {
-                                                  "en": "What do you think about this topic?",
-                                                  "es": "¿Qué piensas sobre este tema?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "In my opinion, this helps us communicate clearly.",
-                                                  "es": "En mi opinión, esto nos ayuda a comunicarnos con claridad."
-                                                },
-                                                {
-                                                  "en": "For example, I use this when talking with friends.",
-                                                  "es": "Por ejemplo, uso esto al hablar con amigos."
-                                                },
-                                                {
-                                                  "en": "I feel very confident practicing this today.",
-                                                  "es": "Me siento muy seguro practicando esto hoy."
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Meet a New Classmate 👋",
+  "topicEs": "Conoce a un nuevo compañero",
+  "cues": [
+    {
+      "icon": "👋",
+      "label": "GREET & NAME",
+      "labelEs": "¿Saludo y nombre?",
+      "questionExample": "Hi! What's your name?"
+    },
+    {
+      "icon": "😊",
+      "label": "HOW ARE YOU?",
+      "labelEs": "¿Cómo estás?",
+      "questionExample": "How are you today?"
+    },
+    {
+      "icon": "✌️",
+      "label": "GOODBYE",
+      "labelEs": "¿Despedida?",
+      "questionExample": "Nice to meet you! See you later!"
+    }
+  ],
+  "roleA": {
+    "label": "Student 1",
+    "labelEs": "Estudiante 1",
+    "action": "Greet & Ask",
+    "actionEs": "Saludar y preguntar",
+    "avatar": "👦"
+  },
+  "roleB": {
+    "label": "Student 2",
+    "labelEs": "Estudiante 2",
+    "action": "Introduce & Reply",
+    "actionEs": "Presentarse y responder",
+    "avatar": "👧"
+  },
+  "helpWords": [
+    {
+      "emoji": "👋",
+      "word": "Hi / Hello",
+      "translation": "hola"
+    },
+    {
+      "emoji": "✨",
+      "word": "What's your name?",
+      "translation": "¿cómo te llamas?"
+    },
+    {
+      "emoji": "🏷️",
+      "word": "My name is...",
+      "translation": "mi nombre es..."
+    },
+    {
+      "emoji": "😊",
+      "word": "How are you?",
+      "translation": "¿cómo estás?"
+    },
+    {
+      "emoji": "🔥",
+      "word": "I'm great / fine",
+      "translation": "estoy genial / bien"
+    },
+    {
+      "emoji": "✌️",
+      "word": "Nice to meet you!",
+      "translation": "¡mucho gusto!"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Hi! What is your name?",
+        "es": "¡Hola! ¿Cómo te llamas?"
+      },
+      {
+        "en": "How are you doing today?",
+        "es": "¿Cómo estás hoy?"
+      },
+      {
+        "en": "Nice to meet you! See you later!",
+        "es": "¡Mucho gusto! ¡Hasta luego!"
+      }
+    ],
+    "answer": [
+      {
+        "en": "Hey! My name is Alex. And you?",
+        "es": "¡Hola! Mi nombre es Alex. ¿Y tú?"
+      },
+      {
+        "en": "I'm great, thanks for asking!",
+        "es": "¡Estoy genial, gracias por preguntar!"
+      },
+      {
+        "en": "Nice to meet you too! Bye!",
+        "es": "¡Mucho gusto también! ¡Adiós!"
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -330,105 +330,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Talk about the schedule ⏰ / Hablen del horario ⏰",
                     description: "Ask and answer about times, numbers, and dates.",
                     speakingScene: {
-                                            "topic": "Talk about the schedule",
-                                            "topicEs": "Hablen del horario y las fechas",
-                                            "cues": [
-                                              {
-                                                "icon": "⏰",
-                                                "label": "TIME?",
-                                                "labelEs": "¿Qué hora es?",
-                                                "questionExample": "What time is it?"
-                                              },
-                                              {
-                                                "icon": "🔢",
-                                                "label": "NUMBER?",
-                                                "labelEs": "¿Cuántos hay?",
-                                                "questionExample": "How many items are there?"
-                                              },
-                                              {
-                                                "icon": "📅",
-                                                "label": "WHEN?",
-                                                "labelEs": "¿Cuándo es el evento?",
-                                                "questionExample": "When does it start?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Teacher",
-                                              "labelEs": "Profesor",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "👩‍🏫"
-                                            },
-                                            "roleB": {
-                                              "label": "Student",
-                                              "labelEs": "Estudiante",
-                                              "action": "Answer",
-                                              "actionEs": "Responder",
-                                              "avatar": "👨‍🎓"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "🕖",
-                                                "word": "seven o'clock",
-                                                "translation": "las 7 en punto"
-                                              },
-                                              {
-                                                "emoji": "🌅",
-                                                "word": "morning",
-                                                "translation": "la mañana"
-                                              },
-                                              {
-                                                "emoji": "🌇",
-                                                "word": "afternoon",
-                                                "translation": "la tarde"
-                                              },
-                                              {
-                                                "emoji": "🌙",
-                                                "word": "night",
-                                                "translation": "la noche"
-                                              },
-                                              {
-                                                "emoji": "🎂",
-                                                "word": "birthday",
-                                                "translation": "cumpleaños"
-                                              },
-                                              {
-                                                "emoji": "📅",
-                                                "word": "weekend",
-                                                "translation": "fin de semana"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "What time does the class start?",
-                                                  "es": "¿A qué hora empieza la clase?"
-                                                },
-                                                {
-                                                  "en": "When is your birthday?",
-                                                  "es": "¿Cuándo es tu cumpleaños?"
-                                                },
-                                                {
-                                                  "en": "How old are you?",
-                                                  "es": "¿Cuántos años tienes?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "It starts at eight thirty in the morning.",
-                                                  "es": "Empieza a las ocho y media de la mañana."
-                                                },
-                                                {
-                                                  "en": "My birthday is in September.",
-                                                  "es": "Mi cumpleaños es en septiembre."
-                                                },
-                                                {
-                                                  "en": "I am fifteen years old.",
-                                                  "es": "Tengo quince años."
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Ask About Age & Birthdays 🎂",
+  "topicEs": "Pregunta sobre edad y cumpleaños",
+  "cues": [
+    {
+      "icon": "🎂",
+      "label": "HOW OLD?",
+      "labelEs": "¿Cuántos años tienes?",
+      "questionExample": "How old are you?"
+    },
+    {
+      "icon": "📅",
+      "label": "BIRTHDAY MONTH?",
+      "labelEs": "¿En qué mes cumples?",
+      "questionExample": "When is your birthday?"
+    },
+    {
+      "icon": "🔢",
+      "label": "LUCKY NUMBER?",
+      "labelEs": "¿Cuál es tu número?",
+      "questionExample": "What is your lucky number?"
+    }
+  ],
+  "roleA": {
+    "label": "Classmate A",
+    "labelEs": "Compañero A",
+    "action": "Ask age & date",
+    "actionEs": "Preguntar edad y fecha",
+    "avatar": "🙋‍♂️"
+  },
+  "roleB": {
+    "label": "Classmate B",
+    "labelEs": "Compañero B",
+    "action": "Tell age & date",
+    "actionEs": "Decir edad y fecha",
+    "avatar": "🎉"
+  },
+  "helpWords": [
+    {
+      "emoji": "🎂",
+      "word": "years old",
+      "translation": "años de edad"
+    },
+    {
+      "emoji": "📅",
+      "word": "birthday",
+      "translation": "cumpleaños"
+    },
+    {
+      "emoji": "🗓️",
+      "word": "January / May",
+      "translation": "enero / mayo"
+    },
+    {
+      "emoji": "🔢",
+      "word": "lucky number",
+      "translation": "número de la suerte"
+    },
+    {
+      "emoji": "🎈",
+      "word": "party & cake",
+      "translation": "fiesta y pastel"
+    },
+    {
+      "emoji": "✨",
+      "word": "fourteen / fifteen",
+      "translation": "14 / 15"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "How old are you this year?",
+        "es": "¿Cuántos años tienes este año?"
+      },
+      {
+        "en": "When is your birthday?",
+        "es": "¿Cuándo es tu cumpleaños?"
+      },
+      {
+        "en": "What is your favorite number?",
+        "es": "¿Cuál es tu número favorito?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "I am 14 years old.",
+        "es": "Tengo 14 años."
+      },
+      {
+        "en": "My birthday is in October!",
+        "es": "¡Mi cumpleaños es en octubre!"
+      },
+      {
+        "en": "My lucky number is seven.",
+        "es": "Mi número de la suerte es el siete."
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -541,105 +541,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: My Body & Actions · My Body & Actions 💬 / Hablen de My Body & Actions · My Body & Actions 💬",
                     description: "Practice real conversation about My Body & Actions · My Body & Actions.",
                     speakingScene: {
-                                            "topic": "Talk about My Body & Actions · My Body & Actions",
-                                            "topicEs": "Hablen sobre My Body & Actions · My Body & Actions",
-                                            "cues": [
-                                              {
-                                                "icon": "🎯",
-                                                "label": "TOPIC?",
-                                                "labelEs": "¿Tema principal?",
-                                                "questionExample": "What do you think about My Body & Actions · My Body & Actions?"
-                                              },
-                                              {
-                                                "icon": "💡",
-                                                "label": "EXAMPLE?",
-                                                "labelEs": "¿Ejemplo de la vida real?",
-                                                "questionExample": "Can you give an example?"
-                                              },
-                                              {
-                                                "icon": "⭐",
-                                                "label": "OPINION?",
-                                                "labelEs": "¿Por qué es importante?",
-                                                "questionExample": "Why is it important?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Teacher",
-                                              "labelEs": "Profesor",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "👩‍🏫"
-                                            },
-                                            "roleB": {
-                                              "label": "Student",
-                                              "labelEs": "Estudiante",
-                                              "action": "Answer",
-                                              "actionEs": "Responder",
-                                              "avatar": "👨‍🎓"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "💬",
-                                                "word": "practice",
-                                                "translation": "practicar"
-                                              },
-                                              {
-                                                "emoji": "💡",
-                                                "word": "real example",
-                                                "translation": "ejemplo real"
-                                              },
-                                              {
-                                                "emoji": "⭐",
-                                                "word": "important",
-                                                "translation": "importante"
-                                              },
-                                              {
-                                                "emoji": "🗣️",
-                                                "word": "speak clearly",
-                                                "translation": "hablar claro"
-                                              },
-                                              {
-                                                "emoji": "✨",
-                                                "word": "fluency",
-                                                "translation": "fluidez"
-                                              },
-                                              {
-                                                "emoji": "🎯",
-                                                "word": "goal",
-                                                "translation": "meta"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "How would you explain this in your own words?",
-                                                  "es": "¿Cómo explicarías esto con tus propias palabras?"
-                                                },
-                                                {
-                                                  "en": "What is a good example from your daily life?",
-                                                  "es": "¿Cuál es un buen ejemplo de tu vida diaria?"
-                                                },
-                                                {
-                                                  "en": "What do you think about this topic?",
-                                                  "es": "¿Qué piensas sobre este tema?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "In my opinion, this helps us communicate clearly.",
-                                                  "es": "En mi opinión, esto nos ayuda a comunicarnos con claridad."
-                                                },
-                                                {
-                                                  "en": "For example, I use this when talking with friends.",
-                                                  "es": "Por ejemplo, uso esto al hablar con amigos."
-                                                },
-                                                {
-                                                  "en": "I feel very confident practicing this today.",
-                                                  "es": "Me siento muy seguro practicando esto hoy."
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Body Parts & Action Moves 🏃‍♂️",
+  "topicEs": "Partes del cuerpo y movimientos",
+  "cues": [
+    {
+      "icon": "👀",
+      "label": "BODY PART?",
+      "labelEs": "¿Qué parte del cuerpo?",
+      "questionExample": "Touch your head and shoulders!"
+    },
+    {
+      "icon": "⚡",
+      "label": "ACTION MOVE?",
+      "labelEs": "¿Qué acción puedes hacer?",
+      "questionExample": "Can you jump, run, or dance?"
+    },
+    {
+      "icon": "💪",
+      "label": "SKILL?",
+      "labelEs": "¿Qué habilidad tienes?",
+      "questionExample": "What action sport do you like?"
+    }
+  ],
+  "roleA": {
+    "label": "Coach",
+    "labelEs": "Entrenador",
+    "action": "Give move command",
+    "actionEs": "Dar comando",
+    "avatar": "🏃"
+  },
+  "roleB": {
+    "label": "Athlete",
+    "labelEs": "Atleta",
+    "action": "Perform move",
+    "actionEs": "Hacer movimiento",
+    "avatar": "🤸"
+  },
+  "helpWords": [
+    {
+      "emoji": "👀",
+      "word": "eyes & face",
+      "translation": "ojos y cara"
+    },
+    {
+      "emoji": "✋",
+      "word": "hands & arms",
+      "translation": "manos y brazos"
+    },
+    {
+      "emoji": "🦵",
+      "word": "legs & feet",
+      "translation": "piernas y pies"
+    },
+    {
+      "emoji": "🏃",
+      "word": "run fast",
+      "translation": "correr rápido"
+    },
+    {
+      "emoji": "🦘",
+      "word": "jump high",
+      "translation": "saltar alto"
+    },
+    {
+      "emoji": "💃",
+      "word": "dance moves",
+      "translation": "pasos de baile"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Can you move your arms and touch your toes?",
+        "es": "¿Puedes mover tus brazos y tocar tus pies?"
+      },
+      {
+        "en": "What action sports can you do?",
+        "es": "¿Qué deportes de acción puedes hacer?"
+      },
+      {
+        "en": "How fast can you run?",
+        "es": "¿Qué tan rápido puedes correr?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "Yes! I can jump and touch my head.",
+        "es": "¡Sí! Puedo saltar y tocarme la cabeza."
+      },
+      {
+        "en": "I love to skate, run, and dance.",
+        "es": "Me encanta patinar, correr y bailar."
+      },
+      {
+        "en": "My legs are strong and fast!",
+        "es": "¡Mis piernas son fuertes y rápidas!"
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -750,105 +750,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Show your favorite tech 📱 / Muestra tu tecnología 📱",
                     description: "Compare phones, consoles, apps, and share tech recommendations.",
                     speakingScene: {
-                                            "topic": "Show your favorite tech & apps",
-                                            "topicEs": "Muestra tu tecnología y apps favoritas",
-                                            "cues": [
-                                              {
-                                                "icon": "📱",
-                                                "label": "DEVICE?",
-                                                "labelEs": "¿Qué dispositivo usas?",
-                                                "questionExample": "What device do you use?"
-                                              },
-                                              {
-                                                "icon": "🎮",
-                                                "label": "APP OR GAME?",
-                                                "labelEs": "¿Cuál es tu app o juego preferido?",
-                                                "questionExample": "What is your favorite app?"
-                                              },
-                                              {
-                                                "icon": "⚡",
-                                                "label": "WHY?",
-                                                "labelEs": "¿Por qué te gusta tanto?",
-                                                "questionExample": "Why do you love it?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Tech Friend",
-                                              "labelEs": "Amigo Tech",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "📱"
-                                            },
-                                            "roleB": {
-                                              "label": "Creator / Gamer",
-                                              "labelEs": "Creador / Gamer",
-                                              "action": "Show & Explain",
-                                              "actionEs": "Mostrar y explicar",
-                                              "avatar": "🎧"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "📱",
-                                                "word": "smartphone",
-                                                "translation": "celular"
-                                              },
-                                              {
-                                                "emoji": "🎮",
-                                                "word": "gaming console",
-                                                "translation": "consola de juegos"
-                                              },
-                                              {
-                                                "emoji": "🎧",
-                                                "word": "headphones",
-                                                "translation": "audífonos"
-                                              },
-                                              {
-                                                "emoji": "📲",
-                                                "word": "cool app",
-                                                "translation": "app genial"
-                                              },
-                                              {
-                                                "emoji": "⚡",
-                                                "word": "fast & smooth",
-                                                "translation": "rápido y fluido"
-                                              },
-                                              {
-                                                "emoji": "🌐",
-                                                "word": "play with friends",
-                                                "translation": "jugar con amigos"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "What is your favorite gadget right now?",
-                                                  "es": "¿Cuál es tu gadget favorito ahora mismo?"
-                                                },
-                                                {
-                                                  "en": "What app or game do you use the most?",
-                                                  "es": "¿Qué app o juego usas más?"
-                                                },
-                                                {
-                                                  "en": "Can you show me how it works?",
-                                                  "es": "¿Puedes mostrarme cómo funciona?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "I love using my tablet for drawing and gaming.",
-                                                  "es": "Me encanta usar mi tablet para dibujar y jugar."
-                                                },
-                                                {
-                                                  "en": "I play online multiplayer games with friends.",
-                                                  "es": "Juego títulos multijugador en línea con amigos."
-                                                },
-                                                {
-                                                  "en": "It is super fast and very entertaining!",
-                                                  "es": "¡Es súper rápido y muy entretenido!"
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Show Off Your Gadgets & Tech 📱",
+  "topicEs": "Muestra tus dispositivos y tecnología",
+  "cues": [
+    {
+      "icon": "📱",
+      "label": "WHICH DEVICE?",
+      "labelEs": "¿Qué dispositivo tienes?",
+      "questionExample": "What gadget do you use every day?"
+    },
+    {
+      "icon": "🎧",
+      "label": "WHAT DO YOU DO?",
+      "labelEs": "¿Para qué lo usas?",
+      "questionExample": "Do you listen to music or play games?"
+    },
+    {
+      "icon": "⭐",
+      "label": "WHY COOL?",
+      "labelEs": "¿Por qué te gusta?",
+      "questionExample": "Why is it your favorite tech?"
+    }
+  ],
+  "roleA": {
+    "label": "Tech Friend A",
+    "labelEs": "Amigo A",
+    "action": "Ask about gadget",
+    "actionEs": "Preguntar por el dispositivo",
+    "avatar": "📱"
+  },
+  "roleB": {
+    "label": "Tech Friend B",
+    "labelEs": "Amigo B",
+    "action": "Show device",
+    "actionEs": "Mostrar dispositivo",
+    "avatar": "🎧"
+  },
+  "helpWords": [
+    {
+      "emoji": "📱",
+      "word": "smartphone",
+      "translation": "celular"
+    },
+    {
+      "emoji": "🎧",
+      "word": "headphones",
+      "translation": "audífonos"
+    },
+    {
+      "emoji": "🎮",
+      "word": "gaming console",
+      "translation": "consola de juegos"
+    },
+    {
+      "emoji": "💻",
+      "word": "laptop",
+      "translation": "portátil"
+    },
+    {
+      "emoji": "🔋",
+      "word": "battery life",
+      "translation": "batería"
+    },
+    {
+      "emoji": "🔥",
+      "word": "super fast",
+      "translation": "súper rápido"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "What is your favorite tech device?",
+        "es": "¿Cuál es tu dispositivo tecnológico favorito?"
+      },
+      {
+        "en": "Do you have wireless headphones?",
+        "es": "¿Tienes audífonos inalámbricos?"
+      },
+      {
+        "en": "What games do you play on it?",
+        "es": "¿Qué juegos juegas en él?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "My smartphone and my gaming headphones.",
+        "es": "Mi teléfono celular y mis audífonos de juego."
+      },
+      {
+        "en": "I use it for listening to music and texting.",
+        "es": "Lo uso para escuchar música y chatear."
+      },
+      {
+        "en": "It has a great camera and fast screen.",
+        "es": "Tiene una cámara genial y pantalla rápida."
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -959,105 +959,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Order at the counter 🍕 / Pide en la cafetería 🍕",
                     description: "Order food and drinks in a cafe or restaurant.",
                     speakingScene: {
-                                            "topic": "Order at the cafeteria counter",
-                                            "topicEs": "Pide tu comida y bebida en el mostrador",
-                                            "cues": [
-                                              {
-                                                "icon": "🍕",
-                                                "label": "FOOD?",
-                                                "labelEs": "¿Qué comida quieres?",
-                                                "questionExample": "What would you like to eat?"
-                                              },
-                                              {
-                                                "icon": "🥤",
-                                                "label": "DRINK?",
-                                                "labelEs": "¿Qué bebida prefieres?",
-                                                "questionExample": "What would you like to drink?"
-                                              },
-                                              {
-                                                "icon": "💵",
-                                                "label": "PRICE?",
-                                                "labelEs": "¿Cuánto cuesta en total?",
-                                                "questionExample": "How much does it cost?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Customer",
-                                              "labelEs": "Cliente",
-                                              "action": "Order",
-                                              "actionEs": "Pedir",
-                                              "avatar": "🛒"
-                                            },
-                                            "roleB": {
-                                              "label": "Cashier",
-                                              "labelEs": "Cajero / Mesero",
-                                              "action": "Serve",
-                                              "actionEs": "Atender",
-                                              "avatar": "🧑‍🍳"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "🍕",
-                                                "word": "pizza slice",
-                                                "translation": "porción de pizza"
-                                              },
-                                              {
-                                                "emoji": "🥤",
-                                                "word": "cold soda",
-                                                "translation": "gaseosa fría"
-                                              },
-                                              {
-                                                "emoji": "🍟",
-                                                "word": "french fries",
-                                                "translation": "papas fritas"
-                                              },
-                                              {
-                                                "emoji": "🍔",
-                                                "word": "burger",
-                                                "translation": "hamburguesa"
-                                              },
-                                              {
-                                                "emoji": "💵",
-                                                "word": "total price",
-                                                "translation": "precio total"
-                                              },
-                                              {
-                                                "emoji": "🙏",
-                                                "word": "please & thanks",
-                                                "translation": "por favor y gracias"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "Hello! Can I have a slice of pizza, please?",
-                                                  "es": "¡Hola! ¿Me da una porción de pizza, por favor?"
-                                                },
-                                                {
-                                                  "en": "How much is the total?",
-                                                  "es": "¿Cuánto es el total?"
-                                                },
-                                                {
-                                                  "en": "Do you have cold orange juice?",
-                                                  "es": "¿Tienen jugo de naranja frío?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "Sure! Would you like a drink with that?",
-                                                  "es": "¡Claro! ¿Desea una bebida con eso?"
-                                                },
-                                                {
-                                                  "en": "That will be eight dollars, please.",
-                                                  "es": "Serán ocho dólares, por favor."
-                                                },
-                                                {
-                                                  "en": "Here is your order. Enjoy your meal!",
-                                                  "es": "Aquí tiene su pedido. ¡Buen provecho!"
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Order Snacks at the Counter 🍕",
+  "topicEs": "Pide comida en la cafetería",
+  "cues": [
+    {
+      "icon": "🍕",
+      "label": "SNACK / FOOD?",
+      "labelEs": "¿Qué comida pides?",
+      "questionExample": "What snack or food would you like?"
+    },
+    {
+      "icon": "🥤",
+      "label": "DRINK?",
+      "labelEs": "¿Qué bebida prefieres?",
+      "questionExample": "Do you want soda, juice, or water?"
+    },
+    {
+      "icon": "💵",
+      "label": "HOW MUCH?",
+      "labelEs": "¿Cuánto cuesta?",
+      "questionExample": "How much is that in total?"
+    }
+  ],
+  "roleA": {
+    "label": "Hungry Teen",
+    "labelEs": "Cliente",
+    "action": "Order food",
+    "actionEs": "Pedir comida",
+    "avatar": "😋"
+  },
+  "roleB": {
+    "label": "Snack Cashier",
+    "labelEs": "Cajero",
+    "action": "Take order & price",
+    "actionEs": "Tomar pedido y cobrar",
+    "avatar": "🧑‍🍳"
+  },
+  "helpWords": [
+    {
+      "emoji": "🍕",
+      "word": "pizza slice",
+      "translation": "porción de pizza"
+    },
+    {
+      "emoji": "🍔",
+      "word": "burger & fries",
+      "translation": "hamburguesa y papas"
+    },
+    {
+      "emoji": "🥤",
+      "word": "cold soda",
+      "translation": "gaseosa fría"
+    },
+    {
+      "emoji": "🧃",
+      "word": "fruit juice",
+      "translation": "jugo de fruta"
+    },
+    {
+      "emoji": "🍪",
+      "word": "chocolate cookie",
+      "translation": "galleta de chocolate"
+    },
+    {
+      "emoji": "💵",
+      "word": "five dollars",
+      "translation": "cinco dólares"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Can I get a slice of pizza and a soda, please?",
+        "es": "¿Me da una porción de pizza y una gaseosa, por favor?"
+      },
+      {
+        "en": "How much is the chocolate cookie?",
+        "es": "¿Cuánto cuesta la galleta de chocolate?"
+      },
+      {
+        "en": "Do you want fries with that?",
+        "es": "¿Deseas papas fritas con eso?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "Here is your pizza and cold drink!",
+        "es": "¡Aquí tienes tu pizza y bebida fría!"
+      },
+      {
+        "en": "That is six dollars in total.",
+        "es": "Son seis dólares en total."
+      },
+      {
+        "en": "Thank you! Have a great lunch!",
+        "es": "¡Gracias! ¡Que tengas buen almuerzo!"
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -1168,105 +1168,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Shapes & Patterns · Shapes & Patterns 💬 / Hablen de Shapes & Patterns · Shapes & Patterns 💬",
                     description: "Practice real conversation about Shapes & Patterns · Shapes & Patterns.",
                     speakingScene: {
-                                            "topic": "Talk about Shapes & Patterns · Shapes & Patterns",
-                                            "topicEs": "Hablen sobre Shapes & Patterns · Shapes & Patterns",
-                                            "cues": [
-                                              {
-                                                "icon": "🎯",
-                                                "label": "TOPIC?",
-                                                "labelEs": "¿Tema principal?",
-                                                "questionExample": "What do you think about Shapes & Patterns · Shapes & Patterns?"
-                                              },
-                                              {
-                                                "icon": "💡",
-                                                "label": "EXAMPLE?",
-                                                "labelEs": "¿Ejemplo de la vida real?",
-                                                "questionExample": "Can you give an example?"
-                                              },
-                                              {
-                                                "icon": "⭐",
-                                                "label": "OPINION?",
-                                                "labelEs": "¿Por qué es importante?",
-                                                "questionExample": "Why is it important?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Teacher",
-                                              "labelEs": "Profesor",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "👩‍🏫"
-                                            },
-                                            "roleB": {
-                                              "label": "Student",
-                                              "labelEs": "Estudiante",
-                                              "action": "Answer",
-                                              "actionEs": "Responder",
-                                              "avatar": "👨‍🎓"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "💬",
-                                                "word": "practice",
-                                                "translation": "practicar"
-                                              },
-                                              {
-                                                "emoji": "💡",
-                                                "word": "real example",
-                                                "translation": "ejemplo real"
-                                              },
-                                              {
-                                                "emoji": "⭐",
-                                                "word": "important",
-                                                "translation": "importante"
-                                              },
-                                              {
-                                                "emoji": "🗣️",
-                                                "word": "speak clearly",
-                                                "translation": "hablar claro"
-                                              },
-                                              {
-                                                "emoji": "✨",
-                                                "word": "fluency",
-                                                "translation": "fluidez"
-                                              },
-                                              {
-                                                "emoji": "🎯",
-                                                "word": "goal",
-                                                "translation": "meta"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "How would you explain this in your own words?",
-                                                  "es": "¿Cómo explicarías esto con tus propias palabras?"
-                                                },
-                                                {
-                                                  "en": "What is a good example from your daily life?",
-                                                  "es": "¿Cuál es un buen ejemplo de tu vida diaria?"
-                                                },
-                                                {
-                                                  "en": "What do you think about this topic?",
-                                                  "es": "¿Qué piensas sobre este tema?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "In my opinion, this helps us communicate clearly.",
-                                                  "es": "En mi opinión, esto nos ayuda a comunicarnos con claridad."
-                                                },
-                                                {
-                                                  "en": "For example, I use this when talking with friends.",
-                                                  "es": "Por ejemplo, uso esto al hablar con amigos."
-                                                },
-                                                {
-                                                  "en": "I feel very confident practicing this today.",
-                                                  "es": "Me siento muy seguro practicando esto hoy."
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Describe Geometric Art & Patterns 🎨",
+  "topicEs": "Describe arte geométrico y patrones",
+  "cues": [
+    {
+      "icon": "🔺",
+      "label": "SHAPES?",
+      "labelEs": "¿Qué figuras geométricas hay?",
+      "questionExample": "What shapes do you see in the design?"
+    },
+    {
+      "icon": "🌈",
+      "label": "COLORS & PATTERNS?",
+      "labelEs": "¿Qué colores y patrones?",
+      "questionExample": "Is it striped, dotted, or colorful?"
+    },
+    {
+      "icon": "🖼️",
+      "label": "WHERE TO USE?",
+      "labelEs": "¿Dónde usarías este diseño?",
+      "questionExample": "Would you put this on a t-shirt or poster?"
+    }
+  ],
+  "roleA": {
+    "label": "Designer A",
+    "labelEs": "Diseñador A",
+    "action": "Show art pattern",
+    "actionEs": "Mostrar patrón de arte",
+    "avatar": "🎨"
+  },
+  "roleB": {
+    "label": "Designer B",
+    "labelEs": "Diseñador B",
+    "action": "Describe shapes",
+    "actionEs": "Describir figuras",
+    "avatar": "📐"
+  },
+  "helpWords": [
+    {
+      "emoji": "🔺",
+      "word": "triangles",
+      "translation": "triángulos"
+    },
+    {
+      "emoji": "🟦",
+      "word": "squares & rectangles",
+      "translation": "cuadrados y rectángulos"
+    },
+    {
+      "emoji": "⚪",
+      "word": "circles",
+      "translation": "círculos"
+    },
+    {
+      "emoji": "🦓",
+      "word": "striped pattern",
+      "translation": "patrón a rayas"
+    },
+    {
+      "emoji": "🎨",
+      "word": "bright colors",
+      "translation": "colores brillantes"
+    },
+    {
+      "emoji": "👕",
+      "word": "t-shirt graphic",
+      "translation": "gráfico de camiseta"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "What shapes can you see in this modern poster?",
+        "es": "¿Qué figuras puedes ver en este póster moderno?"
+      },
+      {
+        "en": "Do you like the red triangles and yellow circles?",
+        "es": "¿Te gustan los triángulos rojos y círculos amarillos?"
+      },
+      {
+        "en": "Is this pattern cool for a hoodie?",
+        "es": "¿Este patrón se ve genial para una sudadera?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "I see big blue circles and orange squares.",
+        "es": "Veo círculos azules grandes y cuadrados naranjas."
+      },
+      {
+        "en": "The pattern looks very energetic and artistic.",
+        "es": "El patrón se ve muy dinámico y artístico."
+      },
+      {
+        "en": "Yes! It would look awesome on a jacket.",
+        "es": "¡Sí! Se vería increíble en una chaqueta."
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -1377,105 +1377,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Talk about school & backpack 🎒 / Hablen de la escuela 🎒",
                     description: "Discuss school subjects, supplies in your bag, and favorite classes.",
                     speakingScene: {
-                                            "topic": "Talk about school & your backpack",
-                                            "topicEs": "Hablen de sus materias y su mochila",
-                                            "cues": [
-                                              {
-                                                "icon": "📚",
-                                                "label": "SUBJECTS?",
-                                                "labelEs": "¿Qué materias tienes?",
-                                                "questionExample": "What classes do you have today?"
-                                              },
-                                              {
-                                                "icon": "✏️",
-                                                "label": "SUPPLIES?",
-                                                "labelEs": "¿Qué útiles llevas?",
-                                                "questionExample": "What is inside your bag?"
-                                              },
-                                              {
-                                                "icon": "⭐",
-                                                "label": "FAVORITE?",
-                                                "labelEs": "¿Cuál es tu clase preferida?",
-                                                "questionExample": "Which class do you love most?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Classmate A",
-                                              "labelEs": "Compañero A",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "🙋‍♂️"
-                                            },
-                                            "roleB": {
-                                              "label": "Classmate B",
-                                              "labelEs": "Compañero B",
-                                              "action": "Share",
-                                              "actionEs": "Compartir",
-                                              "avatar": "🎒"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "📐",
-                                                "word": "math class",
-                                                "translation": "clase de matemáticas"
-                                              },
-                                              {
-                                                "emoji": "🔬",
-                                                "word": "science",
-                                                "translation": "ciencias"
-                                              },
-                                              {
-                                                "emoji": "📖",
-                                                "word": "english",
-                                                "translation": "inglés"
-                                              },
-                                              {
-                                                "emoji": "✏️",
-                                                "word": "notebook & pen",
-                                                "translation": "cuaderno y esfero"
-                                              },
-                                              {
-                                                "emoji": "🎒",
-                                                "word": "backpack",
-                                                "translation": "mochila"
-                                              },
-                                              {
-                                                "emoji": "💻",
-                                                "word": "laptop",
-                                                "translation": "computador"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "What classes do you have this morning?",
-                                                  "es": "¿Qué clases tienes esta mañana?"
-                                                },
-                                                {
-                                                  "en": "What is inside your school backpack?",
-                                                  "es": "¿Qué hay dentro de tu mochila escolar?"
-                                                },
-                                                {
-                                                  "en": "Which subject is your favorite?",
-                                                  "es": "¿Qué materia es tu favorita?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "I have math, science, and English class.",
-                                                  "es": "Tengo clase de matemáticas, ciencias e inglés."
-                                                },
-                                                {
-                                                  "en": "I have three notebooks, pens, and my laptop.",
-                                                  "es": "Tengo tres cuadernos, esferos y mi portátil."
-                                                },
-                                                {
-                                                  "en": "My favorite subject is English because it is fun!",
-                                                  "es": "¡Mi materia favorita es inglés porque es divertida!"
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Check Your Backpack & Subjects 🎒",
+  "topicEs": "Revisa tu mochila y materias",
+  "cues": [
+    {
+      "icon": "📚",
+      "label": "CLASSES TODAY?",
+      "labelEs": "¿Qué clases tienes?",
+      "questionExample": "What subjects do you have today?"
+    },
+    {
+      "icon": "✏️",
+      "label": "SUPPLIES?",
+      "labelEs": "¿Qué útiles llevas?",
+      "questionExample": "Do you have pens, pencils, or notebooks?"
+    },
+    {
+      "icon": "⭐",
+      "label": "FAVORITE CLASS?",
+      "labelEs": "¿Cuál es tu favorita?",
+      "questionExample": "Which subject is your favorite?"
+    }
+  ],
+  "roleA": {
+    "label": "Student A",
+    "labelEs": "Estudiante A",
+    "action": "Ask school supplies",
+    "actionEs": "Preguntar útiles",
+    "avatar": "🎒"
+  },
+  "roleB": {
+    "label": "Student B",
+    "labelEs": "Estudiante B",
+    "action": "Show backpack",
+    "actionEs": "Mostrar mochila",
+    "avatar": "✏️"
+  },
+  "helpWords": [
+    {
+      "emoji": "📐",
+      "word": "math class",
+      "translation": "matemáticas"
+    },
+    {
+      "emoji": "🔬",
+      "word": "science",
+      "translation": "ciencias"
+    },
+    {
+      "emoji": "📖",
+      "word": "english book",
+      "translation": "libro de inglés"
+    },
+    {
+      "emoji": "✏️",
+      "word": "pencils & eraser",
+      "translation": "lápices y borrador"
+    },
+    {
+      "emoji": "🎒",
+      "word": "heavy backpack",
+      "translation": "mochila pesada"
+    },
+    {
+      "emoji": "📏",
+      "word": "ruler & scissors",
+      "translation": "regla y tijeras"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "What classes do you have this morning?",
+        "es": "¿Qué clases tienes esta mañana?"
+      },
+      {
+        "en": "Can I borrow a pencil and an eraser?",
+        "es": "¿Me prestas un lápiz y un borrador?"
+      },
+      {
+        "en": "Why is English your favorite class?",
+        "es": "¿Por qué el inglés es tu clase favorita?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "I have math, art, and English today.",
+        "es": "Hoy tengo matemáticas, arte e inglés."
+      },
+      {
+        "en": "Sure! Here is a blue pen and a pencil.",
+        "es": "¡Claro! Aquí tienes un esfero azul y un lápiz."
+      },
+      {
+        "en": "Because it is fun and we practice speaking!",
+        "es": "¡Porque es divertido y practicamos hablar!"
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -1586,105 +1586,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Talk about pets & animals 🐶 / Hablen de mascotas 🐶",
                     description: "Describe favorite pets, their names, age, and tricks.",
                     speakingScene: {
-                                            "topic": "Talk about pets & animal friends",
-                                            "topicEs": "Hablen de sus mascotas y animales favoritos",
-                                            "cues": [
-                                              {
-                                                "icon": "🐶",
-                                                "label": "PET?",
-                                                "labelEs": "¿Qué animal o mascota es?",
-                                                "questionExample": "What pet do you have?"
-                                              },
-                                              {
-                                                "icon": "✨",
-                                                "label": "NAME & AGE?",
-                                                "labelEs": "¿Cómo se llama y qué edad tiene?",
-                                                "questionExample": "What is its name?"
-                                              },
-                                              {
-                                                "icon": "🎾",
-                                                "label": "TRICKS?",
-                                                "labelEs": "¿Qué trucos puede hacer?",
-                                                "questionExample": "What can your pet do?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Pet Lover",
-                                              "labelEs": "Amante de Mascotas",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "🐾"
-                                            },
-                                            "roleB": {
-                                              "label": "Pet Owner",
-                                              "labelEs": "Dueño de Mascota",
-                                              "action": "Introduce",
-                                              "actionEs": "Presentar mascota",
-                                              "avatar": "🐕"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "🐕",
-                                                "word": "playful dog",
-                                                "translation": "perro juguetón"
-                                              },
-                                              {
-                                                "emoji": "🐱",
-                                                "word": "cute cat",
-                                                "translation": "gato tierno"
-                                              },
-                                              {
-                                                "emoji": "🎾",
-                                                "word": "catch the ball",
-                                                "translation": "atrapar la pelota"
-                                              },
-                                              {
-                                                "emoji": "🏃",
-                                                "word": "run fast",
-                                                "translation": "correr rápido"
-                                              },
-                                              {
-                                                "emoji": "🦴",
-                                                "word": "dog treats",
-                                                "translation": "premios / comida"
-                                              },
-                                              {
-                                                "emoji": "❤️",
-                                                "word": "friendly",
-                                                "translation": "amigable"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "Do you have any pets at home?",
-                                                  "es": "¿Tienes mascotas en casa?"
-                                                },
-                                                {
-                                                  "en": "What is your pet's name and how old is it?",
-                                                  "es": "¿Cómo se llama tu mascota y qué edad tiene?"
-                                                },
-                                                {
-                                                  "en": "What fun tricks can your pet do?",
-                                                  "es": "¿Qué trucos divertidos puede hacer tu mascota?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "Yes, I have a golden dog named Toby.",
-                                                  "es": "Sí, tengo un perro dorado llamado Toby."
-                                                },
-                                                {
-                                                  "en": "He is two years old and very playful.",
-                                                  "es": "Tiene dos años y es muy juguetón."
-                                                },
-                                                {
-                                                  "en": "He can run super fast and catch the ball!",
-                                                  "es": "¡Puede correr súper rápido y atrapar la pelota!"
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Talk About Pets & Animals 🐶",
+  "topicEs": "Habla sobre mascotas y animales",
+  "cues": [
+    {
+      "icon": "🐶",
+      "label": "PET SPECIES?",
+      "labelEs": "¿Qué mascota tienes?",
+      "questionExample": "Do you have a dog, a cat, or a bird?"
+    },
+    {
+      "icon": "🐾",
+      "label": "NAME & TRAITS?",
+      "labelEs": "¿Cómo se llama y cómo es?",
+      "questionExample": "What is your pet's name and favorite trick?"
+    },
+    {
+      "icon": "🦁",
+      "label": "WILD FAVORITE?",
+      "labelEs": "¿Animal salvaje favorito?",
+      "questionExample": "What is your favorite animal in the world?"
+    }
+  ],
+  "roleA": {
+    "label": "Pet Lover A",
+    "labelEs": "Amigo A",
+    "action": "Ask about pets",
+    "actionEs": "Preguntar sobre mascotas",
+    "avatar": "🐶"
+  },
+  "roleB": {
+    "label": "Pet Lover B",
+    "labelEs": "Amigo B",
+    "action": "Describe animal",
+    "actionEs": "Describir animal",
+    "avatar": "🐱"
+  },
+  "helpWords": [
+    {
+      "emoji": "🐶",
+      "word": "playful dog",
+      "translation": "perro juguetón"
+    },
+    {
+      "emoji": "🐱",
+      "word": "cute cat",
+      "translation": "gato tierno"
+    },
+    {
+      "emoji": "🦜",
+      "word": "colorful parrot",
+      "translation": "loro colorido"
+    },
+    {
+      "emoji": "🐾",
+      "word": "fluffy fur",
+      "translation": "pelaje esponjoso"
+    },
+    {
+      "emoji": "🦴",
+      "word": "fetch a ball",
+      "translation": "traer la pelota"
+    },
+    {
+      "emoji": "🦁",
+      "word": "wild lion",
+      "translation": "león salvaje"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Do you have any pets living with you?",
+        "es": "¿Tienes alguna mascota en tu casa?"
+      },
+      {
+        "en": "What does your pet love to do?",
+        "es": "¿Qué le encanta hacer a tu mascota?"
+      },
+      {
+        "en": "What wild animal do you find most interesting?",
+        "es": "¿Qué animal salvaje te parece más interesante?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "Yes! I have a golden puppy named Rocky.",
+        "es": "¡Sí! Tengo un cachorro dorado llamado Rocky."
+      },
+      {
+        "en": "He loves to jump, bark, and play in the garden.",
+        "es": "Le encanta saltar, ladrar y jugar en el jardín."
+      },
+      {
+        "en": "I love wild panthers and dolphins.",
+        "es": "Me encantan las panteras salvajes y los delfines."
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -1795,105 +1795,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Talk about the schedule ⏰ / Hablen del horario ⏰",
                     description: "Ask and answer about times, numbers, and dates.",
                     speakingScene: {
-                                            "topic": "Talk about the schedule",
-                                            "topicEs": "Hablen del horario y las fechas",
-                                            "cues": [
-                                              {
-                                                "icon": "⏰",
-                                                "label": "TIME?",
-                                                "labelEs": "¿Qué hora es?",
-                                                "questionExample": "What time is it?"
-                                              },
-                                              {
-                                                "icon": "🔢",
-                                                "label": "NUMBER?",
-                                                "labelEs": "¿Cuántos hay?",
-                                                "questionExample": "How many items are there?"
-                                              },
-                                              {
-                                                "icon": "📅",
-                                                "label": "WHEN?",
-                                                "labelEs": "¿Cuándo es el evento?",
-                                                "questionExample": "When does it start?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Teacher",
-                                              "labelEs": "Profesor",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "👩‍🏫"
-                                            },
-                                            "roleB": {
-                                              "label": "Student",
-                                              "labelEs": "Estudiante",
-                                              "action": "Answer",
-                                              "actionEs": "Responder",
-                                              "avatar": "👨‍🎓"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "🕖",
-                                                "word": "seven o'clock",
-                                                "translation": "las 7 en punto"
-                                              },
-                                              {
-                                                "emoji": "🌅",
-                                                "word": "morning",
-                                                "translation": "la mañana"
-                                              },
-                                              {
-                                                "emoji": "🌇",
-                                                "word": "afternoon",
-                                                "translation": "la tarde"
-                                              },
-                                              {
-                                                "emoji": "🌙",
-                                                "word": "night",
-                                                "translation": "la noche"
-                                              },
-                                              {
-                                                "emoji": "🎂",
-                                                "word": "birthday",
-                                                "translation": "cumpleaños"
-                                              },
-                                              {
-                                                "emoji": "📅",
-                                                "word": "weekend",
-                                                "translation": "fin de semana"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "What time does the class start?",
-                                                  "es": "¿A qué hora empieza la clase?"
-                                                },
-                                                {
-                                                  "en": "When is your birthday?",
-                                                  "es": "¿Cuándo es tu cumpleaños?"
-                                                },
-                                                {
-                                                  "en": "How old are you?",
-                                                  "es": "¿Cuántos años tienes?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "It starts at eight thirty in the morning.",
-                                                  "es": "Empieza a las ocho y media de la mañana."
-                                                },
-                                                {
-                                                  "en": "My birthday is in September.",
-                                                  "es": "Mi cumpleaños es en septiembre."
-                                                },
-                                                {
-                                                  "en": "I am fifteen years old.",
-                                                  "es": "Tengo quince años."
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Compare Cool Hobbies & Free Time 🛹",
+  "topicEs": "Compara pasatiempos y tiempo libre",
+  "cues": [
+    {
+      "icon": "🛹",
+      "label": "FAVORITE HOBBY?",
+      "labelEs": "¿Qué pasatiempo te gusta?",
+      "questionExample": "What do you do when you are free?"
+    },
+    {
+      "icon": "🎮",
+      "label": "GAMING OR SPORTS?",
+      "labelEs": "¿Juegos o deportes?",
+      "questionExample": "Do you play games on console or PC?"
+    },
+    {
+      "icon": "⚡",
+      "label": "HOW OFTEN?",
+      "labelEs": "¿Con qué frecuencia?",
+      "questionExample": "Do you practice every day or on weekends?"
+    }
+  ],
+  "roleA": {
+    "label": "Teen A",
+    "labelEs": "Joven A",
+    "action": "Ask hobbies",
+    "actionEs": "Preguntar pasatiempos",
+    "avatar": "🛹"
+  },
+  "roleB": {
+    "label": "Teen B",
+    "labelEs": "Joven B",
+    "action": "Share passions",
+    "actionEs": "Compartir pasiones",
+    "avatar": "🎮"
+  },
+  "helpWords": [
+    {
+      "emoji": "🛹",
+      "word": "skateboarding",
+      "translation": "patineta"
+    },
+    {
+      "emoji": "🎮",
+      "word": "multiplayer gaming",
+      "translation": "juegos multijugador"
+    },
+    {
+      "emoji": "🎸",
+      "word": "play acoustic guitar",
+      "translation": "tocar guitarra"
+    },
+    {
+      "emoji": "🎨",
+      "word": "sketch anime",
+      "translation": "dibujar anime"
+    },
+    {
+      "emoji": "⚽",
+      "word": "soccer matches",
+      "translation": "partidos de fútbol"
+    },
+    {
+      "emoji": "🎧",
+      "word": "produce beats",
+      "translation": "producir música"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "What is your number one hobby after school?",
+        "es": "¿Cuál es tu pasatiempo número uno después del colegio?"
+      },
+      {
+        "en": "Do you play online multiplayer games with friends?",
+        "es": "¿Juegas videojuegos online con amigos?"
+      },
+      {
+        "en": "How many hours a week do you practice?",
+        "es": "¿Cuántas horas a la semana practicas?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "I skate with my friends and record cool tricks.",
+        "es": "Monto en patineta con mis amigos y grabo trucos."
+      },
+      {
+        "en": "Yes! We team up online every Friday night.",
+        "es": "¡Sí! Hacemos equipo online todos los viernes por la noche."
+      },
+      {
+        "en": "About four hours every weekend.",
+        "es": "Alrededor de cuatro horas cada fin de semana."
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -2004,105 +2004,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Talk about this family 👨‍👩‍👧‍👦 / Hablen de esta familia 👨‍👩‍👧‍👦",
                     description: "Discuss family members, relationships, and feelings.",
                     speakingScene: {
-                                            "topic": "Talk about this family",
-                                            "topicEs": "Hablen de esta familia",
-                                            "cues": [
-                                              {
-                                                "icon": "👤",
-                                                "label": "WHO?",
-                                                "labelEs": "¿Quiénes son en la foto?",
-                                                "questionExample": "Who is he?"
-                                              },
-                                              {
-                                                "icon": "💙",
-                                                "label": "RELATION?",
-                                                "labelEs": "¿Qué parentesco tienen?",
-                                                "questionExample": "Is that your brother?"
-                                              },
-                                              {
-                                                "icon": "😊",
-                                                "label": "FEELINGS",
-                                                "labelEs": "¿Cómo se sienten hoy?",
-                                                "questionExample": "Are they happy?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Teacher",
-                                              "labelEs": "Profesor",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "👩‍🏫"
-                                            },
-                                            "roleB": {
-                                              "label": "Student",
-                                              "labelEs": "Estudiante",
-                                              "action": "Answer",
-                                              "actionEs": "Responder",
-                                              "avatar": "👨‍🎓"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "👩",
-                                                "word": "mother",
-                                                "translation": "madre"
-                                              },
-                                              {
-                                                "emoji": "👨",
-                                                "word": "father",
-                                                "translation": "padre"
-                                              },
-                                              {
-                                                "emoji": "👦",
-                                                "word": "brother",
-                                                "translation": "hermano"
-                                              },
-                                              {
-                                                "emoji": "👧",
-                                                "word": "sister",
-                                                "translation": "hermana"
-                                              },
-                                              {
-                                                "emoji": "😃",
-                                                "word": "happy",
-                                                "translation": "feliz"
-                                              },
-                                              {
-                                                "emoji": "🤩",
-                                                "word": "excited",
-                                                "translation": "emocionado/a"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "Who is this in the picture?",
-                                                  "es": "¿Quién es esta persona en la foto?"
-                                                },
-                                                {
-                                                  "en": "How does the father feel today?",
-                                                  "es": "¿Cómo se siente el padre hoy?"
-                                                },
-                                                {
-                                                  "en": "Is this your brother or your cousin?",
-                                                  "es": "¿Es este tu hermano o tu primo?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "This is the mother and father.",
-                                                  "es": "Esta es la madre y el padre."
-                                                },
-                                                {
-                                                  "en": "He feels very happy and relaxed.",
-                                                  "es": "Él se siente muy feliz y relajado."
-                                                },
-                                                {
-                                                  "en": "Yes, this is my brother Lucas.",
-                                                  "es": "Sí, este es mi hermano Lucas."
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Describe Family Members & Friends 👨‍👩‍👧",
+  "topicEs": "Describe a tu familia y amigos",
+  "cues": [
+    {
+      "icon": "👨‍👩‍👧",
+      "label": "FAMILY MEMBERS?",
+      "labelEs": "¿Quiénes están en tu familia?",
+      "questionExample": "How many people are in your family?"
+    },
+    {
+      "icon": "🤝",
+      "label": "BEST FRIEND?",
+      "labelEs": "¿Quién es tu mejor amigo/a?",
+      "questionExample": "Tell me about your best friend!"
+    },
+    {
+      "icon": "🎬",
+      "label": "FUN ACTIVITIES?",
+      "labelEs": "¿Qué hacen juntos?",
+      "questionExample": "What do you like to do on weekends together?"
+    }
+  ],
+  "roleA": {
+    "label": "Friend A",
+    "labelEs": "Amigo A",
+    "action": "Ask about circle",
+    "actionEs": "Preguntar por su círculo",
+    "avatar": "🙋"
+  },
+  "roleB": {
+    "label": "Friend B",
+    "labelEs": "Amigo B",
+    "action": "Introduce people",
+    "actionEs": "Presentar personas",
+    "avatar": "👨‍👩‍👧"
+  },
+  "helpWords": [
+    {
+      "emoji": "👩",
+      "word": "loving parents",
+      "translation": "padres cariñosos"
+    },
+    {
+      "emoji": "👦",
+      "word": "older brother",
+      "translation": "hermano mayor"
+    },
+    {
+      "emoji": "👧",
+      "word": "little sister",
+      "translation": "hermana pequeña"
+    },
+    {
+      "emoji": "🤝",
+      "word": "best friend",
+      "translation": "mejor amigo/a"
+    },
+    {
+      "emoji": "🍿",
+      "word": "movie night",
+      "translation": "noche de películas"
+    },
+    {
+      "emoji": "😄",
+      "word": "funny and kind",
+      "translation": "chistoso y amable"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "How many brothers or sisters do you have?",
+        "es": "¿Cuántos hermanos o hermanas tienes?"
+      },
+      {
+        "en": "What makes your best friend so cool?",
+        "es": "¿Qué hace a tu mejor amigo tan genial?"
+      },
+      {
+        "en": "What does your family do on Saturday evenings?",
+        "es": "¿Qué hace tu familia los sábados por la tarde?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "I have two older brothers and a little sister.",
+        "es": "Tengo dos hermanos mayores y una hermanita."
+      },
+      {
+        "en": "My best friend always makes me laugh and helps me.",
+        "es": "Mi mejor amigo siempre me hace reír y me ayuda."
+      },
+      {
+        "en": "We order pizza and play board games together.",
+        "es": "Pedimos pizza y jugamos juegos de mesa juntos."
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -2332,105 +2332,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Show your favorite tech 📱 / Muestra tu tecnología 📱",
                     description: "Compare phones, consoles, apps, and share tech recommendations.",
                     speakingScene: {
-                                            "topic": "Show your favorite tech & apps",
-                                            "topicEs": "Muestra tu tecnología y apps favoritas",
-                                            "cues": [
-                                              {
-                                                "icon": "📱",
-                                                "label": "DEVICE?",
-                                                "labelEs": "¿Qué dispositivo usas?",
-                                                "questionExample": "What device do you use?"
-                                              },
-                                              {
-                                                "icon": "🎮",
-                                                "label": "APP OR GAME?",
-                                                "labelEs": "¿Cuál es tu app o juego preferido?",
-                                                "questionExample": "What is your favorite app?"
-                                              },
-                                              {
-                                                "icon": "⚡",
-                                                "label": "WHY?",
-                                                "labelEs": "¿Por qué te gusta tanto?",
-                                                "questionExample": "Why do you love it?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Tech Friend",
-                                              "labelEs": "Amigo Tech",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "📱"
-                                            },
-                                            "roleB": {
-                                              "label": "Creator / Gamer",
-                                              "labelEs": "Creador / Gamer",
-                                              "action": "Show & Explain",
-                                              "actionEs": "Mostrar y explicar",
-                                              "avatar": "🎧"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "📱",
-                                                "word": "smartphone",
-                                                "translation": "celular"
-                                              },
-                                              {
-                                                "emoji": "🎮",
-                                                "word": "gaming console",
-                                                "translation": "consola de juegos"
-                                              },
-                                              {
-                                                "emoji": "🎧",
-                                                "word": "headphones",
-                                                "translation": "audífonos"
-                                              },
-                                              {
-                                                "emoji": "📲",
-                                                "word": "cool app",
-                                                "translation": "app genial"
-                                              },
-                                              {
-                                                "emoji": "⚡",
-                                                "word": "fast & smooth",
-                                                "translation": "rápido y fluido"
-                                              },
-                                              {
-                                                "emoji": "🌐",
-                                                "word": "play with friends",
-                                                "translation": "jugar con amigos"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "What is your favorite gadget right now?",
-                                                  "es": "¿Cuál es tu gadget favorito ahora mismo?"
-                                                },
-                                                {
-                                                  "en": "What app or game do you use the most?",
-                                                  "es": "¿Qué app o juego usas más?"
-                                                },
-                                                {
-                                                  "en": "Can you show me how it works?",
-                                                  "es": "¿Puedes mostrarme cómo funciona?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "I love using my tablet for drawing and gaming.",
-                                                  "es": "Me encanta usar mi tablet para dibujar y jugar."
-                                                },
-                                                {
-                                                  "en": "I play online multiplayer games with friends.",
-                                                  "es": "Juego títulos multijugador en línea con amigos."
-                                                },
-                                                {
-                                                  "en": "It is super fast and very entertaining!",
-                                                  "es": "¡Es súper rápido y muy entretenido!"
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Record Your 30s Social Media Bio 🤳",
+  "topicEs": "Graba tu bio de 30s para redes sociales",
+  "cues": [
+    {
+      "icon": "🙋",
+      "label": "NAME, AGE, HOMETOWN?",
+      "labelEs": "¿Nombre, edad y ciudad?",
+      "questionExample": "Where are you from and how old are you?"
+    },
+    {
+      "icon": "🏫",
+      "label": "GRADE & PASSION?",
+      "labelEs": "¿Grado escolar y pasión?",
+      "questionExample": "What grade are you in and what do you love?"
+    },
+    {
+      "icon": "✨",
+      "label": "ONE FUN FACT?",
+      "labelEs": "¿Un dato curioso?",
+      "questionExample": "What is one unique thing about you?"
+    }
+  ],
+  "roleA": {
+    "label": "Interviewer",
+    "labelEs": "Entrevistador",
+    "action": "Ask bio questions",
+    "actionEs": "Preguntar bio",
+    "avatar": "🎙️"
+  },
+  "roleB": {
+    "label": "Creator",
+    "labelEs": "Creador",
+    "action": "Pitch bio",
+    "actionEs": "Dar bio de 30s",
+    "avatar": "🤳"
+  },
+  "helpWords": [
+    {
+      "emoji": "🙋",
+      "word": "fourteen years old",
+      "translation": "14 años"
+    },
+    {
+      "emoji": "🌆",
+      "word": "hometown",
+      "translation": "ciudad natal"
+    },
+    {
+      "emoji": "🏫",
+      "word": "eighth grade",
+      "translation": "octavo grado"
+    },
+    {
+      "emoji": "🎨",
+      "word": "creative hobbies",
+      "translation": "pasatiempos creativos"
+    },
+    {
+      "emoji": "🌟",
+      "word": "dream goal",
+      "translation": "meta soñada"
+    },
+    {
+      "emoji": "📲",
+      "word": "follow along",
+      "translation": "sigue la cuenta"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Who are you and where do you live?",
+        "es": "¿Quién eres y dónde vives?"
+      },
+      {
+        "en": "What are your top two favorite hobbies?",
+        "es": "¿Cuáles son tus dos pasatiempos favoritos?"
+      },
+      {
+        "en": "What is your main goal for this year?",
+        "es": "¿Cuál es tu meta principal para este año?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "Hey! I'm David, 14, living in Medellin.",
+        "es": "¡Hola! Soy David, 14 años, vivo en Medellín."
+      },
+      {
+        "en": "I love digital illustration and playing soccer.",
+        "es": "Me encanta la ilustración digital y jugar fútbol."
+      },
+      {
+        "en": "My goal is to speak fluent English and travel!",
+        "es": "¡Mi meta es hablar inglés fluido y viajar!"
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -2541,105 +2541,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Dress for the Weather! ☀️🌧️ / ¡Vístete según el clima! ☀️🌧️",
                     description: "Give the weather forecast and choose the perfect outfit.",
                     speakingScene: {
-                                            "topic": "Dress for the Weather!",
-                                            "topicEs": "¡Vístete según el clima!",
-                                            "cues": [
-                                              {
-                                                "icon": "☀️",
-                                                "label": "WEATHER?",
-                                                "labelEs": "¿Qué clima hace?",
-                                                "questionExample": "What is the weather like today?"
-                                              },
-                                              {
-                                                "icon": "🧥",
-                                                "label": "OUTFIT?",
-                                                "labelEs": "¿Qué ropa usar?",
-                                                "questionExample": "What should I wear today?"
-                                              },
-                                              {
-                                                "icon": "💡",
-                                                "label": "ADVICE?",
-                                                "labelEs": "¿Qué recomiendas llevar?",
-                                                "questionExample": "Do I need an umbrella?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Weather Guide",
-                                              "labelEs": "Guía del Clima",
-                                              "action": "Give forecast",
-                                              "actionEs": "Dar el clima",
-                                              "avatar": "🌤️"
-                                            },
-                                            "roleB": {
-                                              "label": "Fashion Stylist",
-                                              "labelEs": "Estilista",
-                                              "action": "Pick outfit",
-                                              "actionEs": "Elegir ropa",
-                                              "avatar": "👗"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "☀️",
-                                                "word": "sunny & warm",
-                                                "translation": "soleado y cálido"
-                                              },
-                                              {
-                                                "emoji": "🌧️",
-                                                "word": "rainy & cold",
-                                                "translation": "lluvioso y frío"
-                                              },
-                                              {
-                                                "emoji": "❄️",
-                                                "word": "snowy",
-                                                "translation": "nevado"
-                                              },
-                                              {
-                                                "emoji": "🧥",
-                                                "word": "jacket",
-                                                "translation": "chaqueta"
-                                              },
-                                              {
-                                                "emoji": "👢",
-                                                "word": "boots",
-                                                "translation": "botas"
-                                              },
-                                              {
-                                                "emoji": "☔",
-                                                "word": "umbrella",
-                                                "translation": "paraguas"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "What is the weather like in New York today?",
-                                                  "es": "¿Cómo está el clima en Nueva York hoy?"
-                                                },
-                                                {
-                                                  "en": "It is freezing and raining! What should I wear?",
-                                                  "es": "¡Está congelando y lloviendo! ¿Qué me pongo?"
-                                                },
-                                                {
-                                                  "en": "It is 30 degrees and sunny! Do I need a coat?",
-                                                  "es": "¡Hace 30 grados y sol! ¿Necesito abrigo?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "It is very cold and rainy today.",
-                                                  "es": "Hoy está muy frío y lluvioso."
-                                                },
-                                                {
-                                                  "en": "You should wear a warm coat and boots!",
-                                                  "es": "¡Deberías usar un abrigo abrigado y botas!"
-                                                },
-                                                {
-                                                  "en": "No, wear a light t-shirt and sunglasses!",
-                                                  "es": "¡No, usa una camiseta ligera y gafas de sol!"
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Style an Outfit for Today's Weather 🧥",
+  "topicEs": "Elige un outfit para el clima de hoy",
+  "cues": [
+    {
+      "icon": "🌦️",
+      "label": "TODAY'S WEATHER?",
+      "labelEs": "¿Qué clima hace hoy?",
+      "questionExample": "Is it hot, rainy, windy, or cold?"
+    },
+    {
+      "icon": "👕",
+      "label": "CLOTHES & LAYERS?",
+      "labelEs": "¿Qué prendas vas a usar?",
+      "questionExample": "Are you wearing a hoodie, jeans, or shorts?"
+    },
+    {
+      "icon": "👟",
+      "label": "SHOES & ACCESSORIES?",
+      "labelEs": "¿Zapatos y accesorios?",
+      "questionExample": "What sneakers or cap do you match with it?"
+    }
+  ],
+  "roleA": {
+    "label": "Style Guide",
+    "labelEs": "Guía de estilo",
+    "action": "Suggest weather outfit",
+    "actionEs": "Sugerir outfit",
+    "avatar": "🧥"
+  },
+  "roleB": {
+    "label": "Trendsetter",
+    "labelEs": "Estudiante",
+    "action": "Pick personal style",
+    "actionEs": "Elegir estilo",
+    "avatar": "👟"
+  },
+  "helpWords": [
+    {
+      "emoji": "🧥",
+      "word": "oversized hoodie",
+      "translation": "sudadera holgada"
+    },
+    {
+      "emoji": "👖",
+      "word": "cargo pants",
+      "translation": "pantalones cargo"
+    },
+    {
+      "emoji": "👟",
+      "word": "fresh sneakers",
+      "translation": "tenis limpios"
+    },
+    {
+      "emoji": "🧢",
+      "word": "bucket hat / cap",
+      "translation": "sombrero de pescador / gorra"
+    },
+    {
+      "emoji": "🌧️",
+      "word": "chilly and rainy",
+      "translation": "frío y lluvioso"
+    },
+    {
+      "emoji": "🕶️",
+      "word": "dark sunglasses",
+      "translation": "gafas oscuras"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "What should we wear for a rainy afternoon?",
+        "es": "¿Qué deberíamos usar para una tarde lluviosa?"
+      },
+      {
+        "en": "Do you like cargo pants or classic jeans?",
+        "es": "¿Te gustan los pantalones cargo o los jeans clásicos?"
+      },
+      {
+        "en": "Which color sneakers are your favorite?",
+        "es": "¿De qué color son tus tenis favoritos?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "A warm waterproof jacket and dark sneakers.",
+        "es": "Una chaqueta abrigada impermeable y tenis oscuros."
+      },
+      {
+        "en": "I love cargo pants because they have huge pockets.",
+        "es": "Me encantan los pantalones cargo porque tienen bolsillos enormes."
+      },
+      {
+        "en": "Classic white sneakers match every outfit!",
+        "es": "¡Los tenis blancos clásicos combinan con todo!"
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -2749,105 +2749,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Talk about school & backpack 🎒 / Hablen de la escuela 🎒",
                     description: "Discuss school subjects, supplies in your bag, and favorite classes.",
                     speakingScene: {
-                                            "topic": "Talk about school & your backpack",
-                                            "topicEs": "Hablen de sus materias y su mochila",
-                                            "cues": [
-                                              {
-                                                "icon": "📚",
-                                                "label": "SUBJECTS?",
-                                                "labelEs": "¿Qué materias tienes?",
-                                                "questionExample": "What classes do you have today?"
-                                              },
-                                              {
-                                                "icon": "✏️",
-                                                "label": "SUPPLIES?",
-                                                "labelEs": "¿Qué útiles llevas?",
-                                                "questionExample": "What is inside your bag?"
-                                              },
-                                              {
-                                                "icon": "⭐",
-                                                "label": "FAVORITE?",
-                                                "labelEs": "¿Cuál es tu clase preferida?",
-                                                "questionExample": "Which class do you love most?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Classmate A",
-                                              "labelEs": "Compañero A",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "🙋‍♂️"
-                                            },
-                                            "roleB": {
-                                              "label": "Classmate B",
-                                              "labelEs": "Compañero B",
-                                              "action": "Share",
-                                              "actionEs": "Compartir",
-                                              "avatar": "🎒"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "📐",
-                                                "word": "math class",
-                                                "translation": "clase de matemáticas"
-                                              },
-                                              {
-                                                "emoji": "🔬",
-                                                "word": "science",
-                                                "translation": "ciencias"
-                                              },
-                                              {
-                                                "emoji": "📖",
-                                                "word": "english",
-                                                "translation": "inglés"
-                                              },
-                                              {
-                                                "emoji": "✏️",
-                                                "word": "notebook & pen",
-                                                "translation": "cuaderno y esfero"
-                                              },
-                                              {
-                                                "emoji": "🎒",
-                                                "word": "backpack",
-                                                "translation": "mochila"
-                                              },
-                                              {
-                                                "emoji": "💻",
-                                                "word": "laptop",
-                                                "translation": "computador"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "What classes do you have this morning?",
-                                                  "es": "¿Qué clases tienes esta mañana?"
-                                                },
-                                                {
-                                                  "en": "What is inside your school backpack?",
-                                                  "es": "¿Qué hay dentro de tu mochila escolar?"
-                                                },
-                                                {
-                                                  "en": "Which subject is your favorite?",
-                                                  "es": "¿Qué materia es tu favorita?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "I have math, science, and English class.",
-                                                  "es": "Tengo clase de matemáticas, ciencias e inglés."
-                                                },
-                                                {
-                                                  "en": "I have three notebooks, pens, and my laptop.",
-                                                  "es": "Tengo tres cuadernos, esferos y mi portátil."
-                                                },
-                                                {
-                                                  "en": "My favorite subject is English because it is fun!",
-                                                  "es": "¡Mi materia favorita es inglés porque es divertida!"
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Find Supplies in the Classroom 📐",
+  "topicEs": "Encuentra útiles en el salón de clases",
+  "cues": [
+    {
+      "icon": "🪑",
+      "label": "WHERE IS THE ITEM?",
+      "labelEs": "¿Dónde está el objeto?",
+      "questionExample": "Is the ruler on the desk, under the chair, or in the bag?"
+    },
+    {
+      "icon": "📐",
+      "label": "WHICH TOOL?",
+      "labelEs": "¿Qué útil necesitas?",
+      "questionExample": "Do you need a pencil, scissors, or a calculator?"
+    },
+    {
+      "icon": "🤝",
+      "label": "BORROW POLITELY?",
+      "labelEs": "¿Pedir prestado?",
+      "questionExample": "Can I borrow your blue highlighter for a second?"
+    }
+  ],
+  "roleA": {
+    "label": "Classmate A",
+    "labelEs": "Compañero A",
+    "action": "Ask for tool",
+    "actionEs": "Pedir útil",
+    "avatar": "🙋‍♂️"
+  },
+  "roleB": {
+    "label": "Classmate B",
+    "labelEs": "Compañero B",
+    "action": "Point location",
+    "actionEs": "Indicar ubicación",
+    "avatar": "📐"
+  },
+  "helpWords": [
+    {
+      "emoji": "📐",
+      "word": "clear ruler",
+      "translation": "regla transparente"
+    },
+    {
+      "emoji": "🖍️",
+      "word": "highlighter pens",
+      "translation": "resaltadores"
+    },
+    {
+      "emoji": "🪑",
+      "word": "under the desk",
+      "translation": "debajo del escritorio"
+    },
+    {
+      "emoji": "🎒",
+      "word": "front pocket",
+      "translation": "bolsillo delantero"
+    },
+    {
+      "emoji": "✂️",
+      "word": "safety scissors",
+      "translation": "tijeras"
+    },
+    {
+      "emoji": "📝",
+      "word": "notebook paper",
+      "translation": "hoja de cuaderno"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Where did you put the English textbook?",
+        "es": "¿Dónde pusiste el libro de inglés?"
+      },
+      {
+        "en": "Can I borrow your eraser for this exercise?",
+        "es": "¿Me prestas tu borrador para este ejercicio?"
+      },
+      {
+        "en": "Is there a pencil sharpener on the desk?",
+        "es": "¿Hay un sacapuntas sobre el escritorio?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "It is right next to the pencil case.",
+        "es": "Está justo al lado de la cartuchera."
+      },
+      {
+        "en": "Sure, here is the white eraser.",
+        "es": "Claro, aquí tienes el borrador blanco."
+      },
+      {
+        "en": "Yes, it is inside the teacher's box.",
+        "es": "Sí, está dentro de la caja del profesor."
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -2957,105 +2957,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Compare your daily routine ⏰ / Comparen su rutina diaria ⏰",
                     description: "Compare daily habits, schedules, and morning rituals.",
                     speakingScene: {
-                                            "topic": "Compare your daily routine",
-                                            "topicEs": "Comparen su rutina desde la mañana hasta la noche",
-                                            "cues": [
-                                              {
-                                                "icon": "🌅",
-                                                "label": "MORNING?",
-                                                "labelEs": "¿A qué hora te despiertas?",
-                                                "questionExample": "What time do you wake up?"
-                                              },
-                                              {
-                                                "icon": "📚",
-                                                "label": "AFTERNOON?",
-                                                "labelEs": "¿Qué haces en la tarde?",
-                                                "questionExample": "What do you do in the afternoon?"
-                                              },
-                                              {
-                                                "icon": "🌙",
-                                                "label": "NIGHT?",
-                                                "labelEs": "¿A qué hora te vas a dormir?",
-                                                "questionExample": "What time do you sleep?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Teacher",
-                                              "labelEs": "Profesor",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "👩‍🏫"
-                                            },
-                                            "roleB": {
-                                              "label": "Student",
-                                              "labelEs": "Estudiante",
-                                              "action": "Answer",
-                                              "actionEs": "Responder",
-                                              "avatar": "👨‍🎓"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "⏰",
-                                                "word": "wake up at 7",
-                                                "translation": "despertar a las 7"
-                                              },
-                                              {
-                                                "emoji": "🍳",
-                                                "word": "have breakfast",
-                                                "translation": "desayunar"
-                                              },
-                                              {
-                                                "emoji": "🚌",
-                                                "word": "take the bus",
-                                                "translation": "tomar el bus"
-                                              },
-                                              {
-                                                "emoji": "📖",
-                                                "word": "do homework",
-                                                "translation": "hacer tareas"
-                                              },
-                                              {
-                                                "emoji": "🎮",
-                                                "word": "relax & play",
-                                                "translation": "descansar y jugar"
-                                              },
-                                              {
-                                                "emoji": "🛌",
-                                                "word": "go to bed",
-                                                "translation": "irse a dormir"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "What time do you usually wake up on weekdays?",
-                                                  "es": "¿A qué hora sueles despertarte los días de semana?"
-                                                },
-                                                {
-                                                  "en": "What is the first thing you do after school?",
-                                                  "es": "¿Qué es lo primero que haces después del colegio?"
-                                                },
-                                                {
-                                                  "en": "What time do you go to sleep at night?",
-                                                  "es": "¿A qué hora te vas a dormir en la noche?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "I always wake up at seven in the morning.",
-                                                  "es": "Siempre me despierto a las siete de la mañana."
-                                                },
-                                                {
-                                                  "en": "I do my homework and then play video games.",
-                                                  "es": "Hago mis tareas y luego juego videojuegos."
-                                                },
-                                                {
-                                                  "en": "I go to bed around ten thirty at night.",
-                                                  "es": "Me voy a dormir alrededor de las diez y media de la noche."
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Compare Morning & Evening Routines ⏰",
+  "topicEs": "Compara rutinas de mañana y noche",
+  "cues": [
+    {
+      "icon": "⏰",
+      "label": "WAKE UP TIME?",
+      "labelEs": "¿A qué hora te levantas?",
+      "questionExample": "What time does your alarm go off?"
+    },
+    {
+      "icon": "🍳",
+      "label": "MORNING HABITS?",
+      "labelEs": "¿Qué haces antes de salir?",
+      "questionExample": "Do you shower and eat breakfast before school?"
+    },
+    {
+      "icon": "🌙",
+      "label": "NIGHT ROUTINE?",
+      "labelEs": "¿Qué haces antes de dormir?",
+      "questionExample": "What time do you turn off the screen and sleep?"
+    }
+  ],
+  "roleA": {
+    "label": "Early Bird",
+    "labelEs": "Madrugador",
+    "action": "Share morning routine",
+    "actionEs": "Compartir rutina de mañana",
+    "avatar": "🌅"
+  },
+  "roleB": {
+    "label": "Night Owl",
+    "labelEs": "Noctámbulo",
+    "action": "Share evening routine",
+    "actionEs": "Compartir rutina de noche",
+    "avatar": "🌙"
+  },
+  "helpWords": [
+    {
+      "emoji": "⏰",
+      "word": "morning alarm",
+      "translation": "alarma de la mañana"
+    },
+    {
+      "emoji": "🍳",
+      "word": "quick breakfast",
+      "translation": "desayuno rápido"
+    },
+    {
+      "emoji": "🚿",
+      "word": "warm shower",
+      "translation": "ducha caliente"
+    },
+    {
+      "emoji": "🎒",
+      "word": "pack backpack",
+      "translation": "empacar la mochila"
+    },
+    {
+      "emoji": "📚",
+      "word": "finish assignments",
+      "translation": "terminar tareas"
+    },
+    {
+      "emoji": "😴",
+      "word": "turn off lights",
+      "translation": "apagar las luces"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "What time do you usually wake up on school days?",
+        "es": "¿A qué hora sueles levantarte los días de colegio?"
+      },
+      {
+        "en": "What is your morning routine before leaving home?",
+        "es": "¿Cuál es tu rutina de mañana antes de salir de casa?"
+      },
+      {
+        "en": "Do you check your phone before sleeping at night?",
+        "es": "¿Revisas tu celular antes de dormir por la noche?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "My alarm rings at 6:15 AM every weekday.",
+        "es": "Mi alarma suena a las 6:15 AM todos los días entre semana."
+      },
+      {
+        "en": "I wash my face, eat toast, and grab my bag.",
+        "es": "Me lavo la cara, como tostadas y tomo mi mochila."
+      },
+      {
+        "en": "I read a book and turn off my phone by 10 PM.",
+        "es": "Leo un libro y apago mi celular a las 10 PM."
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -3165,105 +3165,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                     title: "Speaking Time: Level 0 Review & Final Challenge 🏆 · Level 0 Review & Final Challenge 🏆 💬 / Hablen de Level 0 Review & Final Challenge 🏆 · Level 0 Review & Final Challenge 🏆 💬",
                     description: "Practice real conversation about Level 0 Review & Final Challenge 🏆 · Level 0 Review & Final Challenge 🏆.",
                     speakingScene: {
-                                            "topic": "Talk about Level 0 Review & Final Challenge 🏆 · Level 0 Review & Final Challenge 🏆",
-                                            "topicEs": "Hablen sobre Level 0 Review & Final Challenge 🏆 · Level 0 Review & Final Challenge 🏆",
-                                            "cues": [
-                                              {
-                                                "icon": "🎯",
-                                                "label": "TOPIC?",
-                                                "labelEs": "¿Tema principal?",
-                                                "questionExample": "What do you think about Level 0 Review & Final Challenge 🏆 · Level 0 Review & Final Challenge 🏆?"
-                                              },
-                                              {
-                                                "icon": "💡",
-                                                "label": "EXAMPLE?",
-                                                "labelEs": "¿Ejemplo de la vida real?",
-                                                "questionExample": "Can you give an example?"
-                                              },
-                                              {
-                                                "icon": "⭐",
-                                                "label": "OPINION?",
-                                                "labelEs": "¿Por qué es importante?",
-                                                "questionExample": "Why is it important?"
-                                              }
-                                            ],
-                                            "roleA": {
-                                              "label": "Teacher",
-                                              "labelEs": "Profesor",
-                                              "action": "Ask",
-                                              "actionEs": "Preguntar",
-                                              "avatar": "👩‍🏫"
-                                            },
-                                            "roleB": {
-                                              "label": "Student",
-                                              "labelEs": "Estudiante",
-                                              "action": "Answer",
-                                              "actionEs": "Responder",
-                                              "avatar": "👨‍🎓"
-                                            },
-                                            "helpWords": [
-                                              {
-                                                "emoji": "💬",
-                                                "word": "practice",
-                                                "translation": "practicar"
-                                              },
-                                              {
-                                                "emoji": "💡",
-                                                "word": "real example",
-                                                "translation": "ejemplo real"
-                                              },
-                                              {
-                                                "emoji": "⭐",
-                                                "word": "important",
-                                                "translation": "importante"
-                                              },
-                                              {
-                                                "emoji": "🗣️",
-                                                "word": "speak clearly",
-                                                "translation": "hablar claro"
-                                              },
-                                              {
-                                                "emoji": "✨",
-                                                "word": "fluency",
-                                                "translation": "fluidez"
-                                              },
-                                              {
-                                                "emoji": "🎯",
-                                                "word": "goal",
-                                                "translation": "meta"
-                                              }
-                                            ],
-                                            "hiddenPhrases": {
-                                              "ask": [
-                                                {
-                                                  "en": "How would you explain this in your own words?",
-                                                  "es": "¿Cómo explicarías esto con tus propias palabras?"
-                                                },
-                                                {
-                                                  "en": "What is a good example from your daily life?",
-                                                  "es": "¿Cuál es un buen ejemplo de tu vida diaria?"
-                                                },
-                                                {
-                                                  "en": "What do you think about this topic?",
-                                                  "es": "¿Qué piensas sobre este tema?"
-                                                }
-                                              ],
-                                              "answer": [
-                                                {
-                                                  "en": "In my opinion, this helps us communicate clearly.",
-                                                  "es": "En mi opinión, esto nos ayuda a comunicarnos con claridad."
-                                                },
-                                                {
-                                                  "en": "For example, I use this when talking with friends.",
-                                                  "es": "Por ejemplo, uso esto al hablar con amigos."
-                                                },
-                                                {
-                                                  "en": "I feel very confident practicing this today.",
-                                                  "es": "Me siento muy seguro practicando esto hoy."
-                                                }
-                                              ]
-                                            }
-                                          }
+  "topic": "Teen English Champion Showcase 🏆",
+  "topicEs": "Desafío final de campeones de inglés",
+  "cues": [
+    {
+      "icon": "🌟",
+      "label": "FULL INTRO?",
+      "labelEs": "¿Presentación completa?",
+      "questionExample": "Introduce your name, age, city, and favorites!"
+    },
+    {
+      "icon": "⚡",
+      "label": "RAPID FIRE?",
+      "labelEs": "¿Preguntas rápidas?",
+      "questionExample": "Ask three quick questions about daily life!"
+    },
+    {
+      "icon": "🏆",
+      "label": "LEVEL 0 VICTORY?",
+      "labelEs": "¿Mensaje de victoria?",
+      "questionExample": "How do you feel completing Level 0?"
+    }
+  ],
+  "roleA": {
+    "label": "Challenger",
+    "labelEs": "Retador",
+    "action": "Ask quick questions",
+    "actionEs": "Hacer preguntas rápidas",
+    "avatar": "⚡"
+  },
+  "roleB": {
+    "label": "Champion",
+    "labelEs": "Campeón",
+    "action": "Answer confidently",
+    "actionEs": "Responder con confianza",
+    "avatar": "🏆"
+  },
+  "helpWords": [
+    {
+      "emoji": "🏆",
+      "word": "level complete",
+      "translation": "nivel completado"
+    },
+    {
+      "emoji": "🗣️",
+      "word": "speak confidently",
+      "translation": "hablar con confianza"
+    },
+    {
+      "emoji": "🚀",
+      "word": "ready for Basic 1",
+      "translation": "listo para Basic 1"
+    },
+    {
+      "emoji": "✨",
+      "word": "fluent phrases",
+      "translation": "frases fluidas"
+    },
+    {
+      "emoji": "🔥",
+      "word": "top score",
+      "translation": "puntaje máximo"
+    },
+    {
+      "emoji": "🎉",
+      "word": "celebrate together",
+      "translation": "celebrar juntos"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Can you give a 30-second summary of everything you learned?",
+        "es": "¿Puedes dar un resumen de 30 segundos de todo lo aprendido?"
+      },
+      {
+        "en": "What was the most exciting topic for you in Level 0?",
+        "es": "¿Cuál fue el tema más emocionante para ti en el Nivel 0?"
+      },
+      {
+        "en": "How confident do you feel speaking English now?",
+        "es": "¿Qué tan seguro te sientes hablando inglés ahora?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "I can introduce myself, describe routines, and order food!",
+        "es": "¡Puedo presentarme, describir rutinas y pedir comida!"
+      },
+      {
+        "en": "I loved gadgets, snacks, and styling outfits.",
+        "es": "Me encantaron los dispositivos, la comida y la ropa."
+      },
+      {
+        "en": "I feel super confident and ready for the next level!",
+        "es": "¡Me siento súper seguro y listo para el siguiente nivel!"
+      }
+    ]
+  }
+}
                 }
             ],
             action: "Conversar libremente."
@@ -3510,7 +3510,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Family & Pets.", imageUrl: "/images/teens-basic-1-class-01/slide-02.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with Family & Pets.", imageUrl: "/images/teens-basic-1-class-01/slide-02.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-01/slide-03.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -3839,7 +3839,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Food & Cooking.", imageUrl: "/images/teens-basic-1-class-02/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with Food & Cooking.", imageUrl: "/images/teens-basic-1-class-02/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-02/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -4168,7 +4168,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Clothes & Style.", imageUrl: "/images/teens-basic-1-class-03/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with Clothes & Style.", imageUrl: "/images/teens-basic-1-class-03/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-03/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -4497,7 +4497,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with Nature & Environment.", imageUrl: "/images/teens-basic-1-class-04/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with Nature & Environment.", imageUrl: "/images/teens-basic-1-class-04/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-04/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -4826,7 +4826,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with weekend plans.", imageUrl: "/images/teens-basic-1-class-05/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with weekend plans.", imageUrl: "/images/teens-basic-1-class-05/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-05/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -5155,7 +5155,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with invitations and plans.", imageUrl: "/images/teens-basic-1-class-06/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with invitations and plans.", imageUrl: "/images/teens-basic-1-class-06/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-06/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -5484,7 +5484,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with shopping, prices, and clothes.", imageUrl: "/images/teens-basic-1-class-07/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with shopping, prices, and clothes.", imageUrl: "/images/teens-basic-1-class-07/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-07/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -5813,7 +5813,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with food, snacks, drinks, and orders.", imageUrl: "/images/teens-basic-1-class-08/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with food, snacks, drinks, and orders.", imageUrl: "/images/teens-basic-1-class-08/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-08/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -6142,7 +6142,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's get started with technology, apps, and social media.", imageUrl: "/images/teens-basic-1-class-09/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's get started with technology, apps, and social media.", imageUrl: "/images/teens-basic-1-class-09/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-09/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -6471,7 +6471,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "Diapositiva 1", title: "Welcome! / Bienvenida!", description: "Hello everyone! Let's practice chats, help calls, and planning an event or trip.", imageUrl: "/images/teens-basic-1-class-10/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "Diapositiva 1", title: "Welcome to Hello everyone! Let! 🚀 / ¡Bienvenidos a Hello everyone! Let! 🚀", description: "Hello everyone! Let's practice chats, help calls, and planning an event or trip.", imageUrl: "/images/teens-basic-1-class-10/slide-01.jpg", bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "Diapositiva 2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", imageUrl: "/images/teens-basic-1-class-10/slide-02.jpg", bgColor: "bg-gradient-to-br from-purple-500 to-fuchsia-600",
                   type: "spinning-wheel",
                   content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."],
@@ -6982,7 +6982,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 🦁 / Bienvenida! 🦁", description: "Animals & Habitats", imageUrl: "/images/teens-basic-2-class-01/slide-01.jpg", content: ["Today we explore animals and where they live.","You will describe pets and wild animals.","Get ready for the safari challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to Animals & Habitats! 🦁 / ¡Bienvenidos a Animals & Habitats! 🦁", description: "Animals & Habitats", imageUrl: "/images/teens-basic-2-class-01/slide-01.jpg", content: ["Today we explore animals and where they live.","You will describe pets and wild animals.","Get ready for the safari challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-01/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Pet", color: "#EF4444", prompt: "Do you have a pet?", es: "Tienes mascota?" }, { label: "Wild", color: "#F59E0B", prompt: "What wild animal do you like?", es: "Que animal salvaje te gusta?" }, { label: "Habitat", color: "#10B981", prompt: "Where does a lion live?", es: "Donde vive un leon?" }, { label: "Fast", color: "#3B82F6", prompt: "What animal is fast?", es: "Que animal es rapido?" }, { label: "Cute", color: "#8B5CF6", prompt: "What animal is cute?", es: "Que animal es tierno?" }, { label: "Scary", color: "#EC4899", prompt: "What animal is scary?", es: "Que animal da miedo?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-01/slide-03.jpg", content: ["✔️ Name pets and wild animals.","✔️ Say where animals live.","✔️ Describe animals with simple adjectives and can/can't."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7057,105 +7057,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Talk about pets & animals 🐶 / Hablen de mascotas 🐶",
                   description: "Describe favorite pets, their names, age, and tricks.",
                   speakingScene: {
-                                          "topic": "Talk about pets & animal friends",
-                                          "topicEs": "Hablen de sus mascotas y animales favoritos",
-                                          "cues": [
-                                            {
-                                              "icon": "🐶",
-                                              "label": "PET?",
-                                              "labelEs": "¿Qué animal o mascota es?",
-                                              "questionExample": "What pet do you have?"
-                                            },
-                                            {
-                                              "icon": "✨",
-                                              "label": "NAME & AGE?",
-                                              "labelEs": "¿Cómo se llama y qué edad tiene?",
-                                              "questionExample": "What is its name?"
-                                            },
-                                            {
-                                              "icon": "🎾",
-                                              "label": "TRICKS?",
-                                              "labelEs": "¿Qué trucos puede hacer?",
-                                              "questionExample": "What can your pet do?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Pet Lover",
-                                            "labelEs": "Amante de Mascotas",
-                                            "action": "Ask",
-                                            "actionEs": "Preguntar",
-                                            "avatar": "🐾"
-                                          },
-                                          "roleB": {
-                                            "label": "Pet Owner",
-                                            "labelEs": "Dueño de Mascota",
-                                            "action": "Introduce",
-                                            "actionEs": "Presentar mascota",
-                                            "avatar": "🐕"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "🐕",
-                                              "word": "playful dog",
-                                              "translation": "perro juguetón"
-                                            },
-                                            {
-                                              "emoji": "🐱",
-                                              "word": "cute cat",
-                                              "translation": "gato tierno"
-                                            },
-                                            {
-                                              "emoji": "🎾",
-                                              "word": "catch the ball",
-                                              "translation": "atrapar la pelota"
-                                            },
-                                            {
-                                              "emoji": "🏃",
-                                              "word": "run fast",
-                                              "translation": "correr rápido"
-                                            },
-                                            {
-                                              "emoji": "🦴",
-                                              "word": "dog treats",
-                                              "translation": "premios / comida"
-                                            },
-                                            {
-                                              "emoji": "❤️",
-                                              "word": "friendly",
-                                              "translation": "amigable"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "Do you have any pets at home?",
-                                                "es": "¿Tienes mascotas en casa?"
-                                              },
-                                              {
-                                                "en": "What is your pet's name and how old is it?",
-                                                "es": "¿Cómo se llama tu mascota y qué edad tiene?"
-                                              },
-                                              {
-                                                "en": "What fun tricks can your pet do?",
-                                                "es": "¿Qué trucos divertidos puede hacer tu mascota?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "Yes, I have a golden dog named Toby.",
-                                                "es": "Sí, tengo un perro dorado llamado Toby."
-                                              },
-                                              {
-                                                "en": "He is two years old and very playful.",
-                                                "es": "Tiene dos años y es muy juguetón."
-                                              },
-                                              {
-                                                "en": "He can run super fast and catch the ball!",
-                                                "es": "¡Puede correr súper rápido y atrapar la pelota!"
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Ask for Directions Around Town 🗺️",
+  "topicEs": "Pide direcciones en la ciudad",
+  "cues": [
+    {
+      "icon": "📍",
+      "label": "DESTINATION?",
+      "labelEs": "¿A dónde vas?",
+      "questionExample": "Where are you trying to go in the city?"
+    },
+    {
+      "icon": "🚦",
+      "label": "LANDMARKS?",
+      "labelEs": "¿Puntos de referencia?",
+      "questionExample": "Is it past the subway station or next to the bank?"
+    },
+    {
+      "icon": "🚶",
+      "label": "HOW FAR?",
+      "labelEs": "¿Qué tan lejos?",
+      "questionExample": "How many blocks do I walk to get there?"
+    }
+  ],
+  "roleA": {
+    "label": "Lost Tourist",
+    "labelEs": "Turista",
+    "action": "Ask directions",
+    "actionEs": "Pedir direcciones",
+    "avatar": "🧭"
+  },
+  "roleB": {
+    "label": "Local Resident",
+    "labelEs": "Residente",
+    "action": "Give directions",
+    "actionEs": "Dar direcciones",
+    "avatar": "🏙️"
+  },
+  "helpWords": [
+    {
+      "emoji": "🚦",
+      "word": "traffic lights",
+      "translation": "semáforo"
+    },
+    {
+      "emoji": "🚶",
+      "word": "turn left / right",
+      "translation": "girar a la izquierda / derecha"
+    },
+    {
+      "emoji": "🚇",
+      "word": "subway station",
+      "translation": "estación de metro"
+    },
+    {
+      "emoji": "🏢",
+      "word": "across the street",
+      "translation": "al cruzar la calle"
+    },
+    {
+      "emoji": "📍",
+      "word": "two blocks away",
+      "translation": "a dos cuadras"
+    },
+    {
+      "emoji": "🗺️",
+      "word": "city map",
+      "translation": "mapa de la ciudad"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Excuse me, how do I get to the central skatepark from here?",
+        "es": "Disculpe, ¿cómo llego al skatepark central desde aquí?"
+      },
+      {
+        "en": "Is it within walking distance or should I take a bus?",
+        "es": "¿Queda a distancia a pie o debería tomar un autobús?"
+      },
+      {
+        "en": "Is the museum next to the grand public library?",
+        "es": "¿El museo queda al lado de la gran biblioteca pública?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "Go straight for two blocks, then turn right at the traffic lights.",
+        "es": "Sigue derecho por dos cuadras, luego gira a la derecha en el semáforo."
+      },
+      {
+        "en": "It is only a five-minute walk right across the park.",
+        "es": "Está a solo cinco minutos caminando justo al cruzar el parque."
+      },
+      {
+        "en": "Yes! It is right across from the station entrance.",
+        "es": "¡Sí! Queda justo enfrente de la entrada de la estación."
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -7187,7 +7187,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 🏠 / Bienvenida! 🏠", description: "My Room & Dream House", imageUrl: "/images/teens-basic-2-class-02/slide-01.jpg", content: ["Today we design rooms and dream houses.","You will describe furniture and places at home.","Get ready to build your dream space!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to My Room & Dream House! 🏠 / ¡Bienvenidos a My Room & Dream House! 🏠", description: "My Room & Dream House", imageUrl: "/images/teens-basic-2-class-02/slide-01.jpg", content: ["Today we design rooms and dream houses.","You will describe furniture and places at home.","Get ready to build your dream space!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-02/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Bedroom", color: "#EF4444", prompt: "What is in your bedroom?", es: "Que hay en tu cuarto?" }, { label: "Wall", color: "#F59E0B", prompt: "What is on your wall?", es: "Que hay en tu pared?" }, { label: "Desk", color: "#10B981", prompt: "Do you have a desk?", es: "Tienes escritorio?" }, { label: "Dream", color: "#3B82F6", prompt: "What is in your dream house?", es: "Que hay en tu casa sonada?" }, { label: "Relax", color: "#8B5CF6", prompt: "Where do you relax?", es: "Donde te relajas?" }, { label: "Upgrade", color: "#EC4899", prompt: "What would you add?", es: "Que agregarias?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-02/slide-03.jpg", content: ["✔️ Name rooms and furniture.","✔️ Use there is / there are.","✔️ Describe your dream room."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7262,105 +7262,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: My Room & Dream House · Mi cuarto y casa soñada 💬 / Hablen de My Room & Dream House · Mi cuarto y casa soñada 💬",
                   description: "Practice real conversation about My Room & Dream House · Mi cuarto y casa soñada.",
                   speakingScene: {
-                                          "topic": "Talk about My Room & Dream House · Mi cuarto y casa soñada",
-                                          "topicEs": "Hablen sobre My Room & Dream House · Mi cuarto y casa soñada",
-                                          "cues": [
-                                            {
-                                              "icon": "🎯",
-                                              "label": "TOPIC?",
-                                              "labelEs": "¿Tema principal?",
-                                              "questionExample": "What do you think about My Room & Dream House · Mi cuarto y casa soñada?"
-                                            },
-                                            {
-                                              "icon": "💡",
-                                              "label": "EXAMPLE?",
-                                              "labelEs": "¿Ejemplo de la vida real?",
-                                              "questionExample": "Can you give an example?"
-                                            },
-                                            {
-                                              "icon": "⭐",
-                                              "label": "OPINION?",
-                                              "labelEs": "¿Por qué es importante?",
-                                              "questionExample": "Why is it important?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Teacher",
-                                            "labelEs": "Profesor",
-                                            "action": "Ask",
-                                            "actionEs": "Preguntar",
-                                            "avatar": "👩‍🏫"
-                                          },
-                                          "roleB": {
-                                            "label": "Student",
-                                            "labelEs": "Estudiante",
-                                            "action": "Answer",
-                                            "actionEs": "Responder",
-                                            "avatar": "👨‍🎓"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "💬",
-                                              "word": "practice",
-                                              "translation": "practicar"
-                                            },
-                                            {
-                                              "emoji": "💡",
-                                              "word": "real example",
-                                              "translation": "ejemplo real"
-                                            },
-                                            {
-                                              "emoji": "⭐",
-                                              "word": "important",
-                                              "translation": "importante"
-                                            },
-                                            {
-                                              "emoji": "🗣️",
-                                              "word": "speak clearly",
-                                              "translation": "hablar claro"
-                                            },
-                                            {
-                                              "emoji": "✨",
-                                              "word": "fluency",
-                                              "translation": "fluidez"
-                                            },
-                                            {
-                                              "emoji": "🎯",
-                                              "word": "goal",
-                                              "translation": "meta"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "How would you explain this in your own words?",
-                                                "es": "¿Cómo explicarías esto con tus propias palabras?"
-                                              },
-                                              {
-                                                "en": "What is a good example from your daily life?",
-                                                "es": "¿Cuál es un buen ejemplo de tu vida diaria?"
-                                              },
-                                              {
-                                                "en": "What do you think about this topic?",
-                                                "es": "¿Qué piensas sobre este tema?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "In my opinion, this helps us communicate clearly.",
-                                                "es": "En mi opinión, esto nos ayuda a comunicarnos con claridad."
-                                              },
-                                              {
-                                                "en": "For example, I use this when talking with friends.",
-                                                "es": "Por ejemplo, uso esto al hablar con amigos."
-                                              },
-                                              {
-                                                "en": "I feel very confident practicing this today.",
-                                                "es": "Me siento muy seguro practicando esto hoy."
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Share Practical Health & Wellness Tips 🩺",
+  "topicEs": "Comparte consejos de salud y bienestar",
+  "cues": [
+    {
+      "icon": "🤒",
+      "label": "SYMPTOMS?",
+      "labelEs": "¿Síntomas?",
+      "questionExample": "Do you have a headache, sore throat, or fever?"
+    },
+    {
+      "icon": "💊",
+      "label": "REMEDY?",
+      "labelEs": "¿Remedio?",
+      "questionExample": "Should you drink herbal tea or take vitamins?"
+    },
+    {
+      "icon": "🏃",
+      "label": "HEALTHY HABITS?",
+      "labelEs": "¿Hábitos saludables?",
+      "questionExample": "How much water and sleep do you get daily?"
+    }
+  ],
+  "roleA": {
+    "label": "Patient / Teen",
+    "labelEs": "Paciente",
+    "action": "Explain symptoms",
+    "actionEs": "Explicar síntomas",
+    "avatar": "🤒"
+  },
+  "roleB": {
+    "label": "Doctor / Nurse",
+    "labelEs": "Doctor",
+    "action": "Give healthy advice",
+    "actionEs": "Dar consejos de salud",
+    "avatar": "🩺"
+  },
+  "helpWords": [
+    {
+      "emoji": "🤒",
+      "word": "headache & fever",
+      "translation": "dolor de cabeza y fiebre"
+    },
+    {
+      "emoji": "💊",
+      "word": "take vitamins",
+      "translation": "tomar vitaminas"
+    },
+    {
+      "emoji": "🍵",
+      "word": "hot herbal tea",
+      "translation": "té aromático caliente"
+    },
+    {
+      "emoji": "😴",
+      "word": "eight hours sleep",
+      "translation": "ocho horas de sueño"
+    },
+    {
+      "emoji": "💧",
+      "word": "stay hydrated",
+      "translation": "mantenerse hidratado"
+    },
+    {
+      "emoji": "🩺",
+      "word": "doctor prescription",
+      "translation": "receta médica"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Doctor, I've had a sore throat and fever since yesterday.",
+        "es": "Doctor, he tenido dolor de garganta y fiebre desde ayer."
+      },
+      {
+        "en": "Should I stay in bed and skip basketball practice?",
+        "es": "¿Debería quedarme en cama y faltar a la práctica de baloncesto?"
+      },
+      {
+        "en": "What natural remedies can help relieve the cough?",
+        "es": "¿Qué remedios naturales pueden ayudar a calmar la tos?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "Make sure to drink hot lemon tea with honey and rest.",
+        "es": "Asegúrate de tomar té caliente de limón con miel y descansar."
+      },
+      {
+        "en": "Yes, you must avoid intense physical exercise for three days.",
+        "es": "Sí, debes evitar el ejercicio físico intenso durante tres días."
+      },
+      {
+        "en": "Get eight full hours of sleep and drink lots of water.",
+        "es": "Duerme ocho horas completas y bebe mucha agua."
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -7392,7 +7392,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 🚌 / Bienvenida! 🚌", description: "Vehicles, Transport & City", imageUrl: "/images/teens-basic-2-class-03/slide-01.jpg", content: ["Today we move around the city.","You will name transport and places.","Get ready for the city challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to Vehicles, Transport & City! 🚌 / ¡Bienvenidos a Vehicles, Transport & City! 🚌", description: "Vehicles, Transport & City", imageUrl: "/images/teens-basic-2-class-03/slide-01.jpg", content: ["Today we move around the city.","You will name transport and places.","Get ready for the city challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-03/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Bus", color: "#EF4444", prompt: "Do you take the bus?", es: "Tomas el bus?" }, { label: "Bike", color: "#F59E0B", prompt: "Can you ride a bike?", es: "Puedes montar bici?" }, { label: "Place", color: "#10B981", prompt: "Where do you go after school?", es: "A donde vas despues de clase?" }, { label: "Taxi", color: "#3B82F6", prompt: "When do people take a taxi?", es: "Cuando toman taxi?" }, { label: "Walk", color: "#8B5CF6", prompt: "Do you walk to school?", es: "Caminas a la escuela?" }, { label: "Favorite", color: "#EC4899", prompt: "What city place do you like?", es: "Que lugar de la ciudad te gusta?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-03/slide-03.jpg", content: ["✔️ Name vehicles and city places.","✔️ Use go by + transport.","✔️ Ask and answer where places are."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7467,105 +7467,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Give directions in the city 🗺️ / Den indicaciones en la ciudad 🗺️",
                   description: "Describe locations, places, and spatial prepositions.",
                   speakingScene: {
-                                          "topic": "Give directions in the city",
-                                          "topicEs": "Den indicaciones para llegar a un lugar",
-                                          "cues": [
-                                            {
-                                              "icon": "📍",
-                                              "label": "PLACE?",
-                                              "labelEs": "¿A qué lugar quieres llegar?",
-                                              "questionExample": "Where is the library?"
-                                            },
-                                            {
-                                              "icon": "↔️",
-                                              "label": "TURN?",
-                                              "labelEs": "¿Giras a la izquierda o derecha?",
-                                              "questionExample": "Do I turn left or right?"
-                                            },
-                                            {
-                                              "icon": "🏢",
-                                              "label": "LANDMARK?",
-                                              "labelEs": "¿Al lado de qué edificio está?",
-                                              "questionExample": "What is it next to?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Visitor",
-                                            "labelEs": "Visitante",
-                                            "action": "Ask directions",
-                                            "actionEs": "Pedir dirección",
-                                            "avatar": "🧭"
-                                          },
-                                          "roleB": {
-                                            "label": "Local Guide",
-                                            "labelEs": "Guía Local",
-                                            "action": "Guide",
-                                            "actionEs": "Indicar camino",
-                                            "avatar": "📍"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "➡️",
-                                              "word": "next to",
-                                              "translation": "al lado de"
-                                            },
-                                            {
-                                              "emoji": "🏬",
-                                              "word": "across from",
-                                              "translation": "al frente de"
-                                            },
-                                            {
-                                              "emoji": "⬆️",
-                                              "word": "go straight",
-                                              "translation": "sigue derecho"
-                                            },
-                                            {
-                                              "emoji": "🔄",
-                                              "word": "turn left",
-                                              "translation": "gira a la izquierda"
-                                            },
-                                            {
-                                              "emoji": "🏢",
-                                              "word": "building",
-                                              "translation": "edificio"
-                                            },
-                                            {
-                                              "emoji": "🌳",
-                                              "word": "park",
-                                              "translation": "parque"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "Excuse me, where is the nearest coffee shop?",
-                                                "es": "Disculpe, ¿dónde queda la cafetería más cercana?"
-                                              },
-                                              {
-                                                "en": "How do I get to the central library?",
-                                                "es": "¿Cómo llego a la biblioteca central?"
-                                              },
-                                              {
-                                                "en": "Is there a bus station on this avenue?",
-                                                "es": "¿Hay una estación de buses en esta avenida?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "It is right next to the bookstore, across from the park.",
-                                                "es": "Está justo al lado de la librería, frente al parque."
-                                              },
-                                              {
-                                                "en": "Go straight for two blocks and turn left.",
-                                                "es": "Sigue derecho dos cuadras y gira a la izquierda."
-                                              },
-                                              {
-                                                "en": "Yes, it is right around the corner.",
-                                                "es": "Sí, está justo a la vuelta de la esquina."
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Explain How to Cook Your Favorite Snack 🍳",
+  "topicEs": "Explica cómo cocinar tu snack favorito",
+  "cues": [
+    {
+      "icon": "🥑",
+      "label": "INGREDIENTS?",
+      "labelEs": "¿Ingredientes?",
+      "questionExample": "What fresh ingredients do you need?"
+    },
+    {
+      "icon": "🔪",
+      "label": "COOKING STEPS?",
+      "labelEs": "¿Pasos de cocina?",
+      "questionExample": "First slice, then mix, then bake or fry?"
+    },
+    {
+      "icon": "😋",
+      "label": "TASTE & SERVING?",
+      "labelEs": "¿Sabor y presentación?",
+      "questionExample": "Is it crispy, spicy, cheesy, or sweet?"
+    }
+  ],
+  "roleA": {
+    "label": "Teen Chef",
+    "labelEs": "Chef",
+    "action": "Teach recipe step by step",
+    "actionEs": "Enseñar receta",
+    "avatar": "🧑‍🍳"
+  },
+  "roleB": {
+    "label": "Assistant",
+    "labelEs": "Asistente",
+    "action": "Follow instructions",
+    "actionEs": "Seguir instrucciones",
+    "avatar": "🍳"
+  },
+  "helpWords": [
+    {
+      "emoji": "🥑",
+      "word": "fresh ingredients",
+      "translation": "ingredientes frescos"
+    },
+    {
+      "emoji": "🔪",
+      "word": "chop and slice",
+      "translation": "picar y rebanar"
+    },
+    {
+      "emoji": "🍳",
+      "word": "fry in pan",
+      "translation": "freír en sartén"
+    },
+    {
+      "emoji": "🧀",
+      "word": "melted cheese",
+      "translation": "queso derretido"
+    },
+    {
+      "emoji": "🌶️",
+      "word": "spicy seasoning",
+      "translation": "condimento picante"
+    },
+    {
+      "emoji": "😋",
+      "word": "delicious flavor",
+      "translation": "delicioso sabor"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "What ingredients do we need to make loaded nachos?",
+        "es": "¿Qué ingredientes necesitamos para hacer nachos cargados?"
+      },
+      {
+        "en": "How long do we bake the cheese in the oven?",
+        "es": "¿Cuánto tiempo horneamos el queso en el horno?"
+      },
+      {
+        "en": "What toppings make it extra crunchy and flavorful?",
+        "es": "¿Qué ingredientes extra lo hacen crujiente y sabroso?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "We need tortilla chips, cheddar cheese, jalapeños, and guacamole.",
+        "es": "Necesitamos totopos, queso cheddar, jalapeños y guacamole."
+      },
+      {
+        "en": "Bake at 180 degrees for exactly eight minutes until bubbly.",
+        "es": "Hornea a 180 grados durante exactamente ocho minutos hasta que burbujee."
+      },
+      {
+        "en": "Top with fresh cilantro, pico de gallo, and sour cream!",
+        "es": "¡Decora con cilantro fresco, pico de gallo y crema agria!"
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -7597,7 +7597,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 💼 / Bienvenida! 💼", description: "Dream Jobs & Professions", imageUrl: "/images/teens-basic-2-class-04/slide-01.jpg", content: ["Today we talk about dream jobs.","You will describe professions and workplaces.","Get ready for the career challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to Dream Jobs & Professions! 💼 / ¡Bienvenidos a Dream Jobs & Professions! 💼", description: "Dream Jobs & Professions", imageUrl: "/images/teens-basic-2-class-04/slide-01.jpg", content: ["Today we talk about dream jobs.","You will describe professions and workplaces.","Get ready for the career challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-04/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Job", color: "#EF4444", prompt: "What job do you like?", es: "Que trabajo te gusta?" }, { label: "Doctor", color: "#F59E0B", prompt: "Would you like to be a doctor?", es: "Te gustaria ser doctor?" }, { label: "Artist", color: "#10B981", prompt: "Are you creative?", es: "Eres creativo?" }, { label: "Teacher", color: "#3B82F6", prompt: "Who helps students?", es: "Quien ayuda estudiantes?" }, { label: "Place", color: "#8B5CF6", prompt: "Where does a chef work?", es: "Donde trabaja un chef?" }, { label: "Dream", color: "#EC4899", prompt: "What do you want to be?", es: "Que quieres ser?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-04/slide-03.jpg", content: ["✔️ Name common jobs.","✔️ Say where people work.","✔️ Use I want to be... because..."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7672,105 +7672,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Give directions in the city 🗺️ / Den indicaciones en la ciudad 🗺️",
                   description: "Describe locations, places, and spatial prepositions.",
                   speakingScene: {
-                                          "topic": "Give directions in the city",
-                                          "topicEs": "Den indicaciones para llegar a un lugar",
-                                          "cues": [
-                                            {
-                                              "icon": "📍",
-                                              "label": "PLACE?",
-                                              "labelEs": "¿A qué lugar quieres llegar?",
-                                              "questionExample": "Where is the library?"
-                                            },
-                                            {
-                                              "icon": "↔️",
-                                              "label": "TURN?",
-                                              "labelEs": "¿Giras a la izquierda o derecha?",
-                                              "questionExample": "Do I turn left or right?"
-                                            },
-                                            {
-                                              "icon": "🏢",
-                                              "label": "LANDMARK?",
-                                              "labelEs": "¿Al lado de qué edificio está?",
-                                              "questionExample": "What is it next to?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Visitor",
-                                            "labelEs": "Visitante",
-                                            "action": "Ask directions",
-                                            "actionEs": "Pedir dirección",
-                                            "avatar": "🧭"
-                                          },
-                                          "roleB": {
-                                            "label": "Local Guide",
-                                            "labelEs": "Guía Local",
-                                            "action": "Guide",
-                                            "actionEs": "Indicar camino",
-                                            "avatar": "📍"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "➡️",
-                                              "word": "next to",
-                                              "translation": "al lado de"
-                                            },
-                                            {
-                                              "emoji": "🏬",
-                                              "word": "across from",
-                                              "translation": "al frente de"
-                                            },
-                                            {
-                                              "emoji": "⬆️",
-                                              "word": "go straight",
-                                              "translation": "sigue derecho"
-                                            },
-                                            {
-                                              "emoji": "🔄",
-                                              "word": "turn left",
-                                              "translation": "gira a la izquierda"
-                                            },
-                                            {
-                                              "emoji": "🏢",
-                                              "word": "building",
-                                              "translation": "edificio"
-                                            },
-                                            {
-                                              "emoji": "🌳",
-                                              "word": "park",
-                                              "translation": "parque"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "Excuse me, where is the nearest coffee shop?",
-                                                "es": "Disculpe, ¿dónde queda la cafetería más cercana?"
-                                              },
-                                              {
-                                                "en": "How do I get to the central library?",
-                                                "es": "¿Cómo llego a la biblioteca central?"
-                                              },
-                                              {
-                                                "en": "Is there a bus station on this avenue?",
-                                                "es": "¿Hay una estación de buses en esta avenida?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "It is right next to the bookstore, across from the park.",
-                                                "es": "Está justo al lado de la librería, frente al parque."
-                                              },
-                                              {
-                                                "en": "Go straight for two blocks and turn left.",
-                                                "es": "Sigue derecho dos cuadras y gira a la izquierda."
-                                              },
-                                              {
-                                                "en": "Yes, it is right around the corner.",
-                                                "es": "Sí, está justo a la vuelta de la esquina."
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Review a Movie or Series Finale 🍿",
+  "topicEs": "Haz la reseña de una película o final de serie",
+  "cues": [
+    {
+      "icon": "🎬",
+      "label": "TITLE & HERO?",
+      "labelEs": "¿Título y protagonista?",
+      "questionExample": "Who was the main character and villain?"
+    },
+    {
+      "icon": "💥",
+      "label": "BEST SCENE?",
+      "labelEs": "¿Mejor escena?",
+      "questionExample": "What was the most thrilling action sequence?"
+    },
+    {
+      "icon": "⭐",
+      "label": "FINAL RATING?",
+      "labelEs": "¿Calificación final?",
+      "questionExample": "How many stars out of five do you award it?"
+    }
+  ],
+  "roleA": {
+    "label": "Film Critic",
+    "labelEs": "Crítico",
+    "action": "Review plot & acting",
+    "actionEs": "Evaluar trama",
+    "avatar": "🎙️"
+  },
+  "roleB": {
+    "label": "Cinema Fan",
+    "labelEs": "Cinéfilo",
+    "action": "Debate ending",
+    "actionEs": "Debatir final",
+    "avatar": "🍿"
+  },
+  "helpWords": [
+    {
+      "emoji": "🎬",
+      "word": "blockbuster movie",
+      "translation": "película taquillera"
+    },
+    {
+      "emoji": "💥",
+      "word": "special effects",
+      "translation": "efectos especiales"
+    },
+    {
+      "emoji": "🎭",
+      "word": "acting performance",
+      "translation": "actuación"
+    },
+    {
+      "emoji": "🤯",
+      "word": "unexpected ending",
+      "translation": "final inesperado"
+    },
+    {
+      "emoji": "⭐",
+      "word": "five stars rating",
+      "translation": "calificación de 5 estrellas"
+    },
+    {
+      "emoji": "🍿",
+      "word": "popcorn snack",
+      "translation": "palomitas de maíz"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Did you enjoy the plot twist in the series finale?",
+        "es": "¿Te gustó el giro inesperado en el final de la serie?"
+      },
+      {
+        "en": "What did you think of the CGI visual effects in the space battle?",
+        "es": "¿Qué opinas de los efectos visuales CGI en la batalla espacial?"
+      },
+      {
+        "en": "Would you recommend this movie to your friends at school?",
+        "es": "¿Recomendarías esta película a tus amigos del colegio?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "The climax was breathtaking and left me speechless!",
+        "es": "¡El clímax fue impresionante y me dejó sin palabras!"
+      },
+      {
+        "en": "The visual effects and soundtrack were top-tier quality.",
+        "es": "Los efectos visuales y la banda sonora fueron de primer nivel."
+      },
+      {
+        "en": "I give it a full five stars! You must watch it tonight.",
+        "es": "¡Le doy cinco estrellas completas! Debes verla esta noche."
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -7802,7 +7802,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 🎯 / Bienvenida! 🎯", description: "Abilities with Can / Can't", imageUrl: "/images/teens-basic-2-class-05/slide-01.jpg", content: ["Today we talk about talents and abilities.","You will say what you can and can't do.","Get ready for the talent challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to Abilities with Can! 🎯 / ¡Bienvenidos a Can! 🎯", description: "Abilities with Can / Can't", imageUrl: "/images/teens-basic-2-class-05/slide-01.jpg", content: ["Today we talk about talents and abilities.","You will say what you can and can't do.","Get ready for the talent challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-05/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Sing", color: "#EF4444", prompt: "Can you sing?", es: "Puedes cantar?" }, { label: "Dance", color: "#F59E0B", prompt: "Can you dance?", es: "Puedes bailar?" }, { label: "Swim", color: "#10B981", prompt: "Can you swim?", es: "Puedes nadar?" }, { label: "Cook", color: "#3B82F6", prompt: "Can you cook?", es: "Puedes cocinar?" }, { label: "Skate", color: "#8B5CF6", prompt: "Can you skate?", es: "Puedes patinar?" }, { label: "Draw", color: "#EC4899", prompt: "Can you draw?", es: "Puedes dibujar?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-05/slide-03.jpg", content: ["✔️ Use can for ability.","✔️ Use can't for no ability.","✔️ Ask and answer Can you...?"], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -7877,105 +7877,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Habilidades con can · can’t · Habilidades con can · can’t 💬 / Hablen de Habilidades con can · can’t · Habilidades con can · can’t 💬",
                   description: "Practice real conversation about Habilidades con can · can’t · Habilidades con can · can’t.",
                   speakingScene: {
-                                          "topic": "Talk about Habilidades con can · can’t · Habilidades con can · can’t",
-                                          "topicEs": "Hablen sobre Habilidades con can · can’t · Habilidades con can · can’t",
-                                          "cues": [
-                                            {
-                                              "icon": "🎯",
-                                              "label": "TOPIC?",
-                                              "labelEs": "¿Tema principal?",
-                                              "questionExample": "What do you think about Habilidades con can · can’t · Habilidades con can · can’t?"
-                                            },
-                                            {
-                                              "icon": "💡",
-                                              "label": "EXAMPLE?",
-                                              "labelEs": "¿Ejemplo de la vida real?",
-                                              "questionExample": "Can you give an example?"
-                                            },
-                                            {
-                                              "icon": "⭐",
-                                              "label": "OPINION?",
-                                              "labelEs": "¿Por qué es importante?",
-                                              "questionExample": "Why is it important?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Teacher",
-                                            "labelEs": "Profesor",
-                                            "action": "Ask",
-                                            "actionEs": "Preguntar",
-                                            "avatar": "👩‍🏫"
-                                          },
-                                          "roleB": {
-                                            "label": "Student",
-                                            "labelEs": "Estudiante",
-                                            "action": "Answer",
-                                            "actionEs": "Responder",
-                                            "avatar": "👨‍🎓"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "💬",
-                                              "word": "practice",
-                                              "translation": "practicar"
-                                            },
-                                            {
-                                              "emoji": "💡",
-                                              "word": "real example",
-                                              "translation": "ejemplo real"
-                                            },
-                                            {
-                                              "emoji": "⭐",
-                                              "word": "important",
-                                              "translation": "importante"
-                                            },
-                                            {
-                                              "emoji": "🗣️",
-                                              "word": "speak clearly",
-                                              "translation": "hablar claro"
-                                            },
-                                            {
-                                              "emoji": "✨",
-                                              "word": "fluency",
-                                              "translation": "fluidez"
-                                            },
-                                            {
-                                              "emoji": "🎯",
-                                              "word": "goal",
-                                              "translation": "meta"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "How would you explain this in your own words?",
-                                                "es": "¿Cómo explicarías esto con tus propias palabras?"
-                                              },
-                                              {
-                                                "en": "What is a good example from your daily life?",
-                                                "es": "¿Cuál es un buen ejemplo de tu vida diaria?"
-                                              },
-                                              {
-                                                "en": "What do you think about this topic?",
-                                                "es": "¿Qué piensas sobre este tema?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "In my opinion, this helps us communicate clearly.",
-                                                "es": "En mi opinión, esto nos ayuda a comunicarnos con claridad."
-                                              },
-                                              {
-                                                "en": "For example, I use this when talking with friends.",
-                                                "es": "Por ejemplo, uso esto al hablar con amigos."
-                                              },
-                                              {
-                                                "en": "I feel very confident practicing this today.",
-                                                "es": "Me siento muy seguro practicando esto hoy."
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Review a Trending Social Media App 📲",
+  "topicEs": "Evalúa una aplicación o red social en tendencia",
+  "cues": [
+    {
+      "icon": "📲",
+      "label": "APP FEATURES?",
+      "labelEs": "¿Funciones de la app?",
+      "questionExample": "What makes this new app so popular?"
+    },
+    {
+      "icon": "📹",
+      "label": "CONTENT TYPES?",
+      "labelEs": "¿Tipos de contenido?",
+      "questionExample": "Do people post short video reels, filters, or games?"
+    },
+    {
+      "icon": "🔒",
+      "label": "PROS & CONS?",
+      "labelEs": "¿Ventajas y desventajas?",
+      "questionExample": "Is it addictive, fun, or safe for privacy?"
+    }
+  ],
+  "roleA": {
+    "label": "Tech Reviewer",
+    "labelEs": "Reseñador",
+    "action": "Analyze app features",
+    "actionEs": "Analizar funciones",
+    "avatar": "📱"
+  },
+  "roleB": {
+    "label": "Teen User",
+    "labelEs": "Usuario",
+    "action": "Share daily usage",
+    "actionEs": "Compartir uso diario",
+    "avatar": "✨"
+  },
+  "helpWords": [
+    {
+      "emoji": "📲",
+      "word": "viral app",
+      "translation": "aplicación viral"
+    },
+    {
+      "emoji": "📹",
+      "word": "short video reels",
+      "translation": "reels de video corto"
+    },
+    {
+      "emoji": "🎨",
+      "word": "augmented filters",
+      "translation": "filtros de realidad aumentada"
+    },
+    {
+      "emoji": "💬",
+      "word": "direct messaging",
+      "translation": "mensajes directos"
+    },
+    {
+      "emoji": "🔒",
+      "word": "privacy settings",
+      "translation": "ajustes de privacidad"
+    },
+    {
+      "emoji": "🔥",
+      "word": "trending hashtags",
+      "translation": "hashtags en tendencia"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "What makes this new social media app different from TikTok?",
+        "es": "¿Qué hace diferente a esta nueva app comparada con TikTok?"
+      },
+      {
+        "en": "Do you spend more than an hour scrolling on your feed?",
+        "es": "¿Pasas más de una hora deslizando en tu feed?"
+      },
+      {
+        "en": "How do you protect your personal data and privacy settings?",
+        "es": "¿Cómo proteges tus datos personales y privacidad?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "It allows live collaborative video editing with your best friends.",
+        "es": "Permite edición colaborativa de videos en vivo con tus mejores amigos."
+      },
+      {
+        "en": "I usually check trending challenges after finishing my homework.",
+        "es": "Normalmente miro los retos virales después de hacer la tarea."
+      },
+      {
+        "en": "I keep my account private and turn off location tracking.",
+        "es": "Mantengo mi cuenta privada y desactivo el rastreo de ubicación."
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -8007,7 +8007,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 📏 / Bienvenida! 📏", description: "School Rules: Must, Have to, Should", imageUrl: "/images/teens-basic-2-class-06/slide-01.jpg", content: ["Today we talk about school rules.","You will explain obligations and advice.","Get ready for the rules challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to School Rules: Must, Have to, Should! 📏 / ¡Bienvenidos a School Rules: Must, Have to, Should! 📏", description: "School Rules: Must, Have to, Should", imageUrl: "/images/teens-basic-2-class-06/slide-01.jpg", content: ["Today we talk about school rules.","You will explain obligations and advice.","Get ready for the rules challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-06/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Must", color: "#EF4444", prompt: "What must students do?", es: "Que deben hacer los estudiantes?" }, { label: "Have to", color: "#F59E0B", prompt: "What do you have to bring?", es: "Que tienes que traer?" }, { label: "Should", color: "#10B981", prompt: "What should students do?", es: "Que deberian hacer?" }, { label: "Phone", color: "#3B82F6", prompt: "Can students use phones?", es: "Pueden usar celulares?" }, { label: "Uniform", color: "#8B5CF6", prompt: "Do you wear a uniform?", es: "Usas uniforme?" }, { label: "Advice", color: "#EC4899", prompt: "Give one school tip.", es: "Da un consejo escolar." }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-06/slide-03.jpg", content: ["✔️ Use must for strong rules.","✔️ Use have to for obligations.","✔️ Use should for advice."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8082,105 +8082,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Talk about school & backpack 🎒 / Hablen de la escuela 🎒",
                   description: "Discuss school subjects, supplies in your bag, and favorite classes.",
                   speakingScene: {
-                                          "topic": "Talk about school & your backpack",
-                                          "topicEs": "Hablen de sus materias y su mochila",
-                                          "cues": [
-                                            {
-                                              "icon": "📚",
-                                              "label": "SUBJECTS?",
-                                              "labelEs": "¿Qué materias tienes?",
-                                              "questionExample": "What classes do you have today?"
-                                            },
-                                            {
-                                              "icon": "✏️",
-                                              "label": "SUPPLIES?",
-                                              "labelEs": "¿Qué útiles llevas?",
-                                              "questionExample": "What is inside your bag?"
-                                            },
-                                            {
-                                              "icon": "⭐",
-                                              "label": "FAVORITE?",
-                                              "labelEs": "¿Cuál es tu clase preferida?",
-                                              "questionExample": "Which class do you love most?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Classmate A",
-                                            "labelEs": "Compañero A",
-                                            "action": "Ask",
-                                            "actionEs": "Preguntar",
-                                            "avatar": "🙋‍♂️"
-                                          },
-                                          "roleB": {
-                                            "label": "Classmate B",
-                                            "labelEs": "Compañero B",
-                                            "action": "Share",
-                                            "actionEs": "Compartir",
-                                            "avatar": "🎒"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "📐",
-                                              "word": "math class",
-                                              "translation": "clase de matemáticas"
-                                            },
-                                            {
-                                              "emoji": "🔬",
-                                              "word": "science",
-                                              "translation": "ciencias"
-                                            },
-                                            {
-                                              "emoji": "📖",
-                                              "word": "english",
-                                              "translation": "inglés"
-                                            },
-                                            {
-                                              "emoji": "✏️",
-                                              "word": "notebook & pen",
-                                              "translation": "cuaderno y esfero"
-                                            },
-                                            {
-                                              "emoji": "🎒",
-                                              "word": "backpack",
-                                              "translation": "mochila"
-                                            },
-                                            {
-                                              "emoji": "💻",
-                                              "word": "laptop",
-                                              "translation": "computador"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "What classes do you have this morning?",
-                                                "es": "¿Qué clases tienes esta mañana?"
-                                              },
-                                              {
-                                                "en": "What is inside your school backpack?",
-                                                "es": "¿Qué hay dentro de tu mochila escolar?"
-                                              },
-                                              {
-                                                "en": "Which subject is your favorite?",
-                                                "es": "¿Qué materia es tu favorita?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "I have math, science, and English class.",
-                                                "es": "Tengo clase de matemáticas, ciencias e inglés."
-                                              },
-                                              {
-                                                "en": "I have three notebooks, pens, and my laptop.",
-                                                "es": "Tengo tres cuadernos, esferos y mi portátil."
-                                              },
-                                              {
-                                                "en": "My favorite subject is English because it is fun!",
-                                                "es": "¡Mi materia favorita es inglés porque es divertida!"
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Propose Green Ideas for Your School 🌱",
+  "topicEs": "Propón ideas ecológicas para tu colegio",
+  "cues": [
+    {
+      "icon": "♻️",
+      "label": "RECYCLING?",
+      "labelEs": "¿Reciclaje?",
+      "questionExample": "How can we reduce single-use plastic at school?"
+    },
+    {
+      "icon": "💡",
+      "label": "SAVE ENERGY?",
+      "labelEs": "¿Ahorro de energía?",
+      "questionExample": "Can we turn off lights and install solar panels?"
+    },
+    {
+      "icon": "🌳",
+      "label": "CAMPUS GARDEN?",
+      "labelEs": "¿Jardín escolar?",
+      "questionExample": "Where can students plant trees and flowers?"
+    }
+  ],
+  "roleA": {
+    "label": "Eco Leader",
+    "labelEs": "Líder ecológico",
+    "action": "Propose green project",
+    "actionEs": "Proponer proyecto verde",
+    "avatar": "🌱"
+  },
+  "roleB": {
+    "label": "Student Council",
+    "labelEs": "Consejo estudiantil",
+    "action": "Evaluate initiative",
+    "actionEs": "Evaluar iniciativa",
+    "avatar": "🏫"
+  },
+  "helpWords": [
+    {
+      "emoji": "♻️",
+      "word": "recycle bins",
+      "translation": "canecas de reciclaje"
+    },
+    {
+      "emoji": "🚫",
+      "word": "ban plastic bottles",
+      "translation": "prohibir botellas plásticas"
+    },
+    {
+      "emoji": "💡",
+      "word": "save electricity",
+      "translation": "ahorrar electricidad"
+    },
+    {
+      "emoji": "🌱",
+      "word": "plant trees",
+      "translation": "sembrar árboles"
+    },
+    {
+      "emoji": "☀️",
+      "word": "solar power",
+      "translation": "energía solar"
+    },
+    {
+      "emoji": "🌍",
+      "word": "protect planet",
+      "translation": "proteger el planeta"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "How can our high school reduce plastic waste in the cafeteria?",
+        "es": "¿Cómo puede nuestro colegio reducir el plástico en la cafetería?"
+      },
+      {
+        "en": "Should we launch a campus composting and vegetable garden?",
+        "es": "¿Deberíamos crear un huerto escolar y compostaje?"
+      },
+      {
+        "en": "What reward can we give classes that save the most electricity?",
+        "es": "¿Qué premio podemos dar a los salones que más ahorren luz?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "We should install water refill stations and ban disposable cups.",
+        "es": "Deberíamos instalar estaciones de agua y prohibir vasos desechables."
+      },
+      {
+        "en": "Yes! We can grow organic tomatoes and fresh herbs.",
+        "es": "¡Sí! Podemos cultivar tomates orgánicos y hierbas frescas."
+      },
+      {
+        "en": "The winning class can earn an eco-trip to the national park!",
+        "es": "¡El salón ganador puede ganar un viaje ecológico al parque nacional!"
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -8212,7 +8212,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! ⚽ / Bienvenida! ⚽", description: "Sports, Health & Habits", imageUrl: "/images/teens-basic-2-class-07/slide-01.jpg", content: ["Today we talk about sports and health.","You will describe healthy habits.","Get ready for the health challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to Sports, Health & Habits! ⚽ / ¡Bienvenidos a Sports, Health & Habits! ⚽", description: "Sports, Health & Habits", imageUrl: "/images/teens-basic-2-class-07/slide-01.jpg", content: ["Today we talk about sports and health.","You will describe healthy habits.","Get ready for the health challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-07/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Sport", color: "#EF4444", prompt: "What sport do you play?", es: "Que deporte practicas?" }, { label: "Healthy", color: "#F59E0B", prompt: "What is healthy?", es: "Que es saludable?" }, { label: "Water", color: "#10B981", prompt: "How much water do you drink?", es: "Cuanta agua tomas?" }, { label: "Sleep", color: "#3B82F6", prompt: "How many hours do you sleep?", es: "Cuantas horas duermes?" }, { label: "Exercise", color: "#8B5CF6", prompt: "Do you exercise?", es: "Haces ejercicio?" }, { label: "Snack", color: "#EC4899", prompt: "What snack is healthy?", es: "Que snack es saludable?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-07/slide-03.jpg", content: ["✔️ Name sports and health habits.","✔️ Use always, usually, sometimes, never.","✔️ Give simple health advice."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8287,105 +8287,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Compare your daily routine ⏰ / Comparen su rutina diaria ⏰",
                   description: "Compare daily habits, schedules, and morning rituals.",
                   speakingScene: {
-                                          "topic": "Compare your daily routine",
-                                          "topicEs": "Comparen su rutina desde la mañana hasta la noche",
-                                          "cues": [
-                                            {
-                                              "icon": "🌅",
-                                              "label": "MORNING?",
-                                              "labelEs": "¿A qué hora te despiertas?",
-                                              "questionExample": "What time do you wake up?"
-                                            },
-                                            {
-                                              "icon": "📚",
-                                              "label": "AFTERNOON?",
-                                              "labelEs": "¿Qué haces en la tarde?",
-                                              "questionExample": "What do you do in the afternoon?"
-                                            },
-                                            {
-                                              "icon": "🌙",
-                                              "label": "NIGHT?",
-                                              "labelEs": "¿A qué hora te vas a dormir?",
-                                              "questionExample": "What time do you sleep?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Teacher",
-                                            "labelEs": "Profesor",
-                                            "action": "Ask",
-                                            "actionEs": "Preguntar",
-                                            "avatar": "👩‍🏫"
-                                          },
-                                          "roleB": {
-                                            "label": "Student",
-                                            "labelEs": "Estudiante",
-                                            "action": "Answer",
-                                            "actionEs": "Responder",
-                                            "avatar": "👨‍🎓"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "⏰",
-                                              "word": "wake up at 7",
-                                              "translation": "despertar a las 7"
-                                            },
-                                            {
-                                              "emoji": "🍳",
-                                              "word": "have breakfast",
-                                              "translation": "desayunar"
-                                            },
-                                            {
-                                              "emoji": "🚌",
-                                              "word": "take the bus",
-                                              "translation": "tomar el bus"
-                                            },
-                                            {
-                                              "emoji": "📖",
-                                              "word": "do homework",
-                                              "translation": "hacer tareas"
-                                            },
-                                            {
-                                              "emoji": "🎮",
-                                              "word": "relax & play",
-                                              "translation": "descansar y jugar"
-                                            },
-                                            {
-                                              "emoji": "🛌",
-                                              "word": "go to bed",
-                                              "translation": "irse a dormir"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "What time do you usually wake up on weekdays?",
-                                                "es": "¿A qué hora sueles despertarte los días de semana?"
-                                              },
-                                              {
-                                                "en": "What is the first thing you do after school?",
-                                                "es": "¿Qué es lo primero que haces después del colegio?"
-                                              },
-                                              {
-                                                "en": "What time do you go to sleep at night?",
-                                                "es": "¿A qué hora te vas a dormir en la noche?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "I always wake up at seven in the morning.",
-                                                "es": "Siempre me despierto a las siete de la mañana."
-                                              },
-                                              {
-                                                "en": "I do my homework and then play video games.",
-                                                "es": "Hago mis tareas y luego juego videojuegos."
-                                              },
-                                              {
-                                                "en": "I go to bed around ten thirty at night.",
-                                                "es": "Me voy a dormir alrededor de las diez y media de la noche."
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Roleplay a Dream Job Interview 💼",
+  "topicEs": "Simula la entrevista para tu trabajo soñado",
+  "cues": [
+    {
+      "icon": "💼",
+      "label": "WHAT POSITION?",
+      "labelEs": "¿Qué cargo?",
+      "questionExample": "Are you applying for game developer or designer?"
+    },
+    {
+      "icon": "⚡",
+      "label": "TOP SKILLS?",
+      "labelEs": "¿Habilidades?",
+      "questionExample": "Why are you creative, responsible, and skilled?"
+    },
+    {
+      "icon": "🚀",
+      "label": "FUTURE VISION?",
+      "labelEs": "¿Visión futura?",
+      "questionExample": "What big project do you want to build?"
+    }
+  ],
+  "roleA": {
+    "label": "Hiring Manager",
+    "labelEs": "Entrevistador",
+    "action": "Interview candidate",
+    "actionEs": "Entrevistar candidato",
+    "avatar": "👔"
+  },
+  "roleB": {
+    "label": "Candidate",
+    "labelEs": "Candidato",
+    "action": "Present skills & passion",
+    "actionEs": "Presentar habilidades",
+    "avatar": "💼"
+  },
+  "helpWords": [
+    {
+      "emoji": "💻",
+      "word": "software developer",
+      "translation": "desarrollador de software"
+    },
+    {
+      "emoji": "🎨",
+      "word": "creative designer",
+      "translation": "diseñador creativo"
+    },
+    {
+      "emoji": "🤝",
+      "word": "team player",
+      "translation": "jugador de equipo"
+    },
+    {
+      "emoji": "💡",
+      "word": "problem solver",
+      "translation": "resolutor de problemas"
+    },
+    {
+      "emoji": "📈",
+      "word": "career growth",
+      "translation": "crecimiento profesional"
+    },
+    {
+      "emoji": "🎯",
+      "word": "achieve goals",
+      "translation": "lograr objetivos"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Welcome! Why are you interested in becoming our Junior Game Artist?",
+        "es": "¡Bienvenido! ¿Por qué te interesa ser nuestro artista junior de videojuegos?"
+      },
+      {
+        "en": "Can you give an example of a difficult team project you solved?",
+        "es": "¿Puedes dar un ejemplo de un proyecto en equipo difícil que resolviste?"
+      },
+      {
+        "en": "Where do you see yourself in five years within our tech studio?",
+        "es": "¿Dónde te ves en cinco años dentro de nuestro estudio tecnológico?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "I have designed 3D characters and animated short game trailers.",
+        "es": "He diseñado personajes 3D y animado trailers cortos de juegos."
+      },
+      {
+        "en": "When our game had render bugs, I redesigned textures overnight.",
+        "es": "Cuando el juego tuvo errores de render, rediseñé texturas de un día para otro."
+      },
+      {
+        "en": "I want to lead the art direction for next-gen console games!",
+        "es": "¡Quiero liderar la dirección de arte para juegos de próxima generación!"
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -8417,7 +8417,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 🗺️ / Bienvenida! 🗺️", description: "City, Transport & Places to Go Out", imageUrl: "/images/teens-basic-2-class-08/slide-01.jpg", content: ["Today we plan a day out in the city.","You will choose places and transport.","Get ready for the weekend plan challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to City, Transport & Places to Go Out! 🗺 / ¡Bienvenidos a City, Transport & Places to Go Out! 🗺", description: "City, Transport & Places to Go Out", imageUrl: "/images/teens-basic-2-class-08/slide-01.jpg", content: ["Today we plan a day out in the city.","You will choose places and transport.","Get ready for the weekend plan challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-08/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Mall", color: "#EF4444", prompt: "Do you go to the mall?", es: "Vas al centro comercial?" }, { label: "Cinema", color: "#F59E0B", prompt: "What movie do you want to see?", es: "Que pelicula quieres ver?" }, { label: "Park", color: "#10B981", prompt: "What can you do at the park?", es: "Que puedes hacer en el parque?" }, { label: "Cafe", color: "#3B82F6", prompt: "Do you like cafes?", es: "Te gustan los cafes?" }, { label: "Transport", color: "#8B5CF6", prompt: "How do you get there?", es: "Como llegas alli?" }, { label: "Plan", color: "#EC4899", prompt: "Where should we go?", es: "A donde deberiamos ir?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-08/slide-03.jpg", content: ["✔️ Name places to go out.","✔️ Use let's and should for plans.","✔️ Say how to get there."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8492,105 +8492,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Give directions in the city 🗺️ / Den indicaciones en la ciudad 🗺️",
                   description: "Describe locations, places, and spatial prepositions.",
                   speakingScene: {
-                                          "topic": "Give directions in the city",
-                                          "topicEs": "Den indicaciones para llegar a un lugar",
-                                          "cues": [
-                                            {
-                                              "icon": "📍",
-                                              "label": "PLACE?",
-                                              "labelEs": "¿A qué lugar quieres llegar?",
-                                              "questionExample": "Where is the library?"
-                                            },
-                                            {
-                                              "icon": "↔️",
-                                              "label": "TURN?",
-                                              "labelEs": "¿Giras a la izquierda o derecha?",
-                                              "questionExample": "Do I turn left or right?"
-                                            },
-                                            {
-                                              "icon": "🏢",
-                                              "label": "LANDMARK?",
-                                              "labelEs": "¿Al lado de qué edificio está?",
-                                              "questionExample": "What is it next to?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Visitor",
-                                            "labelEs": "Visitante",
-                                            "action": "Ask directions",
-                                            "actionEs": "Pedir dirección",
-                                            "avatar": "🧭"
-                                          },
-                                          "roleB": {
-                                            "label": "Local Guide",
-                                            "labelEs": "Guía Local",
-                                            "action": "Guide",
-                                            "actionEs": "Indicar camino",
-                                            "avatar": "📍"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "➡️",
-                                              "word": "next to",
-                                              "translation": "al lado de"
-                                            },
-                                            {
-                                              "emoji": "🏬",
-                                              "word": "across from",
-                                              "translation": "al frente de"
-                                            },
-                                            {
-                                              "emoji": "⬆️",
-                                              "word": "go straight",
-                                              "translation": "sigue derecho"
-                                            },
-                                            {
-                                              "emoji": "🔄",
-                                              "word": "turn left",
-                                              "translation": "gira a la izquierda"
-                                            },
-                                            {
-                                              "emoji": "🏢",
-                                              "word": "building",
-                                              "translation": "edificio"
-                                            },
-                                            {
-                                              "emoji": "🌳",
-                                              "word": "park",
-                                              "translation": "parque"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "Excuse me, where is the nearest coffee shop?",
-                                                "es": "Disculpe, ¿dónde queda la cafetería más cercana?"
-                                              },
-                                              {
-                                                "en": "How do I get to the central library?",
-                                                "es": "¿Cómo llego a la biblioteca central?"
-                                              },
-                                              {
-                                                "en": "Is there a bus station on this avenue?",
-                                                "es": "¿Hay una estación de buses en esta avenida?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "It is right next to the bookstore, across from the park.",
-                                                "es": "Está justo al lado de la librería, frente al parque."
-                                              },
-                                              {
-                                                "en": "Go straight for two blocks and turn left.",
-                                                "es": "Sigue derecho dos cuadras y gira a la izquierda."
-                                              },
-                                              {
-                                                "en": "Yes, it is right around the corner.",
-                                                "es": "Sí, está justo a la vuelta de la esquina."
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Tell a Spooky or Surprising Story 🕵️",
+  "topicEs": "Cuenta una historia misteriosa o sorprendente",
+  "cues": [
+    {
+      "icon": "🌙",
+      "label": "WHEN & WHERE?",
+      "labelEs": "¿Cuándo y dónde?",
+      "questionExample": "Where were you when the strange event happened?"
+    },
+    {
+      "icon": "👣",
+      "label": "WHAT HAPPENED?",
+      "labelEs": "¿Qué pasó?",
+      "questionExample": "What mysterious sound or shadow appeared?"
+    },
+    {
+      "icon": "😱",
+      "label": "THE TWIST?",
+      "labelEs": "¿El desenlace?",
+      "questionExample": "How did the mystery get solved in the end?"
+    }
+  ],
+  "roleA": {
+    "label": "Storyteller",
+    "labelEs": "Narrador",
+    "action": "Build suspense",
+    "actionEs": "Construir suspenso",
+    "avatar": "📖"
+  },
+  "roleB": {
+    "label": "Listener",
+    "labelEs": "Oyente",
+    "action": "React to twists",
+    "actionEs": "Reaccionar a giros",
+    "avatar": "😱"
+  },
+  "helpWords": [
+    {
+      "emoji": "🌙",
+      "word": "dark night",
+      "translation": "noche oscura"
+    },
+    {
+      "emoji": "👣",
+      "word": "creepy footsteps",
+      "translation": "pasos espeluznantes"
+    },
+    {
+      "emoji": "🕯️",
+      "word": "strange shadow",
+      "translation": "sombra extraña"
+    },
+    {
+      "emoji": "⚡",
+      "word": "sudden noise",
+      "translation": "ruido repentino"
+    },
+    {
+      "emoji": "😱",
+      "word": "terrified reaction",
+      "translation": "reacción de susto"
+    },
+    {
+      "emoji": "🔍",
+      "word": "mystery solved",
+      "translation": "misterio resuelto"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Where were you when you heard the strange rattling sound in the attic?",
+        "es": "¿Dónde estabas cuando escuchaste el ruido extraño en el ático?"
+      },
+      {
+        "en": "Did anyone dare to climb the dark wooden stairs with a flashlight?",
+        "es": "¿Alguien se atrevió a subir las escaleras de madera con una linterna?"
+      },
+      {
+        "en": "What was actually making the noise behind the old wardrobe?",
+        "es": "¿Qué estaba haciendo el ruido detrás del viejo armario?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "It was midnight during a thunderstorm and the power went out completely.",
+        "es": "Era medianoche durante una tormenta y se fue la luz por completo."
+      },
+      {
+        "en": "I walked up slowly with my flashlight shaking in my hands.",
+        "es": "Subí despacio con mi linterna temblando en mis manos."
+      },
+      {
+        "en": "It was just a tiny runaway kitten playing with empty boxes!",
+        "es": "¡Era solo un gatito perdido jugando con cajas vacías!"
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -8622,7 +8622,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 🎮 / Bienvenida! 🎮", description: "Series, Movies, Games & Music", imageUrl: "/images/teens-basic-2-class-09/slide-01.jpg", content: ["Today we talk about entertainment.","You will describe shows, games, movies, and music.","Get ready for the fan challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to Series, Movies, Games & Music! 🎮 / ¡Bienvenidos a Series, Movies, Games & Music! 🎮", description: "Series, Movies, Games & Music", imageUrl: "/images/teens-basic-2-class-09/slide-01.jpg", content: ["Today we talk about entertainment.","You will describe shows, games, movies, and music.","Get ready for the fan challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-09/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Series", color: "#EF4444", prompt: "What series do you like?", es: "Que serie te gusta?" }, { label: "Movie", color: "#F59E0B", prompt: "What movie is fun?", es: "Que pelicula es divertida?" }, { label: "Game", color: "#10B981", prompt: "What game do you play?", es: "Que juego juegas?" }, { label: "Music", color: "#3B82F6", prompt: "What music do you like?", es: "Que musica te gusta?" }, { label: "Boring", color: "#8B5CF6", prompt: "What is boring?", es: "Que es aburrido?" }, { label: "Favorite", color: "#EC4899", prompt: "What is your favorite?", es: "Cual es tu favorito?" }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-09/slide-03.jpg", content: ["✔️ Name entertainment types.","✔️ Use opinion adjectives.","✔️ Explain likes and dislikes."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8697,105 +8697,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Describir series, películas, juegos and música · Describir series, películas, juegos y música 💬 / Hablen de Describir series, películas, juegos and música · Describir series, películas, juegos y música 💬",
                   description: "Practice real conversation about Describir series, películas, juegos and música · Describir series, películas, juegos y música.",
                   speakingScene: {
-                                          "topic": "Talk about Describir series, películas, juegos and música · Describir series, películas, juegos y música",
-                                          "topicEs": "Hablen sobre Describir series, películas, juegos and música · Describir series, películas, juegos y música",
-                                          "cues": [
-                                            {
-                                              "icon": "🎯",
-                                              "label": "TOPIC?",
-                                              "labelEs": "¿Tema principal?",
-                                              "questionExample": "What do you think about Describir series, películas, juegos and música · Describir series, películas, juegos y música?"
-                                            },
-                                            {
-                                              "icon": "💡",
-                                              "label": "EXAMPLE?",
-                                              "labelEs": "¿Ejemplo de la vida real?",
-                                              "questionExample": "Can you give an example?"
-                                            },
-                                            {
-                                              "icon": "⭐",
-                                              "label": "OPINION?",
-                                              "labelEs": "¿Por qué es importante?",
-                                              "questionExample": "Why is it important?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Teacher",
-                                            "labelEs": "Profesor",
-                                            "action": "Ask",
-                                            "actionEs": "Preguntar",
-                                            "avatar": "👩‍🏫"
-                                          },
-                                          "roleB": {
-                                            "label": "Student",
-                                            "labelEs": "Estudiante",
-                                            "action": "Answer",
-                                            "actionEs": "Responder",
-                                            "avatar": "👨‍🎓"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "💬",
-                                              "word": "practice",
-                                              "translation": "practicar"
-                                            },
-                                            {
-                                              "emoji": "💡",
-                                              "word": "real example",
-                                              "translation": "ejemplo real"
-                                            },
-                                            {
-                                              "emoji": "⭐",
-                                              "word": "important",
-                                              "translation": "importante"
-                                            },
-                                            {
-                                              "emoji": "🗣️",
-                                              "word": "speak clearly",
-                                              "translation": "hablar claro"
-                                            },
-                                            {
-                                              "emoji": "✨",
-                                              "word": "fluency",
-                                              "translation": "fluidez"
-                                            },
-                                            {
-                                              "emoji": "🎯",
-                                              "word": "goal",
-                                              "translation": "meta"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "How would you explain this in your own words?",
-                                                "es": "¿Cómo explicarías esto con tus propias palabras?"
-                                              },
-                                              {
-                                                "en": "What is a good example from your daily life?",
-                                                "es": "¿Cuál es un buen ejemplo de tu vida diaria?"
-                                              },
-                                              {
-                                                "en": "What do you think about this topic?",
-                                                "es": "¿Qué piensas sobre este tema?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "In my opinion, this helps us communicate clearly.",
-                                                "es": "En mi opinión, esto nos ayuda a comunicarnos con claridad."
-                                              },
-                                              {
-                                                "en": "For example, I use this when talking with friends.",
-                                                "es": "Por ejemplo, uso esto al hablar con amigos."
-                                              },
-                                              {
-                                                "en": "I feel very confident practicing this today.",
-                                                "es": "Me siento muy seguro practicando esto hoy."
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Debate the Ultimate Video Game Hero 🎮",
+  "topicEs": "Debate quién es el mejor héroe de videojuegos",
+  "cues": [
+    {
+      "icon": "🎮",
+      "label": "CHARACTER & GAME?",
+      "labelEs": "¿Personaje y juego?",
+      "questionExample": "Who is your favorite gaming protagonist?"
+    },
+    {
+      "icon": "⚡",
+      "label": "POWERS & WEAPONS?",
+      "labelEs": "¿Poderes y armas?",
+      "questionExample": "What special abilities or gear do they use?"
+    },
+    {
+      "icon": "🏆",
+      "label": "WHY UNBEATABLE?",
+      "labelEs": "¿Por qué es invencible?",
+      "questionExample": "Why would they win in a combat arena?"
+    }
+  ],
+  "roleA": {
+    "label": "Gamer 1",
+    "labelEs": "Gamer 1",
+    "action": "Defend your character",
+    "actionEs": "Defender personaje",
+    "avatar": "🕹️"
+  },
+  "roleB": {
+    "label": "Gamer 2",
+    "labelEs": "Gamer 2",
+    "action": "Counter with your hero",
+    "actionEs": "Contraatacar con héroe",
+    "avatar": "🎮"
+  },
+  "helpWords": [
+    {
+      "emoji": "🎮",
+      "word": "legendary hero",
+      "translation": "héroe legendario"
+    },
+    {
+      "emoji": "⚔️",
+      "word": "ultimate weapon",
+      "translation": "arma definitiva"
+    },
+    {
+      "emoji": "🛡️",
+      "word": "shield & armor",
+      "translation": "escudo y armadura"
+    },
+    {
+      "emoji": "⚡",
+      "word": "superpower move",
+      "translation": "movimiento especial"
+    },
+    {
+      "emoji": "🕹️",
+      "word": "battle arena",
+      "translation": "arena de batalla"
+    },
+    {
+      "emoji": "🏆",
+      "word": "victory royale",
+      "translation": "victoria magistral"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Why do you believe your chosen game hero could beat anyone?",
+        "es": "¿Por qué crees que tu héroe de juego podría vencer a cualquiera?"
+      },
+      {
+        "en": "What special ability gives them an unfair advantage in combat?",
+        "es": "¿Qué habilidad especial les da una ventaja definitiva en combate?"
+      },
+      {
+        "en": "How would they defend against lightning attacks or elemental magic?",
+        "es": "¿Cómo se defenderían contra ataques de relámpago o magia elemental?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "My hero has superhuman agility and can manipulate time itself.",
+        "es": "Mi héroe tiene agilidad sobrehumana y puede manipular el tiempo."
+      },
+      {
+        "en": "Their energy sword can slice through titanium shields instantly.",
+        "es": "Su espada de energía puede cortar escudos de titanio al instante."
+      },
+      {
+        "en": "With speed dash and time rewind, they are completely invincible!",
+        "es": "¡Con esquiva rápida y rebobinado de tiempo, son invencibles!"
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."
@@ -8827,7 +8827,7 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "10 minutos",
             objective: "Romper el hielo y activar conocimientos previos.",
             slides: [
-              { id: "slide-1", title: "Welcome! 🏆 / Bienvenida! 🏆", description: "Current Conversations, Routines & Speaking Review", imageUrl: "/images/teens-basic-2-class-10/slide-01.jpg", content: ["Today is the Level 2 speaking review.","You will connect routines, plans, rules, abilities, and opinions.","Get ready for the final speaking challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
+              { id: "slide-1", title: "Welcome to Current Conversations, Routines & Speaking Review! 🏆 / ¡Bienvenidos a Current Conversations, Routines & Speaking Review! 🏆", description: "Current Conversations, Routines & Speaking Review", imageUrl: "/images/teens-basic-2-class-10/slide-01.jpg", content: ["Today is the Level 2 speaking review.","You will connect routines, plans, rules, abilities, and opinions.","Get ready for the final speaking challenge!"], bgColor: "bg-gradient-to-br from-indigo-500 to-purple-600" },
               { id: "slide-2", title: "Teen Warm-up Wheel / Adolescente Calentamiento Ruleta", description: "Spin and answer one easy question.", type: "spinning-wheel", imageUrl: "/images/teens-basic-2-class-10/slide-02.jpg", content: ["Spin the wheel.", "Answer with one complete idea.", "Then ask one partner too."], wheelItems: [{ label: "Animal", color: "#EF4444", prompt: "Describe an animal.", es: "Describe un animal." }, { label: "Room", color: "#F59E0B", prompt: "Describe your room.", es: "Describe tu cuarto." }, { label: "City", color: "#10B981", prompt: "Plan a city trip.", es: "Planea una salida." }, { label: "Job", color: "#3B82F6", prompt: "Talk about a dream job.", es: "Habla de trabajo sonado." }, { label: "Rule", color: "#8B5CF6", prompt: "Say a school rule.", es: "Di una regla escolar." }, { label: "Opinion", color: "#EC4899", prompt: "Recommend a show or game.", es: "Recomienda una serie o juego." }], bgColor: "bg-gradient-to-br from-cyan-500 to-blue-500" },
               { id: "slide-3", title: "Today's Goals 🎯 / Objetivos de Hoy 🎯", description: "Objectives", imageUrl: "/images/teens-basic-2-class-10/slide-03.jpg", content: ["✔️ Review key Level 2 vocabulary.","✔️ Answer questions with complete sentences.","✔️ Speak for short timed challenges."], bgColor: "bg-gradient-to-br from-fuchsia-500 to-pink-600" }
             ],
@@ -8902,105 +8902,105 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
                   title: "Speaking Time: Compare your daily routine ⏰ / Comparen su rutina diaria ⏰",
                   description: "Compare daily habits, schedules, and morning rituals.",
                   speakingScene: {
-                                          "topic": "Compare your daily routine",
-                                          "topicEs": "Comparen su rutina desde la mañana hasta la noche",
-                                          "cues": [
-                                            {
-                                              "icon": "🌅",
-                                              "label": "MORNING?",
-                                              "labelEs": "¿A qué hora te despiertas?",
-                                              "questionExample": "What time do you wake up?"
-                                            },
-                                            {
-                                              "icon": "📚",
-                                              "label": "AFTERNOON?",
-                                              "labelEs": "¿Qué haces en la tarde?",
-                                              "questionExample": "What do you do in the afternoon?"
-                                            },
-                                            {
-                                              "icon": "🌙",
-                                              "label": "NIGHT?",
-                                              "labelEs": "¿A qué hora te vas a dormir?",
-                                              "questionExample": "What time do you sleep?"
-                                            }
-                                          ],
-                                          "roleA": {
-                                            "label": "Teacher",
-                                            "labelEs": "Profesor",
-                                            "action": "Ask",
-                                            "actionEs": "Preguntar",
-                                            "avatar": "👩‍🏫"
-                                          },
-                                          "roleB": {
-                                            "label": "Student",
-                                            "labelEs": "Estudiante",
-                                            "action": "Answer",
-                                            "actionEs": "Responder",
-                                            "avatar": "👨‍🎓"
-                                          },
-                                          "helpWords": [
-                                            {
-                                              "emoji": "⏰",
-                                              "word": "wake up at 7",
-                                              "translation": "despertar a las 7"
-                                            },
-                                            {
-                                              "emoji": "🍳",
-                                              "word": "have breakfast",
-                                              "translation": "desayunar"
-                                            },
-                                            {
-                                              "emoji": "🚌",
-                                              "word": "take the bus",
-                                              "translation": "tomar el bus"
-                                            },
-                                            {
-                                              "emoji": "📖",
-                                              "word": "do homework",
-                                              "translation": "hacer tareas"
-                                            },
-                                            {
-                                              "emoji": "🎮",
-                                              "word": "relax & play",
-                                              "translation": "descansar y jugar"
-                                            },
-                                            {
-                                              "emoji": "🛌",
-                                              "word": "go to bed",
-                                              "translation": "irse a dormir"
-                                            }
-                                          ],
-                                          "hiddenPhrases": {
-                                            "ask": [
-                                              {
-                                                "en": "What time do you usually wake up on weekdays?",
-                                                "es": "¿A qué hora sueles despertarte los días de semana?"
-                                              },
-                                              {
-                                                "en": "What is the first thing you do after school?",
-                                                "es": "¿Qué es lo primero que haces después del colegio?"
-                                              },
-                                              {
-                                                "en": "What time do you go to sleep at night?",
-                                                "es": "¿A qué hora te vas a dormir en la noche?"
-                                              }
-                                            ],
-                                            "answer": [
-                                              {
-                                                "en": "I always wake up at seven in the morning.",
-                                                "es": "Siempre me despierto a las siete de la mañana."
-                                              },
-                                              {
-                                                "en": "I do my homework and then play video games.",
-                                                "es": "Hago mis tareas y luego juego videojuegos."
-                                              },
-                                              {
-                                                "en": "I go to bed around ten thirty at night.",
-                                                "es": "Me voy a dormir alrededor de las diez y media de la noche."
-                                              }
-                                            ]
-                                          }
-                                        }
+  "topic": "Host an Engaging Teen Podcast 🎙️",
+  "topicEs": "Conduce un podcast juvenil entretenido",
+  "cues": [
+    {
+      "icon": "🎙️",
+      "label": "TODAY'S TOPIC?",
+      "labelEs": "¿Tema de hoy?",
+      "questionExample": "What hot teen topic are we discussing today?"
+    },
+    {
+      "icon": "🗣️",
+      "label": "GUEST OPINION?",
+      "labelEs": "¿Opinión del invitado?",
+      "questionExample": "What do students really think about it?"
+    },
+    {
+      "icon": "🎧",
+      "label": "CALL TO ACTION?",
+      "labelEs": "¿Llamado a la acción?",
+      "questionExample": "What should listeners comment and share?"
+    }
+  ],
+  "roleA": {
+    "label": "Podcast Host",
+    "labelEs": "Presentador",
+    "action": "Lead interview",
+    "actionEs": "Conducir entrevista",
+    "avatar": "🎙️"
+  },
+  "roleB": {
+    "label": "Special Guest",
+    "labelEs": "Invitado especial",
+    "action": "Share insights",
+    "actionEs": "Compartir opiniones",
+    "avatar": "🎧"
+  },
+  "helpWords": [
+    {
+      "emoji": "🎙️",
+      "word": "live broadcast",
+      "translation": "transmisión en vivo"
+    },
+    {
+      "emoji": "🎧",
+      "word": "podcast listeners",
+      "translation": "oyentes del podcast"
+    },
+    {
+      "emoji": "🔥",
+      "word": "hot debate topic",
+      "translation": "tema candente"
+    },
+    {
+      "emoji": "💡",
+      "word": "insider perspective",
+      "translation": "perspectiva interna"
+    },
+    {
+      "emoji": "💬",
+      "word": "audience comments",
+      "translation": "comentarios del público"
+    },
+    {
+      "emoji": "🌟",
+      "word": "subscribe & follow",
+      "translation": "suscríbete y sigue"
+    }
+  ],
+  "hiddenPhrases": {
+    "ask": [
+      {
+        "en": "Welcome back listeners! Today we are discussing esports vs traditional sports!",
+        "es": "¡Bienvenidos oyentes! ¡Hoy debatimos esports vs deportes tradicionales!"
+      },
+      {
+        "en": "In your view, should high schools create official competitive gaming teams?",
+        "es": "¿En tu opinión, los colegios deberían crear equipos oficiales de esports?"
+      },
+      {
+        "en": "What is your closing advice for students balancing gaming and schoolwork?",
+        "es": "¿Cuál es tu consejo final para equilibrar videojuegos y tareas?"
+      }
+    ],
+    "answer": [
+      {
+        "en": "Esports require extreme reflexes, teamwork, and sharp strategy.",
+        "es": "Los esports requieren reflejos extremos, trabajo en equipo y estrategia."
+      },
+      {
+        "en": "Schools should support esports clubs to teach communication and logic.",
+        "es": "Los colegios deben apoyar clubes de esports para enseñar comunicación y lógica."
+      },
+      {
+        "en": "Set a two-hour gaming limit and always finish homework first!",
+        "es": "¡Establece un límite de juego de dos horas y siempre termina la tarea primero!"
+      }
+    ]
+  }
+}
             }
             ],
             action: "Conversar libremente."

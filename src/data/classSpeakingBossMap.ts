@@ -3992,292 +3992,292 @@ export const CLASS_SPEAKING_BOSS_MAP: Record<string, CustomSpeakingBossMission> 
     }
   },
   "teens:c-teens-basic-1-1": {
-    "bossName": "Morning Hustler",
-    "bossTitle": "High School Morning Habits & Bus Routines Challenge",
-    "bossAvatar": "🚌",
-    "mission": "Walk through your morning race to high school! Explain how you get ready, pack your lunch, and catch the school bus on time.",
-    "starterPhrase": "My morning routine starts at six thirty when the alarm goes off, and I...",
+    "bossName": "Family Chronicler",
+    "bossTitle": "Family Tree & Feelings Challenge",
+    "bossAvatar": "👨‍👩‍👧",
+    "mission": "Introduce your family members, their pets, and describe how everyone is feeling today using 'this is', 'these are', and 'have/has'!",
+    "starterPhrase": "This is my family! In this photo, you can see my...",
     "powerWords": [
-      "Catch the school bus",
-      "Grab a quick breakfast",
-      "Never arrive late"
+      "Close family members",
+      "Feel excited and happy",
+      "Have a playful puppy"
     ],
-    "targetGrammar": "Present Simple routines + Time markers (every morning, at 7:15 AM)",
+    "targetGrammar": "This is / These are + have/has + feelings with be (He is tired, they are excited)",
     "checklist": [
-      "State your wake-up time",
-      "Describe how you get ready in 15 minutes",
-      "Tell what you do on the bus ride to school"
+      "Introduce at least 2 family members with 'this is' or 'these are'",
+      "Describe how each person feels today",
+      "Mention a pet or characteristic using have/has"
     ],
     "rounds": {
       "remember": [
-        "Say 3 morning routine verbs: wake up, brush teeth, catch the bus."
+        "Say 3 family terms (parents, siblings, cousin) and 2 feelings (excited, tired)."
       ],
       "use": [
-        "Make 1 sentence with \"I usually wake up at...\", 1 with \"I don't skip breakfast\", and 1 routine question."
+        "Make 1 sentence with \"This is...\", 1 with \"She/He has...\", and 1 feeling question."
       ],
       "speak": [
-        "Speak for 30 seconds: Describe your chaotic yet successful morning routine before the first bell!"
+        "Speak for 30 seconds: Present your family photo, introduce two relatives, and describe their feelings!"
       ]
     }
   },
   "teens:c-teens-basic-1-2": {
-    "bossName": "Content Creator",
-    "bossTitle": "Favorite Creators & Social Media Habits Challenge",
-    "bossAvatar": "📱",
-    "mission": "Review your favorite digital creator or YouTuber! Explain what content they post, why their videos are engaging, and when you watch them.",
-    "starterPhrase": "My favorite online content creator is... because they create awesome...",
+    "bossName": "Nutrition Coach",
+    "bossTitle": "Fast Food & Healthy Choices Challenge",
+    "bossAvatar": "🥗",
+    "mission": "Order a balanced meal at the café and explain your healthy habit choices using 'because'!",
+    "starterPhrase": "I would like a turkey sandwich and fresh water, please, because...",
     "powerWords": [
-      "Engaging short tutorials",
-      "Viral videos",
-      "Stream weekly"
+      "Order balanced meals",
+      "Drink plenty of water",
+      "Maintain steady energy"
     ],
-    "targetGrammar": "Third person Present Simple (He posts, She streams, They create)",
+    "targetGrammar": "Polite orders (I would like...) + Reasons with because (because I need energy)",
     "checklist": [
-      "Name the content creator or channel",
-      "Describe their style with 3rd person -s verbs",
-      "Explain why their community is so active"
+      "Order one healthy food and one drink politely",
+      "Give a reason for your choice with 'because'",
+      "Compare a healthy habit with an unhelpful habit"
     ],
     "rounds": {
       "remember": [
-        "Conjugate 3 verbs for 3rd person: creates, streams, uploads."
+        "Say 3 healthy food/drink words and 1 polite ordering phrase."
       ],
       "use": [
-        "Make 2 sentences with He/She + verb-s and 1 question about social media habits."
+        "Make 1 sentence with \"I would like...\", 1 reason with \"because...\", and 1 menu question."
       ],
       "speak": [
-        "Speak for 30 seconds: Pitch your favorite digital creator to the class and explain why they inspire you!"
+        "Speak for 30 seconds: Role-play ordering a meal at a café and explain why you chose healthy options!"
       ]
     }
   },
   "teens:c-teens-basic-1-3": {
-    "bossName": "Robotics Captain",
-    "bossTitle": "Teen School Clubs & STEM Projects Challenge",
-    "bossAvatar": "🤖",
-    "mission": "Recruit new members to your high school robotics or creative club! Describe what projects you build, meetings, and competitions.",
-    "starterPhrase": "Join our award-winning school robotics club! Every Wednesday after class, we...",
+    "bossName": "The Weather Closet Boss",
+    "bossTitle": "Weather Forecast & Outfit Challenge",
+    "bossAvatar": "🌦️",
+    "mission": "Read today's changing weather forecast and advise students on exactly what outfits and accessories to bring so they stay comfortable all day!",
+    "starterPhrase": "According to today's weather forecast, it will be rainy in the morning and cool later, so you should wear...",
     "powerWords": [
-      "Build smart robots",
-      "Code custom scripts",
-      "Compete in tournaments"
+      "Check the forecast",
+      "Bring an umbrella",
+      "Wear a warm hoodie"
     ],
-    "targetGrammar": "Present Simple with We / They (We build, we code, we test)",
+    "targetGrammar": "Weather conditions (rainy, windy, cold) + be wearing + bring/wear + because",
     "checklist": [
-      "Name your club and meeting day",
-      "Describe 2 hands-on projects you work on",
-      "Give a call to action inviting classmates to join"
+      "Describe morning and afternoon weather conditions",
+      "Recommend 2 clothing items or accessories to bring",
+      "Explain the outfit choice using 'because' (e.g., because it will rain)"
     ],
     "rounds": {
       "remember": [
-        "Say 3 STEM club terms: robotics, coding, tournament."
+        "Say 3 weather words (rainy, windy, chilly) and 3 clothing items (hoodie, umbrella, boots)."
       ],
       "use": [
-        "Make 1 sentence with \"Our club meets on...\", 1 with \"We build...\", and 1 invitation question."
+        "Make 1 sentence with \"It is/will be...\", 1 with \"I am wearing...\", and 1 recommendation with \"because...\"."
       ],
       "speak": [
-        "Speak for 30 seconds: Deliver a high-energy recruitment pitch for your favorite school club!"
+        "Speak for 30 seconds: Deliver a live weather report and tell your classmates what to wear and bring today!"
       ]
     }
   },
   "teens:c-teens-basic-1-4": {
-    "bossName": "Eco Warrior",
-    "bossTitle": "Nature, Parks & Eco-Friendly Teen Habits Challenge",
-    "bossAvatar": "🌳",
-    "mission": "Promote green eco-habits on campus! Explain how students can bike to school, reduce plastic waste, and keep community parks clean.",
-    "starterPhrase": "To protect our local environment and parks, teenagers should always...",
+    "bossName": "Park Ranger",
+    "bossTitle": "Nature, Locations & Park Rules Challenge",
+    "bossAvatar": "🌲",
+    "mission": "Guide visitors through a natural park! Describe locations using 'there is/are' and give clear park rules using imperatives.",
+    "starterPhrase": "Welcome to Green Valley Park! There is a beautiful lake behind the visitor center, and...",
     "powerWords": [
-      "Recycle plastic bottles",
-      "Bike to school",
-      "Protect green spaces"
+      "Natural trail",
+      "Recycling bin",
+      "Protect wildlife"
     ],
-    "targetGrammar": "Present Simple eco-actions + Frequency adverbs (always recycle, never litter)",
+    "targetGrammar": "There is / There are + Prepositions of place + Imperatives (Don't litter, stay on trail)",
     "checklist": [
-      "State 2 positive green habits",
-      "State 1 harmful habit to avoid (never litter)",
-      "Describe a fun activity in your local park"
+      "Locate 2 natural features using 'there is/are' and prepositions (behind, next to)",
+      "Give 1 positive instruction (Put trash in bins)",
+      "Give 1 negative rule (Don't feed animals)"
     ],
     "rounds": {
       "remember": [
-        "Say 3 eco-action verbs: recycle, conserve, protect."
+        "Say 3 nature words (lake, trail, trees) and 2 prepositions of place (behind, next to)."
       ],
       "use": [
-        "Make 1 sentence with \"We always recycle...\", 1 with \"We never litter...\", and 1 eco question."
+        "Make 1 sentence with \"There is/are...\", 1 imperative rule with \"Don't...\", and 1 location question."
       ],
       "speak": [
-        "Speak for 30 seconds: Deliver a passionate youth environmental pledge for your school!"
+        "Speak for 30 seconds: Give a park orientation speech describing attractions and safety rules!"
       ]
     }
   },
   "teens:c-teens-basic-1-5": {
-    "bossName": "Cinema Critic",
-    "bossTitle": "Weekend Movie Nights & Streaming Vibes Challenge",
-    "bossAvatar": "🍿",
-    "mission": "Organize a Friday night movie marathon with your squad! Recommend a sci-fi or anime series, snacks, and screen setup.",
-    "starterPhrase": "For our Friday night streaming marathon, I recommend that we watch...",
+    "bossName": "Weekend Planner",
+    "bossTitle": "Weekend Plans & Intentions Challenge",
+    "bossAvatar": "🗓️",
+    "mission": "Pitch your ultimate weekend plan to friends! Explain your intentions using 'want to', 'would like to', and confirmed plans with 'going to'.",
+    "starterPhrase": "This weekend, I am going to meet my friends at the skatepark on Saturday at three o'clock, and...",
     "powerWords": [
-      "Sci-fi blockbuster",
-      "Fresh butter popcorn",
-      "Stream the latest season"
+      "Confirmed weekend plan",
+      "Meet at the park",
+      "Exciting plans"
     ],
-    "targetGrammar": "I recommend / We usually watch / It has an incredible plot",
+    "targetGrammar": "be going to + base verb + want to / would like to + time & place details (on Saturday at 3:00 PM)",
     "checklist": [
-      "Name the movie or anime series",
-      "Describe the genre and storyline",
-      "List the essential snacks and drinks for the marathon"
+      "State 1 weekend intention with 'want to' or 'would like to'",
+      "Confirm 1 specific plan with 'going to' including day, time, and place",
+      "Ask a friend what they are going to do"
     ],
     "rounds": {
       "remember": [
-        "Say 3 entertainment genres: sci-fi, comedy, animation."
+        "Say 3 weekend activities (study, skate, relax) and 2 time expressions (on Saturday, at 3 o'clock)."
       ],
       "use": [
-        "Make 1 recommendation sentence, 1 snack sentence, and 1 movie preference question."
+        "Make 1 sentence with \"I want to...\", 1 with \"I am going to...\", and 1 question with \"What are you going to do?\"."
       ],
       "speak": [
-        "Speak for 30 seconds: Present your ultimate weekend movie night plan to your friends!"
+        "Speak for 30 seconds: Present your full weekend plan with day, time, place, and activities!"
       ]
     }
   },
   "teens:c-teens-basic-1-6": {
-    "bossName": "Squad Tactician",
-    "bossTitle": "Gaming Tournaments & Strategy Callouts Challenge",
-    "bossAvatar": "🎮",
-    "mission": "Lead your esports squad in an intense multiplayer match! Give live strategic callouts on positioning, communication, and teamwork.",
-    "starterPhrase": "Listen up squad! To win this tournament match, our strategy is to...",
+    "bossName": "Social Host",
+    "bossTitle": "Invitations & Hangouts Challenge",
+    "bossAvatar": "🎉",
+    "mission": "Invite classmates to a fun weekend activity, practice accepting, and politely decline with an alternative suggestion!",
+    "starterPhrase": "Would you like to come to the mall with us this Saturday? We can...",
     "powerWords": [
-      "Coordinate voice chat",
-      "Defend the objective",
-      "Execute the game plan"
+      "Accept the invitation",
+      "Polite alternative",
+      "Hang out together"
     ],
-    "targetGrammar": "Imperatives & Present Simple teamwork (Rotate right, watch the flank, we hold this zone)",
+    "targetGrammar": "Invitations (Would you like to...? / How about...?) + Polite acceptance & polite declining",
     "checklist": [
-      "Give 2 clear tactical commands",
-      "Highlight the importance of voice communication",
-      "Motivate the squad to secure the trophy"
+      "Make a polite invitation using 'Would you like to...?'",
+      "Respond politely to an invitation",
+      "Decline politely and propose a different day/time (How about Sunday?)"
     ],
     "rounds": {
       "remember": [
-        "Say 3 tactical callout verbs: flank, defend, rotate."
+        "Say 2 invitation phrases (Would you like to...?, Let's...) and 2 response phrases (Sounds great!, I'd love to)."
       ],
       "use": [
-        "Make 2 tactical strategy sentences and 1 team check-in question."
+        "Make 1 invitation sentence, 1 polite refusal with alternative (\"Sorry, I can't. How about...?\"), and 1 question."
       ],
       "speak": [
-        "Speak for 30 seconds: Deliver an electrifying pre-match tactical speech to your esports team!"
+        "Speak for 30 seconds: Role-play inviting a friend, handling schedule changes, and agreeing on a plan!"
       ]
     }
   },
   "teens:c-teens-basic-1-7": {
-    "bossName": "Thrift Hunter",
-    "bossTitle": "Fashion Styles & Thrift Store Finds Challenge",
-    "bossAvatar": "🧥",
-    "mission": "Showcase an amazing thrift store haul! Describe vintage denim jackets, oversized graphic tees, and styling on a budget.",
-    "starterPhrase": "I found an incredible vintage streetwear look at the thrift shop, including a...",
+    "bossName": "Style Consultant",
+    "bossTitle": "Clothing Store - Prices & Sizes Challenge",
+    "bossAvatar": "🛍️",
+    "mission": "Role-play buying clothes at a fashion store! Ask for sizes, colors, prices, try on items, and complete a polite purchase.",
+    "starterPhrase": "Excuse me, how much are these black jeans? Do you have them in size medium?",
     "powerWords": [
-      "Vintage denim jacket",
-      "Retro sneakers",
-      "Sustainable fashion"
+      "Check the price tag",
+      "Try on in fitting room",
+      "Pay by card"
     ],
-    "targetGrammar": "Descriptive adjectives + Present Simple shopping (I find, it costs, it looks)",
+    "targetGrammar": "How much is/are...? + Size/color inquiries (in size medium, in blue) + Can I try this on?",
     "checklist": [
-      "Describe 2 unique thrifted items with colors/materials",
-      "Explain how you style them together",
-      "Share tips for finding great budget fashion"
+      "Ask about the price of an item using 'How much is/are...?'",
+      "Ask for a specific size or color",
+      "Politely request to try it on or purchase it"
     ],
     "rounds": {
       "remember": [
-        "Say 3 fashion terms: vintage, oversized, sustainable."
+        "Say 3 clothing store terms: fitting room, price, size (small/medium/large)."
       ],
       "use": [
-        "Make 1 sentence with \"I found a cool...\", 1 with \"It matches my...\", and 1 fashion question."
+        "Make 1 price question with \"How much are...?\", 1 size question, and 1 polite request."
       ],
       "speak": [
-        "Speak for 30 seconds: Present your stylish thrift store haul and give sustainable fashion advice!"
+        "Speak for 30 seconds: Conduct a complete customer-clerk exchange at a clothing store!"
       ]
     }
   },
   "teens:c-teens-basic-1-8": {
-    "bossName": "Street Food Critic",
-    "bossTitle": "Favorite Street Snacks & Fast Food Challenge",
-    "bossAvatar": "🌮",
-    "mission": "Review your neighborhood's best food truck! Describe their signature spicy tacos, crispy fries, and refreshing iced fruit drinks.",
-    "starterPhrase": "The best food truck near our school is famous for its delicious...",
+    "bossName": "Café Barista Boss",
+    "bossTitle": "Café Ordering & Menu Questions Challenge",
+    "bossAvatar": "☕",
+    "mission": "Order food and drinks from a café menu like a pro! Ask about ingredients, clarify options, and pay with courtesy.",
+    "starterPhrase": "Good afternoon! Could I please have an iced matcha latte and a toasted bagel? Also...",
     "powerWords": [
-      "Spicy street tacos",
-      "Crispy seasoned fries",
-      "Refreshing smoothie"
+      "Order from the menu",
+      "Ask about options",
+      "Pay politely"
     ],
-    "targetGrammar": "Sensory adjectives (crispy, spicy, tender) + Simple Present reviews (They serve, it tastes)",
+    "targetGrammar": "Polite ordering (Could I have... / I would like...) + Clarification questions (Does it come with...? / How much is...?)",
     "checklist": [
-      "Name the food spot and dish",
-      "Describe the texture and flavor with sensory adjectives",
-      "Give your final rating out of 10"
+      "Order a drink and a snack politely using 'I would like' or 'Could I have'",
+      "Ask 1 question about the menu or options",
+      "Ask for the total and complete the payment"
     ],
     "rounds": {
       "remember": [
-        "Say 3 sensory flavor words: spicy, tangy, savory."
+        "Say 3 café menu items (bagel, smoothie, latte) and 2 polite words (please, thank you)."
       ],
       "use": [
-        "Make 2 descriptive food review sentences and 1 recommendation question."
+        "Make 1 order with \"I would like...\", 1 question with \"Does it have...?\", and 1 payment line."
       ],
       "speak": [
-        "Speak for 30 seconds: Deliver a mouthwatering food review of your favorite street food spot!"
+        "Speak for 30 seconds: Role-play a realistic café order including questions and payment!"
       ]
     }
   },
   "teens:c-teens-basic-1-9": {
-    "bossName": "Visual Editor",
-    "bossTitle": "Digital Photography & Aesthetic Editing Challenge",
-    "bossAvatar": "📸",
-    "mission": "Explain how to shoot and edit viral Instagram or TikTok photos! Detail framing, natural lighting, and color grading tips.",
-    "starterPhrase": "To take stunning aesthetic photos on your phone, you should always...",
+    "bossName": "Tech Navigator",
+    "bossTitle": "Digital Habits & Online Safety Challenge",
+    "bossAvatar": "💻",
+    "mission": "Analyze your digital device routine! Explain what you use devices for with 'use...to', screen time habits, and crucial online safety rules.",
+    "starterPhrase": "I use my laptop every evening to do homework and code, but I always follow safety rules like...",
     "powerWords": [
-      "Natural golden hour",
-      "Rule of thirds",
-      "Color grading preset"
+      "Screen time balance",
+      "Protect private data",
+      "Safe browsing"
     ],
-    "targetGrammar": "Instructional steps (First capture..., then adjust..., always use...)",
+    "targetGrammar": "use + device + to + base verb (I use my phone to chat) + Frequency adverbs + Safety imperatives (Never share passwords)",
     "checklist": [
-      "Give 1 lighting tip (golden hour, natural light)",
-      "Give 1 composition rule (angles, framing)",
-      "Explain your editing process before posting"
+      "Explain what you use 2 devices for using 'use...to'",
+      "Describe your daily screen time frequency",
+      "Give 1 essential online safety rule"
     ],
     "rounds": {
       "remember": [
-        "Say 3 photography words: contrast, saturation, composition."
+        "Say 3 digital device words (laptop, smartphone, tablet) and 2 safety verbs (protect, verify)."
       ],
       "use": [
-        "Make 2 photo editing advice sentences and 1 camera inquiry."
+        "Make 1 sentence with \"I use my... to...\", 1 frequency sentence (\"I usually spend 2 hours...\"), and 1 safety rule (\"Never share...\")."
       ],
       "speak": [
-        "Speak for 30 seconds: Deliver a masterclass on shooting and editing aesthetic mobile photography!"
+        "Speak for 30 seconds: Give a speech about balanced digital device habits and internet safety rules!"
       ]
     }
   },
   "teens:c-teens-basic-1-10": {
-    "bossName": "Showcase Dean",
-    "bossTitle": "Basic 1 Teen Showcase & Review Challenge",
-    "bossAvatar": "🏆",
-    "mission": "Deliver your Basic 1 Showcase presentation! Reflect on your habits, school clubs, creative passions, and digital lifestyle.",
-    "starterPhrase": "Welcome to my Basic 1 Showcase! Throughout this level, I have mastered speaking about...",
+    "bossName": "Trip Coordinator",
+    "bossTitle": "Chat, Calls & Trip Project Challenge",
+    "bossAvatar": "🗺️",
+    "mission": "Coordinate a group day-trip using phone and chat! Ask for help, clarify misunderstood details, and confirm the complete final itinerary.",
+    "starterPhrase": "Hi! Can you help me finalize our weekend day trip? Let's confirm the date, meeting place, and tasks...",
     "powerWords": [
-      "Digital lifestyle",
-      "High school passions",
-      "Fluent storytelling"
+      "Confirm the itinerary",
+      "Clarify details",
+      "Assign group tasks"
     ],
-    "targetGrammar": "Basic 1 synthesis (Present Simple routines + Clubs + Media + Hobbies)",
+    "targetGrammar": "Polite help requests (Can you help me...?) + Clarification (Did you say...? / Could you repeat...?) + Plan confirmation (We meet at...)",
     "checklist": [
-      "Summarize your daily school life",
-      "Highlight your proudest club or creative project",
-      "Declare your readiness to level up to Basic 2"
+      "Ask for help politely on a call or chat",
+      "Clarify one specific detail (time, address, or price)",
+      "Confirm the final plan with date, time, location, and assigned tasks"
     ],
     "rounds": {
       "remember": [
-        "Say 5 high-impact vocabulary words from Basic 1."
+        "Say 3 trip planning words (destination, tickets, meeting place) and 2 phone clarification phrases."
       ],
       "use": [
-        "Formulate 2 complex sentences connecting routines and passions."
+        "Make 1 help request (\"Could you please help me...?\"), 1 clarification (\"Did you say 9:30?\"), and 1 plan summary."
       ],
       "speak": [
-        "Speak for 30 seconds: Deliver your Basic 1 Showcase speech with energy and fluency!"
+        "Speak for 30 seconds: Deliver the final trip coordination pitch confirming all group details and tasks!"
       ]
     }
   },

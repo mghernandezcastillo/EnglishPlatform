@@ -48,30 +48,30 @@ export function SpeakingSceneCard({ slide }: SpeakingSceneCardProps) {
   const imageUrl = slide.imageUrl || 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1200';
 
   return (
-    <div className="flex flex-col h-full w-full min-h-0 text-white select-none relative justify-between gap-3 sm:gap-4 p-1 sm:p-2">
+    <div className="flex flex-col h-full w-full min-h-0 text-white select-none relative justify-between gap-1.5 sm:gap-2.5 p-2 sm:p-3.5 overflow-hidden">
       {/* ═══ 1. TOP BAR ═══ */}
-      <div className="flex items-center justify-between gap-3 shrink-0">
+      <div className="flex items-center justify-between gap-2 shrink-0">
         {/* Left Badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-2xl bg-gradient-to-r from-fuchsia-500 via-pink-500 to-indigo-600 text-white font-black text-sm sm:text-lg shadow-lg border border-white/20"
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-fuchsia-500 via-pink-500 to-indigo-600 text-white font-black text-xs sm:text-sm shadow-md border border-white/20"
         >
-          <Sparkles className="w-5 h-5 text-amber-300 animate-pulse" />
+          <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
           <span className="tracking-wide">SPEAKING TIME</span>
-          <span className="text-xs sm:text-sm font-bold bg-black/25 px-2.5 py-0.5 rounded-lg text-white/90">
+          <span className="text-[11px] font-bold bg-black/25 px-2 py-0.5 rounded text-white/90">
             ¡Hora de Hablar!
           </span>
         </motion.div>
 
         {/* Right Action Buttons */}
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={() => setShowPhrasesModal(true)}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/20 text-white font-black text-sm sm:text-base transition-all shadow-md active:scale-95 cursor-pointer"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/20 text-white font-black text-xs sm:text-sm transition-all shadow-sm active:scale-95 cursor-pointer"
           >
-            <LayoutGrid className="w-5 h-5" />
+            <LayoutGrid className="w-4 h-4" />
             <span>Ver Frases</span>
           </button>
           <button
@@ -80,9 +80,9 @@ export function SpeakingSceneCard({ slide }: SpeakingSceneCardProps) {
               setIsSwapped(v => !v);
               setActiveSpeaker(null);
             }}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-amber-400 hover:bg-amber-300 text-amber-950 font-black text-sm sm:text-base shadow-lg transition-all active:scale-95 cursor-pointer"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-amber-950 font-black text-xs sm:text-sm shadow-md transition-all active:scale-95 cursor-pointer"
           >
-            <RefreshCcw className="w-5 h-5" />
+            <RefreshCcw className="w-4 h-4" />
             <span>Switch</span>
           </button>
         </div>
@@ -91,64 +91,64 @@ export function SpeakingSceneCard({ slide }: SpeakingSceneCardProps) {
       {/* ═══ 2. CONVERSATIONAL COMMAND HEADLINE ═══ */}
       <div className="text-center shrink-0">
         <motion.h2
-          initial={{ opacity: 0, y: -6 }}
+          initial={{ opacity: 0, y: -4 }}
           animate={{ opacity: 1, y: 0 }}
-          className="font-black text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight drop-shadow-xl"
+          className="font-black text-xl sm:text-2xl lg:text-3xl text-white tracking-tight leading-tight drop-shadow-md"
         >
-          <span className="text-amber-300">✦</span> {topic} {topicEs && <span className="text-white/85 text-2xl sm:text-4xl lg:text-5xl font-bold">/ {topicEs}</span>} <span className="text-amber-300">✦</span>
+          <span className="text-amber-300">✦</span> {topic} {topicEs && <span className="text-white/80 text-lg sm:text-xl lg:text-2xl font-bold">/ {topicEs}</span>} <span className="text-amber-300">✦</span>
         </motion.h2>
 
         {/* Action Pills below headline */}
-        <div className="flex items-center justify-center gap-3.5 mt-2.5">
-          <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-purple-600/80 border border-purple-300/40 text-purple-100 text-sm sm:text-base font-black shadow-md backdrop-blur-sm">
-            <span className="text-xl">{currentRoleA.avatar ?? '👤'}</span>
+        <div className="flex items-center justify-center gap-2.5 mt-1">
+          <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-purple-600/80 border border-purple-300/40 text-purple-100 text-xs sm:text-sm font-bold shadow-sm backdrop-blur-sm">
+            <span>{currentRoleA.avatar ?? '👤'}</span>
             <span>{currentRoleA.label} {currentRoleA.action.toLowerCase()}s</span>
-            <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5 text-purple-200" />
+            <HelpCircle className="w-3.5 h-3.5 text-purple-200" />
           </div>
-          <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-cyan-600/80 border border-cyan-300/40 text-cyan-100 text-sm sm:text-base font-black shadow-md backdrop-blur-sm">
-            <span className="text-xl">{currentRoleB.avatar ?? '👤'}</span>
+          <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-cyan-600/80 border border-cyan-300/40 text-cyan-100 text-xs sm:text-sm font-bold shadow-sm backdrop-blur-sm">
+            <span>{currentRoleB.avatar ?? '👤'}</span>
             <span>{currentRoleB.label} {currentRoleB.action.toLowerCase()}s</span>
-            <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-200" />
+            <MessageSquare className="w-3.5 h-3.5 text-cyan-200" />
           </div>
         </div>
       </div>
 
       {/* ═══ 3. MAIN STAGE (TALL IMMERSIVE CENTER IMAGE + SIDE PLAYERS + FLOATING CUES) ═══ */}
-      <div className="flex-1 min-h-[360px] sm:min-h-[440px] md:min-h-[480px] flex items-stretch justify-center gap-3 sm:gap-5 relative px-1">
+      <div className="flex-1 min-h-0 flex items-stretch justify-center gap-2.5 sm:gap-4 relative px-1 my-0.5">
         {/* — LEFT PLAYER CARD (ROLE A) — */}
         <motion.div
-          animate={{ scale: activeSpeaker === 'a' ? 1.04 : 1 }}
+          animate={{ scale: activeSpeaker === 'a' ? 1.03 : 1 }}
           onClick={() => setActiveSpeaker(activeSpeaker === 'a' ? null : 'a')}
           className={`
-            w-32 sm:w-44 lg:w-52 rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-between border-3 transition-all cursor-pointer shadow-2xl shrink-0
+            w-24 sm:w-32 lg:w-40 rounded-2xl p-2.5 sm:p-3 flex flex-col items-center justify-between border-2 transition-all cursor-pointer shadow-xl shrink-0
             ${activeSpeaker === 'a'
-              ? 'bg-purple-900/90 border-purple-400 ring-4 ring-purple-400/40 shadow-purple-500/30'
+              ? 'bg-purple-900/90 border-purple-400 ring-2 ring-purple-400/40 shadow-purple-500/30'
               : 'bg-purple-950/75 hover:bg-purple-900/85 border-purple-400/30 backdrop-blur-md'}
           `}
         >
-          <span className="text-xs sm:text-sm lg:text-base font-black uppercase tracking-wider text-purple-200 bg-purple-500/40 px-3 py-1.5 rounded-full border border-purple-300/30 shadow">
+          <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-purple-200 bg-purple-500/40 px-2 py-0.5 rounded-full border border-purple-300/30">
             {currentRoleA.label} ⭐
           </span>
-          <div className="text-6xl sm:text-7xl lg:text-8xl my-auto drop-shadow-2xl transform hover:scale-110 transition-transform">
+          <div className="text-4xl sm:text-5xl lg:text-6xl my-auto drop-shadow-xl transform hover:scale-105 transition-transform">
             {currentRoleA.avatar ?? '👩‍🏫'}
           </div>
           <div className="w-full text-center">
-            <p className="font-black text-lg sm:text-2xl lg:text-3xl text-white leading-tight">
+            <p className="font-black text-sm sm:text-base lg:text-lg text-white leading-tight">
               {currentRoleA.action}
             </p>
             {currentRoleA.actionEs && (
-              <p className="text-xs sm:text-sm lg:text-base font-bold text-purple-200/80 mt-1">
+              <p className="text-[10px] sm:text-xs font-bold text-purple-200/80 mt-0.5">
                 {currentRoleA.actionEs}
               </p>
             )}
-            <div className={`p-3 rounded-full mt-2.5 mx-auto w-fit transition-all ${activeSpeaker === 'a' ? 'bg-purple-400 text-purple-950 shadow-lg scale-110' : 'bg-white/15 text-white/80'}`}>
-              <Mic className="w-5 h-5" />
+            <div className={`p-2 rounded-full mt-1.5 mx-auto w-fit transition-all ${activeSpeaker === 'a' ? 'bg-purple-400 text-purple-950 shadow-md scale-105' : 'bg-white/15 text-white/80'}`}>
+              <Mic className="w-4 h-4" />
             </div>
           </div>
         </motion.div>
 
         {/* — CENTER IMAGE WITH PROMINENT FLOATING CONVERSATION CUES — */}
-        <div className="flex-1 rounded-3xl overflow-hidden relative border-3 border-white/30 shadow-2xl bg-slate-900 flex items-center justify-center group">
+        <div className="flex-1 rounded-2xl overflow-hidden relative border-2 border-white/30 shadow-xl bg-slate-900 flex items-center justify-center group min-h-0">
           <img
             src={imageUrl}
             alt={topic}
@@ -158,24 +158,24 @@ export function SpeakingSceneCard({ slide }: SpeakingSceneCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-slate-950/40 pointer-events-none" />
 
           {/* Floating Conversation Cue Cards on Top of Image */}
-          <div className="absolute top-4 inset-x-0 flex items-center justify-center gap-3 sm:gap-4 px-3 z-10 flex-wrap">
+          <div className="absolute top-3 inset-x-0 flex items-center justify-center gap-2.5 sm:gap-3 px-2 z-10 flex-wrap">
             {cues.map((cue, idx) => (
               <motion.div
                 key={idx}
-                whileHover={{ scale: 1.08, y: -3 }}
+                whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.96 }}
                 onClick={() => cue.questionExample && playAudio(cue.questionExample, 'en-US')}
-                className="bg-white/95 hover:bg-white text-slate-900 rounded-2xl sm:rounded-3xl shadow-2xl px-5 sm:px-6 py-3 sm:py-4 border-2 border-white backdrop-blur-md flex items-center gap-3.5 cursor-pointer transition-all"
+                className="bg-white/95 hover:bg-white text-slate-900 rounded-xl sm:rounded-2xl shadow-xl px-3.5 sm:px-4 py-1.5 sm:py-2 border border-white backdrop-blur-md flex items-center gap-2 cursor-pointer transition-all"
               >
-                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white flex items-center justify-center text-base sm:text-2xl font-black shrink-0 shadow-md">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 text-white flex items-center justify-center text-xs sm:text-base font-black shrink-0 shadow-sm">
                   {cue.icon ?? '💬'}
                 </div>
                 <div className="flex flex-col text-left">
-                  <span className="font-black text-base sm:text-xl lg:text-2xl leading-tight text-slate-900 tracking-wide">
+                  <span className="font-black text-xs sm:text-sm lg:text-base leading-tight text-slate-900 tracking-wide">
                     {cue.label}
                   </span>
                   {cue.labelEs && (
-                    <span className="text-xs sm:text-sm lg:text-base text-slate-700 font-extrabold leading-tight mt-0.5">
+                    <span className="text-[10px] sm:text-xs text-slate-700 font-extrabold leading-tight">
                       {cue.labelEs}
                     </span>
                   )}
@@ -187,32 +187,32 @@ export function SpeakingSceneCard({ slide }: SpeakingSceneCardProps) {
 
         {/* — RIGHT PLAYER CARD (ROLE B) — */}
         <motion.div
-          animate={{ scale: activeSpeaker === 'b' ? 1.04 : 1 }}
+          animate={{ scale: activeSpeaker === 'b' ? 1.03 : 1 }}
           onClick={() => setActiveSpeaker(activeSpeaker === 'b' ? null : 'b')}
           className={`
-            w-32 sm:w-44 lg:w-52 rounded-3xl p-4 sm:p-5 flex flex-col items-center justify-between border-3 transition-all cursor-pointer shadow-2xl shrink-0
+            w-24 sm:w-32 lg:w-40 rounded-2xl p-2.5 sm:p-3 flex flex-col items-center justify-between border-2 transition-all cursor-pointer shadow-xl shrink-0
             ${activeSpeaker === 'b'
-              ? 'bg-cyan-900/90 border-cyan-400 ring-4 ring-cyan-400/40 shadow-cyan-500/30'
+              ? 'bg-cyan-900/90 border-cyan-400 ring-2 ring-cyan-400/40 shadow-cyan-500/30'
               : 'bg-cyan-950/75 hover:bg-cyan-900/85 border-cyan-400/30 backdrop-blur-md'}
           `}
         >
-          <span className="text-xs sm:text-sm lg:text-base font-black uppercase tracking-wider text-cyan-200 bg-cyan-500/40 px-3 py-1.5 rounded-full border border-cyan-300/30 shadow">
+          <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-cyan-200 bg-cyan-500/40 px-2 py-0.5 rounded-full border border-cyan-300/30">
             {currentRoleB.label} ⭐
           </span>
-          <div className="text-6xl sm:text-7xl lg:text-8xl my-auto drop-shadow-2xl transform hover:scale-110 transition-transform">
+          <div className="text-4xl sm:text-5xl lg:text-6xl my-auto drop-shadow-xl transform hover:scale-105 transition-transform">
             {currentRoleB.avatar ?? '👨‍🎓'}
           </div>
           <div className="w-full text-center">
-            <p className="font-black text-lg sm:text-2xl lg:text-3xl text-white leading-tight">
+            <p className="font-black text-sm sm:text-base lg:text-lg text-white leading-tight">
               {currentRoleB.action}
             </p>
             {currentRoleB.actionEs && (
-              <p className="text-xs sm:text-sm lg:text-base font-bold text-cyan-200/80 mt-1">
+              <p className="text-[10px] sm:text-xs font-bold text-cyan-200/80 mt-0.5">
                 {currentRoleB.actionEs}
               </p>
             )}
-            <div className={`p-3 rounded-full mt-2.5 mx-auto w-fit transition-all ${activeSpeaker === 'b' ? 'bg-cyan-400 text-cyan-950 shadow-lg scale-110' : 'bg-white/15 text-white/80'}`}>
-              <Mic className="w-5 h-5" />
+            <div className={`p-2 rounded-full mt-1.5 mx-auto w-fit transition-all ${activeSpeaker === 'b' ? 'bg-cyan-400 text-cyan-950 shadow-md scale-105' : 'bg-white/15 text-white/80'}`}>
+              <Mic className="w-4 h-4" />
             </div>
           </div>
         </motion.div>
@@ -220,31 +220,31 @@ export function SpeakingSceneCard({ slide }: SpeakingSceneCardProps) {
 
       {/* ═══ 4. BOTTOM HELP WORDS BAR ═══ */}
       {helpWords.length > 0 && (
-        <div className="flex items-center justify-center gap-2.5 sm:gap-3.5 flex-wrap shrink-0 py-1.5 px-1">
+        <div className="flex items-center justify-center gap-2 sm:gap-2.5 shrink-0 py-1 px-1 flex-wrap">
           {helpWords.map((hw, idx) => {
             const isPlaying = playingWord === hw.word;
             return (
               <motion.button
                 key={idx}
                 type="button"
-                whileHover={{ scale: 1.06, y: -2 }}
+                whileHover={{ scale: 1.05, y: -1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handlePlayWord(hw.word)}
                 className={`
-                  flex items-center gap-2.5 px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-2xl font-black shadow-xl border-2 transition-all text-left min-h-[60px] sm:min-h-[72px]
+                  flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl font-bold shadow-md border transition-all text-left min-h-0
                   ${isPlaying
                     ? 'bg-amber-300 border-amber-400 text-amber-950 ring-2 ring-amber-400/50 scale-105 shadow-amber-400/30'
                     : 'bg-white/95 hover:bg-white text-slate-900 border-white/70 backdrop-blur-md'}
                 `}
               >
-                {hw.emoji && <span className="text-2xl sm:text-3xl lg:text-4xl leading-none">{hw.emoji}</span>}
+                {hw.emoji && <span className="text-base sm:text-xl leading-none">{hw.emoji}</span>}
                 <div className="flex flex-col">
-                  <span className="font-black text-base sm:text-xl lg:text-2xl text-slate-900 leading-tight flex items-center gap-1.5">
+                  <span className="font-black text-xs sm:text-sm lg:text-base text-slate-900 leading-tight flex items-center gap-1">
                     {hw.word}
-                    <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 text-slate-500 opacity-80" />
+                    <Volume2 className="w-3.5 h-3.5 text-slate-500 opacity-80" />
                   </span>
                   {hw.translation && (
-                    <span className="text-xs sm:text-sm lg:text-base text-slate-700 font-extrabold leading-none mt-0.5">
+                    <span className="text-[10px] sm:text-xs text-slate-700 font-bold leading-none mt-0.5">
                       {hw.translation}
                     </span>
                   )}

@@ -1,4 +1,5 @@
 import { ClassSlide, SpeakingSceneData } from '../types';
+import { TEEN_SPEAKING_SCENES_MAP } from '../data/teenSpeakingScenesMap';
 
 export interface ResolvedSpeakingScene {
   topic: string;
@@ -35,9 +36,55 @@ export interface ResolvedSpeakingScene {
 }
 
 export function resolveSpeakingScene(slide: ClassSlide, classTitleHint?: string): ResolvedSpeakingScene {
-  // If the slide already has a complete, valid speakingScene defined, use it!
-  if (slide.speakingScene && slide.speakingScene.topic && slide.speakingScene.cues?.length && slide.speakingScene.helpWords?.length) {
+  // Check if slide.speakingScene is a stale/generic placeholder
+  const isGenericPlaceholder = Boolean(
+    slide.speakingScene &&
+    (
+      slide.speakingScene.helpWords?.some(w => ['practice', 'real example', 'important', 'speak clearly', 'fluency', 'goal'].includes(w.word.toLowerCase())) ||
+      slide.speakingScene.cues?.some(c => ['TOPIC?', 'EXAMPLE?', 'OPINION?'].includes(c.label)) ||
+      slide.speakingScene.topic?.includes('·')
+    )
+  );
+
+  // If the slide already has a truly customized, non-generic speakingScene defined, use it!
+  if (slide.speakingScene && !isGenericPlaceholder && slide.speakingScene.topic && slide.speakingScene.cues?.length && slide.speakingScene.helpWords?.length) {
     return slide.speakingScene as ResolvedSpeakingScene;
+  }
+
+  // Check against our master Teen Speaking Scenes Map (99 customized classes)
+  // 1. Direct classId lookup
+  if (slide.classId && TEEN_SPEAKING_SCENES_MAP[slide.classId]) {
+    return TEEN_SPEAKING_SCENES_MAP[slide.classId];
+  }
+
+  // 2. Extract classId from imageUrl: e.g. /images/teens-basic-zero-class-06/slide-19.jpg -> c-teens-basic-zero-6
+  if (slide.imageUrl) {
+    const imgMatch = slide.imageUrl.match(/\/images\/(teens-[a-z0-9-]+)-class-(\d+)/i);
+    if (imgMatch) {
+      const level = imgMatch[1];
+      const classNum = parseInt(imgMatch[2], 10);
+      const computedClassId = `c-${level}-${classNum}`;
+      if (TEEN_SPEAKING_SCENES_MAP[computedClassId]) {
+        return TEEN_SPEAKING_SCENES_MAP[computedClassId];
+      }
+    }
+  }
+
+  // 3. Extract classId from slide.id: e.g. c-teens-basic-zero-6-slide-18 -> c-teens-basic-zero-6
+  if (slide.id) {
+    const idMatch = slide.id.match(/(c-teens-[a-z0-9-]+)(?:-slide|-emoji|$)/);
+    if (idMatch && TEEN_SPEAKING_SCENES_MAP[idMatch[1]]) {
+      return TEEN_SPEAKING_SCENES_MAP[idMatch[1]];
+    }
+  }
+
+  // 4. Match against classTitleHint
+  if (classTitleHint) {
+    for (const [classKey, mappedScene] of Object.entries(TEEN_SPEAKING_SCENES_MAP)) {
+      if (classTitleHint.includes(classKey)) {
+        return mappedScene;
+      }
+    }
   }
 
   // Combine titles and contents to identify the exact pedagogical theme
@@ -521,53 +568,55 @@ export function resolveSpeakingScene(slide: ClassSlide, classTitleHint?: string)
   }
 
   // 11. General Universal Fallback
-  const cleanTitle = (classTitleHint || slide.title || 'this topic')
+  const cleanTitle = (classTitleHint || slide.title || 'Today\'s Lesson')
     .replace(/^Class \d+:\s*/i, '')
     .replace(/^Clase \d+:\s*/i, '')
     .replace(/^Roleplay:\s*/i, '')
-    .replace(/\//g, '·')
+    .replace(/^Speaking Time:\s*/i, '')
+    .replace(/\s*·.*$/, '')
+    .replace(/\s*\/.*$/, '')
     .trim();
 
   return {
-    topic: `Talk about ${cleanTitle} 💬`,
+    topic: `Chat About ${cleanTitle} 💬`,
     topicEs: `Hablen sobre ${cleanTitle}`,
     cues: [
-      { icon: '🎯', label: 'MAIN TOPIC?', labelEs: '¿De qué trata este tema?', questionExample: `What do you think about ${cleanTitle}?` },
-      { icon: '💡', label: 'REAL EXAMPLE?', labelEs: '¿Qué ejemplo real puedes dar?', questionExample: 'Can you give a real example?' },
-      { icon: '⭐', label: 'WHY IMPORTANT?', labelEs: '¿Por qué es útil en la vida diaria?', questionExample: 'Why is this important for you?' }
+      { icon: '💬', label: 'EXPERIENCE?', labelEs: '¿Qué experiencia tienes?', questionExample: `What do you know or enjoy about ${cleanTitle}?` },
+      { icon: '💡', label: 'FAVORITE DETAIL?', labelEs: '¿Cuál es tu detalle favorito?', questionExample: 'What is your favorite thing about this topic?' },
+      { icon: '⭐', label: 'TELL A FRIEND?', labelEs: '¿Qué le dirías a un amigo?', questionExample: 'How would you explain this to a friend?' }
     ],
     roleA: {
-      label: 'Teacher',
-      labelEs: 'Profesor',
-      action: 'Ask',
-      actionEs: 'Preguntar',
-      avatar: '👩‍🏫'
+      label: 'Friend A',
+      labelEs: 'Amigo A',
+      action: 'Ask & Listen',
+      actionEs: 'Preguntar y escuchar',
+      avatar: '🙋‍♂️'
     },
     roleB: {
-      label: 'Student',
-      labelEs: 'Estudiante',
-      action: 'Answer',
-      actionEs: 'Responder',
-      avatar: '👨‍🎓'
+      label: 'Friend B',
+      labelEs: 'Amigo B',
+      action: 'Share & Reply',
+      actionEs: 'Compartir y responder',
+      avatar: '🙋‍♀️'
     },
     helpWords: [
-      { emoji: '💬', word: 'practice speaking', translation: 'practicar el habla' },
-      { emoji: '💡', word: 'clear example', translation: 'ejemplo claro' },
-      { emoji: '⭐', word: 'important idea', translation: 'idea importante' },
-      { emoji: '🗣️', word: 'express opinion', translation: 'expresar opinión' },
-      { emoji: '✨', word: 'fluency', translation: 'fluidez' },
-      { emoji: '🎯', word: 'goal', translation: 'meta' }
+      { emoji: '💬', word: 'in my view', translation: 'a mi parecer' },
+      { emoji: '💡', word: 'for instance', translation: 'por ejemplo' },
+      { emoji: '⭐', word: 'awesome idea', translation: 'idea genial' },
+      { emoji: '🗣️', word: 'tell a story', translation: 'contar una historia' },
+      { emoji: '✨', word: 'share feelings', translation: 'compartir emociones' },
+      { emoji: '🤝', word: 'I totally agree', translation: 'estoy de acuerdo' }
     ],
     hiddenPhrases: {
       ask: [
-        { en: `How would you explain this in your own words?`, es: `¿Cómo explicarías esto con tus propias palabras?` },
-        { en: `What is a good example from your daily life?`, es: `¿Cuál es un buen ejemplo de tu vida diaria?` },
-        { en: `What do you think about this situation?`, es: `¿Qué piensas sobre esta situación?` }
+        { en: `What do you think about ${cleanTitle}?`, es: `¿Qué piensas sobre ${cleanTitle}?` },
+        { en: `Can you share your favorite memory or idea about this?`, es: `¿Puedes compartir tu recuerdo o idea favorita sobre esto?` },
+        { en: `How would you explain this to a classmate?`, es: `¿Cómo le explicarías esto a un compañero?` }
       ],
       answer: [
-        { en: `In my opinion, this helps us communicate clearly.`, es: `En mi opinión, esto nos ayuda a comunicarnos con claridad.` },
-        { en: `For example, I use this when talking with friends.`, es: `Por ejemplo, uso esto al hablar con amigos.` },
-        { en: `I feel very confident practicing this today.`, es: `Me siento muy seguro practicando esto hoy.` }
+        { en: `I really enjoy this topic because it is interesting and practical.`, es: `Disfruto mucho este tema porque es interesante y práctico.` },
+        { en: `For example, I love practicing this with my friends after school.`, es: `Por ejemplo, me encanta practicar esto con mis amigos después de clase.` },
+        { en: `It helps me express my ideas clearly and confidently in English!`, es: `¡Me ayuda a expresar mis ideas clara y seguramente en inglés!` }
       ]
     }
   };

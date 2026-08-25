@@ -1654,121 +1654,121 @@ export const CLASS_EMOJI_MAP: Record<string, CustomEmojiPuzzle> = {
     "correctOptionIndex": 0
   },
   "teens:c-teens-basic-1-1": {
-    "description": "High School Morning Habits Clue",
+    "description": "Family and Feelings Clue",
     "content": [
-      "⏰ + 🥪 + 🚌"
+      "👧 + 😊 + 🐶"
     ],
     "options": [
-      "We went camping last summer.",
-      "I grab a quick sandwich and catch the school bus at seven thirty.",
-      "I like playing the drums."
+      "My sister is tired at school.",
+      "My sister is happy and she has a dog.",
+      "My parents are at the park."
     ],
     "correctOptionIndex": 1
   },
   "teens:c-teens-basic-1-2": {
-    "description": "Favorite Creators & Social Media Habits Clue",
+    "description": "Healthy Choices and Energy Clue",
     "content": [
-      "📱 + 🎬 + ❤️"
+      "🥪 + 💧 + 🏃"
     ],
     "options": [
-      "I have a math exam tomorrow.",
-      "The restaurant was full.",
-      "She creates amazing short video tutorials and shares them online."
-    ],
-    "correctOptionIndex": 2
-  },
-  "teens:c-teens-basic-1-3": {
-    "description": "Teen School Clubs & Activities Clue",
-    "content": [
-      "🤖 + 🏫 + 🏆"
-    ],
-    "options": [
-      "Our high school robotics club builds cool robots and wins competitions!",
-      "I drink cold milk at night.",
-      "Turn left after two blocks."
+      "I choose a sandwich and water because I have sports practice.",
+      "I want extra candy and soda.",
+      "The pizza place is closed today."
     ],
     "correctOptionIndex": 0
   },
-  "teens:c-teens-basic-1-4": {
-    "description": "Nature, Parks & Eco-friendly Habits Clue",
+  "teens:c-teens-basic-1-3": {
+    "description": "Weather Forecast & What to Bring Clue",
     "content": [
-      "🌳 + 🚲 + ♻️"
+      "🌧️ + 🧥 + ☔"
+    ],
+    "options": [
+      "I can spell my name.",
+      "It is rainy and cold outside, so wear a jacket and bring an umbrella.",
+      "The client is angry."
+    ],
+    "correctOptionIndex": 1
+  },
+  "teens:c-teens-basic-1-4": {
+    "description": "Nature, Parks & Outdoor Rules Clue",
+    "content": [
+      "🌲 + 🏞️ + 🚯"
     ],
     "options": [
       "I watched a cartoon yesterday.",
-      "We ride bikes in the park and always recycle plastic bottles.",
+      "There is a beautiful lake in the park and we never leave trash.",
       "The store opens at ten."
     ],
     "correctOptionIndex": 1
   },
   "teens:c-teens-basic-1-5": {
-    "description": "Weekend Movie Nights & Streaming Clue",
+    "description": "Weekend Plans & Intentions Clue",
     "content": [
-      "🍿 + 📺 + 👥"
+      "🗓️ + 🛹 + ⏰"
     ],
     "options": [
       "I have two blue backpacks.",
       "The cat is playing in the garden.",
-      "We stream sci-fi movies and eat fresh butter popcorn with friends on Friday."
+      "I am going to meet my friends at the skatepark on Saturday at three o'clock."
     ],
     "correctOptionIndex": 2
   },
   "teens:c-teens-basic-1-6": {
-    "description": "Gaming Tournaments & Strategy Clue",
+    "description": "Invitations & Hangouts Clue",
     "content": [
-      "🎮 + 👥 + 🥇"
+      "🎟️ + 👥 + 🤝"
     ],
     "options": [
-      "Our team coordinates voice chat strategy to win online tournaments.",
+      "Would you like to come to the concert on Sunday with us?",
       "I need to wash my jacket.",
       "She visited her grandmother on Sunday."
     ],
     "correctOptionIndex": 0
   },
   "teens:c-teens-basic-1-7": {
-    "description": "Fashion Styles & Thrift Shopping Clue",
+    "description": "Clothing Store & Shopping Clue",
     "content": [
-      "🧥 + 👟 + 🛍️"
+      "👖 + 🏷️ + 💳"
     ],
     "options": [
       "I eat salad for dinner.",
-      "We love discovering vintage hoodies and cool sneakers at thrift shops!",
+      "These black jeans are forty dollars and I will pay by card.",
       "The library is on the second floor."
     ],
     "correctOptionIndex": 1
   },
   "teens:c-teens-basic-1-8": {
-    "description": "Favorite Street Snacks & Fast Food Clue",
+    "description": "Café Ordering & Menu Clue",
     "content": [
-      "🌮 + 🥤 + 😋"
+      "☕ + 🥯 + 📋"
     ],
     "options": [
       "I am doing my science project.",
       "The flight departs in an hour.",
-      "We order spicy tacos and iced drinks after sports practice."
+      "I would like an iced matcha latte and a toasted bagel, please."
     ],
     "correctOptionIndex": 2
   },
   "teens:c-teens-basic-1-9": {
-    "description": "Digital Photography & Editing Clue",
+    "description": "Digital Habits & Online Safety Clue",
     "content": [
-      "📸 + 💻 + ✨"
+      "💻 + 📚 + 🔒"
     ],
     "options": [
-      "He takes aesthetic street photos and edits the lighting on his laptop.",
+      "I use my laptop to study and I always protect my passwords.",
       "I have a biology class at nine.",
       "They live in a small apartment."
     ],
     "correctOptionIndex": 0
   },
   "teens:c-teens-basic-1-10": {
-    "description": "Basic 1 Teen Showcase Review Clue",
+    "description": "Trip Planning & Coordination Clue",
     "content": [
-      "🏆 + 🌟 + 🎤"
+      "💬 + 📞 + 📅"
     ],
     "options": [
       "I like drinking orange soda.",
-      "I can talk confidently about my daily life, passions, and digital culture!",
+      "Chat or call to confirm the date, meeting place, and tickets.",
       "The bus arrived early today."
     ],
     "correctOptionIndex": 1

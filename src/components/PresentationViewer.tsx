@@ -1,18 +1,8 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronLeft, ChevronRight, X, Play, Image as ImageIcon, CheckCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { CurriculumClass, ClassSection, ClassSlide } from '../types';
-import { SpinningWheel } from './SpinningWheel';
-import { MatchingGame } from './MatchingGame';
-import { MysteryPuzzleGame } from './MysteryPuzzleGame';
-import { EmojiMadnessGame } from './EmojiMadnessGame';
-import { SpeakingBossBattleGame } from './SpeakingBossBattleGame';
-import { PronunciationAssessmentSlide } from './PronunciationAssessmentSlide';
-import { InlineAiSpeakingAssistant } from './InlineAiSpeakingAssistant';
-import { StructureDragExercise } from './StructureDragExercise';
-import { RolePlayCard } from './RolePlayCard';
-import { AlphabetPronunciationGame } from './AlphabetPronunciationGame';
-import { AccuracyContrastCard } from './AccuracyContrastCard';
+import { SlideRenderer } from './SlideRenderer';
 import { enhancePresentationClass } from '../lib/presentationEnhancer';
 
 interface PresentationViewerProps {
@@ -27,15 +17,18 @@ interface PresentationViewerProps {
 export function PresentationViewer({ cls, onClose, onComplete }: PresentationViewerProps) {
   const experimentalSpeakingEnabled = import.meta.env.VITE_EXPERIMENTAL_SPEAKING_ASSESSMENT === 'true';
   const enhancedClass = useMemo(() => enhancePresentationClass(cls), [cls]);
-  // Flatten all slides from sections
-  const allSlides: { section: ClassSection, slide: ClassSlide, totalSlides: number, index: number }[] = [];
-  let index = 0;
-  
-  // Total slides across all sections
-  const totalSlides = enhancedClass.sections.reduce((acc, s) => acc + s.slides.filter(slide => experimentalSpeakingEnabled || slide.type !== 'speaking-assessment-experimental').length, 0);
 
-  enhancedClass.sections.forEach(section => {
-    section.slides.forEach(slide => {
+  // Flatten all slides from sections
+  const allSlides: { section: ClassSection; slide: ClassSlide; totalSlides: number; index: number }[] = [];
+  let index = 0;
+
+  const totalSlides = enhancedClass.sections.reduce(
+    (acc, s) => acc + s.slides.filter((slide) => experimentalSpeakingEnabled || slide.type !== 'speaking-assessment-experimental').length,
+    0
+  );
+
+  enhancedClass.sections.forEach((section) => {
+    section.slides.forEach((slide) => {
       if (!experimentalSpeakingEnabled && slide.type === 'speaking-assessment-experimental') return;
       allSlides.push({ section, slide, totalSlides, index });
       index++;
@@ -43,24 +36,6 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<number | null>(null);
-  const [showResult, setShowResult] = useState(false);
-  const [meetingAudioStream, setMeetingAudioStream] = useState<MediaStream | null>(null);
-  const [selectedSpeakingPrompt, setSelectedSpeakingPrompt] = useState('');
-  const [imageError, setImageError] = useState(false);
-
-  useEffect(() => {
-    return () => {
-      meetingAudioStream?.getTracks().forEach(track => track.stop());
-    };
-  }, [meetingAudioStream]);
-
-  useEffect(() => {
-    setSelectedOption(null);
-    setShowResult(false);
-    setSelectedSpeakingPrompt('');
-    setImageError(false);
-  }, [currentIndex]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -71,32 +46,21 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
       ) {
         return;
       }
-      
+
       if (e.key === 'ArrowRight') nextSlide();
       if (e.key === 'ArrowLeft') prevSlide();
-      if (e.key === 'Escape') handleClose();
+      if (e.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentIndex]);
-
-  const handleOptionSelect = (idx: number) => {
-    if (showResult) return;
-    setSelectedOption(idx);
-    setShowResult(true);
-  };
+  }, [currentIndex, allSlides.length]);
 
   const nextSlide = () => {
-    if (currentIndex < allSlides.length - 1) setCurrentIndex(prev => prev + 1);
+    if (currentIndex < allSlides.length - 1) setCurrentIndex((prev) => prev + 1);
   };
 
   const prevSlide = () => {
-    if (currentIndex > 0) setCurrentIndex(prev => prev - 1);
-  };
-
-  const handleClose = () => {
-    meetingAudioStream?.getTracks().forEach(track => track.stop());
-    onClose();
+    if (currentIndex > 0) setCurrentIndex((prev) => prev - 1);
   };
 
   if (allSlides.length === 0) return null;
@@ -104,446 +68,108 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
   const currentData = allSlides[currentIndex];
   if (!currentData) return null;
   const { section, slide } = currentData;
-  const isLastSlide = currentIndex === allSlides.length - 1;
-  const isSpeakingBossBattle = slide.type === 'speaking-boss-battle';
-  const isAlphabetGame = slide.type === 'alphabet-game';
-  const isRoleplaySlide = slide.type === 'roleplay' || slide.type === 'lets-say' || slide.type === 'speaking-scene' || isAlphabetGame || Boolean(slide.speakingScene) || Boolean(slide.letsSay) || (Boolean(slide.roleplay) && !slide.options?.length);
-  const isStructureDragSlide = slide.type === 'structure-drag';
-  const isAccuracyContrastSlide =
-    !isSpeakingBossBattle &&
-    !isRoleplaySlide &&
-    slide.type !== 'spinning-wheel' &&
-    slide.type !== 'matching-game' &&
-    slide.type !== 'mystery-puzzle' &&
-    slide.type !== 'emoji-game' &&
-    slide.type !== 'structure-drag' &&
-    (/accuracy contrast|contraste de precisi[oó]n/i.test(slide.title || '') ||
-      Boolean(slide.content && slide.content.some((line) => /^correct this:/i.test(line) || /^accurate:/i.test(line))));
 
-  const isImmersiveSlide =
-    slide.type === 'emoji-game' ||
-    slide.type === 'speaking-boss-battle' ||
-    slide.type === 'speaking-assessment-experimental' ||
-    isRoleplaySlide ||
-    isAccuracyContrastSlide;
-  const isOptionExerciseSlide =
-    !!slide.options?.length &&
-    slide.type !== 'emoji-game' &&
-    slide.type !== 'speaking-boss-battle' &&
-    slide.type !== 'speaking-assessment-experimental' &&
-    slide.type !== 'structure-drag' &&
-    !isRoleplaySlide;
-  const isScreenShareExerciseSlide = isOptionExerciseSlide;
-
-  const bgColorMap: Record<string, string> = {
-    'intro': 'bg-blue-600',
-    'grammar': 'bg-indigo-600',
-    'practice': 'bg-amber-500',
-    'production': 'bg-emerald-600',
-    'feedback': 'bg-purple-600'
-  };
-
-  const bgGradient = slide.bgColor || bgColorMap[section.id.split('-')[1]] || 'bg-slate-800';
-  const isReadingPracticeSlide =
-    /reading practice|practica de lectura|práctica de lectura/i.test(slide.title || '') ||
-    slide.type === 'reading';
-  const isOptionalAiSpeakingSlide =
-    /let.?s talk|vamos a hablar/i.test(slide.title || '') ||
-    isReadingPracticeSlide ||
-    slide.type === 'speaking' ||
-    slide.type === 'reading';
-  const slideSpeakingQuestions = [
-    selectedSpeakingPrompt,
-    ...(slide.type !== 'spinning-wheel' ? slide.content || [] : []),
-  ].filter((line): line is string => Boolean(line?.trim()));
-
-  const isOpeningSlide =
-    currentIndex === 0 &&
-    slide.type !== 'emoji-game' &&
-    slide.type !== 'speaking-boss-battle' &&
-    slide.type !== 'speaking-assessment-experimental' &&
-    slide.type !== 'structure-drag' &&
-    !isAccuracyContrastSlide &&
-    slide.type !== 'roleplay';
+  const isBossOrRoleplay = slide.type === 'speaking-boss-battle' || slide.type === 'roleplay';
 
   return (
-    <div className="fixed inset-0 z-[200] bg-black/90 backdrop-blur flex flex-col">
+    <div className="fixed inset-0 z-[200] bg-black/95 backdrop-blur flex flex-col select-text">
       {/* Top Bar */}
-      <div className="flex items-center justify-between p-3 sm:p-4 bg-black/50 text-white shrink-0">
+      <div className="flex items-center justify-between p-2.5 sm:p-3.5 bg-black/60 text-white shrink-0 border-b border-white/10 select-none">
         <div className="flex-1 min-w-0 mr-2">
-          <h2 className="text-lg sm:text-xl font-bold truncate">{cls.title}</h2>
-          <p className="text-gray-400 text-xs sm:text-sm truncate">{section.title} ({section.duration})</p>
+          <h2 className="text-base sm:text-lg font-black truncate">{cls.title}</h2>
+          <p className="text-gray-400 text-xs truncate">
+            {section.title} ({section.duration})
+          </p>
         </div>
         <div className="flex items-center gap-2 sm:gap-4 shrink-0">
-          <div className="hidden sm:block text-gray-400 text-sm font-medium">
+          <div className="hidden sm:block text-gray-300 text-xs sm:text-sm font-bold bg-white/10 px-3 py-1 rounded-full">
             Diapositiva {currentIndex + 1} de {allSlides.length}
           </div>
-          <div className="sm:hidden text-gray-400 text-xs font-medium">
+          <div className="sm:hidden text-gray-300 text-xs font-bold bg-white/10 px-2.5 py-1 rounded-full">
             {currentIndex + 1} / {allSlides.length}
           </div>
-          <button 
-            onClick={handleClose}
-            className="p-1.5 sm:p-2 hover:bg-white/10 rounded-full transition-colors"
+          <button
+            onClick={onClose}
+            className="p-1.5 sm:p-2 hover:bg-white/10 rounded-full transition-colors text-white/80 hover:text-white"
+            title="Cerrar (Esc)"
           >
             <X className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </div>
       </div>
 
-      {/* Main Slide Area */}
-      <div className={`flex-1 relative overflow-y-auto overflow-x-hidden ${isSpeakingBossBattle || isRoleplaySlide ? 'p-1 sm:p-2 lg:p-3' : 'p-2 sm:p-8'}`}>
-        <div className={`min-h-full flex flex-col items-center justify-center ${isSpeakingBossBattle || isRoleplaySlide ? 'pb-2 sm:pb-3' : 'pb-20 sm:pb-8'}`}>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                className={`relative w-full ${isSpeakingBossBattle ? 'max-w-[min(1760px,99vw)] h-[calc(100vh-4.75rem)] min-h-[650px] rounded-xl sm:rounded-2xl' : isRoleplaySlide ? 'max-w-[min(1700px,99vw)] h-[calc(100vh-4.75rem)] min-h-[650px] rounded-xl sm:rounded-2xl' : isScreenShareExerciseSlide ? 'max-w-5xl min-h-[78vh] sm:min-h-[82vh] rounded-2xl sm:rounded-3xl' : 'max-w-6xl min-h-[75vh] rounded-2xl sm:rounded-3xl'} mx-auto shadow-2xl flex flex-col ${bgGradient} text-white overflow-hidden shrink-0`}
-            >
-            {isOpeningSlide && (
-              <>
-                <motion.div
-                  aria-hidden="true"
-                  className="pointer-events-none absolute left-[8%] right-[8%] top-[-12%] h-40 rounded-full bg-white/10 blur-3xl"
-                  animate={{ x: [0, 36, 0], opacity: [0.25, 0.45, 0.25] }}
-                  transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                />
-                <motion.div
-                  aria-hidden="true"
-                  className="pointer-events-none absolute bottom-[-8%] right-[2%] h-44 w-44 rounded-full bg-cyan-300/15 blur-3xl"
-                  animate={{ y: [0, -18, 0], x: [0, -24, 0], opacity: [0.2, 0.35, 0.2] }}
-                  transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
-                />
-              </>
-            )}
-            {/* Header */}
-            <div className={`${isSpeakingBossBattle || isRoleplaySlide ? 'sr-only' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pb-1.5 sm:pb-2' : 'p-5 sm:p-8 pb-2 sm:pb-4'} shrink-0`}>
-              {isOpeningSlide && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.45 }}
-                  className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.22em] text-white/85 backdrop-blur-md"
-                >
-                  <span className="h-2 w-2 rounded-full bg-amber-300 shadow-[0_0_14px_rgba(252,211,77,0.85)]" />
-                  Inicio de clase
-                </motion.div>
-              )}
-              <h1 className={`${isOpeningSlide ? 'text-3xl sm:text-5xl md:text-6xl leading-[0.95]' : isRoleplaySlide ? 'text-xl sm:text-3xl lg:text-4xl leading-tight' : isScreenShareExerciseSlide ? 'text-2xl sm:text-4xl' : 'text-2xl sm:text-5xl'} font-extrabold tracking-tight mb-1.5 sm:mb-2`}>
-                {slide.title}
-              </h1>
-              {slide.description && (
-                <p className={`${isOpeningSlide ? 'max-w-3xl text-base sm:text-xl text-white/88' : isRoleplaySlide ? 'text-xs sm:text-base lg:text-lg' : isScreenShareExerciseSlide ? 'text-sm sm:text-base' : 'text-base sm:text-xl'} font-medium`}>
-                  {slide.description}
-                </p>
-              )}
+      {/* Main Slide Area - 100% Uniform 16:9 Presentation Canvas */}
+      <div className="flex-1 relative flex items-center justify-center p-2 sm:p-4 lg:p-6 overflow-hidden min-h-0">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, scale: 0.98 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.98 }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+            className="relative w-full max-w-[min(1600px,calc((100vh-5.5rem)*16/9))] aspect-[16/9] max-h-[calc(100vh-5.5rem)] min-h-[460px] sm:min-h-[540px] mx-auto p-[2.5px] rounded-[1.6rem] sm:rounded-[2.1rem] bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-indigo-500 shadow-[0_0_40px_rgba(139,92,246,0.35),0_0_80px_rgba(6,182,212,0.2)] flex flex-col shrink-0 overflow-hidden"
+          >
+            {/* Animated Rotating Gradient Aura */}
+            <div className="absolute -inset-[100%] animate-[spin_10s_linear_infinite] bg-[conic-gradient(from_0deg,#06b6d4,#8b5cf6,#ec4899,#06b6d4)] opacity-75 blur-sm pointer-events-none" />
+
+            {/* Inner Slide Stage Wrapper */}
+            <div className="relative w-full h-full rounded-[1.45rem] sm:rounded-[1.95rem] overflow-hidden bg-[#0a0c1a] z-10 select-text">
+              <SlideRenderer
+                cls={cls}
+                section={section}
+                slide={slide}
+                currentIndex={currentIndex}
+                totalSlides={allSlides.length}
+                onComplete={onComplete}
+                onNext={nextSlide}
+                hideTeacherNote={false}
+                className="w-full h-full select-text"
+              />
             </div>
-
-            {/* Content Area */}
-            <div className={`flex-1 ${isSpeakingBossBattle ? 'p-1 sm:p-2 lg:p-3' : isRoleplaySlide ? 'p-2 sm:p-3 lg:p-4' : isScreenShareExerciseSlide ? 'p-4 sm:p-5 pt-1.5 sm:pt-2' : 'p-5 sm:p-8 pt-2 sm:pt-4'} flex flex-col md:flex-row ${isOpeningSlide ? 'gap-5 sm:gap-8 md:items-stretch' : isScreenShareExerciseSlide ? 'gap-3 sm:gap-4' : 'gap-4 sm:gap-8'} overflow-y-auto overflow-x-hidden min-h-0 min-w-0`}>
-              {/* Left text content */}
-              <div className={`${isImmersiveSlide ? 'w-full' : isOpeningSlide ? 'md:w-[44%] md:flex-none' : 'flex-1'} min-w-0 flex flex-col ${isScreenShareExerciseSlide ? 'gap-2.5 sm:gap-4 justify-between' : 'gap-3 sm:gap-6'}`}>
-                {slide.type === 'spinning-wheel' && slide.wheelItems && (
-                  <div className="flex-1 flex flex-col items-center justify-center py-2 sm:py-4">
-                    <SpinningWheel
-                      items={slide.wheelItems}
-                      mode={slide.wheelMode}
-                      onSpinComplete={(item) => setSelectedSpeakingPrompt(item.prompt || item.label)}
-                    />
-                  </div>
-                )}
-                
-                {slide.type === 'matching-game' && slide.matchingPairs && (
-                  <div className="flex-1 flex flex-col items-center justify-center">
-                    <MatchingGame 
-                      pairs={slide.matchingPairs}
-                      onComplete={() => console.log('Matching Game Completed')}
-                    />
-                  </div>
-                )}
-
-                {slide.type === 'mystery-puzzle' && slide.mysteryPuzzleData && (
-                  <div className="flex-1 flex flex-col items-center justify-center">
-                    <MysteryPuzzleGame 
-                      targetWord={slide.mysteryPuzzleData.target}
-                      imageUrl={slide.mysteryPuzzleData.imageUrl}
-                      emoji={slide.mysteryPuzzleData.emoji}
-                      panels={slide.mysteryPuzzleData.panels}
-                    />
-                  </div>
-                )}
-
-                {slide.type === 'emoji-game' && (
-                  <EmojiMadnessGame
-                    content={slide.content}
-                    options={slide.options}
-                    correctOptionIndex={slide.correctOptionIndex}
-                  />
-                )}
-
-                {slide.type === 'speaking-boss-battle' && (
-                  <SpeakingBossBattleGame
-                    bossName={slide.speakingBossBattle?.bossName}
-                    bossTitle={slide.speakingBossBattle?.bossTitle}
-                    bossAvatar={slide.speakingBossBattle?.bossAvatar}
-                    mission={slide.speakingBossBattle?.mission}
-                    starterPhrase={slide.speakingBossBattle?.starterPhrase}
-                    powerWords={slide.speakingBossBattle?.powerWords}
-                    targetGrammar={slide.speakingBossBattle?.targetGrammar}
-                    checklist={slide.speakingBossBattle?.checklist}
-                    timerSeconds={slide.speakingBossBattle?.timerSeconds}
-                    prepareSeconds={slide.speakingBossBattle?.prepareSeconds}
-                    rounds={slide.speakingBossBattle?.rounds}
-                  />
-                )}
-
-                {slide.type === 'speaking-assessment-experimental' && slide.speakingAssessment && (
-                  <PronunciationAssessmentSlide
-                    expectedText={slide.speakingAssessment.expectedText}
-                    maxDurationSeconds={slide.speakingAssessment.maxDurationSeconds}
-                    silenceStopSeconds={slide.speakingAssessment.silenceStopSeconds}
-                    sharedStream={meetingAudioStream}
-                    onSharedStreamChange={setMeetingAudioStream}
-                  />
-                )}
-
-                {slide.type === 'structure-drag' && (
-                  <StructureDragExercise slide={slide} />
-                )}
-
-                {isAlphabetGame && (
-                  <AlphabetPronunciationGame slide={slide} />
-                )}
-
-                {isRoleplaySlide && !isAlphabetGame && (
-                  <RolePlayCard slide={slide} />
-                )}
-
-                {isAccuracyContrastSlide && (
-                  <AccuracyContrastCard slide={slide} />
-                )}
-
-                {slide.type !== 'spinning-wheel' && slide.type !== 'matching-game' && slide.type !== 'mystery-puzzle' && slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && slide.content?.map((line, i) => {
-                  if (slide.type === 'reading') {
-                    return (
-                      <div key={i} className="text-base sm:text-xl md:text-2xl font-medium leading-relaxed bg-black/10 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg text-justify">
-                        {line}
-                      </div>
-                    );
-                  }
-                  return (
-                    <motion.div
-                      key={i}
-                      initial={isOpeningSlide ? { opacity: 0, x: -18 } : false}
-                      animate={isOpeningSlide ? { opacity: 1, x: 0 } : undefined}
-                      transition={isOpeningSlide ? { delay: 0.12 + i * 0.08, duration: 0.4 } : undefined}
-                      className={`${isScreenShareExerciseSlide ? 'text-2xl sm:text-4xl md:text-[2.7rem] font-bold leading-tight p-4 sm:p-5 min-h-[100px] sm:min-h-[120px] flex items-center' : 'text-lg sm:text-3xl font-medium leading-relaxed p-4 sm:p-6'} bg-black/10 rounded-xl sm:rounded-2xl border border-white/10 shadow-lg`}
-                    >
-                      {line}
-                    </motion.div>
-                  );
-                })}
-
-                {isOptionalAiSpeakingSlide && !slide.hideAiAssistant && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && (
-                  <InlineAiSpeakingAssistant
-                    title={isReadingPracticeSlide ? 'Asistente IA de lectura' : 'Asistente IA de esta diapositiva'}
-                    initialQuestion={selectedSpeakingPrompt || slideSpeakingQuestions[0] || ''}
-                    candidateQuestions={slideSpeakingQuestions}
-                    mode={isReadingPracticeSlide ? 'reading' : 'speaking'}
-                  />
-                )}
-
-                
-                {/* WhatsApp Share Button for Homework */}
-                {(slide.type === 'homework' || (slide.title || '').toLowerCase().includes('homework')) && (
-                  <div className="mt-6 flex">
-                    <button
-                      onClick={() => {
-                        const classTitle = cls.title;
-                        const homeworkText = slide.content ? slide.content.join('\n') : '';
-                        let shareableVideoUrl = slide.videoUrl;
-                        if (shareableVideoUrl && shareableVideoUrl.includes('/embed/')) {
-                          shareableVideoUrl = shareableVideoUrl.replace('/embed/', '/watch?v=');
-                        }
-                        const videoText = shareableVideoUrl ? `\n🎬 Video: ${shareableVideoUrl}` : '';
-                        const message = `📚 Tarea de la clase "${classTitle}":\n\n${slide.description}\n\n${homeworkText}${videoText}\n\n¡Mucho éxito!`;
-                        window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
-                      }}
-                      className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-lg max-w-fit"
-                    >
-                      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                      Compartir por WhatsApp
-                    </button>
-                  </div>
-                )}
-
-                {/* Interactive Options Area (inline with content) */}
-                {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && slide.options && slide.options.length > 0 && (
-                  <div className="flex flex-col gap-3 sm:gap-4.5 pt-2 sm:pt-4 w-full">
-                    {slide.options.map((opt, idx) => {
-                      const isSelected = selectedOption === idx;
-                      const isCorrect = idx === slide.correctOptionIndex;
-                      const isRevealed = showResult && isSelected;
-                      const optionLetter = ['A', 'B', 'C', 'D', 'E'][idx] || String(idx + 1);
-
-                      let btnClass = "w-full px-5 sm:px-7 py-3.5 sm:py-5 min-h-[66px] sm:min-h-[82px] lg:min-h-[90px] rounded-2xl sm:rounded-3xl text-xl sm:text-3xl lg:text-[2.1rem] font-black transition-all shadow-xl border-2 flex items-center justify-between text-left ";
-
-                      if (!showResult) {
-                        btnClass += "bg-white text-slate-950 border-white hover:scale-[1.02] hover:bg-slate-50 active:scale-[0.99] cursor-pointer";
-                      } else if (isRevealed) {
-                        btnClass += isCorrect 
-                          ? "bg-emerald-500 text-white border-emerald-400 scale-[1.02] shadow-2xl shadow-emerald-500/40 ring-4 ring-emerald-300" 
-                          : "bg-rose-500 text-white border-rose-400 opacity-60";
-                      } else {
-                        btnClass += isCorrect
-                          ? "bg-emerald-500 text-white border-emerald-400 ring-2 ring-emerald-300"
-                          : "bg-white/20 text-white/40 border-white/10 opacity-40";
-                      }
-
-                      return (
-                        <button
-                          key={idx}
-                          disabled={showResult}
-                          onClick={() => handleOptionSelect(idx)}
-                          className={btnClass}
-                        >
-                          <div className="flex items-center gap-3 sm:gap-5 min-w-0 flex-1">
-                            <span className={`inline-flex items-center justify-center w-10 h-10 sm:w-13 sm:h-13 rounded-xl font-black text-lg sm:text-2xl shrink-0 ${
-                              !showResult ? 'bg-slate-900/10 text-slate-900' : 'bg-white/20 text-white'
-                            }`}>
-                              {optionLetter}
-                            </span>
-                            <span className="truncate leading-tight font-black">{opt}</span>
-                          </div>
-                          {showResult && isCorrect && (
-                            <CheckCircle className="w-7 h-7 sm:w-9 sm:h-9 text-white shrink-0 ml-2" />
-                          )}
-                          {showResult && isRevealed && !isCorrect && (
-                            <span className="text-xl sm:text-2xl font-black shrink-0 ml-2 text-white">✕</span>
-                          )}
-                        </button>
-                      );
-                    })}
-                  </div>
-                )}
-
-                {/* Final Completion Button */}
-                {isLastSlide && onComplete && (
-                  <div className="mt-auto pt-8">
-                    <button
-                      onClick={onComplete}
-                      className="w-full flex items-center justify-center gap-3 bg-white text-gray-900 font-extrabold text-2xl py-6 rounded-2xl hover:scale-105 transition-transform shadow-2xl"
-                    >
-                      <CheckCircle className="w-8 h-8 text-green-500" />
-                      ¡Completar Clase!
-                    </button>
-                  </div>
-                )}
-              </div>
-
-              {/* Right content (Image or Video) */}
-              {slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && (slide.type === 'video' || slide.type === 'homework') && slide.videoUrl ? (
-                <div className="flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 flex flex-col items-center justify-center text-center backdrop-blur-sm overflow-hidden min-h-[300px] sm:min-h-[400px]">
-                  <iframe 
-                    src={slide.videoUrl} 
-                    title={slide.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen
-                    className="w-full h-full border-0"
-                  ></iframe>
-                </div>
-              ) : slide.type !== 'emoji-game' && slide.type !== 'speaking-boss-battle' && slide.type !== 'speaking-assessment-experimental' && slide.type !== 'structure-drag' && !isRoleplaySlide && !isAccuracyContrastSlide && slide.type !== 'spinning-wheel' && slide.imageUrl && !imageError ? (
-                <motion.div
-                  initial={isOpeningSlide ? { opacity: 0, scale: 0.96, y: 16 } : false}
-                  animate={isOpeningSlide ? { opacity: 1, scale: 1, y: 0 } : undefined}
-                  transition={isOpeningSlide ? { duration: 0.55, delay: 0.14 } : undefined}
-                  className={`${isOpeningSlide ? 'md:w-[56%] md:flex-none rounded-[1.75rem] border border-white/15 bg-white/10 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.28)] backdrop-blur-md' : 'flex-1 bg-black/20 rounded-xl sm:rounded-2xl border-white/20 p-2 backdrop-blur-sm'} min-w-0 flex flex-col items-center justify-center text-center min-h-[240px] sm:min-h-[400px]`}
-                >
-                  <div className={`${isOpeningSlide ? 'relative w-full h-full overflow-hidden rounded-[1.3rem] border border-white/10' : 'w-full h-full overflow-hidden rounded-lg sm:rounded-xl'}`}>
-                    {isOpeningSlide && (
-                      <>
-                        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/28 via-transparent to-white/8" />
-                        <motion.div
-                          aria-hidden="true"
-                          className="pointer-events-none absolute inset-y-0 left-[-18%] z-10 w-24 bg-white/15 blur-2xl"
-                          animate={{ x: ['0%', '310%'] }}
-                          transition={{ duration: 5.5, repeat: Infinity, ease: 'easeInOut', repeatDelay: 2.5 }}
-                        />
-                        <div className="absolute left-4 top-4 z-20 rounded-full border border-white/15 bg-black/20 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-white/85 backdrop-blur-md">
-                          Welcome
-                        </div>
-                      </>
-                    )}
-                    <motion.img
-                      src={slide.imageUrl}
-                      referrerPolicy="no-referrer"
-                      alt={slide.title}
-                      className="w-full h-full object-cover"
-                      onError={() => setImageError(true)}
-                      animate={isOpeningSlide ? { scale: [1.02, 1.06, 1.02] } : undefined}
-                      transition={isOpeningSlide ? { duration: 9, repeat: Infinity, ease: 'easeInOut' } : undefined}
-                    />
-                  </div>
-                </motion.div>
-              ) : null}
-            </div>
-
-            {/* Teacher Suggestion (Small) */}
-            {section.action && !isSpeakingBossBattle && !isRoleplaySlide && (
-              <div className={`${isScreenShareExerciseSlide ? 'bg-black/25 p-2.5 sm:p-3' : 'bg-black/30 p-3 sm:p-4'} backdrop-blur-md border-t border-white/10 shrink-0 mt-auto`}>
-                <p className={`${isScreenShareExerciseSlide ? 'text-[10px] sm:text-xs' : 'text-xs sm:text-sm'} text-yellow-300/90 font-medium flex items-center gap-2`}>
-                  <span className="bg-yellow-400/20 px-2 py-1 rounded text-yellow-300 font-bold tracking-wide uppercase text-[10px] sm:text-xs">👩‍🏫 Nota para el profe</span>
-                  {section.action}
-                </p>
-              </div>
-            )}
           </motion.div>
         </AnimatePresence>
-        </div>
 
-        {/* Desktop Navigation Buttons */}
+        {/* Desktop Navigation Floating Chevrons */}
         <button
           onClick={prevSlide}
           disabled={currentIndex === 0}
-          className="hidden sm:block absolute left-4 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:hover:bg-white/10 rounded-full transition-colors text-white backdrop-blur-md"
+          className="hidden sm:flex absolute left-3 md:left-6 top-1/2 -translate-y-1/2 p-3.5 bg-black/50 hover:bg-black/80 disabled:opacity-20 disabled:pointer-events-none rounded-full transition-all text-white border border-white/15 backdrop-blur-md shadow-2xl hover:scale-110 active:scale-95 z-40"
+          title="Anterior (Flecha izquierda)"
         >
-          <ChevronLeft className="w-8 h-8" />
+          <ChevronLeft className="w-7 h-7" />
         </button>
+
         <button
           onClick={nextSlide}
           disabled={currentIndex === allSlides.length - 1}
-          className="hidden sm:block absolute right-4 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 disabled:opacity-30 disabled:hover:bg-white/10 rounded-full transition-colors text-white backdrop-blur-md"
+          className="hidden sm:flex absolute right-3 md:right-6 top-1/2 -translate-y-1/2 p-3.5 bg-black/50 hover:bg-black/80 disabled:opacity-20 disabled:pointer-events-none rounded-full transition-all text-white border border-white/15 backdrop-blur-md shadow-2xl hover:scale-110 active:scale-95 z-40"
+          title="Siguiente (Flecha derecha)"
         >
-          <ChevronRight className="w-8 h-8" />
+          <ChevronRight className="w-7 h-7" />
         </button>
-
-        {/* Mobile Navigation Buttons */}
-        <div className="sm:hidden flex items-center justify-between w-full mt-4 shrink-0 gap-4 pb-2">
-          <button
-            onClick={prevSlide}
-            disabled={currentIndex === 0}
-            className="flex-1 flex justify-center py-3 bg-white/10 hover:bg-white/20 active:bg-white/30 disabled:opacity-30 disabled:active:bg-white/10 rounded-xl transition-colors text-white backdrop-blur-md"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button
-            onClick={nextSlide}
-            disabled={currentIndex === allSlides.length - 1}
-            className="flex-1 flex justify-center py-3 bg-white/10 hover:bg-white/20 active:bg-white/30 disabled:opacity-30 disabled:active:bg-white/10 rounded-xl transition-colors text-white backdrop-blur-md"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-        </div>
       </div>
 
-      {/* Progress Bar */}
-      <div className="h-2 bg-white/10 w-full">
-        <div 
-          className="h-full bg-blue-500 transition-all duration-300" 
-          style={{ width: `${((currentIndex + 1) / allSlides.length) * 100}%` }}
-        />
+      {/* Mobile Footer Navigation Bar */}
+      <div className="sm:hidden flex items-center justify-between p-3 bg-black/80 border-t border-white/10 text-white shrink-0 z-30">
+        <button
+          onClick={prevSlide}
+          disabled={currentIndex === 0}
+          className="flex items-center gap-1.5 px-4 py-2 bg-white/10 disabled:opacity-30 rounded-xl text-sm font-bold active:scale-95 transition"
+        >
+          <ChevronLeft className="w-4 h-4" />
+          <span>Anterior</span>
+        </button>
+        <span className="text-xs font-mono font-bold text-gray-300">
+          {currentIndex + 1} / {allSlides.length}
+        </span>
+        <button
+          onClick={nextSlide}
+          disabled={currentIndex === allSlides.length - 1}
+          className="flex items-center gap-1.5 px-4 py-2 bg-indigo-600 disabled:opacity-30 rounded-xl text-sm font-bold active:scale-95 transition shadow-lg shadow-indigo-600/30"
+        >
+          <span>Siguiente</span>
+          <ChevronRight className="w-4 h-4" />
+        </button>
       </div>
     </div>
   );

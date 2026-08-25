@@ -47,8 +47,19 @@ export interface UserProgress {
   studentType?: string;
 }
 
+export interface VocabularyCard {
+  word: string;
+  translation: string;
+  phonetic?: string;
+  example?: string;
+  exampleEs?: string;
+  iconName?: string;
+  imageUrl?: string;
+}
+
 export interface ClassSlide {
   id: string;
+  classId?: string;
   title: string;
   description?: string;
   content?: string[];
@@ -57,6 +68,21 @@ export interface ClassSlide {
   options?: string[];
   correctOptionIndex?: number;
   type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'lets-say' | 'speaking-scene' | 'alphabet-game' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag';
+  vocabularyCards?: VocabularyCard[];
+  homeworkData?: {
+    task?: string;
+    taskHighlights?: string[];
+    exampleLines?: string[];
+    tips?: string[];
+    badgeText?: string;
+    whatToInclude?: {
+      icon: string;
+      label: string;
+      highlight?: string;
+    }[];
+    dueDate?: string;
+    whatsappMessage?: string;
+  };
   speakingScene?: {
     topic: string;
     topicEs: string;

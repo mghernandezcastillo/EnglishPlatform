@@ -1125,7 +1125,7 @@ function applyClassProgression(cls: CurriculumClass, spec: ClassProgression) {
 
   const objectives = findObjectivesSlide(cls);
   if (objectives) {
-    objectives.title = 'Progression Goals 🎯 / Metas de progresión 🎯';
+    objectives.title = "Today's Goals 🎯 / Objetivos de la Clase 🎯";
     objectives.content = spec.goals;
   }
 
@@ -1281,14 +1281,20 @@ export function applyCurriculumProgression(levels: CurriculumLevel[], audience: 
           if (slide.type === 'homework' && !/homework|tarea/i.test(slide.title)) {
             slide.title = `Homework / Tarea — ${slide.title}`;
           }
+          if ((slide.type === 'homework' || (slide.title || '').toLowerCase().includes('homework')) && !slide.imageUrl) {
+            slide.imageUrl = cls.sections
+              .flatMap((sec) => sec.slides)
+              .find((s) => s.id !== slide.id && s.imageUrl)?.imageUrl;
+          }
         });
       });
 
       const cover = cls.sections[0]?.slides[0];
       if (cover) {
-        if (/^(?:class|clase)\s+\d+\s*:/i.test(cover.title)) {
+        if (/^(?:class|clase)\s+\d+\s*:/i.test(cover.title) || /^welcome[!.\s\p{Emoji}]*(\/.*)?$/iu.test(cover.title)) {
           const shortTheme = cls.title.replace(/^(?:class|clase)\s+\d+\s*:\s*/i, '').split('/')[0].trim();
-          cover.title = 'Welcome! / ¡Bienvenidos!';
+          const shortThemeEs = cls.title.includes('/') ? cls.title.split('/')[1].replace(/^(?:clase|class)\s+\d+\s*:\s*/i, '').trim() : '';
+          cover.title = `Welcome to ${shortTheme}! 🚀 / ¡Bienvenidos a ${shortThemeEs || shortTheme}! 🚀`;
           if (!cover.description || /inicio|start/i.test(cover.description)) {
             cover.description = `${shortTheme} / Inicio de clase`;
           }

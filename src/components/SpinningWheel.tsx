@@ -1,8 +1,9 @@
-import { useEffect, useState, useRef } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { Sparkles, RotateCw } from 'lucide-react';
+import { useEffect, useState, useRef, useMemo } from 'react';
+import { motion, useAnimation } from 'motion/react';
+import { Sparkles, RotateCw, Star } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
-interface WheelItem {
+export interface WheelItem {
   label: string;
   color: string;
   prompt?: string;
@@ -13,19 +14,39 @@ interface SpinningWheelProps {
   items: WheelItem[];
   onSpinComplete?: (item: WheelItem) => void;
   mode?: 'warmup' | 'review';
+  title?: string;
+  subtitle?: string;
 }
 
-export function SpinningWheel({ items, onSpinComplete, mode = 'warmup' }: SpinningWheelProps) {
+export function SpinningWheel({
+  items,
+  onSpinComplete,
+  mode = 'warmup',
+  title = 'Teen Warm-up Wheel / Ruleta de Calentamiento',
+  subtitle = 'Spin and answer one easy question.',
+}: SpinningWheelProps) {
   const [isSpinning, setIsSpinning] = useState(false);
   const [selectedItem, setSelectedItem] = useState<WheelItem | null>(null);
+  const [points, setPoints] = useState(1250);
+  const [showPointsBonus, setShowPointsBonus] = useState(false);
+  const [bulbPhase, setBulbPhase] = useState(false);
+
   const controls = useAnimation();
-  const glowControls = useAnimation();
   const rotationRef = useRef(0);
   const remainingIndicesRef = useRef<number[]>([]);
   const lastSelectedIndexRef = useRef<number | null>(null);
+
   const itemsSignature = items
     .map((item) => `${item.label}|${item.color}|${item.prompt || ''}|${item.es || ''}`)
     .join('||');
+
+  // Bulbs chase animation toggle
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBulbPhase((p) => !p);
+    }, 450);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     remainingIndicesRef.current = items.map((_, index) => index);
@@ -37,7 +58,7 @@ export function SpinningWheel({ items, onSpinComplete, mode = 'warmup' }: Spinni
     if (remainingIndicesRef.current.length === 0) {
       remainingIndicesRef.current = items
         .map((_, index) => index)
-        .filter(index => items.length === 1 || index !== lastSelectedIndexRef.current);
+        .filter((index) => items.length === 1 || index !== lastSelectedIndexRef.current);
     }
 
     const poolIndex = Math.floor(Math.random() * remainingIndicesRef.current.length);
@@ -55,126 +76,346 @@ export function SpinningWheel({ items, onSpinComplete, mode = 'warmup' }: Spinni
     const randomIndex = getNextIndex();
     const targetAngle = spins * 360 + (items.length - randomIndex) * sliceAngle - sliceAngle / 2;
 
-    glowControls.start({
-      scale: [1, 1.08, 1],
-      opacity: [0.35, 0.7, 0.35],
-      transition: { duration: 0.8, repeat: 3, ease: 'easeInOut' }
-    });
-
     await controls.start({
       rotate: rotationRef.current + targetAngle,
-      transition: { duration: 3.2, ease: [0.12, 0.75, 0.2, 1] }
+      transition: { duration: 3.4, ease: [0.15, 0.85, 0.25, 1] },
     });
 
     rotationRef.current += targetAngle;
     const selected = items[randomIndex];
     setSelectedItem(selected);
     setIsSpinning(false);
+
+    // Award score points
+    setPoints((p) => p + 50);
+    setShowPointsBonus(true);
+    setTimeout(() => setShowPointsBonus(false), 2000);
+
+    // Confetti celebration burst
+    try {
+      confetti({
+        particleCount: 50,
+        spread: 60,
+        origin: { x: 0.65, y: 0.55 },
+        colors: ['#FFE066', '#FFD700', '#F59E0B', '#38BDF8', '#EC4899'],
+      });
+    } catch {
+      /* empty */
+    }
+
     onSpinComplete?.(selected);
   };
 
   const selectedPrompt = selectedItem?.prompt || selectedItem?.label;
 
+  // Generate 16 circular bulbs around wheel border
+  const wheelBulbs = useMemo(() => {
+    const total = 18;
+    return Array.from({ length: total }).map((_, i) => {
+      const angle = (i * 360) / total;
+      const rad = (angle * Math.PI) / 180;
+      // Wheel radius ~158px (wheel size ~340px)
+      const r = 160;
+      const cx = 175 + r * Math.sin(rad);
+      const cy = 175 - r * Math.cos(rad);
+      return { id: i, cx, cy, active: i % 2 === (bulbPhase ? 0 : 1) };
+    });
+  }, [bulbPhase]);
+
+  // Generate bulbs for the Marquee Board perimeter
+  const marqueeBulbs = useMemo(() => {
+    const topBottomCount = 14;
+    const sideCount = 7;
+    const bulbs: { id: string; active: boolean; style: React.CSSProperties }[] = [];
+
+    // Top
+    for (let i = 0; i < topBottomCount; i++) {
+      bulbs.push({
+        id: `t-${i}`,
+        active: i % 2 === (bulbPhase ? 0 : 1),
+        style: { top: '6px', left: `${(i / (topBottomCount - 1)) * 94 + 3}%` },
+      });
+    }
+    // Bottom
+    for (let i = 0; i < topBottomCount; i++) {
+      bulbs.push({
+        id: `b-${i}`,
+        active: i % 2 === (bulbPhase ? 1 : 0),
+        style: { bottom: '6px', left: `${(i / (topBottomCount - 1)) * 94 + 3}%` },
+      });
+    }
+    // Left
+    for (let i = 1; i < sideCount - 1; i++) {
+      bulbs.push({
+        id: `l-${i}`,
+        active: i % 2 === (bulbPhase ? 0 : 1),
+        style: { left: '8px', top: `${(i / (sideCount - 1)) * 88 + 6}%` },
+      });
+    }
+    // Right
+    for (let i = 1; i < sideCount - 1; i++) {
+      bulbs.push({
+        id: `r-${i}`,
+        active: i % 2 === (bulbPhase ? 1 : 0),
+        style: { right: '8px', top: `${(i / (sideCount - 1)) * 88 + 6}%` },
+      });
+    }
+    return bulbs;
+  }, [bulbPhase]);
+
   return (
-    <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-6 py-3">
-      <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 select-none shrink-0">
-        <motion.div
-          animate={glowControls}
-          className="absolute inset-[-14px] rounded-full bg-white/25 blur-xl"
-        />
+    <div className="relative w-full h-full flex flex-col justify-between p-5 sm:p-7 overflow-hidden select-none">
+      {/* ── Spotlights & Stage Atmosphere ─────────────────────────────────── */}
+      <div
+        className="pointer-events-none absolute -top-10 left-[15%] w-72 h-[480px] bg-gradient-to-b from-cyan-400/20 via-blue-500/10 to-transparent blur-2xl transform -rotate-12"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute -top-10 right-[25%] w-80 h-[520px] bg-gradient-to-b from-blue-400/25 via-indigo-500/10 to-transparent blur-2xl transform rotate-12"
+        aria-hidden="true"
+      />
 
-        <motion.div
-          animate={{ rotate: isSpinning ? 360 : 0 }}
-          transition={{ duration: 1.2, repeat: isSpinning ? Infinity : 0, ease: 'linear' }}
-          className="absolute inset-[-10px] rounded-full border-[10px] border-white/25 border-t-white/80"
-        />
-
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-20">
-          <div className="h-9 w-9 rotate-45 rounded-tl-md bg-white shadow-xl border border-white/80" />
+      {/* ── Top Header & Scoreboard ───────────────────────────────────────── */}
+      <div className="relative z-10 flex items-start justify-between gap-4 shrink-0">
+        <div className="flex flex-col">
+          <h1 className="text-2xl sm:text-3xl lg:text-[2.2rem] font-black text-white tracking-tight leading-tight drop-shadow-md">
+            {title}
+          </h1>
+          <p className="text-sm sm:text-base lg:text-lg font-bold text-amber-300 mt-0.5 drop-shadow">
+            {subtitle}
+          </p>
         </div>
 
-        <motion.div
-          animate={controls}
-          className="absolute inset-0 rounded-full border-[10px] border-white shadow-2xl overflow-hidden"
-          style={{
-            background: `conic-gradient(${items.map((item, i) => {
-              const start = (i * 100) / items.length;
-              const end = ((i + 1) * 100) / items.length;
-              return `${item.color} ${start}% ${end}%`;
-            }).join(', ')})`
-          }}
-        >
-          <div className="absolute inset-[20%] rounded-full bg-white/15 border border-white/25" />
-          {items.map((item, index) => {
-            const sliceAngle = 360 / items.length;
-            const angle = index * sliceAngle + sliceAngle / 2;
-            return (
-              <div
-                key={`${item.label}-${index}`}
-                className="absolute inset-0 flex items-start justify-center"
-                style={{ transform: `rotate(${angle}deg)` }}
-              >
-                <span className="mt-5 max-w-[82px] rounded-full bg-black/18 px-2 py-1 text-center text-[10px] sm:text-xs font-black text-white leading-tight shadow-sm">
-                  {item.label}
-                </span>
-              </div>
-            );
-          })}
-        </motion.div>
+        {/* Gamified Retro Scoreboard */}
+        <div className="relative shrink-0">
+          <div className="relative bg-[#0d1024] border-2 border-amber-400/80 rounded-2xl px-5 py-2.5 shadow-[0_0_20px_rgba(251,191,36,0.35)] flex flex-col items-center">
+            {/* Top tiny label */}
+            <span className="text-[10px] sm:text-xs font-black tracking-widest text-amber-400 uppercase">
+              CLASS POINTS
+            </span>
+            {/* Digital LED number */}
+            <div className="flex items-center gap-1.5 font-mono text-2xl sm:text-3xl font-black text-amber-300 tracking-wider drop-shadow-[0_0_8px_rgba(252,211,77,0.8)]">
+              <span>{points}</span>
+              <Star className="w-5 h-5 text-amber-400 fill-amber-400 animate-pulse" />
+            </div>
 
-        <button
-          onClick={spin}
-          disabled={isSpinning}
-          className="absolute top-1/2 left-1/2 z-30 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-white rounded-full shadow-xl hover:scale-105 active:scale-95 transition-transform flex flex-col items-center justify-center cursor-pointer disabled:opacity-90 disabled:cursor-not-allowed border-4 border-white/70"
-        >
-          <RotateCw className={`w-6 h-6 text-indigo-700 ${isSpinning ? 'animate-spin' : ''}`} />
-          <span className="font-black text-slate-900 text-xs mt-1">SPIN</span>
-        </button>
+            {/* +50 Floating points bonus notification */}
+            {showPointsBonus && (
+              <motion.div
+                initial={{ opacity: 0, y: 0, scale: 0.8 }}
+                animate={{ opacity: 1, y: -28, scale: 1.15 }}
+                exit={{ opacity: 0 }}
+                className="absolute -top-3 right-2 bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 font-black text-xs px-2.5 py-0.5 rounded-full shadow-lg shadow-amber-400/50"
+              >
+                +50 ⭐
+              </motion.div>
+            )}
+          </div>
+        </div>
       </div>
 
-      <div className="w-full max-w-md min-h-[190px] flex items-center justify-center">
-        <motion.div
-          layout
-          className="w-full rounded-3xl bg-white/92 text-slate-900 p-5 sm:p-6 shadow-2xl border border-white/80"
-        >
-          {!selectedItem ? (
-            <div className="text-center">
-              <motion.div
-                animate={{ y: [0, -5, 0], rotate: [0, 6, -6, 0] }}
-                transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
-                className="mx-auto mb-4 h-14 w-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center"
-              >
-                <Sparkles className="w-7 h-7" />
-              </motion.div>
-              <p className="text-sm font-black uppercase tracking-[0.22em] text-indigo-500">
-                {mode === 'review' ? 'Class review' : 'Icebreaker'}
-              </p>
-              <p className="mt-2 text-xl font-black">
-                {mode === 'review' ? 'Spin and show what you learned' : 'Spin and answer out loud'}
-              </p>
-              <p className="mt-2 text-sm font-semibold text-slate-500">
-                {mode === 'review'
-                  ? 'La consigna de repaso aparecerá aquí. Responde en inglés.'
-                  : 'La pregunta aparecerá aquí cuando la ruleta se detenga.'}
-              </p>
-            </div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0, y: 16, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-            >
-              <div className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-white text-xs font-black uppercase tracking-wider" style={{ backgroundColor: selectedItem.color }}>
-                <Sparkles className="w-3.5 h-3.5" />
-                {selectedItem.label}
+      {/* ── Main Stage Area: Wheel + Billboard ────────────────────────────── */}
+      <div className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 my-2 min-h-0">
+        
+        {/* ══ LEFT: 3D Casino Golden Wheel with Podium ═══════════════════════ */}
+        <div className="relative flex flex-col items-center justify-center shrink-0">
+          
+          {/* Wheel wrapper (350x350) */}
+          <div className="relative w-[340px] h-[340px] sm:w-[350px] sm:h-[350px] flex items-center justify-center">
+            
+            {/* Golden Casino Rim with Bulbs (SVG background) */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none z-20" viewBox="0 0 350 350">
+              <defs>
+                <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#FFF1A8" />
+                  <stop offset="35%" stopColor="#D4AF37" />
+                  <stop offset="70%" stopColor="#996515" />
+                  <stop offset="100%" stopColor="#FFE57F" />
+                </linearGradient>
+                <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+
+              {/* Outer Golden Metallic Rim */}
+              <circle
+                cx="175"
+                cy="175"
+                r="165"
+                fill="none"
+                stroke="url(#goldRim)"
+                strokeWidth="16"
+                filter="url(#goldGlow)"
+              />
+              <circle
+                cx="175"
+                cy="175"
+                r="156"
+                fill="none"
+                stroke="#3D2806"
+                strokeWidth="2"
+              />
+
+              {/* Glowing Marquee Bulbs around the Wheel */}
+              {wheelBulbs.map((b) => (
+                <g key={b.id}>
+                  <circle
+                    cx={b.cx}
+                    cy={b.cy}
+                    r={b.active ? '5' : '4'}
+                    fill={b.active ? '#FFF59D' : '#F59E0B'}
+                    filter={b.active ? 'url(#goldGlow)' : undefined}
+                  />
+                  {b.active && (
+                    <circle
+                      cx={b.cx}
+                      cy={b.cy}
+                      r="8"
+                      fill="#FFF59D"
+                      opacity="0.35"
+                    />
+                  )}
+                </g>
+              ))}
+            </svg>
+
+            {/* Top Golden Pointer */}
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center">
+              <div className="w-9 h-11 bg-gradient-to-b from-[#FFF59D] via-[#F59E0B] to-[#996515] rounded-b-md shadow-2xl border-2 border-amber-200 clip-pointer flex items-center justify-center">
+                <div className="w-2.5 h-2.5 rounded-full bg-white/80 shadow-[0_0_6px_white]" />
               </div>
-              <p className="mt-4 text-2xl sm:text-3xl font-black leading-tight">{selectedPrompt}</p>
-              {selectedItem.es && (
-                <p className="mt-3 text-base font-bold text-indigo-700">{selectedItem.es}</p>
-              )}
+            </div>
+
+            {/* Inner Rotating Colored Slices */}
+            <motion.div
+              animate={controls}
+              className="absolute inset-[18px] rounded-full shadow-inner overflow-hidden z-10"
+              style={{
+                background: `conic-gradient(${items
+                  .map((item, i) => {
+                    const start = (i * 100) / items.length;
+                    const end = ((i + 1) * 100) / items.length;
+                    return `${item.color} ${start}% ${end}%`;
+                  })
+                  .join(', ')})`,
+              }}
+            >
+              {/* Slice Divider Lines & Labels */}
+              {items.map((item, index) => {
+                const sliceAngle = 360 / items.length;
+                const angle = index * sliceAngle + sliceAngle / 2;
+                return (
+                  <div
+                    key={`${item.label}-${index}`}
+                    className="absolute inset-0 flex items-start justify-center"
+                    style={{ transform: `rotate(${angle}deg)` }}
+                  >
+                    <span className="mt-5 max-w-[85px] px-2 py-0.5 text-center text-sm font-black text-white tracking-wide uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                      {item.label}
+                    </span>
+                  </div>
+                );
+              })}
             </motion.div>
-          )}
-        </motion.div>
+
+            {/* Center Golden 3D SPIN Button */}
+            <button
+              onClick={spin}
+              disabled={isSpinning}
+              className="absolute top-1/2 left-1/2 z-30 -translate-x-1/2 -translate-y-1/2 w-22 h-22 rounded-full bg-gradient-to-br from-[#FFE79A] via-[#E5A93C] to-[#8C5812] shadow-[0_6px_20px_rgba(0,0,0,0.6)] hover:scale-108 active:scale-95 transition-all flex flex-col items-center justify-center cursor-pointer disabled:opacity-90 disabled:cursor-not-allowed border-4 border-amber-200"
+            >
+              <div className="w-17 h-17 rounded-full bg-gradient-to-b from-[#FFD54F] to-[#FFA000] border border-amber-100/60 flex flex-col items-center justify-center shadow-inner">
+                <RotateCw
+                  className={`w-5 h-5 text-slate-900 ${isSpinning ? 'animate-spin' : ''}`}
+                />
+                <span className="font-black text-slate-950 text-xs tracking-wider mt-0.5 font-mono">
+                  SPIN
+                </span>
+              </div>
+            </button>
+          </div>
+
+          {/* Glowing Blue Neon Pedestal Base */}
+          <div className="relative -mt-5 w-68 h-9 flex items-center justify-center">
+            {/* Top ring */}
+            <div className="absolute top-0 w-56 h-5 rounded-[100%] border-2 border-cyan-300 bg-cyan-500/25 shadow-[0_0_20px_rgba(6,182,212,0.85)]" />
+            {/* Lower ring */}
+            <div className="absolute bottom-0 w-64 h-6 rounded-[100%] border-2 border-blue-400 bg-blue-600/30 shadow-[0_0_30px_rgba(59,130,246,0.9)]" />
+          </div>
+        </div>
+
+        {/* ══ RIGHT: Game Show Marquee Question Billboard ════════════════════ */}
+        <div className="flex-1 w-full h-full min-h-[300px] flex items-center justify-center">
+          <div className="relative w-full max-w-2xl h-full min-h-[290px] rounded-3xl bg-gradient-to-b from-[#0e1335] via-[#101844] to-[#0b0e2b] border-[5px] border-amber-400/90 shadow-[0_0_40px_rgba(251,191,36,0.35)] p-6 sm:p-8 flex flex-col items-center justify-center text-center overflow-hidden">
+            
+            {/* Marquee Bulbs around the Frame Perimeter */}
+            {marqueeBulbs.map((b) => (
+              <div
+                key={b.id}
+                style={b.style}
+                className={`absolute w-3 h-3 rounded-full transition-all duration-300 ${
+                  b.active
+                    ? 'bg-amber-200 shadow-[0_0_10px_#fde047]'
+                    : 'bg-amber-500/80 shadow-[0_0_3px_#d97706]'
+                }`}
+              />
+            ))}
+
+            {/* Top Pill Badge: QUESTION */}
+            <div className="inline-flex items-center gap-1.5 px-6 py-1 rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-widest shadow-md shadow-amber-400/40 mb-4 z-10">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>QUESTION</span>
+            </div>
+
+            {/* Content inside Marquee */}
+            {!selectedItem ? (
+              <div className="flex flex-col items-center justify-center my-auto z-10 px-4">
+                <motion.div
+                  animate={{ scale: [1, 1.06, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                  className="text-4xl sm:text-5xl mb-3"
+                >
+                  🎯
+                </motion.div>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-snug">
+                  Spin the wheel to get your question!
+                </h2>
+                <p className="text-base sm:text-xl font-bold text-amber-300/90 mt-2">
+                  ¡Toca <span className="underline decoration-amber-400">SPIN</span> para girar la ruleta!
+                </p>
+              </div>
+            ) : (
+              <motion.div
+                key={selectedPrompt}
+                initial={{ opacity: 0, scale: 0.9, y: 12 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ type: 'spring', stiffness: 240, damping: 20 }}
+                className="flex flex-col items-center justify-center my-auto z-10 px-3 max-w-xl"
+              >
+                {/* Selected slice badge */}
+                <span
+                  className="px-3.5 py-1 rounded-full text-white text-xs font-black uppercase tracking-wider mb-3 shadow-md"
+                  style={{ backgroundColor: selectedItem.color }}
+                >
+                  {selectedItem.label}
+                </span>
+
+                {/* English Big Question */}
+                <h2 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-black text-white leading-tight tracking-tight drop-shadow-md">
+                  {selectedPrompt}
+                </h2>
+
+                {/* Spanish Translation */}
+                {selectedItem.es && (
+                  <p className="text-xl sm:text-2xl lg:text-[1.65rem] font-bold text-amber-300 mt-3 drop-shadow leading-snug">
+                    {selectedItem.es}
+                  </p>
+                )}
+              </motion.div>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
