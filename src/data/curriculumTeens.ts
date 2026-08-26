@@ -20828,46 +20828,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las reglas de backshift temporal y pronombres en reported speech.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Direct Speech vs Reported Speech / Cita directa vs Estilo indirecto",
-                description: "Reporting what someone said without using quotation marks.",
-                content: ["Direct Speech: Emma said, 'I am excited about the science fair.'", "Reported Speech: Emma said that she was excited about the science fair.", "Notice how 'am' backshifts to 'was' and quotation marks disappear."],
-                imageUrl: "/images/teens-advanced-class-01/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "The Tense Backshift Formula / La fórmula de retroceso temporal",
-                description: "When the reporting verb is in the past (said/told), shift tenses back one step.",
-                content: ["Present Simple -> Past Simple: 'I want pizza' -> He said he wanted pizza.", "Present Continuous -> Past Continuous: 'I am studying' -> She said she was studying.", "will -> would: 'I will help' -> They said they would help.", "can -> could: 'I can code' -> He said he could code."],
-                imageUrl: "/images/teens-advanced-class-01/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Pronoun & Time Expression Adjustments / Ajustes de tiempo y lugar",
-                description: "Shift perspective from the original moment to the present reporting moment.",
-                content: ["'today' -> 'that day' | 'yesterday' -> 'the day before / the previous day'", "'tomorrow' -> 'the next day / the following day' | 'now' -> 'then'", "'here' -> 'there' | 'this' -> 'that'", "Example: 'I will call you tomorrow' -> She said she would call me the following day."],
-                imageUrl: "/images/teens-advanced-class-01/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Say vs Tell / Diferencia entre Say y Tell",
-                description: "One of the most common exam traps!",
-                content: ["SAY: Does NOT require a personal object.", "'She SAID THAT the test was easy.' (Correct) | 'She said me that...' (INCORRECT)", "TELL: MUST have a personal object (me, us, him, her, them).", "'She TOLD ME THAT the test was easy.' (Correct) | 'She told that...' (INCORRECT)"],
-                imageUrl: "/images/teens-advanced-class-01/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Investigative News Report / Reporte periodístico modelo",
-                description: "Read this sample campus broadcast.",
-                content: ["Good afternoon, Titans! Earlier this morning, Principal Harris told the student body that our high school had been nominated for the National Green Campus Award.", "She stated that student volunteers had reduced campus plastic waste by 65% since September.", "She added that the award committee would visit our campus the following Friday to interview club leaders!"],
-                imageUrl: "/images/teens-advanced-class-01/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Reported Speech & Tense Backshift 📰🎙️ / Estilo Indirecto","description":"Reporting Statements","content":["Direct: 'I am organizing the hackathon.'","Reported: He said (that) he was organizing the hackathon.","Tense Backshift: Present Simple -> Past Simple / Present Continuous -> Past Continuous / Will -> Would"],"imageUrl":"/images/teens-advanced-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Say vs Tell & Pronoun Shifts 🗣️ / Say vs Tell","description":"Reporting Verbs","content":["SAY: He said that he was ready. (No direct person object)","TELL: He told ME that he was ready. (Requires person object)","Pronouns shift with perspective: 'I love music' -> She said SHE loved music."],"imageUrl":"/images/teens-advanced-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Reporting Live Campus & Media News 📻 / Reportes Periodísticos","description":"Investigative Journalism","content":["The principal announced that classes would finish early on Friday.","The team captain told reporters that they had prepared all month.","Reported speech is fundamental for journalism and storytelling."],"imageUrl":"/images/teens-advanced-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Reported Statement Formula 📜 / Fórmula de Reporte","description":"Subject + Reported Verb + Backshifted Clause","content":["Formula: [Speaker] (said / told me) that [Subject] [Backshifted Past Verb] [Detail].","Example: 'Maya told me that she had won first place in the coding contest.'"],"imageUrl":"/images/teens-advanced-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: News Anchor Relay 🎯 / Mini Reto","description":"Report What Someone Said","content":["Report this quote: Alex: 'I will launch my new podcast tomorrow.'","'Alex told me that he ________.' (Use would launch)"],"imageUrl":"/images/teens-advanced-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la transformación de oraciones con backshift."
           },
@@ -21208,46 +21173,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas gramaticales de reported questions y verbos de reporte.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Wh- Reported Questions / Preguntas de información indirectas",
-                description: "CRITICAL RULE: The question becomes an affirmative statement (Subject + Verb).",
-                content: ["Direct: 'Where do you live?'", "Reported: 'He asked me WHERE I LIVED.' (NOT 'where did I live')", "Direct: 'What are you doing?'", "Reported: 'She wanted to know WHAT I WAS DOING.' (NOT 'what was I doing')"],
-                imageUrl: "/images/teens-advanced-class-02/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Yes/No Questions with 'If' and 'Whether' / Preguntas de Sí/No",
-                description: "Connect the reporting verb to the question with 'if' or 'whether'.",
-                content: ["Direct: 'Do you have the key?'", "Reported: 'She asked IF I had the key.' / 'She asked WHETHER I had the key.'", "Direct: 'Are you ready?'", "Reported: 'The captain inquired WHETHER we were ready.' (Notice affirmative word order!)"],
-                imageUrl: "/images/teens-advanced-class-02/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Advanced Reporting Verbs / Verbos avanzados de reporte",
-                description: "Elevate your vocabulary beyond just 'asked'.",
-                content: ["'inquired' = preguntó formalmente ('The journalist inquired whether the mayor was available.')", "'wondered' = se preguntó / tenía curiosidad ('Emma wondered why the door was unlocked.')", "'demanded to know' = exigió saber ('The officer demanded to know who broke the glass.')", "'wanted to know' = quería saber ('He wanted to know how much the ticket cost.')"],
-                imageUrl: "/images/teens-advanced-class-02/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Reporting Commands & Orders / Reportar órdenes y advertencias",
-                description: "Use infinitive structures: told / ordered / warned + (not) to + verb.",
-                content: ["Direct: 'Sit down and remain silent!'", "Reported: 'The inspector ORDERED us TO SIT DOWN and remain silent.'", "Direct: 'Don't touch the forensic evidence!'", "Reported: 'The agent WARNED the rookie NOT TO TOUCH the evidence.'"],
-                imageUrl: "/images/teens-advanced-class-02/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Detective Interrogation Debrief / Informe policial modelo",
-                description: "Read this sample interrogation summary.",
-                content: ["During yesterday's interrogation at precinct headquarters, Detective Vance asked the night watchman where he had been at midnight.", "The watchman replied that he was patrolling the gallery.", "When we inquired whether anyone else had possessed master keycard access, he confessed that he had lost his card earlier that afternoon.", "Finally, our team warned him not to leave the state until forensic analysis was complete!"],
-                imageUrl: "/images/teens-advanced-class-02/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Reported Questions & Inquiries 🕵️❓ / Preguntas Indirectas","description":"Wh- & Yes/No Questions","content":["Direct: 'Where do you practice?' -> Reported: He asked me where I practiced.","Direct: 'Do you play soccer?' -> Reported: She asked IF / WHETHER I played soccer.","Crucial Rule: Word order becomes affirmative (No 'did/do' auxiliaries!)."],"imageUrl":"/images/teens-advanced-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Advanced Reporting Verbs: Inquire, Wonder, Demand 🧩 / Verbos Avanzados","description":"Nuanced Reporting","content":["INQUIRE: 'The interviewer inquired how long I had been coding.'","WONDER: 'The detective wondered if anyone had seen the suspect.'","DEMAND: 'The coach demanded to know why we were late.'"],"imageUrl":"/images/teens-advanced-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Secret Interviews & Debriefs 🎙️📂 / Interrogatorios","description":"Forensic Reporting","content":["'The journalist asked the whistleblower what data was leaked.'","'She inquired whether the company would release a public statement.'","Mastering indirect questions creates top-tier executive reporting."],"imageUrl":"/images/teens-advanced-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Reported Question Formula 🔍 / Fórmula de Pregunta","description":"Speaker + Asked + If/Wh- + Subject + Past Verb","content":["Formula: [Speaker] asked (me) [Wh- word / if] [Subject] [Past Verb] [Detail].","Example: 'The judge asked the candidate if they had managed international projects before.'"],"imageUrl":"/images/teens-advanced-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Detective Debrief 🎯 / Mini Reto","description":"Report a Question","content":["Report: 'What time does the event start?'","'She asked me what time the event ________.' (started / did start)"],"imageUrl":"/images/teens-advanced-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la eliminación de auxiliares do/did en reported questions."
           },
@@ -21588,46 +21518,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la distinción entre cláusulas definitorias y no definitorias y el uso de comas.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Relative Pronouns Matrix / Matriz de pronombres relativos",
-                description: "Choose the correct pronoun based on the referent.",
-                content: ["WHO / THAT: Used for people ('The engineer WHO designed the satellite').", "WHICH / THAT: Used for animals, objects, and concepts ('The algorithm WHICH detects errors').", "WHOSE: Indicates possession ('The student WHOSE project won').", "WHERE: Indicates places ('The innovation lab WHERE we code').", "WHEN: Indicates time ('The moment WHEN we launched')."],
-                imageUrl: "/images/teens-advanced-class-03/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Defining Relative Clauses / Cláusulas Definitorias",
-                description: "Gives ESSENTIAL information needed to identify the person or object.",
-                content: ["NO COMMAS are used.", "'The students WHO SCORED ABOVE 90% received a scholarship.'", "If you remove the clause, the meaning changes completely (not ALL students got scholarships, only those who scored above 90%).", "You can use 'THAT' instead of 'who' or 'which' in defining clauses."],
-                imageUrl: "/images/teens-advanced-class-03/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Non-Defining Relative Clauses / Cláusulas No Definitorias",
-                description: "Adds EXTRA information about an already identified noun.",
-                content: ["COMMAS ARE MANDATORY (before and after the clause).", "'Albert Einstein, WHO DEVELOPED THE THEORY OF RELATIVITY, won the Nobel Prize in Physics.'", "If you remove the clause, the sentence still makes complete sense ('Albert Einstein won the Nobel Prize in Physics.').", "CRITICAL RULE: You CANNOT use 'THAT' in non-defining clauses! (Must use 'who' or 'which')."],
-                imageUrl: "/images/teens-advanced-class-03/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Mastering 'Whose' for Possession / El pronombre posesivo 'Whose'",
-                description: "Replaces his, her, their, or its.",
-                content: ["Sentence A: 'I met an inspiring software engineer.'", "Sentence B: 'Her startup raised two million dollars.'", "Combined: 'I met an inspiring software engineer WHOSE startup raised two million dollars.'", "Notice that 'whose' is followed directly by the possessed noun without articles."],
-                imageUrl: "/images/teens-advanced-class-03/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Museum Docent Speech / Discurso modelo de guía de museo",
-                description: "Read this sample exhibition tour.",
-                content: ["Welcome to the Visionary Tech Pavilion. On your left is Ada Lovelace, who is celebrated worldwide as the first computer programmer.", "She designed an algorithm for Charles Babbage's mechanical engine, which was created to calculate complex mathematical tables.", "Beside her portrait stands the quantum processor, whose ultra-dense superconducting circuits can solve simulations that would take traditional computers centuries!"],
-                imageUrl: "/images/teens-advanced-class-03/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Relative Clauses: Defining vs Non-Defining 🏛️✨ / Cláusulas Relativas","description":"Who, Which, That, Whose, Where","content":["DEFINING (Essential info, no commas): 'The student WHO won the hackathon is from our school.'","NON-DEFINING (Extra bonus info, between commas): 'Lionel Messi, WHO was born in Argentina, is a global icon.'","Rule: Never use 'THAT' in non-defining clauses with commas!"],"imageUrl":"/images/teens-advanced-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Whose & Where in Complex Descriptions 🗝️🗺️ / Posesión y Lugares","description":"Advanced Pronouns","content":["WHOSE (Possession): 'That is the creator WHOSE channel reached 1 million subscribers.'","WHERE (Places): 'This is the innovation hub WHERE we build our robotics projects.'","WHICH (Things): 'The VR headset, WHICH cost $300, has amazing resolution.'"],"imageUrl":"/images/teens-advanced-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Museum Docent & Keynote Descriptions 🎨 / Presentaciones Elegantes","description":"Academic Flow","content":["'The painting, WHICH was created in 1889, represents post-impressionist mastery.'","'The innovators WHOSE work changed AI received global acclaim.'","Relative clauses combine choppy ideas into fluent, mature sentences."],"imageUrl":"/images/teens-advanced-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Relative Clause Matrix 🏛️ / Matriz Relativa","description":"Subject + Relative Clause + Predicate","content":["Formula: [Noun], who/which/whose [Extra Relative Detail], [Main Action Verb].","Example: 'Our robotics project, which won the state prize, solves urban water pollution.'"],"imageUrl":"/images/teens-advanced-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Docent Pitch 🎯 / Mini Reto","description":"Combine Two Ideas with 'Who' or 'Which'","content":["Combine: 'Emma is my friend. She built a solar charger.'","'Emma, who ________, is my friend.'"],"imageUrl":"/images/teens-advanced-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y practicar la puntuación con comas en relative clauses."
           },
@@ -21968,46 +21863,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura gramatical de la voz pasiva en presente y pasado simple.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Active vs Passive Voice Concept / Voz Activa vs Voz Pasiva",
-                description: "Shift focus from the DOER to the RECEIVER of the action.",
-                content: ["Active (Focus on Actor): 'Engineers build electric cars in Fremont.'", "Passive (Focus on Object/Action): 'Electric cars ARE BUILT in Fremont (by engineers).'", "Use passive voice when the actor is unknown, obvious, or less important than the invention itself."],
-                imageUrl: "/images/teens-advanced-class-04/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Present Simple Passive Formula / Voz Pasiva en Presente",
-                description: "Subject + AM / IS / ARE + Past Participle (V3).",
-                content: ["'Millions of spam emails ARE BLOCKED every minute.'", "'High-precision microchips ARE MANUFACTURED in cleanroom laboratories.'", "'The software algorithm IS UPDATED automatically every Tuesday.'", "Always ensure 'is/are' matches the new singular/plural subject!"],
-                imageUrl: "/images/teens-advanced-class-04/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Past Simple Passive Formula / Voz Pasiva en Pasado",
-                description: "Subject + WAS / WERE + Past Participle (V3).",
-                content: ["'The first iPhone WAS RELEASED in 2007.'", "'The pyramids WERE BUILT thousands of years ago.'", "'The security breach WAS DISCOVERED by student hackers during a cyber contest.'", "Use 'was' for singular and 'were' for plural past subjects."],
-                imageUrl: "/images/teens-advanced-class-04/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "When to Include the Agent 'By' / Cuándo incluir 'By'",
-                description: "Only mention 'by + agent' when the identity adds meaningful historical value.",
-                content: ["USE 'BY': 'The painting was created BY Leonardo da Vinci.' (Crucial author info)", "OMIT 'BY': 'Spanish is spoken in Colombia (by people).' -> Unnecessary clutter!", "'The bridge was designed BY a team of teenage architects.' (High value)"],
-                imageUrl: "/images/teens-advanced-class-04/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Tech Keynote Speech / Discurso modelo de lanzamiento tecnológico",
-                description: "Read this sample tech product launch.",
-                content: ["Good morning, visionaries! Today, our revolutionary solar-powered drone is officially unveiled.", "This aircraft was engineered by our high school robotics club and is manufactured entirely from recycled carbon fiber.", "Every flight route is calculated in real time by neural networks, and emergency medical kits are delivered in under ten minutes to remote hospitals!"],
-                imageUrl: "/images/teens-advanced-class-04/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Passive Voice: Disruptions & Inventions 🚀⚡ / Voz Pasiva","description":"Focus on the Action/Result","content":["Active: 'Engineers designed this revolutionary quantum chip.'","Passive: 'This revolutionary quantum chip WAS DESIGNED by engineers.'","Use Passive Voice when the action or product is more important than who did it."],"imageUrl":"/images/teens-advanced-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"Present vs Past Passive Formula ⚙️ / Presente y Pasado Pasivo","description":"BE + Past Participle","content":["Present Passive: is / are + Participle ('Millions of videos ARE UPLOADED daily.')","Past Passive: was / were + Participle ('The internet WAS CREATED in the 20th century.')","Include 'BY' only if the creator/agent adds critical value."],"imageUrl":"/images/teens-advanced-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"Tech Launch Keynotes & Inventions 📱🌍 / Lanzamientos Tecnológicos","description":"Professional Tech Announcements","content":["'Over ten thousand prototypes WERE TESTED before the official release.'","'Renewable clean energy IS PRODUCED in our solar facility.'","Passive voice dominates science, engineering, and news broadcasts."],"imageUrl":"/images/teens-advanced-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Innovation Passive Formula 💡 / Fórmula Pasiva","description":"Object + BE + Participle + By Agent","content":["Formula: The [Product/Tech] was [Past Participle] by [Innovator] in [Year].","Example: 'The world's first smartphone was invented in 1992.'"],"imageUrl":"/images/teens-advanced-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Tech Invention 🎯 / Mini Reto","description":"Convert to Passive","content":["Convert: 'Alexander Graham Bell invented the telephone in 1876.'","'The telephone ________ in 1876 by Alexander Graham Bell.'"],"imageUrl":"/images/teens-advanced-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y practicar la conjugación del participio pasado en voz pasiva."
           },
@@ -22348,46 +22208,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas de voz pasiva en presente perfecto, futuro y modales.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Present Perfect Passive / Voz Pasiva en Presente Perfecto",
-                description: "Subject + HAS / HAVE BEEN + Past Participle (V3).",
-                content: ["Focuses on recent completed actions with present relevance.", "'A potential cure for sickle-cell disease HAS BEEN APPROVED by medical authorities.'", "'Over five thousand exoplanets HAVE BEEN DISCOVERED by space telescopes.'", "'The cyber firewall HAS BEEN UPGRADED to withstand quantum decryption.'"],
-                imageUrl: "/images/teens-advanced-class-05/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Future Simple Passive / Voz Pasiva en Futuro",
-                description: "Subject + WILL BE + Past Participle (V3).",
-                content: ["Used for official announcements, forecasts, and project milestones.", "'The next generation lunar base WILL BE CONSTRUCTED in the south polar crater.'", "'Clean fusion energy WILL BE DELIVERED to commercial power grids by 2035.'", "'The international climate treaty WILL BE SIGNED by fifty world leaders.'"],
-                imageUrl: "/images/teens-advanced-class-05/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Modal Passive Structures / Voz Pasiva con Verbos Modales",
-                description: "Subject + MODAL (must/can/should/could) + BE + Past Participle (V3).",
-                content: ["'Sensitive student research data MUST BE ENCRYPTED at all times.'", "'Reusable rockets CAN BE REFURBISHED in under twenty-four hours.'", "'Microplastics SHOULD BE BANNED from cosmetic packaging worldwide.'", "'Ancient climate patterns COULD BE RECONSTRUCTED from Antarctic ice cores.'"],
-                imageUrl: "/images/teens-advanced-class-05/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Passive Voice in Scientific Research & Journalism",
-                description: "Why scientists and reporters avoid the first person ('I / We').",
-                content: ["Active (Informal): 'We heated the liquid and discovered a reaction.'", "Passive (Scientific & Formal): 'The solution WAS HEATED, and a rapid crystallization reaction WAS OBSERVED.'", "This maintains objective neutrality and focuses all attention on verifiable data."],
-                imageUrl: "/images/teens-advanced-class-05/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Science Correspondent Speech / Discurso modelo de corresponsal científico",
-                description: "Read this sample breaking news broadcast.",
-                content: ["Good evening, viewers worldwide. Breaking news from the International Space Agency: deep beneath the icy crust of Europa, hydrothermal ocean vents have been detected by robotic probes.", "Water temperature samples have been analyzed by microbiologists, confirming chemical signatures favorable for microbial life.", "A dedicated submersible mission will be deployed next decade, and international space treaties must be updated to preserve alien biospheres!"],
-                imageUrl: "/images/teens-advanced-class-05/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Advanced Passive: Present Perfect, Future & Modals 🔬🌐 / Voz Pasiva Avanzada","description":"Scientific & Global News","content":["Present Perfect Passive: 'A new cure HAS BEEN DISCOVERED by researchers.'","Future Passive: 'The deep-space telescope WILL BE LAUNCHED next month.'","Modal Passive: 'Plastic waste MUST BE REDUCED globally.'"],"imageUrl":"/images/teens-advanced-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Passive Voice in Academic Research & Journalism 📜 / En Periodismo","description":"Formal Objective Tone","content":["'Clinical trials HAVE BEEN CONDUCTED with 99% accuracy.'","'Climate agreements MUST BE RATIFIED by international leaders.'","Passive voice maintains neutrality and scientific authority."],"imageUrl":"/images/teens-advanced-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Breaking Science Breakthroughs 🧬⚡ / Descubrimientos","description":"Global Impact","content":["'Fusion energy COULD BE GENERATED within the next decade.'","'Over 500 million trees HAVE BEEN PLANTED across deforested regions.'","Transform findings into high-impact global press releases."],"imageUrl":"/images/teens-advanced-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Advanced Science Passive Formula 🧪 / Fórmula Científica","description":"Topic + Has been/Will be + Participle","content":["Formula: It has been proven that [Scientific Discovery] will be [Action Participle] by [Year].","Example: 'It has been proven that clean hydrogen energy can be scaled by 2030.'"],"imageUrl":"/images/teens-advanced-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Science Correspondent 🎯 / Mini Reto","description":"Complete the Press Release","content":["Complete with Present Perfect Passive:","'A revolutionary clean battery ________ (invent) by teenage engineers.' (has been / will be)"],"imageUrl":"/images/teens-advanced-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la conversión a pasiva con has/have been y modales."
           },
@@ -22728,46 +22553,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el significado figurado, origen y contexto de uso de los modismos principales.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "What Makes an Idiom? / ¿Qué es un modismo?",
-                description: "Phrases whose true meaning CANNOT be deduced literally word-for-word.",
-                content: ["Literal: 'He spilled the beans' -> (dropped vegetables on the floor).", "Figurative (Idiom): 'He spilled the beans' -> (he revealed the surprise party!).", "Idioms make conversation sound lively, emotionally expressive, and culturally authentic."],
-                imageUrl: "/images/teens-advanced-class-06/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Idioms of Hard Work & Courage / Esfuerzo y valentía",
-                description: "Express dedication and tackling tough challenges.",
-                content: ["BURN THE MIDNIGHT OIL: 'I burned the midnight oil studying for the physics final.'", "BITE THE BULLET: 'I was terrified of public speaking, but I bit the bullet and gave the speech.'", "GO THE EXTRA MILE: 'Our robotics team went the extra mile to calibrate the optical sensors.'"],
-                imageUrl: "/images/teens-advanced-class-06/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Idioms of Communication & Secrets / Comunicación y secretos",
-                description: "Talking, sharing news, and uncovering rumors.",
-                content: ["THROUGH THE GRAPEVINE: 'I heard through the grapevine that our school is building a new science lab.'", "SPILL THE BEANS: 'Don't spill the beans about Marcus's surprise scholarship award!'", "SPEAK YOUR MIND: 'In student council, everyone is encouraged to speak their mind respectfully.'"],
-                imageUrl: "/images/teens-advanced-class-06/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Idioms of Agreement & Debates / Acuerdos y debates",
-                description: "Collaborating and testing intellectual arguments.",
-                content: ["SEE EYE TO EYE: 'My partner and I don't always see eye to eye, but we respect each other's ideas.'", "HIT THE NAIL ON THE HEAD: 'When Sophia said our app needed a cleaner UI, she hit the nail on the head.'", "PLAY DEVIL'S ADVOCATE: 'Let me play devil's advocate for a moment: what if users don't have internet access?'"],
-                imageUrl: "/images/teens-advanced-class-06/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Youth Podcast Monologue / Discurso modelo de podcast juvenil",
-                description: "Read this sample campus podcast segment.",
-                content: ["Welcome to Teen Horizon Podcast! Today we're recapping our robotics tournament triumph.", "At first, our team didn't see eye to eye on the motor design, and we were tempted to cut corners to save time.", "However, Leo bit the bullet and burned the midnight oil rewriting the entire firmware code. During the Q&A, Maya hit the nail on the head with her presentation, and we took home the gold medal!"],
-                imageUrl: "/images/teens-advanced-class-06/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Authentic Idioms for Modern Teens 🗣️🔥 / Modismos Auténticos","description":"High-Frequency Idioms","content":["BITE THE BULLET = encarar una situación difícil con valor ('It's time to bite the bullet and practice.')","HIT THE NAIL ON THE HEAD = dar exactamente en el clavo ('Your analysis hit the nail on the head.')","BURN THE MIDNIGHT OIL = trasnochar estudiando con dedicación ('I burned the midnight oil for exams.')"],"imageUrl":"/images/teens-advanced-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
+              {"id":"slide-5","title":"Idioms of Communication & Secrets 🤫🤝 / Secretos y Acuerdos","description":"Social Idioms","content":["SPILL THE BEANS = revelar un secreto ('Don't spill the beans about the surprise party!')","ON THE SAME PAGE = estar en completo acuerdo ('Let's make sure our whole team is on the same page.')","CUT TO THE CHASE = ir directo al grano ('Let's cut to the chase and discuss the budget.')"],"imageUrl":"/images/teens-advanced-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
+              {"id":"slide-6","title":"Using Idioms Naturally in Podcast & Speech 🎙️ / En Conversaciones Reales","description":"Context & Moderation","content":["Never force five idioms in one sentence—use 1 or 2 at key emotional moments.","'When our team was under pressure, we pulled our socks up and delivered a masterpiece.'","Idiomatic mastery is the bridge to native C1 fluency."],"imageUrl":"/images/teens-advanced-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
+              {"id":"slide-7","title":"The Idiomatic Storytelling Formula 🎭 / Fórmula Idiomática","description":"Challenge + Idiom + Resolution","content":["Formula: 'When we faced [Challenge], we decided to [Idiom], and finally [Outcome].'","Example: 'When the deadline approached, we burned the midnight oil and finished our prototype on time.'"],"imageUrl":"/images/teens-advanced-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
+              {"id":"slide-8","title":"Quick Check: Idiom in Action 🎯 / Mini Reto","description":"Use 'On the same page' or 'Cut to the chase'","content":["Tell the teacher:","'Before we start the presentation, let's make sure we are ________.'"],"imageUrl":"/images/teens-advanced-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
             ],
             action: "Tomar notas y clasificar los modismos por contexto de uso."
           },
@@ -23108,46 +22898,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las reglas de separabilidad y el uso de verbos compuestos de 3 partes.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Separable vs Inseparable Phrasal Verbs / Separabilidad",
-                description: "Crucial rule when using pronouns as direct objects.",
-                content: ["SEPARABLE: 'We ironed out the problem' OR 'We ironed the problem out.'", "CRITICAL PRONOUN RULE: If the object is a pronoun (it/them/us), it MUST go between the verb and particle! ('We ironed IT out' - NEVER 'ironed out it').", "INSEPARABLE: 'The police looked into the case.' ('looked into it')."],
-                imageUrl: "/images/teens-advanced-class-07/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Three-Part Inseparable Verbs / Verbos de 3 partes",
-                description: "Verb + Particle 1 + Preposition (Always Inseparable).",
-                content: ["COME UP WITH: 'She came up with a brilliant app concept.'", "FOLLOW THROUGH ON: 'He followed through on his campaign promises.'", "LOOK FORWARD TO: 'We look forward to presenting at the youth summit.'", "STAND UP FOR: 'Leaders stand up for ethical values.'"],
-                imageUrl: "/images/teens-advanced-class-07/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Conflict Resolution & Negotiation Verbs / Mediación de conflictos",
-                description: "Phrasal verbs for diplomacy and team cohesion.",
-                content: ["IRON OUT: 'Let's sit down and iron out our differences.' (solve minor disputes)", "STEP UP TO: 'She stepped up to the leadership role when crisis struck.' (accept challenge)", "TALK OUT OF: 'I talked him out of quitting the debate tournament.' (persuade against)"],
-                imageUrl: "/images/teens-advanced-class-07/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Execution & Logistics Verbs / Ejecución y logística",
-                description: "Managing projects and operations.",
-                content: ["CARRY OUT: 'Our team carried out 50 survey interviews.' (execute/perform)", "LOOK INTO: 'We will look into sustainable packaging alternatives.' (investigate)", "NARROW DOWN: 'We narrowed down the 30 logo ideas to the top 2.' (reduce choices)", "TURN DOWN: 'They turned down the initial sponsorship offer.' (reject)"],
-                imageUrl: "/images/teens-advanced-class-07/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Student Body President Address / Discurso modelo de presidencia escolar",
-                description: "Read this sample executive crisis speech.",
-                content: ["Fellow council members, when our science expo budget was cut yesterday, we didn't panic.", "First, our finance director looked into municipal community grants and came up with matching funding.", "Second, Lucas and I ironed out the schedule conflicts with the school dean. Third, our logistics squad stepped up to the challenge and carried out the stage assembly ahead of deadline. We always follow through on our promises!"],
-                imageUrl: "/images/teens-advanced-class-07/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Three-Part Inseparable Phrasal Verbs 🚀🧠 / Verbos de 3 Partes","description":"High-Stakes Leadership","content":["COME UP WITH = inventar / idear una solución ('We came up with an eco-friendly design.')","LOOK DOWN ON = subestimar / mirar en menos ('Never look down on someone's background.')","PUT UP WITH = tolerar / aguantar ('Our team won't put up with disrespectful behavior.')"],"imageUrl":"/images/teens-advanced-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Conflict Mediation & Logistics Phrasals 🤝📦 / Mediación y Logística","description":"Executive Execution","content":["SORT OUT = solucionar un conflicto ('Let's sit down and sort out this schedule issue.')","CARRY OUT = ejecutar un plan ('We will carry out the environmental audit next week.')","STAND UP FOR = defender una causa ('Leaders stand up for what is ethical and fair.')"],"imageUrl":"/images/teens-advanced-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Student Body Presidential Addresses 🏛️ / Liderazgo Estudiantil","description":"Diplomatic Action","content":["'As your student president, I promise to STAND UP FOR mental health resources.'","'Together, we have COME UP WITH a campus recycling system that works.'","Executive phrasal verbs convey decisive, visionary action."],"imageUrl":"/images/teens-advanced-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Executive Leadership Formula 🏆 / Fórmula Ejecutiva","description":"Leadership Initiative","content":["Formula: 'As leaders, we must STAND UP FOR [Cause] and CARRY OUT [Action Plan] to SORT OUT [Problem].'","Example: 'We must stand up for campus sustainability and carry out zero-waste initiatives.'"],"imageUrl":"/images/teens-advanced-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: President's Call to Action 🎯 / Mini Reto","description":"Use 'Come up with' or 'Stand up for'","content":["Tell the teacher:","'Our club has ________ an innovative solution to reduce plastic waste.'"],"imageUrl":"/images/teens-advanced-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la posición de pronombres en phrasal verbs separables."
           },
@@ -23488,46 +23243,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las estructuras retóricas de concesión, contraargumento y refutación.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Architecture of a Sophisticated Argument / Estructura del argumento",
-                description: "1. Thesis -> 2. Concession (Acknowledge counterpoint) -> 3. Pivot -> 4. Refutation with Evidence.",
-                content: ["Weak Argument: 'AI is bad because it takes jobs.'", "Elite Argument: 'WHILE IT IS UNDENIABLE that AI automates routine tasks, HAVING SAID THAT, history proves that technological revolutions ultimately generate higher-skilled creative industries.'", "Concession proves you understand the complete complexity of the debate."],
-                imageUrl: "/images/teens-advanced-class-08/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Formulas of Concession / Fórmulas de Concesión",
-                description: "Ways to respectfully acknowledge a valid opposing point.",
-                content: ["'WHILE IT IS TRUE THAT algorithms process data faster than humans,...'", "'ADMITTEDLY, facial recognition can deter campus vandalism,...'", "'I GRANT THAT generative tools provide instant answers,...'", "'THERE IS NO DENYING THAT automation reduces manufacturing costs,...'"],
-                imageUrl: "/images/teens-advanced-class-08/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Advanced Counter-Argument Linkers / Conectores de Contraargumento",
-                description: "Pivot words to introduce your winning counter-evidence.",
-                content: ["'HAVING SAID THAT, we cannot compromise student data privacy.'", "'IN STARK CONTRAST, European privacy directives mandate strict transparency.'", "'NEVERTHELESS, human empathy remains central to education.'", "'ON THE FLIP SIDE, over-reliance on AI degrades critical inquiry.'"],
-                imageUrl: "/images/teens-advanced-class-08/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Refutation Strategies with Evidence / Estrategias de Refutación",
-                description: "Exposing flaws in the opposing premise.",
-                content: ["'However, this argument OVERLOOKS the documented algorithmic bias in hiring tools.'", "'This claim FAILS TO ACCOUNT FOR the massive energy consumption of server clusters.'", "'Recent empirical studies DEMONSTRATE THAT human-AI collaboration outperforms AI alone.'"],
-                imageUrl: "/images/teens-advanced-class-08/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Oxford-Style Speech / Discurso modelo de debate parlamentario",
-                description: "Read this sample debate floor speech.",
-                content: ["Distinguished forum delegates: while it is undeniable that generative AI tools can enhance student research speed, we must not confuse efficiency with true critical thinking.", "Having said that, simply banning AI from classrooms is short-sighted.", "In stark contrast to outright prohibition, educators should teach algorithmic literacy, because students who understand how models hallucinate will become more discerning thinkers. Therefore, ethical regulation, rather than fear, must guide our digital future!"],
-                imageUrl: "/images/teens-advanced-class-08/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"The Architecture of Sophisticated Argumentation 🏛️🤖 / Debate de IA y Ética","description":"Oxford-Style Forum","content":["Claim -> Warrant (Logic) -> Data (Empirical Evidence) -> Impact","Opening: 'The ethical dilemma of generative AI centers on intellectual property and human dignity.'","Rebuttal: 'While innovation must advance, safety guardrails are non-negotiable.'"],"imageUrl":"/images/teens-advanced-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Formulas of Concession & Counter-Linkers ⚖️ / Concesión Avanzada","description":"Advanced Debate Transitions","content":["'NOTWITHSTANDING the economic benefits, the environmental cost is unsustainable.'","'BE THAT AS IT MAY, privacy protections must remain absolute.'","'ALBEIT challenging to regulate, international treaties are essential.'"],"imageUrl":"/images/teens-advanced-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Refutation Strategies with Empirical Data 📊 / Refutación Científica","description":"Evidence-Based Debate","content":["'The opposition assumes algorithmic neutrality; however, MIT studies prove demographic bias.'","'Therefore, independent ethical audits must be mandated by law.'","Intellectual rigor wins high-stakes academic debates."],"imageUrl":"/images/teens-advanced-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Oxford Forum Rebuttal Formula 🎙️ / Fórmula de Debate","description":"Concession + Empirical Refutation + Mandate","content":["Formula: 'Notwithstanding [Opponent Claim], empirical data proves that [Counter-Reality]; therefore, we must [Strategic Policy].'","Example: 'Notwithstanding tech optimism, studies prove algorithmic bias; therefore, we must enforce ethical audits.'"],"imageUrl":"/images/teens-advanced-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: AI Ethics Rebuttal 🎯 / Mini Reto","description":"Deliver a Concession & Counter-Argument","content":["Use 'Notwithstanding' or 'Be that as it may':","'________ the efficiency of AI, human empathy and creativity remain irreplaceable.'"],"imageUrl":"/images/teens-advanced-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y ensayar la entonación persuasiva de las cláusulas de concesión."
           },
@@ -23868,46 +23588,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas de condicionales mixtos y el vocabulario de resolución diplomática.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Mixed Conditionals Overview / Visión General de Condicionales Mixtos",
-                description: "Mixing the IF-clause and the RESULT-clause across past and present timeframes.",
-                content: ["Standard 3rd Conditional (Past -> Past): 'If we had planted trees, the soil wouldn't have eroded last year.'", "Mixed Conditional (Past -> Present): 'If we HAD PLANTED trees ten years ago, the soil WOULD NOT BE so barren today.'", "Used to evaluate the lasting present consequences of past actions or regrets."],
-                imageUrl: "/images/teens-advanced-class-09/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Mixed Type A: Past Action -> Present Outcome / Pasado a Presente",
-                description: "IF + Past Perfect (had + V3), WOULD + Bare Infinitive (V1).",
-                content: ["'If governments HAD RATIFIED the treaty in 2015, global emissions WOULD BE 30% lower today.'", "'If researchers HAD NOT DISCOVERED photovoltaic cells, we WOULD NOT HAVE solar roofs now.'", "'If she HAD STUDIED environmental law, she WOULD BE the lead negotiator today.'"],
-                imageUrl: "/images/teens-advanced-class-09/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Mixed Type B: Present State -> Past Outcome / Presente a Pasado",
-                description: "IF + Past Simple (were/was), WOULD HAVE + Past Participle (V3).",
-                content: ["Focuses on how a permanent present trait influenced a past choice.", "'If the mayor WERE more passionate about clean transit, the city WOULD HAVE BUILT electric light rail lines last decade.'", "'If we WERE NOT so dependent on oil today, the economy WOULD HAVE WITHSTOOD the energy crisis last year.'"],
-                imageUrl: "/images/teens-advanced-class-09/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Diplomatic Treaty & Summit Language / Lenguaje de Cumbres de la ONU",
-                description: "Phrases used in formal international declarations.",
-                content: ["'IT IS PARAMOUNT THAT all delegations commit to binding targets.'", "'IN THE SPIRIT OF MULTILATERAL COOPERATION, we propose a shared green technology fund.'", "'WE URGE MEMBER STATES TO accelerate biodiversity conservation corridors.'"],
-                imageUrl: "/images/teens-advanced-class-09/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model UN Youth Envoy Keynote / Discurso modelo de enviado de la ONU",
-                description: "Read this sample UN climate summit address.",
-                content: ["Honorable delegates: if industrialized nations had fulfilled their carbon pledge in 2010, Arctic sea ice would not be collapsing at unprecedented rates today.", "Furthermore, if global powers were genuinely committed to climate justice, they would have financed loss-and-damage funds for developing island states years ago.", "We must act with urgency; multilateral cooperation is our only viable path forward!"],
-                imageUrl: "/images/teens-advanced-class-09/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Mixed Conditionals: Time Travel in Grammar ⏳🌪️ / Condicionales Mixtos","description":"Past Cause -> Present Result","content":["Type A (Past Action -> Present Result): 'If we HAD INVESTED in solar energy in 2000, our city WOULD BE carbon-neutral today.'","Structure: IF + Past Perfect (Had + Participle), WOULD + Base Verb (Present)","Notice how past decisions shape our current reality!"],"imageUrl":"/images/teens-advanced-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Mixed Conditionals: Permanent State -> Past Outcome 🧬 / Presente a Pasado","description":"Type B Mixed Conditional","content":["Type B (Present Trait -> Past Outcome): 'If she WERE NOT so resilient, she WOULD HAVE GIVEN UP during the summit.'","Structure: IF + Past Subjunctive (Were), WOULD HAVE + Past Participle","A permanent quality influenced a past event."],"imageUrl":"/images/teens-advanced-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"UN Youth Climate Summit Negotiations 🌐🌱 / Cumbres Globales","description":"Treaty Language","content":["'If member states had ratified the treaty five years ago, thousands of ecosystems would be protected today.'","'We call upon delegates to enact enforceable carbon neutrality frameworks immediately.'","Mixed conditionals articulate deep historical responsibility and future urgency."],"imageUrl":"/images/teens-advanced-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Global Summit Mixed Conditional Formula 🌍 / Fórmula de Cumbre","description":"Historical Decision -> Present State","content":["Formula: 'If nations had [Past Climate Action], our planet would [Present State] today.'","Example: 'If nations had banned single-use plastics a decade ago, our oceans would be significantly cleaner today.'"],"imageUrl":"/images/teens-advanced-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Climate Envoy Pitch 🎯 / Mini Reto","description":"Formulate a Mixed Conditional","content":["Complete the UN Climate Envoy statement:","'If we had protected the rainforests decades ago, global temperatures ________ (be) lower today.' (would be / would have been)"],"imageUrl":"/images/teens-advanced-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y practicar la combinación de tiempos verbales en condicionales mixtos."
           },
@@ -24248,46 +23933,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Consolidar y sintetizar todas las estructuras gramaticales de Nivel 8 en un pitch ejecutivo.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The STAR Framework for Executive Interviews / El Método STAR",
-                description: "Structure answers with clarity, evidence, and verifiable impact.",
-                content: ["SITUATION: The crisis or unmet need ('Rural schools suffered from constant power blackouts').", "TASK: Your leadership mission ('I was appointed project manager to engineer a backup solar grid').", "ACTION: Concrete steps you led ('We came up with lithium storage banks and carried out installations').", "RESULT: Quantifiable outcome ('Ten clinics were electrified, and vaccine spoilage was reduced to 0%')."],
-                imageUrl: "/images/teens-advanced-class-10/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "NGO Pitch Formula / Fórmula de Pitch para ONG",
-                description: "Hook -> Problem -> Innovation -> Metrics -> The Grant Ask.",
-                content: ["1. The Hook: 'Imagine a world where every student has reliable green energy.'", "2. The Innovation: 'EcoGrid, which was founded by high school coders, provides modular solar units.'", "3. Metrics: 'Over 10,000 hours of study time have been powered.'", "4. The Ask: 'With $50,000, 20 new rural learning hubs will be constructed next year.'"],
-                imageUrl: "/images/teens-advanced-class-10/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Master Grammar Synthesis Matrix / Matriz de Síntesis Gramatical",
-                description: "Seamlessly weaving Level 8 advanced structures into executive speeches.",
-                content: ["RELATIVE CLAUSES: 'Our team, WHOSE members are teen engineers, built the hardware.'", "PASSIVE VOICE: 'Solar panels ARE MANUFACTURED from recycled silicon.'", "PHRASAL VERBS: 'We STEPPED UP to IRON OUT the battery latency.'", "MIXED CONDITIONALS: 'If we HAD NOT LAUNCHED in 2022, clinics WOULD BE without power today.'", "DEBATE CONCESSION: 'While it is true that hardware costs are high, nevertheless scale reduces unit prices.'"],
-                imageUrl: "/images/teens-advanced-class-10/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Handling Executive Board Q&A / Defensa ante el Jurado",
-                description: "Responding to skeptical questions with diplomacy and composure.",
-                content: ["'Admittedly, maintenance in remote areas presents logistical challenges; having said that, our local youth ambassadors have been trained to handle 90% of repairs.'", "'While some may question our timeline, our pilot trials demonstrate that installations are completed in under 48 hours.'"],
-                imageUrl: "/images/teens-advanced-class-10/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Youth NGO Executive Pitch / Discurso modelo de pitch de ONG",
-                description: "Read this sample capstone presentation.",
-                content: ["Good afternoon, esteemed trustees. I am the founder of EcoGrid Youth, which delivers portable solar micro-grids to rural healthcare clinics.", "Two years ago, when blackouts threatened vaccine refrigerators, our squad stepped up and carried out emergency installations.", "If we had not deployed these systems, hundreds of lifesaving doses would have spoiled. Today, reliable electricity is supplied to ten thousand patients. With your fifty-thousand-dollar grant, fifteen additional hospital hubs will be electrified next year!"],
-                imageUrl: "/images/teens-advanced-class-10/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Executive NGO Leadership & Board Defense 🌐🏛️ / Liderazgo de ONG","description":"Level 8 Grand Capstone","content":["Founding a youth NGO, managing international grants, presenting to trustees","Mission statement: 'Democratizing tech education for underserved youth across Latin America.'","Executive presence: Posture, precision, empirical metrics, strategic vision."],"imageUrl":"/images/teens-advanced-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"The Master Grammar Synthesis Matrix 🧠⚡ / Matriz de Síntesis","description":"Level 8 Mastery","content":["Reported Speech (Board quotes) & Passive Voice (Impact metrics)","Defining Relative Clauses (Policy details) & Mixed Conditionals (Urgency)","Authentic Idioms & Phrasal Verbs for executive persuasion."],"imageUrl":"/images/teens-advanced-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"Handling Hostile Boardroom Q&A 🎙️🔥 / Defensa ante el Jurado","description":"Executive Defense","content":["Board Trustee: 'How will your NGO sustain unit economics without grants?'","Executive Response: 'While grants provide our seed capital, our B2B corporate workshops generate sustainable revenue.'","Mastering pushback confirms visionary leadership."],"imageUrl":"/images/teens-advanced-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Global Leader Capstone Formula 🏆 / Fórmula de Graduación","description":"NGO Pitch + Defense","content":["1. State your NGO's mission using Passive Voice and metrics.","2. Justify urgency with a Mixed Conditional (Historical decisions -> Current reality).","3. Conclude with a persuasive Call to Action for board trustees."],"imageUrl":"/images/teens-advanced-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Grand Leader Pitch 🎯 / Gran Reto","description":"Deliver Your 30-Second NGO Pitch","content":["Deliver your 30-second Level 8 Executive NGO Pitch to the Board of Trustees!","Demonstrate your command of advanced passive, mixed conditionals, and C1 fluency!"],"imageUrl":"/images/teens-advanced-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y ensayar la entonación ejecutiva de liderazgo."
           },
