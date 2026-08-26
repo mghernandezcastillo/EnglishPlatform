@@ -12880,46 +12880,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender frases para dar opiniones, expresar acuerdo/desacuerdo y justificar.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Opinion Starters / Frases para iniciar una opinión",
-                description: "Choose a natural starter instead of repeating 'I think'.",
-                content: ["In my opinion,... = En mi opinión...", "I strongly believe that... = Creo firmemente que...", "From my perspective,... = Desde mi perspectiva...", "As I see it,... = Como yo lo veo..."],
-                imageUrl: "/images/teens-basic-4-class-01/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Agreeing with Others / Expresar acuerdo",
-                description: "Show that you share someone's point of view.",
-                content: ["I completely agree with you. = Estoy totalmente de acuerdo contigo.", "That's a great point! = ¡Ese es un gran punto!", "You're absolutely right. = Tienes toda la razón.", "I see what you mean. = Veo a qué te refieres."],
-                imageUrl: "/images/teens-basic-4-class-01/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Disagreeing Politely / Desacuerdo cortés",
-                description: "Disagree with respect without sounding aggressive.",
-                content: ["I see your point, but... = Veo tu punto, pero...", "I'm not so sure about that because... = No estoy tan seguro de eso porque...", "I look at it a bit differently. = Lo veo un poco diferente.", "I respectfully disagree. = Respetuosamente estoy en desacuerdo."],
-                imageUrl: "/images/teens-basic-4-class-01/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Justifying Your Ideas / Justificar con argumentos",
-                description: "Support your claims with solid reasoning.",
-                content: ["...because it helps us save time. = ...porque nos ayuda a ahorrar tiempo.", "...since it creates better focus. = ...ya que genera mejor concentración.", "For instance,... / For example,... = Por ejemplo,...", "The main reason is that... = La razón principal es que..."],
-                imageUrl: "/images/teens-basic-4-class-01/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Persuasive Speech / Discurso modelo de opinión",
-                description: "Read this sample persuasive speech on school start times.",
-                content: ["In my opinion, high schools should start at 8:30 AM instead of 7:00 AM.", "The main reason is that teenagers need at least eight hours of sleep to focus properly.", "For example, studies show well-rested students get better grades in math and science. As I see it, later schedules improve both health and learning!"],
-                imageUrl: "/images/teens-basic-4-class-01/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
-              }
+              {"id":"slide-4","title":"Opinion Starters & Debates 🗣️💡 / Iniciar Opiniones","description":"Expressing Viewpoints","content":["In my opinion... / From my perspective... / I strongly believe that...","I see what you mean, but... / That's a valid point, however...","Expressing ideas with clarity and confidence is a superpower."],"imageUrl":"/images/teens-basic-4-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Agreeing & Disagreeing Politely 🤝⚡ / Acuerdo y Desacuerdo","description":"Nuanced Responses","content":["Total agreement: 'I completely agree with you!'","Partial agreement: 'You have a point, but we should also consider...'","Polite disagreement: 'I respect your view, but I see it differently.'"],"imageUrl":"/images/teens-basic-4-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Justifying with Arguments & Evidence 📊 / Argumentación","description":"Adding Depth","content":["Don't just state an opinion—back it up with a real reason.","Use connectors: 'For example...', 'The main reason is that...', 'This leads to...'","Example: 'In my view, team sports build character because you learn resilience.'"],"imageUrl":"/images/teens-basic-4-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Persuasive Opinion Formula 🎙️ / Fórmula de Opinión","description":"Opinion + Reason + Example","content":["Formula: In my opinion, [Statement] because [Core Reason], for example [Evidence].","Example: 'In my opinion, learning English is essential because it opens global opportunities, for example in tech and travel.'"],"imageUrl":"/images/teens-basic-4-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Hot Take Challenge 🎯 / Mini Reto","description":"Give Your Perspective","content":["Give your opinion on gaming or school schedules:","'From my perspective, ________ because ________.'"],"imageUrl":"/images/teens-basic-4-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de frases de debate."
           },
@@ -13260,46 +13225,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los modales de consejo (should/shouldn't) y obligación (must/have to).",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Giving Recommendations: Should & Shouldn't / Consejos con Should",
-                description: "Use 'should' for good ideas and 'shouldn't' for bad ideas.",
-                content: ["You should organize your study desk. = Deberías organizar tu escritorio de estudio.", "You should drink plenty of water. = Deberías tomar bastante agua.", "You shouldn't stay up late on school nights. = No deberías desvelarte en noches de escuela.", "You shouldn't study with the TV on. = No deberías estudiar con el televisor prendido."],
-                imageUrl: "/images/teens-basic-4-class-02/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Obligations & Rules: Must & Have to / Obligaciones y Reglas",
-                description: "Use 'must' and 'have to' when something is necessary or required by rule.",
-                content: ["Students have to wear the school uniform. = Los estudiantes tienen que usar el uniforme escolar.", "You must silence your phone during the exam. = Debes silenciar tu celular durante el examen.", "We have to finish the lab report by Friday. = Tenemos que terminar el informe de laboratorio para el viernes.", "You mustn't cheat on tests. = No debes hacer trampa en los exámenes."],
-                imageUrl: "/images/teens-basic-4-class-02/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Asking for Advice Politely / Pedir consejos con cortesía",
-                description: "Useful questions when you need guidance or support.",
-                content: ["What should I do? = ¿Qué debería hacer?", "What do you suggest? = ¿Qué sugieres?", "Do you have any tips for managing time? = ¿Tienes algún consejo para organizar el tiempo?", "If you were in my shoes, what would you do? = Si estuvieras en mi lugar, ¿qué harías?"],
-                imageUrl: "/images/teens-basic-4-class-02/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Strong Advice: Had Better & Ought To / Consejos con urgencia",
-                description: "Express urgent advice to prevent a negative consequence.",
-                content: ["You had better study tonight, or you will fail tomorrow! = ¡Más vale que estudies esta noche o reprobarás mañana!", "You ought to talk to your teacher about the deadline. = Deberías hablar con tu profesor sobre la fecha límite.", "You had better leave now to catch the bus! = ¡Más vale que salgas ya para alcanzar el autobús!"],
-                imageUrl: "/images/teens-basic-4-class-02/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Advice Speech / Discurso modelo de consejos",
-                description: "Read this sample guide on healthy study habits for high school.",
-                content: ["If you want to reduce exam anxiety, you should break big projects into 25-minute study intervals.", "You also have to take five-minute breaks to stretch and hydrate.", "You shouldn't cram the entire textbook the night before the test because sleep is vital for memory recall!"],
-                imageUrl: "/images/teens-basic-4-class-02/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Advice, Rules & Modals 💡📋 / Consejos y Normas","description":"Modals in Action","content":["SHOULD / SHOULDN'T: Advice ('You should get some rest.')","MUST / MUSTN'T: Absolute rule ('You must wear safety goggles.')","HAVE TO: Daily requirement ('We have to submit the project on Friday.')"],"imageUrl":"/images/teens-basic-4-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Strong Advice: Had Better & Ought To ⚠️ / Consejos Urgentes","description":"Urgency and Consequence","content":["HAD BETTER: Warning of bad consequence ('You had better study or you'll fail.')","OUGHT TO: Moral recommendation ('We ought to help our teammates.')","If I were you: 'If I were you, I would talk to the coach directly.'"],"imageUrl":"/images/teens-basic-4-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Empathy & Problem Situations 🤝 / Consejería Práctica","description":"Real Scenarios","content":["Situation: 'I feel overwhelmed with exam week.'","Advice: 'You should prioritize your tasks and take regular screen breaks.'","Follow-up: 'Would you like to study together this afternoon?'"],"imageUrl":"/images/teens-basic-4-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Empathetic Advice Formula 🌟 / Fórmula de Consejo","description":"Understanding + Advice + Solution","content":["Formula: 'I understand that [Problem]. If I were you, I would [Action] because [Benefit].'","Example: 'I understand you're stressed. If I were you, I'd take a 15-minute walk to clear my mind.'"],"imageUrl":"/images/teens-basic-4-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Peer Counselor 🎯 / Mini Reto","description":"Give Advice to a Friend","content":["A friend is always late for school. Give them advice:","'You had better ________ or ________. You should ________.'"],"imageUrl":"/images/teens-basic-4-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de verbos modales."
           },
@@ -13640,46 +13570,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura del condicional cero para verdades universales y hábitos.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Zero Conditional Structure / Estructura del Condicional Cero",
-                description: "Used for general truths, scientific facts, and 100% guaranteed results.",
-                content: ["Formula: If + Present Simple, + Present Simple", "If you heat water to 100°C, it boils. = Si calientas agua a 100°C, hierve.", "If you freeze water, it becomes ice. = Si congelas agua, se convierte en hielo.", "Note: Both clauses use the simple present tense!"],
-                imageUrl: "/images/teens-basic-4-class-03/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-cyan-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Using 'When' instead of 'If' / Uso de 'When'",
-                description: "Use 'when' when the condition happens regularly with certainty.",
-                content: ["When the sun sets, it gets dark. = Cuando el sol se oculta, oscurece.", "When you press the power button, the screen turns on. = Cuando presionas el botón de encendido, la pantalla se prende.", "When I wake up early, I feel energized. = Cuando me despierto temprano, me siento con energía."],
-                imageUrl: "/images/teens-basic-4-class-03/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-cyan-700 to-teal-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Gadgets & Tech Functions / Funciones tecnológicas automáticas",
-                description: "Describe how devices respond to user actions.",
-                content: ["If you swipe left, you see the next photo. = Si deslizas a la izquierda, ves la siguiente foto.", "If you plug in headphones, the sound mutes on speaker. = Si conectas audífonos, el altavoz se silencia.", "When battery saver is ON, apps consume less power. = Cuando el ahorro de batería está activo, las apps consumen menos energía."],
-                imageUrl: "/images/teens-basic-4-class-03/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-700 to-emerald-800"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Clause Inversion / Inversión de cláusulas",
-                description: "You can change the order without changing the meaning (no comma needed!).",
-                content: ["Ice melts if you leave it in the sun. = El hielo se derrite si lo dejas al sol.", "Your phone charges faster if you turn on airplane mode. = Tu celular carga más rápido si activas el modo avión.", "Plants die when they don't get sunlight. = Las plantas mueren cuando no reciben luz solar."],
-                imageUrl: "/images/teens-basic-4-class-03/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-700 to-green-800"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Science & Tech Presentation / Presentación modelo",
-                description: "Read this sample explanation of smartphone battery optimization.",
-                content: ["When you use high screen brightness, your battery drains very quickly.", "If you enable dark mode on OLED screens, each dark pixel turns off and conserves energy.", "Therefore, your device lasts much longer if you optimize your display settings!"],
-                imageUrl: "/images/teens-basic-4-class-03/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-700 to-lime-800"
-              }
+              {"id":"slide-4","title":"Zero Conditional: Facts & Science 🔬⚡ / Condicional Cero","description":"Universal Truths","content":["If you heat water to 100°C, it boils.","If teens sleep 8 hours, their focus improves significantly.","Zero Conditional = Real facts, scientific rules, habitual results."],"imageUrl":"/images/teens-basic-4-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Zero Conditional Structure & Inversion 🔄 / Estructura","description":"If + Present, Present","content":["Structure: IF + Present Simple, Present Simple","Inversion: Result clause first (no comma needed): 'Water boils if you heat it.'","You can also use 'WHEN': 'When you press the button, the app starts.'"],"imageUrl":"/images/teens-basic-4-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Tech Automation & Daily Rules 🤖📱 / Automatización y Hábitos","description":"Tech Logic","content":["If you tap 'save', the cloud syncs automatically.","If you activate dark mode, your battery lasts longer.","If I don't eat breakfast, I feel sluggish during practice."],"imageUrl":"/images/teens-basic-4-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Zero Conditional Formula 🧪 / Fórmula de Hecho","description":"Condition -> Constant Result","content":["Formula: If you [Present Action], [Present Result].","Example: 'If you practice speaking English every day, your pronunciation improves naturally.'"],"imageUrl":"/images/teens-basic-4-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Science Rule 🎯 / Mini Reto","description":"Formulate a Fact","content":["Complete with a real fact:","'If students practice consistently, they ________.'"],"imageUrl":"/images/teens-basic-4-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de cláusulas condicionales."
           },
@@ -14020,46 +13915,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los acrónimos clave, expresiones de chat y normas de etiqueta digital.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Top Texting Acronyms / Acrónimos esenciales de chat",
-                description: "Shortcuts used globally in English chats and gaming.",
-                content: ["BRB = Be Right Back (Ya vuelvo)", "BTW = By The Way (Por cierto)", "TBH = To Be Honest (Para ser honesto)", "IMO / IMHO = In My (Humble) Opinion (En mi opinión)", "IDK = I Don't Know (No sé)", "RN = Right Now (Justo ahora)"],
-                imageUrl: "/images/teens-basic-4-class-04/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Group Chat Etiquette & Actions / Acciones en chats grupales",
-                description: "Common digital verbs for coordinating with classmates.",
-                content: ["Drop a reaction 👍 = Reaccionar con un emoji", "Pin the message 📌 = Fijar el mensaje importante", "Tag / Mention someone @ = Mencionar o etiquetar a alguien", "Mute the group chat 🔕 = Silenciar el grupo temporalmente"],
-                imageUrl: "/images/teens-basic-4-class-04/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Voice Notes & Tone / Notas de voz y tono de mensaje",
-                description: "How to express emotion and clarity in written text.",
-                content: ["'Send me a quick voice note' = Mándame un audio corto", "ALL CAPS = SHOUTING / Gritar en texto (¡evitar en mensajes normales!)", "Ending with '...' = Suggests hesitation or suspense", "Adding a friendly emoji softens the tone = Hace el mensaje más amable"],
-                imageUrl: "/images/teens-basic-4-class-04/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Casual Chat vs Formal Email / Chat casual vs Correo formal",
-                description: "Know when to use informal slang vs professional language.",
-                content: ["Chat: 'Hey guys, check the doc RN!' = ¡Oigan, revisen el doc ya!", "Email: 'Dear Ms. Johnson, Attached is our completed project report. Best regards.' = Estimada Sra. Johnson, Adjunto nuestro reporte. Saludos cordiales.", "Rule: Never use texting acronyms (IDK, TBH) in formal academic emails!"],
-                imageUrl: "/images/teens-basic-4-class-04/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Group Project Chat / Chat modelo de proyecto",
-                description: "Read this sample team conversation coordinating a school presentation.",
-                content: ["Liam: 'Hey team! BTW, our presentation is on Thursday. Have we finished slide 5?'", "Zoe: 'TBH, I still need to add the chart. I'll upload it RN!'", "Liam: 'Awesome! Drop a 👍 in the chat once you check the final draft. BRB, grabbing water!'"],
-                imageUrl: "/images/teens-basic-4-class-04/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Texting, Acronyms & Digital Slang 📱💬 / Mensajería y Chat","description":"Online Communication","content":["BRB (Be Right Back), IDK (I Don't Know), BTW (By The Way), TBH (To Be Honest)","FOMO (Fear Of Missing Out), RN (Right Now), NGL (Not Gonna Lie)","Use acronyms in casual chats with friends, not in school essays!"],"imageUrl":"/images/teens-basic-4-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"Group Chat Etiquette & Voice Notes 🎙️✨ / Protocolo Digital","description":"Respectful Messaging","content":["Don't spam multiple voice notes when one clear message works.","Be clear with project deadlines in group chats.","Use emojis to clarify friendly tone and prevent misunderstandings."],"imageUrl":"/images/teens-basic-4-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"Casual Chat vs Formal Email 📧 / Chat vs Correo","description":"Register Modulation","content":["Casual: 'Hey! Send me the slides ASAP.'","Formal: 'Dear Teacher, could you please review the attached slides? Thank you.'","Always adapt your tone to your audience."],"imageUrl":"/images/teens-basic-4-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Clear Online Message Formula 📨 / Fórmula de Mensaje","description":"Greeting + Purpose + Action","content":["Formula: 'Hey [Team]! [Update/Question]. Please [Action Required] by [Deadline]. Thanks!'","Example: 'Hey team! I uploaded our slides. Please review your part by 6 PM today.'"],"imageUrl":"/images/teens-basic-4-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Group Project Chat 🎯 / Mini Reto","description":"Write a Project Ping","content":["Send a quick message to your project team requesting feedback:","'Hey team! BTW, I finished the ________. Please check it ________.'"],"imageUrl":"/images/teens-basic-4-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y practicar la pronunciación de acrónimos en conversaciones."
           },
@@ -14400,46 +14260,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura del primer condicional y el uso de unless.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "First Conditional Structure / Estructura del Primer Condicional",
-                description: "Used for real, possible situations in the future and their likely results.",
-                content: ["Formula: If + Present Simple, will + Base Verb", "If I study hard tonight, I will pass the exam tomorrow. = Si estudio duro esta noche, pasaré el examen mañana.", "If it rains tomorrow, we will stay home. = Si llueve mañana, nos quedaremos en casa.", "Rule: The 'if' clause NEVER uses will!"],
-                imageUrl: "/images/teens-basic-4-class-05/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Negative Outcomes: Won't & Don't / Consecuencias negativas con Won't",
-                description: "Express warnings and negative consequences.",
-                content: ["If we don't hurry, we will miss the bus! = ¡Si no nos apuramos, perderemos el autobús!", "If you don't charge your phone, it won't turn on. = Si no cargas tu celular, no encenderá.", "You won't improve your skills if you don't practice consistently. = No mejorarás tus habilidades si no practicas con constancia."],
-                imageUrl: "/images/teens-basic-4-class-05/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Using 'Unless' (If Not) / Uso de 'Unless'",
-                description: "'Unless' means 'except if' or 'if... not'.",
-                content: ["We will play basketball outside unless it rains. = Jugaremos baloncesto afuera a menos que llueva.", "Unless you study, you won't pass. = A menos que estudies, no aprobarás.", "I will arrive at 4:00 PM unless traffic is heavy. = Llegaré a las 4:00 PM a menos que haya mucho tráfico."],
-                imageUrl: "/images/teens-basic-4-class-05/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Asking Future Condition Questions / Preguntas en Primer Condicional",
-                description: "Formulate engaging questions about future possibilities.",
-                content: ["What will you do if the party is canceled? = ¿Qué harás si se cancela la fiesta?", "Where will you go if you have free time this weekend? = ¿A dónde irás si tienes tiempo libre este fin de semana?", "If you get a scholarship, what university will you choose? = Si ganas una beca, ¿qué universidad elegirás?"],
-                imageUrl: "/images/teens-basic-4-class-05/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Future Goals Speech / Discurso modelo de metas futuras",
-                description: "Read this sample vision speech about high school and future dreams.",
-                content: ["If I dedicate one hour every afternoon to my science project, I will build an impressive robotics prototype.", "If my team wins the regional tournament, we will qualify for the national championship.", "Unless we encounter technical issues, our robot will perform flawlessly!"],
-                imageUrl: "/images/teens-basic-4-class-05/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"First Conditional: Real Future Possibilities 🚀🔮 / Primer Condicional","description":"Real Future Scenarios","content":["If it rains tomorrow, we will stay home and watch movies.","If you study hard, you will pass your certification.","First Conditional = Real condition now -> Probable future outcome."],"imageUrl":"/images/teens-basic-4-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"First Conditional Structure: If + Present, Will 🎯 / Estructura","description":"Grammar Rules","content":["IF + Present Simple, WILL / WON'T + Base Verb","Example: 'If I have time this weekend, I will edit our podcast.'","Negative: 'If she doesn't hurry, she will miss the flight.'"],"imageUrl":"/images/teens-basic-4-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Using Unless: 'If Not' ⚠️ / Uso de Unless","description":"Unless = If not","content":["'Unless you practice, you won't improve.' = 'If you don't practice...'","'We will go to the beach unless it rains.'","Notice that UNLESS is already negative."],"imageUrl":"/images/teens-basic-4-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Future Goal Formula 🌟 / Fórmula de Metas","description":"Condition -> Achievement","content":["Formula: If I [Present Effort], I will [Future Achievement].","Example: 'If I practice coding 30 minutes daily, I will build my first game app this year.'"],"imageUrl":"/images/teens-basic-4-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Future Promise 🎯 / Mini Reto","description":"Share a First Conditional Goal","content":["Tell the teacher your goal for next month:","'If I ________ every week, I will ________!'"],"imageUrl":"/images/teens-basic-4-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de oraciones con will y unless."
           },
@@ -14780,46 +14605,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las reglas morfológicas de comparativos y superlativos regulares e irregulares.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Short Adjectives: Comparatives & Superlatives / Adjetivos cortos",
-                description: "Add '-er than' to compare two, and 'the -est' for the #1 in a group.",
-                content: ["Fast -> Faster than -> The fastest (rápido / más rápido / el más rápido)", "Light -> Lighter than -> The lightest (ligero / más ligero / el más ligero)", "Cool -> Cooler than -> The coolest", "Example: My new headphones are lighter than my old ones, but these are the fastest charging earbuds!"],
-                imageUrl: "/images/teens-basic-4-class-06/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Long Adjectives: More & The Most / Adjetivos largos (2+ sílabas)",
-                description: "Use 'more... than' and 'the most...' without changing the adjective.",
-                content: ["Powerful -> More powerful than -> The most powerful (potente)", "Expensive -> More expensive than -> The most expensive (costoso)", "Exciting -> More exciting than -> The most exciting (emocionante)", "Example: This gaming laptop is more powerful than my tablet, and it has the most vibrant display!"],
-                imageUrl: "/images/teens-basic-4-class-06/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Irregular Adjectives / Adjetivos irregulares clave",
-                description: "These adjectives change completely and must be memorized.",
-                content: ["Good -> Better than -> The best (bueno / mejor / el mejor)", "Bad -> Worse than -> The worst (malo / peor / el peor)", "Far -> Farther/Further than -> The farthest/furthest (lejano)", "Example: Fiber optic internet is better than DSL, and this is the best provider in town!"],
-                imageUrl: "/images/teens-basic-4-class-06/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Equality & Similarity: As... As / Comparación de igualdad",
-                description: "Show that two things have the exact same quality.",
-                content: ["Formula: as + adjective + as (tan... como)", "This budget phone is as fast as a flagship model. = Este celular económico es tan rápido como un modelo de gama alta.", "Negative: not as... as (no tan... como)", "Basketball is not as dangerous as rugby. = El baloncesto no es tan peligroso como el rugby."],
-                imageUrl: "/images/teens-basic-4-class-06/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Tech Review Speech / Reseña modelo de tecnología",
-                description: "Read this sample gadget review comparing two laptops for students.",
-                content: ["When comparing the Pro laptop with the Air laptop, the Pro is noticeably heavier, but it is much more powerful for 4K video editing and coding.", "In contrast, the Air is lighter, more portable, and easier to carry in a backpack all day.", "For general high school students, the Air offers the best battery life and the greatest value!"],
-                imageUrl: "/images/teens-basic-4-class-06/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Comparatives & Superlatives in Tech & Gaming 🎮📱 / Comparativos","description":"Tech Benchmarks","content":["Short: fast -> faster than -> the fastest","Long: powerful -> more powerful than -> the most powerful","Irregular: good -> better -> the best / bad -> worse -> the worst"],"imageUrl":"/images/teens-basic-4-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Equality: As... As ⚖️ / Comparación de Igualdad","description":"Equivalence","content":["This phone is AS fast AS that laptop.","My headphones are NOT AS expensive AS brand X, but they sound great!","Use 'as [adjective] as' to express equal traits."],"imageUrl":"/images/teens-basic-4-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Ranking Games, Devices & Movies 🏆 / Rankings","description":"Reviewing Gadgets","content":["This is THE MOST EXCITING multiplayer game of the year.","The new console is SLIGHTLY MORE EXPENSIVE, but THE PERFORMANCE is unbeatable.","In my opinion, it is THE BEST investment for creators."],"imageUrl":"/images/teens-basic-4-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Tech Benchmark Formula 📊 / Fórmula Comparativa","description":"Item A vs Item B vs The Best","content":["Formula: [Device A] is [Comparative] than [Device B], but [Device C] is the [Superlative].","Example: 'The tablet is lighter than the laptop, but the smartphone is the most portable device.'"],"imageUrl":"/images/teens-basic-4-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Gadget Smackdown 🎯 / Mini Reto","description":"Compare Two Devices","content":["Compare 2 smartphones or gaming consoles:","'(Device A) is ________ than (Device B), but (Device A) is the most ________.'"],"imageUrl":"/images/teens-basic-4-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de comparativos y superlativos."
           },
@@ -15160,46 +14950,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las tres posiciones clave de too y enough.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Excess: Too + Adjective / Demasiado (problema o exceso)",
-                description: "'Too' goes BEFORE the adjective and usually implies a negative issue.",
-                content: ["Formula: too + adjective (+ to + verb)", "This backpack is too heavy to carry. = Esta mochila es demasiado pesada para cargar.", "The coffee is too hot to drink. = El café está demasiado caliente para tomar.", "It is too late to start a movie now. = Es demasiado tarde para empezar una película."],
-                imageUrl: "/images/teens-basic-4-class-07/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Sufficiency: Adjective + Enough / Suficientemente (después del adjetivo)",
-                description: "'Enough' goes AFTER the adjective to indicate adequacy.",
-                content: ["Formula: adjective + enough (+ to + verb)", "He is tall enough to reach the top shelf. = Es suficientemente alto para alcanzar el estante.", "Are you confident enough to give the speech? = ¿Estás suficientemente seguro para dar el discurso?", "Negative: not + adj + enough (The Wi-Fi is not fast enough for streaming 4K video.)"],
-                imageUrl: "/images/teens-basic-4-class-07/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Quantity: Enough + Noun / Suficiente cantidad (antes del sustantivo)",
-                description: "'Enough' goes BEFORE countable or uncountable nouns.",
-                content: ["Formula: enough + noun", "I have enough money to buy the headset. = Tengo suficiente dinero para comprar los audífonos.", "We don't have enough time before the bell rings. = No tenemos suficiente tiempo antes del timbre.", "Do we have enough chairs for all our guests? = ¿Tenemos suficientes sillas para todos?"],
-                imageUrl: "/images/teens-basic-4-class-07/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Too Much vs Too Many / Demasiada cantidad",
-                description: "Distinguish between uncountable and countable excess.",
-                content: ["Too much + Uncountable noun: 'I have too much homework tonight!' (demasiada tarea)", "Too many + Plural Countable noun: 'There are too many notifications on my screen!' (demasiadas notificaciones)", "Proposing solutions: 'Let's take a 10-minute break to clear our minds.'"],
-                imageUrl: "/images/teens-basic-4-class-07/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Problem-Solving Speech / Discurso modelo de resolución",
-                description: "Read this sample proposal for fixing school study areas.",
-                content: ["Our main cafeteria is often too noisy during lunch hours, and there are not enough quiet study rooms in the library.", "Because the desks are not big enough for group laptops, we propose converting the old art hall into a collaborative tech workspace.", "With enough power outlets and comfortable chairs, students will work much more effectively!"],
-                imageUrl: "/images/teens-basic-4-class-07/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Too vs Enough: Evaluating Situations ⚠️⚖️ / Too y Enough","description":"Excess vs Sufficiency","content":["TOO + Adjective = Excess / Problem ('The room is too noisy to study.')","Adjective + ENOUGH = Sufficient ('The light is bright enough to read.')","ENOUGH + Noun = Sufficient quantity ('We have enough time to finish.')"],"imageUrl":"/images/teens-basic-4-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
+              {"id":"slide-5","title":"Too Much vs Too Many 📦 / Cantidad Excesiva","description":"Countable vs Uncountable","content":["TOO MUCH + Uncountable: too much sugar, too much homework, too much noise","TOO MANY + Plural Countable: too many notifications, too many tasks, too many tabs","I have too many apps open and too much lag."],"imageUrl":"/images/teens-basic-4-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
+              {"id":"slide-6","title":"Solving Daily Bottlenecks 💡 / Resolver Problemas","description":"Finding Solutions","content":["Problem: 'My backpack is too heavy!' -> Solution: 'Remove old books.'","Problem: 'I don't have enough sleep.' -> Solution: 'Turn off your screen earlier.'","Adjusting balance creates smoother daily flow."],"imageUrl":"/images/teens-basic-4-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
+              {"id":"slide-7","title":"The Problem & Adjustment Formula ⚖️ / Fórmula de Balance","description":"State Problem -> Adjust","content":["Formula: It is too [Adjective] to [Action], so we need [Enough + Noun].","Example: 'It is too dark to take photos, so we need enough natural light.'"],"imageUrl":"/images/teens-basic-4-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
+              {"id":"slide-8","title":"Quick Check: Spot the Problem 🎯 / Mini Reto","description":"Use Too or Enough","content":["Describe a situation using 'too' or 'enough':","'I have too (much/many) ________ so I don't have enough ________.'"],"imageUrl":"/images/teens-basic-4-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
             ],
             action: "Tomar notas y dominar la posición de too y enough."
           },
@@ -15540,46 +15295,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los diferentes niveles de consejos con modales.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Gentle Advice: Should & Shouldn't / Consejos suaves con Should",
-                description: "Used for general good ideas and recommendations.",
-                content: ["Formula: Subject + should / shouldn't + Base Verb", "You should get at least 8 hours of sleep before the big test. = Deberías dormir al menos 8 horas antes del examen.", "You shouldn't spend all weekend scrolling on your phone without going outside. = No deberías pasar todo el fin de semana en el celular.", "Question: What should I do about my science project?"],
-                imageUrl: "/images/teens-basic-4-class-08/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Strong Advice: Ought To & Had Better / Consejos fuertes y advertencias",
-                description: "'Ought to' expresses moral duty, while 'had better' warns of consequences.",
-                content: ["Ought to: 'You ought to apologize to your brother.' = Deberías disculparte con tu hermano.", "Had better (You'd better): 'You had better submit your essay today or you will lose points!' = ¡Será mejor que envíes tu ensayo hoy o perderás puntos!", "Rule: 'Had better' carries a subtle warning of negative consequences!"],
-                imageUrl: "/images/teens-basic-4-class-08/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Empathetic Advice: If I Were You... / Si yo fuera tú...",
-                description: "Put yourself in your friend's shoes using Second Conditional phrasing.",
-                content: ["Formula: If I were you, I would + Base Verb", "If I were you, I would talk to the coach directly after practice. = Si yo fuera tú, hablaría con el entrenador directamente después de la práctica.", "If I were you, I wouldn't worry so much about other people's opinions. = Si yo fuera tú, no me preocuparía tanto por las opiniones ajenas."],
-                imageUrl: "/images/teens-basic-4-class-08/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Softening Expressions & Asking / Frases para suavizar sugerencias",
-                description: "How to sound polite, friendly, and non-judgmental.",
-                content: ["'Why don't you try taking a short 10-minute walk?' = ¿Por qué no intentas dar un paseo de 10 minutos?", "'Have you considered making a study schedule?' = ¿Has considerado hacer un horario de estudio?", "'If you ask me, taking a break is the healthiest option.' = Si me preguntas, tomar un descanso es la opción más sana."],
-                imageUrl: "/images/teens-basic-4-class-08/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Advice Column Speech / Discurso modelo de consejería",
-                description: "Read this sample response to a student struggling with presentation fear.",
-                content: ["When a classmate tells me they are terrified of public speaking, I always say: 'You should practice your speech in front of a mirror three times.'", "If I were you, I would record myself on my phone to check my body language and pacing.", "You'd better arrive five minutes early to test the microphone so you feel totally in control!"],
-                imageUrl: "/images/teens-basic-4-class-08/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Friendship Advice & Active Listening 🤝❤️ / Consejos entre Amigos","description":"Supporting Friends","content":["Listen first before jumping to conclusions.","Use gentle phrasing: 'Have you thought about...', 'Maybe you could...'","A supportive friend offers perspectives without judging."],"imageUrl":"/images/teens-basic-4-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Softening Expressions: If I Were You 💬 / Suavizar Consejos","description":"Polite Phrasing","content":["'If I were you, I would take a deep breath and apologize.'","'It might be a good idea to talk things out privately.'","'Why don't we review the project together?'"],"imageUrl":"/images/teens-basic-4-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Resolving Conflicts & Misunderstandings 🕊️ / Resolver Conflictos","description":"Healthy Boundaries","content":["Communicate clearly when you feel hurt: 'When that happened, I felt...'","Set respectful boundaries: 'I care about our friendship, but I need some quiet time.'","True friendships grow stronger through honest talk."],"imageUrl":"/images/teens-basic-4-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Friendship Mediation Formula 🤝 / Fórmula de Mediación","description":"Empathy + Softened Advice","content":["Formula: 'I know this is tough. If I were you, I would [Gentle Action] because [Positive Outcome].'","Example: 'I know you're upset. If I were you, I would message Leo to clarify what happened.'"],"imageUrl":"/images/teens-basic-4-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Best Friend Advice 🎯 / Mini Reto","description":"Give Gentle Advice","content":["Give gentle advice to a friend who had a fight with a teammate:","'If I were you, I would ________ because ________.'"],"imageUrl":"/images/teens-basic-4-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de should, ought to y had better."
           },
@@ -15920,46 +15640,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura y fórmulas de cortesía para correos formales.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Informal Chat vs Formal Email / Chat informal vs Correo formal",
-                description: "Observe the key contrasts in tone, vocabulary, and punctuation.",
-                content: ["Informal: 'Hey! Send me the slides RN 👍' (Casual, abbreviations, emoji)", "Formal: 'Dear Ms. Carter, Attached please find our presentation slides for tomorrow\\'s science review. Best regards, David.'", "Rule: Never use slang (u, rn, idk, omg) in professional academic emails!"],
-                imageUrl: "/images/teens-basic-4-class-09/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "The 5 Anatomy Steps of a Formal Email / Los 5 pasos de un correo formal",
-                description: "Every professional email follows this standard structure.",
-                content: ["1. Clear Subject Line: 'Inquiry Regarding Science Fair Deadline - Emma Watson'", "2. Formal Salutation: 'Dear Mr. Miller,' / 'Dear Professor Adams,'", "3. Stating the Purpose: 'I am writing to inquire about / to submit...'", "4. Call to Action / Request: 'Could you please confirm if...'", "5. Professional Sign-off: 'Sincerely,' / 'Best regards,' followed by full name."],
-                imageUrl: "/images/teens-basic-4-class-09/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Greetings and Sign-offs / Saludos y despedidas formales",
-                description: "Choose the right formula depending on how well you know the recipient.",
-                content: ["Formal Greetings: 'Dear Mr. Smith,' (men) / 'Dear Ms. Davis,' (women) / 'Dear Admissions Committee,' (team)", "Semi-Formal Greetings: 'Good morning Dr. Evans,'", "Formal Sign-offs: 'Sincerely,' (Sinceramente) / 'Best regards,' (Saludos cordiales) / 'Respectfully,' (Respetuosamente)"],
-                imageUrl: "/images/teens-basic-4-class-09/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Polite Request Formulas / Fórmulas de petición educada",
-                description: "Use conditional modals (could, would) to sound polite and respectful.",
-                content: ["'Could you please let me know if...' = ¿Podría por favor hacerme saber si...?", "'I would appreciate it if you could review my draft.' = Le agradecería si pudiera revisar mi borrador.", "'Would it be possible to schedule a short 10-minute meeting?' = ¿Sería posible agendar una reunión corta?", "'Thank you in advance for your time and assistance.' = Gracias de antemano por su tiempo."],
-                imageUrl: "/images/teens-basic-4-class-09/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Formal Email Walkthrough / Ejemplo modelo de correo formal",
-                description: "Read this full email written by a high school student to a coordinator.",
-                content: ["Subject: Request for Summer Science Workshop Syllabus - Emma Davis", "Dear Dr. Martinez,", "I am writing to express my strong interest in attending the upcoming summer robotics workshop. Could you please provide the course schedule and list of required software? I would appreciate it if you could confirm my registration.", "Thank you very much for your guidance.", "Sincerely, Emma Davis (Grade 10)."],
-                imageUrl: "/images/teens-basic-4-class-09/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Formal Email Architecture 📧🏛️ / Estructura de Correo Formal","description":"The 5 Anatomy Steps","content":["1. Subject Line: Clear and concise ('Application for Science Club')","2. Salutation: 'Dear Mr. Miller,' / 'Dear Admissions Committee,'","3. Purpose: 'I am writing to inquire about...'","4. Details & Request: 'Could you please provide...'","5. Sign-off: 'Sincerely,' / 'Best regards,' + Full Name"],"imageUrl":"/images/teens-basic-4-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Formal vs Informal Register Comparison ⚖️ / Registro Formal","description":"Word Choice Shifts","content":["Informal: 'Hey! Send me the info ASAP.'","Formal: 'Dear Ms. Davis, I would appreciate it if you could share the information at your earliest convenience.'","Avoid contractions (use 'I am writing' instead of 'I'm writing')."],"imageUrl":"/images/teens-basic-4-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Polite Request Formulas in Professional Writing ✍️ / Peticiones Formales","description":"Professional Courtesy","content":["'I am writing to apply for the volunteer program.'","'Could you please confirm if the deadline has been extended?'","'Thank you for your time and consideration.'"],"imageUrl":"/images/teens-basic-4-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Formal Email Blueprint 📋 / Fórmula de Correo","description":"Subject + Salutation + Body + Sign-off","content":["Formula: 'Dear [Name], I am writing to [Purpose]. Could you please [Request]? Thank you for your time. Sincerely, [Your Name].'","Example: 'Dear Principal Smith, I am writing to propose a robotics club. Sincerely, Mateo Ruiz.'"],"imageUrl":"/images/teens-basic-4-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Professional Subject & Hook 🎯 / Mini Reto","description":"Draft Formal Opening","content":["Draft a 2-line formal email opener to a teacher asking for project feedback:","'Dear ________, I am writing to ________. Sincerely, ________.'"],"imageUrl":"/images/teens-basic-4-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la redacción de peticiones formales."
           },
@@ -16300,46 +15985,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de atención al cliente y repasar la gramática del Nivel 4.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Customer Service Phrases / Frases de atención al cliente",
-                description: "Essential phrases for welcoming clients and active listening.",
-                content: ["'Good morning! How may I assist you today?' = ¡Buenos días! ¿Cómo puedo ayudarle hoy?", "'I completely understand your frustration, and I apologize for the inconvenience.' = Entiendo su molestia y me disculpo por el inconveniente.", "'Let me check our system right away.' = Permítame verificar nuestro sistema de inmediato."],
-                imageUrl: "/images/teens-basic-4-class-10/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "De-escalating Complaints & Solutions / Resolución de quejas",
-                description: "Turn negative customer experiences into positive outcomes.",
-                content: ["Step 1: Listen without interrupting.", "Step 2: Empathize ('Thank you for bringing this to our attention.').", "Step 3: Propose a clear solution ('I can offer an immediate replacement or a full refund. Which do you prefer?').", "Step 4: Confirm satisfaction ('Is there anything else I can do to assist you?')."],
-                imageUrl: "/images/teens-basic-4-class-10/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Collaborative Leadership Verbs / Verbos de liderazgo colaborativo",
-                description: "Key expressions for running successful team meetings.",
-                content: ["Delegate tasks = Asignar y delegar responsabilidades ('Let\\'s delegate the research to Maya.')", "Reach a consensus = Llegar a un acuerdo unánime ('Do we have a consensus on the deadline?')", "Meet a milestone = Cumplir una meta clave ('If we stay focused, we will meet our Friday milestone.')"],
-                imageUrl: "/images/teens-basic-4-class-10/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Level 4 Grammar Master Recap / Resumen gramatical maestro",
-                description: "Review of all key structural pillars of Level 4.",
-                content: ["1. Zero Conditional: 'If water freezes, it turns into ice.' (Universal scientific facts)", "2. First Conditional: 'If I study hard, I will pass the exam.' (Future possibilities)", "3. Comparatives & Superlatives: 'faster than' / 'the most powerful' / 'better than'", "4. Too & Enough: 'too expensive' / 'fast enough' / 'enough time'", "5. Advice Modals: 'You should / ought to / had better / If I were you...'"],
-                imageUrl: "/images/teens-basic-4-class-10/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Grand Capstone Speech / Discurso modelo de graduación",
-                description: "Read this inspiring speech demonstrating Level 4 communicative mastery.",
-                content: ["Throughout Level 4, I learned that effective communication requires both confidence and empathy.", "Whether I am writing a formal academic email to a university, coordinating a group science project with classmates, or resolving a customer problem calmly, I can now express my perspectives clearly.", "In the future, I will use English to lead international student initiatives and collaborate on global projects!"],
-                imageUrl: "/images/teens-basic-4-class-10/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Youth Leadership & Global Perspectives 🌟🌍 / Liderazgo Juvenil","description":"Level 4 Capstone","content":["Collaborative leadership, active listening, public speaking","Youth initiatives, tech innovation, environmental campaigns","Leadership is not about commanding—it's about inspiring action."],"imageUrl":"/images/teens-basic-4-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Level 4 Grammar Master Recap 🧠⚡ / Gran Recapitulación","description":"Conditionals, Modals, Registers","content":["Zero Conditional (Facts) & First Conditional (Future)","Modals: Should, Must, Have to, Had better, If I were you","Formal email structure and comparative benchmarks (Too / Enough)"],"imageUrl":"/images/teens-basic-4-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Project Pitch & Problem De-escalation 🎯 / Pitch de Proyecto","description":"Problem Solving","content":["State the youth problem: 'Many teens experience high screen fatigue.'","Propose the solution: 'We are launching an outdoor sports initiative.'","Inspire participation: 'If you join our team, you will lead creative workshops.'"],"imageUrl":"/images/teens-basic-4-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Teen Pro Leadership Formula 🏆 / Fórmula de Graduación","description":"Leadership Pitch","content":["1. Introduce an issue and your perspective (Class 1).","2. Give clear advice or conditional solutions (Classes 2-5).","3. Conclude with a persuasive invitation in professional tone (Classes 6-9)."],"imageUrl":"/images/teens-basic-4-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Grand Pro Pitch 🎯 / Gran Reto","description":"Deliver Your 30-Second Pitch","content":["Deliver your 30-second Level 4 Leadership pitch to the teacher!","Present your initiative with confidence, conditionals, and clear arguments!"],"imageUrl":"/images/teens-basic-4-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y repasar las estructuras de todo el Nivel 4."
           },
