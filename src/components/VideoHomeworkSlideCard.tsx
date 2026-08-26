@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { Eye, Lightbulb, MessageCircle, Pencil, Play, Sparkles } from 'lucide-react';
+import { Eye, Lightbulb, MessageCircle, Pencil, Play, Sparkles, Check } from 'lucide-react';
 import { ClassSlide, CurriculumClass } from '../types';
 import { resolveVideoHomeworkData } from '../lib/videoHomeworkResolver';
+import { fireClassCompletionConfetti } from '../lib/celebration';
 
 interface VideoHomeworkSlideCardProps {
   slide: ClassSlide;
   cls?: CurriculumClass;
   teacherNote?: string;
+  isLastSlide?: boolean;
+  onComplete?: () => void;
 }
 
-export function VideoHomeworkSlideCard({ slide, cls, teacherNote }: VideoHomeworkSlideCardProps) {
+export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComplete }: VideoHomeworkSlideCardProps) {
   const [answer1, setAnswer1] = useState('');
   const [answer2, setAnswer2] = useState('');
   const [copied, setCopied] = useState(false);
@@ -211,6 +214,22 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote }: VideoHomewor
           </span>
           <span className="truncate">{teacherNote || 'Assign the task and check answers next class.'}</span>
         </div>
+
+        {onComplete && (
+          <button
+            type="button"
+            onClick={() => {
+              fireClassCompletionConfetti();
+              onComplete();
+            }}
+            className="inline-flex shrink-0 items-center gap-2 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-green-600 hover:from-emerald-400 hover:to-green-500 px-4 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm lg:text-base font-black text-white shadow-xl shadow-emerald-500/30 hover:scale-105 active:scale-95 transition-all border border-emerald-300/70 ring-2 ring-emerald-400/30 cursor-pointer"
+            title="Marcar clase como completada"
+          >
+            <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-300 animate-spin" style={{ animationDuration: '3s' }} />
+            <span>¡Completar Clase!</span>
+            <Check className="h-4 w-4 sm:h-5 sm:w-5 stroke-[3]" />
+          </button>
+        )}
       </div>
     </div>
   );

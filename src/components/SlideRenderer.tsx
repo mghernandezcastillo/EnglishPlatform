@@ -23,6 +23,7 @@ import { VocabularyFlipCards } from './VocabularyFlipCards';
 import { HomeworkSlideCard } from './HomeworkSlideCard';
 import { VideoHomeworkSlideCard } from './VideoHomeworkSlideCard';
 import { SlideSelectionTranslator } from './SlideSelectionTranslator';
+import { fireClassCompletionConfetti } from '../lib/celebration';
 
 const COMPACT_W = 1280;
 const COMPACT_H = 720;
@@ -927,18 +928,34 @@ export function SlideRenderer({
           </div>
 
           {/* Bottom Bar inside Golden Frame */}
-          <div className="flex items-center justify-start gap-3 pt-3 px-2 text-slate-950 font-bold">
+          <div className="flex items-center justify-between gap-3 pt-3 px-2 text-slate-950 font-bold">
             <div className="flex items-center gap-2 text-xs sm:text-sm bg-black/10 px-4 py-2 rounded-2xl">
               <span>📝</span>
               <span className="font-black uppercase tracking-wider text-slate-900">TEACHER NOTE:</span>
               <span className="text-slate-800">{section.action || 'Great participation today! 👏'}</span>
             </div>
+
+            {onComplete && (
+              <button
+                type="button"
+                onClick={() => {
+                  fireClassCompletionConfetti();
+                  onComplete();
+                }}
+                className="inline-flex shrink-0 items-center gap-2 px-5 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-black text-sm sm:text-base shadow-xl shadow-emerald-500/30 hover:scale-105 active:scale-95 transition-all border border-emerald-300 ring-2 ring-emerald-400/30 cursor-pointer"
+                title="Marcar clase como completada"
+              >
+                <Sparkles className="w-4 h-4 text-yellow-300 animate-spin" style={{ animationDuration: '3s' }} />
+                <span>¡Marcar Completa!</span>
+                <Check className="w-4 h-4 stroke-[3]" />
+              </button>
+            )}
           </div>
         </div>
       ) : isHomeworkSlide ? (
-        <HomeworkSlideCard slide={slide} cls={cls} teacherNote={section.action} />
+        <HomeworkSlideCard slide={slide} cls={cls} teacherNote={section.action} isLastSlide={isLastSlide} onComplete={onComplete} />
       ) : isVideoHomeworkSlide ? (
-        <VideoHomeworkSlideCard slide={slide} cls={cls} teacherNote={section.action} />
+        <VideoHomeworkSlideCard slide={slide} cls={cls} teacherNote={section.action} isLastSlide={isLastSlide} onComplete={onComplete} />
       ) : isSpeakingBossBattle ? (
         <SpeakingBossBattleGame
           bossName={slide.speakingBossBattle?.bossName}
@@ -1159,8 +1176,16 @@ export function SlideRenderer({
 
               {isLastSlide && onComplete && (
                 <div className="mt-auto pt-8">
-                  <button onClick={onComplete} className="w-full flex items-center justify-center gap-3 bg-white text-gray-900 font-extrabold text-2xl py-6 rounded-2xl hover:scale-105 transition-transform shadow-2xl">
-                    <CheckCircle className="w-8 h-8 text-green-500" /> ¡Completar Clase!
+                  <button
+                    onClick={() => {
+                      fireClassCompletionConfetti();
+                      onComplete();
+                    }}
+                    className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-500 via-teal-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-extrabold text-2xl py-5 rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-2xl border-2 border-emerald-300 ring-4 ring-emerald-400/40 cursor-pointer"
+                  >
+                    <Sparkles className="w-7 h-7 text-yellow-300 animate-spin" style={{ animationDuration: '3s' }} />
+                    <span>¡Marcar Clase Completa!</span>
+                    <CheckCircle className="w-8 h-8 text-white" />
                   </button>
                 </div>
               )}
