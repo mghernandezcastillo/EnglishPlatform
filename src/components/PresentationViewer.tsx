@@ -37,6 +37,15 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Preload the next slide's image to eliminate loading flash on navigation
+  useEffect(() => {
+    const nextData = allSlides[currentIndex + 1];
+    if (nextData?.slide.imageUrl) {
+      const img = new Image();
+      img.src = nextData.slide.imageUrl;
+    }
+  }, [currentIndex, allSlides]);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (
@@ -109,8 +118,8 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             transition={{ duration: 0.2, ease: 'easeOut' }}
             className="relative w-full max-w-[min(1600px,calc((100vh-5.5rem)*16/9))] aspect-[16/9] max-h-[calc(100vh-5.5rem)] min-h-[460px] sm:min-h-[540px] mx-auto p-[2.5px] rounded-[1.6rem] sm:rounded-[2.1rem] bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-indigo-500 shadow-[0_0_40px_rgba(139,92,246,0.35),0_0_80px_rgba(6,182,212,0.2)] flex flex-col shrink-0 overflow-hidden"
           >
-            {/* Animated Rotating Gradient Aura */}
-            <div className="absolute -inset-[100%] animate-[spin_10s_linear_infinite] bg-[conic-gradient(from_0deg,#06b6d4,#8b5cf6,#ec4899,#06b6d4)] opacity-75 blur-sm pointer-events-none" />
+            {/* Animated Rotating Gradient Aura — reduced opacity/blur for GPU savings */}
+            <div className="absolute -inset-[100%] animate-[spin_10s_linear_infinite] bg-[conic-gradient(from_0deg,#06b6d4,#8b5cf6,#ec4899,#06b6d4)] opacity-40 blur-[2px] pointer-events-none" />
 
             {/* Inner Slide Stage Wrapper */}
             <div className="relative w-full h-full rounded-[1.45rem] sm:rounded-[1.95rem] overflow-hidden bg-[#0a0c1a] z-10 select-text">

@@ -1192,7 +1192,7 @@ export function SlideRenderer({
       )}
 
       {/* Teacher Note */}
-      {section.action && !isSpeakingBossBattle && !isRoleplaySlide && !hideTeacherNote && (
+      {section.action && !isSpeakingBossBattle && !isRoleplaySlide && !isHomeworkSlide && !isVideoHomeworkSlide && !isWrapUpSlide && !hideTeacherNote && (
         <div className={`${isScreenShareExerciseSlide ? 'bg-black/25 p-2.5 sm:p-3' : 'bg-black/30 p-3 sm:p-4'} backdrop-blur-md border-t border-white/10 shrink-0 mt-auto`}>
           <p className={`${isScreenShareExerciseSlide ? 'text-[10px] sm:text-xs' : 'text-xs sm:text-sm'} text-yellow-300/90 font-medium flex items-center gap-2`}>
             <span className="bg-yellow-400/20 px-2 py-1 rounded text-yellow-300 font-bold tracking-wide uppercase text-[10px] sm:text-xs">👩‍🏫 Nota para el profe</span>

@@ -1,12 +1,26 @@
-import { curriculumLevels } from './curriculum';
-import { curriculumKidsLevels } from './curriculumKids';
-import { curriculumTeensLevels } from './curriculumTeens';
+import { CurriculumLevel } from '../types';
 
-export const getCurriculumForType = (type?: string) => {
+/**
+ * Loads ONLY the curriculum for the requested student type.
+ * Adults  →  curriculum.ts      (~2.2 MB)
+ * Teens   →  curriculumTeens.ts (~2.3 MB)
+ * Kids    →  curriculumKids.ts  (~0.7 MB)
+ * Before: all three were imported statically = 5.2 MB always.
+ */
+export const getCurriculumForType = async (type?: string): Promise<CurriculumLevel[]> => {
   const track = type === 'niño' ? 'niño' : type === 'adolescente' ? 'adolescente' : 'adulto';
-  let base = curriculumLevels;
-  if (track === 'niño') base = curriculumKidsLevels;
-  if (track === 'adolescente') base = curriculumTeensLevels;
+
+  let base: CurriculumLevel[];
+  if (track === 'niño') {
+    const { curriculumKidsLevels } = await import('./curriculumKids');
+    base = curriculumKidsLevels;
+  } else if (track === 'adolescente') {
+    const { curriculumTeensLevels } = await import('./curriculumTeens');
+    base = curriculumTeensLevels;
+  } else {
+    const { curriculumLevels } = await import('./curriculum');
+    base = curriculumLevels;
+  }
 
   if (typeof window !== 'undefined' && window.localStorage) {
     try {

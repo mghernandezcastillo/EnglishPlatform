@@ -67,7 +67,7 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
     const refreshWhenVisible = () => {
       if (document.visibilityState === 'visible') refreshEvaluations();
     };
-    const timer = window.setInterval(refreshWhenVisible, 15000);
+    const timer = window.setInterval(refreshWhenVisible, 60000); // was 15s, now 60s to reduce requests
     window.addEventListener('focus', refreshWhenVisible);
     document.addEventListener('visibilitychange', refreshWhenVisible);
     return () => {

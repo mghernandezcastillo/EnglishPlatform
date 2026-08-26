@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Target, CheckCircle, XCircle, ArrowRight, Play, BookOpen, Save, RefreshCw, AlertCircle } from 'lucide-react';
 import { getCurriculumForType } from '../data/curriculumSelector';
 import { dbAdmin } from '../lib/db';
-import { VirtualQuestion } from '../types';
+import { VirtualQuestion, CurriculumLevel } from '../types';
 import { useBrand } from '../hooks/useBrand';
 import { BrandWordmark } from './BrandWordmark';
 import { playAudio, prepareAudio, stopAudio } from '../lib/audio';
@@ -12,13 +12,22 @@ interface Props {
 }
 
 export function VirtualEvaluationView({ levelId }: Props) {
-  // Combine all curriculums to find the level ID
-  const allLevels = [
-    ...getCurriculumForType('adulto'),
-    ...getCurriculumForType('niño'),
-    ...getCurriculumForType('adolescente')
-  ];
-  const level = allLevels.find(l => l.id === levelId);
+  const [level, setLevel] = useState<CurriculumLevel | undefined>(undefined);
+
+  // Load curricula lazily: try adulto first, then teens, then kids
+  useEffect(() => {
+    const tracks = ['adulto', 'adolescente', 'niño'] as const;
+    let found = false;
+    const tryNext = async (idx: number) => {
+      if (idx >= tracks.length || found) return;
+      const levels = await getCurriculumForType(tracks[idx]);
+      const match = levels.find(l => l.id === levelId);
+      if (match) { found = true; setLevel(match); }
+      else tryNext(idx + 1);
+    };
+    tryNext(0);
+  }, [levelId]);
+
   const questions = level?.virtualEvaluation || [];
 
   const [studentName, setStudentName] = useState(() => {

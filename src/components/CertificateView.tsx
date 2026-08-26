@@ -1,5 +1,5 @@
 import { Award } from 'lucide-react';
-import { getCurriculumForType } from '../data/curriculumSelector';
+import { useCurriculum } from '../hooks/useCurriculum';
 import { useBrand } from '../hooks/useBrand';
 import { Diploma } from './Diploma';
 
@@ -12,7 +12,8 @@ export function CertificateView({ levelId }: CertificateViewProps) {
   const studentName = params.get('student')?.trim() || 'Student';
   const studentType = params.get('type') || 'adulto';
   const fallbackTitle = params.get('levelTitle')?.trim() || 'English Level';
-  const level = getCurriculumForType(studentType).find((item) => item.id === levelId);
+  const { curriculumLevels } = useCurriculum(studentType);
+  const level = curriculumLevels.find((item) => item.id === levelId);
   const { brand } = useBrand();
   const brandName = studentType === 'niño'
     ? 'Maven English for kids'

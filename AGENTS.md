@@ -61,10 +61,18 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
 - **Contexto pedagógico de las imágenes**:
   - Cada imagen generada debe reflejar con precisión el contenido, vocabulario, pregunta o situación comunicativa de esa diapositiva en particular.
   - En preguntas de selección múltiple, la imagen principal debe ilustrar la frase, contexto o respuesta correcta.
+- **REGLA OBLIGATORIA DE COMPRESIÓN Y TAMAÑO DE IMAGEN (MAX 400KB)**:
+  - Ninguna imagen generada o añadida al proyecto debe superar los **400 KB** (el tamaño óptimo por imagen de diapositiva es entre **80 KB y 250 KB**).
+  - Al generar o guardar imágenes para el proyecto, DEBEN ser optimizadas inmediatamente usando `sharp`:
+    - **JPG/JPEG**: `sharp(file).jpeg({ quality: 80, mozjpeg: true })`
+    - **PNG**: `sharp(file).png({ palette: true, quality: 75, compressionLevel: 9 })`
+    - **WebP**: `sharp(file).webp({ quality: 85 })`
+  - Queda TERMINANTEMENTE PROHIBIDO dejar imágenes en bruto de IA de >1 MB o >2 MB en `public/images/`.
 - **Auditoría obligatoria post-generación**:
   - Antes de dar por terminada cualquier tarea de generación de imágenes, el agente DEBE ejecutar una verificación automatizada que valide:
     1. Que la cantidad de imágenes únicas en la clase sea igual a la cantidad de diapositivas con imagen (`uniqueImages === totalSlidesWithImages`).
     2. Que cada ruta referenciada en `imageUrl` exista físicamente en disco (`fs.existsSync`).
+    3. Que **ningún archivo de imagen supere los 400 KB** de tamaño en disco. Si alguno lo supera, se debe comprimir con `sharp` antes de finalizar.
 - **Si se usa Unsplash como excepción**:
   - Verificar obligatoriamente cada URL con `curl -s -o /dev/null -w "%{http_code}" <url>`. Jamás incluir URLs 404 o no verificadas.
 
@@ -123,6 +131,19 @@ This entire protocol applies across all tracks with age-appropriate visual & ped
 - **Kids (6–12)**: Playful, colorful, friendly animals, interactive games, animated illustrations, simple vocabulary.
 - **Adults (18+)**: Real-world communication, workplace, daily routines, travel, professional contexts.
 
+## ⚡ REGLAS DE RENDIMIENTO Y ARQUITECTURA WEB
+- **Code Splitting obligatorio**:
+  - Toda nueva vista pesada, juego, módulo o herramienta secundaria DEBE importarse usando `React.lazy()` y envolverse en `<Suspense>` dentro de `App.tsx`.
+  - Queda prohibido importar vistas secundarias pesadas de forma estática en el arranque inicial.
+- **Carga dinámica de datos de Curriculum**:
+  - Los archivos de planes de estudio (`curriculum.ts`, `curriculumTeens.ts`, `curriculumKids.ts`) DEBEN mantenerse cargados bajo demanda mediante `useCurriculum` o `getCurriculumForType` asíncrono para no transferir 5+ MB en el bundle inicial.
+- **Preload de Slides**:
+  - Todo visor de diapositivas o carrusel debe precargar la imagen de la diapositiva $N+1$ en segundo plano para evitar retrasos visuales durante la clase.
+- **Sondeo a Base de Datos (Polling)**:
+  - Ningún intervalo recurrente (`setInterval`) para consultar estados o evaluaciones en cliente debe ser menor a **60 segundos** mientras la app esté abierta.
+- **Animaciones CSS ligeras**:
+  - Evitar animaciones infinitas de gradientes con filtros `blur` pesados o áreas de GPU sobredimensionadas que degraden el rendimiento en pantalla compartida y móviles.
+
 ## 🛑 STRICT PROHIBITIONS
 - NEVER leave `content` undefined.
 - NEVER create a quiz/multiple choice slide without the `options` array.
@@ -130,5 +151,6 @@ This entire protocol applies across all tracks with age-appropriate visual & ped
 - NEVER repeat the same image across different slides of the same class. Every visual slide must have a 100% unique image.
 - NEVER leave a broken or unverified YouTube link in the video homework slide.
 - NEVER use generic placeholders like "Option A" or "Wrong option". You MUST generate real, pedagogically sound content for every single slide and option.
+- NEVER reintroduce static imports of heavy components or raw uncompressed images into `App.tsx` or `public/images/`.
 
 

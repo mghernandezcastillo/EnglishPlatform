@@ -8,9 +8,15 @@ export function useCurriculum(studentType?: string) {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // We simply use the static files for the curriculum.
-    setCurriculumLevels(getCurriculumForType(studentType));
-    setLoading(false);
+    setLoading(true);
+    getCurriculumForType(studentType).then(levels => {
+      setCurriculumLevels(levels);
+      setLoading(false);
+    }).catch(err => {
+      console.error('Failed to load curriculum:', err);
+      setError('Failed to load curriculum');
+      setLoading(false);
+    });
   }, [studentType]);
 
   return { curriculumLevels, loading, error };

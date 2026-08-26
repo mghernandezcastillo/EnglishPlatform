@@ -1,22 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { User, Settings } from 'lucide-react';
+// Critical — always loaded (needed on first render)
 import { Dashboard } from './components/Dashboard';
-import { LessonPlayer } from './components/LessonPlayer';
-import { EntranceAssessment } from './components/EntranceAssessment';
-import { FloatingControls } from './components/FloatingControls';
-import { SpeakingPractice } from './components/SpeakingPractice';
-import { StoryDecoder } from './components/StoryDecoder';
-import { StructureMode } from './components/StructureMode';
 import { RoleSelection } from './components/RoleSelection';
-import { TeacherDashboard } from './components/TeacherDashboard';
-import { VirtualEvaluationView } from './components/VirtualEvaluationView';
-import { GlobalAiAssistant } from './components/GlobalAiAssistant';
+import { FloatingControls } from './components/FloatingControls';
 import { BrandWordmark } from './components/BrandWordmark';
-import { VerbsGuide } from './components/VerbsGuide';
-import { VerbArenaGame } from './components/VerbArenaGame';
-import { VocabVault } from './components/VocabVault';
-import { CertificateView } from './components/CertificateView';
-import { OralQuestionBankView } from './components/OralQuestionBankView';
 import { dbAdmin } from './lib/db';
 import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from './lib/levelApproval';
 import { DbStudent, UserProgress } from './types';
@@ -24,8 +12,28 @@ import { lessons } from './data/lessons';
 import { libraryLessons } from './data/libraryLessons';
 import { supabase } from './lib/supabase';
 import { avatars } from './config';
-
 import { useBrand } from './hooks/useBrand';
+
+// Lazy — only loaded when the user navigates to them
+const LessonPlayer = lazy(() => import('./components/LessonPlayer').then(m => ({ default: m.LessonPlayer })));
+const EntranceAssessment = lazy(() => import('./components/EntranceAssessment').then(m => ({ default: m.EntranceAssessment })));
+const SpeakingPractice = lazy(() => import('./components/SpeakingPractice').then(m => ({ default: m.SpeakingPractice })));
+const StoryDecoder = lazy(() => import('./components/StoryDecoder').then(m => ({ default: m.StoryDecoder })));
+const StructureMode = lazy(() => import('./components/StructureMode').then(m => ({ default: m.StructureMode })));
+const TeacherDashboard = lazy(() => import('./components/TeacherDashboard').then(m => ({ default: m.TeacherDashboard })));
+const VirtualEvaluationView = lazy(() => import('./components/VirtualEvaluationView').then(m => ({ default: m.VirtualEvaluationView })));
+const GlobalAiAssistant = lazy(() => import('./components/GlobalAiAssistant').then(m => ({ default: m.GlobalAiAssistant })));
+const VerbsGuide = lazy(() => import('./components/VerbsGuide').then(m => ({ default: m.VerbsGuide })));
+const VerbArenaGame = lazy(() => import('./components/VerbArenaGame').then(m => ({ default: m.VerbArenaGame })));
+const VocabVault = lazy(() => import('./components/VocabVault').then(m => ({ default: m.VocabVault })));
+const CertificateView = lazy(() => import('./components/CertificateView').then(m => ({ default: m.CertificateView })));
+const OralQuestionBankView = lazy(() => import('./components/OralQuestionBankView').then(m => ({ default: m.OralQuestionBankView })));
+
+const LazyFallback = () => (
+  <div className="fixed inset-0 z-50 bg-slate-900/80 flex items-center justify-center">
+    <div className="w-10 h-10 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 const STORAGE_KEY = 'english_easy_path_progress';
 const TEACHER_UNLOCK_KEY = 'maven_teacher_unlocked';
@@ -264,35 +272,35 @@ export default function App() {
   const path = window.location.pathname;
   
   if (evalLevelId) {
-    return <VirtualEvaluationView levelId={evalLevelId} />;
+    return <Suspense fallback={<LazyFallback />}><VirtualEvaluationView levelId={evalLevelId} /></Suspense>;
   }
 
   if (certificateLevelId !== null) {
-    return <CertificateView levelId={certificateLevelId} />;
+    return <Suspense fallback={<LazyFallback />}><CertificateView levelId={certificateLevelId} /></Suspense>;
   }
 
   if (oralQuestionsLevelId) {
-    return <OralQuestionBankView levelId={oralQuestionsLevelId} />;
+    return <Suspense fallback={<LazyFallback />}><OralQuestionBankView levelId={oralQuestionsLevelId} /></Suspense>;
   }
 
   if (path.startsWith('/evaluacion/')) {
     const parts = path.split('/');
     const levelId = parts[2];
     if (levelId) {
-      return <VirtualEvaluationView levelId={levelId} />;
+      return <Suspense fallback={<LazyFallback />}><VirtualEvaluationView levelId={levelId} /></Suspense>;
     }
   }
 
   if (path.startsWith('/verbs/arena')) {
-    return <VerbArenaGame onBack={() => { window.location.href = '/verbs'; }} />;
+    return <Suspense fallback={<LazyFallback />}><VerbArenaGame onBack={() => { window.location.href = '/verbs'; }} /></Suspense>;
   }
 
   if (path.startsWith('/verbs')) {
-    return <VerbsGuide />;
+    return <Suspense fallback={<LazyFallback />}><VerbsGuide /></Suspense>;
   }
 
   if (path.startsWith('/story-decoder')) {
-    return <StoryDecoder onClose={() => { window.location.href = '/'; }} studentId={urlParams.get('studentId')} />;
+    return <Suspense fallback={<LazyFallback />}><StoryDecoder onClose={() => { window.location.href = '/'; }} studentId={urlParams.get('studentId')} /></Suspense>;
   }
 
   if (!isLoaded) {
@@ -314,10 +322,12 @@ export default function App() {
 
   if (role === 'teacher') {
     return (
-      <div className="min-h-screen bg-slate-50 font-sans">
-        <TeacherDashboard onBack={() => setRole('none')} onEnterAsStudent={handleSelectStudent} />
-        <GlobalAiAssistant />
-      </div>
+      <Suspense fallback={<LazyFallback />}>
+        <div className="min-h-screen bg-slate-50 font-sans">
+          <TeacherDashboard onBack={() => setRole('none')} onEnterAsStudent={handleSelectStudent} />
+          <GlobalAiAssistant />
+        </div>
+      </Suspense>
     );
   }
 
@@ -452,57 +462,59 @@ export default function App() {
       )}
 
       {/* Main Content */}
-      {currentView === 'lesson' && activeLesson ? (
-        <LessonPlayer 
-          lesson={activeLesson as any}
-          onComplete={handleCompleteLesson}
-          onExit={handleExitLesson}
-        />
-      ) : currentView === 'entrance_assessment' ? (
-        <EntranceAssessment progress={progress} onClose={handleCloseAssessment} />
-      ) : currentView === 'story_decoder' ? (
-        <StoryDecoder onClose={() => setCurrentView('dashboard')} studentId={currentStudentId} />
-      ) : currentView === 'speaking_practice' ? (
-        <SpeakingPractice onClose={() => setCurrentView('dashboard')} />
-      ) : currentView === 'structure_mode' ? (
-        <StructureMode
-          onClose={() => setCurrentView('dashboard')}
-          studentId={currentStudentId}
-          studentName={progress.studentName}
-        />
-      ) : currentView === 'verbs_guide' ? (
-        <VerbsGuide onBack={() => setCurrentView('dashboard')} />
-      ) : currentView === 'verb_arena' ? (
-        <VerbArenaGame onBack={() => setCurrentView('dashboard')} />
-      ) : currentView === 'vocab_vault' ? (
-        <VocabVault
-          studentId={currentStudentId}
-          studentName={progress.studentName}
-          onBack={() => setCurrentView('dashboard')}
-        />
-      ) : (
-          <Dashboard 
-          completedLessonIds={progress.completedLessons}
-          approvedLevelIds={progress.approvedLevelIds || []}
-          userLevel={progress.level || 'Nivel Inicial'}
-          studentName={progress.studentName}
-          studentId={currentStudentId}
-          avatarId={progress.avatarId}
-          studentType={progress.studentType}
-          onStartLibraryLesson={handleStartLibraryLesson}
-          onFinishClass={handleFinishClass}
-          onApproveLevel={handleApproveLevel}
-          onToggleClass={handleToggleClass}
-          onOpenEntranceAssessment={handleOpenEntranceAssessment}
-          onOpenSpeakingPractice={handleOpenSpeakingPractice}
-          onOpenStoryDecoder={handleOpenStoryDecoder}
-          onOpenStructureMode={handleOpenStructureMode}
-          onOpenVerbsGuide={handleOpenVerbsGuide}
-          onOpenVocabVault={handleOpenVocabVault}
-        />
-      )}
+      <Suspense fallback={<LazyFallback />}>
+        {currentView === 'lesson' && activeLesson ? (
+          <LessonPlayer 
+            lesson={activeLesson as any}
+            onComplete={handleCompleteLesson}
+            onExit={handleExitLesson}
+          />
+        ) : currentView === 'entrance_assessment' ? (
+          <EntranceAssessment progress={progress} onClose={handleCloseAssessment} />
+        ) : currentView === 'story_decoder' ? (
+          <StoryDecoder onClose={() => setCurrentView('dashboard')} studentId={currentStudentId} />
+        ) : currentView === 'speaking_practice' ? (
+          <SpeakingPractice onClose={() => setCurrentView('dashboard')} />
+        ) : currentView === 'structure_mode' ? (
+          <StructureMode
+            onClose={() => setCurrentView('dashboard')}
+            studentId={currentStudentId}
+            studentName={progress.studentName}
+          />
+        ) : currentView === 'verbs_guide' ? (
+          <VerbsGuide onBack={() => setCurrentView('dashboard')} />
+        ) : currentView === 'verb_arena' ? (
+          <VerbArenaGame onBack={() => setCurrentView('dashboard')} />
+        ) : currentView === 'vocab_vault' ? (
+          <VocabVault
+            studentId={currentStudentId}
+            studentName={progress.studentName}
+            onBack={() => setCurrentView('dashboard')}
+          />
+        ) : (
+            <Dashboard 
+            completedLessonIds={progress.completedLessons}
+            approvedLevelIds={progress.approvedLevelIds || []}
+            userLevel={progress.level || 'Nivel Inicial'}
+            studentName={progress.studentName}
+            studentId={currentStudentId}
+            avatarId={progress.avatarId}
+            studentType={progress.studentType}
+            onStartLibraryLesson={handleStartLibraryLesson}
+            onFinishClass={handleFinishClass}
+            onApproveLevel={handleApproveLevel}
+            onToggleClass={handleToggleClass}
+            onOpenEntranceAssessment={handleOpenEntranceAssessment}
+            onOpenSpeakingPractice={handleOpenSpeakingPractice}
+            onOpenStoryDecoder={handleOpenStoryDecoder}
+            onOpenStructureMode={handleOpenStructureMode}
+            onOpenVerbsGuide={handleOpenVerbsGuide}
+            onOpenVocabVault={handleOpenVocabVault}
+          />
+        )}
+      </Suspense>
       <FloatingControls />
-      <GlobalAiAssistant />
+      <Suspense fallback={null}><GlobalAiAssistant /></Suspense>
     </div>
   );
 }

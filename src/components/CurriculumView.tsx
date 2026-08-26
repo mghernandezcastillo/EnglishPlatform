@@ -3,19 +3,14 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown, BookOpen, Clock, Target, PlayCircle, Users, Play } from 'lucide-react';
 import { CurriculumLevel, CurriculumClass } from '../types';
 import { PresentationViewer } from './PresentationViewer';
-import { getCurriculumForType } from '../data/curriculumSelector';
+import { useCurriculum } from '../hooks/useCurriculum';
+
+const TYPE_MAP: Record<string, string> = { 'Adultos': 'adulto', 'Niños': 'niño', 'Adolescentes': 'adolescente' };
 
 export function CurriculumView() {
-  const allCurriculums = [
-    { title: 'Adultos', levels: getCurriculumForType('adulto') },
-    { title: 'Niños', levels: getCurriculumForType('niño') },
-    { title: 'Adolescentes', levels: getCurriculumForType('adolescente') }
-  ];
-  
   const [activeType, setActiveType] = useState('Adultos');
-  
-  const curriculumLevels = allCurriculums.find(c => c.title === activeType)?.levels || [];
-  
+  const { curriculumLevels } = useCurriculum(TYPE_MAP[activeType]);
+
   const [expandedLevel, setExpandedLevel] = useState<string | null>(curriculumLevels.length > 0 ? curriculumLevels[0].id : null);
   const [expandedClass, setExpandedClass] = useState<string | null>(null);
   const [presentingClass, setPresentingClass] = useState<CurriculumClass | null>(null);
@@ -40,16 +35,16 @@ export function CurriculumView() {
           </div>
           
           <div className="flex bg-gray-100 p-1 rounded-xl self-center sm:self-auto">
-            {allCurriculums.map(c => (
+            {(['Adultos', 'Niños', 'Adolescentes'] as const).map(title => (
               <button
-                key={c.title}
+                key={title}
                 onClick={() => {
-                  setActiveType(c.title);
-                  setExpandedLevel(c.levels.length > 0 ? c.levels[0].id : null);
+                  setActiveType(title);
+                  setExpandedLevel(curriculumLevels.length > 0 ? curriculumLevels[0].id : null);
                 }}
-                className={`px-4 py-2 rounded-lg font-bold text-sm transition-colors ${activeType === c.title ? 'bg-white text-indigo-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}
+                className={`px-4 py-2 rounded-lg font-bold text-sm transition-colors ${activeType === title ? 'bg-white text-indigo-600 shadow-sm' : 'text-gray-500 hover:text-gray-900'}`}
               >
-                {c.title}
+                {title}
               </button>
             ))}
           </div>

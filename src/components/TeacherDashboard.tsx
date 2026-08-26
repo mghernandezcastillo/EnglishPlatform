@@ -4,7 +4,7 @@ import { DbStudent, DbGroup, EvaluationRecord } from '../types';
 import { Users, UserPlus, BookOpen, ChevronLeft, Save, Target, ExternalLink, RefreshCw } from 'lucide-react';
 import { avatars } from '../config';
 import { CurriculumView } from './CurriculumView';
-import { getCurriculumForType } from '../data/curriculumSelector';
+import { useCurriculum } from '../hooks/useCurriculum';
 import { useBrand } from '../hooks/useBrand';
 import { approvedLevelIdsForStudent, levelApprovalMarker, visibleCompletedLessonIds } from '../lib/levelApproval';
 import { evaluationExamType, evaluationPassed, evaluationPercentage, latestEvaluation, ORAL_PASS_PERCENT, VIRTUAL_PASS_PERCENT } from '../lib/evaluationResults';
@@ -35,6 +35,8 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
   const { brand, saveBrand } = useBrand();
   const [editingBrand, setEditingBrand] = useState(brand);
   const [toast, setToast] = useState<string | null>(null);
+  // Curriculum for the currently selected student (only loads when a student is selected)
+  const { curriculumLevels: selectedStudentCurrLevels } = useCurriculum(selectedStudent?.type ?? undefined);
 
   const showToast = (msg: string) => {
     setToast(msg);
@@ -109,7 +111,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
   };
 
   if (selectedStudent) {
-    const currLevels = getCurriculumForType(selectedStudent.type);
+    const currLevels = selectedStudentCurrLevels;
     
     // Find matching curriculum level (approximate match on title)
     // The DbStudent.level is usually strings like "Basic Zero" or "A1"

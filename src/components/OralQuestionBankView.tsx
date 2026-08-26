@@ -1,5 +1,5 @@
 import { Mic2, Printer } from 'lucide-react';
-import { getCurriculumForType } from '../data/curriculumSelector';
+import { useCurriculum } from '../hooks/useCurriculum';
 import { getOralQuestionBank } from '../data/oralQuestionBanks';
 
 interface OralQuestionBankViewProps {
@@ -8,7 +8,8 @@ interface OralQuestionBankViewProps {
 
 export function OralQuestionBankView({ levelId }: OralQuestionBankViewProps) {
   const studentType = new URLSearchParams(window.location.search).get('type') || 'adulto';
-  const level = getCurriculumForType(studentType).find((item) => item.id === levelId);
+  const { curriculumLevels } = useCurriculum(studentType);
+  const level = curriculumLevels.find((item) => item.id === levelId);
   const questions = getOralQuestionBank(levelId, studentType);
 
   if (!level || questions.length === 0) {
