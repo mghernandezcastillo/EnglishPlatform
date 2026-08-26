@@ -16509,46 +16509,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura del Present Perfect y sus adverbios clave.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Present Perfect Structure / Estructura del Present Perfect",
-                description: "Connects past events to our life experience in the present.",
-                content: ["Formula: Subject + have/has + Past Participle", "I / You / We / They + have (I have visited Mexico three times.)", "He / She / It + has (She has climbed a volcano.)", "Contrast: Past Simple uses specific finished time ('I went to Spain in 2022'), whereas Present Perfect focuses on life experience ('I have been to Spain')."],
-                imageUrl: "/images/teens-inter-class-01/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Ever vs Never / Alguna vez vs Nunca",
-                description: "'Ever' is used in questions; 'Never' gives a negative meaning with an affirmative verb.",
-                content: ["Question: 'Have you ever tried scuba diving?' = ¿Alguna vez has probado buceo?", "Affirmative: 'Yes, I have tried it twice.' = Sí, lo he probado dos veces.", "Negative: 'No, I have never tried scuba diving in my life.' = No, nunca he probado buceo en mi vida."],
-                imageUrl: "/images/teens-inter-class-01/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Already, Just & Yet / Ya, apenas y todavía",
-                description: "Describe actions completed earlier than expected or pending completion.",
-                content: ["Already (ya): 'I have already packed my travel backpack.' (Between have and verb)", "Just (acaba de): 'We have just landed at the airport.'", "Yet (todavía/aún): Used in negatives and questions at the end of sentence ('I haven\\'t bought my plane ticket yet.' / 'Have you finished packing yet?')"],
-                imageUrl: "/images/teens-inter-class-01/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Irregular Past Participles / Participios pasados irregulares",
-                description: "Essential 3rd-column verb forms for life experiences.",
-                content: ["be -> been (Have you ever been to Canada?)", "see -> seen (I have seen the northern lights.)", "go -> gone/been (He has gone to Italy / He has been to Italy.)", "eat -> eaten (We have eaten authentic ramen.)", "fly -> flown (She has flown in a hot air balloon.)", "write -> written (They have written a fantasy novel.)"],
-                imageUrl: "/images/teens-inter-class-01/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Teen Life Adventure Speech / Discurso modelo de aventuras",
-                description: "Read this sample personal experience reflection.",
-                content: ["Throughout my life, I have had some truly exciting adventures!", "I have already traveled to three different countries with my family, and I have tried incredible street foods like authentic ramen in Tokyo.", "I have also learned how to play the acoustic guitar. However, I haven't gone skydiving or seen the northern lights yet, but those are at the very top of my bucket list!"],
-                imageUrl: "/images/teens-inter-class-01/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Present Perfect: Life Experiences 🌍✈️ / Present Perfect","description":"Experiences in Life","content":["HAVE / HAS + Past Participle","I have traveled to three different countries.","She has coded her own web application.","We use Present Perfect when the exact time in the past does NOT matter."],"imageUrl":"/images/teens-inter-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Ever vs Never / Alguna vez vs Nunca ❓❌","description":"Experience Questions","content":["Question: 'Have you EVER tried virtual reality gaming?'","Positive: 'Yes, I have played it many times!'","Negative: 'No, I have NEVER experienced VR before.'"],"imageUrl":"/images/teens-inter-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Already, Just & Yet ⏳ / Marcadores de Tiempo","description":"Recent and Pending Actions","content":["JUST = A minute ago ('I have just finished my homework.')","ALREADY = Sooner than expected ('I have already seen that movie.')","YET = Negative/Questions at the end ('I haven't eaten lunch yet.')"],"imageUrl":"/images/teens-inter-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Life Experience Formula 🌟 / Fórmula de Experiencias","description":"Have + Participle + Detail","content":["Formula: I have [Past Participle] [Experience], but I have never [Unexplored Thing] yet.","Example: 'I have visited the national science museum, but I have never seen a solar eclipse yet.'"],"imageUrl":"/images/teens-inter-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Bucket List Check 🎯 / Mini Reto","description":"Share 1 Experience and 1 Goal","content":["Tell the teacher:","'I have already ________, but I have never ________ yet.'"],"imageUrl":"/images/teens-inter-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la conjugación de participios irregulares."
           },
@@ -16889,46 +16854,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el funcionamiento de los phrasal verbs y modismos juveniles.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Anatomy of Phrasal Verbs / Anatomía de los Phrasal Verbs",
-                description: "Verb + Preposition/Adverb = Unique Meaning",
-                content: ["Literal: 'Look at the board' (mirar fijamente)", "Phrasal: 'Look up to someone' = Admirar o respetar a alguien ('I look up to my older sister.')", "Rule: Phrasal verbs conjugate just like normal verbs (hang -> hung out, catch -> caught up)."],
-                imageUrl: "/images/teens-inter-class-02/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Social & Lifestyle Phrasals / Verbos para la vida social",
-                description: "Phrasal verbs for friendships and free time.",
-                content: ["Hang out = Pasar el rato / salir ('Let\\'s hang out at the mall this Friday.')", "Catch up = Ponerse al día ('We chatted for hours to catch up.')", "Chill out = Relajarse ('I just want to listen to music and chill out.')", "Show up = Aparecer / llegar ('Everyone showed up to the party on time.')"],
-                imageUrl: "/images/teens-inter-class-02/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Action & Problem Solving / Verbos de acción y resolución",
-                description: "Used for school, projects, and daily challenges.",
-                content: ["Figure out = Descifrar / resolver ('I need to figure out this math equation.')", "Give up = Rendirse ('Never give up on your dreams!')", "Look into = Investigar ('The teacher will look into the scheduling issue.')", "Turn down = Rechazar ('She turned down the offer because she was busy.')"],
-                imageUrl: "/images/teens-inter-class-02/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Teen Idioms & Casual Expressions / Modismos y expresiones juveniles",
-                description: "Modern conversation markers used in everyday English.",
-                content: ["'Vibe / Good vibes' = Buena energía / atmósfera positiva", "'No cap' = En serio / de verdad ('That movie was amazing, no cap!')", "'Lowkey' = En secreto / discretamente ('I\\'m lowkey excited about the trip.')", "'Get along with' = Llevarse bien con alguien ('I get along great with my lab partner.')"],
-                imageUrl: "/images/teens-inter-class-02/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Teen Social Speech / Discurso modelo de planes juveniles",
-                description: "Read this sample reflection full of natural phrasal verbs.",
-                content: ["On a perfect Saturday, I love to hang out with my closest friends at the local skatepark.", "We usually catch up on everything that happened during the school week while grabbing smoothies.", "Later in the evening, we chill out at my house and try to figure out new multiplayer game strategies together!"],
-                imageUrl: "/images/teens-inter-class-02/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Teen Phrasal Verbs in Daily Life 🗣️⚡ / Phrasal Verbs","description":"Verb + Preposition Anatomy","content":["HANG OUT = pasar el rato con amigos ('Let's hang out after class.')","CATCH UP = ponerse al día ('I need to catch up with you on the news.')","CHILL OUT = relajarse ('I'm just chilling out at home today.')"],"imageUrl":"/images/teens-inter-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Action & Problem Solving Phrasals 🔧 / Resolver Situaciones","description":"Everyday Solutions","content":["FIGURE OUT = descubrir / resolver ('I finally figured out the code bug.')","GIVE UP = rendirse ('Never give up on your goals.')","LOOK FORWARD TO = esperar con emoción ('I look forward to the weekend!')"],"imageUrl":"/images/teens-inter-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Phrasal Verbs in Social Context 📱 / En Conversaciones Reales","description":"Natural Flow","content":["'Hey! Let's HANG OUT at the café to CATCH UP on the tournament.'","'Don't worry if it's tough—we will FIGURE IT OUT together.'","Phrasal verbs make your English sound 100% native and authentic."],"imageUrl":"/images/teens-inter-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Daily Phrasal Formula 💬 / Fórmula de Phrasals","description":"Subject + Phrasal + Object","content":["Formula: I usually [Phrasal Verb 1] on weekends and I always [Phrasal Verb 2] when [Context].","Example: 'I usually hang out with friends on Saturdays and I look forward to relaxing.'"],"imageUrl":"/images/teens-inter-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Phrasal Master 🎯 / Mini Reto","description":"Use 2 Phrasal Verbs","content":["Use 'hang out' or 'figure out' in a sentence to the teacher:","'When I have free time, I love to ________ with ________.'"],"imageUrl":"/images/teens-inter-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de verbos compuestos."
           },
@@ -17269,46 +17199,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los grados de certeza con modales de deducción.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Certainty Scale / La escala de certeza",
-                description: "Choose your modal verb based on how much evidence you have.",
-                content: ["99% Sure (Certeza positiva): MUST ('He is shivering; he must be freezing!')", "50% Possible (Posibilidad/Duda): MIGHT / COULD / MAY ('The clouds are dark; it might rain.')", "0% Impossible (Certeza negativa): CAN'T ('The lights are off and doors locked; they can't be home!')", "Rule: Modal + Base Verb (never use 'to' after must/might/can't)."],
-                imageUrl: "/images/teens-inter-class-03/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "High Certainty with 'Must' / Certeza casi total con Must",
-                description: "When the evidence points to one logical conclusion.",
-                content: ["'Lucas has practiced the piano for 6 years; he must be very talented!' = ¡Lucas debe ser muy talentoso!", "'She is yawning during class; she must be exhausted from studying.' = Debe estar exhausta de estudiar.", "'The restaurant has a line out the door; the food must be delicious!'"],
-                imageUrl: "/images/teens-inter-class-03/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Impossibility with 'Can't' / Imposibilidad con Can't",
-                description: "When the evidence proves something is impossible.",
-                content: ["'That can't be Professor Miller; he is giving a lecture in London today!' = ¡Ese no puede ser el profesor Miller!", "'She can't be 14 years old; she is driving a delivery truck!' = No puede tener 14 años.", "Caution: In Spanish we say 'no debe ser', but in English you MUST use 'can't be'!"],
-                imageUrl: "/images/teens-inter-class-03/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Possibility with 'Might', 'Could' & 'May' / Posibilidad y duda",
-                description: "When something is plausible but you are not 100% sure.",
-                content: ["'Where is Sophia?' -> 'I\\'m not sure; she might be in the art studio or she could be at lunch.'", "'Take an umbrella; it may rain later this afternoon.'", "'The mystery box might contain a new video game console.'"],
-                imageUrl: "/images/teens-inter-class-03/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Mystery Solver Speech / Discurso modelo de deducción",
-                description: "Read this sample detective analysis.",
-                content: ["Looking at the clues in the science laboratory, the experiment must have taken place early this morning because the beaker is still warm.", "The researcher can't be Mr. Clark because he is attending a conference in Chicago.", "Therefore, it might be Dr. Ramirez or her research assistant finishing up the final project data!"],
-                imageUrl: "/images/teens-inter-class-03/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Modal Deductions: Must, Might, Can't 🕵️🔍 / Deducciones","description":"The Certainty Scale","content":["MUST (95% sure it's true): 'He has a laptop and headphones; he must be a coder.'","MIGHT / COULD (50% possibility): 'She might be at basketball practice right now.'","CAN'T (99% sure it's impossible): 'That can't be Alex—he is in New York today.'"],"imageUrl":"/images/teens-inter-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Analyzing Clues & Evidence 🧩 / Analizar Pistas","description":"Deduction Logic","content":["Clue 1: The room lights are off and the door is locked.","Deduction: 'They MUST BE away on vacation.'","Clue 2: A phone is ringing in the backpack.","Deduction: 'That MIGHT BE Sarah's phone.'"],"imageUrl":"/images/teens-inter-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Deduction in Mystery & Daily Scenarios 🎭 / Escenarios de Misterio","description":"Solving Riddles","content":["'Look at those strange footsteps outside the tent!'","'It CAN'T BE a bear; the tracks are too small.'","'It MUST BE a friendly fox looking for food.'"],"imageUrl":"/images/teens-inter-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Logical Deduction Formula 🔍 / Fórmula de Deducción","description":"Evidence -> Deduction","content":["Formula: Based on [Evidence], it must/might/can't be [Deduction] because [Reason].","Example: 'Based on his smile and medal, he MUST BE the tournament champion.'"],"imageUrl":"/images/teens-inter-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Detective Sleuth 🎯 / Mini Reto","description":"Make a Deduction","content":["You see a friend carrying a huge suitcase and a passport:","'She ________ be going on a trip because ________.' (Use must / can't)"],"imageUrl":"/images/teens-inter-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y practicar la escala de certeza con modales."
           },
@@ -17649,46 +17544,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura y usos del Segundo Condicional.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Second Conditional Formula / Fórmula del Segundo Condicional",
-                description: "Used for unreal present or improbable future situations.",
-                content: ["Formula: If + Subject + Past Simple, Subject + would + Base Verb", "Example: 'If I had more free time, I would learn how to pilot an airplane.' = Si tuviera más tiempo libre, aprendería a pilotar un avión.", "Clause Order: 'I would learn to pilot an airplane if I had more free time.' (No comma when 'if' is in the middle!)"],
-                imageUrl: "/images/teens-inter-class-04/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "The 'Were' Rule for All Persons / La regla de 'Were'",
-                description: "In formal and standard English, 'were' is used for all subjects in Second Conditional.",
-                content: ["'If I were invisible, I would explore secret ancient libraries.' = Si yo fuera invisible, exploraría bibliotecas secretas.", "'If she were the president, she would make college tuition free.' = Si ella fuera presidenta...", "Advice Formula: 'If I were you, I would...' (Si yo fuera tú, yo...)"],
-                imageUrl: "/images/teens-inter-class-04/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Would vs Could vs Might / Variaciones modales en el resultado",
-                description: "Modulate your certainty in the hypothetical consequence.",
-                content: ["Would (Certeza hipotética): 'If we lived on Mars, we would wear special suits.'", "Could (Habilidad/Capacidad): 'If I spoke Japanese, I could translate manga.'", "Might (Posibilidad dudosa): 'If he practiced more, he might make the varsity team.'"],
-                imageUrl: "/images/teens-inter-class-04/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Hypothetical Questions / Preguntas hipotéticas",
-                description: "How to spark engaging conversations with friends.",
-                content: ["'What would you do if you found a lost treasure map?' = ¿Qué harías si encontraras un mapa del tesoro?", "'Where would you live if you could choose any city in the galaxy?' = ¿Dónde vivirías si pudieras elegir cualquier ciudad...?", "'How would you feel if you met your favorite gaming streamer?'"],
-                imageUrl: "/images/teens-inter-class-04/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Visionary Speech / Discurso modelo visionario",
-                description: "Read this sample leadership manifesto.",
-                content: ["If I were elected president of my school, I would immediately transform the cafeteria into a solar-powered study cafe with free healthy snacks.", "I would also create a student innovation fund so classmates could build robotics and art projects.", "Finally, if we had more outdoor classes, students would feel much less stressed and more inspired every day!"],
-                imageUrl: "/images/teens-inter-class-04/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Second Conditional: Hypothetical Worlds 🌎✨ / Segundo Condicional","description":"If I Ruled the World","content":["Second Conditional = Imaginary / Unreal situations now or in the future.","Structure: IF + Past Simple, WOULD / COULD + Base Verb","Example: 'If I had one million dollars, I would build an animal shelter.'"],"imageUrl":"/images/teens-inter-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"The 'If I Were You' Advice Formula 💬👑 / Si Yo Fuera...","description":"Subjunctive Were","content":["In formal English, use WERE for all subjects: 'If I WERE rich...' / 'If he WERE the president...'","Advice: 'If I were you, I would take that opportunity immediately.'","Modal shifts: would (seguro), could (capacidad), might (posibilidad)."],"imageUrl":"/images/teens-basic-4-class-08/slide-15.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"Hypothetical Inventions & Superpowers 🦸‍♂️ / Superpoderes","description":"Creative Brainstorming","content":["'If I could teleport anywhere, I would visit Tokyo every afternoon.'","'If I invented a new gadget, it would automatically translate all languages.'","Imagining possibilities trains creative leadership."],"imageUrl":"/images/teens-inter-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Visionary Second Conditional Formula 🔮 / Fórmula Visionaria","description":"Hypothetical Scenario","content":["Formula: If I had/were [Imaginary Condition], I would [Visionary Action] to [Impact].","Example: 'If I were the mayor of my city, I would create free public skateparks and solar bike lanes.'"],"imageUrl":"/images/teens-inter-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Superpower Pitch 🎯 / Mini Reto","description":"Share Your Vision","content":["If you could have any superpower for 24 hours:","'If I had the power of ________, I would ________.'"],"imageUrl":"/images/teens-inter-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y practicar la pronunciación de would y could en condicionales."
           },
@@ -18029,46 +17889,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender frases para acordar, conceder y refutar argumentos.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Expressing Strong Agreement / Expresar acuerdo total",
-                description: "Phrases to show 100% alignment with a partner's viewpoint.",
-                content: ["'I couldn\\'t agree more!' = ¡No podría estar más de acuerdo!", "'That\\'s spot on / You hit the nail on the head.' = Diste en el clavo.", "'I completely share your perspective on this issue.' = Comparto completamente tu perspectiva.", "'That is exactly how I see the situation.'"],
-                imageUrl: "/images/teens-inter-class-05/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Diplomatic Disagreement / Desacuerdo diplomático",
-                description: "Avoid saying 'You are wrong!'; use respectful, professional phrasing instead.",
-                content: ["'I see where you\\'re coming from, but on the other hand...' = Entiendo tu punto, pero por otra parte...", "'I\\'m afraid I have a slightly different perspective.' = Me temo que tengo una perspectiva diferente.", "'I understand your point, but we also have to consider...' = Entiendo tu punto, pero también debemos considerar..."],
-                imageUrl: "/images/teens-inter-class-05/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Partial Agreement & Concession / Acuerdo parcial y concesión",
-                description: "Acknowledge the valid part of an argument before offering your rebuttal.",
-                content: ["'To a certain extent that\\'s true, however...' = Hasta cierto punto es verdad, sin embargo...", "'While I agree that technology saves time, it can also create dependencies.'", "'Up to a point you are right, but in this specific case...'"],
-                imageUrl: "/images/teens-inter-class-05/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Structuring a Winning Rebuttal / Estructurar una refutación",
-                description: "The 3-step formula for high-level debates.",
-                content: ["Step 1 (Validate): 'You raise an interesting point about student freedom.'", "Step 2 (Pivot): 'However, when we look at academic statistics...'", "Step 3 (Deliver Evidence): '...schools with clear phone guidelines report 30% higher test scores.'"],
-                imageUrl: "/images/teens-inter-class-05/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Parliamentary Debate Speech / Discurso modelo de debate",
-                description: "Read this sample debate intervention on smartphone usage.",
-                content: ["While I agree that smartphones can occasionally cause distractions during lectures, I firmly believe that banning them completely is a mistake.", "When used purposefully, smartphones serve as powerful research tools and digital calculators.", "Rather than prohibiting technology, schools ought to teach students digital responsibility and mindful screen habits!"],
-                imageUrl: "/images/teens-inter-class-05/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Debate & Argumentation Architecture 🏛️🎙️ / Estructura de Debates","description":"Formal Debate Strategies","content":["Claim -> Evidence -> Impact (The CEI Framework)","Strong opening: 'The central thesis of our argument rests on three points.'","Rebuttal: 'While our opponent argued X, empirical evidence proves Y.'"],"imageUrl":"/images/teens-inter-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Diplomatic Disagreement & Concession 🤝⚡ / Concesiones Diplomáticas","description":"Nuanced Debate Phrases","content":["'I concede that point, however the broader impact demonstrates...'","'With all due respect, correlation does not imply causation in this case.'","'We must differentiate between short-term cost and long-term benefit.'"],"imageUrl":"/images/teens-inter-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Structuring a Winning Rebuttal 🎯 / Refutación Estratégica","description":"Counter-Arguments","content":["Step 1: Summarize opponent's point accurately ('They claim that...').","Step 2: Point out the logical flaw or missing evidence ('However, this overlooks...').","Step 3: Reinforce your team's alternative solution ('Therefore, our policy is superior.')"],"imageUrl":"/images/teens-inter-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Parliamentary Debate Formula ⚖️ / Fórmula de Debate","description":"Thesis + Rebuttal + Evidence","content":["Formula: 'While the opposition argues that [Opponent View], the evidence demonstrates that [Your Position] because [Reason].'","Example: 'While critics claim AI limits creativity, evidence demonstrates it expands artistic potential.'"],"imageUrl":"/images/teens-inter-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Rebuttal Duel 🎯 / Mini Reto","description":"Deliver a 1-Sentence Rebuttal","content":["Respond to: 'Video games are a waste of time.'","'While some believe that, games actually develop ________ because ________.'"],"imageUrl":"/images/teens-inter-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la modulación de tono en desacuerdos diplomáticos."
           },
@@ -18409,46 +18234,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura y frases claves de un programa de podcast.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Opening Hooks & Catchphrases / Ganchos de apertura y lemas",
-                description: "How to capture listener attention in the first 10 seconds.",
-                content: ["'Welcome back to another episode of [Show Name], where we explore...'", "'What\\'s up listeners! Today we are tackling a burning question: can teens change the world?'", "'If you\\'ve ever wondered how pro creators edit videos overnight, stay tuned!'"],
-                imageUrl: "/images/teens-inter-class-06/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Active Interviewing & Follow-Ups / Técnicas de entrevista",
-                description: "Avoid 'Yes/No' questions; ask deep, narrative questions.",
-                content: ["'What inspired you to start this robotics project?' = ¿Qué te inspiró a comenzar este proyecto?", "'Could you walk us through the moment you realized it worked?' = ¿Podrías contarnos el momento en que funcionó?", "'How did you handle the biggest obstacle along the way?' = ¿Cómo manejaste el mayor obstáculo?"],
-                imageUrl: "/images/teens-inter-class-06/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Seamless Audio Transitions / Transiciones fluidas",
-                description: "Guide your listeners smoothly between segments.",
-                content: ["'Moving on to our next hot topic...' = Pasando a nuestro siguiente tema candente...", "'Let\\'s switch gears and talk about your latest music track.' = Cambiemos de tema y hablemos de...", "'Before we wrap up today\\'s session, I have one quick question...' = Antes de cerrar la sesión..."],
-                imageUrl: "/images/teens-inter-class-06/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Outros & Call to Action / Cierres y llamadas a la acción",
-                description: "End your show professionally and build an audience.",
-                content: ["'That wraps up today\\'s episode of Future Minds!' = ¡Eso concluye el episodio de hoy!", "'Make sure to hit subscribe, leave a 5-star review, and share with a friend!'", "'Until next time, keep creating, stay curious, and see you next Friday!'"],
-                imageUrl: "/images/teens-inter-class-06/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Tech Podcast Monologue / Monólogo modelo de podcast",
-                description: "Read this sample 30-second episode opening.",
-                content: ["What's up everyone, and welcome back to Future Minds, the number one podcast for young innovators!", "I'm your host, and today we have an incredible episode lined up.", "We are diving deep into the future of artificial intelligence in space exploration with our guest, a 16-year-old coding champion. Grab your headphones, because you don't want to miss a single second!"],
-                imageUrl: "/images/teens-inter-class-06/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Podcasting & Media Hosting Mastery 🎙️🎧 / Locución y Podcasts","description":"Media Communication","content":["Catchy podcast name, cold open hook, sound effects (foley), sponsor segment","'Welcome back to Teen Tech Vanguard, the podcast exploring future tech!'","A great podcast host connects warmly and asks insightful questions."],"imageUrl":"/images/teens-inter-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
+              {"id":"slide-5","title":"Active Interviewing & Dynamic Follow-ups 🎤 / Técnicas de Entrevista","description":"Podcast Interview Skills","content":["'That's fascinating! What made you realize that in the first place?'","'Can you break down how that technology works for our listeners?'","'If you had to start over today, what would you do differently?'"],"imageUrl":"/images/teens-inter-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
+              {"id":"slide-6","title":"Transitions & Call to Action (Outro) 📻 / Cierres y Llamadas a la Acción","description":"Smooth Show Pacing","content":["Transition: 'Moving on to our main segment of the day...'","Outro: 'That wraps up today's episode! If you enjoyed this, hit subscribe and leave a review.'","'Catch you all next Tuesday with our special guest!'"],"imageUrl":"/images/teens-inter-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
+              {"id":"slide-7","title":"The Podcast Cold Open Formula 🎙️ / Fórmula de Apertura","description":"Hook + Guest Intro + Episode Theme","content":["Formula: 'Hey everyone, welcome to [Podcast Name]! Today we're diving into [Topic] with special guest [Guest].'","Example: 'Welcome to ByteTalk! Today we're exploring AI game development with indie creator Maya Lin.'"],"imageUrl":"/images/teens-inter-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
+              {"id":"slide-8","title":"Quick Check: Podcast Host Intro 🎯 / Mini Reto","description":"Deliver a 15-Second Intro","content":["Deliver your show's opening intro to the teacher:","'Welcome back to ________! Today we are discussing ________ with ________.'"],"imageUrl":"/images/teens-inter-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
             ],
             action: "Tomar notas y practicar la entonación y proyección de locución."
           },
@@ -18789,46 +18579,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el contraste entre Present Perfect Simple y Continuous.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Have Done vs Have Been Doing / Hecho vs Haciendo",
-                description: "Focus on the finished milestone vs the continuous journey.",
-                content: ["Present Perfect Simple: Focus on result / quantity ('I have painted 3 portraits this week.')", "Present Perfect Continuous: Focus on duration / activity ('I have been painting since 9:00 AM.')", "Formula: Subject + have/has been + Verb-ing ('She has been coding for three hours.')"],
-                imageUrl: "/images/teens-inter-class-07/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "For vs Since Mastery / Dominio de For y Since",
-                description: "Expressing time duration clearly.",
-                content: ["FOR + Period of time: for 3 days, for 5 years, for two hours, for ages ('I have been studying for 45 minutes.')", "SINCE + Specific point in time: since Monday, since 2021, since 8:00 AM, since childhood ('She has been dancing since she was 7.')"],
-                imageUrl: "/images/teens-inter-class-07/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Visible Present Evidence / Evidencia presente visible",
-                description: "Explaining why someone looks tired, wet, or excited right now.",
-                content: ["'Why are your hands covered in paint?' -> 'Because I have been working on the art project!'", "'Why is Liam breathing heavily?' -> 'He has been sprinting around the track.'", "'The ground is wet because it has been raining all morning.'"],
-                imageUrl: "/images/teens-inter-class-07/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "The Stative Verbs Exception / La excepción de verbos de estado",
-                description: "Verbs of thinking, emotion, and possession never use -ing.",
-                content: ["Stative Verbs: know, like, love, believe, have (possession), understand.", "INCORRECT: 'I have been knowing him for 3 years.'", "CORRECT: 'I have known him for 3 years.'", "CORRECT: 'She has had this guitar since January.'"],
-                imageUrl: "/images/teens-inter-class-07/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Passion & Journey Speech / Discurso modelo de trayectoria",
-                description: "Read this sample reflection blending both tenses.",
-                content: ["I have been practicing competitive swimming for nearly four years now, and I train four days a week.", "Since last summer, I have participated in five regional championships and have won two silver medals.", "It takes intense dedication, but seeing my speed improve every season makes all the hard work completely worth it!"],
-                imageUrl: "/images/teens-inter-class-07/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Present Perfect Simple vs Continuous ⏱️ / Simple vs Continuo","description":"Result vs Ongoing Duration","content":["Present Perfect Simple (HAVE DONE): Focus on completed result ('I have built two websites.')","Present Perfect Continuous (HAVE BEEN DOING): Focus on duration/process ('I have been learning Python for 6 months.')","Notice the active ongoing effort!"],"imageUrl":"/images/teens-inter-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"For vs Since Mastery ⏳ / Uso de For y Since","description":"Duration Markers","content":["FOR + Period of time: for three hours, for two years, for a long time","SINCE + Starting point: since 2021, since 8:00 AM, since last summer","Example: 'I have been practicing guitar SINCE January / FOR six months.'"],"imageUrl":"/images/teens-inter-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Visible Present Evidence 👀 / Evidencia Presente","description":"Continuous Actions","content":["'Why are your hands dirty?' -> 'I have been fixing my bicycle chain.'","'Why is she exhausted?' -> 'She has been running on the track all morning.'","The activity was happening recently and has visible proof."],"imageUrl":"/images/teens-inter-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Passion & Journey Formula 🚀 / Fórmula de Trayectoria","description":"Duration + Accomplishment","content":["Formula: I have been [Verb-ING] for/since [Duration], and so far I have [Accomplishment].","Example: 'I have been studying digital animation for two years, and so far I have created three short films.'"],"imageUrl":"/images/teens-inter-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Passion Timeline 🎯 / Mini Reto","description":"State Your Continuous Hobby","content":["Tell the teacher:","'I have been (practicing/studying) ________ since ________.'"],"imageUrl":"/images/teens-inter-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de have been + verb-ing."
           },
@@ -19169,46 +18924,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los significados y aplicaciones narrativas de phrasal verbs avanzados.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Discovery & Plot Starters / Descubrimientos e inicios de trama",
-                description: "Phrasal verbs that trigger the inciting incident of a story.",
-                content: ["Come across = Encontrarse por casualidad ('The detectives came across a glowing cipher in the library.')", "Turn up = Aparecer de repente ('The missing evidence finally turned up inside an antique clock.')", "Bump into = Toparse con alguien ('She bumped into a mysterious stranger at the train station.')"],
-                imageUrl: "/images/teens-inter-class-08/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Overcoming Climax Challenges / Retos y superación del clímax",
-                description: "Phrasal verbs for high-stakes tension and triumph.",
-                content: ["Pull off = Lograr realizar algo muy difícil con éxito ('Against all odds, the young crew pulled off the rocket launch!')", "Run out of = Quedarse sin recursos ('They ran out of oxygen with only 3 minutes left.')", "Get through = Superar / sobrevivir una dificultad ('Together, they got through the darkest storm.')"],
-                imageUrl: "/images/teens-inter-class-08/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Standing Out & Identity / Destacar y forjar identidad",
-                description: "Phrasal verbs describing protagonist character development.",
-                content: ["Stand out = Destacar / sobresalir ('Her innovative film editing made the project stand out at Cannes.')", "Look up to = Admirar / tener como modelo a seguir ('He looks up to his grandfather who was a master architect.')", "Fit in = Encajar con el grupo ('At first she struggled to fit in, but soon found true friends.')"],
-                imageUrl: "/images/teens-inter-class-08/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Plot Twists & Resolution / Giros de tuerca y resoluciones",
-                description: "Phrasal verbs for shocking revelations and happy endings.",
-                content: ["Turn out = Resultar ser ('It turned out that the haunted mansion was just a high-tech movie set!')", "End up = Terminar / acabar en cierta situación ('They ended up founding their own tech studio.')", "Look back on = Mirar atrás / recordar con nostalgia ('Years later, they looked back on that summer with pride.')"],
-                imageUrl: "/images/teens-inter-class-08/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Movie Pitch Monologue / Monólogo modelo de sinopsis",
-                description: "Read this sample sci-fi film pitch.",
-                content: ["Our story begins when two high school detectives accidentally come across an encrypted USB drive in the science hall.", "They quickly run out of time as rival agents close in, but using clever hacking tactics, they manage to pull off an escape.", "In the end, it turns out that the computer teacher was the mastermind all along!"],
-                imageUrl: "/images/teens-inter-class-08/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Advanced Phrasal Verbs in Cinematic Storytelling 🎬 / Phrasals en Narrativas","description":"Story Dynamics","content":["COME ACROSS = to find by chance ('The explorers came across an ancient map.')","TURN OUT = to end in a surprising way ('It turned out to be a secret test.')","STAND OUT = to be extraordinary ('Her performance stood out from all others.')"],"imageUrl":"/images/teens-inter-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"Overcoming Climax Challenges ⚡🌪️ / Superar el Clímax","description":"Action Phrasals","content":["PULL THROUGH = to survive/succeed against odds ('With teamwork, they pulled through.')","BREAK DOWN = to fail or analyze in detail ('The system broke down under pressure.')","STEP UP = to take leadership ('When the captain was injured, Leo stepped up.')"],"imageUrl":"/images/teens-inter-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"Plot Twists & Resolution 🎭 / Giros de Trama","description":"Cinematic Climax","content":["'Just when the protagonist was about to GIVE UP, the mentor STEPPED IN.'","'Everything TURNED OUT better than expected.'","Rich phrasal verbs turn simple scripts into thrilling movie pitches."],"imageUrl":"/images/teens-inter-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Movie Pitch Formula 🍿 / Fórmula de Sinopsis","description":"Discovery + Climax + Outcome","content":["Formula: 'When [Protagonist] CAME ACROSS [Mystery], they had to STEP UP to [Challenge] before it TURNED OUT to be [Twist].'","Example: 'When teen hackers came across an encrypted signal, they stepped up to save their city.'"],"imageUrl":"/images/teens-inter-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Movie Synopsis Pitch 🎯 / Mini Reto","description":"Pitch a 1-Sentence Movie Plot","content":["Create a movie plot using 'came across' or 'turned out':","'In this sci-fi movie, the heroes ________ and it turned out that ________.'"],"imageUrl":"/images/teens-inter-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y practicar la pronunciación de verbos compuestos en pasado narrativo."
           },
@@ -19549,46 +19269,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura de modales perfectos para deducciones pasadas.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Past Modal Formula / Fórmula de deducción en pasado",
-                description: "Modal + have + Past Participle (V3)",
-                content: ["Formula: Subject + modal + have + Past Participle", "Example (Certainty): 'The ground is wet; it must have rained last night.' = El suelo está mojado; debe de haber llovido anoche.", "Example (Impossibility): 'He was in hospital; he can't have committed the crime.' = No puede haber cometido el crimen."],
-                imageUrl: "/images/teens-inter-class-09/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Certainty with 'Must Have Done' / Certeza en pasado",
-                description: "Used when the physical evidence makes one explanation almost 100% certain.",
-                content: ["'The window is shattered and muddy shoe prints are inside; the burglar must have entered here.'", "'She got 100% on the quantum physics exam; she must have studied for weeks!'", "'The pizza box is empty; my brother must have eaten the remaining slices!'"],
-                imageUrl: "/images/teens-inter-class-09/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Impossibility with 'Can't Have Done' / Imposibilidad en pasado",
-                description: "Used when evidence proves that an event was physically impossible.",
-                content: ["'Lucas can't have taken your backpack; he was absent from school all day yesterday!'", "'The ancient builders can't have used modern steel cranes 4,000 years ago!'", "Important: In English we never say 'must not have' for impossibility; always use 'can't have' or 'couldn't have'!"],
-                imageUrl: "/images/teens-inter-class-09/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Possibility with 'Might / Could Have Done' / Posibilidad en pasado",
-                description: "Used when several past theories are plausible.",
-                content: ["'Where did I leave my earbuds?' -> 'You might have left them in the science lab or you could have dropped them on the bus.'", "'The ship might have encountered a massive magnetic storm.'", "'The artist could have been inspired by medieval constellations.'"],
-                imageUrl: "/images/teens-inter-class-09/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Forensic Investigation Speech / Discurso modelo forense",
-                description: "Read this sample historical analysis.",
-                content: ["Looking at the ancient city of Pompeii, the citizens can't have expected the eruption because daily bakeries and shops were left in full operation.", "When Mount Vesuvius erupted, thick volcanic ash must have covered the entire metropolis within hours.", "The residents might have attempted to flee toward the sea, but the volcanic surge was simply too fast to escape!"],
-                imageUrl: "/images/teens-inter-class-09/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Past Modals of Deduction: Must have, Could have, Can't have 🕵️⏳ / Deducción en Pasado","description":"Forensic Analysis","content":["MUST HAVE + Participle (95% sure it happened): 'She must have forgotten her phone at school.'","COULD / MIGHT HAVE (50% possibility): 'They might have missed the 5:00 PM train.'","CAN'T HAVE (99% impossible): 'He can't have broken the window—he was with us all afternoon.'"],"imageUrl":"/images/teens-inter-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Forensic Investigation & Clues 🔎🏛️ / Evidencia Pasada","description":"Crime & Puzzle Solving","content":["Clue: The window was open and the prize trophy was missing.","Deduction: 'The intruder MUST HAVE climbed through the garden window.'","Deduction: 'It CAN'T HAVE been an accident because the lock was forced.'"],"imageUrl":"/images/teens-inter-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Regrets vs Deductions: Should have vs Must have ⚠️ / Contraste Clave","description":"Should have = Regret / Must have = Deduction","content":["Deduction: 'He MUST HAVE studied hard because he scored 100%.'","Regret / Advice: 'I SHOULD HAVE started my project earlier.'","Notice the difference: Deduction explains reality; should have expresses regret."],"imageUrl":"/images/teens-inter-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Forensic Investigation Formula ⚖️ / Fórmula Forense","description":"Clue + Past Deduction","content":["Formula: Given that [Past Evidence], the suspect MUST/CAN'T HAVE [Past Action] because [Reason].","Example: 'Given that the floor was dry, it CAN'T HAVE rained last night.'"],"imageUrl":"/images/teens-inter-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Forensic Deduction 🎯 / Mini Reto","description":"Explain a Past Mystery","content":["A friend scored 100% on a super hard test without studying today:","'He ________ have studied all weekend!' (must / can't / might)"],"imageUrl":"/images/teens-inter-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de 'must've', 'could've', y 'can't've'."
           },
@@ -19929,46 +19614,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la matriz completa de condicionales y conectores lógicos.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Conditional Spectrum / El espectro condicional",
-                description: "Comparing Zero, First, and Second Conditionals.",
-                content: ["Zero Conditional (Scientific Fact): If + Present, Present ('If you heat ice, it melts.')", "First Conditional (Real Future): If + Present, will + Verb ('If we practice daily, we will win the finals.')", "Second Conditional (Hypothetical): If + Past, would + Verb ('If I had a billion dollars, I would build an eco-city.')"],
-                imageUrl: "/images/teens-inter-class-10/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "First vs Second: Reality vs Imagination",
-                description: "Understand probability and perspective.",
-                content: ["First Conditional (Probable): 'If I get top grades, my parents will let me travel.' (High chance)", "Second Conditional (Imaginary): 'If I lived on Mars, I would build a biodome.' (Zero/hypothetical chance)", "Remember: In Second Conditional, use 'were' for all subjects: 'If I were you, I would take the offer.'"],
-                imageUrl: "/images/teens-inter-class-10/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Advanced Conjunctions: Unless & As Soon As",
-                description: "Elevate your sentence structure beyond 'if'.",
-                content: ["UNLESS (= If not / A menos que): 'We will lose the match unless we communicate effectively.' (= If we do NOT communicate)", "AS SOON AS (= Tan pronto como): 'I will call you as soon as the test finishes.' (Immediate future sequence)", "Rule: Never use 'will' inside the time/conditional clause: 'As soon as he arrives' (NOT 'as soon as he will arrive')."],
-                imageUrl: "/images/teens-inter-class-10/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Prerequisites & Safeguards: Provided That & In Case",
-                description: "Setting precise criteria.",
-                content: ["PROVIDED THAT (= Siempre y cuando / con la condición de que): 'You can borrow my drone provided that you return it undamaged.'", "IN CASE (= Por si acaso / en caso de que): 'Take an extra battery in case the recording drains power.'", "These connectors make your English sound professional and analytical."],
-                imageUrl: "/images/teens-inter-class-10/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Esports Strategy Speech / Discurso modelo de táctica",
-                description: "Read this sample game plan blending all conditional structures.",
-                content: ["In our tournament game plan, as soon as the match begins, we will secure the central control point.", "We will easily win the opening round unless our opponents execute an early flank.", "However, if they had invisible cloaking gear, we would immediately switch to defensive radar scanning and trap their squad in the canyon!"],
-                imageUrl: "/images/teens-inter-class-10/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"The Complete Conditional Spectrum 🌈⚡ / Síntesis Condicional","description":"Zero, First, Second & Conjunctions","content":["Zero: General facts ('If you heat ice, it melts.')","First: Real future possibilities ('If it's sunny tomorrow, we will skate.')","Second: Imaginary hypotheses ('If I were invisible, I could explore anywhere.')"],"imageUrl":"/images/teens-inter-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Advanced Conjunctions: Provided that, In case, As long as 🛡️ / Conectores Avanzados","description":"Condition Clauses","content":["AS LONG AS / PROVIDED THAT = Only if ('You can join the esports team as long as you maintain your grades.')","IN CASE = Precaution ('Take an umbrella in case it rains.')","UNLESS = Except if ('We will lose unless we coordinate our strategy.')"],"imageUrl":"/images/teens-inter-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Esports & High-Performance Strategy 🎮🏆 / Táctica y Estrategia","description":"Strategic Thinking","content":["'Provided that we control the mid-lane, our team will secure the objective.'","'In case they rush our base, save your defensive abilities.'","Strategic conditions define championship teamwork."],"imageUrl":"/images/teens-inter-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Esports Strategy Formula 🎯 / Fórmula de Estrategia","description":"Condition + Action Plan","content":["Formula: 'Provided that we [Condition], we will [Victory Outcome] as long as [Team Rule].'","Example: 'Provided that we communicate clearly, we will win the tournament as long as we stay calm.'"],"imageUrl":"/images/teens-inter-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Strategic Game Plan 🎯 / Mini Reto","description":"Formulate a Condition with 'As long as'","content":["Tell the teacher:","'We will achieve our goal as long as we ________.'"],"imageUrl":"/images/teens-inter-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de cláusulas temporales y condicionales."
           },
@@ -20309,46 +19959,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el vocabulario de persuasión y argumentación diplomática.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Conceding Valid Counter-Points / Conceder puntos válidos",
-                description: "Diplomats show strength by acknowledging facts before offering alternatives.",
-                content: ["'I take your point regarding the initial costs, however...' = Entiendo su punto, sin embargo...", "'While that may be true in theory, in practice...' = Aunque sea cierto en teoría, en la práctica...", "'Admittedly, there are valid safety concerns, but...' = Es verdad que existen preocupaciones válidas, pero..."],
-                imageUrl: "/images/teens-inter-class-11/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Expressing Degrees of Nuance / Grados de acuerdo y matiz",
-                description: "Moving beyond binary 'Yes' or 'No'.",
-                content: ["'To a certain extent, I agree with your assessment.' = Hasta cierto punto, concuerdo con tu análisis.", "'Up to a point, technology helps students, but over-reliance reduces deep thinking.'", "'It largely depends on how the school implements the policy.'"],
-                imageUrl: "/images/teens-inter-class-11/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Polite Disagreement & Reframing / Desacuerdo cortés y reencuadre",
-                description: "Challenging assertions without being aggressive.",
-                content: ["'With all due respect, I see things from a different angle.' = Con el debido respeto, lo veo desde otro ángulo.", "'I wouldn't go so far as to say that...' = Yo no llegaría tan lejos como para afirmar que...", "'The fundamental issue at stake is not budget, but student wellbeing.'"],
-                imageUrl: "/images/teens-inter-class-11/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Finding Common Ground & Compromise / Encontrar puntos de encuentro",
-                description: "Synthesizing opposing views into actionable resolutions.",
-                content: ["'Perhaps a middle ground could be found where we...' = Quizás podríamos encontrar un término medio donde...", "'Both sides share the goal of improving academic quality.'", "'A balanced solution would involve piloting the program for one semester.'"],
-                imageUrl: "/images/teens-inter-class-11/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Diplomatic Debate Speech / Discurso modelo de debate",
-                description: "Read this sample Model UN speech.",
-                content: ["While I take my opponent's point regarding the high initial cost of solar panels, we must recognize that sustainable energy saves substantial funds over time.", "To a certain extent, budget concerns are completely valid.", "However, by phasing in solar installations gradually, we can modernize our campus infrastructure without burdening student tuition!"],
-                imageUrl: "/images/teens-inter-class-11/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Diplomatic Mediation & Nuance 🕊️🌐 / Diplomacia y Matices","description":"High-Level Debate","content":["Beyond black-and-white thinking: finding common ground.","Nuanced openers: 'To a certain extent, that holds true, yet...'","Mediation: 'Could we synthesize both approaches into a unified policy?'"],"imageUrl":"/images/teens-inter-class-11/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Conceding Valid Counter-Points Politely 🤝 / Concesiones","description":"Diplomatic Tone","content":["'I recognize the financial concern raised by the opposition.'","'While I acknowledge the validity of that point, the ethical priority outweighs it.'","Conceding points shows intellectual maturity and wins trust."],"imageUrl":"/images/teens-inter-class-11/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Reframing the Debate for Compromise 🔄 / Reencuadrar","description":"Consensus Building","content":["'Instead of viewing this as tech vs nature, let's explore green tech solutions.'","'The core issue is not prohibition, but responsible digital education.'","Great leaders reframe conflicts into collaborative opportunities."],"imageUrl":"/images/teens-inter-class-11/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Diplomatic Synthesis Formula 📜 / Fórmula Diplomática","description":"Concession + Synthesis","content":["Formula: 'While I acknowledge [Valid Point], we can achieve [Shared Goal] by [Compromise Solution].'","Example: 'While I acknowledge the budget limits, we can achieve our goals by partnering with local tech hubs.'"],"imageUrl":"/images/teens-inter-class-11/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Diplomatic Reframing 🎯 / Mini Reto","description":"Reframe an Argument","content":["Reframe: 'Social media is purely harmful for youth.'","'While screen addiction is real, social media also enables ________ because ________.'"],"imageUrl":"/images/teens-inter-class-11/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la entonación persuasiva y diplomática."
           },
@@ -20689,46 +20304,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el método STAR y la síntesis gramatical para entrevistas y transmisiones.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The STAR Interview Framework / El marco STAR para entrevistas",
-                description: "The gold standard structure for answering behavioral interview questions.",
-                content: ["S - SITUATION: Set the context ('During my junior year robotics project...')", "T - TASK: Explain the core challenge ('We needed to calibrate sensors before the regional finals.')", "A - ACTION: Detail the proactive steps you took ('I researched new algorithms and pulled off a firmware patch.')", "R - RESULT: Share the measurable outcome ('We increased speed by 40% and won second place!')"],
-                imageUrl: "/images/teens-inter-class-12/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Synthesizing Duration & Concrete Milestones",
-                description: "Blending Present Perfect Simple & Continuous.",
-                content: ["'I have been developing software since I was twelve, and over the past two years, I have published three mobile applications.'", "'For the last six months, our club has been organizing eco-cleanups, and we have collected over 400 kilograms of waste.'", "This highlights both ongoing dedication and proven results."],
-                imageUrl: "/images/teens-inter-class-12/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Persuasive Hypotheticals & Future Vision",
-                description: "Using Second Conditionals to articulate ambition.",
-                content: ["'If I were granted this fellowship, I would spearhead a global clean water sensor initiative.'", "'Unless youth leaders receive mentorship, innovation remains local. Provided that we secure funding, we will scale across five countries.'", "Notice how conditionals create a forward-looking, visionary tone."],
-                imageUrl: "/images/teens-inter-class-12/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Handling Pressure & Nuanced Questions",
-                description: "Diplomatic techniques under the spotlight.",
-                content: ["'That is a profound question. While I take your point regarding the project's initial failure, that experience taught us resilience.'", "'To a certain extent, resource limitations were challenging, but it turned out to be our greatest catalyst for creativity.'", "Maintain composed body language, clear eye contact, and measured pacing."],
-                imageUrl: "/images/teens-inter-class-12/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Scholarship Pitch Monologue / Monólogo modelo de beca",
-                description: "Read this sample capstone speech.",
-                content: ["Good afternoon, esteemed admissions committee. For the past two years, I have been developing a low-cost water purification sensor for rural communities.", "When our initial prototypes ran out of battery power, our engineering team pulled off a solar-assisted redesign.", "If I were selected for this scholarship, I would collaborate with university researchers to scale our sensors globally, empowering thousands of families with clean water!"],
-                imageUrl: "/images/teens-inter-class-12/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"The STAR Framework for Scholarship Interviews 🌟🎓 / El Marco STAR","description":"Interview Architecture","content":["Situation: Set the context ('During our school hackathon...')","Task: Explain your goal ('We needed to design a sustainable energy app.')","Action: Detail what YOU did ('I led the coding and UI prototyping.')","Result: Share measurable success ('We won 1st place and reduced campus waste.')"],"imageUrl":"/images/teens-inter-class-12/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Synthesizing Duration & Key Milestones 📈 / Hitos y Trayectoria","description":"Present Perfect Synthesis","content":["'I have been developing educational tools for over two years.'","'In that time, our team has impacted over 500 local students.'","Connect consistency (continuous) with concrete achievements (simple)."],"imageUrl":"/images/teens-inter-class-12/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Handling Tough Panel Cross-Examination 🎙️ / Preguntas de Presión","description":"Confidence Under Pressure","content":["Panel Question: 'What is your greatest weakness in team leadership?'","Answer: 'In the past, I tried to handle everything myself. However, I have learned to delegate tasks effectively.'","Transform weaknesses into evidence of self-awareness and growth."],"imageUrl":"/images/teens-inter-class-12/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Shark Capstone Pitch Formula 🏆 / Fórmula de Beca","description":"STAR + Future Vision","content":["1. Introduce your background and core passion (Present Perfect).","2. Deliver a concise STAR story of an obstacle you overcame.","3. Conclude with how this international scholarship will fuel your global impact."],"imageUrl":"/images/teens-inter-class-12/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Grand Shark Pitch 🎯 / Gran Reto","description":"Deliver Your 30-Second Scholarship Pitch","content":["Deliver your 30-second Intermediate Capstone pitch to the interview panel!","Show your mastery of STAR, conditionals, and fluent self-advocacy!"],"imageUrl":"/images/teens-inter-class-12/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y ensayar el marco STAR con entonación de liderazgo."
           },
