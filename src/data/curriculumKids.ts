@@ -10882,7 +10882,7 @@ export const curriculumKidsLevels: CurriculumLevel[] = [
       },
       {
         topic: "GRAMMAR IN USE",
-        question: "Talk about today?s weather and your clothes."
+        question: "Talk about today's weather and your clothes."
       },
       {
         topic: "VOCABULARY",

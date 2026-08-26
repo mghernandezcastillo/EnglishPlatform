@@ -1,7 +1,63 @@
 import { supabase } from './supabase';
 import type { SavedVocabularyWord } from '../components/StoryVocabularyLibrary';
 
+export type DecoderProgress = {
+  completedStoryIds: string[];
+  lineByStory: Record<string, number>;
+};
+
 export const storyDecoderDb = {
+  getProgress: async (studentId?: string | null): Promise<DecoderProgress | null> => {
+    if (!studentId) return null;
+
+    try {
+      const { data, error } = await supabase
+        .from('story_decoder_progress')
+        .select('completed_story_ids, line_by_story')
+        .eq('student_id', studentId)
+        .maybeSingle();
+
+      if (error) {
+        console.warn('Supabase story_decoder_progress fetch error:', error);
+        return null;
+      }
+
+      if (data) {
+        return {
+          completedStoryIds: Array.isArray(data.completed_story_ids) ? data.completed_story_ids : [],
+          lineByStory: data.line_by_story && typeof data.line_by_story === 'object' ? data.line_by_story : {}
+        };
+      }
+    } catch (err) {
+      console.warn('Error reading from story_decoder_progress in Supabase:', err);
+    }
+
+    return null;
+  },
+
+  saveProgress: async (studentId: string | null | undefined, progress: DecoderProgress) => {
+    if (!studentId) return;
+
+    try {
+      const payload = {
+        student_id: studentId,
+        completed_story_ids: progress.completedStoryIds || [],
+        line_by_story: progress.lineByStory || {},
+        updated_at: new Date().toISOString()
+      };
+
+      const { error } = await supabase
+        .from('story_decoder_progress')
+        .upsert([payload], { onConflict: 'student_id' });
+
+      if (error) {
+        console.warn('Error saving progress to Supabase story_decoder_progress:', error);
+      }
+    } catch (err) {
+      console.warn('Supabase saveProgress error:', err);
+    }
+  },
+
   getVocabulary: async (studentId?: string | null): Promise<SavedVocabularyWord[]> => {
     if (!studentId) return [];
 

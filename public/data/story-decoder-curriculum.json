@@ -3361,7 +3361,7 @@
               "story_id": "B01L02A",
               "title": "El museo antes de abrir: Todo en orden",
               "type": "Descubrimiento",
-              "value": "organizaci?n",
+              "value": "organización",
               "audience": [
                 "children",
                 "teens",
@@ -3383,7 +3383,7 @@
                 {
                   "line_id": "B01L02A01",
                   "line_role": "context",
-                  "es": "Nina y Oscar est?n en el museo antes de abrir.",
+                  "es": "Nina y Oscar están en el museo antes de abrir.",
                   "en": "Nina and Oscar are in the museum before opening.",
                   "preferred_answer": "Nina and Oscar are in the museum before opening.",
                   "accepted_answers": [
@@ -3479,7 +3479,7 @@
                 {
                   "line_id": "B01L02A02",
                   "line_role": "target",
-                  "es": "Nina est? en la sala principal.",
+                  "es": "Nina está en la sala principal.",
                   "en": "Nina is in the main hall.",
                   "preferred_answer": "Nina is in the main hall.",
                   "accepted_answers": [
@@ -3567,7 +3567,7 @@
                 {
                   "line_id": "B01L02A03",
                   "line_role": "target",
-                  "es": "Oscar est? listo para recibir a los visitantes.",
+                  "es": "Oscar está listo para recibir a los visitantes.",
                   "en": "Oscar is ready to welcome the visitors.",
                   "preferred_answer": "Oscar is ready to welcome the visitors.",
                   "accepted_answers": [
@@ -3660,7 +3660,7 @@
                 {
                   "line_id": "B01L02A04",
                   "line_role": "target",
-                  "es": "Ellos est?n tranquilos y atentos.",
+                  "es": "Ellos están tranquilos y atentos.",
                   "en": "They are calm and attentive.",
                   "preferred_answer": "They are calm and attentive.",
                   "accepted_answers": [
@@ -3750,7 +3750,7 @@
                 {
                   "line_id": "B01L02A05",
                   "line_role": "context",
-                  "es": "Antes de abrir, revisan las salas y colocan las se?ales.",
+                  "es": "Antes de abrir, revisan las salas y colocan las señales.",
                   "en": "Before opening, they check the rooms and place the signs.",
                   "preferred_answer": "Before opening, they check the rooms and place the signs.",
                   "accepted_answers": [
@@ -3850,7 +3850,7 @@
                 {
                   "line_id": "B01L02A06",
                   "line_role": "target",
-                  "es": "La exposici?n es interesante para todos.",
+                  "es": "La exposición es interesante para todos.",
                   "en": "The exhibition is interesting for everyone.",
                   "preferred_answer": "The exhibition is interesting for everyone.",
                   "accepted_answers": [
@@ -4032,7 +4032,7 @@
                 {
                   "line_id": "B01L02A08",
                   "line_role": "target",
-                  "es": "La entrada est? limpia y ordenada.",
+                  "es": "La entrada está limpia y ordenada.",
                   "en": "The entrance is clean and tidy.",
                   "preferred_answer": "The entrance is clean and tidy.",
                   "accepted_answers": [
@@ -4125,7 +4125,7 @@
                 {
                   "line_id": "B01L02A09",
                   "line_role": "context",
-                  "es": "Luego aparece un grupo grande, pero el equipo est? preparado.",
+                  "es": "Luego aparece un grupo grande, pero el equipo está preparado.",
                   "en": "Then a big group appears, but the team is ready.",
                   "preferred_answer": "Then a big group appears, but the team is ready.",
                   "accepted_answers": [
@@ -4224,7 +4224,7 @@
                 {
                   "line_id": "B01L02A10",
                   "line_role": "target",
-                  "es": "Nina est? orgullosa de la sala principal.",
+                  "es": "Nina está orgullosa de la sala principal.",
                   "en": "Nina is proud of the main hall.",
                   "preferred_answer": "Nina is proud of the main hall.",
                   "accepted_answers": [
@@ -4318,7 +4318,7 @@
                 {
                   "line_id": "B01L02A11",
                   "line_role": "target",
-                  "es": "Todos est?n juntos al final.",
+                  "es": "Todos están juntos al final.",
                   "en": "Everyone is together at the end.",
                   "preferred_answer": "Everyone is together at the end.",
                   "accepted_answers": [
@@ -4509,7 +4509,7 @@
             },
             {
               "story_id": "B01L02B",
-              "title": "La panader?a de la esquina: Una ma?ana ocupada",
+              "title": "La panadería de la esquina: Una mañana ocupada",
               "type": "Uso natural",
               "value": "rutina",
               "audience": [
@@ -4533,7 +4533,7 @@
                 {
                   "line_id": "B01L02B01",
                   "line_role": "context",
-                  "es": "Marta y Leo est?n en la panader?a antes del amanecer.",
+                  "es": "Marta y Leo están en la panadería antes del amanecer.",
                   "en": "Marta and Leo are in the bakery before dawn.",
                   "preferred_answer": "Marta and Leo are in the bakery before dawn.",
                   "accepted_answers": [
@@ -4629,7 +4629,7 @@
                 {
                   "line_id": "B01L02B02",
                   "line_role": "target",
-                  "es": "Marta est? en la cocina.",
+                  "es": "Marta está en la cocina.",
                   "en": "Marta is in the kitchen.",
                   "preferred_answer": "Marta is in the kitchen.",
                   "accepted_answers": [
@@ -4715,7 +4715,7 @@
                 {
                   "line_id": "B01L02B03",
                   "line_role": "target",
-                  "es": "Leo est? listo para hornear.",
+                  "es": "Leo está listo para hornear.",
                   "en": "Leo is ready to bake.",
                   "preferred_answer": "Leo is ready to bake.",
                   "accepted_answers": [
@@ -4804,7 +4804,7 @@
                 {
                   "line_id": "B01L02B04",
                   "line_role": "target",
-                  "es": "Ellos est?n ocupados pero contentos.",
+                  "es": "Ellos están ocupados pero contentos.",
                   "en": "They are busy but happy.",
                   "preferred_answer": "They are busy but happy.",
                   "accepted_answers": [
@@ -4894,7 +4894,7 @@
                 {
                   "line_id": "B01L02B05",
                   "line_role": "context",
-                  "es": "Antes de empezar, la receta est? abierta sobre la mesa.",
+                  "es": "Antes de empezar, la receta está abierta sobre la mesa.",
                   "en": "Before starting, the recipe is open on the table.",
                   "preferred_answer": "Before starting, the recipe is open on the table.",
                   "accepted_answers": [
@@ -4990,7 +4990,7 @@
                 {
                   "line_id": "B01L02B06",
                   "line_role": "target",
-                  "es": "El horno est? caliente.",
+                  "es": "El horno está caliente.",
                   "en": "The oven is hot.",
                   "preferred_answer": "The oven is hot.",
                   "accepted_answers": [
@@ -5072,7 +5072,7 @@
                 {
                   "line_id": "B01L02B07",
                   "line_role": "target",
-                  "es": "Los panes son peque?os y dorados.",
+                  "es": "Los panes son pequeños y dorados.",
                   "en": "The loaves are small and golden.",
                   "preferred_answer": "The loaves are small and golden.",
                   "accepted_answers": [
@@ -5163,7 +5163,7 @@
                 {
                   "line_id": "B01L02B08",
                   "line_role": "target",
-                  "es": "La mesa est? limpia y lista.",
+                  "es": "La mesa está limpia y lista.",
                   "en": "The table is clean and ready.",
                   "preferred_answer": "The table is clean and ready.",
                   "accepted_answers": [
@@ -5356,7 +5356,7 @@
                 {
                   "line_id": "B01L02B10",
                   "line_role": "target",
-                  "es": "Marta est? orgullosa del pan fresco.",
+                  "es": "Marta está orgullosa del pan fresco.",
                   "en": "Marta is proud of the fresh bread.",
                   "preferred_answer": "Marta is proud of the fresh bread.",
                   "accepted_answers": [
@@ -5450,7 +5450,7 @@
                 {
                   "line_id": "B01L02B11",
                   "line_role": "target",
-                  "es": "Todos est?n satisfechos al final.",
+                  "es": "Todos están satisfechos al final.",
                   "en": "Everyone is satisfied at the end.",
                   "preferred_answer": "Everyone is satisfied at the end.",
                   "accepted_answers": [
@@ -5540,7 +5540,7 @@
                 {
                   "line_id": "B01L02B12",
                   "line_role": "context",
-                  "es": "Al final, la receta m?s f?cil es la favorita.",
+                  "es": "Al final, la receta más fácil es la favorita.",
                   "en": "In the end, the easiest recipe is the favorite.",
                   "preferred_answer": "In the end, the easiest recipe is the favorite.",
                   "accepted_answers": [
@@ -5639,8 +5639,8 @@
             },
             {
               "story_id": "B01L02C",
-              "title": "La estaci?n del s?bado: Todo listo para salir",
-              "type": "Integraci?n",
+              "title": "La estación del sábado: Todo listo para salir",
+              "type": "Integración",
               "value": "viaje",
               "audience": [
                 "children",
@@ -5663,7 +5663,7 @@
                 {
                   "line_id": "B01L02C01",
                   "line_role": "context",
-                  "es": "Ana y Jorge est?n en la estaci?n el s?bado por la ma?ana.",
+                  "es": "Ana y Jorge están en la estación el sábado por la mañana.",
                   "en": "Ana and Jorge are at the station on Saturday morning.",
                   "preferred_answer": "Ana and Jorge are at the station on Saturday morning.",
                   "accepted_answers": [
@@ -5761,7 +5761,7 @@
                 {
                   "line_id": "B01L02C02",
                   "line_role": "target",
-                  "es": "Ana est? en el and?n.",
+                  "es": "Ana está en el andén.",
                   "en": "Ana is on the platform.",
                   "preferred_answer": "Ana is on the platform.",
                   "accepted_answers": [
@@ -5847,7 +5847,7 @@
                 {
                   "line_id": "B01L02C03",
                   "line_role": "target",
-                  "es": "Jorge est? listo para revisar los boletos.",
+                  "es": "Jorge está listo para revisar los boletos.",
                   "en": "Jorge is ready to check the tickets.",
                   "preferred_answer": "Jorge is ready to check the tickets.",
                   "accepted_answers": [
@@ -5940,7 +5940,7 @@
                 {
                   "line_id": "B01L02C04",
                   "line_role": "target",
-                  "es": "Ellos est?n calmados y emocionados.",
+                  "es": "Ellos están calmados y emocionados.",
                   "en": "They are calm and excited.",
                   "preferred_answer": "They are calm and excited.",
                   "accepted_answers": [
@@ -6030,7 +6030,7 @@
                 {
                   "line_id": "B01L02C05",
                   "line_role": "context",
-                  "es": "Antes de subir, el horario est? sobre la pantalla.",
+                  "es": "Antes de subir, el horario está sobre la pantalla.",
                   "en": "Before boarding, the schedule is on the screen.",
                   "preferred_answer": "Before boarding, the schedule is on the screen.",
                   "accepted_answers": [
@@ -6207,7 +6207,7 @@
                 {
                   "line_id": "B01L02C07",
                   "line_role": "target",
-                  "es": "Los asientos son c?modos.",
+                  "es": "Los asientos son cómodos.",
                   "en": "The seats are comfortable.",
                   "preferred_answer": "The seats are comfortable.",
                   "accepted_answers": [
@@ -6291,7 +6291,7 @@
                 {
                   "line_id": "B01L02C08",
                   "line_role": "target",
-                  "es": "Las ventanas est?n limpias.",
+                  "es": "Las ventanas están limpias.",
                   "en": "The windows are clean.",
                   "preferred_answer": "The windows are clean.",
                   "accepted_answers": [
@@ -6377,7 +6377,7 @@
                 {
                   "line_id": "B01L02C09",
                   "line_role": "context",
-                  "es": "Un peque?o retraso es molesto, pero el plan sigue bien.",
+                  "es": "Un pequeño retraso es molesto, pero el plan sigue bien.",
                   "en": "A small delay is annoying, but the plan is still good.",
                   "preferred_answer": "A small delay is annoying, but the plan is still good.",
                   "accepted_answers": [
@@ -6481,7 +6481,7 @@
                 {
                   "line_id": "B01L02C10",
                   "line_role": "target",
-                  "es": "Ana est? orgullosa de la organizaci?n.",
+                  "es": "Ana está orgullosa de la organización.",
                   "en": "Ana is proud of the organization.",
                   "preferred_answer": "Ana is proud of the organization.",
                   "accepted_answers": [
@@ -6573,7 +6573,7 @@
                 {
                   "line_id": "B01L02C11",
                   "line_role": "target",
-                  "es": "Todos est?n juntos al final.",
+                  "es": "Todos están juntos al final.",
                   "en": "Everyone is together at the end.",
                   "preferred_answer": "Everyone is together at the end.",
                   "accepted_answers": [
@@ -6663,7 +6663,7 @@
                 {
                   "line_id": "B01L02C12",
                   "line_role": "context",
-                  "es": "Al final, el momento m?s divertido es el viaje.",
+                  "es": "Al final, el momento más divertido es el viaje.",
                   "en": "In the end, the most fun moment is the trip.",
                   "preferred_answer": "In the end, the most fun moment is the trip.",
                   "accepted_answers": [
@@ -6798,7 +6798,7 @@
                 {
                   "line_id": "B01L03A01",
                   "line_role": "context",
-                  "es": "Emma y Diego est?n en la plaza del pueblo.",
+                  "es": "Emma y Diego están en la plaza del pueblo.",
                   "en": "Emma and Diego are at the town square.",
                   "preferred_answer": "Emma and Diego are at the town square.",
                   "accepted_answers": [
@@ -6806,7 +6806,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Emma",
                     "and",
@@ -6866,12 +6866,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Ordenar la frase siguiendo el espa?ol en vez del orden natural del ingl?s."
+                    "Ordenar la frase siguiendo el español en vez del orden natural del inglés."
                   ],
                   "hints": [
                     "Identifica sujeto, verbo y complemento antes de ordenar la frase."
                   ],
-                  "tutor_explanation": "Esta l?nea sostiene la continuidad de la historia y recicla estructuras ya estudiadas. El tutor debe corregir el orden y el vocabulario sin introducir una regla nueva.",
+                  "tutor_explanation": "Esta línea sostiene la continuidad de la historia y recicla estructuras ya estudiadas. El tutor debe corregir el orden y el vocabulario sin introducir una regla nueva.",
                   "vocabulary_candidates": [
                     "Emma",
                     "Diego",
@@ -6890,7 +6890,7 @@
                 {
                   "line_id": "B01L03A02",
                   "line_role": "target",
-                  "es": "Emma no est? cansada esta ma?ana.",
+                  "es": "Emma no está cansada esta mañana.",
                   "en": "Emma is not tired this morning.",
                   "preferred_answer": "Emma is not tired this morning.",
                   "accepted_answers": [
@@ -6955,9 +6955,9 @@
                     "Olvidar not o poner el complemento antes del verbo."
                   ],
                   "hints": [
-                    "Recuerda el patr?n: sujeto + am/is/are + not + complemento."
+                    "Recuerda el patrón: sujeto + am/is/are + not + complemento."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe guiar al estudiante a mantener el auxiliar antes del complemento y evitar traducci?n literal.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe guiar al estudiante a mantener el auxiliar antes del complemento y evitar traducción literal.",
                   "vocabulary_candidates": [
                     "Emma",
                     "tired",
@@ -6975,7 +6975,7 @@
                 {
                   "line_id": "B01L03A03",
                   "line_role": "target",
-                  "es": "Diego no est? lejos del banco.",
+                  "es": "Diego no está lejos del banco.",
                   "en": "Diego is not far from the bench.",
                   "preferred_answer": "Diego is not far from the bench.",
                   "accepted_answers": [
@@ -7044,9 +7044,9 @@
                     "Mover el complemento antes del auxiliar o dejar fuera not."
                   ],
                   "hints": [
-                    "Primero va el sujeto, luego is/are y despu?s not."
+                    "Primero va el sujeto, luego is/are y después not."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe reforzar el orden y la negaci?n sin convertirlo en una traducci?n palabra por palabra.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe reforzar el orden y la negación sin convertirlo en una traducción palabra por palabra.",
                   "vocabulary_candidates": [
                     "Diego",
                     "far",
@@ -7064,7 +7064,7 @@
                 {
                   "line_id": "B01L03A04",
                   "line_role": "target",
-                  "es": "Ellos no est?n solos.",
+                  "es": "Ellos no están solos.",
                   "en": "They are not alone.",
                   "preferred_answer": "They are not alone.",
                   "accepted_answers": [
@@ -7129,7 +7129,7 @@
                   "hints": [
                     "Busca primero el sujeto y luego la forma correcta de to be."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe centrar la atenci?n en la forma correcta de to be y en la negaci?n.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe centrar la atención en la forma correcta de to be y en la negación.",
                   "vocabulary_candidates": [
                     "alone"
                   ],
@@ -7145,7 +7145,7 @@
                 {
                   "line_id": "B01L03A05",
                   "line_role": "context",
-                  "es": "Antes de moverse, ven una billetera peque?a sobre un banco.",
+                  "es": "Antes de moverse, ven una billetera pequeña sobre un banco.",
                   "en": "Before moving, they see a small wallet on a bench.",
                   "preferred_answer": "Before moving, they see a small wallet on a bench.",
                   "accepted_answers": [
@@ -7153,7 +7153,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Before",
                     "moving",
@@ -7225,12 +7225,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Intentar traducir la idea con un orden espa?ol literal."
+                    "Intentar traducir la idea con un orden español literal."
                   ],
                   "hints": [
-                    "Lee toda la oraci?n y ubica primero la acci?n principal."
+                    "Lee toda la oración y ubica primero la acción principal."
                   ],
-                  "tutor_explanation": "Esta l?nea avanza la historia y usa vocabulario nuevo sin cambiar el foco gramatical del bloque.",
+                  "tutor_explanation": "Esta línea avanza la historia y usa vocabulario nuevo sin cambiar el foco gramatical del bloque.",
                   "vocabulary_candidates": [
                     "wallet",
                     "bench",
@@ -7248,7 +7248,7 @@
                 {
                   "line_id": "B01L03A06",
                   "line_role": "target",
-                  "es": "?Est? Emma lista para preguntar qui?n la perdi??",
+                  "es": "¿Está Emma lista para preguntar quién la perdió?",
                   "en": "Is Emma ready to ask who lost it?",
                   "preferred_answer": "Is Emma ready to ask who lost it?",
                   "accepted_answers": [
@@ -7342,7 +7342,7 @@
                 {
                   "line_id": "B01L03A07",
                   "line_role": "target",
-                  "es": "?Est? Diego junto a la fuente ahora?",
+                  "es": "¿Está Diego junto a la fuente ahora?",
                   "en": "Is Diego by the fountain now?",
                   "preferred_answer": "Is Diego by the fountain now?",
                   "accepted_answers": [
@@ -7411,12 +7411,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Olvidar el auxiliar inicial o a?adir un verbo extra."
+                    "Olvidar el auxiliar inicial o añadir un verbo extra."
                   ],
                   "hints": [
                     "Empieza con is / are y luego coloca el sujeto."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe reforzar el orden de pregunta y el uso de to be como n?cleo de la estructura.",
+                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe reforzar el orden de pregunta y el uso de to be como núcleo de la estructura.",
                   "vocabulary_candidates": [
                     "Diego",
                     "fountain",
@@ -7434,7 +7434,7 @@
                 {
                   "line_id": "B01L03A08",
                   "line_role": "target",
-                  "es": "?Est?n las llaves dentro de la billetera?",
+                  "es": "¿Están las llaves dentro de la billetera?",
                   "en": "Are the keys inside the wallet?",
                   "preferred_answer": "Are the keys inside the wallet?",
                   "accepted_answers": [
@@ -7502,7 +7502,7 @@
                   "hints": [
                     "Pregunta: auxiliar + sujeto + complemento."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe hacer visible la inversi?n del orden respecto a una afirmaci?n.",
+                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe hacer visible la inversión del orden respecto a una afirmación.",
                   "vocabulary_candidates": [
                     "keys",
                     "inside",
@@ -7528,7 +7528,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "case",
                     "is",
@@ -7598,10 +7598,10 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Confundir el orden del espa?ol con el ingl?s."
+                    "Confundir el orden del español con el inglés."
                   ],
                   "hints": [
-                    "La idea central sigue siendo la misma: orden natural del ingl?s."
+                    "La idea central sigue siendo la misma: orden natural del inglés."
                   ],
                   "tutor_explanation": "La historia necesita continuidad, no una regla nueva. El tutor debe mantener la fluidez y reforzar la lectura natural.",
                   "vocabulary_candidates": [
@@ -7621,7 +7621,7 @@
                 {
                   "line_id": "B01L03A10",
                   "line_role": "target",
-                  "es": "La billetera no est? vac?a.",
+                  "es": "La billetera no está vacía.",
                   "en": "The wallet is not empty.",
                   "preferred_answer": "The wallet is not empty.",
                   "accepted_answers": [
@@ -7686,7 +7686,7 @@
                   "hints": [
                     "Busca sujeto + is/are + not + complemento."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe corregir la negaci?n y la forma del verbo to be.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe corregir la negación y la forma del verbo to be.",
                   "vocabulary_candidates": [
                     "wallet",
                     "empty"
@@ -7703,7 +7703,7 @@
                 {
                   "line_id": "B01L03A11",
                   "line_role": "target",
-                  "es": "?Son claras las pistas?",
+                  "es": "¿Son claras las pistas?",
                   "en": "Are the clues clear?",
                   "preferred_answer": "Are the clues clear?",
                   "accepted_answers": [
@@ -7768,7 +7768,7 @@
                     "Poner el adjetivo antes del auxiliar o dejar el auxiliar fuera."
                   ],
                   "hints": [
-                    "En preguntas, el auxiliar encabeza la oraci?n."
+                    "En preguntas, el auxiliar encabeza la oración."
                   ],
                   "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe trabajar el orden interrogativo y la concordancia del verbo to be.",
                   "vocabulary_candidates": [
@@ -7795,7 +7795,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "return",
                     "the",
@@ -7875,12 +7875,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Cerrar la historia con una traducci?n forzada en vez de una conclusi?n natural."
+                    "Cerrar la historia con una traducción forzada en vez de una conclusión natural."
                   ],
                   "hints": [
                     "Cierra la lectura con una idea clara y directa."
                   ],
-                  "tutor_explanation": "La l?nea final debe cerrar la escena con naturalidad y dejar una sensaci?n de historia completa.",
+                  "tutor_explanation": "La línea final debe cerrar la escena con naturalidad y dejar una sensación de historia completa.",
                   "vocabulary_candidates": [
                     "return",
                     "wallet",
@@ -7923,19 +7923,19 @@
                 {
                   "line_id": "B01L03B01",
                   "line_role": "context",
-                  "es": "Sara e Iv?n est?n en el laboratorio de la escuela.",
-                  "en": "Sara and Iv?n are in the school lab.",
-                  "preferred_answer": "Sara and Iv?n are in the school lab.",
+                  "es": "Sara e Iván están en el laboratorio de la escuela.",
+                  "en": "Sara and Iván are in the school lab.",
+                  "preferred_answer": "Sara and Iván are in the school lab.",
                   "accepted_answers": [
-                    "Sara and Iv?n are in the school lab."
+                    "Sara and Iván are in the school lab."
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Sara",
                     "and",
-                    "Iv?n",
+                    "Iván",
                     "are"
                   ],
                   "difficulty": 1,
@@ -8002,7 +8002,7 @@
                   "tutor_explanation": "La escena debe sonar real y servir como base para practicar el bloque sin copiar la historia anterior.",
                   "vocabulary_candidates": [
                     "Sara",
-                    "Iv?n",
+                    "Iván",
                     "lab",
                     "school"
                   ],
@@ -8018,7 +8018,7 @@
                 {
                   "line_id": "B01L03B02",
                   "line_role": "target",
-                  "es": "Sara no est? nerviosa antes de la presentaci?n.",
+                  "es": "Sara no está nerviosa antes de la presentación.",
                   "en": "Sara is not nervous before the presentation.",
                   "preferred_answer": "Sara is not nervous before the presentation.",
                   "accepted_answers": [
@@ -8089,7 +8089,7 @@
                   "hints": [
                     "Sujeto + is/are + not + complemento."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe reforzar la negaci?n en contexto real.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe reforzar la negación en contexto real.",
                   "vocabulary_candidates": [
                     "Sara",
                     "nervous",
@@ -8107,17 +8107,17 @@
                 {
                   "line_id": "B01L03B03",
                   "line_role": "target",
-                  "es": "Iv?n no est? lejos de la maqueta.",
-                  "en": "Iv?n is not far from the model.",
-                  "preferred_answer": "Iv?n is not far from the model.",
+                  "es": "Iván no está lejos de la maqueta.",
+                  "en": "Iván is not far from the model.",
+                  "preferred_answer": "Iván is not far from the model.",
                   "accepted_answers": [
-                    "Iv?n is not far from the model."
+                    "Iván is not far from the model."
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "To Be en negativo",
                   "pattern": "Subject + am/is/are + not + complement",
                   "focus_tokens": [
-                    "Iv?n",
+                    "Iván",
                     "is",
                     "not",
                     "far"
@@ -8175,14 +8175,14 @@
                     "to"
                   ],
                   "common_errors": [
-                    "Mover el complemento o olvidar la negaci?n."
+                    "Mover el complemento o olvidar la negación."
                   ],
                   "hints": [
-                    "Mant?n la secuencia correcta: sujeto, verbo, not, complemento."
+                    "Mantén la secuencia correcta: sujeto, verbo, not, complemento."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe insistir en el orden estable de la negaci?n.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe insistir en el orden estable de la negación.",
                   "vocabulary_candidates": [
-                    "Iv?n",
+                    "Iván",
                     "far",
                     "model"
                   ],
@@ -8198,7 +8198,7 @@
                 {
                   "line_id": "B01L03B04",
                   "line_role": "target",
-                  "es": "Ellos no est?n solos.",
+                  "es": "Ellos no están solos.",
                   "en": "They are not alone.",
                   "preferred_answer": "They are not alone.",
                   "accepted_answers": [
@@ -8261,7 +8261,7 @@
                     "Usar una forma verbal distinta de to be."
                   ],
                   "hints": [
-                    "Para negaci?n simple, el n?cleo sigue siendo is/are."
+                    "Para negación simple, el núcleo sigue siendo is/are."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe mostrar que el verbo principal es to be.",
                   "vocabulary_candidates": [
@@ -8287,7 +8287,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Before",
                     "presenting",
@@ -8359,12 +8359,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Saltar la l?gica de la escena y traducir de forma literal."
+                    "Saltar la lógica de la escena y traducir de forma literal."
                   ],
                   "hints": [
-                    "Lee la acci?n completa antes de ordenar palabras."
+                    "Lee la acción completa antes de ordenar palabras."
                   ],
-                  "tutor_explanation": "La historia avanza con una acci?n concreta y prepara las preguntas sin romper la naturalidad.",
+                  "tutor_explanation": "La historia avanza con una acción concreta y prepara las preguntas sin romper la naturalidad.",
                   "vocabulary_candidates": [
                     "labels",
                     "table",
@@ -8382,7 +8382,7 @@
                 {
                   "line_id": "B01L03B06",
                   "line_role": "target",
-                  "es": "?Est? Sara lista para explicar el proyecto?",
+                  "es": "¿Está Sara lista para explicar el proyecto?",
                   "en": "Is Sara ready to explain the project?",
                   "preferred_answer": "Is Sara ready to explain the project?",
                   "accepted_answers": [
@@ -8450,7 +8450,7 @@
                     "Empezar por el sujeto en vez del auxiliar."
                   ],
                   "hints": [
-                    "En preguntas, is/are abre la oraci?n."
+                    "En preguntas, is/are abre la oración."
                   ],
                   "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe mantener el foco en el orden interrogativo.",
                   "vocabulary_candidates": [
@@ -8470,18 +8470,18 @@
                 {
                   "line_id": "B01L03B07",
                   "line_role": "target",
-                  "es": "?Est? Iv?n junto al proyector ahora?",
-                  "en": "Is Iv?n next to the projector now?",
-                  "preferred_answer": "Is Iv?n next to the projector now?",
+                  "es": "¿Está Iván junto al proyector ahora?",
+                  "en": "Is Iván next to the projector now?",
+                  "preferred_answer": "Is Iván next to the projector now?",
                   "accepted_answers": [
-                    "Is Iv?n next to the projector now?"
+                    "Is Iván next to the projector now?"
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "To Be en pregunta",
                   "pattern": "Am/Is/Are + subject + complement?",
                   "focus_tokens": [
                     "Is",
-                    "Iv?n",
+                    "Iván",
                     "next",
                     "to"
                   ],
@@ -8542,14 +8542,14 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Olvidar el auxiliar o a?adir un verbo de m?s."
+                    "Olvidar el auxiliar o añadir un verbo de más."
                   ],
                   "hints": [
                     "La pregunta empieza con el verbo to be."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe reforzar que no hace falta ning?n auxiliar extra.",
+                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe reforzar que no hace falta ningún auxiliar extra.",
                   "vocabulary_candidates": [
-                    "Iv?n",
+                    "Iván",
                     "projector",
                     "now"
                   ],
@@ -8565,7 +8565,7 @@
                 {
                   "line_id": "B01L03B08",
                   "line_role": "target",
-                  "es": "?Est?n los materiales sobre la mesa?",
+                  "es": "¿Están los materiales sobre la mesa?",
                   "en": "Are the materials on the table?",
                   "preferred_answer": "Are the materials on the table?",
                   "accepted_answers": [
@@ -8637,7 +8637,7 @@
                   "hints": [
                     "Primero el auxiliar, luego el sujeto."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe mostrar c?mo cambia el orden respecto a una afirmaci?n.",
+                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe mostrar cómo cambia el orden respecto a una afirmación.",
                   "vocabulary_candidates": [
                     "materials",
                     "table"
@@ -8654,7 +8654,7 @@
                 {
                   "line_id": "B01L03B09",
                   "line_role": "context",
-                  "es": "La presentaci?n no es dif?cil, pero todos respiran hondo.",
+                  "es": "La presentación no es difícil, pero todos respiran hondo.",
                   "en": "The presentation is not difficult, but everyone takes a deep breath.",
                   "preferred_answer": "The presentation is not difficult, but everyone takes a deep breath.",
                   "accepted_answers": [
@@ -8662,7 +8662,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "presentation",
                     "is",
@@ -8739,9 +8739,9 @@
                     "Intentar convertir todo en una sola estructura sin pausa natural."
                   ],
                   "hints": [
-                    "La historia puede mezclar calma y tensi?n sin perder claridad."
+                    "La historia puede mezclar calma y tensión sin perder claridad."
                   ],
-                  "tutor_explanation": "La l?nea sostiene el ritmo de la historia y refuerza el contraste entre calma y desaf?o.",
+                  "tutor_explanation": "La línea sostiene el ritmo de la historia y refuerza el contraste entre calma y desafío.",
                   "vocabulary_candidates": [
                     "presentation",
                     "difficult",
@@ -8759,7 +8759,7 @@
                 {
                   "line_id": "B01L03B10",
                   "line_role": "target",
-                  "es": "La maqueta no est? rota.",
+                  "es": "La maqueta no está rota.",
                   "en": "The model is not broken.",
                   "preferred_answer": "The model is not broken.",
                   "accepted_answers": [
@@ -8823,7 +8823,7 @@
                   "hints": [
                     "Sujeto + is/are + not + complemento."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe cuidar la forma corta y clara de la negaci?n.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe cuidar la forma corta y clara de la negación.",
                   "vocabulary_candidates": [
                     "model",
                     "broken"
@@ -8840,7 +8840,7 @@
                 {
                   "line_id": "B01L03B11",
                   "line_role": "target",
-                  "es": "?Son correctas las etiquetas?",
+                  "es": "¿Son correctas las etiquetas?",
                   "en": "Are the labels correct?",
                   "preferred_answer": "Are the labels correct?",
                   "accepted_answers": [
@@ -8907,7 +8907,7 @@
                   "hints": [
                     "Empieza la pregunta con are / is."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe marcar claramente la inversi?n del orden.",
+                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe marcar claramente la inversión del orden.",
                   "vocabulary_candidates": [
                     "labels",
                     "correct"
@@ -8924,7 +8924,7 @@
                 {
                   "line_id": "B01L03B12",
                   "line_role": "context",
-                  "es": "Al final, todos est?n contentos con el resultado.",
+                  "es": "Al final, todos están contentos con el resultado.",
                   "en": "In the end, everyone is happy with the result.",
                   "preferred_answer": "In the end, everyone is happy with the result.",
                   "accepted_answers": [
@@ -8932,7 +8932,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "everyone",
                     "is",
@@ -9003,12 +9003,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Cerrar la historia sin una conclusi?n clara."
+                    "Cerrar la historia sin una conclusión clara."
                   ],
                   "hints": [
-                    "La ?ltima l?nea debe sonar completa y natural."
+                    "La última línea debe sonar completa y natural."
                   ],
-                  "tutor_explanation": "El cierre debe dejar una sensaci?n de logro y preparar la lectura del siguiente bloque.",
+                  "tutor_explanation": "El cierre debe dejar una sensación de logro y preparar la lectura del siguiente bloque.",
                   "vocabulary_candidates": [
                     "happy",
                     "result"
@@ -9027,7 +9027,7 @@
             {
               "story_id": "B01L03C",
               "title": "Vecinos que se ayudan: Una tarde en el edificio",
-              "type": "Integraci?n",
+              "type": "Integración",
               "value": "solidaridad",
               "audience": [
                 "children",
@@ -9050,7 +9050,7 @@
                 {
                   "line_id": "B01L03C01",
                   "line_role": "context",
-                  "es": "Mara y Leo est?n en el edificio con una vecina.",
+                  "es": "Mara y Leo están en el edificio con una vecina.",
                   "en": "Mara and Leo are in the building with a neighbor.",
                   "preferred_answer": "Mara and Leo are in the building with a neighbor.",
                   "accepted_answers": [
@@ -9058,7 +9058,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Mara",
                     "and",
@@ -9126,7 +9126,7 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Hacer una traducci?n r?gida que suene extra?a."
+                    "Hacer una traducción rígida que suene extraña."
                   ],
                   "hints": [
                     "La escena debe leerse como una historia real."
@@ -9150,7 +9150,7 @@
                 {
                   "line_id": "B01L03C02",
                   "line_role": "target",
-                  "es": "Mara no est? cansada esta tarde.",
+                  "es": "Mara no está cansada esta tarde.",
                   "en": "Mara is not tired this afternoon.",
                   "preferred_answer": "Mara is not tired this afternoon.",
                   "accepted_answers": [
@@ -9212,12 +9212,12 @@
                     "to"
                   ],
                   "common_errors": [
-                    "Omitir not o cambiar el orden de la oraci?n."
+                    "Omitir not o cambiar el orden de la oración."
                   ],
                   "hints": [
-                    "El patr?n no cambia: sujeto + is/are + not + complemento."
+                    "El patrón no cambia: sujeto + is/are + not + complemento."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe reforzar el patr?n con una situaci?n distinta.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe reforzar el patrón con una situación distinta.",
                   "vocabulary_candidates": [
                     "Mara",
                     "tired",
@@ -9235,7 +9235,7 @@
                 {
                   "line_id": "B01L03C03",
                   "line_role": "target",
-                  "es": "Leo no est? lejos del ascensor.",
+                  "es": "Leo no está lejos del ascensor.",
                   "en": "Leo is not far from the elevator.",
                   "preferred_answer": "Leo is not far from the elevator.",
                   "accepted_answers": [
@@ -9306,7 +9306,7 @@
                   "hints": [
                     "Primero va el sujeto, luego la forma de to be."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe mantener la atenci?n en la secuencia correcta.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe mantener la atención en la secuencia correcta.",
                   "vocabulary_candidates": [
                     "Leo",
                     "far",
@@ -9324,7 +9324,7 @@
                 {
                   "line_id": "B01L03C04",
                   "line_role": "target",
-                  "es": "Ellos no est?n molestos.",
+                  "es": "Ellos no están molestos.",
                   "en": "They are not annoyed.",
                   "preferred_answer": "They are not annoyed.",
                   "accepted_answers": [
@@ -9387,7 +9387,7 @@
                     "Usar otro verbo en vez de to be."
                   ],
                   "hints": [
-                    "La negaci?n simple usa is / are + not."
+                    "La negación simple usa is / are + not."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe ayudar a reconocer la forma base del verbo to be.",
                   "vocabulary_candidates": [
@@ -9413,7 +9413,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Before",
                     "starting",
@@ -9487,12 +9487,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Intentar encajar la escena en un patr?n artificial."
+                    "Intentar encajar la escena en un patrón artificial."
                   ],
                   "hints": [
-                    "La narraci?n debe fluir sin perder el orden natural."
+                    "La narración debe fluir sin perder el orden natural."
                   ],
-                  "tutor_explanation": "La historia suma contexto realista y mantiene la atenci?n del estudiante en la secuencia natural de acciones.",
+                  "tutor_explanation": "La historia suma contexto realista y mantiene la atención del estudiante en la secuencia natural de acciones.",
                   "vocabulary_candidates": [
                     "door",
                     "list",
@@ -9510,7 +9510,7 @@
                 {
                   "line_id": "B01L03C06",
                   "line_role": "target",
-                  "es": "?Est? Mara lista para subir al cuarto piso?",
+                  "es": "¿Está Mara lista para subir al cuarto piso?",
                   "en": "Is Mara ready to go up to the fourth floor?",
                   "preferred_answer": "Is Mara ready to go up to the fourth floor?",
                   "accepted_answers": [
@@ -9606,7 +9606,7 @@
                 {
                   "line_id": "B01L03C07",
                   "line_role": "target",
-                  "es": "?Est? Leo en el vest?bulo ahora?",
+                  "es": "¿Está Leo en el vestábulo ahora?",
                   "en": "Is Leo in the lobby now?",
                   "preferred_answer": "Is Leo in the lobby now?",
                   "accepted_answers": [
@@ -9675,12 +9675,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "A?adir un verbo extra o mover el sujeto al inicio."
+                    "Añadir un verbo extra o mover el sujeto al inicio."
                   ],
                   "hints": [
-                    "Auxiliar primero, sujeto despu?s."
+                    "Auxiliar primero, sujeto después."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe mostrar el cambio de orden respecto a una afirmaci?n.",
+                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe mostrar el cambio de orden respecto a una afirmación.",
                   "vocabulary_candidates": [
                     "Leo",
                     "lobby",
@@ -9698,7 +9698,7 @@
                 {
                   "line_id": "B01L03C08",
                   "line_role": "target",
-                  "es": "?Est?n los paquetes junto a la silla?",
+                  "es": "¿Están los paquetes junto a la silla?",
                   "en": "Are the packages next to the chair?",
                   "preferred_answer": "Are the packages next to the chair?",
                   "accepted_answers": [
@@ -9772,7 +9772,7 @@
                   "hints": [
                     "La pregunta abre con are / is y luego sigue el sujeto."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe centrar la atenci?n en la inversi?n del orden.",
+                  "tutor_explanation": "Estructura objetivo: Am/Is/Are + subject + complement?. El tutor debe centrar la atención en la inversión del orden.",
                   "vocabulary_candidates": [
                     "packages",
                     "chair"
@@ -9789,7 +9789,7 @@
                 {
                   "line_id": "B01L03C09",
                   "line_role": "context",
-                  "es": "El pasillo no est? silencioso, pero la ayuda contin?a.",
+                  "es": "El pasillo no está silencioso, pero la ayuda continúa.",
                   "en": "The hallway is not quiet, but the help continues.",
                   "preferred_answer": "The hallway is not quiet, but the help continues.",
                   "accepted_answers": [
@@ -9797,7 +9797,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "hallway",
                     "is",
@@ -9865,12 +9865,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Escribir una traducci?n literal poco natural."
+                    "Escribir una traducción literal poco natural."
                   ],
                   "hints": [
                     "La historia puede sonar simple y real a la vez."
                   ],
-                  "tutor_explanation": "El objetivo aqu? es cerrar el peque?o conflicto del edificio sin cambiar el foco gramatical del bloque.",
+                  "tutor_explanation": "El objetivo aquí es cerrar el pequeño conflicto del edificio sin cambiar el foco gramatical del bloque.",
                   "vocabulary_candidates": [
                     "hallway",
                     "quiet",
@@ -9888,7 +9888,7 @@
                 {
                   "line_id": "B01L03C10",
                   "line_role": "target",
-                  "es": "La caja no est? pesada.",
+                  "es": "La caja no está pesada.",
                   "en": "The box is not heavy.",
                   "preferred_answer": "The box is not heavy.",
                   "accepted_answers": [
@@ -9953,7 +9953,7 @@
                   "hints": [
                     "Sujeto + is/are + not + complemento."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe seguir reforzando la negaci?n en un contexto distinto.",
+                  "tutor_explanation": "Estructura objetivo: Subject + am/is/are + not + complement. El tutor debe seguir reforzando la negación en un contexto distinto.",
                   "vocabulary_candidates": [
                     "box",
                     "heavy"
@@ -9970,7 +9970,7 @@
                 {
                   "line_id": "B01L03C11",
                   "line_role": "target",
-                  "es": "?Est? abierta la puerta del apartamento?",
+                  "es": "¿Está abierta la puerta del apartamento?",
                   "en": "Is the apartment door open?",
                   "preferred_answer": "Is the apartment door open?",
                   "accepted_answers": [
@@ -10035,7 +10035,7 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Iniciar la oraci?n con el adjetivo o el sujeto en lugar del auxiliar."
+                    "Iniciar la oración con el adjetivo o el sujeto en lugar del auxiliar."
                   ],
                   "hints": [
                     "Recuerda: is / are + sujeto + complemento."
@@ -10058,7 +10058,7 @@
                 {
                   "line_id": "B01L03C12",
                   "line_role": "context",
-                  "es": "Al final, escriben la direcci?n correcta y se despiden.",
+                  "es": "Al final, escriben la dirección correcta y se despiden.",
                   "en": "In the end, they write down the correct address and say goodbye.",
                   "preferred_answer": "In the end, they write down the correct address and say goodbye.",
                   "accepted_answers": [
@@ -10066,7 +10066,7 @@
                   ],
                   "lesson_target": "To Be en negativo y pregunta",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "write",
                     "down",
@@ -10146,12 +10146,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Cerrar la historia sin una conclusi?n clara."
+                    "Cerrar la historia sin una conclusión clara."
                   ],
                   "hints": [
-                    "La ?ltima l?nea debe sonar completa y natural."
+                    "La última línea debe sonar completa y natural."
                   ],
-                  "tutor_explanation": "El final debe dejar una sensaci?n de ayuda cumplida y transici?n limpia al siguiente momento.",
+                  "tutor_explanation": "El final debe dejar una sensación de ayuda cumplida y transición limpia al siguiente momento.",
                   "vocabulary_candidates": [
                     "address",
                     "correct",
@@ -10204,7 +10204,7 @@
                 {
                   "line_id": "B01L04A01",
                   "line_role": "context",
-                  "es": "Mateo y Clara est?n en el taller de bicicletas.",
+                  "es": "Mateo y Clara están en el taller de bicicletas.",
                   "en": "Mateo and Clara are in the bike workshop.",
                   "preferred_answer": "Mateo and Clara are in the bike workshop.",
                   "accepted_answers": [
@@ -10212,7 +10212,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Mateo",
                     "and",
@@ -10272,10 +10272,10 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Leer la escena demasiado r?pido y perder el orden natural."
+                    "Leer la escena demasiado rápido y perder el orden natural."
                   ],
                   "hints": [
-                    "Primero identifica qui?nes est?n y d?nde est?n."
+                    "Primero identifica quiénes están y dónde están."
                   ],
                   "tutor_explanation": "La escena arranca en un taller real y sirve como base para el bloque.",
                   "vocabulary_candidates": [
@@ -10361,12 +10361,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Agregar -s al verbo principal despu?s de wants."
+                    "Agregar -s al verbo principal después de wants."
                   ],
                   "hints": [
-                    "Despu?s de wants, el siguiente verbo va en base form."
+                    "Después de wants, el siguiente verbo va en base form."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe hacer visible que fix no cambia despu?s de wants.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe hacer visible que fix no cambia después de wants.",
                   "vocabulary_candidates": [
                     "Mateo",
                     "fix",
@@ -10538,7 +10538,7 @@
                     "Agregar -s a finish."
                   ],
                   "hints": [
-                    "Despu?s de can, el verbo principal no cambia."
+                    "Después de can, el verbo principal no cambia."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe reforzar que finish permanece en forma base.",
                   "vocabulary_candidates": [
@@ -10565,7 +10565,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Before",
                     "starting",
@@ -10637,12 +10637,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Traducir la escena de forma literal sin respetar el orden del ingl?s."
+                    "Traducir la escena de forma literal sin respetar el orden del inglés."
                   ],
                   "hints": [
-                    "Lee la acci?n completa antes de ordenar palabras."
+                    "Lee la acción completa antes de ordenar palabras."
                   ],
-                  "tutor_explanation": "La historia avanza con una acci?n concreta y prepara los ejemplos del bloque sin repetirse.",
+                  "tutor_explanation": "La historia avanza con una acción concreta y prepara los ejemplos del bloque sin repetirse.",
                   "vocabulary_candidates": [
                     "parts",
                     "table",
@@ -10726,9 +10726,9 @@
                     "Olvidar to o cambiar work por una forma conjugada."
                   ],
                   "hints": [
-                    "Despu?s de prefers, el verbo vuelve a base form."
+                    "Después de prefers, el verbo vuelve a base form."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe se?alar que work se mantiene en base form.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe señalar que work se mantiene en base form.",
                   "vocabulary_candidates": [
                     "prefer",
                     "work",
@@ -10904,9 +10904,9 @@
                     "Agregar terminaciones innecesarias al verbo principal."
                   ],
                   "hints": [
-                    "Despu?s de hope, el verbo principal queda en forma base."
+                    "Después de hope, el verbo principal queda en forma base."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe sostener el patr?n de infinitivo con base form.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe sostener el patrón de infinitivo con base form.",
                   "vocabulary_candidates": [
                     "hope",
                     "see",
@@ -10925,7 +10925,7 @@
                 {
                   "line_id": "B01L04A09",
                   "line_role": "context",
-                  "es": "El reto es peque?o, pero exige concentraci?n.",
+                  "es": "El reto es pequeño, pero exige concentración.",
                   "en": "The challenge is small, but it requires concentration.",
                   "preferred_answer": "The challenge is small, but it requires concentration.",
                   "accepted_answers": [
@@ -10933,7 +10933,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "challenge",
                     "is",
@@ -11003,9 +11003,9 @@
                     "Intentar que toda la historia suene igual que la anterior."
                   ],
                   "hints": [
-                    "La l?nea de contexto debe dar continuidad sin repetir la misma escena."
+                    "La línea de contexto debe dar continuidad sin repetir la misma escena."
                   ],
-                  "tutor_explanation": "La historia necesita un peque?o conflicto o tensi?n para que el bloque tenga ritmo.",
+                  "tutor_explanation": "La historia necesita un pequeño conflicto o tensión para que el bloque tenga ritmo.",
                   "vocabulary_candidates": [
                     "challenge",
                     "small",
@@ -11091,7 +11091,7 @@
                     "Cambiar learn por learns o por otra forma incorrecta."
                   ],
                   "hints": [
-                    "Despu?s de wants, learn va en forma base."
+                    "Después de wants, learn va en forma base."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe evitar que el alumno conjugue learn.",
                   "vocabulary_candidates": [
@@ -11110,7 +11110,7 @@
                 {
                   "line_id": "B01L04A11",
                   "line_role": "target",
-                  "es": "Clara necesita hacer una ?ltima revisi?n.",
+                  "es": "Clara necesita hacer una última revisión.",
                   "en": "Clara needs to do one last check.",
                   "preferred_answer": "Clara needs to do one last check.",
                   "accepted_answers": [
@@ -11182,7 +11182,7 @@
                     "Sustituir do por una forma conjugada."
                   ],
                   "hints": [
-                    "El verbo principal sigue en base form despu?s de needs."
+                    "El verbo principal sigue en base form después de needs."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe remarcar que do se mantiene en forma base.",
                   "vocabulary_candidates": [
@@ -11202,7 +11202,7 @@
                 {
                   "line_id": "B01L04A12",
                   "line_role": "context",
-                  "es": "Al final, la bicicleta queda lista y todos sonr?en.",
+                  "es": "Al final, la bicicleta queda lista y todos sonríen.",
                   "en": "In the end, the bike is ready and everyone smiles.",
                   "preferred_answer": "In the end, the bike is ready and everyone smiles.",
                   "accepted_answers": [
@@ -11210,7 +11210,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "bike",
                     "is",
@@ -11281,12 +11281,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Cerrar la historia sin una sensaci?n de resultado."
+                    "Cerrar la historia sin una sensación de resultado."
                   ],
                   "hints": [
-                    "La ?ltima l?nea debe sonar completa y natural."
+                    "La última línea debe sonar completa y natural."
                   ],
-                  "tutor_explanation": "El cierre debe dejar una sensaci?n de logro y dar paso a la siguiente historia.",
+                  "tutor_explanation": "El cierre debe dejar una sensación de logro y dar paso a la siguiente historia.",
                   "vocabulary_candidates": [
                     "bike",
                     "ready",
@@ -11329,7 +11329,7 @@
                 {
                   "line_id": "B01L04B01",
                   "line_role": "context",
-                  "es": "Laura y Nico est?n en el escenario de la escuela.",
+                  "es": "Laura y Nico están en el escenario de la escuela.",
                   "en": "Laura and Nico are on the school stage.",
                   "preferred_answer": "Laura and Nico are on the school stage.",
                   "accepted_answers": [
@@ -11337,7 +11337,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Laura",
                     "and",
@@ -11397,7 +11397,7 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Hacer una traducci?n r?gida que no suene natural."
+                    "Hacer una traducción rígida que no suene natural."
                   ],
                   "hints": [
                     "Primero ubica la escena y a las personas."
@@ -11488,9 +11488,9 @@
                     "Agregar -s a memorize o quitar to."
                   ],
                   "hints": [
-                    "Despu?s de wants, memorize queda en base form."
+                    "Después de wants, memorize queda en base form."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe mostrar el infinitivo sin conjugaci?n.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe mostrar el infinitivo sin conjugación.",
                   "vocabulary_candidates": [
                     "memorize",
                     "part"
@@ -11507,7 +11507,7 @@
                 {
                   "line_id": "B01L04B03",
                   "line_role": "target",
-                  "es": "Nico necesita practicar m?s fuerte.",
+                  "es": "Nico necesita practicar más fuerte.",
                   "en": "Nico needs to practice louder.",
                   "preferred_answer": "Nico needs to practice louder.",
                   "accepted_answers": [
@@ -11573,7 +11573,7 @@
                     "Cambiar practice por practices."
                   ],
                   "hints": [
-                    "El verbo principal despu?s de needs va en base form."
+                    "El verbo principal después de needs va en base form."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe sostener la forma base de practice.",
                   "vocabulary_candidates": [
@@ -11679,7 +11679,7 @@
                 {
                   "line_id": "B01L04B05",
                   "line_role": "context",
-                  "es": "Antes del ensayo, revisan las luces y la m?sica.",
+                  "es": "Antes del ensayo, revisan las luces y la música.",
                   "en": "Before the rehearsal, they check the lights and the music.",
                   "preferred_answer": "Before the rehearsal, they check the lights and the music.",
                   "accepted_answers": [
@@ -11687,7 +11687,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Before",
                     "the",
@@ -11757,12 +11757,12 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Intentar resolver la frase como si fuera una lista mec?nica."
+                    "Intentar resolver la frase como si fuera una lista mecánica."
                   ],
                   "hints": [
                     "La escena necesita preparativos concretos y claros."
                   ],
-                  "tutor_explanation": "La narraci?n mantiene el ritmo del ensayo y no repite el mismo escenario anterior.",
+                  "tutor_explanation": "La narración mantiene el ritmo del ensayo y no repite el mismo escenario anterior.",
                   "vocabulary_candidates": [
                     "lights",
                     "music",
@@ -11852,9 +11852,9 @@
                     "Cambiar sing por sings o quitar to."
                   ],
                   "hints": [
-                    "Despu?s de prefers, sing va en base form."
+                    "Después de prefers, sing va en base form."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe reforzar la base form despu?s de prefers.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe reforzar la base form después de prefers.",
                   "vocabulary_candidates": [
                     "sing",
                     "softly",
@@ -11948,7 +11948,7 @@
                   "hints": [
                     "La secuencia clave es tries not to + base verb."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe ense?ar la forma natural del infinitivo negativo.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe enseñar la forma natural del infinitivo negativo.",
                   "vocabulary_candidates": [
                     "forget",
                     "cues"
@@ -12033,7 +12033,7 @@
                     "Conjugar act en tercera persona sin motivo."
                   ],
                   "hints": [
-                    "Despu?s de hope, act se mantiene en base form."
+                    "Después de hope, act se mantiene en base form."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe fijar la idea de base form tras hope.",
                   "vocabulary_candidates": [
@@ -12060,7 +12060,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "moment",
                     "is",
@@ -12130,9 +12130,9 @@
                     "Escribir una frase plana que no empuje la historia hacia el cierre."
                   ],
                   "hints": [
-                    "La tensi?n debe sentirse, pero seguir siendo manejable."
+                    "La tensión debe sentirse, pero seguir siendo manejable."
                   ],
-                  "tutor_explanation": "La historia necesita una peque?a tensi?n para que la actuaci?n final tenga sentido.",
+                  "tutor_explanation": "La historia necesita una pequeña tensión para que la actuación final tenga sentido.",
                   "vocabulary_candidates": [
                     "moment",
                     "important",
@@ -12150,7 +12150,7 @@
                 {
                   "line_id": "B01L04B10",
                   "line_role": "target",
-                  "es": "Laura quiere ayudar a su compa?ero.",
+                  "es": "Laura quiere ayudar a su compañero.",
                   "en": "Laura wants to help her partner.",
                   "preferred_answer": "Laura wants to help her partner.",
                   "accepted_answers": [
@@ -12218,9 +12218,9 @@
                     "Olvidar to o poner helps."
                   ],
                   "hints": [
-                    "Despu?s de wants, help va en base form."
+                    "Después de wants, help va en base form."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe evitar la conjugaci?n innecesaria de help.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe evitar la conjugación innecesaria de help.",
                   "vocabulary_candidates": [
                     "help",
                     "partner"
@@ -12302,7 +12302,7 @@
                     "Cambiar breathe por breath o por una forma conjugada."
                   ],
                   "hints": [
-                    "El verbo principal sigue en base form despu?s de needs."
+                    "El verbo principal sigue en base form después de needs."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe cuidar la forma base de breathe.",
                   "vocabulary_candidates": [
@@ -12329,7 +12329,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "everyone",
                     "applauds",
@@ -12392,9 +12392,9 @@
                     "Cerrar la historia sin un final claro y positivo."
                   ],
                   "hints": [
-                    "La ?ltima l?nea debe dejar una sensaci?n de logro."
+                    "La última línea debe dejar una sensación de logro."
                   ],
-                  "tutor_explanation": "El cierre debe sonar natural y marcar que el ensayo termin? bien.",
+                  "tutor_explanation": "El cierre debe sonar natural y marcar que el ensayo terminó bien.",
                   "vocabulary_candidates": [
                     "applauds",
                     "effort"
@@ -12412,8 +12412,8 @@
             },
             {
               "story_id": "B01L04C",
-              "title": "La panader?a de madrugada: Todo listo para abrir",
-              "type": "Integraci?n",
+              "title": "La panadería de madrugada: Todo listo para abrir",
+              "type": "Integración",
               "value": "constancia",
               "audience": [
                 "children",
@@ -12436,19 +12436,19 @@
                 {
                   "line_id": "B01L04C01",
                   "line_role": "context",
-                  "es": "Elena y Tom?s est?n en la panader?a antes de abrir.",
-                  "en": "Elena and Tom?s are in the bakery before opening.",
-                  "preferred_answer": "Elena and Tom?s are in the bakery before opening.",
+                  "es": "Elena y Tomás están en la panadería antes de abrir.",
+                  "en": "Elena and Tomás are in the bakery before opening.",
+                  "preferred_answer": "Elena and Tomás are in the bakery before opening.",
                   "accepted_answers": [
-                    "Elena and Tom?s are in the bakery before opening."
+                    "Elena and Tomás are in the bakery before opening."
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Elena",
                     "and",
-                    "Tom?s",
+                    "Tomás",
                     "are"
                   ],
                   "difficulty": 1,
@@ -12516,10 +12516,10 @@
                   "hints": [
                     "La escena debe sentirse cotidiana y clara."
                   ],
-                  "tutor_explanation": "La panader?a ofrece un entorno distinto para consolidar el patr?n sin repetir el contenido anterior.",
+                  "tutor_explanation": "La panadería ofrece un entorno distinto para consolidar el patrón sin repetir el contenido anterior.",
                   "vocabulary_candidates": [
                     "Elena",
-                    "Tom?s",
+                    "Tomás",
                     "bakery",
                     "opening"
                   ],
@@ -12603,7 +12603,7 @@
                     "Agregar -s a prepare."
                   ],
                   "hints": [
-                    "Despu?s de wants, prepare se mantiene en base form."
+                    "Después de wants, prepare se mantiene en base form."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe mostrar la base form tras wants.",
                   "vocabulary_candidates": [
@@ -12622,17 +12622,17 @@
                 {
                   "line_id": "B01L04C03",
                   "line_role": "target",
-                  "es": "Tom?s necesita revisar el horno.",
-                  "en": "Tom?s needs to check the oven.",
-                  "preferred_answer": "Tom?s needs to check the oven.",
+                  "es": "Tomás necesita revisar el horno.",
+                  "en": "Tomás needs to check the oven.",
+                  "preferred_answer": "Tomás needs to check the oven.",
                   "accepted_answers": [
-                    "Tom?s needs to check the oven."
+                    "Tomás needs to check the oven."
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "base verb + infinitive complement",
                   "pattern": "Subject + base verb + complement",
                   "focus_tokens": [
-                    "Tom?s",
+                    "Tomás",
                     "needs",
                     "to",
                     "check"
@@ -12692,9 +12692,9 @@
                     "Cambiar check por checks."
                   ],
                   "hints": [
-                    "Despu?s de needs, check va en base form."
+                    "Después de needs, check va en base form."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe cuidar la base form despu?s de needs.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe cuidar la base form después de needs.",
                   "vocabulary_candidates": [
                     "check",
                     "oven"
@@ -12781,7 +12781,7 @@
                   "hints": [
                     "Con can, serve no cambia."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe mantener la base form despu?s de can.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe mantener la base form después de can.",
                   "vocabulary_candidates": [
                     "serve",
                     "customers",
@@ -12807,7 +12807,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "Before",
                     "opening",
@@ -12882,9 +12882,9 @@
                     "Intentar resolver la escena sin seguir la secuencia natural."
                   ],
                   "hints": [
-                    "La historia se apoya en acciones concretas de preparaci?n."
+                    "La historia se apoya en acciones concretas de preparación."
                   ],
-                  "tutor_explanation": "La narraci?n avanza hacia la apertura con tareas muy concretas y visuales.",
+                  "tutor_explanation": "La narración avanza hacia la apertura con tareas muy concretas y visuales.",
                   "vocabulary_candidates": [
                     "display case",
                     "cups",
@@ -12902,7 +12902,7 @@
                 {
                   "line_id": "B01L04C06",
                   "line_role": "target",
-                  "es": "Elena prefiere hornear por la ma?ana.",
+                  "es": "Elena prefiere hornear por la mañana.",
                   "en": "Elena prefers to bake in the morning.",
                   "preferred_answer": "Elena prefers to bake in the morning.",
                   "accepted_answers": [
@@ -12973,7 +12973,7 @@
                     "Cambiar bake por bakes o quitar to."
                   ],
                   "hints": [
-                    "Despu?s de prefers, bake queda en forma base."
+                    "Después de prefers, bake queda en forma base."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe fijar la base form tras prefers.",
                   "vocabulary_candidates": [
@@ -12992,17 +12992,17 @@
                 {
                   "line_id": "B01L04C07",
                   "line_role": "target",
-                  "es": "Tom?s intenta mantener el ritmo.",
-                  "en": "Tom?s tries to keep the rhythm.",
-                  "preferred_answer": "Tom?s tries to keep the rhythm.",
+                  "es": "Tomás intenta mantener el ritmo.",
+                  "en": "Tomás tries to keep the rhythm.",
+                  "preferred_answer": "Tomás tries to keep the rhythm.",
                   "accepted_answers": [
-                    "Tom?s tries to keep the rhythm."
+                    "Tomás tries to keep the rhythm."
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "base verb + infinitive complement",
                   "pattern": "Subject + base verb + complement",
                   "focus_tokens": [
-                    "Tom?s",
+                    "Tomás",
                     "tries",
                     "to",
                     "keep"
@@ -13059,10 +13059,10 @@
                     "not"
                   ],
                   "common_errors": [
-                    "A?adir -s a keep."
+                    "Añadir -s a keep."
                   ],
                   "hints": [
-                    "La base form se mantiene despu?s de tries."
+                    "La base form se mantiene después de tries."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe evitar que keep se conjugue.",
                   "vocabulary_candidates": [
@@ -13152,9 +13152,9 @@
                     "Cambiar sell por sells."
                   ],
                   "hints": [
-                    "Despu?s de hope, sell va en base form."
+                    "Después de hope, sell va en base form."
                   ],
-                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe reforzar la base form despu?s de hope.",
+                  "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe reforzar la base form después de hope.",
                   "vocabulary_candidates": [
                     "sell",
                     "bread",
@@ -13172,7 +13172,7 @@
                 {
                   "line_id": "B01L04C09",
                   "line_role": "context",
-                  "es": "La ma?ana es larga, pero el equipo sigue atento.",
+                  "es": "La mañana es larga, pero el equipo sigue atento.",
                   "en": "The morning is long, but the team stays focused.",
                   "preferred_answer": "The morning is long, but the team stays focused.",
                   "accepted_answers": [
@@ -13180,7 +13180,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "morning",
                     "is",
@@ -13249,10 +13249,10 @@
                     "not"
                   ],
                   "common_errors": [
-                    "Cerrar la secuencia sin una sensaci?n de avance real."
+                    "Cerrar la secuencia sin una sensación de avance real."
                   ],
                   "hints": [
-                    "La historia necesita tensi?n y constancia al mismo tiempo."
+                    "La historia necesita tensión y constancia al mismo tiempo."
                   ],
                   "tutor_explanation": "El desarrollo debe hacer sentir que el trabajo matutino es real y progresivo.",
                   "vocabulary_candidates": [
@@ -13342,7 +13342,7 @@
                     "Conjugar learn cuando debe quedarse en base form."
                   ],
                   "hints": [
-                    "Despu?s de wants, learn sigue en base form."
+                    "Después de wants, learn sigue en base form."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe fijar el infinitivo como complemento.",
                   "vocabulary_candidates": [
@@ -13361,17 +13361,17 @@
                 {
                   "line_id": "B01L04C11",
                   "line_role": "target",
-                  "es": "Tom?s necesita hacer una ?ltima prueba.",
-                  "en": "Tom?s needs to do one last test.",
-                  "preferred_answer": "Tom?s needs to do one last test.",
+                  "es": "Tomás necesita hacer una última prueba.",
+                  "en": "Tomás needs to do one last test.",
+                  "preferred_answer": "Tomás needs to do one last test.",
                   "accepted_answers": [
-                    "Tom?s needs to do one last test."
+                    "Tomás needs to do one last test."
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "base verb + infinitive complement",
                   "pattern": "Subject + base verb + complement",
                   "focus_tokens": [
-                    "Tom?s",
+                    "Tomás",
                     "needs",
                     "to",
                     "do"
@@ -13433,7 +13433,7 @@
                     "Cambiar do por does o forgot to do."
                   ],
                   "hints": [
-                    "El verbo principal sigue en base form despu?s de needs."
+                    "El verbo principal sigue en base form después de needs."
                   ],
                   "tutor_explanation": "Estructura objetivo: Subject + base verb + complement. El tutor debe insistir en do como base form.",
                   "vocabulary_candidates": [
@@ -13453,7 +13453,7 @@
                 {
                   "line_id": "B01L04C12",
                   "line_role": "context",
-                  "es": "Al final, la panader?a abre con ?xito.",
+                  "es": "Al final, la panadería abre con éxito.",
                   "en": "In the end, the bakery opens successfully.",
                   "preferred_answer": "In the end, the bakery opens successfully.",
                   "accepted_answers": [
@@ -13461,7 +13461,7 @@
                   ],
                   "lesson_target": "Verbos base y complementos",
                   "grammar_focus": "contexto narrativo y repaso acumulativo",
-                  "pattern": "estructura previamente aprendida / orden natural de la oraci?n",
+                  "pattern": "estructura previamente aprendida / orden natural de la oración",
                   "focus_tokens": [
                     "bakery",
                     "opens",
@@ -13527,7 +13527,7 @@
                     "Cerrar la historia con una frase plana y sin cierre."
                   ],
                   "hints": [
-                    "La ?ltima l?nea debe dejar una sensaci?n de logro."
+                    "La última línea debe dejar una sensación de logro."
                   ],
                   "tutor_explanation": "El cierre debe sonar natural y mostrar que el esfuerzo dio resultado.",
                   "vocabulary_candidates": [

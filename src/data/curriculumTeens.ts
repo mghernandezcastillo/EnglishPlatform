@@ -54,12 +54,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Saying Hello: Formal vs Informal 👋 / Saludos","description":"Greetings in Context","content":["Formal: Hello! / Good morning! / Good afternoon!","Informal: Hey! / What's up? / Hi there!","With friends, use casual greetings like 'Hey bro!'"],"imageUrl":"/images/teens-basic-zero-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Asking & Giving Names 🕵️ / Preguntar el Nombre","description":"Names & Introductions","content":["Question: What is your name? / What's your name?","Answer: My name is Alex. / I'm Alex.","Nice to meet you! -> Nice to meet you too!"],"imageUrl":"/images/teens-basic-zero-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Asking How Someone Is 🤝 / ¿Cómo estás?","description":"Feelings & Well-being","content":["Question: How are you today? / How's it going?","Answers: I'm great! / I'm fine, thanks. / Not bad, you?","Always return the question: 'And you?'"],"imageUrl":"/images/teens-basic-zero-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Introduction Formula 📝 / Fórmula de Presentación","description":"Step by Step Greeting","content":["Formula: [Greeting] + [I'm Name] + [Nice to meet you] + [How are you?]","Example: 'Hey! I'm Leo. Nice to meet you! How are you today?'"],"imageUrl":"/images/teens-basic-zero-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Say Hi! 🎯 / Mini Reto","description":"Practice Greeting","content":["Tell the teacher out loud:","1. Greet the teacher politely.","2. State your name and how you feel today!"],"imageUrl":"/images/teens-basic-zero-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Saying Hello & Asking Names 👋 / Saludos y Nombres",
+                    "description": "Greetings and Name Basics",
+                    "content": [
+                              "Formal: Hello! / Good morning! / Nice to meet you!",
+                              "Informal: Hey! / What's up? / How's it going?",
+                              "Feelings: I'm great! / I'm fine, thanks / Not bad, you?"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Introduction Formula 📝 / Fórmula de Presentación",
+                    "description": "Step by Step Greeting Formula",
+                    "content": [
+                              "Formula: [Greeting] + [I'm Name] + [Nice to meet you] + [How are you?]",
+                              "Example 1: 'Hey! I'm Alex. Nice to meet you! How are you today?'",
+                              "Example 2: 'Good morning! My name is Sofia. I'm great, and you?'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Say Hi! 🎯 / Mini Reto",
+                    "description": "Practice Greeting",
+                    "content": [
+                              "Tell the teacher out loud:",
+                              "1. Greet the teacher politely.",
+                              "2. State your name and how you feel today!"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -263,12 +294,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Numbers 1-20 & 20-100 🔢 / Números","description":"Counting and Pronunciation","content":["1-12: one, two, three, four, five... twelve","13-19 (-teen): thirteen, fourteen, fifteen... nineteen","20-100 (-ty): twenty, thirty, forty, fifty, one hundred"],"imageUrl":"/images/teens-basic-zero-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Asking & Telling Age 🎂 / Edad","description":"How Old Are You?","content":["Question: How old are you?","Answer: I am 14 years old. / I'm 15.","Never say 'I have 14 years' in English! Always use 'I am'."],"imageUrl":"/images/teens-basic-zero-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Months & Birthdays 📅 / Meses y Cumpleaños","description":"Dates and Months","content":["January, February, March, April, May, June, July...","When is your birthday? -> My birthday is in October.","Specific day: It is on October 15th."],"imageUrl":"/images/teens-basic-zero-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Age & Birthday Formula 🎈 / Fórmula de Edad","description":"Full Sentence Structure","content":["Formula: I am [Number] years old and my birthday is in [Month].","Example: 'I am 15 years old and my birthday is in August.'"],"imageUrl":"/images/teens-basic-zero-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Birthday Card 🎯 / Mini Reto","description":"Share Your Age and Month","content":["Complete and say out loud:","'I am ________ years old and my birthday is in ________.'"],"imageUrl":"/images/teens-basic-zero-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Numbers 1-31 & Birthday Months 🎂 / Números y Meses",
+                    "description": "Numbers & Calendar Basics",
+                    "content": [
+                              "Numbers 1-10: one, two, three, four, five, six, seven, eight, nine, ten",
+                              "Numbers 11-20: eleven, twelve, thirteen, fourteen, fifteen, twenty...",
+                              "Months: January, February, March, April, May, June, July, August, September, October, November, December"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Age & Birthday Formula 📅 / Fórmula de Edad y Cumpleaños",
+                    "description": "Age with Verb To Be and Months with IN",
+                    "content": [
+                              "Age Formula: I am + [Number] + years old. (Never say 'I have 14 years')",
+                              "Birthday Formula: My birthday is IN + [Month].",
+                              "Example: 'I am 14 years old and my birthday is in October.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Birthday Card 🎯 / Mini Reto",
+                    "description": "Share Your Age and Month",
+                    "content": [
+                              "Complete and say out loud to the teacher:",
+                              "'I am ________ years old and my birthday is in ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -474,12 +535,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"My Body & Limbs 👦🦾 / Partes del Cuerpo","description":"Body Vocabulary","content":["Head, face, shoulders, arms, hands, legs, feet","Eyes, ears, mouth, nose, hair","Touch your head! Wave your hands!"],"imageUrl":"/images/teens-basic-zero-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Action Verbs 🏃‍♂️⚡ / Verbos de Acción","description":"Actions We Can Do","content":["Run, jump, swim, dance, sing, speak, skate","A bird can fly. A fish can swim.","I can run fast. My friend can play guitar."],"imageUrl":"/images/teens-basic-zero-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Abilities: Can vs Can't 💪 / Habilidades","description":"Express Abilities","content":["Positive: I can swim well.","Negative: I can't speak Japanese yet.","Question: Can you skate? -> Yes, I can! / No, I can't."],"imageUrl":"/images/teens-basic-zero-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Ability Formula 🎯 / Fórmula de Habilidad","description":"Subject + Can + Verb","content":["Formula: I can [Action 1], but I can't [Action 2].","Example: 'I can play basketball, but I can't play the violin.'"],"imageUrl":"/images/teens-basic-zero-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Talent Show 🎯 / Mini Reto","description":"Share 2 Abilities","content":["Tell the teacher:","1. Name 2 cool things you CAN do.","2. Name 1 action you CAN'T do yet!"],"imageUrl":"/images/teens-basic-zero-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Body Parts & Action Verbs 💪 / Partes del Cuerpo y Acciones",
+                    "description": "Body & Action Words",
+                    "content": [
+                              "Body: Head, arms, legs, hands, feet, eyes, ears",
+                              "Actions: Run fast, jump high, dance, swim, play soccer, skate",
+                              "Which action do you do every week?"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Ability Formula: CAN vs CAN'T ⚡ / Fórmula de Habilidades",
+                    "description": "Expressing What You Can and Cannot Do",
+                    "content": [
+                              "Positive (+): I CAN + [Verb] -> 'I can skate very well.'",
+                              "Negative (-): I CAN'T + [Verb] -> 'I can't swim yet.'",
+                              "Contrast: 'I can play soccer, but I can't dance hip-hop.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Talent Show 🎯 / Mini Reto",
+                    "description": "Share 2 Abilities",
+                    "content": [
+                              "Tell the teacher:",
+                              "1. Name 2 cool things you CAN do.",
+                              "2. Name 1 action you CAN'T do yet!"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -683,12 +775,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Tech Gadgets & Gaming 🎧🎮 / Tecnología y Juegos","description":"Everyday Devices","content":["Smartphone, laptop, gaming console, headphones, smartwatch","I love gaming on my PC.","My wireless headphones are essential for music."],"imageUrl":"/images/teens-basic-zero-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Have / Don't Have 📦 / Posesión","description":"Express What You Own","content":["I have a new smartphone and a gaming headset.","I don't have a tablet or a smart TV.","Do you have a console? -> Yes, I have a PlayStation!"],"imageUrl":"/images/teens-basic-zero-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Adjectives for Tech ⚡ / Adjetivos Tecnológicos","description":"Describe Gadgets","content":["Fast, slow, modern, old, portable, powerful, wireless","My laptop is fast and very light.","These headphones are super comfortable."],"imageUrl":"/images/teens-basic-zero-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Tech Description Formula 💡 / Fórmula Tecnológica","description":"Gadget + Adjective","content":["Formula: I have a [Adjective] [Gadget] and I use it for [Activity].","Example: 'I have a powerful laptop and I use it for gaming and school.'"],"imageUrl":"/images/teens-basic-zero-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Favorite Device 🎯 / Mini Reto","description":"Describe Your Gadget","content":["Tell the teacher:","'I have a ________ and it is very ________.'","What do you use it for most?"],"imageUrl":"/images/teens-basic-zero-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Gadgets, Tech & Adjectives 📱🎧 / Tecnología y Adjetivos",
+                    "description": "Everyday Devices and Descriptions",
+                    "content": [
+                              "Devices: Smartphone, laptop, headphones, smartwatch, gaming console, tablet",
+                              "Adjectives: Fast, cool, useful, modern, portable, expensive",
+                              "What is your #1 favorite device?"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Tech Possession Formula 💻 / Fórmula de Posesión",
+                    "description": "HAVE / HAS + Adjective + Noun",
+                    "content": [
+                              "I / You / We / They -> HAVE | He / She / It -> HAS",
+                              "Formula: Subject + have/has + a/an + [Adjective] + [Device]",
+                              "Example: 'I have wireless headphones and they are super useful for music.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-04/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Favorite Device 🎯 / Mini Reto",
+                    "description": "Describe Your Gadget",
+                    "content": [
+                              "Tell the teacher:",
+                              "'I have a ________ and it is very ________.'",
+                              "What do you use it for most?"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -892,12 +1015,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Yummy Snacks & Cool Drinks 🍔🥤 / Snacks y Bebidas","description":"Food Vocabulary","content":["Pizza, burgers, tacos, popcorn, cookies, fruit salad","Smoothie, boba tea, iced lemonade, water, juice","What is your favorite weekend snack?"],"imageUrl":"/images/teens-basic-zero-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Likes & Dislikes 👍👎 / Gustos","description":"Express Preferences","content":["I like crispy tacos and sweet cookies.","I don't like spicy food or black coffee.","Do you like bubble tea? -> Yes, I love it!"],"imageUrl":"/images/teens-basic-zero-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Adjectives for Food 🌶️😋 / Describir Comida","description":"Taste & Texture","content":["Delicious, sweet, salty, spicy, fresh, crunchy","This smoothie is cold, sweet, and delicious!","These chips are super crunchy."],"imageUrl":"/images/teens-basic-zero-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Food Preference Formula 🍕 / Fórmula de Preferencias","description":"Food + Reason","content":["Formula: I love [Food/Drink] because it is [Taste Adjective].","Example: 'I love mango smoothies because they are sweet and cold.'"],"imageUrl":"/images/teens-basic-zero-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Snack Attack 🎯 / Mini Reto","description":"Order Your Snack","content":["Tell the teacher:","1. What is your #1 favorite snack?","2. One food or drink you really dislike!"],"imageUrl":"/images/teens-basic-zero-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Snacks, Drinks & Flavors 🍕🥤 / Snacks y Sabores",
+                    "description": "Teen Food Lexicon",
+                    "content": [
+                              "Snacks: Pizza, burger, popcorn, nachos, cookies, fruit salad",
+                              "Drinks: Lemonade, bubble tea, iced tea, soda, water, smoothie",
+                              "Flavors: Sweet (dulce), salty (salado), spicy (picante), delicious"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Preference Formula: LIKE & BECAUSE 😋 / Fórmula de Gustos",
+                    "description": "Likes and Dislikes with Reasons",
+                    "content": [
+                              "Like (+): I like / I love [Food] because it is [Flavor].",
+                              "Dislike (-): I don't like [Food] because it is too sweet / salty.",
+                              "Example: 'I love bubble tea because it is cold and sweet!'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-05/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Snack Attack 🎯 / Mini Reto",
+                    "description": "Order Your Snack",
+                    "content": [
+                              "Tell the teacher:",
+                              "1. What is your #1 favorite snack and why?",
+                              "2. One food or drink you really dislike!"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -1101,12 +1255,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Colors, Shapes & Patterns 🎨⏺️ / Colores y Formas","description":"Visual Elements","content":["Circle, square, triangle, rectangle, star","Neon green, navy blue, pastel pink, metallic silver","Striped, checkered, floral, plain patterns"],"imageUrl":"/images/teens-basic-zero-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Describing Objects: It is a... 🖼️ / Describir Objetos","description":"Size, Color & Shape","content":["It is a round, red ball.","It is an oversized, checkered shirt.","Rule: Size first, then Color, then Noun."],"imageUrl":"/images/teens-basic-zero-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Wearing Colors & Style 👕 / Estilo Personal","description":"Clothing Colors","content":["I am wearing a black and white striped hoodie.","She is wearing blue jeans and red sneakers.","My backpack is dark grey with yellow straps."],"imageUrl":"/images/teens-basic-zero-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Style Description Formula 🌟 / Fórmula de Estilo","description":"Size + Color + Pattern + Item","content":["Formula: It is a [Size] [Color] [Pattern] [Item].","Example: 'It is a large, navy blue, checkered backpack.'"],"imageUrl":"/images/teens-basic-zero-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Describe an Item 🎯 / Mini Reto","description":"Describe an Object","content":["Look around your room or desk:","'It is a (color) and (shape/style) ________.'","Say your sentence out loud!"],"imageUrl":"/images/teens-basic-zero-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Shapes, Colors & Patterns 📐🎨 / Formas y Diseños",
+                    "description": "Visual Attributes",
+                    "content": [
+                              "Shapes: Circle, square, triangle, rectangle, star",
+                              "Patterns: Striped (rayas), dotted (puntos), plain (liso), checkered (cuadros)",
+                              "Colors: Dark blue, light green, neon pink, matte black"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Object Description Formula 🔍 / Fórmula de Descripción",
+                    "description": "Adjective Order: Color + Pattern/Shape + Noun",
+                    "content": [
+                              "Formula: It is a + [Color] + [Pattern/Shape] + [Object].",
+                              "Example 1: 'My hoodie is dark blue and striped.'",
+                              "Example 2: 'My notebook is a neon pink rectangle.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-06/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Describe an Item 🎯 / Mini Reto",
+                    "description": "Describe an Object",
+                    "content": [
+                              "Look around your room or desk right now:",
+                              "'It is a (color) and (shape/style) ________.'",
+                              "Say your sentence out loud to the teacher!"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -1310,12 +1495,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"School Supplies & Backpack ✏️🎒 / Útiles Escolares","description":"Classroom Gear","content":["Backpack, notebook, binder, pens, pencils, eraser, ruler","Highlighter, calculator, laptop, water bottle","What is inside your school backpack?"],"imageUrl":"/images/teens-basic-zero-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"There is vs There are 📚 / Hay (Singular y Plural)","description":"Quantities in Context","content":["Singular: There is a red notebook on my desk.","Plural: There are five colorful pens in my pencil case.","Negative: There isn't any paper. / There aren't any pencils."],"imageUrl":"/images/teens-basic-zero-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"School Subjects & Favorites 🤓 / Materias Favoritas","description":"Subjects in School","content":["Math, Science, English, History, Art, P.E. (Physical Education)","My favorite subject is Art because I love drawing.","I don't like History because it's difficult."],"imageUrl":"/images/teens-basic-zero-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Backpack Inventory Formula 🎒 / Fórmula de Mochila","description":"Inventory Sentence","content":["Formula: In my backpack, there is a [Singular Item] and there are [Plural Items].","Example: 'In my backpack, there is a calculator and there are three notebooks.'"],"imageUrl":"/images/teens-basic-zero-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Backpack Scan 🎯 / Mini Reto","description":"Check Your Backpack","content":["Tell the teacher:","1. What is your favorite school subject?","2. Name 2 items currently in your bag using 'There are...'"],"imageUrl":"/images/teens-basic-zero-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "School Subjects & Backpack Gear 🎒📚 / Materias y Útiles",
+                    "description": "School Supplies & Classes",
+                    "content": [
+                              "Subjects: Math, Science, English, History, Art, P.E. (Physical Education)",
+                              "Supplies: Backpack, notebook, pencil case, pens, ruler, scissors, calculator",
+                              "Which school subject is your absolute favorite?"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-07/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Backpack Formula: THERE IS / THERE ARE 🎒 / Fórmula de Existencia",
+                    "description": "Singular and Plural Existence",
+                    "content": [
+                              "Singular (1): In my backpack, THERE IS a calculator and a notebook.",
+                              "Plural (2+): In my backpack, THERE ARE three pens and two highlighters.",
+                              "Example: 'In my pencil case, there is an eraser and there are two markers.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Backpack Scan 🎯 / Mini Reto",
+                    "description": "Check Your Backpack",
+                    "content": [
+                              "Tell the teacher:",
+                              "1. What is your favorite school subject?",
+                              "2. Name 2 items in your bag using 'There is...' and 'There are...'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -1519,12 +1735,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Common Pets & Wild Animals 🐕🦁 / Mascotas y Animales","description":"Animal Vocabulary","content":["Pets: Dog, cat, hamster, parrot, bunny, fish","Wild: Lion, tiger, elephant, dolphin, eagle, wolf","A dog is loyal and friendly. A tiger is wild and fast."],"imageUrl":"/images/teens-basic-zero-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Have / Has for Pets 🐾 / Mascotas con Have/Has","description":"Describing Pets","content":["I have a fluffy cat named Luna.","My friend has two energetic dogs.","Do you have pets? -> Yes, I have a parrot! / No, I don't."],"imageUrl":"/images/teens-basic-zero-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Adjectives for Animals 🦊 / Describir Animales","description":"Traits & Habits","content":["Cute, fluffy, smart, dangerous, playful, quiet","Dolphins are very smart and playful.","Sharks are dangerous predators."],"imageUrl":"/images/teens-basic-zero-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Pet Description Formula 🐾 / Fórmula de Mascota","description":"Pet + Traits","content":["Formula: I (have/love) [Animal] because they are [Adjectives].","Example: 'I have a playful dog because dogs are loyal and energetic.'"],"imageUrl":"/images/teens-basic-zero-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Animal Kingdom 🎯 / Mini Reto","description":"Share Your Favorite Animal","content":["Tell the teacher:","'My favorite animal is the ________ because it is ________ and ________.'"],"imageUrl":"/images/teens-basic-zero-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Pets & Animal Friends 🐶🐱 / Mascotas y Animales",
+                    "description": "Animals and Traits",
+                    "content": [
+                              "Pets: Dog, cat, parrot, hamster, rabbit, turtle, fish",
+                              "Wild Animals: Lion, dolphin, eagle, tiger, monkey",
+                              "Adjectives: Playful, smart, fast, furry, cute, loyal"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Animal Spotlight Formula 🐾 / Fórmula de Animales",
+                    "description": "Description + Action + Personality",
+                    "content": [
+                              "Formula: My favorite animal is the [Animal] because it is [Adjective] and can [Action].",
+                              "Example 1: 'My dog is very playful and he can fetch the ball.'",
+                              "Example 2: 'Dolphins are smart and can swim very fast in the ocean.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-08/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Animal Kingdom 🎯 / Mini Reto",
+                    "description": "Share Your Favorite Animal",
+                    "content": [
+                              "Tell the teacher:",
+                              "'My favorite animal is the ________ because it is ________ and can ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-08/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -1728,12 +1974,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Popular Teen Hobbies 🎮🎸 / Pasatiempos","description":"Hobbies in Action","content":["Gaming, skateboarding, drawing, photography, dancing, playing guitar","Listening to podcasts, watching anime, cooking","What do you love doing in your free time?"],"imageUrl":"/images/teens-basic-zero-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Grammar: Like + -ing ⚽ / Like con Gerundio","description":"Actions as Hobbies","content":["I like playing video games online.","She loves drawing anime characters.","He enjoys skateboarding at the park.","Rule: like / love / enjoy + [Verb-ING]"],"imageUrl":"/images/teens-basic-zero-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Frequency & When 🕒 / ¿Cuándo lo haces?","description":"Frequency Expressions","content":["Always, usually, often, on weekends, after school","I usually play basketball after school.","I always listen to music when I do homework."],"imageUrl":"/images/teens-basic-zero-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Hobby Sentence Formula 🎨 / Fórmula de Pasatiempos","description":"Action + Frequency","content":["Formula: In my free time, I love [Verb-ING] [Frequency].","Example: 'In my free time, I love skateboarding at the park on weekends.'"],"imageUrl":"/images/teens-basic-zero-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Hobby Spotlight 🎯 / Mini Reto","description":"Share Your Hobby","content":["Tell the teacher:","'In my free time, I really enjoy ________ because it is ________.'"],"imageUrl":"/images/teens-basic-zero-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Hobbies & Free Time Activities 🎮🎨 / Pasatiempos",
+                    "description": "Hobbies and Verbs",
+                    "content": [
+                              "Gaming, drawing, playing guitar, listening to music, watching anime",
+                              "Skateboarding, photography, baking, coding, dancing TikTok dances",
+                              "Time: In my free time / On weekends / After school"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Hobby Expression Formula 🎧 / Fórmula de Hobbies",
+                    "description": "ENJOY / PREFER + Verb(-ing) + Reason",
+                    "content": [
+                              "Formula: In my free time, I love/enjoy + [Verb-ing] because it is [Reason].",
+                              "Example 1: 'In my free time, I really enjoy playing online games with friends.'",
+                              "Example 2: 'On weekends, I prefer listening to music because it relaxes me.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Hobby Spotlight 🎯 / Mini Reto",
+                    "description": "Share Your Hobby",
+                    "content": [
+                              "Tell the teacher:",
+                              "'In my free time, I really enjoy ________ because it is ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -1937,12 +2213,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Immediate & Extended Family 🏠 / Mi Familia","description":"Family Members","content":["Parents: Mother (Mom), Father (Dad)","Siblings: Brother, Sister","Extended: Grandmother, Grandfather, Uncle, Aunt, Cousin","This is my family!"],"imageUrl":"/images/teens-basic-zero-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-cyan-600"},
-              {"id":"slide-5","title":"Describing Family: He / She is 👦👧 / Describir Familiares","description":"Personality and Traits","content":["My mother is kind and hardworking.","My brother is funny and very tall.","My cousin is creative and loves coding."],"imageUrl":"/images/teens-basic-zero-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-teal-600"},
-              {"id":"slide-6","title":"Possessives: My, His, Her 🔑 / Posesivos","description":"Possessive Adjectives","content":["This is my sister. Her name is Sofia.","This is my brother. His hobby is soccer.","These are my parents. Their house is cozy."],"imageUrl":"/images/teens-basic-zero-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-emerald-600"},
-              {"id":"slide-7","title":"The Family Member Formula 👨‍👩‍👧 / Fórmula Familiar","description":"Full Family Profile","content":["Formula: This is my [Relative]. [His/Her] name is [Name] and [he/she] is [Personality].","Example: 'This is my sister. Her name is Mia and she is very artistic.'"],"imageUrl":"/images/teens-basic-zero-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-amber-600"},
-              {"id":"slide-8","title":"Quick Check: Family Intro 🎯 / Mini Reto","description":"Introduce a Relative","content":["Introduce 1 family member to the teacher:","'This is my ________. (His/Her) name is ________ and (he/she) is ________.'"],"imageUrl":"/images/teens-basic-zero-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-orange-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Family Members & Traits 🏠👥 / Familia y Rasgos",
+                    "description": "Family and Personalities",
+                    "content": [
+                              "Parents: Mother (Mom), Father (Dad) | Siblings: Brother, Sister",
+                              "Extended: Grandmother, Grandfather, Uncle, Aunt, Cousin",
+                              "Traits: Kind, funny, creative, hardworking, tall, cheerful"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Family Intro Formula: POSSESSIVES 🔑 / Fórmula de Familia",
+                    "description": "MY, HIS, HER + Name & Trait",
+                    "content": [
+                              "Formula: This is my [Relative]. (His/Her) name is [Name] and (he/she) is [Trait].",
+                              "Example 1: 'This is my sister. Her name is Sofia and she is very creative.'",
+                              "Example 2: 'This is my brother. His name is Leo and he loves soccer.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Family Intro 🎯 / Mini Reto",
+                    "description": "Introduce a Relative",
+                    "content": [
+                              "Introduce 1 family member to the teacher:",
+                              "'This is my ________. (His/Her) name is ________ and (he/she) is ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-orange-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -2146,12 +2452,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"The English Alphabet & Vowels 🅰️ / El Alfabeto","description":"Pronunciation Guide","content":["Vowels: A /ei/, E /i:/, I /ai/, O /ou/, U /ju:/","Tricky letters: G /dʒi:/ vs J /dʒei/","H /eitʃ/, R /ɑ:r/, W /dʌbəl ju:/, Y /wai/, Z /zed/ or /zi:/"],"imageUrl":"/images/teens-basic-zero-class-11/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Spelling Names & Words 🗣️ / Deletrear Nombres","description":"How Do You Spell That?","content":["Question: How do you spell your name?","Answer: M-A-T-E-O / S-O-P-H-I-A","Can you spell your last name, please?"],"imageUrl":"/images/teens-basic-zero-class-11/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Social Media Handles & Emails 📱🌐 / Redes Sociales","description":"Usernames and Symbols","content":["@ = 'at' (example: @cool_skater)","_ = 'underscore' / . = 'dot'","Example: alex_gamer@email.com -> 'alex underscore gamer at email dot com'"],"imageUrl":"/images/teens-basic-zero-class-11/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Username Spelling Formula 💬 / Fórmula de Deletreo","description":"Spelling Your Handle","content":["Formula: My username is [Handle], spelled [L-E-T-T-E-R-S].","Example: 'My username is @leo_art, spelled L-E-O underscore A-R-T.'"],"imageUrl":"/images/teens-basic-zero-class-11/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Spell It Out! 🎯 / Mini Reto","description":"Spell Your Name","content":["Spell your first name letter by letter to the teacher:","Example: 'My name is LUCAS -> L - U - C - A - S'"],"imageUrl":"/images/teens-basic-zero-class-11/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Alphabet, Vowels & Tricky Letters 🅰️🗣️ / El Alfabeto",
+                    "description": "Pronunciation and Key Letters",
+                    "content": [
+                              "Vowels: A /ei/, E /i:/, I /ai/, O /ou/, U /ju:/",
+                              "Tricky Letters: G /dʒi:/ vs J /dʒei/ | H /eitʃ/ | R /ɑ:r/ | W /dʌbəl ju:/ | Y /wai/ | Z /zi:/",
+                              "Symbols: @ = 'at' | _ = 'underscore' | . = 'dot'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-11/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Spelling & Handle Formula 📱 / Fórmula de Deletreo",
+                    "description": "How to Spell Names and Handles",
+                    "content": [
+                              "Name Spelling: 'My name is ALEX -> A - L - E - X.'",
+                              "Username Formula: 'My handle is @alex_gamer -> alex underscore gamer at instagram dot com.'",
+                              "Question: 'How do you spell your last name, please?'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-11/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Spell It Out! 🎯 / Mini Reto",
+                    "description": "Spell Your Name",
+                    "content": [
+                              "Spell your first name letter by letter to the teacher:",
+                              "Example: 'My name is LUCAS -> L - U - C - A - S'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-11/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -2265,12 +2601,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Personal Profile Overview 🪪 / Datos Personales","description":"Key Personal Info","content":["Name, Age, City/Country, School Grade","I am 14 years old. I live in Medellin, Colombia.","I am in 9th grade at school."],"imageUrl":"/images/teens-basic-zero-class-12/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Connecting Profile Facts 🔗 / Conectar Ideas","description":"Using And / But","content":["I love video games AND I play soccer on weekends.","I like rock music, BUT I don't play any instruments.","Use 'and' to add info, 'but' for contrasts."],"imageUrl":"/images/teens-basic-zero-class-12/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"My Goals in English 🌟 / Mis Metas","description":"Future Passions","content":["I want to learn English to travel the world.","I want to chat with gamers internationally.","English gives me superpowers!"],"imageUrl":"/images/teens-basic-zero-class-12/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Complete Bio Formula 🗣️ / Fórmula de Biografía","description":"Full Self-Intro","content":["Formula: Hi! I'm [Name], [Age] years old, from [City]. I love [Hobby] and want to learn English to [Goal].","Example: 'Hi! I'm Diego, 15, from Lima. I love basketball and want to travel.'"],"imageUrl":"/images/teens-basic-zero-class-12/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: 20-Second Bio 🎯 / Mini Reto","description":"Deliver Your Bio","content":["Deliver your bio to the teacher in 3 complete sentences:","1. Name, age, city.","2. Favorite hobby.","3. Your goal in English!"],"imageUrl":"/images/teens-basic-zero-class-12/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Personal Profile & Goals 🪪🌟 / Perfil Personal",
+                    "description": "Bio Data and Aspirations",
+                    "content": [
+                              "Facts: Name, Age (I am 14), City & Country (I live in Medellin), Grade (9th grade)",
+                              "Goals: I want to learn English to travel / chat with gamers / study abroad",
+                              "Connectors: Use 'AND' for extra facts, 'BUT' for contrasts"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-12/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Complete Bio Formula 🗣️ / Fórmula de Biografía",
+                    "description": "3-Sentence Complete Intro",
+                    "content": [
+                              "Formula: Hi! I'm [Name], [Age] years old from [City]. I love [Hobby] and I want to [Goal]!",
+                              "Example: 'Hi! I'm Mateo, 15 years old from Cali. I love video games and I want to travel the world!'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-12/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: 20-Second Bio 🎯 / Mini Reto",
+                    "description": "Deliver Your Bio",
+                    "content": [
+                              "Deliver your bio to the teacher in 3 complete sentences:",
+                              "1. Name, age, city.",
+                              "2. Favorite hobby.",
+                              "3. Your goal in English!"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-12/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -2474,12 +2841,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Clothes & Style Items 👖👟 / Ropa y Calzado","description":"Wardrobe Essentials","content":["Hoodie, jacket, t-shirt, jeans, cargo pants, shorts","Sneakers, boots, cap, sunglasses, backpack","What is your favorite clothing item?"],"imageUrl":"/images/teens-basic-zero-class-13/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"What Are You Wearing? 🧥 / Present Continuous","description":"Wearing Clothes Now","content":["I am wearing a black oversized hoodie.","He is wearing blue jeans and white sneakers.","She is wearing a green jacket and a cap."],"imageUrl":"/images/teens-basic-zero-class-13/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Appearance & Hair 💇‍♂️ / Apariencia","description":"Physical Features","content":["Tall, short, medium height","Short curly hair, long straight hair, dark brown eyes","He has curly hair and wears cool glasses."],"imageUrl":"/images/teens-basic-zero-class-13/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Outfit Formula 👟 / Fórmula de Outfit","description":"Full Outfit Sentence","content":["Formula: Today I am wearing a [Color/Item] with [Color/Item] and [Shoes].","Example: 'Today I am wearing a grey hoodie with black jeans and white sneakers.'"],"imageUrl":"/images/teens-basic-zero-class-13/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Outfit Scanner 🎯 / Mini Reto","description":"Describe Your Clothes","content":["Look down at your clothes right now:","'Today I am wearing a ________ and ________.'","Tell the teacher your outfit!"],"imageUrl":"/images/teens-basic-zero-class-13/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Clothes, Sneakers & Style 👖👟 / Ropa y Calzado",
+                    "description": "Wardrobe Items and Appearance",
+                    "content": [
+                              "Clothes: Hoodie, jacket, t-shirt, jeans, cargo pants, shorts, cap, sunglasses",
+                              "Shoes & Bags: Sneakers, boots, backpack",
+                              "Appearance: Tall, short, curly hair, straight hair, dark eyes"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-13/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Outfit Formula: PRESENT CONTINUOUS 🧥 / Fórmula de Outfit",
+                    "description": "Wearing Now: BE + WEARING",
+                    "content": [
+                              "Formula: Today I am wearing a [Color/Item] with [Color/Item] and [Shoes].",
+                              "Example 1: 'Today I am wearing an oversized black hoodie with blue jeans and white sneakers.'",
+                              "Example 2: 'She is wearing a green jacket, dark sunglasses, and cool boots.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-13/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Outfit Scanner 🎯 / Mini Reto",
+                    "description": "Describe Your Clothes",
+                    "content": [
+                              "Look down at your clothes right now:",
+                              "'Today I am wearing a ________ and ________.'",
+                              "Tell the teacher your outfit!"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-13/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -2683,12 +3081,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Classroom Items & Spaces 🪑🏫 / El Salón de Clases","description":"School Environment","content":["Desk, chair, whiteboard, projector, clock, door","Library, cafeteria, science lab, school gym","Our classroom is bright and comfortable."],"imageUrl":"/images/teens-basic-zero-class-14/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Prepositions of Place 📍 / Preposiciones","description":"Where Things Are","content":["In, on, under, next to, behind, in front of","The notebook is ON the desk.","The backpack is UNDER the chair.","The whiteboard is IN FRONT OF the students."],"imageUrl":"/images/teens-basic-zero-class-14/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Classroom Action Verbs ✍️ / Acciones en Clase","description":"Commands and Actions","content":["Listen carefully, take notes, open your notebook","Raise your hand, ask a question, work in pairs","Please open your book to page 10."],"imageUrl":"/images/teens-basic-zero-class-14/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Classroom Location Formula 📍 / Fórmula de Ubicación","description":"Object + Preposition + Place","content":["Formula: The [Object] is [Preposition] the [Location].","Example: 'The blue notebook is next to the laptop on the desk.'"],"imageUrl":"/images/teens-basic-zero-class-14/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Classroom Detective 🎯 / Mini Reto","description":"Locate an Object","content":["Where is your pen or phone right now?","'My (pen/phone) is (on/under/next to) the ________.'","Say it out loud!"],"imageUrl":"/images/teens-basic-zero-class-14/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Classroom Spaces, Items & Prepositions 🪑🏫 / El Salón de Clases",
+                    "description": "Classroom Environment and Locations",
+                    "content": [
+                              "Objects: Desk, chair, whiteboard, projector, clock, door, laptop, backpack",
+                              "Prepositions of Place: In, on, under, next to, behind, in front of",
+                              "Commands: Open your book, take notes, raise your hand"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-14/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Classroom Location Formula 📍 / Fórmula de Ubicación",
+                    "description": "Object + IS + Preposition + Place",
+                    "content": [
+                              "Formula: The [Object] is [Preposition] the [Location].",
+                              "Example 1: 'The notebook is ON the desk next to the laptop.'",
+                              "Example 2: 'The backpack is UNDER the chair behind Sofia.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-14/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Classroom Detective 🎯 / Mini Reto",
+                    "description": "Locate an Object",
+                    "content": [
+                              "Where is your pen or phone right now?",
+                              "'My (pen/phone) is (on/under/next to) the ________.'",
+                              "Say it out loud to the teacher!"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-14/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -2891,12 +3320,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"slide-4","title":"Morning, Afternoon & Night 🌅🌇 / Momentos del Día","description":"Daily Routine Verbs","content":["Wake up, take a shower, have breakfast, go to school","Have lunch, do homework, hang out with friends","Have dinner, watch a series, go to bed"],"imageUrl":"/images/teens-basic-zero-class-15/slide-04.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-orange-600"},
-              {"id":"slide-5","title":"Telling the Time ⌚ / La Hora","description":"Hours and Minutes","content":["What time is it? -> It's 7:00 AM (seven o'clock).","7:15 = a quarter past seven / 7:30 = half past seven","7:45 = a quarter to eight / 10:00 PM = ten o'clock at night"],"imageUrl":"/images/teens-basic-zero-class-15/slide-05.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-rose-600"},
-              {"id":"slide-6","title":"Time Prepositions: AT vs IN ⏰ / Preposiciones de Tiempo","description":"Rules for Time","content":["Use AT for specific hours: at 6:30 AM, at noon, at midnight","Use IN for parts of the day: in the morning, in the afternoon","Example: I wake up AT 6:30 AM IN the morning."],"imageUrl":"/images/teens-basic-zero-class-15/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Routine Sentence Formula 🔄 / Fórmula de Rutina","description":"Routine + Time","content":["Formula: I [Routine Action] at [Time] [Time of Day].","Example: 'I have breakfast at 7:15 AM in the morning.'"],"imageUrl":"/images/teens-basic-zero-class-15/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Daily Clock 🎯 / Mini Reto","description":"Share Your Routine Time","content":["Tell the teacher:","1. What time do you wake up on school days?","2. What time do you go to sleep?"],"imageUrl":"/images/teens-basic-zero-class-15/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Daily Routine & Telling Time 🌅⌚ / Rutina y Horas",
+                    "description": "Routine Verbs and Clock Time",
+                    "content": [
+                              "Routine Verbs: Wake up, take a shower, have breakfast, go to school, do homework, go to bed",
+                              "Telling Time: 7:00 (seven o'clock) | 7:15 (a quarter past seven) | 7:30 (half past seven) | 7:45 (a quarter to eight)",
+                              "Prepositions: AT + hour (at 6:30 AM) | IN + part of day (in the morning, in the evening)"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-15/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-orange-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Daily Routine Formula 🔄 / Fórmula de Rutina",
+                    "description": "Action + AT Time + IN Part of Day",
+                    "content": [
+                              "Formula: I [Routine Action] at [Time] [Part of Day].",
+                              "Example 1: 'I wake up at 6:30 AM in the morning.'",
+                              "Example 2: 'I do my homework at 4:00 PM in the afternoon.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-15/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Daily Clock 🎯 / Mini Reto",
+                    "description": "Share Your Routine Time",
+                    "content": [
+                              "Tell the teacher:",
+                              "1. What time do you wake up on school days?",
+                              "2. What time do you go to sleep?"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-15/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -3099,12 +3559,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Review key grammar and vocabulary concepts.",
             slides: [
-              {"id":"slide-4","title":"Level 0 Review: Personal Info & Age 🌟 / Gran Repaso","description":"Summary Part 1","content":["Greetings: Hello, Hey, What's up!","Personal info: Name, age (I am 15), birthday month","Feelings: I am great, excited, and happy!"],"imageUrl":"/images/teens-basic-zero-class-16/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Grammar Review: Can, Have & Likes ⚡ / Gramática Clave","description":"Summary Part 2","content":["Abilities: I can skate, but I can't dance.","Possessions: I have a laptop and headphones.","Likes: I like listening to music and gaming."],"imageUrl":"/images/teens-basic-zero-class-16/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Routine & Lifestyle Review 🏆 / Rutina y Estilo","description":"Summary Part 3","content":["Outfit: Today I am wearing a hoodie and sneakers.","Routine: I wake up at 7:00 AM and go to school.","Favorites: My favorite subject is Art!"],"imageUrl":"/images/teens-basic-zero-class-16/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Startup Capstone Formula 🎓 / Fórmula Final","description":"Connect All Level 0 Learnings","content":["1. Introduce yourself & how you feel.","2. Share 1 thing you have and 1 thing you can do.","3. State your favorite hobby and routine time."],"imageUrl":"/images/teens-basic-zero-class-16/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Grand Startup Pitch 🎯 / Gran Reto","description":"Your Final Pitch","content":["Deliver your 30-second Level 0 English pitch to the teacher!","Show everything you learned in Level 0!"],"imageUrl":"/images/teens-basic-zero-class-16/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Level 0 Grand Review: Personal Bio & Skills 🌟 / Gran Repaso",
+                    "description": "Summary of All Level 0 Foundations",
+                    "content": [
+                              "Bio: Greetings, name, age (I am 15), birthday month, city",
+                              "Abilities & Tech: I can skate (can/can't), I have a laptop (have/has)",
+                              "Routine & Style: Today I am wearing a hoodie, I wake up at 7:00 AM"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-16/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Startup Capstone Formula 🎓 / Fórmula Final",
+                    "description": "Triad of Fluency for Startup Graduation",
+                    "content": [
+                              "1. Introduce yourself & how you feel.",
+                              "2. Share 1 thing you have and 1 thing you can do.",
+                              "3. State your favorite hobby and routine time.",
+                              "Example: 'Hi! I'm Leo, 15. I have headphones, I can play soccer, and I love gaming!'"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-16/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Grand Startup Pitch 🎯 / Gran Reto",
+                    "description": "Your Final Pitch",
+                    "content": [
+                              "Deliver your 30-second Level 0 English pitch to the teacher!",
+                              "Show everything you learned in Level 0!"
+                    ],
+                    "imageUrl": "/images/teens-basic-zero-class-16/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -3526,12 +4017,44 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"People in Your Circle & Personality 👥 / Personas y Personalidad","description":"Friends, Classmates & Traits","content":["Friend, Classmate, Teammate, Neighbor, Cousin","Emma is friendly, funny, and creative.","Leo is quiet and very helpful."],"imageUrl":"/images/teens-basic-1-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"Diapositiva 5","title":"Have / Has for Profiles 🎒 / Have y Has en Perfiles","description":"Features & Belongings","content":["I / You / We / They HAVE — He / She HAS","Maya has curly hair and a skateboard.","Noah has a camera and loves photography."],"imageUrl":"/images/teens-basic-1-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"Diapositiva 6","title":"Feelings & Why (Because) 😊⚡ / Emociones y Razones","description":"Emotions in Context","content":["Excited, Worried, Calm, Proud, Tired","She is excited because we have a school project.","Ask: How does he feel today? He is proud!"],"imageUrl":"/images/teens-basic-1-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"Diapositiva 7","title":"The Person Profile Formula 📝 / Fórmula de Perfil","description":"Build a Full Description","content":["[Person] + [is Personality] + [has Feature] + [Feels... because...]","Example: 'This is Leo. He is creative, has a cool jacket, and feels happy because it's Friday.'"],"imageUrl":"/images/teens-basic-1-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"Diapositiva 8","title":"Quick Check: Your Best Friend 🎯 / Mini Reto","description":"Describe a Friend","content":["Tell the teacher:","1. What is your friend's name and personality?","2. What is one thing they have?","3. How do they feel today?"],"imageUrl":"/images/teens-basic-1-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "People in Your Circle & Personality 👥 / Personas y Personalidad",
+                    "description": "Friends, Classmates & Traits",
+                    "content": [
+                              "Friend, Classmate, Teammate, Neighbor, Cousin",
+                              "Emma is friendly, funny, and creative.",
+                              "Leo is quiet and very helpful.",
+                              "I / You / We / They HAVE — He / She HAS"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Person Profile Formula 📝 / Fórmula de Perfil",
+                    "description": "Build a Full Description",
+                    "content": [
+                              "[Person] + [is Personality] + [has Feature] + [Feels... because...]",
+                              "Example: 'This is Leo. He is creative, has a cool jacket, and feels happy because it's Friday.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Your Best Friend 🎯 / Mini Reto",
+                    "description": "Describe a Friend",
+                    "content": [
+                              "Tell the teacher:",
+                              "1. What is your friend's name and personality?",
+                              "2. What is one thing they have?",
+                              "3. How do they feel today?"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -3853,12 +4376,44 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"Food & Drinks for Real Energy 🥗💧 / Comida y Energía","description":"Fuel Your Body","content":["Fruit, Vegetables, Protein, Grains, Water","Water helps you stay sharp and focused.","I choose water and fruit because I have practice."],"imageUrl":"/images/teens-basic-1-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"Diapositiva 5","title":"Sleep & Daily Movement 🏃‍♂️💤 / Sueño y Movimiento","description":"Healthy Daily Habits","content":["Sleep 8 hours, Stretch, Walk, Exercise","Healthy energy is not only about food.","I sleep eight hours because tomorrow is game day."],"imageUrl":"/images/teens-basic-1-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"Diapositiva 6","title":"Explain Reasons with 'Because' 💡 / Explicar con Because","description":"Habit + Because + Reason","content":["I eat breakfast because I need morning energy.","I carry a water bottle because practice is long.","Formula: [Habit Choice] + because + [Goal/Reason]"],"imageUrl":"/images/teens-basic-1-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"Diapositiva 7","title":"Helpful vs Unhelpful Habits ⚖️ / Hábitos Positivos","description":"Compare Daily Choices","content":["❌ Only chips & soda = Low energy & tired.","✔️ Sandwich + fruit + water = Steady high energy!","Small daily habits create big results."],"imageUrl":"/images/teens-basic-1-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"Diapositiva 8","title":"Quick Check: Your Energy Habit 🎯 / Mini Reto","description":"Share Your Habit","content":["Answer with a complete sentence:","'I (eat/drink/do) ________ because I want ________.'","Example: I drink water because I want steady energy."],"imageUrl":"/images/teens-basic-1-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "Food & Drinks for Real Energy 🥗💧 / Comida y Energía",
+                    "description": "Fuel Your Body",
+                    "content": [
+                              "Fruit, Vegetables, Protein, Grains, Water",
+                              "Water helps you stay sharp and focused.",
+                              "I choose water and fruit because I have practice.",
+                              "Sleep 8 hours, Stretch, Walk, Exercise"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "Helpful vs Unhelpful Habits ⚖️ / Hábitos Positivos",
+                    "description": "Compare Daily Choices",
+                    "content": [
+                              "❌ Only chips & soda = Low energy & tired.",
+                              "✔️ Sandwich + fruit + water = Steady high energy!",
+                              "Small daily habits create big results."
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Your Energy Habit 🎯 / Mini Reto",
+                    "description": "Share Your Habit",
+                    "content": [
+                              "Answer with a complete sentence:",
+                              "'I (eat/drink/do) ________ because I want ________.'",
+                              "Example: I drink water because I want steady energy."
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -4180,12 +4735,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"Read the Weather Forecast 🌤️🌧️ / Lee el Pronóstico","description":"Conditions & Temperatures","content":["Sunny, Cloudy, Rainy, Windy, Hot, Cold","It will be rainy this morning and windy later.","It is 15 degrees outside."],"imageUrl":"/images/teens-basic-1-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-cyan-600"},
-              {"id":"Diapositiva 5","title":"Temperature & Contrast with 'But' 🌡️ / Temperatura y Contraste","description":"Connecting Forecasts","content":["The morning is cool, but the afternoon is warm.","It is sunny, but the wind is very cold.","Use 'and' to add, 'but' to show contrast."],"imageUrl":"/images/teens-basic-1-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-teal-600"},
-              {"id":"Diapositiva 6","title":"What Do You Need? 🧥☔ / ¿Qué necesitas llevar?","description":"Weather Gear & Clothing","content":["Jacket, Umbrella, Sunglasses, Cap, Boots","You need an umbrella for the rain.","Bring water and sunscreen because it's hot."],"imageUrl":"/images/teens-basic-1-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-emerald-600"},
-              {"id":"Diapositiva 7","title":"The Weather Decision Formula 📝 / Fórmula del Clima","description":"Plan According to Weather","content":["Formula: [Weather Condition] + so I wear/bring + [Item] + because + [Reason]","Example: 'The forecast says rain, so I bring an umbrella because I walk home.'"],"imageUrl":"/images/teens-basic-1-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-amber-600"},
-              {"id":"Diapositiva 8","title":"Quick Check: Outfit for Today 🎯 / Mini Reto","description":"Today's Gear","content":["Look outside or pick a city:","'Today is ________ and ________, so I am wearing a ________.'","Tell the teacher your complete sentence!"],"imageUrl":"/images/teens-basic-1-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-orange-600"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "Read the Weather Forecast 🌤️🌧️ / Lee el Pronóstico",
+                    "description": "Conditions & Temperatures",
+                    "content": [
+                              "Sunny, Cloudy, Rainy, Windy, Hot, Cold",
+                              "It will be rainy this morning and windy later.",
+                              "It is 15 degrees outside.",
+                              "The morning is cool, but the afternoon is warm."
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-600"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Weather Decision Formula 📝 / Fórmula del Clima",
+                    "description": "Plan According to Weather",
+                    "content": [
+                              "Formula: [Weather Condition] + so I wear/bring + [Item] + because + [Reason]",
+                              "Example: 'The forecast says rain, so I bring an umbrella because I walk home.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-teal-600"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Outfit for Today 🎯 / Mini Reto",
+                    "description": "Today's Gear",
+                    "content": [
+                              "Look outside or pick a city:",
+                              "'Today is ________ and ________, so I am wearing a ________.'",
+                              "Tell the teacher your complete sentence!"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-orange-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -4507,12 +5093,44 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"Outdoor Places & Nature 🌲🏞️ / Lugares al Aire Libre","description":"Park Elements","content":["Park, Trail, Lake, Garden, Playground, Trees","There is a lake near the trail.","There are tall trees around the playground."],"imageUrl":"/images/teens-basic-1-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-green-600 to-emerald-700"},
-              {"id":"Diapositiva 5","title":"Locate Nature with Prepositions 📍 / Ubicar con Preposiciones","description":"Prepositions of Place","content":["Next to, Behind, Between, Across from","The flower garden is behind the café.","Two wooden benches are next to the lake."],"imageUrl":"/images/teens-basic-1-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-emerald-600 to-teal-700"},
-              {"id":"Diapositiva 6","title":"Park Care Rules & Imperatives 🚯✨ / Reglas del Parque","description":"Keep Nature Clean","content":["Don't leave trash on the grass.","Stay on the main walking trail.","Put bottles in the recycling bin."],"imageUrl":"/images/teens-basic-1-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-cyan-700"},
-              {"id":"Diapositiva 7","title":"The Park Location Formula 🗺️ / Fórmula del Mapa","description":"Describing Places","content":["There is a [Single Feature] + [Preposition] + [Place]","There are [Plural Features] + [Preposition] + [Place]","Example: 'There is a bridge between the lake and the trees.'"],"imageUrl":"/images/teens-basic-1-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-cyan-600 to-blue-700"},
-              {"id":"Diapositiva 8","title":"Quick Check: Park Guide 🎯 / Mini Reto","description":"Give a Rule and Location","content":["Tell the teacher:","1. Where is one place in your favorite park?","2. Give one important rule for visitors!"],"imageUrl":"/images/teens-basic-1-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "Outdoor Places & Nature 🌲🏞️ / Lugares al Aire Libre",
+                    "description": "Park Elements",
+                    "content": [
+                              "Park, Trail, Lake, Garden, Playground, Trees",
+                              "There is a lake near the trail.",
+                              "There are tall trees around the playground.",
+                              "Next to, Behind, Between, Across from"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-green-600 to-emerald-700"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Park Location Formula 🗺️ / Fórmula del Mapa",
+                    "description": "Describing Places",
+                    "content": [
+                              "There is a [Single Feature] + [Preposition] + [Place]",
+                              "There are [Plural Features] + [Preposition] + [Place]",
+                              "Example: 'There is a bridge between the lake and the trees.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-04/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-600 to-teal-700"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Park Guide 🎯 / Mini Reto",
+                    "description": "Give a Rule and Location",
+                    "content": [
+                              "Tell the teacher:",
+                              "1. Where is one place in your favorite park?",
+                              "2. Give one important rule for visitors!"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -4834,12 +5452,44 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"Wants vs Future Plans 💭📅 / Deseos vs Planes","description":"Express Intentions","content":["I want to relax this weekend.","I would like to visit the new skatepark.","Use 'want to' before confirming your final plan."],"imageUrl":"/images/teens-basic-1-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"Diapositiva 5","title":"Going To for Planned Actions 🚀 / Going To en Planes","description":"Structure of Going To","content":["I am going to study Saturday morning.","We are going to play basketball at the court.","Structure: Subject + BE + going to + verb"],"imageUrl":"/images/teens-basic-1-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"Diapositiva 6","title":"Add Plan Details: Day, Time & Place ⏰ / Detalles del Plan","description":"Full Plan Information","content":["Day: on Saturday / on Sunday","Time: at 3:30 PM / at noon","Place: at the community center / at the mall"],"imageUrl":"/images/teens-basic-1-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"Diapositiva 7","title":"The Weekend Plan Formula 🎯 / Fórmula de Fin de Semana","description":"Build a Full Sentence","content":["Formula: [I am going to] + [Action] + [Day] + [Time] + [Place]","Example: 'I am going to watch a movie on Saturday at 5 PM at the cinema.'"],"imageUrl":"/images/teens-basic-1-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"Diapositiva 8","title":"Quick Check: Your Saturday Plan 🎯 / Mini Reto","description":"Share Your Plan","content":["Complete the sentence:","'This Saturday, I am going to ________ at ________ with ________.'","Tell the teacher your plan!"],"imageUrl":"/images/teens-basic-1-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-emerald-600"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "Wants vs Future Plans 💭📅 / Deseos vs Planes",
+                    "description": "Express Intentions",
+                    "content": [
+                              "I want to relax this weekend.",
+                              "I would like to visit the new skatepark.",
+                              "Use 'want to' before confirming your final plan.",
+                              "I am going to study Saturday morning."
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Weekend Plan Formula 🎯 / Fórmula de Fin de Semana",
+                    "description": "Build a Full Sentence",
+                    "content": [
+                              "Formula: [I am going to] + [Action] + [Day] + [Time] + [Place]",
+                              "Example: 'I am going to watch a movie on Saturday at 5 PM at the cinema.'",
+                              "I am going to study Saturday morning."
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-05/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Your Saturday Plan 🎯 / Mini Reto",
+                    "description": "Share Your Plan",
+                    "content": [
+                              "Complete the sentence:",
+                              "'This Saturday, I am going to ________ at ________ with ________.'",
+                              "Tell the teacher your plan!"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -5161,12 +5811,44 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"Devices & Digital Tools 📱💻 / Dispositivos y Usos","description":"Everyday Tech","content":["Smartphone, Laptop, Tablet, Headphones, Console","I use my phone to message friends and study.","She uses her laptop to edit videos."],"imageUrl":"/images/teens-basic-1-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"Diapositiva 5","title":"Frequency Expressions 📊 / Frecuencia de Uso","description":"How Often You Connect","content":["Always, Usually, Often, Sometimes, Rarely, Never","I usually spend two hours on social media.","I always put my phone away during dinner."],"imageUrl":"/images/teens-basic-1-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"Diapositiva 6","title":"Digital Balance & Safety 🧘‍♀️🔒 / Balance y Seguridad","description":"Smart Online Habits","content":["Take screen breaks every 45 minutes.","Never share private passwords with strangers.","Turn off notifications before going to sleep."],"imageUrl":"/images/teens-basic-1-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"Diapositiva 7","title":"The Tech Purpose Formula 💡 / Fórmula de Uso Digital","description":"Device + Purpose","content":["Formula: I use my [Device] to [Action Verb] [Frequency]","Example: 'I use my headphones to listen to music every morning.'"],"imageUrl":"/images/teens-basic-1-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"Diapositiva 8","title":"Quick Check: Your Top App 🎯 / Mini Reto","description":"Describe Your Screen Time","content":["Tell the teacher:","1. What device do you use most?","2. What do you use it for?","3. How many hours a day do you use it?"],"imageUrl":"/images/teens-basic-1-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "Devices & Digital Tools 📱💻 / Dispositivos y Usos",
+                    "description": "Everyday Tech",
+                    "content": [
+                              "Smartphone, Laptop, Tablet, Headphones, Console",
+                              "I use my phone to message friends and study.",
+                              "She uses her laptop to edit videos.",
+                              "Always, Usually, Often, Sometimes, Rarely, Never"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Tech Purpose Formula 💡 / Fórmula de Uso Digital",
+                    "description": "Device + Purpose",
+                    "content": [
+                              "Formula: I use my [Device] to [Action Verb] [Frequency]",
+                              "Example: 'I use my headphones to listen to music every morning.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-06/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Your Top App 🎯 / Mini Reto",
+                    "description": "Describe Your Screen Time",
+                    "content": [
+                              "Tell the teacher:",
+                              "1. What device do you use most?",
+                              "2. What do you use it for?",
+                              "3. How many hours a day do you use it?"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -5488,12 +6170,44 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"Sizes, Colors & Styles 👕👟 / Tallas y Colores","description":"Finding the Right Fit","content":["Extra Small (XS), Small (S), Medium (M), Large (L), XL","Do you have this hoodie in size medium?","Is this jacket available in black?"],"imageUrl":"/images/teens-basic-1-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"Diapositiva 5","title":"Asking Prices: How Much? 🏷️💵 / Preguntar Precios","description":"Cost & Prices","content":["How much is this shirt? -> It is 25 dollars.","How much are these sneakers? -> They are 80 dollars.","Is there a discount on these jeans?"],"imageUrl":"/images/teens-basic-1-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"Diapositiva 6","title":"Fitting Room & Polite Checkout 🛍️💳 / Probar y Pagar","description":"Complete the Purchase","content":["Where is the fitting room? -> Over there.","It fits perfectly! I'll take it.","Can I pay by card or cash? -> Both are fine."],"imageUrl":"/images/teens-basic-1-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"Diapositiva 7","title":"The Shopping Conversation Formula 💬 / Fórmula de Compra","description":"Step by Step Request","content":["Clerk: 'Can I help you?'","Customer: 'Yes, excuse me. Do you have this [Item] in [Size]?'","Clerk: 'Yes, here it is!' -> Customer: 'How much is it?'"],"imageUrl":"/images/teens-basic-1-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"Diapositiva 8","title":"Quick Check: Store Roleplay 🎯 / Mini Reto","description":"Ask the Clerk","content":["Imagine you want new sneakers:","'Excuse me, how much are these sneakers in size (your size)?'","Say the phrase out loud!"],"imageUrl":"/images/teens-basic-1-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "Sizes, Colors & Styles 👕👟 / Tallas y Colores",
+                    "description": "Finding the Right Fit",
+                    "content": [
+                              "Extra Small (XS), Small (S), Medium (M), Large (L), XL",
+                              "Do you have this hoodie in size medium?",
+                              "Is this jacket available in black?",
+                              "How much is this shirt? -> It is 25 dollars."
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-07/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Shopping Conversation Formula 💬 / Fórmula de Compra",
+                    "description": "Step by Step Request",
+                    "content": [
+                              "Clerk: 'Can I help you?'",
+                              "Customer: 'Yes, excuse me. Do you have this [Item] in [Size]?'",
+                              "Clerk: 'Yes, here it is!' -> Customer: 'How much is it?'"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Store Roleplay 🎯 / Mini Reto",
+                    "description": "Ask the Clerk",
+                    "content": [
+                              "Imagine you want new sneakers:",
+                              "'Excuse me, how much are these sneakers in size (your size)?'",
+                              "Say the phrase out loud!"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -5815,12 +6529,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"Café Menu Favorites ☕🥪 / Menú de Cafetería","description":"Food & Drinks","content":["Iced Latte, Fruit Smoothie, Hot Chocolate, Lemonade","Croissant, Club Sandwich, Blueberry Muffin","What sounds good today?"],"imageUrl":"/images/teens-basic-1-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-amber-600 to-orange-700"},
-              {"id":"Diapositiva 5","title":"Polite Ordering Phrases 🗣️✨ / Pedir con Cortesía","description":"I would like / Can I have","content":["Can I have an iced latte, please?","I would like a mango smoothie and a sandwich.","Could I get that to go? (Para llevar)"],"imageUrl":"/images/teens-basic-1-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-orange-600 to-rose-700"},
-              {"id":"Diapositiva 6","title":"Customizing Your Order 🥛🍯 / Personalizar el Pedido","description":"Options & Extras","content":["With oat milk / with regular milk","Without sugar / with extra ice","Small, Medium, or Large size?"],"imageUrl":"/images/teens-basic-1-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-pink-700"},
-              {"id":"Diapositiva 7","title":"The Café Order Formula 📋 / Fórmula de Pedido","description":"Full Order Sequence","content":["Formula: 'Hello! Can I please have a [Size] [Drink] with [Custom Option]?'","Example: 'Hi! I would like a large iced latte with oat milk and a muffin.'"],"imageUrl":"/images/teens-basic-1-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-purple-700"},
-              {"id":"Diapositiva 8","title":"Quick Check: Order Your Snack 🎯 / Mini Reto","description":"Café Counter","content":["Order at the counter:","'Hello! I'd like a ________ and a ________, please.'","Add one detail (hot/iced or size)!"],"imageUrl":"/images/teens-basic-1-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "Café Menu Favorites ☕🥪 / Menú de Cafetería",
+                    "description": "Food & Drinks",
+                    "content": [
+                              "Iced Latte, Fruit Smoothie, Hot Chocolate, Lemonade",
+                              "Croissant, Club Sandwich, Blueberry Muffin",
+                              "What sounds good today?",
+                              "Can I have an iced latte, please?"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-600 to-orange-700"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Café Order Formula 📋 / Fórmula de Pedido",
+                    "description": "Full Order Sequence",
+                    "content": [
+                              "Formula: 'Hello! Can I please have a [Size] [Drink] with [Custom Option]?'",
+                              "Example: 'Hi! I would like a large iced latte with oat milk and a muffin.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-08/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-600 to-rose-700"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Order Your Snack 🎯 / Mini Reto",
+                    "description": "Café Counter",
+                    "content": [
+                              "Order at the counter:",
+                              "'Hello! I'd like a ________ and a ________, please.'",
+                              "Add one detail (hot/iced or size)!"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-08/slide-08.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -6142,12 +6887,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"School Events & Clubs 🎪🏆 / Eventos y Clubes","description":"School Activities","content":["Science Fair, Talent Show, Sports Tournament, Art Festival","The annual talent show is next Friday!","Our soccer team is in the finals this Saturday."],"imageUrl":"/images/teens-basic-1-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"Diapositiva 5","title":"Inviting Friends to Join 🤝🎉 / Invitar Amigos","description":"Would you like to...","content":["Would you like to come with me?","Do you want to join our project team?","Let's go together after school!"],"imageUrl":"/images/teens-basic-1-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-cyan-700"},
-              {"id":"Diapositiva 6","title":"Event Details: Time & Place 📍⏰ / Detalles del Evento","description":"When and Where","content":["It starts at 4:00 PM in the school gym.","Admission is free for students.","Meet me at the entrance at 3:45 PM."],"imageUrl":"/images/teens-basic-1-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-600 to-teal-700"},
-              {"id":"Diapositiva 7","title":"The Event Invitation Formula 💌 / Fórmula de Invitación","description":"Make a Complete Invite","content":["Formula: 'Hey [Name]! Would you like to go to the [Event] on [Day] at [Time]?'","Example: 'Hey Alex! Would you like to go to the basketball game on Friday at 5 PM?'"],"imageUrl":"/images/teens-basic-1-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"},
-              {"id":"Diapositiva 8","title":"Quick Check: Invite a Classmate 🎯 / Mini Reto","description":"Make an Invitation","content":["Invite the teacher to a cool school event:","'Would you like to come to the ________ this ________ at ________?'"],"imageUrl":"/images/teens-basic-1-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-emerald-600 to-amber-600"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "School Events & Clubs 🎪🏆 / Eventos y Clubes",
+                    "description": "School Activities",
+                    "content": [
+                              "Science Fair, Talent Show, Sports Tournament, Art Festival",
+                              "The annual talent show is next Friday!",
+                              "Our soccer team is in the finals this Saturday.",
+                              "Would you like to come with me?"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-blue-700"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Event Invitation Formula 💌 / Fórmula de Invitación",
+                    "description": "Make a Complete Invite",
+                    "content": [
+                              "Formula: 'Hey [Name]! Would you like to go to the [Event] on [Day] at [Time]?'",
+                              "Example: 'Hey Alex! Would you like to go to the basketball game on Friday at 5 PM?'"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-cyan-700"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: Invite a Classmate 🎯 / Mini Reto",
+                    "description": "Make an Invitation",
+                    "content": [
+                              "Invite the teacher to a cool school event:",
+                              "'Would you like to come to the ________ this ________ at ________?'"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -6469,12 +7244,45 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar el tema principal.",
             slides: [
-              {"id":"Diapositiva 4","title":"My Circle & Personality 🌟 / Mi Círculo y Yo","description":"Introduce Yourself","content":["I am friendly, active, and creative.","I have two great friends, Liam and Sofia.","We love spending time outdoors."],"imageUrl":"/images/teens-basic-1-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"Diapositiva 5","title":"My Habits, Fuel & Free Time ⚡🎮 / Hábitos y Tiempo Libre","description":"Daily Energy","content":["I drink lots of water and sleep 8 hours for steady energy.","In my free time, I practice skateboarding and listen to music.","I use my laptop to learn coding."],"imageUrl":"/images/teens-basic-1-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"Diapositiva 6","title":"My Weekend Plans & Goals 🚀 / Mis Planes de Fin de Semana","description":"Future Intentions","content":["This Saturday, I am going to hang out with friends at the park.","If it's sunny, we are going to skate all afternoon.","I am proud of my progress in English!"],"imageUrl":"/images/teens-basic-1-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"Diapositiva 7","title":"The Explorer Capstone Formula 🏆 / Fórmula de Graduación","description":"Connect All Level 1 Topics","content":["1. Introduce yourself and friends (Class 1)","2. Mention your healthy habits (Class 2)","3. Share your weekend plan & weather (Classes 3-5)"],"imageUrl":"/images/teens-basic-1-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"Diapositiva 8","title":"Quick Check: 30-Second Life Pitch 🎯 / Gran Reto","description":"Your Capstone Pitch","content":["Tell the teacher in 3 sentences:","1. Who you are and what you're like.","2. One healthy habit you follow.","3. What you are going to do this weekend!"],"imageUrl":"/images/teens-basic-1-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "Diapositiva 4",
+                    "title": "My Circle & Personality 🌟 / Mi Círculo y Yo",
+                    "description": "Introduce Yourself",
+                    "content": [
+                              "I am friendly, active, and creative.",
+                              "I have two great friends, Liam and Sofia.",
+                              "We love spending time outdoors.",
+                              "I drink lots of water and sleep 8 hours for steady energy."
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "Diapositiva 5",
+                    "title": "The Explorer Capstone Formula 🏆 / Fórmula de Graduación",
+                    "description": "Connect All Level 1 Topics",
+                    "content": [
+                              "1. Introduce yourself and friends (Class 1)",
+                              "2. Mention your healthy habits (Class 2)",
+                              "3. Share your weekend plan & weather (Classes 3-5)"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "Diapositiva 6",
+                    "title": "Quick Check: 30-Second Life Pitch 🎯 / Gran Reto",
+                    "description": "Your Capstone Pitch",
+                    "content": [
+                              "Tell the teacher in 3 sentences:",
+                              "1. Who you are and what you're like.",
+                              "2. One healthy habit you follow.",
+                              "3. What you are going to do this weekend!"
+                    ],
+                    "imageUrl": "/images/teens-basic-1-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -6974,12 +7782,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"Pets & Wild Animals 🐾 / Mascotas y Animales","description":"Animal Categories","content":["Pets: Dog, cat, hamster, parrot, bunny","Wild: Lion, elephant, monkey, dolphin, eagle, snake","A hamster is small and friendly. A lion is wild and strong."],"imageUrl":"/images/teens-basic-2-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Habitats & Where They Live 🌍📍 / Hábitats","description":"Forest, Ocean, Desert","content":["Forest = bosque / Ocean = océano / Desert = desierto","Grammar: An elephant lives in the savanna.","Dolphins live in the ocean. Camels live in the desert."],"imageUrl":"/images/teens-basic-2-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Animal Abilities: Can vs Can't 💪 / Habilidades","description":"Action & Abilities","content":["A cheetah can run super fast.","A penguin can swim, but it can't fly.","Can monkeys climb trees? -> Yes, they can!"],"imageUrl":"/images/teens-basic-2-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Animal & Habitat Formula 🦁 / Fórmula de Animales","description":"Build Animal Profile","content":["Formula: A [Animal] lives in the [Habitat] and can [Ability].","Example: 'A dolphin lives in the ocean and can swim very fast.'"],"imageUrl":"/images/teens-basic-2-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Safari Guide 🎯 / Mini Reto","description":"Describe an Animal","content":["Tell the teacher:","'A ________ lives in the ________ and can ________.'","Say your sentence out loud!"],"imageUrl":"/images/teens-basic-2-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Pets & Wild Animals 🐾 / Mascotas y Animales",
+                    "description": "Animal Categories",
+                    "content": [
+                              "Pets: Dog, cat, hamster, parrot, bunny",
+                              "Wild: Lion, elephant, monkey, dolphin, eagle, snake",
+                              "A hamster is small and friendly. A lion is wild and strong.",
+                              "Forest = bosque / Ocean = océano / Desert = desierto"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Animal & Habitat Formula 🦁 / Fórmula de Animales",
+                    "description": "Build Animal Profile",
+                    "content": [
+                              "Formula: A [Animal] lives in the [Habitat] and can [Ability].",
+                              "Example: 'A dolphin lives in the ocean and can swim very fast.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Safari Guide 🎯 / Mini Reto",
+                    "description": "Describe an Animal",
+                    "content": [
+                              "Tell the teacher:",
+                              "'A ________ lives in the ________ and can ________.'",
+                              "Say your sentence out loud!"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -7179,12 +8018,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"Rooms at Home & Furniture 🛏️🚪 / Habitaciones y Muebles","description":"House Vocabulary","content":["Bedroom, living room, kitchen, bathroom, gaming corner","Desk, bed, wardrobe, sofa, bookshelf, gaming chair","My bedroom is my favorite space to relax and study."],"imageUrl":"/images/teens-basic-2-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"There is / There are at Home 🏠 / Describir la Casa","description":"Singular and Plural","content":["There is a comfortable bed in my bedroom.","There are two posters and a LED light on the wall.","Is there a TV in your room? -> No, there isn't."],"imageUrl":"/images/teens-basic-2-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Dream House Details ✨ / Casa Soñada","description":"Ideal Spaces","content":["My dream room has a huge desk, two monitors, and soundproof walls.","In my dream house, there is a swimming pool in the garden.","Use 'would have' to describe ideal features."],"imageUrl":"/images/teens-basic-2-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Room Description Formula 🛋️ / Fórmula de Cuarto","description":"Room Layout Sentence","content":["Formula: In my room, there is a [Furniture] and there are [Items] [Preposition] the [Location].","Example: 'In my room, there is a gaming chair next to the desk.'"],"imageUrl":"/images/teens-basic-2-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Room Tour 🎯 / Mini Reto","description":"Describe Your Room","content":["Tell the teacher 2 things in your bedroom:","'In my room, there is a ________ and there are ________.'"],"imageUrl":"/images/teens-basic-2-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Rooms at Home & Furniture 🛏️🚪 / Habitaciones y Muebles",
+                    "description": "House Vocabulary",
+                    "content": [
+                              "Bedroom, living room, kitchen, bathroom, gaming corner",
+                              "Desk, bed, wardrobe, sofa, bookshelf, gaming chair",
+                              "My bedroom is my favorite space to relax and study.",
+                              "There is a comfortable bed in my bedroom."
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Room Description Formula 🛋️ / Fórmula de Cuarto",
+                    "description": "Room Layout Sentence",
+                    "content": [
+                              "Formula: In my room, there is a [Furniture] and there are [Items] [Preposition] the [Location].",
+                              "Example: 'In my room, there is a gaming chair next to the desk.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Room Tour 🎯 / Mini Reto",
+                    "description": "Describe Your Room",
+                    "content": [
+                              "Tell the teacher 2 things in your bedroom:",
+                              "'In my room, there is a ________ and there are ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -7384,12 +8253,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"City Places & Transportation 🚌🏙️ / Transporte y Ciudad","description":"Vehicles and Spots","content":["Bus, subway, bike, scooter, taxi, train, walking","Mall, park, library, cinema, skatepark, stadium","I usually go to school by bus or on foot."],"imageUrl":"/images/teens-basic-2-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"How to Go: 'Go By' vs 'On Foot' 🚲 / Cómo Trasladarse","description":"Transport Prepositions","content":["Go BY bus / BY train / BY car / BY subway","Go ON foot (walking) / Ride a bike / Ride a scooter","How do you get to school? -> I go by subway."],"imageUrl":"/images/teens-basic-2-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Asking Where & Navigation 📍🗺️ / Ubicar Destinos","description":"Directions","content":["Excuse me, where is the nearest subway station?","It is two blocks away, across from the bank.","Turn left at the traffic light and walk straight."],"imageUrl":"/images/teens-basic-2-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The City Route Formula 🚇 / Fórmula de Rutas","description":"Destination + Transport","content":["Formula: To go to the [City Place], I go by [Transport] because it is [Reason].","Example: 'To go to the mall, I go by subway because it is fast and cheap.'"],"imageUrl":"/images/teens-basic-2-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: City Navigator 🎯 / Mini Reto","description":"Your City Route","content":["Tell the teacher:","'When I go to ________, I travel by ________ because ________.'"],"imageUrl":"/images/teens-basic-2-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "City Places & Transportation 🚌🏙️ / Transporte y Ciudad",
+                    "description": "Vehicles and Spots",
+                    "content": [
+                              "Bus, subway, bike, scooter, taxi, train, walking",
+                              "Mall, park, library, cinema, skatepark, stadium",
+                              "I usually go to school by bus or on foot.",
+                              "Go BY bus / BY train / BY car / BY subway"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The City Route Formula 🚇 / Fórmula de Rutas",
+                    "description": "Destination + Transport",
+                    "content": [
+                              "Formula: To go to the [City Place], I go by [Transport] because it is [Reason].",
+                              "Example: 'To go to the mall, I go by subway because it is fast and cheap.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: City Navigator 🎯 / Mini Reto",
+                    "description": "Your City Route",
+                    "content": [
+                              "Tell the teacher:",
+                              "'When I go to ________, I travel by ________ because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -7589,12 +8488,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"Dream Jobs & Workplaces 💼🏢 / Profesiones Soñadas","description":"Careers and Jobs","content":["Software developer, graphic designer, veterinarian, pilot, doctor","Game streamer, architect, scientist, teacher, chef","Tech company, hospital, design studio, airport, laboratory"],"imageUrl":"/images/teens-basic-2-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"I Want to Be: Goals & Passions 🌟 / Metas Futuras","description":"Expressing Career Goals","content":["I want to be a software engineer because I love creating apps.","She wants to be a veterinarian because she loves animals.","Structure: Subject + want(s) to be + a/an + [Profession]"],"imageUrl":"/images/teens-basic-2-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Skills Needed for the Job 💪 / Habilidades Clave","description":"Job Skills","content":["You need to be creative, patient, analytical, and organized.","A programmer needs to know coding and problem solving.","A pilot needs good communication and focus."],"imageUrl":"/images/teens-basic-2-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Dream Career Formula 🚀 / Fórmula de Carrera","description":"Job + Reason + Skill","content":["Formula: I want to be a [Job] because I love [Interest] and I am good at [Skill].","Example: 'I want to be a game designer because I love art and coding.'"],"imageUrl":"/images/teens-basic-2-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Future Pitch 🎯 / Mini Reto","description":"State Your Dream Job","content":["Tell the teacher:","'In the future, I want to be a ________ because ________.'"],"imageUrl":"/images/teens-basic-2-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Dream Jobs & Workplaces 💼🏢 / Profesiones Soñadas",
+                    "description": "Careers and Jobs",
+                    "content": [
+                              "Software developer, graphic designer, veterinarian, pilot, doctor",
+                              "Game streamer, architect, scientist, teacher, chef",
+                              "Tech company, hospital, design studio, airport, laboratory",
+                              "I want to be a software engineer because I love creating apps."
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Dream Career Formula 🚀 / Fórmula de Carrera",
+                    "description": "Job + Reason + Skill",
+                    "content": [
+                              "Formula: I want to be a [Job] because I love [Interest] and I am good at [Skill].",
+                              "Example: 'I want to be a game designer because I love art and coding.'",
+                              "I want to be a software engineer because I love creating apps."
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-04/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Future Pitch 🎯 / Mini Reto",
+                    "description": "State Your Dream Job",
+                    "content": [
+                              "Tell the teacher:",
+                              "'In the future, I want to be a ________ because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -7794,12 +8724,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"Talents & Skill Verbs ⚡🎤 / Habilidades y Talentos","description":"Action Abilities","content":["Play guitar, code websites, speak French, edit videos","Do a backflip, skate on ramps, draw realistic portraits","Everyone has a unique superpower!"],"imageUrl":"/images/teens-basic-2-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Can vs Can't: Expressing Limits ✅🚫 / Positivo y Negativo","description":"Modal Verb Can","content":["I can edit videos easily, but I can't play the drums.","He can code in Python, but he can't speak Italian.","Can you do a kickflip? -> Yes, I can! / No, but I'm learning."],"imageUrl":"/images/teens-basic-2-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Levels of Ability: Well vs A Little 📈 / Grados de Habilidad","description":"Fluency & Mastery","content":["I can speak English quite well.","I can play chess a little bit.","She can dance amazingly!"],"imageUrl":"/images/teens-basic-2-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Talent Show Formula 🌟 / Fórmula de Talento","description":"Can + Degree","content":["Formula: I can [Skill] [Degree of Ability], but I can't [Skill 2].","Example: 'I can edit videos very well, but I can't play the guitar.'"],"imageUrl":"/images/teens-basic-2-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Talent Reveal 🎯 / Mini Reto","description":"Share a Special Skill","content":["Tell the teacher:","1. What is one cool skill you can do well?","2. One skill you want to learn this year!"],"imageUrl":"/images/teens-basic-2-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Talents & Skill Verbs ⚡🎤 / Habilidades y Talentos",
+                    "description": "Action Abilities",
+                    "content": [
+                              "Play guitar, code websites, speak French, edit videos",
+                              "Do a backflip, skate on ramps, draw realistic portraits",
+                              "Everyone has a unique superpower!",
+                              "I can edit videos easily, but I can't play the drums."
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Talent Show Formula 🌟 / Fórmula de Talento",
+                    "description": "Can + Degree",
+                    "content": [
+                              "Formula: I can [Skill] [Degree of Ability], but I can't [Skill 2].",
+                              "Example: 'I can edit videos very well, but I can't play the guitar.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-05/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Talent Reveal 🎯 / Mini Reto",
+                    "description": "Share a Special Skill",
+                    "content": [
+                              "Tell the teacher:",
+                              "1. What is one cool skill you can do well?",
+                              "2. One skill you want to learn this year!"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -7999,12 +8960,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"School & Lab Rules 🏫📌 / Reglas Escolares","description":"Rules and Obligations","content":["Be on time, wear your student ID, respect classmates","Turn off your phone in class, don't run in hallways","Keep the science lab clean and wear safety goggles."],"imageUrl":"/images/teens-basic-2-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Must vs Have to vs Should ⚖️ / Modales de Reglas","description":"Obligation vs Advice","content":["MUST = Strict rule (You must wear a helmet).","HAVE TO = External necessity (We have to finish this homework).","SHOULD = Advice/Recommendation (You should sleep early)."],"imageUrl":"/images/teens-basic-2-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Prohibitions: Must Not / Don't 🚫 / Prohibición","description":"Negative Rules","content":["You must not use your phone during exams.","You shouldn't stay up all night gaming.","Don't eat inside the library."],"imageUrl":"/images/teens-basic-2-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Rule & Advice Formula 📋 / Fórmula de Reglas","description":"Rule + Consequence","content":["Formula: At school, you must [Obligation] and you should [Advice].","Example: 'At school, you must arrive on time and you should ask questions in class.'"],"imageUrl":"/images/teens-basic-2-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: School Principal 🎯 / Mini Reto","description":"Create a Rule","content":["Give 1 strict rule and 1 piece of advice for new students:","'You MUST ________ and you SHOULD ________.'"],"imageUrl":"/images/teens-basic-2-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "School & Lab Rules 🏫📌 / Reglas Escolares",
+                    "description": "Rules and Obligations",
+                    "content": [
+                              "Be on time, wear your student ID, respect classmates",
+                              "Turn off your phone in class, don't run in hallways",
+                              "Keep the science lab clean and wear safety goggles.",
+                              "MUST = Strict rule (You must wear a helmet)."
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Rule & Advice Formula 📋 / Fórmula de Reglas",
+                    "description": "Rule + Consequence",
+                    "content": [
+                              "Formula: At school, you must [Obligation] and you should [Advice].",
+                              "Example: 'At school, you must arrive on time and you should ask questions in class.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-06/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: School Principal 🎯 / Mini Reto",
+                    "description": "Create a Rule",
+                    "content": [
+                              "Give 1 strict rule and 1 piece of advice for new students:",
+                              "'You MUST ________ and you SHOULD ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -8204,12 +9195,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"Sports, Workouts & Active Life ⚽🏃‍♀️ / Deportes y Actividad","description":"Physical Activities","content":["Basketball, soccer, swimming, volleyball, cycling, martial arts","Cardio workout, stretching, gym, yoga","Active habits improve mood and focus!"],"imageUrl":"/images/teens-basic-2-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Habit Frequency: How Often? 📊 / Frecuencia de Hábitos","description":"Frequency Expressions","content":["Every day, twice a week, three times a week, rarely","I play soccer three times a week.","How often do you exercise? -> I work out twice a week."],"imageUrl":"/images/teens-basic-2-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Giving Health Advice: You Should 💡🥗 / Consejos de Salud","description":"Healthy Habits Advice","content":["You should drink 2 liters of water daily.","You should stretch before playing sports.","You shouldn't skip breakfast on school mornings."],"imageUrl":"/images/teens-basic-2-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Healthy Routine Formula ❤️ / Fórmula Saludable","description":"Sport + Frequency + Benefit","content":["Formula: I practice [Sport/Activity] [Frequency] because it helps me [Benefit].","Example: 'I go swimming twice a week because it helps me relieve stress.'"],"imageUrl":"/images/teens-basic-2-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Health Coach 🎯 / Mini Reto","description":"Share Your Routine","content":["Tell the teacher:","'I practice ________ (how often?) because ________.'"],"imageUrl":"/images/teens-basic-2-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Sports, Workouts & Active Life ⚽🏃‍♀️ / Deportes y Actividad",
+                    "description": "Physical Activities",
+                    "content": [
+                              "Basketball, soccer, swimming, volleyball, cycling, martial arts",
+                              "Cardio workout, stretching, gym, yoga",
+                              "Active habits improve mood and focus!",
+                              "Every day, twice a week, three times a week, rarely"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-07/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Healthy Routine Formula ❤️ / Fórmula Saludable",
+                    "description": "Sport + Frequency + Benefit",
+                    "content": [
+                              "Formula: I practice [Sport/Activity] [Frequency] because it helps me [Benefit].",
+                              "Example: 'I go swimming twice a week because it helps me relieve stress.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Health Coach 🎯 / Mini Reto",
+                    "description": "Share Your Routine",
+                    "content": [
+                              "Tell the teacher:",
+                              "'I practice ________ (how often?) because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -8409,12 +9430,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"City Outings & Hangout Spots 🎬🛹 / Lugares para Salir","description":"Social Places","content":["Cinema, shopping mall, skatepark, bowling alley, escape room","Café, amusement park, food truck festival, arcade","Where do you like hanging out with friends?"],"imageUrl":"/images/teens-basic-2-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-5","title":"Making Suggestions: Let's & How About 🤝📅 / Hacer Planes","description":"Proposing Outings","content":["Let's go to the cinema this Saturday!","How about meeting at the skatepark at 4 PM?","Why don't we get some burgers after the game?"],"imageUrl":"/images/teens-basic-2-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-cyan-700"},
-              {"id":"slide-6","title":"Confirming Meeting Time & Transport 🚇⏰ / Confirmar el Plan","description":"Logistics Details","content":["Let's meet at Central Station at 3:30 PM.","We can take the subway together.","Sounds great! See you there on Saturday!"],"imageUrl":"/images/teens-basic-2-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-600 to-teal-700"},
-              {"id":"slide-7","title":"The Outing Proposal Formula 🎟️ / Fórmula de Salida","description":"Suggestion + Time + Place","content":["Formula: 'How about going to the [Place] on [Day] at [Time] by [Transport]?'","Example: 'How about going to the arcade on Friday at 5 PM by subway?'"],"imageUrl":"/images/teens-basic-2-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"},
-              {"id":"slide-8","title":"Quick Check: Plan a Weekend Outing 🎯 / Mini Reto","description":"Propose a Plan","content":["Invite the teacher to a cool hangout:","'Let's go to the ________ this weekend! We can meet at ________.'"],"imageUrl":"/images/teens-basic-2-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-emerald-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "City Outings & Hangout Spots 🎬🛹 / Lugares para Salir",
+                    "description": "Social Places",
+                    "content": [
+                              "Cinema, shopping mall, skatepark, bowling alley, escape room",
+                              "Café, amusement park, food truck festival, arcade",
+                              "Where do you like hanging out with friends?",
+                              "Let's go to the cinema this Saturday!"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-blue-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Outing Proposal Formula 🎟️ / Fórmula de Salida",
+                    "description": "Suggestion + Time + Place",
+                    "content": [
+                              "Formula: 'How about going to the [Place] on [Day] at [Time] by [Transport]?'",
+                              "Example: 'How about going to the arcade on Friday at 5 PM by subway?'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-08/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-cyan-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Plan a Weekend Outing 🎯 / Mini Reto",
+                    "description": "Propose a Plan",
+                    "content": [
+                              "Invite the teacher to a cool hangout:",
+                              "'Let's go to the ________ this weekend! We can meet at ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-08/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -8614,12 +9665,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"Media, Shows, Gaming & Music 🎧🎬 / Entretenimiento","description":"Pop Culture","content":["Anime series, action movies, open-world games, hip-hop, pop","Streaming series, podcasts, multiplayer games","What are you currently watching or playing?"],"imageUrl":"/images/teens-basic-2-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Opinion Adjectives ⭐🍿 / Adjetivos de Opinión","description":"Describing Media","content":["Exciting, addictive, boring, overrated, masterpiece, emotional","This game has an incredible soundtrack and great graphics.","The movie plot was exciting, but a bit confusing."],"imageUrl":"/images/teens-basic-2-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Expressing Preferences Politely 💬❤️ / Expresar Preferencias","description":"Prefer X to Y","content":["I prefer gaming online to watching TV.","In my opinion, the series is better than the movie.","I'm not a big fan of horror movies."],"imageUrl":"/images/teens-basic-2-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Entertainment Review Formula 🎮 / Fórmula de Reseña","description":"Title + Opinion + Reason","content":["Formula: I think [Show/Game] is [Adjective] because [Reason].","Example: 'I think Stranger Things is exciting because the story is full of mystery.'"],"imageUrl":"/images/teens-basic-2-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Media Critic 🎯 / Mini Reto","description":"Review a Game or Show","content":["Give your 1-sentence review of a favorite movie, game, or series:","'I really recommend ________ because it is ________.'"],"imageUrl":"/images/teens-basic-2-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Media, Shows, Gaming & Music 🎧🎬 / Entretenimiento",
+                    "description": "Pop Culture",
+                    "content": [
+                              "Anime series, action movies, open-world games, hip-hop, pop",
+                              "Streaming series, podcasts, multiplayer games",
+                              "What are you currently watching or playing?",
+                              "Exciting, addictive, boring, overrated, masterpiece, emotional"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Entertainment Review Formula 🎮 / Fórmula de Reseña",
+                    "description": "Title + Opinion + Reason",
+                    "content": [
+                              "Formula: I think [Show/Game] is [Adjective] because [Reason].",
+                              "Example: 'I think Stranger Things is exciting because the story is full of mystery.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Media Critic 🎯 / Mini Reto",
+                    "description": "Review a Game or Show",
+                    "content": [
+                              "Give your 1-sentence review of a favorite movie, game, or series:",
+                              "'I really recommend ________ because it is ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -8819,12 +9900,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario y estructura principal.",
             slides: [
-              {"id":"slide-4","title":"Adventurer Capstone: My World 🌟 / Gran Resumen","description":"Review Part 1","content":["Animals & habitats: Where animals live and what they do.","My room & home: Describing my personal space.","City & transport: How I move around town."],"imageUrl":"/images/teens-basic-2-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Skills, Rules & Health Review ⚡ / Habilidades y Reglas","description":"Review Part 2","content":["Abilities: Things I can do well (code, skate, design).","Rules: Must vs Have to vs Should at school.","Health: Sports and habits I practice for energy."],"imageUrl":"/images/teens-basic-2-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Outings & Entertainment Review 🎬 / Salidas y Medios","description":"Review Part 3","content":["Hangouts: Making suggestions with 'Let's' and 'How about'.","Media reviews: Expressing opinions with rich adjectives.","Connecting complex ideas with because, and, but."],"imageUrl":"/images/teens-basic-2-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Adventurer Capstone Formula 🏆 / Fórmula de Graduación","description":"Connect All Level 2 Skills","content":["1. Introduce your city and favorite place to hang out.","2. Share a top skill you can do and a rule you follow.","3. Give a recommendation of a game, movie, or sport."],"imageUrl":"/images/teens-basic-2-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Grand Adventurer Pitch 🎯 / Gran Reto","description":"Your Final Pitch","content":["Deliver your 30-second Level 2 English pitch to the teacher!","Show your fluency across skills, rules, and city life!"],"imageUrl":"/images/teens-basic-2-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Adventurer Capstone: My World 🌟 / Gran Resumen",
+                    "description": "Review Part 1",
+                    "content": [
+                              "Animals & habitats: Where animals live and what they do.",
+                              "My room & home: Describing my personal space.",
+                              "City & transport: How I move around town.",
+                              "Abilities: Things I can do well (code, skate, design)."
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Adventurer Capstone Formula 🏆 / Fórmula de Graduación",
+                    "description": "Connect All Level 2 Skills",
+                    "content": [
+                              "1. Introduce your city and favorite place to hang out.",
+                              "2. Share a top skill you can do and a rule you follow.",
+                              "3. Give a recommendation of a game, movie, or sport."
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Grand Adventurer Pitch 🎯 / Gran Reto",
+                    "description": "Your Final Pitch",
+                    "content": [
+                              "Deliver your 30-second Level 2 English pitch to the teacher!",
+                              "Show your fluency across skills, rules, and city life!"
+                    ],
+                    "imageUrl": "/images/teens-basic-2-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y repetir pronunciación."
           },
           {
@@ -9233,12 +10345,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender verbos de rutina, horas, preposiciones y frecuencia.",
             slides: [
-              {"id":"slide-4","title":"Daily Routine & Sequence ⏰🌅 / Rutina y Secuencia","description":"Everyday Verbs","content":["Wake up, take a shower, have breakfast, commute, attend classes","Do homework, practice sports, relax, go to sleep","Sequence words: First, then, after that, finally"],"imageUrl":"/images/teens-basic-3-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Time Prepositions & Frequency 🕒📊 / Preposiciones y Frecuencia","description":"At, In, On & Frequency","content":["AT 7:30 AM / AT night / IN the morning / ON weekdays","Always (100%), Usually (80%), Sometimes (50%), Rarely (10%)","I usually wake up AT 6:30 AM ON school days."],"imageUrl":"/images/teens-basic-3-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Connecting Routine Steps 🔗 / Secuencia Lógica","description":"Before and After","content":["I do my homework BEFORE I play video games.","AFTER I have dinner, I read or listen to music.","Rule: Before / After + [Activity / Time]"],"imageUrl":"/images/teens-basic-3-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Daily Schedule Formula 📅 / Fórmula de Horario","description":"Build a Full Day Plan","content":["Formula: First I [Action 1] at [Time], then I [Action 2] before [Action 3].","Example: 'First I study at 4 PM, then I practice soccer before having dinner.'"],"imageUrl":"/images/teens-basic-3-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Master Your Routine 🎯 / Mini Reto","description":"Share 2 Sequential Steps","content":["Tell the teacher:","'After school, first I ________ at ________, and then I ________.'"],"imageUrl":"/images/teens-basic-3-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Daily Routine & Sequence ⏰🌅 / Rutina y Secuencia",
+                    "description": "Everyday Verbs",
+                    "content": [
+                              "Wake up, take a shower, have breakfast, commute, attend classes",
+                              "Do homework, practice sports, relax, go to sleep",
+                              "Sequence words: First, then, after that, finally",
+                              "AT 7:30 AM / AT night / IN the morning / ON weekdays"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Daily Schedule Formula 📅 / Fórmula de Horario",
+                    "description": "Build a Full Day Plan",
+                    "content": [
+                              "Formula: First I [Action 1] at [Time], then I [Action 2] before [Action 3].",
+                              "Example: 'First I study at 4 PM, then I practice soccer before having dinner.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Master Your Routine 🎯 / Mini Reto",
+                    "description": "Share 2 Sequential Steps",
+                    "content": [
+                              "Tell the teacher:",
+                              "'After school, first I ________ at ________, and then I ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Repetir ejemplos y crear frases propias."
           },
           {
@@ -9579,12 +10721,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario deportivo, roles y comparativos.",
             slides: [
-              {"id":"slide-4","title":"Team Sports & Match Roles ⚽🏆 / Deportes y Roles","description":"Competition Vocabulary","content":["Captain, striker, goalkeeper, defender, coach, referee","Score a goal, win the tournament, defend the lead, pass the ball","Our soccer team is competing in the regional championship."],"imageUrl":"/images/teens-basic-3-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Comparatives in Sports 🥇⚡ / Comparativos Deportivos","description":"Faster, Stronger, More Agile","content":["Short adjectives: fast -> faster than / strong -> stronger than","Long adjectives: agile -> more agile than / skilled -> more skilled than","Alex is faster than the defenders, but Leo is more experienced."],"imageUrl":"/images/teens-basic-3-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Reporting Match Results & Stats 📊 / Resultados del Partido","description":"Game Stats","content":["We won the game 3 to 1!","It was a close match, but our defense was stronger in the second half.","Fair play and teamwork are key to winning."],"imageUrl":"/images/teens-basic-3-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Sports Comparison Formula 🏅 / Fórmula de Comparación","description":"Player + Comparative + Player","content":["Formula: [Team/Player A] is [Comparative Adjective] than [Team/Player B] because [Reason].","Example: 'Our goalkeeper is taller and more agile than their striker.'"],"imageUrl":"/images/teens-basic-3-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Match Commentary 🎯 / Mini Reto","description":"Compare Two Athletes","content":["Compare 2 players or teams in 1 complete sentence:","'(Player A) is ________ than (Player B) because ________.'"],"imageUrl":"/images/teens-basic-3-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Team Sports & Match Roles ⚽🏆 / Deportes y Roles",
+                    "description": "Competition Vocabulary",
+                    "content": [
+                              "Captain, striker, goalkeeper, defender, coach, referee",
+                              "Score a goal, win the tournament, defend the lead, pass the ball",
+                              "Our soccer team is competing in the regional championship.",
+                              "Short adjectives: fast -> faster than / strong -> stronger than"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Sports Comparison Formula 🏅 / Fórmula de Comparación",
+                    "description": "Player + Comparative + Player",
+                    "content": [
+                              "Formula: [Team/Player A] is [Comparative Adjective] than [Team/Player B] because [Reason].",
+                              "Example: 'Our goalkeeper is taller and more agile than their striker.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Match Commentary 🎯 / Mini Reto",
+                    "description": "Compare Two Athletes",
+                    "content": [
+                              "Compare 2 players or teams in 1 complete sentence:",
+                              "'(Player A) is ________ than (Player B) because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Repetir vocabulario y formar frases con equipos reales o inventados."
           },
           {
@@ -9925,12 +11097,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de días festivos, verbos de acción y estructuras de celebración.",
             slides: [
-              {"id":"slide-4","title":"Holidays, Festivals & Traditions 🎉🎇 / Festivales y Fiestas","description":"Cultural Celebrations","content":["New Year's Eve, Halloween, Thanksgiving, Carnival, Day of the Dead","Fireworks, costumes, traditional feasts, parades, music","Festivals bring communities and friends together."],"imageUrl":"/images/teens-basic-3-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"How We Celebrate: Custom Verbs 🎊 / Verbos de Celebración","description":"Traditions in Action","content":["We decorate the house with colorful lights.","Families gather to share a special dinner and exchange gifts.","People dress up in costumes and watch fireworks."],"imageUrl":"/images/teens-basic-3-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Describing Cultural Traditions 🌎✨ / Tradiciones Vivas","description":"Heritage & Culture","content":["In my country, it is a tradition to eat twelve grapes at midnight.","We celebrate Carnival with street dances, music, and colorful masks.","Every year on this holiday, my family gathers at my grandma's house."],"imageUrl":"/images/teens-basic-3-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Holiday Tradition Formula 🎆 / Fórmula de Tradición","description":"Holiday + Action + People","content":["Formula: On [Holiday], we traditionally [Custom Action] with [People] because [Meaning].","Example: 'On New Year's Eve, we watch fireworks with friends to celebrate the new year.'"],"imageUrl":"/images/teens-basic-3-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Favorite Festival 🎯 / Mini Reto","description":"Share a Tradition","content":["Tell the teacher:","'My favorite holiday is ________ because we always ________.'"],"imageUrl":"/images/teens-basic-3-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Holidays, Festivals & Traditions 🎉🎇 / Festivales y Fiestas",
+                    "description": "Cultural Celebrations",
+                    "content": [
+                              "New Year's Eve, Halloween, Thanksgiving, Carnival, Day of the Dead",
+                              "Fireworks, costumes, traditional feasts, parades, music",
+                              "Festivals bring communities and friends together.",
+                              "We decorate the house with colorful lights."
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Holiday Tradition Formula 🎆 / Fórmula de Tradición",
+                    "description": "Holiday + Action + People",
+                    "content": [
+                              "Formula: On [Holiday], we traditionally [Custom Action] with [People] because [Meaning].",
+                              "Example: 'On New Year's Eve, we watch fireworks with friends to celebrate the new year.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Favorite Festival 🎯 / Mini Reto",
+                    "description": "Share a Tradition",
+                    "content": [
+                              "Tell the teacher:",
+                              "'My favorite holiday is ________ because we always ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Repetir vocabulario y crear frases sobre festividades familiares."
           },
           {
@@ -10272,12 +11474,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario espacial, científico y la estructura con 'will' / 'won't'.",
             slides: [
-              {"id":"slide-4","title":"Space, Science & Future Tech 🚀🌌 / Espacio y Futuro","description":"Cosmic & Scientific Vocab","content":["Astronaut, solar system, galaxy, spacecraft, Mars colony","Artificial intelligence, quantum computers, clean energy, humanoid robots","Space exploration is advancing faster than ever."],"imageUrl":"/images/teens-basic-3-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Future Predictions: Will vs Won't 🔮 / Predicciones con Will","description":"Future Predictions","content":["In 2040, humans will travel to Mars regularly.","Robots won't replace human creativity, but they will assist scientists.","Structure: Subject + will / won't + base verb"],"imageUrl":"/images/teens-basic-3-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Future Time Markers ⏳ / Marcadores de Futuro","description":"In the future, By 2050","content":["In ten years / In the near future / By the year 2050","Scientists believe that by 2050, solar power will be the main energy source.","I think we will see flying electric cars in our lifetime."],"imageUrl":"/images/teens-basic-3-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Future Prediction Formula 🛰️ / Fórmula de Predicción","description":"Time + Prediction + Impact","content":["Formula: By [Year/Future Time], humans will [Future Action] because [Tech Reason].","Example: 'By 2040, astronauts will build a permanent science base on the Moon.'"],"imageUrl":"/images/teens-basic-3-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: 2050 Vision 🎯 / Mini Reto","description":"Make a Future Prediction","content":["Make 1 prediction for the year 2050:","'By 2050, I think technology will ________.'","Tell the teacher your prediction!"],"imageUrl":"/images/teens-basic-3-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Space, Science & Future Tech 🚀🌌 / Espacio y Futuro",
+                    "description": "Cosmic & Scientific Vocab",
+                    "content": [
+                              "Astronaut, solar system, galaxy, spacecraft, Mars colony",
+                              "Artificial intelligence, quantum computers, clean energy, humanoid robots",
+                              "Space exploration is advancing faster than ever.",
+                              "In 2040, humans will travel to Mars regularly."
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Future Prediction Formula 🛰️ / Fórmula de Predicción",
+                    "description": "Time + Prediction + Impact",
+                    "content": [
+                              "Formula: By [Year/Future Time], humans will [Future Action] because [Tech Reason].",
+                              "Example: 'By 2040, astronauts will build a permanent science base on the Moon.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-04/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: 2050 Vision 🎯 / Mini Reto",
+                    "description": "Make a Future Prediction",
+                    "content": [
+                              "Make 1 prediction for the year 2050:",
+                              "'By 2050, I think technology will ________.'",
+                              "Tell the teacher your prediction!"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Formar oraciones de predicción con 'will' y expresiones de tiempo."
           },
           {
@@ -10619,12 +11852,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar 'was' y 'were', adjetivos de personalidad infantil y expresiones de tiempo pasado.",
             slides: [
-              {"id":"slide-4","title":"Childhood Memories & Past States 🧸👶 / Recuerdos de Infancia","description":"Childhood Vocabulary","content":["Kindergarten, elementary school, childhood toy, playground, cartoons","Shy, energetic, curious, imaginative, naughty","When I was seven years old, I was very curious and playful."],"imageUrl":"/images/teens-basic-3-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-orange-600"},
-              {"id":"slide-5","title":"Past To Be: Was vs Were ⏳ / Pasado de To Be","description":"Singular Was, Plural Were","content":["I / He / She / It WAS — We / You / They WERE","I was shy in primary school, but now I am confident.","My friends and I were huge fans of Pokemon cards."],"imageUrl":"/images/teens-basic-3-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-rose-600"},
-              {"id":"slide-6","title":"Past Time Expressions 📅 / Expresiones de Pasado","description":"When I was younger","content":["When I was a kid / Five years ago / In 2018 / Back then","Five years ago, my favorite cartoon was SpongeBob.","When we were seven, my best friend and I were in the same class."],"imageUrl":"/images/teens-basic-3-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Childhood Memory Formula 📸 / Fórmula de Recuerdos","description":"Past State vs Now","content":["Formula: When I was [Age], I was [Past Trait/Hobby], but now I am [Current Trait].","Example: 'When I was 8, I was very quiet, but now I am energetic and outgoing.'"],"imageUrl":"/images/teens-basic-3-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Memory Capsule 🎯 / Mini Reto","description":"Share a Past Memory","content":["Tell the teacher:","'When I was younger, my favorite toy/game was ________ because ________.'"],"imageUrl":"/images/teens-basic-3-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Childhood Memories & Past States 🧸👶 / Recuerdos de Infancia",
+                    "description": "Childhood Vocabulary",
+                    "content": [
+                              "Kindergarten, elementary school, childhood toy, playground, cartoons",
+                              "Shy, energetic, curious, imaginative, naughty",
+                              "When I was seven years old, I was very curious and playful.",
+                              "I / He / She / It WAS — We / You / They WERE"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-orange-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Childhood Memory Formula 📸 / Fórmula de Recuerdos",
+                    "description": "Past State vs Now",
+                    "content": [
+                              "Formula: When I was [Age], I was [Past Trait/Hobby], but now I am [Current Trait].",
+                              "Example: 'When I was 8, I was very quiet, but now I am energetic and outgoing.'",
+                              "I was shy in primary school, but now I am confident."
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-05/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-rose-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Memory Capsule 🎯 / Mini Reto",
+                    "description": "Share a Past Memory",
+                    "content": [
+                              "Tell the teacher:",
+                              "'When I was younger, my favorite toy/game was ________ because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Formar oraciones usando was/were y expresiones de infancia."
           },
           {
@@ -10966,12 +12230,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de viaje y el pasado simple de verbos regulares e irregulares.",
             slides: [
-              {"id":"slide-4","title":"Travel, Trips & Vacations ✈️🏖️ / Vacaciones y Viajes","description":"Travel Vocabulary","content":["Airport, boarding pass, hotel, beach, mountains, tour guide","Luggage, passport, souvenir, road trip, sightseeing","Last summer, my family went on an unforgettable road trip."],"imageUrl":"/images/teens-basic-3-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-cyan-600"},
-              {"id":"slide-5","title":"Key Past Simple Verbs 🧭 / Verbos en Pasado","description":"Regular and Irregular Past","content":["Regular: visited, stayed, explored, watched, traveled","Irregular: went (go), saw (see), ate (eat), bought (buy), took (take)","We traveled to the coast and ate delicious seafood."],"imageUrl":"/images/teens-basic-3-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-teal-600"},
-              {"id":"slide-6","title":"Travel Anecdotes & Sequencers 🗺️ / Contar Anécdotas","description":"First, Then, Suddenly","content":["First, we arrived at the beach at sunset.","Suddenly, it started raining, so we ran to a cozy café.","Finally, the sky cleared and we saw a double rainbow!"],"imageUrl":"/images/teens-basic-3-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-emerald-600"},
-              {"id":"slide-7","title":"The Travel Story Formula 🏝️ / Fórmula de Viaje","description":"Where + What Happened + Best Part","content":["Formula: Last [Vacation Time], I went to [Destination], where I [Past Action 1] and [Past Action 2].","Example: 'Last year, I went to the mountains, where I hiked with my cousins and took great photos.'"],"imageUrl":"/images/teens-basic-3-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-amber-600"},
-              {"id":"slide-8","title":"Quick Check: Travel Postcard 🎯 / Mini Reto","description":"Share a Vacation Highlight","content":["Tell the teacher about a trip you took:","'On my last vacation, I went to ________ and I (ate/visited/saw) ________.'"],"imageUrl":"/images/teens-basic-3-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-orange-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Travel, Trips & Vacations ✈️🏖️ / Vacaciones y Viajes",
+                    "description": "Travel Vocabulary",
+                    "content": [
+                              "Airport, boarding pass, hotel, beach, mountains, tour guide",
+                              "Luggage, passport, souvenir, road trip, sightseeing",
+                              "Last summer, my family went on an unforgettable road trip.",
+                              "Regular: visited, stayed, explored, watched, traveled"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Travel Story Formula 🏝️ / Fórmula de Viaje",
+                    "description": "Where + What Happened + Best Part",
+                    "content": [
+                              "Formula: Last [Vacation Time], I went to [Destination], where I [Past Action 1] and [Past Action 2].",
+                              "Example: 'Last year, I went to the mountains, where I hiked with my cousins and took great photos.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-06/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-cyan-500 to-teal-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Travel Postcard 🎯 / Mini Reto",
+                    "description": "Share a Vacation Highlight",
+                    "content": [
+                              "Tell the teacher about a trip you took:",
+                              "'On my last vacation, I went to ________ and I (ate/visited/saw) ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-orange-600"
+          }
+              ],
             action: "Formar oraciones en pasado con conectores de secuencia."
           },
           {
@@ -11313,12 +12607,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de logros biográficos y estructuras de tiempo para relatar vidas.",
             slides: [
-              {"id":"slide-4","title":"Inspiring Biographies & Creators 🌟🎨 / Biografías de Éxito","description":"Life Milestones","content":["Born, grew up, discovered passion, practiced daily, overcame obstacles","Athletes, musicians, scientists, innovators, digital creators","Success comes from dedication, passion, and resilience."],"imageUrl":"/images/teens-basic-3-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Timeline Markers in Past Simple ⏳ / Línea de Tiempo","description":"Life Milestones","content":["In 2010, she started playing tennis at age six.","After years of training, he won his first world title.","By the time he was eighteen, he founded his own tech company."],"imageUrl":"/images/teens-basic-3-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Overcoming Obstacles & Achievements 🏆 / Superar Obstáculos","description":"Resilience in Action","content":["Despite injuries, the athlete never gave up.","She learned coding on YouTube and built a global app.","Their hard work inspired millions of young creators."],"imageUrl":"/images/teens-basic-3-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Biography Summary Formula 📜 / Fórmula Biográfica","description":"Person + Background + Achievement","content":["Formula: [Name] was born in [Place], discovered [Passion] at [Age], and achieved [Major Milestone].","Example: 'Lionel Messi was born in Rosario, trained tirelessly, and won the World Cup.'"],"imageUrl":"/images/teens-basic-3-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Hero Spotlight 🎯 / Mini Reto","description":"Introduce a Role Model","content":["Introduce an athlete, artist, or creator you admire:","'(Name) was born in ________, worked hard in ________, and achieved ________.'"],"imageUrl":"/images/teens-basic-3-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Inspiring Biographies & Creators 🌟🎨 / Biografías de Éxito",
+                    "description": "Life Milestones",
+                    "content": [
+                              "Born, grew up, discovered passion, practiced daily, overcame obstacles",
+                              "Athletes, musicians, scientists, innovators, digital creators",
+                              "Success comes from dedication, passion, and resilience.",
+                              "In 2010, she started playing tennis at age six."
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-07/slide-07.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Biography Summary Formula 📜 / Fórmula Biográfica",
+                    "description": "Person + Background + Achievement",
+                    "content": [
+                              "Formula: [Name] was born in [Place], discovered [Passion] at [Age], and achieved [Major Milestone].",
+                              "Example: 'Lionel Messi was born in Rosario, trained tirelessly, and won the World Cup.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Hero Spotlight 🎯 / Mini Reto",
+                    "description": "Introduce a Role Model",
+                    "content": [
+                              "Introduce an athlete, artist, or creator you admire:",
+                              "'(Name) was born in ________, worked hard in ________, and achieved ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Construir oraciones biográficas con fechas y verbos pasados."
           },
           {
@@ -11660,12 +12984,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los conectores narrativos de secuencia, contraste, simultaneidad y causa.",
             slides: [
-              {"id":"slide-4","title":"Storytelling & Narrative Hooks 📖🎬 / Contar Historias","description":"Narrative Arc","content":["Setting, characters, rising action, climax, twist, resolution","A great story starts with an intriguing hook.","Stories connect emotions and build real fluency."],"imageUrl":"/images/teens-basic-3-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Mastering Connectors: Suddenly, While, As soon as ⚡ / Conectores Narrativos","description":"Dynamic Story Links","content":["SUDDENLY (de repente): 'Suddenly, the lights went out.'","WHILE (mientras): 'While we were walking in the forest, we heard music.'","AS SOON AS (tan pronto como): 'As soon as the doors opened, the crowd cheered.'"],"imageUrl":"/images/teens-basic-3-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Building Suspense & Plot Twists 🎭 / Suspenso y Giros","description":"Engaging the Listener","content":["At first, everything seemed normal...","To our surprise, the mystery box was empty!","In the end, it was all a surprise birthday prank!"],"imageUrl":"/images/teens-basic-3-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Narrative Arc Formula 🎬 / Fórmula de Historia","description":"Hook + Twist + Resolution","content":["Formula: One day [Context], but suddenly [Unexpected Event], so finally [Resolution].","Example: 'One day we were camping, but suddenly a friendly fox appeared, so finally we took photos.'"],"imageUrl":"/images/teens-basic-3-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: 2-Sentence Thriller 🎯 / Mini Reto","description":"Create a Mini Plot","content":["Create a 2-sentence mini story using 'Suddenly' or 'While':","'While I was ________, suddenly ________!'"],"imageUrl":"/images/teens-basic-3-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Storytelling & Narrative Hooks 📖🎬 / Contar Historias",
+                    "description": "Narrative Arc",
+                    "content": [
+                              "Setting, characters, rising action, climax, twist, resolution",
+                              "A great story starts with an intriguing hook.",
+                              "Stories connect emotions and build real fluency.",
+                              "SUDDENLY (de repente): 'Suddenly, the lights went out.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Narrative Arc Formula 🎬 / Fórmula de Historia",
+                    "description": "Hook + Twist + Resolution",
+                    "content": [
+                              "Formula: One day [Context], but suddenly [Unexpected Event], so finally [Resolution].",
+                              "Example: 'One day we were camping, but suddenly a friendly fox appeared, so finally we took photos.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-08/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: 2-Sentence Thriller 🎯 / Mini Reto",
+                    "description": "Create a Mini Plot",
+                    "content": [
+                              "Create a 2-sentence mini story using 'Suddenly' or 'While':",
+                              "'While I was ________, suddenly ________!'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-08/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Practicar oraciones combinando conectores de causa y tiempo."
           },
           {
@@ -12007,12 +13361,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de averías, adjetivos de problemas y fórmulas de solicitud educada.",
             slides: [
-              {"id":"slide-4","title":"Everyday Tech & Life Problems ⚠️🔧 / Problemas Cotidianos","description":"Troubleshooting Vocabulary","content":["Dead battery, lost keys, weak Wi-Fi signal, forgotten password, flat tire","Late for practice, missed the bus, cracked phone screen","Knowing how to explain a problem gets you fast help."],"imageUrl":"/images/teens-basic-3-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
-              {"id":"slide-5","title":"Explaining What Happened 🗣️ / Explicar el Problema","description":"Cause and Effect","content":["My laptop froze while I was saving my project.","I can't connect to the internet because the router is down.","My phone died because I forgot my charger at home."],"imageUrl":"/images/teens-basic-3-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
-              {"id":"slide-6","title":"Polite Requests for Assistance 🤝 / Pedir Ayuda con Cortesía","description":"Could You Help Me?","content":["Could you please lend me your charger?","Would you mind checking this error with me?","Excuse me, do you know how to fix this audio setting?"],"imageUrl":"/images/teens-basic-3-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Problem & Solution Formula 🛠️ / Fórmula de Solución","description":"Issue + Request for Help","content":["Formula: 'Excuse me, my [Item/Device] is [Problem]. Could you please [Request]?'","Example: 'Excuse me, my phone battery is low. Could you please lend me your power bank?'"],"imageUrl":"/images/teens-basic-3-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Tech Support Desk 🎯 / Mini Reto","description":"Explain a Tech Glitch","content":["Tell the teacher:","'Excuse me, my ________ isn't working because ________. Could you help me?'"],"imageUrl":"/images/teens-basic-3-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Everyday Tech & Life Problems ⚠️🔧 / Problemas Cotidianos",
+                    "description": "Troubleshooting Vocabulary",
+                    "content": [
+                              "Dead battery, lost keys, weak Wi-Fi signal, forgotten password, flat tire",
+                              "Late for practice, missed the bus, cracked phone screen",
+                              "Knowing how to explain a problem gets you fast help.",
+                              "My laptop froze while I was saving my project."
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-red-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Problem & Solution Formula 🛠️ / Fórmula de Solución",
+                    "description": "Issue + Request for Help",
+                    "content": [
+                              "Formula: 'Excuse me, my [Item/Device] is [Problem]. Could you please [Request]?'",
+                              "Example: 'Excuse me, my phone battery is low. Could you please lend me your power bank?'",
+                              "I can't connect to the internet because the router is down."
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-red-500 to-rose-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Tech Support Desk 🎯 / Mini Reto",
+                    "description": "Explain a Tech Glitch",
+                    "content": [
+                              "Tell the teacher:",
+                              "'Excuse me, my ________ isn't working because ________. Could you help me?'"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Construir oraciones de reclamo educado y explicación de fallas."
           },
           {
@@ -12354,12 +13739,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las tres reglas de pronunciación de -ed y patrones de verbos irregulares.",
             slides: [
-              {"id":"slide-4","title":"Pronunciation: The 3 Sounds of -ed 🗣️🎯 / Sonidos de -ed","description":"Regular Past Phonetics","content":["/t/ after voiceless sounds: watched, worked, danced, stopped","/d/ after voiced sounds: played, lived, traveled, stayed","/ɪd/ after /t/ and /d/: wanted, needed, decided, visited"],"imageUrl":"/images/teens-basic-3-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Irregular Past Verb Mastery ⚡🧠 / Verbos Irregulares","description":"Key High-Frequency Families","content":["Go -> Went / See -> Saw / Buy -> Bought","Make -> Made / Write -> Wrote / Take -> Took","Speak -> Spoke / Give -> Gave / Know -> Knew"],"imageUrl":"/images/teens-basic-3-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Video Project Script Structure 📹🎬 / Estructura del Video","description":"Storytelling Delivery","content":["1. The Hook: Grab attention in the first 5 seconds.","2. The Story: Use past simple and rich connectors.","3. The Lesson: Share your personal takeaway and conclusion."],"imageUrl":"/images/teens-basic-3-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Champion Capstone Formula 🏆 / Fórmula de Graduación","description":"Full Story Pitch","content":["1. Introduce a memorable event from your past.","2. Use 3 irregular past verbs and 1 regular verb with correct -ed sound.","3. Conclude with why this experience made you stronger."],"imageUrl":"/images/teens-basic-3-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Grand Champion Pitch 🎯 / Gran Reto","description":"Your 30-Second Story","content":["Deliver your 30-second Champion story to the teacher!","Highlight 1 unforgettable past experience with perfect pronunciation!"],"imageUrl":"/images/teens-basic-3-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Pronunciation: The 3 Sounds of -ed 🗣️🎯 / Sonidos de -ed",
+                    "description": "Regular Past Phonetics",
+                    "content": [
+                              "/t/ after voiceless sounds: watched, worked, danced, stopped",
+                              "/d/ after voiced sounds: played, lived, traveled, stayed",
+                              "/ɪd/ after /t/ and /d/: wanted, needed, decided, visited",
+                              "Go -> Went / See -> Saw / Buy -> Bought"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Champion Capstone Formula 🏆 / Fórmula de Graduación",
+                    "description": "Full Story Pitch",
+                    "content": [
+                              "1. Introduce a memorable event from your past.",
+                              "2. Use 3 irregular past verbs and 1 regular verb with correct -ed sound.",
+                              "3. Conclude with why this experience made you stronger."
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Grand Champion Pitch 🎯 / Gran Reto",
+                    "description": "Your 30-Second Story",
+                    "content": [
+                              "Deliver your 30-second Champion story to the teacher!",
+                              "Highlight 1 unforgettable past experience with perfect pronunciation!"
+                    ],
+                    "imageUrl": "/images/teens-basic-3-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Practicar la pronunciación de -ed y ensayar el guión del video."
           },
           {
@@ -12880,12 +14296,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender frases para dar opiniones, expresar acuerdo/desacuerdo y justificar.",
             slides: [
-              {"id":"slide-4","title":"Opinion Starters & Debates 🗣️💡 / Iniciar Opiniones","description":"Expressing Viewpoints","content":["In my opinion... / From my perspective... / I strongly believe that...","I see what you mean, but... / That's a valid point, however...","Expressing ideas with clarity and confidence is a superpower."],"imageUrl":"/images/teens-basic-4-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Agreeing & Disagreeing Politely 🤝⚡ / Acuerdo y Desacuerdo","description":"Nuanced Responses","content":["Total agreement: 'I completely agree with you!'","Partial agreement: 'You have a point, but we should also consider...'","Polite disagreement: 'I respect your view, but I see it differently.'"],"imageUrl":"/images/teens-basic-4-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Justifying with Arguments & Evidence 📊 / Argumentación","description":"Adding Depth","content":["Don't just state an opinion—back it up with a real reason.","Use connectors: 'For example...', 'The main reason is that...', 'This leads to...'","Example: 'In my view, team sports build character because you learn resilience.'"],"imageUrl":"/images/teens-basic-4-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Persuasive Opinion Formula 🎙️ / Fórmula de Opinión","description":"Opinion + Reason + Example","content":["Formula: In my opinion, [Statement] because [Core Reason], for example [Evidence].","Example: 'In my opinion, learning English is essential because it opens global opportunities, for example in tech and travel.'"],"imageUrl":"/images/teens-basic-4-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Hot Take Challenge 🎯 / Mini Reto","description":"Give Your Perspective","content":["Give your opinion on gaming or school schedules:","'From my perspective, ________ because ________.'"],"imageUrl":"/images/teens-basic-4-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Opinion Starters & Debates 🗣️💡 / Iniciar Opiniones",
+                    "description": "Expressing Viewpoints",
+                    "content": [
+                              "In my opinion... / From my perspective... / I strongly believe that...",
+                              "I see what you mean, but... / That's a valid point, however...",
+                              "Expressing ideas with clarity and confidence is a superpower.",
+                              "Total agreement: 'I completely agree with you!'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Persuasive Opinion Formula 🎙️ / Fórmula de Opinión",
+                    "description": "Opinion + Reason + Example",
+                    "content": [
+                              "Formula: In my opinion, [Statement] because [Core Reason], for example [Evidence].",
+                              "Example: 'In my opinion, learning English is essential because it opens global opportunities, for example in tech and travel.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Hot Take Challenge 🎯 / Mini Reto",
+                    "description": "Give Your Perspective",
+                    "content": [
+                              "Give your opinion on gaming or school schedules:",
+                              "'From my perspective, ________ because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de frases de debate."
           },
           {
@@ -13225,12 +14671,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los modales de consejo (should/shouldn't) y obligación (must/have to).",
             slides: [
-              {"id":"slide-4","title":"Advice, Rules & Modals 💡📋 / Consejos y Normas","description":"Modals in Action","content":["SHOULD / SHOULDN'T: Advice ('You should get some rest.')","MUST / MUSTN'T: Absolute rule ('You must wear safety goggles.')","HAVE TO: Daily requirement ('We have to submit the project on Friday.')"],"imageUrl":"/images/teens-basic-4-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Strong Advice: Had Better & Ought To ⚠️ / Consejos Urgentes","description":"Urgency and Consequence","content":["HAD BETTER: Warning of bad consequence ('You had better study or you'll fail.')","OUGHT TO: Moral recommendation ('We ought to help our teammates.')","If I were you: 'If I were you, I would talk to the coach directly.'"],"imageUrl":"/images/teens-basic-4-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Empathy & Problem Situations 🤝 / Consejería Práctica","description":"Real Scenarios","content":["Situation: 'I feel overwhelmed with exam week.'","Advice: 'You should prioritize your tasks and take regular screen breaks.'","Follow-up: 'Would you like to study together this afternoon?'"],"imageUrl":"/images/teens-basic-4-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Empathetic Advice Formula 🌟 / Fórmula de Consejo","description":"Understanding + Advice + Solution","content":["Formula: 'I understand that [Problem]. If I were you, I would [Action] because [Benefit].'","Example: 'I understand you're stressed. If I were you, I'd take a 15-minute walk to clear my mind.'"],"imageUrl":"/images/teens-basic-4-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Peer Counselor 🎯 / Mini Reto","description":"Give Advice to a Friend","content":["A friend is always late for school. Give them advice:","'You had better ________ or ________. You should ________.'"],"imageUrl":"/images/teens-basic-4-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Advice, Rules & Modals 💡📋 / Consejos y Normas",
+                    "description": "Modals in Action",
+                    "content": [
+                              "SHOULD / SHOULDN'T: Advice ('You should get some rest.')",
+                              "MUST / MUSTN'T: Absolute rule ('You must wear safety goggles.')",
+                              "HAVE TO: Daily requirement ('We have to submit the project on Friday.')",
+                              "HAD BETTER: Warning of bad consequence ('You had better study or you'll fail.')"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Empathetic Advice Formula 🌟 / Fórmula de Consejo",
+                    "description": "Understanding + Advice + Solution",
+                    "content": [
+                              "Formula: 'I understand that [Problem]. If I were you, I would [Action] because [Benefit].'",
+                              "Example: 'I understand you're stressed. If I were you, I'd take a 15-minute walk to clear my mind.'",
+                              "If I were you: 'If I were you, I would talk to the coach directly.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Peer Counselor 🎯 / Mini Reto",
+                    "description": "Give Advice to a Friend",
+                    "content": [
+                              "A friend is always late for school. Give them advice:",
+                              "'You had better ________ or ________. You should ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de verbos modales."
           },
           {
@@ -13570,12 +15047,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura del condicional cero para verdades universales y hábitos.",
             slides: [
-              {"id":"slide-4","title":"Zero Conditional: Facts & Science 🔬⚡ / Condicional Cero","description":"Universal Truths","content":["If you heat water to 100°C, it boils.","If teens sleep 8 hours, their focus improves significantly.","Zero Conditional = Real facts, scientific rules, habitual results."],"imageUrl":"/images/teens-basic-4-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Zero Conditional Structure & Inversion 🔄 / Estructura","description":"If + Present, Present","content":["Structure: IF + Present Simple, Present Simple","Inversion: Result clause first (no comma needed): 'Water boils if you heat it.'","You can also use 'WHEN': 'When you press the button, the app starts.'"],"imageUrl":"/images/teens-basic-4-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Tech Automation & Daily Rules 🤖📱 / Automatización y Hábitos","description":"Tech Logic","content":["If you tap 'save', the cloud syncs automatically.","If you activate dark mode, your battery lasts longer.","If I don't eat breakfast, I feel sluggish during practice."],"imageUrl":"/images/teens-basic-4-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Zero Conditional Formula 🧪 / Fórmula de Hecho","description":"Condition -> Constant Result","content":["Formula: If you [Present Action], [Present Result].","Example: 'If you practice speaking English every day, your pronunciation improves naturally.'"],"imageUrl":"/images/teens-basic-4-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Science Rule 🎯 / Mini Reto","description":"Formulate a Fact","content":["Complete with a real fact:","'If students practice consistently, they ________.'"],"imageUrl":"/images/teens-basic-4-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Zero Conditional: Facts & Science 🔬⚡ / Condicional Cero",
+                    "description": "Universal Truths",
+                    "content": [
+                              "If you heat water to 100°C, it boils.",
+                              "If teens sleep 8 hours, their focus improves significantly.",
+                              "Zero Conditional = Real facts, scientific rules, habitual results.",
+                              "Structure: IF + Present Simple, Present Simple"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Zero Conditional Formula 🧪 / Fórmula de Hecho",
+                    "description": "Condition -> Constant Result",
+                    "content": [
+                              "Formula: If you [Present Action], [Present Result].",
+                              "Example: 'If you practice speaking English every day, your pronunciation improves naturally.'",
+                              "Structure: IF + Present Simple, Present Simple"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Science Rule 🎯 / Mini Reto",
+                    "description": "Formulate a Fact",
+                    "content": [
+                              "Complete with a real fact:",
+                              "'If students practice consistently, they ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de cláusulas condicionales."
           },
           {
@@ -13915,12 +15423,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los acrónimos clave, expresiones de chat y normas de etiqueta digital.",
             slides: [
-              {"id":"slide-4","title":"Texting, Acronyms & Digital Slang 📱💬 / Mensajería y Chat","description":"Online Communication","content":["BRB (Be Right Back), IDK (I Don't Know), BTW (By The Way), TBH (To Be Honest)","FOMO (Fear Of Missing Out), RN (Right Now), NGL (Not Gonna Lie)","Use acronyms in casual chats with friends, not in school essays!"],"imageUrl":"/images/teens-basic-4-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Group Chat Etiquette & Voice Notes 🎙️✨ / Protocolo Digital","description":"Respectful Messaging","content":["Don't spam multiple voice notes when one clear message works.","Be clear with project deadlines in group chats.","Use emojis to clarify friendly tone and prevent misunderstandings."],"imageUrl":"/images/teens-basic-4-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Casual Chat vs Formal Email 📧 / Chat vs Correo","description":"Register Modulation","content":["Casual: 'Hey! Send me the slides ASAP.'","Formal: 'Dear Teacher, could you please review the attached slides? Thank you.'","Always adapt your tone to your audience."],"imageUrl":"/images/teens-basic-4-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Clear Online Message Formula 📨 / Fórmula de Mensaje","description":"Greeting + Purpose + Action","content":["Formula: 'Hey [Team]! [Update/Question]. Please [Action Required] by [Deadline]. Thanks!'","Example: 'Hey team! I uploaded our slides. Please review your part by 6 PM today.'"],"imageUrl":"/images/teens-basic-4-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Group Project Chat 🎯 / Mini Reto","description":"Write a Project Ping","content":["Send a quick message to your project team requesting feedback:","'Hey team! BTW, I finished the ________. Please check it ________.'"],"imageUrl":"/images/teens-basic-4-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Texting, Acronyms & Digital Slang 📱💬 / Mensajería y Chat",
+                    "description": "Online Communication",
+                    "content": [
+                              "BRB (Be Right Back), IDK (I Don't Know), BTW (By The Way), TBH (To Be Honest)",
+                              "FOMO (Fear Of Missing Out), RN (Right Now), NGL (Not Gonna Lie)",
+                              "Use acronyms in casual chats with friends, not in school essays!",
+                              "Don't spam multiple voice notes when one clear message works."
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Clear Online Message Formula 📨 / Fórmula de Mensaje",
+                    "description": "Greeting + Purpose + Action",
+                    "content": [
+                              "Formula: 'Hey [Team]! [Update/Question]. Please [Action Required] by [Deadline]. Thanks!'",
+                              "Example: 'Hey team! I uploaded our slides. Please review your part by 6 PM today.'",
+                              "Don't spam multiple voice notes when one clear message works."
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-04/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Group Project Chat 🎯 / Mini Reto",
+                    "description": "Write a Project Ping",
+                    "content": [
+                              "Send a quick message to your project team requesting feedback:",
+                              "'Hey team! BTW, I finished the ________. Please check it ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de acrónimos en conversaciones."
           },
           {
@@ -14260,12 +15799,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura del primer condicional y el uso de unless.",
             slides: [
-              {"id":"slide-4","title":"First Conditional: Real Future Possibilities 🚀🔮 / Primer Condicional","description":"Real Future Scenarios","content":["If it rains tomorrow, we will stay home and watch movies.","If you study hard, you will pass your certification.","First Conditional = Real condition now -> Probable future outcome."],"imageUrl":"/images/teens-basic-4-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"First Conditional Structure: If + Present, Will 🎯 / Estructura","description":"Grammar Rules","content":["IF + Present Simple, WILL / WON'T + Base Verb","Example: 'If I have time this weekend, I will edit our podcast.'","Negative: 'If she doesn't hurry, she will miss the flight.'"],"imageUrl":"/images/teens-basic-4-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Using Unless: 'If Not' ⚠️ / Uso de Unless","description":"Unless = If not","content":["'Unless you practice, you won't improve.' = 'If you don't practice...'","'We will go to the beach unless it rains.'","Notice that UNLESS is already negative."],"imageUrl":"/images/teens-basic-4-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Future Goal Formula 🌟 / Fórmula de Metas","description":"Condition -> Achievement","content":["Formula: If I [Present Effort], I will [Future Achievement].","Example: 'If I practice coding 30 minutes daily, I will build my first game app this year.'"],"imageUrl":"/images/teens-basic-4-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Future Promise 🎯 / Mini Reto","description":"Share a First Conditional Goal","content":["Tell the teacher your goal for next month:","'If I ________ every week, I will ________!'"],"imageUrl":"/images/teens-basic-4-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "First Conditional: Real Future Possibilities 🚀🔮 / Primer Condicional",
+                    "description": "Real Future Scenarios",
+                    "content": [
+                              "If it rains tomorrow, we will stay home and watch movies.",
+                              "If you study hard, you will pass your certification.",
+                              "First Conditional = Real condition now -> Probable future outcome.",
+                              "IF + Present Simple, WILL / WON'T + Base Verb"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Future Goal Formula 🌟 / Fórmula de Metas",
+                    "description": "Condition -> Achievement",
+                    "content": [
+                              "Formula: If I [Present Effort], I will [Future Achievement].",
+                              "Example: 'If I practice coding 30 minutes daily, I will build my first game app this year.'",
+                              "IF + Present Simple, WILL / WON'T + Base Verb"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-05/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Future Promise 🎯 / Mini Reto",
+                    "description": "Share a First Conditional Goal",
+                    "content": [
+                              "Tell the teacher your goal for next month:",
+                              "'If I ________ every week, I will ________!'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de oraciones con will y unless."
           },
           {
@@ -14605,12 +16175,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las reglas morfológicas de comparativos y superlativos regulares e irregulares.",
             slides: [
-              {"id":"slide-4","title":"Comparatives & Superlatives in Tech & Gaming 🎮📱 / Comparativos","description":"Tech Benchmarks","content":["Short: fast -> faster than -> the fastest","Long: powerful -> more powerful than -> the most powerful","Irregular: good -> better -> the best / bad -> worse -> the worst"],"imageUrl":"/images/teens-basic-4-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Equality: As... As ⚖️ / Comparación de Igualdad","description":"Equivalence","content":["This phone is AS fast AS that laptop.","My headphones are NOT AS expensive AS brand X, but they sound great!","Use 'as [adjective] as' to express equal traits."],"imageUrl":"/images/teens-basic-4-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Ranking Games, Devices & Movies 🏆 / Rankings","description":"Reviewing Gadgets","content":["This is THE MOST EXCITING multiplayer game of the year.","The new console is SLIGHTLY MORE EXPENSIVE, but THE PERFORMANCE is unbeatable.","In my opinion, it is THE BEST investment for creators."],"imageUrl":"/images/teens-basic-4-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Tech Benchmark Formula 📊 / Fórmula Comparativa","description":"Item A vs Item B vs The Best","content":["Formula: [Device A] is [Comparative] than [Device B], but [Device C] is the [Superlative].","Example: 'The tablet is lighter than the laptop, but the smartphone is the most portable device.'"],"imageUrl":"/images/teens-basic-4-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Gadget Smackdown 🎯 / Mini Reto","description":"Compare Two Devices","content":["Compare 2 smartphones or gaming consoles:","'(Device A) is ________ than (Device B), but (Device A) is the most ________.'"],"imageUrl":"/images/teens-basic-4-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Comparatives & Superlatives in Tech & Gaming 🎮📱 / Comparativos",
+                    "description": "Tech Benchmarks",
+                    "content": [
+                              "Short: fast -> faster than -> the fastest",
+                              "Long: powerful -> more powerful than -> the most powerful",
+                              "Irregular: good -> better -> the best / bad -> worse -> the worst",
+                              "This phone is AS fast AS that laptop."
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Tech Benchmark Formula 📊 / Fórmula Comparativa",
+                    "description": "Item A vs Item B vs The Best",
+                    "content": [
+                              "Formula: [Device A] is [Comparative] than [Device B], but [Device C] is the [Superlative].",
+                              "Example: 'The tablet is lighter than the laptop, but the smartphone is the most portable device.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-06/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Gadget Smackdown 🎯 / Mini Reto",
+                    "description": "Compare Two Devices",
+                    "content": [
+                              "Compare 2 smartphones or gaming consoles:",
+                              "'(Device A) is ________ than (Device B), but (Device A) is the most ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de comparativos y superlativos."
           },
           {
@@ -14950,12 +16550,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las tres posiciones clave de too y enough.",
             slides: [
-              {"id":"slide-4","title":"Too vs Enough: Evaluating Situations ⚠️⚖️ / Too y Enough","description":"Excess vs Sufficiency","content":["TOO + Adjective = Excess / Problem ('The room is too noisy to study.')","Adjective + ENOUGH = Sufficient ('The light is bright enough to read.')","ENOUGH + Noun = Sufficient quantity ('We have enough time to finish.')"],"imageUrl":"/images/teens-basic-4-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
-              {"id":"slide-5","title":"Too Much vs Too Many 📦 / Cantidad Excesiva","description":"Countable vs Uncountable","content":["TOO MUCH + Uncountable: too much sugar, too much homework, too much noise","TOO MANY + Plural Countable: too many notifications, too many tasks, too many tabs","I have too many apps open and too much lag."],"imageUrl":"/images/teens-basic-4-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
-              {"id":"slide-6","title":"Solving Daily Bottlenecks 💡 / Resolver Problemas","description":"Finding Solutions","content":["Problem: 'My backpack is too heavy!' -> Solution: 'Remove old books.'","Problem: 'I don't have enough sleep.' -> Solution: 'Turn off your screen earlier.'","Adjusting balance creates smoother daily flow."],"imageUrl":"/images/teens-basic-4-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Problem & Adjustment Formula ⚖️ / Fórmula de Balance","description":"State Problem -> Adjust","content":["Formula: It is too [Adjective] to [Action], so we need [Enough + Noun].","Example: 'It is too dark to take photos, so we need enough natural light.'"],"imageUrl":"/images/teens-basic-4-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Spot the Problem 🎯 / Mini Reto","description":"Use Too or Enough","content":["Describe a situation using 'too' or 'enough':","'I have too (much/many) ________ so I don't have enough ________.'"],"imageUrl":"/images/teens-basic-4-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Too vs Enough: Evaluating Situations ⚠️⚖️ / Too y Enough",
+                    "description": "Excess vs Sufficiency",
+                    "content": [
+                              "TOO + Adjective = Excess / Problem ('The room is too noisy to study.')",
+                              "Adjective + ENOUGH = Sufficient ('The light is bright enough to read.')",
+                              "ENOUGH + Noun = Sufficient quantity ('We have enough time to finish.')",
+                              "TOO MUCH + Uncountable: too much sugar, too much homework, too much noise"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-07/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-red-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Problem & Adjustment Formula ⚖️ / Fórmula de Balance",
+                    "description": "State Problem -> Adjust",
+                    "content": [
+                              "Formula: It is too [Adjective] to [Action], so we need [Enough + Noun].",
+                              "Example: 'It is too dark to take photos, so we need enough natural light.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-red-500 to-rose-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Spot the Problem 🎯 / Mini Reto",
+                    "description": "Use Too or Enough",
+                    "content": [
+                              "Describe a situation using 'too' or 'enough':",
+                              "'I have too (much/many) ________ so I don't have enough ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Tomar notas y dominar la posición de too y enough."
           },
           {
@@ -15295,12 +16925,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los diferentes niveles de consejos con modales.",
             slides: [
-              {"id":"slide-4","title":"Friendship Advice & Active Listening 🤝❤️ / Consejos entre Amigos","description":"Supporting Friends","content":["Listen first before jumping to conclusions.","Use gentle phrasing: 'Have you thought about...', 'Maybe you could...'","A supportive friend offers perspectives without judging."],"imageUrl":"/images/teens-basic-4-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Softening Expressions: If I Were You 💬 / Suavizar Consejos","description":"Polite Phrasing","content":["'If I were you, I would take a deep breath and apologize.'","'It might be a good idea to talk things out privately.'","'Why don't we review the project together?'"],"imageUrl":"/images/teens-basic-4-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Resolving Conflicts & Misunderstandings 🕊️ / Resolver Conflictos","description":"Healthy Boundaries","content":["Communicate clearly when you feel hurt: 'When that happened, I felt...'","Set respectful boundaries: 'I care about our friendship, but I need some quiet time.'","True friendships grow stronger through honest talk."],"imageUrl":"/images/teens-basic-4-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Friendship Mediation Formula 🤝 / Fórmula de Mediación","description":"Empathy + Softened Advice","content":["Formula: 'I know this is tough. If I were you, I would [Gentle Action] because [Positive Outcome].'","Example: 'I know you're upset. If I were you, I would message Leo to clarify what happened.'"],"imageUrl":"/images/teens-basic-4-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Best Friend Advice 🎯 / Mini Reto","description":"Give Gentle Advice","content":["Give gentle advice to a friend who had a fight with a teammate:","'If I were you, I would ________ because ________.'"],"imageUrl":"/images/teens-basic-4-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Friendship Advice & Active Listening 🤝❤️ / Consejos entre Amigos",
+                    "description": "Supporting Friends",
+                    "content": [
+                              "Listen first before jumping to conclusions.",
+                              "Use gentle phrasing: 'Have you thought about...', 'Maybe you could...'",
+                              "A supportive friend offers perspectives without judging.",
+                              "'If I were you, I would take a deep breath and apologize.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Friendship Mediation Formula 🤝 / Fórmula de Mediación",
+                    "description": "Empathy + Softened Advice",
+                    "content": [
+                              "Formula: 'I know this is tough. If I were you, I would [Gentle Action] because [Positive Outcome].'",
+                              "Example: 'I know you're upset. If I were you, I would message Leo to clarify what happened.'",
+                              "'If I were you, I would take a deep breath and apologize.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-08/slide-08.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Best Friend Advice 🎯 / Mini Reto",
+                    "description": "Give Gentle Advice",
+                    "content": [
+                              "Give gentle advice to a friend who had a fight with a teammate:",
+                              "'If I were you, I would ________ because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-08/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de should, ought to y had better."
           },
           {
@@ -15640,12 +17301,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura y fórmulas de cortesía para correos formales.",
             slides: [
-              {"id":"slide-4","title":"Formal Email Architecture 📧🏛️ / Estructura de Correo Formal","description":"The 5 Anatomy Steps","content":["1. Subject Line: Clear and concise ('Application for Science Club')","2. Salutation: 'Dear Mr. Miller,' / 'Dear Admissions Committee,'","3. Purpose: 'I am writing to inquire about...'","4. Details & Request: 'Could you please provide...'","5. Sign-off: 'Sincerely,' / 'Best regards,' + Full Name"],"imageUrl":"/images/teens-basic-4-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Formal vs Informal Register Comparison ⚖️ / Registro Formal","description":"Word Choice Shifts","content":["Informal: 'Hey! Send me the info ASAP.'","Formal: 'Dear Ms. Davis, I would appreciate it if you could share the information at your earliest convenience.'","Avoid contractions (use 'I am writing' instead of 'I'm writing')."],"imageUrl":"/images/teens-basic-4-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Polite Request Formulas in Professional Writing ✍️ / Peticiones Formales","description":"Professional Courtesy","content":["'I am writing to apply for the volunteer program.'","'Could you please confirm if the deadline has been extended?'","'Thank you for your time and consideration.'"],"imageUrl":"/images/teens-basic-4-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Formal Email Blueprint 📋 / Fórmula de Correo","description":"Subject + Salutation + Body + Sign-off","content":["Formula: 'Dear [Name], I am writing to [Purpose]. Could you please [Request]? Thank you for your time. Sincerely, [Your Name].'","Example: 'Dear Principal Smith, I am writing to propose a robotics club. Sincerely, Mateo Ruiz.'"],"imageUrl":"/images/teens-basic-4-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Professional Subject & Hook 🎯 / Mini Reto","description":"Draft Formal Opening","content":["Draft a 2-line formal email opener to a teacher asking for project feedback:","'Dear ________, I am writing to ________. Sincerely, ________.'"],"imageUrl":"/images/teens-basic-4-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Formal Email Architecture 📧🏛️ / Estructura de Correo Formal",
+                    "description": "The 5 Anatomy Steps",
+                    "content": [
+                              "1. Subject Line: Clear and concise ('Application for Science Club')",
+                              "2. Salutation: 'Dear Mr. Miller,' / 'Dear Admissions Committee,'",
+                              "3. Purpose: 'I am writing to inquire about...'",
+                              "Informal: 'Hey! Send me the info ASAP.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Formal Email Blueprint 📋 / Fórmula de Correo",
+                    "description": "Subject + Salutation + Body + Sign-off",
+                    "content": [
+                              "Formula: 'Dear [Name], I am writing to [Purpose]. Could you please [Request]? Thank you for your time. Sincerely, [Your Name].'",
+                              "Example: 'Dear Principal Smith, I am writing to propose a robotics club. Sincerely, Mateo Ruiz.'",
+                              "Formal: 'Dear Ms. Davis, I would appreciate it if you could share the information at your earliest convenience.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Professional Subject & Hook 🎯 / Mini Reto",
+                    "description": "Draft Formal Opening",
+                    "content": [
+                              "Draft a 2-line formal email opener to a teacher asking for project feedback:",
+                              "'Dear ________, I am writing to ________. Sincerely, ________.'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la redacción de peticiones formales."
           },
           {
@@ -15985,12 +17677,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de atención al cliente y repasar la gramática del Nivel 4.",
             slides: [
-              {"id":"slide-4","title":"Youth Leadership & Global Perspectives 🌟🌍 / Liderazgo Juvenil","description":"Level 4 Capstone","content":["Collaborative leadership, active listening, public speaking","Youth initiatives, tech innovation, environmental campaigns","Leadership is not about commanding—it's about inspiring action."],"imageUrl":"/images/teens-basic-4-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Level 4 Grammar Master Recap 🧠⚡ / Gran Recapitulación","description":"Conditionals, Modals, Registers","content":["Zero Conditional (Facts) & First Conditional (Future)","Modals: Should, Must, Have to, Had better, If I were you","Formal email structure and comparative benchmarks (Too / Enough)"],"imageUrl":"/images/teens-basic-4-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Project Pitch & Problem De-escalation 🎯 / Pitch de Proyecto","description":"Problem Solving","content":["State the youth problem: 'Many teens experience high screen fatigue.'","Propose the solution: 'We are launching an outdoor sports initiative.'","Inspire participation: 'If you join our team, you will lead creative workshops.'"],"imageUrl":"/images/teens-basic-4-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Teen Pro Leadership Formula 🏆 / Fórmula de Graduación","description":"Leadership Pitch","content":["1. Introduce an issue and your perspective (Class 1).","2. Give clear advice or conditional solutions (Classes 2-5).","3. Conclude with a persuasive invitation in professional tone (Classes 6-9)."],"imageUrl":"/images/teens-basic-4-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Grand Pro Pitch 🎯 / Gran Reto","description":"Deliver Your 30-Second Pitch","content":["Deliver your 30-second Level 4 Leadership pitch to the teacher!","Present your initiative with confidence, conditionals, and clear arguments!"],"imageUrl":"/images/teens-basic-4-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Youth Leadership & Global Perspectives 🌟🌍 / Liderazgo Juvenil",
+                    "description": "Level 4 Capstone",
+                    "content": [
+                              "Collaborative leadership, active listening, public speaking",
+                              "Youth initiatives, tech innovation, environmental campaigns",
+                              "Leadership is not about commanding—it's about inspiring action.",
+                              "Zero Conditional (Facts) & First Conditional (Future)"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Teen Pro Leadership Formula 🏆 / Fórmula de Graduación",
+                    "description": "Leadership Pitch",
+                    "content": [
+                              "1. Introduce an issue and your perspective (Class 1).",
+                              "2. Give clear advice or conditional solutions (Classes 2-5).",
+                              "3. Conclude with a persuasive invitation in professional tone (Classes 6-9)."
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Grand Pro Pitch 🎯 / Gran Reto",
+                    "description": "Deliver Your 30-Second Pitch",
+                    "content": [
+                              "Deliver your 30-second Level 4 Leadership pitch to the teacher!",
+                              "Present your initiative with confidence, conditionals, and clear arguments!"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y repasar las estructuras de todo el Nivel 4."
           },
           {
@@ -16509,12 +18232,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura del Present Perfect y sus adverbios clave.",
             slides: [
-              {"id":"slide-4","title":"Present Perfect: Life Experiences 🌍✈️ / Present Perfect","description":"Experiences in Life","content":["HAVE / HAS + Past Participle","I have traveled to three different countries.","She has coded her own web application.","We use Present Perfect when the exact time in the past does NOT matter."],"imageUrl":"/images/teens-inter-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Ever vs Never / Alguna vez vs Nunca ❓❌","description":"Experience Questions","content":["Question: 'Have you EVER tried virtual reality gaming?'","Positive: 'Yes, I have played it many times!'","Negative: 'No, I have NEVER experienced VR before.'"],"imageUrl":"/images/teens-inter-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Already, Just & Yet ⏳ / Marcadores de Tiempo","description":"Recent and Pending Actions","content":["JUST = A minute ago ('I have just finished my homework.')","ALREADY = Sooner than expected ('I have already seen that movie.')","YET = Negative/Questions at the end ('I haven't eaten lunch yet.')"],"imageUrl":"/images/teens-inter-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Life Experience Formula 🌟 / Fórmula de Experiencias","description":"Have + Participle + Detail","content":["Formula: I have [Past Participle] [Experience], but I have never [Unexplored Thing] yet.","Example: 'I have visited the national science museum, but I have never seen a solar eclipse yet.'"],"imageUrl":"/images/teens-inter-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Bucket List Check 🎯 / Mini Reto","description":"Share 1 Experience and 1 Goal","content":["Tell the teacher:","'I have already ________, but I have never ________ yet.'"],"imageUrl":"/images/teens-inter-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Present Perfect: Life Experiences 🌍✈️ / Present Perfect",
+                    "description": "Experiences in Life",
+                    "content": [
+                              "HAVE / HAS + Past Participle",
+                              "I have traveled to three different countries.",
+                              "She has coded her own web application.",
+                              "Question: 'Have you EVER tried virtual reality gaming?'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Life Experience Formula 🌟 / Fórmula de Experiencias",
+                    "description": "Have + Participle + Detail",
+                    "content": [
+                              "Formula: I have [Past Participle] [Experience], but I have never [Unexplored Thing] yet.",
+                              "Example: 'I have visited the national science museum, but I have never seen a solar eclipse yet.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Bucket List Check 🎯 / Mini Reto",
+                    "description": "Share 1 Experience and 1 Goal",
+                    "content": [
+                              "Tell the teacher:",
+                              "'I have already ________, but I have never ________ yet.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la conjugación de participios irregulares."
           },
           {
@@ -16854,12 +18607,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el funcionamiento de los phrasal verbs y modismos juveniles.",
             slides: [
-              {"id":"slide-4","title":"Teen Phrasal Verbs in Daily Life 🗣️⚡ / Phrasal Verbs","description":"Verb + Preposition Anatomy","content":["HANG OUT = pasar el rato con amigos ('Let's hang out after class.')","CATCH UP = ponerse al día ('I need to catch up with you on the news.')","CHILL OUT = relajarse ('I'm just chilling out at home today.')"],"imageUrl":"/images/teens-inter-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Action & Problem Solving Phrasals 🔧 / Resolver Situaciones","description":"Everyday Solutions","content":["FIGURE OUT = descubrir / resolver ('I finally figured out the code bug.')","GIVE UP = rendirse ('Never give up on your goals.')","LOOK FORWARD TO = esperar con emoción ('I look forward to the weekend!')"],"imageUrl":"/images/teens-inter-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Phrasal Verbs in Social Context 📱 / En Conversaciones Reales","description":"Natural Flow","content":["'Hey! Let's HANG OUT at the café to CATCH UP on the tournament.'","'Don't worry if it's tough—we will FIGURE IT OUT together.'","Phrasal verbs make your English sound 100% native and authentic."],"imageUrl":"/images/teens-inter-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Daily Phrasal Formula 💬 / Fórmula de Phrasals","description":"Subject + Phrasal + Object","content":["Formula: I usually [Phrasal Verb 1] on weekends and I always [Phrasal Verb 2] when [Context].","Example: 'I usually hang out with friends on Saturdays and I look forward to relaxing.'"],"imageUrl":"/images/teens-inter-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Phrasal Master 🎯 / Mini Reto","description":"Use 2 Phrasal Verbs","content":["Use 'hang out' or 'figure out' in a sentence to the teacher:","'When I have free time, I love to ________ with ________.'"],"imageUrl":"/images/teens-inter-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Teen Phrasal Verbs in Daily Life 🗣️⚡ / Phrasal Verbs",
+                    "description": "Verb + Preposition Anatomy",
+                    "content": [
+                              "HANG OUT = pasar el rato con amigos ('Let's hang out after class.')",
+                              "CATCH UP = ponerse al día ('I need to catch up with you on the news.')",
+                              "CHILL OUT = relajarse ('I'm just chilling out at home today.')",
+                              "FIGURE OUT = descubrir / resolver ('I finally figured out the code bug.')"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Daily Phrasal Formula 💬 / Fórmula de Phrasals",
+                    "description": "Subject + Phrasal + Object",
+                    "content": [
+                              "Formula: I usually [Phrasal Verb 1] on weekends and I always [Phrasal Verb 2] when [Context].",
+                              "Example: 'I usually hang out with friends on Saturdays and I look forward to relaxing.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Phrasal Master 🎯 / Mini Reto",
+                    "description": "Use 2 Phrasal Verbs",
+                    "content": [
+                              "Use 'hang out' or 'figure out' in a sentence to the teacher:",
+                              "'When I have free time, I love to ________ with ________.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de verbos compuestos."
           },
           {
@@ -17199,12 +18982,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los grados de certeza con modales de deducción.",
             slides: [
-              {"id":"slide-4","title":"Modal Deductions: Must, Might, Can't 🕵️🔍 / Deducciones","description":"The Certainty Scale","content":["MUST (95% sure it's true): 'He has a laptop and headphones; he must be a coder.'","MIGHT / COULD (50% possibility): 'She might be at basketball practice right now.'","CAN'T (99% sure it's impossible): 'That can't be Alex—he is in New York today.'"],"imageUrl":"/images/teens-inter-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Analyzing Clues & Evidence 🧩 / Analizar Pistas","description":"Deduction Logic","content":["Clue 1: The room lights are off and the door is locked.","Deduction: 'They MUST BE away on vacation.'","Clue 2: A phone is ringing in the backpack.","Deduction: 'That MIGHT BE Sarah's phone.'"],"imageUrl":"/images/teens-inter-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Deduction in Mystery & Daily Scenarios 🎭 / Escenarios de Misterio","description":"Solving Riddles","content":["'Look at those strange footsteps outside the tent!'","'It CAN'T BE a bear; the tracks are too small.'","'It MUST BE a friendly fox looking for food.'"],"imageUrl":"/images/teens-inter-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Logical Deduction Formula 🔍 / Fórmula de Deducción","description":"Evidence -> Deduction","content":["Formula: Based on [Evidence], it must/might/can't be [Deduction] because [Reason].","Example: 'Based on his smile and medal, he MUST BE the tournament champion.'"],"imageUrl":"/images/teens-inter-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Detective Sleuth 🎯 / Mini Reto","description":"Make a Deduction","content":["You see a friend carrying a huge suitcase and a passport:","'She ________ be going on a trip because ________.' (Use must / can't)"],"imageUrl":"/images/teens-inter-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Modal Deductions: Must, Might, Can't 🕵️🔍 / Deducciones",
+                    "description": "The Certainty Scale",
+                    "content": [
+                              "MUST (95% sure it's true): 'He has a laptop and headphones; he must be a coder.'",
+                              "MIGHT / COULD (50% possibility): 'She might be at basketball practice right now.'",
+                              "CAN'T (99% sure it's impossible): 'That can't be Alex—he is in New York today.'",
+                              "Clue 1: The room lights are off and the door is locked."
+                    ],
+                    "imageUrl": "/images/teens-inter-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Logical Deduction Formula 🔍 / Fórmula de Deducción",
+                    "description": "Evidence -> Deduction",
+                    "content": [
+                              "Formula: Based on [Evidence], it must/might/can't be [Deduction] because [Reason].",
+                              "Example: 'Based on his smile and medal, he MUST BE the tournament champion.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Detective Sleuth 🎯 / Mini Reto",
+                    "description": "Make a Deduction",
+                    "content": [
+                              "You see a friend carrying a huge suitcase and a passport:",
+                              "'She ________ be going on a trip because ________.' (Use must / can't)"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y practicar la escala de certeza con modales."
           },
           {
@@ -17544,12 +19357,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura y usos del Segundo Condicional.",
             slides: [
-              {"id":"slide-4","title":"Second Conditional: Hypothetical Worlds 🌎✨ / Segundo Condicional","description":"If I Ruled the World","content":["Second Conditional = Imaginary / Unreal situations now or in the future.","Structure: IF + Past Simple, WOULD / COULD + Base Verb","Example: 'If I had one million dollars, I would build an animal shelter.'"],"imageUrl":"/images/teens-inter-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"The 'If I Were You' Advice Formula 💬👑 / Si Yo Fuera...","description":"Subjunctive Were","content":["In formal English, use WERE for all subjects: 'If I WERE rich...' / 'If he WERE the president...'","Advice: 'If I were you, I would take that opportunity immediately.'","Modal shifts: would (seguro), could (capacidad), might (posibilidad)."],"imageUrl":"/images/teens-basic-4-class-08/slide-15.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Hypothetical Inventions & Superpowers 🦸‍♂️ / Superpoderes","description":"Creative Brainstorming","content":["'If I could teleport anywhere, I would visit Tokyo every afternoon.'","'If I invented a new gadget, it would automatically translate all languages.'","Imagining possibilities trains creative leadership."],"imageUrl":"/images/teens-inter-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Visionary Second Conditional Formula 🔮 / Fórmula Visionaria","description":"Hypothetical Scenario","content":["Formula: If I had/were [Imaginary Condition], I would [Visionary Action] to [Impact].","Example: 'If I were the mayor of my city, I would create free public skateparks and solar bike lanes.'"],"imageUrl":"/images/teens-inter-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Superpower Pitch 🎯 / Mini Reto","description":"Share Your Vision","content":["If you could have any superpower for 24 hours:","'If I had the power of ________, I would ________.'"],"imageUrl":"/images/teens-inter-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Second Conditional: Hypothetical Worlds 🌎✨ / Segundo Condicional",
+                    "description": "If I Ruled the World",
+                    "content": [
+                              "Second Conditional = Imaginary / Unreal situations now or in the future.",
+                              "Structure: IF + Past Simple, WOULD / COULD + Base Verb",
+                              "Example: 'If I had one million dollars, I would build an animal shelter.'",
+                              "In formal English, use WERE for all subjects: 'If I WERE rich...' / 'If he WERE the president...'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Visionary Second Conditional Formula 🔮 / Fórmula Visionaria",
+                    "description": "Hypothetical Scenario",
+                    "content": [
+                              "Formula: If I had/were [Imaginary Condition], I would [Visionary Action] to [Impact].",
+                              "Example: 'If I were the mayor of my city, I would create free public skateparks and solar bike lanes.'",
+                              "In formal English, use WERE for all subjects: 'If I WERE rich...' / 'If he WERE the president...'"
+                    ],
+                    "imageUrl": "/images/teens-basic-4-class-08/slide-15.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Superpower Pitch 🎯 / Mini Reto",
+                    "description": "Share Your Vision",
+                    "content": [
+                              "If you could have any superpower for 24 hours:",
+                              "'If I had the power of ________, I would ________.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de would y could en condicionales."
           },
           {
@@ -17889,12 +19733,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender frases para acordar, conceder y refutar argumentos.",
             slides: [
-              {"id":"slide-4","title":"Debate & Argumentation Architecture 🏛️🎙️ / Estructura de Debates","description":"Formal Debate Strategies","content":["Claim -> Evidence -> Impact (The CEI Framework)","Strong opening: 'The central thesis of our argument rests on three points.'","Rebuttal: 'While our opponent argued X, empirical evidence proves Y.'"],"imageUrl":"/images/teens-inter-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Diplomatic Disagreement & Concession 🤝⚡ / Concesiones Diplomáticas","description":"Nuanced Debate Phrases","content":["'I concede that point, however the broader impact demonstrates...'","'With all due respect, correlation does not imply causation in this case.'","'We must differentiate between short-term cost and long-term benefit.'"],"imageUrl":"/images/teens-inter-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Structuring a Winning Rebuttal 🎯 / Refutación Estratégica","description":"Counter-Arguments","content":["Step 1: Summarize opponent's point accurately ('They claim that...').","Step 2: Point out the logical flaw or missing evidence ('However, this overlooks...').","Step 3: Reinforce your team's alternative solution ('Therefore, our policy is superior.')"],"imageUrl":"/images/teens-inter-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Parliamentary Debate Formula ⚖️ / Fórmula de Debate","description":"Thesis + Rebuttal + Evidence","content":["Formula: 'While the opposition argues that [Opponent View], the evidence demonstrates that [Your Position] because [Reason].'","Example: 'While critics claim AI limits creativity, evidence demonstrates it expands artistic potential.'"],"imageUrl":"/images/teens-inter-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Rebuttal Duel 🎯 / Mini Reto","description":"Deliver a 1-Sentence Rebuttal","content":["Respond to: 'Video games are a waste of time.'","'While some believe that, games actually develop ________ because ________.'"],"imageUrl":"/images/teens-inter-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Debate & Argumentation Architecture 🏛️🎙️ / Estructura de Debates",
+                    "description": "Formal Debate Strategies",
+                    "content": [
+                              "Claim -> Evidence -> Impact (The CEI Framework)",
+                              "Strong opening: 'The central thesis of our argument rests on three points.'",
+                              "Rebuttal: 'While our opponent argued X, empirical evidence proves Y.'",
+                              "'I concede that point, however the broader impact demonstrates...'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Parliamentary Debate Formula ⚖️ / Fórmula de Debate",
+                    "description": "Thesis + Rebuttal + Evidence",
+                    "content": [
+                              "Formula: 'While the opposition argues that [Opponent View], the evidence demonstrates that [Your Position] because [Reason].'",
+                              "Example: 'While critics claim AI limits creativity, evidence demonstrates it expands artistic potential.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Rebuttal Duel 🎯 / Mini Reto",
+                    "description": "Deliver a 1-Sentence Rebuttal",
+                    "content": [
+                              "Respond to: 'Video games are a waste of time.'",
+                              "'While some believe that, games actually develop ________ because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la modulación de tono en desacuerdos diplomáticos."
           },
           {
@@ -18234,12 +20108,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura y frases claves de un programa de podcast.",
             slides: [
-              {"id":"slide-4","title":"Podcasting & Media Hosting Mastery 🎙️🎧 / Locución y Podcasts","description":"Media Communication","content":["Catchy podcast name, cold open hook, sound effects (foley), sponsor segment","'Welcome back to Teen Tech Vanguard, the podcast exploring future tech!'","A great podcast host connects warmly and asks insightful questions."],"imageUrl":"/images/teens-inter-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
-              {"id":"slide-5","title":"Active Interviewing & Dynamic Follow-ups 🎤 / Técnicas de Entrevista","description":"Podcast Interview Skills","content":["'That's fascinating! What made you realize that in the first place?'","'Can you break down how that technology works for our listeners?'","'If you had to start over today, what would you do differently?'"],"imageUrl":"/images/teens-inter-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
-              {"id":"slide-6","title":"Transitions & Call to Action (Outro) 📻 / Cierres y Llamadas a la Acción","description":"Smooth Show Pacing","content":["Transition: 'Moving on to our main segment of the day...'","Outro: 'That wraps up today's episode! If you enjoyed this, hit subscribe and leave a review.'","'Catch you all next Tuesday with our special guest!'"],"imageUrl":"/images/teens-inter-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Podcast Cold Open Formula 🎙️ / Fórmula de Apertura","description":"Hook + Guest Intro + Episode Theme","content":["Formula: 'Hey everyone, welcome to [Podcast Name]! Today we're diving into [Topic] with special guest [Guest].'","Example: 'Welcome to ByteTalk! Today we're exploring AI game development with indie creator Maya Lin.'"],"imageUrl":"/images/teens-inter-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Podcast Host Intro 🎯 / Mini Reto","description":"Deliver a 15-Second Intro","content":["Deliver your show's opening intro to the teacher:","'Welcome back to ________! Today we are discussing ________ with ________.'"],"imageUrl":"/images/teens-inter-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Podcasting & Media Hosting Mastery 🎙️🎧 / Locución y Podcasts",
+                    "description": "Media Communication",
+                    "content": [
+                              "Catchy podcast name, cold open hook, sound effects (foley), sponsor segment",
+                              "'Welcome back to Teen Tech Vanguard, the podcast exploring future tech!'",
+                              "A great podcast host connects warmly and asks insightful questions.",
+                              "'That's fascinating! What made you realize that in the first place?'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-red-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Podcast Cold Open Formula 🎙️ / Fórmula de Apertura",
+                    "description": "Hook + Guest Intro + Episode Theme",
+                    "content": [
+                              "Formula: 'Hey everyone, welcome to [Podcast Name]! Today we're diving into [Topic] with special guest [Guest].'",
+                              "Example: 'Welcome to ByteTalk! Today we're exploring AI game development with indie creator Maya Lin.'",
+                              "'If you had to start over today, what would you do differently?'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-06/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-red-500 to-rose-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Podcast Host Intro 🎯 / Mini Reto",
+                    "description": "Deliver a 15-Second Intro",
+                    "content": [
+                              "Deliver your show's opening intro to the teacher:",
+                              "'Welcome back to ________! Today we are discussing ________ with ________.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Tomar notas y practicar la entonación y proyección de locución."
           },
           {
@@ -18579,12 +20484,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el contraste entre Present Perfect Simple y Continuous.",
             slides: [
-              {"id":"slide-4","title":"Present Perfect Simple vs Continuous ⏱️ / Simple vs Continuo","description":"Result vs Ongoing Duration","content":["Present Perfect Simple (HAVE DONE): Focus on completed result ('I have built two websites.')","Present Perfect Continuous (HAVE BEEN DOING): Focus on duration/process ('I have been learning Python for 6 months.')","Notice the active ongoing effort!"],"imageUrl":"/images/teens-inter-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"For vs Since Mastery ⏳ / Uso de For y Since","description":"Duration Markers","content":["FOR + Period of time: for three hours, for two years, for a long time","SINCE + Starting point: since 2021, since 8:00 AM, since last summer","Example: 'I have been practicing guitar SINCE January / FOR six months.'"],"imageUrl":"/images/teens-inter-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Visible Present Evidence 👀 / Evidencia Presente","description":"Continuous Actions","content":["'Why are your hands dirty?' -> 'I have been fixing my bicycle chain.'","'Why is she exhausted?' -> 'She has been running on the track all morning.'","The activity was happening recently and has visible proof."],"imageUrl":"/images/teens-inter-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Passion & Journey Formula 🚀 / Fórmula de Trayectoria","description":"Duration + Accomplishment","content":["Formula: I have been [Verb-ING] for/since [Duration], and so far I have [Accomplishment].","Example: 'I have been studying digital animation for two years, and so far I have created three short films.'"],"imageUrl":"/images/teens-inter-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Passion Timeline 🎯 / Mini Reto","description":"State Your Continuous Hobby","content":["Tell the teacher:","'I have been (practicing/studying) ________ since ________.'"],"imageUrl":"/images/teens-inter-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Present Perfect Simple vs Continuous ⏱️ / Simple vs Continuo",
+                    "description": "Result vs Ongoing Duration",
+                    "content": [
+                              "Present Perfect Simple (HAVE DONE): Focus on completed result ('I have built two websites.')",
+                              "Present Perfect Continuous (HAVE BEEN DOING): Focus on duration/process ('I have been learning Python for 6 months.')",
+                              "Notice the active ongoing effort!",
+                              "FOR + Period of time: for three hours, for two years, for a long time"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-07/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Passion & Journey Formula 🚀 / Fórmula de Trayectoria",
+                    "description": "Duration + Accomplishment",
+                    "content": [
+                              "Formula: I have been [Verb-ING] for/since [Duration], and so far I have [Accomplishment].",
+                              "Example: 'I have been studying digital animation for two years, and so far I have created three short films.'",
+                              "Example: 'I have been practicing guitar SINCE January / FOR six months.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Passion Timeline 🎯 / Mini Reto",
+                    "description": "State Your Continuous Hobby",
+                    "content": [
+                              "Tell the teacher:",
+                              "'I have been (practicing/studying) ________ since ________.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de have been + verb-ing."
           },
           {
@@ -18924,12 +20860,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los significados y aplicaciones narrativas de phrasal verbs avanzados.",
             slides: [
-              {"id":"slide-4","title":"Advanced Phrasal Verbs in Cinematic Storytelling 🎬 / Phrasals en Narrativas","description":"Story Dynamics","content":["COME ACROSS = to find by chance ('The explorers came across an ancient map.')","TURN OUT = to end in a surprising way ('It turned out to be a secret test.')","STAND OUT = to be extraordinary ('Her performance stood out from all others.')"],"imageUrl":"/images/teens-inter-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Overcoming Climax Challenges ⚡🌪️ / Superar el Clímax","description":"Action Phrasals","content":["PULL THROUGH = to survive/succeed against odds ('With teamwork, they pulled through.')","BREAK DOWN = to fail or analyze in detail ('The system broke down under pressure.')","STEP UP = to take leadership ('When the captain was injured, Leo stepped up.')"],"imageUrl":"/images/teens-inter-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Plot Twists & Resolution 🎭 / Giros de Trama","description":"Cinematic Climax","content":["'Just when the protagonist was about to GIVE UP, the mentor STEPPED IN.'","'Everything TURNED OUT better than expected.'","Rich phrasal verbs turn simple scripts into thrilling movie pitches."],"imageUrl":"/images/teens-inter-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Movie Pitch Formula 🍿 / Fórmula de Sinopsis","description":"Discovery + Climax + Outcome","content":["Formula: 'When [Protagonist] CAME ACROSS [Mystery], they had to STEP UP to [Challenge] before it TURNED OUT to be [Twist].'","Example: 'When teen hackers came across an encrypted signal, they stepped up to save their city.'"],"imageUrl":"/images/teens-inter-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Movie Synopsis Pitch 🎯 / Mini Reto","description":"Pitch a 1-Sentence Movie Plot","content":["Create a movie plot using 'came across' or 'turned out':","'In this sci-fi movie, the heroes ________ and it turned out that ________.'"],"imageUrl":"/images/teens-inter-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Advanced Phrasal Verbs in Cinematic Storytelling 🎬 / Phrasals en Narrativas",
+                    "description": "Story Dynamics",
+                    "content": [
+                              "COME ACROSS = to find by chance ('The explorers came across an ancient map.')",
+                              "TURN OUT = to end in a surprising way ('It turned out to be a secret test.')",
+                              "STAND OUT = to be extraordinary ('Her performance stood out from all others.')",
+                              "PULL THROUGH = to survive/succeed against odds ('With teamwork, they pulled through.')"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Movie Pitch Formula 🍿 / Fórmula de Sinopsis",
+                    "description": "Discovery + Climax + Outcome",
+                    "content": [
+                              "Formula: 'When [Protagonist] CAME ACROSS [Mystery], they had to STEP UP to [Challenge] before it TURNED OUT to be [Twist].'",
+                              "Example: 'When teen hackers came across an encrypted signal, they stepped up to save their city.'",
+                              "STEP UP = to take leadership ('When the captain was injured, Leo stepped up.')"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-08/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Movie Synopsis Pitch 🎯 / Mini Reto",
+                    "description": "Pitch a 1-Sentence Movie Plot",
+                    "content": [
+                              "Create a movie plot using 'came across' or 'turned out':",
+                              "'In this sci-fi movie, the heroes ________ and it turned out that ________.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-08/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de verbos compuestos en pasado narrativo."
           },
           {
@@ -19269,12 +21236,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura de modales perfectos para deducciones pasadas.",
             slides: [
-              {"id":"slide-4","title":"Past Modals of Deduction: Must have, Could have, Can't have 🕵️⏳ / Deducción en Pasado","description":"Forensic Analysis","content":["MUST HAVE + Participle (95% sure it happened): 'She must have forgotten her phone at school.'","COULD / MIGHT HAVE (50% possibility): 'They might have missed the 5:00 PM train.'","CAN'T HAVE (99% impossible): 'He can't have broken the window—he was with us all afternoon.'"],"imageUrl":"/images/teens-inter-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Forensic Investigation & Clues 🔎🏛️ / Evidencia Pasada","description":"Crime & Puzzle Solving","content":["Clue: The window was open and the prize trophy was missing.","Deduction: 'The intruder MUST HAVE climbed through the garden window.'","Deduction: 'It CAN'T HAVE been an accident because the lock was forced.'"],"imageUrl":"/images/teens-inter-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Regrets vs Deductions: Should have vs Must have ⚠️ / Contraste Clave","description":"Should have = Regret / Must have = Deduction","content":["Deduction: 'He MUST HAVE studied hard because he scored 100%.'","Regret / Advice: 'I SHOULD HAVE started my project earlier.'","Notice the difference: Deduction explains reality; should have expresses regret."],"imageUrl":"/images/teens-inter-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Forensic Investigation Formula ⚖️ / Fórmula Forense","description":"Clue + Past Deduction","content":["Formula: Given that [Past Evidence], the suspect MUST/CAN'T HAVE [Past Action] because [Reason].","Example: 'Given that the floor was dry, it CAN'T HAVE rained last night.'"],"imageUrl":"/images/teens-inter-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Forensic Deduction 🎯 / Mini Reto","description":"Explain a Past Mystery","content":["A friend scored 100% on a super hard test without studying today:","'He ________ have studied all weekend!' (must / can't / might)"],"imageUrl":"/images/teens-inter-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Past Modals of Deduction: Must have, Could have, Can't have 🕵️⏳ / Deducción en Pasado",
+                    "description": "Forensic Analysis",
+                    "content": [
+                              "MUST HAVE + Participle (95% sure it happened): 'She must have forgotten her phone at school.'",
+                              "COULD / MIGHT HAVE (50% possibility): 'They might have missed the 5:00 PM train.'",
+                              "CAN'T HAVE (99% impossible): 'He can't have broken the window—he was with us all afternoon.'",
+                              "Clue: The window was open and the prize trophy was missing."
+                    ],
+                    "imageUrl": "/images/teens-inter-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Forensic Investigation Formula ⚖️ / Fórmula Forense",
+                    "description": "Clue + Past Deduction",
+                    "content": [
+                              "Formula: Given that [Past Evidence], the suspect MUST/CAN'T HAVE [Past Action] because [Reason].",
+                              "Example: 'Given that the floor was dry, it CAN'T HAVE rained last night.'",
+                              "Deduction: 'It CAN'T HAVE been an accident because the lock was forced.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Forensic Deduction 🎯 / Mini Reto",
+                    "description": "Explain a Past Mystery",
+                    "content": [
+                              "A friend scored 100% on a super hard test without studying today:",
+                              "'He ________ have studied all weekend!' (must / can't / might)"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de 'must've', 'could've', y 'can't've'."
           },
           {
@@ -19614,12 +21612,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la matriz completa de condicionales y conectores lógicos.",
             slides: [
-              {"id":"slide-4","title":"The Complete Conditional Spectrum 🌈⚡ / Síntesis Condicional","description":"Zero, First, Second & Conjunctions","content":["Zero: General facts ('If you heat ice, it melts.')","First: Real future possibilities ('If it's sunny tomorrow, we will skate.')","Second: Imaginary hypotheses ('If I were invisible, I could explore anywhere.')"],"imageUrl":"/images/teens-inter-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Advanced Conjunctions: Provided that, In case, As long as 🛡️ / Conectores Avanzados","description":"Condition Clauses","content":["AS LONG AS / PROVIDED THAT = Only if ('You can join the esports team as long as you maintain your grades.')","IN CASE = Precaution ('Take an umbrella in case it rains.')","UNLESS = Except if ('We will lose unless we coordinate our strategy.')"],"imageUrl":"/images/teens-inter-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Esports & High-Performance Strategy 🎮🏆 / Táctica y Estrategia","description":"Strategic Thinking","content":["'Provided that we control the mid-lane, our team will secure the objective.'","'In case they rush our base, save your defensive abilities.'","Strategic conditions define championship teamwork."],"imageUrl":"/images/teens-inter-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Esports Strategy Formula 🎯 / Fórmula de Estrategia","description":"Condition + Action Plan","content":["Formula: 'Provided that we [Condition], we will [Victory Outcome] as long as [Team Rule].'","Example: 'Provided that we communicate clearly, we will win the tournament as long as we stay calm.'"],"imageUrl":"/images/teens-inter-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Strategic Game Plan 🎯 / Mini Reto","description":"Formulate a Condition with 'As long as'","content":["Tell the teacher:","'We will achieve our goal as long as we ________.'"],"imageUrl":"/images/teens-inter-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "The Complete Conditional Spectrum 🌈⚡ / Síntesis Condicional",
+                    "description": "Zero, First, Second & Conjunctions",
+                    "content": [
+                              "Zero: General facts ('If you heat ice, it melts.')",
+                              "First: Real future possibilities ('If it's sunny tomorrow, we will skate.')",
+                              "Second: Imaginary hypotheses ('If I were invisible, I could explore anywhere.')",
+                              "AS LONG AS / PROVIDED THAT = Only if ('You can join the esports team as long as you maintain your grades.')"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Esports Strategy Formula 🎯 / Fórmula de Estrategia",
+                    "description": "Condition + Action Plan",
+                    "content": [
+                              "Formula: 'Provided that we [Condition], we will [Victory Outcome] as long as [Team Rule].'",
+                              "Example: 'Provided that we communicate clearly, we will win the tournament as long as we stay calm.'",
+                              "AS LONG AS / PROVIDED THAT = Only if ('You can join the esports team as long as you maintain your grades.')"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Strategic Game Plan 🎯 / Mini Reto",
+                    "description": "Formulate a Condition with 'As long as'",
+                    "content": [
+                              "Tell the teacher:",
+                              "'We will achieve our goal as long as we ________.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de cláusulas temporales y condicionales."
           },
           {
@@ -19959,12 +21988,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el vocabulario de persuasión y argumentación diplomática.",
             slides: [
-              {"id":"slide-4","title":"Diplomatic Mediation & Nuance 🕊️🌐 / Diplomacia y Matices","description":"High-Level Debate","content":["Beyond black-and-white thinking: finding common ground.","Nuanced openers: 'To a certain extent, that holds true, yet...'","Mediation: 'Could we synthesize both approaches into a unified policy?'"],"imageUrl":"/images/teens-inter-class-11/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Conceding Valid Counter-Points Politely 🤝 / Concesiones","description":"Diplomatic Tone","content":["'I recognize the financial concern raised by the opposition.'","'While I acknowledge the validity of that point, the ethical priority outweighs it.'","Conceding points shows intellectual maturity and wins trust."],"imageUrl":"/images/teens-inter-class-11/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Reframing the Debate for Compromise 🔄 / Reencuadrar","description":"Consensus Building","content":["'Instead of viewing this as tech vs nature, let's explore green tech solutions.'","'The core issue is not prohibition, but responsible digital education.'","Great leaders reframe conflicts into collaborative opportunities."],"imageUrl":"/images/teens-inter-class-11/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Diplomatic Synthesis Formula 📜 / Fórmula Diplomática","description":"Concession + Synthesis","content":["Formula: 'While I acknowledge [Valid Point], we can achieve [Shared Goal] by [Compromise Solution].'","Example: 'While I acknowledge the budget limits, we can achieve our goals by partnering with local tech hubs.'"],"imageUrl":"/images/teens-inter-class-11/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Diplomatic Reframing 🎯 / Mini Reto","description":"Reframe an Argument","content":["Reframe: 'Social media is purely harmful for youth.'","'While screen addiction is real, social media also enables ________ because ________.'"],"imageUrl":"/images/teens-inter-class-11/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Diplomatic Mediation & Nuance 🕊️🌐 / Diplomacia y Matices",
+                    "description": "High-Level Debate",
+                    "content": [
+                              "Beyond black-and-white thinking: finding common ground.",
+                              "Nuanced openers: 'To a certain extent, that holds true, yet...'",
+                              "Mediation: 'Could we synthesize both approaches into a unified policy?'",
+                              "'I recognize the financial concern raised by the opposition.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-11/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Diplomatic Synthesis Formula 📜 / Fórmula Diplomática",
+                    "description": "Concession + Synthesis",
+                    "content": [
+                              "Formula: 'While I acknowledge [Valid Point], we can achieve [Shared Goal] by [Compromise Solution].'",
+                              "Example: 'While I acknowledge the budget limits, we can achieve our goals by partnering with local tech hubs.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-11/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Diplomatic Reframing 🎯 / Mini Reto",
+                    "description": "Reframe an Argument",
+                    "content": [
+                              "Reframe: 'Social media is purely harmful for youth.'",
+                              "'While screen addiction is real, social media also enables ________ because ________.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-11/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la entonación persuasiva y diplomática."
           },
           {
@@ -20304,12 +22363,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el método STAR y la síntesis gramatical para entrevistas y transmisiones.",
             slides: [
-              {"id":"slide-4","title":"The STAR Framework for Scholarship Interviews 🌟🎓 / El Marco STAR","description":"Interview Architecture","content":["Situation: Set the context ('During our school hackathon...')","Task: Explain your goal ('We needed to design a sustainable energy app.')","Action: Detail what YOU did ('I led the coding and UI prototyping.')","Result: Share measurable success ('We won 1st place and reduced campus waste.')"],"imageUrl":"/images/teens-inter-class-12/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Synthesizing Duration & Key Milestones 📈 / Hitos y Trayectoria","description":"Present Perfect Synthesis","content":["'I have been developing educational tools for over two years.'","'In that time, our team has impacted over 500 local students.'","Connect consistency (continuous) with concrete achievements (simple)."],"imageUrl":"/images/teens-inter-class-12/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Handling Tough Panel Cross-Examination 🎙️ / Preguntas de Presión","description":"Confidence Under Pressure","content":["Panel Question: 'What is your greatest weakness in team leadership?'","Answer: 'In the past, I tried to handle everything myself. However, I have learned to delegate tasks effectively.'","Transform weaknesses into evidence of self-awareness and growth."],"imageUrl":"/images/teens-inter-class-12/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Shark Capstone Pitch Formula 🏆 / Fórmula de Beca","description":"STAR + Future Vision","content":["1. Introduce your background and core passion (Present Perfect).","2. Deliver a concise STAR story of an obstacle you overcame.","3. Conclude with how this international scholarship will fuel your global impact."],"imageUrl":"/images/teens-inter-class-12/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Grand Shark Pitch 🎯 / Gran Reto","description":"Deliver Your 30-Second Scholarship Pitch","content":["Deliver your 30-second Intermediate Capstone pitch to the interview panel!","Show your mastery of STAR, conditionals, and fluent self-advocacy!"],"imageUrl":"/images/teens-inter-class-12/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "The STAR Framework for Scholarship Interviews 🌟🎓 / El Marco STAR",
+                    "description": "Interview Architecture",
+                    "content": [
+                              "Situation: Set the context ('During our school hackathon...')",
+                              "Task: Explain your goal ('We needed to design a sustainable energy app.')",
+                              "Action: Detail what YOU did ('I led the coding and UI prototyping.')",
+                              "'I have been developing educational tools for over two years.'"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-12/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Shark Capstone Pitch Formula 🏆 / Fórmula de Beca",
+                    "description": "STAR + Future Vision",
+                    "content": [
+                              "1. Introduce your background and core passion (Present Perfect).",
+                              "2. Deliver a concise STAR story of an obstacle you overcame.",
+                              "3. Conclude with how this international scholarship will fuel your global impact."
+                    ],
+                    "imageUrl": "/images/teens-inter-class-12/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Grand Shark Pitch 🎯 / Gran Reto",
+                    "description": "Deliver Your 30-Second Scholarship Pitch",
+                    "content": [
+                              "Deliver your 30-second Intermediate Capstone pitch to the interview panel!",
+                              "Show your mastery of STAR, conditionals, and fluent self-advocacy!"
+                    ],
+                    "imageUrl": "/images/teens-inter-class-12/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y ensayar el marco STAR con entonación de liderazgo."
           },
           {
@@ -20828,12 +22918,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las reglas de backshift temporal y pronombres en reported speech.",
             slides: [
-              {"id":"slide-4","title":"Reported Speech & Tense Backshift 📰🎙️ / Estilo Indirecto","description":"Reporting Statements","content":["Direct: 'I am organizing the hackathon.'","Reported: He said (that) he was organizing the hackathon.","Tense Backshift: Present Simple -> Past Simple / Present Continuous -> Past Continuous / Will -> Would"],"imageUrl":"/images/teens-advanced-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Say vs Tell & Pronoun Shifts 🗣️ / Say vs Tell","description":"Reporting Verbs","content":["SAY: He said that he was ready. (No direct person object)","TELL: He told ME that he was ready. (Requires person object)","Pronouns shift with perspective: 'I love music' -> She said SHE loved music."],"imageUrl":"/images/teens-advanced-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Reporting Live Campus & Media News 📻 / Reportes Periodísticos","description":"Investigative Journalism","content":["The principal announced that classes would finish early on Friday.","The team captain told reporters that they had prepared all month.","Reported speech is fundamental for journalism and storytelling."],"imageUrl":"/images/teens-advanced-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Reported Statement Formula 📜 / Fórmula de Reporte","description":"Subject + Reported Verb + Backshifted Clause","content":["Formula: [Speaker] (said / told me) that [Subject] [Backshifted Past Verb] [Detail].","Example: 'Maya told me that she had won first place in the coding contest.'"],"imageUrl":"/images/teens-advanced-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: News Anchor Relay 🎯 / Mini Reto","description":"Report What Someone Said","content":["Report this quote: Alex: 'I will launch my new podcast tomorrow.'","'Alex told me that he ________.' (Use would launch)"],"imageUrl":"/images/teens-advanced-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Reported Speech & Tense Backshift 📰🎙️ / Estilo Indirecto",
+                    "description": "Reporting Statements",
+                    "content": [
+                              "Direct: 'I am organizing the hackathon.'",
+                              "Reported: He said (that) he was organizing the hackathon.",
+                              "Tense Backshift: Present Simple -> Past Simple / Present Continuous -> Past Continuous / Will -> Would",
+                              "SAY: He said that he was ready. (No direct person object)"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Reported Statement Formula 📜 / Fórmula de Reporte",
+                    "description": "Subject + Reported Verb + Backshifted Clause",
+                    "content": [
+                              "Formula: [Speaker] (said / told me) that [Subject] [Backshifted Past Verb] [Detail].",
+                              "Example: 'Maya told me that she had won first place in the coding contest.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: News Anchor Relay 🎯 / Mini Reto",
+                    "description": "Report What Someone Said",
+                    "content": [
+                              "Report this quote: Alex: 'I will launch my new podcast tomorrow.'",
+                              "'Alex told me that he ________.' (Use would launch)"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la transformación de oraciones con backshift."
           },
           {
@@ -21173,12 +23293,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas gramaticales de reported questions y verbos de reporte.",
             slides: [
-              {"id":"slide-4","title":"Reported Questions & Inquiries 🕵️❓ / Preguntas Indirectas","description":"Wh- & Yes/No Questions","content":["Direct: 'Where do you practice?' -> Reported: He asked me where I practiced.","Direct: 'Do you play soccer?' -> Reported: She asked IF / WHETHER I played soccer.","Crucial Rule: Word order becomes affirmative (No 'did/do' auxiliaries!)."],"imageUrl":"/images/teens-advanced-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Advanced Reporting Verbs: Inquire, Wonder, Demand 🧩 / Verbos Avanzados","description":"Nuanced Reporting","content":["INQUIRE: 'The interviewer inquired how long I had been coding.'","WONDER: 'The detective wondered if anyone had seen the suspect.'","DEMAND: 'The coach demanded to know why we were late.'"],"imageUrl":"/images/teens-advanced-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Secret Interviews & Debriefs 🎙️📂 / Interrogatorios","description":"Forensic Reporting","content":["'The journalist asked the whistleblower what data was leaked.'","'She inquired whether the company would release a public statement.'","Mastering indirect questions creates top-tier executive reporting."],"imageUrl":"/images/teens-advanced-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Reported Question Formula 🔍 / Fórmula de Pregunta","description":"Speaker + Asked + If/Wh- + Subject + Past Verb","content":["Formula: [Speaker] asked (me) [Wh- word / if] [Subject] [Past Verb] [Detail].","Example: 'The judge asked the candidate if they had managed international projects before.'"],"imageUrl":"/images/teens-advanced-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Detective Debrief 🎯 / Mini Reto","description":"Report a Question","content":["Report: 'What time does the event start?'","'She asked me what time the event ________.' (started / did start)"],"imageUrl":"/images/teens-advanced-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Reported Questions & Inquiries 🕵️❓ / Preguntas Indirectas",
+                    "description": "Wh- & Yes/No Questions",
+                    "content": [
+                              "Direct: 'Where do you practice?' -> Reported: He asked me where I practiced.",
+                              "Direct: 'Do you play soccer?' -> Reported: She asked IF / WHETHER I played soccer.",
+                              "Crucial Rule: Word order becomes affirmative (No 'did/do' auxiliaries!).",
+                              "INQUIRE: 'The interviewer inquired how long I had been coding.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Reported Question Formula 🔍 / Fórmula de Pregunta",
+                    "description": "Speaker + Asked + If/Wh- + Subject + Past Verb",
+                    "content": [
+                              "Formula: [Speaker] asked (me) [Wh- word / if] [Subject] [Past Verb] [Detail].",
+                              "Example: 'The judge asked the candidate if they had managed international projects before.'",
+                              "WONDER: 'The detective wondered if anyone had seen the suspect.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Detective Debrief 🎯 / Mini Reto",
+                    "description": "Report a Question",
+                    "content": [
+                              "Report: 'What time does the event start?'",
+                              "'She asked me what time the event ________.' (started / did start)"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la eliminación de auxiliares do/did en reported questions."
           },
           {
@@ -21518,12 +23669,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la distinción entre cláusulas definitorias y no definitorias y el uso de comas.",
             slides: [
-              {"id":"slide-4","title":"Relative Clauses: Defining vs Non-Defining 🏛️✨ / Cláusulas Relativas","description":"Who, Which, That, Whose, Where","content":["DEFINING (Essential info, no commas): 'The student WHO won the hackathon is from our school.'","NON-DEFINING (Extra bonus info, between commas): 'Lionel Messi, WHO was born in Argentina, is a global icon.'","Rule: Never use 'THAT' in non-defining clauses with commas!"],"imageUrl":"/images/teens-advanced-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Whose & Where in Complex Descriptions 🗝️🗺️ / Posesión y Lugares","description":"Advanced Pronouns","content":["WHOSE (Possession): 'That is the creator WHOSE channel reached 1 million subscribers.'","WHERE (Places): 'This is the innovation hub WHERE we build our robotics projects.'","WHICH (Things): 'The VR headset, WHICH cost $300, has amazing resolution.'"],"imageUrl":"/images/teens-advanced-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Museum Docent & Keynote Descriptions 🎨 / Presentaciones Elegantes","description":"Academic Flow","content":["'The painting, WHICH was created in 1889, represents post-impressionist mastery.'","'The innovators WHOSE work changed AI received global acclaim.'","Relative clauses combine choppy ideas into fluent, mature sentences."],"imageUrl":"/images/teens-advanced-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Relative Clause Matrix 🏛️ / Matriz Relativa","description":"Subject + Relative Clause + Predicate","content":["Formula: [Noun], who/which/whose [Extra Relative Detail], [Main Action Verb].","Example: 'Our robotics project, which won the state prize, solves urban water pollution.'"],"imageUrl":"/images/teens-advanced-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Docent Pitch 🎯 / Mini Reto","description":"Combine Two Ideas with 'Who' or 'Which'","content":["Combine: 'Emma is my friend. She built a solar charger.'","'Emma, who ________, is my friend.'"],"imageUrl":"/images/teens-advanced-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Relative Clauses: Defining vs Non-Defining 🏛️✨ / Cláusulas Relativas",
+                    "description": "Who, Which, That, Whose, Where",
+                    "content": [
+                              "DEFINING (Essential info, no commas): 'The student WHO won the hackathon is from our school.'",
+                              "NON-DEFINING (Extra bonus info, between commas): 'Lionel Messi, WHO was born in Argentina, is a global icon.'",
+                              "Rule: Never use 'THAT' in non-defining clauses with commas!",
+                              "WHOSE (Possession): 'That is the creator WHOSE channel reached 1 million subscribers.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Relative Clause Matrix 🏛️ / Matriz Relativa",
+                    "description": "Subject + Relative Clause + Predicate",
+                    "content": [
+                              "Formula: [Noun], who/which/whose [Extra Relative Detail], [Main Action Verb].",
+                              "Example: 'Our robotics project, which won the state prize, solves urban water pollution.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Docent Pitch 🎯 / Mini Reto",
+                    "description": "Combine Two Ideas with 'Who' or 'Which'",
+                    "content": [
+                              "Combine: 'Emma is my friend. She built a solar charger.'",
+                              "'Emma, who ________, is my friend.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y practicar la puntuación con comas en relative clauses."
           },
           {
@@ -21863,12 +24044,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura gramatical de la voz pasiva en presente y pasado simple.",
             slides: [
-              {"id":"slide-4","title":"Passive Voice: Disruptions & Inventions 🚀⚡ / Voz Pasiva","description":"Focus on the Action/Result","content":["Active: 'Engineers designed this revolutionary quantum chip.'","Passive: 'This revolutionary quantum chip WAS DESIGNED by engineers.'","Use Passive Voice when the action or product is more important than who did it."],"imageUrl":"/images/teens-advanced-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Present vs Past Passive Formula ⚙️ / Presente y Pasado Pasivo","description":"BE + Past Participle","content":["Present Passive: is / are + Participle ('Millions of videos ARE UPLOADED daily.')","Past Passive: was / were + Participle ('The internet WAS CREATED in the 20th century.')","Include 'BY' only if the creator/agent adds critical value."],"imageUrl":"/images/teens-advanced-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Tech Launch Keynotes & Inventions 📱🌍 / Lanzamientos Tecnológicos","description":"Professional Tech Announcements","content":["'Over ten thousand prototypes WERE TESTED before the official release.'","'Renewable clean energy IS PRODUCED in our solar facility.'","Passive voice dominates science, engineering, and news broadcasts."],"imageUrl":"/images/teens-advanced-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Innovation Passive Formula 💡 / Fórmula Pasiva","description":"Object + BE + Participle + By Agent","content":["Formula: The [Product/Tech] was [Past Participle] by [Innovator] in [Year].","Example: 'The world's first smartphone was invented in 1992.'"],"imageUrl":"/images/teens-advanced-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Tech Invention 🎯 / Mini Reto","description":"Convert to Passive","content":["Convert: 'Alexander Graham Bell invented the telephone in 1876.'","'The telephone ________ in 1876 by Alexander Graham Bell.'"],"imageUrl":"/images/teens-advanced-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Passive Voice: Disruptions & Inventions 🚀⚡ / Voz Pasiva",
+                    "description": "Focus on the Action/Result",
+                    "content": [
+                              "Active: 'Engineers designed this revolutionary quantum chip.'",
+                              "Passive: 'This revolutionary quantum chip WAS DESIGNED by engineers.'",
+                              "Use Passive Voice when the action or product is more important than who did it.",
+                              "Present Passive: is / are + Participle ('Millions of videos ARE UPLOADED daily.')"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Innovation Passive Formula 💡 / Fórmula Pasiva",
+                    "description": "Object + BE + Participle + By Agent",
+                    "content": [
+                              "Formula: The [Product/Tech] was [Past Participle] by [Innovator] in [Year].",
+                              "Example: 'The world's first smartphone was invented in 1992.'",
+                              "Include 'BY' only if the creator/agent adds critical value."
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-04/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Tech Invention 🎯 / Mini Reto",
+                    "description": "Convert to Passive",
+                    "content": [
+                              "Convert: 'Alexander Graham Bell invented the telephone in 1876.'",
+                              "'The telephone ________ in 1876 by Alexander Graham Bell.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y practicar la conjugación del participio pasado en voz pasiva."
           },
           {
@@ -22208,12 +24420,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas de voz pasiva en presente perfecto, futuro y modales.",
             slides: [
-              {"id":"slide-4","title":"Advanced Passive: Present Perfect, Future & Modals 🔬🌐 / Voz Pasiva Avanzada","description":"Scientific & Global News","content":["Present Perfect Passive: 'A new cure HAS BEEN DISCOVERED by researchers.'","Future Passive: 'The deep-space telescope WILL BE LAUNCHED next month.'","Modal Passive: 'Plastic waste MUST BE REDUCED globally.'"],"imageUrl":"/images/teens-advanced-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Passive Voice in Academic Research & Journalism 📜 / En Periodismo","description":"Formal Objective Tone","content":["'Clinical trials HAVE BEEN CONDUCTED with 99% accuracy.'","'Climate agreements MUST BE RATIFIED by international leaders.'","Passive voice maintains neutrality and scientific authority."],"imageUrl":"/images/teens-advanced-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Breaking Science Breakthroughs 🧬⚡ / Descubrimientos","description":"Global Impact","content":["'Fusion energy COULD BE GENERATED within the next decade.'","'Over 500 million trees HAVE BEEN PLANTED across deforested regions.'","Transform findings into high-impact global press releases."],"imageUrl":"/images/teens-advanced-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Advanced Science Passive Formula 🧪 / Fórmula Científica","description":"Topic + Has been/Will be + Participle","content":["Formula: It has been proven that [Scientific Discovery] will be [Action Participle] by [Year].","Example: 'It has been proven that clean hydrogen energy can be scaled by 2030.'"],"imageUrl":"/images/teens-advanced-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Science Correspondent 🎯 / Mini Reto","description":"Complete the Press Release","content":["Complete with Present Perfect Passive:","'A revolutionary clean battery ________ (invent) by teenage engineers.' (has been / will be)"],"imageUrl":"/images/teens-advanced-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Advanced Passive: Present Perfect, Future & Modals 🔬🌐 / Voz Pasiva Avanzada",
+                    "description": "Scientific & Global News",
+                    "content": [
+                              "Present Perfect Passive: 'A new cure HAS BEEN DISCOVERED by researchers.'",
+                              "Future Passive: 'The deep-space telescope WILL BE LAUNCHED next month.'",
+                              "Modal Passive: 'Plastic waste MUST BE REDUCED globally.'",
+                              "'Clinical trials HAVE BEEN CONDUCTED with 99% accuracy.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Advanced Science Passive Formula 🧪 / Fórmula Científica",
+                    "description": "Topic + Has been/Will be + Participle",
+                    "content": [
+                              "Formula: It has been proven that [Scientific Discovery] will be [Action Participle] by [Year].",
+                              "Example: 'It has been proven that clean hydrogen energy can be scaled by 2030.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-05/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Science Correspondent 🎯 / Mini Reto",
+                    "description": "Complete the Press Release",
+                    "content": [
+                              "Complete with Present Perfect Passive:",
+                              "'A revolutionary clean battery ________ (invent) by teenage engineers.' (has been / will be)"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la conversión a pasiva con has/have been y modales."
           },
           {
@@ -22553,12 +24795,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender el significado figurado, origen y contexto de uso de los modismos principales.",
             slides: [
-              {"id":"slide-4","title":"Authentic Idioms for Modern Teens 🗣️🔥 / Modismos Auténticos","description":"High-Frequency Idioms","content":["BITE THE BULLET = encarar una situación difícil con valor ('It's time to bite the bullet and practice.')","HIT THE NAIL ON THE HEAD = dar exactamente en el clavo ('Your analysis hit the nail on the head.')","BURN THE MIDNIGHT OIL = trasnochar estudiando con dedicación ('I burned the midnight oil for exams.')"],"imageUrl":"/images/teens-advanced-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
-              {"id":"slide-5","title":"Idioms of Communication & Secrets 🤫🤝 / Secretos y Acuerdos","description":"Social Idioms","content":["SPILL THE BEANS = revelar un secreto ('Don't spill the beans about the surprise party!')","ON THE SAME PAGE = estar en completo acuerdo ('Let's make sure our whole team is on the same page.')","CUT TO THE CHASE = ir directo al grano ('Let's cut to the chase and discuss the budget.')"],"imageUrl":"/images/teens-advanced-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
-              {"id":"slide-6","title":"Using Idioms Naturally in Podcast & Speech 🎙️ / En Conversaciones Reales","description":"Context & Moderation","content":["Never force five idioms in one sentence—use 1 or 2 at key emotional moments.","'When our team was under pressure, we pulled our socks up and delivered a masterpiece.'","Idiomatic mastery is the bridge to native C1 fluency."],"imageUrl":"/images/teens-advanced-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Idiomatic Storytelling Formula 🎭 / Fórmula Idiomática","description":"Challenge + Idiom + Resolution","content":["Formula: 'When we faced [Challenge], we decided to [Idiom], and finally [Outcome].'","Example: 'When the deadline approached, we burned the midnight oil and finished our prototype on time.'"],"imageUrl":"/images/teens-advanced-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Idiom in Action 🎯 / Mini Reto","description":"Use 'On the same page' or 'Cut to the chase'","content":["Tell the teacher:","'Before we start the presentation, let's make sure we are ________.'"],"imageUrl":"/images/teens-advanced-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Authentic Idioms for Modern Teens 🗣️🔥 / Modismos Auténticos",
+                    "description": "High-Frequency Idioms",
+                    "content": [
+                              "BITE THE BULLET = encarar una situación difícil con valor ('It's time to bite the bullet and practice.')",
+                              "HIT THE NAIL ON THE HEAD = dar exactamente en el clavo ('Your analysis hit the nail on the head.')",
+                              "BURN THE MIDNIGHT OIL = trasnochar estudiando con dedicación ('I burned the midnight oil for exams.')",
+                              "SPILL THE BEANS = revelar un secreto ('Don't spill the beans about the surprise party!')"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-red-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Idiomatic Storytelling Formula 🎭 / Fórmula Idiomática",
+                    "description": "Challenge + Idiom + Resolution",
+                    "content": [
+                              "Formula: 'When we faced [Challenge], we decided to [Idiom], and finally [Outcome].'",
+                              "Example: 'When the deadline approached, we burned the midnight oil and finished our prototype on time.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-06/slide-08.jpg",
+                    "bgColor": "bg-gradient-to-br from-red-500 to-rose-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Idiom in Action 🎯 / Mini Reto",
+                    "description": "Use 'On the same page' or 'Cut to the chase'",
+                    "content": [
+                              "Tell the teacher:",
+                              "'Before we start the presentation, let's make sure we are ________.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Tomar notas y clasificar los modismos por contexto de uso."
           },
           {
@@ -22898,12 +25170,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las reglas de separabilidad y el uso de verbos compuestos de 3 partes.",
             slides: [
-              {"id":"slide-4","title":"Three-Part Inseparable Phrasal Verbs 🚀🧠 / Verbos de 3 Partes","description":"High-Stakes Leadership","content":["COME UP WITH = inventar / idear una solución ('We came up with an eco-friendly design.')","LOOK DOWN ON = subestimar / mirar en menos ('Never look down on someone's background.')","PUT UP WITH = tolerar / aguantar ('Our team won't put up with disrespectful behavior.')"],"imageUrl":"/images/teens-advanced-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Conflict Mediation & Logistics Phrasals 🤝📦 / Mediación y Logística","description":"Executive Execution","content":["SORT OUT = solucionar un conflicto ('Let's sit down and sort out this schedule issue.')","CARRY OUT = ejecutar un plan ('We will carry out the environmental audit next week.')","STAND UP FOR = defender una causa ('Leaders stand up for what is ethical and fair.')"],"imageUrl":"/images/teens-advanced-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Student Body Presidential Addresses 🏛️ / Liderazgo Estudiantil","description":"Diplomatic Action","content":["'As your student president, I promise to STAND UP FOR mental health resources.'","'Together, we have COME UP WITH a campus recycling system that works.'","Executive phrasal verbs convey decisive, visionary action."],"imageUrl":"/images/teens-advanced-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Executive Leadership Formula 🏆 / Fórmula Ejecutiva","description":"Leadership Initiative","content":["Formula: 'As leaders, we must STAND UP FOR [Cause] and CARRY OUT [Action Plan] to SORT OUT [Problem].'","Example: 'We must stand up for campus sustainability and carry out zero-waste initiatives.'"],"imageUrl":"/images/teens-advanced-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: President's Call to Action 🎯 / Mini Reto","description":"Use 'Come up with' or 'Stand up for'","content":["Tell the teacher:","'Our club has ________ an innovative solution to reduce plastic waste.'"],"imageUrl":"/images/teens-advanced-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Three-Part Inseparable Phrasal Verbs 🚀🧠 / Verbos de 3 Partes",
+                    "description": "High-Stakes Leadership",
+                    "content": [
+                              "COME UP WITH = inventar / idear una solución ('We came up with an eco-friendly design.')",
+                              "LOOK DOWN ON = subestimar / mirar en menos ('Never look down on someone's background.')",
+                              "PUT UP WITH = tolerar / aguantar ('Our team won't put up with disrespectful behavior.')",
+                              "SORT OUT = solucionar un conflicto ('Let's sit down and sort out this schedule issue.')"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-07/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Executive Leadership Formula 🏆 / Fórmula Ejecutiva",
+                    "description": "Leadership Initiative",
+                    "content": [
+                              "Formula: 'As leaders, we must STAND UP FOR [Cause] and CARRY OUT [Action Plan] to SORT OUT [Problem].'",
+                              "Example: 'We must stand up for campus sustainability and carry out zero-waste initiatives.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: President's Call to Action 🎯 / Mini Reto",
+                    "description": "Use 'Come up with' or 'Stand up for'",
+                    "content": [
+                              "Tell the teacher:",
+                              "'Our club has ________ an innovative solution to reduce plastic waste.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la posición de pronombres en phrasal verbs separables."
           },
           {
@@ -23243,12 +25545,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las estructuras retóricas de concesión, contraargumento y refutación.",
             slides: [
-              {"id":"slide-4","title":"The Architecture of Sophisticated Argumentation 🏛️🤖 / Debate de IA y Ética","description":"Oxford-Style Forum","content":["Claim -> Warrant (Logic) -> Data (Empirical Evidence) -> Impact","Opening: 'The ethical dilemma of generative AI centers on intellectual property and human dignity.'","Rebuttal: 'While innovation must advance, safety guardrails are non-negotiable.'"],"imageUrl":"/images/teens-advanced-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Formulas of Concession & Counter-Linkers ⚖️ / Concesión Avanzada","description":"Advanced Debate Transitions","content":["'NOTWITHSTANDING the economic benefits, the environmental cost is unsustainable.'","'BE THAT AS IT MAY, privacy protections must remain absolute.'","'ALBEIT challenging to regulate, international treaties are essential.'"],"imageUrl":"/images/teens-advanced-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Refutation Strategies with Empirical Data 📊 / Refutación Científica","description":"Evidence-Based Debate","content":["'The opposition assumes algorithmic neutrality; however, MIT studies prove demographic bias.'","'Therefore, independent ethical audits must be mandated by law.'","Intellectual rigor wins high-stakes academic debates."],"imageUrl":"/images/teens-advanced-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Oxford Forum Rebuttal Formula 🎙️ / Fórmula de Debate","description":"Concession + Empirical Refutation + Mandate","content":["Formula: 'Notwithstanding [Opponent Claim], empirical data proves that [Counter-Reality]; therefore, we must [Strategic Policy].'","Example: 'Notwithstanding tech optimism, studies prove algorithmic bias; therefore, we must enforce ethical audits.'"],"imageUrl":"/images/teens-advanced-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: AI Ethics Rebuttal 🎯 / Mini Reto","description":"Deliver a Concession & Counter-Argument","content":["Use 'Notwithstanding' or 'Be that as it may':","'________ the efficiency of AI, human empathy and creativity remain irreplaceable.'"],"imageUrl":"/images/teens-advanced-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "The Architecture of Sophisticated Argumentation 🏛️🤖 / Debate de IA y Ética",
+                    "description": "Oxford-Style Forum",
+                    "content": [
+                              "Claim -> Warrant (Logic) -> Data (Empirical Evidence) -> Impact",
+                              "Opening: 'The ethical dilemma of generative AI centers on intellectual property and human dignity.'",
+                              "Rebuttal: 'While innovation must advance, safety guardrails are non-negotiable.'",
+                              "'NOTWITHSTANDING the economic benefits, the environmental cost is unsustainable.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Oxford Forum Rebuttal Formula 🎙️ / Fórmula de Debate",
+                    "description": "Concession + Empirical Refutation + Mandate",
+                    "content": [
+                              "Formula: 'Notwithstanding [Opponent Claim], empirical data proves that [Counter-Reality]; therefore, we must [Strategic Policy].'",
+                              "Example: 'Notwithstanding tech optimism, studies prove algorithmic bias; therefore, we must enforce ethical audits.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-08/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: AI Ethics Rebuttal 🎯 / Mini Reto",
+                    "description": "Deliver a Concession & Counter-Argument",
+                    "content": [
+                              "Use 'Notwithstanding' or 'Be that as it may':",
+                              "'________ the efficiency of AI, human empathy and creativity remain irreplaceable.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-08/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y ensayar la entonación persuasiva de las cláusulas de concesión."
           },
           {
@@ -23588,12 +25920,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas de condicionales mixtos y el vocabulario de resolución diplomática.",
             slides: [
-              {"id":"slide-4","title":"Mixed Conditionals: Time Travel in Grammar ⏳🌪️ / Condicionales Mixtos","description":"Past Cause -> Present Result","content":["Type A (Past Action -> Present Result): 'If we HAD INVESTED in solar energy in 2000, our city WOULD BE carbon-neutral today.'","Structure: IF + Past Perfect (Had + Participle), WOULD + Base Verb (Present)","Notice how past decisions shape our current reality!"],"imageUrl":"/images/teens-advanced-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Mixed Conditionals: Permanent State -> Past Outcome 🧬 / Presente a Pasado","description":"Type B Mixed Conditional","content":["Type B (Present Trait -> Past Outcome): 'If she WERE NOT so resilient, she WOULD HAVE GIVEN UP during the summit.'","Structure: IF + Past Subjunctive (Were), WOULD HAVE + Past Participle","A permanent quality influenced a past event."],"imageUrl":"/images/teens-advanced-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"UN Youth Climate Summit Negotiations 🌐🌱 / Cumbres Globales","description":"Treaty Language","content":["'If member states had ratified the treaty five years ago, thousands of ecosystems would be protected today.'","'We call upon delegates to enact enforceable carbon neutrality frameworks immediately.'","Mixed conditionals articulate deep historical responsibility and future urgency."],"imageUrl":"/images/teens-advanced-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Global Summit Mixed Conditional Formula 🌍 / Fórmula de Cumbre","description":"Historical Decision -> Present State","content":["Formula: 'If nations had [Past Climate Action], our planet would [Present State] today.'","Example: 'If nations had banned single-use plastics a decade ago, our oceans would be significantly cleaner today.'"],"imageUrl":"/images/teens-advanced-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Climate Envoy Pitch 🎯 / Mini Reto","description":"Formulate a Mixed Conditional","content":["Complete the UN Climate Envoy statement:","'If we had protected the rainforests decades ago, global temperatures ________ (be) lower today.' (would be / would have been)"],"imageUrl":"/images/teens-advanced-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Mixed Conditionals: Time Travel in Grammar ⏳🌪️ / Condicionales Mixtos",
+                    "description": "Past Cause -> Present Result",
+                    "content": [
+                              "Type A (Past Action -> Present Result): 'If we HAD INVESTED in solar energy in 2000, our city WOULD BE carbon-neutral today.'",
+                              "Structure: IF + Past Perfect (Had + Participle), WOULD + Base Verb (Present)",
+                              "Notice how past decisions shape our current reality!",
+                              "Type B (Present Trait -> Past Outcome): 'If she WERE NOT so resilient, she WOULD HAVE GIVEN UP during the summit.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Global Summit Mixed Conditional Formula 🌍 / Fórmula de Cumbre",
+                    "description": "Historical Decision -> Present State",
+                    "content": [
+                              "Formula: 'If nations had [Past Climate Action], our planet would [Present State] today.'",
+                              "Example: 'If nations had banned single-use plastics a decade ago, our oceans would be significantly cleaner today.'",
+                              "Type B (Present Trait -> Past Outcome): 'If she WERE NOT so resilient, she WOULD HAVE GIVEN UP during the summit.'"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Climate Envoy Pitch 🎯 / Mini Reto",
+                    "description": "Formulate a Mixed Conditional",
+                    "content": [
+                              "Complete the UN Climate Envoy statement:",
+                              "'If we had protected the rainforests decades ago, global temperatures ________ (be) lower today.' (would be / would have been)"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y practicar la combinación de tiempos verbales en condicionales mixtos."
           },
           {
@@ -23933,12 +26296,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Consolidar y sintetizar todas las estructuras gramaticales de Nivel 8 en un pitch ejecutivo.",
             slides: [
-              {"id":"slide-4","title":"Executive NGO Leadership & Board Defense 🌐🏛️ / Liderazgo de ONG","description":"Level 8 Grand Capstone","content":["Founding a youth NGO, managing international grants, presenting to trustees","Mission statement: 'Democratizing tech education for underserved youth across Latin America.'","Executive presence: Posture, precision, empirical metrics, strategic vision."],"imageUrl":"/images/teens-advanced-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"The Master Grammar Synthesis Matrix 🧠⚡ / Matriz de Síntesis","description":"Level 8 Mastery","content":["Reported Speech (Board quotes) & Passive Voice (Impact metrics)","Defining Relative Clauses (Policy details) & Mixed Conditionals (Urgency)","Authentic Idioms & Phrasal Verbs for executive persuasion."],"imageUrl":"/images/teens-advanced-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Handling Hostile Boardroom Q&A 🎙️🔥 / Defensa ante el Jurado","description":"Executive Defense","content":["Board Trustee: 'How will your NGO sustain unit economics without grants?'","Executive Response: 'While grants provide our seed capital, our B2B corporate workshops generate sustainable revenue.'","Mastering pushback confirms visionary leadership."],"imageUrl":"/images/teens-advanced-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Global Leader Capstone Formula 🏆 / Fórmula de Graduación","description":"NGO Pitch + Defense","content":["1. State your NGO's mission using Passive Voice and metrics.","2. Justify urgency with a Mixed Conditional (Historical decisions -> Current reality).","3. Conclude with a persuasive Call to Action for board trustees."],"imageUrl":"/images/teens-advanced-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Grand Leader Pitch 🎯 / Gran Reto","description":"Deliver Your 30-Second NGO Pitch","content":["Deliver your 30-second Level 8 Executive NGO Pitch to the Board of Trustees!","Demonstrate your command of advanced passive, mixed conditionals, and C1 fluency!"],"imageUrl":"/images/teens-advanced-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Executive NGO Leadership & Board Defense 🌐🏛️ / Liderazgo de ONG",
+                    "description": "Level 8 Grand Capstone",
+                    "content": [
+                              "Founding a youth NGO, managing international grants, presenting to trustees",
+                              "Mission statement: 'Democratizing tech education for underserved youth across Latin America.'",
+                              "Executive presence: Posture, precision, empirical metrics, strategic vision.",
+                              "Reported Speech (Board quotes) & Passive Voice (Impact metrics)"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Global Leader Capstone Formula 🏆 / Fórmula de Graduación",
+                    "description": "NGO Pitch + Defense",
+                    "content": [
+                              "1. State your NGO's mission using Passive Voice and metrics.",
+                              "2. Justify urgency with a Mixed Conditional (Historical decisions -> Current reality).",
+                              "3. Conclude with a persuasive Call to Action for board trustees."
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Grand Leader Pitch 🎯 / Gran Reto",
+                    "description": "Deliver Your 30-Second NGO Pitch",
+                    "content": [
+                              "Deliver your 30-second Level 8 Executive NGO Pitch to the Board of Trustees!",
+                              "Demonstrate your command of advanced passive, mixed conditionals, and C1 fluency!"
+                    ],
+                    "imageUrl": "/images/teens-advanced-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y ensayar la entonación ejecutiva de liderazgo."
           },
           {
@@ -24457,12 +26851,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas y diferencias conceptuales del Futuro Continuo y Futuro Perfecto.",
             slides: [
-              {"id":"slide-4","title":"Future Continuous vs Future Perfect 🚀⏳ / Futuro Continuo vs Perfecto","description":"Temporal Precision","content":["Future Continuous (WILL BE DOING): In progress at a future moment ('At 8 PM, I will be hosting the keynote.')","Future Perfect (WILL HAVE DONE): Completed by a future deadline ('By 2030, our venture will have reached 1 million users.')","Precision in future timeframes projects authority."],"imageUrl":"/images/teens-elite-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Tech Forecasting & Milestones 🤖📈 / Pronósticos Tecnológicos","description":"Strategic Projections","content":["By next quarter, our AI algorithm WILL HAVE PROCESSED 10 million data points.","Throughout next year, our engineering team WILL BE DEPLOYING clean energy microgrids.","Connect ongoing innovation with measurable targets."],"imageUrl":"/images/teens-elite-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Executive Tech Roadmaps 🗺️ / Hoja de Ruta Tecnológica","description":"Venture Timeline","content":["'By the time our competitors launch version 1.0, we will already have secured international patents.'","'During the global summit, our founders will be pitching to sovereign wealth funds.'","Mastering temporal grammar inspires investor confidence."],"imageUrl":"/images/teens-elite-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Tech Forecasting Formula 📊 / Fórmula de Pronóstico","description":"By [Date] + Will have done + While [Time] + Will be doing","content":["Formula: 'By [Future Year], our initiative will have [Accomplishment] while our team is [Ongoing Impact].'","Example: 'By 2030, our lab will have developed biodegradable polymers while our engineers are expanding solar micro-grids.'"],"imageUrl":"/images/teens-elite-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: 2035 Tech Vision 🎯 / Mini Reto","description":"Formulate a Future Perfect Milestone","content":["Tell the teacher:","'By 2035, humanity will have ________.' (Use will have + participle)"],"imageUrl":"/images/teens-elite-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Future Continuous vs Future Perfect 🚀⏳ / Futuro Continuo vs Perfecto",
+                    "description": "Temporal Precision",
+                    "content": [
+                              "Future Continuous (WILL BE DOING): In progress at a future moment ('At 8 PM, I will be hosting the keynote.')",
+                              "Future Perfect (WILL HAVE DONE): Completed by a future deadline ('By 2030, our venture will have reached 1 million users.')",
+                              "Precision in future timeframes projects authority.",
+                              "By next quarter, our AI algorithm WILL HAVE PROCESSED 10 million data points."
+                    ],
+                    "imageUrl": "/images/teens-elite-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Tech Forecasting Formula 📊 / Fórmula de Pronóstico",
+                    "description": "By [Date] + Will have done + While [Time] + Will be doing",
+                    "content": [
+                              "Formula: 'By [Future Year], our initiative will have [Accomplishment] while our team is [Ongoing Impact].'",
+                              "Example: 'By 2030, our lab will have developed biodegradable polymers while our engineers are expanding solar micro-grids.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: 2035 Tech Vision 🎯 / Mini Reto",
+                    "description": "Formulate a Future Perfect Milestone",
+                    "content": [
+                              "Tell the teacher:",
+                              "'By 2035, humanity will have ________.' (Use will have + participle)"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación fluida de 'will have + V3' y 'will be + ing'."
           },
           {
@@ -24802,12 +27226,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la lógica gramatical y temporal de los condicionales mixtos complejos.",
             slides: [
-              {"id":"slide-4","title":"High-Stakes Mixed Conditionals ⚖️🌪️ / Condicionales Mixtos","description":"Past Action -> Present Crisis","content":["'If the board had addressed the security flaw last month, our servers wouldn't be compromised today.'","Past decision (Had + Participle) -> Current state (Would be)","Crucial tool for crisis leadership and root-cause post-mortems."],"imageUrl":"/images/teens-elite-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Permanent Trait -> Past Decision 🧬 / Rasgo a Acción Pasada","description":"Type B Mixed Conditional","content":["'If our lead scientist weren't so exceptionally innovative, we wouldn't have discovered the vaccine so quickly.'","Present timeless trait (Were) -> Past historic milestone (Would have + Participle).","Highlighting how enduring principles alter history."],"imageUrl":"/images/teens-elite-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Ethical Dilemmas in Venture Leadership 🏛️ / Dilemas Éticos","description":"Decisive Strategy","content":["'If we had prioritized short-term profit over ethics, our brand reputation would be destroyed today.'","'Leadership means making hard calls today so that the organization remains sustainable tomorrow.'","Advanced conditionals elevate strategic accountability."],"imageUrl":"/images/teens-elite-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The High-Stakes Dilemma Formula 🧭 / Fórmula de Dilema","description":"Historical Prudence -> Sustainable Reality","content":["Formula: 'If our leadership had not [Past Ethical Action], our enterprise would [Negative Present State] today.'","Example: 'If we had not diversified our supply chain, our operations would be halted today.'"],"imageUrl":"/images/teens-elite-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Strategic Post-Mortem 🎯 / Mini Reto","description":"Formulate a Mixed Conditional","content":["Complete the crisis analysis:","'If the tech startup had tested the update, the app ________ (not crash) today.' (wouldn't crash / wouldn't have crashed)"],"imageUrl":"/images/teens-elite-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "High-Stakes Mixed Conditionals ⚖️🌪️ / Condicionales Mixtos",
+                    "description": "Past Action -> Present Crisis",
+                    "content": [
+                              "'If the board had addressed the security flaw last month, our servers wouldn't be compromised today.'",
+                              "Past decision (Had + Participle) -> Current state (Would be)",
+                              "Crucial tool for crisis leadership and root-cause post-mortems.",
+                              "'If our lead scientist weren't so exceptionally innovative, we wouldn't have discovered the vaccine so quickly.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The High-Stakes Dilemma Formula 🧭 / Fórmula de Dilema",
+                    "description": "Historical Prudence -> Sustainable Reality",
+                    "content": [
+                              "Formula: 'If our leadership had not [Past Ethical Action], our enterprise would [Negative Present State] today.'",
+                              "Example: 'If we had not diversified our supply chain, our operations would be halted today.'",
+                              "'If our lead scientist weren't so exceptionally innovative, we wouldn't have discovered the vaccine so quickly.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Strategic Post-Mortem 🎯 / Mini Reto",
+                    "description": "Formulate a Mixed Conditional",
+                    "content": [
+                              "Complete the crisis analysis:",
+                              "'If the tech startup had tested the update, the app ________ (not crash) today.' (wouldn't crash / wouldn't have crashed)"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la combinación fluida de tiempos verbales en condicionales mixtos."
           },
           {
@@ -25147,12 +27602,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas sintácticas de Wh-Clefts, It-Clefts y estructuras enfáticas.",
             slides: [
-              {"id":"slide-4","title":"Cleft Sentences & Emphatic Rhetoric 🔦✨ / Oraciones Hendidas","description":"Focusing Attention","content":["Standard: 'We need digital literacy education.'","Wh-Cleft: 'WHAT WE URGENTLY NEED IS digital literacy education.'","It-Cleft: 'IT IS our youth WHO will drive democratic renewal.'","Cleft structures create undeniable oratorical impact."],"imageUrl":"/images/teens-elite-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"All-Clefts & Reverse Clefts 🌟 / Énfasis Total","description":"All that matters is...","content":["'ALL WE ARE ASKING FOR is equal access to STEM opportunities.'","'Sustainable energy IS WHAT our future depends on.'","Clefting filters out noise and anchors listeners on your primary message."],"imageUrl":"/images/teens-elite-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"High-Impact Keynote Emphasis 🎙️ / Oratoria de Alto Impacto","description":"Keynote Delivery","content":["'It was not luck, but relentless discipline that brought our team here.'","'What inspires me most is the courage of our young researchers.'","Use cleft sentences at the climax of keynote addresses."],"imageUrl":"/images/teens-elite-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Cleft Oratory Formula 🏛️ / Fórmula de Énfasis","description":"What [Subject] [Verb] is [Core Message]","content":["Formula: 'What [Audience/We] must recognize is that [Undeniable Truth].'","Example: 'What global leaders must recognize is that youth innovation is our greatest asset.'"],"imageUrl":"/images/teens-elite-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Cleft Punchline 🎯 / Mini Reto","description":"Transform into a Cleft Sentence","content":["Transform with 'What... is': 'We need courage and creativity.'","'What we need is ________.'"],"imageUrl":"/images/teens-elite-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Cleft Sentences & Emphatic Rhetoric 🔦✨ / Oraciones Hendidas",
+                    "description": "Focusing Attention",
+                    "content": [
+                              "Standard: 'We need digital literacy education.'",
+                              "Wh-Cleft: 'WHAT WE URGENTLY NEED IS digital literacy education.'",
+                              "It-Cleft: 'IT IS our youth WHO will drive democratic renewal.'",
+                              "'ALL WE ARE ASKING FOR is equal access to STEM opportunities.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Cleft Oratory Formula 🏛️ / Fórmula de Énfasis",
+                    "description": "What [Subject] [Verb] is [Core Message]",
+                    "content": [
+                              "Formula: 'What [Audience/We] must recognize is that [Undeniable Truth].'",
+                              "Example: 'What global leaders must recognize is that youth innovation is our greatest asset.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Cleft Punchline 🎯 / Mini Reto",
+                    "description": "Transform into a Cleft Sentence",
+                    "content": [
+                              "Transform with 'What... is': 'We need courage and creativity.'",
+                              "'What we need is ________.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y practicar la entonación enfática de oraciones hendidas."
           },
           {
@@ -25492,12 +27977,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la regla de inversión sintáctica con adverbios negativos y restrictivos.",
             slides: [
-              {"id":"slide-4","title":"Rhetorical Inversions for Oratory 🏛️⚡ / Inversiones Retóricas","description":"High-Stakes Oratory","content":["Standard: 'I have rarely seen such dedication.'","Inverted: 'SELDOM HAVE I SEEN such unprecedented dedication.'","Rule: Negative/Limiting Adverb + Auxiliary + Subject + Verb","Transforms ordinary speeches into historic addresses."],"imageUrl":"/images/teens-elite-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Top Inversion Triggers: Not only, Seldom, Scarcely 🗝️ / Disparadores Clave","description":"Inversion Formulas","content":["NOT ONLY... BUT ALSO: 'Not only DID WE WIN the tournament, but we also broke the state record.'","NO SOONER... THAN: 'No sooner HAD THE GATES OPENED than the stadium erupted.'","UNDER NO CIRCUMSTANCES: 'Under no circumstances SHOULD WE COMPROMISE on safety.'"],"imageUrl":"/images/teens-elite-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"Churchillian & Parliamentary Cadence 🎙️ / Cadencia Parlamentaria","description":"Mastering Rhythm","content":["'Rarely in the history of science has a single innovation achieved so much.'","'Never before have young innovators held such global influence.'","Inversion delivers timeless gravitas and unforgettable resonance."],"imageUrl":"/images/teens-elite-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Inverted Oratorical Formula 📜 / Fórmula de Inversión","description":"Not only did [Subject] [Verb], but [Subject] also [Achievement]","content":["Formula: 'Not only did our venture [Action 1], but we also [Monumental Milestone].'","Example: 'Not only did our team reduce carbon emissions by 40%, but we also generated sustainable revenue.'"],"imageUrl":"/images/teens-elite-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Oratorical Inversion 🎯 / Mini Reto","description":"Complete the Inversion","content":["Complete with inverted order: 'Never ________ (I / see) such brilliance.'","'Never have I seen / Never I have seen'?"],"imageUrl":"/images/teens-elite-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Rhetorical Inversions for Oratory 🏛️⚡ / Inversiones Retóricas",
+                    "description": "High-Stakes Oratory",
+                    "content": [
+                              "Standard: 'I have rarely seen such dedication.'",
+                              "Inverted: 'SELDOM HAVE I SEEN such unprecedented dedication.'",
+                              "Rule: Negative/Limiting Adverb + Auxiliary + Subject + Verb",
+                              "NOT ONLY... BUT ALSO: 'Not only DID WE WIN the tournament, but we also broke the state record.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Inverted Oratorical Formula 📜 / Fórmula de Inversión",
+                    "description": "Not only did [Subject] [Verb], but [Subject] also [Achievement]",
+                    "content": [
+                              "Formula: 'Not only did our venture [Action 1], but we also [Monumental Milestone].'",
+                              "Example: 'Not only did our team reduce carbon emissions by 40%, but we also generated sustainable revenue.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-04/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Oratorical Inversion 🎯 / Mini Reto",
+                    "description": "Complete the Inversion",
+                    "content": [
+                              "Complete with inverted order: 'Never ________ (I / see) such brilliance.'",
+                              "'Never have I seen / Never I have seen'?"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y practicar la inversión de sujeto y auxiliar en voz alta."
           },
           {
@@ -25837,12 +28352,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas sintácticas de atenuación, hedging y negociación diplomática.",
             slides: [
-              {"id":"slide-4","title":"Diplomatic Hedging & Nuanced Softening 🕊️🤝 / Suavización Diplomática","description":"Executive Diplomacy","content":["Direct: 'Your proposal is too expensive.'","Hedged: 'It WOULD APPEAR THAT the proposed budget MAY EXCEED our current allocation.'","Hedging protects relationships while asserting strategic boundaries."],"imageUrl":"/images/teens-elite-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Modal Auxiliaries & Probability Adverbs 📊 / Adverbios de Matiz","description":"Degrees of Certainty","content":["'Tends to suggest...' / 'Arguably the most viable path...' / 'To some extent...'","'We might want to explore alternative logistics before finalizing.'","Subtle modulation signals executive mastery in bilateral talks."],"imageUrl":"/images/teens-elite-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"High-Stakes Treaty & Contract Negotiations 📜 / Negociaciones de Tratados","description":"Bilateral Formulas","content":["'While we appreciate the timeline, our team respectfully suggests a phased rollout.'","'It is widely considered prudent to conduct an independent security review first.'","Diplomatic language builds consensus and prevents deadlock."],"imageUrl":"/images/teens-elite-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Diplomatic Hedging Blueprint 🤝 / Fórmula Diplomática","description":"Observation + Softened Suggestion","content":["Formula: 'The data WOULD TEND TO SUGGEST that [Observation]; therefore, it MIGHT BE PRUDENT to [Nuanced Proposal].'","Example: 'The data would suggest rising latency; therefore, it might be prudent to upgrade server capacity.'"],"imageUrl":"/images/teens-elite-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Diplomatic Softening 🎯 / Mini Reto","description":"Hedge a Critical Statement","content":["Soften: 'Your timeline is impossible.'","'It would appear that the timeline might be ________.' (slightly ambitious / terrible)"],"imageUrl":"/images/teens-elite-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Diplomatic Hedging & Nuanced Softening 🕊️🤝 / Suavización Diplomática",
+                    "description": "Executive Diplomacy",
+                    "content": [
+                              "Direct: 'Your proposal is too expensive.'",
+                              "Hedged: 'It WOULD APPEAR THAT the proposed budget MAY EXCEED our current allocation.'",
+                              "Hedging protects relationships while asserting strategic boundaries.",
+                              "'Tends to suggest...' / 'Arguably the most viable path...' / 'To some extent...'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Diplomatic Hedging Blueprint 🤝 / Fórmula Diplomática",
+                    "description": "Observation + Softened Suggestion",
+                    "content": [
+                              "Formula: 'The data WOULD TEND TO SUGGEST that [Observation]; therefore, it MIGHT BE PRUDENT to [Nuanced Proposal].'",
+                              "Example: 'The data would suggest rising latency; therefore, it might be prudent to upgrade server capacity.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-05/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Diplomatic Softening 🎯 / Mini Reto",
+                    "description": "Hedge a Critical Statement",
+                    "content": [
+                              "Soften: 'Your timeline is impossible.'",
+                              "'It would appear that the timeline might be ________.' (slightly ambitious / terrible)"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la entonación mesurada y diplomática."
           },
           {
@@ -26182,12 +28727,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la arquitectura de 5 párrafos y el léxico académico de corroboración empírica.",
             slides: [
-              {"id":"slide-4","title":"Advanced Discursive Essay Architecture 🏛️📚 / Ensayo Discursivo","description":"The 5-Paragraph Scholarly Matrix","content":["1. Introduction: Hook + Broad Context + Thesis Statement","2. Body 1: Affirmative arguments with empirical citations","3. Body 2: Counter-arguments and robust dialectical rebuttal","4. Body 3: Synthesis and broader societal implications","5. Conclusion: Restated thesis + Forward-looking verdict"],"imageUrl":"/images/teens-elite-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
-              {"id":"slide-5","title":"Advanced Cohesive Devices & Transitionals 🔗 / Conectores Académicos","description":"Scholarly Transitions","content":["CORROBORATION: Furthermore, Moreover, In tandem with","CONCESSION: Albeit, In spite of, Notwithstanding","CAUSATION: Consequently, Hence, It follows that"],"imageUrl":"/images/teens-elite-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
-              {"id":"slide-6","title":"Publishing in Scholarly & Think-Tank Journals 📰 / Publicaciones Académicas","description":"Rigorous Synthesis","content":["'The empirical evidence gathered across twenty institutions corroborates the hypothesis.'","'Consequently, institutional reform must precede technological integration.'","Clear structure and rigorous transitions guarantee academic excellence."],"imageUrl":"/images/teens-elite-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Discursive Thesis Formula 📜 / Fórmula de Tesis","description":"Context + Tension + Thesis","content":["Formula: 'Although [Prevailing View], empirical evidence demonstrates that [Core Thesis]; hence, [Policy Recommendation].'","Example: 'Although automation increases efficiency, evidence demonstrates that human oversight remains vital; hence, ethical audits are mandatory.'"],"imageUrl":"/images/teens-elite-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Scholarly Connector 🎯 / Mini Reto","description":"Select the Academic Connector","content":["Complete: 'The experiment proved scalable. ________, further trials were approved.'","(Consequently / But)"],"imageUrl":"/images/teens-elite-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Advanced Discursive Essay Architecture 🏛️📚 / Ensayo Discursivo",
+                    "description": "The 5-Paragraph Scholarly Matrix",
+                    "content": [
+                              "1. Introduction: Hook + Broad Context + Thesis Statement",
+                              "2. Body 1: Affirmative arguments with empirical citations",
+                              "3. Body 2: Counter-arguments and robust dialectical rebuttal",
+                              "CORROBORATION: Furthermore, Moreover, In tandem with"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-red-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Discursive Thesis Formula 📜 / Fórmula de Tesis",
+                    "description": "Context + Tension + Thesis",
+                    "content": [
+                              "Formula: 'Although [Prevailing View], empirical evidence demonstrates that [Core Thesis]; hence, [Policy Recommendation].'",
+                              "Example: 'Although automation increases efficiency, evidence demonstrates that human oversight remains vital; hence, ethical audits are mandatory.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-06/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-red-500 to-rose-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Scholarly Connector 🎯 / Mini Reto",
+                    "description": "Select the Academic Connector",
+                    "content": [
+                              "Complete: 'The experiment proved scalable. ________, further trials were approved.'",
+                              "(Consequently / But)"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Tomar notas y practicar la articulación de argumentos académicos complejos."
           },
           {
@@ -26527,12 +29102,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura IMRAD de resúmenes y el léxico de citas académicas.",
             slides: [
-              {"id":"slide-4","title":"Empirical Abstracts & Literature Synthesis 🔬📊 / Resúmenes Empíricos","description":"Scholarly Precision","content":["Abstract Structure: Background -> Objective -> Methodology -> Results -> Conclusion","Synthesizing literature: 'Smith (2022) posits that... whereas Chen (2023) contends that...'","Active scholarly verbs: demonstrates, substantiates, refutes, corroborates"],"imageUrl":"/images/teens-elite-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Statistical Reporting & Confidence Intervals 📈 / Datos Estadísticos","description":"Quantitative Data","content":["'The data yielded a statistically significant correlation (p < 0.01).'","'A 95% confidence interval indicates robust model replicability.'","'Data was normalized across all control groups to eliminate confounding variables.'"],"imageUrl":"/images/teens-elite-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Scientific Poster Defense at Global Symposia 🎙️🏛️ / Defensa de Póster","description":"Academic Pitching","content":["'Our research methodology isolates the enzyme with 98.4% purity.'","'These findings challenge established models and open avenues for green catalysis.'","Precise scientific language conveys credibility and authority."],"imageUrl":"/images/teens-elite-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Empirical Abstract Formula 🧪 / Fórmula de Abstract","description":"Objective + Methodology + Key Finding","content":["Formula: 'This study investigates [Phenomenon] utilizing [Methodology]. The results corroborate that [Discovery] (p < 0.05).'","Example: 'This study investigates biodegradable polymers utilizing mass spectrometry. The results corroborate that tensile strength increases by 25%.'"],"imageUrl":"/images/teens-elite-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Scholarly Verb Selection 🎯 / Mini Reto","description":"Choose the Academic Verb","content":["Complete: 'Our empirical findings ________ (substantiate / say) the original hypothesis.'"],"imageUrl":"/images/teens-elite-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Empirical Abstracts & Literature Synthesis 🔬📊 / Resúmenes Empíricos",
+                    "description": "Scholarly Precision",
+                    "content": [
+                              "Abstract Structure: Background -> Objective -> Methodology -> Results -> Conclusion",
+                              "Synthesizing literature: 'Smith (2022) posits that... whereas Chen (2023) contends that...'",
+                              "Active scholarly verbs: demonstrates, substantiates, refutes, corroborates",
+                              "'The data yielded a statistically significant correlation (p < 0.01).'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-07/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Empirical Abstract Formula 🧪 / Fórmula de Abstract",
+                    "description": "Objective + Methodology + Key Finding",
+                    "content": [
+                              "Formula: 'This study investigates [Phenomenon] utilizing [Methodology]. The results corroborate that [Discovery] (p < 0.05).'",
+                              "Example: 'This study investigates biodegradable polymers utilizing mass spectrometry. The results corroborate that tensile strength increases by 25%.'",
+                              "'A 95% confidence interval indicates robust model replicability.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Scholarly Verb Selection 🎯 / Mini Reto",
+                    "description": "Choose the Academic Verb",
+                    "content": [
+                              "Complete: 'Our empirical findings ________ (substantiate / say) the original hypothesis.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y practicar la pronunciación de verbos científicos y citas."
           },
           {
@@ -26872,12 +29477,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas de Robert's Rules of Order y el léxico de gobernanza corporativa.",
             slides: [
-              {"id":"slide-4","title":"Executive Boardrooms & Parliamentary Procedure 🏛️⚖️ / Procedimiento Parlamentario","description":"Robert's Rules of Order","content":["'I move to adopt the resolution on campus clean energy.'","'Point of order, Mr. Chair: does this motion require a two-thirds majority?'","'I second the motion / The floor is open for debate.'"],"imageUrl":"/images/teens-elite-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"De-escalating Hostile Boardrooms 🤝🌪️ / Desescalar Conflictos","description":"Executive Governance","content":["'Let us return to our core fiduciary duty and review the audited statements.'","'I call for a five-minute recess to allow delegates to review the compromise text.'","Composure in high-stakes boardrooms establishes undisputed leadership."],"imageUrl":"/images/teens-elite-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Chairing High-Stakes Shareholder Assemblies 🎙️ / Presidir Asambleas","description":"Procedural Mastery","content":["'The motion carries unanimously with 8 votes in favor.'","'We will now proceed to the next item on the official agenda.'","Parliamentary discipline ensures fair, transparent democratic governance."],"imageUrl":"/images/teens-elite-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Formal Motion Formula 📋 / Fórmula de Moción","description":"I move that [Resolution] be [Action]","content":["Formula: 'I move that the board [Approve/Adopt] [Resolution] in order to [Strategic Objective].'","Example: 'I move that the board allocate 15% of annual reserves to youth research fellowships.'"],"imageUrl":"/images/teens-elite-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Parliamentary Motion 🎯 / Mini Reto","description":"Propose a Board Motion","content":["Propose a formal motion to the board chair:","'Mr. Chair, I move that we ________ the proposal.' (adopt / do)"],"imageUrl":"/images/teens-elite-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Executive Boardrooms & Parliamentary Procedure 🏛️⚖️ / Procedimiento Parlamentario",
+                    "description": "Robert's Rules of Order",
+                    "content": [
+                              "'I move to adopt the resolution on campus clean energy.'",
+                              "'Point of order, Mr. Chair: does this motion require a two-thirds majority?'",
+                              "'I second the motion / The floor is open for debate.'",
+                              "'Let us return to our core fiduciary duty and review the audited statements.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Formal Motion Formula 📋 / Fórmula de Moción",
+                    "description": "I move that [Resolution] be [Action]",
+                    "content": [
+                              "Formula: 'I move that the board [Approve/Adopt] [Resolution] in order to [Strategic Objective].'",
+                              "Example: 'I move that the board allocate 15% of annual reserves to youth research fellowships.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-08/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Parliamentary Motion 🎯 / Mini Reto",
+                    "description": "Propose a Board Motion",
+                    "content": [
+                              "Propose a formal motion to the board chair:",
+                              "'Mr. Chair, I move that we ________ the proposal.' (adopt / do)"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-08/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar la postura y entonación de autoridad ejecutiva."
           },
           {
@@ -27217,12 +29852,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la técnica de bridging y el léxico de control de daños de relaciones públicas.",
             slides: [
-              {"id":"slide-4","title":"Crisis Leadership & The 3-Pillar Framework 🌪️🎙️ / Liderazgo en Crisis","description":"PR Damage Control","content":["1. Immediate Accountability: Take responsibility without making excuses.","2. Transparent Remediation: Detail concrete steps to resolve the issue.","3. Systemic Prevention: Implement long-term safeguards against recurrence."],"imageUrl":"/images/teens-elite-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
-              {"id":"slide-5","title":"The Bridging & Pivoting Formula 🌉 / La Técnica del Puente","description":"Navigating Hostile Press","content":["Journalist: 'Isn't this data breach a sign of catastrophic incompetence?'","Executive Pivot: 'What is critical to understand is that all user accounts were encrypted, AND our team has patched the vulnerability within 2 hours.'","Bridge phrases: 'What matters most now is...', 'Let's look at the verified facts...'"],"imageUrl":"/images/teens-elite-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
-              {"id":"slide-6","title":"Live Hostile Press Conference Defense 📸📰 / Rueda de Prensa","description":"Poise Under Fire","content":["'We deeply regret the disruption caused to our users.'","'An independent forensic cybersecurity firm has been hired to audit all systems.'","'We will release daily transparency updates until full restoration.'"],"imageUrl":"/images/teens-elite-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Crisis Press Statement Formula 🎙️ / Fórmula de Crisis","description":"Accountability + Immediate Action + Safeguard","content":["Formula: 'We take full responsibility for [Issue]. We have deployed [Immediate Fix] and instituted [Long-Term Safeguard].'","Example: 'We take full responsibility for the server outage. We have deployed backup clusters and expanded capacity by 300%.'"],"imageUrl":"/images/teens-elite-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Executive Pivot 🎯 / Mini Reto","description":"Pivot a Hostile Question","content":["Pivot away from hostile accusation:","'While I understand that concern, what is critical to focus on is ________.'"],"imageUrl":"/images/teens-elite-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Crisis Leadership & The 3-Pillar Framework 🌪️🎙️ / Liderazgo en Crisis",
+                    "description": "PR Damage Control",
+                    "content": [
+                              "1. Immediate Accountability: Take responsibility without making excuses.",
+                              "2. Transparent Remediation: Detail concrete steps to resolve the issue.",
+                              "3. Systemic Prevention: Implement long-term safeguards against recurrence.",
+                              "Journalist: 'Isn't this data breach a sign of catastrophic incompetence?'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-red-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Crisis Press Statement Formula 🎙️ / Fórmula de Crisis",
+                    "description": "Accountability + Immediate Action + Safeguard",
+                    "content": [
+                              "Formula: 'We take full responsibility for [Issue]. We have deployed [Immediate Fix] and instituted [Long-Term Safeguard].'",
+                              "Example: 'We take full responsibility for the server outage. We have deployed backup clusters and expanded capacity by 300%.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-red-500 to-rose-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Executive Pivot 🎯 / Mini Reto",
+                    "description": "Pivot a Hostile Question",
+                    "content": [
+                              "Pivot away from hostile accusation:",
+                              "'While I understand that concern, what is critical to focus on is ________.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Tomar notas y practicar la postura y entonación de autoridad ejecutiva."
           },
           {
@@ -27562,12 +30227,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los cálculos de economía unitaria y el léxico de capital de riesgo.",
             slides: [
-              {"id":"slide-4","title":"Designing a Scalable Global Venture 🚀📊 / Economía Unitaria","description":"Unit Economics & Value Prop","content":["CAC (Customer Acquisition Cost) vs LTV (Lifetime Value): Target LTV/CAC > 3x.","Gross Margin, Churn Rate, Payback Period, TAM (Total Addressable Market).","A viable venture combines solving a real pain point with sound unit economics."],"imageUrl":"/images/teens-elite-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"The Unassailable Value Proposition 💎 / Propuesta de Valor","description":"Market Differentiation","content":["'We enable [Target Customer] to [Core Benefit] without [Major Friction] by leveraging [Proprietary Tech].'","Differentiator: Patents, network effects, 10x lower cost, proprietary datasets.","Investors fund moat defensibility, not just features."],"imageUrl":"/images/teens-elite-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Venture Capital Due Diligence & Metrics 📈 / Due Diligence","description":"Investor Readiness","content":["'Our pilot demonstrated a 14-day payback period with a 92% retention rate.'","'With our scalable cloud architecture, marginal cost per user approaches zero.'","Mastering financial fluency unlocks tier-1 venture capital backing."],"imageUrl":"/images/teens-elite-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Seed Stage Venture Formula 💡 / Fórmula de Venture","description":"Problem + Proprietary Solution + Unit Economics","content":["Formula: 'We solve [Market Pain Point] for [Audience] with [Proprietary Tech], achieving [LTV/CAC Metric].'","Example: 'We automate eco-audits for schools with computer vision, achieving a 4x LTV/CAC ratio.'"],"imageUrl":"/images/teens-elite-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: 30-Second Venture Elevator Pitch 🎯 / Mini Reto","description":"Pitch Your Venture","content":["Deliver your value proposition to an investor:","'We help ________ achieve ________ through our proprietary ________.'"],"imageUrl":"/images/teens-elite-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Designing a Scalable Global Venture 🚀📊 / Economía Unitaria",
+                    "description": "Unit Economics & Value Prop",
+                    "content": [
+                              "CAC (Customer Acquisition Cost) vs LTV (Lifetime Value): Target LTV/CAC > 3x.",
+                              "Gross Margin, Churn Rate, Payback Period, TAM (Total Addressable Market).",
+                              "A viable venture combines solving a real pain point with sound unit economics.",
+                              "'We enable [Target Customer] to [Core Benefit] without [Major Friction] by leveraging [Proprietary Tech].'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Seed Stage Venture Formula 💡 / Fórmula de Venture",
+                    "description": "Problem + Proprietary Solution + Unit Economics",
+                    "content": [
+                              "Formula: 'We solve [Market Pain Point] for [Audience] with [Proprietary Tech], achieving [LTV/CAC Metric].'",
+                              "Example: 'We automate eco-audits for schools with computer vision, achieving a 4x LTV/CAC ratio.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: 30-Second Venture Elevator Pitch 🎯 / Mini Reto",
+                    "description": "Pitch Your Venture",
+                    "content": [
+                              "Deliver your value proposition to an investor:",
+                              "'We help ________ achieve ________ through our proprietary ________.'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y practicar la defensa cuantitativa del modelo de negocio."
           },
           {
@@ -27907,12 +30602,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Integrar todas las estructuras retóricas del Nivel 9 en un discurso magistral.",
             slides: [
-              {"id":"slide-4","title":"Level 9 Grand Capstone: Global Venture Keynote 🌍👑 / Proyecto Final","description":"International Tech Seed Pitch","content":["The 7-Stage Keynote Architecture: Hook -> Problem -> Solution -> Tech Moat -> Unit Economics -> Team -> Ask","Synthesizing Level 9 Elite Rhetoric: Inversions, Clefts, Mixed Conditionals, and Empirical Precision.","Commanding the international tech stage as a visionary youth founder."],"imageUrl":"/images/teens-elite-class-11/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Handling Live Investor Cross-Examination 🔥 / Defensa ante Inversionistas","description":"Seed Round Q&A","content":["Investor: 'What stops Google or Meta from copying this in three months?'","Founder Defense: 'Not only do we hold pending provisional patents, but our localized community dataset creates an insurmountable competitive moat.'","Turning hard questions into decisive closing statements."],"imageUrl":"/images/teens-elite-class-11/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"The Master Elite Rhetoric Synthesis ⚡ / Síntesis de Élite","description":"C1/C2 Fluency Command","content":["Inversions for dramatic milestones ('Never before has clean energy been so accessible.')","Clefts for core value clarity ('What we are building is a generational infrastructure.')","Diplomatic hedging for realistic projections ('Data suggests sustainable 3x annual growth.')"],"imageUrl":"/images/teens-elite-class-11/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Grand Elite Keynote Formula 🏆 / Fórmula de Graduación","description":"Complete Global Keynote","content":["1. Open with an inverted hook or cleft statement.","2. Present your scalable venture architecture and empirical metrics.","3. Close with a visionary call to action for seed investors."],"imageUrl":"/images/teens-elite-class-11/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Grand Elite Keynote Pitch 🎯 / Gran Reto","description":"Deliver Your 30-Second Seed Pitch","content":["Deliver your 30-second Level 9 Grand Capstone Seed Pitch to the Venture Capital Panel!","Demonstrate mastery of inversions, unit economics, and elite C1 fluency!"],"imageUrl":"/images/teens-elite-class-11/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Level 9 Grand Capstone: Global Venture Keynote 🌍👑 / Proyecto Final",
+                    "description": "International Tech Seed Pitch",
+                    "content": [
+                              "The 7-Stage Keynote Architecture: Hook -> Problem -> Solution -> Tech Moat -> Unit Economics -> Team -> Ask",
+                              "Synthesizing Level 9 Elite Rhetoric: Inversions, Clefts, Mixed Conditionals, and Empirical Precision.",
+                              "Commanding the international tech stage as a visionary youth founder.",
+                              "Investor: 'What stops Google or Meta from copying this in three months?'"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-11/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Grand Elite Keynote Formula 🏆 / Fórmula de Graduación",
+                    "description": "Complete Global Keynote",
+                    "content": [
+                              "1. Open with an inverted hook or cleft statement.",
+                              "2. Present your scalable venture architecture and empirical metrics.",
+                              "3. Close with a visionary call to action for seed investors."
+                    ],
+                    "imageUrl": "/images/teens-elite-class-11/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Grand Elite Keynote Pitch 🎯 / Gran Reto",
+                    "description": "Deliver Your 30-Second Seed Pitch",
+                    "content": [
+                              "Deliver your 30-second Level 9 Grand Capstone Seed Pitch to the Venture Capital Panel!",
+                              "Demonstrate mastery of inversions, unit economics, and elite C1 fluency!"
+                    ],
+                    "imageUrl": "/images/teens-elite-class-11/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y ensayar la entonación y proyección escénica internacional."
           },
           {
@@ -28431,12 +31157,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la arquitectura de debate parlamentario y el léxico de refutación dialéctica.",
             slides: [
-              {"id":"slide-4","title":"Oxford-Union British Parliamentary Debate 🏛️🇬🇧 / Debate Oxford-Union","description":"BP Format Architecture","content":["Prime Minister -> Leader of Opposition -> Deputy PM -> Deputy Opposition -> Member -> Whip","Points of Information (POIs): Floor interventions under 15 seconds.","Dialectical refutation: Attacking the underlying logical warrants, not just symptoms."],"imageUrl":"/images/teens-masters-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Dismantling Classical Logical Fallacies 🧠⚡ / Falacias Lógicas","description":"Philosophical Rigor","content":["Straw Man: Misrepresenting an argument to attack it easily.","Ad Hominem: Attacking the person rather than the premise.","False Dichotomy: Presenting only two extremes when nuance exists.","Exposing fallacies politely dismantles opponent cases in real time."],"imageUrl":"/images/teens-masters-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Handling Floor POIs & Whip Summaries 🎙️ / Puntos de Información","description":"Floor Combat","content":["'On that point, Madam Speaker: does the proposition recognize that...'","'Declined, thank you. To continue my second substantive argument...'","The Whip speech synthesizes the entire clash into clear victory points."],"imageUrl":"/images/teens-masters-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Oxford-Union Debate Formula 📜 / Fórmula de Debate","description":"Substantive Warrant + Fallacy Rebuttal + Verdict","content":["Formula: 'While the opposition rests their case on [Fallacy], the core substantive warrant demonstrates [Principled Truth]; thus, the motion must fall.'","Example: 'While the opposition rests on a false dichotomy, the empirical reality demonstrates that ethical governance accelerates tech growth.'"],"imageUrl":"/images/teens-masters-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Oxford-Union POI 🎯 / Mini Reto","description":"Deliver a 10-Second Point of Information","content":["Deliver a POI challenging the premise that 'Social media should be banned for teens':","'On that point, Mr. Speaker: doesn't this motion overlook ________?'"],"imageUrl":"/images/teens-masters-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Oxford-Union British Parliamentary Debate 🏛️🇬🇧 / Debate Oxford-Union",
+                    "description": "BP Format Architecture",
+                    "content": [
+                              "Prime Minister -> Leader of Opposition -> Deputy PM -> Deputy Opposition -> Member -> Whip",
+                              "Points of Information (POIs): Floor interventions under 15 seconds.",
+                              "Dialectical refutation: Attacking the underlying logical warrants, not just symptoms.",
+                              "Straw Man: Misrepresenting an argument to attack it easily."
+                    ],
+                    "imageUrl": "/images/teens-masters-class-01/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Oxford-Union Debate Formula 📜 / Fórmula de Debate",
+                    "description": "Substantive Warrant + Fallacy Rebuttal + Verdict",
+                    "content": [
+                              "Formula: 'While the opposition rests their case on [Fallacy], the core substantive warrant demonstrates [Principled Truth]; thus, the motion must fall.'",
+                              "Example: 'While the opposition rests on a false dichotomy, the empirical reality demonstrates that ethical governance accelerates tech growth.'",
+                              "False Dichotomy: Presenting only two extremes when nuance exists."
+                    ],
+                    "imageUrl": "/images/teens-masters-class-01/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Oxford-Union POI 🎯 / Mini Reto",
+                    "description": "Deliver a 10-Second Point of Information",
+                    "content": [
+                              "Deliver a POI challenging the premise that 'Social media should be banned for teens':",
+                              "'On that point, Mr. Speaker: doesn't this motion overlook ________?'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-01/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y ensayar la entonación y proyección oratoria de la Cámara."
           },
           {
@@ -28776,12 +31533,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar los conceptos de semiótica, ecología de medios y léxico de teoría cultural.",
             slides: [
-              {"id":"slide-4","title":"Pop Culture Semiotics & Media Ecology 📺🧬 / Semiótica y Medios","description":"Signifier & Signified","content":["Signifier (Symbol/Image) vs Signified (Cultural Meaning).","Media Ecology (Marshall McLuhan): 'The medium is the message.'","Digital memetics: How viral memes compress complex social commentary into micro-symbols."],"imageUrl":"/images/teens-masters-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Hyperreality & Baudrillard's Simulacra 🌐 / Hiperrealidad","description":"Digital Philosophy","content":["Simulacrum: A representation that replaces real experience.","How algorithmic feeds curate synthetic realities and social trends.","Deconstructing digital narratives with philosophical clarity."],"imageUrl":"/images/teens-masters-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Cultural Criticism & Television Commentaries 🎙️ / Crítica Cultural","description":"Media Analysis","content":["'This cinematic trope reflects societal anxiety regarding artificial intelligence.'","'The juxtaposition of neon aesthetics and vintage audio creates a nostalgic simulacrum.'","Transform pop culture viewing into profound intellectual critique."],"imageUrl":"/images/teens-masters-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Semiotic Critique Formula 🎬 / Fórmula Semiótica","description":"Signifier + Cultural Subtext + Critique","content":["Formula: 'The [Cultural Artifact] functions as a signifier of [Societal Theme], deconstructing [Traditional Narrative].'","Example: 'The cyberpunk aesthetic functions as a signifier of urban alienation, deconstructing techno-utopian promises.'"],"imageUrl":"/images/teens-masters-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Cultural Critic 🎯 / Mini Reto","description":"Deconstruct a Pop Culture Symbol","content":["Analyze what superhero movies represent in modern society:","'Superheroes function as a signifier of ________ in an era of ________.'"],"imageUrl":"/images/teens-masters-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Pop Culture Semiotics & Media Ecology 📺🧬 / Semiótica y Medios",
+                    "description": "Signifier & Signified",
+                    "content": [
+                              "Signifier (Symbol/Image) vs Signified (Cultural Meaning).",
+                              "Media Ecology (Marshall McLuhan): 'The medium is the message.'",
+                              "Digital memetics: How viral memes compress complex social commentary into micro-symbols.",
+                              "Simulacrum: A representation that replaces real experience."
+                    ],
+                    "imageUrl": "/images/teens-masters-class-02/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Semiotic Critique Formula 🎬 / Fórmula Semiótica",
+                    "description": "Signifier + Cultural Subtext + Critique",
+                    "content": [
+                              "Formula: 'The [Cultural Artifact] functions as a signifier of [Societal Theme], deconstructing [Traditional Narrative].'",
+                              "Example: 'The cyberpunk aesthetic functions as a signifier of urban alienation, deconstructing techno-utopian promises.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-02/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Cultural Critic 🎯 / Mini Reto",
+                    "description": "Deconstruct a Pop Culture Symbol",
+                    "content": [
+                              "Analyze what superhero movies represent in modern society:",
+                              "'Superheroes function as a signifier of ________ in an era of ________.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-02/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y practicar el análisis semiótico y la crítica de medios."
           },
           {
@@ -29121,12 +31908,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la indagación socrática y el léxico epistemológico de posgrado.",
             slides: [
-              {"id":"slide-4","title":"Ivy League Socratic Seminars & Popperian Falsification 🏛️📚 / Seminarios Socráticos","description":"Epistemology","content":["Karl Popper's Falsification Principle: A scientific theory is valid only if it can be proven false.","The Socratic Method: Relentless questioning to expose unexamined assumptions.","Graduate seminar etiquette: Collaborative intellectual rigor without hostility."],"imageUrl":"/images/teens-masters-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Cross-Examination & Epistemic Humility 🧠 / Contrainterrogatorio","description":"Defending Hypotheses","content":["'What empirical conditions would compel you to abandon your thesis?'","'How does your model account for non-linear systemic feedback loops?'","Epistemic humility: 'That is a compelling edge case our current dataset cannot fully resolve.'"],"imageUrl":"/images/teens-masters-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Doctoral Dissertation Defense Simulation 🎓 / Defensa Doctoral","description":"Scholarly Authority","content":["'My research substantiates that neural network interpretability requires causal DAG models.'","'We welcome peer critique on our statistical normalization methodology.'","Commanding graduate seminars demonstrates C2 academic mastery."],"imageUrl":"/images/teens-masters-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Socratic Dialectical Formula 🏛️ / Fórmula Socrática","description":"Hypothesis + Falsification Condition + Synthesis","content":["Formula: 'Our thesis posits that [Hypothesis]; this holds true unless [Falsifying Condition] is empirically observed.'","Example: 'Our thesis posits that algorithmic governance improves resource allocation unless historical bias is codified in training data.'"],"imageUrl":"/images/teens-masters-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Socratic Challenge 🎯 / Mini Reto","description":"Formulate a Falsifiable Hypothesis","content":["Tell the professor:","'My hypothesis holds true provided that ________ does not occur.'"],"imageUrl":"/images/teens-masters-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Ivy League Socratic Seminars & Popperian Falsification 🏛️📚 / Seminarios Socráticos",
+                    "description": "Epistemology",
+                    "content": [
+                              "Karl Popper's Falsification Principle: A scientific theory is valid only if it can be proven false.",
+                              "The Socratic Method: Relentless questioning to expose unexamined assumptions.",
+                              "Graduate seminar etiquette: Collaborative intellectual rigor without hostility.",
+                              "'What empirical conditions would compel you to abandon your thesis?'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-03/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Socratic Dialectical Formula 🏛️ / Fórmula Socrática",
+                    "description": "Hypothesis + Falsification Condition + Synthesis",
+                    "content": [
+                              "Formula: 'Our thesis posits that [Hypothesis]; this holds true unless [Falsifying Condition] is empirically observed.'",
+                              "Example: 'Our thesis posits that algorithmic governance improves resource allocation unless historical bias is codified in training data.'",
+                              "'How does your model account for non-linear systemic feedback loops?'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-03/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Socratic Challenge 🎯 / Mini Reto",
+                    "description": "Formulate a Falsifiable Hypothesis",
+                    "content": [
+                              "Tell the professor:",
+                              "'My hypothesis holds true provided that ________ does not occur.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-03/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y ensayar el protocolo de discusión académica de posgrado."
           },
           {
@@ -29466,12 +32284,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la arquitectura de conferencias TED, la curva narrativa y el léxico de liderazgo de opinión.",
             slides: [
-              {"id":"slide-4","title":"TED Keynotes & High-Impact Throughlines 🎙️💡 / Conferencias TED","description":"The Throughline Concept","content":["Throughline: The single unifying idea connecting every story, data point, and revelation.","Nancy Duarte's Sparkline: Alternating between 'What is' (reality) and 'What could be' (vision).","Aristotle's Triad: Ethos (Credibility), Pathos (Emotion), Logos (Logic)."],"imageUrl":"/images/teens-masters-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Vulnerability as an Oratorical Catalyst 💎 / Vulnerabilidad y Conexión","description":"Authentic Storytelling","content":["A TED speaker does not present as a flawless superhero—they share the moment of doubt and failure.","'In that moment of failure, I realized that our metrics were measuring activity, not impact.'","Authentic vulnerability builds an unshakeable bond with the audience."],"imageUrl":"/images/teens-masters-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"The Grand Call to Action & Euphoric Close 🌟 / Cierre Emocional","description":"Inspiring Movements","content":["'The future is not something that happens to us—it is something we actively construct.'","'So I leave you with one question: what will your throughline be?'","Mastering keynotes turns speakers into global thought leaders."],"imageUrl":"/images/teens-masters-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The TED Keynote Climax Formula 🌍 / Fórmula TED","description":"Contrast Reality with Possibility + Throughline","content":["Formula: 'We live in a world where [Current Pain]; yet, what if we [Visionary Possibility]? Our throughline is simple: [Core Truth].'","Example: 'We live in a world of digital overload; yet, what if tech nurtured human depth? Our throughline: mindfulness is the ultimate superpower.'"],"imageUrl":"/images/teens-masters-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: TED Sparkline Hook 🎯 / Mini Reto","description":"Deliver a 15-Second TED Hook","content":["Deliver your TED opening hook comparing 'What is' with 'What could be':","'Today we accept ________, but imagine a future where ________.'"],"imageUrl":"/images/teens-masters-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "TED Keynotes & High-Impact Throughlines 🎙️💡 / Conferencias TED",
+                    "description": "The Throughline Concept",
+                    "content": [
+                              "Throughline: The single unifying idea connecting every story, data point, and revelation.",
+                              "Nancy Duarte's Sparkline: Alternating between 'What is' (reality) and 'What could be' (vision).",
+                              "Aristotle's Triad: Ethos (Credibility), Pathos (Emotion), Logos (Logic).",
+                              "A TED speaker does not present as a flawless superhero—they share the moment of doubt and failure."
+                    ],
+                    "imageUrl": "/images/teens-masters-class-04/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The TED Keynote Climax Formula 🌍 / Fórmula TED",
+                    "description": "Contrast Reality with Possibility + Throughline",
+                    "content": [
+                              "Formula: 'We live in a world where [Current Pain]; yet, what if we [Visionary Possibility]? Our throughline is simple: [Core Truth].'",
+                              "Example: 'We live in a world of digital overload; yet, what if tech nurtured human depth? Our throughline: mindfulness is the ultimate superpower.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-04/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: TED Sparkline Hook 🎯 / Mini Reto",
+                    "description": "Deliver a 15-Second TED Hook",
+                    "content": [
+                              "Deliver your TED opening hook comparing 'What is' with 'What could be':",
+                              "'Today we accept ________, but imagine a future where ________.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-04/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y ensayar la modulación vocal, pausas dramáticas y proyección."
           },
           {
@@ -29811,12 +32659,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la redacción de tratados, cláusulas operativas y el léxico de geopolítica.",
             slides: [
-              {"id":"slide-4","title":"Geopolitical Statecraft & Multilateral Treaties 🌐🏛️ / Geopolítica y Cumbres","description":"UN Security Council Protocol","content":["Bilateral concessions, non-proliferation accords, binding vs non-binding resolutions.","The mechanics of veto power and diplomatic quorum in the UN Security Council.","Balancing national sovereignty with planetary collective action."],"imageUrl":"/images/teens-masters-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Diplomatic Formulas for Treaty Ratification 📜 / Fórmulas Diplomáticas","description":"Treaty Language","content":["'The General Assembly, RECALLING its resolution 75/1...'","'REAFFIRMING the principles of international humanitarian law...'","'CALLS UPON all signatories to enact immediate ceasefire monitoring protocols.'"],"imageUrl":"/images/teens-masters-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Navigating Diplomatic Impasses & Backchannel Talks 🕊️ / Negociación","description":"Crisis Diplomacy","content":["'While territorial concerns remain contentious, joint ecological stewardship offers a neutral bridge.'","'We propose a multilateral verification commission under IAEA supervision.'","Diplomatic language de-escalates global geopolitical friction."],"imageUrl":"/images/teens-masters-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The UN Security Council Resolution Formula 🌐 / Fórmula de Resolución","description":"Preambular Clause + Operative Mandate","content":["Formula: 'Recognizing [Shared Global Crisis], the Council calls upon [Member States] to [Binding Diplomatic Action].'","Example: 'Recognizing rising sea levels, the Council calls upon member states to establish an international climate refugee resettlement accord.'"],"imageUrl":"/images/teens-masters-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: UN Delegate Resolution 🎯 / Mini Reto","description":"Propose a Diplomatic Accord","content":["Draft a 1-sentence UN resolution operative clause:","'The delegation proposes that all member states ________ by 2030.'"],"imageUrl":"/images/teens-masters-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Geopolitical Statecraft & Multilateral Treaties 🌐🏛️ / Geopolítica y Cumbres",
+                    "description": "UN Security Council Protocol",
+                    "content": [
+                              "Bilateral concessions, non-proliferation accords, binding vs non-binding resolutions.",
+                              "The mechanics of veto power and diplomatic quorum in the UN Security Council.",
+                              "Balancing national sovereignty with planetary collective action.",
+                              "'The General Assembly, RECALLING its resolution 75/1...'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-05/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The UN Security Council Resolution Formula 🌐 / Fórmula de Resolución",
+                    "description": "Preambular Clause + Operative Mandate",
+                    "content": [
+                              "Formula: 'Recognizing [Shared Global Crisis], the Council calls upon [Member States] to [Binding Diplomatic Action].'",
+                              "Example: 'Recognizing rising sea levels, the Council calls upon member states to establish an international climate refugee resettlement accord.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-05/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: UN Delegate Resolution 🎯 / Mini Reto",
+                    "description": "Propose a Diplomatic Accord",
+                    "content": [
+                              "Draft a 1-sentence UN resolution operative clause:",
+                              "'The delegation proposes that all member states ________ by 2030.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-05/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y ensayar el protocolo de discursos diplomáticos formales."
           },
           {
@@ -30156,12 +33034,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la terminología de mise-en-scène, diseño sonoro y crítica literaria.",
             slides: [
-              {"id":"slide-4","title":"Cinematography, Mise-en-Scène & Literary Deconstruction 🎬📖 / Crítica Estética","description":"Film & Literary Theory","content":["Mise-en-Scène: Lighting, framing, spatial geography, color palette, costume.","Diegetic sound (inside the film world) vs Non-diegetic sound (the orchestral score).","Subtext and unreliable narrators in post-modern literature."],"imageUrl":"/images/teens-masters-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
-              {"id":"slide-5","title":"Aesthetic Critique & Cannes Film Festival Jury Standards 🏆 / Crítica en Cannes","description":"Critical Lexicon","content":["'The director employs chiaroscuro lighting to symbolize the protagonist's moral ambiguity.'","'The pacing deconstructs conventional linear three-act structures.'","'A haunting auditory motif underscores the theme of generational trauma.'"],"imageUrl":"/images/teens-masters-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
-              {"id":"slide-6","title":"Deconstructing Subtext in World Masterpieces 🎨 / Deconstruir el Subtexto","description":"Literary Analysis","content":["'What the dialogue leaves unsaid conveys far greater tragic weight than exposition.'","'The recurring motif of clocks underscores the inexorable passage of time.'","Elevate cultural consumption into profound aesthetic scholarship."],"imageUrl":"/images/teens-masters-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
-              {"id":"slide-7","title":"The Film & Literary Critique Formula 🎭 / Fórmula de Crítica","description":"Aesthetic Technique + Symbolic Subtext + Aesthetic Value","content":["Formula: 'Through [Aesthetic/Cinematic Technique], the work illustrates [Subtext], establishing itself as a [Critical Verdict].'","Example: 'Through handheld cinematography and natural lighting, the film captures raw adolescent vulnerability, establishing itself as a modern classic.'"],"imageUrl":"/images/teens-masters-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
-              {"id":"slide-8","title":"Quick Check: Film Festival Jury Verdict 🎯 / Mini Reto","description":"Deliver an Aesthetic Critique","content":["Deliver a 1-sentence film critique using 'mise-en-scène' or 'subtext':","'The director's use of ________ symbolizes ________.'"],"imageUrl":"/images/teens-masters-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Cinematography, Mise-en-Scène & Literary Deconstruction 🎬📖 / Crítica Estética",
+                    "description": "Film & Literary Theory",
+                    "content": [
+                              "Mise-en-Scène: Lighting, framing, spatial geography, color palette, costume.",
+                              "Diegetic sound (inside the film world) vs Non-diegetic sound (the orchestral score).",
+                              "Subtext and unreliable narrators in post-modern literature.",
+                              "'The director employs chiaroscuro lighting to symbolize the protagonist's moral ambiguity.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-06/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-orange-500 to-red-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Film & Literary Critique Formula 🎭 / Fórmula de Crítica",
+                    "description": "Aesthetic Technique + Symbolic Subtext + Aesthetic Value",
+                    "content": [
+                              "Formula: 'Through [Aesthetic/Cinematic Technique], the work illustrates [Subtext], establishing itself as a [Critical Verdict].'",
+                              "Example: 'Through handheld cinematography and natural lighting, the film captures raw adolescent vulnerability, establishing itself as a modern classic.'",
+                              "'A haunting auditory motif underscores the theme of generational trauma.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-06/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-red-500 to-rose-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Film Festival Jury Verdict 🎯 / Mini Reto",
+                    "description": "Deliver an Aesthetic Critique",
+                    "content": [
+                              "Deliver a 1-sentence film critique using 'mise-en-scène' or 'subtext':",
+                              "'The director's use of ________ symbolizes ________.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-06/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-indigo-600"
+          }
+              ],
             action: "Tomar notas y ensayar la redacción de críticas cinematográficas y literarias."
           },
           {
@@ -30501,12 +33410,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la narrativa de trayectoria intelectual, liderazgo ético y el léxico de comités de selección.",
             slides: [
-              {"id":"slide-4","title":"Rhodes & Fulbright Fellowship Defense 🎓🏛️ / Entrevistas de Beca Rhodes","description":"The Fellowship Interview","content":["The Rhodes/Fulbright Selection Board: Looking for moral character, leadership instinct, and intellectual breadth.","Navigating ethical dilemmas and questions of global justice.","The balance between ambitious visionary claims and humble self-awareness."],"imageUrl":"/images/teens-masters-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
-              {"id":"slide-5","title":"Handling Hostile Selection Board Cross-Examination 🎙️ / Manejo de Presión","description":"Intellectual Composure","content":["Board Question: 'Isn't your proposed policy hopelessly idealistic in a fragmented geopolitical world?'","Fellowship Defense: 'Ideals define the horizon of progress; our empirical methodology defines the pragmatic roadmap.'","Steadfast philosophical composure wins international prestige."],"imageUrl":"/images/teens-masters-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
-              {"id":"slide-6","title":"Articulating a Vision of Global Service & Impact 🌍 / Vocación de Servicio","description":"Global Leadership","content":["'This fellowship is not a credential—it is a catalytic springboard to serve underserved communities.'","'I intend to bridge computational biology with public healthcare infrastructure in Latin America.'","Service-oriented vision distinguishes true world-changers."],"imageUrl":"/images/teens-masters-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
-              {"id":"slide-7","title":"The Fellowship Board Defense Formula 🏆 / Fórmula Rhodes","description":"Global Problem + Academic Rigor + Moral Purpose","content":["Formula: 'My research addresses [Global Injustice] through [Academic Field], utilizing this fellowship to [Planetary Impact].'","Example: 'My research addresses clean water access through nanotech filtration, utilizing this fellowship to deploy decentralized systems across Latin America.'"],"imageUrl":"/images/teens-masters-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
-              {"id":"slide-8","title":"Quick Check: Fellowship Defense Statement 🎯 / Mini Reto","description":"Deliver Your Fellowship Mission","content":["Deliver your core mission statement to the Rhodes Selection Board:","'I seek this fellowship to leverage [Field] in order to [Global Impact].'"],"imageUrl":"/images/teens-masters-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Rhodes & Fulbright Fellowship Defense 🎓🏛️ / Entrevistas de Beca Rhodes",
+                    "description": "The Fellowship Interview",
+                    "content": [
+                              "The Rhodes/Fulbright Selection Board: Looking for moral character, leadership instinct, and intellectual breadth.",
+                              "Navigating ethical dilemmas and questions of global justice.",
+                              "The balance between ambitious visionary claims and humble self-awareness.",
+                              "Board Question: 'Isn't your proposed policy hopelessly idealistic in a fragmented geopolitical world?'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-07/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Fellowship Board Defense Formula 🏆 / Fórmula Rhodes",
+                    "description": "Global Problem + Academic Rigor + Moral Purpose",
+                    "content": [
+                              "Formula: 'My research addresses [Global Injustice] through [Academic Field], utilizing this fellowship to [Planetary Impact].'",
+                              "Example: 'My research addresses clean water access through nanotech filtration, utilizing this fellowship to deploy decentralized systems across Latin America.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-07/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-500 to-pink-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Fellowship Defense Statement 🎯 / Mini Reto",
+                    "description": "Deliver Your Fellowship Mission",
+                    "content": [
+                              "Deliver your core mission statement to the Rhodes Selection Board:",
+                              "'I seek this fellowship to leverage [Field] in order to [Global Impact].'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-07/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-amber-500 to-emerald-600"
+          }
+              ],
             action: "Tomar notas y ensayar la respuesta a preguntas de comités de selección de becas."
           },
           {
@@ -30846,12 +33785,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la arquitectura de podcast, la ética periodística y el léxico de medios de investigación.",
             slides: [
-              {"id":"slide-4","title":"Investigative Video Essays & Audio Foley Design 🎙️🔍 / Videoensayos y Foley","description":"Documentary Journalism","content":["The Video Essay: Merging scholarly research with cinematic editing and narrative pacing.","Audio Foley design: Environmental soundscapes that heighten psychological immersion.","Journalistic ethics: Confidentiality of whistleblowers and evidentiary verification."],"imageUrl":"/images/teens-masters-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
-              {"id":"slide-5","title":"Narrative Pacing & Tension Escalation ⏱️⚡ / Ritmo y Tensión","description":"Documentary Architecture","content":["The Cold Open Hook (0:00 - 0:45): The anomaly that breaks consensus.","The Evidentiary Deep-Dive (0:45 - 6:00): Data, leaked memos, archival footage.","The Philosophical Epiphany (6:00+): What this revelation says about human nature."],"imageUrl":"/images/teens-masters-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
-              {"id":"slide-6","title":"Model Investigative Podcast Cold Open 📻 / Locución de Documental","description":"Radio Documentary Tone","content":["'In October of 2021, an anonymous drive was left on a library desk in Geneva. Inside were 50,000 encrypted logs...'","'What began as a routine audit unraveled a decade of institutional silence.'","Investigative media shifts public consciousness."],"imageUrl":"/images/teens-masters-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
-              {"id":"slide-7","title":"The Investigative Video Essay Formula 🎬 / Fórmula Documental","description":"Anomaly Hook + Evidentiary Climax + Systemic Question","content":["Formula: 'Behind the surface of [Accepted Norm] lies [Investigative Discovery], forcing us to question [Fundamental System].'","Example: 'Behind the surface of clean tech supply chains lies severe cobalt extraction, forcing us to question the true cost of our digital future.'"],"imageUrl":"/images/teens-masters-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
-              {"id":"slide-8","title":"Quick Check: Investigative Cold Open 🎯 / Mini Reto","description":"Deliver a 15-Second Cold Open","content":["Deliver an investigative documentary cold open hook to the teacher:","'In [Year], a single discovery in [Place] changed everything we thought we knew about ________.'"],"imageUrl":"/images/teens-masters-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Investigative Video Essays & Audio Foley Design 🎙️🔍 / Videoensayos y Foley",
+                    "description": "Documentary Journalism",
+                    "content": [
+                              "The Video Essay: Merging scholarly research with cinematic editing and narrative pacing.",
+                              "Audio Foley design: Environmental soundscapes that heighten psychological immersion.",
+                              "Journalistic ethics: Confidentiality of whistleblowers and evidentiary verification.",
+                              "The Cold Open Hook (0:00 - 0:45): The anomaly that breaks consensus."
+                    ],
+                    "imageUrl": "/images/teens-masters-class-08/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Investigative Video Essay Formula 🎬 / Fórmula Documental",
+                    "description": "Anomaly Hook + Evidentiary Climax + Systemic Question",
+                    "content": [
+                              "Formula: 'Behind the surface of [Accepted Norm] lies [Investigative Discovery], forcing us to question [Fundamental System].'",
+                              "Example: 'Behind the surface of clean tech supply chains lies severe cobalt extraction, forcing us to question the true cost of our digital future.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-08/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-600 to-purple-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Investigative Cold Open 🎯 / Mini Reto",
+                    "description": "Deliver a 15-Second Cold Open",
+                    "content": [
+                              "Deliver an investigative documentary cold open hook to the teacher:",
+                              "'In [Year], a single discovery in [Place] changed everything we thought we knew about ________.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-08/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-rose-600 to-amber-600"
+          }
+              ],
             action: "Tomar notas y ensayar la locución de aperturas de podcast con ritmo dramático."
           },
           {
@@ -31191,12 +34160,42 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la terminología de superinteligencia artificial, bioética genómica y geopolítica planetaria.",
             slides: [
-              {"id":"slide-4","title":"Global Mega-Trends: ASI, CRISPR & Geoengineering 🌐🧬 / Mega-Tendencias","description":"Existential Foresight","content":["Artificial Superintelligence (ASI) & Value Alignment (Nick Bostrom, Eliezer Yudkowsky).","CRISPR Germline Editing: Bioethics, genetic enhancement, and speciation risks.","Solar Radiation Management & Post-Scarcity Economics."],"imageUrl":"/images/teens-masters-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
-              {"id":"slide-5","title":"Existential Risk Mitigation & Foresight Frameworks 🛡️ / Riesgo Existencial","description":"Longtermism & Ethics","content":["'Technological power grows exponentially; philosophical wisdom grows linearly. We must close that gap.'","'The existential priority of our century is guaranteeing that autonomous superintelligence remains aligned with human flourishing.'","High-level ethical frameworks for emerging technology."],"imageUrl":"/images/teens-masters-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
-              {"id":"slide-6","title":"Planetary Foresight Keynote at Global Forums 🌍 / Prospectiva Global","description":"Thought Leadership","content":["'We are the first generation capable of rewriting the code of life and constructing synthetic minds.'","'Our responsibility to future generations demands institutional humility and multilateral safeguards.'","Speak as a visionary thinker shaping planetary futures."],"imageUrl":"/images/teens-masters-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
-              {"id":"slide-7","title":"The Planetary Foresight Formula 🧬 / Fórmula de Prospectiva","description":"Exponential Tech + Ethical Safeguard + Flourishing Future","content":["Formula: 'As humanity masters [Exponential Tech], our moral imperative is to institute [Ethical Safeguards] so that [Future Human Flourishing].'","Example: 'As humanity masters genetic editing, our moral imperative is to institute global treaties so that bio-equity is universally guaranteed.'"],"imageUrl":"/images/teens-masters-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
-              {"id":"slide-8","title":"Quick Check: Global Futurist Pitch 🎯 / Mini Reto","description":"Deliver a 20-Second Futurist Verdict","content":["Share your foresight verdict on AI or Bioethics:","'The greatest ethical challenge of our generation is ensuring that ________ remains ________.'"],"imageUrl":"/images/teens-masters-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Global Mega-Trends: ASI, CRISPR & Geoengineering 🌐🧬 / Mega-Tendencias",
+                    "description": "Existential Foresight",
+                    "content": [
+                              "Artificial Superintelligence (ASI) & Value Alignment (Nick Bostrom, Eliezer Yudkowsky).",
+                              "CRISPR Germline Editing: Bioethics, genetic enhancement, and speciation risks.",
+                              "Solar Radiation Management & Post-Scarcity Economics.",
+                              "'Technological power grows exponentially; philosophical wisdom grows linearly. We must close that gap.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-09/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-emerald-500 to-teal-600"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Planetary Foresight Formula 🧬 / Fórmula de Prospectiva",
+                    "description": "Exponential Tech + Ethical Safeguard + Flourishing Future",
+                    "content": [
+                              "Formula: 'As humanity masters [Exponential Tech], our moral imperative is to institute [Ethical Safeguards] so that [Future Human Flourishing].'",
+                              "Example: 'As humanity masters genetic editing, our moral imperative is to institute global treaties so that bio-equity is universally guaranteed.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-09/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-500 to-cyan-600"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Global Futurist Pitch 🎯 / Mini Reto",
+                    "description": "Deliver a 20-Second Futurist Verdict",
+                    "content": [
+                              "Share your foresight verdict on AI or Bioethics:",
+                              "'The greatest ethical challenge of our generation is ensuring that ________ remains ________.'"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-09/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-indigo-500 to-purple-600"
+          }
+              ],
             action: "Tomar notas y ensayar la oratoria sobre riesgos existenciales y gobernanza de tecnologías de frontera."
           },
           {
@@ -31536,12 +34535,43 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la síntesis dialéctica, modulación de registro en tiempo real y el léxico de maestría ejecutiva.",
             slides: [
-              {"id":"slide-4","title":"Level 10 Grand Masters Capstone: C2 Fluency Mastery 🎓👑🌍 / Gran Cierre C2","description":"The C2 Fluency Mastery Triad","content":["1. Spontaneous Register Modulation: Effortlessly shifting from casual slang to Oxford debate and UN diplomacy.","2. Real-Time Dialectical Synthesis: Resolving complex contradictions with poise and precision.","3. Visionary Rhetorical Command: Inspiring global action through master storytelling and leadership."],"imageUrl":"/images/teens-masters-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
-              {"id":"slide-5","title":"Grand Masters Valedictory Address Architecture 🏛️🎙️ / Discurso Valedictorio","description":"Historic Oratory","content":["Reflect on the entire journey from Basic Zero to C2 Grand Master.","Synthesize language mastery not as a test score, but as a lens to understand humanity and create global change.","'Language is the architecture of human connection.'"],"imageUrl":"/images/teens-masters-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
-              {"id":"slide-6","title":"The Global Leadership Summit Gauntlet 🌐🏆 / Cumbre de Liderazgo","description":"The Final Defense","content":["Defend your comprehensive capstone thesis before an international panel of scholars, diplomats, and innovators.","Speak with effortless flow, authentic depth, and undeniable intellectual authority.","You are a Grand Master of the English Language."],"imageUrl":"/images/teens-masters-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
-              {"id":"slide-7","title":"The Grand Masters Valedictory Formula 👑 / Fórmula de Graduación","description":"Journey Synthesis + Philosophical Vision + Global Call to Action","content":["1. Reflect on your complete linguistic evolution.","2. Synthesize your core thesis across science, society, and human empathy.","3. Deliver an unforgettable call to action for the future of humanity."],"imageUrl":"/images/teens-masters-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
-              {"id":"slide-8","title":"Quick Check: Grand Masters Valedictory Pitch 🎯 / Gran Reto Final","description":"Deliver Your Final 30-Second C2 Valedictory Address","content":["Deliver your 30-second Level 10 Grand Masters Valedictory Address to the International Summit!","Celebrate your complete C2 fluency and your vision for global leadership!"],"imageUrl":"/images/teens-masters-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
-            ],
+                {
+                    "id": "slide-4",
+                    "title": "Level 10 Grand Masters Capstone: C2 Fluency Mastery 🎓👑🌍 / Gran Cierre C2",
+                    "description": "The C2 Fluency Mastery Triad",
+                    "content": [
+                              "1. Spontaneous Register Modulation: Effortlessly shifting from casual slang to Oxford debate and UN diplomacy.",
+                              "2. Real-Time Dialectical Synthesis: Resolving complex contradictions with poise and precision.",
+                              "3. Visionary Rhetorical Command: Inspiring global action through master storytelling and leadership.",
+                              "Reflect on the entire journey from Basic Zero to C2 Grand Master."
+                    ],
+                    "imageUrl": "/images/teens-masters-class-10/slide-04.jpg",
+                    "bgColor": "bg-gradient-to-br from-fuchsia-600 to-purple-700"
+          },
+          {
+                    "id": "slide-5",
+                    "title": "The Grand Masters Valedictory Formula 👑 / Fórmula de Graduación",
+                    "description": "Journey Synthesis + Philosophical Vision + Global Call to Action",
+                    "content": [
+                              "1. Reflect on your complete linguistic evolution.",
+                              "2. Synthesize your core thesis across science, society, and human empathy.",
+                              "3. Deliver an unforgettable call to action for the future of humanity."
+                    ],
+                    "imageUrl": "/images/teens-masters-class-10/slide-05.jpg",
+                    "bgColor": "bg-gradient-to-br from-purple-600 to-indigo-700"
+          },
+          {
+                    "id": "slide-6",
+                    "title": "Quick Check: Grand Masters Valedictory Pitch 🎯 / Gran Reto Final",
+                    "description": "Deliver Your Final 30-Second C2 Valedictory Address",
+                    "content": [
+                              "Deliver your 30-second Level 10 Grand Masters Valedictory Address to the International Summit!",
+                              "Celebrate your complete C2 fluency and your vision for global leadership!"
+                    ],
+                    "imageUrl": "/images/teens-masters-class-10/slide-06.jpg",
+                    "bgColor": "bg-gradient-to-br from-teal-600 to-emerald-700"
+          }
+              ],
             action: "Tomar notas y ensayar el discurso de graduación y maestría de fluidez."
           },
           {

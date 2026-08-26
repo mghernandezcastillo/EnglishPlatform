@@ -708,13 +708,59 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [progress, setProgress] = useState<DecoderProgress>(EMPTY_PROGRESS);
 
   useEffect(() => {
+    let cancelled = false;
+    let localProgress: DecoderProgress = EMPTY_PROGRESS;
     try {
       const stored = localStorage.getItem(progressKey);
-      setProgress(stored ? JSON.parse(stored) : EMPTY_PROGRESS);
+      if (stored) {
+        localProgress = JSON.parse(stored);
+      }
+      if ((!localProgress.completedStoryIds?.length && !Object.keys(localProgress.lineByStory || {}).length) && studentId) {
+        const localFallback = localStorage.getItem(`${STORAGE_KEY}:local`);
+        if (localFallback) {
+          const parsed = JSON.parse(localFallback);
+          if (parsed && (parsed.completedStoryIds?.length || Object.keys(parsed.lineByStory || {}).length)) {
+            localProgress = parsed;
+            localStorage.setItem(progressKey, JSON.stringify(parsed));
+          }
+        }
+      }
     } catch {
-      setProgress(EMPTY_PROGRESS);
+      localProgress = EMPTY_PROGRESS;
     }
-  }, [progressKey]);
+
+    if (!cancelled) {
+      setProgress(localProgress);
+    }
+
+    if (studentId) {
+      storyDecoderDb.getProgress(studentId).then((remoteProgress) => {
+        if (cancelled || !remoteProgress) return;
+        setProgress((current) => {
+          const mergedCompleted = Array.from(new Set([
+            ...(current.completedStoryIds || []),
+            ...(remoteProgress.completedStoryIds || [])
+          ]));
+          const mergedLines = { ...(current.lineByStory || {}) };
+          Object.entries(remoteProgress.lineByStory || {}).forEach(([storyId, lineNum]) => {
+            mergedLines[storyId] = Math.max(mergedLines[storyId] || 0, Number(lineNum) || 0);
+          });
+          const merged: DecoderProgress = {
+            completedStoryIds: mergedCompleted,
+            lineByStory: mergedLines
+          };
+          try {
+            localStorage.setItem(progressKey, JSON.stringify(merged));
+          } catch {}
+          return merged;
+        });
+      });
+    }
+
+    return () => {
+      cancelled = true;
+    };
+  }, [progressKey, studentId]);
 
   useEffect(() => {
     let cancelled = false;
@@ -740,8 +786,13 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   }, [loadRevision]);
 
   useEffect(() => {
-    localStorage.setItem(progressKey, JSON.stringify(progress));
-  }, [progress, progressKey]);
+    try {
+      localStorage.setItem(progressKey, JSON.stringify(progress));
+    } catch {}
+    if (studentId && (progress.completedStoryIds.length > 0 || Object.keys(progress.lineByStory).length > 0)) {
+      storyDecoderDb.saveProgress(studentId, progress);
+    }
+  }, [progress, progressKey, studentId]);
 
   useEffect(() => {
     if (isSharedVocabulary) return;
@@ -1133,6 +1184,40 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     setTokenRevision((value) => value + 1);
   };
 
+  const toggleStoryCompletion = (storyId: string, lineCount: number) => {
+    setProgress((current) => {
+      const isCompleted = current.completedStoryIds.includes(storyId);
+      let nextCompleted: string[];
+      let nextLines = { ...current.lineByStory };
+
+      if (isCompleted) {
+        nextCompleted = current.completedStoryIds.filter((id) => id !== storyId);
+      } else {
+        nextCompleted = Array.from(new Set([...current.completedStoryIds, storyId]));
+        nextLines[storyId] = Math.max(0, lineCount - 1);
+        confetti({ particleCount: 160, spread: 90, origin: { y: 0.6 } });
+      }
+
+      const nextProgress: DecoderProgress = {
+        completedStoryIds: nextCompleted,
+        lineByStory: nextLines
+      };
+
+      try {
+        localStorage.setItem(progressKey, JSON.stringify(nextProgress));
+      } catch {}
+      if (studentId) {
+        storyDecoderDb.saveProgress(studentId, nextProgress);
+      }
+      return nextProgress;
+    });
+  };
+
+  const markActiveStoryCompleted = () => {
+    if (!activeStory) return;
+    toggleStoryCompletion(activeStory.story_id, activeStory.lines.length);
+  };
+
   const speakEnglish = () => {
     if (!currentLine || !('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel();
@@ -1361,7 +1446,24 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                   <div className="relative flex h-full flex-col">
                     <div className="flex items-start justify-between gap-3">
                       <div className={`flex h-14 w-14 items-center justify-center rounded-2xl ${complete ? 'bg-emerald-500 text-white' : unlocked ? 'bg-gradient-to-br from-indigo-500 to-violet-700 text-white' : 'bg-white/10'}`}>{complete ? <CheckCircle2 className="h-7 w-7" /> : unlocked ? <BookOpen className="h-7 w-7" /> : <LockKeyhole className="h-6 w-6" />}</div>
-                      <span className={`rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-widest ${complete ? 'bg-emerald-100 text-emerald-800' : unlocked ? 'bg-indigo-50 text-indigo-700' : 'bg-white/10'}`}>{story.type}</span>
+                      <div className="flex flex-wrap items-center justify-end gap-2">
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleStoryCompletion(story.story_id, story.lines.length);
+                          }}
+                          title={complete ? 'Desmarcar como completada' : 'Marcar como 100% completada'}
+                          className={`rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-wider transition ${
+                            complete
+                              ? 'bg-emerald-200 text-emerald-950 hover:bg-rose-100 hover:text-rose-700'
+                              : 'bg-indigo-100/90 text-indigo-900 hover:bg-emerald-500 hover:text-white'
+                          }`}
+                        >
+                          {complete ? '✓ Lista' : 'Marcar lista'}
+                        </button>
+                        <span className={`rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-widest ${complete ? 'bg-emerald-100 text-emerald-800' : unlocked ? 'bg-indigo-50 text-indigo-700' : 'bg-white/10'}`}>{story.type}</span>
+                      </div>
                     </div>
                     <div className="mt-8 text-xs font-black uppercase tracking-[0.2em] opacity-55">Historia {index + 1} · 12 líneas</div>
                     <h3 className="mt-2 text-2xl font-black leading-tight">{story.title}</h3>
@@ -1408,6 +1510,19 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
             <button type="button" onClick={() => setScreen('lesson')} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 transition hover:bg-white hover:text-slate-950" aria-label="Volver a historias"><ArrowLeft className="h-5 w-5" /></button>
             <div className="min-w-0 flex-1"><div className="truncate text-xs font-black uppercase tracking-[0.16em] text-cyan-300">{activeLesson.topic}</div><div className="truncate text-lg font-black sm:text-xl">{activeStory.title}</div></div>
             <button type="button" onClick={openVocabulary} className="flex h-11 shrink-0 items-center gap-2 rounded-xl bg-cyan-300/15 px-3 font-black text-cyan-100 transition hover:bg-cyan-300 hover:text-cyan-950" title="Abrir mis palabras"><BookMarked className="h-5 w-5" /><span className="hidden xl:inline">Mis palabras</span><span className="rounded-full bg-white/15 px-2 py-0.5 text-xs">{vocabulary.length}</span></button>
+            <button
+              type="button"
+              onClick={markActiveStoryCompleted}
+              className={`flex h-11 shrink-0 items-center gap-2 rounded-xl border px-3 font-black transition ${
+                completedStorySet.has(activeStory.story_id)
+                  ? 'border-emerald-400/50 bg-emerald-500/25 text-emerald-300 hover:bg-emerald-500 hover:text-white'
+                  : 'border-white/15 bg-white/5 text-white/85 hover:bg-emerald-500 hover:text-white'
+              }`}
+              title={completedStorySet.has(activeStory.story_id) ? 'Historia completada (haz clic para desmarcar)' : 'Marcar historia como 100% completada'}
+            >
+              <CheckCircle2 className="h-5 w-5" />
+              <span className="hidden xl:inline">{completedStorySet.has(activeStory.story_id) ? 'Historia completada' : 'Marcar completa'}</span>
+            </button>
             <button type="button" onClick={resetCurrentStory} className="flex h-11 shrink-0 items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 font-black text-white/85 transition hover:bg-rose-500 hover:text-white" title="Borrar el progreso de esta historia y empezar desde cero"><RotateCcw className="h-5 w-5" /><span className="hidden xl:inline">Reiniciar historia</span></button>
             <div className="hidden shrink-0 items-center gap-1 rounded-xl bg-white/5 px-2 py-1 text-white/55 md:flex" title="También puedes navegar con las flechas del teclado"><kbd className="rounded-md bg-white/10 px-2 py-1 text-sm font-black">←</kbd><kbd className="rounded-md bg-white/10 px-2 py-1 text-sm font-black">→</kbd></div>
             <div className="shrink-0 text-right"><div className="text-lg font-black text-yellow-300">{lineIndex + 1}/{activeStory.lines.length}</div><div className="hidden text-[0.6rem] font-black uppercase tracking-widest text-white/50 sm:block">líneas</div></div>

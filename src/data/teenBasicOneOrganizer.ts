@@ -29,7 +29,7 @@ type TeenBasicOnePlan = {
   welcome: [string, string, string];
   objectives: [string, string, string];
   warmup: WheelPrompt[];
-  grammar: [CopySlide, CopySlide, CopySlide, CopySlide, CopySlide];
+  grammar: [CopySlide, CopySlide, CopySlide];
   context: CopySlide;
   practice: [ChoiceSlide, ChoiceSlide, ChoiceSlide];
   emoji: {
@@ -64,11 +64,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Photo', prompt: 'Who is in your favorite family photo?', es: '¿Quién aparece en tu foto familiar favorita?' },
     ],
     grammar: [
-      { title: 'Family Members 👨‍👩‍👧‍👦 / Miembros de la familia', description: 'Core vocabulary', content: ['Mother and father = parents', 'Brother and sister = siblings', 'Grandmother, grandfather, aunt, uncle, cousin'] },
-      { title: 'Feelings 🙂 / Emociones', description: 'Describe how people feel', content: ['Happy, sad, tired, excited, worried', 'I am excited.', 'My brother is tired.'] },
-      { title: 'This Is / These Are 👇', description: 'Introduce one or more people', content: ['This is my sister. = one person', 'These are my parents. = two or more people', 'Use my, his, and her before a family word.'] },
-      { title: 'Have and Has 🐶 / Tener', description: 'Talk about family and pets', content: ['I / You / We / They have', 'He / She has', 'My cousin has a dog.'] },
-      { title: 'Describe a Family Photo 📸', description: 'Put the language together', content: ['This is my aunt Laura.', 'She has a small cat.', 'She is happy today.'] },
+      {"title":"Family Members 👨‍👩‍👧‍👦 / Miembros de la familia","description":"Core vocabulary","content":["Mother and father = parents","Brother and sister = siblings","Happy, sad, tired, excited, worried"]},
+      {"title":"Have and Has 🐶 / Tener","description":"Talk about family and pets","content":["I / You / We / They have","He / She has","This is my aunt Laura."]},
+      {"title":"Describe a Family Photo 📸","description":"Put the language together","content":["This is my aunt Laura.","She has a small cat.","She is happy today."]}
     ],
     context: { title: 'Read the Chat 📱 / Lee el chat', description: 'A family photo', content: ['Nora: This is my sister, Emma.', 'Liam: How does she feel?', 'Nora: She is excited. She has a new puppy.', 'Liam: That is a great photo!'] },
     practice: [
@@ -112,11 +110,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Breakfast', prompt: 'What do you eat for breakfast?', es: '¿Qué desayunas?' },
     ],
     grammar: [
-      { title: 'Food and Drinks 🍕🥤 / Comidas y bebidas', description: 'Core vocabulary', content: ['Burger, fries, pizza, sandwich', 'Water, juice, soda', 'Fruit, salad, vegetables'] },
-      { title: 'Healthy or Unhealthy? 🥗', description: 'Describe food choices', content: ['Healthy: fruit, water, salad', 'Unhealthy: too much soda or fried food', 'A food can be delicious and healthy.'] },
-      { title: 'Order Politely 🙋', description: 'Useful restaurant language', content: ['Can I have a sandwich, please?', 'I would like water, please.', 'Use please and thank you.'] },
-      { title: 'Likes and Preferences ❤️', description: 'Say what you like', content: ['I like pizza.', "I don't like onions.", 'I prefer juice to soda.'] },
-      { title: 'Give a Reason 💡', description: 'Use because', content: ['I choose water because it is healthy.', 'I like this burger because it is delicious.', 'Choice + because + reason'] },
+      {"title":"Food and Drinks 🍕🥤 / Comidas y bebidas","description":"Core vocabulary","content":["Burger, fries, pizza, sandwich","Water, juice, soda","Healthy: fruit, water, salad"]},
+      {"title":"Likes and Preferences ❤️","description":"Say what you like","content":["I like pizza.","I don't like onions.","I choose water because it is healthy."]},
+      {"title":"Give a Reason 💡","description":"Use because","content":["I choose water because it is healthy.","I like this burger because it is delicious.","Choice + because + reason"]}
     ],
     context: { title: 'Read the Order 🧾 / Lee el pedido', description: 'At the school café', content: ['Cashier: What would you like?', 'Alex: Can I have a chicken sandwich, please?', 'Cashier: Soda or water?', 'Alex: Water, please. It is a healthier choice.'] },
     practice: [
@@ -160,11 +156,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Style', prompt: 'Describe your style in one word.', es: 'Describe tu estilo en una palabra.' },
     ],
     grammar: [
-      { title: 'Clothes 👕 / Ropa', description: 'Core vocabulary', content: ['T-shirt, hoodie, jacket, jeans', 'Dress, skirt, shorts', 'Sneakers, boots, hat'] },
-      { title: 'Weather 🌦️ / El clima', description: 'Weather words', content: ['Sunny, rainy, cloudy, windy', 'Hot, warm, cool, cold', 'It is rainy and cold today.'] },
-      { title: 'What Are You Wearing? 👀', description: 'Present continuous for clothes', content: ['I am wearing a blue hoodie.', 'She is wearing black boots.', 'be + wearing + clothing item'] },
-      { title: 'Colors and Style ✨', description: 'Add useful details', content: ['A comfortable gray hoodie', 'New white sneakers', 'Her jacket is colorful.'] },
-      { title: 'Dress for the Weather ☔', description: 'Make a logical choice', content: ['Wear boots because it is rainy.', 'Wear a jacket because it is cold.', 'Do not wear a heavy coat when it is hot.'] },
+      {"title":"Clothes 👕 / Ropa","description":"Core vocabulary","content":["T-shirt, hoodie, jacket, jeans","Dress, skirt, shorts","Sunny, rainy, cloudy, windy"]},
+      {"title":"Colors and Style ✨","description":"Add useful details","content":["A comfortable gray hoodie","New white sneakers","Wear boots because it is rainy."]},
+      {"title":"Dress for the Weather ☔","description":"Make a logical choice","content":["Wear boots because it is rainy.","Wear a jacket because it is cold.","Do not wear a heavy coat when it is hot."]}
     ],
     context: { title: 'Read the Chat 📱 / Lee el chat', description: 'Choosing an outfit', content: ['Maya: It is cold and rainy today.', 'Leo: I am wearing jeans and a hoodie.', 'Maya: Take your waterproof jacket too.', 'Leo: Good idea! I need my boots.'] },
     practice: [
@@ -208,11 +202,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Weekend', prompt: 'Where do you go outdoors?', es: '¿Adónde vas al aire libre?' },
     ],
     grammar: [
-      { title: 'Nature Words 🌲 / Naturaleza', description: 'Core vocabulary', content: ['Tree, flower, river, lake', 'Mountain, forest, field', 'The river is next to the forest.'] },
-      { title: 'At the Park 🛝 / En el parque', description: 'Places and objects', content: ['Playground, bench, path, fountain', 'Picnic area, bike lane, trash can', 'The bench is near the fountain.'] },
-      { title: 'There Is / There Are 👀', description: 'Describe a place', content: ['There is a lake. = one thing', 'There are three benches. = more than one', 'Is there a bike lane?'] },
-      { title: 'Outdoor Activities 🚲', description: 'Talk about what people can do', content: ['Walk, run, ride a bike, have a picnic', 'You can ride a bike on the path.', "You can't swim in this lake."] },
-      { title: 'Care for the Park ♻️', description: 'Give responsible suggestions', content: ['We should use the trash cans.', "We shouldn't damage plants.", 'should + base verb'] },
+      {"title":"Nature Words 🌲 / Naturaleza","description":"Core vocabulary","content":["Tree, flower, river, lake","Mountain, forest, field","Playground, bench, path, fountain"]},
+      {"title":"Outdoor Activities 🚲","description":"Talk about what people can do","content":["Walk, run, ride a bike, have a picnic","You can ride a bike on the path.","We should use the trash cans."]},
+      {"title":"Care for the Park ♻️","description":"Give responsible suggestions","content":["We should use the trash cans.","We shouldn't damage plants.","should + base verb"]}
     ],
     context: { title: 'Read the Park Plan 🗺️ / Lee el plan', description: 'A Saturday outdoors', content: ['Kai: Is there a lake in Green Park?', 'Lina: Yes, and there are two picnic areas.', 'Kai: Great! We can ride bikes there.', 'Lina: Remember: we should keep the park clean.'] },
     practice: [
@@ -256,11 +248,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Plan', prompt: 'Name one plan for this weekend.', es: 'Nombra un plan para este fin de semana.' },
     ],
     grammar: [
-      { title: 'Weekend Activities 🎮⚽', description: 'Useful vocabulary', content: ['Watch a movie, play soccer, study', 'Visit family, meet friends, stay home', 'Go shopping, go to the park'] },
-      { title: 'Going To = A Plan 📅', description: 'Use a plan decided before speaking', content: ['I am going to study on Saturday.', 'She is going to visit her cousin.', 'am / is / are + going to + base verb'] },
-      { title: 'Will = A Quick Decision ⚡', description: 'Decide at the moment of speaking', content: ['The phone is ringing. I will answer it.', 'You need help? I will help you.', 'will + base verb'] },
-      { title: 'Will = A Prediction 🔮', description: 'Say what you think will happen', content: ['I think it will rain.', 'Our team will win.', 'Use I think + will for a simple prediction.'] },
-      { title: 'Ask About Plans ❓', description: 'Questions and short answers', content: ['What are you going to do?', 'Are you going to study? Yes, I am.', 'Will it rain? I think it will.'] },
+      {"title":"Weekend Activities 🎮⚽","description":"Useful vocabulary","content":["Watch a movie, play soccer, study","Visit family, meet friends, stay home","I am going to study on Saturday."]},
+      {"title":"Will = A Prediction 🔮","description":"Say what you think will happen","content":["I think it will rain.","Our team will win.","What are you going to do?"]},
+      {"title":"Ask About Plans ❓","description":"Questions and short answers","content":["What are you going to do?","Are you going to study? Yes, I am.","Will it rain? I think it will."]}
     ],
     context: { title: 'Read the Weekend Chat 📱', description: 'Plans and a quick decision', content: ['Mia: What are you going to do on Saturday?', 'Leo: I am going to play soccer with Tom.', 'Mia: The weather app says it will rain.', 'Leo: Then I will bring my rain jacket.'] },
     practice: [
@@ -304,11 +294,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Time', prompt: 'What time is good for meeting friends?', es: '¿Qué hora es buena para ver a tus amigos?' },
     ],
     grammar: [
-      { title: 'Make an Invitation 💌 / Invitar', description: 'Two useful question forms', content: ['Would you like to watch a movie?', 'Do you want to play soccer?', 'Would you like to + base verb...?'] },
-      { title: 'Accept a Plan ✅ / Aceptar', description: 'Positive responses', content: ['Yes, I would love to!', 'Sure, that sounds great.', 'Great idea! What time?'] },
-      { title: 'Decline Politely ❌ / Rechazar', description: 'Say no respectfully', content: ["Sorry, I can't today.", "I'd love to, but I have homework.", 'Start with sorry or thank you.'] },
-      { title: 'Give a Reason 💬 / Dar una razón', description: 'Explain briefly', content: ['I have soccer practice.', 'I need to study for a test.', 'Use because or but to connect the reason.'] },
-      { title: 'Suggest Another Time 📅', description: 'Keep the plan alive', content: ['How about Sunday?', 'Maybe another day.', 'Are you free tomorrow?'] },
+      {"title":"Make an Invitation 💌 / Invitar","description":"Two useful question forms","content":["Would you like to watch a movie?","Do you want to play soccer?","Yes, I would love to!"]},
+      {"title":"Give a Reason 💬 / Dar una razón","description":"Explain briefly","content":["I have soccer practice.","I need to study for a test.","How about Sunday?"]},
+      {"title":"Suggest Another Time 📅","description":"Keep the plan alive","content":["How about Sunday?","Maybe another day.","Are you free tomorrow?"]}
     ],
     context: { title: 'Read the Chat 📱 / Lee el chat', description: 'A movie invitation', content: ['Sofia: Would you like to watch a movie on Friday?', 'Ben: I would love to, but I have soccer practice.', 'Sofia: No problem. How about Saturday?', 'Ben: That sounds great!'] },
     practice: [
@@ -352,11 +340,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Size', prompt: 'What size question can you ask?', es: '¿Qué pregunta sobre talla puedes hacer?' },
     ],
     grammar: [
-      { title: 'Clothes in a Store 👕', description: 'Shopping vocabulary', content: ['Hoodie, T-shirt, jeans, jacket', 'Sneakers, boots, cap', 'Price tag, fitting room, cashier'] },
-      { title: 'Ask the Price 💵', description: 'Singular and plural questions', content: ['How much is this hoodie?', 'How much are these jeans?', 'It is $20. / They are $35.'] },
-      { title: 'Ask for Color and Size 🎨', description: 'Request another option', content: ['Do you have it in blue?', 'Do you have these in medium?', 'Can I try it on?'] },
-      { title: 'Choose an Item ✅', description: 'Say what you want', content: ['I would like this jacket.', 'These sneakers are comfortable.', 'The blue one is better for me.'] },
-      { title: 'Pay Politely 💳', description: 'Finish the purchase', content: ['I will take it.', 'Can I pay by card?', 'Thank you. Have a nice day!'] },
+      {"title":"Clothes in a Store 👕","description":"Shopping vocabulary","content":["Hoodie, T-shirt, jeans, jacket","Sneakers, boots, cap","How much is this hoodie?"]},
+      {"title":"Choose an Item ✅","description":"Say what you want","content":["I would like this jacket.","These sneakers are comfortable.","I will take it."]},
+      {"title":"Pay Politely 💳","description":"Finish the purchase","content":["I will take it.","Can I pay by card?","Thank you. Have a nice day!"]}
     ],
     context: { title: 'Read the Store Dialogue 🛍️', description: 'Buying a hoodie', content: ['Assistant: Can I help you?', 'Nico: How much is this hoodie?', 'Assistant: It is $28. We have it in black and blue.', 'Nico: Blue, please. Can I try it on?'] },
     practice: [
@@ -400,11 +386,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Prefer', prompt: 'Do you prefer fruit or chips?', es: '¿Prefieres fruta o papas?' },
     ],
     grammar: [
-      { title: 'Café Food 🥪 / Comida de cafetería', description: 'Menu vocabulary', content: ['Sandwich, burger, pizza slice', 'Chips, cookies, fruit, salad', 'Water, juice, soda, hot chocolate'] },
-      { title: 'Read a Menu 📋', description: 'Find important details', content: ['Item = what you can order', 'Price = how much it costs', 'Combo = food and drink together'] },
-      { title: 'Order Politely 🙋', description: 'Use complete requests', content: ['Can I have a sandwich, please?', 'I would like some water.', 'Could I get the fruit cup?'] },
-      { title: 'Ask About Options ❓', description: 'Clarify the order', content: ['What drinks do you have?', 'Does it come with fries?', 'Anything else? Yes, a cookie, please.'] },
-      { title: 'Preferences and Payment 💳', description: 'Choose and finish', content: ['I prefer juice to soda.', 'That is all, thank you.', 'Can I pay by card?'] },
+      {"title":"Café Food 🥪 / Comida de cafetería","description":"Menu vocabulary","content":["Sandwich, burger, pizza slice","Chips, cookies, fruit, salad","Item = what you can order"]},
+      {"title":"Ask About Options ❓","description":"Clarify the order","content":["What drinks do you have?","Does it come with fries?","I prefer juice to soda."]},
+      {"title":"Preferences and Payment 💳","description":"Choose and finish","content":["I prefer juice to soda.","That is all, thank you.","Can I pay by card?"]}
     ],
     context: { title: 'Read the Café Order 🧾', description: 'A complete order', content: ['Cashier: Hi! What would you like?', 'Sam: Can I have a chicken sandwich, please?', 'Cashier: Sure. What would you like to drink?', 'Sam: Orange juice, please. That is all.'] },
     practice: [
@@ -448,11 +432,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Time', prompt: 'How much screen time do you have?', es: '¿Cuánto tiempo de pantalla tienes?' },
     ],
     grammar: [
-      { title: 'Devices and Apps 📱', description: 'Technology vocabulary', content: ['Phone, laptop, tablet, headphones', 'Chat app, music app, game, browser', 'Message, post, share, search'] },
-      { title: 'Use... To... 🎯', description: 'Explain the purpose of technology', content: ['I use my phone to chat with friends.', 'She uses a laptop to do homework.', 'use + device + to + base verb'] },
-      { title: 'Technology Habits 🔁', description: 'Present simple routines', content: ['I check messages after school.', 'He watches videos at night.', "We don't post personal information."] },
-      { title: 'How Often? ⏰', description: 'Frequency expressions', content: ['Always, usually, sometimes, never', 'I usually listen to music online.', 'How often do you play games?'] },
-      { title: 'Smart Online Choices 🔒', description: 'Basic digital safety', content: ['Use a strong password.', "Don't share private information.", 'Ask an adult when something feels wrong.'] },
+      {"title":"Devices and Apps 📱","description":"Technology vocabulary","content":["Phone, laptop, tablet, headphones","Chat app, music app, game, browser","I use my phone to chat with friends."]},
+      {"title":"How Often? ⏰","description":"Frequency expressions","content":["Always, usually, sometimes, never","I usually listen to music online.","Use a strong password."]},
+      {"title":"Smart Online Choices 🔒","description":"Basic digital safety","content":["Use a strong password.","Don't share private information.","Ask an adult when something feels wrong."]}
     ],
     context: { title: 'Read the Chat 📱 / Lee el chat', description: 'Apps and screen time', content: ['Ari: What app do you use most?', 'Zoe: I usually use a music app after school.', 'Ari: How much screen time do you have?', 'Zoe: About two hours. I never use my phone during dinner.'] },
     practice: [
@@ -496,11 +478,9 @@ const plans: Record<string, TeenBasicOnePlan> = {
       { label: 'Task', prompt: 'What can you bring to a group event?', es: '¿Qué puedes llevar a un evento grupal?' },
     ],
     grammar: [
-      { title: 'Ask for Help 🙋 / Pedir ayuda', description: 'Polite requests', content: ['Can you help me, please?', 'Could you send me the address?', 'Can / Could + person + base verb...?'] },
-      { title: 'Clarify on a Call 📞', description: 'Repair communication', content: ['Could you repeat that?', 'Can you speak more slowly?', 'Did you say fifteen or fifty?'] },
-      { title: 'Planning Details 📅📍', description: 'The information every plan needs', content: ['Date: Saturday, July 12', 'Time: 9:30 a.m.', 'Place: Central Station'] },
-      { title: 'Suggest and Assign Tasks ✅', description: 'Organize the group', content: ["Let's meet at the station.", 'I can buy the tickets.', 'Can you bring the snacks?'] },
-      { title: 'Confirm the Plan 🔁', description: 'Check all final details', content: ['So, we meet at 9:30 on Saturday.', 'You bring the snacks, and I bring the tickets.', 'See you at Central Station!'] },
+      {"title":"Ask for Help 🙋 / Pedir ayuda","description":"Polite requests","content":["Can you help me, please?","Could you send me the address?","Could you repeat that?"]},
+      {"title":"Suggest and Assign Tasks ✅","description":"Organize the group","content":["Let's meet at the station.","I can buy the tickets.","So, we meet at 9:30 on Saturday."]},
+      {"title":"Confirm the Plan 🔁","description":"Check all final details","content":["So, we meet at 9:30 on Saturday.","You bring the snacks, and I bring the tickets.","See you at Central Station!"]}
     ],
     context: { title: 'Read the Planning Chat 💬', description: 'A trip with one missing detail', content: ['Lia: Can you help me with the beach trip?', 'Omar: Sure. What do we need?', 'Lia: We need a date, a meeting place, and tickets.', 'Omar: Did you say Saturday at 8:30? Please send me the address.'] },
     practice: [
