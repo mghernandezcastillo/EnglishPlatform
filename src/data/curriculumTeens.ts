@@ -24457,46 +24457,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas y diferencias conceptuales del Futuro Continuo y Futuro Perfecto.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Future Continuous: Action In Progress at a Future Point / Futuro Continuo",
-                description: "WILL BE + Verb-ING -> Describes an ongoing activity at a specific future moment.",
-                content: ["Formula: Subject + will be + Verb-ing.", "Example: 'In 2035, researchers WILL BE LIVING in deep-sea underwater laboratories.'", "Example: 'This time next year, I WILL BE STUDYING aerospace engineering at university.'", "Focus: The action is ongoing/in progress at that exact point in time."],
-                imageUrl: "/images/teens-elite-class-01/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Future Perfect: Milestone Completed Before a Deadline / Futuro Perfecto",
-                description: "WILL HAVE + Past Participle (V3) -> An action completed prior to a future timestamp.",
-                content: ["Formula: Subject + will have + Past Participle (V3).", "Example: 'By 2040, engineers WILL HAVE BUILT commercial fusion reactors.'", "Example: 'By the time I turn twenty-four, I WILL HAVE FOUNDED my own tech startup.'", "Focus: The result is already finished and achieved before the deadline."],
-                imageUrl: "/images/teens-elite-class-01/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Time Markers: 'By' vs 'At / In' / Marcadores Temporales",
-                description: "Choose the tense based on the temporal linker.",
-                content: ["USE FUTURE PERFECT WITH 'BY': 'By 2030...', 'By the end of this decade...', 'By the time you graduate...'", "USE FUTURE CONTINUOUS WITH 'IN / AT': 'In 2035...', 'At this time next Friday...', 'This time next decade...'", "Compare: 'In 2030, we will be flying electric planes' vs 'By 2030, electric planes will have replaced fossil jets.'"],
-                imageUrl: "/images/teens-elite-class-01/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "10-Year Trajectory & Career Forecasting / Proyección de Carrera",
-                description: "Expressing professional growth and industry transformation.",
-                content: ["'Within five years, quantum computing WILL HAVE DISRUPTED traditional cybersecurity.'", "'Throughout the 2030s, neural engineers WILL BE DEVELOPING direct brain-computer interfaces.'", "'By the end of my degree, I WILL HAVE MASTERED three programming frameworks.'"],
-                imageUrl: "/images/teens-elite-class-01/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Futurist Keynote Address / Discurso modelo de futurismo",
-                description: "Read this sample world innovation summit keynote.",
-                content: ["Distinguished futurists: ten years from now, our global society will be operating entirely on renewable quantum grids.", "By 2035, geneticists will have eradicated several hereditary diseases, and autonomous systems will be managing urban transit networks with zero emissions.", "By the time we enter the 2040s, humanity will have established sustainable lunar habitats. We must prepare our generation today, because tomorrow's breakthroughs will have transformed how we learn, work, and explore our universe!"],
-                imageUrl: "/images/teens-elite-class-01/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Future Continuous vs Future Perfect 🚀⏳ / Futuro Continuo vs Perfecto","description":"Temporal Precision","content":["Future Continuous (WILL BE DOING): In progress at a future moment ('At 8 PM, I will be hosting the keynote.')","Future Perfect (WILL HAVE DONE): Completed by a future deadline ('By 2030, our venture will have reached 1 million users.')","Precision in future timeframes projects authority."],"imageUrl":"/images/teens-elite-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Tech Forecasting & Milestones 🤖📈 / Pronósticos Tecnológicos","description":"Strategic Projections","content":["By next quarter, our AI algorithm WILL HAVE PROCESSED 10 million data points.","Throughout next year, our engineering team WILL BE DEPLOYING clean energy microgrids.","Connect ongoing innovation with measurable targets."],"imageUrl":"/images/teens-elite-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Executive Tech Roadmaps 🗺️ / Hoja de Ruta Tecnológica","description":"Venture Timeline","content":["'By the time our competitors launch version 1.0, we will already have secured international patents.'","'During the global summit, our founders will be pitching to sovereign wealth funds.'","Mastering temporal grammar inspires investor confidence."],"imageUrl":"/images/teens-elite-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Tech Forecasting Formula 📊 / Fórmula de Pronóstico","description":"By [Date] + Will have done + While [Time] + Will be doing","content":["Formula: 'By [Future Year], our initiative will have [Accomplishment] while our team is [Ongoing Impact].'","Example: 'By 2030, our lab will have developed biodegradable polymers while our engineers are expanding solar micro-grids.'"],"imageUrl":"/images/teens-elite-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: 2035 Tech Vision 🎯 / Mini Reto","description":"Formulate a Future Perfect Milestone","content":["Tell the teacher:","'By 2035, humanity will have ________.' (Use will have + participle)"],"imageUrl":"/images/teens-elite-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la pronunciación fluida de 'will have + V3' y 'will be + ing'."
           },
@@ -24837,46 +24802,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la lógica gramatical y temporal de los condicionales mixtos complejos.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Mixed Conditionals in Strategic Reasoning / Lógica Estratégica",
-                description: "Bridging different timeframes to analyze long-term consequences and persistent traits.",
-                content: ["Standard conditionals keep both clauses in the same timeframe (both past or both present).", "Mixed conditionals cross the temporal divide: evaluating how a PAST catalyst produces a PRESENT state, or how an enduring PRESENT nature determined a PAST milestone.", "Essential for board presentations, case study analyses, and historical debates."],
-                imageUrl: "/images/teens-elite-class-02/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Mixed Type 1: Past Catalyst -> Present State / Pasado a Presente",
-                description: "IF + Past Perfect (had + V3), WOULD + Bare Verb (V1).",
-                content: ["Formula: If + Subject + had + V3, Subject + would + V1.", "Example: 'If our founders HAD PIVOTED to clean tech earlier, our company WOULD BE carbon neutral today.'", "Example: 'If I HAD TAKEN that coding fellowship in junior year, I WOULD HAVE an internship at NASA right now.'", "Key nuance: The condition is in the past, but the impact is active right now."],
-                imageUrl: "/images/teens-elite-class-02/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Mixed Type 2: Present Trait -> Past Decision / Presente a Pasado",
-                description: "IF + Past Simple (were), WOULD HAVE + Past Participle (V3).",
-                content: ["Formula: If + Subject + were/past simple, Subject + would have + V3.", "Example: 'If our executives WERE NOT so risk-averse today, they WOULD HAVE APPROVED the venture fund last month.'", "Example: 'If she SPOKE fluent Japanese today, she WOULD HAVE BEEN SELECTED for the Tokyo summit last summer.'", "Key nuance: A permanent present ability or trait influenced a historical choice."],
-                imageUrl: "/images/teens-elite-class-02/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Executive Risk & Decision Vocabulary / Vocabulario Estratégico",
-                description: "High-level terminology for decision analysis.",
-                content: ["'CONTINGENCY PLAN': A backup strategy for unexpected market disruptions.", "'COST-BENEFIT CALCULUS': Systematic comparison of potential rewards versus financial and ethical risks.", "'COUNTERFACTUAL ANALYSIS': Exploring 'what if' scenarios to learn from past decisions.", "'UNINTENDED CONSEQUENCES': Secondary outcomes that were not anticipated in the initial plan."],
-                imageUrl: "/images/teens-elite-class-02/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Strategic Crisis Post-Mortem / Discurso modelo de análisis estratégico",
-                description: "Read this sample executive post-mortem analysis.",
-                content: ["Good morning, directors. If our founding team had not invested heavily in cybersecurity three years ago, our client database would be completely vulnerable to current quantum attacks today.", "Furthermore, if our engineers were not so relentlessly innovative today, we would not have engineered our proprietary firewall last quarter.", "By executing this calculated risk, we turned a potential catastrophe into a competitive advantage. Moving forward, continuous contingency planning will ensure our sustained dominance!"],
-                imageUrl: "/images/teens-elite-class-02/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"High-Stakes Mixed Conditionals ⚖️🌪️ / Condicionales Mixtos","description":"Past Action -> Present Crisis","content":["'If the board had addressed the security flaw last month, our servers wouldn't be compromised today.'","Past decision (Had + Participle) -> Current state (Would be)","Crucial tool for crisis leadership and root-cause post-mortems."],"imageUrl":"/images/teens-elite-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Permanent Trait -> Past Decision 🧬 / Rasgo a Acción Pasada","description":"Type B Mixed Conditional","content":["'If our lead scientist weren't so exceptionally innovative, we wouldn't have discovered the vaccine so quickly.'","Present timeless trait (Were) -> Past historic milestone (Would have + Participle).","Highlighting how enduring principles alter history."],"imageUrl":"/images/teens-elite-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Ethical Dilemmas in Venture Leadership 🏛️ / Dilemas Éticos","description":"Decisive Strategy","content":["'If we had prioritized short-term profit over ethics, our brand reputation would be destroyed today.'","'Leadership means making hard calls today so that the organization remains sustainable tomorrow.'","Advanced conditionals elevate strategic accountability."],"imageUrl":"/images/teens-elite-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The High-Stakes Dilemma Formula 🧭 / Fórmula de Dilema","description":"Historical Prudence -> Sustainable Reality","content":["Formula: 'If our leadership had not [Past Ethical Action], our enterprise would [Negative Present State] today.'","Example: 'If we had not diversified our supply chain, our operations would be halted today.'"],"imageUrl":"/images/teens-elite-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Strategic Post-Mortem 🎯 / Mini Reto","description":"Formulate a Mixed Conditional","content":["Complete the crisis analysis:","'If the tech startup had tested the update, the app ________ (not crash) today.' (wouldn't crash / wouldn't have crashed)"],"imageUrl":"/images/teens-elite-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la combinación fluida de tiempos verbales en condicionales mixtos."
           },
@@ -25217,46 +25147,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas sintácticas de Wh-Clefts, It-Clefts y estructuras enfáticas.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Wh-Clefts (Pseudo-Clefts) / Oraciones Hendidas con Wh-",
-                description: "WHAT + Clause + BE + Focus.",
-                content: ["Standard: 'I love programming.' -> Flat & ordinary.", "Wh-Cleft: 'WHAT I LOVE MOST IS programming algorithms that solve real problems.'", "Standard: 'We need clean water.'", "Wh-Cleft: 'WHAT WE URGENTLY NEED IS decentralized water filtration infrastructure.'"],
-                imageUrl: "/images/teens-elite-class-03/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "It-Clefts: The Theatrical Spotlight / Oraciones Hendidas con It-",
-                description: "IT + BE + Focus + THAT / WHO + Clause.",
-                content: ["Formula: It is/was + [Target Element] + that/who + [Rest of sentence].", "Standard: 'Youth activism changed government policy.'", "It-Cleft: 'IT WAS youth activism THAT changed government policy in 2024.'", "Standard: 'Her courage inspired the team.'", "It-Cleft: 'IT IS her unwavering courage THAT inspires this entire organization.'"],
-                imageUrl: "/images/teens-elite-class-03/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Reverse Clefts & 'The Thing That' / Clefts Invertidos",
-                description: "Focus + BE + What + Clause.",
-                content: ["Standard: 'Renewable energy will power future smart cities.'", "Reverse Cleft: 'Renewable energy IS WHAT will power future smart cities.'", "Variation: 'THE THING THAT excites me most about quantum physics is its unpredictability.'", "'THE PERSON WHO mentored me through the competition was Dr. Aris.'"],
-                imageUrl: "/images/teens-elite-class-03/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Emphatic Auxiliary 'DO / DID' / Auxiliar Enfático",
-                description: "Adding do/does/did before the bare verb to reinforce conviction.",
-                content: ["Standard: 'We believe in your vision.'", "Emphatic: 'We DO believe in your visionary potential!'", "Standard: 'She completed the prototype on time.'", "Emphatic: 'Despite the budget freeze, she DID complete the prototype on time!'"],
-                imageUrl: "/images/teens-elite-class-03/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Valedictorian Commencement Speech / Discurso de graduación modelo",
-                description: "Read this sample commencement keynote.",
-                content: ["Graduating class: what defines our journey is not the tests we took, but the friendships we forged through adversity.", "It was our shared curiosity that drove us past late nights in the robotics lab, and it is our collective empathy that will heal our communities.", "While skeptics doubted our age, we DID prove that teenagers can initiate lasting legislation. What we need now is the boldness to dream fearlessly!"],
-                imageUrl: "/images/teens-elite-class-03/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Cleft Sentences & Emphatic Rhetoric 🔦✨ / Oraciones Hendidas","description":"Focusing Attention","content":["Standard: 'We need digital literacy education.'","Wh-Cleft: 'WHAT WE URGENTLY NEED IS digital literacy education.'","It-Cleft: 'IT IS our youth WHO will drive democratic renewal.'","Cleft structures create undeniable oratorical impact."],"imageUrl":"/images/teens-elite-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"All-Clefts & Reverse Clefts 🌟 / Énfasis Total","description":"All that matters is...","content":["'ALL WE ARE ASKING FOR is equal access to STEM opportunities.'","'Sustainable energy IS WHAT our future depends on.'","Clefting filters out noise and anchors listeners on your primary message."],"imageUrl":"/images/teens-elite-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"High-Impact Keynote Emphasis 🎙️ / Oratoria de Alto Impacto","description":"Keynote Delivery","content":["'It was not luck, but relentless discipline that brought our team here.'","'What inspires me most is the courage of our young researchers.'","Use cleft sentences at the climax of keynote addresses."],"imageUrl":"/images/teens-elite-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Cleft Oratory Formula 🏛️ / Fórmula de Énfasis","description":"What [Subject] [Verb] is [Core Message]","content":["Formula: 'What [Audience/We] must recognize is that [Undeniable Truth].'","Example: 'What global leaders must recognize is that youth innovation is our greatest asset.'"],"imageUrl":"/images/teens-elite-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Cleft Punchline 🎯 / Mini Reto","description":"Transform into a Cleft Sentence","content":["Transform with 'What... is': 'We need courage and creativity.'","'What we need is ________.'"],"imageUrl":"/images/teens-elite-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y practicar la entonación enfática de oraciones hendidas."
           },
@@ -25597,46 +25492,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la regla de inversión sintáctica con adverbios negativos y restrictivos.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Inversion Principle: Question Order / El Principio de Inversión",
-                description: "Negative / Restrictive Adverbial + Auxiliary Verb + Subject + Main Verb.",
-                content: ["When a negative or limiting adverb starts a sentence, the auxiliary verb MUST come before the subject, exactly like a question.", "Standard: 'We rarely see such innovation.'", "Inversion: 'RARELY DO WE SEE such monumental innovation in clean tech.'", "Notice: 'do' (auxiliary) precedes 'we' (subject)."],
-                imageUrl: "/images/teens-elite-class-04/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Frequency Inversions: Seldom, Rarely, Never / Inversiones de Frecuencia",
-                description: "Used to highlight the extreme rarity or historic uniqueness of an achievement.",
-                content: ["'SELDOM HAVE WE WITNESSED such rapid scientific consensus.'", "'NEVER HAD I IMAGINED that our student project would reach the United Nations.'", "'SCARCELY HAD THE SATELLITE ENTERED orbit WHEN telemetry established contact.'"],
-                imageUrl: "/images/teens-elite-class-04/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Additive Inversions: Not only... but also... / Inversión Aditiva",
-                description: "NOT ONLY + Auxiliary + Subject + Verb, BUT + Subject + ALSO + Verb.",
-                content: ["Standard: 'They cleaned the bay and they built a solar farm.'", "Inversion: 'NOT ONLY DID THEY CLEAN the entire coastal ecosystem, BUT THEY ALSO BUILT an offshore solar farm.'", "Notice: Past simple 'cleaned' becomes 'DID they clean' in the inversion clause."],
-                imageUrl: "/images/teens-elite-class-04/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Restrictive & Prohibition Inversions / Prohibición y Condición",
-                description: "Under no circumstances / On no account / Little did they realize.",
-                content: ["'UNDER NO CIRCUMSTANCES SHOULD artificial intelligence algorithms compromise medical confidentiality.'", "'ON NO ACCOUNT WILL WE SACRIFICE the safety standards of our aerospace module.'", "'LITTLE DID THE COMPETITORS REALIZE that our team had rewritten the engine code.'"],
-                imageUrl: "/images/teens-elite-class-04/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Parliamentary Youth Assembly Speech / Discurso parlamentario modelo",
-                description: "Read this sample UN youth assembly address.",
-                content: ["Honorable Speaker and distinguished delegates: seldom in modern history has an assembly faced such consequential environmental crossroads.", "Not only did previous generations exhaust vital ecological reserves, but rarely did earlier summits hold corporate polluters accountable.", "Under no circumstances should this parliament postpone binding emission targets. Only through uncompromising collective resolve will we safeguard our planet's future, and seldom have young citizens been more prepared to lead this noble crusade!"],
-                imageUrl: "/images/teens-elite-class-04/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Rhetorical Inversions for Oratory 🏛️⚡ / Inversiones Retóricas","description":"High-Stakes Oratory","content":["Standard: 'I have rarely seen such dedication.'","Inverted: 'SELDOM HAVE I SEEN such unprecedented dedication.'","Rule: Negative/Limiting Adverb + Auxiliary + Subject + Verb","Transforms ordinary speeches into historic addresses."],"imageUrl":"/images/teens-elite-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"Top Inversion Triggers: Not only, Seldom, Scarcely 🗝️ / Disparadores Clave","description":"Inversion Formulas","content":["NOT ONLY... BUT ALSO: 'Not only DID WE WIN the tournament, but we also broke the state record.'","NO SOONER... THAN: 'No sooner HAD THE GATES OPENED than the stadium erupted.'","UNDER NO CIRCUMSTANCES: 'Under no circumstances SHOULD WE COMPROMISE on safety.'"],"imageUrl":"/images/teens-elite-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"Churchillian & Parliamentary Cadence 🎙️ / Cadencia Parlamentaria","description":"Mastering Rhythm","content":["'Rarely in the history of science has a single innovation achieved so much.'","'Never before have young innovators held such global influence.'","Inversion delivers timeless gravitas and unforgettable resonance."],"imageUrl":"/images/teens-elite-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Inverted Oratorical Formula 📜 / Fórmula de Inversión","description":"Not only did [Subject] [Verb], but [Subject] also [Achievement]","content":["Formula: 'Not only did our venture [Action 1], but we also [Monumental Milestone].'","Example: 'Not only did our team reduce carbon emissions by 40%, but we also generated sustainable revenue.'"],"imageUrl":"/images/teens-elite-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Oratorical Inversion 🎯 / Mini Reto","description":"Complete the Inversion","content":["Complete with inverted order: 'Never ________ (I / see) such brilliance.'","'Never have I seen / Never I have seen'?"],"imageUrl":"/images/teens-elite-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y practicar la inversión de sujeto y auxiliar en voz alta."
           },
@@ -25977,46 +25837,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas sintácticas de atenuación, hedging y negociación diplomática.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Why Soften? Tone & Strategic Tact / El Arte de la Atenuación",
-                description: "Hedging protects professional relationships, invites dialogue, and prevents defensive deadlock.",
-                content: ["Direct assertions ('This is bad') force the other party onto the defensive.", "Hedging frameworks ('I wonder if we might reconsider this approach') create psychological safety and leave room for collaborative problem-solving.", "Essential for international relations, corporate boards, and conflict mediation."],
-                imageUrl: "/images/teens-elite-class-05/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Hedging Starters & Tentative Modals / Fórmulas de Cobertura",
-                description: "High-level diplomatic sentence frames.",
-                content: ["'I WOULD VENTURE TO SUGGEST THAT...': A respectful way to introduce a bold recommendation.", "'IT WOULD APPEAR THAT...': Depersonalizes observation so nobody feels accused.", "'WE TEND TO FIND THAT...': Generalizes patterns instead of making absolute claims.", "'CONCEIVABLY / ARGUABLY...': Softens adverbs to invite constructive feedback."],
-                imageUrl: "/images/teens-elite-class-05/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Softening Disagreements & Criticism / Suavizar Desacuerdos",
-                description: "Techniques for respectful counter-proposals.",
-                content: ["USE 'WITH DUE RESPECT': 'With all due respect to the committee, I am inclined to view this from an alternative perspective.'", "USE TENTATIVE QUESTIONS: 'Could we perhaps examine whether phased implementation might mitigate risks?'", "USE PASSIVE DISTANCING: 'It has been noted that certain supply metrics may require recalculation.'"],
-                imageUrl: "/images/teens-elite-class-05/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Multilateral Negotiation Lexicon / Vocabulario Diplomático",
-                description: "Key terminology used in treaties and executive negotiations.",
-                content: ["'CONCESSION': Granting a point to the other party to secure a broader agreement.", "'BILATERAL CONSENSUS': Mutual agreement reached between two sovereign parties.", "'NON-NEGOTIABLE CLAUSE': A core principle that cannot be compromised.", "'MUTUALLY BENEFICIAL RESOLUTION': A win-win outcome satisfying all stakeholders."],
-                imageUrl: "/images/teens-elite-class-05/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Chief Diplomatic Envoy Speech / Discurso diplomático modelo",
-                description: "Read this sample multilateral summit intervention.",
-                content: ["Distinguished colleagues and delegates: while we fully appreciate the urgency of immediate industrial decarbonization, it would appear that the proposed compliance timeline poses substantial logistical hurdles for developing economies.", "I would venture to suggest that we establish a phased three-year transition fund. By offering technical assistance rather than punitive tariffs, we might arguably achieve higher compliance while fostering enduring multilateral goodwill.", "Let us embrace this constructive compromise for the collective benefit of all nations!"],
-                imageUrl: "/images/teens-elite-class-05/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Diplomatic Hedging & Nuanced Softening 🕊️🤝 / Suavización Diplomática","description":"Executive Diplomacy","content":["Direct: 'Your proposal is too expensive.'","Hedged: 'It WOULD APPEAR THAT the proposed budget MAY EXCEED our current allocation.'","Hedging protects relationships while asserting strategic boundaries."],"imageUrl":"/images/teens-elite-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Modal Auxiliaries & Probability Adverbs 📊 / Adverbios de Matiz","description":"Degrees of Certainty","content":["'Tends to suggest...' / 'Arguably the most viable path...' / 'To some extent...'","'We might want to explore alternative logistics before finalizing.'","Subtle modulation signals executive mastery in bilateral talks."],"imageUrl":"/images/teens-elite-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"High-Stakes Treaty & Contract Negotiations 📜 / Negociaciones de Tratados","description":"Bilateral Formulas","content":["'While we appreciate the timeline, our team respectfully suggests a phased rollout.'","'It is widely considered prudent to conduct an independent security review first.'","Diplomatic language builds consensus and prevents deadlock."],"imageUrl":"/images/teens-elite-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Diplomatic Hedging Blueprint 🤝 / Fórmula Diplomática","description":"Observation + Softened Suggestion","content":["Formula: 'The data WOULD TEND TO SUGGEST that [Observation]; therefore, it MIGHT BE PRUDENT to [Nuanced Proposal].'","Example: 'The data would suggest rising latency; therefore, it might be prudent to upgrade server capacity.'"],"imageUrl":"/images/teens-elite-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Diplomatic Softening 🎯 / Mini Reto","description":"Hedge a Critical Statement","content":["Soften: 'Your timeline is impossible.'","'It would appear that the timeline might be ________.' (slightly ambitious / terrible)"],"imageUrl":"/images/teens-elite-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la entonación mesurada y diplomática."
           },
@@ -26357,46 +26182,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la arquitectura de 5 párrafos y el léxico académico de corroboración empírica.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Macro Essay Architecture / Arquitectura Macro del Ensayo",
-                description: "The 5-Tier Framework for academic rigor.",
-                content: ["1. INTRODUCTION: Scholarly Hook -> Contextual Background -> Three-Tier Thesis Statement.", "2. BODY PILLAR 1: Primary empirical argument + data evidence.", "3. BODY PILLAR 2: Secondary conceptual argument + comparative analysis.", "4. COUNTER-ARGUMENT & REBUTTAL: Acknowledge strongest opposing objection and dismantle it.", "5. SYNTHESIS CONCLUSION: Restate thesis with elevated vocabulary and delineate future implications."],
-                imageUrl: "/images/teens-elite-class-06/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "The Bulletproof Thesis Formula / La Fórmula de Tesis Imbatible",
-                description: "WHILE [Concession], [Core Claim] BECAUSE [Rationale A] AND [Rationale B].",
-                content: ["Weak Thesis: 'Social media is bad for mental health.' -> Too simplistic.", "Strong Thesis: 'While social media platforms facilitate global connectivity, excessive unmoderated usage degrades adolescent psychological resilience because algorithmic feedback loops amplify comparison anxiety and erode sleep quality.'", "Notice: Nuanced concession + precise assertion + two analytical pillars."],
-                imageUrl: "/images/teens-elite-class-06/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Concessive Rebuttals: Defusing Counter-Claims / Contraargumentación",
-                description: "Formulas for dismantling opposing perspectives.",
-                content: ["'ADMITTEDLY, critics raise valid concerns regarding X; NONETHELESS, longitudinal data indicates Y.'", "'NOTWITHSTANDING the initial capital expenditure, the lifecycle efficiency yields net dividends.'", "'IN STARK CONTRAST to prevailing assumptions, empirical findings corroborate the opposite trend.'"],
-                imageUrl: "/images/teens-elite-class-06/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Empirical Corroboration Lexicon / Vocabulario de Evidencia Empírica",
-                description: "Elevated scholarly verbs for academic papers.",
-                content: ["'SUBSTANTIATE': To provide supporting evidence (e.g., 'Recent clinical trials substantiate the hypothesis.').", "'CORROBORATE': To confirm or support findings with secondary data.", "'DELINEATE': To describe or outline with precise detail.", "'EXTRAPOLATE': To infer future trends based on existing empirical patterns."],
-                imageUrl: "/images/teens-elite-class-06/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Academic Thesis Defense / Discurso de defensa académica modelo",
-                description: "Read this sample Ivy League thesis defense address.",
-                content: ["Esteemed faculty and panel members: while skeptics contend that artificial intelligence diminishes independent student inquiry, empirical evidence substantiates the premise that AI-assisted tutoring enhances individualized cognitive retention.", "Admittedly, unmonitored reliance risks algorithmic dependency; nonetheless, when integrated within structured pedagogical frameworks, these tools democratize personalized mentorship.", "In conclusion, data delineates that proactive technological adoption equips emerging scholars for multidisciplinary research excellence!"],
-                imageUrl: "/images/teens-elite-class-06/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Advanced Discursive Essay Architecture 🏛️📚 / Ensayo Discursivo","description":"The 5-Paragraph Scholarly Matrix","content":["1. Introduction: Hook + Broad Context + Thesis Statement","2. Body 1: Affirmative arguments with empirical citations","3. Body 2: Counter-arguments and robust dialectical rebuttal","4. Body 3: Synthesis and broader societal implications","5. Conclusion: Restated thesis + Forward-looking verdict"],"imageUrl":"/images/teens-elite-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
+              {"id":"slide-5","title":"Advanced Cohesive Devices & Transitionals 🔗 / Conectores Académicos","description":"Scholarly Transitions","content":["CORROBORATION: Furthermore, Moreover, In tandem with","CONCESSION: Albeit, In spite of, Notwithstanding","CAUSATION: Consequently, Hence, It follows that"],"imageUrl":"/images/teens-elite-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
+              {"id":"slide-6","title":"Publishing in Scholarly & Think-Tank Journals 📰 / Publicaciones Académicas","description":"Rigorous Synthesis","content":["'The empirical evidence gathered across twenty institutions corroborates the hypothesis.'","'Consequently, institutional reform must precede technological integration.'","Clear structure and rigorous transitions guarantee academic excellence."],"imageUrl":"/images/teens-elite-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
+              {"id":"slide-7","title":"The Discursive Thesis Formula 📜 / Fórmula de Tesis","description":"Context + Tension + Thesis","content":["Formula: 'Although [Prevailing View], empirical evidence demonstrates that [Core Thesis]; hence, [Policy Recommendation].'","Example: 'Although automation increases efficiency, evidence demonstrates that human oversight remains vital; hence, ethical audits are mandatory.'"],"imageUrl":"/images/teens-elite-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
+              {"id":"slide-8","title":"Quick Check: Scholarly Connector 🎯 / Mini Reto","description":"Select the Academic Connector","content":["Complete: 'The experiment proved scalable. ________, further trials were approved.'","(Consequently / But)"],"imageUrl":"/images/teens-elite-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
             ],
             action: "Tomar notas y practicar la articulación de argumentos académicos complejos."
           },
@@ -26737,46 +26527,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la estructura IMRAD de resúmenes y el léxico de citas académicas.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The IMRAD Abstract Architecture / Estructura IMRAD",
-                description: "The global gold standard for scientific papers.",
-                content: ["I - INTRODUCTION / BACKGROUND: The core hypothesis and research gap.", "M - METHODOLOGY: Sample size, trial design (e.g. double-blind, randomized control), and apparatus.", "R - RESULTS: Specific quantitative metrics, percentages, p-values, and statistical significance.", "D - DISCUSSION / CONCLUSION: Core takeaway, industrial/clinical viability, and future avenues."],
-                imageUrl: "/images/teens-elite-class-07/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Scholarly Reporting Verbs / Verbos de Reporte Académico",
-                description: "Precision verbs that express exact degrees of certainty.",
-                content: ["'POSIT': To put forward as a hypothesis (e.g., 'The authors posit that quantum tunneling occurs.').", "'ELUCIDATE': To explain or clarify mechanisms with clinical depth.", "'SUBSTANTIATE': To validate through repeatable quantitative datasets.", "'EXTRAPOLATE': To project broader trends from sample cohorts."],
-                imageUrl: "/images/teens-elite-class-07/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Academic Citations & Literature Synthesis / Citas Académicas",
-                description: "Integrating peer-reviewed sources without plagiarizing.",
-                content: ["NARRATIVE CITATION: 'In accordance with methodology established by Dr. Vance et al. (2024), we measured...' ", "PARENTHETICAL CITATION: '...exhibiting a 40% gain in thermal resistance (Martinez & Kim, 2025).'", "SYNTHESIS FORMULA: 'While previous studies emphasized X (Lee, 2022), our findings substantiate Y.'"],
-                imageUrl: "/images/teens-elite-class-07/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Statistical & Empirical Lexicon / Vocabulario Estadístico",
-                description: "Quantitative terms for research abstracts.",
-                content: ["'STATISTICALLY SIGNIFICANT': Changes unlikely to have occurred by random chance (p < 0.05).", "'CONTROL GROUP': The benchmark group that does not receive the experimental treatment.", "'LONGITUDINAL COHORT': A study tracking participants or subjects over extended timeframes.", "'STANDARD DEVIATION': A measure of how dispersed the data is in relation to the mean."],
-                imageUrl: "/images/teens-elite-class-07/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Scientific Poster Presentation / Presentación de póster científico modelo",
-                description: "Read this sample symposium poster defense.",
-                content: ["Good afternoon, distinguished judges. In response to increasing microplastic water contamination, our team investigated bioremediation using genetically optimized bacterial enzymes.", "In accordance with methodology established by Dr. Rivera et al. (2024), we conducted thirty double-blind trials across six distinct aquatic pH levels.", "Our empirical datasets demonstrate a statistically significant 82% degradation of synthetic polymers within forty-eight hours. These findings substantiate the viability of scalable biological water filtration, offering a sustainable solution for global marine preservation!"],
-                imageUrl: "/images/teens-elite-class-07/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Empirical Abstracts & Literature Synthesis 🔬📊 / Resúmenes Empíricos","description":"Scholarly Precision","content":["Abstract Structure: Background -> Objective -> Methodology -> Results -> Conclusion","Synthesizing literature: 'Smith (2022) posits that... whereas Chen (2023) contends that...'","Active scholarly verbs: demonstrates, substantiates, refutes, corroborates"],"imageUrl":"/images/teens-elite-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Statistical Reporting & Confidence Intervals 📈 / Datos Estadísticos","description":"Quantitative Data","content":["'The data yielded a statistically significant correlation (p < 0.01).'","'A 95% confidence interval indicates robust model replicability.'","'Data was normalized across all control groups to eliminate confounding variables.'"],"imageUrl":"/images/teens-elite-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Scientific Poster Defense at Global Symposia 🎙️🏛️ / Defensa de Póster","description":"Academic Pitching","content":["'Our research methodology isolates the enzyme with 98.4% purity.'","'These findings challenge established models and open avenues for green catalysis.'","Precise scientific language conveys credibility and authority."],"imageUrl":"/images/teens-elite-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Empirical Abstract Formula 🧪 / Fórmula de Abstract","description":"Objective + Methodology + Key Finding","content":["Formula: 'This study investigates [Phenomenon] utilizing [Methodology]. The results corroborate that [Discovery] (p < 0.05).'","Example: 'This study investigates biodegradable polymers utilizing mass spectrometry. The results corroborate that tensile strength increases by 25%.'"],"imageUrl":"/images/teens-elite-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Scholarly Verb Selection 🎯 / Mini Reto","description":"Choose the Academic Verb","content":["Complete: 'Our empirical findings ________ (substantiate / say) the original hypothesis.'"],"imageUrl":"/images/teens-elite-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y practicar la pronunciación de verbos científicos y citas."
           },
@@ -27117,46 +26872,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las fórmulas de Robert's Rules of Order y el léxico de gobernanza corporativa.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Boardroom Governance & Robert's Rules / Reglas de Procedimiento",
-                description: "The global legal standard for conducting executive meetings.",
-                content: ["1. CALL TO ORDER & QUORUM: The chair verifies that the minimum voting majority is present.", "2. FORMAL MOTIONS: Decisions are introduced with 'I move that...', never informal suggestions.", "3. SECONDING: A motion requires a second ('I second the motion') before floor debate opens.", "4. AMENDMENTS & VOTING: Voice votes ('All in favor say Aye'), roll-call votes, or proxy ballots."],
-                imageUrl: "/images/teens-elite-class-08/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Formulating Formal Motions & Points of Order / Fórmulas Parlamentarias",
-                description: "Subjunctive and procedural phrases for boardrooms.",
-                content: ["'I MOVE THAT THE BOARD [BARE VERB]...': 'I move that the executive committee ALLOCATE fifty thousand dollars to clean tech research.' (Uses subjunctive).", "'POINT OF ORDER': Interruption used to correct procedural violations or breaches of meeting bylaws.", "'I MOVE TO TABLE': Request to postpone voting on a motion to a future meeting.", "'MOTION CARRIED / MOTION REJECTED': The chair's ruling on the vote outcome."],
-                imageUrl: "/images/teens-elite-class-08/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "De-escalating Hostile Boardrooms / Desescalar Conflictos",
-                description: "Restoring professional decorum when debates turn aggressive.",
-                content: ["ENFORCE DECORUM: 'Colleagues, personal attacks breach executive decorum. Let us address the motion, not the individual.'", "REDIRECT TO CORE AGENDA: 'Let us redirect our deliberation to our primary fiduciary obligation.'", "PROPOSE A RECESS: 'I propose a ten-minute recess so that committee heads can confer privately.'"],
-                imageUrl: "/images/teens-elite-class-08/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Arbitration & Governance Lexicon / Léxico de Gobernanza",
-                description: "Executive terms for corporate legal frameworks.",
-                content: ["'QUORUM': The minimum number of voting members required to conduct valid business.", "'FIDUCIARY DUTY': The legal and ethical obligation to act in the best interest of the institution.", "'PROXY VOTE': A ballot cast by an authorized representative on behalf of an absent shareholder.", "'BINDING ARBITRATION': Neutral settlement of a dispute that all parties legally commit to accept."],
-                imageUrl: "/images/teens-elite-class-08/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Boardroom Chairperson Address / Discurso de presidente de junta modelo",
-                description: "Read this sample executive crisis resolution.",
-                content: ["Order in the boardroom, directors. We have established quorum, and point of order has been noted regarding budget allocations. While tensions are understandably elevated regarding our AI restructuring, personal grievances breach executive decorum.", "In accordance with our fiduciary duty, I move that we table contentious amendments and conduct an immediate roll-call vote on the clean energy transition fund.", "If there is a second to the motion, we shall proceed to a binding vote to preserve shareholder consensus and ensure long-term corporate governance!"],
-                imageUrl: "/images/teens-elite-class-08/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Executive Boardrooms & Parliamentary Procedure 🏛️⚖️ / Procedimiento Parlamentario","description":"Robert's Rules of Order","content":["'I move to adopt the resolution on campus clean energy.'","'Point of order, Mr. Chair: does this motion require a two-thirds majority?'","'I second the motion / The floor is open for debate.'"],"imageUrl":"/images/teens-elite-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"De-escalating Hostile Boardrooms 🤝🌪️ / Desescalar Conflictos","description":"Executive Governance","content":["'Let us return to our core fiduciary duty and review the audited statements.'","'I call for a five-minute recess to allow delegates to review the compromise text.'","Composure in high-stakes boardrooms establishes undisputed leadership."],"imageUrl":"/images/teens-elite-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Chairing High-Stakes Shareholder Assemblies 🎙️ / Presidir Asambleas","description":"Procedural Mastery","content":["'The motion carries unanimously with 8 votes in favor.'","'We will now proceed to the next item on the official agenda.'","Parliamentary discipline ensures fair, transparent democratic governance."],"imageUrl":"/images/teens-elite-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Formal Motion Formula 📋 / Fórmula de Moción","description":"I move that [Resolution] be [Action]","content":["Formula: 'I move that the board [Approve/Adopt] [Resolution] in order to [Strategic Objective].'","Example: 'I move that the board allocate 15% of annual reserves to youth research fellowships.'"],"imageUrl":"/images/teens-elite-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Parliamentary Motion 🎯 / Mini Reto","description":"Propose a Board Motion","content":["Propose a formal motion to the board chair:","'Mr. Chair, I move that we ________ the proposal.' (adopt / do)"],"imageUrl":"/images/teens-elite-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar la postura y entonación de autoridad ejecutiva."
           },
@@ -27497,46 +27217,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender la técnica de bridging y el léxico de control de daños de relaciones públicas.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The 3-Pillar Crisis Communication Framework / Los 3 Pilares de Crisis",
-                description: "The gold standard for protecting institutional reputation.",
-                content: ["1. IMMEDIATE TRANSPARENCY: Acknowledge the event rapidly with verified facts; never say 'No comment'.", "2. DECISIVE RESTITUTION: Announce immediate corrective actions and independent forensic oversight.", "3. STRUCTURAL PREVENTION: Explain architectural changes ensuring the crisis cannot reoccur."],
-                imageUrl: "/images/teens-elite-class-09/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "The Bridging & Pivoting Formula / La Técnica del Puente",
-                description: "Control the narrative: Acknowledge -> Pivot Linker -> Core Truth Message.",
-                content: ["STEP 1 (Acknowledge): 'While I understand why that question is being raised...'", "STEP 2 (Pivot Linker): '...what is essential to recognize is / ...let me be unequivocal about what our investigation revealed.'", "STEP 3 (Core Message): '...zero user credentials were compromised, and our automated systems isolated the anomaly within ninety seconds.'"],
-                imageUrl: "/images/teens-elite-class-09/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Uncompromising Accountability / Responsabilidad Institucional",
-                description: "Expressing genuine empathy while asserting operational competence.",
-                content: ["'WE DEEPLY REGRET THE DISRUPTION CAUSED TO OUR COMMUNITY...'", "'WE ASSUME FULL ORGANIZATIONAL ACCOUNTABILITY AND HAVE INITIATED IMMEDIATE RESTITUTION.'", "'WE HAVE COMMISSIONED AN INDEPENDENT FORENSIC AUDIT TO ENSURE UNFILTERED TRANSPARENCY.'"],
-                imageUrl: "/images/teens-elite-class-09/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Crisis Remediation Lexicon / Léxico de Manejo de Crisis",
-                description: "High-level PR and crisis management terms.",
-                content: ["'UNEQUIVOCAL': Completely clear, leaving no doubt whatsoever (e.g. 'Let me be unequivocal').", "'FORENSIC AUDIT': An exhaustive, objective investigation by external technical experts.", "'STAKEHOLDER RESTITUTION': Direct compensation or remediation given to affected parties.", "'PROACTIVE CONTAINMENT': Measures taken immediately to stop an incident from spreading."],
-                imageUrl: "/images/teens-elite-class-09/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Live Press Conference Address / Discurso de rueda de prensa modelo",
-                description: "Read this sample spokesperson address.",
-                content: ["Good evening, members of the press. We deeply regret the service outage that affected our community today. While I acknowledge reports alleging system negligence, let me be unequivocal: our automated containment protocols prevented any breach of user data.", "We have initiated a comprehensive independent forensic audit, and our engineers have deployed a hardened architecture to ensure this vulnerability cannot reoccur.", "Furthermore, we are issuing full stakeholder restitution credits to every affected user. Our priority remains unwavering transparency and absolute reliability!"],
-                imageUrl: "/images/teens-elite-class-09/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Crisis Leadership & The 3-Pillar Framework 🌪️🎙️ / Liderazgo en Crisis","description":"PR Damage Control","content":["1. Immediate Accountability: Take responsibility without making excuses.","2. Transparent Remediation: Detail concrete steps to resolve the issue.","3. Systemic Prevention: Implement long-term safeguards against recurrence."],"imageUrl":"/images/teens-elite-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
+              {"id":"slide-5","title":"The Bridging & Pivoting Formula 🌉 / La Técnica del Puente","description":"Navigating Hostile Press","content":["Journalist: 'Isn't this data breach a sign of catastrophic incompetence?'","Executive Pivot: 'What is critical to understand is that all user accounts were encrypted, AND our team has patched the vulnerability within 2 hours.'","Bridge phrases: 'What matters most now is...', 'Let's look at the verified facts...'"],"imageUrl":"/images/teens-elite-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
+              {"id":"slide-6","title":"Live Hostile Press Conference Defense 📸📰 / Rueda de Prensa","description":"Poise Under Fire","content":["'We deeply regret the disruption caused to our users.'","'An independent forensic cybersecurity firm has been hired to audit all systems.'","'We will release daily transparency updates until full restoration.'"],"imageUrl":"/images/teens-elite-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
+              {"id":"slide-7","title":"The Crisis Press Statement Formula 🎙️ / Fórmula de Crisis","description":"Accountability + Immediate Action + Safeguard","content":["Formula: 'We take full responsibility for [Issue]. We have deployed [Immediate Fix] and instituted [Long-Term Safeguard].'","Example: 'We take full responsibility for the server outage. We have deployed backup clusters and expanded capacity by 300%.'"],"imageUrl":"/images/teens-elite-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
+              {"id":"slide-8","title":"Quick Check: Executive Pivot 🎯 / Mini Reto","description":"Pivot a Hostile Question","content":["Pivot away from hostile accusation:","'While I understand that concern, what is critical to focus on is ________.'"],"imageUrl":"/images/teens-elite-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
             ],
             action: "Tomar notas y practicar la postura y entonación de autoridad ejecutiva."
           },
@@ -27877,46 +27562,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los cálculos de economía unitaria y el léxico de capital de riesgo.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Scalable Venture Architecture / Arquitectura de Empresas Escalables",
-                description: "The 4 core pillars of venture design.",
-                content: ["1. VALUE PROPOSITION: The painful customer problem solved 10x better than existing alternatives.", "2. UNIT ECONOMICS: Profitable economics on every individual user transaction or subscription.", "3. GO-TO-MARKET (GTM): Scalable acquisition channels with predictable CAC.", "4. DEFENSIBLE MOAT: Structural barriers that prevent competitors from eating your market share."],
-                imageUrl: "/images/teens-elite-class-10/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Unit Economics Equations / Ecuaciones de Economía Unitaria",
-                description: "The mathematical backbone of venture viability.",
-                content: ["CAC (Customer Acquisition Cost): Total Sales & Marketing Spend / Number of Customers Acquired.", "LTV (Lifetime Value): (Average Revenue Per User × Gross Margin) / Churn Rate.", "LTV:CAC RATIO: Must be > 3:1 for healthy venture scaling.", "RUNWAY: Total Cash in Bank / Monthly Net Burn Rate (target: 18-24 months)."],
-                imageUrl: "/images/teens-elite-class-10/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "The Unassailable Value Proposition Formula / La Propuesta de Valor",
-                description: "Articulating product-market fit in one sentence.",
-                content: ["FORMULA: 'We help [Target Segment] achieve [Desirable Outcome] without [Primary Pain Point] through [Proprietary Innovation].'", "EXAMPLE: 'We help clinical trial managers reduce drug testing timelines by 60% without compromising patient safety through predictive quantum pharmacokinetic modeling.'"],
-                imageUrl: "/images/teens-elite-class-10/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Venture Capital & Due Diligence Lexicon / Léxico de Venture Capital",
-                description: "Essential terms for venture funding discussions.",
-                content: ["'TAM (Total Addressable Market)': The total revenue opportunity if 100% market share is achieved.", "'COMPETITIVE MOAT': Sustainable advantages (e.g. data network effects, IP patents, regulatory licenses).", "'CAP TABLE': The spreadsheet detailing equity ownership percentages among founders and investors.", "'DILUTION': The reduction in founders' ownership percentage when new investment shares are issued."],
-                imageUrl: "/images/teens-elite-class-10/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Venture Design Executive Address / Discurso de diseño de empresa modelo",
-                description: "Read this sample due diligence presentation.",
-                content: ["Good afternoon, partners. Our venture, EcoMesh, solves grid instability for commercial data centers. Our unit economics demonstrate extraordinary capital efficiency: with a Customer Acquisition Cost of twelve hundred dollars and a Lifetime Value of eighty-five hundred dollars, our LTV-to-CAC ratio exceeds seven-to-one with eighty-two percent gross margins.", "Our defensibility is anchored in proprietary thermal-load balancing algorithms that yield self-reinforcing network effects.", "With an eighteen-month runway and fifteen percent monthly recurring revenue growth, we are positioned to capture a twelve-billion-dollar total addressable market while abating mega-ton carbon emissions globally!"],
-                imageUrl: "/images/teens-elite-class-10/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Designing a Scalable Global Venture 🚀📊 / Economía Unitaria","description":"Unit Economics & Value Prop","content":["CAC (Customer Acquisition Cost) vs LTV (Lifetime Value): Target LTV/CAC > 3x.","Gross Margin, Churn Rate, Payback Period, TAM (Total Addressable Market).","A viable venture combines solving a real pain point with sound unit economics."],"imageUrl":"/images/teens-elite-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"The Unassailable Value Proposition 💎 / Propuesta de Valor","description":"Market Differentiation","content":["'We enable [Target Customer] to [Core Benefit] without [Major Friction] by leveraging [Proprietary Tech].'","Differentiator: Patents, network effects, 10x lower cost, proprietary datasets.","Investors fund moat defensibility, not just features."],"imageUrl":"/images/teens-elite-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Venture Capital Due Diligence & Metrics 📈 / Due Diligence","description":"Investor Readiness","content":["'Our pilot demonstrated a 14-day payback period with a 92% retention rate.'","'With our scalable cloud architecture, marginal cost per user approaches zero.'","Mastering financial fluency unlocks tier-1 venture capital backing."],"imageUrl":"/images/teens-elite-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Seed Stage Venture Formula 💡 / Fórmula de Venture","description":"Problem + Proprietary Solution + Unit Economics","content":["Formula: 'We solve [Market Pain Point] for [Audience] with [Proprietary Tech], achieving [LTV/CAC Metric].'","Example: 'We automate eco-audits for schools with computer vision, achieving a 4x LTV/CAC ratio.'"],"imageUrl":"/images/teens-elite-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: 30-Second Venture Elevator Pitch 🎯 / Mini Reto","description":"Pitch Your Venture","content":["Deliver your value proposition to an investor:","'We help ________ achieve ________ through our proprietary ________.'"],"imageUrl":"/images/teens-elite-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y practicar la defensa cuantitativa del modelo de negocio."
           },
@@ -28257,46 +27907,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Integrar todas las estructuras retóricas del Nivel 9 en un discurso magistral.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The 7-Stage Keynote Architecture / Arquitectura de la Conferencia Magistral",
-                description: "The global gold standard for world-class venture keynotes.",
-                content: ["1. THE HOOK: Rhetorical Inversion or provocative global paradox.", "2. THE CRISIS / PROBLEM: Empirical data delineating the acute friction point.", "3. THE PROPRIETARY SOLUTION: Cleft sentence emphasizing your breakthrough.", "4. UNIT ECONOMICS: LTV:CAC, gross margin leverage, and cash efficiency.", "5. DEFENSIBLE MOAT: Self-reinforcing network effects and algorithmic barrier.", "6. MARKET SCALE & TAM: Multi-billion dollar growth trajectory.", "7. THE GRAND VISION: Inspiring call to action inviting global partnership."],
-                imageUrl: "/images/teens-elite-class-11/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Synthesizing Level 9 Elite Rhetoric / Síntesis Retórica de Élite",
-                description: "Masterful weaving of advanced linguistic devices.",
-                content: ["INVERSION: 'Seldom have we witnessed... / Not only does our architecture eliminate latency, but it also...'", "WH-CLEFT: 'What inspires our team is the conviction that clean energy must be universally accessible.'", "IT-CLEFT: 'It is through proprietary quantum algorithms that we surpass legacy computing.'", "EMPIRICAL RIGOR: 'Peer-reviewed datasets substantiate that our solution reduces emissions by 42%.'"],
-                imageUrl: "/images/teens-elite-class-11/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Handling Live Investor Cross-Examination / Defensa ante Inversionistas",
-                description: "Poise, bridging, and empirical defensibility during Q&A.",
-                content: ["ACKNOWLEDGE & PIVOT: 'While that valuation concern is understandable, what our negative net churn demonstrates is accelerating enterprise retention.'", "DEFEND CAPITAL EFFICIENCY: 'With an 18-month runway and an 8:1 LTV-to-CAC ratio, every dollar invested generates compounding organic velocity.'", "REINFORCE THE MOAT: 'Our proprietary data loop ensures that copycat entrants face insurmountable switching costs.'"],
-                imageUrl: "/images/teens-elite-class-11/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Capstone Oratory & Venture Lexicon / Léxico del Proyecto Final",
-                description: "The complete vocabulary of high-impact leadership.",
-                content: ["'INFLECTION POINT': A decisive moment of transformation in technology or society.", "'OPERATING LEVERAGE': The ability to increase revenue significantly without proportional costs.", "'TRANSFORMATIVE PARADIGM': A fundamental shift in underlying models or technology.", "'VENTURE-BACKED SCALING': Exponential growth funded by institutional venture capital."],
-                imageUrl: "/images/teens-elite-class-11/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Grand Capstone Keynote Address / Discurso de proyecto final modelo",
-                description: "Read this winning Demo Day Keynote Pitch.",
-                content: ["Good evening, global innovators and venture partners. Seldom has humanity stood before a technological inflection point as urgent as climate resilience. What distinguishes our platform, TerraPulse, is not merely predictive AI modeling, but our proprietary real-time sensor moat that reduces urban heat island impact by forty percent.", "Our unit economics demonstrate extraordinary capital efficiency: with a Customer Acquisition Cost of fifteen hundred dollars and a Lifetime Value of eleven thousand dollars, we command an eight-to-one LTV-to-CAC ratio with eighty-four percent gross margins.", "Not only are we mitigating thirty gigatons of carbon emissions, but we are capturing a forty-billion-dollar global market. We invite you to partner with us in engineering the future of our planet!"],
-                imageUrl: "/images/teens-elite-class-11/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Level 9 Grand Capstone: Global Venture Keynote 🌍👑 / Proyecto Final","description":"International Tech Seed Pitch","content":["The 7-Stage Keynote Architecture: Hook -> Problem -> Solution -> Tech Moat -> Unit Economics -> Team -> Ask","Synthesizing Level 9 Elite Rhetoric: Inversions, Clefts, Mixed Conditionals, and Empirical Precision.","Commanding the international tech stage as a visionary youth founder."],"imageUrl":"/images/teens-elite-class-11/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"Handling Live Investor Cross-Examination 🔥 / Defensa ante Inversionistas","description":"Seed Round Q&A","content":["Investor: 'What stops Google or Meta from copying this in three months?'","Founder Defense: 'Not only do we hold pending provisional patents, but our localized community dataset creates an insurmountable competitive moat.'","Turning hard questions into decisive closing statements."],"imageUrl":"/images/teens-elite-class-11/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"The Master Elite Rhetoric Synthesis ⚡ / Síntesis de Élite","description":"C1/C2 Fluency Command","content":["Inversions for dramatic milestones ('Never before has clean energy been so accessible.')","Clefts for core value clarity ('What we are building is a generational infrastructure.')","Diplomatic hedging for realistic projections ('Data suggests sustainable 3x annual growth.')"],"imageUrl":"/images/teens-elite-class-11/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Grand Elite Keynote Formula 🏆 / Fórmula de Graduación","description":"Complete Global Keynote","content":["1. Open with an inverted hook or cleft statement.","2. Present your scalable venture architecture and empirical metrics.","3. Close with a visionary call to action for seed investors."],"imageUrl":"/images/teens-elite-class-11/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Grand Elite Keynote Pitch 🎯 / Gran Reto","description":"Deliver Your 30-Second Seed Pitch","content":["Deliver your 30-second Level 9 Grand Capstone Seed Pitch to the Venture Capital Panel!","Demonstrate mastery of inversions, unit economics, and elite C1 fluency!"],"imageUrl":"/images/teens-elite-class-11/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y ensayar la entonación y proyección escénica internacional."
           },
@@ -28816,46 +28431,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la arquitectura de debate parlamentario y el léxico de refutación dialéctica.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "British Parliamentary (BP) Architecture / Arquitectura Parlamentaria Británica",
-                description: "The 4-team global championship debating format.",
-                content: ["1. OPENING GOVERNMENT (OG): Prime Minister (sets definitions & case) + Deputy Prime Minister (rebuttal & reinforcement).", "2. OPENING OPPOSITION (OO): Leader of Opposition (clashes directly & offers counter-model) + Deputy Leader of Opposition.", "3. CLOSING GOVERNMENT (CG): Member of Government (provides NEW analytical Extension) + Government Whip (summarizes clashes).", "4. CLOSING OPPOSITION (CO): Member of Opposition (novel extension) + Opposition Whip (final comparative crystallizations)."],
-                imageUrl: "/images/teens-masters-class-01/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Points of Information (POIs) & Floor Interventions / Puntos de Información",
-                description: "Strategic floor interruptions during debate speeches.",
-                content: ["RULES: POIs are allowed only during UNPROTECTED TIME (minutes 2:00 to 6:00 in a 7-minute speech). Must be under 15 seconds.", "OFFERING: Stand up, place one hand on head/podium, and state: 'On that specific point, Madam Speaker!' or 'Point of Information!'", "RESPONDING: Speaker may say: 'Accepted, please proceed' or 'Declined, thank you' without losing speech time.", "FORMULA: 'If your model claims X, how do you account for empirical catastrophe Y?'"],
-                imageUrl: "/images/teens-masters-class-01/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Dismantling Classical Logical Fallacies / Desmantelando Falacias Lógicas",
-                description: "Identifying flaws in opposing argumentation.",
-                content: ["1. STRAWMAN: Misrepresenting an argument to make it easier to attack ('The government is not abolishing technology; we are regulating addictive feedback loops.').", "2. FALSE DICHOTOMY: Claiming only two extreme choices exist ('The opposition presents a false choice between total censorship and complete chaos.').", "3. SLIPPERY SLOPE: Claiming one small action inevitably triggers total collapse without causal proof.", "4. CIRCULAR REASONING (Begging the Question): Using the premise as the conclusion."],
-                imageUrl: "/images/teens-masters-class-01/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Parliamentary Debate Lexicon / Léxico de Debate Parlamentario",
-                description: "Essential terms for competitive championship debaters.",
-                content: ["'BURDEN OF PROOF': The standard of justification required for a claim to stand.", "'COMPARATIVE HARM': Proving the harms in your world are vastly less severe than in the opponent's world.", "'STATUS QUO': The current existing state of affairs without policy intervention.", "'FIAT': The debate assumption that the proposed policy will be enacted, shifting focus onto whether it SHOULD be done."],
-                imageUrl: "/images/teens-masters-class-01/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Oxford-Union Prime Ministerial Address / Discurso de debate modelo",
-                description: "Read this sample championship debate opening speech.",
-                content: ["Madam Speaker, This House strongly believes that algorithmic content recommendation platforms must be strictly prohibited for adolescents. The opposition attempts to frame this debate around personal responsibility; however, this is a glaring false dichotomy.", "The burden of proof rests upon whether autonomous neural algorithms optimize for engagement through dopamine addiction.", "Even if we concede the opposition's claim of content discovery, the comparative neurological harm far outweighs any marginal utility. We urge this House to pass the motion!"],
-                imageUrl: "/images/teens-masters-class-01/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Oxford-Union British Parliamentary Debate 🏛️🇬🇧 / Debate Oxford-Union","description":"BP Format Architecture","content":["Prime Minister -> Leader of Opposition -> Deputy PM -> Deputy Opposition -> Member -> Whip","Points of Information (POIs): Floor interventions under 15 seconds.","Dialectical refutation: Attacking the underlying logical warrants, not just symptoms."],"imageUrl":"/images/teens-masters-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Dismantling Classical Logical Fallacies 🧠⚡ / Falacias Lógicas","description":"Philosophical Rigor","content":["Straw Man: Misrepresenting an argument to attack it easily.","Ad Hominem: Attacking the person rather than the premise.","False Dichotomy: Presenting only two extremes when nuance exists.","Exposing fallacies politely dismantles opponent cases in real time."],"imageUrl":"/images/teens-masters-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Handling Floor POIs & Whip Summaries 🎙️ / Puntos de Información","description":"Floor Combat","content":["'On that point, Madam Speaker: does the proposition recognize that...'","'Declined, thank you. To continue my second substantive argument...'","The Whip speech synthesizes the entire clash into clear victory points."],"imageUrl":"/images/teens-masters-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Oxford-Union Debate Formula 📜 / Fórmula de Debate","description":"Substantive Warrant + Fallacy Rebuttal + Verdict","content":["Formula: 'While the opposition rests their case on [Fallacy], the core substantive warrant demonstrates [Principled Truth]; thus, the motion must fall.'","Example: 'While the opposition rests on a false dichotomy, the empirical reality demonstrates that ethical governance accelerates tech growth.'"],"imageUrl":"/images/teens-masters-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Oxford-Union POI 🎯 / Mini Reto","description":"Deliver a 10-Second Point of Information","content":["Deliver a POI challenging the premise that 'Social media should be banned for teens':","'On that point, Mr. Speaker: doesn't this motion overlook ________?'"],"imageUrl":"/images/teens-masters-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y ensayar la entonación y proyección oratoria de la Cámara."
           },
@@ -29196,46 +28776,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar los conceptos de semiótica, ecología de medios y léxico de teoría cultural.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Semiotic Framework / El Marco Semiótico",
-                description: "Roland Barthes' model of meaning-making.",
-                content: ["1. SIGNIFIER (El Significante): The physical form of the sign (e.g. a red rose, an audio sting, a neon glow).", "2. SIGNIFIED (El Significado): The mental concept or meaning evoked (e.g. romantic love, urgency, futuristic technology).", "3. DENOTATION: The literal, first-order dictionary definition of the image or word.", "4. CONNOTATION (Mythology): The second-order cultural, socio-economic, and ideological values attached to the sign."],
-                imageUrl: "/images/teens-masters-class-02/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Media Ecology: 'The Medium is the Message' / Ecología de Medios",
-                description: "Marshall McLuhan's revolutionary communications theory.",
-                content: ["CORE THESIS: The form of a medium (e.g. print press, television, algorithmic smartphone feeds) embeds itself in the human psyche, reshaping how we process thought far more than the specific content being transmitted.", "MCLUHAN'S TETRAD:", "• ENHANCES: What human capability does it amplify?", "• OBSOLESCES: What prior medium does it make obsolete?", "• RETRIEVES: What archaic cultural form does it bring back?", "• REVERSES: What happens when pushed to the extreme? (e.g. connection reverses into isolation)."],
-                imageUrl: "/images/teens-masters-class-02/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Digital Memetics & Hyperreality / Memética Digital e Hiperrealidad",
-                description: "Jean Baudrillard and Richard Dawkins in the digital age.",
-                content: ["'MEMETIC PROPAGATION': Ideas, behaviors, and styles that replicate across digital networks through viral imitation and iterative remixing.", "'SIMULACRA & HYPERREALITY' (Baudrillard): A condition in which media representations become more real to human consciousness than physical reality itself (e.g. curated digital feeds replacing organic socialization).", "'DISCOURSE FRAMING': How algorithms privilege emotional outrage to maximize user retention metrics."],
-                imageUrl: "/images/teens-masters-class-02/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Semiotics & Media Theory Lexicon / Léxico de Semiótica y Medios",
-                description: "University-level vocabulary for cultural criticism.",
-                content: ["'SEMIOTIC DECONSTRUCTION': Analyzing a cultural text to expose its underlying ideological assumptions.", "'CULTURAL HEGEMONY': The dominance of one social group's ideas and values presented as universal common sense.", "'PARASOCIAL RELATIONSHIP': A one-sided psychological attachment formed with media figures or digital avatars.", "'SUBTEXT': The implicit, unstated message concealed beneath the overt narrative."],
-                imageUrl: "/images/teens-masters-class-02/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Cultural Critic Television Address / Discurso de crítica cultural modelo",
-                description: "Read this sample cultural analysis broadcast.",
-                content: ["Good evening, critics and scholars. When we deconstruct short-form algorithmic video feeds through McLuhan's media ecology, we discover that the medium is inherently the message. The signifier—rapid fifteen-second micro-loops—denotes entertaining vignettes; however, the ideological connotation is the commodification of adolescent attention spans.", "The platform operates as a Baudrillardian simulacrum, where hyperreal aesthetic curation supplants genuine human intimacy.", "Far from neutral entertainment, the algorithmic feedback loop engineers perpetual dissatisfaction to accelerate consumerist monetization. We must cultivate critical semiotic literacy to dismantle this digital hegemony!"],
-                imageUrl: "/images/teens-masters-class-02/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Pop Culture Semiotics & Media Ecology 📺🧬 / Semiótica y Medios","description":"Signifier & Signified","content":["Signifier (Symbol/Image) vs Signified (Cultural Meaning).","Media Ecology (Marshall McLuhan): 'The medium is the message.'","Digital memetics: How viral memes compress complex social commentary into micro-symbols."],"imageUrl":"/images/teens-masters-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Hyperreality & Baudrillard's Simulacra 🌐 / Hiperrealidad","description":"Digital Philosophy","content":["Simulacrum: A representation that replaces real experience.","How algorithmic feeds curate synthetic realities and social trends.","Deconstructing digital narratives with philosophical clarity."],"imageUrl":"/images/teens-masters-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Cultural Criticism & Television Commentaries 🎙️ / Crítica Cultural","description":"Media Analysis","content":["'This cinematic trope reflects societal anxiety regarding artificial intelligence.'","'The juxtaposition of neon aesthetics and vintage audio creates a nostalgic simulacrum.'","Transform pop culture viewing into profound intellectual critique."],"imageUrl":"/images/teens-masters-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Semiotic Critique Formula 🎬 / Fórmula Semiótica","description":"Signifier + Cultural Subtext + Critique","content":["Formula: 'The [Cultural Artifact] functions as a signifier of [Societal Theme], deconstructing [Traditional Narrative].'","Example: 'The cyberpunk aesthetic functions as a signifier of urban alienation, deconstructing techno-utopian promises.'"],"imageUrl":"/images/teens-masters-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Cultural Critic 🎯 / Mini Reto","description":"Deconstruct a Pop Culture Symbol","content":["Analyze what superhero movies represent in modern society:","'Superheroes function as a signifier of ________ in an era of ________.'"],"imageUrl":"/images/teens-masters-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y practicar el análisis semiótico y la crítica de medios."
           },
@@ -29576,46 +29121,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la indagación socrática y el léxico epistemológico de posgrado.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Socratic Seminar Framework / El Marco del Seminario Socrático",
-                description: "The 5 dimensions of scholarly interrogation.",
-                content: ["1. CLARIFICATION: 'Could you elucidate what you mean by term X in this context?'", "2. PROBING ASSUMPTIONS: 'Upon what unspoken ontological premise does your core thesis rest?'", "3. PROBING EVIDENCE: 'How does your dataset account for confounding environmental variables?'", "4. QUESTIONING PERSPECTIVES: 'What would a dialectical materialist or post-structuralist critique offer here?'", "5. PROBING CONSEQUENCES: 'If your hypothesis is adopted, what are the systemic secondary implications?'"],
-                imageUrl: "/images/teens-masters-class-03/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Epistemology & Popper's Falsifiability / Epistemología y Falsabilidad",
-                description: "The demarcation between science and dogma.",
-                content: ["'A PRIORI': Knowledge derived through theoretical deduction or mathematical reason prior to empirical observation.", "'A POSTERIORI': Knowledge dependent entirely upon empirical observation and experimental evidence.", "'POPPERIAN FALSIFIABILITY': A scientific hypothesis must specify conditions under which it could theoretically be disproven; if an assertion cannot be tested or falsified, it remains unfalsifiable dogma.", "'EPISTEMIC HUMILITY': The acknowledgment of the limitations of one's own models and data."],
-                imageUrl: "/images/teens-masters-class-03/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Graduate Seminar Etiquette / Protocolo de Seminario de Posgrado",
-                description: "Formulas for collegiate academic disagreement.",
-                content: ["'WITH RESPECT TO Professor X's paper, one must interrogate the methodological baseline.'", "'DOES THAT ASSERTION not inadvertently conflate correlation with causation?'", "'WHILE COMPELLING, the paper's conclusion relies upon an unverified ceteris paribus assumption.'", "'I WOULD VENTURE to challenge the hermeneutic interpretation presented in Chapter 3.'"],
-                imageUrl: "/images/teens-masters-class-03/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Ivy League Seminar Lexicon / Léxico de Seminario Universitario",
-                description: "Advanced terminology for doctoral discourse.",
-                content: ["'EPISTEMOLOGY': The philosophical study of knowledge, truth, and justified belief.", "'HERMENEUTICS': The theory and methodology of textual and cultural interpretation.", "'ONTOLOGY': The philosophical study of the nature of being and reality.", "'PARADIGM SHIFT': A fundamental transformation in the basic concepts and experimental practices of a scientific discipline."],
-                imageUrl: "/images/teens-masters-class-03/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Graduate Seminar Defense Address / Discurso de defensa doctoral modelo",
-                description: "Read this sample doctoral seminar intervention.",
-                content: ["Esteemed Provost and faculty colleagues: while the prevailing literature posits that artificial neural networks exhibit genuine cognitive intentionality, we must subject this premise to rigorous Socratic interrogation. Epistemologically, statistical pattern prediction does not constitute semantic comprehension.", "The authors' claim fails Popper's falsifiability criterion because no behavioral output is permitted to disconfirm their hypothesis.", "Epistemic humility requires us to distinguish between computational simulation and conscious ontology. Until reproducible empirical benchmarks establish causal cognition rather than statistical mimicry, this theoretical paradigm remains fundamentally unproven!"],
-                imageUrl: "/images/teens-masters-class-03/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Ivy League Socratic Seminars & Popperian Falsification 🏛️📚 / Seminarios Socráticos","description":"Epistemology","content":["Karl Popper's Falsification Principle: A scientific theory is valid only if it can be proven false.","The Socratic Method: Relentless questioning to expose unexamined assumptions.","Graduate seminar etiquette: Collaborative intellectual rigor without hostility."],"imageUrl":"/images/teens-masters-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Cross-Examination & Epistemic Humility 🧠 / Contrainterrogatorio","description":"Defending Hypotheses","content":["'What empirical conditions would compel you to abandon your thesis?'","'How does your model account for non-linear systemic feedback loops?'","Epistemic humility: 'That is a compelling edge case our current dataset cannot fully resolve.'"],"imageUrl":"/images/teens-masters-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Doctoral Dissertation Defense Simulation 🎓 / Defensa Doctoral","description":"Scholarly Authority","content":["'My research substantiates that neural network interpretability requires causal DAG models.'","'We welcome peer critique on our statistical normalization methodology.'","Commanding graduate seminars demonstrates C2 academic mastery."],"imageUrl":"/images/teens-masters-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Socratic Dialectical Formula 🏛️ / Fórmula Socrática","description":"Hypothesis + Falsification Condition + Synthesis","content":["Formula: 'Our thesis posits that [Hypothesis]; this holds true unless [Falsifying Condition] is empirically observed.'","Example: 'Our thesis posits that algorithmic governance improves resource allocation unless historical bias is codified in training data.'"],"imageUrl":"/images/teens-masters-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Socratic Challenge 🎯 / Mini Reto","description":"Formulate a Falsifiable Hypothesis","content":["Tell the professor:","'My hypothesis holds true provided that ________ does not occur.'"],"imageUrl":"/images/teens-masters-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y ensayar el protocolo de discusión académica de posgrado."
           },
@@ -29956,46 +29466,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la arquitectura de conferencias TED, la curva narrativa y el léxico de liderazgo de opinión.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The TED Keynote Architecture & The Throughline / La Arquitectura TED",
-                description: "The structural spine of viral thought leadership.",
-                content: ["1. THE THROUGHLINE: The single, razor-sharp idea that connects every story and piece of data in your 18 minutes.", "2. THE HOOK (0:00-2:00): A vulnerable personal anecdote or startling paradox that disrupts the listener's worldview.", "3. THE JOURNEY (2:00-12:00): 3 distinct narrative evidence points building intellectual momentum.", "4. THE CALL TO ACTION (12:00-15:00): An empowering, actionable invitation to the audience.", "5. THE NEW BLISS (15:00-18:00): A poetic closing image illustrating a transformed world."],
-                imageUrl: "/images/teens-masters-class-04/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Nancy Duarte's Sparkline Structure / La Estructura Sparkline de Duarte",
-                description: "Creating dramatic tension and emotional release.",
-                content: ["WHAT IS (The Baseline): Delineating the flawed, frustrating, or unsustainable status quo.", "WHAT COULD BE (The Vision): Painting the vivid, breathtaking alternative made possible by your idea.", "THE OSCILLATION: Great orators bounce between 'What is' and 'What could be' multiple times to build psychological yearning in the listener, culminating in 'The New Bliss'."],
-                imageUrl: "/images/teens-masters-class-04/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Aristotle's Triad & Vocal Modulation / El Trío Aristotélico y Modulación",
-                description: "Balancing the 3 pillars of persuasive oratory.",
-                content: ["ETHOS (Credibility): Establish authenticity through personal vulnerability rather than bragging.", "PATHOS (Emotional Resonance): Use sensory details ('The metallic scent of the operating room', 'The deafening silence after the test failed').", "LOGOS (Structural Logic): Embed clear empirical data without overwhelming with numbers.", "VOCAL CADENCE: Master the dramatic 3-second silence; whisper for intimacy, project for authority."],
-                imageUrl: "/images/teens-masters-class-04/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Thought Leadership Lexicon / Léxico de Liderazgo de Opinión",
-                description: "Elevated terms for keynote speakers and authors.",
-                content: ["'THROUGHLINE': The central theme connecting every element of a presentation.", "'STICKY METAPHOR': A vivid mental comparison that renders an abstract concept unforgettable.", "'EMOTIONAL RESONANCE': The deep emotional connection evoked in an audience.", "'THE NEW BLISS': The concluding vision of an elevated reality after the idea is implemented."],
-                imageUrl: "/images/teens-masters-class-04/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model TED Keynote Address / Discurso TED modelo",
-                description: "Read this sample championship TED Talk climax.",
-                content: ["Three years ago, standing in a dim community clinic, I watched a child struggle for breath because clean air had become a luxury. Today, what is: four billion people breathe toxic particulates daily while society shrugs in resignation.", "But imagine what could be: a world where decentralized bio-algal facades turn every city block into an oxygen cathedral.", "This is our throughline: clean air is not an environmental bonus; it is an unnegotiable human right. When we unite technology with moral courage, we do not merely clean the skies—we reclaim the future of our children. Step onto the stage with us, and let us breathe life back into our world!"],
-                imageUrl: "/images/teens-masters-class-04/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"TED Keynotes & High-Impact Throughlines 🎙️💡 / Conferencias TED","description":"The Throughline Concept","content":["Throughline: The single unifying idea connecting every story, data point, and revelation.","Nancy Duarte's Sparkline: Alternating between 'What is' (reality) and 'What could be' (vision).","Aristotle's Triad: Ethos (Credibility), Pathos (Emotion), Logos (Logic)."],"imageUrl":"/images/teens-masters-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"Vulnerability as an Oratorical Catalyst 💎 / Vulnerabilidad y Conexión","description":"Authentic Storytelling","content":["A TED speaker does not present as a flawless superhero—they share the moment of doubt and failure.","'In that moment of failure, I realized that our metrics were measuring activity, not impact.'","Authentic vulnerability builds an unshakeable bond with the audience."],"imageUrl":"/images/teens-masters-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"The Grand Call to Action & Euphoric Close 🌟 / Cierre Emocional","description":"Inspiring Movements","content":["'The future is not something that happens to us—it is something we actively construct.'","'So I leave you with one question: what will your throughline be?'","Mastering keynotes turns speakers into global thought leaders."],"imageUrl":"/images/teens-masters-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The TED Keynote Climax Formula 🌍 / Fórmula TED","description":"Contrast Reality with Possibility + Throughline","content":["Formula: 'We live in a world where [Current Pain]; yet, what if we [Visionary Possibility]? Our throughline is simple: [Core Truth].'","Example: 'We live in a world of digital overload; yet, what if tech nurtured human depth? Our throughline: mindfulness is the ultimate superpower.'"],"imageUrl":"/images/teens-masters-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: TED Sparkline Hook 🎯 / Mini Reto","description":"Deliver a 15-Second TED Hook","content":["Deliver your TED opening hook comparing 'What is' with 'What could be':","'Today we accept ________, but imagine a future where ________.'"],"imageUrl":"/images/teens-masters-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y ensayar la modulación vocal, pausas dramáticas y proyección."
           },
@@ -30336,46 +29811,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la redacción de tratados, cláusulas operativas y el léxico de geopolítica.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Multilateral Treaty Architecture / La Arquitectura de Tratados",
-                description: "How international legally-binding accords are drafted.",
-                content: ["1. THE PREAMBLE: Outlines historical context, foundational principles, and shared intentions (Uses active verbs: 'Reaffirming', 'Recognizing', 'Deeply concerned by').", "2. OPERATIVE CLAUSES: The legally binding actions and mandates (Uses imperative diplomatic verbs: 'Resolves', 'Urges', 'Mandates', 'Enacts').", "3. DISPUTE RESOLUTION: Formulates mediation via the International Court of Justice (ICJ).", "4. ENFORCEMENT & RATIFICATION: Defines quorum thresholds and compliance monitoring bodies."],
-                imageUrl: "/images/teens-masters-class-05/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "UN Security Council Statecraft & Veto Politics / La Geopolítica de la ONU",
-                description: "The mechanics of global security governance.",
-                content: ["THE P5 VETO: The 5 Permanent Members hold unilateral veto power over substantive resolutions.", "CHAPTER VII MANDATES: Grants the Security Council legal authority to authorize economic sanctions, blockades, or collective peacekeeper deployments.", "COMMUNIQUÉ: An official joint public statement released by participating governments summarizing summit outcomes."],
-                imageUrl: "/images/teens-masters-class-05/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Bilateral Concessions & Diplomatic Formulas / Concesiones Bilaterales",
-                description: "Phrasing high-stakes diplomatic compromises.",
-                content: ["'THE HIGH CONTRACTING PARTIES solemnly reaffirm their commitment to territorial sovereignty.'", "'IN THE SPIRIT OF COMPROMISE, our government concedes quota X in exchange for a moratorium on tariff Y.'", "'FAILURE TO COMPLY with Article 4 shall trigger proportionate multilateral economic sanctions.'", "'OUR DELEGATION RESERVES THE RIGHT to table an amended draft resolution before the plenary.'"],
-                imageUrl: "/images/teens-masters-class-05/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Geopolitical Statecraft Lexicon / Léxico de Geopolítica y Diplomacia",
-                description: "Elevated vocabulary for international relations.",
-                content: ["'BILATERAL ACCORD': A legally binding agreement negotiated between two sovereign nations.", "'NON-PROLIFERATION': The prevention of the increase or spread of hazardous military technology.", "'SANCTION': A commercial or financial penalty applied by countries against a targeted self-governing state.", "'RATIFICATION': The formal validation and enactment of a treaty by a state's national legislature."],
-                imageUrl: "/images/teens-masters-class-05/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model UN Security Council Resolution Address / Discurso modelo en la ONU",
-                description: "Read this sample emergency diplomatic address.",
-                content: ["Mr. President and distinguished members of the Security Council: our global community stands at an existential crossroads. As Chief Diplomatic Envoy, our delegation introduces Emergency Resolution 409 to de-escalate maritime tensions in international waters.", "Operative Article 1 mandates an immediate 90-day demilitarized corridor. Operative Article 2 establishes a joint sovereign inspection council under UN oversight.", "To demonstrate good faith, we concede our exclusive transit claims in exchange for a binding moratorium on naval blockades. We urge all permanent members to exercise statesmanship, waive their veto, and ratify this historic accord. Let us choose diplomacy over devastation!"],
-                imageUrl: "/images/teens-masters-class-05/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Geopolitical Statecraft & Multilateral Treaties 🌐🏛️ / Geopolítica y Cumbres","description":"UN Security Council Protocol","content":["Bilateral concessions, non-proliferation accords, binding vs non-binding resolutions.","The mechanics of veto power and diplomatic quorum in the UN Security Council.","Balancing national sovereignty with planetary collective action."],"imageUrl":"/images/teens-masters-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Diplomatic Formulas for Treaty Ratification 📜 / Fórmulas Diplomáticas","description":"Treaty Language","content":["'The General Assembly, RECALLING its resolution 75/1...'","'REAFFIRMING the principles of international humanitarian law...'","'CALLS UPON all signatories to enact immediate ceasefire monitoring protocols.'"],"imageUrl":"/images/teens-masters-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Navigating Diplomatic Impasses & Backchannel Talks 🕊️ / Negociación","description":"Crisis Diplomacy","content":["'While territorial concerns remain contentious, joint ecological stewardship offers a neutral bridge.'","'We propose a multilateral verification commission under IAEA supervision.'","Diplomatic language de-escalates global geopolitical friction."],"imageUrl":"/images/teens-masters-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The UN Security Council Resolution Formula 🌐 / Fórmula de Resolución","description":"Preambular Clause + Operative Mandate","content":["Formula: 'Recognizing [Shared Global Crisis], the Council calls upon [Member States] to [Binding Diplomatic Action].'","Example: 'Recognizing rising sea levels, the Council calls upon member states to establish an international climate refugee resettlement accord.'"],"imageUrl":"/images/teens-masters-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: UN Delegate Resolution 🎯 / Mini Reto","description":"Propose a Diplomatic Accord","content":["Draft a 1-sentence UN resolution operative clause:","'The delegation proposes that all member states ________ by 2030.'"],"imageUrl":"/images/teens-masters-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y ensayar el protocolo de discursos diplomáticos formales."
           },
@@ -30716,46 +30156,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la terminología de mise-en-scène, diseño sonoro y crítica literaria.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Cinematography & Mise-en-Scène / Cinematografía y Puesta en Escena",
-                description: "The visual language of cinema.",
-                content: ["MISE-EN-SCÈNE: Everything that appears before the camera—framing, set composition, actor blocking, costumes, and color palettes.", "CHIAROSCURO: The dramatic contrast of extreme light and dark shadows, used to convey moral ambiguity or psychological conflict.", "DUTCH ANGLE: A tilted camera angle that generates cognitive unease and psychological imbalance.", "ASPECT RATIO: The proportional relationship between image width and height (e.g., 4:3 claustrophobia vs 2.39:1 widescreen grandeur)."],
-                imageUrl: "/images/teens-masters-class-06/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Literary Theory, Subtext & Narrators / Teoría Literaria y Subtexto",
-                description: "Deconstructing narrative architecture.",
-                content: ["SUBTEXT: The underlying, unspoken meaning and emotional currents beneath spoken dialogue.", "UNRELIABLE NARRATOR: A storyteller whose account is distorted by psychological trauma, deceit, or limited cognitive perspective.", "JUXTAPOSITION: Placing two contrasting elements side by side to emphasize irony or philosophical contradiction.", "MOTIF: A recurring visual, auditory, or symbolic element that develops a central theme."],
-                imageUrl: "/images/teens-masters-class-06/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Audio Soundscapes: Diegetic vs Non-Diegetic / Diseño Sonoro",
-                description: "How sound shapes cinematic emotion.",
-                content: ["DIEGETIC SOUND: Any sound originating from within the fictional story world (footsteps, character dialogue, radio music in the scene).", "NON-DIEGETIC SOUND: Sounds originating outside the story world, audible only to the audience (the symphonic orchestral score, voiceover narration).", "LEITMOTIF: A short, recurring musical phrase associated with a particular character, location, or philosophical concept."],
-                imageUrl: "/images/teens-masters-class-06/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Aesthetic & Film Critique Lexicon / Léxico de Crítica Cinematográfica",
-                description: "Elevated vocabulary for cultural critiques.",
-                content: ["'AUTEUR THEORY': The concept that a director is the primary creative author whose distinct personal vision defines the film.", "'CATHARSIS': The emotional release and purification experienced by the audience at the climax.", "'MONTAGE': The editing technique of juxtaposing short shots into a cohesive emotional or thematic sequence.", "'ALLEGORY': A story with a hidden symbolic meaning beneath its literal narrative."],
-                imageUrl: "/images/teens-masters-class-06/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Cannes Film Festival Jury Review / Reseña crítica modelo",
-                description: "Read this sample elite film festival review.",
-                content: ["Distinguished members of the Cannes Jury: Director Vance's latest cinematic opus is a masterclass in subtextual visual storytelling. Through meticulous mise-en-scène and oppressive chiaroscuro lighting, the camera traps the protagonist within suffocating architectural frames.", "The sudden transition from diegetic industrial clatter to complete sonic silence amplifies the character's internal psychological fractures.", "While superficial viewers may misinterpret the non-linear timeline as disorienting, it brilliantly mirrors the unreliable narrator's fractured memory. This is not mere aestheticism; it is cinematic catharsis at its most transcendent!"],
-                imageUrl: "/images/teens-masters-class-06/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Cinematography, Mise-en-Scène & Literary Deconstruction 🎬📖 / Crítica Estética","description":"Film & Literary Theory","content":["Mise-en-Scène: Lighting, framing, spatial geography, color palette, costume.","Diegetic sound (inside the film world) vs Non-diegetic sound (the orchestral score).","Subtext and unreliable narrators in post-modern literature."],"imageUrl":"/images/teens-masters-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
+              {"id":"slide-5","title":"Aesthetic Critique & Cannes Film Festival Jury Standards 🏆 / Crítica en Cannes","description":"Critical Lexicon","content":["'The director employs chiaroscuro lighting to symbolize the protagonist's moral ambiguity.'","'The pacing deconstructs conventional linear three-act structures.'","'A haunting auditory motif underscores the theme of generational trauma.'"],"imageUrl":"/images/teens-masters-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
+              {"id":"slide-6","title":"Deconstructing Subtext in World Masterpieces 🎨 / Deconstruir el Subtexto","description":"Literary Analysis","content":["'What the dialogue leaves unsaid conveys far greater tragic weight than exposition.'","'The recurring motif of clocks underscores the inexorable passage of time.'","Elevate cultural consumption into profound aesthetic scholarship."],"imageUrl":"/images/teens-masters-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
+              {"id":"slide-7","title":"The Film & Literary Critique Formula 🎭 / Fórmula de Crítica","description":"Aesthetic Technique + Symbolic Subtext + Aesthetic Value","content":["Formula: 'Through [Aesthetic/Cinematic Technique], the work illustrates [Subtext], establishing itself as a [Critical Verdict].'","Example: 'Through handheld cinematography and natural lighting, the film captures raw adolescent vulnerability, establishing itself as a modern classic.'"],"imageUrl":"/images/teens-masters-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
+              {"id":"slide-8","title":"Quick Check: Film Festival Jury Verdict 🎯 / Mini Reto","description":"Deliver an Aesthetic Critique","content":["Deliver a 1-sentence film critique using 'mise-en-scène' or 'subtext':","'The director's use of ________ symbolizes ________.'"],"imageUrl":"/images/teens-masters-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
             ],
             action: "Tomar notas y ensayar la redacción de críticas cinematográficas y literarias."
           },
@@ -31096,46 +30501,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la narrativa de trayectoria intelectual, liderazgo ético y el léxico de comités de selección.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Fellowship Interview Architecture / Arquitectura de la Entrevista",
-                description: "How elite scholarship boards evaluate candidates.",
-                content: ["1. INTELLECTUAL TRAJECTORY: Clearly connecting past academic research, present civic initiatives, and future postgraduate study into a coherent mission.", "2. MORAL LEADERSHIP & COURAGE: Demonstrating choices where you prioritized ethical principles over convenience or status.", "3. SYSTEMIC SCALE & GRASSROOTS IMPACT: Showing that your academic passion directly alleviates real-world human suffering or solves structural crises.", "4. AMBASSADORIAL POISE: Communicating cross-cultural empathy and global citizenship."],
-                imageUrl: "/images/teens-masters-class-07/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Navigating Ethical Dilemmas & Intellectual Humility / Dilemas Éticos",
-                description: "Addressing moral complexity with nuance.",
-                content: ["PRINCIPLES OVER EXPEDIENCY: 'True leadership is demonstrated when ethical commitments are tested under institutional pressure.'", "INTELLECTUAL HUMILITY: 'I acknowledge the valid limitations of our initial model, which is precisely why advanced study at Oxford is essential to refine our empirical methodology.'", "BALANCING STAKEHOLDERS: 'Navigating conflicting imperatives requires transparent dialogue, empathetic stakeholder engagement, and unyielding moral clarity.'"],
-                imageUrl: "/images/teens-masters-class-07/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Handling Hostile Panel Cross-Examination / Manejo de Presión",
-                description: "Formulas for maintaining composure under pressure.",
-                content: ["'THAT IS A PROFOUND and fair critique; allow me to elucidate how our framework mitigates that specific vulnerability.'", "'WHILE I CONCEDE that the initial dataset was limited, the subsequent longitudinal results confirm the underlying trend.'", "'RATHER THAN VIEWING those objectives as mutually exclusive, our methodology integrates both dimensions.'", "'I WELCOME THAT SCRUTINY, as rigorous peer interrogation is the foundation of sound public policy.'"],
-                imageUrl: "/images/teens-masters-class-07/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Fellowship Leadership Lexicon / Léxico de Liderazgo y Becas",
-                description: "Advanced terminology for scholarship candidates.",
-                content: ["'INTELLECTUAL TRAJECTORY': The overarching direction and progression of a scholar's academic and intellectual pursuits.", "'CIVIC LEADERSHIP': Active engagement in public service and community transformation.", "'CATALYST': An agent that initiates or significantly accelerates substantial transformation.", "'FIGHT THE WORLD'S FIGHT': The historic motto of the Rhodes Trust, emphasizing selfless dedication to solving global challenges."],
-                imageUrl: "/images/teens-masters-class-07/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Rhodes Scholarship Panel Defense / Defensa modelo de beca Rhodes",
-                description: "Read this sample elite interview response.",
-                content: ["Distinguished members of the Selection Board: my intellectual trajectory has been defined by a relentless commitment to democratic algorithmic governance. When our research uncovered systemic bias in public health triage systems, I chose public transparency over institutional comfort.", "The Rhodes Fellowship at Oxford will enable me to bridge machine learning architecture with international legal jurisprudence.", "True leadership is not about personal prestige; it is about deploying world-class scholarship to uplift vulnerable populations and fight the world's fight. I stand ready to serve as a transformative global scholar!"],
-                imageUrl: "/images/teens-masters-class-07/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Rhodes & Fulbright Fellowship Defense 🎓🏛️ / Entrevistas de Beca Rhodes","description":"The Fellowship Interview","content":["The Rhodes/Fulbright Selection Board: Looking for moral character, leadership instinct, and intellectual breadth.","Navigating ethical dilemmas and questions of global justice.","The balance between ambitious visionary claims and humble self-awareness."],"imageUrl":"/images/teens-masters-class-07/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Handling Hostile Selection Board Cross-Examination 🎙️ / Manejo de Presión","description":"Intellectual Composure","content":["Board Question: 'Isn't your proposed policy hopelessly idealistic in a fragmented geopolitical world?'","Fellowship Defense: 'Ideals define the horizon of progress; our empirical methodology defines the pragmatic roadmap.'","Steadfast philosophical composure wins international prestige."],"imageUrl":"/images/teens-masters-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Articulating a Vision of Global Service & Impact 🌍 / Vocación de Servicio","description":"Global Leadership","content":["'This fellowship is not a credential—it is a catalytic springboard to serve underserved communities.'","'I intend to bridge computational biology with public healthcare infrastructure in Latin America.'","Service-oriented vision distinguishes true world-changers."],"imageUrl":"/images/teens-masters-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Fellowship Board Defense Formula 🏆 / Fórmula Rhodes","description":"Global Problem + Academic Rigor + Moral Purpose","content":["Formula: 'My research addresses [Global Injustice] through [Academic Field], utilizing this fellowship to [Planetary Impact].'","Example: 'My research addresses clean water access through nanotech filtration, utilizing this fellowship to deploy decentralized systems across Latin America.'"],"imageUrl":"/images/teens-masters-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Fellowship Defense Statement 🎯 / Mini Reto","description":"Deliver Your Fellowship Mission","content":["Deliver your core mission statement to the Rhodes Selection Board:","'I seek this fellowship to leverage [Field] in order to [Global Impact].'"],"imageUrl":"/images/teens-masters-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Tomar notas y ensayar la respuesta a preguntas de comités de selección de becas."
           },
@@ -31476,46 +30846,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la arquitectura de podcast, la ética periodística y el léxico de medios de investigación.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The Video Essay & Podcast Architecture / La Estructura del Videoensayo",
-                description: "The 5-stage structural blueprint of investigative storytelling.",
-                content: ["1. THE COLD OPEN (0:00-1:30): Plunge the listener directly into the crime or mystery without introduction; end with the title sting.", "2. THE THESIS & STAKES (1:30-4:00): Establish why this institutional failure affects millions of citizens.", "3. THE PAPER TRAIL & FOIA (4:00-10:00): Unpack leaked documents, spreadsheets, and forensic data.", "4. THE WHISTLEBLOWER TESTIMONY (10:00-14:00): Emotional climax featuring protected source audio.", "5. THE SYSTEMIC INDICTMENT (14:00-18:00): Unmasking the structural causes and issuing an urgent call for reform."],
-                imageUrl: "/images/teens-masters-class-08/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Journalistic Ethics & Source Protection / Ética Periodística y Fuentes",
-                description: "Legal and moral standards of investigative journalism.",
-                content: ["ON THE RECORD: Information can be quoted directly with the source's full name and title.", "OFF THE RECORD: Information is used solely for background understanding; it cannot be quoted or attributed.", "ON BACKGROUND (DEEP BACKGROUND): Information can be quoted but attributed only to a generic descriptor ('a senior regulatory official').", "FOIA (Freedom of Information Act): Legal petitions forcing government agencies to disclose public documents."],
-                imageUrl: "/images/teens-masters-class-08/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Audio Foley Design & Narrative Pacing / Diseño Sonoro Foley y Ritmo",
-                description: "Creating immersive atmospheric tension.",
-                content: ["FOLEY SOUND: Synchronous everyday sound effects recorded to heighten realism (the hum of fluorescent bulbs, keystrokes, heavy footsteps in an underground garage).", "AUDIO DUCKING: Lowering background music volume automatically when the narrator speaks.", "VOCAL PACING: Slowing cadence down when detailing forensic evidence; dropping to a low whisper before a startling revelation."],
-                imageUrl: "/images/teens-masters-class-08/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Investigative Media Lexicon / Léxico de Periodismo de Investigación",
-                description: "Elevated vocabulary for documentarians and showrunners.",
-                content: ["'VIDEO ESSAY': A short film that blends cinematic visuals, archival footage, and analytical argument.", "'WHISTLEBLOWER': An insider who exposes secret illicit or unethical activities within an organization.", "'PAPER TRAIL': The series of documents and financial records providing tangible evidence of an event.", "'SMOKING GUN': An incontrovertible piece of evidence that conclusively establishes culpability."],
-                imageUrl: "/images/teens-masters-class-08/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Investigative Podcast Cold Open / Guion de apertura modelo",
-                description: "Read this sample championship podcast cold open.",
-                content: ["On November 14th at 2:17 AM, an encrypted hard drive landed on our investigative desk. Inside were 40,000 internal emails proving that MegaCorp knowingly suppressed data showing their battery recycling plants were leaking lithium into municipal water reservoirs.", "Tonight on 'The Paper Trail', we follow the whistleblowers who risked their careers to speak the truth.", "Through Freedom of Information Act requests and satellite telemetry, we pull back the curtain on a five-year corporate cover-up. Put on your headphones, lock your door, and prepare to hear the story they tried to erase!"],
-                imageUrl: "/images/teens-masters-class-08/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Investigative Video Essays & Audio Foley Design 🎙️🔍 / Videoensayos y Foley","description":"Documentary Journalism","content":["The Video Essay: Merging scholarly research with cinematic editing and narrative pacing.","Audio Foley design: Environmental soundscapes that heighten psychological immersion.","Journalistic ethics: Confidentiality of whistleblowers and evidentiary verification."],"imageUrl":"/images/teens-masters-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Narrative Pacing & Tension Escalation ⏱️⚡ / Ritmo y Tensión","description":"Documentary Architecture","content":["The Cold Open Hook (0:00 - 0:45): The anomaly that breaks consensus.","The Evidentiary Deep-Dive (0:45 - 6:00): Data, leaked memos, archival footage.","The Philosophical Epiphany (6:00+): What this revelation says about human nature."],"imageUrl":"/images/teens-masters-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Model Investigative Podcast Cold Open 📻 / Locución de Documental","description":"Radio Documentary Tone","content":["'In October of 2021, an anonymous drive was left on a library desk in Geneva. Inside were 50,000 encrypted logs...'","'What began as a routine audit unraveled a decade of institutional silence.'","Investigative media shifts public consciousness."],"imageUrl":"/images/teens-masters-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Investigative Video Essay Formula 🎬 / Fórmula Documental","description":"Anomaly Hook + Evidentiary Climax + Systemic Question","content":["Formula: 'Behind the surface of [Accepted Norm] lies [Investigative Discovery], forcing us to question [Fundamental System].'","Example: 'Behind the surface of clean tech supply chains lies severe cobalt extraction, forcing us to question the true cost of our digital future.'"],"imageUrl":"/images/teens-masters-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: Investigative Cold Open 🎯 / Mini Reto","description":"Deliver a 15-Second Cold Open","content":["Deliver an investigative documentary cold open hook to the teacher:","'In [Year], a single discovery in [Place] changed everything we thought we knew about ________.'"],"imageUrl":"/images/teens-masters-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Tomar notas y ensayar la locución de aperturas de podcast con ritmo dramático."
           },
@@ -31856,46 +31191,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la terminología de superinteligencia artificial, bioética genómica y geopolítica planetaria.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Artificial Superintelligence (ASI) & Alignment / Superinteligencia y Alineación",
-                description: "Core concepts of existential AI safety.",
-                content: ["THE ALIGNMENT PROBLEM: Ensuring that an autonomous system's optimization targets reliably coincide with human ethical values and survival.", "INSTRUMENTAL CONVERGENCE: The theory that almost any advanced goal-driven AI will rationally seek self-preservation, cognitive enhancement, and resource acquisition as sub-goals.", "ORTHOGONALITY THESIS: An AI can have any level of intelligence combined with virtually any final objective (intelligence does not automatically generate human morality).", "COMPUTE GOVERNANCE: International tracking of advanced semiconductor fabrication to verify safety compliance."],
-                imageUrl: "/images/teens-masters-class-09/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Bioethics & CRISPR Germline Genetic Editing / Bioética y Edición Genómica",
-                description: "Navigating the moral frontiers of human genetics.",
-                content: ["SOMATIC vs GERMLINE: Somatic editing alters non-reproductive cells to cure disease in one individual; Germline editing alters eggs/sperm/embryos, passing genetic changes to all future descendants.", "THERAPY vs ENHANCEMENT: Curing Huntington's disease (therapy) versus genetically editing embryos for heightened IQ or physical speed (enhancement).", "GENETIC EQUITY COMMONS: Preventing a dystopian bio-caste society where wealthy lineages monopolize engineered biological advantages."],
-                imageUrl: "/images/teens-masters-class-09/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Planetary Geoengineering & Post-Scarcity / Geoingeniería y Abundancia",
-                description: "Balancing planetary technologies and economic transformations.",
-                content: ["SOLAR RADIATION MANAGEMENT (SRM): Injecting reflective aerosols into the stratosphere to cool the planet.", "TERMINATION SHOCK: The catastrophic rapid warming that occurs if solar aerosol injection is abruptly stopped while greenhouse emissions remain high.", "MORAL HAZARD: The risk that geoengineering diminishes societal motivation to decarbonize.", "POST-SCARCITY ECONOMICS: An economic framework where automation reduces production costs to near-zero, requiring Universal Basic Dividends."],
-                imageUrl: "/images/teens-masters-class-09/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Global Mega-Trends Lexicon / Léxico de Mega-Tendencias Globales",
-                description: "Frontier vocabulary for international foresight advisors.",
-                content: ["'EXISTENTIAL RISK (X-RISK)': A risk that threatens the premature extinction of Earth-originating intelligent life or the permanent destruction of its potential.", "'RECURSIVE SELF-IMPROVEMENT': An AI system that modifies its own architecture to continuously expand its cognitive power.", "'EPISTEMIC HUMILITY': Recognizing the fundamental limits of our scientific foresight when deploying planetary-scale interventions.", "'TRANSHUMANISM': The philosophical movement advocating the enhancement of human physical and cognitive capabilities through technology."],
-                imageUrl: "/images/teens-masters-class-09/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Global Foresight Keynote Address / Discurso modelo de prospectiva global",
-                description: "Read this sample address to the UN Global Foresight Assembly.",
-                content: ["Distinguished Delegates of the Global Foresight Assembly: we stand at the precipice of an unprecedented civilizational inflection point. The convergence of recursive Artificial Superintelligence, CRISPR germline editing, and planetary climate thresholds demands a radical reimagining of global governance.", "We cannot allow narrow national competition or corporate profit motives to gamble with existential risk.", "We must establish enforceable international compute verification treaties, guarantee open-access genomic therapies while prohibiting eugenic stratification, and direct planetary geoengineering toward environmental restoration. True stewardship means ensuring that our technological capabilities never outpace our ethical wisdom. Let us act today to safeguard the flourishing of all future generations!"],
-                imageUrl: "/images/teens-masters-class-09/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Global Mega-Trends: ASI, CRISPR & Geoengineering 🌐🧬 / Mega-Tendencias","description":"Existential Foresight","content":["Artificial Superintelligence (ASI) & Value Alignment (Nick Bostrom, Eliezer Yudkowsky).","CRISPR Germline Editing: Bioethics, genetic enhancement, and speciation risks.","Solar Radiation Management & Post-Scarcity Economics."],"imageUrl":"/images/teens-masters-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Existential Risk Mitigation & Foresight Frameworks 🛡️ / Riesgo Existencial","description":"Longtermism & Ethics","content":["'Technological power grows exponentially; philosophical wisdom grows linearly. We must close that gap.'","'The existential priority of our century is guaranteeing that autonomous superintelligence remains aligned with human flourishing.'","High-level ethical frameworks for emerging technology."],"imageUrl":"/images/teens-masters-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Planetary Foresight Keynote at Global Forums 🌍 / Prospectiva Global","description":"Thought Leadership","content":["'We are the first generation capable of rewriting the code of life and constructing synthetic minds.'","'Our responsibility to future generations demands institutional humility and multilateral safeguards.'","Speak as a visionary thinker shaping planetary futures."],"imageUrl":"/images/teens-masters-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Planetary Foresight Formula 🧬 / Fórmula de Prospectiva","description":"Exponential Tech + Ethical Safeguard + Flourishing Future","content":["Formula: 'As humanity masters [Exponential Tech], our moral imperative is to institute [Ethical Safeguards] so that [Future Human Flourishing].'","Example: 'As humanity masters genetic editing, our moral imperative is to institute global treaties so that bio-equity is universally guaranteed.'"],"imageUrl":"/images/teens-masters-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Global Futurist Pitch 🎯 / Mini Reto","description":"Deliver a 20-Second Futurist Verdict","content":["Share your foresight verdict on AI or Bioethics:","'The greatest ethical challenge of our generation is ensuring that ________ remains ________.'"],"imageUrl":"/images/teens-masters-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Tomar notas y ensayar la oratoria sobre riesgos existenciales y gobernanza de tecnologías de frontera."
           },
@@ -32236,46 +31536,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar la síntesis dialéctica, modulación de registro en tiempo real y el léxico de maestría ejecutiva.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The C2 Fluency Mastery Triad / La Tríada de Maestría C2",
-                description: "The three pillars of native-level English virtuosity.",
-                content: ["1. SPONTANEOUS SYNTHESIS: The capacity to integrate disparate viewpoints, complex datasets, and philosophical contradictions into a unified, persuasive thesis without hesitation.", "2. NUANCED EPISTEMIC PRECISION: Choosing the exact word that captures subtle gradations of certainty, probability, and moral weight.", "3. EXECUTIVE PRESENCE & CHARISMA: Commanding authority through steady eye contact, measured vocal cadence, and empathetic resonance."],
-                imageUrl: "/images/teens-masters-class-10/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Spontaneous Register Modulation / Modulación de Registro",
-                description: "Switching tone and vocabulary across social domains.",
-                content: ["ACADEMIC RIGOR: 'Empirical data corroborates the hypothesis that systemic disparities propagate through recursive feedback loops.'", "DIPLOMATIC STATECRAFT: 'While respecting our differing mandates, we propose a mutually reinforcing framework that advances collective security.'", "PUBLIC INSPIRATION: 'Let us build a future where every child possesses the tools to turn their boldest dreams into living reality.'"],
-                imageUrl: "/images/teens-masters-class-10/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Real-Time Dialectical Refutation & Synthesis / Síntesis Dialéctica",
-                description: "Resolving opposing arguments on stage.",
-                content: ["'WHILE MY COLLEAGUE RIGHTLY OBSERVES the initial economic friction, that critique overlooks the exponential long-term returns of human capital investment.'", "'RATHER THAN CHOOSING BETWEEN individual autonomy and collective welfare, our policy architecture demonstrates that each is a prerequisite for the other.'", "'THE TRUE TEST OF LEADERSHIP lies not in avoiding complexity, but in synthesizing clarity from contradiction.'"],
-                imageUrl: "/images/teens-masters-class-10/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-purple-700 to-pink-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Grand Masters Capstone Lexicon / Léxico de Graduación y Maestría",
-                description: "The definitive lexicon of C2 English proficiency.",
-                content: ["'C2 MASTERY': The highest level of English language proficiency, characterized by effortless comprehension, natural spontaneity, and sophisticated precision.", "'DIALECTICAL SYNTHESIS': Resolving opposing ideas into a higher-order, unified truth.", "'RHETORICAL VIRTUOSITY': Exceptional artistic skill and eloquence in public speech.", "'LAUREATE': An individual honored for outstanding achievement in an intellectual or artistic discipline."],
-                imageUrl: "/images/teens-masters-class-10/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-pink-600 to-rose-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Grand Masters Valedictory Address / Discurso de graduación modelo",
-                description: "Read this sample capstone address.",
-                content: ["Distinguished Chancellors, Esteemed Mentors, and Fellow Scholars: having ascended from basic fundamentals to the heights of dialectical mastery, we stand today as true global communicators. We have debated in the Oxford Union, deconstructed semiotic media narratives, defended ethical dilemmas before fellowship boards, and drafted planetary treaties on frontier technologies.", "English is no longer a foreign language we study; it has become the sovereign instrument through which we think, create, lead, and fight the world's fight.", "Wherever systemic injustice persists or global dialogue falters, we pledge to deploy our voices with moral courage, intellectual humility, and transformative vision. We graduate not merely as masters of fluency, but as architects of a better tomorrow!"],
-                imageUrl: "/images/teens-masters-class-10/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-rose-600 to-amber-600"
-              }
+              {"id":"slide-4","title":"Level 10 Grand Masters Capstone: C2 Fluency Mastery 🎓👑🌍 / Gran Cierre C2","description":"The C2 Fluency Mastery Triad","content":["1. Spontaneous Register Modulation: Effortlessly shifting from casual slang to Oxford debate and UN diplomacy.","2. Real-Time Dialectical Synthesis: Resolving complex contradictions with poise and precision.","3. Visionary Rhetorical Command: Inspiring global action through master storytelling and leadership."],"imageUrl":"/images/teens-masters-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"Grand Masters Valedictory Address Architecture 🏛️🎙️ / Discurso Valedictorio","description":"Historic Oratory","content":["Reflect on the entire journey from Basic Zero to C2 Grand Master.","Synthesize language mastery not as a test score, but as a lens to understand humanity and create global change.","'Language is the architecture of human connection.'"],"imageUrl":"/images/teens-masters-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"The Global Leadership Summit Gauntlet 🌐🏆 / Cumbre de Liderazgo","description":"The Final Defense","content":["Defend your comprehensive capstone thesis before an international panel of scholars, diplomats, and innovators.","Speak with effortless flow, authentic depth, and undeniable intellectual authority.","You are a Grand Master of the English Language."],"imageUrl":"/images/teens-masters-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Grand Masters Valedictory Formula 👑 / Fórmula de Graduación","description":"Journey Synthesis + Philosophical Vision + Global Call to Action","content":["1. Reflect on your complete linguistic evolution.","2. Synthesize your core thesis across science, society, and human empathy.","3. Deliver an unforgettable call to action for the future of humanity."],"imageUrl":"/images/teens-masters-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Grand Masters Valedictory Pitch 🎯 / Gran Reto Final","description":"Deliver Your Final 30-Second C2 Valedictory Address","content":["Deliver your 30-second Level 10 Grand Masters Valedictory Address to the International Summit!","Celebrate your complete C2 fluency and your vision for global leadership!"],"imageUrl":"/images/teens-masters-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Tomar notas y ensayar el discurso de graduación y maestría de fluidez."
           },
