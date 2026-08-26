@@ -530,9 +530,17 @@ function toWheelItems(prompts: WheelPrompt[]) {
   }));
 }
 
-function findImage(slides: ClassSlide[], slideNumber: number) {
+function defaultLocalImage(classId: string, slideNumber: number): string {
+  const match = classId.match(/(\d+)$/);
+  const classNum = match ? match[1].padStart(2, '0') : '01';
+  const slideNum = String(slideNumber).padStart(2, '0');
+  return `/images/teens-basic-1-class-${classNum}/slide-${slideNum}.jpg`;
+}
+
+function findImage(slides: ClassSlide[], classId: string, slideNumber: number): string {
   const legacyId = `Diapositiva ${slideNumber}`;
-  return slides.find((slide) => slide.id === legacyId || slide.id === `slide-${slideNumber}`)?.imageUrl;
+  const found = slides.find((slide) => slide.id === legacyId || slide.id === `slide-${slideNumber}`)?.imageUrl;
+  return found || defaultLocalImage(classId, slideNumber);
 }
 
 function addImage(slide: ClassSlide, imageUrl?: string): ClassSlide {
@@ -596,8 +604,8 @@ function organizeClass(cls: CurriculumClass): CurriculumClass {
   if (!plan) return cls;
 
   const oldSlides = cls.sections.flatMap((section) => section.slides);
-  const image = (number: number) => findImage(oldSlides, number);
-  const emojiImage = oldSlides.find((slide) => slide.type === 'emoji-game')?.imageUrl;
+  const image = (number: number) => findImage(oldSlides, cls.id, number);
+  const emojiImage = oldSlides.find((slide) => slide.type === 'emoji-game')?.imageUrl || defaultLocalImage(cls.id, 13);
   const oldBoss = oldSlides.find((slide) => slide.type === 'speaking-boss-battle');
   const oldVideo = oldSlides.find((slide) => slide.type === 'video');
 
@@ -607,6 +615,7 @@ function organizeClass(cls: CurriculumClass): CurriculumClass {
     title: 'Speaking Boss Battle / Batalla oral final',
     description: "Defeat the boss with today's English. / Supera el reto con el inglés de hoy.",
     type: 'speaking-boss-battle',
+    imageUrl: oldBoss?.imageUrl || defaultLocalImage(cls.id, 18),
     content: [`Defeat the boss using ${plan.welcomeDescription}.`],
     bgColor: 'bg-gradient-to-br from-violet-600 via-fuchsia-600 to-red-500',
   };
@@ -680,7 +689,7 @@ function organizeClass(cls: CurriculumClass): CurriculumClass {
           choiceSlide('slide-16', plan.quiz[1], 'bg-gradient-to-br from-rose-500 to-fuchsia-600', image(16)),
           choiceSlide('slide-17', plan.quiz[2], 'bg-gradient-to-br from-fuchsia-500 to-purple-600', image(17)),
           boss,
-          addImage({ id: 'slide-18', ...plan.roleplay, type: 'speaking-scene', speakingScene: resolveSpeakingScene({ ...plan.roleplay, id: 'slide-18' } as any, plan.classTitle), roleplay: createRoleplayData(plan), bgColor: 'bg-gradient-to-br from-blue-600 to-indigo-700' }, image(18)),
+          addImage({ id: 'slide-18', ...plan.roleplay, type: 'speaking-scene', speakingScene: resolveSpeakingScene({ ...plan.roleplay, id: 'slide-18' } as any, plan.classTitle), roleplay: createRoleplayData(plan), bgColor: 'bg-gradient-to-br from-blue-600 to-indigo-700' }, image(18) || image(19)),
         ],
       },
       {
@@ -691,9 +700,9 @@ function organizeClass(cls: CurriculumClass): CurriculumClass {
         objective: 'Review the achievement and assign specific follow-up practice.',
         action: 'Confirmar que el estudiante entiende exactamente qué debe entregar.',
         slides: [
-          addImage({ id: 'slide-19', title: 'Class Complete! 🏆 / ¡Clase completada! 🏆', description: 'Today’s achievement / Logro de hoy', content: plan.wrap, bgColor: 'bg-gradient-to-br from-yellow-400 to-orange-500' }, image(19) || image(20)),
-          addImage({ id: 'slide-20', title: 'Homework 📝 / Tarea 📝', description: 'Create and write. / Crea y escribe.', type: 'homework', content: plan.homework, bgColor: 'bg-gradient-to-br from-violet-500 to-fuchsia-600' }, image(20) || image(21) || image(19)),
-          addImage({ id: 'slide-21', title: 'Video Homework 📹 / Tarea en video 📹', description: 'Watch, notice, and use the language.', type: 'video', videoUrl: lessonVideoUrls[cls.id] || oldVideo?.videoUrl, content: plan.videoTask, bgColor: 'bg-gradient-to-br from-slate-800 to-indigo-900' }, image(21) || image(22) || image(19)),
+          addImage({ id: 'slide-19', title: 'Class Complete! 🏆 / ¡Clase completada! 🏆', description: 'Today’s achievement / Logro de hoy', content: plan.wrap, bgColor: 'bg-gradient-to-br from-yellow-400 to-orange-500' }, image(20)),
+          addImage({ id: 'slide-20', title: 'Homework 📝 / Tarea 📝', description: 'Create and write. / Crea y escribe.', type: 'homework', content: plan.homework, bgColor: 'bg-gradient-to-br from-violet-500 to-fuchsia-600' }, image(21)),
+          addImage({ id: 'slide-21', title: 'Video Homework 📹 / Tarea en video 📹', description: 'Watch, notice, and use the language.', type: 'video', videoUrl: lessonVideoUrls[cls.id] || oldVideo?.videoUrl, content: plan.videoTask, bgColor: 'bg-gradient-to-br from-slate-800 to-indigo-900' }, image(22)),
         ],
       },
     ],
