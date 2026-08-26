@@ -9233,46 +9233,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender verbos de rutina, horas, preposiciones y frecuencia.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Daily Routine Verbs / Verbos de rutina",
-                description: "Use these verbs to describe your day.",
-                content: ["wake up", "brush my teeth", "have breakfast", "go to school", "do homework", "go to bed"],
-                imageUrl: "/images/teens-basic-3-class-01/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-500 to-cyan-500"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Telling Time / Decir la hora",
-                description: "Practice the most useful time phrases.",
-                content: ["It's seven o'clock.", "It's half past seven.", "It's quarter past eight.", "It's quarter to nine."],
-                imageUrl: "/images/teens-basic-3-class-01/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Present Simple Routine / Rutina en presente simple",
-                description: "Use -s with he and she.",
-                content: ["I wake up at 6:30.", "She wakes up at 7:00.", "He goes to school at 8:00.", "Remember: he/she/it + verb + s."],
-                imageUrl: "/images/teens-basic-3-class-01/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Time Prepositions / Preposiciones de tiempo",
-                description: "Choose the correct word before time expressions.",
-                content: ["AT + exact time: at 7:00", "IN + part of day: in the morning", "ON + day: on Monday", "AT night"],
-                imageUrl: "/images/teens-basic-3-class-01/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-500 to-green-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Frequency Adverbs / Adverbios de frecuencia",
-                description: "Say how often something happens.",
-                content: ["always = 100%", "usually = most days", "sometimes = not every day", "never = 0%"],
-                imageUrl: "/images/teens-basic-3-class-01/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-500 to-lime-500"
-              }
+              {"id":"slide-4","title":"Daily Routine & Sequence ⏰🌅 / Rutina y Secuencia","description":"Everyday Verbs","content":["Wake up, take a shower, have breakfast, commute, attend classes","Do homework, practice sports, relax, go to sleep","Sequence words: First, then, after that, finally"],"imageUrl":"/images/teens-basic-3-class-01/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Time Prepositions & Frequency 🕒📊 / Preposiciones y Frecuencia","description":"At, In, On & Frequency","content":["AT 7:30 AM / AT night / IN the morning / ON weekdays","Always (100%), Usually (80%), Sometimes (50%), Rarely (10%)","I usually wake up AT 6:30 AM ON school days."],"imageUrl":"/images/teens-basic-3-class-01/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Connecting Routine Steps 🔗 / Secuencia Lógica","description":"Before and After","content":["I do my homework BEFORE I play video games.","AFTER I have dinner, I read or listen to music.","Rule: Before / After + [Activity / Time]"],"imageUrl":"/images/teens-basic-3-class-01/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Daily Schedule Formula 📅 / Fórmula de Horario","description":"Build a Full Day Plan","content":["Formula: First I [Action 1] at [Time], then I [Action 2] before [Action 3].","Example: 'First I study at 4 PM, then I practice soccer before having dinner.'"],"imageUrl":"/images/teens-basic-3-class-01/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Master Your Routine 🎯 / Mini Reto","description":"Share 2 Sequential Steps","content":["Tell the teacher:","'After school, first I ________ at ________, and then I ________.'"],"imageUrl":"/images/teens-basic-3-class-01/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Repetir ejemplos y crear frases propias."
           },
@@ -9614,46 +9579,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Presentar vocabulario deportivo, roles y comparativos.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Sports Vocabulary / Vocabulario de deportes",
-                description: "Name the sport you see.",
-                content: ["soccer", "basketball", "volleyball", "tennis", "swimming", "running"],
-                imageUrl: "/images/teens-basic-3-class-02/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-500 to-cyan-500"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Team Roles / Roles del equipo",
-                description: "Use these words to describe people in a team.",
-                content: ["team = grupo que juega junto", "player = persona que juega", "coach = entrenador", "captain = lider del equipo"],
-                imageUrl: "/images/teens-basic-3-class-02/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-cyan-500 to-teal-500"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Competition Verbs / Verbos de competencia",
-                description: "Talk about what happens in a match.",
-                content: ["play a match", "score a goal", "win the game", "lose the game"],
-                imageUrl: "/images/teens-basic-3-class-02/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-500"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Comparatives in Sports / Comparativos en deportes",
-                description: "Compare two players or teams.",
-                content: ["Blue Team is faster than Red Team.", "This player is stronger than that player.", "Soccer is more popular than tennis in my city."],
-                imageUrl: "/images/teens-basic-3-class-02/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-500 to-green-500"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Useful Match Phrases / Frases utiles del partido",
-                description: "Say the result clearly.",
-                content: ["The Blue Team wins.", "The Red Team loses.", "The score is three to one.", "The captain scores a goal."],
-                imageUrl: "/images/teens-basic-3-class-02/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-500 to-lime-500"
-              }
+              {"id":"slide-4","title":"Team Sports & Match Roles ⚽🏆 / Deportes y Roles","description":"Competition Vocabulary","content":["Captain, striker, goalkeeper, defender, coach, referee","Score a goal, win the tournament, defend the lead, pass the ball","Our soccer team is competing in the regional championship."],"imageUrl":"/images/teens-basic-3-class-02/slide-04.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-teal-600"},
+              {"id":"slide-5","title":"Comparatives in Sports 🥇⚡ / Comparativos Deportivos","description":"Faster, Stronger, More Agile","content":["Short adjectives: fast -> faster than / strong -> stronger than","Long adjectives: agile -> more agile than / skilled -> more skilled than","Alex is faster than the defenders, but Leo is more experienced."],"imageUrl":"/images/teens-basic-3-class-02/slide-05.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-cyan-600"},
+              {"id":"slide-6","title":"Reporting Match Results & Stats 📊 / Resultados del Partido","description":"Game Stats","content":["We won the game 3 to 1!","It was a close match, but our defense was stronger in the second half.","Fair play and teamwork are key to winning."],"imageUrl":"/images/teens-basic-3-class-02/slide-06.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-blue-600"},
+              {"id":"slide-7","title":"The Sports Comparison Formula 🏅 / Fórmula de Comparación","description":"Player + Comparative + Player","content":["Formula: [Team/Player A] is [Comparative Adjective] than [Team/Player B] because [Reason].","Example: 'Our goalkeeper is taller and more agile than their striker.'"],"imageUrl":"/images/teens-basic-3-class-02/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-indigo-600"},
+              {"id":"slide-8","title":"Quick Check: Match Commentary 🎯 / Mini Reto","description":"Compare Two Athletes","content":["Compare 2 players or teams in 1 complete sentence:","'(Player A) is ________ than (Player B) because ________.'"],"imageUrl":"/images/teens-basic-3-class-02/slide-08.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"}
             ],
             action: "Repetir vocabulario y formar frases con equipos reales o inventados."
           },
@@ -9995,46 +9925,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de días festivos, verbos de acción y estructuras de celebración.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Holidays & Celebrations / Días festivos y celebraciones",
-                description: "Learn names of popular world celebrations.",
-                content: ["Christmas", "New Year", "Carnival", "Easter", "Mother's Day", "Independence Day"],
-                imageUrl: "/images/teens-basic-3-class-03/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-600"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Celebration Verbs / Verbos de celebración",
-                description: "Useful action verbs for special events.",
-                content: ["celebrate = festejar / celebrar", "decorate = adornar / decorar", "gather = reunirse con la familia", "prepare = preparar comida especial", "give gifts = dar regalos"],
-                imageUrl: "/images/teens-basic-3-class-03/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-500 to-teal-500"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Sentence Structure: How We Celebrate / Cómo celebramos",
-                description: "Talk about what people do on special occasions.",
-                content: ["We celebrate Christmas in December.", "They decorate the house with lights.", "My family gathers for a special dinner.", "Pattern: Subject + Action Verb + Holiday / Detail"],
-                imageUrl: "/images/teens-basic-3-class-03/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-500 to-emerald-600"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Festival Elements & Traditions / Elementos festivos y tradiciones",
-                description: "Key elements in festivals and traditions.",
-                content: ["parade = desfile cultural", "fireworks = fuegos artificiales", "costumes = trajes típicos", "feast = banquete festivo", "custom = costumbre familiar"],
-                imageUrl: "/images/teens-basic-3-class-03/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-500 to-green-600"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Expressing Traditions / Expresando tradiciones",
-                description: "Use these model phrases to describe traditions.",
-                content: ["In my country, we celebrate Independence Day in July.", "On New Year's Eve, people watch fireworks at midnight.", "We usually eat traditional dishes with our grandparents."],
-                imageUrl: "/images/teens-basic-3-class-03/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-500 to-lime-600"
-              }
+              {"id":"slide-4","title":"Holidays, Festivals & Traditions 🎉🎇 / Festivales y Fiestas","description":"Cultural Celebrations","content":["New Year's Eve, Halloween, Thanksgiving, Carnival, Day of the Dead","Fireworks, costumes, traditional feasts, parades, music","Festivals bring communities and friends together."],"imageUrl":"/images/teens-basic-3-class-03/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"How We Celebrate: Custom Verbs 🎊 / Verbos de Celebración","description":"Traditions in Action","content":["We decorate the house with colorful lights.","Families gather to share a special dinner and exchange gifts.","People dress up in costumes and watch fireworks."],"imageUrl":"/images/teens-basic-3-class-03/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"Describing Cultural Traditions 🌎✨ / Tradiciones Vivas","description":"Heritage & Culture","content":["In my country, it is a tradition to eat twelve grapes at midnight.","We celebrate Carnival with street dances, music, and colorful masks.","Every year on this holiday, my family gathers at my grandma's house."],"imageUrl":"/images/teens-basic-3-class-03/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Holiday Tradition Formula 🎆 / Fórmula de Tradición","description":"Holiday + Action + People","content":["Formula: On [Holiday], we traditionally [Custom Action] with [People] because [Meaning].","Example: 'On New Year's Eve, we watch fireworks with friends to celebrate the new year.'"],"imageUrl":"/images/teens-basic-3-class-03/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: Favorite Festival 🎯 / Mini Reto","description":"Share a Tradition","content":["Tell the teacher:","'My favorite holiday is ________ because we always ________.'"],"imageUrl":"/images/teens-basic-3-class-03/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Repetir vocabulario y crear frases sobre festividades familiares."
           },
@@ -10377,46 +10272,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario espacial, científico y la estructura con 'will' / 'won't'.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Space & Science Vocabulary / Vocabulario espacial y científico",
-                description: "Key words for discussing modern astronomy and science.",
-                content: ["planet = planeta", "rocket = cohete espacial", "satellite = satélite artificial", "telescope = telescopio", "astronaut = astronauta", "orbit = órbita"],
-                imageUrl: "/images/teens-basic-3-class-04/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Future Science Verbs / Verbos de ciencia y futuro",
-                description: "Verbs used to describe future breakthroughs.",
-                content: ["discover = descubrir nuevos datos o planetas", "explore = explorar el universo", "invent = inventar nueva tecnología", "build = construir bases espaciales", "predict = predecir el futuro"],
-                imageUrl: "/images/teens-basic-3-class-04/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-teal-700"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Grammar: Will / Won't for Predictions / Predicciones",
-                description: "Use 'will' (positive) and 'won't' (negative) for future events.",
-                content: ["Positive: Scientists WILL discover water on distant planets.", "Negative: Humans WON'T travel to other galaxies soon.", "Question: WILL people live on Mars in 2050?", "Rule: Subject + will/won't + base verb (no -s or -ed)"],
-                imageUrl: "/images/teens-basic-3-class-04/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Future Time Expressions / Expresiones de tiempo futuro",
-                description: "Indicate when something will happen.",
-                content: ["in the future = en el futuro", "in 20 years = en 20 años", "one day = algún día", "soon = pronto / en poco tiempo", "next decade = la próxima década"],
-                imageUrl: "/images/teens-basic-3-class-04/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Expressing Future Predictions / Expresando predicciones",
-                description: "Model sentences for class discussion.",
-                content: ["I think robots will assist doctors in hospitals.", "Scientists believe solar energy will power most cities.", "One day, astronauts will build a permanent base on the Moon."],
-                imageUrl: "/images/teens-basic-3-class-04/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-600 to-cyan-700"
-              }
+              {"id":"slide-4","title":"Space, Science & Future Tech 🚀🌌 / Espacio y Futuro","description":"Cosmic & Scientific Vocab","content":["Astronaut, solar system, galaxy, spacecraft, Mars colony","Artificial intelligence, quantum computers, clean energy, humanoid robots","Space exploration is advancing faster than ever."],"imageUrl":"/images/teens-basic-3-class-04/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-indigo-700"},
+              {"id":"slide-5","title":"Future Predictions: Will vs Won't 🔮 / Predicciones con Will","description":"Future Predictions","content":["In 2040, humans will travel to Mars regularly.","Robots won't replace human creativity, but they will assist scientists.","Structure: Subject + will / won't + base verb"],"imageUrl":"/images/teens-basic-3-class-04/slide-05.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-purple-700"},
+              {"id":"slide-6","title":"Future Time Markers ⏳ / Marcadores de Futuro","description":"In the future, By 2050","content":["In ten years / In the near future / By the year 2050","Scientists believe that by 2050, solar power will be the main energy source.","I think we will see flying electric cars in our lifetime."],"imageUrl":"/images/teens-basic-3-class-04/slide-06.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-pink-700"},
+              {"id":"slide-7","title":"The Future Prediction Formula 🛰️ / Fórmula de Predicción","description":"Time + Prediction + Impact","content":["Formula: By [Year/Future Time], humans will [Future Action] because [Tech Reason].","Example: 'By 2040, astronauts will build a permanent science base on the Moon.'"],"imageUrl":"/images/teens-basic-3-class-04/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-600 to-rose-700"},
+              {"id":"slide-8","title":"Quick Check: 2050 Vision 🎯 / Mini Reto","description":"Make a Future Prediction","content":["Make 1 prediction for the year 2050:","'By 2050, I think technology will ________.'","Tell the teacher your prediction!"],"imageUrl":"/images/teens-basic-3-class-04/slide-08.jpg","bgColor":"bg-gradient-to-br from-rose-600 to-amber-600"}
             ],
             action: "Formar oraciones de predicción con 'will' y expresiones de tiempo."
           },
@@ -10759,46 +10619,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Dominar 'was' y 'were', adjetivos de personalidad infantil y expresiones de tiempo pasado.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Childhood Vocabulary / Vocabulario de infancia",
-                description: "Key words for describing early years.",
-                content: ["childhood = infancia / niñez", "toy = juguete", "primary school = escuela primaria", "playground = patio de juegos", "cartoon = dibujo animado", "memory = recuerdo"],
-                imageUrl: "/images/teens-basic-3-class-05/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Past Personality Adjectives / Adjetivos de personalidad",
-                description: "How were you when you were little?",
-                content: ["shy = tímido / penoso", "outgoing = extrovertido / sociable", "playful = juguetón", "curious = curioso", "energetic = muy activo / enérgico"],
-                imageUrl: "/images/teens-basic-3-class-05/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-600 to-purple-700"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Grammar: Was & Were / El pasado del verbo To Be",
-                description: "Choose 'was' or 'were' depending on the subject.",
-                content: ["I / He / She / It + WAS (I was happy / She was small)", "You / We / They + WERE (We were best friends)", "Negative: wasn't (was not) / weren't (were not)", "Question: Were you shy? Yes, I was. / No, I wasn't."],
-                imageUrl: "/images/teens-basic-3-class-05/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Past Time Expressions / Expresiones de tiempo en pasado",
-                description: "Anchor your memories in time.",
-                content: ["when I was little = cuando era pequeño/a", "in primary school = en la escuela primaria", "five years ago = hace cinco años", "back then = en aquel entonces", "in 2018 = en el año 2018"],
-                imageUrl: "/images/teens-basic-3-class-05/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Describing Past Memories / Expresando recuerdos",
-                description: "Model sentences for class sharing.",
-                content: ["When I was seven, my favorite toy was a red scooter.", "We were very playful in elementary school.", "My childhood house was near a beautiful park."],
-                imageUrl: "/images/teens-basic-3-class-05/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
-              }
+              {"id":"slide-4","title":"Childhood Memories & Past States 🧸👶 / Recuerdos de Infancia","description":"Childhood Vocabulary","content":["Kindergarten, elementary school, childhood toy, playground, cartoons","Shy, energetic, curious, imaginative, naughty","When I was seven years old, I was very curious and playful."],"imageUrl":"/images/teens-basic-3-class-05/slide-04.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-orange-600"},
+              {"id":"slide-5","title":"Past To Be: Was vs Were ⏳ / Pasado de To Be","description":"Singular Was, Plural Were","content":["I / He / She / It WAS — We / You / They WERE","I was shy in primary school, but now I am confident.","My friends and I were huge fans of Pokemon cards."],"imageUrl":"/images/teens-basic-3-class-05/slide-05.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-rose-600"},
+              {"id":"slide-6","title":"Past Time Expressions 📅 / Expresiones de Pasado","description":"When I was younger","content":["When I was a kid / Five years ago / In 2018 / Back then","Five years ago, my favorite cartoon was SpongeBob.","When we were seven, my best friend and I were in the same class."],"imageUrl":"/images/teens-basic-3-class-05/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
+              {"id":"slide-7","title":"The Childhood Memory Formula 📸 / Fórmula de Recuerdos","description":"Past State vs Now","content":["Formula: When I was [Age], I was [Past Trait/Hobby], but now I am [Current Trait].","Example: 'When I was 8, I was very quiet, but now I am energetic and outgoing.'"],"imageUrl":"/images/teens-basic-3-class-05/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
+              {"id":"slide-8","title":"Quick Check: Memory Capsule 🎯 / Mini Reto","description":"Share a Past Memory","content":["Tell the teacher:","'When I was younger, my favorite toy/game was ________ because ________.'"],"imageUrl":"/images/teens-basic-3-class-05/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
             ],
             action: "Formar oraciones usando was/were y expresiones de infancia."
           },
@@ -11141,46 +10966,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de viaje y el pasado simple de verbos regulares e irregulares.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Travel & Vacation Vocabulary / Vocabulario de viajes",
-                description: "Essential words for travelers.",
-                content: ["destination = destino turístico", "luggage = equipaje / maletas", "souvenir = recuerdo de viaje", "boarding pass = pase de abordar", "sightseeing = recorrido turístico", "journey = viaje / trayecto"],
-                imageUrl: "/images/teens-basic-3-class-06/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-600 to-indigo-700"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Past Vacation Verbs / Verbos de vacaciones en pasado",
-                description: "Regular and irregular past actions.",
-                content: ["visit ➔ visited (visitamos monumentos)", "travel ➔ traveled (viajamos en avión)", "stay ➔ stayed (nos hospedamos en un hotel)", "go ➔ went (fuimos a la playa)", "see ➔ saw (vimos paisajes increíbles)", "buy ➔ bought (compramos recuerdos)"],
-                imageUrl: "/images/teens-basic-3-class-06/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-600 to-purple-700"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Grammar: Past Simple for Anecdotes / Pasado simple para anécdotas",
-                description: "Form affirmative, negative, and question sentences in past.",
-                content: ["Affirmative: Last summer, we WENT to the beach and SWAM in the ocean.", "Negative: We DIDN'T STAY in a luxury hotel; we camped outside.", "Question: DID you take many photos? Yes, I did! / No, I didn't."],
-                imageUrl: "/images/teens-basic-3-class-06/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Travel Anecdotes & Sequencers / Conectores de anécdotas",
-                description: "Order the events of your trip.",
-                content: ["First = Primero", "Then = Luego", "After that = Después de eso", "Suddenly = De repente / De pronto", "Finally = Finalmente"],
-                imageUrl: "/images/teens-basic-3-class-06/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Telling a Travel Anecdote / Contando una anécdota",
-                description: "Model anecdote for class presentation.",
-                content: ["Last July, my family traveled to the mountains.", "First, we rented a cabin. Then, we went hiking in the national park.", "Suddenly, it started raining, but we found a cozy cafe and drank hot chocolate!"],
-                imageUrl: "/images/teens-basic-3-class-06/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
-              }
+              {"id":"slide-4","title":"Travel, Trips & Vacations ✈️🏖️ / Vacaciones y Viajes","description":"Travel Vocabulary","content":["Airport, boarding pass, hotel, beach, mountains, tour guide","Luggage, passport, souvenir, road trip, sightseeing","Last summer, my family went on an unforgettable road trip."],"imageUrl":"/images/teens-basic-3-class-06/slide-04.jpg","bgColor":"bg-gradient-to-br from-blue-500 to-cyan-600"},
+              {"id":"slide-5","title":"Key Past Simple Verbs 🧭 / Verbos en Pasado","description":"Regular and Irregular Past","content":["Regular: visited, stayed, explored, watched, traveled","Irregular: went (go), saw (see), ate (eat), bought (buy), took (take)","We traveled to the coast and ate delicious seafood."],"imageUrl":"/images/teens-basic-3-class-06/slide-05.jpg","bgColor":"bg-gradient-to-br from-cyan-500 to-teal-600"},
+              {"id":"slide-6","title":"Travel Anecdotes & Sequencers 🗺️ / Contar Anécdotas","description":"First, Then, Suddenly","content":["First, we arrived at the beach at sunset.","Suddenly, it started raining, so we ran to a cozy café.","Finally, the sky cleared and we saw a double rainbow!"],"imageUrl":"/images/teens-basic-3-class-06/slide-06.jpg","bgColor":"bg-gradient-to-br from-teal-500 to-emerald-600"},
+              {"id":"slide-7","title":"The Travel Story Formula 🏝️ / Fórmula de Viaje","description":"Where + What Happened + Best Part","content":["Formula: Last [Vacation Time], I went to [Destination], where I [Past Action 1] and [Past Action 2].","Example: 'Last year, I went to the mountains, where I hiked with my cousins and took great photos.'"],"imageUrl":"/images/teens-basic-3-class-06/slide-07.jpg","bgColor":"bg-gradient-to-br from-emerald-500 to-amber-600"},
+              {"id":"slide-8","title":"Quick Check: Travel Postcard 🎯 / Mini Reto","description":"Share a Vacation Highlight","content":["Tell the teacher about a trip you took:","'On my last vacation, I went to ________ and I (ate/visited/saw) ________.'"],"imageUrl":"/images/teens-basic-3-class-06/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-orange-600"}
             ],
             action: "Formar oraciones en pasado con conectores de secuencia."
           },
@@ -11523,46 +11313,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de logros biográficos y estructuras de tiempo para relatar vidas.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Biography Vocabulary / Vocabulario biográfico",
-                description: "Key terms for describing historical lives.",
-                content: ["milestone = hito / logro crucial", "achievement = logro personal o profesional", "career = trayectoria / carrera", "championship = campeonato", "masterpiece = obra maestra", "inspiration = fuente de inspiración"],
-                imageUrl: "/images/teens-basic-3-class-07/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Biographical Life Verbs / Verbos de trayectoria de vida",
-                description: "Past verbs used in life stories.",
-                content: ["be born ➔ was/were born (nació en)", "grow up ➔ grew up (creció en)", "train ➔ trained (entrenó duro)", "create ➔ created (creó obras)", "win ➔ won (ganó premios o medallas)", "become ➔ became (se convirtió en)"],
-                imageUrl: "/images/teens-basic-3-class-07/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Grammar: Timeline & Time Markers / Líneas de tiempo",
-                description: "Connect life events in chronological order.",
-                content: ["In 1995: Frida Kahlo was born in 1907 in Mexico.", "At the age of 17: Messi joined Barcelona's first team.", "Later in life: She became an international symbol of art.", "Formula: Subject + Past Verb + Time / Place Marker"],
-                imageUrl: "/images/teens-basic-3-class-07/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Achievements & Overcoming Obstacles / Logros y superación",
-                description: "How great people overcome difficulties.",
-                content: ["overcome ➔ overcame difficulties (superó obstáculos)", "lead ➔ led the team to victory (lideró al equipo)", "publish ➔ published a best-seller (publicó un libro)", "inspire ➔ inspired millions of youth (inspiró a millones)"],
-                imageUrl: "/images/teens-basic-3-class-07/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Presenting a Short Biography / Presentando una biografía",
-                description: "Model biography presentation.",
-                content: ["Frida Kahlo was born in Mexico in 1907.", "She grew up in Coyoacán and started painting after an accident.", "Throughout her career, she created famous self-portraits and inspired millions worldwide."],
-                imageUrl: "/images/teens-basic-3-class-07/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
-              }
+              {"id":"slide-4","title":"Inspiring Biographies & Creators 🌟🎨 / Biografías de Éxito","description":"Life Milestones","content":["Born, grew up, discovered passion, practiced daily, overcame obstacles","Athletes, musicians, scientists, innovators, digital creators","Success comes from dedication, passion, and resilience."],"imageUrl":"/images/teens-basic-3-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Timeline Markers in Past Simple ⏳ / Línea de Tiempo","description":"Life Milestones","content":["In 2010, she started playing tennis at age six.","After years of training, he won his first world title.","By the time he was eighteen, he founded his own tech company."],"imageUrl":"/images/teens-basic-3-class-07/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Overcoming Obstacles & Achievements 🏆 / Superar Obstáculos","description":"Resilience in Action","content":["Despite injuries, the athlete never gave up.","She learned coding on YouTube and built a global app.","Their hard work inspired millions of young creators."],"imageUrl":"/images/teens-basic-3-class-07/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Biography Summary Formula 📜 / Fórmula Biográfica","description":"Person + Background + Achievement","content":["Formula: [Name] was born in [Place], discovered [Passion] at [Age], and achieved [Major Milestone].","Example: 'Lionel Messi was born in Rosario, trained tirelessly, and won the World Cup.'"],"imageUrl":"/images/teens-basic-3-class-07/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Hero Spotlight 🎯 / Mini Reto","description":"Introduce a Role Model","content":["Introduce an athlete, artist, or creator you admire:","'(Name) was born in ________, worked hard in ________, and achieved ________.'"],"imageUrl":"/images/teens-basic-3-class-07/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Construir oraciones biográficas con fechas y verbos pasados."
           },
@@ -11905,46 +11660,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender los conectores narrativos de secuencia, contraste, simultaneidad y causa.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Sequence Connectors / Conectores de secuencia",
-                description: "Organize events from beginning to end.",
-                content: ["First = Primero (al inicio de la historia)", "Then / Next = Luego / Después", "After that = Después de eso", "Finally / In the end = Finalmente / Al final"],
-                imageUrl: "/images/teens-basic-3-class-08/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Suspense & Simultaneous Connectors / Suspenso y simultaneidad",
-                description: "Add dramatic turns and parallel actions.",
-                content: ["Suddenly = De repente / De pronto (cambio inesperado)", "Meanwhile = Mientras tanto (otra acción al mismo tiempo)", "While = Mientras que (durante una acción)", "Fortunately = Afortunadamente / Por suerte"],
-                imageUrl: "/images/teens-basic-3-class-08/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Cause, Result & Contrast / Causa, resultado y contraste",
-                description: "Explain why things happened and contrast ideas.",
-                content: ["Because = Porque (da la razón)", "So = Por lo tanto / Así que (da el resultado)", "Although / Even though = Aunque (contraste inesperado)", "However = Sin embargo"],
-                imageUrl: "/images/teens-basic-3-class-08/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Story Structure Formula / Fórmula de una historia",
-                description: "How to structure an engaging narrative.",
-                content: ["1. Beginning: First, we arrived at the campsite.", "2. Complication: Suddenly, the wind started blowing hard.", "3. Climax: Meanwhile, we searched for shelter.", "4. Resolution: Fortunately, in the end we found a warm cabin."],
-                imageUrl: "/images/teens-basic-3-class-08/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Suspense Story / Historia modelo de suspenso",
-                description: "Read how connectors link every sentence.",
-                content: ["First, my friends and I went for a walk in the woods.", "Although the weather was cloudy, we kept walking.", "Suddenly, it started raining heavily, so we ran to a shed.", "In the end, the sun came out and we saw a double rainbow!"],
-                imageUrl: "/images/teens-basic-3-class-08/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
-              }
+              {"id":"slide-4","title":"Storytelling & Narrative Hooks 📖🎬 / Contar Historias","description":"Narrative Arc","content":["Setting, characters, rising action, climax, twist, resolution","A great story starts with an intriguing hook.","Stories connect emotions and build real fluency."],"imageUrl":"/images/teens-basic-3-class-08/slide-04.jpg","bgColor":"bg-gradient-to-br from-fuchsia-600 to-purple-700"},
+              {"id":"slide-5","title":"Mastering Connectors: Suddenly, While, As soon as ⚡ / Conectores Narrativos","description":"Dynamic Story Links","content":["SUDDENLY (de repente): 'Suddenly, the lights went out.'","WHILE (mientras): 'While we were walking in the forest, we heard music.'","AS SOON AS (tan pronto como): 'As soon as the doors opened, the crowd cheered.'"],"imageUrl":"/images/teens-basic-3-class-08/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-600 to-indigo-700"},
+              {"id":"slide-6","title":"Building Suspense & Plot Twists 🎭 / Suspenso y Giros","description":"Engaging the Listener","content":["At first, everything seemed normal...","To our surprise, the mystery box was empty!","In the end, it was all a surprise birthday prank!"],"imageUrl":"/images/teens-basic-3-class-08/slide-06.jpg","bgColor":"bg-gradient-to-br from-indigo-600 to-blue-700"},
+              {"id":"slide-7","title":"The Narrative Arc Formula 🎬 / Fórmula de Historia","description":"Hook + Twist + Resolution","content":["Formula: One day [Context], but suddenly [Unexpected Event], so finally [Resolution].","Example: 'One day we were camping, but suddenly a friendly fox appeared, so finally we took photos.'"],"imageUrl":"/images/teens-basic-3-class-08/slide-07.jpg","bgColor":"bg-gradient-to-br from-blue-600 to-teal-700"},
+              {"id":"slide-8","title":"Quick Check: 2-Sentence Thriller 🎯 / Mini Reto","description":"Create a Mini Plot","content":["Create a 2-sentence mini story using 'Suddenly' or 'While':","'While I was ________, suddenly ________!'"],"imageUrl":"/images/teens-basic-3-class-08/slide-08.jpg","bgColor":"bg-gradient-to-br from-teal-600 to-emerald-700"}
             ],
             action: "Practicar oraciones combinando conectores de causa y tiempo."
           },
@@ -12287,46 +12007,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender vocabulario de averías, adjetivos de problemas y fórmulas de solicitud educada.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "Everyday Problem Vocabulary / Vocabulario de problemas",
-                description: "Key words for daily malfunctions.",
-                content: ["out of order = fuera de servicio", "flat tire = llanta desinflada o ponchada", "cracked screen = pantalla estrellada", "dead battery = batería agotada", "stuck = atorado / trabado", "leak = fuga de agua o líquido"],
-                imageUrl: "/images/teens-basic-3-class-09/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Troubleshooting Verbs / Verbos de resolución",
-                description: "Actions to fix or report problems.",
-                content: ["repair / fix = reparar / arreglar", "replace = reemplazar por uno nuevo", "reboot / restart = reiniciar el dispositivo", "recharge = recargar la batería", "report = reportar un inconveniente"],
-                imageUrl: "/images/teens-basic-3-class-09/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Grammar: Explaining the Problem / Explicando el problema",
-                description: "Clear formulas to describe what went wrong.",
-                content: ["There is a problem with... (There is a problem with the Wi-Fi connection.)", "The issue is that... (The issue is that my document won't print.)", "It isn't working because... (It isn't working because the battery died.)", "My [object] is broken / cracked / stuck."],
-                imageUrl: "/images/teens-basic-3-class-09/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Polite Requests for Help / Solicitudes amables de ayuda",
-                description: "How to ask for assistance respectfully.",
-                content: ["Could you please help me...? = ¿Podrías por favor ayudarme a...?", "Would you mind checking...? = ¿Te importaría revisar...?", "Excuse me, could you take a look at...? = Disculpe, ¿podría echar un vistazo a...?", "I would appreciate your help = Agradecería tu ayuda"],
-                imageUrl: "/images/teens-basic-3-class-09/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Explaining a Solution / Explicando la solución",
-                description: "Model dialogue for polite problem solving.",
-                content: ["Student: Excuse me, there is a problem with my laptop. The screen is frozen.", "Technician: Let's see. First, we will restart the system. Then, we can check for software updates.", "Student: Thank you so much! It works perfectly now."],
-                imageUrl: "/images/teens-basic-3-class-09/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
-              }
+              {"id":"slide-4","title":"Everyday Tech & Life Problems ⚠️🔧 / Problemas Cotidianos","description":"Troubleshooting Vocabulary","content":["Dead battery, lost keys, weak Wi-Fi signal, forgotten password, flat tire","Late for practice, missed the bus, cracked phone screen","Knowing how to explain a problem gets you fast help."],"imageUrl":"/images/teens-basic-3-class-09/slide-04.jpg","bgColor":"bg-gradient-to-br from-orange-500 to-red-600"},
+              {"id":"slide-5","title":"Explaining What Happened 🗣️ / Explicar el Problema","description":"Cause and Effect","content":["My laptop froze while I was saving my project.","I can't connect to the internet because the router is down.","My phone died because I forgot my charger at home."],"imageUrl":"/images/teens-basic-3-class-09/slide-05.jpg","bgColor":"bg-gradient-to-br from-red-500 to-rose-600"},
+              {"id":"slide-6","title":"Polite Requests for Assistance 🤝 / Pedir Ayuda con Cortesía","description":"Could You Help Me?","content":["Could you please lend me your charger?","Would you mind checking this error with me?","Excuse me, do you know how to fix this audio setting?"],"imageUrl":"/images/teens-basic-3-class-09/slide-06.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-pink-600"},
+              {"id":"slide-7","title":"The Problem & Solution Formula 🛠️ / Fórmula de Solución","description":"Issue + Request for Help","content":["Formula: 'Excuse me, my [Item/Device] is [Problem]. Could you please [Request]?'","Example: 'Excuse me, my phone battery is low. Could you please lend me your power bank?'"],"imageUrl":"/images/teens-basic-3-class-09/slide-07.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-purple-600"},
+              {"id":"slide-8","title":"Quick Check: Tech Support Desk 🎯 / Mini Reto","description":"Explain a Tech Glitch","content":["Tell the teacher:","'Excuse me, my ________ isn't working because ________. Could you help me?'"],"imageUrl":"/images/teens-basic-3-class-09/slide-08.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-indigo-600"}
             ],
             action: "Construir oraciones de reclamo educado y explicación de fallas."
           },
@@ -12669,46 +12354,11 @@ export const curriculumTeensLevels: CurriculumLevel[] = [
             duration: "20 minutos",
             objective: "Aprender las tres reglas de pronunciación de -ed y patrones de verbos irregulares.",
             slides: [
-              {
-                id: "Diapositiva 4",
-                title: "The 3 Sounds of -ed / Los 3 sonidos de -ed",
-                description: "Never pronounce 'ed' as a full extra syllable unless it ends in T or D.",
-                content: ["1. /t/ sound (after voiceless p, k, f, s, sh, ch): watched, helped, walked, laughed", "2. /d/ sound (after voiced b, g, v, z, m, n, l, r, vowels): played, cleaned, loved, stayed", "3. /ɪd/ sound (ONLY after T or D): visited, started, needed, decided"],
-                imageUrl: "/images/teens-basic-3-class-10/slide-04.jpg",
-                bgColor: "bg-gradient-to-br from-blue-700 to-indigo-800"
-              },
-              {
-                id: "Diapositiva 5",
-                title: "Challenging Irregular Verb Families / Familias de verbos irregulares",
-                description: "Notice the -ought / -aught sound patterns.",
-                content: ["buy ➔ bought (compró)", "bring ➔ brought (trajo)", "think ➔ thought (pensó)", "teach ➔ taught (enseñó)", "catch ➔ caught (atrapó)", "drive ➔ drove (condujo)"],
-                imageUrl: "/images/teens-basic-3-class-10/slide-05.jpg",
-                bgColor: "bg-gradient-to-br from-indigo-700 to-purple-800"
-              },
-              {
-                id: "Diapositiva 6",
-                title: "Capstone Video Script Structure / Estructura del video final",
-                description: "Organize your 60-second video presentation.",
-                content: ["1. Greeting & Intro: 'Hello everyone! Today I want to share my Level 3 story.'", "2. Past Anecdote: 'Last year, I traveled to... and visited...'", "3. Future Prediction: 'In the future, I will study... and explore...'", "4. Inspiring Conclusion: 'English opened new doors for me!'"],
-                imageUrl: "/images/teens-basic-3-class-10/slide-06.jpg",
-                bgColor: "bg-gradient-to-br from-teal-600 to-emerald-700"
-              },
-              {
-                id: "Diapositiva 7",
-                title: "Filming & Public Speaking Tips / Consejos de oratoria y grabación",
-                description: "Deliver your speech like a professional.",
-                content: ["eye contact = contacto visual directo con la cámara", "clear volume = voz clara y volumen adecuado", "body language = gestos naturales y postura erguida", "smooth transitions = conectar ideas con First, Suddenly, In the end"],
-                imageUrl: "/images/teens-basic-3-class-10/slide-07.jpg",
-                bgColor: "bg-gradient-to-br from-emerald-600 to-green-700"
-              },
-              {
-                id: "Diapositiva 8",
-                title: "Model Capstone Video Pitch / Presentación modelo",
-                description: "Read this sample 60-second graduation speech.",
-                content: ["Hello! My name is Alex. When I was younger, I was shy in English class.", "During this level, I practiced every day. I visited new places, learned about science breakthroughs, and spoke with confidence!", "In the future, I will travel the world and inspire other teens. Thank you!"],
-                imageUrl: "/images/teens-basic-3-class-10/slide-08.jpg",
-                bgColor: "bg-gradient-to-br from-green-600 to-lime-700"
-              }
+              {"id":"slide-4","title":"Pronunciation: The 3 Sounds of -ed 🗣️🎯 / Sonidos de -ed","description":"Regular Past Phonetics","content":["/t/ after voiceless sounds: watched, worked, danced, stopped","/d/ after voiced sounds: played, lived, traveled, stayed","/ɪd/ after /t/ and /d/: wanted, needed, decided, visited"],"imageUrl":"/images/teens-basic-3-class-10/slide-04.jpg","bgColor":"bg-gradient-to-br from-indigo-500 to-purple-600"},
+              {"id":"slide-5","title":"Irregular Past Verb Mastery ⚡🧠 / Verbos Irregulares","description":"Key High-Frequency Families","content":["Go -> Went / See -> Saw / Buy -> Bought","Make -> Made / Write -> Wrote / Take -> Took","Speak -> Spoke / Give -> Gave / Know -> Knew"],"imageUrl":"/images/teens-basic-3-class-10/slide-05.jpg","bgColor":"bg-gradient-to-br from-purple-500 to-pink-600"},
+              {"id":"slide-6","title":"Video Project Script Structure 📹🎬 / Estructura del Video","description":"Storytelling Delivery","content":["1. The Hook: Grab attention in the first 5 seconds.","2. The Story: Use past simple and rich connectors.","3. The Lesson: Share your personal takeaway and conclusion."],"imageUrl":"/images/teens-basic-3-class-10/slide-06.jpg","bgColor":"bg-gradient-to-br from-pink-500 to-rose-600"},
+              {"id":"slide-7","title":"The Champion Capstone Formula 🏆 / Fórmula de Graduación","description":"Full Story Pitch","content":["1. Introduce a memorable event from your past.","2. Use 3 irregular past verbs and 1 regular verb with correct -ed sound.","3. Conclude with why this experience made you stronger."],"imageUrl":"/images/teens-basic-3-class-10/slide-07.jpg","bgColor":"bg-gradient-to-br from-rose-500 to-orange-500"},
+              {"id":"slide-8","title":"Quick Check: Grand Champion Pitch 🎯 / Gran Reto","description":"Your 30-Second Story","content":["Deliver your 30-second Champion story to the teacher!","Highlight 1 unforgettable past experience with perfect pronunciation!"],"imageUrl":"/images/teens-basic-3-class-10/slide-08.jpg","bgColor":"bg-gradient-to-br from-amber-500 to-emerald-600"}
             ],
             action: "Practicar la pronunciación de -ed y ensayar el guión del video."
           },
