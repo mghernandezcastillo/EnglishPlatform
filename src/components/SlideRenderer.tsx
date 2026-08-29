@@ -5,7 +5,7 @@
  * compact=true: renders at 1280×720 then CSS-scales to the wrapper size,
  * preserving 16:9 aspect ratio and exact typography from the real player.
  */
-import { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef, lazy, Suspense } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CheckCircle, Check, Play, ArrowRight, Target, BookOpen, Users, MessageSquare, HelpCircle, Sparkles, Eye, EyeOff, Zap, Volume2, RotateCcw, Layers3, Lightbulb, BookmarkPlus, CheckCircle2, ChevronRight, ChevronLeft, VolumeX, X, Maximize2, Star, LayoutGrid, Flame, Award } from 'lucide-react';
 import { CurriculumClass, ClassSection, ClassSlide } from '../types';
