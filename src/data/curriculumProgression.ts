@@ -482,21 +482,21 @@ const teenClassProgression: Record<string, ClassProgression> = {
   },
   'c-teens-basic-1-1': {
     title: 'Class 1: People Profiles, Friendship & Feelings / Clase 1: Perfiles, amistad y emociones',
-    description: 'Extender la familia conocida hacia amistades, personalidad, apariencia y estados emocionales.',
-    objective: 'Crear perfiles de personas usando this/these, have/has, feelings y personality adjectives.',
-    bridge: 'Level 0 presentó familia y posesivos; esta clase amplía el lenguaje a personas del círculo social.',
-    goals: ['Describe a friend or relative.', 'Use have/has for features and interests.', 'Explain how a person feels.'],
+    description: 'Describir a tus amigos, cómo interactúas con ellos y expresar emociones usando pronombres de objeto.',
+    objective: 'Hablar de tus amigos y cómo te relacionas con ellos usando pronombres de objeto (him, her, them, us).',
+    bridge: 'Level 0 presentó pronombres sujeto y posesivos; aquí se introducen los pronombres de objeto en contexto social.',
+    goals: ['Describe a friend and how you interact with them.', 'Use object pronouns (him, her, them, us) accurately.', 'Explain how your friend feels today.'],
     teachingPoints: [
-      { title: 'People in Your Circle / Personas cercanas', content: ['Friend, classmate, teammate, neighbor, cousin', 'This is my classmate, Eva.', 'These are my teammates.'] },
-      { title: 'Personality Words / Personalidad', content: ['Friendly, quiet, funny, creative, helpful', 'Leo is creative and helpful.', 'Use be for personality and feelings.'] },
-      { title: 'Feelings Can Change / Emociones', content: ['Excited, worried, tired, calm, proud', 'My friend is worried about the test.', 'Ask: How does he or she feel?'] },
-      { title: 'Have and Has for Profiles / Have y has', content: ['I / you / we / they have', 'He / she has', 'Maya has curly hair and a skateboard.'] },
-      { title: 'Build a Person Profile / Crear un perfil', content: ['Relationship + personality', 'Appearance or interest with have/has', 'Current feeling + one reason'] },
+      { title: 'Object Pronouns in Daily Life / Pronombres de Objeto', content: ['Subject: I, you, he, she, we, they', 'Object: me, you, him, her, us, them', 'Object pronouns receive the action of the verb.'] },
+      { title: 'Talking About Friends / Hablar de amigos', content: ['I sit next to him in class.', 'She helps us with our math project.', 'Do you see them at the sports club?'] },
+      { title: 'Feelings and Personality / Emociones y personalidad', content: ['Leo is funny and supportive.', 'I always listen to him when he is worried.', 'We invite them because they are creative.'] },
+      { title: 'Subject vs Object Contrast / Contraste Sujeto vs Objeto', content: ['She calls me (She = subject, me = object)', 'I call her (I = subject, her = object)', 'Never say: I call she. Always say: I call her.'] },
+      { title: 'Build a Friendship Profile / Perfil de amistad', content: ['Introduce your friend with a personality trait.', 'Explain an activity you do with him/her/them.', 'Share how you support each other.'] },
     ],
-    context: ['Nora: This is my friend, Emma.', 'Liam: What is she like?', 'Nora: She is funny and creative. She has a new camera.', 'Liam: How does she feel today?', 'Nora: She is excited because we have a school project.'],
-    production: ['Choose a friend, classmate, teammate, or relative.', 'Describe personality and one feature with have/has.', 'Explain one current feeling and ask a follow-up question.'],
-    roleplay: ['Student A introduces a person from a club or school group.', 'Student B asks about personality, interests, and feelings.', 'Switch roles and create a second profile.'],
-    homework: ['Create two short people profiles.', 'Use have and has at least once each.', 'Include personality, one interest, and one feeling.'],
+    context: ['Nora: Do you know David from the robotics club?', 'Liam: Yes, I talk to him every Tuesday.', 'Nora: He is really creative. He is helping us build the robot chassis.', 'Liam: Great! Let’s invite him to study with us this afternoon.'],
+    production: ['Introduce a close friend or classmate.', 'Use at least two object pronouns (him, her, them, us).', 'Explain an activity you do together and how they feel today.'],
+    roleplay: ['Student A introduces a friend from a school team.', 'Student B asks questions using object pronouns (Do you see him often? Does she help you?).', 'Switch roles and create a second profile.'],
+    homework: ['Write five sentences describing two friends.', 'Use him, her, them, or us in each sentence.', 'Include one personality trait and one shared activity.'],
   },
   'c-teens-basic-1-2': {
     title: 'Class 2: Healthy Habits, Food & Energy / Clase 2: Hábitos saludables, comida y energía',
@@ -535,20 +535,21 @@ const teenClassProgression: Record<string, ClassProgression> = {
   },
   'c-teens-basic-1-4': {
     title: 'Class 4: Nature, Locations & Park Rules / Clase 4: Naturaleza, ubicación y reglas del parque',
-    description: 'Describir un espacio natural y cuidarlo mediante instrucciones claras.',
-    objective: 'Usar there is/are, preposiciones e imperativos para describir y proteger un parque.',
-    bridge: 'Se evita adelantar should; los modales de consejo y obligación se desarrollarán después.',
-    goals: ['Describe an outdoor place.', 'Locate natural features.', 'Give two clear park-care instructions.'],
+    description: 'Dar instrucciones y explicar reglas de convivencia y cuidado en espacios naturales usando imperativos.',
+    objective: 'Dar instrucciones claras y normas de protección al aire libre usando imperativos afirmativos y negativos.',
+    bridge: 'Avanzamos de descripciones simples a dar instrucciones directas y normas de convivencia responsable.',
+    goals: ['Give affirmative and negative outdoor instructions.', 'Explain park rules and safety guidelines.', 'Locate natural features and amenities.'],
     teachingPoints: [
-      { title: 'Outdoor Places / Lugares al aire libre', content: ['Park, trail, lake, garden, playground', 'There is a lake near the trail.', 'There are trees around the playground.'] },
-      { title: 'Locate Nature / Ubicar la naturaleza', content: ['next to, behind, between, across from', 'The garden is behind the café.', 'Two benches are next to the lake.'] },
-      { title: 'Describe What You See / Describir', content: ['There is + singular or uncountable', 'There are + plural', 'Add color, size, or condition.'] },
-      { title: 'Park Instructions / Instrucciones', content: ["Don't leave trash.", 'Stay on the trail.', 'Put bottles in the recycling bin.'] },
-      { title: 'Create a Responsible Map / Mapa responsable', content: ['Add three natural features.', 'Locate each one clearly.', 'Include two positive or negative instructions.'] },
+      { title: 'Affirmative Imperatives / Instrucciones afirmativas', content: ['Stay on the main path.', 'Put plastic bottles in the recycling bin.', 'Use the designated picnic tables.'] },
+      { title: 'Negative Imperatives / Prohibiciones y advertencias', content: ['Don’t feed the wild animals or birds.', 'Don’t leave trash on the grass.', 'Don’t ride skateboards on walking trails.'] },
+      { title: 'Park Amenities & Nature / Instalaciones y naturaleza', content: ['Visitor center, bike lane, lake, benches', 'The recycling bins are located next to the lake.', 'Follow the signs along the trail.'] },
+      { title: 'Polite Signs & Instructions / Normas de cortesía', content: ['Please keep dogs on a leash.', 'Please respect the quiet zone near the library garden.', 'Imperatives start directly with the base verb.'] },
+      { title: 'Create a Park Safety Guide / Guía del parque', content: ['List two positive rules for visitors.', 'List two negative warnings for safety.', 'Explain why these rules keep everyone safe.'] },
     ],
-    context: ['Guide: There is a lake behind the visitor center.', 'Visitor: Are there picnic tables near it?', 'Guide: Yes, there are. Please use the bins and do not feed the animals.'],
-    production: ['Describe a simple park map.', 'Locate three features with there is/are and prepositions.', 'Give two direct park-care instructions.'],
-    homework: ['Draw a small park map.', 'Write five location sentences.', 'Add two rules using an imperative.'],
+    context: ['Park Ranger: Welcome to Green Mountain Park! Please remember the rules.', 'Visitor: Can we ride our bikes near the lake?', 'Park Ranger: Stay on the paved bike trail, and please do not feed the ducks.', 'Visitor: Understood. We will also put all our trash in the bins.'],
+    production: ['Act as a junior park ranger.', 'Give three clear rules using affirmative and negative imperatives.', 'Explain the location of two park amenities.'],
+    roleplay: ['Student A is a park ranger welcoming a group of teens.', 'Student B asks what activities are permitted in the park.', 'Student A gives instructions using Stay on, Don’t feed, and Put trash in bins.'],
+    homework: ['Design a pocket safety guide for your local park.', 'Write four rules using imperatives (two affirmative, two negative).', 'Add one reason why each rule is important.'],
   },
   'c-teens-basic-1-5': {
     title: 'Class 5: Weekend Intentions & Simple Plans / Clase 5: Intenciones y planes de fin de semana',
@@ -588,12 +589,48 @@ const teenClassProgression: Record<string, ClassProgression> = {
     bridge: 'Level 0 presentó gadgets y have; aquí se trabaja comportamiento digital.',
     goals: ['Explain what a device is used for.', 'Describe frequency and screen time.', 'Give one online safety rule.'],
   },
+  'c-teens-basic-2-2': {
+    title: 'Class 2: My Room & Dream House / Clase 2: Mi cuarto y casa soñada',
+    description: 'Describir la distribución espacial, diseño y ubicación de una casa o habitación soñada con preposiciones avanzadas.',
+    objective: 'Describir la distribución espacial y diseño de tu casa o cuarto soñado con preposiciones espaciales avanzadas.',
+    bridge: 'Level 0 y 1 ubicaron objetos simples; aquí se domina la descripción espacial integral de un plano arquitectónico.',
+    goals: ['Describe the spatial layout of a dream room or home.', 'Use advanced spatial prepositions (across from, upstairs, facing, located in).', 'Justify design and furniture choices.'],
+    teachingPoints: [
+      { title: 'Levels and Zones / Niveles y áreas', content: ['Upstairs, downstairs, on the top floor, in the corner', 'My bedroom is upstairs on the second floor.', 'The study zone is downstairs near the garden.'] },
+      { title: 'Advanced Spatial Prepositions / Preposiciones espaciales avanzadas', content: ['Across from, opposite, facing, located next to', 'The study desk is facing the large window with natural light.', 'The studio is located across from the gaming lounge.'] },
+      { title: 'Design Features & Views / Vistas y características', content: ['Overlooking the garden, adjacent to the balcony, mounted on the wall', 'A high-resolution display is mounted on the wall.', 'The reading nook is adjacent to the bookshelf.'] },
+      { title: 'Spatial Flow & Layout / Distribución espacial', content: ['To the left of the bed, right opposite the door', 'Between the wardrobe and the desk, there is a music corner.', 'Combine level + position + view for rich descriptions.'] },
+      { title: 'Present Your Architectural Concept / Presentar tu concepto', content: ['State which floor and zone you are describing.', 'Locate at least three key elements with precision.', 'Explain why this layout is comfortable and functional.'] },
+    ],
+    context: ['Architect: Welcome to your virtual dream studio! How is it arranged?', 'Teen: My workspace is upstairs, facing the sunset view.', 'Architect: Where is the soundproof podcasting corner?', 'Teen: It is located across from the balcony, right adjacent to the recording desk.'],
+    production: ['Present your dream gaming or study room layout.', 'Use across from, upstairs/downstairs, facing, and adjacent to.', 'Explain how the space inspires your creativity.'],
+    roleplay: ['Student A is an interior designer presenting a 3D floor plan.', 'Student B asks where specific zones and equipment are located.', 'Student A describes the layout using advanced spatial prepositions.'],
+    homework: ['Draw a floor plan of your dream creative room.', 'Write six sentences describing the layout using across from, facing, upstairs, and adjacent to.', 'Explain why you chose that setup.'],
+  },
   'c-teens-basic-2-3': {
     title: 'Class 3: City Navigation & Transport / Clase 3: Navegación urbana y transporte',
     description: 'Describir cómo desplazarse y ubicar destinos dentro de la ciudad.',
     objective: 'Usar go by, city places y direcciones breves para completar una ruta.',
     bridge: 'La clase 8 no repetirá transporte: utilizará este lenguaje para organizar una salida.',
     goals: ['Choose a means of transport.', 'Ask where a destination is.', 'Explain a short route.'],
+  },
+  'c-teens-basic-2-5': {
+    title: 'Class 5: Talents, Skills & Past Abilities / Clase 5: Talentos, habilidades y habilidades pasadas',
+    description: 'Comparar habilidades actuales y pasadas usando be good at + -ing y could/couldn’t.',
+    objective: 'Hablar de tus talentos actuales y contrastar lo que podías hacer en el pasado con could y be good at + -ing.',
+    bridge: 'Level 0 presentó can básico; aquí se eleva a destrezas complejas y habilidad en pasado (could).',
+    goals: ['Express current talents using be good at / great at + -ing.', 'Describe past abilities using could and couldn’t with age markers.', 'Compare how your skills evolved over time.'],
+    teachingPoints: [
+      { title: 'Current Talents: Be Good At + -ing / Talentos actuales', content: ['I am good at playing the electric guitar.', 'She is great at coding interactive websites.', 'They are excellent at solving mathematical puzzles.'] },
+      { title: 'Past Ability: Could & Couldn’t / Habilidad en pasado', content: ['When I was seven, I could swim across the pool.', 'When he was in primary school, he couldn’t speak in public.', 'Could is the past of can for general abilities.'] },
+      { title: 'Time Markers with Past Abilities / Marcadores de tiempo', content: ['When I was ten..., At the age of six..., Three years ago...', 'Could is followed directly by base verb (could swim, could play).', 'No -s or -ed on the main verb after could.'] },
+      { title: 'Skill Evolution & Growth / Evolución de talentos', content: ['I couldn’t play piano before, but now I am great at composing beats.', 'With practice, she became very good at digital illustration.', 'Contrast: In the past I could/couldn’t... now I am good at...'] },
+      { title: 'Talent Showcase Pitch / Presentación de talentos', content: ['State one talent you excel at today.', 'Mention one skill you could or couldn’t do when you were younger.', 'Explain what hobby you are currently developing.'] },
+    ],
+    context: ['Coach: What musical or creative talents do you have?', 'Teen: I am really good at creating digital music tracks.', 'Coach: Did you always have that skill?', 'Teen: Not really! When I was eight, I couldn’t even play an instrument, but I practiced every weekend.'],
+    production: ['Deliver a 45-second talent showcase.', 'Use be good at + -ing for a current strength.', 'Use could or couldn’t with an age marker for a past ability.'],
+    roleplay: ['Student A auditions for a school talent and leadership academy.', 'Student B is the interviewer asking about current skills and past milestones.', 'Student A answers using be good at + -ing and could/couldn’t.'],
+    homework: ['Write five sentences comparing your talents.', 'Include two things you are good/great at doing today.', 'Include two things you could or couldn’t do when you were younger.'],
   },
   'c-teens-basic-2-7': {
     title: 'Class 7: Sports, Health & Habit Frequency / Clase 7: Deportes, salud y frecuencia',
@@ -629,6 +666,24 @@ const teenClassProgression: Record<string, ClassProgression> = {
     objective: 'Contar una experiencia de viaje con acciones pasadas, lugares y marcadores de tiempo.',
     bridge: 'Was/were preparó estados y lugares; aquí se añaden acciones antes de biografías y storytelling.',
     goals: ['Use key regular and irregular past verbs.', 'Describe a travel sequence.', 'Ask one past-tense follow-up question.'],
+  },
+  'c-teens-basic-3-8': {
+    title: 'Class 8: Storytelling & Interrupted Actions (Past Continuous) / Clase 8: Historias y acciones interrumpidas (Pasado Continuo)',
+    description: 'Narrar historias y anécdotas usando el Pasado Continuo para acciones en curso interrumpidas con when y while.',
+    objective: 'Contar anécdotas combinando el Pasado Continuo (was/were + -ing) con el Pasado Simple mediante when y while.',
+    bridge: 'Conectamos el Pasado Simple ya dominado con acciones que estaban ocurriendo en un momento específico del pasado.',
+    goals: ['Describe ongoing background past actions with was/were + -ing.', 'Contrast background actions with sudden interruptions using when/while.', 'Deliver an engaging story with chronological suspense.'],
+    teachingPoints: [
+      { title: 'Past Continuous for Background Actions / Pasado Continuo', content: ['I / he / she / it was walking', 'You / we / they were talking', 'Describes an action in progress in the past.'] },
+      { title: 'The Interruption Pattern: When / Interrupciones con When', content: ['We were setting up the camp WHEN it suddenly started raining.', 'I was doing my homework WHEN the power went out.', 'Past Continuous (was doing) + WHEN + Past Simple (interruption).'] },
+      { title: 'Simultaneous Actions: While / Acciones simultáneas con While', content: ['WHILE I was walking home, I noticed a strange light in the sky.', 'While the teacher was speaking, students were taking notes.', 'While highlights the duration of the ongoing action.'] },
+      { title: 'Story Suspense & Narrative Flow / Ritmo narrativo', content: ['Establish the scene: It was raining and the wind was blowing.', 'Introduce the main action: We were walking through the forest.', 'Drop the twist: Suddenly, we heard a loud noise behind the trees.'] },
+      { title: 'Deliver an Anecdote / Contar una anécdota', content: ['Set the time and scene with Past Continuous.', 'Introduce what you were doing when something happened.', 'Conclude with how the situation was resolved.'] },
+    ],
+    context: ['Leo: You won’t believe what happened yesterday!', 'Mia: What were you doing?', 'Leo: We were hiking along the river when we suddenly saw a lost puppy.', 'Mia: While you were looking for its owner, what did the puppy do?', 'Leo: It was wagging its tail and playing with my backpack!'],
+    production: ['Tell a personal or fictional suspense anecdote.', 'Use was/were + -ing for the background scene.', 'Include at least one sudden interruption with when and one detail with while.'],
+    roleplay: ['Student A tells an unexpected story about a school trip or outdoor adventure.', 'Student B asks probing questions (What were you doing when...? What was happening around you?).', 'Student A concludes with the final outcome.'],
+    homework: ['Write a 6-line suspense story.', 'Use at least two Past Continuous sentences (was/were + -ing).', 'Use when and while to connect background actions and interruptions.'],
   },
   'c-teens-basic-4-3': {
     title: 'Class 3: Facts, Causes & Zero Conditional / Clase 3: Hechos, causas y condicional cero',
@@ -722,6 +777,54 @@ const teenClassProgression: Record<string, ClassProgression> = {
     bridge: 'La clase 5 presentó acuerdo y desacuerdo; aquí se construye una respuesta de debate.',
     goals: ['Acknowledge another viewpoint.', 'State a focused rebuttal.', 'Support it with evidence or example.'],
   },
+  'c-teens-advanced-1': {
+    title: 'Class 1: Breaking News & Campus Whispers (Reported Speech) / Clase 1: Noticias de Última Hora y Rumores (Reported Speech)',
+    description: 'Reportar declaraciones y noticias con reported speech y cambios de tiempo (backshift).',
+    objective: 'Reportar afirmaciones y noticias usando said, told y cambios de tiempo verbal.',
+    bridge: 'Inicia el nivel B2 dominando la transformación de citas directas a reportes formales de noticias.',
+    goals: ['Convert direct statements into reported speech.', 'Distinguish between say and tell with direct/indirect objects.', 'Apply accurate tense backshift and time expression changes.'],
+    teachingPoints: [
+      { title: 'Reported Statements / Afirmaciones en estilo indirecto', content: ['Mia said that she was preparing the article.', 'The coach told us that the schedule had changed.', 'Tense backshift: present becomes past, past becomes past perfect.'] },
+      { title: 'Reporting with Say vs Tell / Diferencia entre Say y Tell', content: ["Use SAY without a personal object: 'He said that...'", "Use TELL with a personal object: 'He told US that...'", 'Pronouns and time expressions change to fit the current moment.'] },
+      { title: 'Quick Check: Statement Conversion / Mini Reto', content: ["Direct: 'I am launching the school podcast today.'", 'Reported: She said that she WAS launching the school podcast that day.', 'Practice reporting your own campus news update!'] },
+    ],
+  },
+  'c-teens-advanced-2': {
+    title: 'Class 2: Investigative Interviews & Reported Questions / Clase 2: Entrevistas Secretas e Interrogatorios (Reported Questions)',
+    description: 'Reportar preguntas de investigación con orden afirmativo y sin signos de interrogación.',
+    objective: 'Reportar preguntas de sí/no y con Wh- usando asked if/whether y orden afirmativo.',
+    bridge: 'La clase 1 trabajó afirmaciones; aquí se aplican los interrogatorios y preguntas indirectas.',
+    goals: ['Report yes/no questions with if or whether.', 'Report wh- questions using statement word order (Subject + Verb).', 'Eliminate auxiliary verbs do/did and question marks in reported questions.'],
+    teachingPoints: [
+      { title: 'Reported Yes/No Questions with If / Preguntas de Sí o No', content: ['The detective asked IF the witness was available.', 'He wanted to know WHETHER we had seen the security footage.', 'Notice: No auxiliary did/do and no question marks.'] },
+      { title: 'Reported Wh- Questions / Preguntas con Wh-', content: ['She asked WHERE the meeting would take place.', 'The journalist inquired WHY the project was delayed.', "Order is Subject + Verb: 'where the meeting WAS', not 'where was the meeting'."] },
+      { title: 'Quick Check: Interrogation Report / Mini Reto', content: ["Direct: 'Do you have access to the file?'", 'Reported: The inspector asked IF I HAD access to the file.', 'Convert a question with the teacher!'] },
+    ],
+  },
+  'c-teens-advanced-3': {
+    title: 'Class 3: Mastering Relative Clauses (Defining) / Clase 3: Dominando Relative Clauses (Definitorias)',
+    description: 'Combinar información y definir sujetos/objetos usando pronombres relativos esenciales.',
+    objective: 'Unir oraciones mediante who, which, that, where y whose sin comas.',
+    bridge: 'Se avanza hacia la cohesión sintáctica uniendo ideas complejas mediante relative clauses.',
+    goals: ['Select the accurate relative pronoun (who, which, that, where, whose).', 'Form defining relative clauses that provide essential identification.', 'Combine two separate sentences into one fluent complex sentence.'],
+    teachingPoints: [
+      { title: 'Defining Relative Pronouns / Pronombres Relativos Esenciales', content: ["WHO / THAT = for people ('The student WHO designed the app won.')", "WHICH / THAT = for things ('The server WHICH stores our data is secure.')", "WHERE = for places ('This is the lab WHERE we code prototypes.')"] },
+      { title: 'Whose for Possession / Posesión con Whose', content: ["WHOSE = for possession ('We interviewed the creator WHOSE video went viral.')", 'Defining clauses give essential information: NO commas are used.', 'The sentence loses its core meaning without the relative clause.'] },
+      { title: 'Quick Check: Combine Sentences / Mini Reto', content: ["1. 'A hacker is a programmer. She analyzes system vulnerabilities.'", "Combined: 'A hacker is a programmer WHO analyzes system vulnerabilities.'", 'Create your own definition!'] },
+    ],
+  },
+  'c-teens-advanced-4': {
+    title: 'Class 4: Tech Disruptions & Modern Inventions (Passive Voice) / Clase 4: Disrupciones Tecnológicas e Inventos (Voz Pasiva)',
+    description: 'Describir procesos tecnológicos, inventos y sistemas mediante la voz pasiva.',
+    objective: 'Usar la voz pasiva en presente, pasado y futuro para destacar procesos y tecnología.',
+    bridge: 'La clase 3 definió componentes; aquí se describe el funcionamiento de tecnologías con voz pasiva.',
+    goals: ['Form present and past passive structures (be + past participle).', 'Decide when to include or omit the agent with by.', 'Describe technological innovations and automated workflows objectively.'],
+    teachingPoints: [
+      { title: 'Present & Past Passive in Tech / Pasiva en Tecnología', content: ["Active: 'Engineers designed the quantum processor.'", "Passive: 'The quantum processor WAS DESIGNED by engineers.'", "Present: 'Millions of transactions ARE PROCESSED every second.'"] },
+      { title: 'When to Use Passive Voice / Cuándo usar la pasiva', content: ['Focus on the result/object rather than who performed the action.', "Use 'BY' only when the agent adds critical value.", "Future passive: 'The new algorithm WILL BE DEPLOYED next week.'"] },
+      { title: 'Quick Check: Tech Passive Formula / Mini Reto', content: ["Active: 'Students created this robotics program.'", "Passive: 'This robotics program WAS CREATED by students.'", 'Describe one gadget using passive voice!'] },
+    ],
+  },
   'c-teens-advanced-5': {
     title: 'Class 5: Reporting Verbs, Questions & Source Accuracy / Clase 5: Verbos de reporte, preguntas y precisión de fuentes',
     description: 'Extender reported speech hacia reporting verbs, preguntas indirectas y atribución responsable.',
@@ -742,22 +845,61 @@ const teenClassProgression: Record<string, ClassProgression> = {
     title: 'Class 6: Non-Defining & Reduced Relative Clauses / Clase 6: Relative clauses explicativas y reducidas',
     description: 'Extender who/which/that hacia precisión, información adicional y reducción de cláusulas.',
     objective: 'Combinar información mediante defining, non-defining y reduced relative clauses.',
-    bridge: 'La clase 2 presentó relative clauses básicas; aquí se controla puntuación y densidad informativa.',
-    goals: ['Distinguish essential and extra information.', 'Use commas accurately.', 'Reduce a clause when meaning remains clear.'],
+    bridge: 'La clase 3 presentó relative clauses básicas; aquí se controla puntuación y densidad informativa.',
+    goals: ['Distinguish essential and extra information.', 'Use commas accurately in non-defining clauses.', 'Reduce a clause when meaning remains clear using participles.'],
+    teachingPoints: [
+      { title: 'Non-Defining Clauses with Commas / Cláusulas Explicativas', content: ['Maya, WHO LEADS OUR RESEARCH LAB, published a study on clean energy.', 'Commas enclose extra, non-essential details.', "You cannot use 'THAT' in non-defining clauses; use WHO or WHICH."] },
+      { title: 'Reduced Relative Clauses / Cláusulas Reducidas', content: ["Full: 'The prototype WHICH WAS DEVELOPED by teenagers won first place.'", "Reduced: 'The prototype DEVELOPED BY TEENAGERS won first place.'", "Active reduction: 'Students WHO ARE WORKING on AI -> Students WORKING on AI'."] },
+      { title: 'Quick Check: Clause Reduction / Mini Reto', content: ["Full: 'The camera which was purchased last year still works.'", "Reduced: 'The camera PURCHASED last year still works.'", 'Reduce a clause with the teacher!'] },
+    ],
   },
   'c-teens-advanced-7': {
     title: 'Class 7: Passive Reporting & Technology Processes / Clase 7: Reporte pasivo y procesos tecnológicos',
     description: 'Extender la voz pasiva desde procesos simples hacia noticias y lenguaje impersonal.',
     objective: 'Usar is said to, is believed to y pasivas de proceso para explicar tecnología y noticias.',
-    bridge: 'La clase 3 presentó la forma pasiva; aquí se usa para foco, proceso y distancia informativa.',
+    bridge: 'La clase 4 presentó la forma pasiva; aquí se usa para foco, proceso y distancia informativa.',
     goals: ['Describe a process in passive voice.', 'Use an impersonal reporting structure.', 'Choose active or passive for a clear reason.'],
+    teachingPoints: [
+      { title: 'Impersonal Passive Reporting / Reporte Pasivo Impersonal', content: ['IT IS BELIEVED THAT quantum processors will transform cyber defense.', 'IT IS REPORTED THAT electric vehicles will dominate transit by 2035.', 'Provides objective journalistic distance without citing rumors.'] },
+      { title: 'Subject + Passive Reporting Verb + To Infinitive', content: ['The new AI algorithm IS SAID TO cut computation costs by half.', 'The update IS BELIEVED TO patch critical vulnerabilities.', "Use 'is thought to / is known to' for scientific consensus."] },
+      { title: 'Quick Check: Impersonal Frame / Mini Reto', content: ["'People believe that AI will transform medicine.'", "-> 'AI IS BELIEVED TO transform medicine.'", 'Formulate a tech forecast!'] },
+    ],
   },
   'c-teens-advanced-8': {
-    title: 'Class 8: Idioms, Collocations & Register / Clase 8: Idioms, colocaciones y registro',
+    title: 'Class 8: Academic Idioms, Collocations & Register / Clase 8: Idioms, colocaciones y registro',
     description: 'Avanzar de reconocer idioms hacia seleccionar expresiones naturales según audiencia.',
-    objective: 'Usar idioms y collocations sin forzarlos y adaptar el registro al contexto.',
-    bridge: 'La clase 4 introdujo idioms en contexto; aquí se evalúa naturalidad, colocación y tono.',
-    goals: ['Build accurate collocations.', 'Choose an idiom for the context.', 'Rewrite language for a different register.'],
+    objective: 'Usar collocations académicas y adaptar modismos al registro formal.',
+    bridge: 'Se eleva la precisión léxica reemplazando frases informales por colocaciones académicas.',
+    goals: ['Build accurate academic collocations.', 'Choose an idiom suitable for the context.', 'Rewrite casual language for a formal professional register.'],
+    teachingPoints: [
+      { title: 'Academic Collocations / Colocaciones Académicas', content: ['Reach a unanimous conclusion / conduct empirical research', 'Take into consideration / draw a meaningful distinction', 'Collocations make English sound naturally native and professional.'] },
+      { title: 'Register Modulation: Casual to Formal / Modulación de Registro', content: ["Casual: 'Fix the mess' -> Formal: 'Resolve the discrepancy'", "Casual: 'Look into it' -> Formal: 'Investigate the phenomenon'", "Idioms with formal weight: 'The argument HOLDS WATER' / 'A DOUBLE-EDGED SWORD'."] },
+      { title: 'Quick Check: Professional Upgrade / Mini Reto', content: ["Casual: 'We talked about it and picked the best one.'", "Formal: 'After extensive deliberation, we selected the optimal solution.'", 'Upgrade a sentence!'] },
+    ],
+  },
+  'c-teens-advanced-9': {
+    title: 'Class 9: Crisis Management & Global Environmental Summits / Clase 9: Gestión de Crisis y Cumbres Ambientales Globales',
+    description: 'Debatir soluciones a crisis globales mediante retórica diplomática y sopesar trade-offs.',
+    objective: 'Debatir temas ambientales y tecnológicos usando lenguaje diplomático y resolución de crisis.',
+    bridge: 'Aplica voz pasiva, reporte y colocaciones a debates multilaterales de alto impacto.',
+    goals: ['Formulate diplomatic urgings with urge + object + to infinitive.', 'Analyze stakeholder trade-offs between economic cost and sustainability.', 'Construct structured rebuttals with notwithstanding and be that as it may.'],
+    teachingPoints: [
+      { title: 'Diplomatic Urgings & Resolutions / Resoluciones Diplomáticas', content: ['Youth delegates URGED global governments TO subsidize renewable transit.', 'The assembly REAFFIRMED its commitment to emission reduction targets.', 'Balancing immediate economic cost with intergenerational equity.'] },
+      { title: 'Weighing Ethical Trade-offs / Evaluar Trade-offs Éticos', content: ["'While technological innovation accelerates, safety guardrails are non-negotiable.'", "'NOTWITHSTANDING the operational expenditure, long-term sustainability is essential.'", 'Synthesize multiple stakeholder perspectives into actionable policy.'] },
+      { title: 'Quick Check: Summit Resolution / Mini Reto', content: ['Draft a 1-sentence diplomatic motion:', "'The delegation proposes that all member states ________ by 2030.'"] },
+    ],
+  },
+  'c-teens-advanced-10': {
+    title: 'Class 10: Level 8 Capstone: Global Youth NGO Leadership Pitch & Executive Interview / Clase 10: Proyecto Final: Pitch de Liderazgo de ONG Juvenil y Entrevista Ejecutiva',
+    description: 'Responder preguntas de entrevista ejecutiva con el método STAR y presentar un pitch de liderazgo.',
+    objective: 'Estructurar respuestas de entrevista con STAR y defender una propuesta de impacto social.',
+    bridge: 'Cierre del Nivel 8 que consolida todo el repertorio B2 en una simulación ejecutiva.',
+    goals: ['Structure an executive interview response with Situation, Task, Action, Result.', 'Deliver an NGO mission pitch with clear value proposition.', 'Defend solutions to complex organizational challenges under questioning.'],
+    teachingPoints: [
+      { title: 'The STAR Interview Framework / Estructura STAR', content: ["SITUATION: Set the context ('During our annual campus fundraiser...')", "TASK: Define the challenge ('We needed to raise ten thousand dollars in two weeks.')", "ACTION: Concrete leadership steps ('I delegated outreach and organized live demos.')", "RESULT: Quantifiable impact ('We exceeded our target by twenty-five percent.')"] },
+      { title: 'Executive Leadership Pitch / Pitch de Liderazgo', content: ['Hook: The societal problem your NGO addresses.', 'Value Proposition: Unique scalable methodology.', 'Call to Action: Inviting partners and stakeholders to collaborate.'] },
+      { title: 'Quick Check: 30-Second STAR Response / Gran Reto', content: ['Deliver a 30-second STAR response to the interviewer:', "'Tell me about a time you solved a conflict within your team.'"] },
+    ],
   },
   'c-teens-elite-1': {
     title: 'Class 1: Goal Setting & Strategic Roadmaps / Clase 1: Metas y hojas de ruta estratégicas',
@@ -765,76 +907,131 @@ const teenClassProgression: Record<string, ClassProgression> = {
     objective: 'Presentar una hoja de ruta realista que conecte meta, hitos, acciones y medición.',
     bridge: 'Los niveles anteriores expresaron planes; aquí se construye una estrategia medible antes de estudiar tiempos futuros avanzados.',
     goals: ['Define a precise long-term goal.', 'Sequence milestones and actions.', 'Explain how progress will be measured.'],
+    teachingPoints: [
+      { title: 'Strategic Venture Roadmaps / Hojas de Ruta Estratégicas', content: ['Strategic roadmap: Connecting long-term vision with quarterly benchmarks.', 'Milestones: Concrete deliverables required before advancing to the next phase.', 'Key Performance Indicators (KPIs): Quantifiable metrics that prove progress.'] },
+      { title: 'The Strategic Roadmap Formula / Fórmula de Estrategia', content: ["Formula: 'Our roadmap outlines [Milestone] by [Timeline] to achieve [Strategic Outcome].'", "Example: 'Our roadmap outlines completing user testing by Q2 to ensure market readiness.'", 'Connect each milestone to measurable team accountability.'] },
+      { title: 'Quick Check: Strategic Roadmap Pitch / Mini Reto', content: ['Present a 3-part strategic milestone roadmap to the teacher:', 'Phase 1: Research -> Phase 2: Pilot Rollout -> Phase 3: Global Scaling.'] },
+    ],
   },
   'c-teens-elite-2': {
-    title: 'Class 2: Past Decisions & Modal Deduction / Clase 2: Decisiones pasadas y deducción modal',
-    description: 'Interpretar decisiones pasadas mediante evidencia y grados de certeza, sin adelantar los mixed conditionals de la clase 7.',
-    objective: 'Usar must have, might have y can’t have para evaluar qué probablemente ocurrió y por qué.',
-    bridge: 'Esta clase trabaja inferencia sobre el pasado; la relación condicional entre pasado y presente se reserva para la clase 7.',
-    goals: ['Separate fact from inference.', 'Express three degrees of past certainty.', 'Support a deduction with available evidence.'],
+    title: 'Class 2: Strategic Post-Mortems & Retrospective Modals / Clase 2: Análisis post-mortem y modales retrospectivos',
+    description: 'Evaluar decisiones empresariales pasadas, lamentos y deducciones pasivas con should have, ought to have y must have been.',
+    objective: 'Evaluar decisiones estratégicas pasadas y formular análisis post-mortem usando modales retrospectivos y pasivos.',
+    bridge: 'Nivel 5 enseñó deducciones de misterio; aquí se eleva a auditorías de negocios, gobernanza y diagnósticos de fallas.',
+    goals: ['Evaluate past strategic failures and pivots.', 'Use should have / ought to have + V3 for retrospective critiques and regrets.', 'Deploy passive past deductions (must have been compromised / should have been tested).'],
+    teachingPoints: [
+      { title: 'Retrospective Critiques: Should Have & Ought to Have / Críticas retrospectivas', content: ["Formula: 'The founders SHOULD HAVE conducted user testing before launch.'", "Formula: 'Management OUGHT TO HAVE prioritized customer feedback over aggressive scaling.'", 'Expresses what was advisable in the past but did not occur.'] },
+      { title: 'Unnecessary Actions: Needn’t Have Done / Acciones innecesarias', content: ["Formula: 'We NEEDN’T HAVE spent so much capital on traditional billboard ads.'", 'Highlights actions that were executed but proved unnecessary in hindsight.', 'Contrast with didn’t need to (no obligation existed vs was done unnecessarily).'] },
+      { title: 'Passive Retrospective Modals / Deducción y crítica en voz pasiva', content: ["Formula: 'The server MUST HAVE BEEN compromised due to outdated cryptographic protocols.'", "Formula: 'The product launch SHOULD HAVE BEEN postponed until QA cleared all bugs.'", 'Modal + have been + past participle (V3).'] },
+    ],
   },
   'c-teens-elite-3': {
     title: 'Class 3: Hedging & Nuanced Positions / Clase 3: Hedging y posiciones matizadas',
     description: 'Expresar acuerdo, duda y límites con un tono preciso y diplomático.',
     objective: 'Construir una postura matizada mediante hedging, concesión y cautela.',
     bridge: 'Esta clase establece el control de tono; la clase 8 añadirá cleft sentences e inversión para énfasis formal.',
-    goals: ['Qualify a claim appropriately.', 'Express partial agreement.', 'Balance confidence with caution.'],
+    goals: ['Qualify a claim appropriately using seem to suggest, arguably, and preliminary.', 'Express partial agreement with nuanced softening.', 'Balance confidence with academic caution.'],
+    teachingPoints: [
+      { title: 'Academic & Diplomatic Hedging / Suavización Diplomática', content: ["Hedging verbs: SEEM TO, TEND TO, INDICATE, SUGGEST ('Data tends to suggest a correlation.')", "Modal qualifiers: COULD, MIGHT, WOULD APPEAR THAT ('It would appear that the budget is tight.')", "Cautious adverbs: ARGUABLY, PREDOMINANTLY, RELATIVELY ('This is arguably the most scalable model.')"] },
+      { title: 'The Nuanced Softening Blueprint / Fórmula de Matiz', content: ["Direct: 'Your design is flawed and users hate it.'", "Hedged: 'Preliminary feedback tends to indicate that user friction could be mitigated.'", 'Hedging demonstrates intellectual maturity and protects credibility.'] },
+      { title: 'Quick Check: Diplomatic Softening / Mini Reto', content: ['Soften this critical claim diplomatically:', "'This proposal is too expensive and unrealistic.' -> 'It would appear that...'"] },
+    ],
   },
   'c-teens-elite-4': {
     title: 'Class 4: Academic Argument Structure / Clase 4: Estructura de la argumentación académica',
     description: 'Organizar tesis, claim, evidencia y contraargumento dentro de un párrafo académico.',
     objective: 'Escribir y revisar un argumento académico breve con una estructura verificable.',
     bridge: 'Aquí se construye la arquitectura escrita; la clase 9 transformará el argumento en presentación y defensa oral.',
-    goals: ['State a focused thesis.', 'Connect a claim with relevant evidence.', 'Acknowledge and answer a counterargument.'],
+    goals: ['State a focused thesis using contends that / asserts that.', 'Connect a claim with relevant empirical evidence.', 'Acknowledge and answer a counterargument with precise refutation.'],
+    teachingPoints: [
+      { title: 'The Discursive Essay Architecture / Arquitectura del Ensayo Académico', content: ['1. THESIS STATEMENT: Clear, non-trivial core proposition.', '2. EMPIRICAL WARRANT: Logical principle connecting evidence to thesis.', '3. COUNTERARGUMENT & REBUTTAL: Acknowledging opposing perspectives and refuting them.'] },
+      { title: 'Academic Framing Verbs / Verbos de Argumentación', content: ["'This paper CONTENDS THAT media literacy is vital.'", "'Scholars ASSERT THAT decentralized governance fosters accountability.'", "'While critics CONTEND THAT cost is prohibitive, longitudinal data REFUTES this.'"] },
+      { title: 'Quick Check: Academic Thesis Formula / Mini Reto', content: ['Draft a 1-sentence scholarly thesis statement:', "'This research contends that ________ because empirical evidence proves ________.'"] },
+    ],
   },
   'c-teens-elite-5': {
     title: 'Class 5: Leadership Styles & Team Strengths / Clase 5: Estilos de liderazgo y fortalezas de equipo',
     description: 'Analizar estilos de liderazgo y asignar responsabilidades según fortalezas reales.',
     objective: 'Justificar cómo organizar un equipo, delegar tareas y ofrecer retroalimentación útil.',
     bridge: 'Esta clase decide cómo liderar y distribuir trabajo; la clase 10 aplicará esas decisiones al facilitar una reunión.',
-    goals: ['Compare leadership approaches.', 'Match tasks to team strengths.', 'Give actionable feedback.'],
+    goals: ['Compare leadership approaches (transformational, servant, situational).', 'Match tasks to team strengths using purposeful delegation.', 'Give actionable feedback with the 3-pillar model.'],
+    teachingPoints: [
+      { title: 'Situational & Transformational Leadership / Liderazgo Situacional', content: ['Transformational leaders inspire autonomy while maintaining collective accountability.', 'Servant leadership: Removing obstacles so team specialists can thrive.', 'Matching assignments to individual strengths rather than generic job titles.'] },
+      { title: 'Constructive Feedback & Team Synergy / Feedback Constructivo', content: ['The 3-Pillar Feedback Model: Observation -> Impact -> Collaborative Next Step.', "'I noticed that the sprint deadline was missed; this delayed QA testing; let's establish daily standups.'", 'Building psychological safety within high-performance teams.'] },
+      { title: 'Quick Check: Executive Delegation / Mini Reto', content: ['Delegate a critical mission to your team:', "'To optimize our project, I delegate [Task] to [Member] because their strength in [Skill] ensures [Outcome].'"] },
+    ],
   },
   'c-teens-elite-6': {
     title: 'Class 6: Future Timelines & Goal Forecasting / Clase 6: Líneas de tiempo futuras y proyección de metas',
     description: 'Aplicar Future Continuous y Future Perfect a hitos medibles de una meta.',
     objective: 'Presentar qué estará ocurriendo y qué se habrá completado en distintos puntos del futuro.',
     bridge: 'La clase 1 definió visión y metas; aquí se construye la línea de tiempo gramatical precisa.',
-    goals: ['Use future continuous for an in-progress stage.', 'Use future perfect for a completed milestone.', 'Present a realistic goal timeline.'],
+    goals: ['Use future continuous for an in-progress stage.', 'Use future perfect for a completed milestone.', 'Present a realistic goal timeline with quantifiable milestones.'],
+    teachingPoints: [
+      { title: 'Future Continuous vs Future Perfect / Futuro Continuo vs Perfecto', content: ["FUTURE CONTINUOUS (will be doing): In progress at a future moment ('At 8 PM, I will be coding.')", "FUTURE PERFECT (will have completed): Finished before a future deadline ('By June, I will have finished.')", "FUTURE PERFECT CONTINUOUS: 'By 2030, we will have been developing clean tech for a decade.'"] },
+      { title: 'The Tech Forecasting Formula / Fórmula de Proyección', content: ["Formula: 'By [Future Date], [Organization] will have [Completed Milestone], and we will be [Ongoing Innovation].'", "Example: 'By 2028, our startup will have secured patents and will be deploying sensors globally.'", 'Precision in forecasting inspires investor confidence.'] },
+      { title: 'Quick Check: 2035 Tech Vision / Mini Reto', content: ['Deliver your 2035 tech forecast:', "'By 2035, humanity will have ________ and scientists will be ________.'"] },
+    ],
   },
   'c-teens-elite-7': {
     title: 'Class 7: Mixed Conditionals & Decision Consequences / Clase 7: Condicionales mixtos y consecuencias',
     description: 'Aplicar condicionales mixtos a decisiones donde pasado y presente se conectan.',
     objective: 'Analizar cómo una decisión pasada afecta el presente o cómo una condición actual habría cambiado el pasado.',
     bridge: 'La clase 2 trabajó decisiones y reflexión; aquí se exige control formal de las relaciones temporales.',
-    goals: ['Identify the two time references.', 'Build both mixed-conditional patterns.', 'Evaluate a decision without oversimplifying it.'],
+    goals: ['Identify the two time references in mixed conditional structures.', 'Build past-to-present and present-to-past mixed conditionals.', 'Evaluate strategic decisions without oversimplifying causal chains.'],
+    teachingPoints: [
+      { title: 'High-Stakes Mixed Conditionals / Condicionales Mixtos', content: ["PAST CAUSE -> PRESENT RESULT: 'If we had secured funding last year, our lab WOULD BE operational today.'", "PRESENT STATE -> PAST RESULT: 'If the team WERE more adaptable, they WOULD HAVE PIVOTED during the crisis.'", 'Notice: One clause is in the past, the other in the present!'] },
+      { title: 'The Strategic Post-Mortem Formula / Fórmula de Decisión Mixta', content: ["Formula: 'If [Past Action had occurred], [Present Reality would be different] today.'", "Example: 'If the founders had tested user demand earlier, the company wouldn't be facing insolvency.'", 'Analyze critical turning points with mixed conditionals.'] },
+      { title: 'Quick Check: Mixed Conditional Decision / Mini Reto', content: ['Complete with the correct mixed conditional forms:', "'If I ________ (study) computer science in high school, I ________ (work) at NASA today!'"] },
+    ],
   },
   'c-teens-elite-8': {
     title: 'Class 8: Diplomatic Emphasis - Clefts & Inversion / Clase 8: Énfasis diplomático - Clefts e inversión',
     description: 'Añadir énfasis formal sin perder el tono diplomático trabajado anteriormente.',
     objective: 'Usar cleft sentences e inversión para destacar ideas con control de tono.',
     bridge: 'La clase 3 desarrolló hedging y nuance; aquí se añade arquitectura de énfasis.',
-    goals: ['Build a cleft sentence.', 'Use one inversion pattern.', 'Balance emphasis with diplomatic language.'],
+    goals: ['Build wh-cleft and it-cleft sentences for rhetorical focus.', 'Use negative adverb inversion patterns (Seldom, Rarely, Under no circumstances).', 'Balance emphatic structures with diplomatic register.'],
+    teachingPoints: [
+      { title: 'Cleft Sentences for Rhetorical Focus / Oraciones Hendidas', content: ["WH-CLEFT: 'WHAT WE URGENTLY NEED IS transparent regulatory oversight.'", "IT-CLEFT: 'IT WAS THE LACK OF USER TESTING THAT caused the initial rollout failure.'", "Cleft structures focus the listener's attention precisely on the key message."] },
+      { title: 'Rhetorical Inversion / Inversión Retórica', content: ['Negative adverb fronting: SELDOM, RARELY, HARDLY, UNDER NO CIRCUMSTANCES.', 'Inverted word order: Adverb + Auxiliary + Subject + Verb.', "'SELDOM HAVE I SEEN such unprecedented dedication from a youth cohort.'"] },
+      { title: 'Quick Check: Emphatic Transformation / Mini Reto', content: ['Transform into an inverted or cleft sentence:', "'We rarely witness such technological disruption.' -> 'Seldom...'"] },
+    ],
   },
   'c-teens-elite-9': {
     title: 'Class 9: Academic Presentation, Defense & Q&A / Clase 9: Presentación académica, defensa y preguntas',
     description: 'Transformar escritura académica en una presentación defendible ante preguntas.',
     objective: 'Presentar una tesis, sintetizar apoyo y responder preguntas académicas con cautela.',
     bridge: 'La clase 4 construyó argumentos escritos; aquí se convierten en speaking y defensa oral.',
-    goals: ['Present a focused thesis.', 'Summarize supporting evidence.', 'Answer a challenging question with academic caution.'],
+    goals: ['Present a focused thesis using empirical abstract synthesis.', 'Summarize supporting evidence using academic attribution verbs.', 'Answer challenging cross-examination questions with bridging techniques.'],
+    teachingPoints: [
+      { title: 'Empirical Abstract Architecture / Estructura del Abstract Científico', content: ['Background -> Research Objective -> Methodology -> Key Findings -> Implications.', "Scholarly citation verbs: 'Smith (2023) POSITS THAT...', 'Empirical findings SUBSTANTIATE the claim that...'", 'Concise synthesis allows listeners to grasp complex academic research rapidly.'] },
+      { title: 'Q&A Bridging & Crisis Remediation / Técnicas de Puente en Q&A', content: ['The 3-Step Bridging Technique: Acknowledge -> Bridge -> Concrete Evidence.', "'While that counterargument is understandable, our multi-variable dataset accounts for that anomaly.'", 'Maintaining scholarly poise under aggressive cross-examination.'] },
+      { title: 'Quick Check: Academic Defense Statement / Mini Reto', content: ['Defend your research thesis before the academic committee:', "'Our empirical findings substantiate that ________, thereby demonstrating ________.'"] },
+    ],
   },
   'c-teens-elite-10': {
     title: 'Class 10: Meeting Facilitation & Team Decisions / Clase 10: Facilitación de reuniones y decisiones de equipo',
     description: 'Avanzar de liderazgo personal a dirigir una reunión con agenda, turnos y acuerdos.',
     objective: 'Facilitar una reunión, distribuir participación y cerrar con decisiones y responsables.',
     bridge: 'La clase 5 presentó liderazgo y fortalezas; aquí se aplica a una reunión formal.',
-    goals: ['Open and guide an agenda.', 'Invite and balance participation.', 'Confirm decisions, owners, and deadlines.'],
+    goals: ['Open and guide an executive agenda with parliamentary motions.', 'Invite and balance stakeholder participation.', 'Confirm decisions, owners, and deadlines in an action matrix.'],
+    teachingPoints: [
+      { title: 'Executive Boardrooms & Parliamentary Motions / Procedimiento Parlamentario', content: ["Opening the floor: 'I call this meeting to order and propose adopting today's agenda.'", "Formal motions: 'I MOVE TO adopt the resolution on clean energy compliance.'", "Points of order & seconds: 'Point of order, Mr. Chair' / 'I second the motion.'"] },
+      { title: 'Consensus Building & Action Allocation / Asignación de Acuerdos', content: ["Summarizing stakeholder alignment: 'We have achieved broad consensus on the Q3 roadmap.'", 'Action item formula: [Owner] will deliver [Milestone] by [Deadline].', 'Confirming deliverables and closing the executive session on time.'] },
+      { title: 'Quick Check: Parliamentary Motion / Mini Reto', content: ['Propose a formal motion to the board:', "'Mr. Chair, I MOVE TO ________ in order to ________.'"] },
+    ],
   },
   'c-teens-elite-11': {
     title: 'Class 11: Entrepreneurship & Conference Pitch / Clase 11: Pitch de emprendimiento o conferencia',
     description: 'Integrar problema, audiencia, propuesta de valor, evidencia y llamado a la acción en un proyecto final.',
     objective: 'Presentar y defender un pitch breve, claro y convincente ante preguntas de una audiencia.',
     bridge: 'El proyecto combina estrategia, diplomacia, argumentación, liderazgo y presentación sin volver a enseñar cada componente.',
-    goals: ['Define a relevant audience problem.', 'Present a distinctive value proposition.', 'Close and defend the pitch with a clear call to action.'],
+    goals: ['Deliver the 7-stage keynote pitch architecture.', 'Articulate scalable unit economics (CAC vs LTV, gross margin).', 'Close and defend the pitch with a high-impact call to action.'],
+    teachingPoints: [
+      { title: 'The 7-Stage Keynote Pitch Architecture / Las 7 Etapas del Pitch', content: ['1. HOOK: Undeniable friction in the status quo -> 2. PROBLEM & TAM: Addressable market.', '3. TECH MOAT: Proprietary defensibility -> 4. UNIT ECONOMICS: LTV/CAC > 3x.', '5. TRACTION & TEAM: Proven execution -> 6. THE ASK: Clear partnership call to action.'] },
+      { title: 'Unit Economics & Value Proposition / Economía Unitaria', content: ['Target LTV/CAC ratio > 3x: Proving sustainable customer acquisition.', 'Delivering with magnetic rhetorical presence, pacing, and executive authority.', 'Transforming ideas into global scalable reality.'] },
+      { title: 'Quick Check: 30-Second Elevator Pitch / Gran Reto Final', content: ['Deliver your 30-second Grand Elite Keynote Pitch to the venture investors!', 'Showcase problem, solution, moat, and ask!'] },
+    ],
   },
   'c-teens-masters-5': {
     title: 'Class 5: Competitive Debate Strategy / Clase 5: Estrategia de debate competitivo',
@@ -986,9 +1183,9 @@ function completeTeenClass(cls: CurriculumClass, kernel: TeenLessonKernel, spec:
   const welcome = cls.sections[0]?.slides[0];
   if (welcome) {
     const visibleWelcomeText = [welcome.title, welcome.description, ...(welcome.content || [])].join(' ');
-    if (!welcome.content?.length || /important topic|progression focus|final mission/i.test(visibleWelcomeText)) {
+    if (!welcome.content?.length || /important topic|progression focus|final mission/i.test(visibleWelcomeText) || cls.id.startsWith('c-teens-advanced-') || cls.id.startsWith('c-teens-elite-')) {
       const shortTheme = spec.title.replace(/^Class\s+\d+:\s*/i, '').split('/')[0].trim();
-      welcome.title = /welcome|bienvenid|review|repaso|congrat/i.test(welcome.title) ? welcome.title : 'Welcome! / ¡Bienvenidos!';
+      welcome.title = `Welcome to ${shortTheme}! / ¡Bienvenidos!`;
       welcome.description = `${shortTheme} / Inicio de clase`;
       welcome.content = [
         `Welcome to ${shortTheme}.`,
@@ -998,10 +1195,65 @@ function completeTeenClass(cls: CurriculumClass, kernel: TeenLessonKernel, spec:
     }
   }
 
+  const objectiveSlide = cls.sections[0]?.slides[2];
+  if (objectiveSlide) {
+    const s4Slides = cls.sections[3]?.slides || [];
+    const boss = s4Slides.find((s) => s.type === 'speaking-boss-battle');
+    const roleplay = s4Slides.find((s) => s.type === 'roleplay');
+    const speaking = s4Slides.find((s) => s.type === 'speaking');
+
+    let conversationChallenge = '';
+    if (boss?.title && !/speaking boss battle$/i.test(boss.title.trim())) {
+      const cleanBossName = boss.title.replace(/^Speaking Boss Battle:?\s*/i, '').replace(/^\/\s*/, '').replace(/Boss$/i, '').trim();
+      if (cleanBossName && cleanBossName !== 'Batalla oral final') {
+        conversationChallenge = `Defender tus respuestas y superar el reto oral con ${cleanBossName} Boss en la Sección 4.`;
+      } else {
+        const shortTheme = spec.title.replace(/^Class\s+\d+:\s*/i, '').split('/')[0].trim();
+        conversationChallenge = `Superar la Batalla Oral y el reto de conversación sobre ${shortTheme} en la Sección 4.`;
+      }
+    } else if (roleplay?.title && !/roleplay|applied/i.test(roleplay.title.trim())) {
+      conversationChallenge = `Completar el juego de rol (${roleplay.title.split('/')[0].trim()}) con tu profesor en la Sección 4.`;
+    } else if (speaking?.content?.[0] && !/applied speaking/i.test(speaking.content[0])) {
+      const prompt = speaking.content[0].replace(/•/g, '').trim();
+      conversationChallenge = `Participar en la ronda de speaking: ${prompt}`;
+    } else if (spec.production?.[0]) {
+      conversationChallenge = `Participar en el reto de producción oral: ${spec.production[0]}`;
+    } else {
+      const shortTheme = spec.title.replace(/^Class\s+\d+:\s*/i, '').split('/')[0].trim();
+      conversationChallenge = `Participar activamente en la ronda de speaking y superar el reto oral sobre ${shortTheme} en la Sección 4.`;
+    }
+
+    const keyFormula = spec.teachingPoints?.[0]?.title?.split('/')[0]?.trim() || kernel.keywords.slice(0, 3).join(', ');
+    const modelSentence = kernel.models?.[0] || 'I can communicate clearly.';
+    const goal1 = spec.objective || cls.objective || kernel.mission;
+    const goal2 = `Usar con precisión: ${keyFormula} (ej: "${modelSentence}")`;
+    const goal3 = conversationChallenge;
+
+    objectiveSlide.title = "Today's Goals & Challenge 🎯 / Enfoque y Reto de Hoy 🎯";
+    objectiveSlide.description = 'What we will achieve, use, and speak today / Lo que lograremos hoy';
+    objectiveSlide.objectives = [goal1, goal2, goal3];
+    objectiveSlide.content = [goal1, goal2, goal3];
+  }
+
+  const evolvedClassIds = new Set([
+    'c-teens-basic-1-1',
+    'c-teens-basic-1-4',
+    'c-teens-basic-2-2',
+    'c-teens-basic-2-5',
+    'c-teens-basic-3-8',
+    'c-teens-elite-2',
+  ]);
+
+  const shouldForceUpdateGrammar =
+    cls.id.startsWith('c-teens-advanced-') ||
+    cls.id.startsWith('c-teens-elite-') ||
+    cls.id.startsWith('c-teens-masters-') ||
+    evolvedClassIds.has(cls.id);
+
   const grammar = cls.sections[1]?.slides || [];
   const points = spec.teachingPoints || progressionFromKernel(cls, kernel).teachingPoints || [];
   grammar.slice(0, 5).forEach((slide, index) => {
-    if (!contentIsMissingOrPlaceholder(slide)) return;
+    if (!contentIsMissingOrPlaceholder(slide) && !shouldForceUpdateGrammar) return;
     const point = points[index];
     if (!point) return;
     slide.title = point.title;

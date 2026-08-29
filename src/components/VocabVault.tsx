@@ -25,7 +25,10 @@ import {
   ChevronDown,
   ChevronUp,
   Tag,
-  Loader2
+  Loader2,
+  Pencil,
+  X,
+  Check
 } from 'lucide-react';
 
 interface VocabVaultProps {
@@ -58,10 +61,45 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
 
   // Filters & Search
   const [searchQuery, setSearchQuery] = useState('');
+  const [sectionFilter, setSectionFilter] = useState<'all' | 'story_decoder' | 'slides' | 'reading' | 'general'>('all');
   const [filterType, setFilterType] = useState<'all' | 'phrasal_verb' | 'idiom' | 'word' | 'multi' | 'needs_review'>('all');
   const [activeMeaningTabs, setActiveMeaningTabs] = useState<Record<string, number>>({});
   const [audioPlayingId, setAudioPlayingId] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+
+  // Edit Modal State
+  const [editingItem, setEditingItem] = useState<VocabItem | null>(null);
+  const [editTerm, setEditTerm] = useState('');
+  const [editSpanish, setEditSpanish] = useState('');
+
+  const handleStartEdit = (item: VocabItem) => {
+    setEditingItem(item);
+    setEditTerm(item.term);
+    setEditSpanish(item.meanings[0]?.definitionEs || item.meanings[0]?.meaningLabel || '');
+  };
+
+  const handleSaveEdit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!editingItem || !editTerm.trim()) return;
+
+    const updatedItem: VocabItem = {
+      ...editingItem,
+      term: editTerm.trim(),
+      meanings: editingItem.meanings.map((m, idx) =>
+        idx === 0
+          ? {
+              ...m,
+              meaningLabel: editSpanish.trim() || m.meaningLabel,
+              definitionEs: editSpanish.trim() || m.definitionEs,
+            }
+          : m
+      ),
+    };
+
+    await vocabService.saveItems([updatedItem], studentId);
+    setItems((prev) => prev.map((i) => (i.id === updatedItem.id ? updatedItem : i)));
+    setEditingItem(null);
+  };
 
   // Load items on mount
   const loadData = async () => {
@@ -122,9 +160,28 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
     setItems(prev => prev.filter(i => i.id !== id));
   };
 
+  // Section Counts
+  const sectionCounts = useMemo(() => {
+    const storyCount = items.filter(i => (i.sectionSource === 'story_decoder' || i.sourceNote?.toLowerCase().includes('story'))).length;
+    const slidesCount = items.filter(i => (i.sectionSource === 'slides' || i.sourceNote?.toLowerCase().includes('diapositiva') || i.sourceNote?.toLowerCase().includes('clase'))).length;
+    const readingCount = items.filter(i => (i.sectionSource === 'reading' || i.sourceNote?.toLowerCase().includes('reading'))).length;
+    const generalCount = items.filter(i => (!i.sectionSource && !i.sourceNote?.toLowerCase().includes('story') && !i.sourceNote?.toLowerCase().includes('diapositiva')) || i.sectionSource === 'general').length;
+    return { storyCount, slidesCount, readingCount, generalCount };
+  }, [items]);
+
   // Filtered list
   const filteredItems = useMemo(() => {
     return items.filter(item => {
+      // Section Filter
+      if (sectionFilter !== 'all') {
+        const source = item.sectionSource || (
+          item.sourceNote?.toLowerCase().includes('story') ? 'story_decoder' :
+          item.sourceNote?.toLowerCase().includes('diapositiva') || item.sourceNote?.toLowerCase().includes('clase') ? 'slides' :
+          item.sourceNote?.toLowerCase().includes('reading') ? 'reading' : 'general'
+        );
+        if (source !== sectionFilter) return false;
+      }
+
       const matchesSearch =
         item.term.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.meanings.some(m =>
@@ -143,7 +200,7 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
       if (filterType === 'needs_review') return item.masteryScore < 60;
       return true;
     });
-  }, [items, searchQuery, filterType]);
+  }, [items, searchQuery, filterType, sectionFilter]);
 
   // Statistics
   const stats = useMemo(() => {
@@ -209,16 +266,16 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
         
         <div className="relative z-10 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-black uppercase tracking-widest mb-4">
-            <Sparkles className="w-4 h-4 text-cyan-400" /> Bóveda de Vocabulario Inteligente (Vocab Vault IA)
+            <Sparkles className="w-4 h-4 text-cyan-400" /> Mi Vocabulario
           </div>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-white mb-4">
-            Guarda lo que escuches. <br className="hidden sm:inline" />
+            Mi Vocabulario. <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-300 to-pink-400">
-              La IA desglosa todos sus significados y ejemplos.
+              Todas tus palabras y frases organizadas por sección.
             </span>
           </h1>
           <p className="text-indigo-200 text-base sm:text-lg leading-relaxed">
-            Ingresa palabras, phrasal verbs o idioms aprendidos en videos de YouTube, podcasts o series. La IA genera automáticamente 3 ejemplos contextuales por cada acepción y prepara tu test de memoria activa.
+            Consulta y repasa tus palabras y frases guardadas desde Story Decoder, diapositivas de clases o lecturas. Practica pronunciación y pon a prueba tu retención.
           </p>
         </div>
 
@@ -335,6 +392,66 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
             </div>
           )}
         </form>
+      </div>
+
+      {/* SECTIONS CATEGORY TABS */}
+      <div className="bg-white rounded-2xl p-2 border border-slate-200 shadow-sm mb-6 flex flex-wrap items-center gap-1.5 overflow-x-auto">
+        <span className="text-xs font-black text-slate-400 px-3 uppercase tracking-wider hidden sm:inline">Secciones de Mi Vocabulario:</span>
+        <button
+          type="button"
+          onClick={() => setSectionFilter('all')}
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 ${
+            sectionFilter === 'all'
+              ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md'
+              : 'text-slate-600 hover:bg-slate-100'
+          }`}
+        >
+          <span>🌐 Todas ({items.length})</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setSectionFilter('story_decoder')}
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 ${
+            sectionFilter === 'story_decoder'
+              ? 'bg-cyan-600 text-white shadow-md'
+              : 'text-slate-600 hover:bg-slate-100'
+          }`}
+        >
+          <span>📖 Story Decoder ({sectionCounts.storyCount})</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setSectionFilter('slides')}
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 ${
+            sectionFilter === 'slides'
+              ? 'bg-amber-600 text-white shadow-md'
+              : 'text-slate-600 hover:bg-slate-100'
+          }`}
+        >
+          <span>🎓 Clases / Diapositivas ({sectionCounts.slidesCount})</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setSectionFilter('reading')}
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 ${
+            sectionFilter === 'reading'
+              ? 'bg-emerald-600 text-white shadow-md'
+              : 'text-slate-600 hover:bg-slate-100'
+          }`}
+        >
+          <span>📚 Reading Practice ({sectionCounts.readingCount})</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setSectionFilter('general')}
+          className={`px-4 py-2 rounded-xl text-xs font-black transition-all flex items-center gap-1.5 ${
+            sectionFilter === 'general'
+              ? 'bg-slate-800 text-white shadow-md'
+              : 'text-slate-600 hover:bg-slate-100'
+          }`}
+        >
+          <span>✍️ General ({sectionCounts.generalCount})</span>
+        </button>
       </div>
 
       {/* FILTER & SEARCH BAR */}
@@ -506,14 +623,24 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
                           </button>
                         </div>
                       ) : (
-                        <button
-                          onClick={() => setDeletingId(item.id)}
-                          className="flex items-center gap-1 text-slate-400 hover:text-rose-600 hover:bg-rose-50 px-2 py-1 rounded-xl transition-colors text-xs font-semibold"
-                          title="Eliminar este elemento"
-                        >
-                          <Trash2 className="w-3.5 h-3.5" />
-                          <span>Borrar</span>
-                        </button>
+                        <div className="flex items-center gap-1">
+                          <button
+                            onClick={() => handleStartEdit(item)}
+                            className="flex items-center gap-1 text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 px-2 py-1 rounded-xl transition-colors text-xs font-semibold"
+                            title="Editar este elemento"
+                          >
+                            <Pencil className="w-3.5 h-3.5" />
+                            <span>Editar</span>
+                          </button>
+                          <button
+                            onClick={() => setDeletingId(item.id)}
+                            className="flex items-center gap-1 text-slate-400 hover:text-rose-600 hover:bg-rose-50 px-2 py-1 rounded-xl transition-colors text-xs font-semibold"
+                            title="Eliminar este elemento"
+                          >
+                            <Trash2 className="w-3.5 h-3.5" />
+                            <span>Borrar</span>
+                          </button>
+                        </div>
                       )}
                     </div>
                   </div>
@@ -605,6 +732,91 @@ export function VocabVault({ studentId, studentName, onBack }: VocabVaultProps) 
           })}
         </div>
       )}
+
+      {/* EDIT MODAL */}
+      <AnimatePresence>
+        {editingItem && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 backdrop-blur-sm p-4"
+            onClick={() => setEditingItem(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0, y: 10 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+                <div className="flex items-center gap-2 text-slate-900 font-extrabold text-xl">
+                  <Pencil className="w-5 h-5 text-indigo-600" />
+                  <span>Editar Elemento</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setEditingItem(null)}
+                  className="p-1 text-slate-400 hover:text-slate-700 rounded-xl"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              <form onSubmit={handleSaveEdit} className="space-y-4">
+                <div>
+                  <label className="block text-xs font-black text-slate-500 uppercase tracking-wider mb-1">
+                    Término o Frase en Inglés
+                  </label>
+                  <input
+                    type="text"
+                    value={editTerm}
+                    onChange={(e) => setEditTerm(e.target.value)}
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 font-bold text-slate-900 text-lg focus:border-indigo-500 focus:outline-none"
+                    placeholder="Término en inglés..."
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-black text-slate-500 uppercase tracking-wider mb-1">
+                    Traducción / Significado en Español
+                  </label>
+                  <input
+                    type="text"
+                    value={editSpanish}
+                    onChange={(e) => setEditSpanish(e.target.value)}
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 font-semibold text-slate-800 focus:border-indigo-500 focus:outline-none"
+                    placeholder="Traducción en español..."
+                  />
+                </div>
+
+                <div className="text-xs text-slate-400 bg-slate-50 p-3 rounded-xl">
+                  💡 Los cambios realizados aquí actualizarán la información en Supabase y, si proviene de Story Decoder, también se actualizará en "Mis Palabras" de Story Decoder.
+                </div>
+
+                <div className="flex items-center justify-end gap-3 pt-2">
+                  <button
+                    type="button"
+                    onClick={() => setEditingItem(null)}
+                    className="px-4 py-2.5 rounded-xl font-bold text-slate-600 hover:bg-slate-100 text-sm"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-5 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold rounded-xl text-sm shadow-md flex items-center gap-1.5 active:scale-95"
+                  >
+                    <Check className="w-4 h-4" />
+                    <span>Guardar Cambios</span>
+                  </button>
+                </div>
+              </form>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -3466,30 +3466,30 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     "patternName": "Hello & Introductions",
     "variant": "question",
     "title": "Build the Question / Arma la Pregunta",
-    "instructions": "Put the blocks in order to ask a new classmate their name.",
-    "prompt": "What is your nickname at school?",
-    "learningOpportunity": "Form personal introduction questions with What + is + your + noun.",
+    "instructions": "Put the blocks in order to ask a new classmate their name and how they are.",
+    "prompt": "Hello! What is your name and how are you?",
+    "learningOpportunity": "Form natural English greetings and introduction questions using What + is + your name + and + how are you.",
     "difficulty": "easy",
     "accentColor": "from-blue-500 to-indigo-600",
     "parts": [
       {
-        "label": "Question word",
-        "text": "What",
+        "label": "Greeting",
+        "text": "Hello!",
         "color": "bg-emerald-300"
       },
       {
-        "label": "To be",
-        "text": "is",
-        "color": "bg-indigo-300"
-      },
-      {
-        "label": "Possessive phrase",
-        "text": "your nickname",
+        "label": "Question Word & To Be",
+        "text": "What is",
         "color": "bg-cyan-300"
       },
       {
-        "label": "School location",
-        "text": "at school?",
+        "label": "Identity",
+        "text": "your name",
+        "color": "bg-indigo-300"
+      },
+      {
+        "label": "Feeling Inquiry",
+        "text": "and how are you?",
         "color": "bg-yellow-300"
       }
     ]
@@ -3505,7 +3505,7 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     "accentColor": "from-cyan-500 to-blue-600",
     "parts": [
       {
-        "label": "Question phrase",
+        "label": "Age Question",
         "text": "How old are you,",
         "color": "bg-emerald-300"
       },
@@ -3515,31 +3515,31 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
         "color": "bg-fuchsia-300"
       },
       {
-        "label": "Birthday question",
+        "label": "Birthday Query",
         "text": "when is your birthday?",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-zero-3": {
-    "patternName": "My Body & Actions",
+    "patternName": "Family & Squad",
     "variant": "affirmative",
-    "title": "Build the Action / Arma la Acción",
-    "instructions": "Put the blocks in order to describe high-energy sports moves.",
-    "prompt": "I can stretch my arms and kick the soccer ball.",
-    "learningOpportunity": "Combine body parts with sports action verbs using modal can.",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe who you live with and your sibling.",
+    "prompt": "I live with my parents and my brother is funny.",
+    "learningOpportunity": "Describe family households using I live with + parents + possessive brother.",
     "difficulty": "easy",
-    "accentColor": "from-emerald-500 to-teal-600",
+    "accentColor": "from-purple-500 to-pink-600",
     "parts": [
       {
-        "label": "Subject & modal",
-        "text": "I can stretch",
+        "label": "Subject & Action",
+        "text": "I live with",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Body part",
-        "text": "my arms",
-        "color": "bg-yellow-300"
+        "label": "Family Nucleus",
+        "text": "my parents",
+        "color": "bg-emerald-300"
       },
       {
         "label": "Connector",
@@ -3547,134 +3547,63 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
         "color": "bg-fuchsia-300"
       },
       {
-        "label": "Action & sports object",
-        "text": "kick the soccer ball.",
-        "color": "bg-violet-300"
+        "label": "Sibling Description",
+        "text": "my brother is super funny.",
+        "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-zero-4": {
-    "patternName": "Favorite Gadgets & Tech",
-    "variant": "affirmative",
-    "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe your favorite gaming device.",
-    "prompt": "My gaming console is connected to the high-speed wifi.",
-    "learningOpportunity": "Use present passive/stative to be connected to + tech device.",
+    "patternName": "Food, Drinks & Snacks",
+    "variant": "question",
+    "title": "Build the Polite Order / Arma el Pedido",
+    "instructions": "Put the blocks in order to politely order food and drinks at a counter.",
+    "prompt": "Can I have one large pizza and cold lemonade, please?",
+    "learningOpportunity": "Politely order combos using Can I have + food item + drink + please.",
     "difficulty": "easy",
-    "accentColor": "from-indigo-500 to-purple-600",
+    "accentColor": "from-amber-500 to-orange-600",
     "parts": [
       {
-        "label": "Tech subject",
-        "text": "My gaming console",
+        "label": "Polite Request",
+        "text": "Can I have",
+        "color": "bg-emerald-300"
+      },
+      {
+        "label": "Main Dish",
+        "text": "one large pizza",
         "color": "bg-cyan-300"
       },
       {
-        "label": "To be & participle",
-        "text": "is connected to",
+        "label": "Drink",
+        "text": "and cold lemonade,",
         "color": "bg-indigo-300"
       },
       {
-        "label": "Tech complement",
-        "text": "the high-speed wifi.",
+        "label": "Politeness",
+        "text": "please?",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-zero-5": {
-    "patternName": "Food Likes, Dislikes & Flavors",
+    "patternName": "Daily Routine & Time",
     "variant": "affirmative",
-    "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to express favorite snack flavors.",
-    "prompt": "I love spicy tacos, but I dislike bitter drinks.",
-    "learningOpportunity": "Contrast taste preferences using love vs dislike with but.",
-    "difficulty": "easy",
-    "accentColor": "from-pink-500 to-rose-600",
-    "parts": [
-      {
-        "label": "Preference clause",
-        "text": "I love spicy tacos,",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Connector",
-        "text": "but",
-        "color": "bg-fuchsia-300"
-      },
-      {
-        "label": "Dislike clause",
-        "text": "I dislike bitter drinks.",
-        "color": "bg-yellow-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-zero-6": {
-    "patternName": "My Family & Friends Circle",
-    "variant": "affirmative",
-    "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe your best friend at school.",
-    "prompt": "My best friend is a talented graphic artist.",
-    "learningOpportunity": "Connect friendship nouns with creative talents and profession adjectives.",
-    "difficulty": "easy",
-    "accentColor": "from-amber-500 to-orange-600",
-    "parts": [
-      {
-        "label": "Subject",
-        "text": "My best friend",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "To be",
-        "text": "is",
-        "color": "bg-indigo-300"
-      },
-      {
-        "label": "Complement",
-        "text": "a talented graphic artist.",
-        "color": "bg-yellow-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-zero-7": {
-    "patternName": "Classroom Objects & School Life",
-    "variant": "affirmative",
-    "title": "Build with There Is / There Are",
-    "instructions": "Put the blocks in order to describe items in your backpack.",
-    "prompt": "There are two blue notebooks in my backpack.",
-    "learningOpportunity": "Use There are + number + adjective + plural noun + location.",
-    "difficulty": "easy",
-    "accentColor": "from-teal-500 to-cyan-600",
-    "parts": [
-      {
-        "label": "Starter",
-        "text": "There are",
-        "color": "bg-emerald-300"
-      },
-      {
-        "label": "Items",
-        "text": "two blue notebooks",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Location",
-        "text": "in my backpack.",
-        "color": "bg-yellow-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-zero-8": {
-    "patternName": "Daily Routine & School Schedule",
-    "variant": "affirmative",
-    "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe your morning schedule.",
-    "prompt": "I wake up at seven and get ready for school.",
-    "learningOpportunity": "Sequence morning actions with wake up at + time + and + get ready.",
+    "title": "Build the Routine / Arma la Rutina",
+    "instructions": "Put the blocks in order to describe your morning and afternoon routine.",
+    "prompt": "I wake up at six thirty and study in the afternoon.",
+    "learningOpportunity": "Sequence daily habits with wake up at + time + study in the afternoon.",
     "difficulty": "easy",
     "accentColor": "from-blue-500 to-indigo-600",
     "parts": [
       {
-        "label": "Routine 1",
-        "text": "I wake up at seven",
+        "label": "Morning Action",
+        "text": "I wake up",
         "color": "bg-cyan-300"
+      },
+      {
+        "label": "Exact Time",
+        "text": "at six thirty AM",
+        "color": "bg-emerald-300"
       },
       {
         "label": "Connector",
@@ -3682,9 +3611,95 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
         "color": "bg-fuchsia-300"
       },
       {
-        "label": "Routine 2",
-        "text": "get ready for school.",
+        "label": "Afternoon Habit",
+        "text": "study English in the afternoon.",
         "color": "bg-yellow-300"
+      }
+    ]
+  },
+  "teens:c-teens-basic-zero-6": {
+    "patternName": "Clothes & Streetwear",
+    "variant": "affirmative",
+    "title": "Build the Outfit / Arma el Outfit",
+    "instructions": "Put the blocks in order to describe your casual streetwear look.",
+    "prompt": "I am wearing an oversized black hoodie and white sneakers.",
+    "learningOpportunity": "Apply color adjective before noun + plural kicks (hoodie + sneakers).",
+    "difficulty": "easy",
+    "accentColor": "from-fuchsia-500 to-purple-600",
+    "parts": [
+      {
+        "label": "Action",
+        "text": "I am wearing",
+        "color": "bg-cyan-300"
+      },
+      {
+        "label": "Top (Color + Noun)",
+        "text": "an oversized black hoodie",
+        "color": "bg-violet-300"
+      },
+      {
+        "label": "Connector",
+        "text": "and",
+        "color": "bg-fuchsia-300"
+      },
+      {
+        "label": "Footwear (Plural)",
+        "text": "comfortable white sneakers.",
+        "color": "bg-yellow-300"
+      }
+    ]
+  },
+  "teens:c-teens-basic-zero-7": {
+    "patternName": "Tech, Social Media & Hobbies",
+    "variant": "affirmative",
+    "title": "Build the Habit / Arma el Hábito Tech",
+    "instructions": "Put the blocks in order to describe your daily digital routine.",
+    "prompt": "I always chat on Discord and listen to music on Spotify.",
+    "learningOpportunity": "Place frequency adverbs before action verbs with online apps.",
+    "difficulty": "easy",
+    "accentColor": "from-indigo-500 to-cyan-600",
+    "parts": [
+      {
+        "label": "Frequency & App 1",
+        "text": "I always chat on Discord",
+        "color": "bg-indigo-300"
+      },
+      {
+        "label": "Connector",
+        "text": "and",
+        "color": "bg-fuchsia-300"
+      },
+      {
+        "label": "Music Action & App 2",
+        "text": "listen to music on Spotify.",
+        "color": "bg-emerald-300"
+      }
+    ]
+  },
+  "teens:c-teens-basic-zero-8": {
+    "patternName": "Abilities & Sports (Can / Can't)",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Habilidad",
+    "instructions": "Put the blocks in order to contrast what you can do with what you are learning.",
+    "prompt": "I can ride a bike fast, but I can't skateboard yet.",
+    "learningOpportunity": "Contrast abilities using modal can vs can't with coordinating conjunction but.",
+    "difficulty": "easy",
+    "accentColor": "from-emerald-500 to-teal-600",
+    "parts": [
+      {
+        "label": "Positive Ability",
+        "text": "I can ride a bike fast,",
+        "color": "bg-emerald-300"
+      },
+      {
+        "label": "Contrast Word",
+        "text": "but",
+        "color": "bg-fuchsia-300"
+      },
+      {
+        "label": "Negative Ability",
+        "text": "I can't skateboard yet.",
+        "color": "bg-rose-300"
       }
     ]
   },
@@ -3930,34 +3945,34 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     ]
   },
   "teens:c-teens-basic-1-1": {
-    "patternName": "Family Introductions & Feelings",
+    "patternName": "People in Your Circle & Personality",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to introduce your parents and their mood.",
-    "prompt": "These are my parents and they are happy today.",
-    "learningOpportunity": "Use These are for plural family members + feelings with be.",
+    "instructions": "Put the blocks in order to describe your best friend's creative personality.",
+    "prompt": "My best friend Leo has a creative personality and great energy.",
+    "learningOpportunity": "Use HAS with third-person subjects and combine with personality adjectives.",
     "difficulty": "easy",
-    "accentColor": "from-emerald-500 to-teal-700",
+    "accentColor": "from-indigo-500 to-purple-700",
     "parts": [
       {
-        "label": "Plural demonstrative",
-        "text": "These are",
+        "label": "Subject",
+        "text": "My best friend Leo",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Family noun",
-        "text": "my parents",
+        "label": "Verb HAS",
+        "text": "has a creative",
+        "color": "bg-emerald-300"
+      },
+      {
+        "label": "Personality",
+        "text": "personality",
         "color": "bg-violet-300"
       },
       {
-        "label": "Connector & subject",
-        "text": "and they are",
+        "label": "Energy Vibe",
+        "text": "and great energy.",
         "color": "bg-yellow-300"
-      },
-      {
-        "label": "Feeling & time",
-        "text": "happy today.",
-        "color": "bg-orange-300"
       }
     ]
   },
@@ -3965,557 +3980,517 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     "patternName": "Healthy Choices with Because",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to explain a healthy habit choice.",
-    "prompt": "I drink fresh water because I need steady energy.",
-    "learningOpportunity": "Connect daily habits with reasons using because.",
+    "instructions": "Put the blocks in order to explain why you choose healthy food for sports.",
+    "prompt": "I choose fresh fruit and water because I want high energy.",
+    "learningOpportunity": "Connect healthy food choices with personal goals using BECAUSE.",
     "difficulty": "easy",
-    "accentColor": "from-teal-500 to-cyan-700",
+    "accentColor": "from-teal-500 to-emerald-700",
     "parts": [
       {
-        "label": "Subject & habit",
-        "text": "I drink",
+        "label": "Action & Food",
+        "text": "I choose fresh fruit",
+        "color": "bg-emerald-300"
+      },
+      {
+        "label": "Drink",
+        "text": "and cold water",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Healthy drink",
-        "text": "fresh water",
-        "color": "bg-violet-300"
-      },
-      {
-        "label": "Reason connector",
+        "label": "Reason Connector",
         "text": "because",
-        "color": "bg-yellow-300"
+        "color": "bg-fuchsia-300"
       },
       {
-        "label": "Energy clause",
-        "text": "I need steady energy.",
-        "color": "bg-orange-300"
+        "label": "Energy Clause",
+        "text": "I want high energy.",
+        "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-1-3": {
-    "patternName": "Weather Forecast & Outfit Decisions",
+    "patternName": "Feelings & Causal Reasons",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to choose clothes for the weather.",
-    "prompt": "I wear a warm jacket because it will be cold.",
-    "learningOpportunity": "Connect clothing choices with weather forecasts using because.",
+    "instructions": "Put the blocks in order to explain your emotion using BECAUSE.",
+    "prompt": "I feel super relieved because we finished our English presentation.",
+    "learningOpportunity": "Connect emotions with reasons using I feel + adjective + because + clause.",
     "difficulty": "easy",
-    "accentColor": "from-cyan-500 to-blue-700",
+    "accentColor": "from-rose-500 to-pink-700",
     "parts": [
       {
-        "label": "Subject & action",
-        "text": "I wear",
-        "color": "bg-indigo-300"
+        "label": "Emotion state",
+        "text": "I feel super relieved",
+        "color": "bg-pink-300"
       },
       {
-        "label": "Clothing item",
-        "text": "a warm jacket",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Connector",
-        "text": "because",
+        "label": "Causal connector",
+        "text": "because we finished",
         "color": "bg-violet-300"
       },
       {
-        "label": "Weather prediction",
-        "text": "it will be cold.",
-        "color": "bg-orange-300"
+        "label": "Project detail",
+        "text": "our English presentation.",
+        "color": "bg-cyan-300"
       }
     ]
   },
   "teens:c-teens-basic-1-4": {
-    "patternName": "Nature Locations with There is / There are",
+    "patternName": "School Subjects & Likes",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe park nature.",
-    "prompt": "There are tall trees around the beautiful lake.",
-    "learningOpportunity": "Use There are + plural noun + prepositional phrase.",
+    "instructions": "Put the blocks in order to describe your favorite school class and why you enjoy it.",
+    "prompt": "I love Computer Science because we code awesome video games.",
+    "learningOpportunity": "Express subject preferences with I love/enjoy + subject + because + reason.",
     "difficulty": "easy",
-    "accentColor": "from-blue-500 to-indigo-700",
+    "accentColor": "from-blue-500 to-cyan-700",
     "parts": [
       {
-        "label": "Existential plural",
-        "text": "There are",
+        "label": "Subject preference",
+        "text": "I love Computer Science",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Natural feature",
-        "text": "tall trees",
+        "label": "Causal connector",
+        "text": "because we code",
         "color": "bg-violet-300"
       },
       {
-        "label": "Preposition of place",
-        "text": "around",
-        "color": "bg-yellow-300"
-      },
-      {
-        "label": "Park location",
-        "text": "the beautiful lake.",
-        "color": "bg-orange-300"
+        "label": "Lab activity",
+        "text": "awesome video games.",
+        "color": "bg-emerald-300"
       }
     ]
   },
   "teens:c-teens-basic-1-5": {
-    "patternName": "Weekend Plans with Going To",
+    "patternName": "Daily Habits & Adverbs of Frequency",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to confirm a weekend sports plan.",
-    "prompt": "We are going to play soccer on Saturday afternoon.",
-    "learningOpportunity": "Form future plans with be going to + base verb + day & time.",
-    "difficulty": "easy",
-    "accentColor": "from-indigo-500 to-purple-700",
-    "parts": [
-      {
-        "label": "Subject & be",
-        "text": "We are",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Future plan",
-        "text": "going to play soccer",
-        "color": "bg-violet-300"
-      },
-      {
-        "label": "Day & time",
-        "text": "on Saturday afternoon.",
-        "color": "bg-orange-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-1-6": {
-    "patternName": "Polite Invitations with Would Like",
-    "variant": "question",
-    "title": "Build the Invitation / Arma la Invitación",
-    "instructions": "Put the blocks in order to invite a friend to the mall.",
-    "prompt": "Would you like to come to the mall with us?",
-    "learningOpportunity": "Use Would you like to come + destination + with us.",
-    "difficulty": "easy",
-    "accentColor": "from-purple-500 to-pink-700",
-    "parts": [
-      {
-        "label": "Invitation modal",
-        "text": "Would you",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Infinitive phrase",
-        "text": "like to come",
-        "color": "bg-violet-300"
-      },
-      {
-        "label": "Destination",
-        "text": "to the mall",
-        "color": "bg-yellow-300"
-      },
-      {
-        "label": "Group phrase",
-        "text": "with us?",
-        "color": "bg-orange-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-1-7": {
-    "patternName": "Clothing Store Pricing & Sizes",
-    "variant": "question",
-    "title": "Build the Question / Arma la Pregunta",
-    "instructions": "Put the blocks in order to ask the price and size of jeans.",
-    "prompt": "How much are these black jeans in size medium?",
-    "learningOpportunity": "Use How much are + plural clothing item + in size medium.",
-    "difficulty": "easy",
-    "accentColor": "from-rose-500 to-red-700",
-    "parts": [
-      {
-        "label": "Price phrase",
-        "text": "How much are",
-        "color": "bg-emerald-300"
-      },
-      {
-        "label": "Clothing item",
-        "text": "these black jeans",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Size specification",
-        "text": "in size medium?",
-        "color": "bg-yellow-300"
-      }
-    ]
-  },
-  "teens:c-teens-basic-1-8": {
-    "patternName": "Polite Café Ordering",
-    "variant": "affirmative",
-    "title": "Build the Polite Order / Arma el Pedido Cortés",
-    "instructions": "Put the blocks in order to order food and drink politely.",
-    "prompt": "I would like a toasted bagel and orange juice, please.",
-    "learningOpportunity": "Use I would like + snack + and + drink + please.",
+    "instructions": "Put the blocks in order to narrar a morning routine with ALWAYS.",
+    "prompt": "First I always wake up early and organize my study schedule.",
+    "learningOpportunity": "Use sequence words (First) and adverbs of frequency (always) before the main verb.",
     "difficulty": "easy",
     "accentColor": "from-amber-500 to-orange-700",
     "parts": [
       {
-        "label": "Polite formula",
-        "text": "I would like",
+        "label": "Sequence & frequency",
+        "text": "First I always wake up",
+        "color": "bg-amber-300"
+      },
+      {
+        "label": "Time modifier",
+        "text": "early and organize",
+        "color": "bg-orange-300"
+      },
+      {
+        "label": "Daily plan",
+        "text": "my study schedule.",
+        "color": "bg-yellow-300"
+      }
+    ]
+  },
+  "teens:c-teens-basic-1-6": {
+    "patternName": "Sports with Play, Go & Do",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe your weekend sports activities.",
+    "prompt": "On Saturdays I go cycling and play soccer with my squad.",
+    "learningOpportunity": "Use GO with -ING activities and PLAY with ball sports and squads.",
+    "difficulty": "easy",
+    "accentColor": "from-emerald-500 to-teal-700",
+    "parts": [
+      {
+        "label": "Time & GO activity",
+        "text": "On Saturdays I go cycling",
         "color": "bg-emerald-300"
       },
       {
-        "label": "Food item",
-        "text": "a toasted bagel",
-        "color": "bg-cyan-300"
+        "label": "PLAY sport",
+        "text": "and play soccer",
+        "color": "bg-teal-300"
       },
       {
-        "label": "Drink item",
-        "text": "and orange juice,",
+        "label": "Squad group",
+        "text": "with my squad.",
+        "color": "bg-cyan-300"
+      }
+    ]
+  },
+  "teens:c-teens-basic-1-7": {
+    "patternName": "Weather & Streetwear Matching",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to match your outfit to rainy weather.",
+    "prompt": "It is raining heavily outside, so I am wearing my warm hoodie.",
+    "learningOpportunity": "Connect weather conditions with present continuous outfit descriptions (I am wearing).",
+    "difficulty": "easy",
+    "accentColor": "from-sky-500 to-blue-700",
+    "parts": [
+      {
+        "label": "Weather condition",
+        "text": "It is raining heavily outside,",
+        "color": "bg-sky-300"
+      },
+      {
+        "label": "Connector & wearing",
+        "text": "so I am wearing",
+        "color": "bg-indigo-300"
+      },
+      {
+        "label": "Clothing item",
+        "text": "my warm hoodie.",
+        "color": "bg-cyan-300"
+      }
+    ]
+  },
+  "teens:c-teens-basic-1-8": {
+    "patternName": "City Landmarks & Directions",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to locate a city spot using NEXT TO and ACROSS FROM.",
+    "prompt": "The new bubble tea shop is next to the cinema, across from the park.",
+    "learningOpportunity": "Combine multiple prepositions of place to give precise urban directions.",
+    "difficulty": "easy",
+    "accentColor": "from-violet-500 to-purple-700",
+    "parts": [
+      {
+        "label": "Place & next to",
+        "text": "The new bubble tea shop is next to the cinema,",
         "color": "bg-violet-300"
       },
       {
-        "label": "Courtesy",
-        "text": "please.",
-        "color": "bg-orange-300"
+        "label": "Across preposition",
+        "text": "across from",
+        "color": "bg-purple-300"
+      },
+      {
+        "label": "Landmark reference",
+        "text": "the park.",
+        "color": "bg-emerald-300"
       }
     ]
   },
   "teens:c-teens-basic-1-9": {
-    "patternName": "Device Purpose with Use...To",
+    "patternName": "Tech Gadgets & Modals",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to explain what you use your laptop for.",
-    "prompt": "I use my laptop to do homework every evening.",
-    "learningOpportunity": "Pair use + device + to + base verb + time frequency.",
+    "instructions": "Put the blocks in order to explain how to connect earbuds with CAN.",
+    "prompt": "You can connect your wireless earbuds easily through Bluetooth.",
+    "learningOpportunity": "Use CAN + base verb + adverb to give clear digital instructions.",
     "difficulty": "easy",
-    "accentColor": "from-emerald-500 to-green-700",
+    "accentColor": "from-teal-500 to-cyan-700",
     "parts": [
       {
-        "label": "Subject & device",
-        "text": "I use my laptop",
+        "label": "Modal CAN action",
+        "text": "You can connect",
+        "color": "bg-teal-300"
+      },
+      {
+        "label": "Digital gadget",
+        "text": "your wireless earbuds",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Purpose infinitive",
-        "text": "to do homework",
-        "color": "bg-violet-300"
-      },
-      {
-        "label": "Time frequency",
-        "text": "every evening.",
-        "color": "bg-orange-300"
+        "label": "Connectivity channel",
+        "text": "easily through Bluetooth.",
+        "color": "bg-blue-300"
       }
     ]
   },
   "teens:c-teens-basic-1-10": {
-    "patternName": "Phone & Chat Help Requests",
-    "variant": "question",
-    "title": "Build the Question / Arma la Pregunta",
-    "instructions": "Put the blocks in order to ask a friend to confirm trip details.",
-    "prompt": "Can you help me confirm the meeting place?",
-    "learningOpportunity": "Form polite help requests with Can you help me + base verb + object.",
+    "patternName": "Polite Requests for Trip Planning",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to book group tickets with WOULD LIKE TO.",
+    "prompt": "We would like to book four tickets for the amusement park this Saturday.",
+    "learningOpportunity": "Use polite request formula We would like to book + tickets + for destination + time.",
     "difficulty": "medium",
-    "accentColor": "from-blue-600 to-indigo-800",
+    "accentColor": "from-indigo-600 to-pink-700",
     "parts": [
       {
-        "label": "Polite request",
-        "text": "Can you help me",
-        "color": "bg-emerald-300"
+        "label": "Polite intention",
+        "text": "We would like to book",
+        "color": "bg-indigo-300"
       },
       {
-        "label": "Action verb",
-        "text": "confirm",
-        "color": "bg-violet-300"
+        "label": "Tickets quantity",
+        "text": "four tickets for the",
+        "color": "bg-purple-300"
       },
       {
-        "label": "Trip detail",
-        "text": "the meeting place?",
-        "color": "bg-orange-300"
+        "label": "Destination & date",
+        "text": "amusement park this Saturday.",
+        "color": "bg-pink-300"
       }
     ]
   },
   "teens:c-teens-basic-2-1": {
-    "patternName": "Teen Life Routines vs Now",
+    "patternName": "Wildlife & Animal Abilities with CAN",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to contrast usual habits with current activities.",
-    "prompt": "I usually play soccer, but right now I am studying math.",
-    "learningOpportunity": "Contrast Present Simple routine with Present Continuous action.",
+    "instructions": "Put the blocks in order to describe an animal superpower and habitat.",
+    "prompt": "The Andean condor can fly at high altitudes over mountains.",
+    "learningOpportunity": "Express animal abilities with modal CAN + base verb.",
     "difficulty": "medium",
     "accentColor": "from-teal-600 to-emerald-700",
     "parts": [
       {
-        "label": "Habit clause",
-        "text": "I usually play soccer,",
+        "label": "Animal Subject",
+        "text": "The Andean condor",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Connector",
-        "text": "but",
-        "color": "bg-fuchsia-300"
+        "label": "Ability with CAN",
+        "text": "can fly at high",
+        "color": "bg-emerald-300"
       },
       {
-        "label": "Current activity",
-        "text": "right now I am studying math.",
+        "label": "Altitude & habitat",
+        "text": "altitudes over mountains.",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-2-2": {
-    "patternName": "Present Progressive for Actions Happening Now",
+    "patternName": "Room Layout with THERE IS & Prepositions",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe live streaming activities.",
-    "prompt": "She is recording a new music video right now.",
-    "learningOpportunity": "Use be + verb-ing + right now for immediate activities.",
+    "instructions": "Put the blocks in order to describe bedroom furniture and spatial location.",
+    "prompt": "There is a wide desk next to the window with floating shelves.",
+    "learningOpportunity": "Use There is + singular noun + prepositions of place (next to, with).",
     "difficulty": "easy",
-    "accentColor": "from-cyan-600 to-blue-700",
+    "accentColor": "from-purple-600 to-indigo-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "She",
+        "label": "Existence phrase",
+        "text": "There is a wide desk",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Auxiliary & verb",
-        "text": "is recording",
+        "label": "Spatial preposition",
+        "text": "next to the window",
         "color": "bg-indigo-300"
       },
       {
-        "label": "Object",
-        "text": "a new music video",
+        "label": "Feature modifier",
+        "text": "with floating shelves.",
         "color": "bg-yellow-300"
-      },
-      {
-        "label": "Time marker",
-        "text": "right now.",
-        "color": "bg-orange-300"
       }
     ]
   },
   "teens:c-teens-basic-2-3": {
-    "patternName": "Hangout Invitations & Weekend Plans",
-    "variant": "question",
-    "title": "Build the Polite Question / Arma la Pregunta Cortés",
-    "instructions": "Put the blocks in order to invite friends to the cinema.",
-    "prompt": "Do you want to watch the new superhero movie with us?",
-    "learningOpportunity": "Form friendly invitations with Do you want to + base verb.",
+    "patternName": "City Commuting with GO BY & Bike Lanes",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe your daily transit route by bicycle.",
+    "prompt": "I go to school by bicycle along the bike lane and arrive on time.",
+    "learningOpportunity": "Master GO BY + transport mode and arrival expressions.",
     "difficulty": "easy",
-    "accentColor": "from-indigo-600 to-violet-700",
+    "accentColor": "from-blue-600 to-cyan-700",
     "parts": [
       {
-        "label": "Invitation phrase",
-        "text": "Do you want to watch",
+        "label": "Subject & route",
+        "text": "I go to school",
         "color": "bg-emerald-300"
       },
       {
-        "label": "Movie object",
-        "text": "the new superhero movie",
-        "color": "bg-yellow-300"
+        "label": "Transport mode",
+        "text": "by bicycle along the bike lane",
+        "color": "bg-cyan-300"
       },
       {
-        "label": "Group phrase",
-        "text": "with us?",
-        "color": "bg-cyan-300"
+        "label": "Punctuality phrase",
+        "text": "and arrive on time.",
+        "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-2-4": {
-    "patternName": "Simple vs Continuous Dynamic Contrast",
-    "variant": "question",
-    "title": "Build the Question / Arma la Pregunta",
-    "instructions": "Put the blocks in order to ask what game a friend is playing right now.",
-    "prompt": "What video game are you playing right now?",
-    "learningOpportunity": "Invert What + noun + are you + verb-ing + right now.",
+    "patternName": "Future Careers with WANT TO BE & BECAUSE",
+    "variant": "affirmative",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to express career aspirations and passion.",
+    "prompt": "I want to be a software engineer because I love developing video games.",
+    "learningOpportunity": "Form career goals with want to be a/an + justification with because.",
     "difficulty": "medium",
-    "accentColor": "from-purple-600 to-pink-700",
+    "accentColor": "from-indigo-600 to-purple-700",
     "parts": [
       {
-        "label": "Question phrase",
-        "text": "What video game",
-        "color": "bg-emerald-300"
-      },
-      {
-        "label": "Auxiliary",
-        "text": "are",
-        "color": "bg-indigo-300"
-      },
-      {
-        "label": "Subject",
-        "text": "you",
+        "label": "Career goal",
+        "text": "I want to be a software engineer",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Continuous verb",
-        "text": "playing",
-        "color": "bg-violet-300"
+        "label": "Causal connector",
+        "text": "because",
+        "color": "bg-fuchsia-300"
       },
       {
-        "label": "Time",
-        "text": "right now?",
-        "color": "bg-orange-300"
+        "label": "Passion reason",
+        "text": "I love developing video games.",
+        "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-2-5": {
-    "patternName": "Verbs of State vs Action in Youth Contexts",
+    "patternName": "Talents & Superpowers with Degree Adverbs",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order using stative verbs know and believe.",
-    "prompt": "I know the secret level, and I believe you can beat it.",
-    "learningOpportunity": "Notice that state verbs know and believe stay in simple form.",
+    "instructions": "Put the blocks in order to describe musical and coding talents.",
+    "prompt": "Lucas can play the electric guitar and code reactive lights very well.",
+    "learningOpportunity": "Combine multiple CAN abilities with degree adverb very well.",
     "difficulty": "medium",
-    "accentColor": "from-amber-600 to-rose-700",
+    "accentColor": "from-fuchsia-600 to-pink-700",
     "parts": [
       {
-        "label": "Clause 1",
-        "text": "I know the secret level,",
+        "label": "Subject & musical ability",
+        "text": "Lucas can play the electric guitar",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Connector",
-        "text": "and",
-        "color": "bg-fuchsia-300"
+        "label": "Digital ability",
+        "text": "and code reactive lights",
+        "color": "bg-indigo-300"
       },
       {
-        "label": "Clause 2",
-        "text": "I believe you can beat it.",
+        "label": "Degree adverb",
+        "text": "very well.",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-2-6": {
-    "patternName": "Weather, Outfits & Outdoor Activities",
+    "patternName": "Lab Safety Rules with MUST",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe weather and outdoor fun.",
-    "prompt": "It is sunny today, so we are skating at the park.",
-    "learningOpportunity": "Connect weather condition with consequence using connector so.",
-    "difficulty": "medium",
-    "accentColor": "from-sky-600 to-teal-700",
+    "instructions": "Put the blocks in order to state a mandatory school lab safety rule.",
+    "prompt": "Students must wear safety goggles in the robotics laboratory.",
+    "learningOpportunity": "Use MUST + base verb for strict institutional safety rules.",
+    "difficulty": "easy",
+    "accentColor": "from-amber-600 to-orange-700",
     "parts": [
       {
-        "label": "Weather condition",
-        "text": "It is sunny today,",
+        "label": "Subject & modal",
+        "text": "Students must wear",
+        "color": "bg-orange-300"
+      },
+      {
+        "label": "Safety equipment",
+        "text": "safety goggles",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Connector",
-        "text": "so",
-        "color": "bg-fuchsia-300"
-      },
-      {
-        "label": "Consequence action",
-        "text": "we are skating at the park.",
+        "label": "Location",
+        "text": "in the robotics laboratory.",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-2-7": {
-    "patternName": "Imperatives for Game Rules & Tutorials",
+    "patternName": "Healthy Routines with Adverbs of Frequency",
     "variant": "affirmative",
-    "title": "Build Game Rule / Arma Regla de Juego",
-    "instructions": "Put the blocks in order to give a gaming tutorial step.",
-    "prompt": "Press the spacebar to jump over obstacles.",
-    "learningOpportunity": "Start tutorial instructions with base verb + infinitive of purpose.",
-    "difficulty": "easy",
-    "accentColor": "from-emerald-600 to-green-700",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to describe athletic habits and energy boost.",
+    "prompt": "I usually go cycling four times a week because it boosts my energy.",
+    "learningOpportunity": "Position frequency adverb (usually) before main verb + benefit clause.",
+    "difficulty": "medium",
+    "accentColor": "from-teal-600 to-emerald-700",
     "parts": [
       {
-        "label": "Action verb",
-        "text": "Press",
-        "color": "bg-violet-300"
+        "label": "Frequency & Sport",
+        "text": "I usually go cycling",
+        "color": "bg-emerald-300"
       },
       {
-        "label": "Control key",
-        "text": "the spacebar",
+        "label": "Time expression",
+        "text": "four times a week",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Infinitive purpose",
-        "text": "to jump over obstacles.",
+        "label": "Benefit clause",
+        "text": "because it boosts my energy.",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-2-8": {
-    "patternName": "Giving Campus & Mall Directions",
+    "patternName": "Weekend Squad Plans with LET'S",
     "variant": "affirmative",
-    "title": "Build Campus Direction / Arma Dirección en Campus",
-    "instructions": "Put the blocks in order to guide a classmate to the cafeteria.",
-    "prompt": "Walk past the library and turn left at the science lab.",
-    "learningOpportunity": "Use directional prepositions (past, at) in navigation instructions.",
+    "title": "Build the Sentence / Arma la Oración",
+    "instructions": "Put the blocks in order to coordinate a meeting point and time with friends.",
+    "prompt": "Let's meet in front of the cinema ticket booth at 3:00 PM sharp.",
+    "learningOpportunity": "Use LET'S + meet + spatial preposition (in front of) + exact time.",
     "difficulty": "easy",
-    "accentColor": "from-blue-600 to-indigo-700",
+    "accentColor": "from-purple-600 to-indigo-700",
     "parts": [
       {
-        "label": "Direction 1",
-        "text": "Walk past the library",
+        "label": "Invitation proposal",
+        "text": "Let's meet in front of",
         "color": "bg-violet-300"
       },
       {
-        "label": "Connector",
-        "text": "and",
-        "color": "bg-fuchsia-300"
+        "label": "Meeting location",
+        "text": "the cinema ticket booth",
+        "color": "bg-cyan-300"
       },
       {
-        "label": "Direction 2",
-        "text": "turn left at the science lab.",
+        "label": "Exact time",
+        "text": "at 3:00 PM sharp.",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-2-9": {
-    "patternName": "Phone Calls, Voice Notes & Texting",
+    "patternName": "Media Reviews with IN MY OPINION & BECAUSE",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to leave a voice message promise.",
-    "prompt": "I will send you a voice note when I arrive home.",
-    "learningOpportunity": "Link will + send with a time clause introduced by when.",
+    "instructions": "Put the blocks in order to deliver an impact review of an animated series.",
+    "prompt": "In my opinion, this series is a masterpiece because the animation is breathtaking.",
+    "learningOpportunity": "Structure critical reviews using In my opinion + noun + masterpiece + because.",
     "difficulty": "medium",
-    "accentColor": "from-indigo-600 to-purple-700",
+    "accentColor": "from-pink-600 to-purple-700",
     "parts": [
       {
-        "label": "Main commitment",
-        "text": "I will send you a voice note",
-        "color": "bg-cyan-300"
-      },
-      {
-        "label": "Time connector",
-        "text": "when",
+        "label": "Opinion starter",
+        "text": "In my opinion,",
         "color": "bg-fuchsia-300"
       },
       {
-        "label": "Condition clause",
-        "text": "I arrive home.",
+        "label": "Subject & rating",
+        "text": "this series is a masterpiece",
+        "color": "bg-cyan-300"
+      },
+      {
+        "label": "Justification",
+        "text": "because the animation is breathtaking.",
         "color": "bg-yellow-300"
       }
     ]
   },
   "teens:c-teens-basic-2-10": {
-    "patternName": "Level 2 Capstone: Teen Creator Studio",
+    "patternName": "Level 2 Capstone: Fluency & Growth",
     "variant": "affirmative",
     "title": "Build the Sentence / Arma la Oración",
-    "instructions": "Put the blocks in order to describe your creator channel project.",
-    "prompt": "Our production team is creating a podcast episode this week.",
-    "learningOpportunity": "Use Present Continuous for ongoing creative weekly projects.",
+    "instructions": "Put the blocks in order to celebrate your Level 2 communication milestones.",
+    "prompt": "We can express our career goals and communicate with fluency.",
+    "learningOpportunity": "Celebrate complete Level 2 synthesis with modal CAN + compound predicate.",
     "difficulty": "medium",
-    "accentColor": "from-rose-600 to-amber-700",
+    "accentColor": "from-amber-600 to-yellow-700",
     "parts": [
       {
-        "label": "Subject",
-        "text": "Our production team",
+        "label": "Subject & ability",
+        "text": "We can express",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Continuous verb",
-        "text": "is creating",
+        "label": "Goal object",
+        "text": "our career goals",
         "color": "bg-indigo-300"
       },
       {
-        "label": "Media object",
-        "text": "a podcast episode",
+        "label": "Fluency achievement",
+        "text": "and communicate with fluency.",
         "color": "bg-yellow-300"
-      },
-      {
-        "label": "Time phrase",
-        "text": "this week.",
-        "color": "bg-orange-300"
       }
     ]
   },
@@ -4719,33 +4694,28 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
     ]
   },
   "teens:c-teens-basic-3-8": {
-    "patternName": "Storytelling Connectors (First, Suddenly, Finally)",
+    "patternName": "Past Continuous & Interrupted Actions (When/While)",
     "variant": "affirmative",
-    "title": "Build Story Arc / Arma Arco de Historia",
-    "instructions": "Put the blocks in order to create suspense in a narrative.",
-    "prompt": "Suddenly, the lights went out and the crowd cheered.",
-    "learningOpportunity": "Use dramatic transition connectors (Suddenly) to pace exciting stories.",
+    "title": "Build Suspense Story / Arma Historia de Suspenso",
+    "instructions": "Put the blocks in order to describe an ongoing action interrupted by a sudden event.",
+    "prompt": "We were setting up camp when it suddenly started raining.",
+    "learningOpportunity": "Use past continuous (was/were + -ing) + when + past simple for narrative interruptions.",
     "difficulty": "medium",
     "accentColor": "from-rose-600 to-amber-800",
     "parts": [
       {
-        "label": "Dramatic hook",
-        "text": "Suddenly,",
-        "color": "bg-rose-300"
-      },
-      {
-        "label": "Event 1",
-        "text": "the lights went out",
+        "label": "Ongoing past action",
+        "text": "We were setting up camp",
         "color": "bg-cyan-300"
       },
       {
-        "label": "Connector",
-        "text": "and",
+        "label": "Interruption connector",
+        "text": "when",
         "color": "bg-fuchsia-300"
       },
       {
-        "label": "Event 2",
-        "text": "the crowd cheered.",
+        "label": "Sudden past event",
+        "text": "it suddenly started raining.",
         "color": "bg-yellow-300"
       }
     ]
@@ -6139,7 +6109,4462 @@ export const CLASS_STRUCTURE_MAP: Record<string, CustomClassStructure> = {
         "color": "bg-emerald-300"
       }
     ]
-  }
+  },
+
+  // ==================== LEVEL 4 (TEENS BASIC 4) ====================
+  "c-teens-basic-4-1": [
+    {
+      id: "c-teens-basic-4-1-sent-1",
+      type: "affirmative",
+      en: "In my opinion learning English opens incredible global opportunities.",
+      es: "En mi opinión aprender inglés abre increíbles oportunidades globales. (+)",
+      parts: ["In my opinion","learning English","opens incredible","global opportunities."],
+      audioText: "In my opinion learning English opens incredible global opportunities.",
+      structureNotes: "Class 1: My Opinions & Perspectives - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-1-sent-2",
+      type: "negative",
+      en: "I do not agree with banning smartphones at school.",
+      es: "Yo no estoy de acuerdo con prohibir los celulares en el colegio. (-)",
+      parts: ["I do not agree","with banning","smartphones","at school."],
+      audioText: "I do not agree with banning smartphones at school.",
+      structureNotes: "Class 1: My Opinions & Perspectives - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-1-sent-3",
+      type: "question",
+      en: "What is your opinion on the impact of artificial intelligence?",
+      es: "¿Cuál es tu opinión sobre el impacto de la inteligencia artificial? (?)",
+      parts: ["What is your opinion","on the impact of","artificial","intelligence?"],
+      audioText: "What is your opinion on the impact of artificial intelligence?",
+      structureNotes: "Class 1: My Opinions & Perspectives - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-2": [
+    {
+      id: "c-teens-basic-4-2-sent-1",
+      type: "affirmative",
+      en: "You should turn off screens half an hour before sleeping.",
+      es: "Tú deberías apagar las pantallas media hora antes de dormir. (+)",
+      parts: ["You should","turn off screens","half an hour","before sleeping."],
+      audioText: "You should turn off screens half an hour before sleeping.",
+      structureNotes: "Class 2: Giving Good Advice - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-2-sent-2",
+      type: "negative",
+      en: "You should not leave all homework for Sunday midnight.",
+      es: "Tú no deberías dejar todas las tareas para el domingo a medianoche. (-)",
+      parts: ["You should not","leave all homework","for Sunday","midnight."],
+      audioText: "You should not leave all homework for Sunday midnight.",
+      structureNotes: "Class 2: Giving Good Advice - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-2-sent-3",
+      type: "question",
+      en: "What should I do to overcome exam stress?",
+      es: "¿Qué debería hacer yo para superar el estrés de los exámenes? (?)",
+      parts: ["What should I do","to overcome","exam","stress?"],
+      audioText: "What should I do to overcome exam stress?",
+      structureNotes: "Class 2: Giving Good Advice - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-3": [
+    {
+      id: "c-teens-basic-4-3-sent-1",
+      type: "affirmative",
+      en: "If you heat water to one hundred degrees it boils and evaporates.",
+      es: "Si tú calientas agua a cien grados hierve y se evapora. (+)",
+      parts: ["If you heat water","to one hundred degrees","it boils and","evaporates."],
+      audioText: "If you heat water to one hundred degrees it boils and evaporates.",
+      structureNotes: "Class 3: Conditions & Scientific Facts (Zero Conditional) - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-3-sent-2",
+      type: "negative",
+      en: "If plants do not receive water they cannot survive.",
+      es: "Si las plantas no reciben agua ellas no pueden sobrevivir. (-)",
+      parts: ["If plants do not","receive water","they cannot","survive."],
+      audioText: "If plants do not receive water they cannot survive.",
+      structureNotes: "Class 3: Conditions & Scientific Facts (Zero Conditional) - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-3-sent-3",
+      type: "question",
+      en: "What happens if you mix blue paint with yellow?",
+      es: "¿Qué pasa si tú mezclas pintura azul con amarillo? (?)",
+      parts: ["What happens if","you mix blue","paint with","yellow?"],
+      audioText: "What happens if you mix blue paint with yellow?",
+      structureNotes: "Class 3: Conditions & Scientific Facts (Zero Conditional) - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-4": [
+    {
+      id: "c-teens-basic-4-4-sent-1",
+      type: "affirmative",
+      en: "To be honest that new game update is incredible.",
+      es: "Para ser sincero esa nueva actualización del juego es increíble. (+)",
+      parts: ["To be honest","that new game","update is","incredible."],
+      audioText: "To be honest that new game update is incredible.",
+      structureNotes: "Class 4: Messaging, Texting & Online Communication - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-4-sent-2",
+      type: "negative",
+      en: "Please do not leave me on read when we organize the project.",
+      es: "Por favor no me dejes en visto cuando organicemos el proyecto. (-)",
+      parts: ["Please do not","leave me on read","when we organize","the project."],
+      audioText: "Please do not leave me on read when we organize the project.",
+      structureNotes: "Class 4: Messaging, Texting & Online Communication - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-4-sent-3",
+      type: "question",
+      en: "Are you free right now to hop on the Discord call?",
+      es: "¿Estás libre justo ahora para entrar a la llamada de Discord? (?)",
+      parts: ["Are you free","right now to","hop on the","Discord call?"],
+      audioText: "Are you free right now to hop on the Discord call?",
+      structureNotes: "Class 4: Messaging, Texting & Online Communication - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-5": [
+    {
+      id: "c-teens-basic-4-5-sent-1",
+      type: "affirmative",
+      en: "If I practice every day I will speak English with confidence.",
+      es: "Si yo practico todos los días yo hablaré inglés con confianza. (+)",
+      parts: ["If I practice","every day","I will speak English","with confidence."],
+      audioText: "If I practice every day I will speak English with confidence.",
+      structureNotes: "Class 5: Future Possibilities & Consequences (First Conditional) - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-5-sent-2",
+      type: "negative",
+      en: "If you do not sleep well you will not have energy for the match.",
+      es: "Si tú no duermes bien tú no tendrás energía para el partido. (-)",
+      parts: ["If you do not","sleep well you","will not have energy","for the match."],
+      audioText: "If you do not sleep well you will not have energy for the match.",
+      structureNotes: "Class 5: Future Possibilities & Consequences (First Conditional) - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-5-sent-3",
+      type: "question",
+      en: "What will you do if you win the international scholarship?",
+      es: "¿Qué harás tú si ganas la beca de estudios internacionales? (?)",
+      parts: ["What will you do","if you win the","international","scholarship?"],
+      audioText: "What will you do if you win the international scholarship?",
+      structureNotes: "Class 5: Future Possibilities & Consequences (First Conditional) - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-6": [
+    {
+      id: "c-teens-basic-4-6-sent-1",
+      type: "affirmative",
+      en: "Fiber optic internet is much faster than mobile data.",
+      es: "El internet de fibra óptica es mucho más rápido que los datos móviles. (+)",
+      parts: ["Fiber optic internet","is much faster","than mobile","data."],
+      audioText: "Fiber optic internet is much faster than mobile data.",
+      structureNotes: "Class 6: Comparatives & Superlatives (Tech, Movies & Sports) - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-6-sent-2",
+      type: "negative",
+      en: "This movie is not as exciting as the first part.",
+      es: "Esta película no es tan emocionante como la primera parte. (-)",
+      parts: ["This movie is","not as exciting","as the first","part."],
+      audioText: "This movie is not as exciting as the first part.",
+      structureNotes: "Class 6: Comparatives & Superlatives (Tech, Movies & Sports) - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-6-sent-3",
+      type: "question",
+      en: "What is the most popular video game of the year in the whole world?",
+      es: "¿Cuál es el videojuego más popular del año en todo el mundo? (?)",
+      parts: ["What is the","most popular video game","of the year","in the whole world?"],
+      audioText: "What is the most popular video game of the year in the whole world?",
+      structureNotes: "Class 6: Comparatives & Superlatives (Tech, Movies & Sports) - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-7": [
+    {
+      id: "c-teens-basic-4-7-sent-1",
+      type: "affirmative",
+      en: "Our internet connection is fast enough to stream video.",
+      es: "Nuestra conexión de internet es suficientemente rápida para transmitir video. (+)",
+      parts: ["Our internet connection","is fast enough","to stream","video."],
+      audioText: "Our internet connection is fast enough to stream video.",
+      structureNotes: "Class 7: Too & Enough: Problems and Solutions - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-7-sent-2",
+      type: "negative",
+      en: "This smartphone is too expensive to buy with my savings.",
+      es: "Este celular es demasiado costoso para comprarlo con mis ahorros. (-)",
+      parts: ["This smartphone","is too expensive","to buy with","my savings."],
+      audioText: "This smartphone is too expensive to buy with my savings.",
+      structureNotes: "Class 7: Too & Enough: Problems and Solutions - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-7-sent-3",
+      type: "question",
+      en: "Do we have enough time to finish the presentation?",
+      es: "¿Tenemos nosotros suficiente tiempo para terminar la presentación? (?)",
+      parts: ["Do we have","enough time","to finish the","presentation?"],
+      audioText: "Do we have enough time to finish the presentation?",
+      structureNotes: "Class 7: Too & Enough: Problems and Solutions - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-8": [
+    {
+      id: "c-teens-basic-4-8-sent-1",
+      type: "affirmative",
+      en: "You ought to apologize sincerely to clear the air.",
+      es: "Tú deberías disculparte sinceramente para aclarar las cosas. (+)",
+      parts: ["You ought to","apologize sincerely","to clear","the air."],
+      audioText: "You ought to apologize sincerely to clear the air.",
+      structureNotes: "Class 8: Giving Advice to Friends (Should, Shouldn't & Ought to) - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-8-sent-2",
+      type: "negative",
+      en: "You had better not spread rumors about your classmates.",
+      es: "Más vale que no difundas rumores sobre tus compañeros. (-)",
+      parts: ["You had better not","spread rumors","about your","classmates."],
+      audioText: "You had better not spread rumors about your classmates.",
+      structureNotes: "Class 8: Giving Advice to Friends (Should, Shouldn't & Ought to) - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-8-sent-3",
+      type: "question",
+      en: "How can we rebuild trust after a mistake?",
+      es: "¿Cómo podemos nosotros reconstruir la confianza después de un error? (?)",
+      parts: ["How can we","rebuild trust","after a","mistake?"],
+      audioText: "How can we rebuild trust after a mistake?",
+      structureNotes: "Class 8: Giving Advice to Friends (Should, Shouldn't & Ought to) - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-9": [
+    {
+      id: "c-teens-basic-4-9-sent-1",
+      type: "affirmative",
+      en: "I am writing to inquire about the exchange program requirements.",
+      es: "Le escribo para consultar sobre los requisitos del programa de intercambio. (+)",
+      parts: ["I am writing to","inquire about","the exchange program","requirements."],
+      audioText: "I am writing to inquire about the exchange program requirements.",
+      structureNotes: "Class 9: Informal vs Formal Messages, Emails & Digital Tone - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-9-sent-2",
+      type: "negative",
+      en: "Please do not forget to attach the signed recommendation letter.",
+      es: "Por favor no olvide adjuntar la carta de recomendación firmada. (-)",
+      parts: ["Please do not forget","to attach the","signed recommendation","letter."],
+      audioText: "Please do not forget to attach the signed recommendation letter.",
+      structureNotes: "Class 9: Informal vs Formal Messages, Emails & Digital Tone - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-9-sent-3",
+      type: "question",
+      en: "Could you please confirm if you received the attached document?",
+      es: "¿Podría por favor confirmar si recibió el documento adjunto? (?)",
+      parts: ["Could you please","confirm if you received","the attached","document?"],
+      audioText: "Could you please confirm if you received the attached document?",
+      structureNotes: "Class 9: Informal vs Formal Messages, Emails & Digital Tone - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-4-10": [
+    {
+      id: "c-teens-basic-4-10-sent-1",
+      type: "affirmative",
+      en: "If we work with discipline we will achieve all our goals.",
+      es: "Si nosotros trabajamos con disciplina nosotros alcanzaremos todas nuestras metas. (+)",
+      parts: ["If we work with","discipline we will","achieve all","our goals."],
+      audioText: "If we work with discipline we will achieve all our goals.",
+      structureNotes: "Class 10: Teen Leadership, Customer Service & Capstone Review - Practice 1"
+    },
+    {
+      id: "c-teens-basic-4-10-sent-2",
+      type: "negative",
+      en: "We should not give up in the face of difficult challenges.",
+      es: "Nosotros no deberíamos rendirnos ante los desafíos difíciles. (-)",
+      parts: ["We should not","give up in the","face of difficult","challenges."],
+      audioText: "We should not give up in the face of difficult challenges.",
+      structureNotes: "Class 10: Teen Leadership, Customer Service & Capstone Review - Practice 2"
+    },
+    {
+      id: "c-teens-basic-4-10-sent-3",
+      type: "question",
+      en: "What is the biggest achievement you reached in this Level Four?",
+      es: "¿Cuál es el mayor logro que alcanzaste en este Nivel Cuatro? (?)",
+      parts: ["What is the biggest","achievement you reached","in this Level","Four?"],
+      audioText: "What is the biggest achievement you reached in this Level Four?",
+      structureNotes: "Class 10: Teen Leadership, Customer Service & Capstone Review - Practice 3"
+    }
+  ],
+
+  // ==================== LEVEL 0 (CLASSES 9-16) ====================
+  "c-teens-basic-zero-9": [
+    {
+      id: "c-teens-basic-zero-9-sent-1",
+      type: "affirmative",
+      en: "I love playing online video games with my friends.",
+      es: "A mí me encanta jugar videojuegos en línea con mis amigos. (+)",
+      parts: ["I love playing","online video games","with my","friends."],
+      audioText: "I love playing online video games with my friends.",
+      structureNotes: "Class 9: My Hobbies & Free Time - Practice 1"
+    },
+    {
+      id: "c-teens-basic-zero-9-sent-2",
+      type: "negative",
+      en: "I do not like waking up early on Sundays.",
+      es: "A mí no me gusta levantarme temprano los domingos. (-)",
+      parts: ["I do not like","waking up early","on","Sundays."],
+      audioText: "I do not like waking up early on Sundays.",
+      structureNotes: "Class 9: My Hobbies & Free Time - Practice 2"
+    },
+    {
+      id: "c-teens-basic-zero-9-sent-3",
+      type: "question",
+      en: "What do you like doing in your free time?",
+      es: "¿Qué te gusta hacer a ti en tus tiempos libres? (?)",
+      parts: ["What do you","like doing in","your free","time?"],
+      audioText: "What do you like doing in your free time?",
+      structureNotes: "Class 9: My Hobbies & Free Time - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-zero-10": [
+    {
+      id: "c-teens-basic-zero-10-sent-1",
+      type: "affirmative",
+      en: "This is my brother and his name is Mateo.",
+      es: "Este es mi hermano y su nombre es Mateo. (+)",
+      parts: ["This is my brother","and his name","is","Mateo."],
+      audioText: "This is my brother and his name is Mateo.",
+      structureNotes: "Class 10: Family & Friends - Practice 1"
+    },
+    {
+      id: "c-teens-basic-zero-10-sent-2",
+      type: "negative",
+      en: "She is not my sister she is my favorite cousin.",
+      es: "Ella no es mi hermana ella es mi prima favorita. (-)",
+      parts: ["She is not","my sister she","is my favorite","cousin."],
+      audioText: "She is not my sister she is my favorite cousin.",
+      structureNotes: "Class 10: Family & Friends - Practice 2"
+    },
+    {
+      id: "c-teens-basic-zero-10-sent-3",
+      type: "question",
+      en: "Is that tall boy with the cap your older brother?",
+      es: "¿Es ese chico alto con gorra tu hermano mayor? (?)",
+      parts: ["Is that tall boy","with the cap","your older","brother?"],
+      audioText: "Is that tall boy with the cap your older brother?",
+      structureNotes: "Class 10: Family & Friends - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-zero-11": [
+    {
+      id: "c-teens-basic-zero-11-sent-1",
+      type: "affirmative",
+      en: "My last name is spelled V - A - R - G - A - S.",
+      es: "Mi apellido se deletrea V - A - R - G - A - S. (+)",
+      parts: ["My last name","is spelled","V - A - R","- G - A - S."],
+      audioText: "My last name is spelled V - A - R - G - A - S.",
+      structureNotes: "Class 11: Alphabet, Spelling & Social Usernames - Practice 1"
+    },
+    {
+      id: "c-teens-basic-zero-11-sent-2",
+      type: "negative",
+      en: "My email does not have numbers or hyphens.",
+      es: "Mi correo no tiene números ni guiones intermedios. (-)",
+      parts: ["My email","does not have","numbers or","hyphens."],
+      audioText: "My email does not have numbers or hyphens.",
+      structureNotes: "Class 11: Alphabet, Spelling & Social Usernames - Practice 2"
+    },
+    {
+      id: "c-teens-basic-zero-11-sent-3",
+      type: "question",
+      en: "How do you spell your Discord username?",
+      es: "¿Cómo deletreas tú tu nombre de usuario en Discord? (?)",
+      parts: ["How do you","spell your Discord","user","name?"],
+      audioText: "How do you spell your Discord username?",
+      structureNotes: "Class 11: Alphabet, Spelling & Social Usernames - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-zero-12": [
+    {
+      id: "c-teens-basic-zero-12-sent-1",
+      type: "affirmative",
+      en: "My name is Mariana I am fourteen years old and I live in Colombia.",
+      es: "Mi nombre es Mariana tengo catorce años y vivo en Colombia. (+)",
+      parts: ["My name is Mariana","I am fourteen","years old and","I live in Colombia."],
+      audioText: "My name is Mariana I am fourteen years old and I live in Colombia.",
+      structureNotes: "Class 12: Full Teen Profile: Age, Grade, City & Passions - Practice 1"
+    },
+    {
+      id: "c-teens-basic-zero-12-sent-2",
+      type: "negative",
+      en: "I do not like waking up early on cold Mondays.",
+      es: "A mí no me gusta levantarme temprano los lunes fríos. (-)",
+      parts: ["I do not like","waking up early","on cold","Mondays."],
+      audioText: "I do not like waking up early on cold Mondays.",
+      structureNotes: "Class 12: Full Teen Profile: Age, Grade, City & Passions - Practice 2"
+    },
+    {
+      id: "c-teens-basic-zero-12-sent-3",
+      type: "question",
+      en: "What grade are you in and what is your favorite hobby?",
+      es: "¿En qué grado estás tú y cuál es tu pasatiempo favorito? (?)",
+      parts: ["What grade are you in","and what is","your favorite","hobby?"],
+      audioText: "What grade are you in and what is your favorite hobby?",
+      structureNotes: "Class 12: Full Teen Profile: Age, Grade, City & Passions - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-zero-13": [
+    {
+      id: "c-teens-basic-zero-13-sent-1",
+      type: "affirmative",
+      en: "I am wearing a black hoodie and comfortable white sneakers.",
+      es: "Yo llevo puesto un buzo negro y tenis blancos cómodos. (+)",
+      parts: ["I am wearing","a black hoodie and","comfortable","white sneakers."],
+      audioText: "I am wearing a black hoodie and comfortable white sneakers.",
+      structureNotes: "Class 13: Clothes, Personal Style & Streetwear - Practice 1"
+    },
+    {
+      id: "c-teens-basic-zero-13-sent-2",
+      type: "negative",
+      en: "I am not wearing a formal school uniform on weekends.",
+      es: "Yo no llevo puesto uniforme escolar formal los fines de semana. (-)",
+      parts: ["I am not wearing","a formal school","uniform on","weekends."],
+      audioText: "I am not wearing a formal school uniform on weekends.",
+      structureNotes: "Class 13: Clothes, Personal Style & Streetwear - Practice 2"
+    },
+    {
+      id: "c-teens-basic-zero-13-sent-3",
+      type: "question",
+      en: "What clothes are you wearing to go to the party today?",
+      es: "¿Qué ropa llevas puesta tú para ir a la fiesta hoy? (?)",
+      parts: ["What clothes are","you wearing to go","to the party","today?"],
+      audioText: "What clothes are you wearing to go to the party today?",
+      structureNotes: "Class 13: Clothes, Personal Style & Streetwear - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-zero-14": [
+    {
+      id: "c-teens-basic-zero-14-sent-1",
+      type: "affirmative",
+      en: "This is my new English notebook to take notes.",
+      es: "Este es mi cuaderno nuevo de inglés para tomar apuntes. (+)",
+      parts: ["This is my new","English notebook","to take","notes."],
+      audioText: "This is my new English notebook to take notes.",
+      structureNotes: "Class 14: School Subjects & Classroom Life - Practice 1"
+    },
+    {
+      id: "c-teens-basic-zero-14-sent-2",
+      type: "negative",
+      en: "That is not our classroom that is the teachers room.",
+      es: "Esa no es nuestra aula esa es la sala de profesores. (-)",
+      parts: ["That is not","our classroom that","is the teachers","room."],
+      audioText: "That is not our classroom that is the teachers room.",
+      structureNotes: "Class 14: School Subjects & Classroom Life - Practice 2"
+    },
+    {
+      id: "c-teens-basic-zero-14-sent-3",
+      type: "question",
+      en: "Are these colored markers for the arts class?",
+      es: "¿Son estos marcadores de colores para la clase de artes? (?)",
+      parts: ["Are these","colored markers","for the","arts class?"],
+      audioText: "Are these colored markers for the arts class?",
+      structureNotes: "Class 14: School Subjects & Classroom Life - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-zero-15": [
+    {
+      id: "c-teens-basic-zero-15-sent-1",
+      type: "affirmative",
+      en: "I wake up at six thirty and have a delicious breakfast.",
+      es: "Yo me despierto a las seis y media y tomo un desayuno delicioso. (+)",
+      parts: ["I wake up","at six thirty and","have a delicious","breakfast."],
+      audioText: "I wake up at six thirty and have a delicious breakfast.",
+      structureNotes: "Class 15: Basic Daily Routine & Clock Time - Practice 1"
+    },
+    {
+      id: "c-teens-basic-zero-15-sent-2",
+      type: "negative",
+      en: "I do not stay up late on school nights.",
+      es: "Yo no me quedo despierto hasta tarde en noches de colegio. (-)",
+      parts: ["I do not stay","up late on","school","nights."],
+      audioText: "I do not stay up late on school nights.",
+      structureNotes: "Class 15: Basic Daily Routine & Clock Time - Practice 2"
+    },
+    {
+      id: "c-teens-basic-zero-15-sent-3",
+      type: "question",
+      en: "What time do you usually go to sleep on Sundays?",
+      es: "¿A qué hora te vas a dormir tú usualmente los domingos? (?)",
+      parts: ["What time do you","usually go to sleep","on","Sundays?"],
+      audioText: "What time do you usually go to sleep on Sundays?",
+      structureNotes: "Class 15: Basic Daily Routine & Clock Time - Practice 3"
+    }
+  ],
+
+  "c-teens-basic-zero-16": [
+    {
+      id: "c-teens-basic-zero-16-sent-1",
+      type: "affirmative",
+      en: "Today we are proud Level Zero graduates in English.",
+      es: "Hoy somos orgullosos graduados del Nivel Cero en inglés. (+)",
+      parts: ["Today we are","proud Level Zero","graduates in","English."],
+      audioText: "Today we are proud Level Zero graduates in English.",
+      structureNotes: "Class 16: Level 0 Grand Review & Final Challenge 🏆 - Practice 1"
+    },
+    {
+      id: "c-teens-basic-zero-16-sent-2",
+      type: "negative",
+      en: "We do not give up on difficult pronunciations.",
+      es: "Nosotros no nos rendimos ante las pronunciaciones difíciles. (-)",
+      parts: ["We do not give","up on difficult","pronun","ciations."],
+      audioText: "We do not give up on difficult pronunciations.",
+      structureNotes: "Class 16: Level 0 Grand Review & Final Challenge 🏆 - Practice 2"
+    },
+    {
+      id: "c-teens-basic-zero-16-sent-3",
+      type: "question",
+      en: "Are you ready to conquer the adventures of Level One?",
+      es: "¿Estás listo para conquistar las aventuras del Nivel Uno? (?)",
+      parts: ["Are you ready to","conquer the adventures","of Level","One?"],
+      audioText: "Are you ready to conquer the adventures of Level One?",
+      structureNotes: "Class 16: Level 0 Grand Review & Final Challenge 🏆 - Practice 3"
+    }
+  ],
+  "c-teens-inter-1": {
+    classId: "c-teens-inter-1",
+    title: "Class 1: My Life Experiences (Present Perfect)",
+    description: "Aprende a hablar de tus grandes experiencias de vida, viajes y logros usando el Present Perfect con Have/Has + Participio Pasado y marcadores clave (ever, never, already, yet).",
+    sentences: [
+      {
+            "id": "c-teens-inter-1-d1",
+            "mode": "affirmative",
+            "spanish": "Yo ya he visitado cinco parques nacionales en Colombia. (+)",
+            "english": "I have already visited five national parks in Colombia.",
+            "parts": [
+                  {
+                        "token": "I have already",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "visited five national",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "parks in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "Colombia.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-1-d2",
+            "mode": "negative",
+            "spanish": "Yo todavía no he probado paracaidismo en mi vida. (-)",
+            "english": "I have not tried skydiving in my life yet.",
+            "parts": [
+                  {
+                        "token": "I have not",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "tried skydiving in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "my life",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "yet.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-1-d3",
+            "mode": "interrogative",
+            "spanish": "¿Alguna vez has viajado tú en avión a otro país? (?)",
+            "english": "Have you ever traveled on an airplane to another country?",
+            "parts": [
+                  {
+                        "token": "Have you ever",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "traveled on an airplane",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "to another",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "country?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-2": {
+    classId: "c-teens-inter-2",
+    title: "Class 2: Teen Slang & Phrasal Verbs in Daily Conversations",
+    description: "Domina los phrasal verbs más usados en la vida real de los jóvenes (hang out, chill out, figure out, turn down, catch up, run into) y expresiones auténticas de conversación fluida.",
+    sentences: [
+      {
+            "id": "c-teens-inter-2-d1",
+            "mode": "affirmative",
+            "spanish": "A nosotros nos gusta parchar en el parque y relajarnos los viernes. (+)",
+            "english": "We love to hang out in the park and chill out on Fridays.",
+            "parts": [
+                  {
+                        "token": "We love to",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "hang out in the park",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "and chill out",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "on Fridays.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-2-d2",
+            "mode": "negative",
+            "spanish": "Yo tuve que rechazar la invitación para estudiar para mi examen. (-)",
+            "english": "I had to turn down the invitation to study for my exam.",
+            "parts": [
+                  {
+                        "token": "I had to turn",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "down the invitation",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "to study for",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "my exam.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-2-d3",
+            "mode": "interrogative",
+            "spanish": "¿Quieres encontrarte con nosotros para ponernos al día esta tarde? (?)",
+            "english": "Do you want to meet up with us to catch up this afternoon?",
+            "parts": [
+                  {
+                        "token": "Do you want to",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "meet up with us",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "to catch up",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "this afternoon?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-3": {
+    classId: "c-teens-inter-3",
+    title: "Class 3: Possibilities & Deductions (Must, Might, Can't)",
+    description: "Aprende a deducir y sacar conclusiones lógicas sobre situaciones misteriosas según el nivel de certeza usando Must (99% seguro), Might/Could (50% posible) y Can't (0% imposible).",
+    sentences: [
+      {
+            "id": "c-teens-inter-3-d1",
+            "mode": "affirmative",
+            "spanish": "Él ha estudiado diez horas seguidas él debe estar agotado. (+)",
+            "english": "He has studied ten hours straight he must be exhausted.",
+            "parts": [
+                  {
+                        "token": "He has studied",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "ten hours straight",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "he must be",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "exhausted.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-3-d2",
+            "mode": "negative",
+            "spanish": "Ese paquete no puede ser para mí porque no tiene mi nombre. (-)",
+            "english": "That package can't be for me because it lacks my name.",
+            "parts": [
+                  {
+                        "token": "That package can't",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "be for me because",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "it lacks",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "my name.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-3-d3",
+            "mode": "interrogative",
+            "spanish": "¿Podría esa luz extraña en el cielo ser un dron meteorológico? (?)",
+            "english": "Could that strange light in the sky be a weather drone?",
+            "parts": [
+                  {
+                        "token": "Could that strange",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "light in the sky",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "be a weather",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "drone?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-4": {
+    classId: "c-teens-inter-4",
+    title: "Class 4: If I Ruled the World (Second Conditional)",
+    description: "Aprende a formular hipótesis imaginarias y situaciones irreales usando el Second Conditional (If + Past Simple, would + verbo base) para hablar de superpoderes, cambios mundiales y decisiones éticas.",
+    sentences: [
+      {
+            "id": "c-teens-inter-4-d1",
+            "mode": "affirmative",
+            "spanish": "Si yo tuviera superpoderes yo protegería los océanos y los bosques. (+)",
+            "english": "If I had superpowers I would protect the oceans and forests.",
+            "parts": [
+                  {
+                        "token": "If I had superpowers",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "I would protect",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the oceans",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "and forests.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-4-d2",
+            "mode": "negative",
+            "spanish": "Si yo estuviera en tu lugar yo no rechazaría esa gran oportunidad. (-)",
+            "english": "If I were in your place I wouldn't turn down that opportunity.",
+            "parts": [
+                  {
+                        "token": "If I were in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "your place I wouldn't",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "turn down that",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "opportunity.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-4-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué harías tú si pudieras viajar en el tiempo al pasado? (?)",
+            "english": "What would you do if you could travel back in time?",
+            "parts": [
+                  {
+                        "token": "What would you do",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "if you could travel",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "back in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "time?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-5": {
+    classId: "c-teens-inter-5",
+    title: "Class 5: Agreeing & Disagreeing Respectfully",
+    description: "Aprende el arte del debate diplomático en inglés: expresar acuerdos parciales, desacuerdos educados (I see your point, but...), contraargumentos sólidos y refutaciones respetuosas.",
+    sentences: [
+      {
+            "id": "c-teens-inter-5-d1",
+            "mode": "affirmative",
+            "spanish": "Yo entiendo tu punto pero debemos considerar la privacidad de datos. (+)",
+            "english": "I see your point but we must consider data privacy.",
+            "parts": [
+                  {
+                        "token": "I see your point",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "but we must",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "consider data",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "privacy.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-5-d2",
+            "mode": "negative",
+            "spanish": "Yo discrepo respetuosamente porque la práctica en persona es insustituible. (-)",
+            "english": "I respectfully disagree because in-person practice cannot be replaced.",
+            "parts": [
+                  {
+                        "token": "I respectfully disagree",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "because in-person practice",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "cannot be",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "replaced.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-5-d3",
+            "mode": "interrogative",
+            "spanish": "¿Has considerado tú el impacto del tiempo en pantalla en los jóvenes? (?)",
+            "english": "Have you considered the impact of screen time on teenagers?",
+            "parts": [
+                  {
+                        "token": "Have you considered",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the impact of",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "screen time on",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "teenagers?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-6": {
+    classId: "c-teens-inter-6",
+    title: "Class 6: Podcast & Media Hosting Basics",
+    description: "Aprende a conducir un podcast en inglés: ganchos de apertura (hooks), entrevistas dinámicas, preguntas de seguimiento, transiciones de locución y cierres profesionales.",
+    sentences: [
+      {
+            "id": "c-teens-inter-6-d1",
+            "mode": "affirmative",
+            "spanish": "Bienvenidos de nuevo a nuestro show hoy tenemos un invitado muy especial. (+)",
+            "english": "Welcome back to our show today we have a very special guest.",
+            "parts": [
+                  {
+                        "token": "Welcome back to",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "our show today we",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "have a very",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "special guest.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-6-d2",
+            "mode": "negative",
+            "spanish": "No olviden suscribirse a nuestro canal y quédense sintonizados para el episodio dos. (-)",
+            "english": "Do not forget to subscribe and stay tuned for episode two.",
+            "parts": [
+                  {
+                        "token": "Do not forget to",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "subscribe and stay",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "tuned for",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "episode two.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-6-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué consejo compartirías tú con los jóvenes que quieren emprender? (?)",
+            "english": "What advice would you share with teens who want to innovate?",
+            "parts": [
+                  {
+                        "token": "What advice would",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "you share with teens",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "who want to",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "innovate?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-7": {
+    classId: "c-teens-inter-7",
+    title: "Class 7: Present Perfect vs Present Perfect Continuous",
+    description: "Aprende a contrastar acciones completadas (Present Perfect: I have painted the room) con acciones continuas en progreso que explican un resultado visible presente (Present Perfect Continuous: I have been painting all morning) usando for y since.",
+    sentences: [
+      {
+            "id": "c-teens-inter-7-d1",
+            "mode": "affirmative",
+            "spanish": "Yo he estado estudiando inglés en esta academia durante dos años. (+)",
+            "english": "I have been studying English at this academy for two years.",
+            "parts": [
+                  {
+                        "token": "I have been studying",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "English at this academy",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "for two",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "years.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-7-d2",
+            "mode": "negative",
+            "spanish": "Ella no ha estado descansando porque ha estado entrenando sin parar. (-)",
+            "english": "She has not been resting because she has been training non-stop.",
+            "parts": [
+                  {
+                        "token": "She has not been",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "resting because she has",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "been training",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "non-stop.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-7-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cuánto tiempo has estado tú programando videojuegos en tu tiempo libre? (?)",
+            "english": "How long have you been programming video games in your free time?",
+            "parts": [
+                  {
+                        "token": "How long have you",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "been programming video",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "games in your",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "free time?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-8": {
+    classId: "c-teens-inter-8",
+    title: "Class 8: Advanced Phrasal Verbs in Storytelling & Media",
+    description: "Aprende phrasal verbs avanzados de alto impacto narrativo (bring about, look up to, end up, come across, stand out, pull off, work out) para contar historias emocionantes, giros de trama y logros en inglés.",
+    sentences: [
+      {
+            "id": "c-teens-inter-8-d1",
+            "mode": "affirmative",
+            "spanish": "Contra todo pronóstico nuestro equipo logró una victoria increíble. (+)",
+            "english": "Against all odds our team pulled off an incredible victory.",
+            "parts": [
+                  {
+                        "token": "Against all odds",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "our team pulled off",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "an incredible",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "victory.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-8-d2",
+            "mode": "negative",
+            "spanish": "Nosotros nos perdimos en el centro pero terminamos encontrando un lugar genial. (-)",
+            "english": "We got lost downtown but ended up finding a great spot.",
+            "parts": [
+                  {
+                        "token": "We got lost downtown",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "but ended up",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "finding a",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "great spot.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-8-d3",
+            "mode": "interrogative",
+            "spanish": "¿A qué figura admirable admiras tú más por su valentía y resiliencia? (?)",
+            "english": "Which admirable figure do you look up to the most for courage?",
+            "parts": [
+                  {
+                        "token": "Which admirable figure",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "do you look up to",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the most for",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "courage?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-9": {
+    classId: "c-teens-inter-9",
+    title: "Class 9: Past Modals of Deduction",
+    description: "Aprende a deducir lo que ocurrió en el pasado según la evidencia física disponible usando Must have (99% certeza pasada), Might / Could have (50% posibilidad) y Can't / Couldn't have (0% imposibilidad pasada) + Participio Pasado.",
+    sentences: [
+      {
+            "id": "c-teens-inter-9-d1",
+            "mode": "affirmative",
+            "spanish": "El suelo está empapado debe haber llovido fuertemente anoche. (+)",
+            "english": "The ground is soaked it must have poured heavily last night.",
+            "parts": [
+                  {
+                        "token": "The ground is soaked",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "it must have",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "poured heavily",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "last night.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-9-d2",
+            "mode": "negative",
+            "spanish": "Ellos no pudieron haber salido por la guerra porque no hay armas. (-)",
+            "english": "They can't have left due to war because there are no weapons.",
+            "parts": [
+                  {
+                        "token": "They can't have left",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "due to war because",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "there are",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "no weapons.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-9-d3",
+            "mode": "interrogative",
+            "spanish": "¿Pudieron los antiguos astrónomos haber predicho los eclipses solares? (?)",
+            "english": "Could ancient astronomers have predicted solar eclipses?",
+            "parts": [
+                  {
+                        "token": "Could ancient astronomers",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "have predicted",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "solar",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "eclipses?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-10": {
+    classId: "c-teens-inter-10",
+    title: "Class 10: Conditionals Synthesis & Time Clauses",
+    description: "Domina la matriz completa de condicionales (Zero, First, Second) y conectores temporales avanzados (unless, as soon as, provided that, in case) para construir árboles de decisión estratégica en inglés.",
+    sentences: [
+      {
+            "id": "c-teens-inter-10-d1",
+            "mode": "affirmative",
+            "spanish": "Nosotros no ganaremos el primer puesto a menos que practiquemos a diario. (+)",
+            "english": "We will not win first place unless we practice daily.",
+            "parts": [
+                  {
+                        "token": "We will not win",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "first place unless",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "we practice",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "daily.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-10-d2",
+            "mode": "negative",
+            "spanish": "Guarda tu código en la nube por si acaso tu computador se apaga. (-)",
+            "english": "Save your code in the cloud in case your computer shuts down.",
+            "parts": [
+                  {
+                        "token": "Save your code in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the cloud in case",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "your computer",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "shuts down.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-10-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué estrategia ejecutarás tú tan pronto como comience el torneo? (?)",
+            "english": "What strategy will you execute as soon as the tournament begins?",
+            "parts": [
+                  {
+                        "token": "What strategy will you",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "execute as soon as",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the tournament",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "begins?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-11": {
+    classId: "c-teens-inter-11",
+    title: "Class 11: Nuanced Opinions & Diplomacy in Debates",
+    description: "Aprende el más alto nivel de oratoria y diplomacia en inglés: expresar opiniones con matices, conceder contraargumentos válidos (While it is true that..., nevertheless...), y alcanzar compromisos constructivos.",
+    sentences: [
+      {
+            "id": "c-teens-inter-11-d1",
+            "mode": "affirmative",
+            "spanish": "Si bien las herramientas digitales ahorran tiempo debemos cuidar la conexión humana. (+)",
+            "english": "While digital tools save time we must care for human connection.",
+            "parts": [
+                  {
+                        "token": "While digital tools",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "save time we must",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "care for human",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "connection.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-11-d2",
+            "mode": "negative",
+            "spanish": "A pesar de las dificultades iniciales nuestra iniciativa estudiantil triunfó. (-)",
+            "english": "Despite initial difficulties our student initiative triumphed.",
+            "parts": [
+                  {
+                        "token": "Despite initial difficulties",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "our student initiative",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "triumphed",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "proudly.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-11-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cómo podemos lograr un equilibrio justo entre la tecnología y la disciplina? (?)",
+            "english": "How can we strike a fair balance between tech and discipline?",
+            "parts": [
+                  {
+                        "token": "How can we strike",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "a fair balance between",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "tech and",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "discipline?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-inter-12": {
+    classId: "c-teens-inter-12",
+    title: "Class 12: Capstone Media Showcase & Scholarship Simulation",
+    description: "Gran proyecto final y evaluación integradora de los Niveles 5, 6 y 7 (Intermediate): Present Perfect, Phrasal Verbs, Modales de Deducción, Second Conditional, Debate y Entrevista de Beca con el Método STAR (Situation, Task, Action, Result).",
+    sentences: [
+      {
+            "id": "c-teens-inter-12-d1",
+            "mode": "affirmative",
+            "spanish": "Como resultado de nuestra dedicación nosotros hemos ganado la beca de liderazgo. (+)",
+            "english": "As a result of our dedication we have won the leadership scholarship.",
+            "parts": [
+                  {
+                        "token": "As a result of",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "our dedication we have",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "won the leadership",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "scholarship.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-12-d2",
+            "mode": "negative",
+            "spanish": "Nosotros no nos rendimos a pesar de los desafíos complejos que enfrentamos. (-)",
+            "english": "We did not give up despite the complex challenges we faced.",
+            "parts": [
+                  {
+                        "token": "We did not give up",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "despite the complex",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "challenges we",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "faced.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-inter-12-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cómo aprovecharás tú esta experiencia internacional para transformar tu comunidad? (?)",
+            "english": "How will you leverage this global experience to empower your community?",
+            "parts": [
+                  {
+                        "token": "How will you leverage",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "this global experience to",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "empower your",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "community?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-1": {
+    classId: "c-teens-advanced-1",
+    title: "Class 1: Breaking News & Campus Whispers (Reported Speech)",
+    description: "Aprende a reportar lo que otros dijeron con precisión periodística usando Reported Speech: reglas de cambio de tiempos verbales (backshift: presente ➔ pasado, will ➔ would), pronombres, marcadores de tiempo y la diferencia clave entre SAY y TELL.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-1-d1",
+            "mode": "affirmative",
+            "spanish": "Sofía dijo que ella estaba diseñando una app móvil ecológica. (+)",
+            "english": "Sofia said that she was designing an eco-friendly mobile app.",
+            "parts": [
+                  {
+                        "token": "Sofia said that",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "she was designing",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "an eco-friendly",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "mobile app.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-1-d2",
+            "mode": "negative",
+            "spanish": "El profesor nos dijo a nosotros que el examen se realizaría el lunes. (-)",
+            "english": "The teacher told us that the exam would take place on Monday.",
+            "parts": [
+                  {
+                        "token": "The teacher told us",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "that the exam would",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "take place",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "on Monday.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-1-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué solución declaró el director de tecnología que implementaría? (?)",
+            "english": "What solution did the tech director state he would implement?",
+            "parts": [
+                  {
+                        "token": "What solution did the",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "tech director state he",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "would",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "implement?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-2": {
+    classId: "c-teens-advanced-2",
+    title: "Class 2: Secret Interviews & Interrogations (Reported Questions)",
+    description: "Aprende a reportar preguntas y órdenes con Reported Questions y Reported Commands: uso de 'asked if / whether' para preguntas de sí/no, orden afirmativo en preguntas de Wh- (sujeto antes de verbo) y órdenes con 'told to / warned not to'.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-2-d1",
+            "mode": "affirmative",
+            "spanish": "El entrevistador me preguntó si yo tenía experiencia liderando proyectos. (+)",
+            "english": "The interviewer asked me if I had experience leading projects.",
+            "parts": [
+                  {
+                        "token": "The interviewer asked",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "me if I had",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "experience leading",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "projects.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-2-d2",
+            "mode": "negative",
+            "spanish": "El profesor nos advirtió a nosotros que no tocáramos los químicos. (-)",
+            "english": "The professor warned us not to touch the chemicals.",
+            "parts": [
+                  {
+                        "token": "The professor warned",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "us not to touch",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the dangerous",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "chemicals.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-2-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué te preguntó el panel de la beca con respecto a tu liderazgo? (?)",
+            "english": "What did the scholarship panel ask you regarding your leadership?",
+            "parts": [
+                  {
+                        "token": "What did the scholarship",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "panel ask you",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "regarding your",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "leadership?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-3": {
+    classId: "c-teens-advanced-3",
+    title: "Class 3: Mastering Relative Clauses (Defining vs Non-Defining)",
+    description: "Aprende a conectar ideas complejas y enriquecer tus descripciones usando Relative Clauses: pronombres relativos (who, which, that, whose, where, when), la diferencia vital entre Defining (esencial, sin comas) y Non-Defining (información extra, entre comas).",
+    sentences: [
+      {
+            "id": "c-teens-advanced-3-d1",
+            "mode": "affirmative",
+            "spanish": "Sofía quien es nuestra líder organizó un hackathon ambiental inspirador. (+)",
+            "english": "Sofia who is our leader organized an inspiring environmental hackathon.",
+            "parts": [
+                  {
+                        "token": "Sofia who is our leader",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "organized an inspiring",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "environmental",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "hackathon.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-3-d2",
+            "mode": "negative",
+            "spanish": "Nosotros entrevistamos a una científica cuya investigación ganó un premio. (-)",
+            "english": "We interviewed a scientist whose research won an international award.",
+            "parts": [
+                  {
+                        "token": "We interviewed a scientist",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "whose research won",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "an international",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "award.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-3-d3",
+            "mode": "interrogative",
+            "spanish": "¿Quién es el creador pionero cuyo avance tecnológico admiras más? (?)",
+            "english": "Who is the pioneering creator whose breakthrough you admire most?",
+            "parts": [
+                  {
+                        "token": "Who is the pioneering",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "creator whose breakthrough",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "you admire",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "most?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-4": {
+    classId: "c-teens-advanced-4",
+    title: "Class 4: Tech Disruptions & Modern Inventions (Passive Voice)",
+    description: "Aprende a transformar oraciones activas a Voz Pasiva (Be + Participio Pasado) para enfatizar inventos, descubrimientos tecnológicos y procesos industriales donde la acción o el objeto importa más que el ejecutor.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-4-d1",
+            "mode": "affirmative",
+            "spanish": "Este portátil ecológico está diseñado con plásticos reciclados del océano. (+)",
+            "english": "This eco laptop is engineered with recycled ocean plastics.",
+            "parts": [
+                  {
+                        "token": "This eco laptop is",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "engineered with recycled",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "ocean",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "plastics.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-4-d2",
+            "mode": "negative",
+            "spanish": "Las contraseñas de usuarios no son almacenadas en texto plano sin seguridad. (-)",
+            "english": "User passwords are not stored in insecure plain text.",
+            "parts": [
+                  {
+                        "token": "User passwords are",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "not stored in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "insecure plain",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "text.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-4-d3",
+            "mode": "interrogative",
+            "spanish": "¿Fue este sistema de filtración probado en comunidades rurales? (?)",
+            "english": "Was this filtration system tested in rural communities?",
+            "parts": [
+                  {
+                        "token": "Was this filtration",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "system tested in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "rural",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "communities?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-5": {
+    classId: "c-teens-advanced-5",
+    title: "Class 5: Global News Reports & Scientific Discoveries (Advanced Passive)",
+    description: "Domina las estructuras complejas de la Voz Pasiva en Present Perfect (has/have been discovered), Futuro Simple (will be launched) y con Verbos Modales (must be protected, can be achieved) para reportes científicos, espaciales y ambientales de escala global.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-5-d1",
+            "mode": "affirmative",
+            "spanish": "Un observatorio de espacio profundo será desplegado el próximo año. (+)",
+            "english": "A deep space observatory will be deployed next year.",
+            "parts": [
+                  {
+                        "token": "A deep space observatory",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "will be deployed",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "next",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "year.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-5-d2",
+            "mode": "negative",
+            "spanish": "Los ecosistemas de páramo deben ser protegidos de la minería ilegal. (-)",
+            "english": "Paramo ecosystems must be protected from illegal mining.",
+            "parts": [
+                  {
+                        "token": "Paramo ecosystems must",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "be protected from",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "illegal",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "mining.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-5-d3",
+            "mode": "interrogative",
+            "spanish": "¿Ha sido este algoritmo cuántico probado por expertos en ciberseguridad? (?)",
+            "english": "Has this quantum algorithm been tested by cybersecurity experts?",
+            "parts": [
+                  {
+                        "token": "Has this quantum algorithm",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "been tested by",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "cybersecurity",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "experts?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-6": {
+    classId: "c-teens-advanced-6",
+    title: "Class 6: Authentic Teen Idioms & Expressions in Daily Contexts",
+    description: "Aprende los modismos e idioms más sofisticados y naturales de la lengua inglesa (bite the bullet, hit the nail on the head, through the grapevine, a blessing in disguise, steal someone's thunder, see eye to eye) para hablar con estilo nativo sin caer en traducciones literales.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-6-d1",
+            "mode": "affirmative",
+            "spanish": "Ese tropiezo inicial fue verdaderamente una bendición disfrazada para nosotros. (+)",
+            "english": "That initial setback was truly a blessing in disguise for us.",
+            "parts": [
+                  {
+                        "token": "That initial setback was",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "truly a blessing",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "in disguise",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "for us.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-6-d2",
+            "mode": "negative",
+            "spanish": "Tú diste en el clavo cuando dijiste que la constancia supera al talento. (-)",
+            "english": "You hit the nail on the head about consistency beating talent.",
+            "parts": [
+                  {
+                        "token": "You hit the nail",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "on the head about",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "consistency beating",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "talent.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-6-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cómo manejas tú las reuniones cuando no están todos de acuerdo? (?)",
+            "english": "How do you handle meetings when peers do not see eye to eye?",
+            "parts": [
+                  {
+                        "token": "How do you handle",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "meetings when peers do",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "not see",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "eye to eye?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-7": {
+    classId: "c-teens-advanced-7",
+    title: "Class 7: Advanced Phrasal Verbs in High-Stakes Leadership & Problem Solving",
+    description: "Domina los phrasal verbs ejecutivos más potentes para liderar equipos en momentos de alta presión (step up, bridge the gap, iron out, look into, back out of, hammer out) y resolver crisis con autoridad comunicativa en inglés.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-7-d1",
+            "mode": "affirmative",
+            "spanish": "Cuando surgió la crisis Mariana dio un paso al frente y lideró la reunión. (+)",
+            "english": "When crisis struck Mariana stepped up and led the meeting.",
+            "parts": [
+                  {
+                        "token": "When crisis struck",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "Mariana stepped up and",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "led the emergency",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "meeting.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-7-d2",
+            "mode": "negative",
+            "spanish": "Ellos prometieron que no se retirarían del acuerdo de financiamiento. (-)",
+            "english": "They promised they would not back out of the agreement.",
+            "parts": [
+                  {
+                        "token": "They promised they would",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "not back out of",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the funding",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "agreement.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-7-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cómo podemos cerrar la brecha de comunicación entre estudiantes y directivas? (?)",
+            "english": "How can we bridge the communication gap between students and staff?",
+            "parts": [
+                  {
+                        "token": "How can we bridge",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the communication gap between",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "students and",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "staff?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-8": {
+    classId: "c-teens-advanced-8",
+    title: "Class 8: The Great AI & Ethics Student Forum",
+    description: "Aprende el arte supremo del debate estilo Oxford: estructurar argumentos dialécticos complejos usando cláusulas concesivas avanzadas (granted that, even though, in spite of the fact that), refutar falacias con datos empíricos y liderar foros sobre ética en inteligencia artificial.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-8-d1",
+            "mode": "affirmative",
+            "spanish": "Admitiendo que la IA es rápida el razonamiento ético humano es irremplazable. (+)",
+            "english": "Granted that AI is fast human ethical reasoning is irreplaceable.",
+            "parts": [
+                  {
+                        "token": "Granted that AI is fast",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "human ethical reasoning",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "is completely",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "irreplaceable.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-8-d2",
+            "mode": "negative",
+            "spanish": "Debo cuestionar la premisa de que los algoritmos son siempre objetivos. (-)",
+            "english": "I must challenge the premise that algorithms are always objective.",
+            "parts": [
+                  {
+                        "token": "I must challenge the premise",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "that algorithms are",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "always completely",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "objective.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-8-d3",
+            "mode": "interrogative",
+            "spanish": "¿Puede la parte contraria fundamentar su afirmación con pruebas empíricas? (?)",
+            "english": "Can the opposing side substantiate their claim with empirical proof?",
+            "parts": [
+                  {
+                        "token": "Can the opposing side",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "substantiate their claim",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "with empirical",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "proof?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-9": {
+    classId: "c-teens-advanced-9",
+    title: "Class 9: Crisis Management & Global Environmental Summits",
+    description: "Domina la estructura más avanzada de los condicionales: los Mixed Conditionals (Past Condition ➔ Present Result: If we had acted sooner, our ecosystems would be safer today / Present Condition ➔ Past Result) para cumbres climáticas de la ONU y protocolos de gestión de crisis.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-9-d1",
+            "mode": "affirmative",
+            "spanish": "Si hubiéramos actuado hace veinte años nuestro planeta no estaría en crisis hoy. (+)",
+            "english": "If we had acted twenty years ago our planet wouldn't be in crisis today.",
+            "parts": [
+                  {
+                        "token": "If we had acted",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "twenty years ago our",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "planet wouldn't be",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "in crisis today.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-9-d2",
+            "mode": "negative",
+            "spanish": "Si Mateo no hubiera aprendido a programar no estaría desarrollando robótica hoy. (-)",
+            "english": "If Mateo hadn't learned to code he wouldn't be building robotics today.",
+            "parts": [
+                  {
+                        "token": "If Mateo hadn't learned",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "to code he wouldn't",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "be building robotics",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "today.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-9-d3",
+            "mode": "interrogative",
+            "spanish": "¿Estarían los océanos más limpios hoy si hubiéramos prohibido los plásticos antes? (?)",
+            "english": "Would oceans be cleaner today if we had banned plastics earlier?",
+            "parts": [
+                  {
+                        "token": "Would oceans be cleaner",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "today if we had",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "banned plastics",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "earlier?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-advanced-10": {
+    classId: "c-teens-advanced-10",
+    title: "Class 10: Level 8 Capstone: Global Youth NGO Leadership Pitch & Executive Interview",
+    description: "Gran proyecto final y evaluación integradora del Nivel 8 (Advanced - Teen Leaders): Reported Speech, Relative Clauses, Voz Pasiva Avanzada, Idioms, Phrasal Verbs Ejecutivos, Mixed Conditionals, y Pitch de Liderazgo de una ONG Juvenil ante una Junta Internacional.",
+    sentences: [
+      {
+            "id": "c-teens-advanced-10-d1",
+            "mode": "affirmative",
+            "spanish": "Nuestra ONG juvenil fue galardonada con la máxima subvención filantrópica. (+)",
+            "english": "Our youth NGO was awarded the maximum philanthropic grant.",
+            "parts": [
+                  {
+                        "token": "Our youth NGO was",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "awarded the maximum",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "philanthropic",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "grant.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-10-d2",
+            "mode": "negative",
+            "spanish": "Si no hubiéramos actuado los jóvenes rurales no estarían conectados hoy. (-)",
+            "english": "If we hadn't acted rural youth wouldn't be connected today.",
+            "parts": [
+                  {
+                        "token": "If we hadn't acted",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "rural youth wouldn't",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "be connected",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "today.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-advanced-10-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cómo garantizará su equipo la transparencia fiscal y el impacto social? (?)",
+            "english": "How will your team guarantee fiscal transparency and social impact?",
+            "parts": [
+                  {
+                        "token": "How will your team",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "guarantee fiscal transparency",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "and social",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "impact?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-1": {
+    classId: "c-teens-elite-1",
+    title: "Class 1: Future Milestones & Tech Forecasting",
+    description: "Aprende a formular visiones futuristas de alta precisión diferenciando el Future Continuous (will be doing: acción en progreso en un momento futuro) y el Future Perfect (will have done: meta concluida antes de una fecha límite como 'by 2035').",
+    sentences: [
+      {
+            "id": "c-teens-elite-1-d1",
+            "mode": "affirmative",
+            "spanish": "Para 2035 los ingenieros biomédicos habrán sintetizado órganos biónicos. (+)",
+            "english": "By 2035 biomedical engineers will have synthesized bionic organs.",
+            "parts": [
+                  {
+                        "token": "By 2035 biomedical",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "engineers will have",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "synthesized bionic",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "organs.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-1-d2",
+            "mode": "negative",
+            "spanish": "En diez años millones de viajeros estarán desplazándose en taxis aéreos. (-)",
+            "english": "In ten years millions of commuters will be traveling in air taxis.",
+            "parts": [
+                  {
+                        "token": "In ten years millions",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "of commuters will be",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "traveling in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "air taxis.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-1-d3",
+            "mode": "interrogative",
+            "spanish": "¿Habrán los reactores de fusión reemplazado a las plantas fósiles para 2040? (?)",
+            "english": "Will clean fusion reactors have replaced fossil plants by 2040?",
+            "parts": [
+                  {
+                        "token": "Will clean fusion reactors",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "have replaced fossil",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "plants by",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "2040?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-2": {
+    classId: "c-teens-elite-2",
+    title: "Class 2: High-Stakes Dilemmas & Complex Mixed Conditionals",
+    description: "Domina el análisis de contrafácticos históricos y post-mortems ejecutivos de crisis usando Mixed Conditionals bidireccionales: Past Cause ➔ Present Consequence y Present Trait ➔ Past Outcome para evaluar decisiones críticas de negocios, ciberseguridad y diplomacia.",
+    sentences: [
+      {
+            "id": "c-teens-elite-2-d1",
+            "mode": "affirmative",
+            "spanish": "Si no hubiéramos parchado el cortafuegos nuestra base de datos estaría comprometida hoy. (+)",
+            "english": "If we hadn't patched the firewall our database would be compromised today.",
+            "parts": [
+                  {
+                        "token": "If we hadn't patched",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the firewall our database",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "would be compromised",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "today.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-2-d2",
+            "mode": "negative",
+            "spanish": "Si nuestros ingenieros no fueran vigilantes la empresa habría sufrido pérdidas. (-)",
+            "english": "If our engineers weren't vigilant the firm would have suffered losses.",
+            "parts": [
+                  {
+                        "token": "If our engineers weren't",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "vigilant the firm",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "would have suffered",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "losses.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-2-d3",
+            "mode": "interrogative",
+            "spanish": "¿Sería nuestra empresa rentable hoy si hubiéramos rechazado el capital semilla? (?)",
+            "english": "Would our firm be profitable today if we had rejected seed capital?",
+            "parts": [
+                  {
+                        "token": "Would our firm be",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "profitable today if we",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "had rejected",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "seed capital?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-3": {
+    classId: "c-teens-elite-3",
+    title: "Class 3: Cleft Sentences & Emphatic Rhetoric",
+    description: "Aprende el recurso retórico supremo de los grandes oradores (Steve Jobs, Barack Obama): las Cleft Sentences (It was X that..., What we truly need is..., All they wanted was...) para poner el reflector del escenario sobre el punto clave de tu discurso.",
+    sentences: [
+      {
+            "id": "c-teens-elite-3-d1",
+            "mode": "affirmative",
+            "spanish": "Fue la perseverancia inquebrantable de Sofía lo que inspiró a nuestro equipo. (+)",
+            "english": "It was Sofia's unwavering persistence that inspired our team.",
+            "parts": [
+                  {
+                        "token": "It was Sofia's unwavering",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "persistence that inspired",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "our robotics",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "team.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-3-d2",
+            "mode": "negative",
+            "spanish": "Lo que motiva a nuestra fundación es el acceso equitativo a la educación. (-)",
+            "english": "What motivates our foundation is equitable access to education.",
+            "parts": [
+                  {
+                        "token": "What motivates our foundation",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "is equitable access",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "to coding",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "education.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-3-d3",
+            "mode": "interrogative",
+            "spanish": "¿Fue el espíritu colaborativo lo que aseguró el primer puesto en el torneo? (?)",
+            "english": "Was it collaborative spirit that secured first place in the tournament?",
+            "parts": [
+                  {
+                        "token": "Was it collaborative spirit",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "that secured first place",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "in the",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "tournament?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-4": {
+    classId: "c-teens-elite-4",
+    title: "Class 4: Rhetorical Inversions & High-Impact Oratory",
+    description: "Domina la joya de la corona de la gramática inglesa avanzada: las Inversiones Retóricas tras adverbios negativos y restrictivos (Rarely have I seen, Not only did we build, Under no circumstances should we compromise, Seldom does a leader...) para discursos parlamentarios y oratoria de máximo nivel.",
+    sentences: [
+      {
+            "id": "c-teens-elite-4-d1",
+            "mode": "affirmative",
+            "spanish": "Rara vez he presenciado a una delegación juvenil presentar tal investigación. (+)",
+            "english": "Rarely have I seen a youth delegation present such research.",
+            "parts": [
+                  {
+                        "token": "Rarely have I seen",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "a youth delegation present",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "such rigorous",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "research.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-4-d2",
+            "mode": "negative",
+            "spanish": "No solo nuestro equipo ganó el torneo sino que rompimos el récord. (-)",
+            "english": "Not only did our team win the tournament but we broke the record.",
+            "parts": [
+                  {
+                        "token": "Not only did our team",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "win the tournament but",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "we broke the",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "historic record.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-4-d3",
+            "mode": "interrogative",
+            "spanish": "¿Bajo ninguna circunstancia debemos transigir en la privacidad digital? (?)",
+            "english": "Under no circumstances should we compromise on digital privacy?",
+            "parts": [
+                  {
+                        "token": "Under no circumstances should",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "we compromise on",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "citizen digital",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "privacy?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-5": {
+    classId: "c-teens-elite-5",
+    title: "Class 5: Diplomatic Softening, Hedging & Nuanced Negotiations",
+    description: "Aprende el lenguaje de los embajadores de carrera y negociadores multilaterales: técnicas de Hedging y suavización diplomática (I would venture to suggest, It is widely acknowledged that, It seems somewhat premature to conclude, With all due respect) para negociar acuerdos de paz, tratados de IA y desacuerdos sin generar fricciones.",
+    sentences: [
+      {
+            "id": "c-teens-elite-5-d1",
+            "mode": "affirmative",
+            "spanish": "Me atrevería a sugerir que nuestro comité considere un despliegue escalonado. (+)",
+            "english": "I would venture to suggest our committee consider a phased rollout.",
+            "parts": [
+                  {
+                        "token": "I would venture to suggest",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "our committee consider",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "a phased",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "rollout.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-5-d2",
+            "mode": "negative",
+            "spanish": "Parecería algo prematuro declarar la estabilidad total del sistema ahora. (-)",
+            "english": "It would appear somewhat premature to declare full system stability.",
+            "parts": [
+                  {
+                        "token": "It would appear somewhat",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "premature to declare",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "full system",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "stability.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-5-d3",
+            "mode": "interrogative",
+            "spanish": "¿Podría ser mutuamente ventajoso establecer un consejo asesor conjunto? (?)",
+            "english": "Might it be mutually advantageous to establish a joint advisory council?",
+            "parts": [
+                  {
+                        "token": "Might it be mutually",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "advantageous to establish",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "a joint advisory",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "council?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-6": {
+    classId: "c-teens-elite-6",
+    title: "Class 6: Advanced Discursive & Argumentative Essay Architecture",
+    description: "Aprende la arquitectura académica de ensayos de nivel Oxford y Cambridge: diseño de Tesis en 3 Niveles (Gancho de Concesión + Postura Central + Dos Justificaciones de Apoyo), conectores de transición académica de alto nivel (Whereas, In stark contrast to, Compelling empirical data dictates) y defensa de tesis académica ante un panel de revisión por pares.",
+    sentences: [
+      {
+            "id": "c-teens-elite-6-d1",
+            "mode": "affirmative",
+            "spanish": "Si bien la IA acelera la investigación el juicio humano debe gobernar la ciencia. (+)",
+            "english": "While AI accelerates research human judgment must govern science.",
+            "parts": [
+                  {
+                        "token": "While AI accelerates research",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "human ethical judgment",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "must govern modern",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "science.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-6-d2",
+            "mode": "negative",
+            "spanish": "Nuestra metodología cuantitativa incorpora un riguroso estudio longitudinal. (-)",
+            "english": "Our quantitative methodology incorporates a rigorous longitudinal study.",
+            "parts": [
+                  {
+                        "token": "Our quantitative methodology",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "incorporates a rigorous",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "five-year longitudinal",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "study.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-6-d3",
+            "mode": "interrogative",
+            "spanish": "¿Tiene en cuenta el marco del autor las variables socioeconómicas? (?)",
+            "english": "Does the author's framework account for socioeconomic variables?",
+            "parts": [
+                  {
+                        "token": "Does the author's framework",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "account for diverse",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "socioeconomic",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "variables?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-7": {
+    classId: "c-teens-elite-7",
+    title: "Class 7: Empirical Research Abstracts & Academic Citations",
+    description: "Domina el formato estándar internacional IMRAD (Introduction, Methods, Results, And Discussion) para condensar investigaciones complejas en resúmenes científicos (Abstracts) de 150 palabras, citar literatura académica con integridad ética y defender pósteres científicos ante jurados internacionales.",
+    sentences: [
+      {
+            "id": "c-teens-elite-7-d1",
+            "mode": "affirmative",
+            "spanish": "Un ensayo cuantitativo doble ciego fue conducido en veinte acueductos. (+)",
+            "english": "A double-blind quantitative trial was conducted across twenty water systems.",
+            "parts": [
+                  {
+                        "token": "A double-blind quantitative",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "trial was conducted",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "across twenty",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "water systems.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-7-d2",
+            "mode": "negative",
+            "spanish": "El análisis empírico reveló una reducción del noventa y ocho por ciento. (-)",
+            "english": "Empirical analysis revealed a ninety-eight percent reduction in pollutants.",
+            "parts": [
+                  {
+                        "token": "Empirical analysis revealed",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "a ninety-eight percent",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "reduction in",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "pollutants.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-7-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cómo corroboran sus resultados la literatura académica existente? (?)",
+            "english": "How do your results corroborate existing scholarly literature?",
+            "parts": [
+                  {
+                        "token": "How do your results",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "corroborate existing",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "scholarly",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "literature?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-8": {
+    classId: "c-teens-elite-8",
+    title: "Class 8: Executive Boardrooms, Parliamentary Procedure & Conflict Mediation",
+    description: "Domina el protocolo parlamentario oficial internacional (Robert's Rules of Order: I move that..., I second the motion, Point of order, Table the motion) para presidir juntas directivas ejecutivas, arbitrar disputas entre inversionistas y ratificar resoluciones vinculantes en inglés.",
+    sentences: [
+      {
+            "id": "c-teens-elite-8-d1",
+            "mode": "affirmative",
+            "spanish": "Propongo la moción de que nuestra junta ratifique el protocolo de ciberseguridad. (+)",
+            "english": "I move that our board ratify the cybersecurity protocol.",
+            "parts": [
+                  {
+                        "token": "I move that our",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "board ratify the revised",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "cybersecurity",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "protocol.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-8-d2",
+            "mode": "negative",
+            "spanish": "La moción fue propuesta y secundada; se abre el debate. (-)",
+            "english": "The motion has been moved and seconded; debate is open.",
+            "parts": [
+                  {
+                        "token": "The motion has been",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "moved and seconded; debate",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "is now officially",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "open.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-8-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué mayoría estatutaria es requerida para aprobar la fusión? (?)",
+            "english": "What statutory majority is required to approve the merger?",
+            "parts": [
+                  {
+                        "token": "What statutory majority",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "is required to approve",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the corporate",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "merger?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-9": {
+    classId: "c-teens-elite-9",
+    title: "Class 9: Crisis Leadership, Hostile Press Conferences & PR Damage Control",
+    description: "Domina el arte supremo de la vocería ejecutiva bajo fuego mediático: la Técnica de Bridging (Acknowledge + Pivot Linker + Core Message) para neutralizar preguntas agresivas o capciosas de periodistas de investigación y proyectar autoridad serena en transmisiones mundiales en vivo.",
+    sentences: [
+      {
+            "id": "c-teens-elite-9-d1",
+            "mode": "affirmative",
+            "spanish": "Si bien entiendo la preocupación lo que la auditoría confirma es que no hubo pérdida de datos. (+)",
+            "english": "While I understand the concern what the audit confirms is zero data loss.",
+            "parts": [
+                  {
+                        "token": "While I understand the concern",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "what the audit confirms",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "is zero user",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "data loss.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-9-d2",
+            "mode": "negative",
+            "spanish": "Nuestra división de ingeniería desplegó clústeres automatizados de respaldo. (-)",
+            "english": "Our engineering division deployed automated failover clusters.",
+            "parts": [
+                  {
+                        "token": "Our engineering division",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "deployed automated failover",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "redundancy",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "clusters.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-9-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué pasos de remediación instituirá su equipo para restaurar la confianza pública? (?)",
+            "english": "What remediation steps will your team institute to restore public trust?",
+            "parts": [
+                  {
+                        "token": "What remediation steps",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "will your team institute",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "to restore",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "public trust?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-10": {
+    classId: "c-teens-elite-10",
+    title: "Class 10: Designing a Global Venture: Unit Economics & Value Proposition",
+    description: "Aprende las finanzas y métricas estratégicas de los mejores fundadores de Silicon Valley: Economía Unitaria (Unit Economics: LTV to CAC ratio > 3:1, Churn rate, Gross margins), Propuesta de Valor Única (UVP) y Fosos de Defensibilidad Competitiva (Network effects, Proprietary algorithms, Moats) para defender la viabilidad financiera de tu startup ante fondos de Venture Capital.",
+    sentences: [
+      {
+            "id": "c-teens-elite-10-d1",
+            "mode": "affirmative",
+            "spanish": "Nuestro ratio de LTV a CAC se sitúa en un saludable cuatro a uno. (+)",
+            "english": "Our LTV to CAC ratio stands at a healthy four to one.",
+            "parts": [
+                  {
+                        "token": "Our LTV to CAC ratio",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "stands at a healthy",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "four point two",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "to one.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-10-d2",
+            "mode": "negative",
+            "spanish": "Nuestra tasa de cancelación anual se mantiene por debajo del dos por ciento. (-)",
+            "english": "Our annual customer churn rate is maintained below two percent.",
+            "parts": [
+                  {
+                        "token": "Our annual customer",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "churn rate is strictly",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "maintained below",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "two percent.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-10-d3",
+            "mode": "interrogative",
+            "spanish": "¿Genera su empresa márgenes brutos superiores al setenta y cinco por ciento? (?)",
+            "english": "Does your enterprise generate gross margins exceeding seventy-five percent?",
+            "parts": [
+                  {
+                        "token": "Does your enterprise",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "generate gross margins",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "exceeding",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "seventy-five percent?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-elite-11": {
+    classId: "c-teens-elite-11",
+    title: "Class 11: Level 9 Grand Capstone: International Tech Venture Seed Pitch & Global Keynote",
+    description: "Gran proyecto final y evaluación de graduación del Nivel 9 (Advanced Elite: Global Tech Founders & Diplomacy): Síntesis de Future Tenses, Mixed Conditionals, Cleft Sentences, Inversiones Retóricas, Suavización Diplomática, Ensayos Académicos, IMRAD Abstracts, Robert's Rules of Order, Media Bridging, Unit Economics, y Pitch de Inversión Semilla ante Inversionistas de Silicon Valley con pase a Level 10 (Masters of Fluency).",
+    sentences: [
+      {
+            "id": "c-teens-elite-11-d1",
+            "mode": "affirmative",
+            "spanish": "Lo que nuestra tecnología logra es empoderar a miles de estudiantes rurales. (+)",
+            "english": "What our technology achieves is empowering thousands of rural students.",
+            "parts": [
+                  {
+                        "token": "What our technology achieves",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "is empowering thousands",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "of rural",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "students.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-11-d2",
+            "mode": "negative",
+            "spanish": "Rara vez una startup ha alcanzado tales márgenes de rentabilidad. (-)",
+            "english": "Rarely has a startup achieved such profit margins.",
+            "parts": [
+                  {
+                        "token": "Rarely has a startup",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "achieved such eighty-two",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "percent profit",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "margins.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-elite-11-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cómo empoderará su dominio del inglés su trayectoria como fundador? (?)",
+            "english": "How will your mastery of English empower your trajectory as founder?",
+            "parts": [
+                  {
+                        "token": "How will your mastery",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "of English empower your",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "trajectory as",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "founder?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-1": {
+    classId: "c-teens-masters-1",
+    title: "Class 1: Oxford-Union Parliamentary Debate & Dialectical Refutation",
+    description: "Domina el debate parlamentario al más alto nivel del mundo: estructura de discursos de 7 minutos (Prime Minister y Leader of Opposition), interpelaciones parlamentarias en vivo (Points of Information), exposición de falacias dialécticas complejas y argumentación estilo Oxford Union.",
+    sentences: [
+      {
+            "id": "c-teens-masters-1-d1",
+            "mode": "affirmative",
+            "spanish": "Los datos empíricos demuestran que las salvaguardas éticas aceleran la inversión. (+)",
+            "english": "Empirical data proves that ethical guardrails accelerate investment.",
+            "parts": [
+                  {
+                        "token": "Empirical data proves that",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "ethical guardrails accelerate",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "sustainable capital",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "investment.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-1-d2",
+            "mode": "negative",
+            "spanish": "El líder opositor presenta un falso dilema entre privacidad y seguridad. (-)",
+            "english": "The opposing leader presents a false dilemma between privacy and security.",
+            "parts": [
+                  {
+                        "token": "The opposing leader presents",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "a false dilemma between",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "privacy and",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "security.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-1-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué precedente moral duradero establecerá esta cámara parlamentaria hoy? (?)",
+            "english": "What enduring moral precedent will this parliamentary chamber establish today?",
+            "parts": [
+                  {
+                        "token": "What enduring moral precedent",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "will this parliamentary chamber",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "establish",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "today?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-2": {
+    classId: "c-teens-masters-2",
+    title: "Class 2: Pop Culture Semiotics, Media Ecology & Digital Memetics",
+    description: "Aprende el análisis cultural y semiótico de nivel posgrado: la teoría de los signos de Saussure (Signifier vs Signified), los simulacros de Baudrillard, la ecología de medios de Marshall McLuhan ('The medium is the message') y la propagación de memética digital en redes sociales.",
+    sentences: [
+      {
+            "id": "c-teens-masters-2-d1",
+            "mode": "affirmative",
+            "spanish": "El significante es el auto eléctrico pero el significado encarna prestigio social. (+)",
+            "english": "The signifier is the electric car but the signified embodies social prestige.",
+            "parts": [
+                  {
+                        "token": "The signifier is the",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "electric car but the signified",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "embodies elite social",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "prestige.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-2-d2",
+            "mode": "negative",
+            "spanish": "Los espectáculos digitales curados reemplazan la experiencia física auténtica. (-)",
+            "english": "Curated digital spectacles supersede authentic physical experience.",
+            "parts": [
+                  {
+                        "token": "Curated digital spectacles",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "completely supersede",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "authentic physical",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "experience.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-2-d3",
+            "mode": "interrogative",
+            "spanish": "¿De qué manera condicionan los algoritmos la percepción de autenticidad? (?)",
+            "english": "How do algorithms condition the perception of authenticity?",
+            "parts": [
+                  {
+                        "token": "How do recommendation",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "algorithms condition the",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "perception of",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "authenticity?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-3": {
+    classId: "c-teens-masters-3",
+    title: "Class 3: Ivy League Graduate Seminars & Socratic Cross-Examination",
+    description: "Domina la dialéctica de los seminarios de posgrado de Harvard, Yale y Princeton: el Método Socrático de interrogación cruzada, la falsabilidad epistemológica de Karl Popper, la deconstrucción de supuestos ontológicos y la defensa de hipótesis científicas ante un tribunal doctoral.",
+    sentences: [
+      {
+            "id": "c-teens-masters-3-d1",
+            "mode": "affirmative",
+            "spanish": "Nuestro modelo cuántico satisface el criterio de falsabilidad de Karl Popper. (+)",
+            "english": "Our quantum model satisfies Karl Popper's falsifiability criterion.",
+            "parts": [
+                  {
+                        "token": "Our quantum model satisfies",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "Karl Popper's falsifiability",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "demarcation",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "criterion.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-3-d2",
+            "mode": "negative",
+            "spanish": "Definir inteligencia solo con pruebas computacionales comete una tautología circular. (-)",
+            "english": "Defining intelligence purely with tests commits a circular tautology.",
+            "parts": [
+                  {
+                        "token": "Defining intelligence purely",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "with tests commits a",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "circular philosophical",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "tautology.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-3-d3",
+            "mode": "interrogative",
+            "spanish": "¿Sobre qué premisa epistemológica afirma que la IA comprende de verdad? (?)",
+            "english": "Upon what epistemological premise do you claim AI truly understands?",
+            "parts": [
+                  {
+                        "token": "Upon what epistemological",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "premise do you claim",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "AI truly",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "understands?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-4": {
+    classId: "c-teens-masters-4",
+    title: "Class 4: TED Keynotes, High-Impact Storytelling & Thought Leadership",
+    description: "Domina el arte de las conferencias TED de 18 minutos que cambian el mundo: la Tríada Retórica de Aristóteles (Ethos: credibilidad moral, Pathos: resonancia emocional, Logos: evidencia empírica), el arco narrativo del Viaje del Héroe y el diseño de 'Sticky Metaphors' memorables para inspirar a millones de personas.",
+    sentences: [
+      {
+            "id": "c-teens-masters-4-d1",
+            "mode": "affirmative",
+            "spanish": "Piensen en la IA como un telescopio intelectual que magnifica la curiosidad. (+)",
+            "english": "Think of AI as an intellectual telescope that magnifies curiosity.",
+            "parts": [
+                  {
+                        "token": "Think of AI as",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "an intellectual telescope that",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "magnifies our creative",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "curiosity.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-4-d2",
+            "mode": "negative",
+            "spanish": "Nuestros centros solares demostraron que la alfabetización se acelera con herramientas equitativas. (-)",
+            "english": "Our solar hubs proved literacy accelerates with equitable tools.",
+            "parts": [
+                  {
+                        "token": "Our solar hubs proved",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "literacy accelerates when",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "given equitable",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "tools.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-4-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué futuro extraordinario creará nuestra generación cuando elijamos el coraje? (?)",
+            "english": "What extraordinary future will our generation create when we choose courage?",
+            "parts": [
+                  {
+                        "token": "What extraordinary future will",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "our generation create when",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "we choose unwavering",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "courage?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-5": {
+    classId: "c-teens-masters-5",
+    title: "Class 5: Geopolitical Strategy, Bilateral Treaties & Multilateral Summits",
+    description: "Domina el lenguaje oficial de los tratados de Naciones Unidas y el Consejo de Seguridad: cláusulas preambulares (Emphasizing, Reaffirming, Deeply concerned by) y cláusulas operativas (Resolves to, Mandates that, Decides accordingly) para redactar resoluciones de derecho internacional en inglés.",
+    sentences: [
+      {
+            "id": "c-teens-masters-5-d1",
+            "mode": "affirmative",
+            "spanish": "Reafirmando los principios universales de conservación ecológica y paz mundial. (+)",
+            "english": "Reaffirming universal principles of ecological conservation and peace.",
+            "parts": [
+                  {
+                        "token": "Reaffirming universal principles",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "of ecological conservation",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "and world",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "peace,",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-5-d2",
+            "mode": "negative",
+            "spanish": "1. Resuelve que todas las naciones establecerán corredores protegidos para 2035. (-)",
+            "english": "1. Resolves that all nations shall establish protected corridors by 2035.",
+            "parts": [
+                  {
+                        "token": "1. Resolves that all",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "nations shall establish",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "protected biological corridors",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "by 2035;",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-5-d3",
+            "mode": "interrogative",
+            "spanish": "¿Ejerce alguna delegación permanente el poder de veto contra este acuerdo? (?)",
+            "english": "Does any permanent delegation exercise veto power against this accord?",
+            "parts": [
+                  {
+                        "token": "Does any permanent delegation",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "exercise veto power against",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "this historic peace",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "accord?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-6": {
+    classId: "c-teens-masters-6",
+    title: "Class 6: Literary Critique, Cinematic Deconstruction & Aesthetic Analysis",
+    description: "Domina el análisis cinematográfico y literario de nivel Festival de Cannes y Premio Nobel: deconstrucción de puesta en escena (mise-en-scène), cinematografía (chiaroscuro, Dutch angles, color palettes), sonido diegético vs no diegético, narradores no confiables (unreliable narrators) y crítica estética de obras maestras.",
+    sentences: [
+      {
+            "id": "c-teens-masters-6-d1",
+            "mode": "affirmative",
+            "spanish": "La iluminación de claroscuro tenue exterioriza el aislamiento moral del personaje. (+)",
+            "english": "Low-key chiaroscuro lighting externalizes the character's moral isolation.",
+            "parts": [
+                  {
+                        "token": "Low-key chiaroscuro lighting",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "externalizes the character's",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "profound moral",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "isolation.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-6-d2",
+            "mode": "negative",
+            "spanish": "El silenciamiento repentino del sonido diegético intensifica el clímax dramático. (-)",
+            "english": "The sudden silencing of diegetic sound heightens the dramatic climax.",
+            "parts": [
+                  {
+                        "token": "The sudden silencing of",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "diegetic sound heightens",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "the existential dramatic",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "climax.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-6-d3",
+            "mode": "interrogative",
+            "spanish": "¿Refuerza el encuadre asimétrico la fragmentación psicológica del protagonista? (?)",
+            "english": "Does asymmetrical framing reinforce the protagonist's fragmentation?",
+            "parts": [
+                  {
+                        "token": "Does asymmetrical framing",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "meaningfully reinforce the",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "protagonist's psychological",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "fragmentation?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-7": {
+    classId: "c-teens-masters-7",
+    title: "Class 7: Rhodes & Fulbright International Fellowship Interviews",
+    description: "Domina las entrevistas más competitivas y prestigiosas del mundo académico: la Beca Rhodes (Universidad de Oxford) y la Beca Fulbright (EE. UU.): la Metodología STAR Avanzada (Situation, Task, Action, Result + Systemic Transformation), dilemas de liderazgo ético bajo fuego y defensa de proyectos de impacto social ante un tribunal de ex-rectores y embajadores.",
+    sentences: [
+      {
+            "id": "c-teens-masters-7-d1",
+            "mode": "affirmative",
+            "spanish": "Elegimos renunciar a la financiación antes que comprometer nuestra integridad ética. (+)",
+            "english": "We chose to forfeit funding rather than compromise our ethical integrity.",
+            "parts": [
+                  {
+                        "token": "We chose to forfeit",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "funding rather than compromise",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "our foundational ethical",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "integrity.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-7-d2",
+            "mode": "negative",
+            "spanish": "Un verdadero becario Rhodes combina excelencia académica con liderazgo de servicio. (-)",
+            "english": "A true Rhodes scholar combines scholarly excellence with servant leadership.",
+            "parts": [
+                  {
+                        "token": "A true Rhodes scholar",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "combines scholarly excellence",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "with selfless servant",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "leadership.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-7-d3",
+            "mode": "interrogative",
+            "spanish": "¿Cómo desmantelará su investigación la desigualdad educativa sistémica? (?)",
+            "english": "How will your research directly dismantle systemic inequality?",
+            "parts": [
+                  {
+                        "token": "How will your postgraduate",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "research directly dismantle",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "systemic educational",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "inequality?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-8": {
+    classId: "c-teens-masters-8",
+    title: "Class 8: Investigative Video Essays & Documentary Journalism",
+    description: "Domina la producción de videoensayos y periodismo documental al estilo The New York Times y Vox: ganchos de inicio en frío (cold open hooks), diseño de sonido Foley inmersivo, ritmo narrativo cinematográfico (narrative pacing), protección legal de fuentes confidenciales y ética periodística de nivel Pulitzer.",
+    sentences: [
+      {
+            "id": "c-teens-masters-8-d1",
+            "mode": "affirmative",
+            "spanish": "La auditoría fue falsificada y los sensores fueron silenciados en secreto. (+)",
+            "english": "The audit was falsified and the sensors were silenced in secret.",
+            "parts": [
+                  {
+                        "token": "The audit was falsified",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "and the sensors were",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "silenced in secret",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "surveillance.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-8-d2",
+            "mode": "negative",
+            "spanish": "Para proteger al informante de represalias el audio fue regrabado. (-)",
+            "english": "To protect the whistleblower the audio was re-recorded.",
+            "parts": [
+                  {
+                        "token": "To protect the whistleblower",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "from retaliation all audio",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "was forensically",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "re-recorded.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-8-d3",
+            "mode": "interrogative",
+            "spanish": "¿Corroboró el equipo de investigación los correos con telemetría satelital? (?)",
+            "english": "Did the investigative team corroborate emails with telemetry?",
+            "parts": [
+                  {
+                        "token": "Did the investigative team",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "corroborate the leaked emails",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "with satellite",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "telemetry?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-9": {
+    classId: "c-teens-masters-9",
+    title: "Class 9: Global Mega-Trends: Superintelligence, Bioethics & Climate",
+    description: "Aprende los debates interdisciplinarios más trascendentales del siglo XXI: gobernanza de riesgos existenciales de Superinteligencia Artificial (ASI Alignment, Orthogonality Thesis), bioética transhumana de edición genética CRISPR (Germline editing vs Somatic therapies) y geopolítica de geoingeniería solar planetaria.",
+    sentences: [
+      {
+            "id": "c-teens-masters-9-d1",
+            "mode": "affirmative",
+            "spanish": "Alinear la superinteligencia artificial requiere restricciones matemáticas demostrables. (+)",
+            "english": "Aligning artificial superintelligence requires provable mathematical constraints.",
+            "parts": [
+                  {
+                        "token": "Aligning artificial superintelligence",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "requires provable mathematical",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "safety value",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "constraints.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-9-d2",
+            "mode": "negative",
+            "spanish": "La modificación genética germinal no regulada arriesga crear castas biológicas. (-)",
+            "english": "Unregulated germline genetic modification risks creating biological castes.",
+            "parts": [
+                  {
+                        "token": "Unregulated germline genetic",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "modification risks creating",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "permanent biological",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "castes.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-9-d3",
+            "mode": "interrogative",
+            "spanish": "¿Pueden las instituciones hacer cumplir una moratoria efectiva sobre la IA letal? (?)",
+            "english": "Can institutions enforce an effective moratorium on lethal AI?",
+            "parts": [
+                  {
+                        "token": "Can international institutions",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "enforce an effective",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "moratorium on",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "lethal AI?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
+  "c-teens-masters-10": {
+    classId: "c-teens-masters-10",
+    title: "Class 10: Level 10 Grand Masters Capstone: C2 Fluency Mastery & Global Leadership Summit",
+    description: "Gran proyecto cumbre y graduación definitiva de todo el programa Teens (Niveles 0 a 10): Síntesis multidisciplinaria instantánea en tiempo real (Oxford Debate, Semiótica Cultural, Filosofía Socrática, Oratoria TED, Tratados de la ONU, Crítica de Cannes, Liderazgo Rhodes, Periodismo Documental, Superinteligencia Artificial y Bioética) y defensa ante el Gran Canciller de la Fluidez Global para obtener la Certificación C2 Master of English.",
+    sentences: [
+      {
+            "id": "c-teens-masters-10-d1",
+            "mode": "affirmative",
+            "spanish": "Dominar el inglés es desbloquear las llaves universales al pensamiento y la hermandad. (+)",
+            "english": "Mastering English is unlocking universal keys to thought and fellowship.",
+            "parts": [
+                  {
+                        "token": "Mastering English is unlocking",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "universal keys to thought",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "and global human",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "fellowship.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-10-d2",
+            "mode": "negative",
+            "spanish": "El verdadero liderazgo se forja en el crisol de la convicción moral y el servicio. (-)",
+            "english": "True leadership is forged in the crucible of moral conviction and service.",
+            "parts": [
+                  {
+                        "token": "True leadership is forged",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "in the crucible of moral",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "conviction and unselfish",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "service.",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      },
+      {
+            "id": "c-teens-masters-10-d3",
+            "mode": "interrogative",
+            "spanish": "¿Qué futuro extraordinario te atreverás a construir ahora que dominas el inglés? (?)",
+            "english": "What extraordinary future will you dare to build commanding English?",
+            "parts": [
+                  {
+                        "token": "What extraordinary future will",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "you dare to build now that",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "you command English with",
+                        "role": "kernel",
+                        "es": ""
+                  },
+                  {
+                        "token": "mastery?",
+                        "role": "kernel",
+                        "es": ""
+                  }
+            ]
+      }
+]
+  },
 };
 
 export function getCustomClassStructure(

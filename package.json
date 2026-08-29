@@ -12,7 +12,8 @@
     "lint": "tsc --noEmit",
     "audit:curriculum": "tsx scripts/audit-curriculum-progression.ts",
     "audit:images": "tsx scripts/audit-curriculum-images.ts",
-    "audit:evaluations": "node scripts/audit-evaluations.mjs"
+    "audit:evaluations": "node scripts/audit-evaluations.mjs",
+    "audit:teens": "node scripts/validateTeensStudio.cjs"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

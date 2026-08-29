@@ -3,6 +3,7 @@
 **CRITICAL SYSTEM INSTRUCTION**: You are STRICTLY FORBIDDEN from generating "flat", simplified, or placeholder classes. Every single class generated and added to `src/data/curriculum.ts` MUST rigorously follow this exact blueprint, slide by slide. You must maintain the aesthetic properties (`bgColor`, `imageUrl`), interactive properties (`options`, `correctOptionIndex`), and game types (`emoji-game`).
 
 ## 🔐 SUPABASE / BASE DE DATOS
+- **REGLA OBLIGATORIA DE PERSISTENCIA PERMANENTE**: Toda nueva funcionalidad, guardado de datos, progreso del alumno, vocabulario, evaluaciones o configuraciones DEBE almacenarse de forma permanente en Supabase. Queda estrictamente prohibido implementar soluciones que guarden información únicamente en el `localStorage` / `sessionStorage` del navegador (a menos que el usuario lo especifique explícitamente). `localStorage` solo debe usarse como respaldo en caché para resiliencia offline.
 - Para cualquier tarea de base de datos o subida a Supabase, primero revisar `.env.local`.
 - `.env.local` contiene las credenciales locales de Supabase y está ignorado por Git mediante `.gitignore`.
 - No pegar `service_role`, passwords ni connection strings reales en archivos versionados como `AGENTS.md`, scripts públicos o documentación.
@@ -144,13 +145,96 @@ This entire protocol applies across all tracks with age-appropriate visual & ped
 - **Animaciones CSS ligeras**:
   - Evitar animaciones infinitas de gradientes con filtros `blur` pesados o áreas de GPU sobredimensionadas que degraden el rendimiento en pantalla compartida y móviles.
 
-## 🛑 STRICT PROHIBITIONS
-- NEVER leave `content` undefined.
-- NEVER create a quiz/multiple choice slide without the `options` array.
-- NEVER omit `bgColor` from any slide.
-- NEVER repeat the same image across different slides of the same class. Every visual slide must have a 100% unique image.
-- NEVER leave a broken or unverified YouTube link in the video homework slide.
-- NEVER use generic placeholders like "Option A" or "Wrong option". You MUST generate real, pedagogically sound content for every single slide and option.
-- NEVER reintroduce static imports of heavy components or raw uncompressed images into `App.tsx` or `public/images/`.
+## 🎯 PROTOCOLO OFICIAL DE GIMNASIO DE PRÁCTICA STORY DECODER (+, -, ?)
 
+- **ESTRUCTURA DE 3 CATEGORÍAS (+, -, ?)**: La práctica se divide explícitamente en **Afirmativo (+)**, **Negativo (-)** e **Interrogativo (?)**.
+- **ESTACIÓN 1: TRADUCCIÓN Y ENSAMBLAJE CON ESCONDITE (3 FRASES)**:
+  - Ensamblaje token por token (soporta palabras compuestas, *phrasal verbs*, e *idioms*).
+  - Ocultar palabras por defecto con botón para revelar.
+  - Botón obligatorio para **guardar cualquier palabra o expresión aprendida** en *"Mis Palabras"* (*VocabVault*).
+- **ESTACIÓN 2: WRITING LIBRE (PRODUCCIÓN PROPIA)**:
+  - Tarjeta interactiva donde el estudiante escribe sus propios ejemplos usando la estructura aprendida.
+- **ESTACIÓN 3: LISTENING Y REPETICIÓN ORAL (3 FRASES)**:
+  - Escuchar audio en inglés, repetir en voz alta y botón para **revelar la respuesta escrita en inglés** a discreción del profesor.
+- **ESTACIÓN 4: REPASO INFINITO OPCIONAL**:
+  - Banco de preguntas de traducción con el botón **"🧠 Ya la pensé ➔ Revelar opciones"**.
+- **UBICACIÓN DOBLE OBLIGATORIA**:
+  1. Gimnasio General del Bloque (Banner del Bloque acumulativo).
+  2. Gimnasio Específico de Lección (Ubicado al final de las 3 historias en el selector de clase).
+- **PROHIBICIÓN ABSOLUTA DE GENERADORES GENÉRICOS**: Todo ejercicio DEBE ser redactado a mano de forma artesanal y pedagógicamente coherente para cada lección.
+- **TRAZABILIDAD Y REGISTRO DE DOMINIO POR ALUMNO**: El progreso por ejercicio (`unseen`, `practicing`, `mastered`) debe guardarse en la base de datos por estudiante para evitar repetir inútilmente lo que el alumno ya dominó.
 
+## 📘 PROTOCOLO OFICIAL DE CLASES TEENS (MODO STUDIO / INTERACTIVO)
+
+- **REGLA DE COHERENCIA PEDAGÓGICA TOTAL (OBJETIVOS ➔ CONTENIDO ➔ PRÁCTICA)**:
+  Queda estrictamente prohibido dar por sentado estructuras gramaticales o dejar vacíos entre lo que promete la diapositiva de Objetivos y lo que se enseña. Todo concepto debe explicarse desde sus cimientos antes de evaluarse.
+
+- **SECUENCIA OBLIGATORIA POR CLASE (ESTACIONES Y DIAPOSITIVAS)**:
+  1. **🔥 Warm-up & Intro**:
+     - Slide 1: Bienvenida motivacional con imagen HD (`type: "standard"`).
+  2. **🎯 Objetivos**:
+     - Slide 2: 3 metas claras, específicas y medibles de la clase (`type: "objectives-animated"`).
+  3. **🎡 Ruleta Rompehielos**:
+     - Slide 3: Ruleta interactiva rompehielos (`type: "spinning-wheel"`, `wheelItems: [...]`) con 6 preguntas reales acordes al tema.
+  3. **📐 Grammar & Concept Master (2 Diapositivas Dedicadas)**:
+     - Slide 4: **Grammar Studio Core** (`type: "grammar-studio"`): 5 pestañas con regla de oro, pronombres/sujetos, fórmulas visuales `[ Sujeto ] + [ Verbo/Aux ] + [ Complemento ]`, afirmativo (+), 3ra persona/variación, negativo (−), preguntas Sí/No por inversión (? Yes/No) y preguntas informativas (? Wh-).
+     - Slide 5: **Vocabulary & Practical Matrix Studio** (`type: "grammar-studio"`): 5 pestañas con el catálogo completo del vocabulario de la clase (saludos/despedidas, números/meses, posesivos, menú de pedidos, horarios, ropa singular/plural, frecuencia, etc.).
+  4. **⚡ AI Verb Arena**:
+     - Slide 6: **6 verbos o elementos de acción** (`type: "verb-arena-embedded"`, `limit: 6`) estrictamente alineados con la clase, con significado natural para Colombia, `past`, `past_participle`, pronunciación y ejemplos reales.
+  5. **📖 Reading Studio**:
+     - Slide 7: Diálogo conversacional entretenido entre adolescentes (`type: "reading"`), con audio nativo por casilla y selector de `Modo Spotlight 🎯` / `Ver Todo 📜`.
+  6. **🎧 Listening Lab**:
+     - Slide 8: Audio nativo contextualizado del profesor (`type: "listening-audio-teacher"`) + pregunta de comprensión con 3 opciones.
+  7. **🧩 Story Decoder**:
+     - Slide 9: 3 frases extraídas directamente del diálogo de la clase (`type: "story-decoder-embedded"`), listas para ensamblar token por token con ocultar/revelar y guardado en VocabVault.
+  8. **✍️ Writing Studio**:
+     - Slide 10: Producción propia del estudiante en 3 casillas interactivas (+, −, ?) guiadas por fórmulas (`type: "writing-guided"`).
+  9. **🎙️ Speaking & Fluency**:
+     - Slide 11: 3 preguntas orales conversacionales que ponen en práctica la gramática y el vocabulario (`type: "speaking"`, audio limpio sin números).
+  10. **📝 Tarea & Cierre**:
+      - Slide 12: Cierre y felicitación (`type: "standard"`).
+      - Slide 13: Homework contextualizado con 3 ejemplos modelo reales, checklist con iconos y botón para compartir por WhatsApp (`type: "homework"`).
+
+- **VOCABULARIO Y LOCALIZACIÓN (COLOMBIA)**:
+  - Todo el vocabulario debe ser comprensible y natural en Colombia (*desayunar arepas*, *hacer pereza*, *chatear*, *parchar*, *entrenar*, *montar cicla*, *almorzar*, *trasnochar*).
+- **PRESERVACIÓN ESTRICTA DE IMÁGENES**:
+  - Respetar y enlazar las imágenes existentes (`/images/teens-...`) sin romper URLs ni superar 400 KB.
+
+- **REGLAS DE ESTANDARIZACIÓN Y RESILIENCIA TÉCNICA (ANTI-CRASH & COMPATIBILIDAD)**:
+  1. **🎯 Objetivos Universales en Todo Nivel**:
+     - Toda diapositiva de metas (`type: "objectives-animated"` o `isGoalsSlide`) DEBE definir explícitamente `objectives: [ "1. Meta...", "2. Meta...", "3. Meta..." ]`.
+     - `SlideRenderer.tsx` DEBE utilizar `resolveGoalsList(slide, cls)` como extractor universal para garantizar que ninguna clase clásica o moderna quede con el panel de objetivos vacío.
+  2. **🛡️ Navegación de Diapositivas y Prevención de Pantalla en Blanco**:
+     - Al cambiar de clase en `PresentationViewer.tsx`, el índice activo DEBE resetearse a 0 (`useEffect([cls.id])`).
+     - El visor de diapositivas DEBE usar un índice clamped seguro `safeIndex = Math.max(0, Math.min(currentIndex, allSlides.length - 1))` y fallback `allSlides[safeIndex] || allSlides[0]` para que jamás retorne `null` ni cause pantalla en blanco en los extremos.
+  3. **📐 Navegación Segmentada en Grammar Studio (5 Columnas)**:
+     - Todo `Grammar Studio` y `Vocabulary Matrix Studio` debe renderizarse mediante la rejilla segmentada de 5 columnas con numeración `Paso 1` a `Paso 5`, checkmark de completado (`✓`), línea de brillo activo y botones de navegación `◀ Anterior` / `Siguiente Paso ➔` con cero scroll horizontal.
+  4. **🧩 Sincronización Obligatoria con `classStructureMap.ts`**:
+     - Cada nueva clase implementada en `curriculumTeensStudio.ts` DEBE tener su entrada correspondiente en `src/data/classStructureMap.ts` con tokens de ensamblaje (`parts`) artesanales y coherentes con la lección.
+  5. **🔊 Audio y Texto en Listening Lab**:
+     - `listeningData` DEBE contener idéntico texto en `transcription` y `audioTeacherText` para que la síntesis de voz y la revelación de la tarjeta funcionen al unísono.
+  6. **🛡️ Escape Seguro de RegExp en Componentes de Resaltado**:
+     - Todo componente que use `new RegExp()` para resaltar palabras o frases (como `HomeworkSlideCard`, `VideoHomeworkSlideCard`, `StoryVocabularyLibrary`) DEBE utilizar `escapeRegExp(str)` para evitar que caracteres pedagógicos comunes (`+`, `-`, `?`, `(`, `)`) causen errores de sintaxis (`Invalid regular expression: Nothing to repeat`).
+  7. **⚡ Estandarización Universal de AI Verb Arena**:
+     - `SlideRenderer.tsx` DEBE utilizar `resolveVerbArenaPool(slide)` para extraer el catálogo de verbos admitiendo indistintamente `verbsData`, `vocabularyCards`, `verbs` o `verbArenaData.verbs`.
+     - `VerbArenaGame.tsx` DEBE admitir propiedades `term`, `word` o `verb`, y traducciones `meaning_es`, `meaning`, `translation` o `es`.
+     - `maxRounds` se resuelve de forma elástica mediante `slide.limit || slide.verbsData?.length || slide.verbArenaData?.limit || customPool?.length || 6`.
+  8. **🧩 Estandarización Universal de Story Decoder**:
+     - `SlideRenderer.tsx` DEBE utilizar `resolveStoryDecoderLines(slide)` soportando tanto `storyDecoderData.lines` como `storyDecoderData.sentences` o arrays planos.
+     - Al cambiar de diapositiva (`useEffect([slide.id])`), el estado `storyLineIndex` DEBE resetearse a `0`.
+     - La verificación de respuestas debe normalizar puntuación (`replace(/[.,!?;:]/g, '')`) y soportar fallback a `currentLine.en` o `puzzle.easy_blocks.join(' ')` si `preferred_answer` no está explícito.
+  9. **📐 Estandarización Universal de Grammar Studio & Vocabulary Matrix**:
+     - `SlideRenderer.tsx` DEBE utilizar `resolveGrammarData(slide)` soportando indistintamente `slide.grammarData.structures` o `slide.grammarStudioData.tabs`.
+     - Ninguna diapositiva de gramática o vocabulario debe renderizar `null` o quedar vacía por diferencias de nomenclatura.
+  10. **📖 Estandarización Universal de Reading Studio**:
+      - `SlideRenderer.tsx` DEBE utilizar `resolveReadingLines(slide)` soportando tanto `slide.content` como `slide.readingData.dialogue` con traducción `es`.
+      - Se debe garantizar compatibilidad dual en `Spotlight` y `Ver Todo el Texto`.
+  11. **🎙️ Estandarización Universal de Speaking & Fluency**:
+      - `SlideRenderer.tsx` DEBE utilizar `resolveSpeakingQuestions(slide)` soportando arrays en `slide.content`, `slide.speakingPrompts` o `slide.speakingData.questions`.
+  12. **🎉 Cierre & Celebración Dinámica (Slide 12 / `isWrapUpSlide`)**:
+      - Toda diapositiva de cierre DEBE incluir en `slide.content` EXACTAMENTE 3 logros reales, medibles y personalizados de esa clase (`[ "1. Logro gramatical...", "2. Vocabulario / estructura...", "3. Fluidez / producción oral..." ]`).
+      - `SlideRenderer.tsx` DEBE renderizar estos 3 logros en las 3 tarjetas de celebración dinámicas (`🎯`, `⚡`, `🚀`) con tipografía grande y legible para celular en Google Meet. Queda estrictamente prohibido renderizar textos o tarjetas genéricas hardcodeadas como `"New topic mastered"`.
+  13. **📝 Estandarización de Tareas (Slide 13 / `HomeworkSlideCard` & `homeworkResolver`)**:
+      - **Desglose en Pasos Limpios (Anti-muro de texto)**: Cada tarea en `slide.content` DEBE estructurarse en 3 o 4 pasos ordenados con oraciones modelo entre comillas (`1. Usa [Estructura]... (ej: 'Frase modelo en inglés')`, `2. Usa... (ej: '...')`, etc.). `HomeworkSlideCard.tsx` DEBE renderizar cada paso en una tarjeta/fila individual con número grande (`1`, `2`, `3`, `4`) y chip de ejemplo destacado (`✨ ej: '...'`), quedando TERMINANTEMENTE PROHIBIDO concatenar todo el texto en un solo párrafo corrido.
+      - **Coherencia Total 100% (Ejemplos y Checklist Sincronizados)**: `homeworkResolver.ts` DEBE extraer directamente las frases modelo entre comillas de los pasos para poblar el bloque *Example* y generar los checks dinámicos de *What to include*. Queda estrictamente prohibido mostrar presets genéricos desactualizados (como "can/cannot" en clases de otros temas).
+      - **Compartir por WhatsApp**: El botón de WhatsApp DEBE generar el mensaje con los pasos, ejemplos reales y fecha de entrega exactos de esa clase.

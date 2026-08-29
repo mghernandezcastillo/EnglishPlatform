@@ -29,11 +29,13 @@ import {
   Trophy,
   Volume2,
   Trash2,
-  X
+  X,
+  Zap
 } from 'lucide-react';
 import { StoryVocabularyLibrary, decodeSharedVocabulary, type SavedVocabularyWord } from './StoryVocabularyLibrary';
 import { canonicalizeStoryVocabularyTerm, findStoryWordTranslation, normalizeSavedVocabularyTerm } from '../data/storyDecoderTranslations';
 import { storyDecoderDb } from '../lib/storyDecoderDb';
+import { StoryBlockPractice } from './StoryBlockPractice';
 
 type PuzzleMode = 'easy' | 'medium' | 'hard' | 'expert';
 type DecoderScreen = 'intro' | 'roadmap' | 'lesson' | 'player' | 'vocabulary';
@@ -63,6 +65,7 @@ type StoryLine = {
   hints: string[];
   tutor_explanation: string;
   vocabulary_candidates?: string[];
+  synonym_map?: Record<string, string[]>;
 };
 
 type DecoderStory = {
@@ -124,7 +127,12 @@ interface StoryDecoderProps {
 const DATA_URL = '/data/story-decoder-curriculum.json';
 const STORAGE_KEY = 'maven_story_decoder_progress';
 const VOCABULARY_STORAGE_KEY = 'maven_story_decoder_vocabulary';
+const VOCABULARY_STORAGE_VERSION = 'v2';
 const EMPTY_PROGRESS: DecoderProgress = { completedStoryIds: [], lineByStory: {} };
+
+function getVocabularyStorageKey(studentId?: string | null) {
+  return `${VOCABULARY_STORAGE_KEY}:${VOCABULARY_STORAGE_VERSION}:${studentId || 'local'}`;
+}
 
 function loadStoredVocabulary(key: string) {
   try {
@@ -289,7 +297,7 @@ function DecoderIntro({ loading, onStart }: { loading: boolean; onStart: () => v
 
   return (
     <div className="story-decoder-intro relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950 to-cyan-950 px-4 py-10 text-white">
-      <div className="absolute inset-0 opacity-35 story-decoder-grid" />
+      <div className="pointer-events-none absolute inset-0 opacity-35 story-decoder-grid" />
       <motion.div
         className="absolute left-[12%] top-[12%] h-72 w-72 rounded-full bg-cyan-400/30 blur-3xl"
         animate={{ x: [0, 70, 0], y: [0, 30, 0], scale: [1, 1.18, 1] }}
@@ -494,7 +502,7 @@ function GrammarGuideModal({
   );
 }
 
-function VocabularyCaptureModal({
+export function VocabularyCaptureModal({
   line,
   savedWords,
   showEnglishContext,
@@ -677,7 +685,7 @@ function VocabularyCaptureModal({
 
 export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const progressKey = `${STORAGE_KEY}:${studentId || 'local'}`;
-  const vocabularyKey = `${VOCABULARY_STORAGE_KEY}:${studentId || 'local'}`;
+  const vocabularyKey = getVocabularyStorageKey(studentId);
   const [initialSharedVocabulary] = useState(() => decodeSharedVocabulary(new URLSearchParams(window.location.search).get('vocab')));
   const [curriculum, setCurriculum] = useState<DecoderCurriculum | null>(null);
   const [loading, setLoading] = useState(true);
@@ -691,6 +699,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const [verbBaseForms, setVerbBaseForms] = useState<Record<string, string>>({});
   const [expandedBlockId, setExpandedBlockId] = useState<number>(1);
   const [activeBlock, setActiveBlock] = useState<DecoderBlock | null>(null);
+  const [activePracticeBlock, setActivePracticeBlock] = useState<DecoderBlock | null>(null);
   const [activeLesson, setActiveLesson] = useState<DecoderLesson | null>(null);
   const [activeStory, setActiveStory] = useState<DecoderStory | null>(null);
   const [lineIndex, setLineIndex] = useState(0);
@@ -805,16 +814,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
         if (stored) {
           const parsed = JSON.parse(stored);
           if (Array.isArray(parsed)) localWords = parsed;
-        }
-        if (!localWords.length && studentId) {
-          const localFallback = localStorage.getItem(`${VOCABULARY_STORAGE_KEY}:local`);
-          if (localFallback) {
-            const parsed = JSON.parse(localFallback);
-            if (Array.isArray(parsed) && parsed.length > 0) {
-              localWords = parsed;
-              localStorage.setItem(vocabularyKey, JSON.stringify(parsed));
-            }
-          }
         }
       } catch {
         localWords = [];
@@ -1025,7 +1024,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
       try {
         localStorage.setItem(vocabularyKey, JSON.stringify(next));
-        localStorage.setItem(`${VOCABULARY_STORAGE_KEY}:local`, JSON.stringify(next));
       } catch (err) {
         console.error('Error saving vocabulary word:', err);
       }
@@ -1046,7 +1044,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
       const next = current.filter((word) => word.id !== id);
       try {
         localStorage.setItem(vocabularyKey, JSON.stringify(next));
-        localStorage.setItem(`${VOCABULARY_STORAGE_KEY}:local`, JSON.stringify(next));
       } catch (err) {
         console.error('Error deleting vocabulary word:', err);
       }
@@ -1073,7 +1070,6 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
       });
       try {
         localStorage.setItem(vocabularyKey, JSON.stringify(next));
-        localStorage.setItem(`${VOCABULARY_STORAGE_KEY}:local`, JSON.stringify(next));
       } catch (err) {
         console.error('Error updating vocabulary word:', err);
       }
@@ -1107,9 +1103,34 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
   const toggleToken = (index: number) => {
     if (feedback === 'correct') return;
     setFeedback('idle');
-    setSelectedTokenIndexes((current) => (
-      current.includes(index) ? current.filter((item) => item !== index) : [...current, index]
-    ));
+    const nextIndexes = selectedTokenIndexes.includes(index)
+      ? selectedTokenIndexes.filter((item) => item !== index)
+      : [...selectedTokenIndexes, index];
+
+    setSelectedTokenIndexes(nextIndexes);
+
+    // Auto-check when all tokens for the sentence have been selected
+    if (nextIndexes.length > 0 && nextIndexes.length === shuffledTokens.length && currentLine) {
+      setTimeout(() => {
+        const nextSelectedTokens = nextIndexes.map((idx) => shuffledTokens[idx]).filter(Boolean);
+        const nextSentence = sentenceFromTokens(nextSelectedTokens.map((token) => token.text));
+        const acceptedAnswers = [currentLine.preferred_answer, ...currentLine.accepted_answers].map(normalizeSentence);
+        const sentenceCorrect = acceptedAnswers.includes(normalizeSentence(nextSentence));
+        setAttempts((value) => value + 1);
+
+        if (!sentenceCorrect) {
+          setFeedback('wrong-sentence');
+          if (currentLine.hints.length > 0) {
+            setHintIndex((current) => Math.min(current + 1, currentLine.hints.length - 1));
+          }
+        } else {
+          setFeedback('correct');
+          setRevealedLineCount((current) => Math.max(current, lineIndex + 1));
+          confetti({ particleCount: 130, spread: 85, origin: { y: 0.62 }, colors: ['#22d3ee', '#fde047', '#a78bfa', '#34d399'] });
+          speakEnglish();
+        }
+      }, 100);
+    }
   };
 
   const resetAnswer = () => {
@@ -1322,6 +1343,28 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
 
   if (!curriculum) return null;
 
+  if (activePracticeBlock) {
+    return (
+      <StoryBlockPractice
+        block={activePracticeBlock}
+        studentId={studentId}
+        vocabulary={vocabulary}
+        onSaveVocabulary={(english, spanish) => {
+          saveVocabularyWord(english, spanish);
+        }}
+        onDeleteVocabulary={(id) => {
+          deleteVocabularyWord(id);
+        }}
+        onOpenVocabularyLibrary={() => {
+          setActivePracticeBlock(null);
+          setVocabularyReturnScreen('roadmap');
+          setScreen('vocabulary');
+        }}
+        onClose={() => setActivePracticeBlock(null)}
+      />
+    );
+  }
+
   if (screen === 'roadmap') {
     return (
       <div className="fixed inset-0 z-50 overflow-y-auto bg-gradient-to-br from-slate-100 via-indigo-50 to-cyan-50 text-slate-950">
@@ -1370,7 +1413,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
               return (
                 <motion.section key={block.block_id} initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(blockIndex * 0.04, 0.35) }} className="overflow-hidden rounded-[1.75rem] border border-white bg-white shadow-lg shadow-indigo-950/5">
                   <button type="button" disabled={!blockUnlocked} onClick={() => setExpandedBlockId(expanded ? 0 : block.block_id)} className={`relative flex w-full items-center gap-4 overflow-hidden bg-gradient-to-r p-5 text-left text-white transition sm:p-6 ${blockStyles[blockIndex % blockStyles.length]} disabled:cursor-not-allowed disabled:grayscale`}>
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.28),transparent_42%)]" />
+                    <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.28),transparent_42%)]" />
                     <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-white/20 bg-white/15 text-2xl font-black shadow-xl backdrop-blur sm:h-16 sm:w-16">{blockUnlocked ? block.block_id : <LockKeyhole className="h-7 w-7" />}</div>
                     <div className="relative min-w-0 flex-1">
                       <div className="text-xs font-black uppercase tracking-[0.2em] text-white/65">Bloque {block.block_id}</div>
@@ -1386,6 +1429,26 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                   <AnimatePresence initial={false}>
                     {expanded && blockUnlocked && (
                       <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
+                        <div className="p-4 pb-0 sm:p-6 sm:pb-0">
+                          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-rose-600 p-4 text-white shadow-xl">
+                            <div className="flex items-center gap-3">
+                              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/20 text-2xl font-black shadow-inner">⚡</div>
+                              <div>
+                                <div className="text-xs font-black uppercase tracking-widest text-yellow-200">Gimnasio del Bloque {block.block_id}</div>
+                                <div className="text-lg font-black leading-tight">Modo Práctica Intensa (Infinito)</div>
+                                <p className="text-xs font-semibold text-white/80">Listening, construcciones +, -, ?, cazador de errores y transformaciones.</p>
+                              </div>
+                            </div>
+                            <button
+                              type="button"
+                              onClick={() => setActivePracticeBlock(block)}
+                              className="w-full sm:w-auto shrink-0 flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-black text-amber-950 shadow-xl transition hover:bg-yellow-300 active:scale-95 text-sm"
+                            >
+                              <Zap className="h-5 w-5 text-amber-600 fill-amber-600" />
+                              <span>Iniciar Práctica Intensa</span>
+                            </button>
+                          </div>
+                        </div>
                         <div className="grid gap-3 p-4 sm:grid-cols-2 sm:p-6 lg:grid-cols-3">
                           {block.lessons.map((lesson) => {
                             const unlocked = isLessonUnlocked(lesson.lesson_id);
@@ -1420,7 +1483,7 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
     const lessonComplete = activeLesson.stories.every((story) => completedStorySet.has(story.story_id));
     return (
       <div className={`fixed inset-0 z-50 overflow-y-auto bg-gradient-to-br ${blockStyles[(activeBlock.block_id - 1) % blockStyles.length]} text-white`}>
-        <div className="absolute inset-0 opacity-25 story-decoder-grid" />
+        <div className="pointer-events-none absolute inset-0 opacity-25 story-decoder-grid" />
         <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-950/55 px-4 py-3 backdrop-blur-xl sm:px-6">
           <div className="mx-auto flex max-w-6xl items-center gap-3">
             <button type="button" onClick={() => setScreen('roadmap')} className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 transition hover:bg-white hover:text-slate-950"><ArrowLeft className="h-6 w-6" /></button>
@@ -1475,6 +1538,26 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                 </motion.button>
               );
             })}
+          </div>
+
+          {/* Gimnasio Específico de Clase / Lección (Siempre disponible al final de las historias) */}
+          <div className="mt-8 rounded-[2rem] border border-amber-300/40 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-600 p-6 text-white shadow-2xl backdrop-blur-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/20 text-3xl font-black shadow-inner">⚡</div>
+              <div>
+                <div className="text-xs font-black uppercase tracking-widest text-yellow-200">Gimnasio Específico · Clase {activeLesson.lesson_id}</div>
+                <div className="text-xl font-black leading-tight">Práctica Intensiva de {activeLesson.topic}</div>
+                <p className="text-xs font-semibold text-white/80">Traducción (+, -, ?), Writing Libre, Listening/Hablar y Repaso Infinito.</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setActivePracticeBlock(activeBlock)}
+              className="w-full sm:w-auto shrink-0 flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3.5 text-base font-black text-amber-950 shadow-xl transition hover:bg-yellow-300 active:scale-95 cursor-pointer"
+            >
+              <Zap className="h-5 w-5 text-amber-600 fill-amber-600" />
+              <span>Abrir Gimnasio de esta Clase</span>
+            </button>
           </div>
         </main>
       </div>
@@ -1564,11 +1647,24 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                     <div className="flex min-h-16 flex-wrap items-center justify-center gap-2">
                       {selectedTokens.map((token, position) => {
                         const originalIndex = selectedTokenIndexes[position];
-                        return <button key={`${token.id}-selected`} type="button" onClick={() => toggleToken(originalIndex)} className="min-h-14 rounded-xl bg-gradient-to-br from-cyan-200 to-cyan-400 px-4 text-center text-[clamp(1.05rem,2.2vw,1.55rem)] font-black text-cyan-950 shadow-lg transition hover:-translate-y-0.5">{token.text}</button>;
+                        return <button key={`${token.id}-selected`} type="button" onClick={() => toggleToken(originalIndex)} className="min-h-14 rounded-xl bg-gradient-to-br from-cyan-200 to-cyan-400 px-4 text-center text-[clamp(1.05rem,2.2vw,1.55rem)] font-black text-cyan-950 shadow-lg transition hover:-translate-y-0.5 cursor-pointer">{token.text}</button>;
                       })}
                     </div>
                   ) : <div className="flex min-h-16 items-center justify-center text-center text-lg font-bold text-white/40"><Layers3 className="mr-2 h-6 w-6" /> Presiona las opciones para armar la frase completa</div>}
                 </div>
+
+                {selectedTokens.length > 0 && feedback !== 'correct' && (
+                  <div className="mt-3 flex justify-center">
+                    <button
+                      type="button"
+                      onClick={checkAnswer}
+                      className="flex min-h-12 items-center gap-2 rounded-2xl bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 px-8 text-lg font-black text-slate-950 shadow-xl transition hover:scale-105 active:scale-95 cursor-pointer animate-pulse"
+                    >
+                      <Target className="h-6 w-6" />
+                      <span>Comprobar Frase</span>
+                    </button>
+                  </div>
+                )}
 
                 <div className="mt-3 flex items-center justify-between gap-2">
                   <div className="text-xs font-black uppercase tracking-[0.2em] text-white/40">Banco de palabras</div>
@@ -1584,11 +1680,20 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                 </div>
 
                 <div className="relative mt-2">
-                  <div className={`grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 ${!wordsRevealed ? 'pointer-events-none select-none' : ''}`}>
+                  <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
                     {shuffledTokens.map((token, index) => {
                       const selected = selectedIndexSet.has(index);
                       return (
-                        <button key={token.id} type="button" disabled={selected || feedback === 'correct' || !wordsRevealed} onClick={() => toggleToken(index)} className={`min-h-16 rounded-xl border px-3 py-2 text-[clamp(1rem,1.8vw,1.3rem)] font-black leading-tight transition ${selected ? 'border-emerald-300/20 bg-emerald-300/10 text-emerald-100/30' : 'border-white/15 bg-white text-slate-950 shadow-lg hover:-translate-y-0.5 hover:border-yellow-300 hover:bg-yellow-50'}`}>
+                        <button
+                          key={token.id}
+                          type="button"
+                          disabled={selected || feedback === 'correct'}
+                          onClick={() => {
+                            if (!wordsRevealed) setWordsRevealed(true);
+                            toggleToken(index);
+                          }}
+                          className={`min-h-16 rounded-xl border px-3 py-2 text-[clamp(1rem,1.8vw,1.3rem)] font-black leading-tight transition cursor-pointer ${selected ? 'border-emerald-300/20 bg-emerald-300/10 text-emerald-100/30' : 'border-white/15 bg-white text-slate-950 shadow-lg hover:-translate-y-0.5 hover:border-yellow-300 hover:bg-yellow-50'}`}
+                        >
                           <span className={!wordsRevealed ? 'blur-sm' : ''}>{token.text}</span>
                         </button>
                       );
@@ -1614,6 +1719,12 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                       <button type="button" onClick={() => setShowVocabularyCapture(true)} className="flex min-h-12 items-center gap-2 rounded-xl bg-white px-5 font-black text-indigo-800 shadow-lg transition hover:-translate-y-0.5"><BookmarkPlus className="h-5 w-5" /> Guardar palabra / frase</button>
                       <button type="button" onClick={openStoryVocabularyReview} disabled={!currentStoryVocabulary.length} className="flex min-h-12 items-center gap-2 rounded-xl bg-slate-950/85 px-5 font-black text-cyan-100 shadow-lg transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-35"><Brain className="h-5 w-5" /> Repasar palabras de esta historia</button>
                     </div>
+                    {currentLine.synonym_map && Object.keys(currentLine.synonym_map).length > 0 && (
+                      <div className="mx-auto mt-4 max-w-xl rounded-2xl border border-slate-950/15 bg-white/75 p-3 text-xs font-bold text-slate-900 shadow-sm backdrop-blur-sm">
+                        💡 <span className="font-black uppercase tracking-wider text-indigo-900">Sinónimos equivalentes:</span>{' '}
+                        {Object.entries(currentLine.synonym_map).map(([key, syns]) => `${key} ↔ ${syns.join(', ')}`).join(' | ')}
+                      </div>
+                    )}
                     {attempts > 1 && <p className="mt-3 text-xs font-black uppercase tracking-widest opacity-60">Resuelto en {attempts} intentos</p>}
                   </motion.div>
                 )}

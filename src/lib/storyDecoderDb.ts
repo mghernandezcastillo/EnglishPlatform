@@ -1,5 +1,6 @@
 import { supabase } from './supabase';
 import type { SavedVocabularyWord } from '../components/StoryVocabularyLibrary';
+import { vocabService } from './vocabService';
 
 export type DecoderProgress = {
   completedStoryIds: string[];
@@ -115,6 +116,19 @@ export const storyDecoderDb = {
       if (error) {
         console.warn('Error saving word to Supabase story_decoder_vocabulary:', error);
       }
+
+      // Sync to Mi Vocabulario under story_decoder section
+      try {
+        await vocabService.saveQuickTerm(
+          word.english,
+          word.spanish,
+          'story_decoder',
+          word.storyTitle ? `📖 Story: ${word.storyTitle}` : '📖 Story Decoder',
+          studentId
+        );
+      } catch (syncErr) {
+        console.warn('Error syncing word to vocabService:', syncErr);
+      }
     } catch (err) {
       console.warn('Supabase saveWord error:', err);
     }
@@ -141,5 +155,26 @@ export const storyDecoderDb = {
   updateWord: async (studentId: string | null | undefined, word: SavedVocabularyWord) => {
     if (!studentId) return;
     await storyDecoderDb.saveWord(studentId, word);
+  },
+
+  getItemMasteryMap: (studentId: string | null | undefined, blockId: number): Record<string, 'unseen' | 'practicing' | 'mastered'> => {
+    const key = `story_mastery_${studentId || 'local'}_block_${blockId}`;
+    try {
+      const stored = localStorage.getItem(key);
+      return stored ? JSON.parse(stored) : {};
+    } catch {
+      return {};
+    }
+  },
+
+  saveItemMasteryStatus: (studentId: string | null | undefined, blockId: number, itemId: string, status: 'unseen' | 'practicing' | 'mastered') => {
+    const key = `story_mastery_${studentId || 'local'}_block_${blockId}`;
+    try {
+      const current = storyDecoderDb.getItemMasteryMap(studentId, blockId);
+      current[itemId] = status;
+      localStorage.setItem(key, JSON.stringify(current));
+    } catch (err) {
+      console.warn('Error saving item mastery:', err);
+    }
   }
 };

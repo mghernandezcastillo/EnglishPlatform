@@ -26,27 +26,37 @@ export function HomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComp
     setTimeout(() => setCopied(false), 3000);
   };
 
-  // Helper to render task text with highlighted keywords
+  // Safe escape for regular expressions
+  const escapeRegExp = (str: string) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Helper to render task text with highlighted keywords safely
   const renderHighlightedTask = (text: string, highlights: string[] = []) => {
     if (!highlights || highlights.length === 0) return text;
 
-    const regex = new RegExp(`(${highlights.join('|')})`, 'gi');
-    const parts = text.split(regex);
+    try {
+      const validHighlights = highlights.filter(Boolean).map(escapeRegExp);
+      if (validHighlights.length === 0) return text;
 
-    return parts.map((part, index) => {
-      const isMatch = highlights.some((h) => h.toLowerCase() === part.toLowerCase());
-      if (isMatch) {
-        return (
-          <span
-            key={index}
-            className="font-black text-amber-300 bg-amber-400/25 px-2 py-0.5 rounded-xl border border-amber-300/40 inline-block my-0.5"
-          >
-            {part}
-          </span>
-        );
-      }
-      return <span key={index}>{part}</span>;
-    });
+      const regex = new RegExp(`(${validHighlights.join('|')})`, 'gi');
+      const parts = text.split(regex);
+
+      return parts.map((part, index) => {
+        const isMatch = highlights.some((h) => h && h.toLowerCase() === part.toLowerCase());
+        if (isMatch) {
+          return (
+            <span
+              key={index}
+              className="font-black text-amber-300 bg-amber-400/25 px-2 py-0.5 rounded-xl border border-amber-300/40 inline-block my-0.5"
+            >
+              {part}
+            </span>
+          );
+        }
+        return <span key={index}>{part}</span>;
+      });
+    } catch {
+      return text;
+    }
   };
 
   return (
@@ -81,7 +91,7 @@ export function HomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComp
           {/* Card 1: Your Task + Tips */}
           <div className="rounded-2xl sm:rounded-3xl border border-white/20 bg-white/12 p-3 sm:p-4 backdrop-blur-md shadow-lg flex flex-col justify-between gap-2.5">
             <div>
-              <div className="flex items-center gap-2 mb-1.5">
+              <div className="flex items-center gap-2 mb-2">
                 <div className="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-xl bg-gradient-to-br from-pink-500 to-rose-600 text-white shadow-md">
                   <Target className="h-4 w-4 sm:h-5 sm:w-5 stroke-[2.5]" />
                 </div>
@@ -89,9 +99,34 @@ export function HomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComp
                   Your task
                 </span>
               </div>
-              <p className="text-base sm:text-lg lg:text-[1.25rem] font-bold text-white leading-snug">
-                {renderHighlightedTask(data.task, data.taskHighlights)}
-              </p>
+
+              {/* Render Structured Steps if available, or fallback to paragraph */}
+              {data.taskSteps && data.taskSteps.length > 0 ? (
+                <div className="flex flex-col gap-1.5 sm:gap-2">
+                  {data.taskSteps.map((step, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-start gap-2.5 rounded-xl sm:rounded-2xl bg-white/15 border border-white/20 p-2 sm:p-2.5 backdrop-blur-sm shadow-sm"
+                    >
+                      <span className="flex h-6 w-6 sm:h-7 sm:w-7 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-pink-500 to-rose-600 text-white font-black text-xs sm:text-sm shadow-md">
+                        {step.number || idx + 1}
+                      </span>
+                      <div className="flex-1 text-xs sm:text-sm lg:text-[1.05rem] font-bold text-white leading-snug">
+                        <span>{renderHighlightedTask(step.instruction, data.taskHighlights)}</span>
+                        {step.example && (
+                          <div className="mt-1 inline-block bg-amber-400/25 border border-amber-300/40 text-amber-200 px-2 py-0.5 rounded-lg text-xs sm:text-sm font-black italic">
+                            ✨ ej: '{step.example}'
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-base sm:text-lg lg:text-[1.25rem] font-bold text-white leading-snug">
+                  {renderHighlightedTask(data.task, data.taskHighlights)}
+                </p>
+              )}
             </div>
 
             {/* Integrated Tips Strip */}
@@ -113,16 +148,16 @@ export function HomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComp
             )}
           </div>
 
-          {/* Card 2: Example (3 lines) Notebook Card */}
+          {/* Card 2: Example (X lines) Notebook Card */}
           <div className="relative rounded-2xl sm:rounded-3xl border-2 border-white/90 bg-white p-3 sm:p-4 text-slate-950 shadow-xl flex flex-col justify-between">
             {/* Sticky badge */}
             <div className="absolute -top-3 right-3.5 z-20 inline-flex rotate-3 items-center gap-1 rounded-xl bg-amber-400 border-2 border-amber-500 px-3 py-0.5 text-xs sm:text-sm font-black text-slate-950 shadow-md">
-              <span>{data.badgeText || '3 lines!'}</span>
+              <span>{data.badgeText || `${data.exampleLines.length} lines!`}</span>
             </div>
 
             <div className="mb-1.5 flex items-center justify-between">
               <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-slate-500">
-                Example (3 lines)
+                Example ({data.exampleLines.length} lines)
               </span>
             </div>
 

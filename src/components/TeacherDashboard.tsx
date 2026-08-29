@@ -114,7 +114,6 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     const currLevels = selectedStudentCurrLevels;
     
     // Find matching curriculum level (approximate match on title)
-    // The DbStudent.level is usually strings like "Basic Zero" or "A1"
     const stLevelTokens = (selectedStudent.level || '').toLowerCase().split(' ');
     let currentLevelObj = currLevels.find(l => 
         stLevelTokens.some(tok => l.title.toLowerCase().includes(tok))
@@ -124,9 +123,10 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
     }
     const hasOralEvaluation = Boolean(currentLevelObj?.oralEvaluation?.length);
     const hasVirtualEvaluation = Boolean(currentLevelObj?.virtualEvaluation?.length);
-    const isCurrentLevelApproved = Boolean(currentLevelObj && approvedLevelIdsForStudent(selectedStudent).includes(currentLevelObj.id));
-    const visibleLessons = visibleCompletedLessonIds(selectedStudent.completed_lessons || []);
-    const classesCompleted = Boolean(currentLevelObj?.classes.length && currentLevelObj.classes.every((cls) => visibleLessons.includes(cls.id)));
+    const approvedLevelIds = approvedLevelIdsForStudent(selectedStudent);
+    const isCurrentLevelApproved = Boolean(currentLevelObj && approvedLevelIds.includes(currentLevelObj.id));
+    const visibleCompleted = visibleCompletedLessonIds(selectedStudent.completed_lessons || []);
+    const classesCompleted = Boolean(currentLevelObj?.classes.length && currentLevelObj.classes.every((cls) => visibleCompleted.includes(cls.id)));
     const normalizedStudentName = selectedStudent.name.trim().toLowerCase();
     const studentEvaluations = evaluations.filter((evaluation) =>
       evaluation.student_name.trim().toLowerCase() === normalizedStudentName
@@ -141,128 +141,194 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
       : false;
     const examRequirementsMet = classesCompleted && oralPassed && virtualPassed;
 
+    // Calculate student progress
+    const isTeenStudent = selectedStudent.type === 'adolescente';
+    const activeStudentMode = selectedStudent.presentation_mode || 'studio';
+    const allStudentClasses = currLevels.flatMap(l => l.classes);
+    const completedClassesCount = allStudentClasses.filter(c => visibleCompleted.includes(c.id)).length;
+    const studentProgressPercent = allStudentClasses.length > 0 ? Math.round((completedClassesCount / allStudentClasses.length) * 100) : 0;
+
     return (
-        <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6">
-            <button onClick={() => { setSelectedStudent(null); setIsEditingStudentInfo(false); }} className="mb-6 flex items-center gap-2 text-gray-500 hover:text-indigo-600 font-medium">
-                <ChevronLeft className="w-5 h-5" /> Volver a Estudiantes
+      <div className="min-h-screen bg-slate-50 p-6 md:p-8">
+        <div className="max-w-6xl mx-auto">
+            {/* Header & Back */}
+            <button 
+                onClick={() => setSelectedStudent(null)} 
+                className="flex items-center gap-2 text-indigo-600 font-bold mb-6 hover:text-indigo-800 transition-colors"
+            >
+                <ChevronLeft size={20} /> Volver a lista de alumnos
             </button>
-             <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-200 mb-8 flex flex-col items-start gap-6">
+
+            {/* Profile Overview Card */}
+            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-gray-100 mb-8 flex flex-col md:flex-row items-center gap-6 justify-between">
                  {isEditingStudentInfo ? (
                     <div className="w-full flex flex-col gap-4">
-                       <h2 className="text-xl font-bold text-gray-800">Editar Estudiante</h2>
-                       <div className="flex flex-col md:flex-row gap-4 items-end">
-                         <div className="flex-1">
-                           <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                           <input type="text" value={selectedStudent.name} onChange={e => setSelectedStudent({...selectedStudent, name: e.target.value})} className="w-full px-4 py-2 border rounded-xl" />
-                         </div>
-                         <div className="w-40">
-                           <label className="block text-sm font-medium text-gray-700 mb-1">Nivel</label>
-                           <select value={selectedStudent.level} onChange={e => setSelectedStudent({...selectedStudent, level: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
-                             <option>Basic Zero</option>
-                             <option>A1</option>
-                             <option>A2</option>
-                             <option>B1</option>
-                             <option>B2</option>
-                           </select>
-                         </div>
-                         <div className="w-40">
-                           <label className="block text-sm font-medium text-gray-700 mb-1">Tipo</label>
-                           <select value={selectedStudent.type || 'adulto'} onChange={e => setSelectedStudent({...selectedStudent, type: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
-                             <option value="adulto">Adulto</option>
-                             <option value="adolescente">Adolescente</option>
-                             <option value="niño">Niño</option>
-                           </select>
-                         </div>
-                       </div>
-                       <div className="w-full">
-                          <label className="block text-sm font-medium text-gray-700 mb-1">Avatar</label>
-                          <div className="flex gap-2 bg-slate-50 p-2 rounded-xl overflow-x-auto w-full">
-                              {Object.entries(avatars).map(([id, url]) => {
-                                 const isSelected = selectedStudent.avatar_id === id;
-                                 return (
-                                    <button 
-                                      key={id} 
-                                      onClick={() => setSelectedStudent({...selectedStudent, avatar_id: id})}
-                                      className={`w-16 h-16 shrink-0 rounded-full border-2 overflow-hidden transition-all ${isSelected ? 'border-indigo-600 scale-110 shadow-md' : 'border-transparent opacity-70 hover:opacity-100'}`}
-                                    >
-                                      <img referrerPolicy="no-referrer" src={url} alt={id} className="w-full h-full object-cover" />
-                                    </button>
-                                 )
-                              })}
+                        <div className="flex flex-wrap gap-4 items-center">
+                          <div className="flex-1 min-w-[200px]">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                            <input 
+                              type="text" 
+                              value={selectedStudent.name} 
+                              onChange={e => setSelectedStudent({...selectedStudent, name: e.target.value})} 
+                              className="w-full px-4 py-2 border rounded-xl"
+                            />
                           </div>
-                       </div>
-                       <div className="flex gap-2 mt-2">
-                           <button onClick={async () => {
-                               await dbAdmin.updateStudent(selectedStudent.id, {
-                                   name: selectedStudent.name,
-                                   level: selectedStudent.level,
-                                   type: selectedStudent.type,
-                                   avatar_id: selectedStudent.avatar_id
-                               });
-                               setIsEditingStudentInfo(false);
-                               loadData();
-                           }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-xl font-bold transition-colors">
-                             Guardar
-                           </button>
-                           <button onClick={() => {
-                               setIsEditingStudentInfo(false);
-                               loadData();
-                           }} className="bg-gray-100 hover:bg-gray-200 text-gray-600 px-6 py-2 rounded-xl font-bold transition-colors">
-                             Cancelar
-                           </button>
-                       </div>
-                    </div>
-                 ) : (
-                    <div className="w-full flex flex-col md:flex-row items-center gap-6 justify-between">
-                        <div className="flex flex-col md:flex-row items-center gap-6">
-                            <img referrerPolicy="no-referrer" src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
-                            <div>
-                                <div className="flex items-center gap-3">
-                                   <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
-                                   <button onClick={() => setIsEditingStudentInfo(true)} className="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-bold hover:bg-indigo-100">Editar</button>
-                                   <button 
-                                      onClick={() => setShowDeleteConfirm(true)} 
-                                      className="text-sm bg-red-50 text-red-700 px-3 py-1 rounded-full font-bold hover:bg-red-100"
-                                   >
-                                      Eliminar
-                                   </button>
-                                </div>
-                                {showDeleteConfirm ? (
-                                  <div className="flex items-center gap-2 mt-2 bg-red-50 p-2 rounded-lg border border-red-100">
-                                    <span className="text-sm text-red-800 font-medium">¿Seguro que deseas eliminarlo?</span>
-                                    <button 
-                                      onClick={async () => {
-                                         await dbAdmin.deleteStudent(selectedStudent.id);
-                                         setSelectedStudent(null);
-                                         setShowDeleteConfirm(false);
-                                         loadData();
-                                      }}
-                                      className="text-xs font-bold bg-red-600 text-white px-3 py-1.5 rounded-md hover:bg-red-700 transition-colors"
-                                    >Sí, eliminar</button>
-                                    <button 
-                                      onClick={() => setShowDeleteConfirm(false)}
-                                      className="text-xs font-bold bg-gray-200 text-gray-700 px-3 py-1.5 rounded-md hover:bg-gray-300 transition-colors"
-                                    >Cancelar</button>
-                                  </div>
-                                ) : (
-                                <div className="flex gap-3 mt-2">
-                                    <span className="text-sm font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">{selectedStudent.level}</span>
-                                    {selectedStudent.type && <span className="text-sm font-bold text-amber-700 bg-amber-50 px-3 py-1 rounded-full capitalize">{selectedStudent.type}</span>}
-                                    {selectedStudent.group_id && <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">En grupo</span>}
-                                </div>
-                                )}
-                            </div>
-                        </div>
-                        <div className="flex flex-col gap-2 w-full md:w-auto mt-4 md:mt-0">
-                            <button 
-                               onClick={() => onEnterAsStudent && onEnterAsStudent(selectedStudent)}
-                               className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-xl transition-all shadow-sm"
+                          <div className="flex-1 min-w-[200px]">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Nivel</label>
+                            <input 
+                              type="text" 
+                              value={selectedStudent.level} 
+                              onChange={e => setSelectedStudent({...selectedStudent, level: e.target.value})} 
+                              className="w-full px-4 py-2 border rounded-xl"
+                            />
+                          </div>
+                          <div className="flex-1 min-w-[200px]">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Tipo de Estudiante</label>
+                            <select value={selectedStudent.type || 'adulto'} onChange={e => setSelectedStudent({...selectedStudent, type: e.target.value})} className="w-full px-4 py-2 border rounded-xl bg-white">
+                              <option value="adulto">Adulto</option>
+                              <option value="adolescente">Adolescente</option>
+                              <option value="niño">Niño</option>
+                            </select>
+                          </div>
+                          <div className="flex-1 min-w-[200px]">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Modo Diapositivas (Teens)</label>
+                            <select 
+                              value={selectedStudent.presentation_mode || 'studio'} 
+                              onChange={e => setSelectedStudent({...selectedStudent, presentation_mode: e.target.value as 'studio' | 'classic'})} 
+                              className="w-full px-4 py-2 border rounded-xl bg-white font-bold text-indigo-700"
                             >
-                               Dictar a este alumno
+                              <option value="studio">⚡ Studio Interactivo (Blueprint)</option>
+                              <option value="classic">📜 Clásico Tradicional (22 slides)</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div className="w-full">
+                           <label className="block text-sm font-medium text-gray-700 mb-1">Avatar</label>
+                           <div className="flex gap-2 bg-slate-50 p-2 rounded-xl overflow-x-auto w-full">
+                               {Object.entries(avatars).map(([id, url]) => {
+                                  const isSelected = selectedStudent.avatar_id === id;
+                                  return (
+                                     <button 
+                                       key={id} 
+                                       onClick={() => setSelectedStudent({...selectedStudent, avatar_id: id})}
+                                       className={`w-16 h-16 shrink-0 rounded-full border-2 overflow-hidden transition-all ${isSelected ? 'border-indigo-600 scale-110 shadow-md' : 'border-transparent opacity-70 hover:opacity-100'}`}
+                                     >
+                                       <img referrerPolicy="no-referrer" src={url} alt={id} className="w-full h-full object-cover" />
+                                     </button>
+                                  )
+                               })}
+                           </div>
+                        </div>
+                        <div className="flex gap-2 mt-2">
+                            <button onClick={async () => {
+                                await dbAdmin.updateStudent(selectedStudent.id, {
+                                    name: selectedStudent.name,
+                                    level: selectedStudent.level,
+                                    type: selectedStudent.type,
+                                    presentation_mode: selectedStudent.presentation_mode || 'studio',
+                                    avatar_id: selectedStudent.avatar_id
+                                });
+                                if (selectedStudent.presentation_mode) {
+                                  localStorage.setItem('maven_presentation_mode', selectedStudent.presentation_mode);
+                                }
+                                setIsEditingStudentInfo(false);
+                                loadData();
+                                showToast('Información y preferencia de modo actualizadas en Supabase.');
+                            }} className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-xl font-bold transition-colors">
+                              Guardar
                             </button>
-                            <button 
-                               onClick={() => {
-                                  const url = `${window.location.origin}/?studentId=${selectedStudent.id}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}`;
+                            <button onClick={() => {
+                                setIsEditingStudentInfo(false);
+                                loadData();
+                            }} className="bg-gray-100 hover:bg-gray-200 text-gray-600 px-6 py-2 rounded-xl font-bold transition-colors">
+                              Cancelar
+                            </button>
+                        </div>
+                     </div>
+                  ) : (
+                     <div className="w-full flex flex-col md:flex-row items-center gap-6 justify-between">
+                         <div className="flex flex-col md:flex-row items-center gap-6">
+                             <img referrerPolicy="no-referrer" src={avatars[selectedStudent.avatar_id as keyof typeof avatars] || avatars.female} className="w-24 h-24 rounded-full border-4 border-indigo-50" />
+                             <div>
+                                 <div className="flex items-center gap-3">
+                                    <h1 className="text-3xl font-extrabold text-gray-900">{selectedStudent.name}</h1>
+                                    <button onClick={() => setIsEditingStudentInfo(true)} className="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-bold hover:bg-indigo-100">Editar</button>
+                                    <button 
+                                       onClick={() => setShowDeleteConfirm(true)} 
+                                       className="text-sm bg-red-50 text-red-700 px-3 py-1 rounded-full font-bold hover:bg-red-100"
+                                    >
+                                       Eliminar
+                                    </button>
+                                 </div>
+                                 {showDeleteConfirm ? (
+                                   <div className="flex items-center gap-2 mt-2 bg-red-50 p-2 rounded-lg border border-red-100">
+                                     <span className="text-sm text-red-800 font-medium">¿Seguro que deseas eliminarlo?</span>
+                                     <button 
+                                       onClick={async () => {
+                                          await dbAdmin.deleteStudent(selectedStudent.id);
+                                          setSelectedStudent(null);
+                                          setShowDeleteConfirm(false);
+                                          loadData();
+                                       }}
+                                       className="text-xs font-bold bg-red-600 text-white px-3 py-1.5 rounded-md hover:bg-red-700 transition-colors"
+                                     >Sí, eliminar</button>
+                                     <button 
+                                       onClick={() => setShowDeleteConfirm(false)} 
+                                       className="text-xs font-bold bg-gray-200 text-gray-700 px-3 py-1.5 rounded-md hover:bg-gray-300 transition-colors"
+                                     >Cancelar</button>
+                                   </div>
+                                 ) : (
+                                 <div className="flex flex-wrap items-center gap-3 mt-2">
+                                     <span className="text-sm font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">{selectedStudent.level}</span>
+                                     {selectedStudent.type && <span className="text-sm font-bold text-amber-700 bg-amber-50 px-3 py-1 rounded-full capitalize">{selectedStudent.type}</span>}
+                                     {selectedStudent.group_id && <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">En grupo</span>}
+                                     
+                                     {/* Mode Toggle for Teens */}
+                                     <div className="inline-flex rounded-full bg-slate-100 p-0.5 border border-slate-200 shadow-inner">
+                                       <button
+                                         type="button"
+                                         onClick={() => handleTogglePresentationMode('studio')}
+                                         title="Activar Modo Studio Interactivo (Blueprint con Grammar Studio, Verb Arena, Story Decoder)"
+                                         className={`px-3 py-1 text-xs font-black rounded-full transition-all flex items-center gap-1 ${
+                                           activeStudentMode === 'studio'
+                                             ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-sm'
+                                             : 'text-slate-600 hover:text-indigo-600'
+                                         }`}
+                                       >
+                                         <span>⚡ Studio</span>
+                                       </button>
+                                       <button
+                                         type="button"
+                                         onClick={() => handleTogglePresentationMode('classic')}
+                                         title="Activar Modo Clásico Tradicional (22 Diapositivas tradicionales)"
+                                         className={`px-3 py-1 text-xs font-black rounded-full transition-all flex items-center gap-1 ${
+                                           activeStudentMode === 'classic'
+                                             ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-sm'
+                                             : 'text-slate-600 hover:text-amber-600'
+                                         }`}
+                                       >
+                                         <span>📜 Clásico</span>
+                                       </button>
+                                     </div>
+                                 </div>
+                                 )}
+                             </div>
+                         </div>
+                         <div className="flex flex-col gap-2 w-full md:w-auto mt-4 md:mt-0">
+                             <button 
+                                onClick={() => {
+                                  if (selectedStudent.presentation_mode) {
+                                    localStorage.setItem('maven_presentation_mode', selectedStudent.presentation_mode);
+                                  }
+                                  onEnterAsStudent && onEnterAsStudent(selectedStudent);
+                                }}
+                                className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-xl transition-all shadow-sm"
+                             >
+                                Dictar a este alumno
+                             </button>
+                             <button 
+                                onClick={() => {
+                                   const url = `${window.location.origin}/?studentId=${selectedStudent.id}&type=${encodeURIComponent(selectedStudent.type || 'adulto')}`;
                                   navigator.clipboard.writeText(url);
                                   showToast('¡Enlace de acceso copiado al portapapeles!');
                                }}
@@ -390,6 +456,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                 </div>
             </div>
         </div>
+      </div>
     );
   }
 

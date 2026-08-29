@@ -1,0 +1,767 @@
+[
+  {
+    "levelNumber": 0,
+    "levelId": "teens-basic-zero",
+    "levelTitle": "Level 0 - Teen Startup / Nivel 0 - Inicio adolescente",
+    "mcfr": "Pre-A1",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-basic-zero-1",
+        "title": "Class 1: Hello & Introductions / Clase 1: Hello & Introductions",
+        "objective": "Master the topic of Hello & Introductions.",
+        "s2Details": "Saying Hello & Asking Names 👋 / Saludos y Nombres -> Formal: Hello! / Good morning! / Nice to meet you! | Informal: Hey! / What's up? / How's it going? | Feelings: I'm great! / I'm fine, thanks / Not bad, you?\nThe Introduction Formula 📝 / Fórmula de Presentación -> Formula: [Greeting] + [I'm Name] + [Nice to meet you] + [How are you?] | Example 1: 'Hey! I'm Alex. Nice to meet you! How are you today?' | Example 2: 'Good morning! My name is Sofia. I'm great, and you?'\nQuick Check: Say Hi! 🎯 / Mini Reto -> Tell the teacher out loud: | 1. Greet the teacher politely. | 2. State your name and how you feel today!"
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-basic-zero-2",
+        "title": "Class 2: Numbers, Ages & Birthdays / Clase 2: Numbers, Ages & Birthdays",
+        "objective": "Master the topic of Numbers, Ages & Birthdays.",
+        "s2Details": "Numbers 1-31 & Birthday Months 🎂 / Números y Meses -> Numbers 1-10: one, two, three, four, five, six, seven, eight, nine, ten | Numbers 11-20: eleven, twelve, thirteen, fourteen, fifteen, twenty... | Months: January, February, March, April, May, June, July, August, September, October, November, December\nThe Age & Birthday Formula 📅 / Fórmula de Edad y Cumpleaños -> Age Formula: I am + [Number] + years old. (Never say 'I have 14 years') | Birthday Formula: My birthday is IN + [Month]. | Example: 'I am 14 years old and my birthday is in October.'\nQuick Check: Birthday Card 🎯 / Mini Reto -> Complete and say out loud to the teacher: | 'I am ________ years old and my birthday is in ________.'"
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-basic-zero-3",
+        "title": "Class 3: My Body & Actions / Clase 3: My Body & Actions",
+        "objective": "Master the topic of My Body & Actions.",
+        "s2Details": "Body Parts & Action Verbs 💪 / Partes del Cuerpo y Acciones -> Body: Head, arms, legs, hands, feet, eyes, ears | Actions: Run fast, jump high, dance, swim, play soccer, skate | Which action do you do every week?\nThe Ability Formula: CAN vs CAN'T ⚡ / Fórmula de Habilidades -> Positive (+): I CAN + [Verb] -> 'I can skate very well.' | Negative (-): I CAN'T + [Verb] -> 'I can't swim yet.' | Contrast: 'I can play soccer, but I can't dance hip-hop.'\nQuick Check: Talent Show 🎯 / Mini Reto -> Tell the teacher: | 1. Name 2 cool things you CAN do. | 2. Name 1 action you CAN'T do yet!"
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-basic-zero-4",
+        "title": "Class 4: My Favorite Gadgets & Tech / Clase 4: My Favorite Gadgets & Tech",
+        "objective": "Master the topic of My Favorite Gadgets & Tech.",
+        "s2Details": "Gadgets, Tech & Adjectives 📱🎧 / Tecnología y Adjetivos -> Devices: Smartphone, laptop, headphones, smartwatch, gaming console, tablet | Adjectives: Fast, cool, useful, modern, portable, expensive | What is your #1 favorite device?\nThe Tech Possession Formula 💻 / Fórmula de Posesión -> I / You / We / They -> HAVE | He / She / It -> HAS | Formula: Subject + have/has + a/an + [Adjective] + [Device] | Example: 'I have wireless headphones and they are super useful for music.'\nQuick Check: Favorite Device 🎯 / Mini Reto -> Tell the teacher: | 'I have a ________ and it is very ________.' | What do you use it for most?"
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-basic-zero-5",
+        "title": "Class 5: Food Likes, Dislikes & Flavors / Clase 5: Gustos, disgustos y sabores",
+        "objective": "Usar like/don’t like, Do you like...? y adjetivos simples de sabor.",
+        "s2Details": "Snacks, Drinks & Flavors 🍕🥤 / Snacks y Sabores -> Snacks: Pizza, burger, popcorn, nachos, cookies, fruit salad | Drinks: Lemonade, bubble tea, iced tea, soda, water, smoothie | Flavors: Sweet (dulce), salty (salado), spicy (picante), delicious\nThe Preference Formula: LIKE & BECAUSE 😋 / Fórmula de Gustos -> Like (+): I like / I love [Food] because it is [Flavor]. | Dislike (-): I don't like [Food] because it is too sweet / salty. | Example: 'I love bubble tea because it is cold and sweet!'\nQuick Check: Snack Attack 🎯 / Mini Reto -> Tell the teacher: | 1. What is your #1 favorite snack and why? | 2. One food or drink you really dislike!"
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-basic-zero-6",
+        "title": "Class 6: Shapes & Patterns / Clase 6: Shapes & Patterns",
+        "objective": "Master the topic of Shapes & Patterns.",
+        "s2Details": "Shapes, Colors & Patterns 📐🎨 / Formas y Diseños -> Shapes: Circle, square, triangle, rectangle, star | Patterns: Striped (rayas), dotted (puntos), plain (liso), checkered (cuadros) | Colors: Dark blue, light green, neon pink, matte black\nThe Object Description Formula 🔍 / Fórmula de Descripción -> Formula: It is a + [Color] + [Pattern/Shape] + [Object]. | Example 1: 'My hoodie is dark blue and striped.' | Example 2: 'My notebook is a neon pink rectangle.'\nQuick Check: Describe an Item 🎯 / Mini Reto -> Look around your room or desk right now: | 'It is a (color) and (shape/style) ________.' | Say your sentence out loud to the teacher!"
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-basic-zero-7",
+        "title": "Class 7: School Subjects & Supplies / Clase 7: School Subjects & Supplies",
+        "objective": "Master the topic of School Subjects & Supplies.",
+        "s2Details": "School Subjects & Backpack Gear 🎒📚 / Materias y Útiles -> Subjects: Math, Science, English, History, Art, P.E. (Physical Education) | Supplies: Backpack, notebook, pencil case, pens, ruler, scissors, calculator | Which school subject is your absolute favorite?\nThe Backpack Formula: THERE IS / THERE ARE 🎒 / Fórmula de Existencia -> Singular (1): In my backpack, THERE IS a calculator and a notebook. | Plural (2+): In my backpack, THERE ARE three pens and two highlighters. | Example: 'In my pencil case, there is an eraser and there are two markers.'\nQuick Check: Backpack Scan 🎯 / Mini Reto -> Tell the teacher: | 1. What is your favorite school subject? | 2. Name 2 items in your bag using 'There is...' and 'There are...'"
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-basic-zero-8",
+        "title": "Class 8: Pets & Animal Friends / Clase 8: Pets & Animal Friends",
+        "objective": "Master the topic of Pets & Animal Friends.",
+        "s2Details": "Pets & Animal Friends 🐶🐱 / Mascotas y Animales -> Pets: Dog, cat, parrot, hamster, rabbit, turtle, fish | Wild Animals: Lion, dolphin, eagle, tiger, monkey | Adjectives: Playful, smart, fast, furry, cute, loyal\nThe Animal Spotlight Formula 🐾 / Fórmula de Animales -> Formula: My favorite animal is the [Animal] because it is [Adjective] and can [Action]. | Example 1: 'My dog is very playful and he can fetch the ball.' | Example 2: 'Dolphins are smart and can swim very fast in the ocean.'\nQuick Check: Animal Kingdom 🎯 / Mini Reto -> Tell the teacher: | 'My favorite animal is the ________ because it is ________ and can ________.'"
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-basic-zero-9",
+        "title": "Class 9: My Hobbies & Free Time / Clase 9: My Hobbies & Free Time",
+        "objective": "Master the topic of My Hobbies & Free Time.",
+        "s2Details": "Hobbies & Free Time Activities 🎮🎨 / Pasatiempos -> Gaming, drawing, playing guitar, listening to music, watching anime | Skateboarding, photography, baking, coding, dancing TikTok dances | Time: In my free time / On weekends / After school\nThe Hobby Expression Formula 🎧 / Fórmula de Hobbies -> Formula: In my free time, I love/enjoy + [Verb-ing] because it is [Reason]. | Example 1: 'In my free time, I really enjoy playing online games with friends.' | Example 2: 'On weekends, I prefer listening to music because it relaxes me.'\nQuick Check: Hobby Spotlight 🎯 / Mini Reto -> Tell the teacher: | 'In my free time, I really enjoy ________ because it is ________.'"
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-basic-zero-10",
+        "title": "Class 10: Family, Possessives & People / Clase 10: Familia, posesivos y personas",
+        "objective": "Identificar relaciones y describir una persona mediante posesivos y adjetivos básicos.",
+        "s2Details": "Family Members & Traits 🏠👥 / Familia y Rasgos -> Parents: Mother (Mom), Father (Dad) | Siblings: Brother, Sister | Extended: Grandmother, Grandfather, Uncle, Aunt, Cousin | Traits: Kind, funny, creative, hardworking, tall, cheerful\nThe Family Intro Formula: POSSESSIVES 🔑 / Fórmula de Familia -> Formula: This is my [Relative]. (His/Her) name is [Name] and (he/she) is [Trait]. | Example 1: 'This is my sister. Her name is Sofia and she is very creative.' | Example 2: 'This is my brother. His name is Leo and he loves soccer.'\nQuick Check: Family Intro 🎯 / Mini Reto -> Introduce 1 family member to the teacher: | 'This is my ________. (His/Her) name is ________ and (he/she) is ________.'"
+      },
+      {
+        "classNum": 11,
+        "classId": "c-teens-basic-zero-11",
+        "title": "Class 11: Alfabeto, deletreo and usernames / Clase 11: Alfabeto, deletreo y usernames",
+        "objective": "Master the topic of Alfabeto, deletreo y usernames.",
+        "s2Details": "Alphabet, Vowels & Tricky Letters 🅰️🗣️ / El Alfabeto -> Vowels: A /ei/, E /i:/, I /ai/, O /ou/, U /ju:/ | Tricky Letters: G /dʒi:/ vs J /dʒei/ | H /eitʃ/ | R /ɑ:r/ | W /dʌbəl ju:/ | Y /wai/ | Z /zi:/ | Symbols: @ = 'at' | _ = 'underscore' | . = 'dot'\nThe Spelling & Handle Formula 📱 / Fórmula de Deletreo -> Name Spelling: 'My name is ALEX -> A - L - E - X.' | Username Formula: 'My handle is @alex_gamer -> alex underscore gamer at instagram dot com.' | Question: 'How do you spell your last name, please?'\nQuick Check: Spell It Out! 🎯 / Mini Reto -> Spell your first name letter by letter to the teacher: | Example: 'My name is LUCAS -> L - U - C - A - S'"
+      },
+      {
+        "classNum": 12,
+        "classId": "c-teens-basic-zero-12",
+        "title": "Class 12: My Teen Profile / Clase 12: Mi perfil adolescente",
+        "objective": "Crear una presentación completa sin volver a enseñar los saludos de la clase 1.",
+        "s2Details": "Personal Profile & Goals 🪪🌟 / Perfil Personal -> Facts: Name, Age (I am 14), City & Country (I live in Medellin), Grade (9th grade) | Goals: I want to learn English to travel / chat with gamers / study abroad | Connectors: Use 'AND' for extra facts, 'BUT' for contrasts\nThe Complete Bio Formula 🗣️ / Fórmula de Biografía -> Formula: Hi! I'm [Name], [Age] years old from [City]. I love [Hobby] and I want to [Goal]! | Example: 'Hi! I'm Mateo, 15 years old from Cali. I love video games and I want to travel the world!'\nQuick Check: 20-Second Bio 🎯 / Mini Reto -> Deliver your bio to the teacher in 3 complete sentences: | 1. Name, age, city. | 2. Favorite hobby. | 3. Your goal in English!"
+      },
+      {
+        "classNum": 13,
+        "classId": "c-teens-basic-zero-13",
+        "title": "Class 13: Clothes, estilo personal and apariencia / Clase 13: Ropa, estilo personal y apariencia",
+        "objective": "Master the topic of Ropa, estilo personal y apariencia.",
+        "s2Details": "Clothes, Sneakers & Style 👖👟 / Ropa y Calzado -> Clothes: Hoodie, jacket, t-shirt, jeans, cargo pants, shorts, cap, sunglasses | Shoes & Bags: Sneakers, boots, backpack | Appearance: Tall, short, curly hair, straight hair, dark eyes\nThe Outfit Formula: PRESENT CONTINUOUS 🧥 / Fórmula de Outfit -> Formula: Today I am wearing a [Color/Item] with [Color/Item] and [Shoes]. | Example 1: 'Today I am wearing an oversized black hoodie with blue jeans and white sneakers.' | Example 2: 'She is wearing a green jacket, dark sunglasses, and cool boots.'\nQuick Check: Outfit Scanner 🎯 / Mini Reto -> Look down at your clothes right now: | 'Today I am wearing a ________ and ________.' | Tell the teacher your outfit!"
+      },
+      {
+        "classNum": 14,
+        "classId": "c-teens-basic-zero-14",
+        "title": "Class 14: Lost & Found at School / Clase 14: Objetos perdidos en la escuela",
+        "objective": "Preguntar dónde está un objeto y describir su ubicación con preposiciones.",
+        "s2Details": "Classroom Spaces, Items & Prepositions 🪑🏫 / El Salón de Clases -> Objects: Desk, chair, whiteboard, projector, clock, door, laptop, backpack | Prepositions of Place: In, on, under, next to, behind, in front of | Commands: Open your book, take notes, raise your hand\nThe Classroom Location Formula 📍 / Fórmula de Ubicación -> Formula: The [Object] is [Preposition] the [Location]. | Example 1: 'The notebook is ON the desk next to the laptop.' | Example 2: 'The backpack is UNDER the chair behind Sofia.'\nQuick Check: Classroom Detective 🎯 / Mini Reto -> Where is your pen or phone right now? | 'My (pen/phone) is (on/under/next to) the ________.' | Say it out loud to the teacher!"
+      },
+      {
+        "classNum": 15,
+        "classId": "c-teens-basic-zero-15",
+        "title": "Class 15: Rutina diaria básica / Clase 15: Rutina diaria básica",
+        "objective": "Master the topic of Rutina diaria básica.",
+        "s2Details": "Daily Routine & Telling Time 🌅⌚ / Rutina y Horas -> Routine Verbs: Wake up, take a shower, have breakfast, go to school, do homework, go to bed | Telling Time: 7:00 (seven o'clock) | 7:15 (a quarter past seven) | 7:30 (half past seven) | 7:45 (a quarter to eight) | Prepositions: AT + hour (at 6:30 AM) | IN + part of day (in the morning, in the evening)\nThe Daily Routine Formula 🔄 / Fórmula de Rutina -> Formula: I [Routine Action] at [Time] [Part of Day]. | Example 1: 'I wake up at 6:30 AM in the morning.' | Example 2: 'I do my homework at 4:00 PM in the afternoon.'\nQuick Check: Daily Clock 🎯 / Mini Reto -> Tell the teacher: | 1. What time do you wake up on school days? | 2. What time do you go to sleep?"
+      },
+      {
+        "classNum": 16,
+        "classId": "c-teens-basic-zero-16",
+        "title": "Class 16: Level 0 Review & Final Challenge 🏆 / Clase 16: Level 0 Review & Final Challenge 🏆",
+        "objective": "Review and master all vocabulary and grammar from Level 0.",
+        "s2Details": "Level 0 Grand Review: Personal Bio & Skills 🌟 / Gran Repaso -> Bio: Greetings, name, age (I am 15), birthday month, city | Abilities & Tech: I can skate (can/can't), I have a laptop (have/has) | Routine & Style: Today I am wearing a hoodie, I wake up at 7:00 AM\nThe Startup Capstone Formula 🎓 / Fórmula Final -> 1. Introduce yourself & how you feel. | 2. Share 1 thing you have and 1 thing you can do. | 3. State your favorite hobby and routine time. | Example: 'Hi! I'm Leo, 15. I have headphones, I can play soccer, and I love gaming!'\nQuick Check: Grand Startup Pitch 🎯 / Gran Reto -> Deliver your 30-second Level 0 English pitch to the teacher! | Show everything you learned in Level 0!"
+      }
+    ]
+  },
+  {
+    "levelNumber": 1,
+    "levelId": "teens-basic-1",
+    "levelTitle": "Level 1 - Teen Explorer / Nivel 1 - Explorador adolescente",
+    "mcfr": "A1",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-basic-1-1",
+        "title": "Class 1: People Profiles, Friendship & Feelings / Clase 1: Perfiles, amistad y emociones",
+        "objective": "Crear perfiles de personas usando this/these, have/has, feelings y personality adjectives.",
+        "s2Details": "People in Your Circle / Personas cercanas -> Friend, classmate, teammate, neighbor, cousin | This is my classmate, Eva. | These are my teammates.\nPersonality Words / Personalidad -> Friendly, quiet, funny, creative, helpful | Leo is creative and helpful. | Use be for personality and feelings.\nFeelings Can Change / Emociones -> Excited, worried, tired, calm, proud | My friend is worried about the test. | Ask: How does he or she feel?"
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-basic-1-2",
+        "title": "Class 2: Healthy Habits, Food & Energy / Clase 2: Hábitos saludables, comida y energía",
+        "objective": "Relacionar comida, agua, sueño y movimiento con energía usando because.",
+        "s2Details": "Food for Energy / Comida y energía -> Fruit, vegetables, protein, grains | Different foods help the body in different ways. | Build a meal, not a restaurant order.\nWater and Drinks / Agua y bebidas -> Water helps you stay focused. | Too much soda can reduce steady energy. | I choose water because I have practice.\nSleep and Movement / Sueño y movimiento -> Sleep, walk, stretch, exercise | Healthy energy is not only about food. | I sleep eight hours on school nights."
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-basic-1-3",
+        "title": "Class 3: Weather Forecast & What to Bring / Clase 3: Pronóstico y qué llevar",
+        "objective": "Describir el pronóstico y decidir qué usar o llevar según las condiciones.",
+        "s2Details": "Read the Forecast / Leer el pronóstico -> Sunny, cloudy, rainy, windy, hot, cold | It will be rainy this afternoon. | Focus on conditions and decisions, not a clothing list.\nTemperature and Conditions / Temperatura -> It is 12 degrees and windy. | The morning is cool, but the afternoon is warm. | Use and/but to connect conditions.\nWhat Do You Need? / ¿Qué necesitas? -> You need an umbrella. | Bring water and a cap. | Wear comfortable shoes."
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-basic-1-4",
+        "title": "Class 4: Nature, Locations & Park Rules / Clase 4: Naturaleza, ubicación y reglas del parque",
+        "objective": "Usar there is/are, preposiciones e imperativos para describir y proteger un parque.",
+        "s2Details": "Outdoor Places / Lugares al aire libre -> Park, trail, lake, garden, playground | There is a lake near the trail. | There are trees around the playground.\nLocate Nature / Ubicar la naturaleza -> next to, behind, between, across from | The garden is behind the café. | Two benches are next to the lake.\nDescribe What You See / Describir -> There is + singular or uncountable | There are + plural | Add color, size, or condition."
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-basic-1-5",
+        "title": "Class 5: Weekend Intentions & Simple Plans / Clase 5: Intenciones y planes de fin de semana",
+        "objective": "Expresar una intención y organizar un plan sencillo con día, hora y lugar.",
+        "s2Details": "Wants and Interests / Deseos e intereses -> I want to relax this weekend. | I would like to visit the new park. | Use these forms before confirming a plan.\nGoing To for an Intention / Intención -> I am going to study Saturday morning. | We are going to play soccer. | be + going to + base verb\nAdd Plan Details / Añadir detalles -> Day: on Saturday | Time: at three o’clock | Place: at the community center"
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-basic-1-6",
+        "title": "Class 6: Invitations—Accepting & Declining / Clase 6: Invitaciones—aceptar y rechazar",
+        "objective": "Make invitations and accept or decline them politely with a clear follow-up.",
+        "s2Details": "Make an Invitation 💌 / Invitar -> Would you like to watch a movie? | Do you want to play soccer? | Yes, I would love to!\nGive a Reason 💬 / Dar una razón -> I have soccer practice. | I need to study for a test. | How about Sunday?\nSuggest Another Time 📅 -> How about Sunday? | Maybe another day. | Are you free tomorrow?"
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-basic-1-7",
+        "title": "Class 7: Clothing Store - Prices, Sizes & Payment / Clase 7: Tienda de ropa - Precios, tallas y pago",
+        "objective": "Preguntar precio, talla y color, probar una opción y pagar con cortesía.",
+        "s2Details": "Clothes in a Store 👕 -> Hoodie, T-shirt, jeans, jacket | Sneakers, boots, cap | How much is this hoodie?\nChoose an Item ✅ -> I would like this jacket. | These sneakers are comfortable. | I will take it.\nPay Politely 💳 -> I will take it. | Can I pay by card? | Thank you. Have a nice day!"
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-basic-1-8",
+        "title": "Class 8: Café Ordering & Menu Questions / Clase 8: Pedidos y preguntas de menú",
+        "objective": "Leer opciones, pedir, aclarar y pagar en una cafetería.",
+        "s2Details": "Café Food 🥪 / Comida de cafetería -> Sandwich, burger, pizza slice | Chips, cookies, fruit, salad | Item = what you can order\nAsk About Options ❓ -> What drinks do you have? | Does it come with fries? | I prefer juice to soda.\nPreferences and Payment 💳 -> I prefer juice to soda. | That is all, thank you. | Can I pay by card?"
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-basic-1-9",
+        "title": "Class 9: Digital Habits, Purpose & Safety / Clase 9: Hábitos, propósito y seguridad digital",
+        "objective": "Usar use...to y frecuencia para analizar una rutina digital.",
+        "s2Details": "Devices and Apps 📱 -> Phone, laptop, tablet, headphones | Chat app, music app, game, browser | I use my phone to chat with friends.\nHow Often? ⏰ -> Always, usually, sometimes, never | I usually listen to music online. | Use a strong password.\nSmart Online Choices 🔒 -> Use a strong password. | Don't share private information. | Ask an adult when something feels wrong."
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-basic-1-10",
+        "title": "Class 10: Chats, Help Calls & Trip Planning / Clase 10: Chats, llamadas de ayuda y planificación de viajes",
+        "objective": "Ask for clarification, exchange planning details, and confirm a date, time, place, and task.",
+        "s2Details": "Ask for Help 🙋 / Pedir ayuda -> Can you help me, please? | Could you send me the address? | Could you repeat that?\nSuggest and Assign Tasks ✅ -> Let's meet at the station. | I can buy the tickets. | So, we meet at 9:30 on Saturday.\nConfirm the Plan 🔁 -> So, we meet at 9:30 on Saturday. | You bring the snacks, and I bring the tickets. | See you at Central Station!"
+      }
+    ]
+  },
+  {
+    "levelNumber": 2,
+    "levelId": "teens-basic-2",
+    "levelTitle": "Level 2 - Teen Adventurer / Nivel 2 - Aventurero adolescente",
+    "mcfr": "A1",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-basic-2-1",
+        "title": "Class 1: Animals & Habitats / Clase 1: Animales y hábitats",
+        "objective": "Describe animals, habitats, and basic abilities.",
+        "s2Details": "Pets & Wild Animals 🐾 / Mascotas y Animales -> Pets: Dog, cat, hamster, parrot, bunny | Wild: Lion, elephant, monkey, dolphin, eagle, snake | A hamster is small and friendly. A lion is wild and strong. | Forest = bosque / Ocean = océano / Desert = desierto\nThe Animal & Habitat Formula 🦁 / Fórmula de Animales -> Formula: A [Animal] lives in the [Habitat] and can [Ability]. | Example: 'A dolphin lives in the ocean and can swim very fast.'\nQuick Check: Safari Guide 🎯 / Mini Reto -> Tell the teacher: | 'A ________ lives in the ________ and can ________.' | Say your sentence out loud!"
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-basic-2-2",
+        "title": "Class 2: My Room & Dream House / Clase 2: Mi cuarto y casa soñada",
+        "objective": "Describe rooms, furniture, and dream houses with there is/there are.",
+        "s2Details": "Rooms at Home & Furniture 🛏️🚪 / Habitaciones y Muebles -> Bedroom, living room, kitchen, bathroom, gaming corner | Desk, bed, wardrobe, sofa, bookshelf, gaming chair | My bedroom is my favorite space to relax and study. | There is a comfortable bed in my bedroom.\nThe Room Description Formula 🛋️ / Fórmula de Cuarto -> Formula: In my room, there is a [Furniture] and there are [Items] [Preposition] the [Location]. | Example: 'In my room, there is a gaming chair next to the desk.'\nQuick Check: Room Tour 🎯 / Mini Reto -> Tell the teacher 2 things in your bedroom: | 'In my room, there is a ________ and there are ________.'"
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-basic-2-3",
+        "title": "Class 3: City Navigation & Transport / Clase 3: Navegación urbana y transporte",
+        "objective": "Usar go by, city places y direcciones breves para completar una ruta.",
+        "s2Details": "City Places & Transportation 🚌🏙️ / Transporte y Ciudad -> Bus, subway, bike, scooter, taxi, train, walking | Mall, park, library, cinema, skatepark, stadium | I usually go to school by bus or on foot. | Go BY bus / BY train / BY car / BY subway\nThe City Route Formula 🚇 / Fórmula de Rutas -> Formula: To go to the [City Place], I go by [Transport] because it is [Reason]. | Example: 'To go to the mall, I go by subway because it is fast and cheap.'\nQuick Check: City Navigator 🎯 / Mini Reto -> Tell the teacher: | 'When I go to ________, I travel by ________ because ________.'"
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-basic-2-4",
+        "title": "Class 4: Dream Jobs & Professions / Clase 4: Trabajos soñados y profesiones",
+        "objective": "Talk about jobs, workplaces, and what you want to be.",
+        "s2Details": "Dream Jobs & Workplaces 💼🏢 / Profesiones Soñadas -> Software developer, graphic designer, veterinarian, pilot, doctor | Game streamer, architect, scientist, teacher, chef | Tech company, hospital, design studio, airport, laboratory | I want to be a software engineer because I love creating apps.\nThe Dream Career Formula 🚀 / Fórmula de Carrera -> Formula: I want to be a [Job] because I love [Interest] and I am good at [Skill]. | Example: 'I want to be a game designer because I love art and coding.' | I want to be a software engineer because I love creating apps.\nQuick Check: Future Pitch 🎯 / Mini Reto -> Tell the teacher: | 'In the future, I want to be a ________ because ________.'"
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-basic-2-5",
+        "title": "Class 5: Habilidades con can / can’t / Clase 5: Habilidades con can / can’t",
+        "objective": "Talk about abilities using can, can’t, and short answers.",
+        "s2Details": "Talents & Skill Verbs ⚡🎤 / Habilidades y Talentos -> Play guitar, code websites, speak French, edit videos | Do a backflip, skate on ramps, draw realistic portraits | Everyone has a unique superpower! | I can edit videos easily, but I can't play the drums.\nThe Talent Show Formula 🌟 / Fórmula de Talento -> Formula: I can [Skill] [Degree of Ability], but I can't [Skill 2]. | Example: 'I can edit videos very well, but I can't play the guitar.'\nQuick Check: Talent Reveal 🎯 / Mini Reto -> Tell the teacher: | 1. What is one cool skill you can do well? | 2. One skill you want to learn this year!"
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-basic-2-6",
+        "title": "Class 6: Reglas escolares with must, have to, should / Clase 6: Reglas escolares con must, have to, should",
+        "objective": "Use must, have to, and should for school rules and advice.",
+        "s2Details": "School & Lab Rules 🏫📌 / Reglas Escolares -> Be on time, wear your student ID, respect classmates | Turn off your phone in class, don't run in hallways | Keep the science lab clean and wear safety goggles. | MUST = Strict rule (You must wear a helmet).\nThe Rule & Advice Formula 📋 / Fórmula de Reglas -> Formula: At school, you must [Obligation] and you should [Advice]. | Example: 'At school, you must arrive on time and you should ask questions in class.'\nQuick Check: School Principal 🎯 / Mini Reto -> Give 1 strict rule and 1 piece of advice for new students: | 'You MUST ________ and you SHOULD ________.'"
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-basic-2-7",
+        "title": "Class 7: Sports, Health & Habit Frequency / Clase 7: Deportes, salud y frecuencia",
+        "objective": "Describir una semana saludable con deportes, descanso, agua y frecuencia.",
+        "s2Details": "Sports, Workouts & Active Life ⚽🏃‍♀️ / Deportes y Actividad -> Basketball, soccer, swimming, volleyball, cycling, martial arts | Cardio workout, stretching, gym, yoga | Active habits improve mood and focus! | Every day, twice a week, three times a week, rarely\nThe Healthy Routine Formula ❤️ / Fórmula Saludable -> Formula: I practice [Sport/Activity] [Frequency] because it helps me [Benefit]. | Example: 'I go swimming twice a week because it helps me relieve stress.'\nQuick Check: Health Coach 🎯 / Mini Reto -> Tell the teacher: | 'I practice ________ (how often?) because ________.'"
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-basic-2-8",
+        "title": "Class 8: Plan a City Outing / Clase 8: Planificar una salida por la ciudad",
+        "objective": "Elegir un lugar, proponer transporte y confirmar un plan grupal.",
+        "s2Details": "City Outings & Hangout Spots 🎬🛹 / Lugares para Salir -> Cinema, shopping mall, skatepark, bowling alley, escape room | Café, amusement park, food truck festival, arcade | Where do you like hanging out with friends? | Let's go to the cinema this Saturday!\nThe Outing Proposal Formula 🎟️ / Fórmula de Salida -> Formula: 'How about going to the [Place] on [Day] at [Time] by [Transport]?' | Example: 'How about going to the arcade on Friday at 5 PM by subway?'\nQuick Check: Plan a Weekend Outing 🎯 / Mini Reto -> Invite the teacher to a cool hangout: | 'Let's go to the ________ this weekend! We can meet at ________.'"
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-basic-2-9",
+        "title": "Class 9: Describir series, películas, juegos and música / Clase 9: Describir series, películas, juegos y música",
+        "objective": "Describe series, movies, games, and music using opinion adjectives.",
+        "s2Details": "Media, Shows, Gaming & Music 🎧🎬 / Entretenimiento -> Anime series, action movies, open-world games, hip-hop, pop | Streaming series, podcasts, multiplayer games | What are you currently watching or playing? | Exciting, addictive, boring, overrated, masterpiece, emotional\nThe Entertainment Review Formula 🎮 / Fórmula de Reseña -> Formula: I think [Show/Game] is [Adjective] because [Reason]. | Example: 'I think Stranger Things is exciting because the story is full of mystery.'\nQuick Check: Media Critic 🎯 / Mini Reto -> Give your 1-sentence review of a favorite movie, game, or series: | 'I really recommend ________ because it is ________.'"
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-basic-2-10",
+        "title": "Class 10: Conversación actual, rutinas and Review Speaking por retos / Clase 10: Conversación actual, rutinas y repaso oral por retos",
+        "objective": "Review Level 2 topics through short speaking challenges and current conversations.",
+        "s2Details": "Adventurer Capstone: My World 🌟 / Gran Resumen -> Animals & habitats: Where animals live and what they do. | My room & home: Describing my personal space. | City & transport: How I move around town. | Abilities: Things I can do well (code, skate, design).\nThe Adventurer Capstone Formula 🏆 / Fórmula de Graduación -> 1. Introduce your city and favorite place to hang out. | 2. Share a top skill you can do and a rule you follow. | 3. Give a recommendation of a game, movie, or sport.\nQuick Check: Grand Adventurer Pitch 🎯 / Gran Reto -> Deliver your 30-second Level 2 English pitch to the teacher! | Show your fluency across skills, rules, and city life!"
+      }
+    ]
+  },
+  {
+    "levelNumber": 3,
+    "levelId": "teens-basic-3",
+    "levelTitle": "Level 3 - Teen Champion / Nivel 3 - Campeón adolescente",
+    "mcfr": "A2",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-basic-3-1",
+        "title": "Class 1: Schedules, Sequence & Punctuality / Clase 1: Horarios, secuencia y puntualidad",
+        "objective": "Explicar una jornada mediante horas, before/after y conectores de secuencia.",
+        "s2Details": "Daily Routine & Sequence ⏰🌅 / Rutina y Secuencia -> Wake up, take a shower, have breakfast, commute, attend classes | Do homework, practice sports, relax, go to sleep | Sequence words: First, then, after that, finally | AT 7:30 AM / AT night / IN the morning / ON weekdays\nThe Daily Schedule Formula 📅 / Fórmula de Horario -> Formula: First I [Action 1] at [Time], then I [Action 2] before [Action 3]. | Example: 'First I study at 4 PM, then I practice soccer before having dinner.'\nQuick Check: Master Your Routine 🎯 / Mini Reto -> Tell the teacher: | 'After school, first I ________ at ________, and then I ________.'"
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-basic-3-2",
+        "title": "Class 2: Teams, Scores & Fair Comparisons / Clase 2: Equipos, resultados y comparaciones",
+        "objective": "Describir un partido y comparar desempeño con lenguaje respetuoso.",
+        "s2Details": "Team Sports & Match Roles ⚽🏆 / Deportes y Roles -> Captain, striker, goalkeeper, defender, coach, referee | Score a goal, win the tournament, defend the lead, pass the ball | Our soccer team is competing in the regional championship. | Short adjectives: fast -> faster than / strong -> stronger than\nThe Sports Comparison Formula 🏅 / Fórmula de Comparación -> Formula: [Team/Player A] is [Comparative Adjective] than [Team/Player B] because [Reason]. | Example: 'Our goalkeeper is taller and more agile than their striker.'\nQuick Check: Match Commentary 🎯 / Mini Reto -> Compare 2 players or teams in 1 complete sentence: | '(Player A) is ________ than (Player B) because ________.'"
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-basic-3-3",
+        "title": "Class 3: Holidays, Festivals & Traditions / Clase 3: Días festivos, festivales y tradiciones",
+        "objective": "Present a celebration, its sequence, and why it matters.",
+        "s2Details": "Core Language / Lenguaje central -> People wear colorful costumes during the festival. | My family celebrates this tradition every year. | First we prepare food, and then we visit our relatives.\nKey Vocabulary / Vocabulario clave -> festival | tradition | celebrate | costume\nForm and Meaning / Forma y significado -> People wear colorful costumes during the festival. | Notice how the target language supports this outcome: Present a celebration, its sequence, and why it matters. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-basic-3-4",
+        "title": "Class 4: Space, Science & Future / Clase 4: El espacio, la ciencia y el futuro",
+        "objective": "Make an evidence-based prediction about science or space.",
+        "s2Details": "Core Language / Lenguaje central -> Astronauts will travel farther in the future. | I think people will build new space stations. | Scientists are going to test the mission next year.\nKey Vocabulary / Vocabulario clave -> planet | mission | astronaut | prediction\nForm and Meaning / Forma y significado -> Astronauts will travel farther in the future. | Notice how the target language supports this outcome: Make an evidence-based prediction about science or space. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-basic-3-5",
+        "title": "Class 5: Past To Be: Was/Were & Childhood Memories / Clase 5: Pasado To Be (Was/Were) y recuerdos de infancia",
+        "objective": "Tell a childhood memory with was, were, and a clear time marker.",
+        "s2Details": "Core Language / Lenguaje central -> I was shy when I was eight. | My friends were very creative at school. | Our favorite game was hide-and-seek.\nKey Vocabulary / Vocabulario clave -> childhood | memory | was | were\nForm and Meaning / Forma y significado -> I was shy when I was eight. | Notice how the target language supports this outcome: Tell a childhood memory with was, were, and a clear time marker. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-basic-3-6",
+        "title": "Class 6: Travel Stories with Key Past Verbs / Clase 6: Historias de viaje con verbos del pasado",
+        "objective": "Contar una experiencia de viaje con acciones pasadas, lugares y marcadores de tiempo.",
+        "s2Details": "Travel, Trips & Vacations ✈️🏖️ / Vacaciones y Viajes -> Airport, boarding pass, hotel, beach, mountains, tour guide | Luggage, passport, souvenir, road trip, sightseeing | Last summer, my family went on an unforgettable road trip. | Regular: visited, stayed, explored, watched, traveled\nThe Travel Story Formula 🏝️ / Fórmula de Viaje -> Formula: Last [Vacation Time], I went to [Destination], where I [Past Action 1] and [Past Action 2]. | Example: 'Last year, I went to the mountains, where I hiked with my cousins and took great photos.'\nQuick Check: Travel Postcard 🎯 / Mini Reto -> Tell the teacher about a trip you took: | 'On my last vacation, I went to ________ and I (ate/visited/saw) ________.'"
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-basic-3-7",
+        "title": "Class 7: Biographies of Artists, Athletes & Creators / Clase 7: Biografías de artistas, deportistas y creadores",
+        "objective": "Present a chronological mini biography with dates and achievements.",
+        "s2Details": "Core Language / Lenguaje central -> She was born in Colombia in 2004. | She became a professional athlete after years of training. | Her greatest achievement was winning the national championship.\nKey Vocabulary / Vocabulario clave -> was born | became | career | achievement\nForm and Meaning / Forma y significado -> She was born in Colombia in 2004. | Notice how the target language supports this outcome: Present a chronological mini biography with dates and achievements. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-basic-3-8",
+        "title": "Class 8: Storytelling Connectors / Clase 8: Conectores para contar historias",
+        "objective": "Organize an anecdote with sequence, contrast, and a clear ending.",
+        "s2Details": "Core Language / Lenguaje central -> First, we arrived at the campsite. | Suddenly, the weather changed. | Finally, we found a safe place to wait.\nKey Vocabulary / Vocabulario clave -> first | then | suddenly | finally\nForm and Meaning / Forma y significado -> First, we arrived at the campsite. | Notice how the target language supports this outcome: Organize an anecdote with sequence, contrast, and a clear ending. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-basic-3-9",
+        "title": "Class 9: Everyday Problems & How to Explain Them / Clase 9: Problemas cotidianos y cómo explicarlos",
+        "objective": "Explain an everyday problem, its cause, and a practical solution.",
+        "s2Details": "Core Language / Lenguaje central -> My phone stopped working, so I asked for help. | I missed the bus because I left home late. | The solution was to check the schedule earlier.\nKey Vocabulary / Vocabulario clave -> problem | because | so | solution\nForm and Meaning / Forma y significado -> My phone stopped working, so I asked for help. | Notice how the target language supports this outcome: Explain an everyday problem, its cause, and a practical solution. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-basic-3-10",
+        "title": "Class 10: Irregular Verbs & -ed Endings. Video Project / Clase 10: Verbos irregulares y terminaciones -ed. Proyecto en video",
+        "objective": "Produce a short past-tense video with accurate verbs and -ed pronunciation.",
+        "s2Details": "Core Language / Lenguaje central -> We made a video about our school trip. | I recorded the introduction and edited the final scene. | The word visited ends with an /ɪd/ sound.\nKey Vocabulary / Vocabulario clave -> irregular verb | -ed ending | project | narration\nForm and Meaning / Forma y significado -> We made a video about our school trip. | Notice how the target language supports this outcome: Produce a short past-tense video with accurate verbs and -ed pronunciation. | Meaning and communicative purpose come before memorization."
+      }
+    ]
+  },
+  {
+    "levelNumber": 4,
+    "levelId": "teens-basic-4",
+    "levelTitle": "Level 4 - Teen Pro / Nivel 4 - Adolescente Pro",
+    "mcfr": "A2",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-basic-4-1",
+        "title": "Class 1: My Opinions & Perspectives / Clase 1: Mis opiniones y perspectivas",
+        "objective": "State an opinion and support it with a reason and example.",
+        "s2Details": "Core Language / Lenguaje central -> In my opinion, school clubs are important. | I think this because students need creative spaces. | For example, a music club can build confidence.\nKey Vocabulary / Vocabulario clave -> opinion | reason | example | perspective\nForm and Meaning / Forma y significado -> In my opinion, school clubs are important. | Notice how the target language supports this outcome: State an opinion and support it with a reason and example. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-basic-4-2",
+        "title": "Class 2: Giving Good Advice / Clase 2: Dar buenos consejos",
+        "objective": "Give useful advice and explain the likely benefit.",
+        "s2Details": "Core Language / Lenguaje central -> You should make a realistic study plan. | You could ask the teacher for feedback. | If you sleep well, you can concentrate better.\nKey Vocabulary / Vocabulario clave -> should | could | advice | consequence\nForm and Meaning / Forma y significado -> You should make a realistic study plan. | Notice how the target language supports this outcome: Give useful advice and explain the likely benefit. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-basic-4-3",
+        "title": "Class 3: Facts, Causes & Zero Conditional / Clase 3: Hechos, causas y condicional cero",
+        "objective": "Usar if + present, present para reglas, hechos y consecuencias habituales.",
+        "s2Details": "General Results / Resultados generales -> If you heat ice, it melts. | If teens sleep well, they concentrate better. | Both parts use present simple.\nRules and Habits / Reglas y hábitos -> If I study early, I feel calmer. | If the bell rings, students enter class. | The result normally happens.\nCause and Effect / Causa y efecto -> Cause: if-clause | Effect: result clause | You may change the order without changing meaning."
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-basic-4-4",
+        "title": "Class 4: Clear Online Messages & Digital Etiquette / Clase 4: Mensajes claros y etiqueta digital",
+        "objective": "Escribir un mensaje breve con saludo, propósito, detalle y cierre adecuados.",
+        "s2Details": "Texting, Acronyms & Digital Slang 📱💬 / Mensajería y Chat -> BRB (Be Right Back), IDK (I Don't Know), BTW (By The Way), TBH (To Be Honest) | FOMO (Fear Of Missing Out), RN (Right Now), NGL (Not Gonna Lie) | Use acronyms in casual chats with friends, not in school essays! | Don't spam multiple voice notes when one clear message works.\nThe Clear Online Message Formula 📨 / Fórmula de Mensaje -> Formula: 'Hey [Team]! [Update/Question]. Please [Action Required] by [Deadline]. Thanks!' | Example: 'Hey team! I uploaded our slides. Please review your part by 6 PM today.' | Don't spam multiple voice notes when one clear message works.\nQuick Check: Group Project Chat 🎯 / Mini Reto -> Send a quick message to your project team requesting feedback: | 'Hey team! BTW, I finished the ________. Please check it ________.'"
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-basic-4-5",
+        "title": "Class 5: Future Possibilities & Consequences / Clase 5: Posibilidades Futuras y Consecuencias (First Conditional)",
+        "objective": "Use first conditional to plan for a real future possibility.",
+        "s2Details": "Core Language / Lenguaje central -> If it rains, we will watch the game at home. | If I finish early, I will call you. | We will miss the bus if we leave after eight.\nKey Vocabulary / Vocabulario clave -> if | will | plan | consequence\nForm and Meaning / Forma y significado -> If it rains, we will watch the game at home. | Notice how the target language supports this outcome: Use first conditional to plan for a real future possibility. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-basic-4-6",
+        "title": "Class 6: Comparatives & Superlatives (Tech, Movies & Sports) / Clase 6: Comparativos y Superlativos (Tecnología, Películas y Deportes)",
+        "objective": "Compare products or entertainment and justify the best choice.",
+        "s2Details": "Core Language / Lenguaje central -> This app is more useful than that one. | The blue phone is lighter than the black phone. | That was the most exciting match of the season.\nKey Vocabulary / Vocabulario clave -> more | than | the most | comparison\nForm and Meaning / Forma y significado -> This app is more useful than that one. | Notice how the target language supports this outcome: Compare products or entertainment and justify the best choice. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-basic-4-7",
+        "title": "Class 7: Too & Enough: Problems and Solutions / Clase 7: Too y Enough para Problemas y Soluciones",
+        "objective": "Describe a problem with too/enough and propose a solution.",
+        "s2Details": "Core Language / Lenguaje central -> This laptop is too expensive for me. | The room is not quiet enough to record. | The backpack is big enough for the computer.\nKey Vocabulary / Vocabulario clave -> too | enough | problem | solution\nForm and Meaning / Forma y significado -> This laptop is too expensive for me. | Notice how the target language supports this outcome: Describe a problem with too/enough and propose a solution. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-basic-4-8",
+        "title": "Class 8: Friendship Boundaries & Polite Requests / Clase 8: Límites y peticiones entre amigos",
+        "objective": "Usar could, would you mind y I need para resolver un conflicto entre amigos.",
+        "s2Details": "State the Situation / Explicar la situación -> I feel distracted when messages arrive late. | I need quiet time to study. | Describe the problem without attacking the person.\nMake a Polite Request / Hacer una petición -> Could you text me before calling? | Would you mind lowering the music? | Please ask before sharing my photo.\nSet a Boundary / Establecer un límite -> I'm not comfortable with that. | I prefer not to share my password. | I can help, but I cannot do the whole project."
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-basic-4-9",
+        "title": "Class 9: Formal vs Informal Messages / Clase 9: Mensajes formales e informales",
+        "objective": "Transformar un chat informal en un correo apropiado para un profesor o servicio.",
+        "s2Details": "Formal Email Architecture 📧🏛️ / Estructura de Correo Formal -> 1. Subject Line: Clear and concise ('Application for Science Club') | 2. Salutation: 'Dear Mr. Miller,' / 'Dear Admissions Committee,' | 3. Purpose: 'I am writing to inquire about...' | Informal: 'Hey! Send me the info ASAP.'\nThe Formal Email Blueprint 📋 / Fórmula de Correo -> Formula: 'Dear [Name], I am writing to [Purpose]. Could you please [Request]? Thank you for your time. Sincerely, [Your Name].' | Example: 'Dear Principal Smith, I am writing to propose a robotics club. Sincerely, Mateo Ruiz.' | Formal: 'Dear Ms. Davis, I would appreciate it if you could share the information at your earliest convenience.'\nQuick Check: Professional Subject & Hook 🎯 / Mini Reto -> Draft a 2-line formal email opener to a teacher asking for project feedback: | 'Dear ________, I am writing to ________. Sincerely, ________.'"
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-basic-4-10",
+        "title": "Class 10: Teen Leadership, Customer Service & Capstone Review / Clase 10: Liderazgo Juvenil, Atención al Cliente y Evaluación de Nivel 4",
+        "objective": "Handle a customer problem with empathy and a concrete solution.",
+        "s2Details": "Core Language / Lenguaje central -> I am sorry your order arrived late. | Could you explain what happened? | We can replace the item or refund the payment.\nKey Vocabulary / Vocabulario clave -> customer | issue | apology | solution\nForm and Meaning / Forma y significado -> I am sorry your order arrived late. | Notice how the target language supports this outcome: Handle a customer problem with empathy and a concrete solution. | Meaning and communicative purpose come before memorization."
+      }
+    ]
+  },
+  {
+    "levelNumber": 5,
+    "levelId": "teens-inter",
+    "levelTitle": "Intermediate - Teen Communicator / Intermedio - Comunicador adolescente",
+    "mcfr": "B1",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-inter-1",
+        "title": "Class 1: My Life Experiences (Present Perfect) / Clase 1: Experiencias de Vida y Present Perfect",
+        "objective": "Interview a partner about experiences and ask meaningful follow-up questions.",
+        "s2Details": "Core Language / Lenguaje central -> I have visited three different countries. | Have you ever performed on stage? | I have not finished the course yet.\nKey Vocabulary / Vocabulario clave -> experience | ever | never | yet\nForm and Meaning / Forma y significado -> I have visited three different countries. | Notice how the target language supports this outcome: Interview a partner about experiences and ask meaningful follow-up questions. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-inter-2",
+        "title": "Class 2: Teen Slang & Phrasal Verbs in Daily Conversations / Clase 2: Slang Juvenil y Phrasal Verbs en Conversaciones Diarias",
+        "objective": "Use common phrasal verbs naturally in a teen conversation.",
+        "s2Details": "Core Language / Lenguaje central -> I found out about the event online. | Do not give up after one difficult attempt. | We worked out a better solution together.\nKey Vocabulary / Vocabulario clave -> find out | give up | look after | work out\nForm and Meaning / Forma y significado -> I found out about the event online. | Notice how the target language supports this outcome: Use common phrasal verbs naturally in a teen conversation. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-inter-3",
+        "title": "Class 3: Possibilities & Deductions (Must, Might, Can't) / Clase 3: Posibilidades y Deducciones con Modales",
+        "objective": "Make deductions at different certainty levels and cite a clue.",
+        "s2Details": "Core Language / Lenguaje central -> She must be at practice because her bag is gone. | They might be studying in the library. | He can’t be at home; I just saw him downtown.\nKey Vocabulary / Vocabulario clave -> must | might | could | can’t\nForm and Meaning / Forma y significado -> She must be at practice because her bag is gone. | Notice how the target language supports this outcome: Make deductions at different certainty levels and cite a clue. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-inter-4",
+        "title": "Class 4: If I Ruled the World (Second Conditional) / Clase 4: Segundo Condicional e Hipótesis",
+        "objective": "Explore an imaginary situation and defend one consequence.",
+        "s2Details": "Core Language / Lenguaje central -> If I ruled the world, I would improve public education. | I would travel more if tickets were cheaper. | What would you change if you were the mayor?\nKey Vocabulary / Vocabulario clave -> if | would | imaginary | consequence\nForm and Meaning / Forma y significado -> If I ruled the world, I would improve public education. | Notice how the target language supports this outcome: Explore an imaginary situation and defend one consequence. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-inter-5",
+        "title": "Class 5: Agreeing & Disagreeing Respectfully / Clase 5: Acuerdos y Desacuerdos Respetuosos en Debates",
+        "objective": "Agree or disagree respectfully and add a reason or question.",
+        "s2Details": "Core Language / Lenguaje central -> I agree with your main point because the evidence is strong. | I see your point; however, there is another risk. | Could you explain what evidence supports that claim?\nKey Vocabulary / Vocabulario clave -> agree | however | point | evidence\nForm and Meaning / Forma y significado -> I agree with your main point because the evidence is strong. | Notice how the target language supports this outcome: Agree or disagree respectfully and add a reason or question. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-inter-6",
+        "title": "Class 6: Podcast & Media Hosting Basics / Clase 6: Fundamentos de Podcasting y Locución en Inglés",
+        "objective": "Record or perform a structured mini podcast debate.",
+        "s2Details": "Core Language / Lenguaje central -> Today’s episode asks whether phones belong in class. | My main claim is that clear limits work better than a ban. | I understand that concern, but the evidence suggests another result.\nKey Vocabulary / Vocabulario clave -> episode | claim | host | rebuttal\nForm and Meaning / Forma y significado -> Today’s episode asks whether phones belong in class. | Notice how the target language supports this outcome: Record or perform a structured mini podcast debate. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-inter-7",
+        "title": "Class 7: Ongoing Goals & Present Perfect Continuous / Clase 7: Metas en progreso y Present Perfect Continuous",
+        "objective": "Contrastar have done con have been doing al presentar una meta personal.",
+        "s2Details": "Completed Experience / Experiencia completada -> I have finished three projects. | Focus: result or achievement | Present perfect: have/has + past participle\nOngoing Process / Proceso en curso -> I have been learning guitar for six months. | Focus: duration or repeated activity | have/has been + verb-ing\nFor and Since / Duración e inicio -> for two weeks | since January | Ask: How long have you been...?"
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-inter-8",
+        "title": "Class 8: Phrasal Verbs for Stories & Problem-Solving / Clase 8: Phrasal verbs para historias y soluciones",
+        "objective": "Usar phrasal verbs en una historia coherente y deducir significado por contexto.",
+        "s2Details": "Advanced Phrasal Verbs in Cinematic Storytelling 🎬 / Phrasals en Narrativas -> COME ACROSS = to find by chance ('The explorers came across an ancient map.') | TURN OUT = to end in a surprising way ('It turned out to be a secret test.') | STAND OUT = to be extraordinary ('Her performance stood out from all others.') | PULL THROUGH = to survive/succeed against odds ('With teamwork, they pulled through.')\nThe Movie Pitch Formula 🍿 / Fórmula de Sinopsis -> Formula: 'When [Protagonist] CAME ACROSS [Mystery], they had to STEP UP to [Challenge] before it TURNED OUT to be [Twist].' | Example: 'When teen hackers came across an encrypted signal, they stepped up to save their city.' | STEP UP = to take leadership ('When the captain was injured, Leo stepped up.')\nQuick Check: Movie Synopsis Pitch 🎯 / Mini Reto -> Create a movie plot using 'came across' or 'turned out': | 'In this sci-fi movie, the heroes ________ and it turned out that ________.'"
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-inter-9",
+        "title": "Class 9: Evidence-Based Deductions / Clase 9: Deducciones basadas en evidencia",
+        "objective": "Usar must, might, could y can’t para construir y defender una deducción.",
+        "s2Details": "Past Modals of Deduction: Must have, Could have, Can't have 🕵️⏳ / Deducción en Pasado -> MUST HAVE + Participle (95% sure it happened): 'She must have forgotten her phone at school.' | COULD / MIGHT HAVE (50% possibility): 'They might have missed the 5:00 PM train.' | CAN'T HAVE (99% impossible): 'He can't have broken the window—he was with us all afternoon.' | Clue: The window was open and the prize trophy was missing.\nThe Forensic Investigation Formula ⚖️ / Fórmula Forense -> Formula: Given that [Past Evidence], the suspect MUST/CAN'T HAVE [Past Action] because [Reason]. | Example: 'Given that the floor was dry, it CAN'T HAVE rained last night.' | Deduction: 'It CAN'T HAVE been an accident because the lock was forced.'\nQuick Check: Forensic Deduction 🎯 / Mini Reto -> A friend scored 100% on a super hard test without studying today: | 'He ________ have studied all weekend!' (must / can't / might)"
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-inter-10",
+        "title": "Class 10: Conditional Decision Lab / Clase 10: Laboratorio de decisiones condicionales",
+        "objective": "Elegir el condicional adecuado, evaluar consecuencias y justificar una decisión.",
+        "s2Details": "The Complete Conditional Spectrum 🌈⚡ / Síntesis Condicional -> Zero: General facts ('If you heat ice, it melts.') | First: Real future possibilities ('If it's sunny tomorrow, we will skate.') | Second: Imaginary hypotheses ('If I were invisible, I could explore anywhere.') | AS LONG AS / PROVIDED THAT = Only if ('You can join the esports team as long as you maintain your grades.')\nThe Esports Strategy Formula 🎯 / Fórmula de Estrategia -> Formula: 'Provided that we [Condition], we will [Victory Outcome] as long as [Team Rule].' | Example: 'Provided that we communicate clearly, we will win the tournament as long as we stay calm.' | AS LONG AS / PROVIDED THAT = Only if ('You can join the esports team as long as you maintain your grades.')\nQuick Check: Strategic Game Plan 🎯 / Mini Reto -> Tell the teacher: | 'We will achieve our goal as long as we ________.'"
+      },
+      {
+        "classNum": 11,
+        "classId": "c-teens-inter-11",
+        "title": "Class 11: Debate Responses & Respectful Rebuttals / Clase 11: Respuestas y refutaciones respetuosas",
+        "objective": "Reconocer el punto contrario, formular una refutación y sostenerla con un ejemplo.",
+        "s2Details": "Diplomatic Mediation & Nuance 🕊️🌐 / Diplomacia y Matices -> Beyond black-and-white thinking: finding common ground. | Nuanced openers: 'To a certain extent, that holds true, yet...' | Mediation: 'Could we synthesize both approaches into a unified policy?' | 'I recognize the financial concern raised by the opposition.'\nThe Diplomatic Synthesis Formula 📜 / Fórmula Diplomática -> Formula: 'While I acknowledge [Valid Point], we can achieve [Shared Goal] by [Compromise Solution].' | Example: 'While I acknowledge the budget limits, we can achieve our goals by partnering with local tech hubs.'\nQuick Check: Diplomatic Reframing 🎯 / Mini Reto -> Reframe: 'Social media is purely harmful for youth.' | 'While screen addiction is real, social media also enables ________ because ________.'"
+      },
+      {
+        "classNum": 12,
+        "classId": "c-teens-inter-12",
+        "title": "Class 12: Capstone Media Showcase & Scholarship Simulation / Clase 12: Proyecto Capstone y Simulación de Entrevista de Beca",
+        "objective": "Complete a podcast debate and a scholarship or job interview simulation.",
+        "s2Details": "Core Language / Lenguaje central -> Welcome to our final discussion on teen volunteering. | Can you give a specific example of that experience? | To conclude, the project improved both confidence and teamwork.\nKey Vocabulary / Vocabulario clave -> introduction | follow-up | evidence | conclusion\nForm and Meaning / Forma y significado -> Welcome to our final discussion on teen volunteering. | Notice how the target language supports this outcome: Complete a podcast debate and a scholarship or job interview simulation. | Meaning and communicative purpose come before memorization."
+      }
+    ]
+  },
+  {
+    "levelNumber": 6,
+    "levelId": "teens-advanced",
+    "levelTitle": "Advanced - Teen Leader / Avanzado - Líder adolescente",
+    "mcfr": "B2",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-advanced-1",
+        "title": "Class 1: Breaking News & Campus Whispers (Reported Speech) / Clase 1: Noticias de Última Hora y Rumores (Reported Speech)",
+        "objective": "Report a conversation or news update accurately.",
+        "s2Details": "Core Language / Lenguaje central -> Mia said that she was preparing the article. | The coach told us that the match had changed. | They reported that the event would begin later.\nKey Vocabulary / Vocabulario clave -> said | told | reported | backshift\nForm and Meaning / Forma y significado -> Mia said that she was preparing the article. | Notice how the target language supports this outcome: Report a conversation or news update accurately. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-advanced-2",
+        "title": "Class 2: Secret Interviews & Interrogations (Reported Questions) / Clase 2: Entrevistas Secretas e Interrogatorios (Reported Questions)",
+        "objective": "Combine details about people, things, and places with relative clauses.",
+        "s2Details": "Core Language / Lenguaje central -> The student who won the prize created a recycling app. | The phone that I bought has a stronger battery. | This is the studio where we record our podcast.\nKey Vocabulary / Vocabulario clave -> who | which | that | where\nForm and Meaning / Forma y significado -> The student who won the prize created a recycling app. | Notice how the target language supports this outcome: Combine details about people, things, and places with relative clauses. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-advanced-3",
+        "title": "Class 3: Mastering Relative Clauses (Defining vs Non-Defining) / Clase 3: Dominando Relative Clauses (Definitorias vs No Definitorias)",
+        "objective": "Explain a technology process and choose an appropriate passive focus.",
+        "s2Details": "Core Language / Lenguaje central -> The app was designed by a student team. | User data is stored on secure servers. | The final video will be uploaded tomorrow.\nKey Vocabulary / Vocabulario clave -> passive | process | agent | technology\nForm and Meaning / Forma y significado -> The app was designed by a student team. | Notice how the target language supports this outcome: Explain a technology process and choose an appropriate passive focus. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-advanced-4",
+        "title": "Class 4: Tech Disruptions & Modern Inventions (Passive Voice) / Clase 4: Disrupciones Tecnológicas e Inventos (Voz Pasiva)",
+        "objective": "Interpret and use idioms naturally in a realistic context.",
+        "s2Details": "Core Language / Lenguaje central -> The exam was difficult, but I kept my cool. | Our first plan did not work, so we went back to the drawing board. | Use an idiom only when its tone fits the situation.\nKey Vocabulary / Vocabulario clave -> idiom | context | literal | natural\nForm and Meaning / Forma y significado -> The exam was difficult, but I kept my cool. | Notice how the target language supports this outcome: Interpret and use idioms naturally in a realistic context. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-advanced-5",
+        "title": "Class 5: Reporting Verbs, Questions & Source Accuracy / Clase 5: Verbos de reporte, preguntas y precisión de fuentes",
+        "objective": "Reportar información con claim, admit, explain, deny y ask, manteniendo clara la fuente.",
+        "s2Details": "Reporting Verb Meaning / Significado del verbo de reporte -> say / explain / claim / admit / deny | The verb shows the speaker’s purpose or position. | Choose it from evidence, not personal bias.\nReport Questions / Reportar preguntas -> She asked where the event was. | He wanted to know whether the post was real. | Use statement word order.\nReport Requests / Reportar peticiones -> She asked me to delete the photo. | They told us not to share the link. | verb + person + to-infinitive"
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-advanced-6",
+        "title": "Class 6: Non-Defining & Reduced Relative Clauses / Clase 6: Relative clauses explicativas y reducidas",
+        "objective": "Combinar información mediante defining, non-defining y reduced relative clauses.",
+        "s2Details": "Authentic Idioms for Modern Teens 🗣️🔥 / Modismos Auténticos -> BITE THE BULLET = encarar una situación difícil con valor ('It's time to bite the bullet and practice.') | HIT THE NAIL ON THE HEAD = dar exactamente en el clavo ('Your analysis hit the nail on the head.') | BURN THE MIDNIGHT OIL = trasnochar estudiando con dedicación ('I burned the midnight oil for exams.') | SPILL THE BEANS = revelar un secreto ('Don't spill the beans about the surprise party!')\nThe Idiomatic Storytelling Formula 🎭 / Fórmula Idiomática -> Formula: 'When we faced [Challenge], we decided to [Idiom], and finally [Outcome].' | Example: 'When the deadline approached, we burned the midnight oil and finished our prototype on time.'\nQuick Check: Idiom in Action 🎯 / Mini Reto -> Tell the teacher: | 'Before we start the presentation, let's make sure we are ________.'"
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-advanced-7",
+        "title": "Class 7: Passive Reporting & Technology Processes / Clase 7: Reporte pasivo y procesos tecnológicos",
+        "objective": "Usar is said to, is believed to y pasivas de proceso para explicar tecnología y noticias.",
+        "s2Details": "Three-Part Inseparable Phrasal Verbs 🚀🧠 / Verbos de 3 Partes -> COME UP WITH = inventar / idear una solución ('We came up with an eco-friendly design.') | LOOK DOWN ON = subestimar / mirar en menos ('Never look down on someone's background.') | PUT UP WITH = tolerar / aguantar ('Our team won't put up with disrespectful behavior.') | SORT OUT = solucionar un conflicto ('Let's sit down and sort out this schedule issue.')\nThe Executive Leadership Formula 🏆 / Fórmula Ejecutiva -> Formula: 'As leaders, we must STAND UP FOR [Cause] and CARRY OUT [Action Plan] to SORT OUT [Problem].' | Example: 'We must stand up for campus sustainability and carry out zero-waste initiatives.'\nQuick Check: President's Call to Action 🎯 / Mini Reto -> Tell the teacher: | 'Our club has ________ an innovative solution to reduce plastic waste.'"
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-advanced-8",
+        "title": "Class 8: Idioms, Collocations & Register / Clase 8: Idioms, colocaciones y registro",
+        "objective": "Usar idioms y collocations sin forzarlos y adaptar el registro al contexto.",
+        "s2Details": "The Architecture of Sophisticated Argumentation 🏛️🤖 / Debate de IA y Ética -> Claim -> Warrant (Logic) -> Data (Empirical Evidence) -> Impact | Opening: 'The ethical dilemma of generative AI centers on intellectual property and human dignity.' | Rebuttal: 'While innovation must advance, safety guardrails are non-negotiable.' | 'NOTWITHSTANDING the economic benefits, the environmental cost is unsustainable.'\nThe Oxford Forum Rebuttal Formula 🎙️ / Fórmula de Debate -> Formula: 'Notwithstanding [Opponent Claim], empirical data proves that [Counter-Reality]; therefore, we must [Strategic Policy].' | Example: 'Notwithstanding tech optimism, studies prove algorithmic bias; therefore, we must enforce ethical audits.'\nQuick Check: AI Ethics Rebuttal 🎯 / Mini Reto -> Use 'Notwithstanding' or 'Be that as it may': | '________ the efficiency of AI, human empathy and creativity remain irreplaceable.'"
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-advanced-9",
+        "title": "Class 9: Crisis Management & Global Environmental Summits / Clase 9: Gestión de Crisis y Cumbres Ambientales Globales",
+        "objective": "Debate a current issue using evidence, qualification, and rebuttal.",
+        "s2Details": "Core Language / Lenguaje central -> AI can support learning, but it also raises privacy concerns. | Schools should teach students how to verify digital sources. | The environmental benefit depends on how the technology is powered.\nKey Vocabulary / Vocabulario clave -> artificial intelligence | privacy | environment | education\nForm and Meaning / Forma y significado -> AI can support learning, but it also raises privacy concerns. | Notice how the target language supports this outcome: Debate a current issue using evidence, qualification, and rebuttal. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-advanced-10",
+        "title": "Class 10: Level 8 Capstone: Global Youth NGO Leadership Pitch & Executive Interview / Clase 10: Proyecto Final: Pitch de Liderazgo de ONG Juvenil y Entrevista Ejecutiva",
+        "objective": "Answer an interview question and solve a realistic problem using structured evidence.",
+        "s2Details": "Core Language / Lenguaje central -> One challenge I faced was coordinating a volunteer event. | I divided the work and created a clear deadline. | As a result, the team finished two days early.\nKey Vocabulary / Vocabulario clave -> interview | challenge | action | result\nForm and Meaning / Forma y significado -> One challenge I faced was coordinating a volunteer event. | Notice how the target language supports this outcome: Answer an interview question and solve a realistic problem using structured evidence. | Meaning and communicative purpose come before memorization."
+      }
+    ]
+  },
+  {
+    "levelNumber": 7,
+    "levelId": "teens-elite",
+    "levelTitle": "Elite - Academic and Leadership English / Elite - Inglés académico y liderazgo",
+    "mcfr": "B2",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-elite-1",
+        "title": "Class 1: Goal Setting & Strategic Roadmaps / Clase 1: Metas y hojas de ruta estratégicas",
+        "objective": "Presentar una hoja de ruta realista que conecte meta, hitos, acciones y medición.",
+        "s2Details": "Future Continuous vs Future Perfect 🚀⏳ / Futuro Continuo vs Perfecto -> Future Continuous (WILL BE DOING): In progress at a future moment ('At 8 PM, I will be hosting the keynote.') | Future Perfect (WILL HAVE DONE): Completed by a future deadline ('By 2030, our venture will have reached 1 million users.') | Precision in future timeframes projects authority. | By next quarter, our AI algorithm WILL HAVE PROCESSED 10 million data points.\nThe Tech Forecasting Formula 📊 / Fórmula de Pronóstico -> Formula: 'By [Future Year], our initiative will have [Accomplishment] while our team is [Ongoing Impact].' | Example: 'By 2030, our lab will have developed biodegradable polymers while our engineers are expanding solar micro-grids.'\nQuick Check: 2035 Tech Vision 🎯 / Mini Reto -> Tell the teacher: | 'By 2035, humanity will have ________.' (Use will have + participle)"
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-elite-2",
+        "title": "Class 2: Past Decisions & Modal Deduction / Clase 2: Decisiones pasadas y deducción modal",
+        "objective": "Usar must have, might have y can’t have para evaluar qué probablemente ocurrió y por qué.",
+        "s2Details": "High-Stakes Mixed Conditionals ⚖️🌪️ / Condicionales Mixtos -> 'If the board had addressed the security flaw last month, our servers wouldn't be compromised today.' | Past decision (Had + Participle) -> Current state (Would be) | Crucial tool for crisis leadership and root-cause post-mortems. | 'If our lead scientist weren't so exceptionally innovative, we wouldn't have discovered the vaccine so quickly.'\nThe High-Stakes Dilemma Formula 🧭 / Fórmula de Dilema -> Formula: 'If our leadership had not [Past Ethical Action], our enterprise would [Negative Present State] today.' | Example: 'If we had not diversified our supply chain, our operations would be halted today.' | 'If our lead scientist weren't so exceptionally innovative, we wouldn't have discovered the vaccine so quickly.'\nQuick Check: Strategic Post-Mortem 🎯 / Mini Reto -> Complete the crisis analysis: | 'If the tech startup had tested the update, the app ________ (not crash) today.' (wouldn't crash / wouldn't have crashed)"
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-elite-3",
+        "title": "Class 3: Hedging & Nuanced Positions / Clase 3: Hedging y posiciones matizadas",
+        "objective": "Construir una postura matizada mediante hedging, concesión y cautela.",
+        "s2Details": "Cleft Sentences & Emphatic Rhetoric 🔦✨ / Oraciones Hendidas -> Standard: 'We need digital literacy education.' | Wh-Cleft: 'WHAT WE URGENTLY NEED IS digital literacy education.' | It-Cleft: 'IT IS our youth WHO will drive democratic renewal.' | 'ALL WE ARE ASKING FOR is equal access to STEM opportunities.'\nThe Cleft Oratory Formula 🏛️ / Fórmula de Énfasis -> Formula: 'What [Audience/We] must recognize is that [Undeniable Truth].' | Example: 'What global leaders must recognize is that youth innovation is our greatest asset.'\nQuick Check: Cleft Punchline 🎯 / Mini Reto -> Transform with 'What... is': 'We need courage and creativity.' | 'What we need is ________.'"
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-elite-4",
+        "title": "Class 4: Academic Argument Structure / Clase 4: Estructura de la argumentación académica",
+        "objective": "Escribir y revisar un argumento académico breve con una estructura verificable.",
+        "s2Details": "Rhetorical Inversions for Oratory 🏛️⚡ / Inversiones Retóricas -> Standard: 'I have rarely seen such dedication.' | Inverted: 'SELDOM HAVE I SEEN such unprecedented dedication.' | Rule: Negative/Limiting Adverb + Auxiliary + Subject + Verb | NOT ONLY... BUT ALSO: 'Not only DID WE WIN the tournament, but we also broke the state record.'\nThe Inverted Oratorical Formula 📜 / Fórmula de Inversión -> Formula: 'Not only did our venture [Action 1], but we also [Monumental Milestone].' | Example: 'Not only did our team reduce carbon emissions by 40%, but we also generated sustainable revenue.'\nQuick Check: Oratorical Inversion 🎯 / Mini Reto -> Complete with inverted order: 'Never ________ (I / see) such brilliance.' | 'Never have I seen / Never I have seen'?"
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-elite-5",
+        "title": "Class 5: Leadership Styles & Team Strengths / Clase 5: Estilos de liderazgo y fortalezas de equipo",
+        "objective": "Justificar cómo organizar un equipo, delegar tareas y ofrecer retroalimentación útil.",
+        "s2Details": "Diplomatic Hedging & Nuanced Softening 🕊️🤝 / Suavización Diplomática -> Direct: 'Your proposal is too expensive.' | Hedged: 'It WOULD APPEAR THAT the proposed budget MAY EXCEED our current allocation.' | Hedging protects relationships while asserting strategic boundaries. | 'Tends to suggest...' / 'Arguably the most viable path...' / 'To some extent...'\nThe Diplomatic Hedging Blueprint 🤝 / Fórmula Diplomática -> Formula: 'The data WOULD TEND TO SUGGEST that [Observation]; therefore, it MIGHT BE PRUDENT to [Nuanced Proposal].' | Example: 'The data would suggest rising latency; therefore, it might be prudent to upgrade server capacity.'\nQuick Check: Diplomatic Softening 🎯 / Mini Reto -> Soften: 'Your timeline is impossible.' | 'It would appear that the timeline might be ________.' (slightly ambitious / terrible)"
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-elite-6",
+        "title": "Class 6: Future Timelines & Goal Forecasting / Clase 6: Líneas de tiempo futuras y proyección de metas",
+        "objective": "Presentar qué estará ocurriendo y qué se habrá completado en distintos puntos del futuro.",
+        "s2Details": "Advanced Discursive Essay Architecture 🏛️📚 / Ensayo Discursivo -> 1. Introduction: Hook + Broad Context + Thesis Statement | 2. Body 1: Affirmative arguments with empirical citations | 3. Body 2: Counter-arguments and robust dialectical rebuttal | CORROBORATION: Furthermore, Moreover, In tandem with\nThe Discursive Thesis Formula 📜 / Fórmula de Tesis -> Formula: 'Although [Prevailing View], empirical evidence demonstrates that [Core Thesis]; hence, [Policy Recommendation].' | Example: 'Although automation increases efficiency, evidence demonstrates that human oversight remains vital; hence, ethical audits are mandatory.'\nQuick Check: Scholarly Connector 🎯 / Mini Reto -> Complete: 'The experiment proved scalable. ________, further trials were approved.' | (Consequently / But)"
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-elite-7",
+        "title": "Class 7: Mixed Conditionals & Decision Consequences / Clase 7: Condicionales mixtos y consecuencias",
+        "objective": "Analizar cómo una decisión pasada afecta el presente o cómo una condición actual habría cambiado el pasado.",
+        "s2Details": "Empirical Abstracts & Literature Synthesis 🔬📊 / Resúmenes Empíricos -> Abstract Structure: Background -> Objective -> Methodology -> Results -> Conclusion | Synthesizing literature: 'Smith (2022) posits that... whereas Chen (2023) contends that...' | Active scholarly verbs: demonstrates, substantiates, refutes, corroborates | 'The data yielded a statistically significant correlation (p < 0.01).'\nThe Empirical Abstract Formula 🧪 / Fórmula de Abstract -> Formula: 'This study investigates [Phenomenon] utilizing [Methodology]. The results corroborate that [Discovery] (p < 0.05).' | Example: 'This study investigates biodegradable polymers utilizing mass spectrometry. The results corroborate that tensile strength increases by 25%.' | 'A 95% confidence interval indicates robust model replicability.'\nQuick Check: Scholarly Verb Selection 🎯 / Mini Reto -> Complete: 'Our empirical findings ________ (substantiate / say) the original hypothesis.'"
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-elite-8",
+        "title": "Class 8: Diplomatic Emphasis - Clefts & Inversion / Clase 8: Énfasis diplomático - Clefts e inversión",
+        "objective": "Usar cleft sentences e inversión para destacar ideas con control de tono.",
+        "s2Details": "Executive Boardrooms & Parliamentary Procedure 🏛️⚖️ / Procedimiento Parlamentario -> 'I move to adopt the resolution on campus clean energy.' | 'Point of order, Mr. Chair: does this motion require a two-thirds majority?' | 'I second the motion / The floor is open for debate.' | 'Let us return to our core fiduciary duty and review the audited statements.'\nThe Formal Motion Formula 📋 / Fórmula de Moción -> Formula: 'I move that the board [Approve/Adopt] [Resolution] in order to [Strategic Objective].' | Example: 'I move that the board allocate 15% of annual reserves to youth research fellowships.'\nQuick Check: Parliamentary Motion 🎯 / Mini Reto -> Propose a formal motion to the board chair: | 'Mr. Chair, I move that we ________ the proposal.' (adopt / do)"
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-elite-9",
+        "title": "Class 9: Academic Presentation, Defense & Q&A / Clase 9: Presentación académica, defensa y preguntas",
+        "objective": "Presentar una tesis, sintetizar apoyo y responder preguntas académicas con cautela.",
+        "s2Details": "Crisis Leadership & The 3-Pillar Framework 🌪️🎙️ / Liderazgo en Crisis -> 1. Immediate Accountability: Take responsibility without making excuses. | 2. Transparent Remediation: Detail concrete steps to resolve the issue. | 3. Systemic Prevention: Implement long-term safeguards against recurrence. | Journalist: 'Isn't this data breach a sign of catastrophic incompetence?'\nThe Crisis Press Statement Formula 🎙️ / Fórmula de Crisis -> Formula: 'We take full responsibility for [Issue]. We have deployed [Immediate Fix] and instituted [Long-Term Safeguard].' | Example: 'We take full responsibility for the server outage. We have deployed backup clusters and expanded capacity by 300%.'\nQuick Check: Executive Pivot 🎯 / Mini Reto -> Pivot away from hostile accusation: | 'While I understand that concern, what is critical to focus on is ________.'"
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-elite-10",
+        "title": "Class 10: Meeting Facilitation & Team Decisions / Clase 10: Facilitación de reuniones y decisiones de equipo",
+        "objective": "Facilitar una reunión, distribuir participación y cerrar con decisiones y responsables.",
+        "s2Details": "Designing a Scalable Global Venture 🚀📊 / Economía Unitaria -> CAC (Customer Acquisition Cost) vs LTV (Lifetime Value): Target LTV/CAC > 3x. | Gross Margin, Churn Rate, Payback Period, TAM (Total Addressable Market). | A viable venture combines solving a real pain point with sound unit economics. | 'We enable [Target Customer] to [Core Benefit] without [Major Friction] by leveraging [Proprietary Tech].'\nThe Seed Stage Venture Formula 💡 / Fórmula de Venture -> Formula: 'We solve [Market Pain Point] for [Audience] with [Proprietary Tech], achieving [LTV/CAC Metric].' | Example: 'We automate eco-audits for schools with computer vision, achieving a 4x LTV/CAC ratio.'\nQuick Check: 30-Second Venture Elevator Pitch 🎯 / Mini Reto -> Deliver your value proposition to an investor: | 'We help ________ achieve ________ through our proprietary ________.'"
+      },
+      {
+        "classNum": 11,
+        "classId": "c-teens-elite-11",
+        "title": "Class 11: Entrepreneurship & Conference Pitch / Clase 11: Pitch de emprendimiento o conferencia",
+        "objective": "Presentar y defender un pitch breve, claro y convincente ante preguntas de una audiencia.",
+        "s2Details": "Level 9 Grand Capstone: Global Venture Keynote 🌍👑 / Proyecto Final -> The 7-Stage Keynote Architecture: Hook -> Problem -> Solution -> Tech Moat -> Unit Economics -> Team -> Ask | Synthesizing Level 9 Elite Rhetoric: Inversions, Clefts, Mixed Conditionals, and Empirical Precision. | Commanding the international tech stage as a visionary youth founder. | Investor: 'What stops Google or Meta from copying this in three months?'\nThe Grand Elite Keynote Formula 🏆 / Fórmula de Graduación -> 1. Open with an inverted hook or cleft statement. | 2. Present your scalable venture architecture and empirical metrics. | 3. Close with a visionary call to action for seed investors.\nQuick Check: Grand Elite Keynote Pitch 🎯 / Gran Reto -> Deliver your 30-second Level 9 Grand Capstone Seed Pitch to the Venture Capital Panel! | Demonstrate mastery of inversions, unit economics, and elite C1 fluency!"
+      }
+    ]
+  },
+  {
+    "levelNumber": 8,
+    "levelId": "teens-masters",
+    "levelTitle": "Masters - Global and Academic Communication / Masters - Comunicación global y académica",
+    "mcfr": "C1",
+    "classes": [
+      {
+        "classNum": 1,
+        "classId": "c-teens-masters-1",
+        "title": "Class 1: Oxford-Union Parliamentary Debate & Dialectical Refutation / Clase 1: Debate Parlamentario Oxford-Union y Refutación Dialéctica",
+        "objective": "Test a complex claim for evidence, assumptions, and reasoning quality.",
+        "s2Details": "Core Language / Lenguaje central -> The claim sounds plausible, but the evidence is incomplete. | This argument assumes that every student has equal access. | A stronger conclusion would acknowledge the limits of the data.\nKey Vocabulary / Vocabulario clave -> claim | assumption | evidence | reasoning\nForm and Meaning / Forma y significado -> The claim sounds plausible, but the evidence is incomplete. | Notice how the target language supports this outcome: Test a complex claim for evidence, assumptions, and reasoning quality. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 2,
+        "classId": "c-teens-masters-2",
+        "title": "Class 2: Pop Culture Semiotics, Media Ecology & Digital Memetics / Clase 2: Semiótica de la Cultura Pop, Ecología de Medios y Memética Digital",
+        "objective": "Analyze how pop culture and media shape meaning for an audience.",
+        "s2Details": "Core Language / Lenguaje central -> The series frames success as individual talent rather than teamwork. | The campaign targets young audiences through humor and short videos. | The same event is represented differently across the two platforms.\nKey Vocabulary / Vocabulario clave -> representation | audience | framing | influence\nForm and Meaning / Forma y significado -> The series frames success as individual talent rather than teamwork. | Notice how the target language supports this outcome: Analyze how pop culture and media shape meaning for an audience. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 3,
+        "classId": "c-teens-masters-3",
+        "title": "Class 3: Ivy League Graduate Seminars & Socratic Cross-Examination / Clase 3: Seminarios de Posgrado Ivy League y Contrainterrogatorio Socrático",
+        "objective": "Participate in an academic seminar using attributed source synthesis.",
+        "s2Details": "Core Language / Lenguaje central -> The two sources agree on the problem but propose different solutions. | According to the first study, participation increased by twelve percent. | The findings suggest a trend, although more evidence is needed.\nKey Vocabulary / Vocabulario clave -> seminar | source | synthesis | citation\nForm and Meaning / Forma y significado -> The two sources agree on the problem but propose different solutions. | Notice how the target language supports this outcome: Participate in an academic seminar using attributed source synthesis. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 4,
+        "classId": "c-teens-masters-4",
+        "title": "Class 4: TED Keynotes, High-Impact Storytelling & Thought Leadership / Clase 4: Conferencias TED, Narrativa de Alto Impacto y Liderazgo de Opinión",
+        "objective": "Design and deliver a focused TED-style content segment.",
+        "s2Details": "Core Language / Lenguaje central -> Imagine a city where every rooftop produces clean energy. | This story matters because small design choices affect millions of people. | The visual supports the argument instead of repeating the script.\nKey Vocabulary / Vocabulario clave -> hook | narrative | visual | delivery\nForm and Meaning / Forma y significado -> Imagine a city where every rooftop produces clean energy. | Notice how the target language supports this outcome: Design and deliver a focused TED-style content segment. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 5,
+        "classId": "c-teens-masters-5",
+        "title": "Class 5: Competitive Debate Strategy / Clase 5: Estrategia de debate competitivo",
+        "objective": "Construir y responder un caso de debate con evidencia, impacto y priorización.",
+        "s2Details": "Geopolitical Statecraft & Multilateral Treaties 🌐🏛️ / Geopolítica y Cumbres -> Bilateral concessions, non-proliferation accords, binding vs non-binding resolutions. | The mechanics of veto power and diplomatic quorum in the UN Security Council. | Balancing national sovereignty with planetary collective action. | 'The General Assembly, RECALLING its resolution 75/1...'\nThe UN Security Council Resolution Formula 🌐 / Fórmula de Resolución -> Formula: 'Recognizing [Shared Global Crisis], the Council calls upon [Member States] to [Binding Diplomatic Action].' | Example: 'Recognizing rising sea levels, the Council calls upon member states to establish an international climate refugee resettlement accord.'\nQuick Check: UN Delegate Resolution 🎯 / Mini Reto -> Draft a 1-sentence UN resolution operative clause: | 'The delegation proposes that all member states ________ by 2030.'"
+      },
+      {
+        "classNum": 6,
+        "classId": "c-teens-masters-6",
+        "title": "Class 6: Comparative Media Analysis & Framing / Clase 6: Análisis comparativo de medios y framing",
+        "objective": "Sostener una lectura crítica basada en evidencia lingüística y visual.",
+        "s2Details": "Cinematography, Mise-en-Scène & Literary Deconstruction 🎬📖 / Crítica Estética -> Mise-en-Scène: Lighting, framing, spatial geography, color palette, costume. | Diegetic sound (inside the film world) vs Non-diegetic sound (the orchestral score). | Subtext and unreliable narrators in post-modern literature. | 'The director employs chiaroscuro lighting to symbolize the protagonist's moral ambiguity.'\nThe Film & Literary Critique Formula 🎭 / Fórmula de Crítica -> Formula: 'Through [Aesthetic/Cinematic Technique], the work illustrates [Subtext], establishing itself as a [Critical Verdict].' | Example: 'Through handheld cinematography and natural lighting, the film captures raw adolescent vulnerability, establishing itself as a modern classic.' | 'A haunting auditory motif underscores the theme of generational trauma.'\nQuick Check: Film Festival Jury Verdict 🎯 / Mini Reto -> Deliver a 1-sentence film critique using 'mise-en-scène' or 'subtext': | 'The director's use of ________ symbolizes ________.'"
+      },
+      {
+        "classNum": 7,
+        "classId": "c-teens-masters-7",
+        "title": "Class 7: Research Seminar & Source Synthesis / Clase 7: Seminario de investigación y síntesis de fuentes",
+        "objective": "Sintetizar perspectivas, atribuir evidencia y responder preguntas de seminario.",
+        "s2Details": "Rhodes & Fulbright Fellowship Defense 🎓🏛️ / Entrevistas de Beca Rhodes -> The Rhodes/Fulbright Selection Board: Looking for moral character, leadership instinct, and intellectual breadth. | Navigating ethical dilemmas and questions of global justice. | The balance between ambitious visionary claims and humble self-awareness. | Board Question: 'Isn't your proposed policy hopelessly idealistic in a fragmented geopolitical world?'\nThe Fellowship Board Defense Formula 🏆 / Fórmula Rhodes -> Formula: 'My research addresses [Global Injustice] through [Academic Field], utilizing this fellowship to [Planetary Impact].' | Example: 'My research addresses clean water access through nanotech filtration, utilizing this fellowship to deploy decentralized systems across Latin America.'\nQuick Check: Fellowship Defense Statement 🎯 / Mini Reto -> Deliver your core mission statement to the Rhodes Selection Board: | 'I seek this fellowship to leverage [Field] in order to [Global Impact].'"
+      },
+      {
+        "classNum": 8,
+        "classId": "c-teens-masters-8",
+        "title": "Class 8: Content Production Studio / Clase 8: Estudio de producción de contenido",
+        "objective": "Diseñar, revisar y presentar una pieza pública coherente para una audiencia real.",
+        "s2Details": "Investigative Video Essays & Audio Foley Design 🎙️🔍 / Videoensayos y Foley -> The Video Essay: Merging scholarly research with cinematic editing and narrative pacing. | Audio Foley design: Environmental soundscapes that heighten psychological immersion. | Journalistic ethics: Confidentiality of whistleblowers and evidentiary verification. | The Cold Open Hook (0:00 - 0:45): The anomaly that breaks consensus.\nThe Investigative Video Essay Formula 🎬 / Fórmula Documental -> Formula: 'Behind the surface of [Accepted Norm] lies [Investigative Discovery], forcing us to question [Fundamental System].' | Example: 'Behind the surface of clean tech supply chains lies severe cobalt extraction, forcing us to question the true cost of our digital future.'\nQuick Check: Investigative Cold Open 🎯 / Mini Reto -> Deliver an investigative documentary cold open hook to the teacher: | 'In [Year], a single discovery in [Place] changed everything we thought we knew about ________.'"
+      },
+      {
+        "classNum": 9,
+        "classId": "c-teens-masters-9",
+        "title": "Class 9: Global Mega-Trends: Artificial Superintelligence, Bioethics & Climate Geopolitics / Clase 9: Mega-Tendencias Globales: Superinteligencia Artificial, Bioética y Geopolítica Climática",
+        "objective": "Evaluate a global issue through ethics, stakeholders, and trade-offs.",
+        "s2Details": "Core Language / Lenguaje central -> The technology improves access but creates a privacy trade-off. | Young people are stakeholders because the decision shapes their future. | A responsible policy should consider both local and global impact.\nKey Vocabulary / Vocabulario clave -> ethics | trade-off | stakeholder | global impact\nForm and Meaning / Forma y significado -> The technology improves access but creates a privacy trade-off. | Notice how the target language supports this outcome: Evaluate a global issue through ethics, stakeholders, and trade-offs. | Meaning and communicative purpose come before memorization."
+      },
+      {
+        "classNum": 10,
+        "classId": "c-teens-masters-10",
+        "title": "Class 10: C1 Interview & Conversation Club / Clase 10: Entrevista C1 y club de conversación",
+        "objective": "Responder con precisión, desarrollar ideas y reparar la comunicación bajo presión.",
+        "s2Details": "Level 10 Grand Masters Capstone: C2 Fluency Mastery 🎓👑🌍 / Gran Cierre C2 -> 1. Spontaneous Register Modulation: Effortlessly shifting from casual slang to Oxford debate and UN diplomacy. | 2. Real-Time Dialectical Synthesis: Resolving complex contradictions with poise and precision. | 3. Visionary Rhetorical Command: Inspiring global action through master storytelling and leadership. | Reflect on the entire journey from Basic Zero to C2 Grand Master.\nThe Grand Masters Valedictory Formula 👑 / Fórmula de Graduación -> 1. Reflect on your complete linguistic evolution. | 2. Synthesize your core thesis across science, society, and human empathy. | 3. Deliver an unforgettable call to action for the future of humanity.\nQuick Check: Grand Masters Valedictory Pitch 🎯 / Gran Reto Final -> Deliver your 30-second Level 10 Grand Masters Valedictory Address to the International Summit! | Celebrate your complete C2 fluency and your vision for global leadership!"
+      }
+    ]
+  }
+]

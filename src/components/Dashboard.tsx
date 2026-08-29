@@ -25,6 +25,7 @@ interface DashboardProps {
   studentId?: string | null;
   avatarId?: string;
   studentType?: string;
+  presentationMode?: 'studio' | 'classic';
   onStartLibraryLesson: (lessonId: string) => void;
   onFinishClass: (classId: string) => void;
   onApproveLevel: (levelId: string) => Promise<void>;
@@ -37,8 +38,27 @@ interface DashboardProps {
   onOpenVocabVault?: () => void;
 }
 
-export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide, onOpenVocabVault }: DashboardProps) {
-  const { curriculumLevels, loading } = useCurriculum(studentType);
+export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, presentationMode, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide, onOpenVocabVault }: DashboardProps) {
+  const [currentMode, setCurrentMode] = useState<'studio' | 'classic'>(presentationMode || (typeof window !== 'undefined' ? (localStorage.getItem('maven_presentation_mode') as 'studio' | 'classic') || 'studio' : 'studio'));
+
+  useEffect(() => {
+    if (presentationMode && presentationMode !== currentMode) {
+      setCurrentMode(presentationMode);
+    }
+  }, [presentationMode]);
+
+  const { curriculumLevels, loading } = useCurriculum(studentType, currentMode);
+
+  const handleSwitchPresentationMode = async (mode: 'studio' | 'classic') => {
+    setCurrentMode(mode);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('maven_presentation_mode', mode);
+    }
+    if (studentId) {
+      await dbAdmin.updateStudent(studentId, { presentation_mode: mode });
+    }
+  };
+
   const [activeTab, setActiveTab] = useState<'path' | 'library'>('path');
   const [activeLibraryCategoryId, setActiveLibraryCategoryId] = useState<string | null>(null);
   const [activeLibraryCategoryTitle, setActiveLibraryCategoryTitle] = useState<string>('');
@@ -181,9 +201,40 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
         </div>
 
         <div className="relative z-10 min-w-0">
-          <div className="mb-5 text-center lg:text-left">
-            <h2 className={`text-3xl font-extrabold tracking-tight sm:text-4xl ${isKid ? 'text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 drop-shadow-sm' : 'text-gray-800'}`}>¡Hola, {displayStudentName}! 👋</h2>
-            <p className={`font-medium mt-2 ${isKid ? 'text-pink-600 text-lg' : 'text-gray-500'}`}>{studentConfig.motivation}</p>
+          <div className="mb-5 text-center lg:text-left flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div>
+              <h2 className={`text-3xl font-extrabold tracking-tight sm:text-4xl ${isKid ? 'text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-purple-600 drop-shadow-sm' : 'text-gray-800'}`}>¡Hola, {displayStudentName}! 👋</h2>
+              <p className={`font-medium mt-2 ${isKid ? 'text-pink-600 text-lg' : 'text-gray-500'}`}>{studentConfig.motivation}</p>
+            </div>
+            {isTeen && (
+              <div className="flex items-center gap-2 self-center sm:self-auto bg-slate-100 p-1 rounded-2xl border border-slate-200 shadow-inner">
+                <span className="text-xs font-bold text-slate-500 px-1">Modo:</span>
+                <button
+                  type="button"
+                  onClick={() => handleSwitchPresentationMode('studio')}
+                  className={`px-3 py-1.5 text-xs font-black rounded-xl transition-all ${
+                    currentMode === 'studio'
+                      ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md'
+                      : 'text-slate-600 hover:text-indigo-600'
+                  }`}
+                  title="Modo Studio Interactivo (Blueprint con Grammar Studio, Verb Arena, Story Decoder)"
+                >
+                  ⚡ Studio
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleSwitchPresentationMode('classic')}
+                  className={`px-3 py-1.5 text-xs font-black rounded-xl transition-all ${
+                    currentMode === 'classic'
+                      ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-md'
+                      : 'text-slate-600 hover:text-amber-600'
+                  }`}
+                  title="Modo Clásico Tradicional (22 Diapositivas)"
+                >
+                  📜 Clásico
+                </button>
+              </div>
+            )}
           </div>
 
         <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
@@ -194,7 +245,7 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
              <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
              <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
                <Sparkles className="w-5 h-5 text-white" />
-               <span className="font-bold text-white tracking-wide">Vocab Vault IA</span>
+               <span className="font-bold text-white tracking-wide">Mi Vocabulario</span>
              </div>
           </button>
           <button

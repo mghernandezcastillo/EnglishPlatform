@@ -69,6 +69,8 @@ export default function App() {
         const s = students.find(s => s.id === studentIdParam);
         if (s) {
           setCurrentStudentId(s.id);
+          const studentMode = s.presentation_mode || 'studio';
+          localStorage.setItem('maven_presentation_mode', studentMode);
           setProgress({
             completedLessons: visibleCompletedLessonIds(s.completed_lessons || []),
             approvedLevelIds: approvedLevelIdsForStudent(s),
@@ -76,7 +78,8 @@ export default function App() {
             level: s.level || 'Nivel Inicial',
             studentName: s.name,
             avatarId: s.avatar_id,
-            studentType: s.type || 'adulto'
+            studentType: s.type || 'adulto',
+            presentationMode: studentMode
           });
           setRole('student');
         }
@@ -108,6 +111,8 @@ export default function App() {
   const handleSelectStudent = (st?: DbStudent) => {
     if (st) {
       setCurrentStudentId(st.id);
+      const studentMode = st.presentation_mode || 'studio';
+      localStorage.setItem('maven_presentation_mode', studentMode);
       setProgress({
         completedLessons: visibleCompletedLessonIds(st.completed_lessons || []),
         approvedLevelIds: approvedLevelIdsForStudent(st),
@@ -115,7 +120,8 @@ export default function App() {
         level: st.level || 'Nivel Inicial',
         studentName: st.name,
         avatarId: st.avatar_id,
-        studentType: st.type || 'adulto'
+        studentType: st.type || 'adulto',
+        presentationMode: studentMode
       });
     }
     setRole('student');
@@ -300,7 +306,8 @@ export default function App() {
   }
 
   if (path.startsWith('/story-decoder')) {
-    return <Suspense fallback={<LazyFallback />}><StoryDecoder onClose={() => { window.location.href = '/'; }} studentId={urlParams.get('studentId')} /></Suspense>;
+    if (!isLoaded) return <LazyFallback />;
+    return <Suspense fallback={<LazyFallback />}><StoryDecoder onClose={() => { window.location.href = '/'; }} studentId={currentStudentId} /></Suspense>;
   }
 
   if (!isLoaded) {
@@ -500,6 +507,7 @@ export default function App() {
             studentId={currentStudentId}
             avatarId={progress.avatarId}
             studentType={progress.studentType}
+            presentationMode={progress.presentationMode}
             onStartLibraryLesson={handleStartLibraryLesson}
             onFinishClass={handleFinishClass}
             onApproveLevel={handleApproveLevel}

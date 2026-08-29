@@ -1,5 +1,6 @@
 import { supabase } from './supabase';
 import { VocabItem, VocabMeaning } from '../types';
+import { storyDecoderDb } from './storyDecoderDb';
 
 const LOCAL_STORAGE_KEY = 'maven_vocab_vault_items';
 
@@ -218,58 +219,192 @@ const createFallbackItem = (term: string, sourceNote?: string): VocabItem => {
   };
 };
 
+const getLocalStorageKey = (studentId?: string | null) =>
+  studentId ? `maven_vocab_vault_items_${studentId}` : 'maven_vocab_vault_items_local';
+
+// Helper to merge existing Story Decoder words into VocabItems
+const syncStoryDecoderItems = async (
+  currentItems: VocabItem[],
+  studentId?: string | null
+): Promise<{ items: VocabItem[]; hasNewItems: boolean }> => {
+  let hasNew = false;
+  const itemMap = new Map<string, VocabItem>(
+    currentItems.map((i) => [i.term.toLowerCase().trim(), i])
+  );
+
+  // 1. Fetch from Supabase story_decoder_vocabulary if studentId present
+  let storyWords: any[] = [];
+  if (studentId) {
+    storyWords = await storyDecoderDb.getVocabulary(studentId);
+  }
+
+  // 2. Fetch from LocalStorage keys strictly scoped to studentId
+  const storageKeys = studentId
+    ? [`maven_story_decoder_vocabulary:v2:${studentId}`]
+    : [`maven_story_decoder_vocabulary:v2:local`];
+
+  storageKeys.forEach((key) => {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) {
+          parsed.forEach((pw) => {
+            if (!storyWords.some((sw) => sw.id === pw.id || sw.english?.toLowerCase() === pw.english?.toLowerCase())) {
+              storyWords.push(pw);
+            }
+          });
+        }
+      }
+    } catch (err) {
+      console.warn('Error parsing local story decoder words:', err);
+    }
+  });
+
+  // 3. Convert any missing story decoder word into a VocabItem
+  for (const sw of storyWords) {
+    const normTerm = (sw.english || '').toLowerCase().trim();
+    if (!normTerm) continue;
+
+    if (!itemMap.has(normTerm)) {
+      const isMultiWord = normTerm.includes(' ');
+      const defaultType = isMultiWord ? (normTerm.split(' ').length > 3 ? 'expression' : 'phrasal_verb') : 'word';
+
+      const newItem: VocabItem = {
+        id: sw.id || crypto.randomUUID(),
+        studentId: studentId || null,
+        term: sw.english,
+        type: defaultType,
+        ipa: '',
+        level: 'B1',
+        isMultiMeaning: false,
+        sectionSource: 'story_decoder',
+        sourceNote: sw.storyTitle ? `📖 Story: ${sw.storyTitle}` : '📖 Story Decoder',
+        meanings: [
+          {
+            meaningNumber: 1,
+            meaningLabel: sw.spanish || sw.english,
+            definitionEs: sw.spanish || sw.english,
+            definitionEn: sw.exampleEn || sw.english,
+            usageTip: 'Guardado desde Story Decoder',
+            contextExamples: [
+              {
+                en: sw.exampleEn || sw.english,
+                es: sw.exampleEs || sw.spanish || '',
+                cloze: sw.exampleEn || sw.english,
+                highlightWord: sw.english,
+              },
+            ],
+          },
+        ],
+        masteryScore: 0,
+        reviewCount: 0,
+        correctStreak: 0,
+        createdAt: sw.addedAt ? new Date(sw.addedAt).toISOString() : new Date().toISOString(),
+        nextReviewAt: new Date().toISOString(),
+      };
+
+      itemMap.set(normTerm, newItem);
+      hasNew = true;
+    }
+  }
+
+  const result = Array.from(itemMap.values()).sort(
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  );
+
+  return { items: result, hasNewItems: hasNew };
+};
+
 export const vocabService = {
   // Load all items for a student or local store
   getItems: async (studentId?: string | null): Promise<VocabItem[]> => {
+    const storageKey = getLocalStorageKey(studentId);
     let localItems: VocabItem[] = [];
     try {
-      const raw = localStorage.getItem(LOCAL_STORAGE_KEY);
+      const raw = localStorage.getItem(storageKey);
       if (raw) localItems = JSON.parse(raw);
     } catch (e) {
       console.warn('Error reading local vocab items', e);
     }
 
-    if (!studentId) return localItems;
+    let items: VocabItem[] = [...localItems];
 
-    try {
-      const { data, error } = await supabase
-        .from('vocab_vault')
-        .select('*')
-        .eq('student_id', studentId)
-        .order('created_at', { ascending: false });
+    if (studentId) {
+      try {
+        const { data, error } = await supabase
+          .from('vocab_vault')
+          .select('*')
+          .eq('student_id', studentId)
+          .order('created_at', { ascending: false });
 
-      if (!error && data && data.length > 0) {
-        const mapped: VocabItem[] = data.map(row => ({
-          id: row.id,
-          studentId: row.student_id,
-          term: row.term,
-          type: row.type || 'word',
-          ipa: row.ipa || '',
-          level: row.level || 'B1',
-          isMultiMeaning: Boolean(row.is_multi_meaning),
-          meanings: row.meanings || [],
-          sourceNote: row.source_note,
-          masteryScore: row.mastery_score ?? 0,
-          reviewCount: row.review_count ?? 0,
-          correctStreak: row.correct_streak ?? 0,
-          lastTestedAt: row.last_tested_at,
-          nextReviewAt: row.next_review_at,
-          createdAt: row.created_at || new Date().toISOString()
-        }));
-
-        // Merge and save locally for offline resiliency
-        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(mapped));
-        return mapped;
+        if (!error && data && data.length > 0) {
+          const mapped: VocabItem[] = data.map(row => ({
+            id: row.id,
+            studentId: row.student_id,
+            term: row.term,
+            type: row.type || 'word',
+            ipa: row.ipa || '',
+            level: row.level || 'B1',
+            isMultiMeaning: Boolean(row.is_multi_meaning),
+            meanings: row.meanings || [],
+            sourceNote: row.source_note,
+            sectionSource: row.section_source || (
+              row.source_note?.toLowerCase().includes('story') ? 'story_decoder' :
+              row.source_note?.toLowerCase().includes('diapositiva') || row.source_note?.toLowerCase().includes('clase') ? 'slides' :
+              row.source_note?.toLowerCase().includes('reading') ? 'reading' : 'general'
+            ),
+            masteryScore: row.mastery_score ?? 0,
+            reviewCount: row.review_count ?? 0,
+            correctStreak: row.correct_streak ?? 0,
+            lastTestedAt: row.last_tested_at,
+            nextReviewAt: row.next_review_at,
+            createdAt: row.created_at || new Date().toISOString()
+          }));
+          items = mapped;
+        }
+      } catch (e) {
+        console.warn('Supabase vocab fetch error, using local fallback:', e);
       }
-    } catch (e) {
-      console.warn('Supabase vocab fetch error, using local fallback:', e);
     }
 
-    return localItems.filter(item => !item.studentId || item.studentId === studentId);
+    // Merge existing Story Decoder saved words
+    const { items: merged, hasNewItems } = await syncStoryDecoderItems(items, studentId);
+    if (hasNewItems) {
+      localStorage.setItem(storageKey, JSON.stringify(merged));
+      if (studentId) {
+        try {
+          const rows = merged.map(item => ({
+            id: item.id,
+            student_id: studentId,
+            term: item.term,
+            type: item.type,
+            ipa: item.ipa,
+            level: item.level,
+            is_multi_meaning: item.isMultiMeaning,
+            meanings: item.meanings,
+            source_note: item.sourceNote,
+            section_source: item.sectionSource,
+            mastery_score: item.masteryScore,
+            review_count: item.reviewCount,
+            correct_streak: item.correctStreak,
+            last_tested_at: item.lastTestedAt,
+            next_review_at: item.nextReviewAt,
+            created_at: item.createdAt
+          }));
+          await supabase.from('vocab_vault').upsert(rows, { onConflict: 'id' });
+        } catch (e) {
+          console.warn('Error saving merged story decoder items to Supabase:', e);
+        }
+      }
+    }
+
+    return merged.filter(item => studentId ? item.studentId === studentId : true);
   },
 
   // Save or batch save items
   saveItems: async (items: VocabItem[], studentId?: string | null): Promise<VocabItem[]> => {
+    const storageKey = getLocalStorageKey(studentId);
     // 1. Update local storage first
     let current = await vocabService.getItems(studentId);
     const updatedMap = new Map<string, VocabItem>(current.map(i => [i.id, i]));
@@ -278,7 +413,7 @@ export const vocabService = {
       updatedMap.set(i.id, i);
     });
     const nextList = Array.from(updatedMap.values()).sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(nextList));
+    localStorage.setItem(storageKey, JSON.stringify(nextList));
 
     // 2. Sync to Supabase if connected
     if (studentId) {
@@ -293,6 +428,7 @@ export const vocabService = {
           is_multi_meaning: item.isMultiMeaning,
           meanings: item.meanings,
           source_note: item.sourceNote,
+          section_source: item.sectionSource,
           mastery_score: item.masteryScore,
           review_count: item.reviewCount,
           correct_streak: item.correctStreak,
@@ -305,21 +441,163 @@ export const vocabService = {
       } catch (e) {
         console.warn('Supabase vocab sync error (saved locally):', e);
       }
+
+      // Sync any Story Decoder item edits back to story_decoder_vocabulary
+      items.forEach(async (item) => {
+        const isStory = item.sectionSource === 'story_decoder' || item.sourceNote?.toLowerCase().includes('story');
+        if (isStory) {
+          const firstMeaning = item.meanings[0];
+          const firstExample = firstMeaning?.contextExamples[0];
+          const storyWordPayload = {
+            id: item.id,
+            english: item.term,
+            spanish: firstMeaning?.definitionEs || firstMeaning?.meaningLabel || '',
+            exampleEn: firstExample?.en || '',
+            exampleEs: firstExample?.es || '',
+            storyTitle: item.sourceNote?.replace(/^📖\s*Story:\s*/i, '').replace(/^📖\s*Story Decoder/i, '') || '',
+            addedAt: new Date(item.createdAt).getTime() || Date.now()
+          };
+
+          if (studentId) {
+            await storyDecoderDb.saveWord(studentId, storyWordPayload);
+          }
+
+          // Local storage sync for Story Decoder
+          const storageKeys = studentId
+            ? [`maven_story_decoder_vocabulary:v2:${studentId}`]
+            : [`maven_story_decoder_vocabulary:v2:local`];
+          storageKeys.forEach((key) => {
+            try {
+              const raw = localStorage.getItem(key);
+              const list = raw ? JSON.parse(raw) : [];
+              if (Array.isArray(list)) {
+                const idx = list.findIndex((w: any) => w.id === item.id || w.english?.toLowerCase().trim() === item.term.toLowerCase().trim());
+                if (idx >= 0) {
+                  list[idx] = { ...list[idx], ...storyWordPayload };
+                } else {
+                  list.push(storyWordPayload);
+                }
+                localStorage.setItem(key, JSON.stringify(list));
+              }
+            } catch (err) {
+              console.warn('Error syncing edited word to local story decoder storage:', err);
+            }
+          });
+        }
+      });
     }
 
     return nextList;
   },
 
-  // Delete item
+  // Save quick word or phrase from selection or other sections
+  saveQuickTerm: async (
+    term: string,
+    translationEs?: string,
+    sectionSource: 'story_decoder' | 'slides' | 'reading' | 'general' = 'general',
+    sourceNote?: string,
+    studentId?: string | null
+  ): Promise<VocabItem> => {
+    const cleanTerm = term.trim();
+    if (!cleanTerm) throw new Error('Term required');
+
+    const isMultiWord = cleanTerm.includes(' ');
+    const defaultType = isMultiWord ? (cleanTerm.split(' ').length > 3 ? 'expression' : 'phrasal_verb') : 'word';
+
+    const item: VocabItem = {
+      id: crypto.randomUUID(),
+      studentId: studentId || null,
+      term: cleanTerm,
+      type: defaultType,
+      ipa: '',
+      level: 'B1',
+      isMultiMeaning: false,
+      sectionSource,
+      sourceNote: sourceNote || (
+        sectionSource === 'story_decoder' ? '📖 Story Decoder' :
+        sectionSource === 'slides' ? '🎓 Diapositiva de Clase' :
+        sectionSource === 'reading' ? '📚 Reading Practice' : '✍️ General'
+      ),
+      meanings: [
+        {
+          meaningNumber: 1,
+          meaningLabel: translationEs || `Uso de "${cleanTerm}"`,
+          definitionEs: translationEs || `Significado o traducción de "${cleanTerm}"`,
+          definitionEn: cleanTerm,
+          usageTip: 'Palabra/frase guardada en Mi Vocabulario',
+          contextExamples: [
+            {
+              en: cleanTerm,
+              es: translationEs || '',
+              cloze: cleanTerm,
+              highlightWord: cleanTerm
+            }
+          ]
+        }
+      ],
+      masteryScore: 0,
+      reviewCount: 0,
+      correctStreak: 0,
+      createdAt: new Date().toISOString(),
+      nextReviewAt: new Date().toISOString()
+    };
+
+    await vocabService.saveItems([item], studentId);
+    return item;
+  },
+
+  // Delete item with full synchronization across Supabase and Story Decoder
   deleteItem: async (id: string, studentId?: string | null): Promise<void> => {
+    const storageKey = getLocalStorageKey(studentId);
     let current = await vocabService.getItems(studentId);
+    const target = current.find(item => item.id === id);
+
     current = current.filter(item => item.id !== id);
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(current));
+    localStorage.setItem(storageKey, JSON.stringify(current));
 
     try {
       await supabase.from('vocab_vault').delete().eq('id', id);
     } catch (e) {
-      console.warn('Supabase delete error:', e);
+      console.warn('Supabase delete error in vocab_vault:', e);
+    }
+
+    if (target) {
+      const termToDelete = target.term.toLowerCase().trim();
+
+      // Delete from Supabase story_decoder_vocabulary table by id or term
+      if (studentId) {
+        try {
+          await storyDecoderDb.deleteWord(studentId, id);
+          await supabase
+            .from('story_decoder_vocabulary')
+            .delete()
+            .eq('student_id', studentId)
+            .ilike('english', target.term.trim());
+        } catch (e) {
+          console.warn('Error deleting from story_decoder_vocabulary table:', e);
+        }
+      }
+
+      // Delete from LocalStorage story decoder keys
+      const storageKeys = studentId
+        ? [`maven_story_decoder_vocabulary:v2:${studentId}`]
+        : [`maven_story_decoder_vocabulary:v2:local`];
+      storageKeys.forEach((key) => {
+        try {
+          const raw = localStorage.getItem(key);
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (Array.isArray(parsed)) {
+              const updated = parsed.filter(
+                (w: any) => w.id !== id && (w.english || '').toLowerCase().trim() !== termToDelete
+              );
+              localStorage.setItem(key, JSON.stringify(updated));
+            }
+          }
+        } catch (err) {
+          console.warn('Error updating local story decoder words on delete:', err);
+        }
+      });
     }
   },
 
@@ -359,7 +637,7 @@ export const vocabService = {
               contextExamples: (m.contextExamples || []).map((ex: any) => ({
                 en: ex.en || '',
                 es: ex.es || '',
-                cloze: ex.cloze || (ex.en ? ex.en.replace(new RegExp(raw.term, 'gi'), '[_____]') : ''),
+                cloze: ex.cloze || (ex.en ? ex.en.replace(new RegExp(raw.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '[_____]') : ''),
                 highlightWord: ex.highlightWord || raw.term
               }))
             })),

@@ -114,7 +114,8 @@ for (const result of results) {
 const totalErrors = results.reduce((total, result) => total + result.errors.length, 0);
 if (totalErrors > 0) {
   console.error(`Auditoría curricular fallida: ${totalErrors} problema(s).`);
-  process.exitCode = 1;
+  process.exit(1);
 } else {
   console.log('Auditoría curricular aprobada.');
+  process.exit(0);
 }

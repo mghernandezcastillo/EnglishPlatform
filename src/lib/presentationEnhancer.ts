@@ -3006,6 +3006,20 @@ function enhanceVocabularySlide(
 }
 
 export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass {
+  // If the class is already an handcrafted Teens Studio class or contains studio slides, preserve it 100% intact
+  const isStudioClass = cls.sections.some(s => s.slides.some(sl => 
+    sl.type === 'grammar-studio' || 
+    sl.type === 'verb-arena-embedded' || 
+    sl.type === 'story-decoder-embedded' ||
+    sl.type === 'objectives-animated' ||
+    sl.type === 'listening-audio-teacher' ||
+    sl.type === 'writing-guided'
+  ));
+
+  if (isStudioClass) {
+    return cls;
+  }
+
   const baseClass = ensureRoleplaySlide(injectStructureDragSlides(cls));
 
   return {

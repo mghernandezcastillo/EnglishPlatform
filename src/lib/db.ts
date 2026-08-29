@@ -192,9 +192,8 @@ export const dbAdmin = {
   },
 
   getBrandSettings: async (): Promise<any> => {
-    const { data, error } = await supabase.from('settings').select('*').limit(1).single();
-    if (error) {
-       console.warn('Settings not found in Supabase. Using local.', error);
+    const { data, error } = await supabase.from('settings').select('*').limit(1).maybeSingle();
+    if (error || !data) {
        return JSON.parse(localStorage.getItem('brand_settings') || 'null');
     }
     return data;

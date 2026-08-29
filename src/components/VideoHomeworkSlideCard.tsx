@@ -45,20 +45,28 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
     }
   };
 
-  // Helper to render text with highlighted keywords
+  // Safe escape for regular expressions
+  const escapeRegExp = (str: string) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Helper to render text with highlighted keywords safely
   const renderHighlighted = (text: string, highlight?: string, colorClass = 'text-purple-300 bg-purple-500/20') => {
     if (!highlight) return text;
-    const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
-    return parts.map((part, index) => {
-      if (part.toLowerCase() === highlight.toLowerCase()) {
-        return (
-          <span key={index} className={`font-black px-2 py-0.5 rounded-xl border border-purple-400/30 inline-block ${colorClass}`}>
-            {part}
-          </span>
-        );
-      }
-      return <span key={index}>{part}</span>;
-    });
+    try {
+      const escaped = escapeRegExp(highlight);
+      const parts = text.split(new RegExp(`(${escaped})`, 'gi'));
+      return parts.map((part, index) => {
+        if (part.toLowerCase() === highlight.toLowerCase()) {
+          return (
+            <span key={index} className={`font-black px-2 py-0.5 rounded-xl border border-purple-400/30 inline-block ${colorClass}`}>
+              {part}
+            </span>
+          );
+        }
+        return <span key={index}>{part}</span>;
+      });
+    } catch {
+      return text;
+    }
   };
 
   return (

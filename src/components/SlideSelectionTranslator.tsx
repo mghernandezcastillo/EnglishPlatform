@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Languages, Volume2, Copy, Check, X, Sparkles, Loader2, VolumeX } from 'lucide-react';
+import { Languages, Volume2, Copy, Check, X, Sparkles, Loader2, VolumeX, BookmarkPlus, BookmarkCheck } from 'lucide-react';
 import { quickTranslate, QuickTranslateResult } from '../lib/quickTranslate';
 import { playAudio, stopAudio } from '../lib/audio';
+import { vocabService } from '../lib/vocabService';
 
 interface SelectionCoords {
   x: number;
@@ -33,6 +34,8 @@ export const SlideSelectionTranslator: React.FC<SlideSelectionTranslatorProps> =
   const [translationResult, setTranslationResult] = useState<QuickTranslateResult | null>(null);
   const [copied, setCopied] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [isSavingVocab, setIsSavingVocab] = useState(false);
+  const [savedVocab, setSavedVocab] = useState(false);
 
   // Close popup helper
   const closePopup = useCallback(() => {
@@ -41,6 +44,7 @@ export const SlideSelectionTranslator: React.FC<SlideSelectionTranslatorProps> =
     setSelectedText('');
     setTranslationResult(null);
     setCopied(false);
+    setSavedVocab(false);
     stopAudio();
     setIsPlayingAudio(false);
   }, []);
@@ -168,6 +172,35 @@ export const SlideSelectionTranslator: React.FC<SlideSelectionTranslatorProps> =
     setTimeout(() => setCopied(false), 2000);
   };
 
+  // Save to Mi Vocabulario
+  const handleSaveToVocab = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!selectedText || isSavingVocab) return;
+
+    setIsSavingVocab(true);
+    try {
+      let translationEs = translationResult?.translation;
+      if (!translationEs) {
+        const res = await quickTranslate(selectedText);
+        setTranslationResult(res);
+        translationEs = res.translation;
+      }
+
+      await vocabService.saveQuickTerm(
+        selectedText,
+        translationEs,
+        'slides',
+        '🎓 Diapositiva de Clase'
+      );
+      setSavedVocab(true);
+      setTimeout(() => setSavedVocab(false), 3000);
+    } catch (err) {
+      console.error('Error saving to vocab:', err);
+    } finally {
+      setIsSavingVocab(false);
+    }
+  };
+
   return (
     <div
       ref={containerRef}
@@ -239,6 +272,22 @@ export const SlideSelectionTranslator: React.FC<SlideSelectionTranslatorProps> =
 
                   <button
                     type="button"
+                    onClick={handleSaveToVocab}
+                    disabled={isSavingVocab}
+                    className="p-2 hover:bg-white/10 text-amber-300 hover:text-amber-200 rounded-xl transition active:scale-95 flex items-center gap-1"
+                    title="Guardar en Mi Vocabulario"
+                  >
+                    {savedVocab ? (
+                      <BookmarkCheck className="w-4 h-4 text-emerald-400" />
+                    ) : isSavingVocab ? (
+                      <Loader2 className="w-4 h-4 animate-spin text-amber-300" />
+                    ) : (
+                      <BookmarkPlus className="w-4 h-4 text-amber-300" />
+                    )}
+                  </button>
+
+                  <button
+                    type="button"
                     onClick={closePopup}
                     className="p-1.5 hover:bg-white/10 text-slate-400 hover:text-white rounded-xl transition"
                     title="Cerrar"
@@ -298,8 +347,8 @@ export const SlideSelectionTranslator: React.FC<SlideSelectionTranslatorProps> =
                   </div>
 
                   {/* Main Translation Content */}
-                  <div className="bg-white/5 rounded-xl p-2.5 border border-white/5">
-                    <div className="text-[11px] font-semibold text-cyan-300 flex items-center gap-1 mb-1">
+                  <div className="bg-white/5 rounded-xl p-2.5 border border-white/5 space-y-2">
+                    <div className="text-[11px] font-semibold text-cyan-300 flex items-center gap-1">
                       <Sparkles className="w-3 h-3" />
                       <span>Traducción al español:</span>
                     </div>
@@ -309,7 +358,7 @@ export const SlideSelectionTranslator: React.FC<SlideSelectionTranslatorProps> =
 
                     {/* Alternatives / Synonyms */}
                     {translationResult.synonymsOrAlternatives && translationResult.synonymsOrAlternatives.length > 0 && (
-                      <div className="mt-2 pt-2 border-t border-white/10 flex items-center gap-1.5 flex-wrap text-xs">
+                      <div className="pt-2 border-t border-white/10 flex items-center gap-1.5 flex-wrap text-xs">
                         <span className="text-slate-400 text-[11px]">Otros usos:</span>
                         {translationResult.synonymsOrAlternatives.map((alt, idx) => (
                           <span
@@ -321,6 +370,37 @@ export const SlideSelectionTranslator: React.FC<SlideSelectionTranslatorProps> =
                         ))}
                       </div>
                     )}
+
+                    {/* Save to Mi Vocabulario Button */}
+                    <div className="pt-2 border-t border-white/10">
+                      <button
+                        type="button"
+                        onClick={handleSaveToVocab}
+                        disabled={isSavingVocab}
+                        className={`w-full py-1.5 px-3 rounded-lg text-xs font-black flex items-center justify-center gap-1.5 transition-all shadow-sm ${
+                          savedVocab
+                            ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                            : 'bg-amber-400/20 hover:bg-amber-400/30 text-amber-300 border border-amber-400/30 active:scale-95'
+                        }`}
+                      >
+                        {savedVocab ? (
+                          <>
+                            <BookmarkCheck className="w-3.5 h-3.5 text-emerald-400" />
+                            <span>¡Guardado en Mi Vocabulario!</span>
+                          </>
+                        ) : isSavingVocab ? (
+                          <>
+                            <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                            <span>Guardando...</span>
+                          </>
+                        ) : (
+                          <>
+                            <BookmarkPlus className="w-3.5 h-3.5" />
+                            <span>Guardar en Mi Vocabulario</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
                   </div>
                 </div>
               )}

@@ -45,6 +45,7 @@ export interface UserProgress {
   studentName?: string;
   avatarId?: string;
   studentType?: string;
+  presentationMode?: 'studio' | 'classic';
 }
 
 export interface VocabularyCard {
@@ -67,8 +68,86 @@ export interface ClassSlide {
   bgColor?: string;
   options?: string[];
   correctOptionIndex?: number;
-  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'lets-say' | 'speaking-scene' | 'alphabet-game' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag';
+  type?: 'normal' | 'scavenger-hunt' | 'tongue-twister' | 'roleplay' | 'lets-say' | 'speaking-scene' | 'alphabet-game' | 'story-dice' | 'emoji-game' | 'speaking-boss-battle' | 'speaking-assessment-experimental' | 'reading' | 'video-task' | 'video' | 'spinning-wheel' | 'matching-game' | 'vocabulary' | 'speaking' | 'game' | 'grammar' | 'homework' | 'mystery-puzzle' | 'structure-drag' | 'objectives-animated' | 'verb-arena-embedded' | 'listening-audio-teacher' | 'writing-guided' | 'story-decoder-embedded';
   vocabularyCards?: VocabularyCard[];
+  verbsData?: {
+    verb?: string;
+    term?: string;
+    word?: string;
+    meaning?: string;
+    meaning_es?: string;
+    translation?: string;
+    past?: string;
+    participle?: string;
+    past_participle?: string;
+    pronunciation?: string;
+    example?: string;
+    example_en?: string;
+    exampleEs?: string;
+    category?: string;
+  }[];
+  limit?: number;
+  verbArenaData?: {
+    category: 'all' | 'common_verb' | 'irregular_verb' | 'phrasal_verb' | 'idiom';
+    limit?: number;
+    customWords?: string[];
+    verbs?: any[];
+  };
+  listeningData?: {
+    audioUrl: string;
+    transcription?: string;
+    question?: string;
+    options?: string[];
+    correctOptionIndex?: number;
+  };
+  storyDecoderData?: {
+    lines?: {
+      id?: string;
+      line_id?: string;
+      badge?: string;
+      type?: string;
+      es: string;
+      en: string;
+      preferred_answer?: string;
+      accepted_answers?: string[];
+      puzzle?: {
+        easy_blocks?: string[];
+        medium_blocks?: string[];
+        hard_word_by_word?: string[];
+        expert_with_distractors?: string[];
+      };
+      difficulty?: number;
+      grammar_focus?: string;
+      pattern?: string;
+      focus_tokens?: string[];
+      common_errors?: string[];
+      hints?: string[];
+      tutor_explanation?: string;
+    }[];
+    sentences?: {
+      id?: string;
+      line_id?: string;
+      badge?: string;
+      type?: string;
+      es: string;
+      en: string;
+      preferred_answer?: string;
+      accepted_answers?: string[];
+      puzzle?: {
+        easy_blocks?: string[];
+        medium_blocks?: string[];
+        hard_word_by_word?: string[];
+        expert_with_distractors?: string[];
+      };
+    }[];
+  };
+  writingData?: {
+    instructions: string;
+    prompt: string;
+    exampleEs?: string;
+    exampleEn?: string;
+    maxWords?: number;
+  };
   homeworkData?: {
     task?: string;
     taskHighlights?: string[];
@@ -313,6 +392,7 @@ export interface DbStudent {
   avatar_id: string;
   level: string;
   type?: string;
+  presentation_mode?: 'studio' | 'classic';
   completed_lessons: string[];
   approved_levels?: string[];
   group_id?: string;
@@ -352,6 +432,7 @@ export interface VocabItem {
   isMultiMeaning: boolean;
   meanings: VocabMeaning[];
   sourceNote?: string;
+  sectionSource?: 'story_decoder' | 'slides' | 'reading' | 'general';
   masteryScore: number; // 0 to 100
   reviewCount: number;
   correctStreak: number;

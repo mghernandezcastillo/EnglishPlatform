@@ -20,6 +20,357 @@ export const curriculumLevels: CurriculumLevel[] = [
     "mcfrEquivalent": "A1",
     "classes": [
       {
+        "id": "c-bz-beta",
+        "title": "Class Beta: Daily Routines / Clase Beta: Rutinas Diarias",
+        "description": "Una clase piloto interactiva que integra gramática, ruleta, lectura, escucha, Verb Arena, Story Decoder y producción en un solo flujo.",
+        "sections": [
+          {
+            "id": "s-beta-1",
+            "title": "1. Warm-up / Calentamiento",
+            "duration": "10 minutos",
+            "objective": "Introducción y activación mental en inglés.",
+            "slides": [
+              {
+                "id": "Welcome Slide",
+                "title": "Welcome to Class Beta! / ¡Bienvenidos a la Clase Beta!",
+                "description": "Daily Routines",
+                "content": [
+                  "Hello! What is your favorite time of the day?",
+                  "Today we will talk about what we do every day."
+                ],
+                "bgColor": "bg-gradient-to-br from-blue-600 to-indigo-700",
+                "imageUrl": "/images/adults-basic-zero-class-01/slide-01.jpg"
+              },
+              {
+                "id": "Objectives Slide",
+                "title": "Today's Mission / Nuestra Misión de Hoy",
+                "description": "Learning Goals",
+                "type": "objectives-animated",
+                "content": [
+                  "Aprender verbos comunes de rutina diaria.",
+                  "Usar el Presente Simple en afirmativo, negativo y pregunta.",
+                  "Armar oraciones completas y practicar la pronunciación."
+                ],
+                "bgColor": "bg-gradient-to-br from-purple-700 to-indigo-900",
+                "imageUrl": "/images/adults-basic-zero-class-01/slide-03.jpg"
+              },
+              {
+                "id": "Warm-up Wheel",
+                "title": "Icebreaker Wheel / Ruleta de Calentamiento",
+                "description": "Gira la ruleta y responde la pregunta sobre tu rutina.",
+                "type": "spinning-wheel",
+                "content": ["Spin the wheel and speak!", "Respuestas cortas y sencillas."],
+                "wheelItems": [
+                  { "label": "Morning", "color": "#EF4444", "prompt": "What time do you wake up?", "es": "¿A qué hora te despiertas?" },
+                  { "label": "Coffee", "color": "#F59E0B", "prompt": "Do you drink coffee or tea?", "es": "¿Tomas café o té?" },
+                  { "label": "Breakfast", "color": "#10B981", "prompt": "What do you usually eat for breakfast?", "es": "¿Qué desayunas normalmente?" },
+                  { "label": "Work/Study", "color": "#3B82F6", "prompt": "Where do you work or study?", "es": "¿Dónde trabajas o estudias?" },
+                  { "label": "Free Time", "color": "#8B5CF6", "prompt": "What do you do after work?", "es": "¿Qué haces después del trabajo?" },
+                  { "label": "Night", "color": "#EC4899", "prompt": "What time do you go to sleep?", "es": "¿A qué hora te vas a dormir?" }
+                ],
+                "bgColor": "bg-gradient-to-br from-cyan-600 to-blue-500"
+              }
+            ],
+            "action": "Iniciar conversación y alinear objetivos."
+          },
+          {
+            "id": "s-beta-2",
+            "title": "2. Grammar / Gramática",
+            "duration": "15 minutos",
+            "objective": "Aprender la estructura gramatical del Presente Simple.",
+            "slides": [
+              {
+                "id": "Grammar Concept",
+                "title": "Simple Present Tense / Presente Simple",
+                "description": "Daily Habits & 3rd Person Rules",
+                "type": "grammar-studio",
+                "grammarData": {
+                  "topic": "Simple Present Tense (Rutinas Diarias)",
+                  "goldenRule": "Usamos el Presente Simple para hábitos, rutinas y hechos diarios.",
+                  "structures": [
+                    {
+                      "type": "affirmative",
+                      "label": "Afirmativo (+)",
+                      "subject": "I / You / We / They",
+                      "rule": "Verbo en forma base sin cambios",
+                      "formula": "[ Sujeto ] + [ Verbo Base ] + [ Complemento ]",
+                      "example": "I wake up at 6:00 AM every day.",
+                      "exampleEs": "Me despierto a las 6:00 AM todos los días.",
+                      "audio": "I wake up at six AM every day."
+                    },
+                    {
+                      "type": "affirmative-3rd",
+                      "label": "3ra Persona (+s / +es)",
+                      "subject": "He / She / It",
+                      "rule": "Agrega -s o -es al final del verbo",
+                      "formula": "[ He / She / It ] + [ Verbo + s/es ] + [ Complemento ]",
+                      "example": "She wakes up at 7:00 AM every morning.",
+                      "exampleEs": "Ella se despierta a las 7:00 AM cada mañana.",
+                      "audio": "She wakes up at seven AM every morning."
+                    },
+                    {
+                      "type": "negative",
+                      "label": "Negativo (−)",
+                      "subject": "Don't / Doesn't",
+                      "rule": "Don't (I/You/We/They) • Doesn't (He/She/It) + Verbo base",
+                      "formula": "[ Sujeto ] + [ don't / doesn't ] + [ Verbo Base ]",
+                      "example": "He doesn't work on Sundays.",
+                      "exampleEs": "Él no trabaja los domingos.",
+                      "audio": "He doesn't work on Sundays."
+                    },
+                    {
+                      "type": "question",
+                      "label": "Pregunta (?)",
+                      "subject": "Do / Does",
+                      "rule": "Do (I/You/We/They) • Does (He/She/It) al inicio",
+                      "formula": "[ Do / Does ] + [ Sujeto ] + [ Verbo Base ] + ?",
+                      "example": "Do you eat breakfast at home?",
+                      "exampleEs": "¿Desayunas en casa?",
+                      "audio": "Do you eat breakfast at home?"
+                    }
+                  ],
+                  "proTip": "💡 Regla de Oro: Cuando usas el auxiliar 'doesn't' o 'does', el verbo principal vuelve a su forma base sin -s (ej. He doesn't wake up)."
+                },
+                "bgColor": "bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950",
+                "imageUrl": "/images/adults-basic-zero-class-01/slide-04.jpg"
+              },
+              {
+                "id": "Vocabulary Arena",
+                "title": "AI Verb Arena: Daily Routines / Reto de Vocabulario",
+                "description": "Practica los verbos clave de la clase antes de continuar.",
+                "type": "verb-arena-embedded",
+                "verbArenaData": {
+                  "category": "common_verb",
+                  "limit": 4
+                },
+                "vocabularyCards": [
+                  { "word": "wake up", "translation": "despertarse", "past": "woke up", "past_participle": "woken up", "example": "I wake up early.", "exampleEs": "Me despierto temprano." },
+                  { "word": "eat breakfast", "translation": "desayunar", "past": "ate breakfast", "past_participle": "eaten breakfast", "example": "We eat breakfast together.", "exampleEs": "Desayunamos juntos." },
+                  { "word": "go to work", "translation": "ir al trabajo", "past": "went to work", "past_participle": "gone to work", "example": "They go to work by car.", "exampleEs": "Van al trabajo en carro." },
+                  { "word": "sleep", "translation": "dormir", "past": "slept", "past_participle": "slept", "example": "She sleeps eight hours.", "exampleEs": "Ella duerme ocho horas." }
+                ],
+                "bgColor": "bg-gradient-to-br from-slate-900 to-purple-950"
+              }
+            ],
+            "action": "Explicar las reglas y evaluar vocabulario con Verb Arena."
+          },
+          {
+            "id": "s-beta-3",
+            "title": "3. Practice / Práctica",
+            "duration": "15 minutos",
+            "objective": "Desarrollar habilidades comprensivas de lectura y escucha.",
+            "slides": [
+              {
+                "id": "Reading Practice",
+                "title": "Sam's Daily Routine / La Rutina de Sam",
+                "description": "Lee en voz alta y presta atención a los verbos conjugados.",
+                "type": "reading",
+                "content": [
+                  "Sam gets up at 6:30 AM.",
+                  "He drinks a cup of black coffee.",
+                  "At 7:30 AM, he goes to work.",
+                  "He works from 8:00 AM to 5:00 PM."
+                ],
+                "bgColor": "bg-gradient-to-br from-[#0c1024] via-[#141b36] to-[#0a0e20]",
+                "imageUrl": "/images/adults-basic-zero-class-01/slide-06.jpg"
+              },
+              {
+                "id": "Listening Activity",
+                "title": "Listening: My Morning / Mi Mañana",
+                "description": "Escucha al profesor o el audio y responde la pregunta.",
+                "type": "listening-audio-teacher",
+                "listeningData": {
+                  "audioUrl": "https://www.w3schools.com/html/horse.mp3",
+                  "transcription": "In the morning, I always drink hot coffee and read the news. I don't eat heavy breakfast.",
+                  "question": "What does the speaker drink in the morning?",
+                  "options": [
+                    "Hot tea / Té caliente",
+                    "Hot coffee / Café caliente",
+                    "Cold milk / Leche fría"
+                  ],
+                  "correctOptionIndex": 1
+                },
+                "bgColor": "bg-gradient-to-br from-violet-600 to-indigo-900"
+              },
+              {
+                "id": "Story Decoder Slide",
+                "title": "Story Decoder: Daily Habits / Descodificador de Hábitos",
+                "description": "Arma las frases clave de la historia en inglés.",
+                "type": "story-decoder-embedded",
+                "storyDecoderData": {
+                  "lines": [
+                    {
+                      "line_id": "beta-line-1",
+                      "es": "Nico se despierta a las 6 AM.",
+                      "en": "Nico wakes up at 6 AM.",
+                      "preferred_answer": "Nico wakes up at 6 AM.",
+                      "accepted_answers": ["Nico wakes up at 6 AM.", "Nico wakes up at six AM."],
+                      "puzzle": {
+                        "easy_blocks": ["Nico", "wakes up", "at 6 AM."],
+                        "medium_blocks": [],
+                        "hard_word_by_word": [],
+                        "expert_with_distractors": []
+                      },
+                      "difficulty": 1,
+                      "grammar_focus": "Affirmative",
+                      "pattern": "Subject + Verb-s + Time",
+                      "focus_tokens": ["wakes up", "at"],
+                      "common_errors": [],
+                      "hints": ["Recuerda agregar -s al verbo para tercera persona (Nico)."],
+                      "tutor_explanation": "Para hablar de la rutina de otra persona (He/She/Nico), agregamos -s o -es al verbo."
+                    },
+                    {
+                      "line_id": "beta-line-2",
+                      "es": "Él hace café caliente todos los días.",
+                      "en": "He makes hot coffee every day.",
+                      "preferred_answer": "He makes hot coffee every day.",
+                      "accepted_answers": ["He makes hot coffee every day."],
+                      "puzzle": {
+                        "easy_blocks": ["He makes", "hot coffee", "every day."],
+                        "medium_blocks": [],
+                        "hard_word_by_word": [],
+                        "expert_with_distractors": []
+                      },
+                      "difficulty": 1,
+                      "grammar_focus": "Affirmative",
+                      "pattern": "Subject + Verb-s + Complement",
+                      "focus_tokens": ["makes", "hot coffee"],
+                      "common_errors": [],
+                      "hints": ["Usa el verbo 'make' con -s."],
+                      "tutor_explanation": "'Makes' lleva -s porque el sujeto es 'He'."
+                    },
+                    {
+                      "line_id": "beta-line-3",
+                      "es": "Yo no bebo café.",
+                      "en": "I do not drink coffee.",
+                      "preferred_answer": "I do not drink coffee.",
+                      "accepted_answers": ["I do not drink coffee.", "I don't drink coffee."],
+                      "puzzle": {
+                        "easy_blocks": ["I", "do not", "drink", "coffee."],
+                        "medium_blocks": [],
+                        "hard_word_by_word": [],
+                        "expert_with_distractors": []
+                      },
+                      "difficulty": 1,
+                      "grammar_focus": "Negative",
+                      "pattern": "I + do not + Verb + Complement",
+                      "focus_tokens": ["do not", "drink"],
+                      "common_errors": [],
+                      "hints": ["Para negar con 'I', usa 'do not' o 'don't'."],
+                      "tutor_explanation": "Usamos el auxiliar 'do not' para negar acciones en Presente Simple."
+                    },
+                    {
+                      "line_id": "beta-line-4",
+                      "es": "¿Él trabaja aquí?",
+                      "en": "Does he work here?",
+                      "preferred_answer": "Does he work here?",
+                      "accepted_answers": ["Does he work here?"],
+                      "puzzle": {
+                        "easy_blocks": ["Does", "he", "work", "here?"],
+                        "medium_blocks": [],
+                        "hard_word_by_word": [],
+                        "expert_with_distractors": []
+                      },
+                      "difficulty": 1,
+                      "grammar_focus": "Interrogative",
+                      "pattern": "Does + Subject + Verb + ?",
+                      "focus_tokens": ["Does", "work"],
+                      "common_errors": [],
+                      "hints": ["El auxiliar para 'he' en preguntas es 'Does'."],
+                      "tutor_explanation": "En preguntas con 'He', el auxiliar 'Does' absorbe la -s, por lo que el verbo 'work' queda en su forma base."
+                    }
+                  ]
+                },
+                "bgColor": "bg-gradient-to-br from-[#120d2d] to-[#0c081e]"
+              }
+            ],
+            "action": "Realizar lecturas y dinámicas de descodificación de frases."
+          },
+          {
+            "id": "s-beta-4",
+            "title": "4. Production / Producción",
+            "duration": "15 minutos",
+            "objective": "Escribir y hablar usando la gramática aprendida.",
+            "slides": [
+              {
+                "id": "Guided Writing",
+                "title": "Writing Studio: (+, -, ?) / Producción Escrita",
+                "description": "Escribe 3 oraciones usando la gramática de la clase: Afirmativa (+), Negativa (-) y Pregunta (?).",
+                "type": "writing-guided",
+                "writingData": {
+                  "instructions": "Escribe 3 frases completas en inglés: una afirmativa (+), una negativa (-) y una pregunta (?).",
+                  "prompt": "Escribe aquí tu frase...",
+                  "exampleEn": "I wake up at 6:00 AM. / I do not drink black coffee. / Do you wake up early?",
+                  "exampleEs": "Me despierto a las 6:00 AM. / No tomo café negro. / ¿Te despiertas temprano?"
+                },
+                "bgColor": "bg-gradient-to-br from-[#070b18] via-[#0d132b] to-[#060814]"
+              },
+              {
+                "id": "Speaking Session",
+                "title": "Let's Talk: Daily Routines / ¡A Hablar!",
+                "description": "Responde las siguientes preguntas personalizadas.",
+                "type": "speaking",
+                "content": [
+                  "1. What is your favorite day of the week? Why?",
+                  "2. Do you study English in the morning or at night?",
+                  "3. Tell me about one habit you want to change."
+                ],
+                "bgColor": "bg-gradient-to-br from-[#0a0f24] via-[#12163b] to-[#080c1d]"
+              }
+            ],
+            "action": "Escribir en el lienzo y practicar la fluidez conversacional."
+          },
+          {
+            "id": "s-beta-5",
+            "title": "5. Wrap-up & Homework / Cierre y Tarea",
+            "duration": "5 minutos",
+            "objective": "Consolidar el aprendizaje del día.",
+            "slides": [
+              {
+                "id": "Congratulations",
+                "title": "Awesome Job! / ¡Excelente Trabajo!",
+                "description": "Clase Beta Completada",
+                "content": [
+                  "Hoy logramos aprender verbos de rutina.",
+                  "Entendimos el uso de present simple.",
+                  "¡Estás listo para el siguiente nivel!"
+                ],
+                "bgColor": "bg-gradient-to-br from-violet-500 to-fuchsia-600",
+                "imageUrl": "/images/adults-basic-zero-class-01/slide-16.jpg"
+              },
+              {
+                "id": "Beta Homework",
+                "title": "Homework & Preparation / Tarea y Preparación",
+                "description": "Daily Habits",
+                "type": "homework",
+                "homeworkData": {
+                  "task": "Escribe 3 oraciones en tu libreta sobre la rutina de un familiar usando He o She (agrega la -s al verbo). Además, repasa los días de la semana para la próxima clase.",
+                  "taskHighlights": ["3 oraciones", "He o She", "-s al verbo", "días de la semana"],
+                  "exampleLines": [
+                    "My brother wakes up at 6:30 AM every day. ⏰",
+                    "He drinks coffee and eats breakfast with us. ☕",
+                    "He goes to work by bus in the morning. 🚌"
+                  ],
+                  "whatToInclude": [
+                    { "icon": "👤", "label": "Sujeto He/She con verbos en 3ra persona (+s)" },
+                    { "icon": "⏰", "label": "Horarios de rutina diaria (ej. at 7:00 AM)" },
+                    { "icon": "📅", "label": "Repaso de los días de la semana" }
+                  ],
+                  "tips": [
+                    "Recuerda: She plays, He eats, He wakes up.",
+                    "Prepara vocabulario sobre pasatiempos para la siguiente sesión."
+                  ],
+                  "badgeText": "Daily ⭐ Habits!",
+                  "dueDate": "Próxima Clase"
+                },
+                "bgColor": "bg-gradient-to-br from-slate-900 to-slate-800"
+              }
+            ],
+            "action": "Asignar tarea y motivar para la próxima clase."
+          }
+        ]
+      },
+      {
         "id": "c-bz-1",
         "title": "Class 1: Introduction and Verb To Be / Clase 1: Introducción y Verb To Be",
         "description": "Aprende a presentarte, saludar y usar el verbo To Be en presente.",

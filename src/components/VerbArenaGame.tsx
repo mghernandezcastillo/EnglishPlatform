@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-import { ArrowLeft, CheckCircle2, Clock3, Gauge, MessageCircle, Play, RotateCcw, Settings2, Sparkles, Trophy, XCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, Clock3, Gauge, MessageCircle, Play, RotateCcw, Settings2, Sparkles, Trophy, XCircle } from 'lucide-react';
 import { BrandWordmark } from './BrandWordmark';
 import { useBrand } from '../hooks/useBrand';
 
@@ -80,8 +80,8 @@ function shuffle<T>(input: T[]) {
   return items;
 }
 
-function cleanAnswer(item: VerbGuideItem) {
-  return (item.meaning_es || item.definition_en || '').replace(/\s+/g, ' ').trim();
+function cleanAnswer(item: any) {
+  return (item.meaning_es || item.meaning || item.translation || item.es || item.definition_en || '').replace(/\s+/g, ' ').trim();
 }
 
 const corruptedTextPattern = /[\u0000-\u001f\u007f-\u009f\uFFFDƙŞ]/;
@@ -127,29 +127,165 @@ function getRoundKey(item: VerbGuideItem) {
   return `${item.category}:${cleanDisplayText(item.term).toLowerCase()}:${cleanAnswer(item).toLowerCase()}`;
 }
 
-function toGameItems(items: VerbGuideItem[]) {
+const COMMON_VERB_CONJUGATIONS: Record<string, { past: string; participle: string }> = {
+  be: { past: 'was/were', participle: 'been' },
+  have: { past: 'had', participle: 'had' },
+  do: { past: 'did', participle: 'done' },
+  say: { past: 'said', participle: 'said' },
+  go: { past: 'went', participle: 'gone' },
+  get: { past: 'got', participle: 'got/gotten' },
+  make: { past: 'made', participle: 'made' },
+  know: { past: 'kew', participle: 'known' },
+  think: { past: 'thought', participle: 'thought' },
+  take: { past: 'took', participle: 'taken' },
+  see: { past: 'saw', participle: 'seen' },
+  come: { past: 'came', participle: 'come' },
+  want: { past: 'wanted', participle: 'wanted' },
+  look: { past: 'looked', participle: 'looked' },
+  use: { past: 'used', participle: 'used' },
+  find: { past: 'found', participle: 'found' },
+  give: { past: 'gave', participle: 'given' },
+  tell: { past: 'told', participle: 'told' },
+  work: { past: 'worked', participle: 'worked' },
+  call: { past: 'called', participle: 'called' },
+  try: { past: 'tried', participle: 'tried' },
+  ask: { past: 'asked', participle: 'asked' },
+  need: { past: 'needed', participle: 'needed' },
+  feel: { past: 'felt', participle: 'felt' },
+  become: { past: 'became', participle: 'become' },
+  leave: { past: 'left', participle: 'left' },
+  put: { past: 'put', participle: 'put' },
+  mean: { past: 'meant', participle: 'meant' },
+  keep: { past: 'kept', participle: 'kept' },
+  let: { past: 'let', participle: 'let' },
+  begin: { past: 'began', participle: 'begun' },
+  seem: { past: 'seemed', participle: 'seemed' },
+  help: { past: 'helped', participle: 'helped' },
+  talk: { past: 'talked', participle: 'talked' },
+  turn: { past: 'turned', participle: 'turned' },
+  start: { past: 'started', participle: 'started' },
+  show: { past: 'showed', participle: 'shown' },
+  hear: { past: 'heard', participle: 'heard' },
+  play: { past: 'played', participle: 'played' },
+  run: { past: 'ran', participle: 'run' },
+  move: { past: 'moved', participle: 'moved' },
+  like: { past: 'liked', participle: 'liked' },
+  live: { past: 'lived', participle: 'lived' },
+  believe: { past: 'believed', participle: 'believed' },
+  hold: { past: 'held', participle: 'held' },
+  bring: { past: 'brought', participle: 'brought' },
+  happen: { past: 'happened', participle: 'happened' },
+  write: { past: 'wrote', participle: 'written' },
+  provide: { past: 'provided', participle: 'provided' },
+  sit: { past: 'sat', participle: 'sat' },
+  stand: { past: 'stood', participle: 'stood' },
+  lose: { past: 'lost', participle: 'lost' },
+  pay: { past: 'paid', participle: 'paid' },
+  meet: { past: 'met', participle: 'met' },
+  include: { past: 'included', participle: 'included' },
+  continue: { past: 'continued', participle: 'continued' },
+  set: { past: 'set', participle: 'set' },
+  learn: { past: 'learned/learnt', participle: 'learned/learnt' },
+  change: { past: 'changed', participle: 'changed' },
+  lead: { past: 'led', participle: 'led' },
+  understand: { past: 'understood', participle: 'understood' },
+  watch: { past: 'watched', participle: 'watched' },
+  follow: { past: 'followed', participle: 'followed' },
+  stop: { past: 'stopped', participle: 'stopped' },
+  create: { past: 'created', participle: 'created' },
+  speak: { past: 'spoke', participle: 'spoken' },
+  read: { past: 'read', participle: 'read' },
+  allow: { past: 'allowed', participle: 'allowed' },
+  add: { past: 'added', participle: 'added' },
+  spend: { past: 'spent', participle: 'spent' },
+  grow: { past: 'grew', participle: 'grown' },
+  open: { past: 'opened', participle: 'opened' },
+  walk: { past: 'walked', participle: 'walked' },
+  win: { past: 'won', participle: 'won' },
+  offer: { past: 'offered', participle: 'offered' },
+  remember: { past: 'remembered', participle: 'remembered' },
+  love: { past: 'loved', participle: 'loved' },
+  consider: { past: 'considered', participle: 'considered' },
+  appear: { past: 'appeared', participle: 'appeared' },
+  buy: { past: 'bought', participle: 'bought' },
+  wait: { past: 'waited', participle: 'waited' },
+  serve: { past: 'served', participle: 'served' },
+  die: { past: 'died', participle: 'died' },
+  send: { past: 'sent', participle: 'sent' },
+  expect: { past: 'expected', participle: 'expected' },
+  build: { past: 'built', participle: 'built' },
+  stay: { past: 'stayed', participle: 'stayed' },
+  fall: { past: 'fell', participle: 'fallen' },
+  cut: { past: 'cut', participle: 'cut' },
+  reach: { past: 'reached', participle: 'reached' },
+  kill: { past: 'killed', participle: 'killed' },
+  remain: { past: 'remained', participle: 'remained' },
+};
+
+function resolveVerbForms(term: string, past?: string | null, participle?: string | null) {
+  const normalized = term.trim().toLowerCase();
+  const known = COMMON_VERB_CONJUGATIONS[normalized];
+  if (known) {
+    return {
+      past: past || known.past,
+      past_participle: participle || known.participle,
+    };
+  }
+
+  return {
+    past: past || null,
+    past_participle: participle || null,
+  };
+}
+
+function toGameItems(items: (VerbGuideItem | any)[]) {
   return items
-    .map((item) => ({ ...item, answer: cleanAnswer(item) }))
+    .map((item) => {
+      const term = item.term || item.word || item.verb || item.name || '';
+      const forms = resolveVerbForms(term, item.past, item.past_participle || item.participle);
+      return {
+        category: (item.category || 'common_verb') as LexiconCategory,
+        term,
+        base_verb: item.base_verb || term,
+        past: forms.past,
+        past_participle: forms.past_participle,
+        meaning_es: item.meaning_es || item.meaning || item.translation || item.es || '',
+        definition_en: item.definition_en || null,
+        example_en: item.example_en || item.example || item.en || null,
+        answer: cleanAnswer(item),
+      };
+    })
     .filter((item) => item.term && item.answer.length > 1)
     .filter((item) => !hasCorruptedText(item.term) && !hasCorruptedText(item.answer))
     .filter((item) => !isMergedImportTerm(item.term));
 }
 
+const FALLBACK_DISTRACTORS = [
+  'despertarse temprano', 'desayunar en familia', 'ir al trabajo en carro', 'dormir 8 horas',
+  'caminar por el parque', 'estudiar inglés', 'cocinar la cena', 'hacer ejercicio',
+  'escuchar música', 'leer un libro interesante', 'tomar café caliente', 'limpiar la casa'
+];
+
 function buildRound(pool: GameItem[], mode: GameMode, usedRoundKeys: Set<string>): Round | null {
-  if (pool.length < 4) return null;
+  if (pool.length === 0) return null;
   const availableItems = pool.filter((candidate) => !usedRoundKeys.has(getRoundKey(candidate)));
   if (availableItems.length === 0) return null;
   const item = availableItems[Math.floor(Math.random() * availableItems.length)];
   const distractorSource = pool.filter((candidate) => candidate.answer !== item.answer && (mode === 'all' || candidate.category === item.category));
   const fallbackSource = pool.filter((candidate) => candidate.answer !== item.answer);
-  const distractors = shuffle(distractorSource.length >= 3 ? distractorSource : fallbackSource)
+  let rawDistractors = shuffle(distractorSource.length >= 3 ? distractorSource : fallbackSource)
     .slice(0, 3)
     .map((candidate) => candidate.answer);
 
-  if (distractors.length < 3) return null;
+  if (rawDistractors.length < 3) {
+    const needed = 3 - rawDistractors.length;
+    const fillers = shuffle(FALLBACK_DISTRACTORS.filter(d => d !== item.answer && !rawDistractors.includes(d))).slice(0, needed);
+    rawDistractors = [...rawDistractors, ...fillers];
+  }
+
   return {
     item,
-    options: shuffle([item.answer, ...distractors]),
+    options: shuffle([item.answer, ...rawDistractors]),
   };
 }
 
@@ -192,9 +328,14 @@ function createAudioContext() {
 
 interface VerbArenaGameProps {
   onBack?: () => void;
+  isEmbedded?: boolean;
+  customPool?: any[];
+  maxRounds?: number;
+  onComplete?: () => void;
+  onNextSlide?: () => void;
 }
 
-export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
+export function VerbArenaGame({ onBack, isEmbedded = false, customPool, maxRounds, onComplete, onNextSlide }: VerbArenaGameProps) {
   const { brand } = useBrand();
   const audioContextRef = useRef<AudioContext | null>(null);
   const lastCountdownSoundRef = useRef<number | null>(null);
@@ -215,11 +356,18 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
   const [statusMessage, setStatusMessage] = useState('');
 
   useEffect(() => {
-    document.title = 'AI Verb Arena | Maven English';
-    fetch(DATA_URL)
-      .then((response) => response.json())
-      .then((data: VerbGuideItem[]) => setItems(toGameItems(data)));
-  }, []);
+    if (customPool && customPool.length > 0) {
+      setItems(toGameItems(customPool));
+      setMode('all');
+    } else {
+      if (!isEmbedded) {
+        document.title = 'AI Verb Arena | Maven English';
+      }
+      fetch(DATA_URL)
+        .then((response) => response.json())
+        .then((data: VerbGuideItem[]) => setItems(toGameItems(data)));
+    }
+  }, [customPool, isEmbedded]);
 
   const pool = useMemo(() => {
     if (mode === 'all') return items;
@@ -292,6 +440,11 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
   };
 
   const prepareRound = () => {
+    if (maxRounds && stats.total >= maxRounds) {
+      setStatusMessage('¡Reto de vocabulario completado!');
+      setPhase('results');
+      return;
+    }
     const nextRound = buildRound(pool, mode, usedRoundKeys);
     if (!nextRound) {
       setStatusMessage('No quedan palabras nuevas en esta sesión.');
@@ -404,37 +557,41 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <div className="fixed inset-0">
-        <img src={ARENA_BG} alt="" className="h-full w-full object-cover opacity-70" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(15,23,42,0.15),rgba(2,6,23,0.92)_72%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/10 via-transparent to-slate-950" />
-      </div>
-
-      <header className="relative z-20 flex items-center justify-between gap-3 px-4 py-4 sm:px-6">
-        <div className="flex min-w-0 items-center gap-3">
-          {onBack && (
-            <button
-              onClick={onBack}
-              className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl border border-white/15 bg-white/10 text-white shadow-lg backdrop-blur transition hover:bg-white/20"
-              aria-label="Volver"
-            >
-              <ArrowLeft className="h-5 w-5" />
-            </button>
-          )}
-          {brand.logoUrl && <img src={brand.logoUrl} alt={brand.name} className="h-12 w-12 rounded-2xl object-contain shadow-lg shadow-cyan-500/20" />}
-          <BrandWordmark name="MAVEN ENGLISH" subtitle="AI Verb Arena" compact light />
+    <div className={isEmbedded ? "w-full h-full text-white flex flex-col justify-between overflow-hidden" : "min-h-screen bg-slate-950 text-white"}>
+      {!isEmbedded && (
+        <div className="fixed inset-0">
+          <img src={ARENA_BG} alt="" className="h-full w-full object-cover opacity-70" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(15,23,42,0.15),rgba(2,6,23,0.92)_72%)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/10 via-transparent to-slate-950" />
         </div>
+      )}
 
-        <button
-          onClick={() => setPhase('results')}
-          className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-black text-white shadow-lg backdrop-blur transition hover:bg-white/20"
-        >
-          Results
-        </button>
-      </header>
+      {!isEmbedded && (
+        <header className="relative z-20 flex items-center justify-between gap-3 px-4 py-4 sm:px-6">
+          <div className="flex min-w-0 items-center gap-3">
+            {onBack && (
+              <button
+                onClick={onBack}
+                className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl border border-white/15 bg-white/10 text-white shadow-lg backdrop-blur transition hover:bg-white/20"
+                aria-label="Volver"
+              >
+                <ArrowLeft className="h-5 w-5" />
+              </button>
+            )}
+            {brand.logoUrl && <img src={brand.logoUrl} alt={brand.name} className="h-12 w-12 rounded-2xl object-contain shadow-lg shadow-cyan-500/20" />}
+            <BrandWordmark name="MAVEN ENGLISH" subtitle="AI Verb Arena" compact light />
+          </div>
 
-      <main className="relative z-10 mx-auto flex min-h-[calc(100vh-88px)] max-w-7xl items-center px-4 pb-6 sm:px-6">
+          <button
+            onClick={() => setPhase('results')}
+            className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-black text-white shadow-lg backdrop-blur transition hover:bg-white/20"
+          >
+            Results
+          </button>
+        </header>
+      )}
+
+      <main className={isEmbedded ? "relative z-10 w-full h-full flex flex-col justify-center px-4 overflow-hidden" : "relative z-10 mx-auto flex min-h-[calc(100vh-88px)] max-w-7xl items-center px-4 pb-6 sm:px-6"}>
         <AnimatePresence mode="wait">
           {phase === 'intro' && (
             <motion.section
@@ -467,27 +624,40 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                   <Settings2 className="h-5 w-5" />
                   Game setup
                 </div>
-                <div className="grid gap-3">
-                  {modes.map((gameMode) => (
-                    <button
-                      key={gameMode.id}
-                      onClick={() => setMode(gameMode.id)}
-                      className={`rounded-2xl border p-4 text-left transition ${
-                        mode === gameMode.id
-                          ? 'border-cyan-300 bg-cyan-300/15 shadow-lg shadow-cyan-500/10'
-                          : 'border-white/10 bg-white/5 hover:bg-white/10'
-                      }`}
-                    >
-                      <div className="text-lg font-black">{gameMode.label}</div>
-                      <div className="mt-1 text-sm font-semibold text-slate-300">{gameMode.detail}</div>
-                    </button>
-                  ))}
-                </div>
+                {customPool && customPool.length > 0 ? (
+                  <div className="rounded-2xl border border-cyan-400/30 bg-cyan-950/40 p-4 text-left">
+                    <div className="text-xs font-black uppercase tracking-wider text-cyan-300">Vocabulario de la Clase ({pool.length})</div>
+                    <div className="mt-2 flex flex-wrap gap-1.5 max-h-32 overflow-y-auto">
+                      {pool.map((item, idx) => (
+                        <span key={idx} className="rounded-lg bg-cyan-400/15 border border-cyan-400/30 px-2.5 py-1 text-xs font-bold text-cyan-100">
+                          {item.term} ➔ {item.meaning}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid gap-3">
+                    {modes.map((gameMode) => (
+                      <button
+                        key={gameMode.id}
+                        onClick={() => setMode(gameMode.id)}
+                        className={`rounded-2xl border p-4 text-left transition ${
+                          mode === gameMode.id
+                            ? 'border-cyan-300 bg-cyan-300/15 shadow-lg shadow-cyan-500/10'
+                            : 'border-white/10 bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
+                        <div className="text-lg font-black">{gameMode.label}</div>
+                        <div className="mt-1 text-sm font-semibold text-slate-300">{gameMode.detail}</div>
+                      </button>
+                    ))}
+                  </div>
+                )}
 
                 <div className="mt-5">
                   <div className="mb-2 flex items-center gap-2 text-sm font-black uppercase tracking-wider text-slate-300">
                     <Clock3 className="h-4 w-4" />
-                    Timer
+                    Temporizador por Pregunta
                   </div>
                   <div className="grid grid-cols-5 gap-2">
                     {timerOptions.map((option) => (
@@ -495,7 +665,7 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                         key={option.value}
                         onClick={() => setTimerSeconds(option.value)}
                         className={`h-12 rounded-2xl text-sm font-black transition ${
-                          timerSeconds === option.value ? 'bg-white text-slate-950' : 'bg-white/10 text-white hover:bg-white/20'
+                          timerSeconds === option.value ? 'bg-white text-slate-950 shadow-md' : 'bg-white/10 text-white hover:bg-white/20'
                         }`}
                       >
                         {option.label}
@@ -506,31 +676,33 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
 
                 <button
                   onClick={startGame}
-                  disabled={pool.length < 4}
+                  disabled={pool.length < 2}
                   className="mt-5 flex min-h-16 w-full items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-300 via-white to-red-200 px-6 py-4 text-xl font-black text-slate-950 shadow-xl shadow-cyan-500/20 transition hover:scale-[1.02] active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <Play className="h-6 w-6 fill-current" />
-                  Start Arena
+                  {customPool && customPool.length > 0 ? "¡Iniciar Reto de la Clase! 🚀" : "Start Arena"}
                 </button>
               </div>
             </motion.section>
           )}
 
           {phase === 'countdown' && (
-            <motion.section key="countdown" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="grid min-h-[calc(100vh-112px)] w-full place-items-center">
+            <motion.section key="countdown" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className={isEmbedded ? "grid w-full place-items-center h-full my-auto" : "grid min-h-[calc(100vh-112px)] w-full place-items-center"}>
               <motion.div
                 key={countdown}
                 initial={{ scale: 0.45, rotate: -8, opacity: 0 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1 }}
                 exit={{ scale: 1.35, opacity: 0 }}
-                className="grid h-[min(86vw,72vh,680px)] w-[min(86vw,72vh,680px)] place-items-center rounded-full border-4 border-cyan-100/70 bg-slate-950/72 text-center shadow-2xl shadow-cyan-300/40 ring-8 ring-cyan-300/15 backdrop-blur-xl"
+                className={isEmbedded 
+                  ? "grid h-[280px] w-[280px] place-items-center rounded-full border-4 border-cyan-100/70 bg-slate-950/72 text-center shadow-2xl shadow-cyan-300/40 ring-8 ring-cyan-300/15 backdrop-blur-xl"
+                  : "grid h-[min(86vw,72vh,680px)] w-[min(86vw,72vh,680px)] place-items-center rounded-full border-4 border-cyan-100/70 bg-slate-950/72 text-center shadow-2xl shadow-cyan-300/40 ring-8 ring-cyan-300/15 backdrop-blur-xl"}
               >
                 <div className="px-4">
-                  <div className="text-2xl font-black uppercase tracking-[0.28em] text-cyan-100 sm:text-4xl">Next word</div>
-                  <div className="text-[34vw] font-black leading-none text-white drop-shadow-[0_0_36px_rgba(103,232,249,0.85)] sm:text-[22rem]">
+                  <div className={isEmbedded ? "text-lg font-black uppercase tracking-[0.2em] text-cyan-100" : "text-2xl font-black uppercase tracking-[0.28em] text-cyan-100 sm:text-4xl"}>Next word</div>
+                  <div className={isEmbedded ? "text-8xl font-black leading-none text-white drop-shadow-[0_0_36px_rgba(103,232,249,0.85)]" : "text-[34vw] font-black leading-none text-white drop-shadow-[0_0_36px_rgba(103,232,249,0.85)] sm:text-[22rem]"}>
                     {Math.max(countdown, 1)}
                   </div>
-                  <div className="text-xl font-black uppercase tracking-[0.2em] text-red-100 sm:text-3xl">Get ready</div>
+                  <div className={isEmbedded ? "text-sm font-black uppercase tracking-[0.2em] text-red-100" : "text-xl font-black uppercase tracking-[0.2em] text-red-100 sm:text-3xl"}>Get ready</div>
                 </div>
               </motion.div>
             </motion.section>
@@ -539,8 +711,25 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
           {phase === 'question' && round && (
             <motion.section key={round.item.term} initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -24 }} className="w-full">
               <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-                <div className={`rounded-full bg-gradient-to-r ${categoryAccent[round.item.category]} px-4 py-2 text-sm font-black uppercase tracking-wider text-slate-950`}>
-                  {categoryNames[round.item.category]}
+                <div className="flex items-center gap-2">
+                  <div className={`rounded-full bg-gradient-to-r ${categoryAccent[round.item.category]} px-4 py-2 text-sm font-black uppercase tracking-wider text-slate-950`}>
+                    {categoryNames[round.item.category]}
+                  </div>
+                  {isEmbedded && (
+                    <button
+                      onClick={() => {
+                        setPhase('intro');
+                        setSelectedAnswer(null);
+                        setFeedback(null);
+                        setUsedRoundKeys(new Set());
+                      }}
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-white/20 bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition-colors cursor-pointer"
+                      title="Reiniciar el juego y configurar tiempo"
+                    >
+                      <RotateCcw className="w-3.5 h-3.5" />
+                      <span>Reiniciar</span>
+                    </button>
+                  )}
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="rounded-2xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-black backdrop-blur">
@@ -558,28 +747,32 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                 </div>
               </div>
 
-              <div className="rounded-[2rem] border border-white/15 bg-slate-950/72 p-5 shadow-2xl shadow-blue-950/50 backdrop-blur-xl sm:p-7 lg:p-8">
+              <div className={isEmbedded ? "rounded-3xl border border-white/15 bg-slate-950/72 p-4 shadow-xl shadow-blue-950/50 backdrop-blur-xl" : "rounded-[2rem] border border-white/15 bg-slate-950/72 p-5 shadow-2xl shadow-blue-950/50 backdrop-blur-xl sm:p-7 lg:p-8"}>
                 <div className="text-center">
-                  <div className="mb-3 text-base font-black uppercase tracking-[0.25em] text-cyan-100">What does it mean?</div>
-                  <h2 className="mx-auto max-w-5xl break-words text-5xl font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
+                  <div className={isEmbedded ? "mb-1 text-xs font-black uppercase tracking-[0.2em] text-cyan-100" : "mb-3 text-base font-black uppercase tracking-[0.25em] text-cyan-100"}>What does it mean?</div>
+                  <h2 className={isEmbedded ? "mx-auto max-w-5xl break-words text-3xl font-black leading-tight" : "mx-auto max-w-5xl break-words text-5xl font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl"}>
                     {getDisplayTerm(round.item)}
                   </h2>
                   {round.item.past && (
-                    <div className="mt-5 inline-flex flex-wrap justify-center gap-2 rounded-2xl bg-white/8 p-2 text-sm font-black text-slate-200 sm:text-base">
-                      <span className="rounded-xl bg-white/10 px-3 py-2">Past: {round.item.past}</span>
-                      <span className="rounded-xl bg-white/10 px-3 py-2">Participle: {round.item.past_participle || '-'}</span>
+                    <div className={isEmbedded ? "mt-2 inline-flex flex-wrap justify-center gap-1.5 rounded-xl bg-white/8 p-1.5 text-xs font-black text-slate-200" : "mt-5 inline-flex flex-wrap justify-center gap-2 rounded-2xl bg-white/8 p-2 text-sm font-black text-slate-200 sm:text-base"}>
+                      <span className="rounded-lg bg-white/10 px-2 py-1">Past: {round.item.past}</span>
+                      <span className="rounded-lg bg-white/10 px-2 py-1">Participle: {round.item.past_participle || '-'}</span>
                     </div>
                   )}
                 </div>
 
-                <div className="mt-8 grid gap-3 md:grid-cols-2">
+                <div className={isEmbedded ? "mt-4 grid gap-2 md:grid-cols-2" : "mt-8 grid gap-3 md:grid-cols-2"}>
                   {round.options.map((option, index) => (
                     <button
                       key={`${option}-${index}`}
                       onClick={() => handleAnswer(option)}
-                      className="group flex min-h-24 items-center gap-4 rounded-3xl border border-white/10 bg-white px-4 py-4 text-left text-xl font-black leading-snug text-slate-950 shadow-lg transition hover:-translate-y-1 hover:border-cyan-200 hover:bg-cyan-50 active:scale-[0.99] sm:min-h-28 sm:px-5 sm:text-2xl"
+                      className={isEmbedded 
+                        ? "group flex min-h-16 items-center gap-3 rounded-2xl border border-white/10 bg-white px-3 py-2 text-left text-base font-black leading-snug text-slate-950 shadow-md transition hover:border-cyan-200 hover:bg-cyan-50 active:scale-[0.99]" 
+                        : "group flex min-h-24 items-center gap-4 rounded-3xl border border-white/10 bg-white px-4 py-4 text-left text-xl font-black leading-snug text-slate-950 shadow-lg transition hover:-translate-y-1 hover:border-cyan-200 hover:bg-cyan-50 active:scale-[0.99] sm:min-h-28 sm:px-5 sm:text-2xl"}
                     >
-                      <span className={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-gradient-to-br ${categoryAccent[round.item.category]} text-xl font-black text-slate-950 shadow-md transition group-hover:scale-105 sm:h-14 sm:w-14 sm:text-2xl`}>
+                      <span className={isEmbedded
+                        ? `grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-gradient-to-br ${categoryAccent[round.item.category]} text-sm font-black text-slate-950 shadow-sm`
+                        : `grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-gradient-to-br ${categoryAccent[round.item.category]} text-xl font-black text-slate-950 shadow-md transition group-hover:scale-105 sm:h-14 sm:w-14 sm:text-2xl`}>
                         {optionLetters[index]}
                       </span>
                       <span className="min-w-0 break-words">{cleanDisplayText(option)}</span>
@@ -588,7 +781,9 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                 </div>
                 <button
                   onClick={() => answerRound(null, 'unknown')}
-                  className="mt-3 min-h-16 w-full rounded-3xl border border-white/15 bg-white/10 px-5 py-4 text-xl font-black text-white backdrop-blur transition hover:bg-white/18"
+                  className={isEmbedded
+                    ? "mt-2 min-h-12 w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-2 text-base font-black text-white backdrop-blur transition hover:bg-white/18"
+                    : "mt-3 min-h-16 w-full rounded-3xl border border-white/15 bg-white/10 px-5 py-4 text-xl font-black text-white backdrop-blur transition hover:bg-white/18"}
                 >
                   I don't know
                 </button>
@@ -598,25 +793,25 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
 
           {phase === 'feedback' && round && feedback && (
             <motion.section key="feedback" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.98 }} className="w-full">
-              <div className={`rounded-[2rem] border p-5 shadow-2xl backdrop-blur-xl sm:p-7 lg:p-9 ${
-                feedback === 'correct'
-                  ? 'border-emerald-200/40 bg-emerald-400/16 shadow-emerald-900/30'
-                  : 'border-red-200/35 bg-red-400/14 shadow-red-900/30'
-              }`}>
+              <div className={isEmbedded 
+                ? `rounded-3xl border p-4 shadow-xl backdrop-blur-xl ${feedback === 'correct' ? 'border-emerald-200/40 bg-emerald-400/16 shadow-emerald-900/30' : 'border-red-200/35 bg-red-400/14 shadow-red-900/30'}`
+                : `rounded-[2rem] border p-5 shadow-2xl backdrop-blur-xl sm:p-7 lg:p-9 ${feedback === 'correct' ? 'border-emerald-200/40 bg-emerald-400/16 shadow-emerald-900/30' : 'border-red-200/35 bg-red-400/14 shadow-red-900/30'}`}>
                 <motion.div
                   initial={{ scale: 0.2, opacity: 0, rotate: -12 }}
                   animate={{ scale: 1, opacity: 1, rotate: 0 }}
-                  className="mx-auto mb-4 grid h-20 w-20 place-items-center rounded-full bg-white text-slate-950 shadow-xl sm:h-24 sm:w-24"
+                  className={isEmbedded
+                    ? "mx-auto mb-2 grid h-12 w-12 place-items-center rounded-full bg-white text-slate-950 shadow-md"
+                    : "mx-auto mb-4 grid h-20 w-20 place-items-center rounded-full bg-white text-slate-950 shadow-xl sm:h-24 sm:w-24"}
                 >
-                  {feedback === 'correct' ? <CheckCircle2 className="h-14 w-14 text-emerald-600" /> : <XCircle className="h-14 w-14 text-red-600" />}
+                  {feedback === 'correct' ? <CheckCircle2 className={isEmbedded ? "h-8 w-8 text-emerald-600" : "h-14 w-14 text-emerald-600"} /> : <XCircle className={isEmbedded ? "h-8 w-8 text-red-600" : "h-14 w-14 text-red-600"} />}
                 </motion.div>
-                <h2 className="text-center text-5xl font-black leading-none sm:text-7xl">
+                <h2 className={isEmbedded ? "text-center text-2xl font-black leading-none" : "text-center text-5xl font-black leading-none sm:text-7xl"}>
                   {feedback === 'correct' ? 'Excellent.' : feedback === 'unknown' ? 'Saved for review.' : feedback === 'timeout' ? 'Time is up.' : 'Not this one.'}
                 </h2>
-                <div className="mx-auto mt-6 grid max-w-5xl gap-4 lg:grid-cols-[0.9fr_1.1fr]">
-                  <div className="rounded-3xl border border-white/10 bg-slate-950/52 p-5 text-left">
+                <div className={isEmbedded ? "mx-auto mt-3 grid max-w-5xl gap-2 lg:grid-cols-[0.9fr_1.1fr]" : "mx-auto mt-6 grid max-w-5xl gap-4 lg:grid-cols-[0.9fr_1.1fr]"}>
+                  <div className={isEmbedded ? "rounded-2xl border border-white/10 bg-slate-950/52 p-3 text-left" : "rounded-3xl border border-white/10 bg-slate-950/52 p-5 text-left"}>
                     <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-100">Word / phrase</p>
-                    <p className="mt-2 break-words text-4xl font-black leading-none text-white sm:text-5xl">
+                    <p className={isEmbedded ? "mt-1 break-words text-xl font-black leading-none text-white" : "mt-2 break-words text-4xl font-black leading-none text-white sm:text-5xl"}>
                       {getDisplayTerm(round.item)}
                     </p>
                     {isVerbCategory(round.item.category) && (
@@ -626,9 +821,9 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                       </div>
                     )}
                   </div>
-                  <div className="rounded-3xl bg-white p-5 text-left text-slate-950">
+                  <div className={isEmbedded ? "rounded-2xl bg-white p-3 text-left text-slate-950" : "rounded-3xl bg-white p-5 text-left text-slate-950"}>
                     <p className="text-xs font-black uppercase tracking-[0.18em] text-emerald-700">Correct meaning</p>
-                    <p className="mt-2 break-words text-3xl font-black leading-tight sm:text-4xl">{getDisplayAnswer(round.item)}</p>
+                    <p className={isEmbedded ? "mt-1 break-words text-lg font-black leading-tight" : "mt-2 break-words text-3xl font-black leading-tight sm:text-4xl"}>{getDisplayAnswer(round.item)}</p>
                     {selectedAnswer && selectedAnswer !== round.item.answer && (
                       <div className="mt-4 rounded-2xl bg-red-50 p-4">
                         <p className="text-xs font-black uppercase tracking-[0.14em] text-red-700">Your answer</p>
@@ -638,138 +833,219 @@ export function VerbArenaGame({ onBack }: VerbArenaGameProps) {
                   </div>
                 </div>
                 {getDisplayExample(round.item) && (
-                  <div className="mx-auto mt-4 max-w-5xl rounded-3xl border border-cyan-200/20 bg-cyan-300/10 p-5 text-left">
+                  <div className={isEmbedded ? "mx-auto mt-2 max-w-5xl rounded-2xl border border-cyan-200/20 bg-cyan-300/10 p-3 text-left" : "mx-auto mt-4 max-w-5xl rounded-3xl border border-cyan-200/20 bg-cyan-300/10 p-5 text-left"}>
                     <p className="text-xs font-black uppercase tracking-[0.18em] text-cyan-100">Useful example</p>
-                    <p className="mt-2 text-2xl font-bold leading-snug text-white">{getDisplayExample(round.item)}</p>
+                    <p className={isEmbedded ? "mt-1 text-lg font-bold leading-snug text-white" : "mt-2 text-2xl font-bold leading-snug text-white"}>{getDisplayExample(round.item)}</p>
                   </div>
                 )}
-                <button
-                  onClick={prepareRound}
-                  className="mx-auto mt-7 flex min-h-16 items-center justify-center rounded-2xl bg-white px-8 py-4 text-xl font-black text-slate-950 shadow-xl transition hover:scale-[1.03] active:scale-95"
-                >
-                  Next Question
-                </button>
+                <div className="flex items-center justify-center gap-3 mt-4">
+                  {isEmbedded && (
+                    <button
+                      onClick={() => {
+                        setPhase('intro');
+                        setSelectedAnswer(null);
+                        setFeedback(null);
+                        setUsedRoundKeys(new Set());
+                      }}
+                      className="flex items-center gap-1.5 px-4 py-2 rounded-xl border border-white/20 bg-white/10 hover:bg-white/20 text-sm font-bold text-white transition-colors cursor-pointer"
+                    >
+                      <RotateCcw className="w-4 h-4" />
+                      <span>Reiniciar</span>
+                    </button>
+                  )}
+                  <button
+                    onClick={prepareRound}
+                    className={isEmbedded
+                      ? "flex min-h-12 items-center justify-center rounded-xl bg-white px-6 py-2 text-base font-black text-slate-950 shadow-md transition active:scale-95 cursor-pointer"
+                      : "mx-auto mt-7 flex min-h-16 items-center justify-center rounded-2xl bg-white px-8 py-4 text-xl font-black text-slate-950 shadow-xl transition hover:scale-[1.03] active:scale-95 cursor-pointer"}
+                  >
+                    {stats.total >= (maxRounds || pool.length) ? 'Ver Resultados ➔' : 'Next Question'}
+                  </button>
+                </div>
               </div>
             </motion.section>
           )}
 
           {phase === 'results' && (
-            <motion.section key="results" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -24 }} className="w-full">
-              <div className="rounded-[2rem] border border-white/15 bg-slate-950/80 p-4 shadow-2xl backdrop-blur-xl sm:p-6 lg:p-8">
-                <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-wider text-cyan-100">
-                      <Trophy className="h-4 w-4" />
-                      AI Review Report
+            <motion.section key="results" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -24 }} className="w-full flex-1 flex flex-col justify-between overflow-hidden">
+              {isEmbedded ? (
+                <div className="rounded-3xl border border-white/15 bg-slate-950/85 p-5 sm:p-6 shadow-2xl backdrop-blur-xl flex flex-col justify-between h-full max-h-[500px] overflow-y-auto">
+                  <div className="text-center shrink-0">
+                    <Trophy className="mx-auto h-12 w-12 text-yellow-400 mb-1 animate-bounce" />
+                    <h2 className="text-3xl font-black text-white">¡Reto de Vocabulario Completado! 🎉</h2>
+                    <p className="mt-1 text-sm text-slate-300">Retroalimentación de los verbos practicados en esta clase.</p>
+                  </div>
+
+                  {/* Stats Cards */}
+                  <div className="grid grid-cols-3 gap-3 max-w-xl mx-auto my-3 w-full shrink-0">
+                    <div className="rounded-2xl bg-white/10 p-3 text-center border border-white/10">
+                      <div className="text-xs uppercase text-slate-400 font-bold">Precisión</div>
+                      <div className="text-3xl font-black text-cyan-300">{accuracy}%</div>
                     </div>
-                    <h2 className="text-5xl font-black leading-none sm:text-7xl">Study results</h2>
-                    <p className="mt-3 max-w-2xl text-lg font-semibold leading-7 text-slate-300">
-                      Feedback corto con solo las palabras que necesitan repaso.
-                    </p>
-                    {statusMessage && (
-                      <p className="mt-3 inline-flex rounded-2xl border border-cyan-200/20 bg-cyan-300/10 px-4 py-2 text-base font-black text-cyan-50">
-                        {statusMessage}
+                    <div className="rounded-2xl bg-white/10 p-3 text-center border border-white/10">
+                      <div className="text-xs uppercase text-slate-400 font-bold">Correctas</div>
+                      <div className="text-3xl font-black text-emerald-400">{stats.correct} / {stats.total}</div>
+                    </div>
+                    <div className="rounded-2xl bg-white/10 p-3 text-center border border-white/10">
+                      <div className="text-xs uppercase text-slate-400 font-bold">Tiempo</div>
+                      <div className="text-3xl font-black text-amber-300">{timerSeconds > 0 ? `${timerSeconds}s` : '∞'}</div>
+                    </div>
+                  </div>
+
+                  {/* Words Summary List */}
+                  <div className="flex-1 min-h-0 overflow-y-auto max-h-36 px-2 my-1">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {history.map((h, i) => (
+                        <div key={i} className={`flex items-center justify-between p-2.5 rounded-xl border text-xs font-bold ${h.status === 'correct' ? 'bg-emerald-950/40 border-emerald-500/30 text-emerald-200' : 'bg-red-950/40 border-red-500/30 text-red-200'}`}>
+                          <div className="flex items-center gap-2 truncate">
+                            <span>{h.status === 'correct' ? '✅' : '❌'}</span>
+                            <span className="font-black text-white text-sm">{getDisplayTerm(h.item)}</span>
+                            <span className="text-white/60">➔ {formatMeaning(h.item)}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="mt-4 flex items-center justify-center gap-3 shrink-0 pt-2 border-t border-white/10">
+                    <button
+                      onClick={startGame}
+                      className="px-5 py-3 rounded-xl border border-white/20 bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-all cursor-pointer flex items-center gap-2"
+                    >
+                      <RotateCcw className="w-4 h-4" />
+                      <span>Repetir Reto</span>
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        if (onNextSlide) onNextSlide();
+                        else if (onComplete) onComplete();
+                      }}
+                      className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-base transition-all shadow-lg hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-2"
+                    >
+                      <span>Continuar a la siguiente diapositiva</span>
+                      <ArrowRight className="w-5 h-5" />
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <div className="rounded-[2rem] border border-white/15 bg-slate-950/80 p-4 shadow-2xl backdrop-blur-xl sm:p-6 lg:p-8">
+                  <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-wider text-cyan-100">
+                        <Trophy className="h-4 w-4" />
+                        AI Review Report
+                      </div>
+                      <h2 className="text-5xl font-black leading-none sm:text-7xl">Study results</h2>
+                      <p className="mt-3 max-w-2xl text-lg font-semibold leading-7 text-slate-300">
+                        Feedback corto con solo las palabras que necesitan repaso.
                       </p>
-                    )}
-                  </div>
-                  <div className="rounded-[2rem] bg-white p-5 text-center text-slate-950 shadow-xl">
-                    <div className="text-sm font-black uppercase tracking-wider text-slate-500">Accuracy</div>
-                    <div className="text-6xl font-black">{accuracy}%</div>
-                    <div className="mt-1 text-sm font-black text-slate-500">
-                      {accuracy >= 85 ? 'Strong recall' : accuracy >= 60 ? 'Needs review' : 'Practice again'}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-                  {[
-                    ['Questions', stats.total],
-                    ['Correct', stats.correct],
-                    ['Wrong', stats.wrong],
-                    ["I don't know", stats.unknown],
-                    ['Timeout', stats.timeout],
-                  ].map(([label, value]) => (
-                    <div key={label} className="rounded-3xl bg-white/10 p-5">
-                      <div className="text-sm font-black uppercase tracking-wider text-slate-300">{label}</div>
-                      <div className="mt-2 text-5xl font-black">{value}</div>
-                    </div>
-                  ))}
-                </div>
-
-                {history.length === 0 ? (
-                  <div className="mt-6 rounded-3xl border border-dashed border-white/20 bg-white/10 p-8 text-center">
-                    <h3 className="text-3xl font-black">No answers yet</h3>
-                    <p className="mt-2 text-lg font-semibold text-slate-300">Start the arena to generate your AI review report.</p>
-                  </div>
-                ) : (
-                  <>
-                    <div className="mt-6 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-                      <div className="rounded-3xl bg-white p-5 text-slate-950">
-                        <h3 className="mb-4 flex items-center gap-2 text-2xl font-black">
-                          <Gauge className="h-6 w-6 text-cyan-600" />
-                          Words to review
-                        </h3>
-                        {missedHistory.length ? (
-                          <div className="grid gap-3 xl:grid-cols-2">
-                            {missedHistory.map((entry, index) => (
-                              <div key={`${entry.item.term}-${entry.status}-${index}`} className="rounded-2xl bg-slate-50 p-4">
-                              <div className="flex items-start justify-between gap-3">
-                                <div className="text-xl font-black">{getDisplayTerm(entry.item)}</div>
-                                <span className={`shrink-0 rounded-full px-3 py-1 text-xs font-black ring-1 ${statusClass(entry.status)}`}>
-                                  {statusLabel(entry.status)}
-                                </span>
-                              </div>
-                                <div className="mt-2 text-base font-black leading-snug text-slate-700">{formatMeaning(entry.item)}</div>
-                                {entry.selectedAnswer && (
-                                  <div className="mt-2 text-sm font-bold leading-snug text-red-700">
-                                    Your answer: {cleanDisplayText(entry.selectedAnswer)}
-                                  </div>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <div className="rounded-2xl bg-emerald-50 p-5 text-lg font-black text-emerald-800">
-                            No priority review. Everything answered correctly.
-                          </div>
-                        )}
-                      </div>
-
-                      <div className="rounded-3xl border border-cyan-200/20 bg-cyan-300/10 p-5">
-                        <h3 className="mb-4 text-2xl font-black text-white">Smart study note</h3>
-                        <p className="text-lg font-semibold leading-8 text-cyan-50">
-                          Repasa solo estas palabras y vuelve a jugar una ronda corta con las falladas para reforzar memoria activa.
+                      {statusMessage && (
+                        <p className="mt-3 inline-flex rounded-2xl border border-cyan-200/20 bg-cyan-300/10 px-4 py-2 text-base font-black text-cyan-50">
+                          {statusMessage}
                         </p>
-                        <button
-                          onClick={shareResults}
-                          className="mt-5 min-h-16 w-full rounded-2xl bg-emerald-500 px-5 py-4 text-lg font-black text-white shadow-lg shadow-emerald-950/30 transition hover:bg-emerald-600"
-                        >
-                          <MessageCircle className="mr-2 inline h-5 w-5" />
-                          Share report by WhatsApp
-                        </button>
+                      )}
+                    </div>
+                    <div className="rounded-[2rem] bg-white p-5 text-center text-slate-950 shadow-xl">
+                      <div className="text-sm font-black uppercase tracking-wider text-slate-500">Accuracy</div>
+                      <div className="text-6xl font-black">{accuracy}%</div>
+                      <div className="mt-1 text-sm font-black text-slate-500">
+                        {accuracy >= 85 ? 'Strong recall' : accuracy >= 60 ? 'Needs review' : 'Practice again'}
                       </div>
                     </div>
-                  </>
-                )}
+                  </div>
 
-                <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                  <button onClick={startGame} className="min-h-16 rounded-2xl bg-white px-5 py-4 text-lg font-black text-slate-950 transition hover:bg-cyan-50">
-                    <RotateCcw className="mr-2 inline h-5 w-5" />
-                    Play Again
-                  </button>
-                  <button
-                    onClick={practiceMissed}
-                    disabled={history.filter((entry) => entry.status !== 'correct').length < 4}
-                    className="min-h-16 rounded-2xl bg-cyan-300 px-5 py-4 text-lg font-black text-slate-950 transition hover:bg-cyan-200 disabled:opacity-50"
-                  >
-                    Practice missed
-                  </button>
-                  <button onClick={shareResults} className="min-h-16 rounded-2xl bg-emerald-500 px-5 py-4 text-lg font-black text-white transition hover:bg-emerald-600">
-                    <MessageCircle className="mr-2 inline h-5 w-5" />
-                    WhatsApp
-                  </button>
+                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+                    {[
+                      ['Questions', stats.total],
+                      ['Correct', stats.correct],
+                      ['Wrong', stats.wrong],
+                      ["I don't know", stats.unknown],
+                      ['Timeout', stats.timeout],
+                    ].map(([label, value]) => (
+                      <div key={label} className="rounded-3xl bg-white/10 p-5">
+                        <div className="text-sm font-black uppercase tracking-wider text-slate-300">{label}</div>
+                        <div className="mt-2 text-5xl font-black">{value}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {history.length === 0 ? (
+                    <div className="mt-6 rounded-3xl border border-dashed border-white/20 bg-white/10 p-8 text-center">
+                      <h3 className="text-3xl font-black">No answers yet</h3>
+                      <p className="mt-2 text-lg font-semibold text-slate-300">Start the arena to generate your AI review report.</p>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="mt-6 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
+                        <div className="rounded-3xl bg-white p-5 text-slate-950">
+                          <h3 className="mb-4 flex items-center gap-2 text-2xl font-black">
+                            <Gauge className="h-6 w-6 text-cyan-600" />
+                            Words to review
+                          </h3>
+                          {missedHistory.length ? (
+                            <div className="grid gap-3 xl:grid-cols-2">
+                              {missedHistory.map((entry, index) => (
+                                <div key={`${entry.item.term}-${entry.status}-${index}`} className="rounded-2xl bg-slate-50 p-4">
+                                <div className="flex items-start justify-between gap-3">
+                                  <div className="text-xl font-black">{getDisplayTerm(entry.item)}</div>
+                                  <span className={`shrink-0 rounded-full px-3 py-1 text-xs font-black ring-1 ${statusClass(entry.status)}`}>
+                                    {statusLabel(entry.status)}
+                                  </span>
+                                </div>
+                                  <div className="mt-2 text-base font-black leading-snug text-slate-700">{formatMeaning(entry.item)}</div>
+                                  {entry.selectedAnswer && (
+                                    <div className="mt-2 text-sm font-bold leading-snug text-red-700">
+                                      Your answer: {cleanDisplayText(entry.selectedAnswer)}
+                                    </div>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                          ) : (
+                            <div className="rounded-2xl bg-emerald-50 p-5 text-lg font-black text-emerald-800">
+                              No priority review. Everything answered correctly.
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="rounded-3xl border border-cyan-200/20 bg-cyan-300/10 p-5">
+                          <h3 className="mb-4 text-2xl font-black text-white">Smart study note</h3>
+                          <p className="text-lg font-semibold leading-8 text-cyan-50">
+                            Repasa solo estas palabras y vuelve a jugar una ronda corta con las falladas para reforzar memoria activa.
+                          </p>
+                          <button
+                            onClick={shareResults}
+                            className="mt-5 min-h-16 w-full rounded-2xl bg-emerald-500 px-5 py-4 text-lg font-black text-white shadow-lg shadow-emerald-950/30 transition hover:bg-emerald-600"
+                          >
+                            <MessageCircle className="mr-2 inline h-5 w-5" />
+                            Share report by WhatsApp
+                          </button>
+                        </div>
+                      </div>
+                    </>
+                  )}
+
+                  <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                    <button onClick={startGame} className="min-h-16 rounded-2xl bg-white px-5 py-4 text-lg font-black text-slate-950 transition hover:bg-cyan-50">
+                      <RotateCcw className="mr-2 inline h-5 w-5" />
+                      Play Again
+                    </button>
+                    <button
+                      onClick={practiceMissed}
+                      disabled={history.filter((entry) => entry.status !== 'correct').length < 4}
+                      className="min-h-16 rounded-2xl bg-cyan-300 px-5 py-4 text-lg font-black text-slate-950 transition hover:bg-cyan-200 disabled:opacity-50"
+                    >
+                      Practice missed
+                    </button>
+                    <button onClick={shareResults} className="min-h-16 rounded-2xl bg-emerald-500 px-5 py-4 text-lg font-black text-white transition hover:bg-emerald-600">
+                      <MessageCircle className="mr-2 inline h-5 w-5" />
+                      WhatsApp
+                    </button>
+                  </div>
                 </div>
-              </div>
+              )}
             </motion.section>
           )}
         </AnimatePresence>
