@@ -1,5 +1,5 @@
 import { supabase } from '../lib/supabase';
-import { DbStudent, DbGroup, EvaluationRecord } from '../types';
+import { DbStudent, DbGroup, EvaluationRecord, StudentWhProgress } from '../types';
 import { isLevelApprovalMarker } from './levelApproval';
 
 export const dbAdmin = {
@@ -288,5 +288,105 @@ export const dbAdmin = {
        return false;
     }
     return true;
+  },
+
+  getStudentWhProgress: async (studentId: string): Promise<Record<string, StudentWhProgress>> => {
+    if (!studentId) {
+      const local = JSON.parse(localStorage.getItem('guest_wh_progress') || '{}');
+      return local;
+    }
+    const { data, error } = await supabase
+      .from('student_wh_progress')
+      .select('*')
+      .eq('student_id', studentId);
+
+    if (error) {
+      console.warn('Error fetching WH progress from Supabase, using local fallback:', error);
+      const local = JSON.parse(localStorage.getItem(`wh_progress_${studentId}`) || '{}');
+      return local;
+    }
+
+    const progressMap: Record<string, StudentWhProgress> = {};
+    if (data && data.length > 0) {
+      data.forEach((item: StudentWhProgress) => {
+        progressMap[item.wh_id] = item;
+      });
+      localStorage.setItem(`wh_progress_${studentId}`, JSON.stringify(progressMap));
+    } else {
+      const cached = JSON.parse(localStorage.getItem(`wh_progress_${studentId}`) || '{}');
+      return cached;
+    }
+    return progressMap;
+  },
+
+  saveStudentWhProgress: async (
+    studentId: string,
+    whId: string,
+    masteryScore: number,
+    status: 'unseen' | 'practicing' | 'mastered'
+  ): Promise<StudentWhProgress> => {
+    const payload: Partial<StudentWhProgress> = {
+      student_id: studentId,
+      wh_id: whId,
+      mastery_score: masteryScore,
+      status,
+      last_practiced_at: new Date().toISOString()
+    };
+
+    if (!studentId) {
+      const guestProgress = JSON.parse(localStorage.getItem('guest_wh_progress') || '{}');
+      const current = guestProgress[whId] || { times_practiced: 0 };
+      const updated: StudentWhProgress = {
+        student_id: 'guest',
+        wh_id: whId,
+        mastery_score: masteryScore,
+        status,
+        times_practiced: (current.times_practiced || 0) + 1,
+        last_practiced_at: new Date().toISOString()
+      };
+      guestProgress[whId] = updated;
+      localStorage.setItem('guest_wh_progress', JSON.stringify(guestProgress));
+      return updated;
+    }
+
+    // Fetch existing record to increment times_practiced
+    const cached = JSON.parse(localStorage.getItem(`wh_progress_${studentId}`) || '{}');
+    const prevTimes = cached[whId]?.times_practiced || 0;
+    const timesPracticed = prevTimes + 1;
+
+    const fullRecord: StudentWhProgress = {
+      student_id: studentId,
+      wh_id: whId,
+      mastery_score: masteryScore,
+      status,
+      times_practiced: timesPracticed,
+      last_practiced_at: new Date().toISOString()
+    };
+
+    // Save in Supabase
+    const { data, error } = await supabase
+      .from('student_wh_progress')
+      .upsert(
+        {
+          student_id: studentId,
+          wh_id: whId,
+          mastery_score: masteryScore,
+          status,
+          times_practiced: timesPracticed,
+          last_practiced_at: new Date().toISOString()
+        },
+        { onConflict: 'student_id,wh_id' }
+      )
+      .select()
+      .single();
+
+    if (error) {
+      console.warn('Error saving WH progress to Supabase, saving locally:', error);
+    }
+
+    // Update local cache
+    cached[whId] = data || fullRecord;
+    localStorage.setItem(`wh_progress_${studentId}`, JSON.stringify(cached));
+    return data || fullRecord;
   }
 };

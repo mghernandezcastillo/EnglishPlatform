@@ -440,3 +440,54 @@ export interface VocabItem {
   nextReviewAt?: string;
   createdAt: string;
 }
+
+export type WhLevel = 'A1' | 'A2' | 'B1' | 'B2';
+
+export interface WhExample {
+  en: string;
+  es: string;
+}
+
+export interface WhPuzzle {
+  scramble: string[];
+  solution: string;
+  hint_es: string;
+}
+
+export interface WhSituationPrompt {
+  scenario: string;
+  goal: string;
+  modelAnswer: string;
+}
+
+export interface WhSlotOption {
+  subjects: string[];
+  actions: string[];
+  complements: string[];
+}
+
+export interface WhQuestionItem {
+  id: string;
+  level: WhLevel;
+  expression: string;
+  translation: string;
+  use: string;
+  register?: string;
+  formula: string;
+  examples: WhExample[];
+  puzzles: WhPuzzle[];
+  situationPrompt: WhSituationPrompt;
+  slotRoulette: WhSlotOption;
+}
+
+export interface StudentWhProgress {
+  id?: string;
+  student_id: string;
+  wh_id: string;
+  mastery_score: number; // 0 to 100
+  status: 'unseen' | 'practicing' | 'mastered';
+  times_practiced: number;
+  last_practiced_at?: string;
+  created_at?: string;
+}
+

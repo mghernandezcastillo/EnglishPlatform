@@ -521,7 +521,7 @@ export default function App() {
           />
         )}
       </Suspense>
-      <FloatingControls />
+      <FloatingControls studentId={currentStudentId} studentName={progress.studentName} />
       <Suspense fallback={null}><GlobalAiAssistant /></Suspense>
     </div>
   );

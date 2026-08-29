@@ -32,7 +32,7 @@ function resolveSlideModule(slide: ClassSlide, section: ClassSection, slideIndex
   const secTitle = (section.title || '').toLowerCase();
 
   // 1. Bienvenida o Presentación (First Slide / Welcome)
-  if (slideIndex === 0 || (/welcome|bienvenid|presentaci[oó]n|intro|start/i.test(title) && type !== 'objectives-animated' && type !== 'spinning-wheel')) {
+  if (slideIndex === 0 || (/welcome|bienvenid|presentaci[oó]n|intro|start/i.test(title) && slideIndex < 3 && type !== 'objectives-animated' && type !== 'spinning-wheel')) {
     return { name: 'Welcome & Intro', shortName: 'Bienvenida', icon: '👋', key: 'welcome' };
   }
 
@@ -296,7 +296,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
             const isPast = safeIndex > mod.endIndex;
             return (
               <button
-                key={mod.id}
+                key={`${mod.id}-${mod.startIndex}`}
                 onClick={() => setCurrentIndex(mod.startIndex)}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                   isCurrent

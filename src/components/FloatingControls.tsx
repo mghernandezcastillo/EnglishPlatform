@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Maximize, Minimize, PenTool, X, Plus, Minus, Dices, Type, Scaling } from 'lucide-react';
+import { Maximize, Minimize, PenTool, X, Plus, Minus, Dices, Type, Scaling, HelpCircle } from 'lucide-react';
 import { motion, AnimatePresence, useDragControls } from 'motion/react';
 import { RichTextEditor } from './RichTextEditor';
 import { VerbsGame } from './VerbsGame';
+import { WhNexusDrawer } from './wh-nexus/WhNexusDrawer';
 
 interface NoteTab {
   id: string;
@@ -14,10 +15,16 @@ const DEFAULT_NOTES: NoteTab[] = [
   { id: '1', title: 'Nota 1', content: '' }
 ];
 
-export function FloatingControls() {
+interface FloatingControlsProps {
+  studentId?: string | null;
+  studentName?: string;
+}
+
+export function FloatingControls({ studentId, studentName }: FloatingControlsProps = {}) {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isScratchpadOpen, setIsScratchpadOpen] = useState(false);
   const [isVerbsOpen, setIsVerbsOpen] = useState(false);
+  const [isWhNexusOpen, setIsWhNexusOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   
   const dragControls = useDragControls();
@@ -161,6 +168,7 @@ export function FloatingControls() {
             setIsScratchpadOpen(!isScratchpadOpen);
             setIsMinimized(false);
             if (isVerbsOpen) setIsVerbsOpen(false);
+            if (isWhNexusOpen) setIsWhNexusOpen(false);
           }}
           className="w-12 h-12 bg-indigo-600 rounded-full shadow-lg flex items-center justify-center text-white hover:bg-indigo-700 transition-colors shadow-indigo-200"
           title="Abrir cuaderno de notas"
@@ -171,15 +179,36 @@ export function FloatingControls() {
           onClick={() => {
             setIsVerbsOpen(!isVerbsOpen);
             if (isScratchpadOpen) setIsScratchpadOpen(false);
+            if (isWhNexusOpen) setIsWhNexusOpen(false);
           }}
           className="w-12 h-12 bg-indigo-500 rounded-full shadow-lg flex items-center justify-center text-white hover:bg-indigo-600 transition-colors shadow-indigo-200"
           title="Verbos aleatorios"
         >
           {isVerbsOpen ? <X className="w-5 h-5" /> : <Dices className="w-5 h-5" />}
         </button>
+        <button
+          onClick={() => {
+            setIsWhNexusOpen(!isWhNexusOpen);
+            if (isScratchpadOpen) setIsScratchpadOpen(false);
+            if (isVerbsOpen) setIsVerbsOpen(false);
+          }}
+          className="relative w-12 h-12 bg-gradient-to-tr from-cyan-500 via-indigo-500 to-fuchsia-500 rounded-full shadow-lg flex items-center justify-center text-white hover:scale-105 active:scale-95 transition-all shadow-indigo-500/30 group"
+          title="WH Nexus (Oráculo de Preguntas A1-B2)"
+        >
+          <span className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 opacity-60 blur-xs group-hover:opacity-100 transition duration-300 animate-pulse" />
+          <span className="relative flex items-center justify-center w-full h-full">
+            {isWhNexusOpen ? <X className="w-5 h-5" /> : <HelpCircle className="w-5 h-5" />}
+          </span>
+        </button>
       </div>
 
       <VerbsGame isOpen={isVerbsOpen} onClose={() => setIsVerbsOpen(false)} />
+      <WhNexusDrawer
+        isOpen={isWhNexusOpen}
+        onClose={() => setIsWhNexusOpen(false)}
+        studentId={studentId}
+        studentName={studentName}
+      />
 
       <AnimatePresence>
         {isScratchpadOpen && (

@@ -7,7 +7,7 @@
  */
 import { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { CheckCircle, Check, Play, ArrowRight, Target, BookOpen, Users, MessageSquare, HelpCircle, Sparkles, Eye, EyeOff, Zap, Volume2, RotateCcw, Layers3, Lightbulb, BookmarkPlus, CheckCircle2, ChevronRight, ChevronLeft, VolumeX, X, Maximize2 } from 'lucide-react';
+import { CheckCircle, Check, Play, ArrowRight, Target, BookOpen, Users, MessageSquare, HelpCircle, Sparkles, Eye, EyeOff, Zap, Volume2, RotateCcw, Layers3, Lightbulb, BookmarkPlus, CheckCircle2, ChevronRight, ChevronLeft, VolumeX, X, Maximize2, Star, LayoutGrid, Flame, Award } from 'lucide-react';
 import { CurriculumClass, ClassSection, ClassSlide } from '../types';
 import { vocabService } from '../lib/vocabService';
 import { SpinningWheel } from './SpinningWheel';
@@ -275,7 +275,7 @@ export function resolveWritingCardData(slide?: ClassSlide | null, tab: 'positive
   };
 }
 
-export function parseDialogueLine(text?: string): { speaker: string | null; quote: string } {
+function parseDialogueLine(text?: string): { speaker: string | null; quote: string } {
   if (!text) return { speaker: null, quote: '' };
   const clean = text.trim();
   const colonIdx = clean.indexOf(':');
@@ -325,6 +325,301 @@ export function resolveGrammarData(slide?: ClassSlide | null): {
     };
   }
   return null;
+}
+
+const GRAMMAR_STEP_THEMES = [
+  {
+    level: 1,
+    xp: 100,
+    name: 'Nivel 1',
+    colorName: 'emerald',
+    badgeClass: 'bg-emerald-500/20 text-emerald-300 border-emerald-400/50',
+    borderClass: 'border-emerald-400/80',
+    glowClass: 'shadow-[0_0_50px_rgba(16,185,129,0.35)]',
+    cardBg: 'from-slate-950/95 via-[#06201a]/90 to-[#021410]/95',
+    pillGradient: 'from-emerald-400 to-teal-500',
+    accentText: 'text-emerald-300',
+    neonColor: '#10b981',
+    lightGlow: 'rgba(16,185,129,0.25)'
+  },
+  {
+    level: 2,
+    xp: 200,
+    name: 'Nivel 2',
+    colorName: 'amber',
+    badgeClass: 'bg-amber-500/20 text-amber-300 border-amber-400/50',
+    borderClass: 'border-amber-400/80',
+    glowClass: 'shadow-[0_0_50px_rgba(245,158,11,0.35)]',
+    cardBg: 'from-slate-950/95 via-[#231505]/90 to-[#140b02]/95',
+    pillGradient: 'from-amber-400 to-orange-500',
+    accentText: 'text-amber-300',
+    neonColor: '#f59e0b',
+    lightGlow: 'rgba(245,158,11,0.25)'
+  },
+  {
+    level: 3,
+    xp: 300,
+    name: 'Nivel 3',
+    colorName: 'fuchsia',
+    badgeClass: 'bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-400/50',
+    borderClass: 'border-fuchsia-400/80',
+    glowClass: 'shadow-[0_0_50px_rgba(217,70,239,0.35)]',
+    cardBg: 'from-slate-950/95 via-[#250826]/90 to-[#160217]/95',
+    pillGradient: 'from-fuchsia-400 to-pink-500',
+    accentText: 'text-fuchsia-300',
+    neonColor: '#d946ef',
+    lightGlow: 'rgba(217,70,239,0.25)'
+  },
+  {
+    level: 4,
+    xp: 400,
+    name: 'Nivel 4',
+    colorName: 'cyan',
+    badgeClass: 'bg-cyan-500/20 text-cyan-300 border-cyan-400/50',
+    borderClass: 'border-cyan-400/80',
+    glowClass: 'shadow-[0_0_50px_rgba(6,182,212,0.35)]',
+    cardBg: 'from-slate-950/95 via-[#061d28]/90 to-[#020f17]/95',
+    pillGradient: 'from-cyan-400 to-blue-500',
+    accentText: 'text-cyan-300',
+    neonColor: '#06b6d4',
+    lightGlow: 'rgba(6,182,212,0.25)'
+  },
+  {
+    level: 5,
+    xp: 500,
+    name: 'Nivel 5',
+    colorName: 'purple',
+    badgeClass: 'bg-purple-500/20 text-purple-300 border-purple-400/50',
+    borderClass: 'border-purple-400/80',
+    glowClass: 'shadow-[0_0_50px_rgba(168,85,247,0.35)]',
+    cardBg: 'from-slate-950/95 via-[#180a2c]/90 to-[#0e041c]/95',
+    pillGradient: 'from-purple-400 to-violet-500',
+    accentText: 'text-purple-300',
+    neonColor: '#a855f7',
+    lightGlow: 'rgba(168,85,247,0.25)'
+  }
+];
+
+function getStructureMetric(st: any, idx: number): {
+  type: 'frequency' | 'question' | 'polarity' | 'variation' | 'timeline' | 'modal' | 'badge';
+  percentage?: number;
+  sign?: string;
+  step?: string;
+  force?: string;
+  label: string;
+} {
+  if (st.metric) return st.metric;
+  const label = (st.label || '').toLowerCase();
+  const rule = (st.rule || '').toLowerCase();
+  const formula = (st.formula || '').toLowerCase();
+  const example = (st.example || '').toLowerCase();
+  const subject = (st.subject || '').toLowerCase();
+  const allText = `${label} ${rule} ${formula} ${example} ${subject}`;
+
+  // Frequency adverbs
+  if (/always/i.test(allText)) return { type: 'frequency', percentage: 100, label: '100% Always (Siempre)' };
+  if (/usually/i.test(allText)) return { type: 'frequency', percentage: 80, label: '80% Usually (Usualmente)' };
+  if (/often/i.test(allText)) return { type: 'frequency', percentage: 60, label: '60% Often (Frecuentemente)' };
+  if (/sometimes/i.test(allText)) return { type: 'frequency', percentage: 50, label: '50% Sometimes (A veces)' };
+  if (/rarely|hardly ever|seldom/i.test(allText)) return { type: 'frequency', percentage: 10, label: '10% Rarely (Rara vez)' };
+  if (/never/i.test(allText)) return { type: 'frequency', percentage: 0, label: '0% Never (Nunca)' };
+
+  // Questions
+  if (/wh-|how often|where|what|when|why|who/i.test(allText) && /\?/.test(allText)) {
+    return { type: 'question', sign: '? Wh-', label: 'Pregunta Informativa' };
+  }
+  if (/\?|inversi[oó]n|yes\/no|auxiliar al inicio/i.test(allText)) {
+    return { type: 'question', sign: '? Y/N', label: 'Pregunta Sí/No' };
+  }
+  // Negative
+  if (/negativ|not|n't|don't|doesn't|didn't|isn't|aren't|won't|can't/i.test(allText) || label.includes('−') || label.includes('(-)') || label.includes('(-)')) {
+    return { type: 'polarity', sign: '− Negativo', label: 'Forma Negativa' };
+  }
+  // 3rd person
+  if (/3rd|tercera persona|he\/she|he's|she's|-s\b|-es\b/i.test(allText)) {
+    return { type: 'variation', sign: '+ (He/She)', label: 'Tercera Persona (+)' };
+  }
+  // Sequence / Timeline
+  if (/first|then|after that|finally|secuencia|timeline|cronolog/i.test(allText)) {
+    return { type: 'timeline', step: `Paso ${idx + 1}`, label: 'Conector Secuencia' };
+  }
+  // Modals / Ability
+  if (/can|can't|could/i.test(allText)) {
+    return { type: 'modal', force: 'Habilidad', label: 'Can / Ability' };
+  }
+  if (/must|have to|should|might|may/i.test(allText)) {
+    return { type: 'modal', force: '100%', label: 'Regla Modal' };
+  }
+  // Affirmative
+  if (label.includes('+') || /afirmativ|pronombres/i.test(allText)) {
+    return { type: 'polarity', sign: '+ Afirmativo', label: 'Estructura Base' };
+  }
+  return { type: 'badge', sign: `NIVEL ${idx + 1}`, label: 'Estructura Clave' };
+}
+
+function getStructureAvatar(st: any, slide?: ClassSlide | null, idx: number = 0): string {
+  if (st?.avatarUrl) return st.avatarUrl;
+  if (st?.imageUrl) return st.imageUrl;
+  if (slide?.imageUrl) return slide.imageUrl;
+  return '/images/male_3d_avatar_1781219297751.jpg';
+}
+
+interface FormulaToken {
+  text: string;
+  role: string;
+  label: string;
+  theme: {
+    border: string;
+    bg: string;
+    text: string;
+    badgeBg: string;
+    glow: string;
+    dotColor: string;
+  };
+}
+
+function parseFormulaTokens(formulaStr: string): FormulaToken[] {
+  if (!formulaStr) return [];
+  const regex = /\[(.*?)\]/g;
+  const tokens: FormulaToken[] = [];
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(formulaStr)) !== null) {
+    const rawText = match[1].trim();
+    const low = rawText.toLowerCase().trim();
+
+    let role = 'complement';
+    let label = '📦 COMPLEMENTO';
+    let theme = {
+      border: 'border-amber-400/80',
+      bg: 'bg-amber-950/70',
+      text: 'text-amber-200',
+      badgeBg: 'bg-amber-400/20 text-amber-300 border-amber-400/40',
+      glow: 'shadow-amber-500/25',
+      dotColor: '#f59e0b'
+    };
+
+    if (/wh-|what|where|when|why|how|who\b/i.test(low)) {
+      role = 'question';
+      label = '❓ PREGUNTA WH-';
+      theme = {
+        border: 'border-sky-400/80',
+        bg: 'bg-sky-950/70',
+        text: 'text-sky-200',
+        badgeBg: 'bg-sky-400/20 text-sky-300 border-sky-400/40',
+        glow: 'shadow-sky-500/25',
+        dotColor: '#38bdf8'
+      };
+    } else if (/can|can't|must|should|could|would like/i.test(low)) {
+      role = 'modal';
+      label = '🌟 MODAL / PODER';
+      theme = {
+        border: 'border-purple-400/80',
+        bg: 'bg-purple-950/70',
+        text: 'text-purple-200',
+        badgeBg: 'bg-purple-400/20 text-purple-300 border-purple-400/40',
+        glow: 'shadow-purple-500/25',
+        dotColor: '#c084fc'
+      };
+    } else if (/not\b|n't\b|don't|doesn't|didn't|isn't|aren't|am not/i.test(low)) {
+      role = 'negative';
+      label = '⛔ NEGACIÓN';
+      theme = {
+        border: 'border-rose-400/80',
+        bg: 'bg-rose-950/70',
+        text: 'text-rose-200',
+        badgeBg: 'bg-rose-400/20 text-rose-300 border-rose-400/40',
+        glow: 'shadow-rose-500/25',
+        dotColor: '#fb7185'
+      };
+    } else if (/adverb|always|usually|often|sometimes|never|in the morning|in the afternoon|at \d|every|first|then|finally|conector/i.test(low)) {
+      role = 'time';
+      label = '⏱️ FRECUENCIA / TIEMPO';
+      theme = {
+        border: 'border-fuchsia-400/80',
+        bg: 'bg-fuchsia-950/70',
+        text: 'text-fuchsia-200',
+        badgeBg: 'bg-fuchsia-400/20 text-fuchsia-300 border-fuchsia-400/40',
+        glow: 'shadow-fuchsia-500/25',
+        dotColor: '#e879f9'
+      };
+    } else if (/this is|that is|these are|those are|demostrativ/i.test(low)) {
+      role = 'demonstrative';
+      label = '👉 DEMOSTRATIVO';
+      theme = {
+        border: 'border-indigo-400/80',
+        bg: 'bg-indigo-950/70',
+        text: 'text-indigo-200',
+        badgeBg: 'bg-indigo-400/20 text-indigo-300 border-indigo-400/40',
+        glow: 'shadow-indigo-500/25',
+        dotColor: '#818cf8'
+      };
+    } else if (/i'm|you're|he's|she's|we're|they're/i.test(low)) {
+      role = 'subject-be';
+      label = '👤 SUJETO + TO BE';
+      theme = {
+        border: 'border-cyan-400/80',
+        bg: 'bg-cyan-950/70',
+        text: 'text-cyan-200',
+        badgeBg: 'bg-cyan-400/20 text-cyan-300 border-cyan-400/40',
+        glow: 'shadow-cyan-500/25',
+        dotColor: '#22d3ee'
+      };
+    } else if (/identidad|estado|lugar|complement|objeto|nombre|edad|fecha|comida|ropa|materia|útil|prenda/i.test(low)) {
+      role = 'complement';
+      label = '📦 COMPLEMENTO';
+      theme = {
+        border: 'border-amber-400/80',
+        bg: 'bg-amber-950/70',
+        text: 'text-amber-200',
+        badgeBg: 'bg-amber-400/20 text-amber-300 border-amber-400/40',
+        glow: 'shadow-amber-500/25',
+        dotColor: '#fbbf24'
+      };
+    } else if (/verb|acción|am \/ is \/ are|\bam\b|\bis\b|\bare\b|wake up|wear|like|love|enjoy|have|play|do|take/i.test(low) && !/sujeto|pronombre/i.test(low)) {
+      role = 'verb';
+      label = '⚡ VERBO / ACCIÓN';
+      theme = {
+        border: 'border-emerald-400/80',
+        bg: 'bg-emerald-950/70',
+        text: 'text-emerald-200',
+        badgeBg: 'bg-emerald-400/20 text-emerald-300 border-emerald-400/40',
+        glow: 'shadow-emerald-500/25',
+        dotColor: '#34d399'
+      };
+    } else if (/sujeto|pronombre|\bi\b|\byou\b|\bhe\b|\bshe\b|\bwe\b|\bthey\b|\bmy\b|\bhis\b|\bher\b|\bour\b|\btheir\b/i.test(low)) {
+      role = 'subject';
+      label = '👤 SUJETO';
+      theme = {
+        border: 'border-cyan-400/80',
+        bg: 'bg-cyan-950/70',
+        text: 'text-cyan-200',
+        badgeBg: 'bg-cyan-400/20 text-cyan-300 border-cyan-400/40',
+        glow: 'shadow-cyan-500/25',
+        dotColor: '#22d3ee'
+      };
+    }
+
+    tokens.push({ text: rawText, role, label, theme });
+  }
+
+  if (tokens.length === 0) {
+    return formulaStr.split('+').map((t, i) => ({
+      text: t.trim(),
+      role: 'block',
+      label: `🧩 BLOQUE ${i + 1}`,
+      theme: {
+        border: 'border-cyan-400/80',
+        bg: 'bg-cyan-950/70',
+        text: 'text-cyan-200',
+        badgeBg: 'bg-cyan-400/20 text-cyan-300 border-cyan-400/40',
+        glow: 'shadow-cyan-500/25',
+        dotColor: '#22d3ee'
+      }
+    }));
+  }
+
+  return tokens;
 }
 
 export function resolveReadingLines(slide?: ClassSlide | null): { speaker?: string; text: string; es?: string }[] {
@@ -479,6 +774,8 @@ export function SlideRenderer({
 
   // Grammar Studio state
   const [grammarActiveTab, setGrammarActiveTab] = useState(0);
+  const [grammarViewMode, setGrammarViewMode] = useState<'spotlight' | 'showcase'>('spotlight');
+  const [activeFormulaToken, setActiveFormulaToken] = useState<number | null>(null);
 
   // Effect to load story decoder tokens on change
   useEffect(() => {
@@ -552,6 +849,11 @@ export function SlideRenderer({
     // Reset speaking
     setSpeakingIndex(0);
     setShowSpeakingHint(false);
+
+    // Reset grammar studio
+    setGrammarActiveTab(0);
+    setGrammarViewMode('spotlight');
+    setActiveFormulaToken(null);
   }, [slide.id]);
 
   // Compact scale: measure parent to scale 1280×720 into available space
@@ -870,213 +1172,409 @@ export function SlideRenderer({
               const safeTab = Math.max(0, Math.min(grammarActiveTab, Math.max(0, structures.length - 1)));
               const activeStruct = structures[safeTab] || structures[0];
               const totalTabs = structures.length || 1;
+              const activeTheme = GRAMMAR_STEP_THEMES[safeTab % GRAMMAR_STEP_THEMES.length] || GRAMMAR_STEP_THEMES[0];
+              const activeMetric = getStructureMetric(activeStruct, safeTab);
+              const activeAvatar = getStructureAvatar(activeStruct, slide, safeTab);
+
               return (
-                <div className="relative flex-1 flex flex-col justify-between p-4 sm:p-6 lg:p-7 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-slate-950 via-[#0d122b] to-[#12163b]">
-                  {/* Ambient Glows */}
-                  <div className="pointer-events-none absolute -top-20 left-1/4 w-[500px] h-[300px] bg-gradient-to-b from-indigo-500/20 via-purple-600/10 to-transparent blur-3xl" aria-hidden="true" />
-                  <div className="pointer-events-none absolute -bottom-10 right-10 w-[400px] h-[250px] bg-cyan-500/15 blur-3xl" aria-hidden="true" />
+                <div className="relative flex-1 flex flex-col p-1 sm:p-2 z-10 min-h-0 overflow-hidden bg-slate-950">
+                  {/* Master Card Container: Takes 100% of the viewport space with themed neon border */}
+                  <div className={`relative flex-1 flex flex-col justify-between p-2.5 sm:p-3.5 lg:p-4 rounded-2xl sm:rounded-3xl border-2 bg-gradient-to-br ${activeTheme.cardBg} ${activeTheme.borderClass} ${activeTheme.glowClass} backdrop-blur-xl shadow-2xl min-h-0 overflow-hidden`}>
+                    
+                    {/* Ambient Cyber Glow inside the Card */}
+                    <div
+                      className="pointer-events-none absolute -top-24 left-1/4 w-[600px] h-[350px] blur-3xl opacity-35 transition-all duration-700"
+                      style={{ background: activeTheme.neonColor }}
+                      aria-hidden="true"
+                    />
 
-                  {/* Header */}
-                  <div className="shrink-0 mb-2 flex items-center justify-between flex-wrap gap-2">
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="px-3 py-1 rounded-xl bg-indigo-500/20 border border-indigo-400/40 text-indigo-300 text-xs font-black uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
-                          <span>📐</span>
-                          <span>Grammar Focus & Structures</span>
-                        </span>
+                    {/* Integrated Header: Slide Title (Left) + 5 Steps Stepper / Dots (Right) */}
+                    <div className="relative z-10 shrink-0 pb-2 mb-0.5 flex items-center justify-between flex-wrap gap-2 border-b border-white/15">
+                      {/* Left: Title & Track Chip */}
+                      <div className="flex flex-col gap-0.5">
+                        <div className="flex items-center gap-2">
+                          <span className={`px-2.5 py-0.5 rounded-lg text-[10px] sm:text-[11px] font-black uppercase tracking-wider border shadow-sm ${activeTheme.badgeClass}`}>
+                            PASO {safeTab + 1} • {activeTheme.name}
+                          </span>
+                          <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-amber-400 border border-amber-300 text-slate-950 text-[10px] sm:text-[11px] font-black shadow-sm">
+                            <Star className="w-3 h-3 fill-slate-950" />
+                            <span>+{activeTheme.xp} XP</span>
+                          </span>
+                        </div>
+                        <h1 className="text-lg sm:text-xl lg:text-2xl font-black tracking-tight text-white leading-tight mt-0.5 drop-shadow-sm">
+                          {slide.title}
+                        </h1>
                       </div>
-                      <h1 className="text-2xl sm:text-3xl lg:text-[2.2rem] font-black tracking-tight leading-tight bg-gradient-to-r from-cyan-300 via-indigo-200 to-white bg-clip-text text-transparent mt-1">
-                        {slide.title}
-                      </h1>
-                    </div>
 
-                    {grammar?.goldenRule && (
-                      <div className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-2xl bg-indigo-500/15 border border-indigo-400/30 text-indigo-200 text-xs font-bold shadow-md backdrop-blur-md">
-                        <Sparkles className="w-4 h-4 text-cyan-300 shrink-0" />
-                        <span>{grammar.goldenRule}</span>
-                      </div>
-                    )}
-                  </div>
+                      {/* Right: Step Switcher & Mode Toggle */}
+                      <div className="flex items-center gap-2 sm:gap-2.5 flex-wrap">
+                        {/* 5 Step Segmented Selector */}
+                        {structures.length > 0 && grammarViewMode === 'spotlight' && (
+                          <div className="flex items-center gap-1 sm:gap-1.5 p-0.5 sm:p-1 rounded-xl bg-black/60 border border-white/20 shadow-inner">
+                            {structures.map((st: any, idx: number) => {
+                              const isSelected = safeTab === idx;
+                              const isCompleted = safeTab > idx;
+                              const stepTheme = GRAMMAR_STEP_THEMES[idx % GRAMMAR_STEP_THEMES.length] || GRAMMAR_STEP_THEMES[0];
+                              return (
+                                <button
+                                  key={idx}
+                                  type="button"
+                                  onClick={() => setGrammarActiveTab(idx)}
+                                  className={`flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-black transition-all cursor-pointer ${
+                                    isSelected
+                                      ? `bg-gradient-to-r ${stepTheme.pillGradient} text-slate-950 shadow-lg scale-105`
+                                      : isCompleted
+                                      ? 'bg-white/15 text-white hover:bg-white/25'
+                                      : 'text-white/50 hover:text-white hover:bg-white/10'
+                                  }`}
+                                >
+                                  <span>Paso {idx + 1}</span>
+                                  {isCompleted && <span className="text-[10px]">✓</span>}
+                                </button>
+                              );
+                            })}
+                          </div>
+                        )}
 
-                  {/* Structure Tabs: 5-Column Segmented Stepper Grid (No Horizontal Scroll) */}
-                  {structures.length > 0 && (
-                    <div className={`shrink-0 grid gap-1.5 sm:gap-2 select-none ${
-                      structures.length === 5 
-                        ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5' 
-                        : structures.length === 4 
-                        ? 'grid-cols-2 md:grid-cols-4' 
-                        : 'grid-cols-3'
-                    }`}>
-                      {structures.map((st: any, idx: number) => {
-                        const isSelected = safeTab === idx;
-                        const isCompleted = safeTab > idx;
-                        return (
+                        {/* View Mode Toggle */}
+                        <div className="flex items-center bg-black/50 border border-white/20 rounded-xl p-0.5 shadow-md">
                           <button
-                            key={idx}
-                            onClick={() => setGrammarActiveTab(idx)}
-                            className={`group relative flex flex-col p-2 sm:p-2.5 rounded-2xl border text-left transition-all cursor-pointer overflow-hidden ${
-                              isSelected
-                                ? 'bg-gradient-to-br from-indigo-600/90 via-purple-600/90 to-pink-600/90 border-cyan-300/80 shadow-lg shadow-purple-500/25 ring-2 ring-cyan-400/40 scale-[1.01]'
-                                : isCompleted
-                                ? 'bg-white/10 hover:bg-white/15 border-emerald-400/30 text-white/80'
-                                : 'bg-white/5 hover:bg-white/10 border-white/10 text-white/60 hover:text-white'
+                            type="button"
+                            onClick={() => setGrammarViewMode('spotlight')}
+                            className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-black transition-all cursor-pointer ${
+                              grammarViewMode === 'spotlight'
+                                ? 'bg-white/20 text-white shadow-sm'
+                                : 'text-white/50 hover:text-white'
                             }`}
+                            title="Vista Enfocada"
                           >
-                            {/* Top Step Number & Status */}
-                            <div className="flex items-center justify-between gap-1 mb-1">
-                              <span className={`text-[10px] sm:text-xs font-black uppercase tracking-wider px-1.5 py-0.5 rounded-md ${
-                                isSelected 
-                                  ? 'bg-black/30 text-cyan-200' 
-                                  : isCompleted 
-                                  ? 'bg-emerald-500/20 text-emerald-300' 
-                                  : 'bg-white/10 text-white/50'
-                              }`}>
-                                Paso {idx + 1}
-                              </span>
-                              {isCompleted && <span className="text-emerald-400 text-xs font-bold">✓</span>}
-                              {isSelected && <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping" />}
-                            </div>
-
-                            {/* Step Label */}
-                            <span className={`text-xs sm:text-sm font-extrabold line-clamp-1 leading-snug ${
-                              isSelected ? 'text-white drop-shadow-sm' : 'text-white/80'
-                            }`}>
-                              {(st.label || `Paso ${idx + 1}`).replace(/^\d+\.\s*/, '')}
-                            </span>
-
-                            {/* Active Bottom Glow Line */}
-                            <div className={`absolute bottom-0 left-0 right-0 h-1 transition-all ${
-                              isSelected ? 'bg-gradient-to-r from-cyan-400 via-sky-300 to-pink-400' : isCompleted ? 'bg-emerald-400/40' : 'bg-transparent'
-                            }`} />
+                            <Maximize2 className="w-3.5 h-3.5" />
+                            <span className="hidden sm:inline">Enfocado</span>
                           </button>
-                        );
-                      })}
+                          <button
+                            type="button"
+                            onClick={() => setGrammarViewMode('showcase')}
+                            className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-black transition-all cursor-pointer ${
+                              grammarViewMode === 'showcase'
+                                ? 'bg-white/20 text-white shadow-sm'
+                                : 'text-white/50 hover:text-white'
+                            }`}
+                            title="Ver 5 Niveles"
+                          >
+                            <LayoutGrid className="w-3.5 h-3.5" />
+                            <span className="hidden sm:inline">5 Niveles</span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                  )}
 
-                  {/* Active Structure Spotlight Card */}
-                  {activeStruct && (
-                    <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-3 sm:gap-4 my-auto py-1 items-stretch min-h-0">
-                      {/* Left: High-Impact Example & Audio */}
-                      <div className="flex flex-col justify-between p-5 sm:p-6 rounded-3xl bg-white/10 border border-white/20 backdrop-blur-xl shadow-2xl">
-                        <div>
-                          <div className="flex items-center justify-between gap-2 mb-2">
-                            <span className="text-xs font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
-                              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-                              <span>Ejemplo en Inglés</span>
-                            </span>
-                            <span className="px-3 py-1 rounded-xl bg-purple-500/20 text-purple-200 text-xs font-black border border-purple-400/30">
-                              {activeStruct.subject || activeStruct.label}
-                            </span>
+                    {/* SPOTLIGHT VIEW (DEFAULT ENFOCADO 2 COLUMNAS) */}
+                    {grammarViewMode === 'spotlight' ? (
+                      <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-[220px_1fr] xl:grid-cols-[260px_1fr] gap-3 sm:gap-4 py-1 min-h-0 items-stretch overflow-hidden">
+                        {/* LEFT COLUMN: 3D Animated Character Avatar Stage (Immersive Full-Height Clean Cutout) */}
+                        <div className="relative flex flex-col justify-between items-center py-0 h-full min-h-0">
+                          {/* 3D Avatar Image - Full Height Clean Cutout */}
+                          <div className="relative z-10 flex-1 flex items-center justify-center min-h-0 w-full overflow-visible">
+                            <img
+                              src={activeAvatar}
+                              alt={activeStruct?.label || 'Avatar'}
+                              onError={(e) => {
+                                const target = e.currentTarget;
+                                if (!target.src.includes('male_3d_avatar')) {
+                                  target.src = '/images/male_3d_avatar_1781219297751.jpg';
+                                }
+                              }}
+                              className="relative z-10 max-h-[300px] sm:max-h-[340px] lg:max-h-[380px] h-full w-auto max-w-full object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.95)] filter hover:scale-105 transition-transform duration-300 select-none"
+                            />
                           </div>
 
-                          {/* Huge Example Sentence */}
-                          <div className="my-2 py-2">
-                            <p className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-snug tracking-tight drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-                              {activeStruct.example}
+                          {/* Subject / Category Tag */}
+                          <div className="relative z-10 mt-1 rounded-xl bg-black/80 border border-white/20 px-3 py-0.5 text-center shadow-xl backdrop-blur-md">
+                            <span className="text-[11px] sm:text-xs font-black text-white/95 tracking-wide">
+                              {activeStruct?.subject || activeStruct?.label?.replace(/^\d+\.\s*/, '')}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* RIGHT COLUMN: High-Impact Grammar Content */}
+                        <div className="relative z-10 flex flex-col justify-between gap-1.5 sm:gap-2 min-h-0">
+                          {/* Step Sub-Title & Metric */}
+                          <div className="flex items-center justify-between gap-2 flex-wrap shrink-0">
+                            <h2 className="text-lg sm:text-xl lg:text-2xl font-black text-white leading-tight drop-shadow-md">
+                              {activeStruct?.label || `Paso ${safeTab + 1}`}
+                            </h2>
+
+                            {/* Metric Badge */}
+                            {activeMetric.type === 'frequency' && typeof activeMetric.percentage === 'number' ? (
+                              <div className="flex items-center gap-2 px-2.5 py-0.5 rounded-xl bg-black/60 border border-white/20 shadow-md">
+                                <span className="text-xs font-black text-amber-300">
+                                  {activeMetric.label}
+                                </span>
+                                <div className="w-16 sm:w-24 h-2.5 rounded-full bg-white/10 overflow-hidden border border-white/20 p-0.5">
+                                  <div
+                                    className="h-full rounded-full transition-all duration-700"
+                                    style={{
+                                      width: `${activeMetric.percentage}%`,
+                                      background: activeTheme.neonColor
+                                    }}
+                                  />
+                                </div>
+                              </div>
+                            ) : activeMetric.type === 'question' ? (
+                              <span className="px-2.5 py-0.5 rounded-xl bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 text-xs font-black shadow-md">
+                                {activeMetric.sign} • {activeMetric.label}
+                              </span>
+                            ) : activeMetric.type === 'polarity' ? (
+                              <span className="px-2.5 py-0.5 rounded-xl bg-rose-500/20 border border-rose-400/50 text-rose-300 text-xs font-black shadow-md">
+                                {activeMetric.sign}
+                              </span>
+                            ) : activeMetric.type === 'variation' ? (
+                              <span className="px-2.5 py-0.5 rounded-xl bg-amber-500/20 border border-amber-400/50 text-amber-300 text-xs font-black shadow-md">
+                                {activeMetric.sign}
+                              </span>
+                            ) : (
+                              <span className="px-2.5 py-0.5 rounded-xl bg-purple-500/20 border border-purple-400/50 text-purple-300 text-xs font-black shadow-md">
+                                {activeMetric.label}
+                              </span>
+                            )}
+                          </div>
+
+                          {/* Gamified Lego Block Syntactic Formula */}
+                          {(() => {
+                            const formulaTokens = parseFormulaTokens(activeStruct?.formula || `[ Sujeto ] + [ Verbo ] + [ Complemento ]`);
+                            return (
+                              <div className="flex flex-col gap-0.5 p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-black/80 border border-white/20 shadow-inner shrink-0">
+                                <div className="flex items-center justify-between gap-2">
+                                  <div className="flex items-center gap-1.5">
+                                    <span className="w-4 h-4 rounded-md bg-cyan-500/30 text-cyan-300 flex items-center justify-center font-mono font-black text-[10px]">
+                                      fx
+                                    </span>
+                                    <span className="text-[10px] font-black uppercase tracking-wider text-cyan-300">
+                                      Estructura por Bloques de Construcción
+                                    </span>
+                                  </div>
+                                  <span className="text-[10px] font-bold text-white/50 hidden sm:inline">
+                                    {activeFormulaToken !== null ? '💡 Ficha resaltada' : 'Toca una ficha para resaltar'}
+                                  </span>
+                                </div>
+
+                                {/* Lego Chips Flow */}
+                                <div className="flex flex-wrap items-center gap-1 sm:gap-1.5 pt-0.5">
+                                  {formulaTokens.map((tok, tIdx) => {
+                                    const isSelected = activeFormulaToken === tIdx;
+                                    return (
+                                      <div key={tIdx} className="flex items-center gap-1">
+                                        <button
+                                          type="button"
+                                          onMouseEnter={() => setActiveFormulaToken(tIdx)}
+                                          onMouseLeave={() => setActiveFormulaToken(null)}
+                                          onClick={() => setActiveFormulaToken(prev => prev === tIdx ? null : tIdx)}
+                                          className={`group relative flex flex-col items-start px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl border transition-all cursor-pointer shadow-md ${tok.theme.bg} ${tok.theme.border} ${
+                                            isSelected
+                                              ? `${tok.theme.glow} ring-2 ring-white/80 scale-105 shadow-xl`
+                                              : 'hover:scale-[1.03] hover:border-white/60'
+                                          }`}
+                                        >
+                                          <span className={`text-[8px] sm:text-[9px] font-black uppercase tracking-wider px-1 py-0.2 rounded border mb-0.5 ${tok.theme.badgeBg}`}>
+                                            {tok.label}
+                                          </span>
+                                          <span className={`text-[11px] sm:text-xs lg:text-sm font-mono font-black ${tok.theme.text} leading-tight`}>
+                                            {tok.text}
+                                          </span>
+                                        </button>
+
+                                        {tIdx < formulaTokens.length - 1 && (
+                                          <span className="text-xs font-black text-white/40 px-0.5 select-none animate-pulse">
+                                            ➕
+                                          </span>
+                                        )}
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            );
+                          })()}
+
+                          {/* English Sentence & Spanish Translation */}
+                          <div className="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 border border-white/20 p-2.5 sm:p-3.5 backdrop-blur-md shadow-xl min-h-0">
+                            <div className="flex items-center justify-between gap-2 mb-0.5">
+                              <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
+                                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping" />
+                                <span>Oración Modelo en Inglés</span>
+                              </span>
+                              <span className="text-[9px] sm:text-[10px] font-extrabold text-amber-300/90 uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-400/15 border border-amber-300/30">
+                                Pronunciación Nativa
+                              </span>
+                            </div>
+                            <p className="text-xl sm:text-2xl lg:text-[1.9rem] font-black text-white leading-snug tracking-tight drop-shadow-[0_0_25px_rgba(255,255,255,0.25)]">
+                              "{activeStruct?.example}"
                             </p>
-                            {activeStruct.exampleEs && (
-                              <p className="text-base sm:text-lg lg:text-xl font-extrabold text-cyan-200/90 mt-2">
+                            {activeStruct?.exampleEs && (
+                              <p className="text-xs sm:text-sm lg:text-base font-extrabold text-cyan-200/95 mt-1 leading-snug">
                                 {activeStruct.exampleEs}
                               </p>
                             )}
                           </div>
-                        </div>
 
-                        {/* Action Button: Listen */}
-                        <div className="pt-2 flex items-center gap-3">
-                          <button
-                            onClick={() => playSpeech(activeStruct.audio || activeStruct.example, 'en-US', 0.9)}
-                            className="flex items-center gap-2.5 px-5 py-2.5 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-black text-sm shadow-xl shadow-cyan-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                          >
-                            <Volume2 className="w-4 h-4" />
-                            <span>Escuchar Pronunciación 🔊</span>
-                          </button>
+                          {/* Rule / Tip Pill */}
+                          <div className="flex items-center gap-2 px-3 py-1 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 text-[11px] sm:text-xs font-bold text-white/90 shrink-0">
+                            <span className="text-amber-400 font-black text-sm shrink-0">📌</span>
+                            <span className="line-clamp-1">{activeStruct?.rule || activeStruct?.explanation || activeStruct?.subject}</span>
+                          </div>
                         </div>
                       </div>
+                    ) : (
+                      /* SHOWCASE VIEW (PANORÁMICA 5 NIVELES) */
+                      <div className="relative z-10 flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 p-1 min-h-0 overflow-y-auto lg:overflow-visible items-stretch">
+                        {structures.map((st: any, idx: number) => {
+                          const theme = GRAMMAR_STEP_THEMES[idx % GRAMMAR_STEP_THEMES.length] || GRAMMAR_STEP_THEMES[0];
+                          const metric = getStructureMetric(st, idx);
+                          const avatar = getStructureAvatar(st, slide, idx);
+                          const isCurrent = safeTab === idx;
 
-                      {/* Right: Formula Breakdown & Rules */}
-                      <div className="flex flex-col justify-between p-5 sm:p-6 rounded-3xl bg-indigo-950/60 border-2 border-indigo-400/30 backdrop-blur-xl shadow-2xl">
-                        <div>
-                          <div className="flex items-center gap-2 mb-3">
-                            <div className="w-7 h-7 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-md">
-                              <Layers3 className="w-4 h-4" />
+                          return (
+                            <div
+                              key={idx}
+                              onClick={() => {
+                                setGrammarActiveTab(idx);
+                                setGrammarViewMode('spotlight');
+                              }}
+                              className={`group relative flex flex-col justify-between p-3 sm:p-3.5 rounded-2xl border-2 transition-all cursor-pointer overflow-hidden ${
+                                isCurrent
+                                  ? `bg-gradient-to-br ${theme.cardBg} ${theme.borderClass} ${theme.glowClass} scale-[1.02] ring-2 ring-white/60`
+                                  : 'bg-slate-900/80 hover:bg-slate-900 border-white/15 hover:border-white/40'
+                              }`}
+                            >
+                              {/* Card Top: Level + XP */}
+                              <div className="flex items-center justify-between gap-1 mb-2">
+                                <span className={`px-2 py-0.5 rounded-lg text-[11px] font-black uppercase tracking-wider border ${theme.badgeClass}`}>
+                                  PASO {idx + 1}
+                                </span>
+                                <span className="text-[11px] font-black text-amber-300 flex items-center gap-0.5">
+                                  <Star className="w-3 h-3 fill-amber-300" />
+                                  <span>{theme.xp}</span>
+                                </span>
+                              </div>
+
+                              {/* 3D Avatar Center Thumbnail */}
+                              <div className="relative my-2 h-28 sm:h-32 flex items-center justify-center">
+                                <div
+                                  className="absolute inset-0 rounded-full blur-xl opacity-30 group-hover:opacity-60 transition-opacity"
+                                  style={{ background: theme.neonColor }}
+                                />
+                                <img
+                                  src={avatar}
+                                  alt={st.label}
+                                  onError={(e) => {
+                                    const target = e.currentTarget;
+                                    if (!target.src.includes('male_3d_avatar')) {
+                                      target.src = '/images/male_3d_avatar_1781219297751.jpg';
+                                    }
+                                  }}
+                                  className="relative z-10 h-full w-auto object-contain rounded-xl drop-shadow-md group-hover:scale-105 transition-transform"
+                                />
+                              </div>
+
+                              {/* Title & Sentences */}
+                              <div className="flex flex-col gap-1 my-1">
+                                <h3 className="text-sm font-black text-white line-clamp-1">
+                                  {st.label?.replace(/^\d+\.\s*/, '')}
+                                </h3>
+                                <p className="text-xs font-bold text-white/90 line-clamp-2 leading-tight">
+                                  {st.example}
+                                </p>
+                                {st.exampleEs && (
+                                  <p className="text-[11px] font-semibold text-cyan-200/80 line-clamp-1">
+                                    {st.exampleEs}
+                                  </p>
+                                )}
+                              </div>
+
+                              {/* Lego Formula Micro-Chips */}
+                              <div className="flex flex-wrap items-center gap-1 my-1">
+                                {parseFormulaTokens(st.formula || `[ Sujeto ] + [ Verbo ]`).slice(0, 3).map((tok, fIdx) => (
+                                  <span
+                                    key={fIdx}
+                                    className={`text-[9px] font-black font-mono px-1.5 py-0.5 rounded-md border ${tok.theme.badgeBg}`}
+                                  >
+                                    {tok.text}
+                                  </span>
+                                ))}
+                              </div>
+
+                              {/* Listen button at bottom */}
+                              <div className="mt-2 pt-2 border-t border-white/10 flex items-center justify-between">
+                                <button
+                                  type="button"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    playSpeech(st.audio || st.example, 'en-US', 0.9);
+                                  }}
+                                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-black text-xs text-slate-950 shadow-md bg-gradient-to-r ${theme.pillGradient} hover:scale-105 active:scale-95 transition-all`}
+                                >
+                                  <Volume2 className="w-3.5 h-3.5 fill-current" />
+                                  <span>ESCUCHAR</span>
+                                </button>
+                                <span className="text-[11px] font-black text-white/50">
+                                  {idx + 1}/5
+                                </span>
+                              </div>
                             </div>
-                            <span className="text-xs font-black uppercase tracking-wider text-indigo-300">
-                              Fórmula Gramatical
-                            </span>
-                          </div>
+                          );
+                        })}
+                      </div>
+                    )}
 
-                          {/* Formula Box */}
-                          <div className="p-3.5 sm:p-4 rounded-2xl bg-black/40 border border-cyan-400/30 shadow-inner mb-3">
-                            <p className="text-base sm:text-lg font-black text-cyan-300 font-mono tracking-wide leading-relaxed">
-                              {activeStruct.formula || `[ Sujeto ] + [ Verbo ] + [ Complemento ]`}
-                            </p>
-                          </div>
+                    {/* Integrated Footer Bar */}
+                    <div className="relative z-10 pt-3 mt-1 flex items-center justify-between gap-3 border-t border-white/15">
+                      {/* Listen button */}
+                      <button
+                        type="button"
+                        onClick={() => playSpeech(activeStruct?.audio || activeStruct?.example, 'en-US', 0.9)}
+                        className={`flex items-center gap-2 px-5 py-2.5 rounded-2xl font-black text-xs sm:text-sm shadow-xl transition-all cursor-pointer hover:scale-105 active:scale-95 bg-gradient-to-r ${activeTheme.pillGradient} text-slate-950 shadow-${activeTheme.colorName}-500/30`}
+                      >
+                        <Volume2 className="w-4 h-4 fill-current" />
+                        <span>ESCUCHAR ORACIÓN</span>
+                      </button>
 
-                          {/* Rule Explanations */}
-                          <div className="flex items-start gap-2.5 p-3.5 rounded-2xl bg-white/5 border border-white/10 text-sm font-bold text-white/90">
-                            <span className="text-purple-400 font-black text-base shrink-0">📌</span>
-                            <div>
-                              <p className="font-extrabold text-white">{activeStruct.rule || activeStruct.explanation || activeStruct.subject}</p>
-                              <p className="text-xs text-purple-200/80 mt-0.5">Aplica para: <span className="text-cyan-300 font-black">{activeStruct.subject || activeStruct.label}</span></p>
-                            </div>
-                          </div>
-                        </div>
+                      {/* Navigation Steppers */}
+                      <div className="flex items-center gap-2 sm:gap-3">
+                        <button
+                          type="button"
+                          disabled={safeTab === 0}
+                          onClick={() => setGrammarActiveTab(t => Math.max(0, t - 1))}
+                          className={`flex items-center gap-1 px-3.5 py-2 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                            safeTab === 0
+                              ? 'opacity-30 cursor-not-allowed text-white/30'
+                              : 'bg-white/10 hover:bg-white/20 text-white active:scale-95'
+                          }`}
+                        >
+                          <ChevronLeft className="w-4 h-4" />
+                          <span className="hidden sm:inline">Anterior</span>
+                        </button>
 
-                        {/* Interactive Stepper Navigation Controls */}
-                        <div className="pt-3 flex items-center justify-between gap-2 border-t border-white/10 mt-2">
-                          <button
-                            disabled={safeTab === 0}
-                            onClick={() => setGrammarActiveTab(t => Math.max(0, t - 1))}
-                            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                              safeTab === 0 
-                                ? 'opacity-30 cursor-not-allowed text-white/40' 
-                                : 'bg-white/10 hover:bg-white/20 text-white active:scale-95'
-                            }`}
-                          >
-                            <span>◀ Anterior</span>
-                          </button>
+                        <span className="text-xs sm:text-sm font-mono font-black text-white/80 px-2">
+                          {safeTab + 1} / {totalTabs}
+                        </span>
 
-                          <span className="text-xs font-extrabold text-cyan-300">
-                            Paso {safeTab + 1} de {totalTabs}
-                          </span>
-
-                          <button
-                            onClick={() => {
-                              if (safeTab < totalTabs - 1) {
-                                setGrammarActiveTab(t => t + 1);
-                              } else {
-                                if (onNext) onNext();
-                                else if (onComplete) onComplete();
-                              }
-                            }}
-                            className="flex items-center gap-1.5 px-4 py-1.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white text-xs font-black shadow-md shadow-cyan-500/20 active:scale-95 transition-all cursor-pointer"
-                          >
-                            <span>{safeTab < totalTabs - 1 ? 'Siguiente Paso ➔' : 'Continuar Clase ➔'}</span>
-                          </button>
-                        </div>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (safeTab < totalTabs - 1) {
+                              setGrammarActiveTab(t => t + 1);
+                            } else {
+                              if (onNext) onNext();
+                              else if (onComplete) onComplete();
+                            }
+                          }}
+                          className={`flex items-center gap-1 px-4 py-2 rounded-xl bg-gradient-to-r ${activeTheme.pillGradient} text-slate-950 text-xs sm:text-sm font-black shadow-lg shadow-${activeTheme.colorName}-500/25 active:scale-95 transition-all cursor-pointer`}
+                        >
+                          <span>{safeTab < totalTabs - 1 ? 'Siguiente Nivel' : 'Continuar'}</span>
+                          <ChevronRight className="w-4 h-4" />
+                        </button>
                       </div>
                     </div>
-                  )}
-
-                  {/* Bottom Bar: Pro-Tip & Next Button */}
-                  <div className="shrink-0 pt-2 flex items-center justify-between gap-3 border-t border-white/10 flex-wrap">
-                    <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-yellow-200/95 bg-yellow-500/10 border border-yellow-400/30 px-3.5 py-1.5 rounded-xl">
-                      <Lightbulb className="w-4 h-4 text-yellow-400 shrink-0" />
-                      <span className="truncate max-w-xl">{grammar?.proTip || "Aplica la regla de oro y practica la pronunciación en voz alta."}</span>
-                    </div>
-
-                    <button
-                      onClick={() => {
-                        if (onNext) onNext();
-                        else if (onComplete) onComplete();
-                      }}
-                      className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white font-black text-sm transition-all shadow-lg hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-2 ml-auto"
-                    >
-                      <span>Continuar a Verb Arena ⚡</span>
-                      <ChevronRight className="w-4 h-4 stroke-[3]" />
-                    </button>
                   </div>
                 </div>
               );

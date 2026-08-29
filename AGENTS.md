@@ -238,3 +238,101 @@ This entire protocol applies across all tracks with age-appropriate visual & ped
       - **Desglose en Pasos Limpios (Anti-muro de texto)**: Cada tarea en `slide.content` DEBE estructurarse en 3 o 4 pasos ordenados con oraciones modelo entre comillas (`1. Usa [Estructura]... (ej: 'Frase modelo en inglés')`, `2. Usa... (ej: '...')`, etc.). `HomeworkSlideCard.tsx` DEBE renderizar cada paso en una tarjeta/fila individual con número grande (`1`, `2`, `3`, `4`) y chip de ejemplo destacado (`✨ ej: '...'`), quedando TERMINANTEMENTE PROHIBIDO concatenar todo el texto en un solo párrafo corrido.
       - **Coherencia Total 100% (Ejemplos y Checklist Sincronizados)**: `homeworkResolver.ts` DEBE extraer directamente las frases modelo entre comillas de los pasos para poblar el bloque *Example* y generar los checks dinámicos de *What to include*. Queda estrictamente prohibido mostrar presets genéricos desactualizados (como "can/cannot" en clases de otros temas).
       - **Compartir por WhatsApp**: El botón de WhatsApp DEBE generar el mensaje con los pasos, ejemplos reales y fecha de entrega exactos de esa clase.
+
+## 🎮 PROTOCOLO OFICIAL: GAMIFIED 3D GRAMMAR STUDIO (5 NIVELES / ESTILO CONCEPTO C)
+
+Este protocolo es de cumplimiento **estricto y obligatorio** para el diseño, desarrollo, enriquecimiento y renderizado de las diapositivas de **Grammar Studio** en todas las clases y niveles (Teens, Kids y Adults).
+
+### 🎯 1. REGLA DE COHERENCIA PEDAGÓGICA Y NO REPETICIÓN
+- **Diagnóstico y Lectura Previa Obligatoria**: Antes de crear o editar la gramática de una clase, el desarrollador/agente DEBE leer con rigor el `title`, `description`, `objective` y las metas (`objectives`).
+- **Cero Vacíos con los Objetivos**: Toda estructura gramatical prometida en los objetivos DEBE enseñarse de forma explícita y completa en los 5 pasos sin dar nada por sentado.
+- **Pertinencia por Nivel y No Redundancia**: Calibrar el vocabulario y complejidad al nivel exacto del estudiante (Basic Zero, Basic 1, Intermediate, etc.). No repetir de forma idéntica estructuras ya cubiertas en clases previas del mismo track sin una profundización real.
+- **Prohibición de Generadores Genéricos**: Cada ejemplo, fórmula, traducción y regla debe redactarse **a mano y de forma artesanal**, contextualizada a situaciones reales y juveniles (deportes, chats, colegio, música, videojuegos, comida local colombiana).
+
+### 🕹️ 2. ARQUITECTURA GAMIFICADA MODULAR DE PANTALLA COMPLETA (CONCEPTO C UNIFICADO)
+Tanto la **Diapositiva 4 (Grammar Studio Core)** como la **Diapositiva 5 (Vocabulary Matrix Studio)** se componen de **EXACTAMENTE 5 Pasos / Niveles Progresivos** estructurados en **Una Sola Tarjeta Maestra de Pantalla Completa (Full Viewport Immersive Card)**:
+
+1. **Un Solo Contenedor Maestro (Cero Cajas Anidadas Redundantes)**:
+   - La tarjeta modular ocupa el 100% del viewport útil de la diapositiva, eliminando marcos o cajas externas dobles.
+   - Todo (título de la clase, selector de 5 pasos, avatar 3D, bloques LEGO, oración modelo y footer) vive dentro de esta tarjeta principal.
+2. **Cabecera Integrada de Alto Impacto**:
+   - **Izquierda**: Píldora de `PASO X • [Nombre]` + `+X00 XP` y **Título de la clase** en tipografía grande (`text-2xl` a `text-3xl`).
+   - **Derecha**: Selector interactivo de los **5 Pasos con botones neón (`Paso 1` a `Paso 5` con checkmark `✓`)** y selector de vista (`Enfocado` / `5 Niveles`).
+3. **Bordes y Resplandor Neón por Nivel**:
+   - **Nivel 1 (Paso 1)**: `⭐ 100 XP` • **Esmeralda / Verde Neón** (`#10b981`, `border-emerald-400/80`)
+   - **Nivel 2 (Paso 2)**: `⭐ 200 XP` • **Ámbar / Naranja Neón** (`#f59e0b`, `border-amber-400/80`)
+   - **Nivel 3 (Paso 3)**: `⭐ 300 XP` • **Fucsia / Rosa Neón** (`#d946ef`, `border-fuchsia-400/80`)
+   - **Nivel 4 (Paso 4)**: `⭐ 400 XP` • **Cian / Azul Neón** (`#06b6d4`, `border-cyan-400/80`)
+   - **Nivel 5 (Paso 5)**: `⭐ 500 XP` • **Púrpura / Violeta Neón** (`#a855f7`, `border-purple-400/80`)
+4. **Distribución Panorámica 2 Columnas (85-90% de la pantalla)**:
+   - **Izquierda (Avatar 3D Cutout - 40%)**: Avatar 3D animado grande con **fondo transparente / cutout** y halo ambiental radiante según el color del paso.
+   - **Derecha (Contenido de Gran Formato - 60%)**:
+     - Subtítulo del Paso (`text-2xl` a `text-3xl`) y medalla de métrica.
+     - **Bloques LEGO Sintácticos**: Fichas semánticas interactivas (`👤 SUJETO`, `⚡ VERBO`, `📦 COMPLEMENTO`).
+     - **Oración Modelo en Inglés**: `text-2xl` a `text-4xl` de altísima legibilidad para Google Meet y pantallas de celular.
+     - **Traducción al Español**: `text-base` a `text-xl` en contraste cian/ámbar.
+     - **Regla Práctica (`rule`)**: Micro-etiqueta con el tip clave.
+5. **Pie de Tarjeta Integrado**:
+   - Botón `🔊 ESCUCHAR ORACIÓN` con el color temático del nivel.
+   - Navegación `◀ Anterior`, contador `X/5` y botón `Siguiente Nivel ➔`.
+
+### 📚 3. INTEGRACIÓN DUAL OBLIGATORIA (SLIDE 4 Y SLIDE 5)
+- **Slide 4 (Grammar Studio Core)**: 5 Niveles con las 5 estructuras gramaticales principales (Afirmativo, 3ra persona, Negativo, Pregunta Sí/No, Pregunta Wh-). Fórmulas obligatorias en corchetes `[ ... ] + [ ... ]`.
+- **Slide 5 (Vocabulary Matrix Studio)**: 5 Niveles con las 5 categorías temáticas del vocabulario, cada una con su fórmula en bloques LEGO (`[ Categoría / Sujeto ] + [ Términos Clave ] + [ Aplicación ]`), su avatar 3D contextualizado y su oración modelo.
+
+### 🎨 4. PROTOCOLO OBLIGATORIO DE GENERACIÓN DE AVATARES 3D (CUTOUT NEURONAL REMBG & CERO MANCHAS)
+- **Coherencia 1:1 con la Oración Modelo (Contextualización Estricta)**:
+  - Cada uno de los 5 pasos DEBE tener un avatar generado específicamente para la acción, emoción u objetos de la oración de ese paso.
+  - **Fórmula de Prompt**: Se toma el sujeto, verbo/acción y complementos de la oración en inglés y se traducen en el prompt visual de IA:
+    - *Ejemplo Oración*: `"Her best friend is extremely creative and plays three musical instruments."` ➔ *Prompt*: `"3D Pixar Disney style animated teen girl holding an acoustic guitar and musical notes, creative and artistic smile, wearing trendy streetwear hoodie, standing full body isolated on pure solid white background, clean 3D character render"`.
+    - *Ejemplo Oración*: `"I wake up at 6:30 AM every morning and take a refreshing shower."` ➔ *Prompt*: `"3D Pixar Disney style animated teen boy stretching and yawning cheerfully with a ringing alarm clock at 6:30 AM, pajama hoodie, isolated on pure solid white background, clean 3D character render"`.
+    - *Ejemplo Oración*: `"I am wearing an oversized black hoodie and comfortable white sneakers."` ➔ *Prompt*: `"3D Pixar Disney style animated teen boy showcasing his oversized black hoodie, cargo pants and clean white skate sneakers, isolated on pure solid white background"`.
+- **Fondo Puro (#000000 o #FFFFFF) sin Bokeh**: Al generar imágenes en IA, el prompt DEBE especificar:
+  `"isolated on pure solid flat white background, no background bokeh, no particles, no light streaks, 100% clean studio backdrop, 3D character render"`.
+- **Segmentación Neuronal Obligatoria (`rembg` U2-Net)**:
+  - Todo personaje o elemento sin fondo DEBE procesarse mediante `rembg` (modelo U2-Net) con recorte automático de bounding box (`bbox = img.getbbox()`) y guardado en WebP (`quality=90`):
+  ```python
+  from rembg import remove, new_session
+  from PIL import Image
+
+  session = new_session("u2net")
+  cutout = remove(img, session=session)
+  bbox = cutout.getbbox()
+  if bbox:
+      cutout = cutout.crop(bbox)
+  cutout.thumbnail((800, 800), Image.Resampling.LANCZOS)
+  cutout.save(dest_path, "WEBP", quality=90)
+  ```
+- **Prohibición de Filtros Blur CSS Artificiales**: Queda prohibido colocar elementos CSS con `blur-3xl` o resplandores borrosos detrás de los personajes para evitar halos o manchas sucias.
+- **Ajuste Responsivo para Zoom 100% (Sin Scroll)**:
+  - La tarjeta maestra debe ajustarse con `max-h-[340px]` a `max-h-[380px]` para el avatar y paddings compactos (`p-2.5 sm:p-3.5`), garantizando que en monitores estándar a resolución 100% (sin zoom out) la tarjeta y la nota del profesor quepan perfectamente en pantalla completa.
+- **Tamaño Máximo 250 KB**: Todo avatar WebP resultante debe pesar entre 40 KB y 120 KB.
+
+### 🧩 5. ESTRUCTURA SINTÁCTICA POR BLOQUES LEGO (OBLIGATORIAS)
+- **Fichas Sintácticas Tipo Bloques LEGO (`formula`)**:
+  - Toda estructura en Slide 4 y Slide 5 DEBE desglosarse en fichas individuales delimitadas por corchetes (`[ ... ]`) y unidas por conectores (`➕` o `➔`).
+  - Código de color semántico obligatorio:
+    - 👤 **Sujeto / Pronombres** (`Cian / Azul Neón`): `[ I'm / You're / He's... ]` o `[ Sujeto ]`.
+    - ⚡ **Verbos / Auxiliares / To Be** (`Verde Esmeralda Neón`): `[ am / is / are ]` o `[ Verbo de acción ]`.
+    - ⛔ **Negación / Partículas** (`Rosa / Rojo Neón`): `[ don't / doesn't ]` o `[ not ]`.
+    - ⏱️ **Frecuencia / Tiempo / Conectores** (`Fucsia Neón`): `[ Adverbio ]`, `[ In the morning ]`, `[ at 7:00 AM ]`.
+    - 🌟 **Modales / Habilidad** (`Púrpura / Violeta Neón`): `[ can / can't ]`, `[ must ]`, `[ should ]`.
+    - 👉 **Demostrativos** (`Índigo Neón`): `[ This is / That is ]`, `[ These are / Those are ]`.
+    - ❓ **Preguntas Wh-** (`Azul Cielo Neón`): `[ What / Where / Who ]`.
+    - 📦 **Complemento / Objeto / Lugar** (`Ámbar / Dorado Neón`): `[ Identidad / Lugar ]` o `[ Complemento ]`.
+- **Doble Nivel (Micro-etiqueta de Función + Fichas Reales)**:
+  - Cada bloque Lego muestra en su parte superior una micro-etiqueta con su rol pedagógico (`👤 SUJETO`, `⚡ VERBO / TO BE`, `📦 COMPLEMENTO`) y en el centro los tokens reales en tipografía mono de alto contraste.
+- **Interacción y Resaltado Visual**:
+  - Tocar o pasar el cursor sobre cualquier ficha Lego debe activar el resaltado con anillo de brillo y escala en tiempo real para captar la atención del alumno en pantalla compartida.
+
+### 🛡️ 7. RESILIENCIA TÉCNICA Y PREVENCIÓN DE PANTALLA EN BLANCO (ANTI-CRASH REACT & VITE)
+- **Declaración Estricta de Estados en Componentes (`useState`)**:
+  - Todo estado o setter utilizado en el JSX o callbacks de un componente (ej: `grammarViewMode`, `setGrammarViewMode`, `grammarActiveTab`) DEBE estar explícitamente declarado en el cuerpo del componente con su respectivo `useState` y con su valor inicial seguro.
+  - Al cambiar de diapositiva (`useEffect([slide.id])`), DEBEN resetearse todos los estados interactivos a sus valores por defecto seguros para evitar que variables desincronizadas provoquen `ReferenceError` o bloqueos de renderizado.
+- **Unicidad Obligatoria de Claves en Listas (`key={...}`)**:
+  - Toda lista mapeada en React (especialmente en la barra de etapas/módulos de `PresentationViewer.tsx` o selectores de tarjetas) DEBE utilizar claves compuestas únicas (ej: `key={`${mod.id}-${mod.startIndex}`}` o `key={`${item.id}-${idx}`}`) para evitar warnings de claves duplicadas (`Encountered two children with the same key`) y prevenir desajustes en el reconciliador de React DOM.
+- **Encapsulación y Compatibilidad con Fast Refresh de Vite**:
+  - Los archivos de componentes principales (como `SlideRenderer.tsx`) no deben exportar funciones o constantes auxiliares accesorias si esto activa incompatibilidades con Vite React Fast Refresh (`Could not Fast Refresh: export is incompatible`). Deben mantenerse como funciones/constantes internas del módulo o modularizarse en archivos `utils/`.
+- **Validación Estricta de Variables en Mapeos JSX (`.map`)**:
+  - Toda iteración o renderizado de colecciones en JSX (ej: los 5 puntos luminosos de progreso, tarjetas de etapas o badges) DEBE derivarse estrictamente de variables existentes en el scope local (como `structures.map(...)` o `GRAMMAR_STEP_THEMES.map(...)`). Queda estrictamente prohibido usar referencias a variables auxiliares ficticias o no declaradas para evitar `ReferenceError` en tiempo de ejecución.
+
