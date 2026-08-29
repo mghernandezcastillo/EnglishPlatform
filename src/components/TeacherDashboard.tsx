@@ -320,6 +320,9 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                   if (selectedStudent.presentation_mode) {
                                     localStorage.setItem('maven_presentation_mode', selectedStudent.presentation_mode);
                                   }
+                                  localStorage.setItem('active_student_name', selectedStudent.name);
+                                  localStorage.setItem('selected_student_name', selectedStudent.name);
+                                  localStorage.setItem('active_student_profile', JSON.stringify(selectedStudent));
                                   onEnterAsStudent && onEnterAsStudent(selectedStudent);
                                 }}
                                 className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-xl transition-all shadow-sm"
@@ -361,6 +364,9 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
                                     disabled={!classesCompleted}
                                     onClick={() => {
                                         sessionStorage.setItem('maven_open_oral_exam', currentLevelObj.id);
+                                        localStorage.setItem('active_student_name', selectedStudent.name);
+                                        localStorage.setItem('selected_student_name', selectedStudent.name);
+                                        localStorage.setItem('active_student_profile', JSON.stringify(selectedStudent));
                                         onEnterAsStudent?.(selectedStudent);
                                     }}
                                     className="mb-3 w-full rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-3 font-black text-white shadow-sm transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:from-slate-300 disabled:to-slate-400 disabled:hover:translate-y-0"

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Eye, Lightbulb, MessageCircle, Pencil, Play, Sparkles, Check } from 'lucide-react';
 import { ClassSlide, CurriculumClass } from '../types';
 import { resolveVideoHomeworkData } from '../lib/videoHomeworkResolver';
+import { getActiveStudentName } from '../lib/homeworkResolver';
 import { fireClassCompletionConfetti } from '../lib/celebration';
 
 interface VideoHomeworkSlideCardProps {
@@ -11,9 +12,10 @@ interface VideoHomeworkSlideCardProps {
   teacherNote?: string;
   isLastSlide?: boolean;
   onComplete?: () => void;
+  studentName?: string;
 }
 
-export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComplete }: VideoHomeworkSlideCardProps) {
+export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComplete, studentName }: VideoHomeworkSlideCardProps) {
   const [answer1, setAnswer1] = useState('');
   const [answer2, setAnswer2] = useState('');
   const [copied, setCopied] = useState(false);
@@ -21,14 +23,18 @@ export function VideoHomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, o
   const data = resolveVideoHomeworkData(slide, cls);
 
   const handleShareWhatsApp = () => {
+    const activeStudent = studentName?.trim() || getActiveStudentName();
+    const formattedClassTitle = cls?.title?.split('/')[0]?.trim() || 'English Class';
+    const greeting = activeStudent ? `👋 ¡Hola *${activeStudent}*! Aquí tienes tu tarea en video:\n\n` : '';
     let msg = data.whatsappMessage || '';
     if (answer1 || answer2) {
-      const formattedClassTitle = cls?.title?.split('/')[0]?.trim() || 'English Class';
-      msg = `*Video Homework 📹 - ${formattedClassTitle}*\n\n` +
+      msg = `${greeting}*Video Homework 📹 - ${formattedClassTitle}*\n\n` +
         `*1. Watch:* ${data.watchInstruction}\n` +
         `*2. Write:* ${data.writeInstruction}\n\n` +
         `*Video link:* ${data.videoUrl}\n\n` +
         `*My Answers:*\n1. ${answer1 || '...'}\n2. ${answer2 || '...'}\n\n🚀`;
+    } else if (activeStudent) {
+      msg = `${greeting}${msg}`;
     }
     const encoded = encodeURIComponent(msg);
     const url = `https://api.whatsapp.com/send?text=${encoded}`;

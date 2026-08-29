@@ -212,16 +212,37 @@ export function resolveHomeworkData(slide: ClassSlide, cls?: CurriculumClass): H
 export function getActiveStudentName(): string {
   if (typeof window === 'undefined') return '';
   try {
-    const raw = localStorage.getItem('maven_active_user') || 
-                localStorage.getItem('active_student_name') || 
-                localStorage.getItem('selected_student_name') || 
-                localStorage.getItem('current_student_name');
-    if (raw) {
-      if (raw.startsWith('{')) {
-        const obj = JSON.parse(raw);
-        if (obj.name || obj.full_name || obj.studentName) return obj.name || obj.full_name || obj.studentName;
+    // 1. Direct active student profile object
+    const profileRaw = localStorage.getItem('active_student_profile') || localStorage.getItem('maven_active_user');
+    if (profileRaw && profileRaw.startsWith('{')) {
+      const obj = JSON.parse(profileRaw);
+      const name = obj.name || obj.full_name || obj.studentName || obj.student_name;
+      if (name && typeof name === 'string' && name.trim()) return name.trim();
+    }
+
+    // 2. Direct student name keys
+    const directName = localStorage.getItem('active_student_name') || 
+                       localStorage.getItem('selected_student_name') || 
+                       localStorage.getItem('current_student_name') ||
+                       localStorage.getItem('maven_active_user');
+    if (directName && typeof directName === 'string' && directName.trim() && directName.trim() !== 'undefined' && directName.trim() !== 'null' && !directName.startsWith('{')) {
+      return directName.trim();
+    }
+
+    // 3. User progress storage (App.tsx STORAGE_KEY)
+    const progressRaw = localStorage.getItem('english_easy_path_progress');
+    if (progressRaw && progressRaw.startsWith('{')) {
+      const progressObj = JSON.parse(progressRaw);
+      if (progressObj?.studentName && typeof progressObj.studentName === 'string' && progressObj.studentName.trim()) {
+        return progressObj.studentName.trim();
       }
-      if (!raw.startsWith('[') && raw.length < 50) return raw;
+    }
+
+    // 4. URL query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlStudent = urlParams.get('student') || urlParams.get('studentName');
+    if (urlStudent && urlStudent.trim()) {
+      return urlStudent.trim();
     }
   } catch {}
   return '';

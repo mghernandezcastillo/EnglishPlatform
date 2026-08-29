@@ -27,6 +27,7 @@ import { SlideSelectionTranslator } from './SlideSelectionTranslator';
 import { StoryDecoderVocabTool } from './StoryDecoderVocabTool';
 import { fireClassCompletionConfetti } from '../lib/celebration';
 import confetti from 'canvas-confetti';
+import { getTeenSpeakerInfo } from './TeenAvatar';
 
 const VerbArenaGame = lazy(() => import('./VerbArenaGame').then(m => ({ default: m.VerbArenaGame })));
 
@@ -74,6 +75,7 @@ interface SlideRendererProps {
   hideTeacherNote?: boolean;
   className?: string;
   studentId?: string | null;
+  studentName?: string;
   /**
    * Renders at 1280×720 and CSS-scales to the wrapper.
    * Wrapper must have a fixed width; height is auto (aspect-ratio: 16/9).
@@ -624,17 +626,36 @@ function parseFormulaTokens(formulaStr: string): FormulaToken[] {
   return tokens;
 }
 
-export function resolveReadingLines(slide?: ClassSlide | null): { speaker?: string; text: string; es?: string }[] {
+export function resolveReadingLines(slide?: ClassSlide | null): { speaker?: string; text: string; cleanText?: string; es?: string }[] {
   if (!slide) return [];
   const rd = (slide as any).readingData;
   if (rd && Array.isArray(rd.dialogue) && rd.dialogue.length > 0) {
     return rd.dialogue.map((d: any) => {
-      if (typeof d === 'string') return { text: d };
-      const text = d.text || d.en || '';
-      const speaker = d.speaker || '';
+      if (typeof d === 'string') {
+        const match = d.match(/^([A-Za-zÁÉÍÓÚáéíóúñÑ0-9\s]+):\s*(?:['"“](.*)['"”]|(.*))$/);
+        if (match) {
+          const speaker = match[1].trim();
+          const cleanText = (match[2] || match[3] || '').trim();
+          return { speaker, cleanText, text: `${speaker}: "${cleanText}"` };
+        }
+        return { text: d, cleanText: d };
+      }
+      const rawText = d.text || d.en || '';
+      let speaker = (d.speaker || '').trim();
+      let cleanText = rawText.trim();
+      if (!speaker) {
+        const match = rawText.match(/^([A-Za-zÁÉÍÓÚáéíóúñÑ0-9\s]+):\s*(?:['"“](.*)['"”]|(.*))$/);
+        if (match) {
+          speaker = match[1].trim();
+          cleanText = (match[2] || match[3] || '').trim();
+        }
+      } else {
+        cleanText = cleanText.replace(/^['"“]+|['"”]+$/g, '').trim();
+      }
       return {
         speaker,
-        text: speaker ? `${speaker}: "${text}"` : text,
+        cleanText: cleanText || rawText,
+        text: speaker ? `${speaker}: "${cleanText || rawText}"` : rawText,
         es: d.es || d.translation || '',
       };
     });
@@ -642,8 +663,26 @@ export function resolveReadingLines(slide?: ClassSlide | null): { speaker?: stri
   if (slide.type === 'reading' || /reading|lectura/i.test(slide.title || '')) {
     if (Array.isArray(slide.content) && slide.content.length > 0) {
       return slide.content.map(c => {
-        if (typeof c === 'string') return { text: c };
-        return { text: (c as any).text || (c as any).en || String(c), es: (c as any).es };
+        if (typeof c === 'string') {
+          const match = c.match(/^([A-Za-zÁÉÍÓÚáéíóúñÑ0-9\s]+):\s*(?:['"“](.*)['"”]|(.*))$/);
+          if (match) {
+            const speaker = match[1].trim();
+            const cleanText = (match[2] || match[3] || '').trim();
+            return { speaker, cleanText, text: c };
+          }
+          return { text: c, cleanText: c };
+        }
+        const rawText = (c as any).text || (c as any).en || String(c);
+        let speaker = (c as any).speaker || '';
+        let cleanText = rawText.trim();
+        if (!speaker) {
+          const match = rawText.match(/^([A-Za-zÁÉÍÓÚáéíóúñÑ0-9\s]+):\s*(?:['"“](.*)['"”]|(.*))$/);
+          if (match) {
+            speaker = match[1].trim();
+            cleanText = (match[2] || match[3] || '').trim();
+          }
+        }
+        return { speaker, cleanText: cleanText || rawText, text: rawText, es: (c as any).es };
       });
     }
   }
@@ -672,6 +711,7 @@ export function SlideRenderer({
   className = 'w-full h-full',
   compact = false,
   studentId,
+  studentName,
 }: SlideRendererProps) {
   const activeStudentId = useMemo(() => {
     if (studentId) return studentId;
@@ -1615,6 +1655,7 @@ export function SlideRenderer({
               const readingLines = resolveReadingLines(slide);
               const safeReadingIndex = Math.max(0, Math.min(readingLineIndex, readingLines.length - 1));
               const currentLine = readingLines[safeReadingIndex] || readingLines[0];
+              const speakerInfo = getTeenSpeakerInfo(currentLine.speaker, safeReadingIndex);
               return (
                 <div className="relative flex-1 flex flex-col justify-between p-5 sm:p-7 z-10 min-h-0 overflow-hidden bg-gradient-to-br from-[#0a1b3f] via-[#0d2757] to-[#1d164d]">
                   {/* High Brightness Ambient Glow */}
@@ -1652,6 +1693,7 @@ export function SlideRenderer({
                       <div className="flex-1 grid grid-cols-1 gap-3 overflow-y-auto max-h-[440px] pr-2">
                         {readingLines.map((lineObj, idx) => {
                           const isSelected = idx === safeReadingIndex;
+                          const lineSpeaker = getTeenSpeakerInfo(lineObj.speaker, idx);
                           return (
                             <motion.div
                               key={idx}
@@ -1660,26 +1702,34 @@ export function SlideRenderer({
                               transition={{ delay: idx * 0.05 }}
                               onClick={() => {
                                 setReadingLineIndex(idx);
-                                playSpeech(lineObj.text, 'en-US', 0.9);
+                                playSpeech(lineObj.cleanText || lineObj.text, 'en-US', 0.9);
                               }}
-                              className={`group flex items-center justify-between p-5 rounded-2xl border-2 transition-all cursor-pointer shadow-lg ${
+                              className={`group flex items-center justify-between p-4 sm:p-5 rounded-2xl border-2 transition-all cursor-pointer shadow-lg ${
                                 isSelected
                                   ? 'border-cyan-300 bg-cyan-500/30 text-white shadow-[0_0_30px_rgba(6,182,212,0.45)] scale-[1.01]'
                                   : 'border-white/20 bg-slate-900/85 text-white hover:bg-cyan-950/60 hover:border-cyan-400'
                               }`}
                             >
                               <div className="flex items-center gap-4 min-w-0">
-                                <span className={`w-10 h-10 rounded-2xl flex items-center justify-center font-black text-sm shrink-0 shadow-md ${
-                                  isSelected ? 'bg-cyan-300 text-slate-950 font-black' : 'bg-white/15 text-white group-hover:bg-cyan-400 group-hover:text-slate-950'
-                                }`}>
-                                  {String(idx + 1).padStart(2, '0')}
-                                </span>
-                                <div className="flex flex-col">
-                                  <span className="text-2xl sm:text-3xl font-black leading-snug tracking-tight text-white drop-shadow">
-                                    {lineObj.text}
+                                {/* Circular Speaker Avatar */}
+                                <div className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-full p-[2.5px] bg-gradient-to-tr ${lineSpeaker.ringGradient} shrink-0 shadow-lg`}>
+                                  <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 flex items-center justify-center">
+                                    {lineSpeaker.avatarSvg}
+                                  </div>
+                                </div>
+
+                                <div className="flex flex-col min-w-0">
+                                  <div className="flex items-center gap-2 mb-1">
+                                    <span className={`px-2.5 py-0.5 rounded-lg text-xs font-black uppercase tracking-wide ${lineSpeaker.badgeStyle}`}>
+                                      {lineSpeaker.name}
+                                    </span>
+                                    <span className="text-white/40 text-xs font-bold">Línea {idx + 1} de {readingLines.length}</span>
+                                  </div>
+                                  <span className="text-xl sm:text-2xl font-black leading-snug tracking-tight text-white drop-shadow">
+                                    "{lineObj.cleanText || lineObj.text}"
                                   </span>
                                   {lineObj.es && (
-                                    <span className="text-base sm:text-lg font-bold text-cyan-200 mt-1">
+                                    <span className="text-sm sm:text-base font-bold text-cyan-200 mt-1">
                                       {lineObj.es}
                                     </span>
                                   )}
@@ -1708,8 +1758,9 @@ export function SlideRenderer({
                           animate={{ opacity: 1, scale: 1, y: 0 }}
                           exit={{ opacity: 0, scale: 0.96, y: -15 }}
                           transition={{ duration: 0.25, ease: 'easeOut' }}
-                          className="flex-1 flex flex-col justify-between rounded-3xl border-2 border-cyan-300/80 bg-slate-950/85 p-6 sm:p-10 shadow-[0_0_50px_rgba(6,182,212,0.35)] backdrop-blur-2xl min-h-[300px]"
+                          className="flex-1 flex flex-col justify-between rounded-3xl border-2 border-cyan-300/80 bg-slate-950/85 p-6 sm:p-8 shadow-[0_0_50px_rgba(6,182,212,0.35)] backdrop-blur-2xl min-h-[320px]"
                         >
+                          {/* Top Status Bar */}
                           <div className="flex items-center justify-between text-xs sm:text-sm font-black uppercase tracking-wider text-cyan-300">
                             <span className="bg-cyan-400/20 border-2 border-cyan-400/40 px-3.5 py-1.5 rounded-xl text-white font-black shadow-sm">
                               Línea {safeReadingIndex + 1} de {readingLines.length}
@@ -1717,14 +1768,35 @@ export function SlideRenderer({
                             <span className="text-white/80 font-bold">Práctica de Fluidez y Entonación 🎙️</span>
                           </div>
 
+                          {/* Speaker Circular Avatar & Badge Header */}
+                          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 my-2">
+                            <div className="relative group">
+                              <div
+                                className="absolute -inset-1 rounded-full opacity-70 blur-md transition-opacity"
+                                style={{ backgroundColor: speakerInfo.glowColor }}
+                              />
+                              <div className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-full p-[3px] bg-gradient-to-tr ${speakerInfo.ringGradient} shadow-xl`}>
+                                <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 flex items-center justify-center">
+                                  {speakerInfo.avatarSvg}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                              <span className={`px-4 py-1.5 rounded-2xl text-xs sm:text-sm font-black tracking-wider uppercase shadow-md ${speakerInfo.badgeStyle}`}>
+                                {speakerInfo.name} 💬
+                              </span>
+                            </div>
+                          </div>
+
                           {/* Large Main Sentence */}
-                          <div className="my-auto text-center py-4 px-2">
-                            <p className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.15] tracking-tight drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)]">
-                              "{currentLine.text}"
+                          <div className="my-auto text-center py-2 px-2 max-w-4xl mx-auto">
+                            <p className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-[1.2] tracking-tight drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)]">
+                              "{currentLine.cleanText || currentLine.text}"
                             </p>
                             {currentLine.es && (
-                              <div className="mt-4 inline-block rounded-2xl bg-cyan-950/80 border-2 border-cyan-400/40 px-6 py-2.5 shadow-inner">
-                                <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-cyan-200 drop-shadow">
+                              <div className="mt-3.5 inline-block rounded-2xl bg-cyan-950/80 border-2 border-cyan-400/40 px-6 py-2 shadow-inner">
+                                <p className="text-lg sm:text-xl lg:text-2xl font-extrabold text-cyan-200 drop-shadow">
                                   {currentLine.es}
                                 </p>
                               </div>
@@ -1734,10 +1806,10 @@ export function SlideRenderer({
                           {/* Audio Button */}
                           <div className="flex justify-center pt-2">
                             <button
-                              onClick={() => playSpeech(currentLine.text, 'en-US', 0.9)}
-                              className="flex items-center gap-3 px-8 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-lg shadow-xl shadow-cyan-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                              onClick={() => playSpeech(currentLine.cleanText || currentLine.text, 'en-US', 0.9)}
+                              className="flex items-center gap-3 px-8 py-3 rounded-2xl bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-base sm:text-lg shadow-xl shadow-cyan-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer"
                             >
-                              <Volume2 className="w-6 h-6" />
+                              <Volume2 className="w-5 h-5 sm:w-6 sm:h-6" />
                               <span>Escuchar Pronunciación</span>
                             </button>
                           </div>
@@ -1762,7 +1834,7 @@ export function SlideRenderer({
                             key={i}
                             onClick={() => {
                               setReadingLineIndex(i);
-                              if (isFullTextView) playSpeech(readingLines[i]?.text || '', 'en-US', 0.9);
+                              if (isFullTextView) playSpeech(readingLines[i]?.cleanText || readingLines[i]?.text || '', 'en-US', 0.9);
                             }}
                             className={`transition-all rounded-full cursor-pointer ${
                               i === safeReadingIndex
@@ -3356,9 +3428,9 @@ export function SlideRenderer({
           </div>
         </div>
       ) : isHomeworkSlide ? (
-        <HomeworkSlideCard slide={slide} cls={cls} teacherNote={section.action} isLastSlide={isLastSlide} onComplete={onComplete} />
+        <HomeworkSlideCard slide={slide} cls={cls} teacherNote={section.action} isLastSlide={isLastSlide} onComplete={onComplete} studentName={studentName} />
       ) : isVideoHomeworkSlide ? (
-        <VideoHomeworkSlideCard slide={slide} cls={cls} teacherNote={section.action} isLastSlide={isLastSlide} onComplete={onComplete} />
+        <VideoHomeworkSlideCard slide={slide} cls={cls} teacherNote={section.action} isLastSlide={isLastSlide} onComplete={onComplete} studentName={studentName} />
       ) : isSpeakingBossBattle ? (
         <SpeakingBossBattleGame
           bossName={slide.speakingBossBattle?.bossName}

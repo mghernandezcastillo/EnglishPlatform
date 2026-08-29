@@ -11,21 +11,25 @@ interface HomeworkSlideCardProps {
   teacherNote?: string;
   isLastSlide?: boolean;
   onComplete?: () => void;
+  studentName?: string;
 }
 
-export function HomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComplete }: HomeworkSlideCardProps) {
+export function HomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComplete, studentName }: HomeworkSlideCardProps) {
   const [copied, setCopied] = useState(false);
   const data = resolveHomeworkData(slide, cls);
 
   const handleShareWhatsApp = () => {
-    let studentName = getActiveStudentName();
-    if (!studentName && typeof window !== 'undefined') {
+    let activeStudent = studentName?.trim() || getActiveStudentName();
+    if (!activeStudent && typeof window !== 'undefined') {
       const entered = window.prompt('¿A qué estudiante deseas enviar esta tarea? (Opcional - escribe su nombre o presiona Aceptar):');
       if (entered && entered.trim()) {
-        studentName = entered.trim();
+        activeStudent = entered.trim();
+        try {
+          localStorage.setItem('active_student_name', activeStudent);
+        } catch {}
       }
     }
-    const message = buildWhatsAppHomeworkMessage(slide, cls, studentName);
+    const message = buildWhatsAppHomeworkMessage(slide, cls, activeStudent);
     const encoded = encodeURIComponent(message);
     const url = `https://api.whatsapp.com/send?text=${encoded}`;
     window.open(url, '_blank');

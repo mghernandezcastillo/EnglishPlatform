@@ -71,6 +71,9 @@ export default function App() {
           setCurrentStudentId(s.id);
           const studentMode = s.presentation_mode || 'studio';
           localStorage.setItem('maven_presentation_mode', studentMode);
+          localStorage.setItem('active_student_name', s.name);
+          localStorage.setItem('selected_student_name', s.name);
+          localStorage.setItem('active_student_profile', JSON.stringify(s));
           setProgress({
             completedLessons: visibleCompletedLessonIds(s.completed_lessons || []),
             approvedLevelIds: approvedLevelIdsForStudent(s),
@@ -101,6 +104,10 @@ export default function App() {
   useEffect(() => {
     if (!isLoaded || role !== 'student') return;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    if (progress.studentName) {
+      localStorage.setItem('active_student_name', progress.studentName);
+      localStorage.setItem('selected_student_name', progress.studentName);
+    }
     
     // Also save to Supabase via dbAdmin if we have an ID
     if (currentStudentId) {
@@ -113,6 +120,9 @@ export default function App() {
       setCurrentStudentId(st.id);
       const studentMode = st.presentation_mode || 'studio';
       localStorage.setItem('maven_presentation_mode', studentMode);
+      localStorage.setItem('active_student_name', st.name);
+      localStorage.setItem('selected_student_name', st.name);
+      localStorage.setItem('active_student_profile', JSON.stringify(st));
       setProgress({
         completedLessons: visibleCompletedLessonIds(st.completed_lessons || []),
         approvedLevelIds: approvedLevelIdsForStudent(st),
