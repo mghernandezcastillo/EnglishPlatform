@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Check, Clock, Lightbulb, MessageCircle, Sparkles, Target } from 'lucide-react';
 import { ClassSlide, CurriculumClass } from '../types';
-import { resolveHomeworkData } from '../lib/homeworkResolver';
+import { resolveHomeworkData, buildWhatsAppHomeworkMessage, getActiveStudentName } from '../lib/homeworkResolver';
 import { fireClassCompletionConfetti } from '../lib/celebration';
 
 interface HomeworkSlideCardProps {
@@ -18,12 +18,22 @@ export function HomeworkSlideCard({ slide, cls, teacherNote, isLastSlide, onComp
   const data = resolveHomeworkData(slide, cls);
 
   const handleShareWhatsApp = () => {
-    if (!data.whatsappMessage) return;
-    const encoded = encodeURIComponent(data.whatsappMessage);
+    let studentName = getActiveStudentName();
+    if (!studentName && typeof window !== 'undefined') {
+      const entered = window.prompt('¿A qué estudiante deseas enviar esta tarea? (Opcional - escribe su nombre o presiona Aceptar):');
+      if (entered && entered.trim()) {
+        studentName = entered.trim();
+      }
+    }
+    const message = buildWhatsAppHomeworkMessage(slide, cls, studentName);
+    const encoded = encodeURIComponent(message);
     const url = `https://api.whatsapp.com/send?text=${encoded}`;
     window.open(url, '_blank');
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(message).catch(() => {});
+    }
     setCopied(true);
-    setTimeout(() => setCopied(false), 3000);
+    setTimeout(() => setCopied(false), 3500);
   };
 
   // Safe escape for regular expressions

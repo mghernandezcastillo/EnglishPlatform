@@ -194,17 +194,7 @@ export function resolveHomeworkData(slide: ClassSlide, cls?: CurriculumClass): H
     (rawContent.length > 0 ? rawContent.join('\n') : catalogEntry?.task || 'Completa la tarea escribiendo oraciones completas.');
 
   // 7. WhatsApp share message
-  const formattedClassTitle = cls?.title?.split('/')[0]?.trim() || 'English Class';
-  const whatsappMessage = `*Homework 📝 - ${formattedClassTitle}*\n\n` +
-    `*Your Task:*\n` +
-    (taskSteps.length > 0
-      ? taskSteps.map(s => `${s.number}. ${s.instruction}${s.example ? ` (ej: "${s.example}")` : ''}`).join('\n')
-      : task) +
-    `\n\n*What to include:*\n` +
-    whatToInclude.map((item) => `• ${item.icon} ${item.label}`).join('\n') +
-    `\n\n*Example (${exampleLines.length} lines):*\n` +
-    exampleLines.map((line, idx) => `${idx + 1}. ${line}`).join('\n') +
-    `\n\n*Due Date:* ${dueDate}\nGood luck! 🚀`;
+  const whatsappMessage = buildWhatsAppHomeworkMessage(slide, cls);
 
   return {
     task,
@@ -216,5 +206,179 @@ export function resolveHomeworkData(slide: ClassSlide, cls?: CurriculumClass): H
     badgeText,
     dueDate,
     whatsappMessage
+  };
+}
+
+export function getActiveStudentName(): string {
+  if (typeof window === 'undefined') return '';
+  try {
+    const raw = localStorage.getItem('maven_active_user') || 
+                localStorage.getItem('active_student_name') || 
+                localStorage.getItem('selected_student_name') || 
+                localStorage.getItem('current_student_name');
+    if (raw) {
+      if (raw.startsWith('{')) {
+        const obj = JSON.parse(raw);
+        if (obj.name || obj.full_name || obj.studentName) return obj.name || obj.full_name || obj.studentName;
+      }
+      if (!raw.startsWith('[') && raw.length < 50) return raw;
+    }
+  } catch {}
+  return '';
+}
+
+export function buildWhatsAppHomeworkMessage(
+  slide: ClassSlide,
+  cls?: CurriculumClass,
+  studentName?: string
+): string {
+  const data = resolveHomeworkDataDirect(slide, cls);
+  const classTitle = cls?.title?.includes('/') ? cls.title.split('/')[0].trim() : (cls?.title || 'Clase de Inglés');
+  const classSub = cls?.title?.includes('/') ? cls.title.split('/')[1].trim() : '';
+  const resolvedStudent = studentName?.trim() || getActiveStudentName();
+  const greeting = resolvedStudent 
+    ? `👋 ¡Hola *${resolvedStudent}*! Aquí tienes tu tarea de hoy:` 
+    : `👋 ¡Hola! Aquí tienes la tarea de tu clase de inglés:`;
+
+  let message = `${greeting}\n\n`;
+  message += `━━━━━━━━━━━━━━━━━━━━━\n`;
+  message += `📚 *CLASE:* ${classTitle}\n`;
+  if (classSub) {
+    message += `🎯 *TEMA:* ${classSub}\n`;
+  }
+  message += `━━━━━━━━━━━━━━━━━━━━━\n\n`;
+
+  message += `📝 *TU MISIÓN / INSTRUCCIONES:*\n`;
+  if (data.taskSteps && data.taskSteps.length > 0) {
+    data.taskSteps.forEach((step) => {
+      message += `\n*Paso ${step.number}:* ${step.instruction}\n`;
+      if (step.example) {
+        message += `💡 _Ejemplo modelo:_ "${step.example}"\n`;
+      }
+    });
+  } else {
+    message += `${data.task}\n`;
+  }
+
+  if (data.exampleLines && data.exampleLines.length > 0) {
+    message += `\n━━━━━━━━━━━━━━━━━━━━━\n`;
+    message += `✨ *EJEMPLOS GUÍA PARA TU CUADERNO:*\n`;
+    data.exampleLines.forEach((ex, idx) => {
+      message += `🔹 *${idx + 1}.* ${ex}\n`;
+    });
+  }
+
+  if (data.tips && data.tips.length > 0) {
+    message += `\n💡 *TIPS IMPORTANTES DEL PROFESOR:*\n`;
+    data.tips.forEach((tip) => {
+      message += `✅ ${tip}\n`;
+    });
+  }
+
+  message += `\n━━━━━━━━━━━━━━━━━━━━━\n`;
+  message += `⏰ *FECHA DE ENTREGA:* ${data.dueDate || 'Próxima Clase'}\n`;
+  message += `📲 _Envía una foto de tu cuaderno o escribe tus oraciones por este chat de WhatsApp._\n\n`;
+  message += `🚀 *¡Muchos éxitos, tú puedes lograrlo!* 🌟`;
+
+  return message;
+}
+
+function resolveHomeworkDataDirect(slide: ClassSlide, cls?: CurriculumClass) {
+  const classId = cls?.id || '';
+  const catalogEntry = TEEN_HOMEWORK_CATALOG[classId];
+
+  const rawContent = Array.isArray(slide.content) && slide.content.length > 0
+    ? slide.content
+    : (slide.homeworkData?.task
+        ? [slide.homeworkData.task]
+        : (catalogEntry?.task ? [catalogEntry.task] : []));
+
+  let taskSteps: HomeworkStep[] = [];
+  if (rawContent.length > 1 || (rawContent.length === 1 && /\d+[\.\-\)]/.test(rawContent[0]))) {
+    if (rawContent.length === 1 && /\d+[\.\-\)]/.test(rawContent[0])) {
+      const splitItems = rawContent[0].split(/(?=\d+[\.\-\)])/).map(s => s.trim()).filter(Boolean);
+      taskSteps = parseTaskSteps(splitItems);
+    } else {
+      taskSteps = parseTaskSteps(rawContent);
+    }
+  }
+
+  let exampleLines: string[] = [];
+  const extractedExamples = taskSteps.map(s => s.example).filter((ex): ex is string => Boolean(ex));
+  if (extractedExamples.length >= 2) {
+    exampleLines = extractedExamples;
+  } else if (slide.homeworkData?.exampleLines && slide.homeworkData.exampleLines.length > 0) {
+    exampleLines = slide.homeworkData.exampleLines;
+  } else if (catalogEntry?.exampleLines && catalogEntry.exampleLines.length > 0) {
+    exampleLines = catalogEntry.exampleLines;
+  } else if (taskSteps.length > 0) {
+    exampleLines = taskSteps.map(s => s.instruction);
+  } else {
+    exampleLines = [
+      'Write your first sentence practicing today’s grammar. ✍️',
+      'Add a second sentence with specific vocabulary. 🌟',
+      'Conclude with a complete thought and emoji. 🚀'
+    ];
+  }
+
+  let whatToInclude: { icon: string; label: string }[] = [];
+  if (taskSteps.length >= 2) {
+    whatToInclude = taskSteps.map((step) => {
+      let label = step.instruction
+        .replace(/^(?:Usa|Escribe|Menciona|Haz|Incluye|Usa la estructura|Describe)\s+/i, '')
+        .replace(/^(?:con|un|una|el|la|los|las)\s+/i, '')
+        .trim();
+      label = label.charAt(0).toUpperCase() + label.slice(1);
+      if (label.length > 40) {
+        label = label.slice(0, 37) + '...';
+      }
+      return {
+        icon: getIconForRequirement(step.instruction),
+        label
+      };
+    });
+  } else if (slide.homeworkData?.whatToInclude && slide.homeworkData.whatToInclude.length > 0) {
+    whatToInclude = slide.homeworkData.whatToInclude;
+  } else if (catalogEntry?.whatToInclude && catalogEntry.whatToInclude.length > 0) {
+    whatToInclude = catalogEntry.whatToInclude;
+  } else {
+    whatToInclude = [
+      { icon: '🎯', label: 'Estructura gramatical vista en clase' },
+      { icon: '📖', label: 'Vocabulario clave de la lección' },
+      { icon: '✨', label: 'Oraciones completas con buena ortografía' }
+    ];
+  }
+
+  if (taskSteps.length === 0 && whatToInclude.length > 0) {
+    taskSteps = whatToInclude.map((item, idx) => ({
+      number: idx + 1,
+      instruction: item.label,
+      example: exampleLines[idx]
+    }));
+  }
+
+  let tips: string[] = [];
+  if (slide.homeworkData?.tips && slide.homeworkData.tips.length > 0) {
+    tips = slide.homeworkData.tips;
+  } else if (catalogEntry?.tips && catalogEntry.tips.length > 0) {
+    tips = catalogEntry.tips;
+  } else {
+    tips = [
+      'Usa las fórmulas y vocabulario aprendidos en clase.',
+      'Revisa mayúsculas, puntuación y ortografía antes de enviar.'
+    ];
+  }
+
+  const dueDate = slide.homeworkData?.dueDate || 'Próxima Clase';
+  const task = slide.homeworkData?.task ||
+    (rawContent.length > 0 ? rawContent.join('\n') : catalogEntry?.task || 'Completa la tarea escribiendo oraciones completas.');
+
+  return {
+    task,
+    taskSteps,
+    exampleLines,
+    whatToInclude,
+    tips,
+    dueDate
   };
 }

@@ -247,6 +247,20 @@ const grammarUses: Record<string, string> = {
   'Final Structure Boss Battle': 'Integra tiempos, auxiliares y estructuras según el significado y la relación temporal de toda la historia.'
 };
 
+function parseDialogueLine(text?: string): { speaker: string | null; quote: string } {
+  if (!text) return { speaker: null, quote: '' };
+  const clean = text.trim();
+  const colonIdx = clean.indexOf(':');
+  if (colonIdx > 0 && colonIdx < 30) {
+    const speaker = clean.slice(0, colonIdx).trim();
+    const quote = clean.slice(colonIdx + 1).trim();
+    if (speaker.length > 0 && quote.length > 0) {
+      return { speaker, quote };
+    }
+  }
+  return { speaker: null, quote: clean };
+}
+
 function shuffle<T>(items: T[]) {
   const result = [...items];
   for (let index = result.length - 1; index > 0; index -= 1) {
@@ -1637,9 +1651,30 @@ export function StoryDecoder({ onClose, studentId }: StoryDecoderProps) {
                   </div>
                 </div>
 
-                <div className="flex min-h-[190px] flex-col items-center justify-center rounded-[1.5rem] border border-violet-300/20 bg-gradient-to-br from-violet-400/15 via-indigo-300/10 to-cyan-300/10 p-5 text-center sm:min-h-[250px] sm:p-8">
-                  <div className="text-xs font-black uppercase tracking-[0.25em] text-violet-300">Construye esta frase en inglés</div>
-                  <p className="mt-4 max-w-6xl text-[clamp(2rem,5.3vw,5.3rem)] font-black leading-[1.02] tracking-tight text-white">{currentLine.es}</p>
+                <div className="flex min-h-[160px] flex-col items-center justify-center rounded-[1.5rem] border-2 border-emerald-400/40 bg-gradient-to-br from-slate-950/90 via-[#0a1924]/90 to-[#041017]/90 p-4 text-center sm:min-h-[200px] sm:p-6 shadow-2xl">
+                  <div className="text-xs font-black uppercase tracking-[0.25em] text-emerald-400">🇪🇸 Frase en Español a Traducir</div>
+                  {(() => {
+                    const { speaker, quote } = parseDialogueLine(currentLine.es);
+                    return (
+                      <div className="mt-3 flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-6xl">
+                        {speaker ? (
+                          <>
+                            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-2xl bg-cyan-500/20 border-2 border-cyan-400/60 text-cyan-300 font-black text-xl sm:text-2xl lg:text-3xl shadow-md">
+                              <span className="text-base sm:text-lg">👤</span>
+                              <span>{speaker}:</span>
+                            </span>
+                            <span className="text-2xl sm:text-4xl lg:text-5xl font-black leading-[1.05] tracking-tight text-yellow-300 drop-shadow-[0_0_25px_rgba(253,224,71,0.35)]">
+                              "{quote}"
+                            </span>
+                          </>
+                        ) : (
+                          <span className="text-2xl sm:text-4xl lg:text-5xl font-black leading-[1.05] tracking-tight text-yellow-300 drop-shadow-[0_0_25px_rgba(253,224,71,0.35)]">
+                            "{quote}"
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })()}
                 </div>
 
                 <div className="mt-3 min-h-24 rounded-2xl border-2 border-dashed border-cyan-300/25 bg-slate-950/45 p-3 sm:p-4">

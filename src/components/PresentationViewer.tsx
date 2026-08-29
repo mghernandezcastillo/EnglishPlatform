@@ -31,19 +31,19 @@ function resolveSlideModule(slide: ClassSlide, section: ClassSection, slideIndex
   const title = (slide.title || '').toLowerCase();
   const secTitle = (section.title || '').toLowerCase();
 
-  // 1. Objectives (Today's Mission)
+  // 1. Bienvenida o Presentación (First Slide / Welcome)
+  if (slideIndex === 0 || (/welcome|bienvenid|presentaci[oó]n|intro|start/i.test(title) && type !== 'objectives-animated' && type !== 'spinning-wheel')) {
+    return { name: 'Welcome & Intro', shortName: 'Bienvenida', icon: '👋', key: 'welcome' };
+  }
+
+  // 2. Objetivos (Today's Mission / Metas)
   if (type === 'objectives-animated' || /objetivo|misi[oó]n|goals|mission|metas/i.test(title)) {
     return { name: "Today's Mission", shortName: 'Objetivos', icon: '🎯', key: 'objectives' };
   }
 
-  // 2. Ruleta Rompehielos (Spinning Wheel)
-  if (type === 'spinning-wheel' || /ruleta|wheel/i.test(title)) {
-    return { name: 'Icebreaker Wheel', shortName: 'Ruleta', icon: '🎡', key: 'wheel' };
-  }
-
-  // 3. Welcome & Warm-up
-  if (/welcome|bienvenid/i.test(title) || (slideIndex === 0 && (/1\.\s*warm-up|calentamiento/i.test(secTitle) || !type))) {
-    return { name: 'Welcome & Intro', shortName: 'Warm-up', icon: '🔥', key: 'warmup' };
+  // 3. Ruleta - Warm up (Spinning Wheel Rompehielos)
+  if (type === 'spinning-wheel' || /ruleta|wheel|warm-up|icebreaker|rompehielos/i.test(title)) {
+    return { name: 'Icebreaker Wheel', shortName: 'Ruleta - Warm up', icon: '🎡', key: 'wheel' };
   }
 
   // 4. Grammar Focus / Studio
