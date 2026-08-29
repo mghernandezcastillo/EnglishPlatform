@@ -13,6 +13,7 @@ interface PresentationViewerProps {
   track?: string;
   initialEditMode?: boolean;
   onSlideUpdate?: () => void;
+  studentId?: string | null;
 }
 
 
@@ -94,7 +95,7 @@ function resolveSlideModule(slide: ClassSlide, section: ClassSection, slideIndex
   return { name: section.title.split('/')[0].trim(), shortName: section.title.split('/')[0].trim(), icon: '📌', key: section.id };
 }
 
-export function PresentationViewer({ cls, onClose, onComplete }: PresentationViewerProps) {
+export function PresentationViewer({ cls, onClose, onComplete, studentId }: PresentationViewerProps) {
   const experimentalSpeakingEnabled = import.meta.env.VITE_EXPERIMENTAL_SPEAKING_ASSESSMENT === 'true';
   const enhancedClass = useMemo(() => enhancePresentationClass(cls), [cls]);
   const [isCompletedModalOpen, setIsCompletedModalOpen] = useState(false);
@@ -339,6 +340,7 @@ export function PresentationViewer({ cls, onClose, onComplete }: PresentationVie
                 onComplete={onComplete ? handleTriggerComplete : undefined}
                 onNext={safeIndex < allSlides.length - 1 ? nextSlide : undefined}
                 hideTeacherNote={false}
+                studentId={studentId}
                 className="w-full h-full select-text"
               />
             </div>

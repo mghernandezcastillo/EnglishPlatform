@@ -77,6 +77,42 @@ Every single Class (e.g. `c-adults-basic-4-1`) MUST contain EXACTLY 5 Sections i
 - **Si se usa Unsplash como excepción**:
   - Verificar obligatoriamente cada URL con `curl -s -o /dev/null -w "%{http_code}" <url>`. Jamás incluir URLs 404 o no verificadas.
 
+## 🎙️ PROTOCOLO OFICIAL DE AUDIO Y SÍNTESIS DE VOZ (ELEVENLABS)
+
+- **CREDENCIALES Y POOL DE ROTACIÓN EN `.env.local`**:
+  - Toda llave de API de ElevenLabs se gestiona exclusivamente a través de `.env.local` (nunca escribir llaves reales en `AGENTS.md` ni en commits).
+  - Variables disponibles en `.env.local`: `ELEVENLABS_API_KEY`, `ELEVENLABS_KEY_1`, `ELEVENLABS_KEY_2`, `ELEVENLABS_KEY_3`, `ELEVENLABS_KEY_4`, `ELEVENLABS_KEY_5`, y `ELEVENLABS_KEYS_POOL` (lista separada por comas).
+  - **Mecanismo de Rotación Automática**: Al generar lotes de audio, los scripts deben rotar al siguiente API Key si uno agota su cuota de caracteres (`401/429/payment_required`) para asegurar la generación continua.
+
+- **VOZ OFICIAL Y REGLA DE CUENTAS GRATUITAS (PREMADE VOICES)**:
+  - **Voz Oficial Predeterminada**: `EXAVITQu4vr4xnSDxMaL` (Sarah — acento americano estándar, tono joven, profesional, dicción clara y perfectamente comprensible para estudiantes en Colombia y Latinoamérica).
+  - **Voces Premade Alternativas Validadas**:
+    - Femeninas: `cgSgspJ2msm6clMCkdW9` (Jessica - cálida/joven), `Xb7hH8MSUJpSbSDYk0k2` (Alice - británica educadora), `hpp4J3VqNfWAUOO0d1Us` (Bella - profesional).
+    - Masculinas: `bIHbv24MWmeRgasZH58o` (Will - casual/optimista), `TX3LPaxmHKxFdv7VOQHJ` (Liam - enérgico), `CwhRBWXzGAHq8TQ4Fs17` (Roger - maduro/conversacional).
+  - **REGLA CRÍTICA DE API GRATUITA**: Las cuentas gratuitas de ElevenLabs **NO pueden usar library voices ni voces clonadas** vía API (arroja error 402 `paid_plan_required`). Se DEBE usar obligatoriamente el ID de una voz de la categoría **`premade`** (`GET https://api.elevenlabs.io/v1/voices`).
+
+- **MODELOS DE SÍNTESIS RECOMENDADOS**:
+  - `eleven_turbo_v2_5`: Modelo principal de ultra-baja latencia, nítido y con menor consumo de cuota.
+  - `eleven_multilingual_v2`: Modelo secundario para oratoria compleja y máxima fidelidad fonética.
+
+- **CALIBRACIÓN DE CADENCIA Y PARÁMETROS POR NIVEL**:
+  - **Niveles Pre-A1 / A1 (Levels 0–1)**: `stability: 0.65`, `similarity_boost: 0.80` (ritmo pausado, articulación clara y estable).
+  - **Niveles A2 / B1 (Levels 2–6)**: `stability: 0.55`, `similarity_boost: 0.75` (conversacional, tono amigable y natural).
+  - **Niveles B2 / C1 / C2 (Levels 7–10)**: `stability: 0.50`, `similarity_boost: 0.75` (alta expresividad, entonación de debate y oratoria formal).
+
+- **ESTRUCTURA DE ALMACENAMIENTO Y ENLACE DE AUDIOS**:
+  - **Carpetas oficiales**: `public/audio/<track>-listening/<class-id>.mp3` (ej: `public/audio/teens-listening/c-teens-basic-zero-1.mp3`).
+  - **Mapeo en datos**: Todo slide de listening (`listening-audio-teacher`) debe definir la propiedad `audioUrl: '/audio/<track>-listening/<class-id>.mp3'` dentro de `listeningData`.
+  - **Reproducción en cliente (`SlideRenderer.tsx`)**:
+    - Reproduce el archivo MP3 mediante HTML5 `Audio()`.
+    - Soporta control de velocidad en tiempo real (`audio.playbackRate = 0.7 | 0.9 | 1.0`).
+    - Fallback de resiliencia: si el archivo de audio falla al cargar o no existe, conmuta automáticamente a Web Speech API (`playSpeech`).
+
+- **REGLAS DE HIGIENE TEXTUAL PARA GENERACIÓN TTS**:
+  1. Queda estrictamente prohibido enviar al motor de voz barras IPA o fonemas literales como `(/t/)`, `(/d/)`, `(/ɪd/)` que generen lecturas erróneas (*"slash t slash"*).
+  2. Evitar símbolos que causen pausas o lecturas mecánicas (`_`, `*`, `~`, brackets innecesarios).
+  3. Expandir abreviaturas o cifras en niveles avanzados para garantizar entonación perfecta (ej. `$1.5M` -> `one point five million dollars`, `98%` -> `ninety-eight percent`, `4.2:1` -> `four point two to one`).
+
 ## 📝 MICRO STRUCTURE (SLIDE BY SLIDE BLUEPRINT)
 
 ### 1️⃣ Section 1: Warm-up (3 slides)

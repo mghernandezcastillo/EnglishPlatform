@@ -833,6 +833,7 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
         {presentingClass && (
           <PresentationViewer 
             cls={presentingClass} 
+            studentId={studentId}
             onClose={() => setPresentingClass(null)} 
             onComplete={() => {
               onFinishClass(presentingClass.id);

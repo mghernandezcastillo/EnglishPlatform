@@ -417,7 +417,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Dice Good night y está cansado por el viaje.",
                     "Dice Goodbye y se va al descanso."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-zero-class-01/slide-10.jpg"
@@ -1012,11 +1013,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Hey guys! I turn 16 this Saturday, October 12th. I am throwing a party at my house at 6:00 PM. Don't forget to come!",
                   "question": "¿Cuántos años cumple y en qué fecha es la fiesta?",
                   "options": [
-                    "Cumple 16 años este sábado 12 de octubre.",
                     "Cumple 15 años el próximo año.",
+                    "Cumple 16 años este sábado 12 de octubre.",
                     "Cumple 18 años un domingo en la mañana."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-zero-class-02/slide-10.jpg"
@@ -1611,11 +1613,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Hello class! I have a big family. I have two older brothers and one younger sister. We all live together in a cozy apartment with our cat.",
                   "question": "¿Cómo está conformada la familia del profesor?",
                   "options": [
-                    "Tiene dos hermanos mayores, una hermana menor y un gato.",
                     "Es hijo único y no tiene mascotas.",
-                    "Vive solo en una casa de campo."
+                    "Vive solo en una casa de campo.",
+                    "Tiene dos hermanos mayores, una hermana menor y un gato."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-zero-class-03/slide-10.jpg"
@@ -2214,7 +2217,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Dos hamburguesas triples y una gaseosa de dieta.",
                     "Una ensalada de frutas y un café caliente."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-zero-class-04/slide-10.jpg"
@@ -2809,11 +2813,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "On weekdays, my alarm rings at 5:45 AM. I stretch, make my bed, and drink a hot cup of Colombian coffee before starting my classes.",
                   "question": "¿A qué hora suena la alarma del profesor y qué hace primero?",
                   "options": [
-                    "Suena a las 5:45 AM, se estira, tiende su cama y toma café.",
                     "Suena a las 8:00 AM y sale corriendo sin desayunar.",
+                    "Suena a las 5:45 AM, se estira, tiende su cama y toma café.",
                     "No usa alarma porque se despierta al mediodía."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-zero-class-05/slide-10.jpg"
@@ -3408,11 +3413,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Tonight I am wearing a black leather jacket, blue jeans, and clean white sneakers. It is stylish, simple, and very comfortable.",
                   "question": "¿Qué prendas describe el profesor?",
                   "options": [
-                    "Chaqueta de cuero negra, jeans azules y tenis blancos limpios.",
                     "Un vestido formal rojo con zapatos de tacón.",
-                    "Pijama deportiva para quedarse en casa."
+                    "Pijama deportiva para quedarse en casa.",
+                    "Chaqueta de cuero negra, jeans azules y tenis blancos limpios."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-zero-class-06/slide-10.jpg"
@@ -4011,7 +4017,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Juega videojuegos en su celular sin prestar atención.",
                     "Nunca usa audífonos porque no le gusta la música."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-zero-class-07/slide-10.jpg"
@@ -4606,11 +4613,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Welcome to soccer tryouts! If you can run, pass the ball accurately, and communicate well with your team, you have a great chance of making the squad.",
                   "question": "¿Qué habilidades busca el entrenador para el equipo de fútbol?",
                   "options": [
-                    "Correr, pasar el balón con precisión y comunicarse bien en equipo.",
                     "Saber nadar y jugar videojuegos.",
+                    "Correr, pasar el balón con precisión y comunicarse bien en equipo.",
                     "Llegar tarde y no pasar el balón."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-zero-class-08/slide-10.jpg"
@@ -5163,11 +5171,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "In my free time, I love playing the electric guitar and streaming video games with my squad on Discord.",
                   "question": "What does the speaker love doing in his free time?",
                   "options": [
-                    "Playing electric guitar and streaming video games with his squad.",
                     "Doing math homework all weekend long.",
-                    "Sleeping 24 hours without eating."
+                    "Sleeping 24 hours without eating.",
+                    "Playing electric guitar and streaming video games with his squad."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-indigo-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-zero-class-09/slide-08.jpg"
@@ -5669,7 +5678,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Her hobby is sleeping all day and eating chips.",
                     "She does not like music at all."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-cyan-700 via-teal-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-zero-class-10/slide-08.jpg"
@@ -6163,15 +6173,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona cuál es el correo electrónico dictado con exactitud.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "My official email address is camilo_vargas at gmail dot com. That is C - A - M - I - L - O underscore V - A - R - G - A - S.",
-                  "transcription": "My official email address is camilo_vargas at gmail dot com. That is C - A - M - I - L - O underscore V - A - R - G - A - S.",
+                  "audioTeacherText": "My official email address is camilo vargas at gmail dot com. That is C - A - M - I - L - O, underscore, V - A - R - G - A - S.",
+                  "transcription": "My official email address is camilo vargas at gmail dot com. That is C - A - M - I - L - O, underscore, V - A - R - G - A - S.",
                   "question": "What is the exact email address dictation?",
                   "options": [
-                    "camilo_vargas at gmail dot com",
                     "camilovargas123 at hotmail dot net",
+                    "camilo_vargas at gmail dot com",
                     "vortex_gamer at yahoo dot com"
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-11.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-pink-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-zero-class-11/slide-08.jpg"
@@ -6669,11 +6680,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Hello everyone! I am Carlos, I am fifteen years old, I live in Bogota and my biggest passion is programming video games.",
                   "question": "Where does Carlos live and what is his biggest passion?",
                   "options": [
-                    "He lives in Bogota and his passion is programming video games.",
                     "He lives in Miami and hates computers.",
-                    "He lives in London and only plays soccer."
+                    "He lives in London and only plays soccer.",
+                    "He lives in Bogota and his passion is programming video games."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-12.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-teal-700 via-emerald-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-zero-class-12/slide-08.jpg"
@@ -7175,7 +7187,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "A formal suit and yellow plastic boots.",
                     "A swimming suit and winter gloves."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-13.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-pink-700 via-rose-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-zero-class-13/slide-08.jpg"
@@ -7673,11 +7686,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Good morning class! Today we have Math first, and right after the morning break, we have our fun Science experiment in the chemistry lab.",
                   "question": "What class do students have right after the morning break?",
                   "options": [
-                    "Science experiment in the chemistry lab.",
                     "Sleeping class in the dormitory.",
+                    "Science experiment in the chemistry lab.",
                     "Video game tournament in the cafeteria."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-14.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-blue-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-zero-class-14/slide-08.jpg"
@@ -8175,11 +8189,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "On school days, I wake up at 6:30 AM, attend classes until 2:30 PM, and have dinner with my family at 7:30 PM.",
                   "question": "What time does the speaker wake up and have dinner on school days?",
                   "options": [
-                    "Wakes up at 6:30 AM and has dinner at 7:30 PM.",
                     "Wakes up at 12:00 PM and never eats dinner.",
-                    "Wakes up at 3:00 AM and sleeps during class."
+                    "Wakes up at 3:00 AM and sleeps during class.",
+                    "Wakes up at 6:30 AM and has dinner at 7:30 PM."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-15.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-orange-700 via-amber-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-zero-class-15/slide-08.jpg"
@@ -8681,7 +8696,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Failed all classes and need to start over.",
                     "Decided to never study English again."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-zero-16.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-700 via-yellow-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-zero-class-16/slide-08.jpg"
@@ -9230,11 +9246,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Welcome to our team! My best friend Leo is super creative and always has cool ideas for our school projects. He is very friendly, loyal, and loves meeting new people.",
                   "question": "¿Cómo describe el profesor a su mejor amigo Leo?",
                   "options": [
-                    "Es muy creativo, siempre tiene ideas geniales, es amigable y leal.",
                     "Es callado, tímido y prefiere no hablar en clase.",
+                    "Es muy creativo, siempre tiene ideas geniales, es amigable y leal.",
                     "No le gusta trabajar en grupo ni hacer proyectos."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-01/slide-08.jpg"
@@ -9823,11 +9840,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Hey team! For lunch today I choose a grilled chicken wrap and two bottles of cold water because we have intense soccer training this afternoon. Clean food gives me steady power.",
                   "question": "¿Por qué el profesor elige un wrap de pollo y agua para el almuerzo?",
                   "options": [
-                    "Porque tiene entrenamiento intenso de fútbol y la comida sana le da energía constante.",
                     "Porque no le gusta comer comida rápida los fines de semana.",
-                    "Porque olvidó su almuerzo en casa y compró lo primero que vio."
+                    "Porque olvidó su almuerzo en casa y compró lo primero que vio.",
+                    "Porque tiene entrenamiento intenso de fútbol y la comida sana le da energía constante."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-02/slide-08.jpg"
@@ -10420,7 +10438,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Porque cancelaron las clases y no tienen tareas hoy.",
                     "Porque perdieron el campeonato de fútbol."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-03/slide-08.jpg"
@@ -11009,11 +11028,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Hello class! My absolute favorite subject this semester is Computer Science because we learn how to code video games in the main computer lab on Wednesday mornings.",
                   "question": "¿Cuál es la materia favorita del profesor y por qué?",
                   "options": [
-                    "Informática, porque aprenden a programar videojuegos los miércoles en el laboratorio.",
                     "Historia, porque le gusta memorizar fechas del siglo pasado.",
+                    "Informática, porque aprenden a programar videojuegos los miércoles en el laboratorio.",
                     "Educación Física, porque juegan baloncesto todas las tardes."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-04/slide-08.jpg"
@@ -11602,11 +11622,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Every morning, I always wake up at six fifteen. First, I take a quick shower, then I have fresh fruit and arepas for breakfast, and finally I review my English notes before leaving for school.",
                   "question": "¿Cuál es la secuencia de la rutina matutina del profesor?",
                   "options": [
-                    "Primero se baña, luego desayuna fruta y arepas, y finalmente repasa sus notas de inglés.",
                     "Primero juega videojuegos, luego sale corriendo sin desayunar.",
-                    "Se despierta al mediodía y duerme toda la mañana."
+                    "Se despierta al mediodía y duerme toda la mañana.",
+                    "Primero se baña, luego desayuna fruta y arepas, y finalmente repasa sus notas de inglés."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-05/slide-08.jpg"
@@ -12199,7 +12220,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Se queda en su habitación jugando videojuegos todo el día.",
                     "Va a clases de matemáticas los sábados."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-06/slide-08.jpg"
@@ -12788,11 +12810,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Look outside! It is raining heavily in the city right now. I am wearing a thick hoodie, waterproof boots, and carrying my umbrella. What are you wearing today?",
                   "question": "¿Cómo está el clima y qué lleva puesto el profesor?",
                   "options": [
-                    "Está lloviendo fuerte y lleva puesto un buzo grueso, botas impermeables y sombrilla.",
                     "Hace un sol abrasador y lleva gafas oscuras y pantaloneta de playa.",
+                    "Está lloviendo fuerte y lleva puesto un buzo grueso, botas impermeables y sombrilla.",
                     "Está nevando en la costa y hace mucho viento."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-07/slide-08.jpg"
@@ -13381,11 +13404,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Excuse me! To reach the main library, walk straight ahead for two blocks, then turn right at the traffic lights. The library is across from the green park, next to the bookstore.",
                   "question": "¿Cómo se llega a la biblioteca según el audio del profesor?",
                   "options": [
-                    "Camina derecho dos cuadras, gira a la derecha en el semáforo y queda frente al parque, al lado de la librería.",
                     "Toma el metro hasta la última estación en las afueras de la ciudad.",
-                    "Gira a la izquierda y entra al centro comercial."
+                    "Gira a la izquierda y entra al centro comercial.",
+                    "Camina derecho dos cuadras, gira a la derecha en el semáforo y queda frente al parque, al lado de la librería."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-08/slide-08.jpg"
@@ -13978,7 +14002,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Comprar un celular nuevo inmediatamente.",
                     "Apagar la luz de la habitación y dormir."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-09/slide-08.jpg"
@@ -14567,11 +14592,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "audioTeacherText": "Hello, I would like to book four student tickets for the amusement park this Saturday morning. Could you please confirm if lunch is included in the package? Thank you!",
                   "question": "¿Qué está reservando y preguntando el profesor en la llamada telefónica?",
                   "options": [
-                    "Está reservando cuatro entradas estudiantiles para el parque de atracciones y preguntando si incluye el almuerzo.",
                     "Está cancelando un viaje a la playa por mal clima.",
+                    "Está reservando cuatro entradas estudiantiles para el parque de atracciones y preguntando si incluye el almuerzo.",
                     "Está pidiendo comida a domicilio para su casa."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-1-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-950 via-[#100d28] to-[#0a1224]",
                 "imageUrl": "/images/teens-basic-1-class-10/slide-08.jpg"
@@ -15230,11 +15256,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "questionEs": "Según el profesor, ¿cuál es una habilidad especial del jaguar?",
                   "options": [
                     "It can fly between mountain peaks.",
-                    "It can swim very well and hunt near rivers.",
-                    "It can survive without water for months."
+                    "It can survive without water for months.",
+                    "It can swim very well and hunt near rivers."
                   ],
-                  "correctOptionIndex": 1,
-                  "explanation": "El audio resalta: 'the jaguar can swim very well and often hunts near rivers'."
+                  "correctOptionIndex": 2,
+                  "explanation": "El audio resalta: 'the jaguar can swim very well and often hunts near rivers'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-teal-950 via-slate-900 to-indigo-950",
                 "imageUrl": "/images/teens-basic-2-class-01/slide-08.jpg"
@@ -15888,12 +15915,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "Where is the adjustable desk located in the room?",
                   "questionEs": "¿Dónde está ubicado el escritorio ajustable en la habitación?",
                   "options": [
-                    "Under the bed in the dark corner.",
                     "Between the closet and the window.",
+                    "Under the bed in the dark corner.",
                     "Inside the bathroom next to the door."
                   ],
-                  "correctOptionIndex": 1,
-                  "explanation": "El audio indica claramente: 'There is an adjustable desk between the closet and the window'."
+                  "correctOptionIndex": 0,
+                  "explanation": "El audio indica claramente: 'There is an adjustable desk between the closet and the window'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950",
                 "imageUrl": "/images/teens-basic-2-class-02/slide-08.jpg"
@@ -16552,7 +16580,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "It takes forty-five minutes in traffic."
                   ],
                   "correctOptionIndex": 1,
-                  "explanation": "El audio afirma claramente: 'It takes fifteen minutes to reach Plaza Station'."
+                  "explanation": "El audio afirma claramente: 'It takes fifteen minutes to reach Plaza Station'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950",
                 "imageUrl": "/images/teens-basic-2-class-03/slide-08.jpg"
@@ -17207,11 +17236,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "questionEs": "Según el profesor, ¿dónde trabajan frecuentemente los desarrolladores y analistas?",
                   "options": [
                     "Only inside noisy physical factories.",
-                    "In modern tech hubs or remotely from anywhere.",
-                    "Exclusively in sports stadiums."
+                    "Exclusively in sports stadiums.",
+                    "In modern tech hubs or remotely from anywhere."
                   ],
-                  "correctOptionIndex": 1,
-                  "explanation": "El audio resalta: 'These professionals work in modern tech hubs or remotely from anywhere in the world'."
+                  "correctOptionIndex": 2,
+                  "explanation": "El audio resalta: 'These professionals work in modern tech hubs or remotely from anywhere in the world'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950",
                 "imageUrl": "/images/teens-basic-2-class-04/slide-08.jpg"
@@ -17865,12 +17895,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "Why can Lucas code interactive programs easily according to the teacher?",
                   "questionEs": "¿Por qué Lucas puede programar con facilidad según el profesor?",
                   "options": [
-                    "Because he bought a magic computer.",
                     "Because he practices coding every weekend.",
+                    "Because he bought a magic computer.",
                     "Because he only plays video games."
                   ],
-                  "correctOptionIndex": 1,
-                  "explanation": "El audio afirma: 'Lucas can code interactive programs easily because he practices every weekend'."
+                  "correctOptionIndex": 0,
+                  "explanation": "El audio afirma: 'Lucas can code interactive programs easily because he practices every weekend'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-pink-950 via-slate-900 to-purple-950",
                 "imageUrl": "/images/teens-basic-2-class-05/slide-08.jpg"
@@ -18524,12 +18555,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What advice does the teacher give to remember concepts better?",
                   "questionEs": "¿Qué consejo da el profesor para recordar mejor los conceptos?",
                   "options": [
-                    "Form study groups and explain concepts aloud to classmates.",
                     "Never do homework and play games all night.",
+                    "Form study groups and explain concepts aloud to classmates.",
                     "Arrive at school after 10:00 AM."
                   ],
-                  "correctOptionIndex": 0,
-                  "explanation": "El audio aconseja: 'you should form study groups with classmates because explaining concepts aloud helps you remember everything much better'."
+                  "correctOptionIndex": 1,
+                  "explanation": "El audio aconseja: 'you should form study groups with classmates because explaining concepts aloud helps you remember everything much better'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-950 via-slate-900 to-orange-950",
                 "imageUrl": "/images/teens-basic-2-class-06/slide-08.jpg"
@@ -19184,12 +19216,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "Why should athletes sleep eight hours every night according to the coach?",
                   "questionEs": "¿Por qué los deportistas deberían dormir 8 horas según el entrenador?",
                   "options": [
-                    "Because deep rest recovers muscles and boosts memory.",
                     "Because they don't want to go to school.",
-                    "Because sleeping makes them run ten times faster."
+                    "Because sleeping makes them run ten times faster.",
+                    "Because deep rest recovers muscles and boosts memory."
                   ],
-                  "correctOptionIndex": 0,
-                  "explanation": "El audio afirma: 'athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory'."
+                  "correctOptionIndex": 2,
+                  "explanation": "El audio afirma: 'athletes should sleep eight hours every night because deep rest recovers your muscles and boosts memory'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950",
                 "imageUrl": "/images/teens-basic-2-class-07/slide-08.jpg"
@@ -19844,12 +19877,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "Where and what time are they meeting on Saturday?",
                   "questionEs": "¿Dónde y a qué hora se van a encontrar el sábado?",
                   "options": [
-                    "At 6:00 PM inside the dark parking lot.",
                     "At 2:45 PM in front of the fountain at Central Mall.",
+                    "At 6:00 PM inside the dark parking lot.",
                     "On Monday morning at school."
                   ],
-                  "correctOptionIndex": 1,
-                  "explanation": "El audio indica: 'Let's meet at 2:45 PM in front of the fountain at Central Mall'."
+                  "correctOptionIndex": 0,
+                  "explanation": "El audio indica: 'Let's meet at 2:45 PM in front of the fountain at Central Mall'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-950",
                 "imageUrl": "/images/teens-basic-2-class-08/slide-08.jpg"
@@ -20509,7 +20543,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "Because it has no sound or special effects."
                   ],
                   "correctOptionIndex": 1,
-                  "explanation": "El audio resalta: 'the outstanding soundtrack and CGI visual effects make it a must-watch experience on the big screen'."
+                  "explanation": "El audio resalta: 'the outstanding soundtrack and CGI visual effects make it a must-watch experience on the big screen'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-pink-950 via-slate-900 to-purple-950",
                 "imageUrl": "/images/teens-basic-2-class-09/slide-08.jpg"
@@ -21164,12 +21199,13 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What does the teacher confirm you are ready for at the end of the message?",
                   "questionEs": "¿Para qué confirma el profesor que estás listo al final del mensaje?",
                   "options": [
-                    "To enter Level 3 and take debates and storytelling to the next level.",
                     "To stop learning and forget all English vocabulary.",
-                    "To only watch silent movies."
+                    "To only watch silent movies.",
+                    "To enter Level 3 and take debates and storytelling to the next level."
                   ],
-                  "correctOptionIndex": 0,
-                  "explanation": "El audio confirma: 'You are now fully prepared to enter Level 3 and take your English debates, storytelling, and global communication to the next level!'."
+                  "correctOptionIndex": 2,
+                  "explanation": "El audio confirma: 'You are now fully prepared to enter Level 3 and take your English debates, storytelling, and global communication to the next level!'.",
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-2-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-950 via-slate-900 to-yellow-950",
                 "imageUrl": "/images/teens-basic-2-class-10/slide-08.jpg"
@@ -21735,7 +21771,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "At quarter to four in the morning (3:45 AM).",
                     "At five o'clock in the evening (5:00 PM)."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-emerald-700 via-teal-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-01/slide-08.jpg"
@@ -22233,11 +22270,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Listen up team! We need to pass the ball quickly, stay strong on defense, and support our striker. We can win this trophy together!",
                   "question": "What is the captain's main instruction to the team?",
                   "options": [
-                    "To pass the ball quickly and stay strong on defense.",
                     "To leave the pitch and play video games instead.",
+                    "To pass the ball quickly and stay strong on defense.",
                     "To let the rival team score five goals."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-emerald-700 via-cyan-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-02/slide-08.jpg"
@@ -22735,11 +22773,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Every year on December 31st at midnight, we eat twelve grapes and run around the block with suitcases for good travel luck!",
                   "question": "When does this traditional New Year celebration happen?",
                   "options": [
-                    "On December 31st at midnight (12:00 AM).",
                     "In July on a sunny Friday afternoon.",
-                    "On October 31st during Halloween night."
+                    "On October 31st during Halloween night.",
+                    "On December 31st at midnight (12:00 AM)."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-rose-700 via-pink-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-03/slide-08.jpg"
@@ -23241,7 +23280,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "It will destroy all computers and telescopes on Earth.",
                     "It will stop space exploration completely in two years."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-blue-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-04/slide-08.jpg"
@@ -23739,11 +23779,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "On my first day of primary school, I was very nervous because the school was huge, but my teacher was super friendly and welcoming.",
                   "question": "How was the teacher feeling on the first day of primary school?",
                   "options": [
-                    "Very nervous because the school was huge.",
                     "Angry and fighting with other classmates.",
+                    "Very nervous because the school was huge.",
                     "Asleep in the car until noon."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-700 via-orange-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-05/slide-08.jpg"
@@ -24241,11 +24282,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Last summer we camped near the lake. At midnight it started to rain heavily, so we packed our sleeping bags and slept inside the car!",
                   "question": "Why did they sleep inside the car during the camping trip?",
                   "options": [
-                    "Because it started to rain heavily at midnight.",
                     "Because they lost their car keys in the lake.",
-                    "Because a bear entered their hotel room."
+                    "Because a bear entered their hotel room.",
+                    "Because it started to rain heavily at midnight."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-teal-700 via-blue-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-06/slide-08.jpg"
@@ -24747,7 +24789,8 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                     "At age twenty after university.",
                     "At age fifteen during high school."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-purple-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-07/slide-08.jpg"
@@ -25245,11 +25288,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "I thought I lost my backpack at the mall. Suddenly, my brother called me on my phone. Fortunately, he had my backpack in his car the whole time!",
                   "question": "How was the mystery of the lost backpack resolved?",
                   "options": [
-                    "Fortunately, his brother had the backpack in his car the whole time.",
                     "He bought a new backpack in a foreign country.",
+                    "Fortunately, his brother had the backpack in his car the whole time.",
                     "A thief ran away with all his school notebooks."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-purple-950",
                 "imageUrl": "/images/teens-basic-3-class-08/slide-08.jpg"
@@ -25747,11 +25791,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Excuse me teacher, my laptop screen froze completely during the presentation. Could you please give me two minutes to restart it?",
                   "question": "What polite request does the student make to the teacher?",
                   "options": [
-                    "Could you please give me two minutes to restart my laptop?",
                     "Could you buy me a brand new computer right now?",
-                    "Could you cancel the class for the whole semester?"
+                    "Could you cancel the class for the whole semester?",
+                    "Could you please give me two minutes to restart my laptop?"
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-orange-700 via-red-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-09/slide-08.jpg"
@@ -26245,15 +26290,16 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                 "description": "Escucha el audio del profesor y selecciona qué verbo tiene terminación con sonido /ɪd/.",
                 "type": "listening-audio-teacher",
                 "listeningData": {
-                  "audioTeacherText": "Yesterday I walked to school (/t/), played soccer with my friends (/d/), and visited my grandparents (/ɪd/).",
-                  "transcription": "Yesterday I walked to school (/t/), played soccer with my friends (/d/), and visited my grandparents (/ɪd/).",
-                  "question": "Which of the three verbs in the teacher's audio is pronounced with the /ɪd/ sound?",
+                  "audioTeacherText": "Yesterday I walked to school, played soccer with my friends, and visited my grandparents. The verb visited ends with the id sound.",
+                  "transcription": "Yesterday I walked to school, played soccer with my friends, and visited my grandparents. The verb visited ends with the id sound.",
+                  "question": "Which of the three verbs in the teacher's audio has the /ɪd/ ending sound?",
                   "options": [
-                    "Visited (/vɪzɪtɪd/) because the base verb ends in the letter T.",
-                    "Walked because it sounds like Spanish.",
-                    "Played because it ends in letter Y."
+                    "Visited (has the /ɪd/ ending sound)",
+                    "Walked (has the /t/ ending sound)",
+                    "Played (has the /d/ ending sound)"
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-3-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-orange-700 via-yellow-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-3-class-10/slide-08.jpg"
@@ -26758,11 +26804,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "From my perspective, practical oral presentations and team projects demonstrate real English fluency much better than traditional multiple-choice grammar exams.",
                   "question": "What is the teacher's perspective on student evaluation?",
                   "options": [
-                    "Practical presentations demonstrate real fluency better than traditional exams.",
                     "Students should only do written grammar tests every single day.",
+                    "Practical presentations demonstrate real fluency better than traditional exams.",
                     "Oral English practice is completely unnecessary."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-indigo-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-01/slide-08.jpg"
@@ -27260,11 +27307,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "If you want to wake up with great energy, you should turn off your phone screen thirty minutes before sleeping and you shouldn't drink coffee after 5:00 PM.",
                   "question": "What does the doctor advise teenagers to do before sleeping?",
                   "options": [
-                    "Turn off phone screens 30 minutes before sleep and avoid late caffeine.",
                     "Play video games until 3:00 AM every single night.",
-                    "Drink three energy drinks before going to bed."
+                    "Drink three energy drinks before going to bed.",
+                    "Turn off phone screens 30 minutes before sleep and avoid late caffeine."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-cyan-700 via-teal-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-02/slide-08.jpg"
@@ -27763,10 +27811,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What happens when liquid water drops below zero degrees Celsius?",
                   "options": [
                     "It freezes and transforms into solid ice.",
-                    "It explodes into fire and smoke.",
-                    "It turns into sweet chocolate milk."
+                    "It evaporates quickly into hot steam.",
+                    "It stays liquid without changing state."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-cyan-700 via-blue-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-03/slide-08.jpg"
@@ -28264,11 +28313,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Hey guys! I have terrible lag right now. BRB in five minutes, I will restart my wifi router so we can play the tournament without disconnection.",
                   "question": "Why is the speaker stepping away for five minutes (BRB)?",
                   "options": [
+                    "To download an entirely new game file.",
                     "To restart the wifi router and fix bad internet lag.",
-                    "To go to sleep until tomorrow morning.",
-                    "To cook a five-course dinner for his family."
+                    "To buy new headphones at the mall."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-indigo-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-04/slide-08.jpg"
@@ -28766,11 +28816,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Listen team: If we train with maximum discipline and support each other on the field, we will lift the championship trophy on Saturday!",
                   "question": "What will happen if the team trains with discipline and supports each other?",
                   "options": [
-                    "They will lift the championship trophy on Saturday.",
-                    "They will give up and cancel the game.",
-                    "They will eat pizza and forget the tournament."
+                    "They will lose their spot in the regional tournament.",
+                    "They will only play friendly practice games.",
+                    "They will lift the championship trophy on Saturday."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-teal-700 via-emerald-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-05/slide-08.jpg"
@@ -29269,10 +29320,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What is the expert verdict on the Pro Edition smartphone?",
                   "options": [
                     "It is the most durable smartphone with the longest battery life.",
-                    "It has the worst battery and breaks immediately.",
-                    "It is the slowest phone ever invented."
+                    "It has a great camera but very weak battery life.",
+                    "It is cheaper but much less durable than the base model."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-pink-700 via-rose-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-06/slide-08.jpg"
@@ -29770,11 +29822,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Your tablet cannot download this 4K video file because you do not have enough storage space on your device. Please delete five gigabytes of old photos first.",
                   "question": "Why can't the tablet download the 4K video file?",
                   "options": [
+                    "Because the internet connection was lost completely.",
                     "Because there is not enough storage space on the device.",
-                    "Because the screen is too small.",
-                    "Because the tablet is too new."
+                    "Because the tablet does not support video playback."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-orange-700 via-amber-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-07/slide-08.jpg"
@@ -30272,11 +30325,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "When you have an argument with a close friend, you ought to listen with empathy first and you had better not discuss your private issues in public group chats.",
                   "question": "What should teenagers do when having an argument with a friend?",
                   "options": [
-                    "Listen with empathy and avoid arguing in public group chats.",
-                    "Post angry memes about them on social media.",
-                    "Never speak to them ever again in life."
+                    "Ignore their friend's messages for several weeks.",
+                    "Ask other classmates to take sides in the argument.",
+                    "Listen with empathy and avoid arguing in public group chats."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-blue-700 via-cyan-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-08/slide-08.jpg"
@@ -30775,10 +30829,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What must candidates submit before Friday at 5:00 PM?",
                   "options": [
                     "Their official high school transcript and recommendation letter.",
-                    "Their gaming high scores on social media.",
-                    "A video of their favorite comedy memes."
+                    "Their updated passport and proof of foreign address.",
+                    "Their personal essay and payment receipt."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-800 to-slate-950",
                 "imageUrl": "/images/teens-basic-4-class-09/slide-08.jpg"
@@ -31276,11 +31331,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Congratulations Level 4 graduates! You have proven that if you dedicate effort and passion to English, you will conquer international opportunities and lead with confidence.",
                   "question": "What does the academy director say about Level 4 graduates?",
                   "options": [
+                    "They need to complete additional written exams before graduating.",
                     "They have proven that effort and passion lead to international opportunities and confidence.",
-                    "They should stop practicing English immediately.",
-                    "They failed all their assessments and need to repeat Level 1."
+                    "They are ready for basic travel phrases only."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-basic-4-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-indigo-800 to-slate-900",
                 "imageUrl": "/images/teens-basic-4-class-10/slide-08.jpg"
@@ -31786,11 +31842,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "I have already visited three South American countries, but I have not seen the Amazon rainforest yet.",
                   "question": "What experience has the speaker already completed and what is still pending?",
                   "options": [
-                    "Has visited three South American countries, but hasn't seen the Amazon rainforest yet.",
-                    "Has lived in Antarctica for ten years.",
-                    "Has never left his house."
+                    "Has explored the Amazon rainforest, but hasn't traveled abroad yet.",
+                    "Has lived in three South American countries for five years.",
+                    "Has visited three South American countries, but hasn't seen the Amazon rainforest yet."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-blue-700 via-indigo-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-01/slide-08.jpg"
@@ -32289,10 +32346,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What did the speaker and Felipe decide to do?",
                   "options": [
                     "Hang out at his place to chill out and play video games.",
-                    "Cancel all classes forever.",
-                    "Go to sleep immediately."
+                    "Go to the library to finish their physics assignment.",
+                    "Meet at the skatepark for an outdoor tournament."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-violet-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-02/slide-08.jpg"
@@ -32790,11 +32848,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "The chemistry laboratory lights are on and music is playing inside at 8:00 PM. Professor Gomez must still be working on the science fair project.",
                   "question": "What is the logical deduction about Professor Gomez?",
                   "options": [
+                    "He might have already left for the teacher conference.",
                     "He must still be working on the science fair project.",
-                    "He can't be at school because he went to the moon.",
-                    "The laboratory is completely abandoned."
+                    "He could be attending a faculty meeting in the main hall."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-purple-900",
                 "imageUrl": "/images/teens-inter-class-03/slide-08.jpg"
@@ -33292,11 +33351,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "If I were the Minister of the Environment, I would immediately ban single-use plastics and plant one million native trees in Colombia.",
                   "question": "What two actions would the speaker take if she were Minister of the Environment?",
                   "options": [
-                    "Ban single-use plastics and plant one million native trees.",
-                    "Cut down all forests and pollute rivers.",
-                    "Ban all trees and paint roads purple."
+                    "Increase taxes on paper and restrict renewable energy.",
+                    "Build more highways through national parks.",
+                    "Ban single-use plastics and plant one million native trees."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-teal-700 via-emerald-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-04/slide-08.jpg"
@@ -33795,10 +33855,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What did the moderator conclude about both teams?",
                   "options": [
                     "Both presented compelling arguments balancing innovation with ethics and discipline.",
-                    "Both teams failed and started screaming.",
-                    "Neither team knew what they were talking about."
+                    "The first team dominated completely while the second had no evidence.",
+                    "Neither team addressed the central motion of the debate."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-blue-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-05/slide-08.jpg"
@@ -34296,11 +34357,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Welcome to Global Teen Spotlight! Today we are exploring youth sustainability projects. If you enjoy this episode, hit the subscribe button and stay tuned for part two!",
                   "question": "What is the host's call to action at the end of the intro?",
                   "options": [
+                    "Leave a comment with suggestions for next semester.",
                     "Hit the subscribe button and stay tuned for part two.",
-                    "Turn off your phone and go to sleep.",
-                    "Delete the podcast app immediately."
+                    "Share the episode on social media to enter a giveaway."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-rose-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-06/slide-08.jpg"
@@ -34798,11 +34860,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "I have been playing the electric guitar since I was ten years old, and our rock band has been writing original songs for three consecutive years.",
                   "question": "Since when has the speaker played electric guitar and for how long has the band written songs?",
                   "options": [
-                    "Guitar since age 10, and writing band songs for three years.",
-                    "Guitar for 2 days, and started the band this morning.",
-                    "Never played any musical instrument."
+                    "Guitar for three years, and started writing songs last month.",
+                    "Guitar since last year, and formed the band five years ago.",
+                    "Guitar since age 10, and writing band songs for three years."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-orange-700 via-amber-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-07/slide-08.jpg"
@@ -35301,10 +35364,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What made the indie science fiction movie so memorable?",
                   "options": [
                     "The lead actor stood out brilliantly and the director pulled off a stunning plot twist.",
-                    "It was the most boring movie ever made with zero actors.",
-                    "The movie had no sound and only displayed black screens."
+                    "The special visual effects were impressive despite weak acting.",
+                    "The soundtrack was memorable but the ending was predictable."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-pink-700 via-purple-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-08/slide-08.jpg"
@@ -35802,11 +35866,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "The locked front door shows zero signs of forced entry. The delivery courier must have dropped the package through the mail slot before noon.",
                   "question": "What is the investigator's logical deduction about how the package entered the house?",
                   "options": [
+                    "The homeowner must have picked it up at the post office.",
                     "The delivery courier must have dropped it through the mail slot.",
-                    "A ghost teleported the box inside the wall.",
-                    "The house blew up in an explosion."
+                    "A neighbor could have left it by the front door yesterday."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-800 via-indigo-900 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-09/slide-08.jpg"
@@ -36304,11 +36369,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Our robot will execute the autonomous course as soon as the green light turns on, provided that our optical sensors stay calibrated.",
                   "question": "When will the robot execute the course and under what condition?",
                   "options": [
-                    "As soon as the green light turns on, provided that sensors stay calibrated.",
-                    "When the robot falls asleep in the trash.",
-                    "Never, because the robot has no batteries."
+                    "Only when manual controls are activated by the operator.",
+                    "After the battery charges to 100%, regardless of sensors.",
+                    "As soon as the green light turns on, provided that sensors stay calibrated."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-cyan-700 via-teal-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-10/slide-08.jpg"
@@ -36807,10 +36873,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "According to the speaker, what is the true essence of diplomacy?",
                   "options": [
                     "Finding common ground and striking a balance where all communities thrive.",
-                    "Shouting louder than everyone else to win arguments.",
-                    "Ignoring other people's opinions completely."
+                    "Defending one's national interests without compromising.",
+                    "Enforcing strict legal regulations on international trade."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-11.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-blue-900",
                 "imageUrl": "/images/teens-inter-class-11/slide-08.jpg"
@@ -37308,11 +37375,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "We are thrilled to award Santiago the Global Youth Leadership Scholarship. His proven resilience, eloquent communication, and clear commitment to empowering his community made his application stand out brilliantly.",
                   "question": "Why did the committee award Santiago the international scholarship?",
                   "options": [
+                    "His perfect academic score in mathematics and sports.",
                     "His proven resilience, eloquent communication, and commitment to empowering his community.",
-                    "He was the only person who applied in the whole world.",
-                    "He refused to speak English during the interview."
+                    "His prior experience studying abroad in European institutions."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-inter-12.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-700 via-yellow-800 to-slate-900",
                 "imageUrl": "/images/teens-inter-class-12/slide-08.jpg"
@@ -37813,11 +37881,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "The student council announced that the cultural talent gala would take place this Friday evening in the main auditorium.",
                   "question": "What did the student council announce on the radio broadcast?",
                   "options": [
-                    "That the cultural talent gala would take place this Friday evening in the main auditorium.",
-                    "That all school activities were cancelled forever.",
-                    "That students had to clean the floors at midnight."
+                    "That the sports championship had been postponed until next month.",
+                    "That ticket sales for the gala were officially sold out.",
+                    "That the cultural talent gala would take place this Friday evening in the main auditorium."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-700 via-blue-800 to-slate-900",
                 "imageUrl": "/images/teens-advanced-class-01/slide-08.jpg"
@@ -38311,10 +38380,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What two things did the scholarship committee ask the candidate?",
                   "options": [
                     "Why she wanted to study environmental engineering and if she had led sustainability projects.",
-                    "How many chocolate bars she could eat in one minute.",
-                    "If she knew how to fly a supersonic military jet."
+                    "What her grade point average was and which university she preferred.",
+                    "How she planned to fund her living expenses in the foreign city."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-purple-900",
                 "imageUrl": "/images/teens-advanced-class-02/slide-08.jpg"
@@ -38807,11 +38877,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Dr. Rodriguez, whose pioneering algorithm was published in Nature magazine, developed a quantum sensor which can detect underground aquifers with unprecedented precision.",
                   "question": "What did Dr. Rodriguez develop and what made her algorithm stand out?",
                   "options": [
+                    "A satellite imaging system for tracking deforestation in rainforests.",
                     "A quantum sensor to detect underground aquifers, with an algorithm published in Nature.",
-                    "A video game about flying hamburgers.",
-                    "A paper airplane that travels to Jupiter."
+                    "A geothermal mapping tool presented at an engineering conference."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-teal-700 via-emerald-800 to-slate-900",
                 "imageUrl": "/images/teens-advanced-class-03/slide-08.jpg"
@@ -39304,11 +39375,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "This autonomous search-and-rescue drone was developed in Bogota. It is equipped with thermal night-vision cameras and it is powered by solar-rechargeable batteries.",
                   "question": "Where was the drone developed and what is it equipped with?",
                   "options": [
-                    "Developed in Bogota, equipped with thermal cameras, and powered by solar batteries.",
-                    "Built on Mars and runs on chocolate syrup.",
-                    "It was discarded in the ocean because it had no wings."
+                    "Imported from Germany, equipped with LiDAR sensors, and powered by hydrogen.",
+                    "Designed in Medellin, equipped with optical lenses, and tethered to a base station.",
+                    "Developed in Bogota, equipped with thermal cameras, and powered by solar batteries."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-blue-800 via-slate-900 to-indigo-900",
                 "imageUrl": "/images/teens-advanced-class-04/slide-08.jpg"
@@ -39802,10 +39874,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What two milestones were confirmed regarding the lunar scientific program?",
                   "options": [
                     "A permanent lunar base will be established by 2028, and oxygen extraction has been tested.",
-                    "The moon will be painted purple by painters.",
-                    "All space missions have been cancelled."
+                    "A commercial lunar spaceport will be constructed by 2035 with private funding.",
+                    "Uncrewed rovers will search for ice deposits before crewed landings begin."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-indigo-800 to-slate-900",
                 "imageUrl": "/images/teens-advanced-class-05/slide-08.jpg"
@@ -40298,11 +40371,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Being rejected from the regional art contest was painful at first, but it turned out to be a blessing in disguise because it motivated me to master digital 3D illustration.",
                   "question": "How did the speaker describe being rejected from the art contest?",
                   "options": [
+                    "It was a major setback that caused her to switch to graphic design.",
                     "It was a blessing in disguise because it motivated her to master digital 3D illustration.",
-                    "She ate fifty pounds of nails and cried forever.",
-                    "She bought a bulletproof vest."
+                    "It prompted her to appeal the judges' decision with new artwork."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-purple-700 via-fuchsia-800 to-slate-900",
                 "imageUrl": "/images/teens-advanced-class-06/slide-08.jpg"
@@ -40795,11 +40869,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "When our main cloud provider suffered an outage, our technical team stepped up immediately to iron out the server bugs and hammer out a failover protocol.",
                   "question": "What two actions did the technical team take when the cloud provider suffered an outage?",
                   "options": [
-                    "Stepped up immediately to iron out server bugs and hammered out a failover protocol.",
-                    "Threw their laptops out the window and ran away.",
-                    "Turned off the lights and went to sleep."
+                    "Migrated all databases to an on-premise data center overnight.",
+                    "Notified customers and waited for the cloud vendor to resolve the outage.",
+                    "Stepped up immediately to iron out server bugs and hammered out a failover protocol."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-blue-900",
                 "imageUrl": "/images/teens-advanced-class-07/slide-08.jpg"
@@ -41293,10 +41368,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "Why did the proposition team win the championship debate?",
                   "options": [
                     "They substantiated their claims with empirical evidence on algorithmic bias.",
-                    "They spoke Spanish during the whole Oxford debate.",
-                    "They brought chocolate cake for all judges."
+                    "They utilized superior emotional rhetoric and personal storytelling.",
+                    "The opposition exceeded their allocated speaking time limit."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-blue-900",
                 "imageUrl": "/images/teens-advanced-class-08/slide-08.jpg"
@@ -41789,11 +41865,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "If humanity had invested in solar and geothermal technologies thirty years ago, our global energy grid would be completely clean and affordable today.",
                   "question": "What is the speaker's reflection on past investment in clean energy?",
                   "options": [
+                    "If nuclear power had been expanded earlier, fossil fuels would be phased out.",
                     "If we had invested in solar and geothermal 30 years ago, our energy grid would be clean and affordable today.",
-                    "Solar panels were invented by aliens on the moon yesterday.",
-                    "All electricity should be turned off forever."
+                    "If energy consumption had decreased, current grid upgrades wouldn't be necessary."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-emerald-700 via-teal-800 to-slate-900",
                 "imageUrl": "/images/teens-advanced-class-09/slide-08.jpg"
@@ -42286,11 +42363,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "We are unanimously voting to award EcoTech Colombia the maximum grant of five hundred thousand dollars. Their proven fiscal governance, measurable community impact, and eloquent youth leadership set the gold standard for social innovation worldwide.",
                   "question": "Why did the philanthropic board unanimously award EcoTech the maximum grant?",
                   "options": [
-                    "Their proven fiscal governance, measurable community impact, and eloquent youth leadership.",
-                    "They promised to buy pizza for everyone in London.",
-                    "They refused to explain how the money would be spent."
+                    "Their proprietary hardware patents and venture capital backing.",
+                    "Their partnership with international NGOs and academic endorsements.",
+                    "Their proven fiscal governance, measurable community impact, and eloquent youth leadership."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-advanced-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-700 via-yellow-800 to-slate-900",
                 "imageUrl": "/images/teens-advanced-class-10/slide-08.jpg"
@@ -42792,10 +42870,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What two futuristic milestones did the scientist predict?",
                   "options": [
                     "Quantum computing will have cracked molecular simulations, and probes will be exploring Europa's oceans.",
-                    "Computers will be replaced by typewriters made of wood.",
-                    "All space exploration will end next week."
+                    "Fusion reactors will be commercially viable, and colonies will be founded on Mars.",
+                    "Neural interfaces will replace mobile screens, and orbital habitats will be operational."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-blue-900 to-slate-900",
                 "imageUrl": "/images/teens-elite-class-01/slide-08.jpg"
@@ -43288,11 +43367,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "If our founders hadn't pivoted from hardware manufacturing to cloud AI software two years ago, our company wouldn't be expanding internationally today.",
                   "question": "What did the CEO state regarding their pivot two years ago?",
                   "options": [
+                    "If they had secured Series B funding earlier, they would have dominated the domestic market.",
                     "If they hadn't pivoted to cloud AI software 2 years ago, they wouldn't be expanding internationally today.",
-                    "They should have sold vacuum cleaners instead of software.",
-                    "All employees decided to become professional golfers."
+                    "If the founders hadn't merged with an enterprise competitor, profitability would be delayed."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-purple-900",
                 "imageUrl": "/images/teens-elite-class-02/slide-08.jpg"
@@ -43785,11 +43865,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "It was passion and relentless attention to design that revolutionized personal computing, and what visionary leaders leave behind is not just products, but inspiration.",
                   "question": "What two emphatic cleft structures did the speaker use in the keynote?",
                   "options": [
-                    "It was passion and attention to design that revolutionized computing, and what leaders leave is inspiration.",
-                    "Computers are made of plastic and pizza.",
-                    "Nobody should ever use technology again."
+                    "It was strict corporate hierarchy that drove market share, and what companies need is capital efficiency.",
+                    "It was aggressive marketing that captured consumers, and what founders build is brand loyalty.",
+                    "It was passion and attention to design that revolutionized computing, and what leaders leave is inspiration."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-orange-700 via-amber-800 to-slate-900",
                 "imageUrl": "/images/teens-elite-class-03/slide-08.jpg"
@@ -44283,10 +44364,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What two rhetorical inversions did the adjudicator highlight in the address?",
                   "options": [
                     "Rarely have I seen such impassioned rhetoric, and not only did the proposition dismantle claims.",
-                    "The speaker ate a hot dog and left the debate room.",
-                    "Nobody spoke English during the Oxford final."
+                    "Seldom has a debate team adhered so strictly to time limits while delivering analytical clarity.",
+                    "Hardly had the opposition begun their refutation before the proposition introduced new arguments."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-purple-900 to-slate-900",
                 "imageUrl": "/images/teens-elite-class-04/slide-08.jpg"
@@ -44779,11 +44861,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "It is widely believed that sustainable peace can be achieved, and I would venture to suggest that both parties remain remarkably amenable to a phased diplomatic accord.",
                   "question": "What two diplomatic hedging phrases did the peace envoy utilize?",
                   "options": [
+                    "It is generally assumed that negotiations will stall, although regional stakeholders remain optimistic.",
                     "It is widely believed that peace can be achieved, and I would venture to suggest both parties are amenable.",
-                    "He screamed that all peace treaties are totally worthless.",
-                    "He told the journalists to go home and eat ice cream."
+                    "Evidence suggests that bilateral concessions are unlikely, but dialogue must continue."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-emerald-800 via-teal-900 to-slate-900",
                 "imageUrl": "/images/teens-elite-class-05/slide-08.jpg"
@@ -45276,11 +45359,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Although artificial intelligence enhances analytical efficiency, human mentorship must remain the cornerstone of higher education on the grounds that critical ethical judgment and empathy cannot be codified into algorithms.",
                   "question": "What was the speaker's three-tier thesis statement regarding AI in higher education?",
                   "options": [
-                    "Although AI enhances efficiency, human mentorship must remain the cornerstone on the grounds that ethics and empathy cannot be codified.",
-                    "AI should replace all universities and students should only watch TikTok videos.",
-                    "Nobody needs teachers or books anymore."
+                    "While AI accelerates content mastery, standardized evaluation must evolve because automated grading is flawed.",
+                    "Whereas AI reduces administrative overhead, institutional funding must prioritize research over digital tools.",
+                    "Although AI enhances efficiency, human mentorship must remain the cornerstone on the grounds that ethics and empathy cannot be codified."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900",
                 "imageUrl": "/images/teens-elite-class-06/slide-08.jpg"
@@ -45774,10 +45858,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "Why did the scientific jury award the Gold Medal to the student research paper?",
                   "options": [
                     "The methodology used a double-blind trial, results showed a 98% reduction, and peer citations were rigorous.",
-                    "The researchers drew pictures of cartoon monsters on their poster.",
-                    "The paper was written on a napkin during lunch."
+                    "The sample size was statistically significant, though observational bias was noted in early trials.",
+                    "The experimental framework was innovative, but replication across secondary cohorts was pending."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-teal-800 via-slate-900 to-blue-900",
                 "imageUrl": "/images/teens-elite-class-07/slide-08.jpg"
@@ -46270,11 +46355,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "The motion to ratify the revised environmental bylaws has been moved and seconded. All in favor say Aye; opposed Nay. The Ayes have it; the motion carries unanimously.",
                   "question": "What was the official result of the boardroom vote on the environmental bylaws?",
                   "options": [
+                    "The motion was amended, debated extensively, and referred back to the oversight committee.",
                     "The motion was moved, seconded, voted upon, and carried unanimously.",
-                    "The board decided to cancel all meetings and play video games.",
-                    "The directors threw paper airplanes at each other."
+                    "The resolution was tabled until the subsequent quarter due to a lack of a voting quorum."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-purple-900",
                 "imageUrl": "/images/teens-elite-class-08/slide-08.jpg"
@@ -46767,11 +46853,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "While I appreciate the public concern regarding data encryption, what our independent forensic audit unequivocally demonstrates is that our zero-trust architecture completely repelled the intrusion.",
                   "question": "How did the crisis spokesperson apply the Media Bridging technique?",
                   "options": [
-                    "Acknowledged public concern, pivoted with 'what our audit demonstrates', and affirmed zero-trust repelled the intrusion.",
-                    "She started crying and admitted that the entire company was guilty.",
-                    "She hung up the phone and refused to answer any questions."
+                    "Dismissed the allegations as unverified rumors and promised a press release by end of week.",
+                    "Acknowledged partial vulnerabilities while attributing the incident to third-party vendor failure.",
+                    "Acknowledged public concern, pivoted with 'what our audit demonstrates', and affirmed zero-trust repelled the intrusion."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-red-800 via-slate-900 to-indigo-900",
                 "imageUrl": "/images/teens-elite-class-09/slide-08.jpg"
@@ -47265,10 +47352,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "Why did the Venture Capital investment committee approve the $1.5M seed check?",
                   "options": [
                     "The founders demonstrated a 4.2:1 LTV:CAC ratio and verified 80% gross profit margins.",
-                    "They brought free candy to the investment partner meeting.",
-                    "The startup promised to build a playground for hamsters."
+                    "The company projected a 3:1 payback period with high monthly active user retention.",
+                    "The startup demonstrated product-market fit through enterprise contracts and low churn."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-900 via-emerald-900 to-indigo-900",
                 "imageUrl": "/images/teens-elite-class-10/slide-08.jpg"
@@ -47761,11 +47849,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "We are unanimously issuing a two-million-dollar seed term sheet to this startup because of their exceptional unit economics, unshakeable proprietary moats, and charismatic youth leadership.",
                   "question": "Why did the VC syndicate unanimously issue the $2,000,000 seed term sheet?",
                   "options": [
+                    "A defensive patent portfolio, rapid international distribution, and experienced advisory board.",
                     "Exceptional unit economics, unshakeable proprietary moats, and charismatic youth leadership.",
-                    "They promised to give free bicycles to the investment judges.",
-                    "The founders decided to close the company and open a bakery."
+                    "Strong organic growth metrics, positive net revenue retention, and lean operational burn."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-elite-11.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-700 via-yellow-800 to-slate-900",
                 "imageUrl": "/images/teens-elite-class-11/slide-08.jpg"
@@ -48266,11 +48355,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "The proposition team won the historic Oxford Union division because their refutations dismantled the opposition's false dichotomy and their empirical weighing proved decisive.",
                   "question": "Why did the proposition win the historic Oxford Union parliamentary division?",
                   "options": [
-                    "Their refutations dismantled the false dichotomy and their empirical weighing proved decisive.",
-                    "They offered free Oxford chocolates to the audience.",
-                    "The opposition team fell asleep during the Prime Minister's speech."
+                    "Their framing established a higher threshold of urgency and their cross-examination exposed logical gaps.",
+                    "Their closing summation appealed to constitutional precedents while the opposition relied on emotional appeals.",
+                    "Their refutations dismantled the false dichotomy and their empirical weighing proved decisive."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-1.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-purple-900",
                 "imageUrl": "/images/teens-masters-class-01/slide-08.jpg"
@@ -48764,10 +48854,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "How did the cultural theorist analyze digital beautifying filters using Baudrillard's framework?",
                   "options": [
                     "They operate as simulacra where the simulated digital image supersedes physical reality into hyperreality.",
-                    "They are fun stickers that make people look like cute puppies.",
-                    "Nobody uses social media filters anymore."
+                    "They act as cultural signifiers reflecting internalized beauty standards in contemporary visual media.",
+                    "They function as algorithmic feedback loops designed to maximize platform engagement metrics."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-2.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-fuchsia-800 via-purple-900 to-slate-900",
                 "imageUrl": "/images/teens-masters-class-02/slide-08.jpg"
@@ -49260,11 +49351,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "The doctoral committee unanimously passed this dissertation with distinction because the candidate rigorously demonstrated the empirical falsifiability of their quantum model while deconstructing foundational category mistakes.",
                   "question": "Why did the Princeton doctoral committee pass the dissertation with distinction?",
                   "options": [
+                    "The research resolved theoretical paradoxes through novel mathematical axioms and robust peer review.",
                     "The candidate demonstrated empirical falsifiability and deconstructed category mistakes.",
-                    "The candidate brought warm coffee to the professors.",
-                    "The candidate spoke about their favorite comic books."
+                    "The methodology synthesized qualitative ethnography with high-dimensional computational models."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-3.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-indigo-800 via-slate-900 to-purple-900",
                 "imageUrl": "/images/teens-masters-class-03/slide-08.jpg"
@@ -49757,11 +49849,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "Mariana's keynote received a standing ovation because she balanced raw personal vulnerability with an unshakeable sticky metaphor and rigorous empirical data.",
                   "question": "Why did the TED keynote receive an immediate standing ovation from the global audience?",
                   "options": [
-                    "Balanced raw vulnerability with a sticky metaphor and rigorous empirical data.",
-                    "Brought live parrots onto the TED stage.",
-                    "Read fifty pages of PowerPoint bullet points."
+                    "Combined historical case studies with charismatic stage presence and interactive audience polling.",
+                    "Delivered an analytical thesis structured around three provocative rhetorical questions.",
+                    "Balanced raw vulnerability with a sticky metaphor and rigorous empirical data."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-4.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-900 via-red-900 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-04/slide-08.jpg"
@@ -50255,10 +50348,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "What was the final outcome of the UN Security Council vote on Draft Resolution 2035?",
                   "options": [
                     "Received 15 affirmative votes and zero vetoes; the resolution was officially adopted.",
-                    "The ambassadors threw paper planes and adjourned for lunch.",
-                    "All permanent members exercised their veto power."
+                    "Passed with 12 affirmative votes and 3 abstentions from non-permanent member states.",
+                    "Was vetoed by a permanent member despite overwhelming support from the general assembly."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-5.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-05/slide-08.jpg"
@@ -50751,11 +50845,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "The jury unanimously awards the Palme d'Or to this cinematic masterpiece for its groundbreaking chiaroscuro mise-en-scène, innovative diegetic soundscapes, and profound literary depth.",
                   "question": "Why did the Cannes jury award the Palme d'Or to the film?",
                   "options": [
+                    "Unconventional non-linear narrative editing, evocative cinematography, and poignant character arcs.",
                     "Groundbreaking chiaroscuro mise-en-scène, innovative diegetic soundscapes, and profound literary depth.",
-                    "It had the most car explosions and loudest explosions in Hollywood.",
-                    "The actors wore funny cartoon hats."
+                    "Masterful naturalistic performances, minimalist set design, and allegorical social commentary."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-6.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-06/slide-08.jpg"
@@ -51248,11 +51343,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "We are unanimously electing Santiago as our Rhodes Scholar because of his unshakeable moral force of character, proven systemic community impact, and vision to fight the world's fight at Oxford.",
                   "question": "Why was Santiago unanimously elected as a Rhodes Scholar to the University of Oxford?",
                   "options": [
-                    "Unshakeable moral force of character, proven systemic impact, and vision to fight the world's fight.",
-                    "He told funny jokes about Oxford professors.",
-                    "He had the biggest suitcase in London."
+                    "Exceptional academic scholarship, multidisciplinary research output, and institutional leadership.",
+                    "Demonstrated diplomatic acumen, cross-cultural competence, and dedication to public policy reform.",
+                    "Unshakeable moral force of character, proven systemic impact, and vision to fight the world's fight."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-7.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-900 via-amber-900 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-07/slide-08.jpg"
@@ -51746,10 +51842,11 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "question": "Why did the Chief Investigative Editor greenlight the video essay for global broadcast?",
                   "options": [
                     "Irresistible cold open hook, forensically corroborated whistleblower evidence, and airtight legal safeguards.",
-                    "The video had funny cat memes in the background.",
-                    "The editor accidentally clicked the publish button."
+                    "Compelling narrative investigative arc, exclusive interviews, and cinematic archival footage.",
+                    "Data-driven statistical investigation supported by open-source intelligence and expert testimony."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 0,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-8.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-900 via-zinc-900 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-08/slide-08.jpg"
@@ -52242,11 +52339,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "The international council approved the planetary governance framework because it established mathematical AI alignment constraints, prohibited inheritable germline editing, and banned unilateral solar geoengineering.",
                   "question": "Why did the international council approve the planetary governance framework?",
                   "options": [
+                    "Mandated transparency in algorithmic auditing, capped carbon emissions, and funded bio-surveillance.",
                     "Established mathematical AI alignment constraints, prohibited germline editing, and banned unilateral geoengineering.",
-                    "They decided to unplug all computers and go live in trees.",
-                    "The council voted to give all robots chocolate ice cream."
+                    "Created a multilateral oversight treaty for quantum encryption, synthetic biology, and space exploration."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 1,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-9.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-slate-900 via-cyan-900 to-indigo-900",
                 "imageUrl": "/images/teens-masters-class-09/slide-08.jpg"
@@ -52739,11 +52837,12 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                   "transcription": "We officially confer the supreme title of C2 Master of English with Highest Distinction upon this graduating scholar for demonstrating flawless multidisciplinary eloquence, moral leadership, and visionary statesmanship.",
                   "question": "Why was the title of C2 Master of English conferred with Highest Distinction?",
                   "options": [
-                    "Flawless multidisciplinary eloquence, moral leadership, and visionary statesmanship.",
-                    "The student brought an umbrella to the graduation ceremony.",
-                    "The student memorized three short dictionary words."
+                    "Demonstrated academic rigor across disciplines, critical reasoning, and global communicative impact.",
+                    "Outstanding philosophical scholarship, rhetorical mastery, and dedication to youth empowerment.",
+                    "Flawless multidisciplinary eloquence, moral leadership, and visionary statesmanship."
                   ],
-                  "correctOptionIndex": 0
+                  "correctOptionIndex": 2,
+                  "audioUrl": "/audio/teens-listening/c-teens-masters-10.mp3"
                 },
                 "bgColor": "bg-gradient-to-br from-amber-700 via-yellow-800 to-slate-900",
                 "imageUrl": "/images/teens-masters-class-10/slide-08.jpg"

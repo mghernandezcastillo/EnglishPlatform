@@ -24,6 +24,7 @@ import { VocabularyFlipCards } from './VocabularyFlipCards';
 import { HomeworkSlideCard } from './HomeworkSlideCard';
 import { VideoHomeworkSlideCard } from './VideoHomeworkSlideCard';
 import { SlideSelectionTranslator } from './SlideSelectionTranslator';
+import { StoryDecoderVocabTool } from './StoryDecoderVocabTool';
 import { fireClassCompletionConfetti } from '../lib/celebration';
 import confetti from 'canvas-confetti';
 
@@ -72,6 +73,7 @@ interface SlideRendererProps {
   onNext?: () => void;
   hideTeacherNote?: boolean;
   className?: string;
+  studentId?: string | null;
   /**
    * Renders at 1280×720 and CSS-scales to the wrapper.
    * Wrapper must have a fixed width; height is auto (aspect-ratio: 16/9).
@@ -669,7 +671,24 @@ export function SlideRenderer({
   hideTeacherNote = false,
   className = 'w-full h-full',
   compact = false,
+  studentId,
 }: SlideRendererProps) {
+  const activeStudentId = useMemo(() => {
+    if (studentId) return studentId;
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('active_student_profile');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          return parsed.id || parsed.student_id || null;
+        }
+      } catch {
+        // fallback
+      }
+    }
+    return null;
+  }, [studentId]);
+
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [selectedSpeakingPrompt, setSelectedSpeakingPrompt] = useState('');
@@ -1822,16 +1841,45 @@ export function SlideRenderer({
                           <button
                             onClick={() => {
                               if (isPlaying) {
+                                if (audioRef.current) {
+                                  audioRef.current.pause();
+                                }
                                 if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
                                   window.speechSynthesis.cancel();
                                 }
                                 setIsPlaying(false);
                               } else {
-                                setIsPlaying(true);
-                                playSpeech(listeningText, 'en-US', listeningSpeed);
-                                const words = listeningText.split(' ').length;
-                                const durationSec = Math.max(3, (words / 2.5) / listeningSpeed);
-                                setTimeout(() => setIsPlaying(false), durationSec * 1000);
+                                const audioUrl = slide.listeningData?.audioUrl;
+                                if (audioUrl) {
+                                  if (!audioRef.current) {
+                                    audioRef.current = new Audio();
+                                  }
+                                  const audio = audioRef.current;
+                                  audio.src = audioUrl;
+                                  audio.playbackRate = listeningSpeed;
+                                  audio.onended = () => setIsPlaying(false);
+                                  audio.onerror = () => {
+                                    playSpeech(listeningText, 'en-US', listeningSpeed);
+                                    const words = listeningText.split(' ').length;
+                                    const durationSec = Math.max(3, (words / 2.5) / listeningSpeed);
+                                    setTimeout(() => setIsPlaying(false), durationSec * 1000);
+                                  };
+                                  audio.play()
+                                    .then(() => setIsPlaying(true))
+                                    .catch(() => {
+                                      setIsPlaying(true);
+                                      playSpeech(listeningText, 'en-US', listeningSpeed);
+                                      const words = listeningText.split(' ').length;
+                                      const durationSec = Math.max(3, (words / 2.5) / listeningSpeed);
+                                      setTimeout(() => setIsPlaying(false), durationSec * 1000);
+                                    });
+                                } else {
+                                  setIsPlaying(true);
+                                  playSpeech(listeningText, 'en-US', listeningSpeed);
+                                  const words = listeningText.split(' ').length;
+                                  const durationSec = Math.max(3, (words / 2.5) / listeningSpeed);
+                                  setTimeout(() => setIsPlaying(false), durationSec * 1000);
+                                }
                               }
                             }}
                             className={`flex min-h-16 sm:min-h-18 items-center justify-center gap-3 px-6 py-4 rounded-2xl font-black text-xl sm:text-2xl transition-all cursor-pointer shadow-xl ${
@@ -1850,8 +1898,12 @@ export function SlideRenderer({
                                 key={s}
                                 onClick={() => {
                                   setListeningSpeed(s);
-                                  if (typeof window !== 'undefined' && 'speechSynthesis' in window) window.speechSynthesis.cancel();
-                                  setIsPlaying(false);
+                                  if (audioRef.current && !audioRef.current.paused) {
+                                    audioRef.current.playbackRate = s;
+                                  } else if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+                                    window.speechSynthesis.cancel();
+                                    setIsPlaying(false);
+                                  }
                                 }}
                                 className={`h-11 sm:h-12 rounded-xl text-xs sm:text-sm font-black border-2 transition-all cursor-pointer ${
                                   listeningSpeed === s
@@ -2169,6 +2221,18 @@ export function SlideRenderer({
                           </div>
                         )}
                       </motion.div>
+                    )}
+
+                    {/* Story Decoder Vocabulary Saver Tool (Activated after checking answer) */}
+                    {storyFeedback !== 'idle' && (
+                      <StoryDecoderVocabTool
+                        targetAnswer={targetAnswer}
+                        spanishPrompt={currentLine?.es || quote || ''}
+                        easyBlocks={easyBlocks}
+                        vocabularyCandidates={currentLine?.vocabulary_candidates || []}
+                        storyTitle={slide.title || cls?.title || 'Teens Class'}
+                        studentId={activeStudentId}
+                      />
                     )}
 
                     {/* Centered Controls */}
@@ -3612,16 +3676,45 @@ export function SlideRenderer({
                       <button 
                         onClick={() => {
                           if (isPlaying) {
+                            if (audioRef.current) {
+                              audioRef.current.pause();
+                            }
                             if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
                               window.speechSynthesis.cancel();
                             }
                             setIsPlaying(false);
                           } else {
-                            setIsPlaying(true);
-                            playSpeech(listeningText, 'en-US', listeningSpeed);
-                            const words = listeningText.split(' ').length;
-                            const durationSec = Math.max(3, (words / 2.5) / listeningSpeed);
-                            setTimeout(() => setIsPlaying(false), durationSec * 1000);
+                            const audioUrl = slide.listeningData?.audioUrl;
+                            if (audioUrl) {
+                              if (!audioRef.current) {
+                                audioRef.current = new Audio();
+                              }
+                              const audio = audioRef.current;
+                              audio.src = audioUrl;
+                              audio.playbackRate = listeningSpeed;
+                              audio.onended = () => setIsPlaying(false);
+                              audio.onerror = () => {
+                                playSpeech(listeningText, 'en-US', listeningSpeed);
+                                const words = listeningText.split(' ').length;
+                                const durationSec = Math.max(3, (words / 2.5) / listeningSpeed);
+                                setTimeout(() => setIsPlaying(false), durationSec * 1000);
+                              };
+                              audio.play()
+                                .then(() => setIsPlaying(true))
+                                .catch(() => {
+                                  setIsPlaying(true);
+                                  playSpeech(listeningText, 'en-US', listeningSpeed);
+                                  const words = listeningText.split(' ').length;
+                                  const durationSec = Math.max(3, (words / 2.5) / listeningSpeed);
+                                  setTimeout(() => setIsPlaying(false), durationSec * 1000);
+                                });
+                            } else {
+                              setIsPlaying(true);
+                              playSpeech(listeningText, 'en-US', listeningSpeed);
+                              const words = listeningText.split(' ').length;
+                              const durationSec = Math.max(3, (words / 2.5) / listeningSpeed);
+                              setTimeout(() => setIsPlaying(false), durationSec * 1000);
+                            }
                           }
                         }}
                         className={`flex min-h-16 sm:min-h-18 items-center justify-center gap-3 px-6 py-4 rounded-2xl font-black text-xl sm:text-2xl transition-all cursor-pointer shadow-xl ${
@@ -3640,8 +3733,12 @@ export function SlideRenderer({
                             key={s}
                             onClick={() => {
                               setListeningSpeed(s);
-                              if (typeof window !== 'undefined' && 'speechSynthesis' in window) window.speechSynthesis.cancel();
-                              setIsPlaying(false);
+                              if (audioRef.current && !audioRef.current.paused) {
+                                audioRef.current.playbackRate = s;
+                              } else if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+                                window.speechSynthesis.cancel();
+                                setIsPlaying(false);
+                              }
                             }}
                             className={`h-11 sm:h-12 rounded-xl text-xs sm:text-sm font-black border-2 transition-all cursor-pointer ${
                               listeningSpeed === s
@@ -3971,6 +4068,18 @@ export function SlideRenderer({
                       </div>
                     )}
                   </motion.div>
+                )}
+
+                {/* Story Decoder Vocabulary Saver Tool (Activated after checking answer) */}
+                {storyFeedback !== 'idle' && (
+                  <StoryDecoderVocabTool
+                    targetAnswer={targetAnswer}
+                    spanishPrompt={line?.es || quote || ''}
+                    easyBlocks={easyBlocks}
+                    vocabularyCandidates={line?.vocabulary_candidates || []}
+                    storyTitle={slide.title || cls?.title || 'Teens Class'}
+                    studentId={activeStudentId}
+                  />
                 )}
 
                 {/* Centered Controls */}
