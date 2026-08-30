@@ -2295,18 +2295,6 @@ export function SlideRenderer({
                       </motion.div>
                     )}
 
-                    {/* Story Decoder Vocabulary Saver Tool (Activated after checking answer) */}
-                    {storyFeedback !== 'idle' && (
-                      <StoryDecoderVocabTool
-                        targetAnswer={targetAnswer}
-                        spanishPrompt={currentLine?.es || quote || ''}
-                        easyBlocks={easyBlocks}
-                        vocabularyCandidates={currentLine?.vocabulary_candidates || []}
-                        storyTitle={slide.title || cls?.title || 'Teens Class'}
-                        studentId={activeStudentId}
-                      />
-                    )}
-
                     {/* Centered Controls */}
                     <div className="flex flex-wrap items-center justify-center gap-3 shrink-0 pt-0.5">
                       <button
@@ -2325,6 +2313,18 @@ export function SlideRenderer({
                         <Check className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
                         <span>Comprobar Respuesta</span>
                       </button>
+
+                      {/* Story Decoder Vocabulary Saver Modal Trigger (Activated after checking answer) */}
+                      {storyFeedback !== 'idle' && (
+                        <StoryDecoderVocabTool
+                          targetAnswer={targetAnswer}
+                          spanishPrompt={currentLine?.es || quote || ''}
+                          easyBlocks={easyBlocks}
+                          vocabularyCandidates={currentLine?.vocabulary_candidates || []}
+                          storyTitle={slide.title || cls?.title || 'Teens Class'}
+                          studentId={activeStudentId}
+                        />
+                      )}
 
                       {storyFeedback !== 'idle' && safeLineIndex < lines.length - 1 && (
                         <button
@@ -3692,7 +3692,7 @@ export function SlideRenderer({
           </div>
         </div>
       ) : (slide.type === 'verb-arena-embedded' || Boolean(slide.verbArenaData) || Boolean((slide as any).verbsData) || Boolean((slide as any).vocabularyCards) || /verb arena|reto de vocabulario/i.test(slide.title || '')) ? (
-        <div className="w-full h-full flex flex-col justify-center min-h-0 p-4">
+        <div className="w-full h-full flex flex-col justify-center min-h-0 p-2.5 sm:p-3.5">
           <Suspense fallback={<div className="text-white text-center font-bold">Cargando Reto de Vocabulario...</div>}>
             <VerbArenaGame 
               isEmbedded={true}
@@ -4142,18 +4142,6 @@ export function SlideRenderer({
                   </motion.div>
                 )}
 
-                {/* Story Decoder Vocabulary Saver Tool (Activated after checking answer) */}
-                {storyFeedback !== 'idle' && (
-                  <StoryDecoderVocabTool
-                    targetAnswer={targetAnswer}
-                    spanishPrompt={line?.es || quote || ''}
-                    easyBlocks={easyBlocks}
-                    vocabularyCandidates={line?.vocabulary_candidates || []}
-                    storyTitle={slide.title || cls?.title || 'Teens Class'}
-                    studentId={activeStudentId}
-                  />
-                )}
-
                 {/* Centered Controls */}
                 <div className="flex flex-wrap items-center justify-center gap-3 shrink-0 pt-0.5">
                   <button
@@ -4172,6 +4160,18 @@ export function SlideRenderer({
                     <Check className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
                     <span>Comprobar Respuesta</span>
                   </button>
+
+                  {/* Story Decoder Vocabulary Saver Modal Trigger (Activated after checking answer) */}
+                  {storyFeedback !== 'idle' && (
+                    <StoryDecoderVocabTool
+                      targetAnswer={targetAnswer}
+                      spanishPrompt={line?.es || quote || ''}
+                      easyBlocks={easyBlocks}
+                      vocabularyCandidates={line?.vocabulary_candidates || []}
+                      storyTitle={slide.title || cls?.title || 'Teens Class'}
+                      studentId={activeStudentId}
+                    />
+                  )}
 
                   {storyFeedback !== 'idle' && safeLineIndex < lines.length - 1 && (
                     <button

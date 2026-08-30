@@ -1012,109 +1012,131 @@ export function VerbArenaGame({ onBack, isEmbedded = false, customPool, maxRound
           {phase === 'results' && (
             <motion.section key="results" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -24 }} className="w-full flex-1 flex flex-col justify-between overflow-hidden">
               {isEmbedded ? (
-                <div className="rounded-3xl border-2 border-white/20 bg-slate-950/90 p-5 sm:p-6 shadow-2xl backdrop-blur-xl flex flex-col justify-between h-full max-h-[520px] overflow-y-auto">
-                  <div className="text-center shrink-0">
-                    <Trophy className="mx-auto h-14 w-14 text-yellow-400 mb-1 animate-bounce" />
-                    <h2 className="text-3xl sm:text-4xl font-black text-white">¡Reto de Vocabulario Completado! 🎉</h2>
-                    <p className="mt-1 text-sm sm:text-base font-bold text-slate-300">Retroalimentación de los verbos practicados en esta clase.</p>
+                <div className="rounded-3xl border-2 border-white/20 bg-slate-950/90 p-4 sm:p-5 shadow-2xl backdrop-blur-xl flex flex-col justify-between h-full w-full overflow-hidden">
+                  {/* Large High-Contrast Header with Integrated Stats */}
+                  <div className="flex flex-wrap items-center justify-between gap-3 shrink-0 pb-3 border-b border-white/15">
+                    <div className="flex items-center gap-3.5">
+                      <div className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-400 via-yellow-400 to-amber-500 text-slate-950 shadow-lg shadow-amber-500/20">
+                        <Trophy className="h-6 w-6 sm:h-7 sm:w-7 text-slate-950 stroke-[2.5]" />
+                      </div>
+                      <div>
+                        <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-tight tracking-tight">
+                          ¡Reto de Vocabulario Completado! 🎉
+                        </h2>
+                        <p className="text-xs sm:text-sm font-bold text-slate-300 mt-0.5">
+                          Retroalimentación de los verbos practicados en esta clase.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Stats Pills (Large & High Visibility) */}
+                    <div className="flex items-center gap-2.5">
+                      <div className="rounded-2xl bg-cyan-950/80 border-2 border-cyan-400/50 px-3.5 sm:px-4 py-1.5 sm:py-2 text-center shadow-md">
+                        <span className="text-[10px] sm:text-xs uppercase text-cyan-300/90 font-black block tracking-wider">Precisión</span>
+                        <span className="text-lg sm:text-2xl font-black text-cyan-300">{accuracy}%</span>
+                      </div>
+                      <div className="rounded-2xl bg-emerald-950/80 border-2 border-emerald-400/50 px-3.5 sm:px-4 py-1.5 sm:py-2 text-center shadow-md">
+                        <span className="text-[10px] sm:text-xs uppercase text-emerald-300/90 font-black block tracking-wider">Aciertos</span>
+                        <span className="text-lg sm:text-2xl font-black text-emerald-400">{stats.correct} / {stats.total}</span>
+                      </div>
+                      <div className="rounded-2xl bg-amber-950/80 border-2 border-amber-400/50 px-3.5 sm:px-4 py-1.5 sm:py-2 text-center shadow-md">
+                        <span className="text-[10px] sm:text-xs uppercase text-amber-300/90 font-black block tracking-wider">Tiempo</span>
+                        <span className="text-lg sm:text-2xl font-black text-amber-300">{timerSeconds > 0 ? `${timerSeconds}s` : '∞'}</span>
+                      </div>
+                    </div>
                   </div>
 
-                  {/* Stats Cards */}
-                  <div className="grid grid-cols-3 gap-3.5 max-w-xl mx-auto my-2.5 w-full shrink-0">
-                    <div className="rounded-2xl bg-white/10 p-3 text-center border-2 border-cyan-400/30 shadow-md">
-                      <div className="text-xs uppercase text-slate-400 font-black tracking-wider">Precisión</div>
-                      <div className="text-3xl sm:text-4xl font-black text-cyan-300">{accuracy}%</div>
-                    </div>
-                    <div className="rounded-2xl bg-white/10 p-3 text-center border-2 border-emerald-400/30 shadow-md">
-                      <div className="text-xs uppercase text-slate-400 font-black tracking-wider">Correctas</div>
-                      <div className="text-3xl sm:text-4xl font-black text-emerald-400">{stats.correct} / {stats.total}</div>
-                    </div>
-                    <div className="rounded-2xl bg-white/10 p-3 text-center border-2 border-amber-400/30 shadow-md">
-                      <div className="text-xs uppercase text-slate-400 font-black tracking-wider">Tiempo</div>
-                      <div className="text-3xl sm:text-4xl font-black text-amber-300">{timerSeconds > 0 ? `${timerSeconds}s` : '∞'}</div>
-                    </div>
-                  </div>
+                  {/* Words Full Grid (Equal 1fr rows filling 100% of vertical space, Large Text) */}
+                  <div className="flex-1 my-3 min-h-0 grid grid-cols-1 sm:grid-cols-2 auto-rows-fr gap-2.5 sm:gap-3.5">
+                    {history.map((h, i) => {
+                      const term = getDisplayTerm(h.item);
+                      const termLower = term.toLowerCase();
+                      const isSaved = savedWordTerms.has(termLower);
+                      const isCorrect = h.status === 'correct';
 
-                  {/* Batch Save All Missed Button */}
-                  {missedHistory.length > 0 && (
-                    <div className="mb-2 flex justify-center shrink-0">
-                      <button
-                        type="button"
-                        onClick={handleSaveAllMissed}
-                        disabled={isSavingAll || missedHistory.every(m => savedWordTerms.has(getDisplayTerm(m.item).toLowerCase()))}
-                        className="px-6 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-400 hover:to-orange-400 text-white font-black text-sm sm:text-base flex items-center gap-2.5 shadow-xl hover:scale-105 active:scale-95 disabled:opacity-50 cursor-pointer transition-all"
-                      >
-                        <BookmarkPlus className="w-5 h-5" />
-                        <span>
-                          {isSavingAll ? 'Guardando en Mi Vocabulario...' : `Guardar palabras falladas en Mi Vocabulario (${missedHistory.length}) 🎒`}
-                        </span>
-                      </button>
-                    </div>
-                  )}
-
-                  {/* Words Summary List */}
-                  <div className="flex-1 min-h-0 overflow-y-auto max-h-40 px-2 my-1">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {history.map((h, i) => {
-                        const term = getDisplayTerm(h.item);
-                        const termLower = term.toLowerCase();
-                        const isSaved = savedWordTerms.has(termLower);
-
-                        return (
-                          <div key={i} className={`flex items-center justify-between p-3 rounded-2xl border text-xs font-bold ${h.status === 'correct' ? 'bg-emerald-950/60 border-emerald-500/40 text-emerald-200' : 'bg-red-950/60 border-red-500/40 text-red-200'}`}>
-                            <div className="flex items-center gap-2 truncate min-w-0 pr-2">
-                              <span className="text-base shrink-0">{h.status === 'correct' ? '✅' : '❌'}</span>
-                              <span className="font-black text-white text-base truncate">{term}</span>
-                              <span className="text-white/70 truncate text-xs">➔ {formatMeaning(h.item)}</span>
+                      return (
+                        <div
+                          key={i}
+                          className={`h-full flex items-center justify-between px-4 sm:px-5 py-2.5 sm:py-3.5 rounded-2xl sm:rounded-3xl border-2 sm:border-[2.5px] shadow-lg transition-all ${
+                            isCorrect
+                              ? 'bg-emerald-950/70 border-emerald-400/60 shadow-emerald-950/50 text-emerald-100'
+                              : 'bg-red-950/70 border-red-500/60 shadow-red-950/50 text-red-100'
+                          }`}
+                        >
+                          <div className="flex items-center gap-3 truncate min-w-0 pr-3">
+                            <span className="text-xl sm:text-2xl shrink-0 select-none">
+                              {isCorrect ? '✅' : '❌'}
+                            </span>
+                            <div className="flex items-baseline gap-2 truncate min-w-0">
+                              <span className="font-black text-white text-base sm:text-xl lg:text-2xl tracking-tight truncate">
+                                {term}
+                              </span>
+                              <span className="text-white/90 truncate text-xs sm:text-base font-bold">
+                                ➔ {formatMeaning(h.item)}
+                              </span>
                             </div>
-
-                            <button
-                              type="button"
-                              onClick={() => handleSaveToVocabVault(h.item)}
-                              className={`shrink-0 flex items-center gap-1 px-3 py-1.5 rounded-xl font-black text-xs transition cursor-pointer ${
-                                isSaved
-                                  ? 'bg-emerald-500/25 border border-emerald-400 text-emerald-200'
-                                  : 'bg-white/10 hover:bg-amber-500/80 border border-white/20 text-white hover:text-white'
-                              }`}
-                              title="Guardar en Mi Vocabulario"
-                            >
-                              {isSaved ? (
-                                <>
-                                  <Check className="w-3.5 h-3.5 text-emerald-300" />
-                                  <span>Guardada</span>
-                                </>
-                              ) : (
-                                <>
-                                  <BookmarkPlus className="w-3.5 h-3.5" />
-                                  <span>+ Vocab</span>
-                                </>
-                              )}
-                            </button>
                           </div>
-                        );
-                      })}
-                    </div>
+
+                          <button
+                            type="button"
+                            onClick={() => handleSaveToVocabVault(h.item)}
+                            className={`shrink-0 flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl font-black text-xs sm:text-sm transition-all hover:scale-105 active:scale-95 cursor-pointer shadow-md ${
+                              isSaved
+                                ? 'bg-emerald-500/35 border-2 border-emerald-400 text-emerald-200'
+                                : 'bg-white/15 hover:bg-amber-500 border-2 border-white/25 text-white hover:text-slate-950'
+                            }`}
+                            title="Guardar en Mi Vocabulario"
+                          >
+                            {isSaved ? (
+                              <>
+                                <Check className="w-4 h-4 text-emerald-300 stroke-[3]" />
+                                <span>Guardada</span>
+                              </>
+                            ) : (
+                              <>
+                                <BookmarkPlus className="w-4 h-4" />
+                                <span>+ Vocab</span>
+                              </>
+                            )}
+                          </button>
+                        </div>
+                      );
+                    })}
                   </div>
 
-                  {/* Action Buttons */}
-                  <div className="mt-3 flex items-center justify-center gap-4 shrink-0 pt-2 border-t border-white/10">
+                  {/* Action Buttons Bar (Large & Prominent) */}
+                  <div className="flex flex-wrap items-center justify-between gap-3 shrink-0 pt-3 border-t border-white/15">
                     <button
                       onClick={startGame}
-                      className="px-6 py-3.5 rounded-2xl border border-white/20 bg-white/10 hover:bg-white/20 text-white font-black text-base transition-all cursor-pointer flex items-center gap-2"
+                      className="px-5 sm:px-6 py-3 sm:py-3.5 rounded-2xl border-2 border-white/25 bg-white/10 hover:bg-white/20 text-white font-black text-sm sm:text-base transition-all hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-2.5 shadow-md"
                     >
                       <RotateCcw className="w-5 h-5" />
                       <span>Repetir Reto</span>
                     </button>
+
+                    {missedHistory.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={handleSaveAllMissed}
+                        disabled={isSavingAll || missedHistory.every(m => savedWordTerms.has(getDisplayTerm(m.item).toLowerCase()))}
+                        className="px-5 sm:px-6 py-3 sm:py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-400 hover:to-orange-400 text-white font-black text-xs sm:text-sm lg:text-base flex items-center gap-2.5 shadow-xl hover:scale-105 active:scale-95 disabled:opacity-50 cursor-pointer transition-all border border-amber-300/40"
+                      >
+                        <BookmarkPlus className="w-5 h-5" />
+                        <span>
+                          {isSavingAll ? 'Guardando...' : `Guardar falladas en Vocabulario (${missedHistory.length}) 🎒`}
+                        </span>
+                      </button>
+                    )}
 
                     <button
                       onClick={() => {
                         if (onNextSlide) onNextSlide();
                         else if (onComplete) onComplete();
                       }}
-                      className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-lg transition-all shadow-xl hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-2"
+                      className="px-7 sm:px-9 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-base sm:text-lg lg:text-xl transition-all shadow-xl hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-2.5 ml-auto border border-cyan-200"
                     >
                       <span>Continuar a la siguiente diapositiva</span>
-                      <ArrowRight className="w-5 h-5" />
+                      <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
                     </button>
                   </div>
                 </div>
