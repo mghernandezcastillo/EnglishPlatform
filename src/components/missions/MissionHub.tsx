@@ -251,19 +251,23 @@ export function MissionHub({
   // Theme styling
   const isCool = theme === 'cool';
   const bgGradient = isCool 
-    ? 'bg-gradient-to-br from-slate-950 via-gray-900 to-blue-950 text-slate-50' 
-    : 'bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 text-slate-800';
+    ? 'bg-gradient-to-br from-slate-950 via-gray-950 to-blue-950 text-slate-50' 
+    : 'bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 text-white';
   
-  const headerBg = isCool ? 'bg-slate-900/80' : 'bg-white/80';
-  const cardBg = isCool ? 'bg-slate-800/80 border-slate-700' : 'bg-white border-amber-100 shadow-sm';
-  const cardBorder = isCool ? 'border-slate-700' : 'border-slate-200';
+  const headerBg = isCool 
+    ? 'bg-slate-950/90 border-slate-800 text-white' 
+    : 'bg-slate-900/95 border-indigo-500/30 text-white shadow-lg shadow-indigo-950/40';
+  const cardBg = isCool ? 'bg-slate-800/80 border-slate-700' : 'bg-slate-900/90 border-slate-800 shadow-md';
+  const cardBorder = isCool ? 'border-slate-700' : 'border-slate-800';
   
   const activeCardGradient = isCool
-    ? 'bg-gradient-to-r from-blue-600 to-indigo-700 text-white border-blue-500'
-    : 'bg-gradient-to-r from-amber-500 to-orange-600 text-white border-orange-400';
+    ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 text-white border-blue-400'
+    : 'bg-gradient-to-r from-amber-500 via-orange-500 to-rose-600 text-white border-amber-300';
 
-  const statsCardBg = isCool ? 'bg-slate-800/60' : 'bg-white/60 shadow-sm border border-slate-100';
-  const textMuted = isCool ? 'text-slate-400' : 'text-slate-500';
+  const statsCardBg = isCool 
+    ? 'bg-slate-900/80 border border-slate-800 text-white' 
+    : 'bg-slate-900/80 border border-slate-800/90 text-white shadow-md';
+  const textMuted = 'text-slate-400';
 
   function getClassTitle(classId: string) {
     const content = getMissionContentForClass(classId);
@@ -284,38 +288,38 @@ export function MissionHub({
   return (
     <div className={`min-h-screen ${bgGradient} font-sans pb-24 overflow-x-hidden selection:bg-amber-500/30`}>
       {/* Header */}
-      <header className={`sticky top-0 z-20 backdrop-blur-md border-b ${isCool ? 'border-slate-800' : 'border-slate-200'} ${headerBg} px-4 py-4 flex items-center justify-between`}>
+      <header className={`sticky top-0 z-20 backdrop-blur-xl border-b ${headerBg} px-4 py-4 flex items-center justify-between`}>
         <div className="flex items-center gap-3">
           <button 
             onClick={onBack}
-            className={`p-2 rounded-full transition-colors ${isCool ? 'hover:bg-slate-800 text-slate-300' : 'hover:bg-slate-100 text-slate-600'}`}
+            className="p-2 rounded-full transition-colors hover:bg-white/10 text-white cursor-pointer"
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
-          <h1 className="text-xl font-black tracking-tight flex items-center gap-2">
-            🎯 Mis Misiones {studentName ? `• ${studentName}` : ''}
+          <h1 className="text-lg sm:text-xl font-black tracking-tight flex items-center gap-2 text-white">
+            <span>🎯 Mis Misiones</span>
+            {studentName && <span className="text-amber-400 font-extrabold">• {studentName}</span>}
           </h1>
         </div>
 
         <div className="flex items-center gap-3">
           {/* Streak Badge */}
-          <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full font-bold ${currentStreak > 0 ? (isCool ? 'bg-orange-900/40 text-orange-400 border border-orange-800/50' : 'bg-orange-100 text-orange-600 border border-orange-200') : (isCool ? 'bg-slate-800 text-slate-400' : 'bg-slate-100 text-slate-400')}`}>
+          <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-black text-xs sm:text-sm bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg shadow-orange-500/30 border border-orange-300/40">
             <motion.div
               animate={{ 
-                scale: currentStreak > 0 ? [1, 1.1, 1] : 1,
-                opacity: currentStreak > 0 ? [0.8, 1, 0.8] : 0.5 
+                scale: currentStreak > 0 ? [1, 1.2, 1] : 1,
               }}
               transition={{ repeat: Infinity, duration: 1.5 }}
             >
-              <Flame className="w-4 h-4" />
+              <Flame className="w-4 h-4 fill-white text-white" />
             </motion.div>
-            <span>{currentStreak}</span>
+            <span>{currentStreak} DÍAS</span>
           </div>
           
           {/* Theme Toggle */}
           <button
             onClick={() => handleChangeTheme(isCool ? 'vibrant' : 'cool')}
-            className={`p-2 rounded-full transition-colors ${isCool ? 'bg-slate-800 hover:bg-slate-700 text-yellow-400' : 'bg-slate-100 hover:bg-slate-200 text-slate-600'}`}
+            className="p-2 rounded-full transition-colors bg-white/10 hover:bg-white/20 text-yellow-300 cursor-pointer"
           >
             {isCool ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </button>
@@ -339,19 +343,15 @@ export function MissionHub({
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            className={`p-4 sm:p-5 rounded-3xl border shadow-md flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4 justify-between ${
-              isCool 
-                ? 'bg-gradient-to-br from-slate-800/95 via-indigo-950/50 to-slate-900 border-indigo-500/40 text-slate-100' 
-                : 'bg-gradient-to-br from-amber-50 via-orange-50 to-white border-amber-200/90 text-slate-900'
-            }`}
+            className="p-4 sm:p-5 rounded-3xl border-2 shadow-2xl flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4 justify-between bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950 border-indigo-500/40 text-white relative overflow-hidden backdrop-blur-xl"
           >
             {/* Student Profile Info */}
-            <div className="flex items-center gap-3.5 w-full sm:w-auto">
+            <div className="flex items-center gap-3.5 w-full sm:w-auto z-10">
               <div className="relative shrink-0">
                 <img
                   src={displayAvatarUrl}
                   alt={studentName || 'Estudiante'}
-                  className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-amber-400 shadow-md bg-indigo-50"
+                  className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-amber-400 shadow-xl ring-4 ring-amber-400/20 bg-indigo-50"
                 />
                 <div className="absolute -bottom-1 -right-1 p-0.5 bg-emerald-500 rounded-full border border-white text-white shadow-sm">
                   <Sparkles className="w-3 h-3" />
@@ -359,17 +359,17 @@ export function MissionHub({
               </div>
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-orange-600 bg-orange-100 px-2 py-0.5 rounded-full">
+                  <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-amber-300 bg-amber-400/20 border border-amber-400/30 px-2 py-0.5 rounded-full">
                     Estudiante
                   </span>
-                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400 truncate">
+                  <span className="text-xs font-bold text-indigo-200 truncate">
                     {studentProfile?.level || 'Maven Teens'}
                   </span>
                 </div>
-                <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-0.5 truncate">
+                <h2 className="text-xl sm:text-2xl font-black text-white mt-0.5 truncate">
                   ¡Hola, {studentName || 'Estudiante'}! 👋
                 </h2>
-                <p className="text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 font-medium">
+                <p className="text-[11px] sm:text-xs text-slate-300 font-medium">
                   {currentStreak > 0 
                     ? `🔥 Racha de ${currentStreak} días activa. ¡Sigue así!` 
                     : 'Completa tu reto de 5 min y gana +150 XP.'}
@@ -378,23 +378,23 @@ export function MissionHub({
             </div>
 
             {/* Maven the Tiger Mentor (Visible on Mobile & Desktop) */}
-            <div className="w-full sm:w-auto flex items-center justify-between sm:justify-end gap-3 pt-2.5 sm:pt-0 border-t sm:border-t-0 border-slate-200/60 dark:border-slate-700/60 shrink-0">
+            <div className="w-full sm:w-auto flex items-center justify-between sm:justify-end gap-3 pt-2.5 sm:pt-0 border-t sm:border-t-0 border-indigo-500/20 shrink-0 z-10">
               <div className="flex items-center gap-2.5">
                 <div className="relative shrink-0">
                   <img
                     src="/images/mascot/tiger_mentor_wave.jpg"
                     alt="Tigre Maven 3D"
-                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl object-cover border-2 border-amber-400 shadow-md bg-white"
+                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl object-cover border-2 border-amber-400 shadow-xl ring-4 ring-amber-400/20 bg-white"
                   />
                   <span className="absolute -top-1.5 -right-1 px-1.5 py-0.2 bg-amber-400 text-slate-950 font-black text-[9px] rounded-full border border-white">
                     3D
                   </span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] font-black uppercase tracking-wider text-amber-500">
+                  <span className="text-[10px] font-black uppercase tracking-wider text-amber-400">
                     Tigre Maven • Mentor
                   </span>
-                  <span className="text-xs font-extrabold text-slate-800 dark:text-slate-100">
+                  <span className="text-xs font-extrabold text-white">
                     "¡A romperla hoy con toda! ⚡"
                   </span>
                 </div>
