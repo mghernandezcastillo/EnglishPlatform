@@ -28,6 +28,7 @@ const VerbArenaGame = lazy(() => import('./components/VerbArenaGame').then(m => 
 const VocabVault = lazy(() => import('./components/VocabVault').then(m => ({ default: m.VocabVault })));
 const CertificateView = lazy(() => import('./components/CertificateView').then(m => ({ default: m.CertificateView })));
 const OralQuestionBankView = lazy(() => import('./components/OralQuestionBankView').then(m => ({ default: m.OralQuestionBankView })));
+const MissionHub = lazy(() => import('./components/missions/MissionHub').then(m => ({ default: m.MissionHub })));
 
 const LazyFallback = () => (
   <div className="fixed inset-0 z-50 bg-slate-900/80 flex items-center justify-center">
@@ -48,19 +49,41 @@ export default function App() {
 
   const [progress, setProgress] = useState<UserProgress>({ completedLessons: [], approvedLevelIds: [], currentLessonId: '', level: 'Nivel Inicial' });
   const [isLoaded, setIsLoaded] = useState(false);
-  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena' | 'vocab_vault'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'lesson' | 'entrance_assessment' | 'speaking_practice' | 'story_decoder' | 'structure_mode' | 'verbs_guide' | 'verb_arena' | 'vocab_vault' | 'missions'>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
+  const [activeMissionParam, setActiveMissionParam] = useState<string | null>(null);
 
   useEffect(() => {
     // Check URL
     const params = new URLSearchParams(window.location.search);
     const studentIdParam = params.get('studentId');
-    const structureReportParam = params.get('structureReport');
+    const missionParam = params.get('mission');
+    const structureReportParam = params.get('structureReport') || params.get('structure_report');
 
     if (structureReportParam) {
       setCurrentView('structure_mode');
       setRole('student');
       setIsLoaded(true);
+      return;
+    }
+
+    if (missionParam) {
+      setActiveMissionParam(missionParam);
+      setCurrentView('missions');
+      setRole('student');
+      setIsLoaded(true);
+      if (!studentIdParam) {
+        try {
+          const profileRaw = localStorage.getItem('active_student_profile');
+          if (profileRaw) {
+            const p = JSON.parse(profileRaw);
+            if (p.id) {
+              setCurrentStudentId(p.id);
+              setProgress(prev => ({ ...prev, studentName: p.name }));
+            }
+          }
+        } catch {}
+      }
       return;
     }
     
@@ -508,6 +531,13 @@ export default function App() {
             studentName={progress.studentName}
             onBack={() => setCurrentView('dashboard')}
           />
+        ) : currentView === 'missions' ? (
+          <MissionHub
+            studentId={currentStudentId || ''}
+            studentName={progress.studentName || ''}
+            initialMissionClassId={activeMissionParam}
+            onBack={() => setCurrentView('dashboard')}
+          />
         ) : (
             <Dashboard 
             completedLessonIds={progress.completedLessons}
@@ -528,6 +558,7 @@ export default function App() {
             onOpenStructureMode={handleOpenStructureMode}
             onOpenVerbsGuide={handleOpenVerbsGuide}
             onOpenVocabVault={handleOpenVocabVault}
+            onOpenMissions={() => setCurrentView('missions')}
           />
         )}
       </Suspense>

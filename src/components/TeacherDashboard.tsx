@@ -11,6 +11,7 @@ import { evaluationExamType, evaluationPassed, evaluationPercentage, latestEvalu
 import { VirtualEvaluationResult } from './VirtualEvaluationResult';
 import { AdminSlideManager } from './admin/AdminSlideManager';
 import { ClassWorkshop } from './ClassWorkshop';
+import { MissionTeacherTab } from './missions/MissionTeacherTab';
 
 interface TeacherDashboardProps {
   onBack: () => void;
@@ -21,7 +22,7 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
   const [students, setStudents] = useState<DbStudent[]>([]);
   const [groups, setGroups] = useState<DbGroup[]>([]);
   const [evaluations, setEvaluations] = useState<EvaluationRecord[]>([]);
-  const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'cms' | 'settings' | 'workshop'>('students');
+  const [activeTab, setActiveTab] = useState<'students' | 'groups' | 'evaluations' | 'curriculum' | 'cms' | 'settings' | 'workshop' | 'missions'>('students');
   const [selectedStudent, setSelectedStudent] = useState<DbStudent | null>(null);
   const [isEditingStudentInfo, setIsEditingStudentInfo] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
@@ -520,6 +521,12 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
             <span>🔧 Class Workshop</span>
           </button>
           <button 
+            onClick={() => setActiveTab('missions')}
+            className={`px-6 py-3 rounded-xl font-bold transition-all flex items-center gap-2 ${activeTab === 'missions' ? 'bg-orange-600 text-white shadow-lg shadow-orange-600/25' : 'bg-gray-100 text-orange-700 hover:bg-orange-50'}`}
+          >
+            <span>🎯 Misiones / Tareas</span>
+          </button>
+          <button 
             onClick={() => setActiveTab('settings')}
             className={`px-6 py-3 rounded-xl font-bold transition-all ${activeTab === 'settings' ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
           >
@@ -798,6 +805,10 @@ export function TeacherDashboard({ onBack, onEnterAsStudent }: TeacherDashboardP
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 -mx-4 sm:-mx-6">
           <ClassWorkshop />
         </div>
+      )}
+
+      {activeTab === 'missions' && (
+        <MissionTeacherTab />
       )}
 
       {toast && (

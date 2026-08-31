@@ -36,9 +36,10 @@ interface DashboardProps {
   onOpenStructureMode: () => void;
   onOpenVerbsGuide: () => void;
   onOpenVocabVault?: () => void;
+  onOpenMissions?: () => void;
 }
 
-export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, presentationMode, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide, onOpenVocabVault }: DashboardProps) {
+export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, studentName, studentId, avatarId, studentType, presentationMode, onStartLibraryLesson, onFinishClass, onApproveLevel, onToggleClass, onOpenEntranceAssessment, onOpenSpeakingPractice, onOpenStoryDecoder, onOpenStructureMode, onOpenVerbsGuide, onOpenVocabVault, onOpenMissions }: DashboardProps) {
   const [currentMode, setCurrentMode] = useState<'studio' | 'classic'>(presentationMode || (typeof window !== 'undefined' ? (localStorage.getItem('maven_presentation_mode') as 'studio' | 'classic') || 'studio' : 'studio'));
 
   useEffect(() => {
@@ -237,7 +238,60 @@ export function Dashboard({ completedLessonIds, approvedLevelIds, userLevel, stu
             )}
           </div>
 
-        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        {/* 3D Pixar Tiger Mascot Active Mission Banner */}
+        <div
+          onClick={onOpenMissions}
+          className="relative overflow-hidden rounded-3xl p-4 sm:p-5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-600 text-white shadow-xl shadow-orange-500/20 mb-6 cursor-pointer transform transition-transform hover:scale-[1.01] active:scale-[0.99] border-2 border-amber-300/60"
+        >
+          <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="relative shrink-0">
+                <img
+                  src="/images/mascot/tiger_mentor_wave.jpg"
+                  alt="Mascota Tigre Maven"
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover border-2 border-white/60 shadow-lg bg-white"
+                />
+                <div className="absolute -bottom-1 -right-1 px-1.5 py-0.5 rounded-full text-[9px] font-black bg-yellow-300 text-slate-950 shadow">
+                  MAVEN
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="px-2.5 py-0.5 rounded-full bg-white/20 text-[10px] font-black uppercase tracking-wider backdrop-blur-sm">
+                    🔥 Tu Misión Interactiva
+                  </span>
+                  <span className="text-xs font-bold text-amber-200">Solo 5 min</span>
+                </div>
+                <h3 className="text-lg sm:text-xl font-black text-white mt-1">
+                  {studentName ? `¡Hola ${studentName}! ¿Listo para tu tarea de hoy?` : '¡Completa tu tarea de inglés hoy!'}
+                </h3>
+                <p className="text-xs sm:text-sm text-white/90 font-medium">
+                  Practica vocabulario, arma frases (+, −, ?) y gana +150 XP 🏆
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={(e) => { e.stopPropagation(); onOpenMissions?.(); }}
+              className="shrink-0 px-5 py-3 rounded-2xl bg-white text-slate-950 font-black text-sm hover:bg-amber-50 transition shadow-lg flex items-center gap-2 cursor-pointer"
+            >
+              <span>▶️ Iniciar Mi Misión</span>
+              <span className="text-amber-500 font-bold">🚀</span>
+            </button>
+          </div>
+        </div>
+
+        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-7">
+          <button
+             onClick={onOpenMissions}
+             className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 ring-2 ring-orange-300/50"
+          >
+             <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
+             <div className="flex h-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center backdrop-blur-sm">
+               <span className="text-lg">🚀</span>
+               <span className="font-bold text-white tracking-wide">Misiones</span>
+             </div>
+          </button>
           <button
              onClick={onOpenVocabVault}
              className="group relative min-h-[64px] w-full overflow-hidden rounded-2xl p-1 shadow-lg transition-transform hover:scale-[1.02] active:scale-95 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500"

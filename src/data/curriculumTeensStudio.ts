@@ -2016,7 +2016,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Let's get a large side of French fries with garlic sauce.",
                       "exampleEs": "Pidamos una porción grande de papas a la francesa con salsa de ajo.",
                       "audio": "Let's get a large side of French fries with garlic sauce.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step5-wh-interview.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s05-step2-street-colors.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Let's get a large side of French fries with garlic sauce.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2028,7 +2028,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Can I get a cold glass of passion fruit juice, please?",
                       "exampleEs": "¿Me da un vaso frío de jugo de maracuyá, por favor?",
                       "audio": "Can I get a cold glass of passion fruit juice, please?",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step1-teacher-waving.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s05-step3-tech-accessories.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Can I get a cold glass of passion fruit juice, please?\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2040,7 +2040,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "This chocolate brownie with vanilla ice cream is delicious.",
                       "exampleEs": "Este brownie de chocolate con helado de vainilla es delicioso.",
                       "audio": "This chocolate brownie with vanilla ice cream is delicious.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step2-casual-greeting.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s05-step4-singular-plural-books.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"This chocolate brownie with vanilla ice cream is delicious.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2052,7 +2052,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Anything to drink with your combo? - Cold lemonade, please!",
                       "exampleEs": "¿Algo de tomar con su combo? - ¡Limonada fría, por favor!",
                       "audio": "Anything to drink with your combo? Cold lemonade, please!",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step3-energized-mood.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s05-step5-ruler-qa-questions.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Anything to drink with your combo? - Cold lemonade, please!\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
@@ -2529,7 +2529,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I wake up at 6:00 AM and have breakfast with my family.",
                       "exampleEs": "Me despierto a las 6:00 AM y desayuno con mi familia.",
                       "audio": "I wake up at 6:00 AM and have breakfast with my family.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step2-contractions-sofia.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s04-step1-colombia-flag.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I wake up at 6:00 AM and have breakfast with my family.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2541,7 +2541,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "My sister studies English in the afternoon and relaxes at night.",
                       "exampleEs": "Mi hermana estudia inglés en la tarde y descansa de noche.",
                       "audio": "My sister studies English in the afternoon and relaxes at night.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step3-negative-confident.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s04-step2-mexico-sofia.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"My sister studies English in the afternoon and relaxes at night.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2553,7 +2553,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I don't wake up early on Sundays; I stay in bed until 10:00 AM.",
                       "exampleEs": "No madrugo los domingos; me quedo en cama hasta las 10:00 AM.",
                       "audio": "I don't wake up early on Sundays; I stay in bed until 10:00 AM.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step4-questions-curious.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s04-step3-south-america-globe.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I don't wake up early on Sundays; I stay in bed until 10:00 AM.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -2565,7 +2565,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I study in the morning, do sports in the afternoon, and sleep at night.",
                       "exampleEs": "Estudio en la mañana, hago deporte en la tarde y duermo en la noche.",
                       "audio": "I study in the morning, do sports in the afternoon, and sleep at night.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step5-wh-interview.webp",
+                      "avatarUrl": "/images/avatars-3d/c05-s04-step4-cali-map.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I study in the morning, do sports in the afternoon, and sleep at night.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {

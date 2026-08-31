@@ -8,7 +8,7 @@ Este documento es la fuente de verdad persistente sobre el estado de estandariza
 
 | Nivel | ID | Clases | Estado de Gramática & Fórmulas LEGO | Estado de Avatares 3D Contextuales |
 | :--- | :--- | :---: | :---: | :---: |
-| **Level 0 (Basic Zero)** | `teens-basic-zero` | 16 | ✅ 100% Estandarizado (Slide 4 y Slide 5) | ✅ 36 Generados (Clases 1, 2, 3 y 4) / 124 en Cola |
+| **Level 0 (Basic Zero)** | `teens-basic-zero` | 16 | ✅ 100% Estandarizado (Slide 4 y Slide 5) | ✅ 44 Generados (Clases 1, 2, 3, 4 y 5) / 116 en Cola |
 | **Level 1 (Basic 1)** | `teens-basic-1` | 10 | ✅ 100% Estandarizado (Slide 4 y Slide 5) | 100 en Cola de Prompt (`tab.avatarPrompt`) |
 | **Level 2 (Basic 2)** | `teens-basic-2` | 10 | ✅ 100% Estandarizado (Slide 4 y Slide 5) | 100 en Cola de Prompt (`tab.avatarPrompt`) |
 | **Level 3 (Basic 3)** | `teens-basic-3` | 10 | ✅ 100% Estandarizado (Slide 4 y Slide 5) | 100 en Cola de Prompt (`tab.avatarPrompt`) |

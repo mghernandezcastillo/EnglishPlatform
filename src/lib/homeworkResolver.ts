@@ -248,6 +248,21 @@ export function getActiveStudentName(): string {
   return '';
 }
 
+export function getActiveStudentId(): string {
+  if (typeof window === 'undefined' || !window.localStorage) return '';
+  try {
+    const profileRaw = localStorage.getItem('active_student_profile');
+    if (profileRaw && profileRaw.startsWith('{')) {
+      const profile = JSON.parse(profileRaw);
+      if (profile?.id) return profile.id;
+    }
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlStudentId = urlParams.get('studentId');
+    if (urlStudentId) return urlStudentId;
+  } catch {}
+  return '';
+}
+
 export function buildWhatsAppHomeworkMessage(
   slide: ClassSlide,
   cls?: CurriculumClass,
@@ -258,8 +273,8 @@ export function buildWhatsAppHomeworkMessage(
   const classSub = cls?.title?.includes('/') ? cls.title.split('/')[1].trim() : '';
   const resolvedStudent = studentName?.trim() || getActiveStudentName();
   const greeting = resolvedStudent 
-    ? `👋 ¡Hola *${resolvedStudent}*! Aquí tienes tu tarea de hoy:` 
-    : `👋 ¡Hola! Aquí tienes la tarea de tu clase de inglés:`;
+    ? `👋 ¡Hola *${resolvedStudent}*! Aquí tienes tu reto de hoy:` 
+    : `👋 ¡Hola! Aquí tienes tu reto de hoy de Maven English:`;
 
   let message = `${greeting}\n\n`;
   message += `━━━━━━━━━━━━━━━━━━━━━\n`;
@@ -269,36 +284,33 @@ export function buildWhatsAppHomeworkMessage(
   }
   message += `━━━━━━━━━━━━━━━━━━━━━\n\n`;
 
-  message += `📝 *TU MISIÓN / INSTRUCCIONES:*\n`;
+  message += `✍️ *1. RETO EN TU CUADERNO (Solo 3 frases):*\n`;
   if (data.taskSteps && data.taskSteps.length > 0) {
-    data.taskSteps.forEach((step) => {
-      message += `\n*Paso ${step.number}:* ${step.instruction}\n`;
+    const symbols = ['(+)', '(−)', '(?)'];
+    data.taskSteps.slice(0, 3).forEach((step, idx) => {
+      message += `🔹 *${symbols[idx] || `${idx + 1}.`}* ${step.instruction}\n`;
       if (step.example) {
-        message += `💡 _Ejemplo modelo:_ "${step.example}"\n`;
+        message += `   💡 _Ejemplo:_ "${step.example}"\n`;
       }
     });
   } else {
     message += `${data.task}\n`;
   }
 
-  if (data.exampleLines && data.exampleLines.length > 0) {
+  if (cls?.id) {
+    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://maven-english.com';
+    const studentId = getActiveStudentId();
+    const linkParam = studentId ? `?studentId=${studentId}&mission=${cls.id}` : `?mission=${cls.id}`;
     message += `\n━━━━━━━━━━━━━━━━━━━━━\n`;
-    message += `✨ *EJEMPLOS GUÍA PARA TU CUADERNO:*\n`;
-    data.exampleLines.forEach((ex, idx) => {
-      message += `🔹 *${idx + 1}.* ${ex}\n`;
-    });
-  }
-
-  if (data.tips && data.tips.length > 0) {
-    message += `\n💡 *TIPS IMPORTANTES DEL PROFESOR:*\n`;
-    data.tips.forEach((tip) => {
-      message += `✅ ${tip}\n`;
-    });
+    message += `🎮 *2. TU MISIÓN DIGITAL (SOLO 5 MINUTOS):*\n`;
+    message += `⚡ Practica vocabulario, listening y gana +150 XP con el Tigre Maven:\n`;
+    message += `👉 ${origin}/${linkParam}\n`;
+    message += `🔥 ¡Mantén tu racha de fuego activa! 🐅✨\n`;
   }
 
   message += `\n━━━━━━━━━━━━━━━━━━━━━\n`;
-  message += `⏰ *FECHA DE ENTREGA:* ${data.dueDate || 'Próxima Clase'}\n`;
-  message += `📲 _Envía una foto de tu cuaderno o escribe tus oraciones por este chat de WhatsApp._\n\n`;
+  message += `⏰ *ENTREGA:* ${data.dueDate || 'Próxima Clase'}\n`;
+  message += `📸 _Toma una foto de tus 3 frases y envíala por este chat._\n\n`;
   message += `🚀 *¡Muchos éxitos, tú puedes lograrlo!* 🌟`;
 
   return message;
@@ -375,6 +387,11 @@ function resolveHomeworkDataDirect(slide: ClassSlide, cls?: CurriculumClass) {
       number: idx + 1,
       instruction: item.label,
       example: exampleLines[idx]
+    }));
+  } else {
+    taskSteps = taskSteps.map((step, idx) => ({
+      ...step,
+      example: step.example || exampleLines[idx] || undefined
     }));
   }
 

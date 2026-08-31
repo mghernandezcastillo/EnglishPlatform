@@ -372,3 +372,33 @@ Tanto la **Diapositiva 4 (Grammar Studio Core)** como la **Diapositiva 5 (Vocabu
 - **Validación Estricta de Variables en Mapeos JSX (`.map`)**:
   - Toda iteración o renderizado de colecciones en JSX (ej: los 5 puntos luminosos de progreso, tarjetas de etapas o badges) DEBE derivarse estrictamente de variables existentes en el scope local (como `structures.map(...)` o `GRAMMAR_STEP_THEMES.map(...)`). Queda estrictamente prohibido usar referencias a variables auxiliares ficticias o no declaradas para evitar `ReferenceError` en tiempo de ejecución.
 
+## 🎯 PROTOCOLO OFICIAL DE MISIONES DE TAREA (MAVEN MISSIONS BLUEPRINT)
+
+- **PROHIBICIÓN ABSOLUTA DE GENERADORES GENÉRICOS**:
+  - Queda estrictamente prohibido utilizar algoritmos automáticos, plantillas aleatorias o texto simulado para generar tareas.
+  - Toda misión DEBE ser redactada de forma artesanal y personalizada por IA para cada clase específica, extrayendo el vocabulario exacto, las fórmulas del Grammar Studio y las situaciones comunicativas del Reading Studio.
+
+- **ESTRUCTURA OBLIGATORIA POR MISIÓN (3 ESTACIONES + INSIGNIA)**:
+  1. **Estación 1: ⚡ Speed Cards (7 tarjetas)**
+     - 4 tarjetas de vocabulario central + 3 tarjetas de estructuras gramaticales de la clase.
+     - Cada tarjeta DEBE contener: `term` (inglés), `translation` (español colombiano natural), `ipa` (fonética limpia), `audioText` (texto de lectura TTS) y `example` (oración de uso real).
+  2. **Estación 2: 🔨 Build It (3 oraciones de ensamblaje)**
+     - Exactamente 3 oraciones que pongan en práctica la gramática de la clase:
+       - Oración 1: Afirmativa (+)
+       - Oración 2: Negativa (−)
+       - Oración 3: Interrogativa (?)
+     - Cada una con: `prompt` (español colombiano cotidiano), `answer` (inglés correcto), `tokens` (palabras separadas + distractores plausibles) y `hints` (pistas pedagógicas progresivas).
+  3. **Estación 3: 🎧 Ear Check (3 preguntas auditivas)**
+     - 3 preguntas de listening comprehension con audio en inglés (`audioText`), respuesta correcta (`correctAnswer`) y 3 opciones múltiples grandes con distractores realistas que difieran en 1 o 2 palabras clave.
+  4. **Insignia Temática (`badgeName` y `badgeEmoji`)**:
+     - Cada clase otorga una insignia única y motivadora en inglés vinculada a su tema (ej: `🤝 Friendly Face`, `⏰ Routine Master`, `🍕 Food Explorer`, `🧭 City Navigator`, `📱 Tech Wizard`).
+
+- **CONTEXTUALIZACIÓN Y LOCALIZACIÓN (COLOMBIA)**:
+  - Todo el contenido debe conectar con la cotidianidad colombiana (colegios, amigos, parches, comidas, ciudades, expresiones coloquiales naturales).
+  - Cero lenguaje formal acartonado o traducciones robóticas.
+
+- **PERSISTENCIA Y RESILIENCIA**:
+  - Toda misión resuelta debe persistirse en Supabase (`missions`, `mission_streaks`, `mission_badges`) con respaldo síncrono offline en `localStorage`.
+  - El tema seleccionado por el estudiante (`vibrant` o `cool`) debe guardarse de forma permanente en `student_preferences`.
+
+

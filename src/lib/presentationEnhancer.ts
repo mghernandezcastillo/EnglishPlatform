@@ -3007,14 +3007,15 @@ function enhanceVocabularySlide(
 
 export function enhancePresentationClass(cls: CurriculumClass): CurriculumClass {
   // If the class is already an handcrafted Teens Studio class or contains studio slides, preserve it 100% intact
-  const isStudioClass = cls.sections.some(s => s.slides.some(sl => 
-    sl.type === 'grammar-studio' || 
-    sl.type === 'verb-arena-embedded' || 
-    sl.type === 'story-decoder-embedded' ||
-    sl.type === 'objectives-animated' ||
-    sl.type === 'listening-audio-teacher' ||
-    sl.type === 'writing-guided'
-  ));
+  const isStudioClass = cls.sections.some(s => s.slides.some(sl => {
+    const t = sl.type as string;
+    return t === 'grammar-studio' || 
+      t === 'verb-arena-embedded' || 
+      t === 'story-decoder-embedded' ||
+      t === 'objectives-animated' ||
+      t === 'listening-audio-teacher' ||
+      t === 'writing-guided';
+  }));
 
   if (isStudioClass) {
     return cls;

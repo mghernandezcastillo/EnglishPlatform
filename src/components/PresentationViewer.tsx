@@ -5,6 +5,7 @@ import { CurriculumClass, ClassSection, ClassSlide } from '../types';
 import { SlideRenderer } from './SlideRenderer';
 import { enhancePresentationClass } from '../lib/presentationEnhancer';
 import { fireClassCompletionConfetti } from '../lib/celebration';
+import { TeacherMissionFlashWidget } from './missions/TeacherMissionFlashWidget';
 
 interface PresentationViewerProps {
   cls: CurriculumClass;
@@ -343,6 +344,11 @@ export function PresentationViewer({ cls, onClose, onComplete, studentId, studen
             <span className="text-xs font-semibold text-slate-200 truncate">
               {section?.title || 'Presentación'}
             </span>
+            <TeacherMissionFlashWidget
+              studentId={studentId}
+              studentName={studentName}
+              currentClassId={cls.id}
+            />
           </div>
           <h2 className="text-sm sm:text-base font-black truncate text-white mt-0.5 drop-shadow">
             {cls.title}
