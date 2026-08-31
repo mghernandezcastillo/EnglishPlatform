@@ -468,7 +468,7 @@ export default function App() {
       )}
 
       {/* Header for Dashboard */}
-      {!activeLessonId && (
+      {!activeLessonId && currentView !== 'missions' && (
         <header className="bg-white border-b border-gray-200 py-4 px-4 sm:px-6 sticky top-0 z-10 shadow-sm flex items-center justify-between">
           <div className="flex items-center gap-3 w-full max-w-5xl cursor-pointer" onClick={() => setRole('none')}>
             <div className="w-10 h-10 shrink-0 bg-indigo-600 rounded-xl flex items-center justify-center shadow-inner overflow-hidden">
@@ -570,8 +570,8 @@ export default function App() {
           />
         )}
       </Suspense>
-      <FloatingControls studentId={currentStudentId} studentName={progress.studentName} />
-      <Suspense fallback={null}><GlobalAiAssistant /></Suspense>
+      {currentView !== 'missions' && <FloatingControls studentId={currentStudentId} studentName={progress.studentName} />}
+      {currentView !== 'missions' && <Suspense fallback={null}><GlobalAiAssistant /></Suspense>}
     </div>
   );
 }

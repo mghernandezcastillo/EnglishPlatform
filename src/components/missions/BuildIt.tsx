@@ -55,10 +55,13 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
     setAvailableTokens((prev) => [...prev, token]);
   };
 
+  const spanishPrompt = currentSentence.spanish || (currentSentence as any).prompt || '';
+  const englishAnswer = currentSentence.english || (currentSentence as any).answer || '';
+
   const handleUseHint = () => {
     if (isVerifying || isSuccess) return;
     
-    const correctEnglishTokens = currentSentence.english.split(' ');
+    const correctEnglishTokens = englishAnswer.split(' ');
     const nextExpectedWord = correctEnglishTokens[assembledTokens.length];
     
     if (nextExpectedWord) {
@@ -74,8 +77,8 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
     if (assembledTokens.length === 0) return;
     setIsVerifying(true);
     
-    const assembledText = assembledTokens.map(t => t.text).join(' ');
-    const correctText = currentSentence.english;
+    const assembledText = assembledTokens.map(t => t.text).join(' ').trim().toLowerCase().replace(/[.,!?;:]/g, '');
+    const correctText = englishAnswer.trim().toLowerCase().replace(/[.,!?;:]/g, '');
     
     if (assembledText === correctText) {
       setIsSuccess(true);
@@ -130,8 +133,8 @@ export function BuildIt({ sentences, theme, onComplete }: BuildItProps) {
         animate={{ opacity: 1, y: 0 }}
         className="bg-white/20 backdrop-blur-md rounded-2xl p-6 mb-8 text-center shadow-lg border border-white/10"
       >
-        <h2 className="text-2xl font-bold">{currentSentence.spanish}</h2>
-        {currentSentence.hints[0] && (
+        <h2 className="text-2xl font-bold">{spanishPrompt}</h2>
+        {currentSentence.hints && currentSentence.hints[0] && (
           <p className="text-sm opacity-80 mt-2">{currentSentence.hints[0]}</p>
         )}
       </motion.div>

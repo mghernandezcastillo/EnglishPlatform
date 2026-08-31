@@ -6,7 +6,7 @@ import { BuildIt } from './BuildIt';
 import { EarCheck } from './EarCheck';
 import { MissionResultsScreen } from './MissionResultsScreen';
 import { TigerMentor } from './TigerMentor';
-import type { MissionContent } from '../../lib/missionService';
+import { missionService, type MissionContent } from '../../lib/missionService';
 
 export interface MissionResults {
   speedCards: { score: number; total: number; unknownTerms: string[] };
@@ -113,6 +113,14 @@ export function MissionRunner({
       accuracyPct,
       timeSpentSeconds
     };
+    
+    // PERMANENT PERSISTENCE TO SUPABASE & LOCAL STORAGE
+    const effectiveStudentId = studentId || 'guest-student';
+    missionService.completeMission(effectiveStudentId, classId, totalXp, accuracyPct).catch(console.error);
+    missionService.updateStreak(effectiveStudentId, totalXp).catch(console.error);
+    if (content.badgeName) {
+      missionService.awardBadge(effectiveStudentId, classId, content.badgeName, content.badgeEmoji || '🏆', accuracyPct).catch(console.error);
+    }
     
     setResults(finalResults);
     setStage('results');

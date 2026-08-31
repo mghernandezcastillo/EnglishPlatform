@@ -84,7 +84,7 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
     : 'bg-white text-slate-900 border-amber-200/80 shadow-2xl';
 
   return (
-    <div className={`fixed inset-0 flex flex-col items-center justify-between p-4 sm:p-6 overflow-hidden ${bgGradient} select-none`}>
+    <div className={`fixed inset-0 z-50 flex flex-col items-center justify-between p-4 pt-4 pb-8 sm:p-6 sm:pb-10 overflow-hidden ${bgGradient} select-none h-[100dvh]`}>
       
       {/* Top Header & Progress */}
       <div className="w-full max-w-md flex flex-col gap-2 z-10 shrink-0">
@@ -111,7 +111,7 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
       </div>
 
       {/* Main Flashcard Container */}
-      <div className="w-full max-w-md flex-1 flex items-center justify-center my-auto py-2">
+      <div className="w-full max-w-md flex-1 flex items-center justify-center my-auto py-1">
         <AnimatePresence mode="wait">
           {currentCard && (
             <motion.div
@@ -125,7 +125,7 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
               exit={{ scale: 0.9, opacity: 0, y: -20 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
               onClick={() => setIsFlipped(!isFlipped)}
-              className={`relative w-full aspect-[4/5] max-h-[460px] rounded-3xl p-6 sm:p-8 flex flex-col items-center justify-between text-center cursor-pointer border-2 shadow-2xl transition-all ${cardBg} ${
+              className={`relative w-full h-[50dvh] max-h-[410px] min-h-[300px] rounded-3xl p-5 sm:p-7 flex flex-col items-center justify-between text-center cursor-pointer border-2 shadow-2xl transition-all ${cardBg} ${
                 actionFeedback === 'correct' ? 'ring-4 ring-emerald-400 bg-emerald-50 text-slate-950' : 
                 actionFeedback === 'review' ? 'ring-4 ring-amber-400 bg-amber-50 text-slate-950' : ''
               }`}
@@ -144,15 +144,15 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
               </div>
 
               {/* Center Content (Front / Back) */}
-              <div className="my-auto flex flex-col items-center justify-center gap-4 w-full">
+              <div className="my-auto flex flex-col items-center justify-center gap-3 w-full">
                 {!isFlipped ? (
                   <>
-                    <h2 className="text-3xl sm:text-4xl font-black tracking-tight break-words max-w-full">
+                    <h2 className={`text-3xl sm:text-4xl font-black tracking-tight break-words max-w-full ${isCool ? '!text-white' : '!text-slate-950'}`}>
                       {currentCard.term}
                     </h2>
 
                     {currentCard.ipa && (
-                      <p className="text-sm font-mono text-slate-400 font-bold">
+                      <p className={`text-sm font-mono font-bold ${isCool ? '!text-indigo-300' : '!text-slate-500'}`}>
                         /{currentCard.ipa}/
                       </p>
                     )}
@@ -163,25 +163,29 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
                         e.stopPropagation();
                         handleAudio(currentCard.audioText || currentCard.term);
                       }}
-                      className="p-4 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white shadow-lg shadow-orange-500/30 transform active:scale-95 transition-all cursor-pointer mt-2"
+                      className="p-3.5 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white shadow-lg shadow-orange-500/30 transform active:scale-95 transition-all cursor-pointer mt-1"
                       title="Escuchar pronunciación"
                     >
-                      <Volume2 className="w-7 h-7" />
+                      <Volume2 className="w-6 h-6 text-white" />
                     </button>
                   </>
                 ) : (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    className="flex flex-col items-center gap-3 w-full"
+                    className="flex flex-col items-center gap-2 w-full"
                   >
-                    <span className="text-xs font-black uppercase tracking-wider text-orange-500">Significado:</span>
-                    <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+                    <span className={`text-xs font-black uppercase tracking-wider ${isCool ? '!text-amber-400' : '!text-orange-600'}`}>
+                      Significado:
+                    </span>
+                    <h3 className={`text-3xl sm:text-4xl font-black tracking-tight ${isCool ? '!text-white' : '!text-slate-950'}`}>
                       {currentCard.translation}
                     </h3>
 
                     {currentCard.example && (
-                      <div className="mt-4 p-4 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-xs sm:text-sm italic text-slate-600 dark:text-slate-300 w-full text-center">
+                      <div className={`mt-3 p-3.5 rounded-2xl text-xs sm:text-sm italic w-full text-center font-medium shadow-inner ${
+                        isCool ? 'bg-indigo-950/60 border border-indigo-700/50 !text-indigo-100' : 'bg-orange-50/90 border border-orange-200/80 !text-slate-800'
+                      }`}>
                         "{currentCard.example}"
                       </div>
                     )}
@@ -200,12 +204,12 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
         </AnimatePresence>
       </div>
 
-      {/* Bottom Dual Action Touch Buttons (Mobile First) */}
-      <div className="w-full max-w-md flex items-center gap-3 z-10 shrink-0 pb-2">
+      {/* Bottom Dual Action Touch Buttons (Elevated & User Friendly) */}
+      <div className="w-full max-w-md flex items-center gap-3.5 z-10 shrink-0 mb-2">
         <button
           onClick={handleNeedReview}
           disabled={actionFeedback !== null}
-          className="flex-1 py-4 px-4 rounded-2xl bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-black text-sm sm:text-base border border-white/30 shadow-lg flex items-center justify-center gap-2 transform active:scale-95 transition-all cursor-pointer"
+          className="flex-1 py-4 px-4 rounded-2xl bg-slate-900/40 hover:bg-slate-900/60 active:bg-slate-900/80 backdrop-blur-md text-white font-black text-sm sm:text-base border border-white/20 shadow-lg flex items-center justify-center gap-2 transform active:scale-95 transition-all cursor-pointer"
         >
           <span className="text-lg">🤔</span>
           <span>Repasar</span>
@@ -214,7 +218,7 @@ export function SpeedCards({ cards, theme, onComplete }: SpeedCardsProps) {
         <button
           onClick={handleKnowIt}
           disabled={actionFeedback !== null}
-          className="flex-1 py-4 px-4 rounded-2xl bg-gradient-to-r from-emerald-400 to-green-500 hover:from-emerald-300 hover:to-green-400 text-slate-950 font-black text-sm sm:text-base shadow-xl shadow-emerald-900/30 flex items-center justify-center gap-2 transform active:scale-95 transition-all cursor-pointer border-2 border-emerald-200"
+          className="flex-1 py-4 px-4 rounded-2xl bg-gradient-to-r from-emerald-400 to-green-500 hover:from-emerald-300 hover:to-green-400 text-slate-950 font-black text-sm sm:text-base shadow-xl shadow-emerald-950/30 flex items-center justify-center gap-2 transform active:scale-95 transition-all cursor-pointer border-2 border-emerald-200"
         >
           <span className="text-lg">🎯</span>
           <span>¡Me la sé!</span>

@@ -245,25 +245,52 @@ export const missionService = {
   async completeMission(studentId: string, classId: string, finalXp: number, finalAccuracy: number): Promise<void> {
     const cacheKey = `maven_missions_${studentId}`;
     const missions = getLocal<Mission[]>(cacheKey, []);
-    const mission = missions.find(m => m.classId === classId);
+    let mission = missions.find(m => m.classId === classId);
     
+    const nowIso = new Date().toISOString();
     if (mission) {
       mission.status = 'completed';
-      mission.completedAt = new Date().toISOString();
+      mission.completedAt = nowIso;
       mission.totalXp = finalXp;
       mission.accuracyPct = finalAccuracy;
-      setLocal(cacheKey, missions);
+    } else {
+      mission = {
+        id: crypto.randomUUID(),
+        studentId,
+        classId,
+        status: 'completed',
+        speedCardsScore: 7,
+        speedCardsTotal: 7,
+        buildItScore: 3,
+        buildItTotal: 3,
+        earCheckScore: 3,
+        earCheckTotal: 3,
+        bonusCompleted: true,
+        bonusType: null,
+        totalXp: finalXp,
+        accuracyPct: finalAccuracy,
+        timeSpentSeconds: 120,
+        unlockedAt: nowIso,
+        startedAt: nowIso,
+        completedAt: nowIso,
+        createdAt: nowIso
+      };
+      missions.push(mission);
+    }
+    setLocal(cacheKey, missions);
 
-      try {
-        await supabase.from('missions').update({
-          status: 'completed',
-          completed_at: mission.completedAt,
-          total_xp: mission.totalXp,
-          accuracy_pct: mission.accuracyPct
-        }).eq('student_id', studentId).eq('class_id', classId);
-      } catch (e) {
-        console.error('Error syncing completeMission', e);
-      }
+    try {
+      await supabase.from('missions').upsert({
+        student_id: studentId,
+        class_id: classId,
+        status: 'completed',
+        completed_at: mission.completedAt,
+        total_xp: mission.totalXp,
+        accuracy_pct: mission.accuracyPct,
+        updated_at: nowIso
+      }, { onConflict: 'student_id,class_id' });
+    } catch (e) {
+      console.error('Error syncing completeMission to Supabase', e);
     }
   },
 
