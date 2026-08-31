@@ -70,9 +70,23 @@ export function MissionHub({
         try {
           const students = await dbAdmin.getStudents();
           const current = students.find(s => s.id === effectiveStudentId);
-          if (current?.completed_lessons) {
-            completedLessons = current.completed_lessons;
+          if (current) {
+            completedLessons = current.completed_lessons || [];
             setStudentCompletedLessons(completedLessons);
+            
+            // Format level nicely (e.g. Level 1 • Basic 1)
+            let formattedLevel = current.level || 'Basic 1';
+            if (formattedLevel.toLowerCase().includes('zero')) formattedLevel = 'Level 0 • Basic Zero';
+            else if (formattedLevel.toLowerCase().includes('basic 1') || formattedLevel.toLowerCase().includes('basic-1')) formattedLevel = 'Level 1 • Basic 1';
+            else if (formattedLevel.toLowerCase().includes('basic 2') || formattedLevel.toLowerCase().includes('basic-2')) formattedLevel = 'Level 2 • Basic 2';
+            else if (formattedLevel.toLowerCase().includes('basic 3') || formattedLevel.toLowerCase().includes('basic-3')) formattedLevel = 'Level 3 • Basic 3';
+            else if (formattedLevel.toLowerCase().includes('basic 4') || formattedLevel.toLowerCase().includes('basic-4')) formattedLevel = 'Level 4 • Basic 4';
+            
+            setStudentProfile({
+              name: current.name,
+              avatar_id: current.avatar_id,
+              level: formattedLevel
+            });
           }
         } catch {}
 
@@ -325,50 +339,66 @@ export function MissionHub({
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            className={`p-4 sm:p-6 rounded-3xl border shadow-md flex flex-col sm:flex-row items-center gap-4 justify-between ${
+            className={`p-4 sm:p-5 rounded-3xl border shadow-md flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4 justify-between ${
               isCool 
                 ? 'bg-gradient-to-br from-slate-800/95 via-indigo-950/50 to-slate-900 border-indigo-500/40 text-slate-100' 
                 : 'bg-gradient-to-br from-amber-50 via-orange-50 to-white border-amber-200/90 text-slate-900'
             }`}
           >
-            <div className="flex items-center gap-4 w-full sm:w-auto">
+            {/* Student Profile Info */}
+            <div className="flex items-center gap-3.5 w-full sm:w-auto">
               <div className="relative shrink-0">
                 <img
                   src={displayAvatarUrl}
                   alt={studentName || 'Estudiante'}
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover border-3 border-amber-400 shadow-xl bg-indigo-50"
+                  className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-amber-400 shadow-md bg-indigo-50"
                 />
-                <div className="absolute -bottom-1.5 -right-1.5 p-1 bg-emerald-500 rounded-full border-2 border-white text-white shadow-sm">
-                  <Sparkles className="w-3.5 h-3.5" />
+                <div className="absolute -bottom-1 -right-1 p-0.5 bg-emerald-500 rounded-full border border-white text-white shadow-sm">
+                  <Sparkles className="w-3 h-3" />
                 </div>
               </div>
-              <div>
+              <div className="min-w-0">
                 <div className="flex items-center gap-2">
-                  <span className="text-[11px] font-black uppercase tracking-wider text-orange-600 bg-orange-100 px-2.5 py-0.5 rounded-full">
-                    Estudiante Activo/a
+                  <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-orange-600 bg-orange-100 px-2 py-0.5 rounded-full">
+                    Estudiante
                   </span>
-                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400 truncate">
                     {studentProfile?.level || 'Maven Teens'}
                   </span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1">
+                <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-0.5 truncate">
                   ¡Hola, {studentName || 'Estudiante'}! 👋
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-medium mt-0.5">
+                <p className="text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 font-medium">
                   {currentStreak > 0 
-                    ? `🔥 Llevas una racha de ${currentStreak} días activa. ¡Sigue con toda la energía!` 
-                    : 'Completa tu reto de 5 minutos y gana tus +150 XP de hoy.'}
+                    ? `🔥 Racha de ${currentStreak} días activa. ¡Sigue así!` 
+                    : 'Completa tu reto de 5 min y gana +150 XP.'}
                 </p>
               </div>
             </div>
 
-            <div className="hidden md:flex shrink-0">
-              <TigerMentor 
-                pose="wave"
-                size="sm"
-                dialogue="¡A ganar XP!"
-                isCoolTheme={isCool}
-              />
+            {/* Maven the Tiger Mentor (Visible on Mobile & Desktop) */}
+            <div className="w-full sm:w-auto flex items-center justify-between sm:justify-end gap-3 pt-2.5 sm:pt-0 border-t sm:border-t-0 border-slate-200/60 dark:border-slate-700/60 shrink-0">
+              <div className="flex items-center gap-2.5">
+                <div className="relative shrink-0">
+                  <img
+                    src="/images/mascot/tiger_mentor_wave.jpg"
+                    alt="Tigre Maven 3D"
+                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl object-cover border-2 border-amber-400 shadow-md bg-white"
+                  />
+                  <span className="absolute -top-1.5 -right-1 px-1.5 py-0.2 bg-amber-400 text-slate-950 font-black text-[9px] rounded-full border border-white">
+                    3D
+                  </span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] font-black uppercase tracking-wider text-amber-500">
+                    Tigre Maven • Mentor
+                  </span>
+                  <span className="text-xs font-extrabold text-slate-800 dark:text-slate-100">
+                    "¡A romperla hoy con toda! ⚡"
+                  </span>
+                </div>
+              </div>
             </div>
           </motion.div>
 
