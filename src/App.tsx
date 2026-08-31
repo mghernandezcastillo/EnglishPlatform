@@ -59,6 +59,7 @@ export default function App() {
     const studentIdParam = params.get('studentId');
     const missionParam = params.get('mission');
     const structureReportParam = params.get('structureReport') || params.get('structure_report');
+    const tabParam = params.get('tab') || params.get('view');
 
     if (structureReportParam) {
       setCurrentView('structure_mode');
@@ -67,26 +68,6 @@ export default function App() {
       return;
     }
 
-    if (missionParam) {
-      setActiveMissionParam(missionParam);
-      setCurrentView('missions');
-      setRole('student');
-      setIsLoaded(true);
-      if (!studentIdParam) {
-        try {
-          const profileRaw = localStorage.getItem('active_student_profile');
-          if (profileRaw) {
-            const p = JSON.parse(profileRaw);
-            if (p.id) {
-              setCurrentStudentId(p.id);
-              setProgress(prev => ({ ...prev, studentName: p.name }));
-            }
-          }
-        } catch {}
-      }
-      return;
-    }
-    
     if (studentIdParam) {
       dbAdmin.getStudents().then(students => {
         const s = students.find(s => s.id === studentIdParam);
@@ -109,8 +90,35 @@ export default function App() {
           });
           setRole('student');
         }
+
+        // Direct Routing to Missions if requested by URL
+        if (missionParam) {
+          setActiveMissionParam(missionParam);
+          setCurrentView('missions');
+        } else if (tabParam === 'missions') {
+          setCurrentView('missions');
+        }
+
         setIsLoaded(true);
       });
+      return;
+    }
+
+    if (missionParam) {
+      setActiveMissionParam(missionParam);
+      setCurrentView('missions');
+      setRole('student');
+      try {
+        const profileRaw = localStorage.getItem('active_student_profile');
+        if (profileRaw) {
+          const p = JSON.parse(profileRaw);
+          if (p.id) {
+            setCurrentStudentId(p.id);
+            setProgress(prev => ({ ...prev, studentName: p.name }));
+          }
+        }
+      } catch {}
+      setIsLoaded(true);
       return;
     }
 

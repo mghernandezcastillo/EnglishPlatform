@@ -74,7 +74,7 @@ export function MissionTeacherTab() {
   const handleCopyStudentLink = () => {
     if (!selectedStudent) return;
     const origin = typeof window !== 'undefined' ? window.location.origin : 'https://maven-english.com';
-    const url = `${origin}/?studentId=${selectedStudent.id}`;
+    const url = `${origin}/?studentId=${selectedStudent.id}&tab=missions`;
     navigator.clipboard.writeText(url);
     setCopiedLink(true);
     setTimeout(() => setCopiedLink(false), 3000);
@@ -176,9 +176,9 @@ export function MissionTeacherTab() {
                   <Share2 className="w-6 h-6" />
                 </div>
                 <div className="min-w-0">
-                  <h4 className="font-black text-base">Enlace Permanente de {selectedStudent.name}</h4>
+                  <h4 className="font-black text-base">Enlace de Misiones de {selectedStudent.name}</h4>
                   <p className="text-xs text-purple-100 font-mono truncate">
-                    {typeof window !== 'undefined' ? `${window.location.origin}/?studentId=${selectedStudent.id}` : ''}
+                    {typeof window !== 'undefined' ? `${window.location.origin}/?studentId=${selectedStudent.id}&tab=missions` : ''}
                   </p>
                 </div>
               </div>
