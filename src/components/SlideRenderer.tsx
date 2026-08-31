@@ -626,6 +626,148 @@ function parseFormulaTokens(formulaStr: string): FormulaToken[] {
   return tokens;
 }
 
+interface TokenStyle {
+  color: string;
+  bg: string;
+  border: string;
+  label?: string;
+}
+
+export function getGrammarWordStyle(cleanWord: string, lowerWord: string): TokenStyle | null {
+  // 1. Wh- Question Words (Amber / Gold)
+  if (/^(what|where|when|why|who|whose|which|how|how often|how many|how much|how old|how long)$/i.test(lowerWord)) {
+    return {
+      color: 'text-amber-300',
+      bg: 'bg-amber-400/25',
+      border: 'border-amber-400/60',
+      label: 'Wh- Question'
+    };
+  }
+
+  // 2. Negations & Contractions (Rose / Red / Coral)
+  if (/^(not|don't|doesn't|didn't|isn't|aren't|wasn't|weren't|won't|can't|couldn't|shouldn't|mustn't|haven't|hasn't|hadn't|wouldn't|never)$/i.test(lowerWord)) {
+    return {
+      color: 'text-rose-300',
+      bg: 'bg-rose-500/25',
+      border: 'border-rose-400/60',
+      label: 'Negación'
+    };
+  }
+
+  // 3. Modal Verbs & Modals (Purple / Violet)
+  if (/^(can|could|must|should|would|might|may|shall|ought)$/i.test(lowerWord)) {
+    return {
+      color: 'text-purple-300',
+      bg: 'bg-purple-500/25',
+      border: 'border-purple-400/60',
+      label: 'Verbo Modal'
+    };
+  }
+
+  // 4. Auxiliaries & Be-Verbs (Cyan / Electric Blue)
+  if (/^(am|is|are|was|were|be|been|being|do|does|did|will|have|has|had)$/i.test(lowerWord)) {
+    return {
+      color: 'text-cyan-300',
+      bg: 'bg-cyan-500/25',
+      border: 'border-cyan-400/60',
+      label: 'Auxiliar / To Be'
+    };
+  }
+
+  // 5. Frequency Adverbs & Time / Sequencing (Fuchsia / Magenta)
+  if (/^(always|usually|often|sometimes|rarely|seldom|hardly|daily|every|first|then|finally|next|after|before|today|tomorrow|yesterday|tonight)$/i.test(lowerWord)) {
+    return {
+      color: 'text-fuchsia-300',
+      bg: 'bg-fuchsia-500/25',
+      border: 'border-fuchsia-400/60',
+      label: 'Frecuencia / Tiempo'
+    };
+  }
+
+  // 6. Pronouns, Subject Contractions & Demonstratives (Sky / Blue)
+  if (/^(i|you|he|she|it|we|they|i'm|you're|he's|she's|it's|we're|they're|i'll|you'll|he'll|she'll|we'll|they'll|i've|you've|we've|they've|my|your|his|her|its|our|their|mine|yours|hers|ours|theirs|this|that|these|those)$/i.test(lowerWord)) {
+    return {
+      color: 'text-sky-200',
+      bg: 'bg-sky-400/25',
+      border: 'border-sky-300/60',
+      label: 'Sujeto / Pronombre'
+    };
+  }
+
+  // 7. Common Action Verbs & Expressions (Emerald / Green)
+  if (/^(wake|wakes|woke|woken|eat|eats|ate|eaten|sleep|sleeps|slept|work|works|worked|study|studies|studied|play|plays|played|wear|wears|wearing|wore|worn|like|likes|liked|love|loves|loved|enjoy|enjoys|enjoyed|go|goes|going|went|gone|live|lives|lived|drink|drinks|drank|drunk|speak|speaks|spoke|spoken|read|reads|write|writes|wrote|written|buy|buys|bought|call|calls|called|take|takes|took|taken|listen|listens|listened|watch|watches|watched|see|sees|saw|seen|make|makes|made|get|gets|got|gotten|need|needs|needed|want|wants|wanted|talk|talks|talked|feel|feels|felt)$/i.test(lowerWord)) {
+    return {
+      color: 'text-emerald-300',
+      bg: 'bg-emerald-500/25',
+      border: 'border-emerald-400/60',
+      label: 'Verbo de Acción'
+    };
+  }
+
+  return null;
+}
+
+export function renderColoredGrammarSentence(text?: string | null, activeHighlightText?: string | null): React.ReactNode {
+  if (!text) return null;
+  const cleanFullText = text.replace(/^["'“]+|["'”]+$/g, '');
+  const tokens = cleanFullText.split(/(\s+|[.,!?;:()"])/g).filter(Boolean);
+
+  return (
+    <span className="inline-flex flex-wrap items-center gap-1 leading-relaxed">
+      {tokens.map((token, idx) => {
+        const isWhitespaceOrPunct = /^\s+$|^[.,!?;:()"]+$/.test(token);
+        if (isWhitespaceOrPunct) {
+          return (
+            <span key={idx} className="text-white/80 select-none">
+              {token}
+            </span>
+          );
+        }
+
+        const cleanWord = token.replace(/^[.,!?;:()"]+|[.,!?;:()"]+$/g, '');
+        const lowerWord = cleanWord.toLowerCase();
+        const style = getGrammarWordStyle(cleanWord, lowerWord);
+
+        const isHighlightMatch = Boolean(
+          activeHighlightText && (
+            lowerWord === activeHighlightText.toLowerCase() ||
+            activeHighlightText.toLowerCase().includes(lowerWord)
+          )
+        );
+
+        if (style) {
+          return (
+            <span
+              key={idx}
+              className={`inline-flex items-center px-1.5 py-0.5 rounded-lg border font-black tracking-tight transition-all duration-200 shadow-sm ${style.bg} ${style.border} ${style.color} ${
+                isHighlightMatch
+                  ? 'ring-2 ring-white scale-110 shadow-[0_0_20px_rgba(255,255,255,0.8)]'
+                  : 'hover:scale-105 hover:brightness-110'
+              }`}
+              title={style.label}
+            >
+              {token}
+            </span>
+          );
+        }
+
+        return (
+          <span
+            key={idx}
+            className={`font-extrabold text-white transition-all ${
+              isHighlightMatch
+                ? 'text-yellow-300 font-black underline underline-offset-4 decoration-yellow-400'
+                : 'text-white/95'
+            }`}
+          >
+            {token}
+          </span>
+        );
+      })}
+    </span>
+  );
+}
+
 export function resolveReadingLines(slide?: ClassSlide | null): { speaker?: string; text: string; cleanText?: string; es?: string }[] {
   if (!slide) return [];
   const rd = (slide as any).readingData;
@@ -757,22 +899,34 @@ export function SlideRenderer({
       if (!spotlightElement) return;
       if (e.key === 'Escape') {
         setSpotlightElement(null);
-      } else if (e.key === 'ArrowRight' && spotlightElement.total <= 3) {
-        const newIdx = (spotlightElement.index + 1) % 3;
-        const cardsData = [
-          { index: 0, title: 'Elemento 1 • Misión de la Clase', text: slide.content?.[0] || 'Are you ready to level up your English?', iconType: 'target' as const, gradient: 'from-pink-500 to-rose-600', iconBg: 'bg-gradient-to-br from-pink-500 to-rose-600' },
-          { index: 1, title: 'Elemento 2 • Concepto Clave', text: slide.content?.[1] || 'Today we learn how to introduce ourselves.', iconType: 'book' as const, gradient: 'from-cyan-500 to-blue-600', iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600' },
-          { index: 2, title: 'Elemento 3 • Desafío y Conversación', text: slide.content?.[2] || "Let's make some new friends!", iconType: 'users' as const, gradient: 'from-amber-400 to-orange-500', iconBg: 'bg-gradient-to-br from-amber-400 to-orange-500' }
-        ];
-        setSpotlightElement({ ...cardsData[newIdx], total: 3 });
-      } else if (e.key === 'ArrowLeft' && spotlightElement.total <= 3) {
-        const newIdx = (spotlightElement.index - 1 + 3) % 3;
-        const cardsData = [
-          { index: 0, title: 'Elemento 1 • Misión de la Clase', text: slide.content?.[0] || 'Are you ready to level up your English?', iconType: 'target' as const, gradient: 'from-pink-500 to-rose-600', iconBg: 'bg-gradient-to-br from-pink-500 to-rose-600' },
-          { index: 1, title: 'Elemento 2 • Concepto Clave', text: slide.content?.[1] || 'Today we learn how to introduce ourselves.', iconType: 'book' as const, gradient: 'from-cyan-500 to-blue-600', iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600' },
-          { index: 2, title: 'Elemento 3 • Desafío y Conversación', text: slide.content?.[2] || "Let's make some new friends!", iconType: 'users' as const, gradient: 'from-amber-400 to-orange-500', iconBg: 'bg-gradient-to-br from-amber-400 to-orange-500' }
-        ];
-        setSpotlightElement({ ...cardsData[newIdx], total: 3 });
+      } else if (e.key === 'ArrowRight') {
+        if (spotlightElement.items && spotlightElement.items.length > 1) {
+          const items = spotlightElement.items;
+          const newIdx = (spotlightElement.index + 1) % items.length;
+          setSpotlightElement({ ...items[newIdx], index: newIdx, total: items.length, items });
+        } else if (spotlightElement.total <= 3) {
+          const newIdx = (spotlightElement.index + 1) % 3;
+          const cardsData = [
+            { index: 0, title: 'Elemento 1 • Misión de la Clase', text: slide.content?.[0] || 'Are you ready to level up your English?', iconType: 'target' as const, gradient: 'from-pink-500 to-rose-600', iconBg: 'bg-gradient-to-br from-pink-500 to-rose-600' },
+            { index: 1, title: 'Elemento 2 • Concepto Clave', text: slide.content?.[1] || 'Today we learn how to introduce ourselves.', iconType: 'book' as const, gradient: 'from-cyan-500 to-blue-600', iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600' },
+            { index: 2, title: 'Elemento 3 • Desafío y Conversación', text: slide.content?.[2] || "Let's make some new friends!", iconType: 'users' as const, gradient: 'from-amber-400 to-orange-500', iconBg: 'bg-gradient-to-br from-amber-400 to-orange-500' }
+          ];
+          setSpotlightElement({ ...cardsData[newIdx], total: 3 });
+        }
+      } else if (e.key === 'ArrowLeft') {
+        if (spotlightElement.items && spotlightElement.items.length > 1) {
+          const items = spotlightElement.items;
+          const newIdx = (spotlightElement.index - 1 + items.length) % items.length;
+          setSpotlightElement({ ...items[newIdx], index: newIdx, total: items.length, items });
+        } else if (spotlightElement.total <= 3) {
+          const newIdx = (spotlightElement.index - 1 + 3) % 3;
+          const cardsData = [
+            { index: 0, title: 'Elemento 1 • Misión de la Clase', text: slide.content?.[0] || 'Are you ready to level up your English?', iconType: 'target' as const, gradient: 'from-pink-500 to-rose-600', iconBg: 'bg-gradient-to-br from-pink-500 to-rose-600' },
+            { index: 1, title: 'Elemento 2 • Concepto Clave', text: slide.content?.[1] || 'Today we learn how to introduce ourselves.', iconType: 'book' as const, gradient: 'from-cyan-500 to-blue-600', iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600' },
+            { index: 2, title: 'Elemento 3 • Desafío y Conversación', text: slide.content?.[2] || "Let's make some new friends!", iconType: 'users' as const, gradient: 'from-amber-400 to-orange-500', iconBg: 'bg-gradient-to-br from-amber-400 to-orange-500' }
+          ];
+          setSpotlightElement({ ...cardsData[newIdx], total: 3 });
+        }
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -1468,24 +1622,41 @@ export function SlideRenderer({
                             );
                           })()}
 
-                          {/* English Sentence & Spanish Translation */}
-                          <div className="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 border border-white/20 p-2.5 sm:p-3.5 backdrop-blur-md shadow-xl min-h-0">
-                            <div className="flex items-center justify-between gap-2 mb-0.5">
+                          {/* English Sentence & Spanish Translation (Dynamic Multi-Color Highlighting) */}
+                          <div className="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0e1338]/95 via-[#13103c]/90 to-[#0b0f2e]/95 border-2 border-cyan-400/35 p-2.5 sm:p-3.5 backdrop-blur-md shadow-[0_0_30px_rgba(6,182,212,0.2)] min-h-0 relative overflow-hidden">
+                            {/* Ambient Glow */}
+                            <div className="absolute -top-12 -right-12 w-44 h-44 bg-cyan-500/15 rounded-full blur-2xl pointer-events-none" />
+                            <div className="absolute -bottom-12 -left-12 w-44 h-44 bg-purple-500/15 rounded-full blur-2xl pointer-events-none" />
+
+                            <div className="relative z-10 flex items-center justify-between gap-2 mb-1">
                               <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
-                                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping" />
+                                <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]" />
                                 <span>Oración Modelo en Inglés</span>
                               </span>
-                              <span className="text-[9px] sm:text-[10px] font-extrabold text-amber-300/90 uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-400/15 border border-amber-300/30">
-                                Pronunciación Nativa
-                              </span>
+                              <button
+                                type="button"
+                                onClick={() => playSpeech(activeStruct?.audio || activeStruct?.example, 'en-US', 0.9)}
+                                className="flex items-center gap-1 text-[9px] sm:text-[10px] font-extrabold text-amber-300 uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-400/15 hover:bg-amber-400/30 border border-amber-300/40 transition-all cursor-pointer shadow-sm active:scale-95"
+                                title="Escuchar pronunciación nativa"
+                              >
+                                <Volume2 className="w-3 h-3 text-amber-300" />
+                                <span>Pronunciación Nativa</span>
+                              </button>
                             </div>
-                            <p className="text-xl sm:text-2xl lg:text-[1.9rem] font-black text-white leading-snug tracking-tight drop-shadow-[0_0_25px_rgba(255,255,255,0.25)]">
-                              "{activeStruct?.example}"
-                            </p>
+
+                            <div className="relative z-10 text-xl sm:text-2xl lg:text-[1.85rem] font-black text-white leading-snug tracking-tight drop-shadow-[0_0_25px_rgba(255,255,255,0.25)] py-0.5">
+                              {renderColoredGrammarSentence(activeStruct?.example || '', activeFormulaToken !== null && formulaTokens[activeFormulaToken] ? formulaTokens[activeFormulaToken].text : null)}
+                            </div>
+
                             {activeStruct?.exampleEs && (
-                              <p className="text-xs sm:text-sm lg:text-base font-extrabold text-cyan-200/95 mt-1 leading-snug">
-                                {activeStruct.exampleEs}
-                              </p>
+                              <div className="relative z-10 flex items-center gap-2 mt-1 pt-1 border-t border-white/10">
+                                <span className="px-1.5 py-0.5 rounded-md bg-cyan-500/15 text-cyan-300 text-[9px] sm:text-[10px] font-black uppercase tracking-wider border border-cyan-400/30 shrink-0">
+                                  🇨🇴 Español
+                                </span>
+                                <p className="text-xs sm:text-sm lg:text-[0.95rem] font-bold text-cyan-100/95 leading-snug">
+                                  {activeStruct.exampleEs}
+                                </p>
+                              </div>
                             )}
                           </div>
 
@@ -1553,11 +1724,11 @@ export function SlideRenderer({
                                 <h3 className="text-sm font-black text-white line-clamp-1">
                                   {st.label?.replace(/^\d+\.\s*/, '')}
                                 </h3>
-                                <p className="text-xs font-bold text-white/90 line-clamp-2 leading-tight">
-                                  {st.example}
-                                </p>
+                                <div className="text-xs font-bold text-white/95 line-clamp-2 leading-tight">
+                                  {renderColoredGrammarSentence(st.example)}
+                                </div>
                                 {st.exampleEs && (
-                                  <p className="text-[11px] font-semibold text-cyan-200/80 line-clamp-1">
+                                  <p className="text-[11px] font-semibold text-cyan-200/90 line-clamp-1">
                                     {st.exampleEs}
                                   </p>
                                 )}
@@ -2527,10 +2698,10 @@ export function SlideRenderer({
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
-                            className="mt-2 p-3 rounded-xl bg-white/10 border border-white/20 text-xs sm:text-sm font-bold text-slate-100 shrink-0"
+                            className="mt-2 p-3 rounded-xl bg-slate-950/80 border border-amber-400/40 text-xs sm:text-sm font-bold text-slate-100 shrink-0 shadow-lg"
                           >
                             <span className="text-yellow-400 mr-1.5 font-black">💡 Ejemplo Modelo:</span>
-                            <span>"{customData.example}"</span>
+                            <span className="inline-block">{renderColoredGrammarSentence(customData.example)}</span>
                           </motion.div>
                         )}
                       </AnimatePresence>
@@ -3013,9 +3184,9 @@ export function SlideRenderer({
                         <span className={`inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-black tracking-widest uppercase mb-1 border ${style.badge}`}>
                           {label}
                         </span>
-                        <p className={`${isCompact ? 'text-base sm:text-lg lg:text-xl' : isTwoCards ? 'text-2xl sm:text-3xl lg:text-[2.1rem]' : 'text-lg sm:text-xl lg:text-[1.45rem]'} font-extrabold text-white leading-snug tracking-tight drop-shadow-sm`}>
-                          {text}
-                        </p>
+                        <div className={`${isCompact ? 'text-base sm:text-lg lg:text-xl' : isTwoCards ? 'text-2xl sm:text-3xl lg:text-[2.1rem]' : 'text-lg sm:text-xl lg:text-[1.45rem]'} font-extrabold text-white leading-snug tracking-tight drop-shadow-sm`}>
+                          {renderColoredGrammarSentence(text)}
+                        </div>
                       </div>
                     </div>
                   </motion.div>
@@ -4370,10 +4541,10 @@ export function SlideRenderer({
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="mt-2 p-3 rounded-xl bg-white/10 border border-white/20 text-xs sm:text-sm font-bold text-slate-100 shrink-0"
+                        className="mt-2 p-3 rounded-xl bg-slate-950/80 border border-amber-400/40 text-xs sm:text-sm font-bold text-slate-100 shrink-0 shadow-lg"
                       >
                         <span className="text-yellow-400 mr-1.5 font-black">💡 Ejemplo Modelo:</span>
-                        <span>"{customData.example}"</span>
+                        <span className="inline-block">{renderColoredGrammarSentence(customData.example)}</span>
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -4757,59 +4928,59 @@ export function SlideRenderer({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSpotlightElement(null)}
-            className="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-4 sm:p-8 cursor-pointer"
+            className="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-3 sm:p-6 cursor-pointer"
           >
             <motion.div
-              initial={{ scale: 0.75, opacity: 0, y: 30 }}
+              initial={{ scale: 0.85, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.75, opacity: 0, y: 30 }}
+              exit={{ scale: 0.85, opacity: 0, y: 20 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-4xl bg-gradient-to-b from-[#1c1547] via-[#100b2b] to-[#0a071d] border-4 border-violet-400/50 rounded-[3rem] p-8 sm:p-14 shadow-[0_0_100px_rgba(168,85,247,0.5)] flex flex-col items-center text-center gap-6 text-white cursor-default"
+              className="relative w-full max-w-2xl max-h-[88vh] overflow-y-auto bg-gradient-to-b from-[#1c1547] via-[#100b2b] to-[#0a071d] border-2 border-violet-400/40 rounded-3xl p-6 sm:p-8 shadow-[0_0_60px_rgba(168,85,247,0.35)] flex flex-col items-center text-center gap-4 text-white cursor-default"
             >
               {/* Close button */}
               <button
                 onClick={() => setSpotlightElement(null)}
-                className="absolute top-5 right-5 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition active:scale-90 cursor-pointer border border-white/10 shadow-lg"
+                className="absolute top-4 right-4 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition active:scale-90 cursor-pointer border border-white/15 shadow-md z-10"
                 title="Cerrar (Esc)"
               >
-                <X className="w-6 h-6" />
+                <X className="w-5 h-5" />
               </button>
 
               {/* Modal Content */}
               {spotlightElement.iconType === 'image' ? (
-                <div className="w-full flex flex-col items-center gap-4">
-                  <div className="w-full max-h-[62vh] rounded-3xl overflow-hidden border-2 border-white/20 shadow-2xl bg-black/50 flex items-center justify-center">
+                <div className="w-full flex flex-col items-center gap-3">
+                  <div className="w-full max-h-[52vh] rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-black/50 flex items-center justify-center">
                     <img
                       src={spotlightElement.imageUrl}
                       alt={spotlightElement.text}
-                      className="w-full h-full object-contain max-h-[60vh] rounded-2xl"
+                      className="w-full h-full object-contain max-h-[50vh] rounded-xl"
                     />
                   </div>
-                  <p className="text-xl sm:text-2xl font-black text-white/90">{spotlightElement.text}</p>
+                  <p className="text-base sm:text-lg font-bold text-white/90">{spotlightElement.text}</p>
                 </div>
               ) : (
-                <div className="w-full flex flex-col items-center gap-6 py-2">
-                  {/* Giant Icon Badge */}
-                  <div className={`w-28 h-28 sm:w-32 sm:h-32 rounded-3xl ${spotlightElement.iconBg || 'bg-gradient-to-br from-indigo-500 to-purple-600'} flex items-center justify-center text-white shadow-2xl shadow-purple-500/40 ring-4 ring-white/20 animate-pulse`}>
-                    {spotlightElement.iconType === 'target' && <Target className="w-14 h-14 sm:w-16 sm:h-16 stroke-[2.5]" />}
-                    {spotlightElement.iconType === 'book' && <BookOpen className="w-14 h-14 sm:w-16 sm:h-16 stroke-[2.5]" />}
-                    {spotlightElement.iconType === 'users' && <Users className="w-14 h-14 sm:w-16 sm:h-16 stroke-[2.5]" />}
+                <div className="w-full flex flex-col items-center gap-3.5 py-1">
+                  {/* Icon Badge */}
+                  <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl ${spotlightElement.iconBg || 'bg-gradient-to-br from-indigo-500 to-purple-600'} flex items-center justify-center text-white shadow-lg shadow-purple-500/30 ring-2 ring-white/20 shrink-0`}>
+                    {spotlightElement.iconType === 'target' && <Target className="w-8 h-8 sm:w-10 sm:h-10 stroke-[2.2]" />}
+                    {spotlightElement.iconType === 'book' && <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 stroke-[2.2]" />}
+                    {spotlightElement.iconType === 'users' && <Users className="w-8 h-8 sm:w-10 sm:h-10 stroke-[2.2]" />}
                   </div>
 
                   {/* Tag pill */}
-                  <span className="px-5 py-1.5 rounded-full bg-white/10 text-xs sm:text-sm font-black uppercase tracking-widest text-violet-300 border border-violet-400/40 shadow-inner">
+                  <span className="px-3.5 py-1 rounded-full bg-white/10 text-xs font-bold uppercase tracking-wider text-violet-300 border border-violet-400/30 shadow-inner">
                     {spotlightElement.title}
                   </span>
 
-                  {/* Giant Text (Screen-share and phone friendly) */}
-                  <p className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight px-3 max-w-3xl drop-shadow-lg my-2">
+                  {/* Objective Text */}
+                  <p className="text-xl sm:text-2xl md:text-3xl font-black text-white leading-snug tracking-tight px-3 max-w-xl drop-shadow-md my-1">
                     "{spotlightElement.text}"
                   </p>
 
                   {/* Navigation between elements */}
                   {spotlightElement.items && spotlightElement.items.length > 1 && (
-                    <div className="flex items-center gap-5 mt-4 pt-4 border-t border-white/10 w-full justify-center">
+                    <div className="flex items-center gap-4 mt-2 pt-3 border-t border-white/10 w-full justify-center">
                       <button
                         onClick={() => {
                           const items = spotlightElement.items!;
@@ -4817,11 +4988,11 @@ export function SlideRenderer({
                           const prevItem = items[newIdx];
                           setSpotlightElement({ ...prevItem, index: newIdx, total: items.length, items });
                         }}
-                        className="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white transition active:scale-90 flex items-center gap-1.5 font-bold text-sm cursor-pointer"
+                        className="px-3.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white transition active:scale-90 flex items-center gap-1.5 font-bold text-xs sm:text-sm cursor-pointer"
                       >
-                        <ChevronLeft className="w-5 h-5" /> Anterior
+                        <ChevronLeft className="w-4 h-4" /> Anterior
                       </button>
-                      <span className="text-sm font-mono font-extrabold text-violet-300 bg-white/5 px-3 py-1 rounded-lg border border-white/10">
+                      <span className="text-xs sm:text-sm font-mono font-extrabold text-violet-300 bg-white/5 px-2.5 py-1 rounded-lg border border-white/10">
                         {spotlightElement.index + 1} / {spotlightElement.total}
                       </span>
                       <button
@@ -4831,9 +5002,9 @@ export function SlideRenderer({
                           const nextItem = items[newIdx];
                           setSpotlightElement({ ...nextItem, index: newIdx, total: items.length, items });
                         }}
-                        className="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white transition active:scale-90 flex items-center gap-1.5 font-bold text-sm cursor-pointer"
+                        className="px-3.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white transition active:scale-90 flex items-center gap-1.5 font-bold text-xs sm:text-sm cursor-pointer"
                       >
-                        Siguiente <ChevronRight className="w-5 h-5" />
+                        Siguiente <ChevronRight className="w-4 h-4" />
                       </button>
                     </div>
                   )}

@@ -1341,7 +1341,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "This is Carlos. His sister is Valentina and her cat is super cute.",
                       "exampleEs": "Este es Carlos. Su hermana es Valentina y su gato es súper tierno.",
                       "audio": "This is Carlos. His sister is Valentina and her cat is super cute.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step3-energized-mood.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s04-step2-basketball-15.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"This is Carlos. His sister is Valentina and her cat is super cute.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1353,7 +1353,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Their squad is awesome and their house is in Medellín.",
                       "exampleEs": "Su grupo de ellos es genial y su casa queda en Medellín.",
                       "audio": "Their squad is awesome and their house is in Medellín.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step4-nice-to-meet.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s04-step3-not-18-students.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Their squad is awesome and their house is in Medellín.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1365,7 +1365,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "He isn't my cousin; he is my best friend from school.",
                       "exampleEs": "Él no es mi primo; es mi mejor amigo del colegio.",
                       "audio": "He isn't my cousin; he is my best friend from school.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step5-farewell-goodbye.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s04-step4-sofia-age-15.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"He isn't my cousin; he is my best friend from school.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1377,7 +1377,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Who is that girl with the skateboard? - She is his sister!",
                       "exampleEs": "¿Quién es esa chica de la patineta? - ¡Es la hermana de él!",
                       "audio": "Who is that girl with the skateboard? She is his sister!",
-                      "avatarUrl": "/images/avatars-3d/c-habits-concept-c-avatar.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s04-step5-phone-number-dial.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Who is that girl with the skateboard? - She is his sister!\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
@@ -1404,7 +1404,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I live with my parents and my younger brother Daniel.",
                       "exampleEs": "Vivo con mis padres y mi hermano menor Daniel.",
                       "audio": "I live with my parents and my younger brother Daniel.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step1-pronouns-intro.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s05-step1-numbers-1-to-20.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I live with my parents and my younger brother Daniel.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1416,7 +1416,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "My grandparents live on a farm and my cousin visits every weekend.",
                       "exampleEs": "Mis abuelos viven en una finca y mi prima nos visita cada fin de semana.",
                       "audio": "My grandparents live on a farm and my cousin visits every weekend.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step2-contractions-sofia.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s05-step2-tens-to-100.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"My grandparents live on a farm and my cousin visits every weekend.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1428,7 +1428,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Mateo is my best friend and we share snacks in the park.",
                       "exampleEs": "Mateo es mi mejor amigo y compartimos comida en el parque.",
                       "audio": "Mateo is my best friend and we share snacks in the park.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step3-negative-confident.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s05-step3-phone-contact-format.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Mateo is my best friend and we share snacks in the park.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1440,7 +1440,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Her dog Toby is super playful and energetic.",
                       "exampleEs": "Su perro Toby es súper juguetón y lleno de energía.",
                       "audio": "Her dog Toby is super playful and energetic.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step4-questions-curious.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s05-step4-room-address-numbers.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Her dog Toby is super playful and energetic.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1452,7 +1452,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "How many brothers and sisters do you have? - I have one sister!",
                       "exampleEs": "¿Cuántos hermanos y hermanas tienes? - ¡Tengo una hermana!",
                       "audio": "How many brothers and sisters do you have? I have one sister!",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step5-wh-interview.webp",
+                      "avatarUrl": "/images/avatars-3d/c03-s05-step5-age-qa-questions.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"How many brothers and sisters do you have? - I have one sister!\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
@@ -1929,7 +1929,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I love pepperoni pizza and I always drink fresh fruit juice.",
                       "exampleEs": "Me encanta la pizza de pepperoni y siempre tomo jugo natural.",
                       "audio": "I love pepperoni pizza and I always drink fresh fruit juice.",
-                      "avatarUrl": "/images/avatars-3d/c01-s05-step5-farewell-goodbye.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s04-step1-neon-backpack.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I love pepperoni pizza and I always drink fresh fruit juice.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1941,7 +1941,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "My friend Andrea likes burgers, but she prefers chicken wraps.",
                       "exampleEs": "A mi amiga Andrea le gustan las hamburguesas, pero prefiere los wraps de pollo.",
                       "audio": "My friend Andrea likes burgers, but she prefers chicken wraps.",
-                      "avatarUrl": "/images/avatars-3d/c-habits-concept-c-avatar.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s04-step2-pointing-school.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"My friend Andrea likes burgers, but she prefers chicken wraps.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1953,7 +1953,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I don't like spicy food or red meat; I prefer vegetables.",
                       "exampleEs": "No me gusta la comida picante ni la carne roja; prefiero vegetales.",
                       "audio": "I don't like spicy food or red meat; I prefer vegetables.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step1-pronouns-intro.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s04-step3-art-markers.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I don't like spicy food or red meat; I prefer vegetables.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1965,7 +1965,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Can I have one large pizza and two cold lemonades, please?",
                       "exampleEs": "¿Me puede dar una pizza grande y dos limonadas frías, por favor?",
                       "audio": "Can I have one large pizza and two cold lemonades, please?",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step2-contractions-sofia.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s04-step4-basketball-shoes.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Can I have one large pizza and two cold lemonades, please?\", isolated on pure solid white background, clean 3D character render"
                     },
                     {
@@ -1977,7 +1977,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "Do you want to share a big portion of French fries?",
                       "exampleEs": "¿Quieres compartir una porción grande de papas fritas?",
                       "audio": "Do you want to share a big portion of French fries?",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step3-negative-confident.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s04-step5-highlighters-qa.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"Do you want to share a big portion of French fries?\", isolated on pure solid white background, clean 3D character render"
                     }
                   ],
@@ -2004,7 +2004,7 @@ export const curriculumTeensStudioLevels: CurriculumLevel[] = [
                       "example": "I usually order a double cheese burger with crispy bacon.",
                       "exampleEs": "Normalmente pido una hamburguesa doble carne con tocineta crujiente.",
                       "audio": "I usually order a double cheese burger with crispy bacon.",
-                      "avatarUrl": "/images/avatars-3d/c01-s04-step4-questions-curious.webp",
+                      "avatarUrl": "/images/avatars-3d/c04-s05-step1-pencil-case-supplies.webp",
                       "avatarPrompt": "3D Pixar Disney style animated teen character showing \"I usually order a double cheese burger with crispy bacon.\", isolated on pure solid white background, clean 3D character render"
                     },
                     {

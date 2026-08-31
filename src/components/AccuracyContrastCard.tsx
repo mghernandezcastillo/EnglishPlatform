@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { AlertTriangle, CheckCircle2, RotateCw, Sparkles, HelpCircle } from 'lucide-react';
 import { ClassSlide } from '../types';
+import { renderColoredGrammarSentence } from './SlideRenderer';
 
 interface AccuracyContrastCardProps {
   slide: ClassSlide;
@@ -121,10 +122,10 @@ export function AccuracyContrastCard({ slide }: AccuracyContrastCardProps) {
               <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-emerald-300/80 mb-2">
                 Frase correcta:
               </p>
-              <div className="p-5 sm:p-6 rounded-2xl bg-emerald-950/50 border border-emerald-400/40 shadow-inner mb-4">
-                <p className="text-2xl sm:text-4xl md:text-5xl font-black text-emerald-100 leading-tight tracking-wide">
-                  "{accurateText}"
-                </p>
+              <div className="p-5 sm:p-6 rounded-2xl bg-emerald-950/50 border border-emerald-400/40 shadow-inner mb-4 flex items-center justify-center">
+                <div className="text-2xl sm:text-4xl md:text-5xl font-black text-emerald-100 leading-tight tracking-wide">
+                  {renderColoredGrammarSentence(accurateText)}
+                </div>
               </div>
 
               {tipText && (
