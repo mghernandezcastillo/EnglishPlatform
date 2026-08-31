@@ -1401,6 +1401,7 @@ export function SlideRenderer({
               const activeTheme = GRAMMAR_STEP_THEMES[safeTab % GRAMMAR_STEP_THEMES.length] || GRAMMAR_STEP_THEMES[0];
               const activeMetric = getStructureMetric(activeStruct, safeTab);
               const activeAvatar = getStructureAvatar(activeStruct, slide, safeTab);
+              const formulaTokens = parseFormulaTokens(activeStruct?.formula || `[ Sujeto ] + [ Verbo ] + [ Complemento ]`);
 
               return (
                 <div className="relative flex-1 flex flex-col p-1 sm:p-2 z-10 min-h-0 overflow-hidden bg-slate-950">
@@ -1566,61 +1567,56 @@ export function SlideRenderer({
                           </div>
 
                           {/* Gamified Lego Block Syntactic Formula */}
-                          {(() => {
-                            const formulaTokens = parseFormulaTokens(activeStruct?.formula || `[ Sujeto ] + [ Verbo ] + [ Complemento ]`);
-                            return (
-                              <div className="flex flex-col gap-0.5 p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-black/80 border border-white/20 shadow-inner shrink-0">
-                                <div className="flex items-center justify-between gap-2">
-                                  <div className="flex items-center gap-1.5">
-                                    <span className="w-4 h-4 rounded-md bg-cyan-500/30 text-cyan-300 flex items-center justify-center font-mono font-black text-[10px]">
-                                      fx
-                                    </span>
-                                    <span className="text-[10px] font-black uppercase tracking-wider text-cyan-300">
-                                      Estructura por Bloques de Construcción
-                                    </span>
-                                  </div>
-                                  <span className="text-[10px] font-bold text-white/50 hidden sm:inline">
-                                    {activeFormulaToken !== null ? '💡 Ficha resaltada' : 'Toca una ficha para resaltar'}
-                                  </span>
-                                </div>
-
-                                {/* Lego Chips Flow */}
-                                <div className="flex flex-wrap items-center gap-1 sm:gap-1.5 pt-0.5">
-                                  {formulaTokens.map((tok, tIdx) => {
-                                    const isSelected = activeFormulaToken === tIdx;
-                                    return (
-                                      <div key={tIdx} className="flex items-center gap-1">
-                                        <button
-                                          type="button"
-                                          onMouseEnter={() => setActiveFormulaToken(tIdx)}
-                                          onMouseLeave={() => setActiveFormulaToken(null)}
-                                          onClick={() => setActiveFormulaToken(prev => prev === tIdx ? null : tIdx)}
-                                          className={`group relative flex flex-col items-start px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl border transition-all cursor-pointer shadow-md ${tok.theme.bg} ${tok.theme.border} ${
-                                            isSelected
-                                              ? `${tok.theme.glow} ring-2 ring-white/80 scale-105 shadow-xl`
-                                              : 'hover:scale-[1.03] hover:border-white/60'
-                                          }`}
-                                        >
-                                          <span className={`text-[8px] sm:text-[9px] font-black uppercase tracking-wider px-1 py-0.2 rounded border mb-0.5 ${tok.theme.badgeBg}`}>
-                                            {tok.label}
-                                          </span>
-                                          <span className={`text-[11px] sm:text-xs lg:text-sm font-mono font-black ${tok.theme.text} leading-tight`}>
-                                            {tok.text}
-                                          </span>
-                                        </button>
-
-                                        {tIdx < formulaTokens.length - 1 && (
-                                          <span className="text-xs font-black text-white/40 px-0.5 select-none animate-pulse">
-                                            ➕
-                                          </span>
-                                        )}
-                                      </div>
-                                    );
-                                  })}
-                                </div>
+                          <div className="flex flex-col gap-0.5 p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-black/80 border border-white/20 shadow-inner shrink-0">
+                            <div className="flex items-center justify-between gap-2">
+                              <div className="flex items-center gap-1.5">
+                                <span className="w-4 h-4 rounded-md bg-cyan-500/30 text-cyan-300 flex items-center justify-center font-mono font-black text-[10px]">
+                                  fx
+                                </span>
+                                <span className="text-[10px] font-black uppercase tracking-wider text-cyan-300">
+                                  Estructura por Bloques de Construcción
+                                </span>
                               </div>
-                            );
-                          })()}
+                              <span className="text-[10px] font-bold text-white/50 hidden sm:inline">
+                                {activeFormulaToken !== null ? '💡 Ficha resaltada' : 'Toca una ficha para resaltar'}
+                              </span>
+                            </div>
+
+                            {/* Lego Chips Flow */}
+                            <div className="flex flex-wrap items-center gap-1 sm:gap-1.5 pt-0.5">
+                              {formulaTokens.map((tok, tIdx) => {
+                                const isSelected = activeFormulaToken === tIdx;
+                                return (
+                                  <div key={tIdx} className="flex items-center gap-1">
+                                    <button
+                                      type="button"
+                                      onMouseEnter={() => setActiveFormulaToken(tIdx)}
+                                      onMouseLeave={() => setActiveFormulaToken(null)}
+                                      onClick={() => setActiveFormulaToken(prev => prev === tIdx ? null : tIdx)}
+                                      className={`group relative flex flex-col items-start px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl border transition-all cursor-pointer shadow-md ${tok.theme.bg} ${tok.theme.border} ${
+                                        isSelected
+                                          ? `${tok.theme.glow} ring-2 ring-white/80 scale-105 shadow-xl`
+                                          : 'hover:scale-[1.03] hover:border-white/60'
+                                      }`}
+                                    >
+                                      <span className={`text-[8px] sm:text-[9px] font-black uppercase tracking-wider px-1 py-0.2 rounded border mb-0.5 ${tok.theme.badgeBg}`}>
+                                        {tok.label}
+                                      </span>
+                                      <span className={`text-[11px] sm:text-xs lg:text-sm font-mono font-black ${tok.theme.text} leading-tight`}>
+                                        {tok.text}
+                                      </span>
+                                    </button>
+
+                                    {tIdx < formulaTokens.length - 1 && (
+                                      <span className="text-xs font-black text-white/40 px-0.5 select-none animate-pulse">
+                                        ➕
+                                      </span>
+                                    )}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          </div>
 
                           {/* English Sentence & Spanish Translation (Dynamic Multi-Color Highlighting) */}
                           <div className="flex-1 flex flex-col justify-center rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#0e1338]/95 via-[#13103c]/90 to-[#0b0f2e]/95 border-2 border-cyan-400/35 p-2.5 sm:p-3.5 backdrop-blur-md shadow-[0_0_30px_rgba(6,182,212,0.2)] min-h-0 relative overflow-hidden">
