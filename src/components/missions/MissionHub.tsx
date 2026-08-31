@@ -6,6 +6,7 @@ import type { Mission, MissionStreak, MissionBadge, ThemeMode, MissionContent } 
 import { TEEN_MISSION_CONTENT, getMissionContentForClass } from '../../lib/missionContentData';
 import { TigerMentor } from './TigerMentor';
 import { dbAdmin } from '../../lib/db';
+import { avatars, studentConfig } from '../../config';
 
 const MissionRunner = lazy(() => import('./MissionRunner').then(m => ({ default: m.MissionRunner })));
 
@@ -43,6 +44,16 @@ export function MissionHub({
   const [activeMissionClassId, setActiveMissionClassId] = useState<string | null>(null);
   const [selectedLevelFilter, setSelectedLevelFilter] = useState<string>('all');
   const [studentCompletedLessons, setStudentCompletedLessons] = useState<string[]>([]);
+  const [studentProfile, setStudentProfile] = useState<{ name: string; avatar_id?: string; level?: string } | null>(() => {
+    try {
+      const raw = localStorage.getItem('active_student_profile');
+      return raw ? JSON.parse(raw) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  const displayAvatarUrl = (studentProfile?.avatar_id && (avatars as any)[studentProfile.avatar_id]) || (avatars as any)['avatar-2'] || studentConfig.avatarUrl;
 
   useEffect(() => {
     async function loadData() {
@@ -137,6 +148,24 @@ export function MissionHub({
     setTheme(newTheme);
     await missionService.setTheme(studentId || 'guest-student', newTheme);
   };
+
+  // Intercept native mobile back button when a mission runner is open
+  useEffect(() => {
+    const handlePopState = () => {
+      if (activeMissionClassId) {
+        setActiveMissionClassId(null);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [activeMissionClassId]);
+
+  useEffect(() => {
+    if (activeMissionClassId) {
+      window.history.pushState({ missionRunner: activeMissionClassId }, '');
+    }
+  }, [activeMissionClassId]);
 
   const handleStartMission = (classId: string) => {
     setActiveMissionClassId(classId);
@@ -292,26 +321,54 @@ export function MissionHub({
       ) : (
         <main className="p-4 max-w-4xl mx-auto space-y-8 mt-4">
           
-          {/* 3D Pixar Tiger Mascot Welcome Banner */}
+          {/* Student & 3D Mascot Welcome Banner */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            className={`p-4 sm:p-5 rounded-3xl border shadow-sm flex flex-col sm:flex-row items-center gap-4 justify-between ${
+            className={`p-4 sm:p-6 rounded-3xl border shadow-md flex flex-col sm:flex-row items-center gap-4 justify-between ${
               isCool 
-                ? 'bg-gradient-to-br from-slate-800/90 via-indigo-950/40 to-slate-900 border-indigo-500/30 text-slate-100' 
-                : 'bg-gradient-to-br from-amber-50 via-orange-50 to-white border-amber-200/80 text-slate-900'
+                ? 'bg-gradient-to-br from-slate-800/95 via-indigo-950/50 to-slate-900 border-indigo-500/40 text-slate-100' 
+                : 'bg-gradient-to-br from-amber-50 via-orange-50 to-white border-amber-200/90 text-slate-900'
             }`}
           >
-            <TigerMentor 
-              pose="wave"
-              size="md"
-              dialogue={currentStreak > 0 ? `¡Increíble racha de ${currentStreak} días! 🔥 Sigue así.` : (studentName ? `¡Hola ${studentName}! ¿Listo para tu misión de inglés?` : "¡Hola! ¿Listo para tu misión de inglés de hoy?")}
-              subtext="Gana XP, desbloquea insignias exclusivas y fortalece tu fluidez."
-              isCoolTheme={isCool}
-            />
-            <div className="hidden sm:flex flex-col items-end text-right shrink-0">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-amber-500">Mentor Oficial</span>
-              <span className="text-xs font-extrabold text-slate-600 dark:text-slate-300">Maven English 3D</span>
+            <div className="flex items-center gap-4 w-full sm:w-auto">
+              <div className="relative shrink-0">
+                <img
+                  src={displayAvatarUrl}
+                  alt={studentName || 'Estudiante'}
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover border-3 border-amber-400 shadow-xl bg-indigo-50"
+                />
+                <div className="absolute -bottom-1.5 -right-1.5 p-1 bg-emerald-500 rounded-full border-2 border-white text-white shadow-sm">
+                  <Sparkles className="w-3.5 h-3.5" />
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] font-black uppercase tracking-wider text-orange-600 bg-orange-100 px-2.5 py-0.5 rounded-full">
+                    Estudiante Activo/a
+                  </span>
+                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                    {studentProfile?.level || 'Maven Teens'}
+                  </span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1">
+                  ¡Hola, {studentName || 'Estudiante'}! 👋
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-medium mt-0.5">
+                  {currentStreak > 0 
+                    ? `🔥 Llevas una racha de ${currentStreak} días activa. ¡Sigue con toda la energía!` 
+                    : 'Completa tu reto de 5 minutos y gana tus +150 XP de hoy.'}
+                </p>
+              </div>
+            </div>
+
+            <div className="hidden md:flex shrink-0">
+              <TigerMentor 
+                pose="wave"
+                size="sm"
+                dialogue="¡A ganar XP!"
+                isCoolTheme={isCool}
+              />
             </div>
           </motion.div>
 
@@ -350,40 +407,54 @@ export function MissionHub({
             </div>
           </div>
 
-          {/* Active / Current Recommended Mission Card */}
+          {/* Active / Current Recommended Mission Card with Class Context */}
           {mainActiveMission && (
             <motion.section 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="space-y-3"
             >
-              <h2 className="text-lg font-bold px-1 flex items-center gap-2">
-                <span>🔥 Tu Misión Asignada</span>
-                <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-black">5 MIN</span>
-              </h2>
-              <div className={`relative overflow-hidden rounded-3xl p-6 ${activeCardGradient} shadow-lg shadow-amber-500/20`}>
+              <div className="flex items-center justify-between px-1">
+                <h2 className="text-lg font-black flex items-center gap-2">
+                  <span>🔥 Tu Reto Asignado</span>
+                  <span className="text-xs px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-black">5 MIN</span>
+                </h2>
+                <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                  Próxima Clase
+                </span>
+              </div>
+              <div className={`relative overflow-hidden rounded-3xl p-6 sm:p-7 ${activeCardGradient} shadow-xl shadow-amber-500/25 border-2`}>
                 <motion.div
                   className="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none"
                   animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
                   transition={{ duration: 4, repeat: Infinity }}
                 />
                 
-                <div className="relative z-10">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="px-2.5 py-1 rounded-full bg-white/20 text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
-                      {mainActiveMission.status === 'completed' ? 'LISTA PARA REPASAR ✅' : 'MISIÓN DE HOY 🚀'}
+                <div className="relative z-10 flex flex-col justify-between">
+                  <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
+                    <span className="px-3 py-1 rounded-full bg-white/20 text-xs font-black uppercase tracking-wider backdrop-blur-sm shadow-sm flex items-center gap-1.5">
+                      <Sparkles className="w-3.5 h-3.5 text-yellow-300" />
+                      <span>{mainActiveMission.status === 'completed' ? 'TAREA COMPLETADA ✅' : 'TAREA ASIGNADA 📝'}</span>
+                    </span>
+                    <span className="text-xs font-bold text-white/90 bg-black/25 px-3 py-1 rounded-full border border-white/15">
+                      📅 Tarea dejada en la clase
                     </span>
                   </div>
                   
-                  <h3 className="text-2xl md:text-3xl font-black mb-1">{getClassTitle(mainActiveMission.classId)}</h3>
-                  <p className="text-sm text-white/80 font-medium mb-4">{getClassLabel(mainActiveMission.classId)}</p>
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black mb-1.5 drop-shadow-md">
+                    {getClassTitle(mainActiveMission.classId)}
+                  </h3>
+                  <p className="text-sm sm:text-base text-white/90 font-semibold mb-5 flex items-center gap-1.5">
+                    <span>📚</span>
+                    <span>{getClassLabel(mainActiveMission.classId)}</span>
+                  </p>
 
                   <button 
                     onClick={() => handleStartMission(mainActiveMission.classId)}
-                    className="w-full py-4 mt-2 bg-white text-slate-900 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+                    className="w-full py-4 sm:py-5 bg-white text-slate-950 rounded-2xl font-black text-lg sm:text-xl hover:bg-amber-50 transition-all shadow-2xl flex items-center justify-center gap-3 cursor-pointer hover:scale-[1.02] active:scale-[0.98] border-2 border-amber-200"
                   >
                     <span>COMENZAR MISIÓN AHORA</span>
-                    <Play className="w-5 h-5 fill-current text-amber-500" />
+                    <Play className="w-6 h-6 fill-current text-amber-500 shrink-0" />
                   </button>
                 </div>
               </div>

@@ -129,7 +129,30 @@ export default function App() {
       try { setProgress(JSON.parse(saved)); } catch(e) {}
     }
     setIsLoaded(true);
-  }, [role]);
+  }, []);
+
+  // Handle native mobile back button (popstate)
+  useEffect(() => {
+    const handlePopState = () => {
+      if (currentView !== 'dashboard') {
+        setCurrentView('dashboard');
+        setActiveLessonId(null);
+        setActiveMissionParam(null);
+      } else if (activeLessonId) {
+        setActiveLessonId(null);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [currentView, activeLessonId]);
+
+  // When changing view away from dashboard, push a history entry
+  useEffect(() => {
+    if (isLoaded && (currentView !== 'dashboard' || activeLessonId)) {
+      window.history.pushState({ appView: currentView, lesson: activeLessonId }, '');
+    }
+  }, [currentView, activeLessonId, isLoaded]);
 
   // Save progress when it changes
   useEffect(() => {
